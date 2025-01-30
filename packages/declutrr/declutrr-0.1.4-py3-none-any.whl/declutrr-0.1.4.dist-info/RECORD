@@ -1,0 +1,10 @@
+declutrr/app.py,sha256=HYR4535bGFpl64Teu8DvnDH5k-K5XGsO2cwJ_Puon9A,17506
+declutrr/constants.py,sha256=qSjWDzXvmsQLlnIsCgMVKEC43tAdVKSEVO8LqkIjlUg,1105
+declutrr/file_manager.py,sha256=kY6YgnUUSSNQWD7CI6XarWVUc0I8s4L1KwbkwjjaV0k,1364
+declutrr/image_processor.py,sha256=ohCaX5ueJUoyN0lPsHYt6H6VrE1rkAI935sFrRaWD9s,6288
+declutrr/utils.py,sha256=ldreqRYR-PfgOZsUN7nCdFv_SXcRWuDwPPI_kzYG8QQ,1711
+declutrr-0.1.4.dist-info/LICENSE,sha256=o9vRAr9OVbgDclnEUZiPZXUjCUCFKSo5_oaN2_vfgt0,1069
+declutrr-0.1.4.dist-info/METADATA,sha256=YSh0psnUlbAf4LeB1vwOpe3wMafg-yUONhG7zfp6IuM,4209
+declutrr-0.1.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+declutrr-0.1.4.dist-info/entry_points.txt,sha256=RU9Pqo2HEZ4V8WAlqPLEjmPbJGJztXOxnxAymyyebbY,46
+declutrr-0.1.4.dist-info/RECORD,,
