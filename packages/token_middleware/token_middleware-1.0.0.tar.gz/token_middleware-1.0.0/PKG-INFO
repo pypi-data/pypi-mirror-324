@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: token_middleware
+Version: 1.0.0
+Summary: 
+Author: Amil
+Author-email: amilalizada@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: aiohttp (>=3.8.6,<3.9.5)
+Requires-Dist: fastapi (>=0.115.7,<0.116.0)
+Requires-Dist: starlette (>=0.45.3,<0.46.0)
+Project-URL: Homepage, https://github.com/amilalizada/auth_middleware
+Project-URL: Repository, https://github.com/amilalizada/auth_middleware
