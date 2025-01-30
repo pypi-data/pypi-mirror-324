@@ -1,0 +1,16 @@
+django_cooco/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cooco/admin.py,sha256=DfkualLHgCpy6PeOo-LqCQtn-5ILyJfX-sTYycKjh90,333
+django_cooco/apps.py,sha256=rnwVVKl7XMIFi6-0zSBy9Xs2n56VL_92aRd2lrS5DdU,169
+django_cooco/migrations/0001_initial.py,sha256=ZEegJyMtcrxTlehcViMn-e7n_P9iW43BmmVdefPVRCU,1170
+django_cooco/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cooco/models.py,sha256=KnLDecv4OiFwdIWrPPKX7Y5vxqnfcS8D4imqenlR4hg,978
+django_cooco/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cooco/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cooco/templatetags/cooco.py,sha256=d07Tji5JFTIhAlCAp-5obJ4xczzQNoTq__545ubbhyc,1137
+django_cooco/urls.py,sha256=pAXW1Q3Qd5S6EaQAHSKCTJoCmmMH-nyQurm__wwcos0,290
+django_cooco/utils.py,sha256=HPApab38G8w6OXV8Pwdzsz82XDQ_nzu5wc7yG3aTqFA,4319
+django_cooco/views.py,sha256=8b25_KErgiL5T-rv0ovkPChA0p_P7cMHDuUrTpzEzXA,973
+django_cooco-0.0.1.dist-info/LICENSE.md,sha256=vmr_jObZmNHVZH-gySvJQv6Kz0HrEfy-Sq1QcSzPiTA,1084
+django_cooco-0.0.1.dist-info/METADATA,sha256=oaWNrcYzzsYad-Svb3j_jOUDheq1PQN3snIjWufmclA,11617
+django_cooco-0.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+django_cooco-0.0.1.dist-info/RECORD,,
