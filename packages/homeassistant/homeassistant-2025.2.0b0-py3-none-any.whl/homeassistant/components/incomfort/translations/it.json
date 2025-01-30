@@ -1,0 +1,22 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Il servizio \u00e8 gi\u00e0 configurato"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Host",
+                    "password": "Password",
+                    "username": "Nome utente"
+                },
+                "data_description": {
+                    "host": "Nome host o indirizzo IP del gateway Intergas InComfort Lan2RF.",
+                    "password": "La password per accedere al gateway \u00e8 stampata nella parte inferiore del gateway Lan2RF o \u00e8 'intergas' per alcuni dispositivi meno recenti.",
+                    "username": "Nome utente per accedere al gateway. Nella maggior parte dei casi si tratta di \"admin\"."
+                },
+                "description": "Configura un nuovo gateway Intergas InComfort Lan2RF, alcuni sistemi meno recenti potrebbero non aver bisogno di credenziali per essere configurati. Per i dispositivi pi\u00f9 recenti \u00e8 richiesta l'autenticazione."
+            }
+        }
+    }
+}

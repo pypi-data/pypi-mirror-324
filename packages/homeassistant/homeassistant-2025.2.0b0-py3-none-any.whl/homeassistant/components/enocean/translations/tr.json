@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "invalid_dongle_path": "Ge\u00e7ersiz dongle yolu"
+        },
+        "error": {
+            "invalid_dongle_path": "Bu yol i\u00e7in ge\u00e7erli bir dongle bulunamad\u0131"
+        }
+    }
+}

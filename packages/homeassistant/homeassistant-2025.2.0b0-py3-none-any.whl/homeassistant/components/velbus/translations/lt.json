@@ -1,0 +1,99 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Prietaisas jau sukonfig\u016bruotas"
+        },
+        "error": {
+            "already_configured": "Prietaisas jau sukonfig\u016bruotas",
+            "cannot_connect": "Nepavyko prisijungti"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "port": "Ry\u0161io eilut\u0117"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "integration_not_found": {
+            "message": "Integracija \"{target}\" nerasta registre."
+        },
+        "invalid_hvac_mode": {
+            "message": "Klimato re\u017eimas {hvac_mode} nepalaikomas."
+        },
+        "not_loaded": {
+            "message": "{target} ne\u012fkeltas."
+        }
+    },
+    "issues": {
+        "deprecated_interface_parameter": {
+            "title": "Nenaudojamas 's\u0105sajos' parametras"
+        }
+    },
+    "services": {
+        "clear_cache": {
+            "fields": {
+                "address": {
+                    "description": "Modulio adresas de\u0161imtainiu formatu, jei toks yra, i\u0161valome tik \u0161\u012f modul\u012f, jei nieko nepateikiame, i\u0161valome vis\u0105 talpyklos katalog\u0105 (visus modulius). De\u0161imtainiai adresai rodomi prie\u0161 integracijos puslapyje i\u0161vardytus modulius.",
+                    "name": "Adresas"
+                },
+                "config_entry": {
+                    "description": "Velbus integracijos konfig\u016bracijos \u012fra\u0161as",
+                    "name": "Konfig\u016bracijos \u012fra\u0161as"
+                },
+                "interface": {
+                    "description": "\u201eVelbus\u201c s\u0105saja, \u012f kuri\u0105 reikia si\u0173sti komand\u0105, bus tokia pati reik\u0161m\u0117, kaip ir konfig\u016bravimo metu.",
+                    "name": "S\u0105saja"
+                }
+            },
+            "name": "I\u0161valyti talpykl\u0105"
+        },
+        "scan": {
+            "fields": {
+                "config_entry": {
+                    "description": "Velbus integracijos konfig\u016bracijos \u012fra\u0161as",
+                    "name": "Konfig\u016bracijos \u012fra\u0161as"
+                },
+                "interface": {
+                    "description": "\u201eVelbus\u201c s\u0105saja, \u012f kuri\u0105 reikia si\u0173sti komand\u0105, bus tokia pati reik\u0161m\u0117, kaip ir konfig\u016bravimo metu.",
+                    "name": "S\u0105saja"
+                }
+            },
+            "name": "Nuskaityti"
+        },
+        "set_memo_text": {
+            "description": "Nustato, kad atmintin\u0117s tekstas b\u016bt\u0173 rodomas moduliuose, pvz., VMBGPO, VMBGPOD. \u012esitikinkite, kad modulio puslapis (-iai) sukonfig\u016bruotas (-i) rodyti atmintin\u0117s tekst\u0105.",
+            "fields": {
+                "address": {
+                    "description": "Modulio adresas de\u0161imtainiu formatu. De\u0161imtainiai adresai rodomi prie\u0161 integracijos puslapyje i\u0161vardytus modulius.",
+                    "name": "Adresas"
+                },
+                "config_entry": {
+                    "description": "Velbus integracijos konfig\u016bracijos \u012fra\u0161as",
+                    "name": "Konfig\u016bracijos \u012fra\u0161as"
+                },
+                "interface": {
+                    "description": "\u201eVelbus\u201c s\u0105saja, \u012f kuri\u0105 reikia si\u0173sti komand\u0105, bus tokia pati reik\u0161m\u0117, kaip ir konfig\u016bravimo metu.",
+                    "name": "S\u0105saja"
+                },
+                "memo_text": {
+                    "description": "Tikrasis tekstas, kuris turi b\u016bti rodomas. Tekstas apribotas iki 64 simboli\u0173.",
+                    "name": "Atmintin\u0117s tekstas"
+                }
+            },
+            "name": "Nustatyti atmintin\u0117s tekst\u0105"
+        },
+        "sync_clock": {
+            "fields": {
+                "config_entry": {
+                    "name": "Konfig\u016bracijos \u012fra\u0161as"
+                },
+                "interface": {
+                    "name": "S\u0105saja"
+                }
+            },
+            "name": "Sinchronizuoti laikrod\u012f"
+        }
+    }
+}

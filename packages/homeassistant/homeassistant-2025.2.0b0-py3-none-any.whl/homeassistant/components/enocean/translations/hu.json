@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "invalid_dongle_path": "\u00c9rv\u00e9nytelen dongle \u00fatvonal"
+        },
+        "error": {
+            "invalid_dongle_path": "Nem tal\u00e1lhat\u00f3 \u00e9rv\u00e9nyes dongle ehhez az \u00fatvonalhoz"
+        }
+    }
+}
