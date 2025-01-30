@@ -1,0 +1,30 @@
+[tool.black]
+line-length = 88
+target-version = ['py39', 'py310']
+exclude = '/(\.git|\.venv|venv|__pycache__|build|dist|__init__\.py)/'
+
+[tool.flake8]
+max-line-length = 88
+per-file-ignores = ["__init__.py:F401", "templates.py:E501"]
+extend-ignore = ["E203"]
+exclude = [".git", "__pycache__", "venv", ".venv", ".mypy_cache", ".pytest_cache", "pyproject.toml"]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loop_api_generator"
+version = "0.9.4"
+description = "Python package to generate APIs"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "./src"]

@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: loop_api_generator
+Version: 0.9.4
+Summary: Python package to generate APIs
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
