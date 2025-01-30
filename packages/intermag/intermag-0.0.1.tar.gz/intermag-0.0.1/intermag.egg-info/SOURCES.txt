@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+intermag/__init__.py
+intermag/__main__.py
+intermag.egg-info/PKG-INFO
+intermag.egg-info/SOURCES.txt
+intermag.egg-info/dependency_links.txt
+intermag.egg-info/requires.txt
+intermag.egg-info/top_level.txt
