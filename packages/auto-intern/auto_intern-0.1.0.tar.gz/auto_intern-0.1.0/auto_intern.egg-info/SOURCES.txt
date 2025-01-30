@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+auto_intern/__init__.py
+auto_intern/__main__.py
+auto_intern/chatgpt.py
+auto_intern/main.py
+auto_intern/report.py
+auto_intern/resume.py
+auto_intern.egg-info/PKG-INFO
+auto_intern.egg-info/SOURCES.txt
+auto_intern.egg-info/dependency_links.txt
+auto_intern.egg-info/entry_points.txt
+auto_intern.egg-info/requires.txt
+auto_intern.egg-info/top_level.txt

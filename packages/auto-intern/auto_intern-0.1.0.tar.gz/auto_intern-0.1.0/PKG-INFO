@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: auto_intern
+Version: 0.1.0
+Summary: Package to automate internship application process on Internshala using ChatGPT.
+Home-page: https://github.com/Musfik41/auto_intern
+Author: Mushfique Azam
+Author-email: 
+License: Apache-2.0
+Project-URL: Bug Reports, https://github.com/Musfik41/auto_intern/issues
+Project-URL: Source Code, https://github.com/Musfik41/auto_intern/
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: undetected-playwright-patch==1.40.0.post1700587210000
+Requires-Dist: rich==13.7.1
+Requires-Dist: argparse
+Requires-Dist: requests
+Requires-Dist: requests-html
+Requires-Dist: pandas
+Requires-Dist: lxml_html_clean
+Dynamic: author
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: summary
