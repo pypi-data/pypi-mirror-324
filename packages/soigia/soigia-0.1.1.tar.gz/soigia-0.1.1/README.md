@@ -1,0 +1,2 @@
+- `soigia-sdk`: tên của git
+- `soigia`: tên cho package

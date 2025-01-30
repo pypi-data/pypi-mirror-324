@@ -1,0 +1,111 @@
+Metadata-Version: 2.2
+Name: soigia
+Version: 0.1.1
+Summary: soigia python client for the official soigia API base on Django
+Author: soi gia
+Author-email: sojgja@gmail.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: django>=4.2
+Requires-Dist: ccxt
+Requires-Dist: loguru
+Requires-Dist: pandas
+Requires-Dist: backtesting
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Requires-Dist: colorama
+Requires-Dist: python-binance
+Requires-Dist: python-box
+Requires-Dist: python-telegram-bot
+Requires-Dist: gspread
+Requires-Dist: oauth2client
+Requires-Dist: websocket-client
+Requires-Dist: typer
+Requires-Dist: ipython
+Requires-Dist: ipdb
+Requires-Dist: requests
+Requires-Dist: rich
+Requires-Dist: SqlAlchemy
+Requires-Dist: mysqlclient
+Requires-Dist: djangorestframework
+Requires-Dist: djangorestframework-simplejwt
+Requires-Dist: django-cors-headers
+Requires-Dist: drf-yasg
+Requires-Dist: drf-spectacular
+Requires-Dist: django-environ
+Requires-Dist: django-debug-toolbar
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# soigia-sdk
+
+## install
+
+```bash
+pip install soigia -U
+```
+
+## Django
+
+```bash
+django-admin startproject web .
+```
+
+```python
+# web/settings.py
+
+INSTALLED_APPS = [
+    # another apps
+    "soigia",
+    "apps.leetcode", # myapps
+]
+```
+
+## manage.py
+```python
+
+# ...s
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1 or sys.argv[1] == "soigia":
+        from soigia.main import apps_commandline
+        soigia_main_commandline(sys.argv)
+    elif sys.argv[1] == "apps":
+        from apps.main import apps_commandline
+        apps_commandline(sys.argv)
+    else:
+        main()
+```
+
+## commandline
+```bash
+python manage.py makemigrations
+python manage.py migrate
+python manage.py soigia <command> <data>
+python manage.py apps
+``` 
