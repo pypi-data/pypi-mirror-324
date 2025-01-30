@@ -1,0 +1,2 @@
+[console_scripts]
+google-pronouncer = google_pronouncer.cli:main

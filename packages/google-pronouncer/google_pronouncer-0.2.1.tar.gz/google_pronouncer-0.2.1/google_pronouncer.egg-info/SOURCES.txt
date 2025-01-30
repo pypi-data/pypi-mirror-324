@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+google_pronouncer/__init__.py
+google_pronouncer/__main__.py
+google_pronouncer/cli.py
+google_pronouncer/downloader.py
+google_pronouncer.egg-info/PKG-INFO
+google_pronouncer.egg-info/SOURCES.txt
+google_pronouncer.egg-info/dependency_links.txt
+google_pronouncer.egg-info/entry_points.txt
+google_pronouncer.egg-info/requires.txt
+google_pronouncer.egg-info/top_level.txt
