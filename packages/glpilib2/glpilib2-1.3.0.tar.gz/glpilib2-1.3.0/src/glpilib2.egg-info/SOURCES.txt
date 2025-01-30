@@ -1,0 +1,11 @@
+LICENSE
+README.rst
+pyproject.toml
+src/docs/source/conf.py
+src/glpilib2/__init__.py
+src/glpilib2/basic_wrapper.py
+src/glpilib2.egg-info/PKG-INFO
+src/glpilib2.egg-info/SOURCES.txt
+src/glpilib2.egg-info/dependency_links.txt
+src/glpilib2.egg-info/requires.txt
+src/glpilib2.egg-info/top_level.txt
