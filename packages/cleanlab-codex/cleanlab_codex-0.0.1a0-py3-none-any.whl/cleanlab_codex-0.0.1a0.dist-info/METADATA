@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: cleanlab-codex
+Version: 0.0.1a0
+Summary: Python client library for developers to integrate Cleanlab Codex into RAG systems
+Project-URL: Documentation, https://github.com/cleanlab/cleanlab-codex#readme
+Project-URL: Issues, https://github.com/cleanlab/cleanlab-codex/issues
+Project-URL: Source, https://github.com/cleanlab/cleanlab-codex
+Author-email: Cleanlab Inc <team@cleanlab.ai>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: codex-sdk==0.1.0a9
+Requires-Dist: pydantic<3,>=1.9.0
+Description-Content-Type: text/markdown
+
+# Cleanlab Codex [![Build Status](https://github.com/cleanlab/cleanlab-codex/workflows/CI/badge.svg)](https://github.com/cleanlab/cleanlab-codex/actions?query=workflow%3ACI) [![PyPI - Version](https://img.shields.io/pypi/v/cleanlab-codex.svg)](https://pypi.org/project/cleanlab-codex) [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/cleanlab-codex.svg)](https://pypi.org/project/cleanlab-codex)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install cleanlab-codex
+```
+
+## License
+
+`cleanlab-codex` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
