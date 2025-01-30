@@ -1,0 +1,140 @@
+Metadata-Version: 2.1
+Name: llm-probe
+Version: 0.0.10
+Summary: Extracting Intermediate Activations and Parameters from Hugging Face Models
+Author: Junsoo Kim
+Author-email: Junsoo Kim <js.kim@hyperaccel.ai>
+Project-URL: Documentation, https://github.com/Hyper-Accel/llm-probe/blob/main/docs/
+Project-URL: Repository, https://github.com/Hyper-Accel/llm-probe
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: transformers<=4.44.0,>=4.35.0
+Requires-Dist: torch<=2.4.0,>=2.1.0
+Provides-Extra: dev
+Requires-Dist: ruff>=0.1.0; extra == "dev"
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Requires-Dist: pre-commit>=3.5.0; extra == "dev"
+
+<!---
+Copyright 2024 The HyperAccel. All rights reserved.
+-->
+
+<p align="center">
+    <br>
+    <img src="docs/images/logo.png" width="400"/>
+    <br>
+<p>
+
+<center>
+<h1>LLM Probe: A Tool for Extracting Intermediate Data from HuggingFace LLM Models Using PyTorch Hooks</h1>
+</center>
+
+
+# Installation
+
+## Requirements
+
+- OS: Linux
+- Python: 3.9 ~ 3.12
+- PyTorch
+- [HuggingFace Transformers](https://github.com/huggingface/transformers)
+
+## Install released versions
+
+You can install LLM Probe Framework using pip:
+```shell
+$ # (Recommended) Create a new conda environment.
+$ conda create -n probe-env python=3.10 -y
+$ conda activate probe-env
+
+$ # Install llm-probe package
+$ pip install llm-probe --index-url https://pypi.local.hyperaccel.ai
+```
+
+If you intend to use [HyperAccel’s PyPI server](https://pypi.local.hyperaccel.ai), an authorized account is required. Please ensure you request access from the [administrator](mailto:js.kim@hyperaccel.ai) before proceeding with the installation.
+
+## Build from source
+
+If you want to modify Python source code, you'll need to build **LLM Probe** from source. This can take serveral minutes:
+
+```shell
+$ # Clone the repository
+$ git clone --recursive https://github.com/Hyper-Accel/llm_probe.git
+
+$ # Go to the directory
+$ cd llm_probe/
+$ # Install the required packages and build the source code
+$ pip install .
+
+$ # (Recommended) Or, you can use editable mode to modify the source code
+$ pip install -e . --verbose
+```
+
+# Usage
+
+To use the tool, simply import the module in your Python code and specify the module name where the hook should be applied. Then, run the model inference, and during the process, the PyTorch hook will be triggered, allowing you to extract the desired intermediate data. Below is an example of how to use the tool:
+
+```python
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# LLM probe python package
+from llm_probe.probe import HFModelProbe
+from llm_probe.logger import get_logger
+
+# Initialize logger
+logger = get_logger("Example code for HuggingFace probe")
+logger.setLevel("DEBUG")
+
+# Download the model and tokenizer
+model = AutoModelForCausalLM.from_pretrained("gpt2-medium")
+tokenizer = AutoTokenizer.from_pretrained("gpt2-medium")
+
+# Create the model probe
+model_probe = HFModelProbe(model, tokenizer)
+
+# Set "transformer.h.0.ln_1" module hook
+module = "transformer.h.0.ln_1"
+model_probe.set_hook(module)
+
+# Forward pass
+input_ids = model_probe.get_input_ids("Hello")
+model_probe.generate(input_ids, max_new_tokens=1)
+
+# Get "transformer.wte" module input
+ln_1_input = model_probe.get_intermediate_input(module, dtype=torch.float16)
+ln_1_output = model_probe.get_intermediate_output(module, dtype=torch.float16)
+ln_1_weight = model_probe.get_intermediate_weight(module, dtype=torch.float16)
+ln_1_bias = model_probe.get_intermediate_bias(module, dtype=torch.float16)
+
+```
+
+## How to Get the name of the Module?
+
+To get the name of the module, you can use the `model_probe.get_all_module_name()` method. This method will return a list of module names that can be used to set the hook.
+
+```python
+module_list = model_probe.get_all_module_name()
+print(module_list)
+```
+
+## Print hexa-decimal values of the intermediate data
+
+To print the hexa-decimal values of the intermediate data, you can use the `print_hex()` method. This method will print the hexa-decimal values of the intermediate data.
+
+```python
+import torch
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+# LLM probe python package
+from llm_probe.probe import HFModelProbe
+from llm_probe.utils import print_hex
+from llm_probe.logger import get_logger
+
+''' (Get the intermediate data from the previous example) '''
+
+print_hex(ln_1_input)
+```
+
+For additional examples and usage scenarios, please refer to the [examples](./examples) in the repository.
