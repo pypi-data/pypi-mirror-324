@@ -1,0 +1,2 @@
+import{s,e as i,c,h as l,d as o,i as m,n}from"../chunks/scheduler.bDsl0G2p.js";import{S as p,i as d}from"../chunks/index.DtyFm6kT.js";const u=!0,g=Object.freeze(Object.defineProperty({__proto__:null,prerender:u},Symbol.toStringTag,{value:"Module"}));function _(r){let e;return{c(){e=i("div")},l(t){e=c(t,"DIV",{}),l(e).forEach(o)},m(t,a){m(t,e,a)},p:n,i:n,o:n,d(t){t&&o(e)}}}class v extends p{constructor(e){super(),d(this,e,null,_,s,{})}}export{v as component,g as universal};
+//# sourceMappingURL=2.BlINt8Xe.js.map
