@@ -1,0 +1,2 @@
+[console_scripts]
+hc-mcp-api-docs = hc_mcp_api_docs:main
