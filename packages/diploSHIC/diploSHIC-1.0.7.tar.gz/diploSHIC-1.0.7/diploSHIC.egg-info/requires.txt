@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+pandas
+scikit-allel
+scikit-learn
+tensorflow==2.15.0
+keras
+
+[dev]
