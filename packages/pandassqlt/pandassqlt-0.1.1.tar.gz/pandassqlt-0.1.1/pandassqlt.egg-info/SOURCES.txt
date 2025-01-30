@@ -1,0 +1,7 @@
+setup.py
+pandassqlt/__init__.py
+pandassqlt/main.py
+pandassqlt.egg-info/PKG-INFO
+pandassqlt.egg-info/SOURCES.txt
+pandassqlt.egg-info/dependency_links.txt
+pandassqlt.egg-info/top_level.txt
