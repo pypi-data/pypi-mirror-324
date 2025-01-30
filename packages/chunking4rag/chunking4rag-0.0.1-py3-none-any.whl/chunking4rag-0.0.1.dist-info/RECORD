@@ -1,0 +1,16 @@
+chunkingmethods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chunkingmethods/adaptive_chunking.py,sha256=FtTwIIXxHRsvstO052zO3B1A5OorjZVtALyUIVMZaWQ,1686
+chunkingmethods/base_chunking.py,sha256=wvMPRLNpAKuyxdWhDSysT43ib-pE9gzBYXIFOWCwfe8,431
+chunkingmethods/fixed_length_chunking.py,sha256=cyaCO-vUmlg2fjGZUpDxSbNtMXlK8pqIGZy7R9lozKQ,1143
+chunkingmethods/keywords_chunking.py,sha256=6tXtORG9Y9lQ5r9g3StuUQkXhSZcNq3Sp1MY3XM6nsY,8782
+chunkingmethods/paragraph_chunking.py,sha256=-rKL-lRrCyQGZGevuMAVIFnABWP-Z0uEWu8WplT1cxo,828
+chunkingmethods/sentence_chunking.py,sha256=ij_ldOsCqK6vxgPIvWx7h_4i2O8fs8nVD5kTuapJeG4,981
+chunkingmethods/sliding_window_chunking.py,sha256=xFxwT1O2tZLNcrAWNNPhCcS2nJzBd2b4QDzWPxp8gx4,1348
+model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model/chunking_model.py,sha256=vRuSXziavYcKyUhgNpSqqZzw2cMAEXJkKA8UJ9UV_m8,477
+chunking4rag-0.0.1.dist-info/.gitignore,sha256=aEiIwOuxfzdCmLZe4oB1JsBmCUxwG8x-u-HBCV9JT8E,1
+chunking4rag-0.0.1.dist-info/LICENSE,sha256=3AWJzkqzF3grG_5bJNGjUo7tPAKL6PGXxRaZfHd83Qw,1022
+chunking4rag-0.0.1.dist-info/METADATA,sha256=wwbch8k3bugC-We5VaP71HxdItnxy-8VMDu0u8cq2m4,1811
+chunking4rag-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+chunking4rag-0.0.1.dist-info/top_level.txt,sha256=pdQ4P-bNPcJkVivH2WUaMOVDMzrFmlWHxUGiMbGtuFk,22
+chunking4rag-0.0.1.dist-info/RECORD,,
