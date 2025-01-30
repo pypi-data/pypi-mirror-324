@@ -1,0 +1,8 @@
+icsneopy-0.2.0.post1.dev470.dist-info/RECORD,,
+icsneopy-0.2.0.post1.dev470.dist-info/METADATA,sha256=Q7QC_cirNb3RQWfICz3reFCGB-88upc3cZDTZcRUb90,4053
+icsneopy-0.2.0.post1.dev470.dist-info/WHEEL,sha256=8HbGZL_BhUMgWzkT1ML_nkdRFFuNV8tIBG2lMSXwZ9o,172
+icsneopy-0.2.0.post1.dev470.dist-info/licenses/LICENSE,sha256=evgMO8IwO4ik4PxmbMCPlJ2SzvU8GQzbZEnTZ6N1byA,1650
+icsneopy/__init__.py,sha256=8JkkO6Pz2588-j1MEFY8BIBthdiBFi8V4UIoSTdTye4,25
+icsneopy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+icsneopy/icsneopy.pypy310-pp73-aarch64-linux-gnu.so,sha256=SiEtZ7_3a8meJfS4hY8yMfYbXjkfumaoYpR0qpRt19o,3109304
+icsneopy/icsneopy.pyi,sha256=dkcc8hSAbXGBxBg1RVq5NCuuiNm0JC3t-ErlSj2skgw,40040
