@@ -1,0 +1,37 @@
+[project]
+name = "cfts"
+description = "Paradigms for running auditory function tests using psiexperiment"
+requires-python = ">=3.7"
+license = {file = "LICENSE.txt"}
+authors = [
+    {name = "Brad Buran", email="buran@ohsu.edu"},
+]
+maintainers = [
+    {name = "Brad Buran", email="buran@ohsu.edu"},
+]
+dependencies = [
+	"cftscal",
+    "cftsdata",
+    "psiexperiment[zarr]",
+    "enaml[qt6-pyside] >=0.13.0",
+    "enamlx >=0.6.2",
+    "tqdm",
+]
+dynamic = ["version"]
+
+[project.optional-dependencies]
+ni = ["psiexperiment[ni]"]
+tdt = ["psiexperiment[tdt]"]
+docs = ["sphinx", "sphinx_rtd_theme", "pygments-enaml"]
+test = ["pytest", "pytest-console-scripts", "matplotlib"] # Matplotlib is used in some of the validation scripts.
+dev = ["coloredlogs"]
+
+[project.scripts]
+cfts = "cfts.app.main:cfts"
+
+[build-system]
+requires = ["setuptools>=61.2", "wheel", "setuptools_scm[toml]>=3.4.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "cfts/version.py"

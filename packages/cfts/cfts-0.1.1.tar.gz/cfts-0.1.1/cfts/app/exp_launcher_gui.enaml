@@ -1,0 +1,1272 @@
+import logging
+log = logging.getLogger(__name__)
+logging.basicConfig(level='DEBUG')
+logging.getLogger('websockets').setLevel(logging.INFO)
+
+from copy import deepcopy
+import json
+import os
+from pathlib import Path
+import subprocess
+import threading
+import time
+
+from atom.api import (
+    Atom, Bool, Dict, Enum, Float, Int, List, Property, Str, Typed, Value
+)
+from enaml.application import timed_call
+from enaml.core.api import Conditional, Looper
+from enaml.drag_drop import DragData, DropAction
+from enaml.layout.api import align, hbox, spacer, vbox
+from enaml.stdlib.message_box import critical
+from enaml.styling import StyleSheet, Style, Setter
+from enaml.widgets.api import (
+    Action, ActionGroup, ButtonGroup, CheckBox, Container, Feature, Field,
+    FileDialogEx, Form, GroupBox, HGroup, Label, MainWindow, Menu, MenuBar,
+    Notebook, ObjectCombo, Page, PopupView, PushButton, VGroup,
+)
+
+from psi import get_config, get_config_folder
+from psi.experiment.api import paradigm_manager
+from psi.paradigms.core.websocket_mixins import WebsocketServerPlugin
+
+from cftscal.api import (
+    list_input_amplifier_connections, list_starship_connections,
+    microphone_manager, starship_manager
+)
+from cfts.paradigms import cfts
+from cftscal.plugins.widgets import AddItem
+
+
+DATA_ROOT = get_config('DATA_ROOT')
+CFTS_ROOT = get_config('CFTS_ROOT')
+
+
+class Experiment(Atom):
+
+    paradigm = Value()
+
+    preference = Str()
+
+    #: Plugins selected for load
+    plugins = List(Str())
+
+    #: Supplemental note to append based on the button clicked.
+    mode_notes = Dict()
+
+    def iter_selectable_plugins(self):
+        for plugin in self.paradigm.plugins:
+            if plugin.required:
+                continue
+            if plugin.info.get('hide', False):
+                continue
+            yield plugin
+
+    def _default_mode_notes(self):
+        return {}
+
+    def __init__(self, paradigm, plugins=None, preference=None, **kwargs):
+        if isinstance(paradigm, str):
+            paradigm = paradigm_manager.get_paradigm(paradigm)
+        self.paradigm = paradigm
+
+        # Make sure the plugins saved to the config file are valid plugins (we
+        # sometimes remove or rename plugins). If the plugin is no longer
+        # valid, remove it. If the plugin is required, remove it as a plugin
+        # that the user can select from in the GUI (since it automatically gets
+        # loaded).
+        plugins = set() if plugins is None else set(plugins)
+        valid_plugins = set(p.id for p in self.iter_selectable_plugins())
+        plugins = list(plugins & valid_plugins)
+
+        # We only save preference name, not the full path to the preference. We
+        # need to restore the full path to the preference by scanning through
+        # the list of avaialble preferences. This allows for portability across
+        # systems.
+        if preference is None:
+            preference = ''
+        else:
+            preference = Path(preference)
+            for valid_preference in paradigm.list_preferences():
+                if valid_preference.stem == preference.stem:
+                    preference = str(valid_preference)
+                    break
+            else:
+                log.warning('Invalid preference requested for %s: %s', paradigm,
+                            preference)
+                preference = ''
+
+        super().__init__(paradigm=paradigm, plugins=plugins,
+                         preference=preference, **kwargs)
+
+    def __getstate__(self):
+        state = super().__getstate__()
+        # Convert some keys to things that can be JSON-serialized. Don't save
+        # the full path to the preference because we want this to be portable
+        # across environments and installs.
+        state['preference'] = Path(state['preference']).name
+        state['paradigm'] = state['paradigm'].name
+        return state
+
+    def freeze(self, mode, ear='selected'):
+        '''
+        Return experiment in which mode and ear are fixed. Used in running
+        sequences.
+
+        Parameters
+        ----------
+        mode : str
+            One of the modes the paradigm can be run under (e.g., 'run',
+            'ipsi', 'contra').
+        ear : {'selected', 'left', 'right'}
+            Ear to run experiment on. When set to a specific ear, the
+            configuration must have two starships (one for each ear). When set
+            to 'selected', the ear currently selected in the GUI will be used.
+
+        This is used for sequences where we may need to specify run mode (i.e.,
+        ipsi vs. contra) as well as ear (e.g. in assays where we have a
+        separate starship for each ear such as the MEMR).
+        '''
+        if mode is None:
+            mode = self.modes[0]
+        return FrozenExperiment(
+            paradigm=self.paradigm,
+            preference=self.preference,
+            plugins=self.plugins,
+            mode_notes=self.mode_notes,
+            mode=mode,
+            ear=ear,
+        )
+
+
+class FrozenExperiment(Experiment):
+    '''
+    Subclass of Experiment in which we have frozen the ear and mode (used for
+    sequences).
+    '''
+    mode = Str()
+
+    #: If either, then ear will be drawn from what is selected.
+    ear = Enum('selected', 'left', 'right')
+
+
+def synchronized(fn):
+    def wrapped(self, *args, **kw):
+        with self.lock:
+            return fn(self, *args, **kw)
+    return wrapped
+
+
+class ProcessManager(Atom):
+
+    #: List of commands the order they should be executed.
+    commands = List()
+
+    #: List of subprocesses that are currently open.
+    subprocesses = List()
+
+    #: Current active subprocess (we retain references to all subprocesses that
+    #: are currently open since we do not auto-close the GUI).
+    current_subprocess = Value()
+
+    #: Should experiments be auto-started?
+    autostart = Bool(False)
+
+    #: Used for communicating with experiments invoked by `psi`.
+    ws_server = Typed(WebsocketServerPlugin)
+
+    #: Used to track runtime of individual experiments.
+    exp_start_time = Float()
+
+    #: Duration of last experiment from experiment_start to experiment_end event.
+    duration = Float()
+
+    lock = Value()
+
+    def __init__(self, *args, **kw):
+        super().__init__(*args, **kw)
+        # Set up a websocket server. Whenever clients (i.e., programs invoked
+        # by `psi`) connect they will be instructed to relay only a handful of
+        # events to keep load on the websocket low.
+        self.ws_server = WebsocketServerPlugin(
+            recv_cb=self.recv_cb,
+            connect_cb=self.connect_cb,
+        )
+        self.ws_server.start_thread()
+        self.lock = threading.Lock()
+        timed_call(1000, self.check_status)
+
+    def connect_cb(self):
+        events = ['plugins_started', 'experiment_start', 'experiment_end',
+                  'window_closed']
+        self.ws_server.send_message({
+            'command': 'websocket.set_event_filter',
+            'parameters': {'event_filter': '|'.join(events)},
+        })
+
+    def open_next_subprocess(self):
+        try:
+            cmd, env = self.commands.pop(0)
+        except IndexError:
+            log.info('No more commands queued')
+            return
+        process = subprocess.Popen(cmd, env=dict(os.environ, **env))
+        self.current_subprocess = {
+            'cmd': cmd,
+            'env': env,
+            'process': process,
+            'running': False,
+            'client_id': process.pid,
+            'state': None,
+        }
+        self.subprocesses.append(self.current_subprocess)
+
+    @synchronized
+    def recv_cb(self, message):
+        # Find which process the message is from.
+        for process in self.subprocesses:
+            if process['client_id'] == message['client_id']:
+                break
+        else:
+            raise ValueError(f'No process with client ID {client_id}')
+
+        if message['event'] == 'plugins_started':
+            process['state'] = 'connected'
+            # Start the subprocess if it is the first one in the list to run.
+            if self.autostart:
+                mesg = {'command': 'psi.show_window'}
+                self.ws_server.send_message(mesg, process['client_id'])
+                mesg = {'command': 'psi.controller.start'}
+                self.ws_server.send_message(mesg, process['client_id'])
+        elif message['event'] == 'experiment_start':
+            process['state'] = 'running'
+            self.exp_start_time = time.time()
+        elif message['event'] == 'experiment_end':
+            if process == self.current_subprocess:
+                self.current_subprocess = None
+            process['state'] = 'complete'
+            self.duration = round(time.time() - self.exp_start_time)
+            if message['info'].get('stop_reason') != '':
+                self.autostart = False
+                self.commands = []
+            # Now, start the next one if one exists.
+            if self.autostart:
+                self.open_next_subprocess()
+        elif message['event'] == 'window_closed':
+            # Window closed. Remove from the list of subprocesses.
+            if process == self.current_subprocess:
+                self.current_subprocess = None
+            self.subprocesses.remove(process)
+
+    @synchronized
+    def add_command(self, cmd, env):
+        log.info('Queueing command: %s', ' '.join(cmd))
+        self.commands.append((cmd, env))
+
+    @synchronized
+    def pause_sequence(self):
+        # TODO: What to do if we need to re-sequence an experiment?
+        self.autostart = False
+
+    @synchronized
+    def check_status(self):
+        self.subprocesses = [p for p in self.subprocesses if p['process'].poll() is None]
+        # This means the current subprocess has been closed.
+        if self.current_subprocess is not None:
+            if self.current_subprocess['process'].poll() is not None:
+                self.current_subprocess = None
+        timed_call(1000, self.check_status)
+
+
+class Settings(Atom):
+
+    logging_level = Enum('trace', 'debug', 'info', 'warning', 'error')('info')
+    animal = Str()
+    ear = Enum('left', 'right')
+    experimenter = Str()
+    note = Str()
+    standard_notes = List(Str())
+    standard_note = Str()
+
+    monitor_sequence = List(Experiment)
+    experiment_sequence = List(Experiment)
+
+    #: Dictionary of sequence names to lists of FrozenExperiment
+    sequences = Dict()
+
+    #: Currently selected sequences
+    current_sequence_name = Str()
+
+    #: Currently selected sequence (this has to be broken out from sequences to
+    #: enable proper change notifications, I think).
+    current_sequence = List(Experiment)
+
+    starship_config = Dict()
+
+    #: String indicating starship configuration. Either mono (indicating that
+    #: we have a single starship that is used for either ear) or stereo (one
+    #: starship per ear).
+    audio_mode = Property()
+
+    #: Create a process manager that will handle communication with experiment
+    #: subprocesses.
+    process_manager = Typed(ProcessManager, ())
+
+    def move_sequence_item_to(self, i, j):
+        pass
+
+    def _observe_current_sequence_name(self, event):
+        # This is needed to sync up changes where we select the sequence from the
+        # GUI
+        if self.current_sequence_name != '':
+            self.current_sequence = self.sequences.setdefault(self.current_sequence_name, [])
+        else:
+            self.current_sequence = []
+
+    def _observe_current_sequence(self, event):
+        # This is needed to sync back changes from the experiment display in the GUI
+        if self.current_sequence_name != '':
+            self.sequences[self.current_sequence_name] = self.current_sequence
+
+    def _get_audio_mode(self):
+        if self.find_starship('right', True) == self.find_starship('left', True):
+            return 'mono'
+        else:
+            return 'stereo'
+
+    cal_mic_config = Dict()
+    record_cal_mic = Bool(False)
+    record_output_monitor = Bool(False)
+    show_output_monitor = Bool(False)
+    record_body_temperature = Bool(True)
+    swap_outputs = Bool(False)
+
+    #: How should speakers be configured?
+    #: * in-ear - Perform in-ear calibration before starting experiment. Specify
+    #:   stimulus levels in dB SPL.
+    #: * attenuation - Specify stimulus levels in dB attenuation.
+    #: * debug - Set the calibration such that it assumes 1 Vrms = 130 dB SPL.
+    #:   Allows for testing of existing experiments without having to update
+    #:   the stimulus levels from dB SPL to dB attenuation.
+    calibration_mode = Enum('in-ear', 'attenuation', 'debug')
+    input_amp_config = Dict()
+
+    def _default_standard_notes(self):
+        return ['']
+
+    def find_starship(self, ear, monaural=True):
+        '''
+        Return starship configured for specified ear
+
+        Parameters
+        ----------
+        ear : {'left', 'right'}
+            Ear to locate starship for
+        monaural : bool
+            If True, will load the starship marked for either ear if it exists
+            and it can't find a starship specifically designated for the
+            requested ear.
+        '''
+        starship_to_use = set()
+        for k, v in self.starship_config.items():
+            if v['ear'] == ear:
+                starship_to_use.add(k)
+            elif v['ear'] == 'either' and monaural:
+                starship_to_use.add(k)
+        if len(starship_to_use) != 1:
+            raise ValueError('Starships incorrectly configured')
+        return next(iter(starship_to_use))
+
+    def build_experiment(self, experiment, mode, ear, save=True,
+                         open_minimized=False):
+        '''
+        Build the experiment arguments and environment for launching in subprocess
+
+        Parameters
+        ----------
+        experiment : instance of `Experiment`
+            Experiment to run.
+        mode : str
+            Mode experiment will be run in. This mainly affects the calibration
+            configuration to ensure the appropriate calibrations are loaded
+            into environment variables to be passed to the subprocess.
+        ear : str
+            Ear being tested. This mainly affects the calibration configuration
+            as well as the filename.
+        save : bool
+            If True, generates a filename to save the data to.
+        open_minimized : bool
+            If True, sends a command indicating the application should open the
+            window minimized to the task tray.
+        '''
+        amp_input_name = self.input_amp_config['input_name']
+        env = {
+            'CFTS_INPUT_AMPLIFIER': amp_input_name,
+            f'CFTS_INPUT_AMPLIFIER_{amp_input_name.upper()}_GAIN': str(self.input_amp_config['gain']),
+            f'CFTS_INPUT_AMPLIFIER_{amp_input_name.upper()}_FREQ_LB': str(self.input_amp_config['freq_lb']),
+            f'CFTS_INPUT_AMPLIFIER_{amp_input_name.upper()}_FREQ_UB': str(self.input_amp_config['freq_ub']),
+        }
+        for k, v in self.starship_config.items():
+            cal_string = v['calibration'].get_current_calibration().to_string()
+            env[f'CFTS_STARSHIP_{k.upper()}'] = cal_string
+            env[f'CFTS_STARSHIP_{k.upper()}_GAIN'] = str(v['gain'])
+
+        env['CFTS_TEST_STARSHIP'] = self.find_starship(ear, True)
+        if mode.lower() == 'run':
+            pass
+        elif mode.lower() == 'ipsi':
+            env['CFTS_NONTEST_STARSHIP'] = env['CFTS_TEST_STARSHIP']
+        elif mode.lower() == 'contra':
+            try:
+                nontest_ear = 'right' if ear == 'left' else 'left'
+                env['CFTS_NONTEST_STARSHIP'] = self.find_starship(nontest_ear, False)
+            except ValueError:
+                pass
+        elif mode.lower() == 'binaural':
+            env['CFTS_LEFT_STARSHIP'] = self.find_starship('left', False)
+            env['CFTS_RIGHT_STARSHIP'] = self.find_starship('right', False)
+
+        mode_note = experiment.mode_notes.get(mode, '')
+        filename = f'{{date_time}} {self.experimenter} {self.animal} {ear} {self.note} {self.standard_note} {mode_note} {experiment.paradigm.name}'
+        filename = ' '.join(filename.split())
+        args = ['psi', experiment.paradigm.name]
+        if save:
+            args.append(str(DATA_ROOT / filename))
+        args.extend([
+            '--preferences', experiment.preference,
+            '--debug-level-console', self.logging_level.upper(),
+        ])
+        for plugin in experiment.plugins:
+            args.extend(['--plugin', plugin])
+
+        if self.record_cal_mic:
+            env['CFTS_CAL_MIC'] = self.cal_mic_config['microphone'].get_current_calibration().to_string()
+            env['CFTS_CAL_MIC_GAIN'] = str(self.cal_mic_config['gain'])
+            env['CFTS_CAL_MIC_STARSHIP'] = self.cal_mic_config['starship']
+            args.extend(['--plugin', 'calibration_microphone'])
+
+        if self.record_output_monitor:
+            args.extend(['--plugin', 'output_monitor'])
+
+        if self.show_output_monitor:
+            args.extend(['--plugin', 'output_monitor_view'])
+
+        if self.swap_outputs:
+            args.extend(['--plugin', 'swap_outputs'])
+
+        if self.record_body_temperature:
+            for p in experiment.paradigm.plugins:
+                if p.id  == 'temperature':
+                    args.extend(['--plugin', 'temperature'])
+                    break
+            else:
+                log.warning('No temperature plugin available for %s',
+                            experiment.paradigm.name)
+
+        if self.calibration_mode == 'in-ear':
+            for p in experiment.paradigm.plugins:
+                if p.id.endswith('_inear_calibration'):
+                    args.extend(['--plugin', p.id])
+                    break
+            else:
+                log.warning('No in-ear plugin available for %s', experiment.paradigm.name)
+        elif self.calibration_mode == 'debug':
+            args.extend(['--plugin', 'debug_calibration'])
+
+        if open_minimized:
+            args.extend(['-c', 'psi.minimize_window'])
+
+        return args, env
+
+    def run_experiment(self, experiment, mode, save=True, autostart=False):
+        frozen_experiment = experiment.freeze(mode, self.ear)
+        self.prepare_sequence([frozen_experiment], save=save)
+        self.process_manager.autostart = autostart
+        self.process_manager.open_next_subprocess()
+
+    def prepare_sequence(self, sequence, save=True):
+        for i, experiment in enumerate(sequence):
+            ear = self.ear if experiment.ear == 'selected' else experiment.ear
+            cmd, env = self.build_experiment(experiment,
+                                             experiment.mode,
+                                             ear,
+                                             save=save,
+                                             )
+            self.process_manager.add_command(cmd, env)
+
+    def save_config(self, filename):
+        info = {
+            'ear': self.ear,
+            'logging_level': self.logging_level,
+            'starship_config': self.starship_config,
+            'record_cal_mic': self.record_cal_mic,
+            'cal_mic_config': {
+                'microphone': self.cal_mic_config['microphone'].name,
+                'gain': self.cal_mic_config['gain'],
+                'starship': self.cal_mic_config['starship'],
+            },
+            'input_amp_config': {
+                'input_name': self.input_amp_config['input_name'],
+                'gain': self.input_amp_config['gain'],
+                'freq_lb': self.input_amp_config['freq_lb'],
+                'freq_ub': self.input_amp_config['freq_ub'],
+            },
+            'standard_notes': self.standard_notes,
+            'current_sequence_name': self.current_sequence_name,
+        }
+        info['experiment_sequence'] = [e.__getstate__() for e in self.experiment_sequence]
+        info['monitor_sequence'] = [e.__getstate__() for e in self.monitor_sequence]
+        info['sequences'] = {n: [e.__getstate__() for e in s] for n, s in self.sequences.items()}
+        info['starship_config'] = {}
+        for k, v in self.starship_config.items():
+            info['starship_config'][k] = {
+                'ear': v['ear'],
+                'calibration': v['calibration'].name,
+                'gain': v['gain'],
+            }
+
+        filename = Path(filename)
+        filename.write_text(json.dumps(info, indent=2))
+
+    def load_config(self, filename=None):
+        if filename is not None:
+            filename = Path(filename)
+            info = json.loads(filename.read_text())
+        else:
+            info = {}
+
+        info.pop('experimenter', None)
+
+        def load_seq(seq, mode='classic'):
+            experiments = []
+            for s in seq:
+                # Remove obsolete label argument from saved paradigms and
+                # legacy modes since we changed how this is handled (it was
+                # always a hack to put in the file).
+                s.pop('label', None)
+                s.pop('modes', None)
+                mode_notes = s.get('mode_notes', {})
+                s['mode_notes'] = {k.lower(): v for k, v in mode_notes.items()}
+                if mode == 'classic':
+                    exp = Experiment(**s)
+                else:
+                    exp = FrozenExperiment(**s)
+                experiments.append(exp)
+            return experiments
+
+        # Load and resurrect the experiment sequences 
+        self.experiment_sequence = load_seq(info.pop('experiment_sequence', []))
+        self.monitor_sequence = load_seq(info.pop('monitor_sequence', []))
+        self.sequences = {n: load_seq(s, 'sequence') for n, s in info.pop('sequences', {}).items()}
+        self.current_sequence_name = info.pop('current_sequence_name', '')
+
+        # Update the starship config list to reflect current starship connections
+        starship_config = info.pop('starship_config', {})
+        starships = list_starship_connections()
+        for starship in starships:
+            if starship not in starship_config:
+                starship_config[starship] = {
+                    'ear': 'not used',
+                    'calibration': None,
+                    'gain': 40,
+                }
+        # Make sure all configs are present
+        for starship in list(starship_config.keys()):
+            if starship not in starships:
+                starship_config.pop(starship)
+            else:
+                s = starship_config[starship]
+                s.setdefault('gain', 40)
+                s.setdefault('calibration', None)
+                s.setdefault('ear', 'not used')
+                if s['calibration'] is not None:
+                    s['calibration'] = starship_manager.get_object(s['calibration'])
+        self.starship_config = starship_config
+
+        # Add microphone in if it was not in a previously-saved config.
+        cal_mic_config = info.pop('cal_mic_config', {})
+        if 'microphone' not in cal_mic_config:
+            cal_mic_config['microphone'] = None
+        if 'gain' not in cal_mic_config:
+            cal_mic_config['gain'] = 20
+        if 'starship' not in cal_mic_config:
+            cal_mic_config['starship'] = next(iter(starships))
+        if cal_mic_config['microphone'] is not None:
+            cal_mic_config['microphone'] = \
+                microphone_manager.get_object(cal_mic_config['microphone'])
+        self.cal_mic_config = cal_mic_config
+
+        input_amp_config = info.pop('input_amp_config', {})
+        if 'input_name' not in input_amp_config:
+            input_amp_config['input_name'] = None
+        if 'gain' not in input_amp_config:
+            input_amp_config['gain'] = 50e3
+        if 'freq_lb' not in input_amp_config:
+            input_amp_config['freq_lb'] = 10
+        if 'freq_ub' not in input_amp_config:
+            input_amp_config['freq_ub'] = 10e3
+        self.input_amp_config = input_amp_config
+
+        # Setting all remaining items
+        for k, v in info.items():
+            try:
+                setattr(self, k, v)
+            except AttributeError:
+                log.error('Unable to set attribute %s with value %r', k, v)
+                raise
+
+
+enamldef AddParadigmPopup(PopupView): popup:
+
+    attr experiment_box
+    attr mode = 'classic'
+    arrow_size = 20
+
+    Container:
+        constraints = [vbox(combo, hbox(spacer(0), pb_add))]
+        ObjectCombo: combo:
+            items = paradigm_manager.list_paradigms('ear')
+            to_string = lambda x: x.title
+        PushButton: pb_add:
+            text = 'OK'
+            clicked ::
+                exp = Experiment(paradigm=combo.selected)
+                if mode == 'sequence':
+                    exp = exp.freeze(exp.paradigm.info['modes'][0], 'selected')
+                seq = experiment_box.sequence[:]
+                seq.append(exp)
+                experiment_box.sequence = seq
+                popup.close()
+
+
+enamldef PluginPopup(PopupView): popup:
+    attr experiment
+    attr available_plugins
+    attr modes
+    arrow_size = 20
+    VGroup:
+        Form:
+            padding = 0
+            Looper:
+                iterable = modes
+                Label:
+                    text = f'{loop_item.capitalize()} note'
+                Field:
+                    text = experiment.mode_notes.get(loop_item, '')
+                    text ::
+                        experiment.mode_notes[loop_item] = text
+        Looper:
+            iterable = available_plugins
+            CheckBox:
+                checked = bool(loop_item.id in experiment.plugins)
+                checked ::
+                    if checked:
+                        if loop_item.id not in experiment.plugins:
+                            experiment.plugins.append(loop_item.id)
+                    else:
+                        experiment.plugins.remove(loop_item.id)
+                text = loop_item.title
+
+
+enamldef ExperimentSequence(Container): experiment_box:
+
+    attr start_enabled = True
+    attr save = True
+    attr mode = 'classic'
+
+    attr sequence
+    attr edit_mode = False
+    attr settings
+    attr autostart = False
+
+    StyleSheet:
+        Style:
+            element = 'Container'
+            style_class = 'hover'
+            Setter:
+                field = 'background'
+                value = 'lightblue'
+
+    layout_constraints => ():
+        # Align the subwidgets vertically
+        widgets = self.visible_widgets()
+        subwidgets = [w.visible_widgets() for w in widgets]
+        return [
+            vbox(*widgets),
+            *[align('width', *c) for c in zip(*subwidgets)],
+            *[align('left', *c) for c in zip(*subwidgets)],
+        ]
+
+    Looper: exp_loop:
+        iterable << experiment_box.sequence
+
+        Container: row:
+            share_layout = True
+            style_class = ''
+
+            features << (Feature.DropEnabled | Feature.DragEnabled)
+
+            drag_start => ():
+                if not edit_mode:
+                    return
+                data = DragData()
+                data.supported_actions = DropAction.Copy
+                i = experiment_box.sequence.index(loop_item)
+                data.mime_data.set_data('text/plain', f'::experiment::{i}'.encode('utf-8'))
+                return data
+
+            drag_enter => (event):
+                if not edit_mode:
+                    return
+                if event.mime_data().has_format('text/plain'):
+                    data = event.mime_data().data('text/plain').decode('utf-8')
+                    if not data.startswith('::experiment::'):
+                        return
+                    else:
+                        self.style_class = 'hover'
+                        event.accept_proposed_action()
+
+            drag_leave => ():
+                self.style_class = ''
+
+            drop => (event):
+                if not edit_mode:
+                    return
+                self.style_class = ''
+                data = event.mime_data().data('text/plain').decode('utf-8')
+                i = int(data.rsplit('::', 1)[1])
+                j = experiment_box.sequence.index(loop_item)
+                sequence = experiment_box.sequence[:]
+                sequence.insert(j, sequence.pop(i))
+                experiment_box.sequence = sequence
+
+            layout_constraints => ():
+                widgets = self.visible_widgets()
+                return [
+                    hbox(*widgets),
+                    align('v_center', *widgets),
+                ]
+            padding = 0
+
+            PushButton:
+                name = 'remove_paradigm'
+                visible << edit_mode
+                constraints = [width == 30]
+                text = '-'
+                clicked ::
+                    seq = experiment_box.sequence[:]
+                    seq.remove(loop_item)
+                    experiment_box.sequence = seq
+
+            Label:
+                text = loop_item.paradigm.title
+
+            Conditional:
+                condition = experiment_box.mode == 'classic'
+
+                HGroup:
+                    padding = 0
+                    spacing = 0
+                    enabled << (experiment_box.start_enabled or edit_mode) and \
+                        settings.process_manager.current_subprocess is None
+
+                    Looper: mode_loop:
+                        attr experiment = loop_item
+                        iterable << loop_item.paradigm.info['modes']
+
+                        PushButton:
+                            text = loop_item.capitalize()
+                            clicked ::
+                                try:
+                                    settings.run_experiment(mode_loop.experiment,
+                                                            loop_item,
+                                                            save=save,
+                                                            autostart=autostart)
+                                except Exception as e:
+                                    log.exception(e)
+                                    critical(experiment_box, 'Error starting experiment', str(e))
+                                # Update the preferences in case new ones were created
+                                preferences.items = [str(p) for p in \
+                                                    mode_loop.experiment.paradigm.list_preferences()]
+
+            Conditional:
+                condition << (mode == 'sequence' and edit_mode)
+
+                ObjectCombo:
+                    items = loop_item.paradigm.info['modes']
+                    selected := loop_item.mode
+
+                ObjectCombo:
+                    items = ['selected', 'left', 'right']
+                    selected := loop_item.ear
+
+                Label:
+                    text = f'ear'
+
+            Conditional:
+                condition << (mode == 'sequence' and not edit_mode)
+
+                Label:
+                    text = f'{loop_item.mode} {loop_item.ear} ear'
+
+            ObjectCombo: preferences:
+                items = [str(p) for p in loop_item.paradigm.list_preferences()]
+                selected := loop_item.preference
+                to_string = lambda x: Path(x).stem
+
+            PushButton:
+                attr plugins = [p for p in loop_item.paradigm.plugins \
+                                if not p.required and not p.info.get('hide', False)]
+                constraints = [width == 30]
+                text = '⚙'
+                clicked ::
+                    popup = PluginPopup(parent=self,
+                                        experiment=loop_item,
+                                        available_plugins=plugins,
+                                        modes=loop_item.paradigm.info['modes'])
+                    popup.show()
+
+    Container:
+        padding = 0
+        layout_constraints => ():
+            return [
+                hbox(*self.visible_widgets()),
+                align('v_center', *self.visible_widgets()),
+            ]
+        PushButton: pb_add_seq:
+            visible << edit_mode
+            constraints = [width == 30]
+            text = '+'
+            clicked ::
+                paradigms = paradigm_manager.list_paradigms('ear')
+                popup = AddParadigmPopup(parent=self,
+                                         experiment_box=experiment_box,
+                                         mode=experiment_box.mode)
+                popup.show()
+
+        # A bit of a hack but enables us to ensure all columns lined up properly
+        Label:
+            pass
+        Label:
+            pass
+        Label:
+            pass
+        Label:
+            pass
+        Label:
+            pass
+
+
+enamldef AddRemoveCombo(Container): container:
+
+    alias items: combo.items
+    alias selected: combo.selected
+    alias remove_clicked: pb_remove.clicked
+
+    attr regex = '.*'
+    attr editable = True
+    attr removed
+
+    padding = 0
+
+    constraints << [hbox(combo, hbox(pb_add, pb_remove, spacing=0))] if editable else [hbox(combo)]
+
+    ObjectCombo: combo:
+        pass
+
+    PushButton: pb_add:
+        text = '+'
+        constraints = [width == 30]
+        visible << editable
+        clicked ::
+            popup = AddItem(parent=self, combo=combo, regex=regex)
+            popup.show()
+
+    PushButton: pb_remove:
+        text = '-'
+        constraints = [width == 30]
+        visible << editable
+        enabled << bool(combo.items)
+        clicked ::
+            items = combo.items[:]
+            items.remove(combo.selected)
+            combo.items = items
+
+
+enamldef ExperimentInfo(GroupBox):
+    title = 'Experiment Info'
+
+    constraints = [
+        vbox(
+            hbox(experimenter_label, experimenter_field),
+            hbox(animal_label, animal_field, hbox(l_button, r_button, spacing=0)),
+            hbox(note_label, note_field),
+            hbox(standard_note_label, standard_note),
+            hbox(spacer(0), pb_raw),
+        ),
+        align('right', experimenter_label, animal_label, note_label, standard_note_label),
+        align('left', experimenter_label, animal_label, note_label, standard_note_label),
+        align('v_center', experimenter_label, experimenter_field),
+        align('v_center', animal_label, animal_field, l_button, r_button),
+        align('v_center', note_label, note_field),
+        align('v_center', standard_note_label, standard_note),
+        l_button.width == 30,
+        r_button.width == 30,
+        pb_raw.width == 90,
+    ]
+
+    ButtonGroup: ear_group:
+        pass
+
+    Label: experimenter_label:
+        text = 'Experimenter'
+
+    Field: experimenter_field:
+        text := settings.experimenter
+
+    Label: animal_label:
+        text = 'Animal'
+
+    Field: animal_field:
+        text := settings.animal
+
+    Label: note_label:
+        text = 'Note'
+
+    Field: note_field:
+        text := settings.note
+
+    Label: standard_note_label:
+        text = 'Standard notes'
+
+    AddRemoveCombo: standard_note:
+        selected := settings.standard_note
+        items << settings.standard_notes
+        items ::
+            settings.standard_notes = items[:]
+
+    PushButton: l_button:
+        text = 'L'
+        checkable = True
+        group = ear_group
+        checked << settings.ear == 'left'
+        checked ::
+            settings.ear = 'left'
+
+    PushButton: r_button:
+        text = 'R'
+        checkable = True
+        group = ear_group
+        checked << settings.ear == 'right'
+        checked ::
+            settings.ear = 'right'
+
+    PushButton: pb_raw:
+        text = '📂 Raw'
+        clicked ::
+            os.startfile(DATA_ROOT)
+
+
+enamldef Main(MainWindow): main:
+
+    title = 'Cochlear Function Test Suite'
+
+    attr settings = Settings()
+    attr edit_mode = False
+
+    MenuBar:
+        Menu:
+            title = '&File'
+            Action:
+                text = 'Load config\tCtrl+O'
+                triggered ::
+                    path = CFTS_ROOT / 'cfts-launcher'
+                    path.mkdir(exist_ok=True)
+                    filename = FileDialogEx.get_open_file_name(
+                        current_path=str(path),
+                        name_filters=['Experiment Settings (*.json)'],
+                    )
+                    if filename:
+                        settings.load_config(filename)
+            Action:
+                text = 'Save config\tCtrl+O'
+                triggered ::
+                    path = CFTS_ROOT / 'cfts-launcher'
+                    path.mkdir(exist_ok=True)
+                    filename = FileDialogEx.get_save_file_name(
+                        current_path=str(path),
+                        name_filters=['Experiment Settings (*.json)'],
+                    )
+                    if filename:
+                        settings.save_config(filename)
+            Action:
+                separator = True
+            Action:
+                text = 'Edit config'
+                checkable = True
+                checked := main.edit_mode
+
+        Menu:
+            title = '&Options'
+            Menu:
+                title = 'Logging Level'
+                ActionGroup:
+                    Looper:
+                        iterable = settings.get_member('logging_level').items
+                        Action:
+                            checkable = True
+                            text = loop_item
+                            checked ::
+                                settings.logging_level = loop_item
+                            checked << settings.logging_level == loop_item
+            Action:
+                separator = True
+            Action:
+                text = 'Swap primary/secondary outputs'
+                checkable = True
+                checked := settings.swap_outputs
+            Action:
+                text = '&Record calibration microphone'
+                checkable = True
+                checked := settings.record_cal_mic
+            Action:
+                text = '&Record output monitor signal'
+                checkable = True
+                checked := settings.record_output_monitor
+            Action:
+                text = '&Show output monitor signal'
+                checkable = True
+                checked := settings.show_output_monitor
+            Action:
+                text = '&Monitor body temperature'
+                checkable = True
+                checked := settings.record_body_temperature
+            Action:
+                separator = True
+            Menu:
+                title = 'Calibration method'
+                ActionGroup:
+                    Looper:
+                        iterable = settings.get_member('calibration_mode').items
+                        Action:
+                            text = loop_item.capitalize()
+                            checkable = True
+                            checked << loop_item == settings.calibration_mode
+                            checked ::
+                                settings.calibration_mode = loop_item
+
+    Container:
+
+        constraints = [
+            vbox(
+                starship_info,
+                experiment_info,
+                experiment_nb,
+                experiment_stats,
+            ),
+        ]
+
+        GroupBox: starship_info:
+            title = 'Equipment Configuration'
+            flat = True
+            share_layout = True
+
+            layout_constraints => ():
+                header = children[:3]
+                widgets = [c for c in children[3:] \
+                           if not isinstance(c, Looper) \
+                           and not isinstance(c, Container)]
+                extra_widgets = [c for c in children[3:] if isinstance(c, Container)]
+                extra_labels = [w.children[0] for w in extra_widgets]
+                zipped = list(zip(
+                    widgets[0::4],   # labels
+                    widgets[1::4],   # ear select
+                    widgets[2::4],   # starship select
+                    widgets[3::4],   # gain select
+                ))
+                constraints = [
+                    vbox(
+                        hbox(*header),
+                        *[hbox(*r) for r in zipped],
+                        *extra_widgets,
+                    ),
+                ]
+                constraints.extend([align('v_center', *r) for r in zipped])
+                constraints.extend([
+                    align('left', header[0], *widgets[1::4]),
+                    align('left', header[1], *widgets[2::4]),
+                    align('left', header[2], *widgets[3::4]),
+                    align('left', eeg_label, *widgets[0::4]),
+                    align('left', eeg_input_name, header[0]),
+                ])
+                return constraints
+
+            Label:
+                text = 'Ear'
+            Label:
+                text = 'Calibration'
+            Label:
+                text = 'Gain'
+
+            Looper:
+                iterable << settings.starship_config.keys()
+                Label:
+                    text = f'Starship {loop_item}'
+                ObjectCombo:
+                    items = ['either', 'left', 'right', 'not used']
+                    selected << settings.starship_config[loop_item]['ear']
+                    selected ::
+                        settings.starship_config[loop_item]['ear'] = selected
+                ObjectCombo:
+                    items << sorted(starship_manager.list_objects())
+                    selected << settings.starship_config[loop_item]['calibration']
+                    selected ::
+                        settings.starship_config[loop_item]['calibration'] = selected
+                ObjectCombo:
+                    items = [20, 40]
+                    selected << settings.starship_config[loop_item]['gain']
+                    selected ::
+                        settings.starship_config[loop_item]['gain'] = selected
+
+            Label:
+                text = 'Cal. mic.'
+                visible << settings.record_cal_mic
+
+            Label:
+                text = ''
+                visible << settings.record_cal_mic
+
+            ObjectCombo: selected_mic:
+                items = sorted(microphone_manager.list_objects())
+                selected << settings.cal_mic_config['microphone']
+                selected ::
+                    settings.cal_mic_config['microphone'] = selected
+                visible << settings.record_cal_mic
+
+            ObjectCombo:
+                items = [-20, -10, 0, 10, 20, 30, 40, 50]
+                selected << settings.cal_mic_config['gain']
+                selected ::
+                    settings.cal_mic_config['gain'] = selected
+                visible << settings.record_cal_mic
+
+            Container:
+                padding = 0
+                share_layout = True
+
+                constraints = [
+                    hbox(*self.visible_widgets()),
+                    align('v_center', *self.visible_widgets()),
+                ]
+
+                Label: eeg_label:
+                    text ='EEG amplifier'
+
+                ObjectCombo: eeg_input_name:
+                    attr choices = list_input_amplifier_connections()
+                    attr choices_lookup << {v: k for k, v in choices.items()}
+                    items << list(choices_lookup)
+                    selected << settings.input_amp_config['input_name']
+                    selected ::
+                        settings.input_amp_config['input_name'] = selected
+                    to_string = choices_lookup.get
+
+                ObjectCombo: eeg_gain:
+                    items = [10e3, 20e3, 50e3, 100e3]
+                    selected << settings.input_amp_config['gain']
+                    selected ::
+                        settings.input_amp_config['gain'] = selected
+                    to_string = lambda x: f'{x:.0f} ✕'
+
+                ObjectCombo: eeg_freq_lb:
+                    items = [10, 300]
+                    selected << settings.input_amp_config['freq_lb']
+                    selected ::
+                        settings.input_amp_config['freq_lb'] = selected
+                    to_string = lambda x: f'{x} Hz'
+
+                Label: eeg_to_label:
+                    text = 'to'
+
+                ObjectCombo: eeg_freq_ub:
+                    items = [3000, 10000]
+                    selected << settings.input_amp_config['freq_ub']
+                    selected ::
+                        settings.input_amp_config['freq_ub'] = selected
+                    to_string = lambda x: f'{x} Hz'
+
+        ExperimentInfo: experiment_info:
+            pass
+
+        Notebook: experiment_nb:
+            tab_style = 'document'
+            Page:
+                title = 'Checks (not saved)'
+                closable = False
+                Container:
+                    CheckBox: check_autostart:
+                        text = 'Autostart?'
+                        checked = False
+                    ExperimentSequence:
+                        padding = 0
+                        sequence := main.settings.monitor_sequence
+                        save = False
+                        edit_mode << main.edit_mode
+                        settings << main.settings
+                        autostart << check_autostart.checked
+            Page:
+                title = 'Experiments'
+                closable = False
+                Container:
+                    CheckBox: exp_autostart:
+                        text = 'Autostart?'
+                        checked = False
+                    ExperimentSequence: experiment_box:
+                        padding = 0
+                        start_enabled << (bool(main.settings.animal) and bool(main.settings.experimenter))
+                        sequence := main.settings.experiment_sequence
+                        edit_mode << main.edit_mode
+                        settings << main.settings
+                        autostart << exp_autostart.checked
+
+            Page:
+                title = 'Sequences'
+                closable = False
+                Container:
+                    padding = 0
+                    HGroup:
+                        align_widths = False
+                        Label:
+                            text = 'Name'
+                        AddRemoveCombo:
+                            items << list(settings.sequences.keys())
+                            selected := settings.current_sequence_name
+                            remove_clicked ::
+                                del settings.sequences[settings.current_sequence_name]
+                                settings.current_sequence_name = ''
+                            editable << main.edit_mode
+                        PushButton:
+                            enabled << (bool(main.settings.animal) and bool(main.settings.experimenter) and
+                                        main.settings.process_manager.current_subprocess is None)
+                            text = 'Run'
+                            clicked ::
+                                sequence = settings.current_sequence[:]
+                                main.settings.prepare_sequence(sequence)
+                                main.settings.process_manager.autostart = True
+                                main.settings.process_manager.open_next_subprocess()
+
+                    Conditional:
+                        condition << bool(main.settings.current_sequence_name)
+                        ExperimentSequence:
+                            mode = 'sequence'
+                            sequence := main.settings.current_sequence
+                            edit_mode << main.edit_mode
+                            settings << main.settings
+
+        GroupBox: experiment_stats:
+            title = 'Experiment Info'
+            flat = True
+            share_layout = True
+
+            Label:
+                text << f'Last run took {int(settings.process_manager.duration//60)} min and {int(settings.process_manager.duration % 60)} sec'
