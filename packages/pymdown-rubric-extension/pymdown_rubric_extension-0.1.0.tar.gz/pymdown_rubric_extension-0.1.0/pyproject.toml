@@ -1,0 +1,110 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pymdown-rubric-extension"
+dynamic = ["version"]
+description = "Python-Markdown extension for adding rubrics to your Markdown documents."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+authors = [
+    { name = "Joan Puigcerver", email = "joapuiib@gmail.com" },
+]
+classifiers = [
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pymdown-extensions>=10.12",
+    "Markdown>=3.6",
+    "pyyaml"
+]
+
+[project.urls]
+Documentation = "https://joapuiib.github.io/pymdown-rubric-extension"
+Homepage = "https://joapuiib.github.io/pymdown-rubric-extension"
+Source = "https://github.com/joapuiib/pymdown-rubric-extension"
+Tracker = "https://github.com/joapuiib/pymdown-rubric-extension/issues"
+
+[tool.hatch.version]
+path = "rubric/__init__.py"
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/rubric",
+    "/tests",
+]
+[tool.hatch.build.targets.wheel]
+include = [
+    "/rubric",
+]
+
+[tool.hatch.envs.default.scripts]
+all = [
+    "hatch run test:test",
+    "hatch run style:check",
+]
+
+[tool.hatch.envs.test]
+dependencies = [
+    "pytest",
+]
+
+[tool.hatch.envs.test.scripts]
+test = [
+    "pytest -xvv",
+]
+
+[[tool.hatch.envs.test.matrix]]
+python = ["3.8", "3.9", "3.10", "3.11", "3.12"]
+type = ["default"]
+
+[tool.hatch.envs.doc]
+dependencies = [
+    "mkdocs-material[imaging]~=9.5",
+    "mkdocs-alias-plugin~=0.8",
+    "mkdocs-git-revision-date-localized-plugin~=1.2",
+]
+
+[tool.hatch.envs.doc.scripts]
+serve = [
+    "mkdocs serve",
+]
+build = [
+    "mkdocs build",
+]
+
+[tool.hatch.envs.style]
+detached = true
+dependencies = [
+    "black",
+    "isort",
+    "ruff",
+]
+
+[tool.hatch.envs.style.scripts]
+check = [
+    "isort --check-only --diff rubric",
+    "black -q --check --diff rubric",
+    "ruff check rubric",
+]
+format = [
+    "isort -q rubric",
+    "black -q rubric",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+ignore = ["E501"]

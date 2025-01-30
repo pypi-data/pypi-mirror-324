@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: pymdown-rubric-extension
+Version: 0.1.0
+Summary: Python-Markdown extension for adding rubrics to your Markdown documents.
+Project-URL: Documentation, https://joapuiib.github.io/pymdown-rubric-extension
+Project-URL: Homepage, https://joapuiib.github.io/pymdown-rubric-extension
+Project-URL: Source, https://github.com/joapuiib/pymdown-rubric-extension
+Project-URL: Tracker, https://github.com/joapuiib/pymdown-rubric-extension/issues
+Author-email: Joan Puigcerver <joapuiib@gmail.com>
+License-Expression: MIT
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Requires-Dist: markdown>=3.6
+Requires-Dist: pymdown-extensions>=10.12
+Requires-Dist: pyyaml
+Description-Content-Type: text/markdown
+
+# PyMdown Rubric Extension
