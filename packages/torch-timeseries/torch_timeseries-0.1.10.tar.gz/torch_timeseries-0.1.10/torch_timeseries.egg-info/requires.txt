@@ -1,0 +1,13 @@
+numpy
+pandas
+sktime
+pandas>=0.29.0
+scikit-learn
+tqdm
+einops
+prettytable
+torchmetrics==1.1.1
+fire>=0.5.0
+
+[g]
+pyg
