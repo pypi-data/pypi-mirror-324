@@ -1,0 +1,10 @@
+README.md
+setup.py
+prath/__init__.py
+prath/test.py
+prath/websocket.py
+prath.egg-info/PKG-INFO
+prath.egg-info/SOURCES.txt
+prath.egg-info/dependency_links.txt
+prath.egg-info/requires.txt
+prath.egg-info/top_level.txt
