@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/python_mvp/__init__.py
+src/python_mvp/main.py
+src/python_mvp.egg-info/PKG-INFO
+src/python_mvp.egg-info/SOURCES.txt
+src/python_mvp.egg-info/dependency_links.txt
+src/python_mvp.egg-info/top_level.txt
