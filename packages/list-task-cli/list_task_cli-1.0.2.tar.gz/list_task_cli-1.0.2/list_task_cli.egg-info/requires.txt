@@ -1,0 +1,5 @@
+pyfiglet
+inquirer
+tqdm
+rich
+colorama

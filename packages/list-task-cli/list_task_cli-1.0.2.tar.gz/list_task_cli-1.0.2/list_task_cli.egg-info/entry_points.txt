@@ -1,0 +1,2 @@
+[console_scripts]
+list = list:main
