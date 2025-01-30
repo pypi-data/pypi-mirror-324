@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: rustats
+Version: 0.1.5
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: numpy >=1.18.0
+Requires-Dist: pandas >=1.0.0
+Requires-Dist: scipy >=1.4.0
+Requires-Dist: statsmodels >=0.12.0
+Summary: A Rust-based Statistics and ML package, callable from Python.
+Keywords: rust,python,Machine Learning,Statistics,pyo3
+Author-email: Luke Brosnan <luke.brosnan.cbc@gmail.com>
+License: MIT
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Source Code, https://github.com/luke-brosnan-cbc/RuSTATS
+
+# RuSTATS
+A Rust-based Statistics and ML package, callable from Python.
+
