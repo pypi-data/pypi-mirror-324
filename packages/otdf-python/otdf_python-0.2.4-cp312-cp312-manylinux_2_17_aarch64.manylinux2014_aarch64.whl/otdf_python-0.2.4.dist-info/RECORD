@@ -1,0 +1,14 @@
+otdf_python/_gotdf_python.cpython-312-aarch64-linux-gnu.so,sha256=4qKVBYEObNgJCZj7KejisXksR4DEPWkW8Dk5ZKJtnXA,21890848
+otdf_python/go.py,sha256=b2NXf5mHRF_0gHnwe8DKKYH0z85lzirFUmHf1pa8vFI,49427
+otdf_python/gotdf_python.c,sha256=JaJ3uHa77seG8foy5qHtqbfHVLlRuKL7asolv0PxZvI,112641
+otdf_python/__init__.py,sha256=qvBHuXLdq6kTGqCq2ntWEpLNXd_PYt6pp9wvStFNVQ4,27
+otdf_python/_gotdf_python.cpython-312-aarch64-linux-gnu.h,sha256=ZNX6nlJo9gPAlVyFRPmlbGUzSxF_WyW4MFZ6070fZa8,13351
+otdf_python/build.py,sha256=PdD49Hc8szY-YCy2j0A9ZW6C84k5ZMTCjyoWga08UGg,16051
+otdf_python/gotdf_python.py,sha256=Ghi5orHZXetrwVlaT_Vif5Ee5GEYGG_VJJgfkJ5UZ-o,11411
+otdf_python/gotdf_python_go.h,sha256=ZNX6nlJo9gPAlVyFRPmlbGUzSxF_WyW4MFZ6070fZa8,13351
+otdf_python/gotdf_python.go,sha256=m_YKZa6zo_3lsbHp3U9TQrO7kF8fdQFlpmDXBz9G0_g,40762
+otdf_python-0.2.4.dist-info/LICENSE,sha256=51wzGxR-Rns8XaiGmDLq2OqPN3qWMpoQKV-fERpVzyM,1063
+otdf_python-0.2.4.dist-info/WHEEL,sha256=Z868N0_Fq1ssfDKgnQWj75ig0pzypFewyov-H4g6Btc,153
+otdf_python-0.2.4.dist-info/top_level.txt,sha256=A2vK95iTIxdu4pm8kDZlvHorBKCvSN5dvlMdFbIVXrA,12
+otdf_python-0.2.4.dist-info/METADATA,sha256=v0aDaKjHTVa6-_nKJNwsSZKD5KCMIQgQhgZO8RJy8FA,5563
+otdf_python-0.2.4.dist-info/RECORD,,
