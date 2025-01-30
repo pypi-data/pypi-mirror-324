@@ -1,0 +1,3 @@
+[console_scripts]
+keepyournetwork = network_monitor.cli:main
+kyn = network_monitor.cli:main
