@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools ~= 75.3.0", "wheel ~= 0.42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iam-explorer"
+dynamic = ["version"]
+description = "A CLI tool to visualize AWS IAM relationships and answer permission queries"
+authors = [
+    { name="Safouene Gharbi", email="gharbi.safwen@hotmail.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+
+# PyPI classifiers - helps users see the supported Python versions
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+# Dependencies required at runtime
+dependencies = [
+    "boto3>=1.20.0",
+    "graphviz>=0.20",
+    "networkx>=3.4",
+    "click>=8.0",
+]
+
+[project.scripts]
+iam-explorer = "iam_explorer.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3",
+    "pytest-cov>=6.0",
+    "black>=24.1",    # for code formatting
+    "flake8>=7.0",    # for linting
+    "moto>=5.0",      # for mocking AWS
+]
+
+[tool.black]
+line-length = 120
+target-version = ['py311']
+
+[tool.flake8]
+max-line-length = 120
+ignore = ["E203", "W503"]
+
+[tool.semantic_release]
+branch = "main"
+upload_to_pypi = true
+upload_to_release = true
+commit_parser = "angular"
+changelog_file = "CHANGELOG.md"
