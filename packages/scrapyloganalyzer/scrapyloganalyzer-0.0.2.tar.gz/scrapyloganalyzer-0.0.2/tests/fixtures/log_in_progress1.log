@@ -1,0 +1,68 @@
+2024-12-12 16:11:08 [scrapy.utils.log] INFO: Scrapy 2.11.2 started (bot: kingfisher_scrapy)
+2024-12-12 16:11:08 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.12.9, cssselect 1.1.0, parsel 1.6.0, w3lib 2.1.1, Twisted 24.7.0rc1, Python 3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0], pyOpenSSL 24.2.1 (OpenSSL 3.3.2 3 Sep 2024), cryptography 43.0.1, Platform Linux-6.0.6-76060006-generic-x86_64-with-glibc2.35
+2024-12-12 16:11:08 [canada_buyandsell] INFO: Spider arguments: {'sample': None, 'note': None, 'from_date': None, 'until_date': None, 'crawl_time': None, 'keep_collection_open': None, 'package_pointer': None, 'release_pointer': None, 'truncate': None, 'compile_releases': None}
+2024-12-12 16:11:08 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-12-12 16:11:08 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2024-12-12 16:11:08 [urllib3.util.retry] DEBUG: Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+2024-12-12 16:11:08 [requests_cache.backends] DEBUG: Initializing backend: memory http_cache
+2024-12-12 16:11:08 [scrapy.middleware] WARNING: Disabled kingfisher_scrapy.extensions.SentryLogging: SENTRY_DSN is not set.
+2024-12-12 16:11:08 [scrapy.middleware] WARNING: Disabled kingfisher_scrapy.extensions.KingfisherProcessAPI2: KINGFISHER_API2_URL is not set.
+2024-12-12 16:11:08 [scrapy.middleware] WARNING: Disabled kingfisher_scrapy.extensions.DatabaseStore: DATABASE_URL is not set.
+2024-12-12 16:11:08 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'kingfisher_scrapy.extensions.Pluck',
+ 'kingfisher_scrapy.extensions.FilesStore',
+ 'kingfisher_scrapy.extensions.ItemCount']
+2024-12-12 16:11:08 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'kingfisher_scrapy',
+ 'COMMANDS_MODULE': 'kingfisher_scrapy.commands',
+ 'CONCURRENT_REQUESTS': 32,
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 2,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_MAXSIZE': 10000000000,
+ 'DOWNLOAD_TIMEOUT': 360,
+ 'DOWNLOAD_WARNSIZE': 0,
+ 'HTTPPROXY_ENABLED': False,
+ 'LOG_FORMATTER': 'kingfisher_scrapy.log_formatter.LogFormatter',
+ 'NEWSPIDER_MODULE': 'kingfisher_scrapy.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['kingfisher_scrapy.spiders'],
+ 'TELNETCONSOLE_ENABLED': False,
+ 'USER_AGENT': 'kingfisher_scrapy (+http://www.open-contracting.org)'}
+2024-12-12 16:11:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'kingfisher_scrapy.downloadermiddlewares.DelayedRequestMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-12-12 16:11:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'kingfisher_scrapy.spidermiddlewares.RetryDataErrorMiddleware',
+ 'kingfisher_scrapy.spidermiddlewares.ReadDataMiddleware',
+ 'kingfisher_scrapy.spidermiddlewares.ResizePackageMiddleware',
+ 'kingfisher_scrapy.spidermiddlewares.AddPackageMiddleware',
+ 'kingfisher_scrapy.spidermiddlewares.RootPathMiddleware',
+ 'kingfisher_scrapy.spidermiddlewares.ValidateJSONMiddleware',
+ 'kingfisher_scrapy.spidermiddlewares.LineDelimitedMiddleware',
+ 'kingfisher_scrapy.spidermiddlewares.ConcatenatedJSONMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-12-12 16:11:08 [scrapy.middleware] INFO: Enabled item pipelines:
+['kingfisher_scrapy.pipelines.Sample',
+ 'kingfisher_scrapy.pipelines.Unflatten',
+ 'kingfisher_scrapy.pipelines.Validate',
+ 'kingfisher_scrapy.pipelines.Pluck']
+2024-12-12 16:11:08 [scrapy.core.engine] INFO: Spider opened
+2024-12-12 16:11:08 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-12-12 16:11:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://buyandsell.gc.ca/cds/public/ocds/tpsgc-pwgsc_ocds_EF-FY-16-17.json> (referer: None)
+2024-12-12 16:11:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://buyandsell.gc.ca/cds/public/ocds/tpsgc-pwgsc_ocds_EF-FY-16-17.json>
+{'file_name': 'tpsgc-pwgsc_ocds_EF-FY-16-17.json', 'url': 'https://buyandsell.gc.ca/cds/public/ocds/tpsgc-pwgsc_ocds_EF-FY-16-17.json', 'data_type': 'release_package'}
