@@ -1,0 +1,12 @@
+upload/__init__.py,sha256=pNRFXuIFcJVvBzM85JJ2RNDl97VOCC66Rhf4rkYSQWA,7059
+upload/const.py,sha256=cHtXdH82-p9yELzrcwPMM0QaoAax6gYIlnO4dKy6kQQ,160
+upload/drive.py,sha256=Du3B28iru5z6jz1rvbxiLAErh3Wwf0hnOu61saH0LtM,872
+upload/endpoints.py,sha256=BdlAsenGEbBH9fa-UbCtDMi-4OKXpzv9eEqlMnNrGAc,883
+upload/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upload/scotty.py,sha256=q4Iz17veMnGSMN1yhYsnxMLgJCZIT2D8YkggmVahAr4,5927
+gbooks_upload-0.1.1.dist-info/LICENSE,sha256=ec6acdpUh8Oz8nZ8lgP3YJPN_LZI4HQ0mD61kVczbGY,1068
+gbooks_upload-0.1.1.dist-info/METADATA,sha256=8hgZggPCUo0Db0lY3CLk5L5iiusW7RV3u5JJWxz52RI,662
+gbooks_upload-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gbooks_upload-0.1.1.dist-info/entry_points.txt,sha256=yiQNQE-lsBB-VXADXFBWf4RC04OlwDoxzWTY-QVAkmA,46
+gbooks_upload-0.1.1.dist-info/top_level.txt,sha256=59D5m5vSgm0z485p9CyWkIYZmMZbxvi5bvJb9fB0Rio,7
+gbooks_upload-0.1.1.dist-info/RECORD,,
