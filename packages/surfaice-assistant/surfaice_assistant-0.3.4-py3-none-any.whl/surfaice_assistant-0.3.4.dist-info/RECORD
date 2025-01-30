@@ -1,0 +1,10 @@
+surfaice_assistant/abstract_provider/__init__.py,sha256=TdJfTi_Rh2wmvKClCWMLlkf4PpgANsQVMtkMqWcLF6g,83
+surfaice_assistant/abstract_provider/assistant.py,sha256=7ij-EH_Wg2YFtHP2FreZ_beFj-k-uxVhWjsT81kxwmo,10070
+surfaice_assistant/implementations/__init__.py,sha256=dtZn9M2Y1CMKf0I1U1qBa38vmUiTlXmwgh-NIQipTR4,148
+surfaice_assistant/implementations/openai_provider.py,sha256=05Lw14Oif4ZkcOGOudohfAxP-EL9JeFzNiw4xa3Lfx4,25693
+surfaice_assistant/processor.py,sha256=jjTwN1BandLRYBwF23kDpI7Okq-bfALTVQ2qHvSp-rk,15469
+surfaice_assistant/processor_2.py,sha256=tru7CMBwvVpOh2lG_bVTXbvlbZ1P3wJj0EzRFjOa7x0,11678
+surfaice_assistant/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+surfaice_assistant-0.3.4.dist-info/METADATA,sha256=8V7RSsD3ZLR8IAOthrCZup8vsRXireqcSjaH3_IgQLo,5254
+surfaice_assistant-0.3.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+surfaice_assistant-0.3.4.dist-info/RECORD,,
