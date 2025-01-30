@@ -1,0 +1,35 @@
+Metadata-Version: 2.2
+Name: fastci
+Version: 1.0.0
+Summary: Communication Interface via MQTT with an easy learning curve
+Author-email: "J. Baudisch" <justin.baudisch@hsbi.de>
+Maintainer-email: "J. Baudisch" <justin.baudisch@hsbi.de>
+Project-URL: Repository, https://github.com/ReMi-HSBI/fastci
+Project-URL: Issues, https://github.com/ReMi-HSBI/fastci/issues
+Keywords: MQTT,IoT,aiomqtt,asyncio
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Communications
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: aiomqtt
+Requires-Dist: protobuf
+Provides-Extra: develop
+Requires-Dist: ruff; extra == "develop"
+Requires-Dist: mypy; extra == "develop"
+Requires-Dist: sphinx; extra == "develop"
+Requires-Dist: furo; extra == "develop"
+Requires-Dist: types-protobuf; extra == "develop"
+
+# FastCI
+
+FastCI is a lightweight, efficient and developer-friendly communication
+interface, enabling seamless communication between distributed systems.
+By leveraging MQTT for messaging and Protocol Buffers for data serialization,
+this interface ensures fast, reliable, and bandwidth-efficient communication.
+Its simplicity in setup and development makes it ideal for both small-scale
+and enterprise-level applications.
