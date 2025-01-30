@@ -1,0 +1,6 @@
+couchbase_connection/__init__.py,sha256=um_ORLL5B7SWv0SVC6YARvmNdRvYIoghm8EjMhxkuLc,43
+couchbase_connection/connection.py,sha256=GajXLPKmyXRU7Pvmqq-0i63vpCd242U_UVkgTtXmaXo,10389
+couchbase_connection-0.0.4.dist-info/METADATA,sha256=djU9ynX_gtM_frC7nBYg3pNoHA_XAPAwmmzTz_DeRho,1193
+couchbase_connection-0.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+couchbase_connection-0.0.4.dist-info/top_level.txt,sha256=1q_yVev1at72DMuSKOojeYVFqTcZeK3Ws8CUJgaQ3RE,21
+couchbase_connection-0.0.4.dist-info/RECORD,,
