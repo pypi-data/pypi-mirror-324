@@ -1,0 +1,13 @@
+vlrscraper/__init__.py,sha256=LAMOV80S6W_PXr_IhtIRrwagUzlbNYcSivdIMzIRLFM,101
+vlrscraper/constants.py,sha256=YfUXwwuGXj_v839oXkMPn97evvIwtB363X_LQH4XIjM,2002
+vlrscraper/controllers.py,sha256=4qLi2cdNdbI2ForvnCpzMZUbK7FcY3yPcaCs-MEY38I,16293
+vlrscraper/logger.py,sha256=IBvvrtGSn4J2P_OnRYWx6uHQyXu6fCIJja0-xMwyj9M,1561
+vlrscraper/resource.py,sha256=VW_ii0YS1txFYMMVeCE5jQ9Ny2EN8cB6YRy6tID7TE4,2487
+vlrscraper/resources.py,sha256=rQ1OcyxMOdsFPVxBj8iU3zMX3cu0JwBzt_bPeVbgBY4,19716
+vlrscraper/scraping.py,sha256=TgkT6w0dqrXkbojoSN5aKnSb57drd3mIsue69RHhrsg,7911
+vlrscraper/utils.py,sha256=ffhRTfzgzEOumrAUokyFPdFIrirHJUx4OPQdVlImDCE,5646
+vlrscraper/vlr_resources.py,sha256=6BI26NIDMJFMrsTB0weISVEkZ5XSekuo4V5Gi-Py2qE,465
+vlrscraper-0.0.4.dist-info/METADATA,sha256=uY-wFuupIEyHHK7bmSOeJWNAC_wNmqdk5HXVXAyW8Ow,1061
+vlrscraper-0.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+vlrscraper-0.0.4.dist-info/top_level.txt,sha256=07mzIqapHWw9JWlidyr90WoE2bqgoa67gcQBtCV68EQ,11
+vlrscraper-0.0.4.dist-info/RECORD,,
