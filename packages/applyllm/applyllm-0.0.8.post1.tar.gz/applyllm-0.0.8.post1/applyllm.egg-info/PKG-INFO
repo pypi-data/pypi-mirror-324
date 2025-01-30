@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: applyllm
+Version: 0.0.8.post1
+Summary: A python package to apply opensource LLM in local CUDA environment
+Author-email: Yingding Wang <yingdingwang@yahoo.de>
+Project-URL: Homepage, https://github.com/yingding/applyllm
+Project-URL: Issues, https://github.com/yingding/applyllm/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: langchain>=0.1.0
+Requires-Dist: transformers>=4.36.2
+Requires-Dist: torch>=2.1.2
+Requires-Dist: pydantic>=1.10.13
+Requires-Dist: boto3>=1.29.0
+Requires-Dist: mlflow>=2.10.0
+Requires-Dist: bitsandbytes>=0.42.0
+Requires-Dist: pypdf>=3.15.5
+Requires-Dist: accelerate>=0.26.1
+Requires-Dist: psycopg[binary]>=3.1.16
+Requires-Dist: SQLAlchemy>=2.0.24
+Requires-Dist: unstructured>=0.11.0
+Requires-Dist: sentence-transformers>=2.2.2
+Requires-Dist: docarray>=0.39.1
