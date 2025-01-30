@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+texttospeechnormal2025.egg-info/PKG-INFO
+texttospeechnormal2025.egg-info/SOURCES.txt
+texttospeechnormal2025.egg-info/dependency_links.txt
+texttospeechnormal2025.egg-info/requires.txt
+texttospeechnormal2025.egg-info/top_level.txt
