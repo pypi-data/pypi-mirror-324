@@ -1,0 +1,2 @@
+[console_scripts]
+pump_q8 = src.main:main
