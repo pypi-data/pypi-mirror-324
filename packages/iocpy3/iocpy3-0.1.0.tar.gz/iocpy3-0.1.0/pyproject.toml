@@ -1,0 +1,62 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "iocpy3"
+dynamic = ["version"]
+license = "MIT"
+dependencies = []
+requires-python = ">= 3.11"
+authors = [
+  {name = "Manuel Kiefer"},
+]
+maintainers = []
+description = "Simple ioc framework for python"
+readme = {file = "README.md", content-type = "text/markdown"}
+
+[dependency-groups]
+dev = [
+    "pylint>=3.3.3",
+    "pytest>=8.3.4",
+    "coverage>=7.6.10",
+    "parameterized>=0.9.0",
+]
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+test = "unittest discover -v -s tests -p test*.py"
+lint = "pylint iocpy"
+"coverage:test" = "coverage run -m unittest discover -v -s tests -p test*.py"
+"coverage:export" = "coverage xml"
+"coverage:report" = "coverage report -m"
+coverage = { composite = [
+    "coverage:test",
+    "coverage:report",
+    "coverage:export",
+] }
+
+[tool.hatch.version]
+path = "__version__"
+source = "regex"
+pattern = "^(?P<version>.+)$"
+
+[tool.hatch.build.targets.wheel]
+packages = ["iocpy"]
+
+[tool.coverage.report]
+exclude_also = [
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+    ]
