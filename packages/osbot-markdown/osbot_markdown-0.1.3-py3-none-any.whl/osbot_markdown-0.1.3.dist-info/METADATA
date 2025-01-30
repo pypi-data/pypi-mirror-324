@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: osbot_markdown
+Version: 0.1.3
+Summary: OWASP Security Bot - LLM
+License: MIT
+Author: Dinis Cruz
+Author-email: dinis.cruz@owasp.org
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: markdown
+Requires-Dist: osbot-utils
+Project-URL: Homepage, https://github.com/owasp-sbot/OSBot-Markdown
+Project-URL: Repository, https://github.com/owasp-sbot/OSBot-Markdown
+Description-Content-Type: text/markdown
+
+# OSBot__Markdown
+
+## Repo details
+
+![Current Release](https://img.shields.io/badge/release-v0.1.3-blue)
+
