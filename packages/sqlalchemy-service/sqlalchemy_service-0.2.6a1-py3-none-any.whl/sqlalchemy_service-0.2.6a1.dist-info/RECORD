@@ -1,0 +1,12 @@
+sqlalchemy_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_service/base_db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sqlalchemy_service/base_db/base.py,sha256=UA_mhoJBo_-Og7_TJtvlBxgnbU1TC2C0KSO4Mz7pnjg,1236
+sqlalchemy_service/base_db/create.py,sha256=bw7qv3LKpl4AZAK2CD6SDOafSTCO8Yn7QjRBcXJhvts,1821
+sqlalchemy_service/base_service/__init__.py,sha256=XZ3JzShk7Rq1_bmmcVD7u4O7KJv9odW0MgaZeUMFo-M,284
+sqlalchemy_service/base_service/_fastapi_mock.py,sha256=aVNnSx_TQX7oyqYODvM_ozwG16x6KJvzOkqSduImK3g,1655
+sqlalchemy_service/base_service/service.py,sha256=fTYAifWtEd7ULahJQ5u3R13cuPqBWYfXqEPPI1xvGXw,10440
+sqlalchemy_service-0.2.6a1.dist-info/LICENSE,sha256=--jQm_lG9zG_kZf6QvGsiZ51ypPm1fkpRpvggoOUf7A,1071
+sqlalchemy_service-0.2.6a1.dist-info/METADATA,sha256=Gs5sMGF3SuKFxbVQatSdbdD-joubtBaDdJXpzdr1dbk,623
+sqlalchemy_service-0.2.6a1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sqlalchemy_service-0.2.6a1.dist-info/entry_points.txt,sha256=U9OC9H7TrG-cGz2J_cuAFihPIMkLKwqZLDtMGYg33Tg,73
+sqlalchemy_service-0.2.6a1.dist-info/RECORD,,
