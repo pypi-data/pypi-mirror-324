@@ -1,0 +1,10 @@
+*.pyc
+build/
+dist/
+MANIFEST
+.coverage
+coverage.xml
+delocate*info/
+.cache
+_version.py
+downloads/
