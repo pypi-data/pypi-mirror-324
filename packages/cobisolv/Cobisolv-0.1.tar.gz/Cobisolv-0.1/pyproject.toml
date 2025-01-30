@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Cobisolv"
+version = "0.1"
+description = "Create and solve optimization problems. Property of COBI Inc."
+readme = "README.md"
+authors = [{name = "William Cho", email = "william.cho@cobi.tech"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/cobi-inc/CobiCloud/tree/main"
