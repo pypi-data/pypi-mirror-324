@@ -1,0 +1,7 @@
+/.bin
+/dist
+**/__PYCACHE__/**
+
+# coverage
+.coverage
+coverage.xml
