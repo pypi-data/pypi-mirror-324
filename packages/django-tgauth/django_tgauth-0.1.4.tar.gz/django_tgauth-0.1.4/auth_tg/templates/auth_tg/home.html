@@ -1,0 +1,23 @@
+{% extends 'auth_tg/base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1 class="display-4 mb-4">Добро пожаловать!</h1>
+    
+    {% if not is_authenticated %}
+    <div class="mt-5">
+        <h2 class="h4 mb-4">Войдите через Telegram, чтобы получить доступ к личному кабинету</h2>
+        <button class="btn btn-primary btn-lg" onclick="TelegramAuth.initTelegramAuth()">
+    Войти через Telegram
+</button>
+    </div>
+    {% else %}
+    <div class="mt-5">
+        <h2 class="h4 mb-4">Вы уже авторизованы</h2>
+        <a href="{% url 'profile' %}" class="btn btn-primary btn-lg">Перейти в личный кабинет</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

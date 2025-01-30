@@ -1,0 +1,50 @@
+{% extends 'auth_tg/base.html' %}
+
+{% block title %}Личный кабинет{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body text-center">
+                {% if photo_path %}
+                    <img src="{% url 'profile_photo' file_path=photo_path %}" alt="Фото профиля" class="profile-photo mb-4">
+                {% else %}
+                    <div class="profile-photo-placeholder mb-4">
+                        {% if user.tg_firstname %}
+                            {{ user.tg_firstname|slice:":1"|upper }}
+                        {% else %}
+                            U
+                        {% endif %}
+                    </div>
+                {% endif %}
+
+                <h2 class="card-title">
+                    {% if user.tg_firstname or user.tg_lastname %}
+                        {% if user.tg_firstname %}{{ user.tg_firstname }}{% endif %}
+                        {% if user.tg_lastname %} {{ user.tg_lastname }}{% endif %}
+                    {% else %}
+                        Пользователь Telegram
+                    {% endif %}
+                </h2>
+
+                {% if user.tg_username %}
+                    <p class="text-muted">@{{ user.tg_username }}</p>
+                {% endif %}
+
+                <div class="mt-4">
+                    <h3 class="h5">Информация о профиле</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <strong>ID Telegram:</strong> {{ user.tg_id }}
+                        </li>
+                        <li class="list-group-item">
+                            <strong>Дата регистрации:</strong> {{ user.created_at|date:"d.m.Y H:i" }}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
