@@ -1,0 +1,6 @@
+/target
+__pycache__
+.vscode
+/dist
+PyMagba.egg-info
+pymagba_binding.cpython*

@@ -1,0 +1,7 @@
+pip-tools
+magpylib
+maturin
+pytest
+pytest-benchmark
+patchelf
+scipy
