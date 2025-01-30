@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: Crea_library
+Version: 0.1
+Summary: A library for selecting and comparing word vectors from the CREA dataset
+Home-page: https://github.com/askitowski1/CREA-Vectors/tree/main/crea_library
+Author: Alex Skitowski
+Author-email: askitowski@mcw.edu
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
