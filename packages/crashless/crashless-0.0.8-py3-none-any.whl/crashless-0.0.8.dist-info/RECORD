@@ -1,0 +1,10 @@
+crashless/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crashless/cts.py,sha256=Gl6bDjgY9Gh3WqKJp0INdtjHXGEqGemC2drunIJ9UmA,392
+crashless/django_handler.py,sha256=MWGl5nA4Zc580HMpI6c-e4Qqcgszc8zqnU9aVLi9MvQ,379
+crashless/fastapi_handler.py,sha256=72ax96dGmtLFGTx6JO1wEY7Fd9laUbBwmhnh6rFEh2g,445
+crashless/handler.py,sha256=FSOC8oKFFfZMAO-66xFZE3ZehqyMgwf4t0vwwDm2HAE,14060
+crashless-0.0.8.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+crashless-0.0.8.dist-info/METADATA,sha256=yCNNIoWi78Eh_uu1R6e2-f3ecw1WRJsvkHSE2tblM2o,3396
+crashless-0.0.8.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+crashless-0.0.8.dist-info/top_level.txt,sha256=BRzL74ugvHBnYuI8T6KcavXK6gve5zviB-9nQcgKwgY,10
+crashless-0.0.8.dist-info/RECORD,,
