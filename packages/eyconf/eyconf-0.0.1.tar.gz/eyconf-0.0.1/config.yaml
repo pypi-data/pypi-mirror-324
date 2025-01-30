@@ -1,0 +1,17 @@
+# My configuration schema
+# Docstrings are used as comments in the generated yaml file!
+
+transport:
+  # Email transport configuration
+
+  host: imap.example.com
+  port: 993
+  username: user
+  password: password
+  use_ssl: false
+
+other:
+  # Other configuration options
+
+  bar: null
+
