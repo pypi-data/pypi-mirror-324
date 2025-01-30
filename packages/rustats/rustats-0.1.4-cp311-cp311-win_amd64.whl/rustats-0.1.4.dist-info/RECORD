@@ -1,0 +1,5 @@
+rustats-0.1.4.dist-info/METADATA,sha256=FzTKcXOAJAnAfjPTyz3_48I_32TI2B3Ldw5qQATXZFQ,790
+rustats-0.1.4.dist-info/WHEEL,sha256=GEiN8kgXbnNenRN1Y0a9VEguqrDbqCrhkA9cPL2EoYI,96
+rustats/__init__.py,sha256=K6CZkMGmpzVcpjveV-7tgX0Z0WG9K9GYDspm9u205Hg,111
+rustats/rustats.cp311-win_amd64.pyd,sha256=cGvLsIVp6wb7GiNDahQ4aw-0y_zSrj9QeR8kYV2FHfM,385024
+rustats-0.1.4.dist-info/RECORD,,
