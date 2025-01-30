@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: dkdc
+Version: 0.19.0
+Summary: dkdc
+Author-email: Cody <cody@dkdc.dev>
+Project-URL: Homepage, https://github.com/dkdc-io/dkdc
+Project-URL: Bug Tracker, https://github.com/dkdc-io/dkdc/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: dkdc-util
+Requires-Dist: rich
+Requires-Dist: typer
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: jupyter; extra == "dev"
+Requires-Dist: nbclient; extra == "dev"
+Requires-Dist: ipykernel; extra == "dev"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+# dkdc
+
+[Software for me](https://dkdc.io/about).

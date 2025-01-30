@@ -1,0 +1,13 @@
+dkdc-util
+rich
+typer
+
+[dev]
+ruff
+ipython
+jupyter
+nbclient
+ipykernel
+
+[test]
+pytest
