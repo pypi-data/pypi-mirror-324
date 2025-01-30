@@ -1,0 +1,2 @@
+[console_scripts]
+llava-caption = llava_caption.cli:main

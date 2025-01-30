@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: llava-caption
+Version: 0.7.1.2
+Summary: Tool for automatically captioning images using various LLaVA models
+Author-email: David Van de Ven <zanshin.g1@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Zanshinmu/llava-caption
+Project-URL: Issues, https://github.com/Zanshinmu/llava-caption/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: MacOS X
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: transformers
+Requires-Dist: llama-cpp-python
+Requires-Dist: huggingface-hub
+Requires-Dist: Pillow
+Requires-Dist: ollama
+Requires-Dist: tqdm
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: json-repair
+Requires-Dist: mlx
+Requires-Dist: mlx-vlm
+Dynamic: requires-python
