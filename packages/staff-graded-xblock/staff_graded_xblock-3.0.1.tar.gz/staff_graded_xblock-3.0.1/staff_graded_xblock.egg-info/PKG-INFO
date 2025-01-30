@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: staff-graded-xblock
+Version: 3.0.1
+Summary: Staff Graded XBlock
+Home-page: https://github.com/openedx/staff_graded-xblock
+License: AGPL v3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+License-File: LICENSE
+Requires-Dist: edx-bulk-grades
+Requires-Dist: web-fragments
+Requires-Dist: markdown
+Requires-Dist: XBlock
+Requires-Dist: path.py
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+Staff Graded XBlock
