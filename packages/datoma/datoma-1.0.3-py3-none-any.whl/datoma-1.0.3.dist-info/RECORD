@@ -1,0 +1,12 @@
+datoma-1.0.3.dist-info/METADATA,sha256=oLyhMQdE9H2fIWXdiZbXsbQvy2JMO5USf2s7hJZSd2M,1275
+datoma-1.0.3.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+datoma-1.0.3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+datoma/AppSyncClient.py,sha256=3VehJWei5H6Me8bCue1CoEjOIqezFq2K-3ahz3cQLDI,2753
+datoma/CustomCredentialProvider.py,sha256=LpPExYryd6tBln0AL4J5o_QuUF9zC33Ip6ZMYhSSXBw,6301
+datoma/DatomaJob.py,sha256=lWL4JMqYz-6vXfMaZMT407E99-jTW8xD6DiiQXeuoeM,15584
+datoma/DatomaWorkflow.py,sha256=MD-x7BXhBedXpF8qEvGUF4YH5KzHNsZTse1jLAYg51g,22410
+datoma/__init__.py,sha256=kSG0-BjwzpbaiZK6vbLvymEufwxO7C71xVh8TPzpNcQ,119
+datoma/__main__.py,sha256=i4qOy7SGwxcNfu8cFWcNkS9tQhdQZLRrSO8DcEOS6HQ,5210
+datoma/transfer_manager.py,sha256=wPtwzENY8NI3H9xva_cst_oT-UUNd1B6wDX2G0htcDM,5653
+datoma/utils.py,sha256=u9cx7KrTtroj9ytLx60BohHiyS5H9t1uend6V2Bxvus,29629
+datoma-1.0.3.dist-info/RECORD,,
