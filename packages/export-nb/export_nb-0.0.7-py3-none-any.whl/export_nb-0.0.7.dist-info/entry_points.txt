@@ -1,0 +1,5 @@
+[console_scripts]
+export_nb = export_nb.core:export_nb
+
+[nbdev]
+export_nb = export_nb._modidx:d
