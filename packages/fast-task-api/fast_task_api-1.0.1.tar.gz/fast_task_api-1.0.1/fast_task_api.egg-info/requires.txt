@@ -1,0 +1,11 @@
+uvicorn
+fastapi
+media-toolkit>=0.1.3
+singleton-decorator==1.0.0
+
+[full]
+uvicorn
+fastapi
+runpod>=1.6.0
+media-toolkit[full]>=0.1.2
+singleton-decorator==1.0.0
