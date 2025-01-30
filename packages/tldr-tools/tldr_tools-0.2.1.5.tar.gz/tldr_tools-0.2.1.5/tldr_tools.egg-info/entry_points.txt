@@ -1,0 +1,7 @@
+[console_scripts]
+chaff-contaminate = chaff_tools.contaminate:main
+chaff-ready = chaff_tools.make_dockopt_ready:main
+chaff-tools = chaff_tools.tools:main
+tldr-download = tldr_tools.tldr_download:main
+tldr-status = tldr_tools.tldr_status:main
+tldr-submit = tldr_tools.tldr_submit:main
