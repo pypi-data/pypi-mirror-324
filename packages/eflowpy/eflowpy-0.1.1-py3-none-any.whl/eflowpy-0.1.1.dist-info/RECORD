@@ -1,0 +1,17 @@
+eflowpy/__init__.py,sha256=hAbTc5jdsP-ucUFVXNe7aEYpCaN-MOU2cAOvy_PFLmc,334
+eflowpy/core.py,sha256=ZaGECnKWdHnulGrGLZkl0PzufyLATjE8HBK-nVDYJwo,1507
+eflowpy/hydraulic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eflowpy/hydrological/__init__.py,sha256=9qUIklAJdn-ic4NzUDqFj96uneI_UiddcDoeiWq6_JM,343
+eflowpy/hydrological/fdc.py,sha256=qxAf4d9u6YNirbDQJsUgZNfZ3JIWJdQUBD7CA5yiYFs,2584
+eflowpy/hydrological/gefc.py,sha256=JDbUyF8PR6oC201XHwpFQ2lGPiduJAOfIF1YNCFI07E,1080
+eflowpy/hydrological/lowflow.py,sha256=PiPcp7rozdLrJj0cM-JwzagOTT01rpMWCEkiDwgPKLo,851
+eflowpy/hydrological/sevenq10.py,sha256=pYODMGFhCSF1wCODQlLkHklb58hOMiJJznIfRcZ5tR8,1354
+eflowpy/hydrological/tennant.py,sha256=95Y6SXZp0seUe2xhbpxLWoJ85nmQdmLzsKe3zIlwqX0,776
+eflowpy/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eflowpy/utils/data_reader.py,sha256=BI7TSMcsnE1ZQLyyDeXbXcF8d0KW0LXZ2KI1b035kpw,1563
+eflowpy/utils/plotting.py,sha256=PBLmRJxrvyS_qky93PQfD48-lLTplh_X5pg2cplrk0o,3405
+eflowpy-0.1.1.dist-info/LICENSE,sha256=4HD9F6NOsJkJJVStsuerj4jGsXUYgNAdO1L7cWaWUwQ,1096
+eflowpy-0.1.1.dist-info/METADATA,sha256=UzST_E4YFkWN1LlrJEp7h2z_o8EtC5q7j1L-IasKdW0,4382
+eflowpy-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+eflowpy-0.1.1.dist-info/top_level.txt,sha256=eOQdBqhKSnNjCRkZqX0l71OfDN6jUj-rYITbfoqR3q8,8
+eflowpy-0.1.1.dist-info/RECORD,,
