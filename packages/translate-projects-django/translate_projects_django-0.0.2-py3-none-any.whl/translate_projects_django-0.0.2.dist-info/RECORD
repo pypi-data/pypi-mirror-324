@@ -1,0 +1,14 @@
+translate_projects_django/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translate_projects_django/api_utils.py,sha256=YcOQz0GQ7HdXwAMyUjOiMGrXA7zL-tSyyjWdRkeiIEc,999
+translate_projects_django/apps.py,sha256=RPMJN-8GUZiilSXuISjdbd_s-p9JLUlodiinKPE5TdA,177
+translate_projects_django/hash_utils.py,sha256=vSwRGHrFQDAZ0Z6qM8S0TbXR8zNiCBch8h2GF8FmZ0M,1104
+translate_projects_django/manage_translations.py,sha256=yo4KWygpESsFD8tea_5oodwKLPJyVL3hXONyM9wOXkA,2711
+translate_projects_django/translation_utils.py,sha256=gu3T-znPe6nRFpps4EG6q3HRd_JidDMOx13z4UafQ1U,952
+translate_projects_django/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translate_projects_django/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translate_projects_django/management/commands/translate.py,sha256=tSe4J74xo87K0y9nB6dlftvWShdncvrxV8SQOd5cMPA,2922
+translate_projects_django/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+translate_projects_django-0.0.2.dist-info/METADATA,sha256=UEqSnCgCQH_0cT6l8Ho8s2tsd2RDpjNiJhtjKccwP4U,2581
+translate_projects_django-0.0.2.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+translate_projects_django-0.0.2.dist-info/top_level.txt,sha256=HLz3eqtioBqaEusK3_bH5MD5qyoHEf_Py0Oi3KGO6og,26
+translate_projects_django-0.0.2.dist-info/RECORD,,
