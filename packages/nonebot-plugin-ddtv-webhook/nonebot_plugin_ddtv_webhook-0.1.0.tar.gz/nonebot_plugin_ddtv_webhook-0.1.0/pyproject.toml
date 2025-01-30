@@ -1,0 +1,27 @@
+[project]
+name = "nonebot-plugin-ddtv-webhook"
+version = "0.1.0"
+description = "处理DDTV WebHook并推送相关信息"
+license = "MIT"
+authors = [{ name = "EffectW" }]
+readme = "README.md"
+keywords = ["nonebot2", "ddtv", "webhook"]
+requires-python = "<4.0,>=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "nonebot2<3.0.0,>=2.0.0",
+    "nonebot-adapter-onebot<3.0.0,>=2.2.2",
+]
+
+[project.urls]
+homepage = "https://github.com/Effect-Wei/nonebot-plugin-ddtv-webhook"
+repository = "https://github.com/Effect-Wei/nonebot-plugin-ddtv-webhook"
+documentation = "https://github.com/Effect-Wei/nonebot-plugin-ddtv-webhook#readme"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
