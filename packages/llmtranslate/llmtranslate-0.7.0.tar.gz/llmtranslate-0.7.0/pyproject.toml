@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "llmtranslate"
+version = "0.7.0"
+description = "A Python library for language detection and translation using OpenAI's GPT-4o."
+authors = ["Adam Pawelek <adam.pwk@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.urls]
+documentation = "https://llm-translate.com/"
+source = "https://github.com/adam-pawelek/llmtranslate"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^8.2.2"
+asyncio = "^3.4.3"
+pytest-asyncio = "^0.23.8"
+aiohttp = "^3.10.9"
+huggingface-hub = "^0.25.1"
+langchain = "^0.3.14"
+langchain-openai = "^0.3.0"
+pytest-mock = "^3.14.0"
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
