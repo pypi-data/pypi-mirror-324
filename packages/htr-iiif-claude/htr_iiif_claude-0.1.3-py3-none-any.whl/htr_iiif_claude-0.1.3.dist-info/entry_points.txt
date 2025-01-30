@@ -1,0 +1,3 @@
+[console_scripts]
+htr=htr_iiif_claude.htr:cli
+
