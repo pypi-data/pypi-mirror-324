@@ -1,0 +1,4 @@
+-e .[all]
+
+black
+isort
