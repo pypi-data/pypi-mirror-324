@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+deepseek_client/__init__.py
+deepseek_client/client.py
+deepseek_client.egg-info/PKG-INFO
+deepseek_client.egg-info/SOURCES.txt
+deepseek_client.egg-info/dependency_links.txt
+deepseek_client.egg-info/top_level.txt
+tests/test_client.py
