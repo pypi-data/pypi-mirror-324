@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: tethysext-workflows
+Version: 0.0.2
+Home-page: 
+Author: 
+Author-email: 
+Requires-Dist: param
+Requires-Dist: geojson
+Requires-Dist: panel
+Requires-Dist: plotly
+Requires-Dist: pyshp
+Requires-Dist: tethys_dataset_services
+Requires-Dist: tethysplatform
+Dynamic: keywords
+Dynamic: requires-dist
