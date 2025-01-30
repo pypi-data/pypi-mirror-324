@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to rasterio/affine’s documentation! &#8212; rasterio/affine development documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=279e0f84" />
+    <script src="_static/documentation_options.js?v=249f3023"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="API" href="api.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="api.html" title="API"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">rasterio/affine development documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to rasterio/affine’s documentation!</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="welcome-to-rasterio-affine-s-documentation">
+<h1>Welcome to rasterio/affine’s documentation!<a class="headerlink" href="#welcome-to-rasterio-affine-s-documentation" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="generated/affine.html">affine</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>This is the documentation of the latest development version at <a class="reference external" href="https://github.com/rasterio/affine">https://github.com/rasterio/affine</a> .</p>
+</section>
+<section id="affine">
+<h1>Affine<a class="headerlink" href="#affine" title="Link to this heading">¶</a></h1>
+<p>Matrices describing 2D affine transformation of the plane.</p>
+<a class="reference external image-reference" href="https://github.com/rasterio/affine/actions/workflows/ci.yml"><img alt="https://github.com/rasterio/affine/actions/workflows/ci.yml/badge.svg?branch=main" src="https://github.com/rasterio/affine/actions/workflows/ci.yml/badge.svg?branch=main" />
+</a>
+<a class="reference external image-reference" href="https://codecov.io/gh/rasterio/affine"><img alt="https://codecov.io/gh/rasterio/affine/branch/main/graph/badge.svg" src="https://codecov.io/gh/rasterio/affine/branch/main/graph/badge.svg" />
+</a>
+<a class="reference external image-reference" href="https://affine.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/affine/badge/?version=latest" />
+</a>
+<p>The Affine package is derived from Casey Duncan’s Planar package. Please see
+the copyright statement in <a class="reference external" href="src/affine.py">src/affine.py</a>.</p>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<p>The 3 x 3 augmented affine transformation matrix for transformations in two
+dimensions is illustrated below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span> <span class="n">x</span><span class="s1">&#39; |   | a  b  c | | x |</span>
+<span class="o">|</span> <span class="n">y</span><span class="s1">&#39; | = | d  e  f | | y |</span>
+<span class="o">|</span> <span class="mi">1</span>  <span class="o">|</span>   <span class="o">|</span> <span class="mi">0</span>  <span class="mi">0</span>  <span class="mi">1</span> <span class="o">|</span> <span class="o">|</span> <span class="mi">1</span> <span class="o">|</span>
+</pre></div>
+</div>
+<p>Matrices can be created by passing the values <code class="docutils literal notranslate"><span class="pre">a,</span> <span class="pre">b,</span> <span class="pre">c,</span> <span class="pre">d,</span> <span class="pre">e,</span> <span class="pre">f</span></code> to the
+<code class="docutils literal notranslate"><span class="pre">affine.Affine</span></code> constructor or by using its <code class="docutils literal notranslate"><span class="pre">identity()</span></code>,
+<code class="docutils literal notranslate"><span class="pre">translation()</span></code>, <code class="docutils literal notranslate"><span class="pre">scale()</span></code>, <code class="docutils literal notranslate"><span class="pre">shear()</span></code>, and <code class="docutils literal notranslate"><span class="pre">rotation()</span></code> class methods.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span><span class="w"> </span><span class="nn">affine</span><span class="w"> </span><span class="kn">import</span> <span class="n">Affine</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Affine</span><span class="o">.</span><span class="n">identity</span><span class="p">()</span>
+<span class="go">Affine(1.0, 0.0, 0.0,</span>
+<span class="go">       0.0, 1.0, 0.0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Affine</span><span class="o">.</span><span class="n">translation</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span>
+<span class="go">Affine(1.0, 0.0, 1.0,</span>
+<span class="go">       0.0, 1.0, 5.0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Affine</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span>
+<span class="go">Affine(2.0, 0.0, 0.0,</span>
+<span class="go">       0.0, 2.0, 0.0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Affine</span><span class="o">.</span><span class="n">shear</span><span class="p">(</span><span class="mf">45.0</span><span class="p">,</span> <span class="mf">45.0</span><span class="p">)</span>  <span class="c1"># decimal degrees</span>
+<span class="go">Affine(1.0, 0.9999999999999999, 0.0,</span>
+<span class="go">       0.9999999999999999, 1.0, 0.0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Affine</span><span class="o">.</span><span class="n">rotation</span><span class="p">(</span><span class="mf">45.0</span><span class="p">)</span>     <span class="c1"># decimal degrees</span>
+<span class="go">Affine(0.7071067811865476, -0.7071067811865475, 0.0,</span>
+<span class="go">       0.7071067811865475, 0.7071067811865476, 0.0)</span>
+</pre></div>
+</div>
+<p>These matrices can be applied to <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code> tuples to obtain transformed
+coordinates <code class="docutils literal notranslate"><span class="pre">(x',</span> <span class="pre">y')</span></code>.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Affine</span><span class="o">.</span><span class="n">translation</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+<span class="go">(2.0, 6.0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Affine</span><span class="o">.</span><span class="n">rotation</span><span class="p">(</span><span class="mf">45.0</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">)</span>
+<span class="go">(1.1102230246251565e-16, 1.414213562373095)</span>
+</pre></div>
+</div>
+<p>They may also be multiplied together to combine transformations.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Affine</span><span class="o">.</span><span class="n">translation</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span> <span class="o">*</span> <span class="n">Affine</span><span class="o">.</span><span class="n">rotation</span><span class="p">(</span><span class="mf">45.0</span><span class="p">)</span>
+<span class="go">Affine(0.7071067811865476, -0.7071067811865475, 1.0,</span>
+<span class="go">       0.7071067811865475, 0.7071067811865476, 5.0)</span>
+</pre></div>
+</div>
+</section>
+<section id="usage-with-gis-data-packages">
+<h2>Usage with GIS data packages<a class="headerlink" href="#usage-with-gis-data-packages" title="Link to this heading">¶</a></h2>
+<p>Georeferenced raster datasets use affine transformations to map from image
+coordinates to world coordinates. The <code class="docutils literal notranslate"><span class="pre">affine.Affine.from_gdal()</span></code> class
+method helps convert <a class="reference external" href="https://gdal.org/user/raster_data_model.html#affine-geotransform">GDAL GeoTransform</a>,
+sequences of 6 numbers in which the first and fourth are the x and y offsets
+and the second and sixth are the x and y pixel sizes.</p>
+<p>Using a GDAL dataset transformation matrix, the world coordinates <code class="docutils literal notranslate"><span class="pre">(x,</span> <span class="pre">y)</span></code>
+corresponding to the top left corner of the pixel 100 rows down from the
+origin can be easily computed.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">geotransform</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">237481.5</span><span class="p">,</span> <span class="mf">425.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">237536.4</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="o">-</span><span class="mf">425.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fwd</span> <span class="o">=</span> <span class="n">Affine</span><span class="o">.</span><span class="n">from_gdal</span><span class="p">(</span><span class="o">*</span><span class="n">geotransform</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">col</span><span class="p">,</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fwd</span> <span class="o">*</span> <span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span>
+<span class="go">(-237481.5, 195036.4)</span>
+</pre></div>
+</div>
+<p>The reverse transformation is obtained using the <code class="docutils literal notranslate"><span class="pre">~</span></code> operator.</p>
+<div class="highlight-pycon notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rev</span> <span class="o">=</span> <span class="o">~</span><span class="n">fwd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rev</span> <span class="o">*</span> <span class="n">fwd</span> <span class="o">*</span> <span class="p">(</span><span class="n">col</span><span class="p">,</span> <span class="n">row</span><span class="p">)</span>
+<span class="go">(0.0, 99.99999999999999)</span>
+</pre></div>
+</div>
+</section>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h2>
+<p>Wheels and source distributions are published to the Python Package Index and
+can be installed by, for example, pip.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">pip install affine</span>
+</pre></div>
+</div>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">¶</a></h2>
+<p>The documentation source in <a class="reference external" href="docs/">docs/</a> is hosted at <a class="reference external" href="https://affine.readthedocs.io/">https://affine.readthedocs.io/</a>.</p>
+</section>
+<section id="development-and-testing">
+<h2>Development and Testing<a class="headerlink" href="#development-and-testing" title="Link to this heading">¶</a></h2>
+<p>The project uses tox and pytest. See the tox.ini and pyproject.toml files for
+configuration of those tools. Affine is largely complete and is not actively
+developed.</p>
+</section>
+</section>
+<section id="changes">
+<h1>CHANGES<a class="headerlink" href="#changes" title="Link to this heading">¶</a></h1>
+<section id="a1-tbd">
+<h2>3.0a1 (TBD)<a class="headerlink" href="#a1-tbd" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Type hint annotations for functions and methods are complete (#121).</p></li>
+<li><p>Affine raises ValueError if initialized with values for g, h, and i that are
+not 0.0, 0.0, and 1.0, respectively (#117).</p></li>
+<li><p>Python version support was changed to 3.9+ (#110).</p></li>
+<li><p>Switch from namedtuple to attrs for implementation of the Affine class and
+use functools.cached_property(), which absolutely requires Python 3.8+
+(#111).</p></li>
+<li><p>Source was moved to a single-module affine.py in the src directory (#112).</p></li>
+<li><p>Add numpy __array__ interface (#108).</p></li>
+</ul>
+</section>
+<section id="id1">
+<h2>2.4.0 (2023-01-19)<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Package is marked as Python 3 only, two instances of “%” string formatting
+are replaced by f-strings (#96).</p></li>
+</ul>
+</section>
+<section id="b1-2023-01-18">
+<h2>2.4b1 (2023-01-18)<a class="headerlink" href="#b1-2023-01-18" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Elimination of Python 2/3 compatibility code in __gt__ (#94).</p></li>
+<li><p>Addition of optional keyword arguments for __new__, solving an issue with
+Dask (#92).</p></li>
+<li><p>Addition of some type hints for float arguments and return types (#87).</p></li>
+<li><p>Python version support is now 3.7-3.11 (#82).</p></li>
+<li><p>Faster __new__ and from_gdal methods (#78).</p></li>
+</ul>
+</section>
+<section id="id2">
+<h2>2.3.1 (2022-03-24)<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li><p>Return NotImplemented for both ValueError and TypeError in __mul__ to support
+fallback to __rmul__ in more cases (gh-71).</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>2.3.0 (2019-09-04)<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
+<p>Deprecations:</p>
+<ul class="simple">
+<li><p>Right multiplication like vector * matrix is deprecated and will raise
+AffineError in version 3.0.0.</p></li>
+</ul>
+<p>Bug fixes:</p>
+<ul class="simple">
+<li><p>Change signature of Affine constructor to help users of PyCharm (#45).</p></li>
+<li><p>The Affine class docstring has been improved.</p></li>
+</ul>
+</section>
+<section id="id4">
+<h2>2.2.2 (2018-12-20)<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Affine.itransform computed the wrong results for arrays with rotation or
+shear (#40). This is fixed (#41).</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>2.2.1 (2018-06-04)<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Docstring improvements (#37).</p></li>
+</ul>
+</section>
+<section id="id6">
+<h2>2.2.0 (2018-03-20)<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Addition of permutation matrix (#35).</p></li>
+</ul>
+</section>
+<section id="id7">
+<h2>2.1.0 (2017-07-12)<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Addition of new <code class="docutils literal notranslate"><span class="pre">eccentricity</span></code> and <code class="docutils literal notranslate"><span class="pre">rotation_angle</span></code> properties (#28).</p></li>
+</ul>
+</section>
+<section id="post1-2016-05-20">
+<h2>2.0.0.post1 (2016-05-20)<a class="headerlink" href="#post1-2016-05-20" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>This is the final 2.0.0 release. The post-release version segment is used
+because we accidentally uploaded a 2.0.0 to PyPI before the beta releases
+below.</p></li>
+</ul>
+</section>
+<section id="b2-2016-05-16">
+<h2>2.0b2 (2016-05-16)<a class="headerlink" href="#b2-2016-05-16" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Bug fix: restore <code class="docutils literal notranslate"><span class="pre">Affine</span> <span class="pre">__rmul__</span></code> even though it permits dubious
+vector * matrix expressions (#27).</p></li>
+</ul>
+</section>
+<section id="b1-2016-05-16">
+<h2>2.0b1 (2016-05-16)<a class="headerlink" href="#b1-2016-05-16" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Breaking change: precision used in properties like <code class="docutils literal notranslate"><span class="pre">is_conformal</span></code> is no
+longer a global module attribute, but an Affine class or instance attribute
+(#19, #20).</p></li>
+<li><p>Breaking change: <code class="docutils literal notranslate"><span class="pre">is_degenerate</span></code> property is now exact and not subject to
+a level of precision (#23).</p></li>
+<li><p>Breaking change: we have reversed our sense of rotation, a positive angle
+now rotates a point counter-clockwise about the pivot point (#25).</p></li>
+<li><p>Bug fix: a bug in matrix-vector multiplication had been reversing the
+direction of rotation and is now fixed (#25).</p></li>
+</ul>
+</section>
+<section id="id8">
+<h2>1.3.0 (2016-04-08)<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>is_degenerate predicate is precise, not approximate (#22).</p></li>
+</ul>
+</section>
+<section id="id9">
+<h2>1.2.0 (2015-06-01)<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Enable pickling of Affine objects (#14).</p></li>
+<li><p>Sort out the mixed up shearing parameters (#12).</p></li>
+</ul>
+</section>
+<section id="id10">
+<h2>1.1.0 (2014-11-13)<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Add loadsw/dumpsw world file utilities (#6).</p></li>
+<li><p>Travis-CI and Coveralls config and web hooks added (#10).</p></li>
+</ul>
+</section>
+<section id="id11">
+<h2>1.0.1 (2014-10-20)<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>set_epsilon() now actually sets module EPSILON (#4).</p></li>
+<li><p>add AUTHORS.txt.</p></li>
+</ul>
+</section>
+<section id="id12">
+<h2>1.0 (2014-05-27)<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Code ported from Casey Duncan’s Planar package.</p></li>
+<li><p>from_gdal() class method added.</p></li>
+</ul>
+</section>
+</section>
+<section id="authors">
+<h1>Authors<a class="headerlink" href="#authors" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p>Denis Rykov</p></li>
+<li><p>Juan Luis Cano Rodríguez</p></li>
+<li><p>Kevin Wurster</p></li>
+<li><p>Kirill Kouzoubov</p></li>
+<li><p>Loïc Dutrieux</p></li>
+<li><p>Michael Wess</p></li>
+<li><p>Mike Taves</p></li>
+<li><p>Nick Maxwell</p></li>
+<li><p>Rotzbua</p></li>
+<li><p>Ryan Grout</p></li>
+<li><p>Sean Gillies</p></li>
+<li><p>Steven Ring</p></li>
+<li><p>Stuart Axon</p></li>
+<li><p>Vincent Sarago</p></li>
+</ul>
+</section>
+<section id="license">
+<h1>License<a class="headerlink" href="#license" title="Link to this heading">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2014</span><span class="p">,</span> <span class="n">Sean</span> <span class="n">C</span><span class="o">.</span> <span class="n">Gillies</span>
+<span class="n">All</span> <span class="n">rights</span> <span class="n">reserved</span><span class="o">.</span>
+
+<span class="n">Redistribution</span> <span class="ow">and</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">source</span> <span class="ow">and</span> <span class="n">binary</span> <span class="n">forms</span><span class="p">,</span> <span class="k">with</span> <span class="ow">or</span> <span class="n">without</span>
+<span class="n">modification</span><span class="p">,</span> <span class="n">are</span> <span class="n">permitted</span> <span class="n">provided</span> <span class="n">that</span> <span class="n">the</span> <span class="n">following</span> <span class="n">conditions</span> <span class="n">are</span> <span class="n">met</span><span class="p">:</span>
+
+    <span class="o">*</span> <span class="n">Redistributions</span> <span class="n">of</span> <span class="n">source</span> <span class="n">code</span> <span class="n">must</span> <span class="n">retain</span> <span class="n">the</span> <span class="n">above</span> <span class="n">copyright</span>
+      <span class="n">notice</span><span class="p">,</span> <span class="n">this</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">conditions</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">following</span> <span class="n">disclaimer</span><span class="o">.</span>
+    <span class="o">*</span> <span class="n">Redistributions</span> <span class="ow">in</span> <span class="n">binary</span> <span class="n">form</span> <span class="n">must</span> <span class="n">reproduce</span> <span class="n">the</span> <span class="n">above</span> <span class="n">copyright</span>
+      <span class="n">notice</span><span class="p">,</span> <span class="n">this</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">conditions</span> <span class="ow">and</span> <span class="n">the</span> <span class="n">following</span> <span class="n">disclaimer</span> <span class="ow">in</span> <span class="n">the</span>
+      <span class="n">documentation</span> <span class="ow">and</span><span class="o">/</span><span class="ow">or</span> <span class="n">other</span> <span class="n">materials</span> <span class="n">provided</span> <span class="k">with</span> <span class="n">the</span> <span class="n">distribution</span><span class="o">.</span>
+    <span class="o">*</span> <span class="n">Neither</span> <span class="n">the</span> <span class="n">name</span> <span class="n">of</span> <span class="n">Sean</span> <span class="n">C</span><span class="o">.</span> <span class="n">Gillies</span> <span class="n">nor</span> <span class="n">the</span> <span class="n">names</span> <span class="n">of</span>
+      <span class="n">its</span> <span class="n">contributors</span> <span class="n">may</span> <span class="n">be</span> <span class="n">used</span> <span class="n">to</span> <span class="n">endorse</span> <span class="ow">or</span> <span class="n">promote</span> <span class="n">products</span> <span class="n">derived</span> <span class="kn">from</span>
+<span class="w">      </span><span class="nn">this</span> <span class="n">software</span> <span class="n">without</span> <span class="n">specific</span> <span class="n">prior</span> <span class="n">written</span> <span class="n">permission</span><span class="o">.</span>
+
+<span class="n">THIS</span> <span class="n">SOFTWARE</span> <span class="n">IS</span> <span class="n">PROVIDED</span> <span class="n">BY</span> <span class="n">THE</span> <span class="n">COPYRIGHT</span> <span class="n">HOLDERS</span> <span class="n">AND</span> <span class="n">CONTRIBUTORS</span> <span class="s2">&quot;AS IS&quot;</span>
+<span class="n">AND</span> <span class="n">ANY</span> <span class="n">EXPRESS</span> <span class="n">OR</span> <span class="n">IMPLIED</span> <span class="n">WARRANTIES</span><span class="p">,</span> <span class="n">INCLUDING</span><span class="p">,</span> <span class="n">BUT</span> <span class="n">NOT</span> <span class="n">LIMITED</span> <span class="n">TO</span><span class="p">,</span> <span class="n">THE</span>
+<span class="n">IMPLIED</span> <span class="n">WARRANTIES</span> <span class="n">OF</span> <span class="n">MERCHANTABILITY</span> <span class="n">AND</span> <span class="n">FITNESS</span> <span class="n">FOR</span> <span class="n">A</span> <span class="n">PARTICULAR</span> <span class="n">PURPOSE</span>
+<span class="n">ARE</span> <span class="n">DISCLAIMED</span><span class="o">.</span> <span class="n">IN</span> <span class="n">NO</span> <span class="n">EVENT</span> <span class="n">SHALL</span> <span class="n">THE</span> <span class="n">COPYRIGHT</span> <span class="n">OWNER</span> <span class="n">OR</span> <span class="n">CONTRIBUTORS</span> <span class="n">BE</span>
+<span class="n">LIABLE</span> <span class="n">FOR</span> <span class="n">ANY</span> <span class="n">DIRECT</span><span class="p">,</span> <span class="n">INDIRECT</span><span class="p">,</span> <span class="n">INCIDENTAL</span><span class="p">,</span> <span class="n">SPECIAL</span><span class="p">,</span> <span class="n">EXEMPLARY</span><span class="p">,</span> <span class="n">OR</span>
+<span class="n">CONSEQUENTIAL</span> <span class="n">DAMAGES</span> <span class="p">(</span><span class="n">INCLUDING</span><span class="p">,</span> <span class="n">BUT</span> <span class="n">NOT</span> <span class="n">LIMITED</span> <span class="n">TO</span><span class="p">,</span> <span class="n">PROCUREMENT</span> <span class="n">OF</span>
+<span class="n">SUBSTITUTE</span> <span class="n">GOODS</span> <span class="n">OR</span> <span class="n">SERVICES</span><span class="p">;</span> <span class="n">LOSS</span> <span class="n">OF</span> <span class="n">USE</span><span class="p">,</span> <span class="n">DATA</span><span class="p">,</span> <span class="n">OR</span> <span class="n">PROFITS</span><span class="p">;</span> <span class="n">OR</span> <span class="n">BUSINESS</span>
+<span class="n">INTERRUPTION</span><span class="p">)</span> <span class="n">HOWEVER</span> <span class="n">CAUSED</span> <span class="n">AND</span> <span class="n">ON</span> <span class="n">ANY</span> <span class="n">THEORY</span> <span class="n">OF</span> <span class="n">LIABILITY</span><span class="p">,</span> <span class="n">WHETHER</span> <span class="n">IN</span>
+<span class="n">CONTRACT</span><span class="p">,</span> <span class="n">STRICT</span> <span class="n">LIABILITY</span><span class="p">,</span> <span class="n">OR</span> <span class="n">TORT</span> <span class="p">(</span><span class="n">INCLUDING</span> <span class="n">NEGLIGENCE</span> <span class="n">OR</span> <span class="n">OTHERWISE</span><span class="p">)</span>
+<span class="n">ARISING</span> <span class="n">IN</span> <span class="n">ANY</span> <span class="n">WAY</span> <span class="n">OUT</span> <span class="n">OF</span> <span class="n">THE</span> <span class="n">USE</span> <span class="n">OF</span> <span class="n">THIS</span> <span class="n">SOFTWARE</span><span class="p">,</span> <span class="n">EVEN</span> <span class="n">IF</span> <span class="n">ADVISED</span> <span class="n">OF</span> <span class="n">THE</span>
+<span class="n">POSSIBILITY</span> <span class="n">OF</span> <span class="n">SUCH</span> <span class="n">DAMAGE</span><span class="o">.</span>
+</pre></div>
+</div>
+</section>
+<section id="api">
+<h1>API<a class="headerlink" href="#api" title="Link to this heading">¶</a></h1>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+</tbody>
+</table>
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="#">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Welcome to rasterio/affine’s documentation!</a></li>
+<li><a class="reference internal" href="#affine">Affine</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#usage-with-gis-data-packages">Usage with GIS data packages</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#documentation">Documentation</a></li>
+<li><a class="reference internal" href="#development-and-testing">Development and Testing</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#changes">CHANGES</a><ul>
+<li><a class="reference internal" href="#a1-tbd">3.0a1 (TBD)</a></li>
+<li><a class="reference internal" href="#id1">2.4.0 (2023-01-19)</a></li>
+<li><a class="reference internal" href="#b1-2023-01-18">2.4b1 (2023-01-18)</a></li>
+<li><a class="reference internal" href="#id2">2.3.1 (2022-03-24)</a></li>
+<li><a class="reference internal" href="#id3">2.3.0 (2019-09-04)</a></li>
+<li><a class="reference internal" href="#id4">2.2.2 (2018-12-20)</a></li>
+<li><a class="reference internal" href="#id5">2.2.1 (2018-06-04)</a></li>
+<li><a class="reference internal" href="#id6">2.2.0 (2018-03-20)</a></li>
+<li><a class="reference internal" href="#id7">2.1.0 (2017-07-12)</a></li>
+<li><a class="reference internal" href="#post1-2016-05-20">2.0.0.post1 (2016-05-20)</a></li>
+<li><a class="reference internal" href="#b2-2016-05-16">2.0b2 (2016-05-16)</a></li>
+<li><a class="reference internal" href="#b1-2016-05-16">2.0b1 (2016-05-16)</a></li>
+<li><a class="reference internal" href="#id8">1.3.0 (2016-04-08)</a></li>
+<li><a class="reference internal" href="#id9">1.2.0 (2015-06-01)</a></li>
+<li><a class="reference internal" href="#id10">1.1.0 (2014-11-13)</a></li>
+<li><a class="reference internal" href="#id11">1.0.1 (2014-10-20)</a></li>
+<li><a class="reference internal" href="#id12">1.0 (2014-05-27)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#authors">Authors</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#api">API</a></li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="api.html"
+                          title="next chapter">API</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="api.html" title="API"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">rasterio/affine development documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Welcome to rasterio/affine’s documentation!</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2023, Sean Gillies.
+      Last updated on Jan 25, 2025.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+  </body>
+</html>

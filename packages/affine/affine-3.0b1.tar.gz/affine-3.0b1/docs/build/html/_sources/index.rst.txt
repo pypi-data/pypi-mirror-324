@@ -1,0 +1,34 @@
+Welcome to rasterio/affine's documentation!
+===========================================
+
+.. toctree::
+
+   ../../README
+   api
+
+This is the documentation of the latest development version at https://github.com/rasterio/affine .
+
+.. include:: ../../README.rst
+.. include:: ../../CHANGES.txt
+.. include:: ../../AUTHORS.txt
+
+License
+=======
+
+.. include:: ../../LICENSE.txt
+   :literal:
+
+API
+===
+
+.. autosummary::
+   :toctree: generated
+
+   lumache
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
