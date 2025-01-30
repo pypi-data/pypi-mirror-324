@@ -1,0 +1,8 @@
+pandas
+numpy
+unidecode
+ftplib
+re
+os
+numpy
+appdirs
