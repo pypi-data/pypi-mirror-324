@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  db_mariadb:
+    image: mariadb:{{ db_version|default('10.5') }}
+    volumes:
+      - mariadb_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "{{ password|default('admin') }}"
+      MYSQL_DATABASE: "{{ db_name|default('my_database') }}"
+    networks:
+      - backend
+    restart: unless-stopped
+
+  django:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      DB_ENGINE: "django.db.backends.mysql"
+      DB_NAME: "{{ db_name|default('my_database') }}"
+      DB_USER: "{{ admin|default('admin') }}"
+      DB_PASSWORD: "{{ admin|default('admin') }}"
+      DB_HOST: "db_mariadb"
+      DB_PORT: "3306"
+    depends_on:
+      - db_mariadb
+    ports:
+      - "8000:8000"
+    command: ["python", "manage.py", "migrate"]
+    restart: unless-stopped
+
+volumes:
+  mariadb_data:
+
+networks:
+  backend:
+    driver: bridge

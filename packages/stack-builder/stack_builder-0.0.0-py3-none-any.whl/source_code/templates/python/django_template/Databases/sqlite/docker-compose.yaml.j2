@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  django:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      DB_ENGINE: "django.db.backends.sqlite3"
+      DB_NAME: "local_db.sqlite3"
+    ports:
+      - "8000:8000"
+    command: ["python", "manage.py", "migrate"]
+    restart: unless-stopped

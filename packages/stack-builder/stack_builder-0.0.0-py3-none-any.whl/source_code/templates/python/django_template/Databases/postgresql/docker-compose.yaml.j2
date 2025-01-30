@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  db_postgres:
+    image: postgres:{{ db_version|default('14') }}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: "{{ db_user|default('admin') }}"
+      POSTGRES_PASSWORD: "{{ db_password|default('admin') }}"
+      POSTGRES_DB: "{{ db_name|default('my_database') }}"
+    restart: unless-stopped
+
+  django:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      DB_ENGINE: "django.db.backends.postgresql"
+      DB_NAME: "{{ db_name|default('my_database') }}"
+      DB_USER: "{{ db_user|default('admin') }}"
+      DB_PASSWORD: "{{ db_password|default('admin') }}"
+      DB_HOST: "db_postgres"
+      DB_PORT: "{{ db_port|default('5432') }}"
+    depends_on:
+      - db_postgres
+    ports:
+      - "{{ port|default('8000') }}:8000"
+    command: >
+      sh -c "python manage.py migrate"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
