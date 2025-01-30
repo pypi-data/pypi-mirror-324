@@ -1,0 +1,6 @@
+ceda_es_client/__init__.py,sha256=6NhhlSkpTniFmThEKgjGWGy9R9ATDzGnfHX2o79pU6o,1376
+ceda_es_client/root-ca.pem,sha256=VwcN21-IiaosFGYQyof7gSporHSj_57K_TuSUr_8f_8,1549
+ceda_elasticsearch_client-1.0.0.dist-info/METADATA,sha256=_zaLIA3xgeJDCsv6VEI4Kr5Lr7yMI1itOtMDKzKPJ-M,975
+ceda_elasticsearch_client-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ceda_elasticsearch_client-1.0.0.dist-info/top_level.txt,sha256=KtquWLrQTB4dmLjCkrBsc2aCXL6A5xkChIGLkfCKcrw,15
+ceda_elasticsearch_client-1.0.0.dist-info/RECORD,,
