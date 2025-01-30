@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: quantfe
+Version: 0.1.0
+Summary: A Python package for quantitative finance
+Home-page: https://github.com/chanstar9/QuantFE
+License: MIT
+Author: chanstar9
+Author-email: traintion9@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ipython (>=8.26.0,<9.0.0)
+Requires-Dist: matplotlib (>=3.9.1,<4.0.0)
+Requires-Dist: mysql-connector-python (>=9.1.0,<10.0.0)
+Requires-Dist: numba (>=0.60.0,<0.61.0)
+Requires-Dist: numpy (>=2.0.0,<3.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: prettytable (>=3.10.0,<4.0.0)
+Requires-Dist: quantlib (>=1.35,<2.0)
+Requires-Dist: scipy (>=1.14.0,<2.0.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Project-URL: Repository, https://github.com/chanstar9/QuantFE
+Description-Content-Type: text/markdown
+
+# QuantFE
+
+## VALUATION = PRODUCT + MODEL + MARKET
+
+* market data is from the TotalMarketData
+
