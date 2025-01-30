@@ -1,0 +1,63 @@
+name: Benchmark
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+      - epic/*
+  workflow_dispatch:
+    inputs:
+      specific-pip-packages:
+        description: Run benchmarks with specific pip packages
+        required: false
+        type: string
+
+jobs:
+  benchmark:
+    name: Performance regression
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v5
+      - name: Run pytest-benchmark
+        run: |
+          uv run \
+            --group test \
+            --no-dev \
+            pytest \
+              -k benchmark \
+              --benchmark-json output.json \
+              --durations=0
+        working-directory: benchmarks
+      - name: Store result
+        if: github.event_name == 'push'
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: TensorWaves benchmark results
+          tool: pytest
+          output-file-path: benchmarks/output.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          gh-pages-branch: benchmark-results
+          benchmark-data-dir-path: ""
+          auto-push: true
+      - name: Warn on performance decrease
+        if: github.event_name == 'pull_request'
+        uses: benchmark-action/github-action-benchmark@v1
+        with:
+          name: TensorWaves benchmark results
+          tool: pytest
+          output-file-path: benchmarks/output.json
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          gh-pages-branch: benchmark-results
+          benchmark-data-dir-path: ""
+          auto-push: false
+          comment-on-alert: true
+          fail-on-alert: true
