@@ -1,0 +1,15 @@
+requests>2.27.0
+dacite!=1.9.0,>=1.7.0
+packaging>24.0
+
+[async]
+aiohttp
+
+[pydantic]
+pydantic>1.10.0
+
+[test]
+tox>=4
+pytest
+pytest-cov
+aiohttp
