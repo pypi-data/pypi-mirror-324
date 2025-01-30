@@ -1,0 +1,9 @@
+cobisolv/__init__.py,sha256=GsRmOKB9k7jmotbN4uMmT8WARE858YS7BcEeym--lOs,51
+cobisolv/demo.py,sha256=UPkLt8gQVIweeZF5Eq7Tw9ogZkx9IipBsnrUK4YrlXA,1805
+cobisolv/formulate.py,sha256=HOvo7naeivp1KdGsavuxfAtBsuBi9fF24fPStCKlS0k,22238
+cobisolv/optimizationProblem.py,sha256=T1eZlA_858DuY3nzigM1UaAvtwrn5y-er3ZK8D3g2O4,2455
+cobisolv/test_optimizationProblem.py,sha256=gz_zpGQyA-4yGmlnEphfBUMqsMSUv6mztMIhOkWTgyQ,4690
+Cobisolv-0.1.dist-info/METADATA,sha256=2b-gsKzbWMpGsGrneeAHdQJyVq_pFsOTQKssCVJr5Vw,544
+Cobisolv-0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+Cobisolv-0.1.dist-info/top_level.txt,sha256=2dJ99Emt-cexbkvlbD3IFrKLUBMi4Jg5vhCCQ1-rk1s,9
+Cobisolv-0.1.dist-info/RECORD,,
