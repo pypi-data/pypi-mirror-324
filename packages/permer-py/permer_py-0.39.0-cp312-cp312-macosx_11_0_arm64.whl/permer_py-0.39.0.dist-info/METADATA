@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: permer_py
+Version: 0.39.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Summary: Permer Python package
+License: private
+Requires-Python: >=3.9
+Project-URL: Source Code, https://github.com/ouihelp/permer
