@@ -1,0 +1,15 @@
+cbers4asat/__init__.py,sha256=Hcnt0_uRSD0yXb3Q0B89ZK4YYCAojXmWw46b7rUbM3s,50
+cbers4asat/cbers4asat.py,sha256=jNheVg8Rbj4bPmvxZi7GOdyYkCtm8PZcQUW_8jBDVAM,9272
+cbers4asat/cbers4a/__init__.py,sha256=Z-LJaUTE6iDe2gOty0VFoYnfcje50CphsFrjZsqOOPk,144
+cbers4asat/cbers4a/collection.py,sha256=xe1BU4KUZ6wXJXZzzt-ANW_NudwG-PyC-WZm5Qz8_WA,977
+cbers4asat/cbers4a/item.py,sha256=cPyNh2_NFVYN8q8ebF0zRYWoqfVbPj_3NkYugJB88IM,5690
+cbers4asat/cbers4a/itemCollection.py,sha256=uZEXV_rZ0cV7yb21bzDP-tJx736xELwKQ7p3uQGPj18,2505
+cbers4asat/cbers4a/search.py,sha256=Cjcfj9E7ojlabbbINfhxecDf7YzE_raLH0ao11FK0aI,5183
+cbers4asat/tools/__init__.py,sha256=d0UB2k2yjxMtlPz6m3B0d3JQElMJqR5Leg2lVFU77QM,122
+cbers4asat/tools/geometry.py,sha256=9iLdkGDcmVJw1kCLWx5DE4MlyoafQHoe2INOQKAFMAE,295
+cbers4asat/tools/grid.py,sha256=251DL4Oyw_u_IRmwjDzqEk3DH5XnGW8dE9QmJDznOts,1660
+cbers4asat/tools/image.py,sha256=iqRZNLzvgcq7M-xFJQbwyLHTV0Mvf63SvlGxJY5UC9A,5597
+cbers4asat-0.8.1.dist-info/METADATA,sha256=Biil2bK03757_StselC5Yg0uNyF4JdFkOrXvLPE_tEM,8305
+cbers4asat-0.8.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cbers4asat-0.8.1.dist-info/licenses/LICENSE,sha256=33yqPV-4VZVYCR8aECCp8HFFZSrscjvJkCWVs63ogEg,1103
+cbers4asat-0.8.1.dist-info/RECORD,,
