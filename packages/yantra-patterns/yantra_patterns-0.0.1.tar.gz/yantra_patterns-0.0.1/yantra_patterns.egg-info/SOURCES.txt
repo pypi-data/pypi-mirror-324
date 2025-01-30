@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+yantra-patterns/__init__.py
+yantra_patterns.egg-info/PKG-INFO
+yantra_patterns.egg-info/SOURCES.txt
+yantra_patterns.egg-info/dependency_links.txt
+yantra_patterns.egg-info/requires.txt
+yantra_patterns.egg-info/top_level.txt
