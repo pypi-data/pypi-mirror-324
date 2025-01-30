@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "data-source-faker"
+version = "0.0.1"
+description = ""
+authors = ["dfunto <dadutra2@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+faker = "^33.1.0"
+boto3 = "^1.35.81"
+pandas = "^2.2.3"
+schedule = "^1.2.2"
+pyarrow = "^18.1.0"
+fastparquet = "^2024.11.0"
+pyyaml = "^6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.2"
+black = "^24.2.0"
+isort = "^5.13.2"
+typing-extensions = "^4.12.2"
+databricks-connect = "~15.4"
+
+[tool.pytest.ini_options]
+log_cli = true
+addopts = "-rA -s -v --log-level=INFO"
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
