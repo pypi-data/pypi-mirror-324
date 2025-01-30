@@ -1,0 +1,10 @@
+wall_of_text_api_wrapper/__init__.py,sha256=4_W-HOaKbPyqsvzoYQnhEL4wZ9we-v3b2wqiaBZrHls,395
+wall_of_text_api_wrapper/api_versions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wall_of_text_api_wrapper/api_versions/v1/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wall_of_text_api_wrapper/api_versions/v1/dataclasses.py,sha256=JjtpukVWveWErN_kPF3fQP-j0h6MSPziQcJsruxZF7s,2113
+wall_of_text_api_wrapper/api_versions/v1/wrapper.py,sha256=e2xh8AubCCcfifnEelk7EzmfdsD85wjELJGChj0gIbY,4806
+wall_of_text_api_wrapper-1.0.1.dist-info/LICENSE.txt,sha256=UcNC3TN9dx-TGPSFvKbFFQCEyQUkOFy0OaA4BJ3IGxs,1065
+wall_of_text_api_wrapper-1.0.1.dist-info/METADATA,sha256=s08sN2V14HiqYm1wkSIKv7-h0t_5d2UG35QPMAkXZRs,2446
+wall_of_text_api_wrapper-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+wall_of_text_api_wrapper-1.0.1.dist-info/top_level.txt,sha256=jkn2yeL4g54YzyS5lMfOfPiXfHwVjtWLg2OaqoPxil8,25
+wall_of_text_api_wrapper-1.0.1.dist-info/RECORD,,
