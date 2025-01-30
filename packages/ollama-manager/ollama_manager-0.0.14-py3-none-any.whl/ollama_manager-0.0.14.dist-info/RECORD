@@ -1,0 +1,15 @@
+ollama_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ollama_manager/app.py,sha256=3_Otlc2QCTn7VyHACR-ncC_C3qmRVjcZl9GYnoGAssg,375
+ollama_manager/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ollama_manager/commands/delete.py,sha256=ZSlzp9NwURdTKrNC4JXfzKYdHM0onw4FhnDpvSctGdg,1421
+ollama_manager/commands/pull.py,sha256=iW-hLCuNAokOsYeNt76jfrUeeWPPDppjzD21AYRQOj4,10604
+ollama_manager/commands/run.py,sha256=zCwEW2lNea9LCJUypJ90AZe8HbBPHnwbVlbe1VCOrfs,1817
+ollama_manager/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ollama_manager/ui/image_chat.py,sha256=MkY_x6apRZaqhnUBe1B_fau0HTJ95qQJX32UY5BU2QE,3757
+ollama_manager/ui/text_chat.py,sha256=CHbgXhLI_0J43_DGXdu7uUBDad0mONArVJmK9uhE_KI,3184
+ollama_manager/utils/__init__.py,sha256=od7EbwrvL6zqLmyUOpNGx6nUbMltjN5ZebJYfNBw5Ns,3139
+ollama_manager-0.0.14.dist-info/METADATA,sha256=3uNREwJ9ySlLoTd27zkI2wfxSUEt_J4qGbhdqhgBPRQ,2484
+ollama_manager-0.0.14.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ollama_manager-0.0.14.dist-info/entry_points.txt,sha256=XbOJBVT_hZSaNWE1ngbMwu7JloSQH7bjXCI4bhGqrFE,47
+ollama_manager-0.0.14.dist-info/top_level.txt,sha256=crfK5ZOr047NVghr0YJ2I3Pa1ErNw_lIRRNymTbqYxs,15
+ollama_manager-0.0.14.dist-info/RECORD,,
