@@ -1,0 +1,17 @@
+cht_tide/__init__.py,sha256=eLHIAlZ9jEPqNT9deoX4Eo3suG81jq4zBZfihEyFahk,374
+cht_tide/astro.py,sha256=sCgH8Wajyva49ISt7CSA7ngat_SWWhCAAOZUN2WH8mQ,7671
+cht_tide/constituent.py,sha256=8S-movc-akdzrzdLRNsChtTw_vsROAOyBOjBJsTGB5U,7420
+cht_tide/database.py,sha256=RJGs6h_WuD0m2EnnvM3haLdb_t0Xwkq61a3UIDLtGHw,6215
+cht_tide/fes2014.py,sha256=1xjcNS6zt8aMLaMtqsgYlPH5I3dMVIIBXJ6NtKYjvy4,2662
+cht_tide/model.py,sha256=FgwBZhwAXtdjOIcS_2rJqHDbMXgdGtuVUcPXLnl0P2I,5072
+cht_tide/nodal_corrections.py,sha256=-gM6AugOEJ2zypO6gbPpJ2M6m0NmyZ-3NdJqnnQCNSU,5299
+cht_tide/read_bca.py,sha256=sCj2akUwDXlcCfuiYS62D5fFKOWp8wdPdVXUlSs3zBY,5154
+cht_tide/tide.py,sha256=rdp0b8X2ihde4ONt1y7fgLP1jhgCJU3vZlW5dOQaU6Y,18107
+cht_tide/tide_predict.py,sha256=ntKm7XpaMfyP1qWRiEVgXqYHtuskbt_sbS2DNq_kOzE,1928
+cht_tide/tide_stations.py,sha256=hKLZjrFav4HAQwsApeYchitJ8JCtmraGOprVp_caI3k,13404
+cht_tide-0.1.1.dist-info/LICENSE,sha256=xeJd7YEiqqByGYzNDdrXlopaX2MK0RTvulpWZ_7vQjs,1060
+cht_tide-0.1.1.dist-info/METADATA,sha256=AbWh4garNUYsrRibDTbCOJFUtRyZ9gBJz2obPuqdQKQ,816
+cht_tide-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+cht_tide-0.1.1.dist-info/top_level.txt,sha256=nU2D1b2V7kIwLNzFGIt9Yk48lWTr25tDpAY3DBWCwIU,9
+cht_tide-0.1.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+cht_tide-0.1.1.dist-info/RECORD,,
