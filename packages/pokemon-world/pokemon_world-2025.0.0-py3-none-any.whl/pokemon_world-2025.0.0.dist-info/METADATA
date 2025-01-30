@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: pokemon-world
+Version: 2025.0.0
+Summary: Lovely Pokemon! Wonderful Pokemon! Gotta Catch Them All
+Project-URL: Documentation, https://github.com/lorenzodelmedico/PokemonWorld/README.md
+Project-URL: Repository, https://github.com/lorenzodelmedico/PokemonWorld
+Author-email: lorenzo del medico <lorenzodelmedico@gmail.com>
+Maintainer-email: lorenzo del medico <lorenzodelmedico@gmail.com>
+License-Expression: MIT
+License-File: LICENCE.txt
+Keywords: Lorenzodelmedico,Pikachu,Pokemon,Sacha
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.8
+Requires-Dist: flask>2.0
+Provides-Extra: cli
+Requires-Dist: click; extra == 'cli'
+Description-Content-Type: text/markdown
+
+# PokéMaster 🌀 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+![App Preview](./static/images/pokemon_retro_logo.png)
+
+A modern Pokémon encyclopedia with real-time search, advanced filters, and detailed analytics.
+
+## ✨ Features
+- ⚡ Instant search with debounce
+- 🌓 Auto-switching dark/light mode
+- 📊 Interactive stat visualizations
+- 🔖 Favorites system with local storage
+- 📱 Mobile-first responsive design
+- 🗂️ Type/Generation/Habitat filters
+- 🎮 Game version compatibility tags
+
+## 🚀 Installation
+```bash
+git clone https://github.com/lorenzodelmedico/pokemaster.git
+cd pokemaster
+npm install
+npm run dev
