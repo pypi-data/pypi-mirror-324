@@ -1,0 +1,28 @@
+[project]
+name = "quotect"
+description = "state-of-the-art, ready to use software for quotation detection in German texts"
+version = "1.0.0"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  { name="Fynn Petersen-Frey" },
+]
+readme = "README.md"
+dependencies = [
+    "accelerate",
+    "transformers[torch]",
+    "torch",
+    "argparse_dataclass",
+    "sentencepiece",
+    "scipy",
+    "numpy",
+    "protobuf",
+    "spacy",
+]
+
+[tool.setuptools.packages]
+find = {}
+
+
+[project.urls]
+Repository = "https://github.com/fynnos/quotect.git"
