@@ -1,0 +1,2 @@
+[console_scripts]
+imgs_exec_cli = rcsb.workflow.cli.ImgExec:main
