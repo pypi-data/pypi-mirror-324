@@ -1,0 +1,14 @@
+watch_webcam/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watch_webcam/cli.py,sha256=ehIvv75E7T4BncjUb_Gbw-FpKgx5Lzg1OX-UCKrfk-M,1421
+watch_webcam/video.py,sha256=y4nT9l3jrRZhGtcc-YVM5kQ1UhXeqidVoHxOBLECmac,1426
+watch_webcam/actions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+watch_webcam/actions/base.py,sha256=ZoIB71BnyC9g3-nZjryE2I7iHkp1kU6zOg2dD_bQtR8,428
+watch_webcam/actions/light.py,sha256=xWQtiEaiGC3f41sPSReUYbAdria3aS1iFFKM3qXZCbY,1048
+watch_webcam/actions/media.py,sha256=87pRApQWiJCa-x8hhGhgP1aHvlE7fdvZ5dQkzV673EQ,1084
+watch_webcam/actions/xscreensaver.py,sha256=dG-pMIz2u4rcVtxnq6e4yRe61IldrcUto-ApJq8t29E,550
+watch_webcam-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+watch_webcam-0.0.1.dist-info/METADATA,sha256=QDUPrGSMZtsDxhUzIjD8mmqTQYzUbgvwVsMB3p8zvG8,41960
+watch_webcam-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+watch_webcam-0.0.1.dist-info/entry_points.txt,sha256=cpZSB7qPA4HloVeFLsFJNp2_jQGZybO0u0NhoXK_94E,55
+watch_webcam-0.0.1.dist-info/top_level.txt,sha256=UR7vBC_37-8-eNVZBGVqHnXbetC10mmcLr2OqAPNy9o,13
+watch_webcam-0.0.1.dist-info/RECORD,,
