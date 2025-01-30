@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "py-buzz"
+version = "5.0.2"
+description = "\"That's not flying, it's falling with style\": Exceptions with extras"
+authors = ["Tucker Beck <tucker.beck@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/dusktreader/py-buzz"
+repository = "https://github.com/dusktreader/py-buzz"
+documentation = "https://dusktreader.github.io/py-buzz/"
+packages = [{include = "buzz"}]
+
+[tool.poetry.urls]
+CHANGELOG = "https://github.com/dusktreader/py-buzz/blob/main/CHANGELOG.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+mypy = "^1.14.1"
+mkdocs-material = "^9.1.21"
+mkdocstrings = {extras = ["python"], version = "^0.22.0"}
+pygments = "^2.15.1"
+ruff = "^0.9.3"
+pytest-asyncio = "^0.25.3"
+pytest-randomly = "^3.16.0"
+
+[tool.ruff]
+line-length = 120
+
+[tool.pytest.ini_options]
+minversion = "7.4.0"
+addopts = [
+    "--cov=buzz",
+    "--cov-report=term-missing",
+    "--cov-report=json",
+    "--cov-fail-under=90",
+]
+testpaths = "tests"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
