@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: naflow
+Version: 0.0.4a0
+Summary: Neurophysiological Data Workflow
+Home-page: https://github.com/simonkojima/naflow
+Author: Simon Kojima
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: mne>=1.8
+Requires-Dist: tag-mne>=0.0.3
+Requires-Dist: tqdm
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# naflow
+Neurophysiological Data Workflow
+
+# test
+```
+python -m unittest discover -s tests
+python -m unittest discover -s tests -p "test_*.py"
+```
+
+# sphinx
+```
+sphinx-apidoc -M -E -f -o ./docs ./naflow
+sphinx-build ./docs ./docs/_build -a
+
+sphinx-apidoc -M -E -f -o ./docs ./naflow && sphinx-build ./docs ./docs/_build -a
+```
