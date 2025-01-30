@@ -1,0 +1,6 @@
+outscraper
+requests
+overpy
+pyspark
+pandas
+spark
