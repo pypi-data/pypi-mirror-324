@@ -1,0 +1,10 @@
+
+[all]
+Django>=3.0
+SQLAlchemy>=1.3
+
+[django]
+Django>=3.0
+
+[sqlalchemy]
+SQLAlchemy>=1.3

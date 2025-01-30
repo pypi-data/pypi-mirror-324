@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+setup.py
+src/deltasnap/__init__.py
+src/deltasnap.egg-info/PKG-INFO
+src/deltasnap.egg-info/SOURCES.txt
+src/deltasnap.egg-info/dependency_links.txt
+src/deltasnap.egg-info/requires.txt
+src/deltasnap.egg-info/top_level.txt
