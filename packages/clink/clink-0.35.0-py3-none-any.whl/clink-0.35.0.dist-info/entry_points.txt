@@ -1,0 +1,2 @@
+[console_scripts]
+clink = clink.__main__:main
