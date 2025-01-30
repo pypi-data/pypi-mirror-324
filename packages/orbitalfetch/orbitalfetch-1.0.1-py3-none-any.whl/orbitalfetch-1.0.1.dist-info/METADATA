@@ -1,0 +1,174 @@
+Metadata-Version: 2.1
+Name: orbitalfetch
+Version: 1.0.1
+Summary: A Python library for downloading high-resolution satellite imagery from Google or ESRI.
+Author: Hakimali
+Author-email: datardihakim440@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: rasterio
+Requires-Dist: pillow
+Requires-Dist: mercantile
+
+# OrbitalFetch 🛰️
+- [What](#what)
+- [Why](#why)
+- [Features](#features)
+- [Installation](#installation)
+- [Quick Start](#quick-start)
+- [Parameters Explained](#parameters-explained)
+- [Usage Examples](#usage-examples)
+- [Advanced Features](#advanced-features)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
+
+---
+
+## What
+**OrbitalFetch** is a Python library designed for downloading high-resolution satellite imagery from **Google** or **ESRI World Imagery**. It supports multi-threaded downloading, handles API rate limits, and saves the downloaded tiles as a GeoTIFF file. 🌍
+
+---
+
+## Why
+Working with satellite imagery can be challenging, especially when you need high-resolution data for specific regions. OrbitalFetch simplifies this process by providing an easy-to-use interface to download and save satellite imagery in GeoTIFF format. Whether you're working on geospatial analysis, mapping, or visualization, OrbitalFetch has you covered. 🗺️
+
+---
+
+## Features ✨
+
+- **Multiple Satellite Sources**: Download imagery from **Google Satellite** or **ESRI World Imagery**. 🌐
+- **High-Resolution Imagery**: Specify the desired resolution (e.g., 1 meter per pixel) for detailed images. 📸
+- **Multi-Threaded Downloads**: Fast and efficient downloads using multi-threading. ⚡
+- **Automatic Retries**: Handles API rate limits and retries failed tiles to ensure complete downloads. 🔄
+- **GeoTIFF Output**: Saves the downloaded imagery as a GeoTIFF file for easy integration with GIS software. 🗄️
+- **Customizable Tile Size**: Adjust the tile size to balance image quality and download performance. 🧩
+- **Bounding Box Support**: Define the area of interest using a bounding box `(min_lon, min_lat, max_lon, max_lat)`. 📍
+
+---
+
+## Installation 🛠️
+
+You can install **OrbitalFetch** via pip:
+
+```bash
+pip install orbitalfetch
+```
+
+---
+
+## Quick Start 🚀
+
+Here's how to get started with OrbitalFetch:
+
+```python
+from orbitalfetch import OrbitalFetch
+
+# Define the output path and bounding box
+output_path = "output_image.tif"
+bbox = (min_lon, min_lat, max_lon, max_lat)  # Replace with your coordinates
+
+# Initialize the fetcher
+fetcher = OrbitalFetch(
+    output_path=output_path,
+    bbox=bbox,
+    target_resolution=1.0,  # 1 meter per pixel
+    satellite_source="google",  # Choose "google" or "esri"
+    tile_size=256,  # Default tile size
+    overwrite=True  # Overwrite existing file if it exists
+)
+
+# Start the download process
+fetcher.download()
+```
+
+---
+
+## Parameters Explained 📝
+
+- **`output_path`**: The file path where the downloaded satellite imagery will be saved (e.g., `"output_image.tif"`). 📂
+- **`bbox`**: The bounding box of the region you want to download, specified as a tuple in the format `(min_lon, min_lat, max_lon, max_lat)`. 🗺️
+- **`target_resolution`**: The resolution of the imagery in meters per pixel. Lower values provide more detailed images (e.g., `1.0` for 1-meter resolution). 📏
+- **`satellite_source`**: Choose the satellite imagery source. Options are `"google"` (Google Satellite) or `"esri"` (ESRI World Imagery). 🌐
+- **`tile_size`**: The size of each tile in pixels. Default is `256x256`. Increasing this may improve image quality but may also increase download time. 🖼️
+- **`overwrite`**: If `True`, overwrites an existing file at the output path. Set to `False` to preserve existing files. 🔄
+
+---
+
+## Usage Examples 📚
+
+### Example 1: Download Google Satellite Imagery 🗽
+
+```python
+from orbitalfetch import OrbitalFetch
+
+# Define the bounding box for New York City
+bbox = (-74.2591, 40.4774, -73.7004, 40.9176)
+
+# Initialize the fetcher for Google Satellite imagery
+fetcher = OrbitalFetch(
+    output_path="nyc_google.tif",
+    bbox=bbox,
+    target_resolution=0.5,  # 0.5 meters per pixel
+    satellite_source="google"
+)
+
+# Start the download
+fetcher.download()
+```
+### Example 2: Download ESRI World Imagery 🇬🇧
+
+```python
+from orbitalfetch import OrbitalFetch
+
+# Define the bounding box for London
+bbox = (-0.5104, 51.2868, 0.3340, 51.6919)
+
+# Initialize the fetcher for ESRI World Imagery
+fetcher = OrbitalFetch(
+    output_path="london_esri.tif",
+    bbox=bbox,
+    target_resolution=1.0,  # 1 meter per pixel
+    satellite_source="esri"
+)
+
+# Start the download
+fetcher.download()
+```
+
+---
+
+## Advanced Features 🛠️
+
+### Custom Tile Size 🧩
+You can adjust the tile size to optimize download performance and image quality. For example:
+
+```python
+fetcher = OrbitalFetch(
+    output_path="custom_tiles.tif",
+    bbox=bbox,
+    target_resolution=1.0,
+    satellite_source="google",
+    tile_size=512  # Larger tiles for higher quality
+)
+```
+
+### Handling API Rate Limits ⚙️
+OrbitalFetch automatically handles API rate limits and retries failed tiles. If a tile fails to download, the library will retry the download until it succeeds or reaches the maximum number of retries.
+
+---
+
+## Acknowledgments 🙏
+
+- Thanks to **Google** and **ESRI** for providing high-quality satellite imagery. 🌍
+- Special thanks to the open-source community for their contributions and support. 💻
+
+---
+
+Happy mapping with **OrbitalFetch**! 🌍🛰️
+
