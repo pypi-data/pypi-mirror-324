@@ -1,0 +1,11 @@
+scikit_fmm-2025.1.29.dist-info/METADATA,sha256=bqhL84Oe7GQ-MJoVku5YWpilMJiz1BimYVhvC5tadvs,12764
+scikit_fmm-2025.1.29.dist-info/WHEEL,sha256=JdLTWhc73oJ-lqTBYGgiVontr_vhzwzbpAOin_2bxTI,85
+scikit_fmm-2025.1.29.dist-info/LICENSE.txt,sha256=S0x7bfG-IU-LTlRkurCh-FV0cHdb5zlngouMWu3zu6Y,1571
+skfmm/cfmm.cp311-win_amd64.pyd,sha256=-5nFxTxXK_AjZCIGe-ni6rbZgSf_EniBmdRbxuVOZJA,42496
+skfmm/cfmm.cp311-win_amd64.lib,sha256=IYf8TdnZ04UUk3w_lcbH6UhjAetRJyj2d5CIlt0rCuA,1960
+skfmm/pheap.cp311-win_amd64.pyd,sha256=dbWQqfd-8nOMCnPqw9ThapT0a7Wnojq0mIjB5Wib044,54784
+skfmm/pheap.cp311-win_amd64.lib,sha256=ObmmrUAxq0AZz7F0rRvIPx4sQo1-44bzvoZQwBjZQKU,1976
+skfmm/__init__.py,sha256=-0Hr-aAEInucG5E1nEPKlbqML5mZtEh-1Itkjz_pAL8,34398
+skfmm/pfmm.py,sha256=bwE1HJv_CE4xkte6z4Tn-0EDgxKNNI6idw4x4zkVN-Y,9985
+skfmm/heap.py,sha256=aYZZ7LhsGgdoFvSVugO3iOzI6D3Na3m3kXDpRD_pnzE,5045
+scikit_fmm-2025.1.29.dist-info/RECORD,,
