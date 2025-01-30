@@ -1,0 +1,43 @@
+# Truth Systems SDK
+
+This is the Python SDK for the Truth Systems API. It allows you to easily interact with the API to judge the veracity of claims based on provided sources.
+
+To use it, you must first have access to the Truth Systems API. See [our website](https://www.truthsystems.ai/) for more information.
+
+## Quickstart
+
+```python
+from truthsys import Client, TextInfluence, TextSource  # or AsyncClient if you like
+
+
+client = Client.from_url("YOUR_BASE_URL")
+ruling = client.judge(
+    claim="Sally is a pretty cat",
+    sources=[
+        TextSource.from_text("I have a cat"),
+        TextSource.from_text("I only have one pet"),
+        TextSource.from_text("My pet is called Sally"),
+    ],
+)
+ruling.verdict  # whether the claim is supported by the sources - one of "SUPPORTED", "UNSUPPORTED", "CONTRADICTED"
+
+for statement in ruling.statements:
+    # in this case, there are two statements: "Sally is a cat" and "Sally is pretty"
+    print(f'The statement "{statement.text}" has been judged as {statement.verdict}')
+
+    for influence in statement.influences:
+        # the reasons for the judgement are statements within sources
+        print(
+            f'The statement "{influence.text}" made in "{influence.source}" influenced this judgement'
+        )
+
+        if isinstance(influence, TextInfluence):
+            # currently always the case, might change in future versions
+            print(
+                f"The influence spans characters {influence.span[0]} to {influence.span[1]}"
+            )
+```
+
+## Errors
+
+All error types raised by the SDK are available to import from `truthsys.errors`. Please report unexpected errors.

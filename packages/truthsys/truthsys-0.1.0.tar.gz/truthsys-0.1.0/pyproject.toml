@@ -1,0 +1,84 @@
+[project]
+name = "truthsys"
+version = "0.1.0"
+description = "SDK for truthsystems.ai, a hallucination detection API"
+authors = [
+    { name = "Truth Systems", email = "alex@truthsystems.ai" },
+]
+dependencies = [
+    "pydantic>=2.0.0,<3.0.0",
+    "httpx>=0.25.0,<0.29.0",
+]
+requires-python = ">=3.10"
+readme = "README_PUBLIC.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed",
+]
+
+[project.license]
+text = "Proprietary"
+
+[project.urls]
+Homepage = "https://truthsystems.ai"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+package-dir = "src"
+includes = [
+    "src/truthsys",
+    "src/truthsys/schemas",
+]
+
+[tool.pdm.scripts]
+lint = "ruff check ."
+format = "ruff check --fix ."
+type = "pyright ."
+deps = "deptry ."
+
+[tool.pdm.scripts.check]
+composite = [
+    "lint",
+    "type",
+    "deps",
+]
+
+[tool.pdm.scripts.test]
+cmd = "python -m pytest"
+env_file = ".env"
+
+[tool.deptry.per_rule_ignores]
+DEP002 = [
+    "pydantic",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9.3",
+    "pyright>=1.1.392.post0",
+    "deptry>=0.23.0",
+    "pytest>=8.3.4",
+    "pytest-httpserver>=1.1.1",
+    "pytest-asyncio>=0.25.3",
+]
