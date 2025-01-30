@@ -1,0 +1,8 @@
+pelican/plugins/share_post/__init__.py,sha256=jSBERQ8hLN8pR5vuv12qifTE8CraCxfq9T3h1umO_Fg,54
+pelican/plugins/share_post/conftest.py,sha256=kiNlfcze5JgWpwq7mvTUabCJpH32zEyKC_Ns3otm4ow,154
+pelican/plugins/share_post/share_post.py,sha256=niQs_QOLc9Bhk4G2F2v4Yn2kyiSoT8d1vyPYaFkhol0,4074
+pelican/plugins/share_post/test_share_post.py,sha256=EsdRNp8eCkzg4QOeOnBCUMs0sqDe3lViKJzQXm8domg,1734
+pelican_share_post-1.2.0.dist-info/METADATA,sha256=-Wdk5Q1v1HMQpWSr9wdqEjgylOgTlcNeefkKTgL14_U,5552
+pelican_share_post-1.2.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+pelican_share_post-1.2.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+pelican_share_post-1.2.0.dist-info/RECORD,,
