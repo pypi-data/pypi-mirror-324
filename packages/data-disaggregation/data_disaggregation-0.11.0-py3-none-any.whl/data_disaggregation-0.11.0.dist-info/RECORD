@@ -1,0 +1,11 @@
+data_disaggregation/__init__.py,sha256=1tr9rjhWNi2sL_dIN5evc96rUzgA3Vna4CFnKWzJI30,87
+data_disaggregation/actions.py,sha256=DWks-s54BujX2wqgPVqYr3rT_tT56fnuVQGHAaj4G9w,158
+data_disaggregation/base.py,sha256=JHrGcG7Q2OG9VxiqjO5wvjlQewqIR1yOb3UbwjstPbY,6334
+data_disaggregation/ext.py,sha256=ejVkS_VC0DiUruhGinixPaa3RrJxOgMyV6bCT3r2iCU,9903
+data_disaggregation/utils.py,sha256=LrHf1-DMXhHag3fBiFEdt0YypxQY8SUfeADzbAWV9Dg,4477
+data_disaggregation/vtypes.py,sha256=ZFr0PnxnBQsxeQSlxbGMMmsSXo9RAoqTld3ih5HBoXs,2039
+data_disaggregation-0.11.0.dist-info/LICENSE,sha256=_YCib7s_ZErx-plBNERnApMpaFGXlyJ-B6E2jeqA8Lw,1023
+data_disaggregation-0.11.0.dist-info/METADATA,sha256=O7xb13AAbi9Ef5rbw2UfA06B-8l-cfSSNEFc7tJrw64,1381
+data_disaggregation-0.11.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+data_disaggregation-0.11.0.dist-info/top_level.txt,sha256=U6zRZ_jM5LXUgT4waSGWoadZtN1pBVirZC82Cc_m-Bg,20
+data_disaggregation-0.11.0.dist-info/RECORD,,
