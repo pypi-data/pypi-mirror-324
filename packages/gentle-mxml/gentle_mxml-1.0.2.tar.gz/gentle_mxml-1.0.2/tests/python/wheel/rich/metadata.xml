@@ -1,0 +1,7 @@
+<pkgmetadata>
+	<!-- maintainer-needed -->
+	<upstream>
+		<doc>https://rich.readthedocs.io/en/latest/</doc>
+		<remote-id type="github">Textualize/rich</remote-id>
+	</upstream>
+</pkgmetadata>
