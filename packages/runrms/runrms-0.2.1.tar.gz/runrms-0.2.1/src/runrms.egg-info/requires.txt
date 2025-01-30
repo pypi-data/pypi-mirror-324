@@ -1,0 +1,14 @@
+ert>=10.2
+pydantic
+pyyaml
+
+[dev]
+mypy
+pytest
+pytest-cov
+pytest-mock
+pytest-xdist
+ruff
+types-PyYAML
+types-setuptools
+typing-extensions
