@@ -1,0 +1,11 @@
+farabi/IO.py,sha256=9R97lPLIXvaSUtiEpQ2oq0h9GJZcrAAlCpILpQmKHG4,129
+farabi/__init__.py,sha256=3dCJPcekLGYwdXtADerh_88qNyNKL19_PhdcXwnQJJU,77
+farabi/visualization.py,sha256=kUXhSCwUQViEdUJRcisAOBVEY4lQ4W9H23OJMTQVZv4,61
+farabi/feature_extraction/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+farabi/preprocessing/__init__.py,sha256=lP99gsEmTzqOwiPT_9RoRIkrWxegIzW5CGOCig2jCcY,33
+farabi/preprocessing/image_correction.py,sha256=D3hBcYP0JN_8w3iz5e96lcGeMDn7HQdXSBt-V8jxYuI,474
+farabi/segmentation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+farabi-0.3.0.dist-info/METADATA,sha256=BFugiUPtuaBf79V0sk4pV3QYV8NLREzvgob5pAHYmGk,609
+farabi-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+farabi-0.3.0.dist-info/top_level.txt,sha256=ChuAJJabX3jK2rjO9UYyRIl0Y0jYx61f88E2MVse7EU,7
+farabi-0.3.0.dist-info/RECORD,,
