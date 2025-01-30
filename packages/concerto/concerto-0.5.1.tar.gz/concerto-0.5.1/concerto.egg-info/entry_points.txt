@@ -1,0 +1,2 @@
+[console_scripts]
+concerto = concerto.main:main
