@@ -1,0 +1,11 @@
+mkdocs_xrepos_plugin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mkdocs_xrepos_plugin/plugin.py,sha256=RaD3dIaX9_B6ir9HOcblUA534d3hXKF0tfKVDXB6YS4,14378
+mkdocs_xrepos_plugin/scripts/mv_docs_up.sh,sha256=4QodKgPUuufxFh4LEDKlEPI43SPdHE3vnFTAKJM-LZE,37
+mkdocs_xrepos_plugin/scripts/sparse_clone.sh,sha256=0KQHRc0tVjR2RHsPdG5ed6FiHuOWdQ6nO5eI9Ak5XaU,1547
+mkdocs_xrepos_plugin/scripts/sparse_clone_old.sh,sha256=c_qUrzTq4AcGH5MwsZJKdSZzcV-HLDvGO3VqnAvugdo,1026
+mkdocs_xrepos_plugin/structure.py,sha256=DehHkhJR4G_I5XayuCok_1tAjdXf3VYL0iEj-_Tpqjk,18027
+mkdocs_xrepos_plugin/util.py,sha256=9AdxzRh2Nl92P5g4yZWvo2CF60yXPIIRSWRoTtz1yQE,5096
+mkdocs_xrepos_plugin-0.0.7.dist-info/METADATA,sha256=p8OoYGqMxHG_KBBKSw9EInqDgkph7dLwdanDmMsJG9s,1905
+mkdocs_xrepos_plugin-0.0.7.dist-info/WHEEL,sha256=IrRNNNJ-uuL1ggO5qMvT1GGhQVdQU54d6ZpYqEZfEWo,92
+mkdocs_xrepos_plugin-0.0.7.dist-info/entry_points.txt,sha256=Zpo4lILH3uupGmf2iWzRv1T6fvCbdw3L9MagFGrI-nA,66
+mkdocs_xrepos_plugin-0.0.7.dist-info/RECORD,,
