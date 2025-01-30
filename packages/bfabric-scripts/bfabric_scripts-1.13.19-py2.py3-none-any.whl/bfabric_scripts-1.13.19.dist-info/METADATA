@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: bfabric_scripts
+Version: 1.13.19
+Summary: Python command line scripts for the B-Fabric API
+Requires-Dist: bfabric
