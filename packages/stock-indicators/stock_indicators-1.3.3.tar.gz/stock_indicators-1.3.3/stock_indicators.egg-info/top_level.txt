@@ -1,0 +1,3 @@
+dist
+stock_indicators
+test_data
