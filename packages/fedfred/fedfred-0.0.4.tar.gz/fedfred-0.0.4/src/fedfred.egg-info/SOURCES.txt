@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/fedfred/__init__.py
+src/fedfred/fedfred.py
+src/fedfred.egg-info/PKG-INFO
+src/fedfred.egg-info/SOURCES.txt
+src/fedfred.egg-info/dependency_links.txt
+src/fedfred.egg-info/requires.txt
+src/fedfred.egg-info/top_level.txt
+tests/test.py
