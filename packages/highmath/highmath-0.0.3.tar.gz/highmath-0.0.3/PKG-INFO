@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: highmath
+Version: 0.0.3
+Summary: A module which have most of mathematical questions and their solutions!
+Author-email: mark4d4 <sevcow4674@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Used to make a math based projects
