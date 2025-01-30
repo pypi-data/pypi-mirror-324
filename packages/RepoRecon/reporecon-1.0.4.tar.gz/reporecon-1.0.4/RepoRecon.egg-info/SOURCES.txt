@@ -1,0 +1,7 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+RepoRecon/__init__.py
+RepoRecon/main.py
