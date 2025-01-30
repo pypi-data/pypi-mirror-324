@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: funcnodes-plotly
+Version: 0.2.3
+Summary: 
+License: MIT
+Author: Julian Kimmig
+Author-email: julian.kimmig@gmx.net
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: funcnodes
+Requires-Dist: funcnodes_images
+Requires-Dist: funcnodes_pandas (>=0.2.3)
+Requires-Dist: kaleido (==0.1.0post1) ; sys_platform == "win32"
+Requires-Dist: kaleido (==0.2.1) ; sys_platform != "win32"
+Requires-Dist: plotly (>=5.0.0,<6.0.0)
+Project-URL: download, https://pypi.org/project/funcnodes-plotly/#files
+Project-URL: homepage, https://github.com/Linkdlab/funcnodes_plotly
+Project-URL: source, https://github.com/Linkdlab/funcnodes_plotly
+Project-URL: tracker, https://github.com/Linkdlab/funcnodes_plotly/issues
+Description-Content-Type: text/markdown
+
+Plotly for funcnodes
+
