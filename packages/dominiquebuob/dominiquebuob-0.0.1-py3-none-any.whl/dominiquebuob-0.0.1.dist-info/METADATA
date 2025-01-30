@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: dominiquebuob
+Version: 0.0.1
+Summary: Dominique Buob, Computer Scientist with a edge for incentive structures
+Author: Dominique Buob
+Author-email: dominique.buob@gmail.com
+Keywords: python,cv,computer-science
+Classifier: Development Status :: 1 - Planning
+License-File: License.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: summary
+
+Hi, I'm currently working on a project that makes personalized signature perfumes for high-end users. We are planning to collaborate with Dior and Versace in the coming years
