@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pip_README.md
+pyproject.toml
+setup.py
+src/OptimaLab35/__init__.py
+src/OptimaLab35/__main__.py
+src/OptimaLab35/gui.py
+src/OptimaLab35.egg-info/PKG-INFO
+src/OptimaLab35.egg-info/SOURCES.txt
+src/OptimaLab35.egg-info/dependency_links.txt
+src/OptimaLab35.egg-info/entry_points.txt
+src/OptimaLab35.egg-info/requires.txt
+src/OptimaLab35.egg-info/top_level.txt
