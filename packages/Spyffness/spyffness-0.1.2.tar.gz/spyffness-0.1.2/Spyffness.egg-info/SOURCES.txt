@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+Spyffness/Beam.py
+Spyffness/Frame.py
+Spyffness/Material.py
+Spyffness/Node.py
+Spyffness/Visualization.py
+Spyffness/__init__.py
+Spyffness/_version.py
+Spyffness.egg-info/PKG-INFO
+Spyffness.egg-info/SOURCES.txt
+Spyffness.egg-info/dependency_links.txt
+Spyffness.egg-info/requires.txt
+Spyffness.egg-info/top_level.txt
