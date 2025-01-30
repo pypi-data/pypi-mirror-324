@@ -1,0 +1,17 @@
+numpy
+scipy
+pandas
+geopandas
+siphon
+xarray
+shapely
+pyproj
+netCDF4
+metpy
+pyyaml
+psutil
+cht_cyclones
+geojson
+
+[tests]
+pytest
