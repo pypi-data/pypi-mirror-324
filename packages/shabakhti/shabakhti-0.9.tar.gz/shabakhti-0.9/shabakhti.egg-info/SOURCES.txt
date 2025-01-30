@@ -1,0 +1,10 @@
+README.md
+setup.py
+shabakhti/__init__.py
+shabakhti/shabakhti.py
+shabakhti.egg-info/PKG-INFO
+shabakhti.egg-info/SOURCES.txt
+shabakhti.egg-info/dependency_links.txt
+shabakhti.egg-info/entry_points.txt
+shabakhti.egg-info/requires.txt
+shabakhti.egg-info/top_level.txt
