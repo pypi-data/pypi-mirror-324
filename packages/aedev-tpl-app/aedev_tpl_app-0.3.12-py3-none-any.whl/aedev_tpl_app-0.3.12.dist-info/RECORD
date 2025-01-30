@@ -1,0 +1,15 @@
+aedev/tpl_app/__init__.py,sha256=_l0SZtXtW3ZEAqOQTNYPS343RXnsWamtrHAMJFMVTF0,65
+aedev/tpl_app/templates/de_tpl_main.py,sha256=be90rTP_N_b3WfBlQMDVfoTaalyDdkUGbHt5hnIAaK4,2422
+aedev/tpl_app/templates/main.kv,sha256=5Bi9Ogt5p4jBRLPDtKBkglGJXBVkKqIKVjZsmb9NeQQ,693
+aedev/tpl_app/templates/requirements.txt,sha256=pLzN2e-Dj9PzHMFrLzSexonSDTVPzWSlNCruQIxz_t4,185
+aedev/tpl_app/templates/de_mtp_ae_updater_moves/FStringEvalSuggestions.txt,sha256=SekT__VrjTxlVjh40tUuwPptMyJ9DDOdqCLEvM-aszA,766
+aedev/tpl_app/templates/de_mtp_ae_updater_moves/{package_name}.ini,sha256=oyJsNuqa2BTxz_Mak65tHMFJgdLhx5m8HFdq30Oxh_0,2029
+aedev/tpl_app/templates/de_mtp_img/app_icon.jpg,sha256=KVi3OKoUWDxeDN3HreEuRaeJ5hKPnS6C0XFmM7BdP-8,122012
+aedev/tpl_app/templates/de_mtp_loc/de/Msg.txt,sha256=HA40yPxt62vYF-Ppvvq4ijNq0SZ87o-7ybZYeiHhG8U,40
+aedev/tpl_app/templates/de_mtp_loc/en/Msg.txt,sha256=HA40yPxt62vYF-Ppvvq4ijNq0SZ87o-7ybZYeiHhG8U,40
+aedev/tpl_app/templates/de_mtp_loc/es/Msg.txt,sha256=HA40yPxt62vYF-Ppvvq4ijNq0SZ87o-7ybZYeiHhG8U,40
+aedev_tpl_app-0.3.12.dist-info/LICENSE.md,sha256=uoIIfORuk4V8ZeNh6SN0EUhiU79RC-indIMFqePKVhY,35002
+aedev_tpl_app-0.3.12.dist-info/METADATA,sha256=BY93bnJqWgynyuLOCIOgKOHt2uSgfNm7oNNRk90NxIo,5958
+aedev_tpl_app-0.3.12.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+aedev_tpl_app-0.3.12.dist-info/top_level.txt,sha256=mWQVNYhgjRLaFceFJH-NDKFiTfKip7vqDESYWJGkKqg,6
+aedev_tpl_app-0.3.12.dist-info/RECORD,,
