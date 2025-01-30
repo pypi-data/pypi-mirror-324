@@ -1,0 +1,87 @@
+[build-system]
+build-backend = "flit_core.buildapi"
+
+requires = [ "flit-core>=3.2,<4" ]
+
+[project]
+name = "aa-altcorp"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Swashman(John Nelson)", email = "jnelson2288@gmail.com" },
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 4.0",
+    "Framework :: Django :: 4.2",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+dynamic = [ "description", "version" ]
+dependencies = [
+    "allianceauth>=4",
+    "allianceauth-app-utils>=1.18",
+    "dhooks-lite>=1.0",
+    "py-cord>2.0.0,<3.0.0",
+]
+
+urls.Changelog = "https://gitlab.com/lawn-alliance/aa-altcorp/-/blob/master/CHANGELOG.md"
+urls.Documentation = "https://gitlab.com/lawn-alliance/aa-altcorp/-/blob/master/README.md"
+urls.Homepage = "https://gitlab.com/lawn-alliance/aa-altcorp"
+urls.Source = "https://gitlab.com/lawn-alliance/aa-altcorp"
+urls.Tracker = "https://gitlab.com/lawn-alliance/aa-altcorp/-/issues"
+
+[tool.flit.module]
+name = "altcorp"
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+sections = [
+    "FUTURE",
+    "STDLIB",
+    "THIRDPARTY",
+    "DJANGO",
+    "ALLIANCEAUTH",
+    "FIRSTPARTY",
+    "LOCALFOLDER",
+]
+known_allianceauth = [ "allianceauth", "app_utils", "esi", "eveuniverse" ]
+known_django = [ "django" ]
+known_third_party = [ "requests", "solo" ]
+import_heading_stdlib = "Standard Library"
+import_heading_django = "Django"
+import_heading_allianceauth = "Alliance Auth"
+import_heading_firstparty = "Alt Corp"
+import_heading_thirdparty = "Third Party"
+
+[tool.pylint.'MASTER']
+ignore-patterns = [ "__init__.py", "auth_hooks.py", "apps.py", "admin.py" ]
+ignore-paths = [ "^.*/tests/.*$", "^.*/migrations/.*$" ]
+
+[tool.pylint.'BASIC']
+good-names = [ "i", "j", "k", "ex" ]
+
+[tool.pylint.'FORMAT']
+max-line-length = 120
+
+[tool.pylint.'MESSAGES CONTROL']
+disable = [
+    "cyclic-import",
+    "fixme",
+    "import-outside-toplevel",
+    "imported-auth-user",
+    "too-few-public-methods",
+]
