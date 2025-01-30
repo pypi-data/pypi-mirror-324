@@ -1,0 +1,12 @@
+argsv/__init__.py,sha256=LKLIlscwl8xU4jqHdeP8tPMD5k3DxlTHwL27gjAtb8c,1699
+argsv/_meta.py,sha256=8JGMe76pq1acsolaKHspmHH5GHMx3fiRLBRgSP1jZlE,1186
+argsv/_pattern.py,sha256=e9I0ScbHrZBb8KxHENlxpKyho2Efk2H_fLFm2-wMOaA,5320
+argsv/_validators.py,sha256=_M4CnIEy2JR0mlTu8vme548AGfwCD4lgnE34aJC_zBk,30803
+argsv/errors.py,sha256=iGg6Hew6jZ6BPE9QMTeSS_EcMfobyP7eDpanMjdqzyI,932
+argsv/validation.py,sha256=wCrlEDIiWlRNWCeBlIDtirdhLpWvFNZKsd9d96XkgS0,6514
+argsv/validators.py,sha256=ymitR6-fqX6qVVycAw4ts1oX9Ap4WHiEP3mjN5he4tk,27998
+argsv-0.1.0.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+argsv-0.1.0.dist-info/METADATA,sha256=2cYW14_30pk1uytN4iHtyscAfQ2YS7e9dG35Zr6MvH8,4797
+argsv-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+argsv-0.1.0.dist-info/top_level.txt,sha256=kX-pieqSwPXDPcgkeJQ9-7iGX5I4VrgZE1T6sgeKH8Y,6
+argsv-0.1.0.dist-info/RECORD,,
