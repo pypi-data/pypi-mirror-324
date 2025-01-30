@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: pandasai-oracle
+Version: 0.1.3
+Summary: Oracle connector integration for PandaAI
+Author: Gabriele Venturi
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: cx_oracle (>=8.3.0,<9.0.0)
+Requires-Dist: pandasai (>=3.0.0b4)
+Requires-Dist: pandasai-sql (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Oracle Extension for PandaAI
+
+This extension integrates Oracle connectors with PandaAI, providing support for Oracle.
+
+## Installation
+
+You can install this extension using poetry:
+
+```bash
+poetry install pandasai-oracle
+```
+
