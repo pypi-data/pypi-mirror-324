@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+DTALite/__init__.py
+DTALite/path.py
+DTALite.egg-info/PKG-INFO
+DTALite.egg-info/SOURCES.txt
+DTALite.egg-info/dependency_links.txt
+DTALite.egg-info/top_level.txt
+DTALite/bin/DTALite.dll
+test/test.py
