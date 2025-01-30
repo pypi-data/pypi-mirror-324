@@ -1,0 +1,9 @@
+vastai_sdk/__init__.py,sha256=-bEOeTW16yqe5dlA7eVgytdAAvnL6joAeLzD0OOIDVo,31
+vastai_sdk/vast.py,sha256=V5PGLMtISUycBWmn1cZ5wyXVnROnYOLbvQphB4fHs3E,228788
+vastai_sdk/vastai_base.py,sha256=nLHCxGu-wJSkq5m4V1V_uLUN8JP5aPuXgWQXohZ7Wjg,15122
+vastai_sdk/vastai_sdk.py,sha256=VQmcMYiAIvESzJiX6OU8PwjIkBsMxJKvkU_Sn7v-jec,11699
+vastai_sdk-0.1.12.dist-info/LICENSE,sha256=Vg6t1lsLL9liingml8KRAmTH499x0yzpwH_f5oL2L3o,1064
+vastai_sdk-0.1.12.dist-info/METADATA,sha256=o5RDJ1JWQmg00oDQ4MuIklU0qE8OOqHzU99pxYZzX18,3439
+vastai_sdk-0.1.12.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+vastai_sdk-0.1.12.dist-info/top_level.txt,sha256=vEBYCUp8oFCn_K_1hyAo_QTzivineFzUjVrGZeq0D-U,11
+vastai_sdk-0.1.12.dist-info/RECORD,,
