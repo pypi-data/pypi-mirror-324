@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: rclone_api
+Version: 1.0.14
+Summary: rclone api in python
+Home-page: https://github.com/zackees/rclone-api
+Maintainer: Zachary Vorhies
+License: BSD 3-Clause License
+Keywords: template-python-cmd
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv>=1.0.0
+Dynamic: home-page
+Dynamic: maintainer
+
+# rclone-api
+
+[![Linting](https://github.com/zackees/rclone-api/actions/workflows/lint.yml/badge.svg)](https://github.com/zackees/rclone-api/actions/workflows/lint.yml)
+[![MacOS_Tests](https://github.com/zackees/rclone-api/actions/workflows/push_macos.yml/badge.svg)](https://github.com/zackees/rclone-api/actions/workflows/push_macos.yml)
+[![Ubuntu_Tests](https://github.com/zackees/rclone-api/actions/workflows/push_ubuntu.yml/badge.svg)](https://github.com/zackees/rclone-api/actions/workflows/push_ubuntu.yml)
+[![Win_Tests](https://github.com/zackees/rclone-api/actions/workflows/push_win.yml/badge.svg)](https://github.com/zackees/rclone-api/actions/workflows/push_win.yml)
+
+Api version of rclone. It's well tested. It's just released so this readme is a little to be desired.
+
+To develop software, run `. ./activate`
+
+# Windows
+
+This environment requires you to use `git-bash`.
+
+# Linting
+
+Run `./lint`
