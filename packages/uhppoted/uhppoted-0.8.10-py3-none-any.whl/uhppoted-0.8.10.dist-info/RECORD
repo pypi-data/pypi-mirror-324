@@ -1,0 +1,13 @@
+uhppoted/__init__.py,sha256=NZlmim4_N_cCgi_hz_UDTz5nV9CvQp-T9BV1hCWYXik,283
+uhppoted/decode.py,sha256=A3TtsLzgZG7Gn2nXHdZVaGmDXyMoGzSm8XChHW0lw_8,41472
+uhppoted/encode.py,sha256=1NFXEyE1Cq-95I2bQLxVnQOSxJDilYeqktU9WxVVPZo,25059
+uhppoted/net.py,sha256=CPV9SafI0jlxlTmHFVR4K_RRlqiIfiPrq2rJm87DZjE,2998
+uhppoted/structs.py,sha256=mTh2GaXQ7gkBRd5hsU-655d0uJSu8Wp9RrGK1iDyuOI,18543
+uhppoted/tcp.py,sha256=br603XYp-lKzemMuqdDqlaUvNNWwk15hZaqy-WnVJhk,3749
+uhppoted/udp.py,sha256=rzFd1cKV_ICYIcE8DmBicOZgjy09Pgx8QliCWWTQ17s,7272
+uhppoted/uhppote.py,sha256=-wZrIQeiQKtuoa2FWpSVj3NEcqyKVOz8al7XAeWVKJE,59141
+uhppoted-0.8.10.dist-info/LICENSE,sha256=Jaz4FNwLkw4R4tkumCLVjTOxw7y8BrIVcZLPsH5vVSw,1065
+uhppoted-0.8.10.dist-info/METADATA,sha256=6PAeCh6Jv6VC-KvMcsA0DihP8h99TDkhnEmVu6-ybxQ,33739
+uhppoted-0.8.10.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+uhppoted-0.8.10.dist-info/top_level.txt,sha256=tdp0m5DGuK4yy1JI9iAGm4HifCGusk_5K7aB130lzC0,9
+uhppoted-0.8.10.dist-info/RECORD,,
