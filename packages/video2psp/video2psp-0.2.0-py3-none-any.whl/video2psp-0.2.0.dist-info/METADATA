@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: video2psp
+Version: 0.2.0
+Summary: A CLI tool to convert video to PSP MP4 with user-selected audio and subtitle tracks.
+Home-page: https://github.com/ghurone/video2psp
+Author: Erick Ghuron
+Author-email: ghuron@usp.br
+Requires-Python: >=3.11
+
