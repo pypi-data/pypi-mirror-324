@@ -1,0 +1,8 @@
+sprite_splitter/__init__.py,sha256=Drw0DBill7jCp_lNXjYzW2i-UR0R5PyDqCYeYrGDJ6U,194
+sprite_splitter/box.py,sha256=T8GYUQb4MdcE0u0N-DMI97F5NKai0-VsDQ8pvnu52zo,399
+sprite_splitter/edge_finder.py,sha256=A1Che1uKCQGtKeCZgpm-kf2vg_iuU32Z_-y8dXkzH4c,3063
+sprite_splitter/sprite_splitter.py,sha256=dkelXP9OihKPpw5RrVgpcNC6LxJkI3E832wCzTDzL_0,14633
+sprite_splitter-0.0.3.dist-info/METADATA,sha256=j-zChkdmHGRzT88_aNyRBGRFZumSWfRz47a77Yuxt8s,4933
+sprite_splitter-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sprite_splitter-0.0.3.dist-info/top_level.txt,sha256=nmSCndDgbbmzZJaEWGZVvXz3C8HGDOhUooXlxEla0K8,16
+sprite_splitter-0.0.3.dist-info/RECORD,,
