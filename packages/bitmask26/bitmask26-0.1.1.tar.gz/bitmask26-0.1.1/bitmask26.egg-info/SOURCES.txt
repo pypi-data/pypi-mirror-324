@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+bitmask26.cpp
+pyproject.toml
+setup.py
+bitmask26.egg-info/PKG-INFO
+bitmask26.egg-info/SOURCES.txt
+bitmask26.egg-info/dependency_links.txt
+bitmask26.egg-info/not-zip-safe
+bitmask26.egg-info/top_level.txt
