@@ -1,0 +1,8 @@
+pytest_tap/__init__.py,sha256=z8ogVAbtVGYOh8lEvX_fcr8-2lSqkU88pDFJgrdnn7M,20
+pytest_tap/plugin.py,sha256=tY1em2Sg6U10SdVLJbzFfYZ30R2zQd8Ag4dHRXTtcFg,7533
+pytest_tap-3.5.dist-info/METADATA,sha256=4DYbQONBSJ48HfdM2olIUSr9W7kjxD5pjyyD895HDrM,4574
+pytest_tap-3.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_tap-3.5.dist-info/entry_points.txt,sha256=lc5PHbeMyP40WA7OmfgxXID90T3vvW9OoXa1cX7aTkQ,35
+pytest_tap-3.5.dist-info/licenses/AUTHORS,sha256=FbqqCx4IrrjQiUQ4jhlCpBKsbWpDJIrpbauioa27ZBU,271
+pytest_tap-3.5.dist-info/licenses/LICENSE,sha256=rM15RFfx1smKQOWg1wSXS1CSrusvzMPyvj1tudTxz0E,1342
+pytest_tap-3.5.dist-info/RECORD,,
