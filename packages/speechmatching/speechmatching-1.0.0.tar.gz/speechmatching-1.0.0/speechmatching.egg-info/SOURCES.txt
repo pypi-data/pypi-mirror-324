@@ -1,0 +1,17 @@
+LICENSE.txt
+README.rst
+dev-requirements.txt
+pyproject.toml
+requirements.txt
+speechmatching/__init__.py
+speechmatching/audio.py
+speechmatching/config.py
+speechmatching/match.py
+speechmatching/model.py
+speechmatching/recording.py
+speechmatching/utils.py
+speechmatching.egg-info/PKG-INFO
+speechmatching.egg-info/SOURCES.txt
+speechmatching.egg-info/dependency_links.txt
+speechmatching.egg-info/requires.txt
+speechmatching.egg-info/top_level.txt
