@@ -1,0 +1,3 @@
+[console_scripts]
+declutrr=dbqt.app:main
+
