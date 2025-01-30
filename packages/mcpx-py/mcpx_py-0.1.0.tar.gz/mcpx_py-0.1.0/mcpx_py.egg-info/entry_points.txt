@@ -1,0 +1,2 @@
+[console_scripts]
+mcpx-client = mcpx.__main__:main
