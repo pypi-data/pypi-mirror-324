@@ -1,0 +1,3 @@
+[console_scripts]
+bigecyhmm = bigecyhmm.__main__:main
+bigecyhmm_visualisation = bigecyhmm.visualisation:main
