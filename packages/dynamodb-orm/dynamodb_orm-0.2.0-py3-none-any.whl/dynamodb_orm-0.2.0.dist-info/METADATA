@@ -1,0 +1,106 @@
+Metadata-Version: 2.4
+Name: dynamodb-orm
+Version: 0.2.0
+Summary: A simple ORM-like interface for DynamoDB using Pydantic models
+Project-URL: Homepage, https://github.com/leehjhjhj/dynamodb-model
+Project-URL: Repository, https://github.com/leehjhjhj/dynamodb-model.git
+Author-email: LeeHyunJe <hjforaws@gmail.com>
+License-Expression: MIT
+Keywords: aws,dynamodb,orm,pydantic
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Requires-Dist: boto3>=1.26.0
+Requires-Dist: moto>=5.0.27
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: pytest>=8.3.4
+Provides-Extra: dev
+Requires-Dist: black>=22.0.0; extra == 'dev'
+Requires-Dist: isort>=5.0.0; extra == 'dev'
+Requires-Dist: moto>=4.0.0; extra == 'dev'
+Requires-Dist: mypy>=1.0.0; extra == 'dev'
+Requires-Dist: pytest-cov>=4.0.0; extra == 'dev'
+Requires-Dist: pytest>=7.0.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Python DynamoDB ORM
+
+A lightweight and type-safe wrapper for AWS DynamoDB with Pydantic integration.
+
+## Features
+
+- Type-safe DynamoDB operations using Pydantic models
+- Support for CRUD operations (Create, Read, Update, Delete)
+- Query filtering and conditional operations
+- Clean and intuitive API design
+- Comprehensive error handling
+
+## Installation
+
+```bash
+git clone https://github.com/leehjhjhj/dynamodb-model
+```
+
+```bash
+uv sync
+```
+
+## Quick Start
+
+```python
+from pydantic import BaseModel, Field
+from datetime import datetime
+from typing import Optional
+
+# Define your model
+class UserModel(BaseModel):
+    user_id: str = Field(alias='partition_key')
+    email: str = Field(alias='sort_key')
+    name: str
+    age: int
+    created_at: datetime = Field(default_factory=datetime.now)
+    updated_at: Optional[datetime] = None
+
+# Initialize DynamoDB wrapper
+user_db = DynamoDBModel[UserModel](
+    table_name='users',
+    model_class=UserModel
+)
+
+# Create a new user
+new_user = UserModel(
+    user_id="user123",
+    email="user@example.com",
+    name="John Doe",
+    age=30
+)
+user_db.put(new_user)
+
+# Get user
+user = user_db.get("user123", "user@example.com")
+
+# Query users
+users = user_db.query(
+    partition_key="user123",
+    sort_key_condition={
+        "operator": "begins_with",
+        "value": "user"
+    }
+)
+```
+
+## Requirements
+
+- Python 3.7+
+- boto3
+- pydantic
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
