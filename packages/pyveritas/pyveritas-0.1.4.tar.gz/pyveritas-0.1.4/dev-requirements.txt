@@ -1,0 +1,6 @@
+pytest
+colorama
+sphinx
+sphinx-rtd-theme
+flit
+
