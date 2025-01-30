@@ -1,0 +1,146 @@
+:root {
+    --pokemon-yellow: #FFCB05;
+    --pokemon-blue: #2A75BB;
+    --pokemon-red: #CC0000;
+    --vintage-opacity: 0.1;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(45deg, var(--pokemon-red), var(--pokemon-yellow));
+    font-family: 'Press Start 2P', cursive;
+    min-height: 100vh;
+    color: var(--pokemon-blue);
+    overflow-x: hidden;
+}
+
+.retro-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .retro-logo img {
+    width: auto;
+    height: auto;
+    max-width: 90vw;  /* 90% of viewport width */
+    max-height: 90vh; /* 90% of viewport height */
+    object-fit: contain;
+}
+
+#pokemon-display {
+    position: relative; /* Ensure it is positioned */
+    z-index: 1001; /* Higher than the background logo */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: var(--pokemon-blue);
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--pokemon-yellow);
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--pokemon-yellow);
+    z-index: 1000;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: var(--pokemon-red);
+}
+
+.sacha-img {
+    width: 300px;
+    height: auto;
+    animation: bounce 1s infinite;
+}
+
+.container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+.pokeball {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(var(--pokemon-red) 45%, white 45% 55%, var(--pokemon-red) 55%);
+    border-radius: 50%;
+    margin: 2rem auto;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.pokeball:hover {
+    transform: scale(1.1);
+}
+
+.pokeball-button {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.particles::before, .sparkles::before {
+    content: "✦";
+    position: absolute;
+    color: var(--pokemon-yellow);
+    animation: sparkle 1s infinite;
+}
+
+.sacha-img {
+    filter: drop-shadow(0 0 10px #FFCB05);
+    transition: filter 0.3s;
+    cursor: pointer;
+    /* Existing properties */
+    width: 300px;
+    height: auto;
+    animation: bounce 1s infinite;
+  }
+  
+  .sacha-img:hover {
+    filter: drop-shadow(0 0 20px #FFCB05) brightness(1.1);
+  }
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #2A75BB;
+    }
+
+::-webkit-scrollbar-thumb {
+    background: #FFCB05;
+    border-radius: 5px;
+    }
+/* Add more animations and effects here */
