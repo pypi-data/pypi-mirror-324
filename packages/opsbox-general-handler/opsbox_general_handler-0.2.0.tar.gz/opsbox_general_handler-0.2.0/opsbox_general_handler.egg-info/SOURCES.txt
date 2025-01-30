@@ -1,0 +1,10 @@
+LICENCE.txt
+pyproject.toml
+general_handler/general_handler.py
+general_handler/manifest.toml
+opsbox_general_handler.egg-info/PKG-INFO
+opsbox_general_handler.egg-info/SOURCES.txt
+opsbox_general_handler.egg-info/dependency_links.txt
+opsbox_general_handler.egg-info/entry_points.txt
+opsbox_general_handler.egg-info/requires.txt
+opsbox_general_handler.egg-info/top_level.txt

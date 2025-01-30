@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_general_handler = general_handler.general_handler:GeneralHandler
