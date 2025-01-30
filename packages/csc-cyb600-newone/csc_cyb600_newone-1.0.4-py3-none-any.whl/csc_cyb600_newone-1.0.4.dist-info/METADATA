@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: csc-cyb600-newone
+Version: 1.0.4
+Author: Mohammed khan
+Author-email: khan@canisius.edu
+License: Apache License Version 2.0
+License-File: LICENSE
+Requires-Dist: colorama
+
