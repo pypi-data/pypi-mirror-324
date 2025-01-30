@@ -1,0 +1,22 @@
+[project]
+name = "chromapie"
+version = "0.0.3b"
+authors = [
+  { name="Naut van der Winden", email="nautvanderwinden@gmail.com" },
+]
+description = "A simple ANSI code wrapper I made to learn python packaging."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com/weescottishpuffin/chromapie"
+Issues = "https://github.com/weescottishpuffin/chromapie/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
