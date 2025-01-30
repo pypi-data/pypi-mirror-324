@@ -1,0 +1,8 @@
+.git/
+.github/
+.ruff_cache/
+docs/
+LICENSE
+uv.lock
+temp.txt
+example_output.md
