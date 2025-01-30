@@ -1,0 +1,9 @@
+SFSGL/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SFSGL/sfsgl.py,sha256=a2PCBXqyU3N4zewjmU8dRCXkRryEUZyLElc7AHs9OLA,6288
+SFSGL/static/fa-solid-900.woff2,sha256=9MWlspfmI7wVlnlWOk0esW5AnKO1dpj7wA_SyQfa2uA,156532
+SFSGL/templates/file_gather.html,sha256=vUheYsWi7byPjNup2fpLgpKfN4FLGqNN3n7UYGvy6Jw,7550
+SFSGL/templates/file_share.html,sha256=3n9yyFdfLAKedoOMLDhRg2jgT8-7NZSzd41JT5dLlAM,3926
+SFSGL-0.1.9.dist-info/METADATA,sha256=5_purhpqYGOCG2wNP2yGo0X66orJsH_yrEx-_ekeXp8,2964
+SFSGL-0.1.9.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+SFSGL-0.1.9.dist-info/top_level.txt,sha256=NNiSsDyrhgu75aLlmTVakJOZkof_cKTIQEb4Da4YnBQ,6
+SFSGL-0.1.9.dist-info/RECORD,,
