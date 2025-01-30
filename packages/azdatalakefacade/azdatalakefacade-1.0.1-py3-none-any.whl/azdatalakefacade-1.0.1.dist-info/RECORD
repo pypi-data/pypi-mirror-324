@@ -1,0 +1,9 @@
+azdatalake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azdatalake/singleton.py,sha256=P_QGNE3L3gbQsYWRvI6H11eJkXulg2OPNv691HtjLBg,10849
+azdatalakefacade/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+azdatalakefacade/singleton.py,sha256=P_QGNE3L3gbQsYWRvI6H11eJkXulg2OPNv691HtjLBg,10849
+azdatalakefacade-1.0.1.dist-info/LICENSE,sha256=gv6XIZGrGekO4kCHP9DQbaRPYw_dT66BbG8uZYgtfL8,1077
+azdatalakefacade-1.0.1.dist-info/METADATA,sha256=Rg_ihTUT8vpJI1C2iH5afBDPKeOVBXCFFkCVrmAIaTI,3324
+azdatalakefacade-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+azdatalakefacade-1.0.1.dist-info/top_level.txt,sha256=2zyV6UJ9VTh3dUcGzVPEcnxkzlHFGzFcQGtx5cEF_bA,17
+azdatalakefacade-1.0.1.dist-info/RECORD,,
