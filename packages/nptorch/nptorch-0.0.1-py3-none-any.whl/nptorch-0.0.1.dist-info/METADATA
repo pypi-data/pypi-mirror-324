@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: nptorch
+Version: 0.0.1
+Summary: A PyTorch clone made using NumPy (for CPU) and CuPy (for GPU)
+Author-email: Bhawik Jani <bhawikjani1@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/bhawik-jani/nptorch
+Keywords: PyTorch,NumPy,Automatic Differentiation,Back Propagation,Deep Learning,Neural Networks,CuPy,Auto Grad
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# nptorch
+A PyTorch clone made using NumPy (for CPU) and CuPy (for GPU)
