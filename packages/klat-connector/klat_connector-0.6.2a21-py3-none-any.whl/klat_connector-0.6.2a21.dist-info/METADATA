@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: klat-connector
+Version: 0.6.2a21
+Summary: The Klat Chat API
+Home-page: https://github.com/neongeckocom/klat-connector
+Author: Neongecko
+Author-email: developers@neon.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: python-socketio~=5.6
+Requires-Dist: python-engineio~=4.2
+Requires-Dist: websocket-client<=0.57
+Requires-Dist: requests~=2.20
+Requires-Dist: setuptools~=50.3
+Requires-Dist: w3lib~=1.22
+Requires-Dist: eventlet~=0.33
+Requires-Dist: neon-mq-connector~=0.7
+Requires-Dist: neon-utils~=1.0
+Requires-Dist: socketIO-client==0.7.2
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-timeout; extra == "test"
+Requires-Dist: mock; extra == "test"
+Requires-Dist: psutil; extra == "test"
+Requires-Dist: neon-minerva[rmq]>=0.2.1a3,~=0.2; extra == "test"
+
+# Klat API
+
+The `Klat Connector` provides programmatic access to a Klat server.
+
+
+## SocketIO Klat v1 API
+The `api.sio_klat_api` module provides a connector that is compatible with a
+Klat 1.0 SocketIO server. By default, this connector will initiate a connection
+upon initialization and be ready for use.
+> This connector is also compatible with the `MachKlatServer` available in this
+> package.
+
+## MQ Klat v2 API
+The `api.mq_klat_api` module provides a connector compatible with a Pyklatchat
+server via MQ. This connector will not complete a connection until the `run` 
+method is called.
