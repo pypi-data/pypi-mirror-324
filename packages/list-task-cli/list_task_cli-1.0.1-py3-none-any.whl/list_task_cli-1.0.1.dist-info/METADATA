@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: list-task-cli
+Version: 1.0.1
+Summary: L.I.S.T :-  Log Important Simple Tasks
+Author: GeorgeET15 and codeNinja30
+Author-email: georgeemmanuelthomas@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pyfiglet
+Requires-Dist: inquirer
+Requires-Dist: tqdm
+Requires-Dist: rich
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
