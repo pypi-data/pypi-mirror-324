@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: elicits
+Version: 0.0.2
+Summary: Tool for learning prior distributions based on expert prior knowledge elicitation
+License: Apache-2.0
+Author: Florence Bockting
+Maintainer: Florence Bockting
+Requires-Python: ==3.11.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: bayesflow (==1.1.6)
+Requires-Dist: configs (==3.0.3)
+Requires-Dist: numpy (==1.24.3)
+Requires-Dist: pandas (==2.2.3)
+Requires-Dist: pyarrow (==16.1.0)
+Requires-Dist: signac (==2.2.0)
+Requires-Dist: tensorflow (==2.14)
+Requires-Dist: tensorflow-io-gcs-filesystem (==0.31.0)
+Requires-Dist: tensorflow-probability (==0.22.1)
