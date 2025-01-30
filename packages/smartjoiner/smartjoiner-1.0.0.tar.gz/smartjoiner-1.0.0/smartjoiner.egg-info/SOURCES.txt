@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.py
+smartjoiner/__init__.py
+smartjoiner/info.txt.py
+smartjoiner.egg-info/PKG-INFO
+smartjoiner.egg-info/SOURCES.txt
+smartjoiner.egg-info/dependency_links.txt
+smartjoiner.egg-info/top_level.txt
