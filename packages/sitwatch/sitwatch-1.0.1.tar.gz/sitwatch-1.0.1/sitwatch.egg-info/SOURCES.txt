@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sitwatch/__init__.py
+sitwatch.egg-info/PKG-INFO
+sitwatch.egg-info/SOURCES.txt
+sitwatch.egg-info/dependency_links.txt
+sitwatch.egg-info/requires.txt
+sitwatch.egg-info/top_level.txt
