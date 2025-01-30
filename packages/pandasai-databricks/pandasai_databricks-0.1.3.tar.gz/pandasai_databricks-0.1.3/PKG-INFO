@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: pandasai-databricks
+Version: 0.1.3
+Summary: Databricks connector integration for PandaAI
+Author: Gabriele Venturi
+Requires-Python: >=3.9,<3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: databricks-sql-connector[sqlalchemy] (>=3.6.0,<4.0.0)
+Requires-Dist: pandasai (>=3.0.0b4)
+Requires-Dist: pandasai-sql (>=0.1.0,<0.2.0)
+Requires-Dist: pyarrow (>=14.0.1,<15.0.0)
+Description-Content-Type: text/markdown
+
+# Databricks Extension for PandaAI
+
+This extension integrates Databricks connectors with PandaAI, providing support for Databricks.
+
+## Installation
+
+You can install this extension using poetry:
+
+```bash
+poetry install pandasai-databricks
+```
+
