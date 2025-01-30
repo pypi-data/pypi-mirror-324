@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "GlobalOptimizationHRLA"
+version = "1.0.8"
+authors = [
+  { name="Daniel Cortild", email="d.cortild@rug.nl" },
+]
+description = "A package to solve global optimization problems in small dimensions. The method is based on sampling algorithms, and specifically implements the high-resolution Langevin algorithm."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    'numpy',
+    'matplotlib',
+    'tqdm',
+    'multiprocess',
+    'dill',
+    'matplotlib',
+    'tabulate'
+  ]
+
+[project.urls]
+"Homepage" = "https://github.com/DanielCortild/GlobalOptimization"
+"Bug Tracker" = "https://github.com/DanielCortild/GlobalOptimization/issues"
+
+[options]
+install_requires = [
+    'numpy',
+    'matplotlib',
+    'tqdm',
+    'multiprocess',
+    'dill',
+    'matplotlib',
+    'tabulate'
+  ]
+setup_requires = [
+    'numpy',
+    'matplotlib',
+    'tqdm',
+    'multiprocess',
+    'dill',
+    'matplotlib',
+    'tabulate'
+  ]
