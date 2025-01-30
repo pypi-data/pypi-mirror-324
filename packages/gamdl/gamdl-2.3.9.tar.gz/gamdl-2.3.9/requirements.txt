@@ -1,0 +1,8 @@
+click
+inquirerpy
+m3u8
+mutagen
+pillow
+pywidevine
+pyyaml
+yt-dlp
