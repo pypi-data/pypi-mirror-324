@@ -1,0 +1,15 @@
+latitude_telemetry/__init__.py,sha256=qYIWiHLzqpDMPAixoGuKXETfub8cNm1TIjP0XE55AmE,25
+latitude_telemetry/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+latitude_telemetry/env/__init__.py,sha256=66of5veJ-u1aNI025L65Rrj321AjrYevMqomTMYIrPQ,19
+latitude_telemetry/env/env.py,sha256=-OYVPDZMyIvDIxlhYFRP7PpF2byiokg4yTH76o96cyo,461
+latitude_telemetry/exporter/__init__.py,sha256=Vn4Z5VeH6y41sml5kTYUnS_msyTI79V2tK4atfs_smA,48
+latitude_telemetry/exporter/exporter.py,sha256=toZNIKPvfpam9wl8ek1BFVTXdu3FSH9MO69HlrFYgZw,11379
+latitude_telemetry/exporter/payloads.py,sha256=i3HdhRjvusYlbecbIi-3o6eun1wBkEccvybw-S8bozg,1637
+latitude_telemetry/telemetry/__init__.py,sha256=n4sPJf-pHzNmrnJsrzQruHoQMwfdB733mT1OLaDMFz8,46
+latitude_telemetry/telemetry/telemetry.py,sha256=qSAHVG6r4pvcSnPdFjlxgq32isi8TE5JYaMb1G2VNNc,9401
+latitude_telemetry/telemetry/types.py,sha256=Ni4O9vbLK9Kg3k9wUdw804-pmBJlulv6XWAxrdNVMoQ,1367
+latitude_telemetry/util/__init__.py,sha256=alIDGBnxWH4JvP-UW-7N99seBBi0r1GV1h8f1ERFBec,21
+latitude_telemetry/util/utils.py,sha256=WZ1tnUaZq46nXiwzNRSn0DpQInsrAalRyZszja0o5ZQ,3073
+latitude_telemetry-1.0.0.dist-info/METADATA,sha256=aJwYCF2BV3zdEGspZkAdUJXXXYC9RdyGO5okU8i0lCU,3494
+latitude_telemetry-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+latitude_telemetry-1.0.0.dist-info/RECORD,,
