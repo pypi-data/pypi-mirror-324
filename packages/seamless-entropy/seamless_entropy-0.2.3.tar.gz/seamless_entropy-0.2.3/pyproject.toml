@@ -1,0 +1,49 @@
+[project]
+name = "seamless-entropy"
+version = "0.2.3"
+description = "An experimental package intended to test adaptive dependencies for numeric code."
+authors = [
+    {name = "Jack Grahl",email = "jack.grahl@gmail.com"}
+]
+maintainers = [
+    {name = "Jack Grahl",email = "jack.grahl@gmail.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+]
+
+
+[tool.poetry]
+homepage = "https://github.com/jwg4/seamless_entropy"
+repository = "https://github.com/jwg4/normie/seamless_entropy"
+include = [
+    {path = "src/*.c", format = "sdist"},
+    {path = "src/*.h", format = "sdist"}
+]
+
+[tool.poetry.build]
+script = "build.py"
+generate-setup-file = true
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0", "setuptools (>=75.8.0,<76.0.0)"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+
+[tool.poetry.group.numba.dependencies]
+numba = "^0.61.0"
+
+[tool.poetry.group.numba]
+optional = true
+
+[tool.poetry.group.scipy.dependencies]
+scipy = "^1.15.1"
+
+[tool.poetry.group.scipy]
+optional = true
+
