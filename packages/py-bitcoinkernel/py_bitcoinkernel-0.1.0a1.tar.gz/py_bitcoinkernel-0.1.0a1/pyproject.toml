@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "cmake>=3.15",
+    "scikit-build-core"
+]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "py-bitcoinkernel"
+version = "0.1.0a1"
+description = "A Python wrapper for libbitcoinkernel"
+authors = [
+    { name = "Stephan Vuylsteke", email = "stickies-v@protonmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+dependencies = [
+]
+requires-python=">=3.10"
+
+[tool.cibuildwheel]
+test-command = "pytest {project}/test"
+test-extras = ["test"]
+
+[tool.scikit-build]
+wheel.packages = ["src/pbk"]
+wheel.install-dir = "pbk"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+]
