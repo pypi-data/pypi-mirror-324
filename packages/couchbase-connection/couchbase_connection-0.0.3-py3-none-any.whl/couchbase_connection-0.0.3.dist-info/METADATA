@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: couchbase_connection
+Version: 0.0.3
+Summary: A Couchbase connector for Streamlit
+Author: Viraj Agarwal
+Author-email: virajagarwal15@gmail.com
+Keywords: couchbase,streamlit,connector,couchbase-streamlit-connector,python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Database
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Operating System :: OS Independent
+Requires-Dist: couchbase
+Requires-Dist: streamlit
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+A Couchbase connector for Streamlit that supports basic CRUD operations and querying. It provides a simple way to interact with a Couchbase database within a Streamlit app.
