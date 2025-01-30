@@ -1,0 +1,23 @@
+include LICENSE
+include README.md
+
+# Include all Python files
+recursive-include liferaft_python_lib *.py
+
+# Exclude build, dist, egg-info, and tests
+prune build
+prune dist
+prune *.egg-info
+prune tests
+prune **/__pycache__
+
+# Exclude specific development-related files and directories
+exclude .pre-commit-config.yaml
+exclude pyproject.toml
+exclude poetry.lock
+exclude .gitignore
+exclude .vscode
+exclude .devcontainer
+exclude .env
+exclude .env.example
+exclude setup.cfg

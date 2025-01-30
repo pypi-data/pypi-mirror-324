@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: liferaft_python_lib
+Version: 0.0.3
+Summary: A shared library for reusable abstracted components
+Home-page: UNKNOWN
+Author: ORION
+Author-email: orion@liferaftinc.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Liferaft Python Library
+
+`liferaft_python_lib` is a shared Python library providing reusable, abstracted components designed for integration across multiple services. This package standardizes and simplifies the development of distributed systems by offering commonly used abstractions such as queue adapters, clients, and models.
+
+## Features
+
+- **Abstracted Components**: Foundational building blocks for distributed systems.
+- **Modular Design**: Easily integrate reusable components like queue adapters, clients, and models.
+- **Future-Ready**: Upcoming iterations will include advanced abstractions such as Navigator models and shared utilities.
+
+## Installation
+
+Install the package via pip:
+
+```bash
+pip install liferaft_python_lib
+
+
