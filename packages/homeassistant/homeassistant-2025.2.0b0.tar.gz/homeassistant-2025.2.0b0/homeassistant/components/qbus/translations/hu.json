@@ -1,0 +1,19 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "A vez\u00e9rl\u0151 m\u00e1r konfigur\u00e1lva van",
+            "discovery_in_progress": "Felfedez\u00e9s folyamatban",
+            "not_supported": "A QBUS konfigur\u00e1ci\u00f3ja MQTT felfedez\u00e9sen kereszt\u00fcl t\u00f6rt\u00e9nik. Ha a vez\u00e9rl\u0151je nem ker\u00fcl automatikusan felfedez\u00e9sre, ellen\u0151rizze a dokument\u00e1ci\u00f3 el\u0151felt\u00e9teleit \u00e9s a hibaelh\u00e1r\u00edt\u00e1si r\u00e9szt."
+        },
+        "error": {
+            "no_controller": "Nem tal\u00e1lhat\u00f3 vez\u00e9rl\u0151"
+        },
+        "flow_title": "Vez\u00e9rl\u0151 {serial}",
+        "step": {
+            "discovery_confirm": {
+                "description": "Hozz\u00e1adja a(z) {serial} vez\u00e9rl\u0151t?",
+                "title": "Vez\u00e9rl\u0151 hozz\u00e1ad\u00e1sa"
+            }
+        }
+    }
+}

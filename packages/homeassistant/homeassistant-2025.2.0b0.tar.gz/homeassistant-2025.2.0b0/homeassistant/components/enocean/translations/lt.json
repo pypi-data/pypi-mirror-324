@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "invalid_dongle_path": "Netinkamas rakto kelias"
+        },
+        "error": {
+            "invalid_dongle_path": "\u0160iam keliui tinkamo rakto nerasta"
+        }
+    }
+}
