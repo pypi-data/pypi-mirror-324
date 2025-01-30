@@ -1,0 +1,2 @@
+[sqlalchemy.dialects]
+parseable = parseable_connector:ParseableDialect
