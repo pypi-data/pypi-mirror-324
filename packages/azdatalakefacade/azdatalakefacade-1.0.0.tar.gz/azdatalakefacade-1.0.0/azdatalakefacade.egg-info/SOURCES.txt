@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+azdatalake/__init__.py
+azdatalake/singleton.py
+azdatalakefacade.egg-info/PKG-INFO
+azdatalakefacade.egg-info/SOURCES.txt
+azdatalakefacade.egg-info/dependency_links.txt
+azdatalakefacade.egg-info/requires.txt
+azdatalakefacade.egg-info/top_level.txt
