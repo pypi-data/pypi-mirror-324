@@ -1,0 +1,12 @@
+itk_ants-0.8.1.dist-info/WHEEL,sha256=Inh3lM_I0WefbsRUb3ZmN_yTl627GbfP8AvnA2isk8g,151
+itk_ants-0.8.1.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+itk_ants-0.8.1.dist-info/METADATA,sha256=7d1I7rcVkwbNmsk_fhYMbK6vMKnBzIPIm_-FVSKwka8,15369
+itk_ants-0.8.1.dist-info/RECORD,,
+itk_ants-0.8.1.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+itk/ANTsWasmPython.py,sha256=yJwg9kPRTuujrAGuzTt3bl4UgdM3lFtNPVd2vKWLCYM,2446
+itk/_ANTsWasmPython.so,sha256=Cf9E6eJfwcjMAxKPhuhYANSQ_HafugGdBBzPnV7TGjY,53080081
+itk/itkANTSRegistrationPython.py,sha256=K-rJ3taoCze2eUvM9BjNVT-2U0f5ZUsHcjPr_XRZAD0,879969
+itk/itkANTSGroupwiseBuildTemplatePython.py,sha256=PbaZ5mW1wCIyGWFxr0Ec2F02jZa3Qrg1OHR_F9vmC7I,200041
+itk/Configuration/ANTsWasmConfig.py,sha256=M9XJUGq5h0cn7mpMkOOby-sSar_pDgWTEF8gfkVnwtQ,11708
+itk/Configuration/ANTsWasm_snake_case.py,sha256=SFuQ5yHy1sT0iyNCGIMIPoke1qgXmVpLcPusLWWnrHo,80
+itk_ants.libs/libtbb-f489fd38.so.12.9,sha256=rr4QUZmgSmQqsfQRMgDSgd5mRWXtIWUMJxn5phGhtK4,4315273
