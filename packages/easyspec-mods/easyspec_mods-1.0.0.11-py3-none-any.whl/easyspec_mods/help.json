@@ -1,0 +1,8 @@
+{
+    "repository": "https://github.com/ranieremenezes/easyspec",
+    "tutorials": {
+        "cleaning": "https://github.com/ranieremenezes/easyspec/blob/main/tutorial/Image_cleaning_easyspec.ipynb",
+        "extraction": "https://github.com/ranieremenezes/easyspec/blob/main/tutorial/spectroscopy_tracing_easyspec.ipynb",
+        "analysis": "https://github.com/ranieremenezes/easyspec/blob/main/tutorial/spectral_analysis_easyspec.ipynb"
+    }
+}
