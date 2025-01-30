@@ -1,0 +1,8 @@
+daomodel-0.3.2b0.dist-info/METADATA,sha256=uBcbSdAdOsR5d-vTSepA6BrgZPiUP9q5G9EJekuQ1wg,11386
+daomodel-0.3.2b0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+daomodel-0.3.2b0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+daomodel/__init__.py,sha256=3lqrnrLvITIcthXX3sGUFHbDynTsCPQx4MotivPzzKM,6205
+daomodel/dao.py,sha256=Tx4O9GPCA0l_QwLA8_mdR9LtRirtfnNiGENZee3xwcY,10418
+daomodel/db.py,sha256=ofKKSZ0Ut9xn7PhOmmHt-iz1k3IjcJetPqwn3B5NEm8,1650
+daomodel/util.py,sha256=e7HTclNV5DOW-u7uU8R2J-iRrcNSl5irPPqtd0MCDGE,4684
+daomodel-0.3.2b0.dist-info/RECORD,,
