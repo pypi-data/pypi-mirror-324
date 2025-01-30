@@ -1,0 +1,52 @@
+import numpy as np
+
+from enaml.workbench.api import Extension
+
+from psi.context.api import Parameter
+from psi.core.enaml.api import ExperimentManifest
+from psi.controller.api import ContinuousInput, DecimateTo, Derivative, Transform
+from psi.data.sinks.api import BinaryStore
+
+
+enamldef TurntableManifest(ExperimentManifest): manifest:
+
+    id = 'turntable'
+    title = 'Turntable'
+
+    Extension:
+        id = manifest.id + '.data'
+        point = 'psi.data.sinks'
+
+        BinaryStore:
+            name = 'turntable_store'
+            continuous_inputs = ['turntable_angle', 'turntable_angular_velocity', 'turntable_linear_velocity']
+
+    Extension:
+        id = manifest.id + '.turntable.context'
+        point = 'psi.context.items'
+
+        Parameter:
+            name = 'turntable_radius'
+            label = 'Turntable radius (cm)'
+            group_name = 'hardware_settings'
+            expression = '8.5'
+
+    Extension:
+        id = manifest.id + '.io'
+        point = 'psi.controller.io'
+
+        ContinuousInput:
+            name = 'turntable_angle'
+            source_name = 'hw_ci::turntable_angle'
+
+            Derivative:
+                name = 'turntable_angular_velocity_raw'
+                initial_value = 0
+
+                DecimateTo:
+                    name = 'turntable_angular_velocity'
+                    target_fs = 20
+
+                    Transform:
+                        name = 'turntable_linear_velocity'
+                        function = lambda x: x * C.turntable_radius
