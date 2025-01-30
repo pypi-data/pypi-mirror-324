@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: htr-iiif-claude
+Version: 0.1.3
+Summary: Generate HTR from IIIF Resources
+License: MIT
+Author: Mark Baggett
+Author-email: markpbaggett@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anthropic (>=0.29.0,<0.30.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: httpx (>=0.27.0,<0.28.0)
+Requires-Dist: tqdm (>=4.66.4,<5.0.0)
+Description-Content-Type: text/markdown
+
+# transcribe_htr_from_iiif 
+
+## About
+
+Transcribe Handwritten Text from IIIF with Claude
+
+* Point at an Image response
+* Point at a Manifest (in progress)
+
+## Installing
+
+Installation is easiest with pipx:
+
+```shell
+pipx install htr_iiif_claude
+```
+
+You can also install with pip but do some mindfully:
+
+```shell
+pip install htr_iiif_claude
+```
+
+## Configuring API Key
+
+Set API key as `CLAUDE_API`
+
+## Running
+
+To transcribe a single IIIF image doc, just:
+
+```shell
+htr transcribe -i https://api.library.tamu.edu/iiif/2/50ae1c1c-b272-3d64-b132-c17d9704d49a/info.json   
+```
+
