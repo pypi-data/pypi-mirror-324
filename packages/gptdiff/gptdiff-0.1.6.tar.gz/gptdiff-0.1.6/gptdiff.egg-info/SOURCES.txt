@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+setup.py
+gptdiff/__init__.py
+gptdiff/gptdiff.py
+gptdiff.egg-info/PKG-INFO
+gptdiff.egg-info/SOURCES.txt
+gptdiff.egg-info/dependency_links.txt
+gptdiff.egg-info/entry_points.txt
+gptdiff.egg-info/requires.txt
+gptdiff.egg-info/top_level.txt
+tests/test_smartapply.py
