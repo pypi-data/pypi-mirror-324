@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: haybox-cli
+Version: 0.1.5
+Summary: Command line app for interacting with HayBox firmware
+License: GPL-3.0-only
+Author: Jonathan Haylett
+Author-email: jonathan@haylett.dev
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: haybox (==0.1.5)
+Description-Content-Type: text/markdown
+
+# HayBox CLI
+
+Command line app for interacting with HayBox firmware
+
+## Installation
+
+### Windows EXE file
+
+1. Download the exe file from the [latest release](https://github.com/JonnyHaystack/haybox-cli/releases)
+2. Shift + right click in the directory you downloaded the exe to, then click "open command window here"
+3. Run it with `.\haybox.exe`
+
+### From PyPI
+
+```
+pip install -U --user haybox-cli
+```
+
+## Usage
+
+```
+Usage: haybox [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --version   Show the version and exit.
+  -h, --help  Show this message and exit.
+
+Commands:
+  config   Retrieve or update the active configuration on the device.
+  devices  Scan for connected configurable HayBox devices.
+  info     Print device info in JSON format for a specific HayBox device.
+  reboot   Reboot the device to firmware or bootloader.
+```
+
