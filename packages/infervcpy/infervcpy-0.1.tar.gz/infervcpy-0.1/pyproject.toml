@@ -1,0 +1,51 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "infervcpy"
+version = "0.1"
+description = "Easy to use audio conversion using rvc"
+authors = ["Neofr <neoforevershog@gmail.com>"]
+license = "MIT"
+packages = [{ include = "infervcpy" }]
+readme = "README.md"
+homepage = "https://github.com/thatneos/python-rvc-inference"
+repository = "https://github.com/thatneos/python-rvc-inference"
+documentation = "https://github.com/thatneos/python-rvc-inference/blob/main/dos.md"
+keywords = ["rvc", "vc", "voice conversion"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Multimedia :: Sound/Audio :: Mixers",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+scipy = "*"
+numba = "0.56.4"
+faiss-cpu = "1.7.3"
+ffmpeg-python = ">=0.2.0"
+fairseq = "0.12.2"
+typeguard = "4.2.0"
+soundfile = "*"
+numpy = "*"
+torch = "*"
+torchaudio = "*"
+gradio = "4.40.0"
+praat-parselmouth = ">=0.4.3"
+pyworld = "0.3.2"
+torchcrepe = "0.0.23"
+audio-separator = { extras = ["gpu"], version = "0.28.5" }
+yt-dlp = "*"
+gtts = "*"
+edge-tts = "*"
+
+[tool.poetry.extras]
+cpu = ["onnxruntime"]
+gpu = ["onnxruntime-gpu"]
