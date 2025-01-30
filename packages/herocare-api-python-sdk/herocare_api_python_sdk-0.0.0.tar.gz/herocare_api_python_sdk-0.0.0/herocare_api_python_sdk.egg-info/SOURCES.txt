@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+herocare_api_python_sdk/__init__.py
+herocare_api_python_sdk.egg-info/PKG-INFO
+herocare_api_python_sdk.egg-info/SOURCES.txt
+herocare_api_python_sdk.egg-info/dependency_links.txt
+herocare_api_python_sdk.egg-info/top_level.txt
