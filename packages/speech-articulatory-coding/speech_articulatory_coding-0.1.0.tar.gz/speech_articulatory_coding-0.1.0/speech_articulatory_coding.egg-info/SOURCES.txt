@@ -1,0 +1,15 @@
+README.md
+setup.py
+sparc/__init__.py
+sparc/block.py
+sparc/generator.py
+sparc/inversion.py
+sparc/sparc.py
+sparc/speech.py
+sparc/spk_encoder.py
+sparc/src_extractor.py
+speech_articulatory_coding.egg-info/PKG-INFO
+speech_articulatory_coding.egg-info/SOURCES.txt
+speech_articulatory_coding.egg-info/dependency_links.txt
+speech_articulatory_coding.egg-info/requires.txt
+speech_articulatory_coding.egg-info/top_level.txt

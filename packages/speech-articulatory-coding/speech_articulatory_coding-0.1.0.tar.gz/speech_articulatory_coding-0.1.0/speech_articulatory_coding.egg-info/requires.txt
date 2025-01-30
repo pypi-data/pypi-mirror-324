@@ -1,0 +1,11 @@
+numpy
+soundfile
+librosa
+torch
+torchaudio
+transformers
+torchcrepe
+huggingface-hub
+matplotlib
+tqdm
+penn
