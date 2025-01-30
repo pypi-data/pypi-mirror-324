@@ -1,0 +1,2 @@
+[console_scripts]
+hc-mcp-confluence = hc_mcp_confluence:main
