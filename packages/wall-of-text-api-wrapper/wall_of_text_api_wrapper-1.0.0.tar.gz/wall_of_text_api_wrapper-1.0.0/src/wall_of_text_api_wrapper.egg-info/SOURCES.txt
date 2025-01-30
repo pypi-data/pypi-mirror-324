@@ -1,0 +1,16 @@
+.gitignore
+LICENSE.txt
+README.md
+pyproject.toml
+requirements.txt
+src/wall_of_text_api_wrapper/__init__.py
+src/wall_of_text_api_wrapper.egg-info/PKG-INFO
+src/wall_of_text_api_wrapper.egg-info/SOURCES.txt
+src/wall_of_text_api_wrapper.egg-info/dependency_links.txt
+src/wall_of_text_api_wrapper.egg-info/requires.txt
+src/wall_of_text_api_wrapper.egg-info/top_level.txt
+src/wall_of_text_api_wrapper/api_versions/__init__.py
+src/wall_of_text_api_wrapper/api_versions/v1/__init__.py
+src/wall_of_text_api_wrapper/api_versions/v1/dataclasses.py
+src/wall_of_text_api_wrapper/api_versions/v1/wrapper.py
+tests/test.py
