@@ -1,0 +1,9 @@
+r53_provider/manifest.toml,sha256=mGh8a-XWhJdSuu_7iZXLVjByReOLe1UZi33qhG85YDM,116
+r53_provider/r53_provider.py,sha256=IS8R6IE4LBWoUNThmN0AZEwXKdsPjT_1EzTPoj070do,6443
+r53_provider/test_r53_provider.py,sha256=1C6cZAiqKaE7g_Ibj_yJkT_nqh7wz7B3ZuDI-3fFmbg,3735
+opsbox_r53_provider-0.1.4.dist-info/LICENCE.txt,sha256=-YEY41LAwXsb0Er-5vJY1cKRFr9ea3T6CigUirNyUZo,17097
+opsbox_r53_provider-0.1.4.dist-info/METADATA,sha256=DEknHvIyouvxHQbYsXI2e7mFwq82TrVPpVjwhtjacQU,344
+opsbox_r53_provider-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+opsbox_r53_provider-0.1.4.dist-info/entry_points.txt,sha256=OThMOTCQvKVXToUbudKDacGlxQt59rPSVBVdviZIFSg,81
+opsbox_r53_provider-0.1.4.dist-info/top_level.txt,sha256=uvtLdhr4VG3V6_lHUVNTSMz-T7yrWifv8QTDSwq92pg,13
+opsbox_r53_provider-0.1.4.dist-info/RECORD,,
