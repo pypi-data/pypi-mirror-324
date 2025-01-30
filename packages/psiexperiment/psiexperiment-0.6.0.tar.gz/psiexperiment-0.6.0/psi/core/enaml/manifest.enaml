@@ -1,0 +1,53 @@
+import logging
+log = logging.getLogger(__name__)
+
+from atom.api import Bool, Property, Str, Typed, Value
+
+from enaml.core.api import d_
+from enaml.workbench.api import PluginManifest
+
+from .contribution import PSIContribution
+
+
+class ExperimentManifest(PluginManifest):
+    '''
+    Manifest providing simple access to the context namespace, context plugin,
+    and controller plugin.
+    '''
+    title = d_(Str())
+    required = d_(Bool(False))
+
+    name = Property()
+
+    def _get_name(self):
+        log.warning('Attempt to use obsolete property name on %s.', self.id)
+        return self.id
+
+    C = d_(Value(), writable=False)
+    controller = d_(Value(), writable=False)
+    context = d_(Value(), writable=False)
+    data = d_(Value(), writable=False)
+
+    def _default_title(self):
+        return self.id.replace('_', ' ').capitalize()
+
+
+class PSIManifest(PluginManifest):
+
+    contribution = Typed(PSIContribution)
+    id = Property(cached=True)
+    name = Property()
+
+    C = d_(Value(), writable=False)
+    controller = d_(Value(), writable=False)
+    context = d_(Value(), writable=False)
+    data = d_(Value(), writable=False)
+
+    def _get_id(self):
+        class_type = self.__class__.__name__
+        return f'{self.contribution.name}.{class_type}'
+
+    def _get_name(self):
+        log.warning('Attempt to use obsolete property name on %s.', self.id)
+        return self.id
+

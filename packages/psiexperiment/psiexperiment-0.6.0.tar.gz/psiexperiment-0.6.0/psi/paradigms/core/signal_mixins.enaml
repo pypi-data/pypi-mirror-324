@@ -1,0 +1,192 @@
+from enaml.core.api import Looper
+from enaml.workbench.api import Extension
+
+from psi.core.enaml.api import ExperimentManifest
+from psi.data.plots import (ChannelPlot, FFTChannelPlot, FFTContainer,
+                            InfiniteLine, TimeContainer, ViewBox)
+
+
+################################################################################
+# Reusable extensions that can be used by manifests
+################################################################################
+enamldef MultiSignalViewExtension(Extension): ext:
+
+    id = 'multi_signal_view_plots'
+    point = 'psi.data.plots'
+
+    alias time_span: time_container.span
+    alias time_delay: time_container.delay
+    alias y_label: vb.y_label
+    alias y_min: vb.y_min
+    alias y_max: vb.y_max
+    alias y_mode: vb.y_mode
+    alias save_limits: vb.save_limits
+    alias title: time_container.label
+
+    attr sources
+
+    TimeContainer: time_container:
+        name << ext.id + '_container'
+        span = 4
+        delay = 0.125
+
+        ViewBox: vb:
+            name << ext.id + '_vb'
+            y_min = -0.2
+            y_max = 0.2
+            y_mode = 'mouse'
+            save_limits = True
+
+            Looper:
+                iterable << sources.items() if sources is not None else []
+
+                ChannelPlot: time_plot:
+                    name << ext.id + f'{loop_item[0]}_plot'
+                    source_name = loop_item[0]
+                    pen_color = loop_item[1].get('color', 'k')
+                    decimate_mode = loop_item[1].get('decimate_mode', 'extremes')
+
+
+enamldef MultiSignalViewFFTExtension(Extension): ext:
+    id = 'multi_signal_view_fft_plots'
+    point = 'psi.data.plots'
+
+    alias fft_freq_lb: fft_container.freq_lb
+    alias fft_freq_ub: fft_container.freq_ub
+    alias x_mode: fft_vb.x_mode
+    alias axis_scale: fft_container.axis_scale
+    alias y_label: fft_vb.y_label
+    alias y_min: fft_vb.y_min
+    alias y_max: fft_vb.y_max
+    alias y_mode: fft_vb.y_mode
+    alias save_limits: fft_vb.save_limits
+    alias title: fft_container.label
+
+    attr fft_time_span = 1
+    attr waveform_averages = 1
+    attr apply_calibration = False
+
+    #: List of vertical lines to add to plot (e.g., 60 Hz). Each entry should
+    #: be a dictionary with at least one key (position), indicating where the
+    #: line appears in the plot. Optional keys include color, width, alpha, and
+    #: movable.
+    attr vlines = []
+
+    attr sources
+
+    FFTContainer: fft_container:
+        name << ext.id + '_container'
+        freq_lb = 5
+        freq_ub = 50000
+
+        ViewBox: fft_vb:
+            name << ext.id + '_vb'
+            y_min = -10
+            y_max = 100
+            y_mode = 'mouse'
+            save_limits = True
+
+            Looper:
+                iterable << enumerate(vlines)
+                InfiniteLine:
+                    name = ext.id + str(loop_item[0])
+                    direction = 'vertical'
+                    position = loop_item[1]['position']
+                    pen_color = loop_item[1].get('color', 'k')
+                    pen_width = loop_item[1].get('width', 0)
+                    pen_alpha = loop_item[1].get('alpha', 1)
+                    movable = loop_item[1].get('movable', False)
+
+            Looper:
+                iterable << sources.items() if sources is not None else []
+
+                FFTChannelPlot:
+                    name << ext.id + f'{loop_item[0]}_plot'
+                    source_name = loop_item[0]
+                    pen_color = loop_item[1].get('color', 'k')
+                    apply_calibration = loop_item[1].get('apply_calibration', ext.apply_calibration)
+                    waveform_averages = loop_item[1].get('waveform_averages', ext.waveform_averages)
+                    time_span = loop_item[1].get('fft_time_span', ext.fft_time_span)
+
+
+################################################################################
+# Microphone mixins
+################################################################################
+enamldef MultiSignalViewManifest(ExperimentManifest): manifest:
+
+    id = 'signal_view'
+    title = 'Signal view (time)'
+
+    alias time_span: ext.time_span
+    alias time_delay: ext.time_delay
+    alias y_label: ext.y_label
+    alias y_min: ext.y_min
+    alias y_max: ext.y_max
+    alias y_mode: ext.y_mode
+    alias save_limits: ext.save_limits
+
+    alias sources: ext.sources
+
+    MultiSignalViewExtension: ext:
+        id = manifest.id
+        title = manifest.title
+
+
+enamldef SignalViewManifest(MultiSignalViewManifest): manifest:
+
+    attr source_name
+    attr decimate_mode = 'extremes'
+    attr color = 'k'
+
+    initialized ::
+        manifest.sources = {
+            manifest.source_name: {
+                'color': manifest.color,
+                'decimate_mode': manifest.decimate_mode,
+            },
+        }
+
+
+enamldef MultiSignalFFTViewManifest(ExperimentManifest): manifest:
+
+    id = 'signal_fft_view'
+    title = 'Signal view (PSD)'
+
+    alias fft_freq_lb: ext.fft_freq_lb
+    alias fft_freq_ub: ext.fft_freq_ub
+    alias x_mode: ext.x_mode
+    alias axis_scale: ext.axis_scale
+    alias y_label: ext.y_label
+    alias y_min: ext.y_min
+    alias y_max: ext.y_max
+    alias y_mode: ext.y_mode
+    alias save_limits: ext.save_limits
+    alias vlines: ext.vlines
+
+    # Provide default values if not provided in sources
+    alias fft_time_span: ext.fft_time_span
+    alias waveform_averages: ext.waveform_averages
+    alias apply_calibration: ext.apply_calibration
+
+    #: Must be a dictionary mapping source_name to a dictionary of
+    #: FFTChannelPlot properties (currently supported properties include color,
+    #: apply_calibration, fft_time_span, and waveform_averages). For example:
+    #: sources = {'probe_mic': {'color': 'k'}, 'elicitor_mic': {'color': 'r'}}
+    alias sources: ext.sources
+
+    MultiSignalViewFFTExtension: ext:
+        id = manifest.id
+        title = manifest.title
+
+
+
+enamldef SignalFFTViewManifest(MultiSignalFFTViewManifest): manifest:
+
+    attr source_name
+
+    initialized ::
+        manifest.sources = {
+            manifest.source_name: {
+                'color': 'k',
+            }
+        }
