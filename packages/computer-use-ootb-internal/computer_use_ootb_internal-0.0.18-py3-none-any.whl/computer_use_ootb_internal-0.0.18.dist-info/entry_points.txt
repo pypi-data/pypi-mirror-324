@@ -1,0 +1,2 @@
+[console_scripts]
+computer-use-ootb-internal = computer_use_ootb_internal.run_teachmode_ootb_args:main
