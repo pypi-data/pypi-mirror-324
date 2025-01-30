@@ -1,0 +1,3 @@
+[console_scripts]
+pokemon-world = src.app:main
+spam-cli = spam:main_cli
