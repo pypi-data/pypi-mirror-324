@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: google_internal_apis
+Version: 0.0.1
+Author-email: Elliana May <me@mause.me>
+License: MIT
+Requires-Python: <4.0,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: ghunt>=0.1
