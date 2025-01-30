@@ -1,0 +1,57 @@
+Metadata-Version: 2.2
+Name: blue_fusion
+Version: 4.16.1
+Summary: 🔮 2025 IEEE GRSS Data Fusion Contest
+Home-page: https://github.com/kamangir/blue-fusion
+Author: Arash Abadpour (Kamangir)
+Author-email: arash@kamangir.net
+License: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Unix Shell
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: blueness
+Requires-Dist: blue-options
+Requires-Dist: abcli
+Requires-Dist: boto3
+Requires-Dist: geojson
+Requires-Dist: geopandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pymysql
+Requires-Dist: pyyaml
+Requires-Dist: pylint
+Requires-Dist: pytest
+Requires-Dist: python-dotenv[cli]
+Requires-Dist: tqdm
+Requires-Dist: ipdb
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# 🔮 Blue Fusion
+
+🔮 `@fusion` is a take on the 2025 IEEE GRSS Data Fusion Contest: [All-Weather Land Cover and Building Damage Mapping](https://www.grss-ieee.org/technical-committees/image-analysis-and-data-fusion/?tab=data-fusion-contest). 
+
+```bash
+pip install blue-fusion
+```
+
+- [ ] [`@fusion bright ingest`](https://raw.githubusercontent.com/kamangir/blue-fusion/main/blue_fusion/docs/track-2.md) 🔥
+
+
+---
+
+
+[![pylint](https://github.com/kamangir/blue-fusion/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/blue-fusion/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/blue-fusion/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/blue-fusion/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/blue-fusion/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/blue-fusion/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/blue-fusion.svg)](https://pypi.org/project/blue-fusion/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/blue-fusion)](https://pypistats.org/packages/blue-fusion)
+
+built by 🌀 [`blue_options-4.200.1`](https://github.com/kamangir/awesome-bash-cli), based on 🔮 [`blue_fusion-4.16.1`](https://github.com/kamangir/blue-fusion).
