@@ -1,0 +1,13 @@
+dagster_msteams/__init__.py,sha256=AF9u6JatEXNQMHr-Y6ZbBvrXWGXTH5qjocY3vwkYfuQ,594
+dagster_msteams/card.py,sha256=uU5ISZd6HSrXZMZfY_KGn6d4TWOzTm1UrZFyeEA085w,858
+dagster_msteams/client.py,sha256=TjjcSWvYW-6zR2n_Re6Rjy4S8yatH_EiUHcgPIg-GT0,1416
+dagster_msteams/hooks.py,sha256=xc9bLVmZYWeE5iTQvkbaer5mTz9CiZPhRmIRvpaIvYU,5109
+dagster_msteams/py.typed,sha256=la67KBlbjXN-_-DfGNcdOcjYumVpKG_Tkw-8n5dnGB4,8
+dagster_msteams/resources.py,sha256=1lRX7cbGALvZkjvnV3CQ1iFH1lBoTl_OKBPi1j3gEjA,3778
+dagster_msteams/sensors.py,sha256=saW9XeuURPMcaXrKzPf9qXe14hNEual4-dEtGvLvfQE,6293
+dagster_msteams/version.py,sha256=5Sp-TI-zZwVYq65iJ5awExRCPmlZkpFks4f30p0eWvY,24
+dagster_msteams-0.25.11.dist-info/LICENSE,sha256=icMK2rJTRl00cWVKkO6EsOIa5cPhgIlyv1FhfwQeoVo,11348
+dagster_msteams-0.25.11.dist-info/METADATA,sha256=H_OhpgKHtiOowDGpVXKlFm_T7osfxK8JK2LBMnpw4ZE,742
+dagster_msteams-0.25.11.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+dagster_msteams-0.25.11.dist-info/top_level.txt,sha256=iPdSd3_YdRArLB-anX6TE5Rc2eEcfrnDO6ea5Yqo4h8,16
+dagster_msteams-0.25.11.dist-info/RECORD,,
