@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+flexible_datetime/__init__.py
+flexible_datetime/flex_datetime.py
+flexible_datetime/flexible_datetime.py
+flexible_datetime/py.typed
+flexible_datetime/pydantic_arrow.py
+flexible_datetime/time_utils.py
+flexible_datetime.egg-info/PKG-INFO
+flexible_datetime.egg-info/SOURCES.txt
+flexible_datetime.egg-info/dependency_links.txt
+flexible_datetime.egg-info/requires.txt
+flexible_datetime.egg-info/top_level.txt
+tests/test_beanie.py
+tests/test_infer_format.py
