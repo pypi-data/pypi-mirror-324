@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+ck_recursive_dataclass/__init__.py
+ck_recursive_dataclass.egg-info/PKG-INFO
+ck_recursive_dataclass.egg-info/SOURCES.txt
+ck_recursive_dataclass.egg-info/dependency_links.txt
+ck_recursive_dataclass.egg-info/requires.txt
+ck_recursive_dataclass.egg-info/top_level.txt
+tests/test_recursive_dataclasses.py

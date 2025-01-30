@@ -1,0 +1,11 @@
+typing-extensions>=4.0.0
+
+[dev]
+tox>=4.0.0
+mypy>=1.0.0
+ruff>=0.1.0
+build
+twine
+
+[test]
+pytest>=7.0.0
