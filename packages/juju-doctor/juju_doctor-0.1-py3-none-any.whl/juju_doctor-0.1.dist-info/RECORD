@@ -1,0 +1,8 @@
+juju_doctor/__init__.py,sha256=MdkU1TxzkPZTgU-kx9QAx05RHkCM4ycjv-KsHDHhiA0,31
+juju_doctor/fetcher.py,sha256=mfRPsbaD92BW21f9_gx7gsK3RE_PLXzDAc4bTUosAU4,3816
+juju_doctor/main.py,sha256=WWm76lV7rUpt3PTVDMMJD9jVzNF2NV7miUItpeUOX_Y,6902
+juju_doctor-0.1.dist-info/METADATA,sha256=XL3rnAQPuk9iX8gQ4R2ER8LYKm2c5A8j9YypVG56WG8,15619
+juju_doctor-0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+juju_doctor-0.1.dist-info/entry_points.txt,sha256=OIE44ZDc6DUanzENpRpISbhAef5IPA9hx3IdmsdOO6o,41
+juju_doctor-0.1.dist-info/licenses/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+juju_doctor-0.1.dist-info/RECORD,,

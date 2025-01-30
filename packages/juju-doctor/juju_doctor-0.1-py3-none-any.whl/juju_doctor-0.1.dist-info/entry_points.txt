@@ -1,0 +1,2 @@
+[console_scripts]
+juju-doctor = main:app
