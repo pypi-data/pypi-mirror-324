@@ -1,0 +1,2 @@
+[lms.djangoapp]
+openedx_certificates = openedx_certificates.apps:OpenedxCertificatesConfig
