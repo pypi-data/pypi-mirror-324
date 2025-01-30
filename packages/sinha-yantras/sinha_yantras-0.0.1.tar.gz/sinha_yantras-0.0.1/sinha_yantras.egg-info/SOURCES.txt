@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+sinha-yantras/__init__.py
+sinha_yantras.egg-info/PKG-INFO
+sinha_yantras.egg-info/SOURCES.txt
+sinha_yantras.egg-info/dependency_links.txt
+sinha_yantras.egg-info/requires.txt
+sinha_yantras.egg-info/top_level.txt
