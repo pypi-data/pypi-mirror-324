@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: pylint-ml
+Version: 0.0.1
+Summary: A Pylint plugin designed to enhance Pylint's comprehension of machine learning and data science libraries.
+Keywords: pylint,ml,plugin
+Author: Peter Hamfelt
+Author-email: peter.hamfelt@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Dist: pre-commit (>=3.6.0,<4.0.0)
+Requires-Dist: pylint (>=3.0,<4.0)
+Requires-Dist: pylint-plugin-utils (>=0.8)
+Project-URL: Repository, https://github.com/pylint-dev/pylint-ml
+Description-Content-Type: text/x-rst
+
+pylint-ml
+=============
+
+About
+-----
+``pylint-ml`` is a pylint plugin for enhancing code analysis for machine learning and data science
+
