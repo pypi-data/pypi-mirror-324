@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2025 Manuel Regidor <manuel.regidor@sygel.es>
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record
+        id="product_vendor_code_search_product_template_search_view"
+        model="ir.ui.view"
+    >
+        <field
+            name="name"
+        >product.vendor.code.search.product.template.search.view</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view" />
+        <field name="arch" type="xml">
+            <field name="categ_id" position="after">
+                <field
+                    name="seller_code"
+                    string="Seller Code"
+                    filter_domain="[('seller_code', 'ilike', self)]"
+                />
+            </field>
+        </field>
+    </record>
+</odoo>
