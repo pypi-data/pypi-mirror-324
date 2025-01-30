@@ -1,0 +1,12 @@
+from .templates import INITIALIZE_TEMPLATE as INITIALIZE_TEMPLATE
+from .templates import GET_TEMPLATE as GET_TEMPLATE
+from .templates import GET_ROUTE_TEMPLATE as GET_ROUTE_TEMPLATE
+from .templates import POST_TEMPLATE as POST_TEMPLATE
+from .templates import POST_ROUTE_TEMPLATE as POST_ROUTE_TEMPLATE
+from .templates import PUT_TEMPLATE as PUT_TEMPLATE
+from .templates import PUT_ROUTE_TEMPLATE as PUT_ROUTE_TEMPLATE
+from .templates import PATCH_TEMPLATE as PATCH_TEMPLATE
+from .templates import PATCH_ROUTE_TEMPLATE as PATCH_ROUTE_TEMPLATE
+from .templates import DELETE_TEMPLATE as DELETE_TEMPLATE
+from .templates import DELETE_ROUTE_TEMPLATE as DELETE_ROUTE_TEMPLATE
+from .templates import FINALIZE_TEMPLATE as FINALIZE_TEMPLATE
