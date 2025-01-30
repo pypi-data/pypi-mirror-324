@@ -1,0 +1,5 @@
+rustats-0.1.4.dist-info/METADATA,sha256=XiuhYsqEiYNVheO089td44qoNFpbseUJNj90VqiHDig,788
+rustats-0.1.4.dist-info/WHEEL,sha256=L5gZMZaEBRrnUR9Kpq6dKi9jlZoR9gJ96OVNO9zXDUg,136
+rustats/__init__.py,sha256=K6CZkMGmpzVcpjveV-7tgX0Z0WG9K9GYDspm9u205Hg,111
+rustats/rustats.pypy310-pp73-arm-linux-gnu.so,sha256=BkkG7PN5oy-nqfeAeQvv2jqR2EqmF98Vt3_6DwbB7Nk,687300
+rustats-0.1.4.dist-info/RECORD,,
