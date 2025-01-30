@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: seamless-entropy
+Version: 0.1.0
+Summary: An experimental package intended to test adaptive dependencies for numeric code.
+License: MIT
+Author: Jack Grahl
+Author-email: jack.grahl@gmail.com
+Maintainer: Jack Grahl
+Maintainer-email: jack.grahl@gmail.com
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# Seamless entropy
+
+The purpose of this package is to test and demonstrate how to create Python modules which can correctly fallback to supported functionality if dependencies such as C compilation, scipy, numba, etc., are not available.
+
