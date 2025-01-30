@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: aiosendpulse
+Version: 0.0.2
+Summary: Async SendPulse client for python
+Home-page: https://github.com/CircularImport/aiosendpulse
+Author: circularimport
+Author-email: circular.import@proton.me
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: email-validator (>=2)
+Requires-Dist: httpx
+Requires-Dist: pycountry
+Requires-Dist: pydantic (>=2)
+Requires-Dist: pydantic-extra-types (>=2)
+Project-URL: Documentation, https://circularimport.github.io/aiosendpulse/
+Project-URL: Repository, https://github.com/CircularImport/aiosendpulse
+Description-Content-Type: text/markdown
+
+# AioSendPulse Client for Python
+
+### Supported versions of python `>=3.9`
