@@ -1,0 +1,8 @@
+multiqc_cgs/__init__.py,sha256=FPpRdrDAofzLrgOWanQHlktBn47CA3JaTbMuh-irTpg,189
+multiqc_cgs/hooks.py,sha256=8zOHDz8uYlrxCQlcc5-207cAwt9E4ypMJ0vIsBNK_Dk,1585
+multiqc_cgs-1.0.0.dist-info/LICENSE.md,sha256=ar4S_hEwzJQocmygBCzaMLDR-bjMjSO_APCSk1hzXFg,34961
+multiqc_cgs-1.0.0.dist-info/METADATA,sha256=qYx5pcXSaP1RaEUmVgNojJucMtLbYr0p0JS4uIJpMSo,1203
+multiqc_cgs-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+multiqc_cgs-1.0.0.dist-info/entry_points.txt,sha256=ApcL5WI2YTY-yWA32O3zqjmm4zLeZEalXjU9BjBhOxs,67
+multiqc_cgs-1.0.0.dist-info/top_level.txt,sha256=jiHWveWAjTrAI_zTOD_ChR1YZKNzSWDCu4roFkZDjAk,12
+multiqc_cgs-1.0.0.dist-info/RECORD,,
