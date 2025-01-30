@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "gjp-models"
+version = "0.1.5"
+description = ""
+authors = ["giannisevagorou <giannis.evagorou@macrocosmos.ai>"]
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pydantic = "^2.10.6"
+numpy = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
