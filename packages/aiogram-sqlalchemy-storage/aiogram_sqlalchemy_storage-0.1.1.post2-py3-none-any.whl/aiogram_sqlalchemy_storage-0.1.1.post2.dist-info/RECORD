@@ -1,0 +1,8 @@
+sqlalchemy_storage/__init__.py,sha256=EI0Kj_uJbHCFJLPrNIzQeDqX7Q4n9oWLeiAphC07yQM,38
+sqlalchemy_storage/models.py,sha256=YFvl8KE8BS9t6x5SD8utnSOVyg1WjbN2Z8Q2ze2rX-o,347
+sqlalchemy_storage/storage.py,sha256=7UsUpyu6EXVVfF7lBA7i-8K0iWpFncd5zGKNVtgZmbE,3668
+aiogram_sqlalchemy_storage-0.1.1.post2.dist-info/LICENSE,sha256=WyIMA_1rmirjHOwdaTy0WwYkikRdUTjZTDnf-Meu0v8,1063
+aiogram_sqlalchemy_storage-0.1.1.post2.dist-info/METADATA,sha256=8pxYX7JLjGONI-afmBIVghduD6YdB1keXrFS_ygnnXU,3348
+aiogram_sqlalchemy_storage-0.1.1.post2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+aiogram_sqlalchemy_storage-0.1.1.post2.dist-info/top_level.txt,sha256=pZF3KuUCYSbwGfhpIvVqd9K0_BMOt9_jKQXzvDK8Vnc,19
+aiogram_sqlalchemy_storage-0.1.1.post2.dist-info/RECORD,,
