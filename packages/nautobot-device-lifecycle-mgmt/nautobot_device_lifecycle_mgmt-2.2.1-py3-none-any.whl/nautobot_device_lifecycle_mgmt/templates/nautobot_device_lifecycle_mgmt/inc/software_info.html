@@ -1,0 +1,25 @@
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>Software</strong> {% if obj_soft_valid %}<span class="label label-success">Valid{% else %}<span class="label label-danger">Invalid{% endif %}</span>
+            </div>
+            <table class="table table-hover panel-body attr-table">
+                <tr>
+                    <td>Name</td>
+                    <td>
+                        <a href="{% url 'plugins:nautobot_device_lifecycle_mgmt:softwarelcm' pk=obj_soft.id %}">{{ obj_soft }}</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Device Platform</td>
+                    <td>
+                        {{ obj_soft.device_platform }}
+                    </td>
+                </tr>
+                <tr>
+                    <td>Version</td>
+                    <td>
+                        {{ obj_soft.version }}
+                    </td>
+                </tr>
+            </table>
+        </div>
