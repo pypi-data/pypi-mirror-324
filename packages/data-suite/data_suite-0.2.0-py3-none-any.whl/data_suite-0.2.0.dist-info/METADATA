@@ -1,0 +1,202 @@
+Metadata-Version: 2.2
+Name: data_suite
+Version: 0.2.0
+Summary: Data-centric identification of in-distribution incongruous examples
+Home-page: https://arxiv.org/abs/2202.08836
+Author: Nabeel Seedat
+Author-email: seedatnabeel@gmail.com
+License: Apache 2.0
+Keywords: data-centric AI,data quality,uncertainty
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: <3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: copulas==0.6.0
+Requires-Dist: nonconformist==2.1.0
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: opentsne
+Requires-Dist: papermill
+Requires-Dist: pyod==1.0.1
+Requires-Dist: scikit-learn-extra
+Requires-Dist: scikit_learn
+Requires-Dist: scipy
+Requires-Dist: suod
+Requires-Dist: tensorflow
+Requires-Dist: torch==1.10.0
+Requires-Dist: torchvision==0.11.1
+Requires-Dist: wandb
+Requires-Dist: xlrd==2.0.1
+Provides-Extra: benchmarks
+Requires-Dist: aix360; extra == "benchmarks"
+Requires-Dist: alibi-detect==0.9.1; extra == "benchmarks"
+Requires-Dist: tensorflow>2; extra == "benchmarks"
+Requires-Dist: uq360==0.2; extra == "benchmarks"
+Provides-Extra: contribute
+Requires-Dist: black; extra == "contribute"
+Requires-Dist: flake8; extra == "contribute"
+Requires-Dist: isort; extra == "contribute"
+Requires-Dist: notebook; extra == "contribute"
+Requires-Dist: pre-commit; extra == "contribute"
+Provides-Extra: all
+Requires-Dist: aix360; extra == "all"
+Requires-Dist: alibi-detect==0.9.1; extra == "all"
+Requires-Dist: tensorflow>2; extra == "all"
+Requires-Dist: uq360==0.2; extra == "all"
+Requires-Dist: black; extra == "all"
+Requires-Dist: flake8; extra == "all"
+Requires-Dist: isort; extra == "all"
+Requires-Dist: notebook; extra == "all"
+Requires-Dist: pre-commit; extra == "all"
+
+# Data-SUITE: Data-centric identification of in-distribution incongruous examples
+
+[![arXiv](https://img.shields.io/badge/arXiv-2202.08836-b31b1b.svg)](https://arxiv.org/abs/2202.08836)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/vanderschaarlab/Data-SUITE/blob/main/LICENSE)
+
+
+![image](overview.png "How Data-SUITE can be used in practice")
+
+This repository contains the implementation of Data-SUITE, a "Data-Centric AI" framework to identify in-distribution incongruous data examples.
+
+DATA-SUITE leverages copula modeling, representation learning, and conformal prediction to build feature-wise confidence interval estimators based on a set of training instances. The copula modeling is optional, but allows a nice property of not needing access to real training data after the initial stages or to augment smaller datasets when needed.
+
+These estimators can be used to evaluate the congruence of test instances with respect to the training set, to answer two practically useful questions:
+
+(1) which test instances will be reliably predicted by a model trained with the training instances?
+
+(2) can we identify incongruous regions of the feature space so that data owners understand the data's limitations or guide future data collection?
+
+For more details, please read our [ICML 2022 paper](https://arxiv.org/abs/2202.08836): 'Data-SUITE: Data-centric identification of in-distribution incongruous examples'.
+
+## Installation
+1. Clone the repository
+2. Create a new virtual environment with Python 3.7, 3.8 or 3.9. e.g:
+```shell
+    virtualenv ds_env
+```
+3. Run the following command from the repository directory:
+ ```shell
+pip install -r requirements.txt
+ ```
+
+4. Two libraries for benchmarks (alibi-detect and aix360) have conflicting requirements for tensorflow. This can be circumvented by running the below. If this doesn't resolve the issue manually install the two packages in requirements-no-deps.txt using pip.
+
+ ```shell
+ pip install --no-deps -r requirements-no-deps.txt
+ ```
+
+**NOTE:** It is now also possible to also install this repo from source or pypi. This is done in the following ways.
+
+1. From inside the repo you can run:
+ ```shell
+pip install .
+ ```
+or from anywhere run
+
+ ```shell
+pip install data_suite
+ ```
+
+This installs the minimum number of packages to run `data_suite`.
+
+2. If you wish to run benchmarks, please install with the benchmarks extra with:
+ ```shell
+pip install data_suite[benchmarks]
+ ```
+
+ 3. If you wish to run contribute and adhere to the coding style, please install with the contribute extra with:
+ ```shell
+pip install data_suite[contribute]
+ ```
+
+
+## Getting started
+
+![image](blueprint.png "Overview of Data-SUITE")
+
+We provide two tutorial notebooks to illustrate the usage of Data-SUITE, with an example on synthetic data.
+
+These notebooks can be found in the ``/tutorial`` folder.
+
+1. ``tutorial_simple.ipynb``
+
+ - Provides a simple object-oriented (OO) interface to use Data-SUITE with simple fit & predict options.
+
+2. ``tutorial_detailed.ipynb``
+
+- Provides a more detailed look at the inner workings of Data-SUITE.
+
+Both tutorials achieve the same objective, to get started with Data-SUITE.
+
+## Data-SUITE with synthetic & real-data
+
+We also provide code to run Data-SUITE on public datasets. This includes the synthetic data experiments, as well as, the publicly available real-world datasets.
+
+A variety of jupyter notebooks are provided for this purpose. They are contained in the notebooks folder of the repo.
+
+For ease of usage we have provided bash scripts to execute the notebooks via Papermill. The results for all the different experiments/analysis for the datasets are then stored in their specific ``/results`` folder. These include dataframes of metrics, figures, etc.
+
+These bash scripts are contained in the ``/scripts`` folder.
+
+1. Synthetic data:
+
+The synthetic data experiment uses [Weights and Biases - wandb](https://wandb.ai) to log results over the various runs.
+
+Your specific wandb credentials should be added to: ``notebooks/synthetic_pipeline.ipynb``
+
+Thereafter one can run from the main dir:
+```shell
+bash scripts/synthetic_pipeline.sh
+```
+
+Once the experiment has completed all results are logged to wandb. Note this run might take quite some time. One can then download the .csv of logged results from wandb and place it in the ``/artifacts`` folder as ``synthetic_artifacts.csv``.
+
+Since the experiment can take quite long, we have provided an artifact ``synthetic_artifacts.csv`` obtained from wandb.
+
+``synthetic_artifacts.csv`` can then be processed processed to obtain the desired metrics & plots:
+
+For this run from the main dir:
+
+```shell
+bash scripts/process_synthetic.sh
+```
+
+All results will then be written to ``/results/synthetic``
+
+
+2. Real data:
+
+To run the public real-world datasets one simply needs to run, for example,  from the main dir:
+
+```shell
+bash scripts/run_adult.sh
+```
+
+OR
+
+```shell
+bash scripts/run_electric.sh
+```
+
+All results from the different main paper & appendix experiments will be written to the ``/results`` folder. These include dataframes for tables of metrics, figures, etc.
+
+The real world dataset notebooks can also serve as inspiration for usage on one's own data.
+
+
+## Citing
+
+If you use this code, please cite the associated paper:
+
+```
+@inproceedings
+{seedat2022data,
+title={Data-SUITE: Data-centric identification of in-distribution incongruous examples},
+author={Seedat, Nabeel and Crabbe, Jonathan and van der Schaar, Mihaela},
+journal={arXiv preprint arXiv:2202.08836},
+year={2022}
+}
+```
