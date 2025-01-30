@@ -1,0 +1,9 @@
+{% load helpers %}
+{% if perms.nautobot_device_lifecycle_mgmt.view_softwarelcm and perms.nautobot_device_lifecycle_mgmt.view_validatedsoftwarelcm %}
+    {% if obj_soft %}
+        {% include 'nautobot_device_lifecycle_mgmt/inc/software_info.html' %}
+    {% endif %}
+    {% if validsoft_table %}
+        {% include 'nautobot_device_lifecycle_mgmt/inc/validatedsoftware_info.html' %}
+    {% endif %}
+{% endif %}
