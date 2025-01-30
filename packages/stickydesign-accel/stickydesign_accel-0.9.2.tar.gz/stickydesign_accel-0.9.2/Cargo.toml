@@ -1,0 +1,18 @@
+[package]
+name = "stickydesign-accel"
+version = "0.9.2"
+edition = "2021"
+
+[lib]
+name = "stickydesign_accel"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[features]
+rayon = ["ndarray/rayon"]
+
+[dependencies]
+ndarray = {version = "0.16", features = ["approx", "blas", "serde"]}
+numpy = {version = "0.22"}
+pyo3 = {version = "0.22", features = ["extension-module"]}
+
