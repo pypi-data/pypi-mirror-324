@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: tap-klaviyo
+Version: 1.1.1
+Summary: Singer.io tap for extracting data from the Klaviyo API
+Home-page: http://singer.io
+Author: Stitch
+Classifier: Programming Language :: Python :: 3 :: Only
+License-File: LICENSE
+Requires-Dist: singer-python==6.0.0
+Requires-Dist: requests==2.32.3
