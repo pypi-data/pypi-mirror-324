@@ -1,0 +1,12 @@
+README.md
+setup.py
+elfwrapper/__init__.py
+elfwrapper/elf_exception.py
+elfwrapper/elf_wrapper.py
+elfwrapper/utility.py
+pyelfwrapper.egg-info/PKG-INFO
+pyelfwrapper.egg-info/SOURCES.txt
+pyelfwrapper.egg-info/dependency_links.txt
+pyelfwrapper.egg-info/requires.txt
+pyelfwrapper.egg-info/top_level.txt
+test/test1.py
