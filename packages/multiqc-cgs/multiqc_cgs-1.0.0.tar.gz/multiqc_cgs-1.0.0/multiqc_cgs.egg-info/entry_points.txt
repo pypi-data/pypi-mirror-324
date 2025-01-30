@@ -1,0 +1,2 @@
+[multiqc.hooks.v1]
+after_modules = multiqc_cgs.hooks:after_modules

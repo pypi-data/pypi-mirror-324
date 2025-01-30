@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: multiqc_cgs
+Version: 1.0.0
+Summary: make it possible to add more information to general statisticsn
+Home-page: 
+Download-URL: 
+Author: Patrik Smeds
+Author-email: patrik.smeds@scilifelab.uu.se
+License: GPL3
+Keywords: bioinformatics
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: JavaScript
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+License-File: LICENSE.md
+Requires-Dist: multiqc
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+
+hook that make it possible to modify general statistics table
