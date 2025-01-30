@@ -1,0 +1,5 @@
+Metadata-Version: 2.2
+Name: lebaronysard_first_package
+Version: 0.1.0
+Summary: A simple CLI package but an amazing one.
+Requires-Dist: click==8.1.3
