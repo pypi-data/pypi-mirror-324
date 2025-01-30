@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: gjp-models
+Version: 0.1.3
+Summary: 
+Author: giannisevagorou
+Author-email: giannis.evagorou@macrocosmos.ai
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic (>=2.10.6,<3.0.0)
+Description-Content-Type: text/markdown
+
+This repo provides a set of schemas to be used by the rqlite-API.
