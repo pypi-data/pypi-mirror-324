@@ -1,0 +1,175 @@
+Metadata-Version: 2.2
+Name: pixelist
+Version: 0.2.3
+Summary: Experiment with image filter workflows, by superpositions.
+Author-email: AARMN The Limitless <aarmn80@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/aarmn/pixelist
+Project-URL: Repository, https://github.com/aarmn/pixelist.git
+Project-URL: Issues, https://github.com/aarmn/pixelist/issues
+Project-URL: Changelog, https://github.com/aarmn/pixelist/releases
+Project-URL: Documentation, https://github.com/aarmn/pixelist#readme
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=2.2.1
+Requires-Dist: pydantic>=2.10.5
+Provides-Extra: display
+Requires-Dist: matplotlib>=3.5.0; extra == "display"
+Requires-Dist: opencv-python>=4.5.0; extra == "display"
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Requires-Dist: pytest-cov>=4.0.0; extra == "test"
+Requires-Dist: pytest-sugar>=0.9.7; extra == "test"
+Requires-Dist: coverage[toml]>=7.3.2; extra == "test"
+Requires-Dist: ruff>=0.1.9; extra == "test"
+Provides-Extra: dev
+Requires-Dist: build>=1.0.0; extra == "dev"
+Requires-Dist: twine>=4.0.0; extra == "dev"
+Requires-Dist: act-cli>=0.2.0; extra == "dev"
+Requires-Dist: jupyterlab>=4.0.0; extra == "dev"
+Provides-Extra: all
+Requires-Dist: pixelist[dev,display,test]; extra == "all"
+
+# Pixelist 🎨
+
+[![PyPI version](https://badge.fury.io/py/pixelist.svg)](https://pypi.org/project/pixelist/)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A powerful, composable image processing pipeline library for Python that makes working with image filters fun and flexible! 🚀
+
+## ✨ Features
+
+- 🔄 Sequential and parallel image processing pipelines
+- 🎯 Easy-to-use filter composition
+- 📊 Built-in visualization support
+- 🛡️ Type-safe with Pydantic validation
+- 🎨 Support for both grayscale and color images
+- 📝 Comprehensive processing history tracking
+
+## 🚀 Installation
+
+```bash
+# Basic installation
+pip install pixelist
+
+# With visualization support
+pip install pixelist[display]
+```
+
+## 🎯 Quick Start
+
+Here's a simple example to get you started:
+
+```python
+from pixelist import ImagePipeline, Filter, ProcessingMode
+import numpy as np
+
+# Define some filters
+@Filter.make
+def threshold(image: np.ndarray) -> np.ndarray:
+    return np.where(image > 127, 255, 0)
+
+@Filter.make
+def blur(image: np.ndarray) -> np.ndarray:
+    return cv2.GaussianBlur(image, (5, 5), 0)
+
+# Create and run a pipeline
+pipeline = ImagePipeline([blur, threshold])
+results = pipeline.run(
+    images=your_image,
+    mode=ProcessingMode.WITH_INTERMEDIATE_SHOW_ALL
+)
+```
+
+## 🌟 Advanced Usage
+
+### Parallel Processing
+
+If you want to experiment with two probable fits in your workflow, make a parallel workflow between those two! Sequential steps after that parallel step would also run on all previous branches without joining the branches. There might be parallel join, or sql like syntax later on for a fine-grain control on batches, but for now, its as simple as that! 
+
+```python
+# Create parallel branches in your pipeline
+pipeline = ImagePipeline([
+    histogram_stretch,
+    (prewitt_filter, laplacian_filter)  # Parallel filters
+])
+```
+
+### Custom Filter Creation
+
+```python
+@Filter.make
+def my_awesome_filter(image: np.ndarray) -> np.ndarray:
+    # Your image processing magic here
+    return processed_image
+```
+
+## 🎨 Visualization
+
+The library includes built-in visualization support:
+
+```python
+from pixelist import ImagePipeline, ProcessingMode
+
+pipeline.make(
+    images=input_images, # can be a random sample of your dataset
+    filters=[
+        histogram_stretch # Sequential
+        (prewitt_filter, laplacian_filter) # Superposition/Parallel, follows to parallel branches
+    ]
+    mode=ProcessingMode.WITH_INTERMEDIATE_SHOW_ALL  # Shows and store all intermediate steps,
+)
+```
+
+![Output Diagram](mddoc/sample-output.png)
+
+## 🛠️ Processing Modes
+
+- `NO_INTERMEDIATE`: Just the final result
+- `NO_INTERMEDIATE_SHOW_FINAL`: Show final result visually
+- `WITH_INTERMEDIATE`: Keep all intermediate results
+- `WITH_INTERMEDIATE_SHOW_ALL`: Visual display of all steps
+- `WITH_INTERMEDIATE_SHOW_FINAL`: Keep all, show final
+
+Final Images are Orange (Leafs of Workflow)
+
+![Workflow Diagram](mddoc/workflow.svg)
+
+<!-- ## 📚 Documentation
+
+For more examples and detailed documentation, check out our [documentation](https://github.com/yourusername/pixelist/docs). -->
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+- Open issues
+- Submit PRs
+- Suggest improvements
+- Share the love ❤️
+
+## 📝 License
+
+MIT License - feel free to use in your projects!
+
+## 🙏 Acknowledgments
+
+Special thanks to:
+- The NumPy and OpenCV communities
+- All our contributors
+
+---
+
+Made with ❤️ by the AARMN The Limitless
+
+Remember to ⭐ the repo if you like it!
