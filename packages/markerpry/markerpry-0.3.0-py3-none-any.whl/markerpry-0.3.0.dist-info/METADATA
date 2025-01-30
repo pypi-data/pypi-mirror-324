@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: markerpry
+Version: 0.3.0
+Summary: A library for parsing and transforming Python packaging markers
+Project-URL: Documentation, https://github.com/intentionally-left-nil/markerpry#readme
+Project-URL: Issues, https://github.com/intentionally-left-nil/markerpry#readme
+Project-URL: Source, https://github.com/intentionally-left-nil/markerpry#readme
+Author-email: Your Name <your.email@example.com>
+License-File: LICENSE
+License-File: LICENSE.txt
+Requires-Python: >=3.7
+Requires-Dist: packaging>=23.0
+Requires-Dist: typing-extensions>=4.0.0
+Provides-Extra: dev
+Requires-Dist: pytest-cov>=4.1.0; extra == 'dev'
+Requires-Dist: pytest>=7.0; extra == 'dev'
