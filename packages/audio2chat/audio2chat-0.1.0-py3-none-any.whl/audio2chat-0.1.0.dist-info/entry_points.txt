@@ -1,0 +1,2 @@
+[console_scripts]
+audio2chat = audio2chat.cli:main
