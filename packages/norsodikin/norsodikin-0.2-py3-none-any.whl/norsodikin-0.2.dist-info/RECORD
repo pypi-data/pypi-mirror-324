@@ -1,0 +1,14 @@
+nsdev/__init__.py,sha256=69PtGGqG2zt17neL_5WP3ngKdxuHKHME6necmIHGFHE,324
+nsdev/addUser.py,sha256=BOH7DexwuohFIXovqu-boAHUZtUzaEffHlmBOLw2Cw0,3302
+nsdev/argument.py,sha256=jvbjvKCogtF4-wFc5vRH5iuM91gf9TIypoyVS0GEWSI,2224
+nsdev/button.py,sha256=zfQQkkqP0FLUVnN0dazamk8xlpEWjxr3Y7oPP4u7K1k,3048
+nsdev/database.py,sha256=lyu6CLq-OD1dJa57GXElug6Xr42saAqUXbGI4MtwK7U,9795
+nsdev/encrypt.py,sha256=XxY0Etk9SIGilqjnSzuzZ8lpmHvkf_5ixvNlqQ1UQN8,3790
+nsdev/gemini.py,sha256=wGNHNmlFIY0hCFAW39MlPeGSIwUwDRAQ_Rhk5278v6k,2197
+nsdev/gradient.py,sha256=oppz0-5PkM7WzU-mtcVZIDba3hArOKfOdnuWwx-esRk,2540
+nsdev/logger.py,sha256=z2RDy1PVNwwb-FIr55381wbMPmk34eyyptmaoOhA648,3373
+nsdev/storekey.py,sha256=HjOS_9vtOcYFk_bWocy2R-YsHjF3Xu3XZgbUOPm9QY0,2277
+norsodikin-0.2.dist-info/METADATA,sha256=yO_Ljq71YIlPmKCgUatdgPcar3dYcfuIKRHiQTxyjVY,984
+norsodikin-0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+norsodikin-0.2.dist-info/top_level.txt,sha256=DHMeAdlCwNpMqzYy76XLsUcBJSQBp3KaZbkibZu7VlE,6
+norsodikin-0.2.dist-info/RECORD,,
