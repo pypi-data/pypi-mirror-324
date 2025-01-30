@@ -1,0 +1,3929 @@
+{
+    "Taskbar": [
+        {
+            "name": "Taskbar",
+            "rectangle": [
+                0,
+                2088,
+                2560,
+                2136
+            ],
+            "class_name": "Pane",
+            "depth": "1",
+            "elements": [
+                [
+                    {
+                        "name": "",
+                        "rectangle": [
+                            0,
+                            2088,
+                            3840,
+                            2160
+                        ],
+                        "class_name": "Pane",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-1",
+                        "automation_id": "TaskbarFrame"
+                    },
+                    {
+                        "name": "\u5c0f\u7ec4\u4ef6 12\u00b0C \u6674\u6717",
+                        "rectangle": [
+                            9,
+                            2088,
+                            237,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-2",
+                        "automation_id": "WidgetsButton"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            28,
+                            2088,
+                            64,
+                            2118
+                        ],
+                        "class_name": "Image",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-3",
+                        "automation_id": "BadgeAnchorLargeTicker"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            28,
+                            2105,
+                            64,
+                            2141
+                        ],
+                        "class_name": "Image",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-7",
+                        "automation_id": "BadgeAnchorLargeTicker"
+                    },
+                    {
+                        "name": "1",
+                        "rectangle": [
+                            55,
+                            2088,
+                            60,
+                            2097
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-6",
+                        "automation_id": "WidgetsBadgeText"
+                    },
+                    {
+                        "name": "1",
+                        "rectangle": [
+                            55,
+                            2097,
+                            60,
+                            2119
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-10",
+                        "automation_id": "WidgetsBadgeText"
+                    },
+                    {
+                        "name": "\u4eca\u65e5\u7126\u9ede",
+                        "rectangle": [
+                            77,
+                            2088,
+                            149,
+                            2100
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-4"
+                    },
+                    {
+                        "name": "12\u00b0C",
+                        "rectangle": [
+                            77,
+                            2099,
+                            112,
+                            2123
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-8"
+                    },
+                    {
+                        "name": "\u666e\u5951\u5c3c\u8bde\u8fb0",
+                        "rectangle": [
+                            77,
+                            2100,
+                            167,
+                            2124
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-5"
+                    },
+                    {
+                        "name": "\u5f00\u59cb",
+                        "rectangle": [
+                            1421,
+                            2088,
+                            1489,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-11",
+                        "automation_id": "StartButton"
+                    },
+                    {
+                        "name": "\u641c\u7d22",
+                        "rectangle": [
+                            1492,
+                            2100,
+                            1822,
+                            2148
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-12",
+                        "automation_id": "SearchButton"
+                    },
+                    {
+                        "name": "\u641c\u7d22",
+                        "rectangle": [
+                            1548,
+                            2109,
+                            1590,
+                            2136
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-13",
+                        "automation_id": "SearchBoxTextBlock"
+                    },
+                    {
+                        "name": "\u641c\u7d22",
+                        "rectangle": [
+                            1738,
+                            2100,
+                            1822,
+                            2148
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-14",
+                        "automation_id": "SearchGleamButton"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            1739,
+                            2104,
+                            1817,
+                            2143
+                        ],
+                        "class_name": "Image",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-15",
+                        "automation_id": "DynamicSearchBoxGleamImage"
+                    },
+                    {
+                        "name": "\u4efb\u52a1\u89c6\u56fe",
+                        "rectangle": [
+                            1825,
+                            2088,
+                            1891,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-16",
+                        "automation_id": "TaskViewButton"
+                    },
+                    {
+                        "name": "Microsoft Store",
+                        "rectangle": [
+                            1891,
+                            2088,
+                            1957,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-17",
+                        "automation_id": "Appid: Microsoft.WindowsStore_8wekyb3d8bbwe!App"
+                    },
+                    {
+                        "name": "1",
+                        "rectangle": [
+                            1926,
+                            2105,
+                            1950,
+                            2117
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-18",
+                        "automation_id": "BadgeText"
+                    },
+                    {
+                        "name": "\u8363\u8000\u7535\u8111\u7ba1\u5bb6",
+                        "rectangle": [
+                            1957,
+                            2088,
+                            2023,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-19",
+                        "automation_id": "Appid: {6D809377-6AF0-444B-8957-A3773F02200E}\\Honor\\PCManager\\PCManager.exe"
+                    },
+                    {
+                        "name": "\u6b63\u5728\u8fd0\u884c\u7684 windows \u548c1\u7ec4 \u6587\u4ef6\u8d44\u6e90\u7ba1\u7406\u5668 3",
+                        "rectangle": [
+                            2023,
+                            2088,
+                            2089,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-20",
+                        "automation_id": "Appid: Microsoft.Windows.Explorer"
+                    },
+                    {
+                        "name": "Microsoft Edge - 1 \u4e2a\u8fd0\u884c\u7a97\u53e3\u548c 1 \u4e2a\u7ec4",
+                        "rectangle": [
+                            2089,
+                            2088,
+                            2155,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-21",
+                        "automation_id": "Appid: MSEdge"
+                    },
+                    {
+                        "name": "OneNote - 1 \u4e2a\u8fd0\u884c\u7a97\u53e3",
+                        "rectangle": [
+                            2155,
+                            2088,
+                            2221,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-22",
+                        "automation_id": "Appid: Microsoft.Office.ONENOTE.EXE.15"
+                    },
+                    {
+                        "name": "\u8bb0\u4e8b\u672c - 1 \u4e2a\u8fd0\u884c\u7a97\u53e3",
+                        "rectangle": [
+                            2221,
+                            2088,
+                            2287,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-23",
+                        "automation_id": "Appid: Microsoft.WindowsNotepad_8wekyb3d8bbwe!App"
+                    },
+                    {
+                        "name": "QQ\u97f3\u4e50 - 1 \u4e2a\u8fd0\u884c\u7a97\u53e3",
+                        "rectangle": [
+                            2287,
+                            2088,
+                            2353,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-24",
+                        "automation_id": "Appid: D:\\application\\QQMusic\\QQMusic.exe"
+                    },
+                    {
+                        "name": "Cursor - 1 \u4e2a\u8fd0\u884c\u7a97\u53e3",
+                        "rectangle": [
+                            2353,
+                            2088,
+                            2419,
+                            2160
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-25",
+                        "automation_id": "Appid: Anysphere.Cursor"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u6674\u6717",
+                        "rectangle": [
+                            77,
+                            2123,
+                            111,
+                            2147
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-9"
+                    }
+                ]
+            ],
+            "count": 26
+        }
+    ],
+    "\u8363\u8000 YOYO \u52a9\u7406": [
+        {
+            "name": "",
+            "rectangle": [
+                3708,
+                1195,
+                3759,
+                1231
+            ],
+            "class_name": "Dialog",
+            "depth": "1",
+            "elements": [
+                [
+                    {
+                        "name": "",
+                        "rectangle": [
+                            3708,
+                            1195,
+                            3759,
+                            1231
+                        ],
+                        "class_name": "Custom",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-1",
+                        "automation_id": "RecommendBarControl"
+                    }
+                ]
+            ],
+            "count": 2
+        }
+    ],
+    "NextChat \u548c\u53e6\u5916 2 \u4e2a\u9875\u9762 - \u4e2a\u4eba - Microsoft\u200b Edge": [
+        {
+            "name": "NextChat - Microsoft Edge",
+            "rectangle": [
+                1,
+                0,
+                1918,
+                2087
+            ],
+            "class_name": "Pane",
+            "depth": "1",
+            "elements": [
+                [
+                    {
+                        "name": "\u4e2a\u4eba \u4e2a\u4eba\u8d44\u6599",
+                        "rectangle": [
+                            7,
+                            10,
+                            55,
+                            58
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-4",
+                        "automation_id": "view_1014"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            55,
+                            10,
+                            115,
+                            58
+                        ],
+                        "class_name": "Pane",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-5",
+                        "automation_id": "view_1082"
+                    },
+                    {
+                        "name": "\u5de5\u4f5c\u533a",
+                        "rectangle": [
+                            67,
+                            10,
+                            115,
+                            58
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-6",
+                        "automation_id": "view_11"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            120,
+                            10,
+                            1221,
+                            63
+                        ],
+                        "class_name": "Pane",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-7",
+                        "automation_id": "view_25"
+                    },
+                    {
+                        "name": "NextChat",
+                        "rectangle": [
+                            120,
+                            10,
+                            504,
+                            63
+                        ],
+                        "class_name": "TabItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-8",
+                        "automation_id": "view_24"
+                    },
+                    {
+                        "name": "mail.google.com - \u7f51\u7edc\u9519\u8bef",
+                        "rectangle": [
+                            478,
+                            10,
+                            862,
+                            63
+                        ],
+                        "class_name": "TabItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-10",
+                        "automation_id": "view_24"
+                    },
+                    {
+                        "name": "\u65b0\u5efa\u6807\u7b7e\u9875",
+                        "rectangle": [
+                            837,
+                            10,
+                            1221,
+                            63
+                        ],
+                        "class_name": "TabItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-12",
+                        "automation_id": "view_24"
+                    },
+                    {
+                        "name": "\u65b0\u5efa\u6807\u7b7e\u9875",
+                        "rectangle": [
+                            1212,
+                            9,
+                            1260,
+                            62
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-14",
+                        "automation_id": "view_28"
+                    },
+                    {
+                        "name": "\u6700\u5c0f\u5316",
+                        "rectangle": [
+                            1711,
+                            1,
+                            1780,
+                            61
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-1",
+                        "automation_id": "view_2"
+                    },
+                    {
+                        "name": "\u6700\u5927\u5316",
+                        "rectangle": [
+                            1780,
+                            1,
+                            1849,
+                            61
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-2",
+                        "automation_id": "view_3"
+                    },
+                    {
+                        "name": "\u5173\u95ed",
+                        "rectangle": [
+                            1849,
+                            1,
+                            1918,
+                            61
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-3",
+                        "automation_id": "view_7"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u5173\u95ed\u6807\u7b7e\u9875",
+                        "rectangle": [
+                            456,
+                            22,
+                            482,
+                            48
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-9",
+                        "automation_id": "view_27"
+                    },
+                    {
+                        "name": "\u5173\u95ed\u6807\u7b7e\u9875",
+                        "rectangle": [
+                            814,
+                            22,
+                            840,
+                            48
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-11",
+                        "automation_id": "view_27"
+                    },
+                    {
+                        "name": "\u5173\u95ed\u6807\u7b7e\u9875",
+                        "rectangle": [
+                            1173,
+                            22,
+                            1199,
+                            48
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-13",
+                        "automation_id": "view_27"
+                    }
+                ],
+                [
+                    {
+                        "name": "",
+                        "rectangle": [
+                            1,
+                            61,
+                            1918,
+                            121
+                        ],
+                        "class_name": "Toolbar",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-15",
+                        "automation_id": "view_1000"
+                    },
+                    {
+                        "name": "\u8fd4\u56de",
+                        "rectangle": [
+                            7,
+                            67,
+                            55,
+                            115
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-16",
+                        "automation_id": "view_1001"
+                    },
+                    {
+                        "name": "\u5237\u65b0",
+                        "rectangle": [
+                            61,
+                            67,
+                            109,
+                            115
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-17",
+                        "automation_id": "view_1003"
+                    },
+                    {
+                        "name": "\u4e3b\u9875",
+                        "rectangle": [
+                            115,
+                            69,
+                            163,
+                            114
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-18",
+                        "automation_id": "view_1004"
+                    },
+                    {
+                        "name": "\u67e5\u770b\u7ad9\u70b9\u4fe1\u606f",
+                        "rectangle": [
+                            181,
+                            70,
+                            217,
+                            112
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-19",
+                        "automation_id": "view_1020"
+                    },
+                    {
+                        "name": "https://hello.999325.xyz/#/",
+                        "rectangle": [
+                            217,
+                            70,
+                            1170,
+                            112
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-20",
+                        "automation_id": "view_1022"
+                    },
+                    {
+                        "name": "\u5e94\u7528\u7a0b\u5e8f\u53ef\u7528\u3002\u5b89\u88c5 NextChat",
+                        "rectangle": [
+                            1171,
+                            70,
+                            1207,
+                            112
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-21"
+                    },
+                    {
+                        "name": "\u5728 Internet Explorer \u6a21\u5f0f\u4e0b\u7684\u91cd\u65b0\u52a0\u8f7d\u9009\u9879\u5361",
+                        "rectangle": [
+                            1219,
+                            70,
+                            1255,
+                            112
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-22"
+                    },
+                    {
+                        "name": "\u5c06\u6b64\u9875\u9762\u6dfb\u52a0\u5230\u6536\u85cf\u5939(Ctrl+D)",
+                        "rectangle": [
+                            1267,
+                            70,
+                            1303,
+                            112
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-23",
+                        "automation_id": "view_1007"
+                    },
+                    {
+                        "name": "\u641c\u7d22\u56fe\u6807",
+                        "rectangle": [
+                            1332,
+                            70,
+                            1368,
+                            112
+                        ],
+                        "class_name": "Image",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-24",
+                        "automation_id": "view_1020"
+                    },
+                    {
+                        "name": "Search Bar",
+                        "rectangle": [
+                            1368,
+                            70,
+                            1653,
+                            112
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-25",
+                        "automation_id": "view_1022"
+                    },
+                    {
+                        "name": "\u6269\u5c55",
+                        "rectangle": [
+                            1689,
+                            67,
+                            1737,
+                            115
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-26",
+                        "automation_id": "view_1015"
+                    },
+                    {
+                        "name": "\u6536\u85cf\u5939",
+                        "rectangle": [
+                            1750,
+                            67,
+                            1798,
+                            115
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-27",
+                        "automation_id": "view_1012"
+                    },
+                    {
+                        "name": "\u8bbe\u7f6e\u53ca\u5176\u4ed6 (Alt+F)",
+                        "rectangle": [
+                            1804,
+                            67,
+                            1852,
+                            115
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-28",
+                        "automation_id": "view_1016"
+                    },
+                    {
+                        "name": "Copilot (Ctrl+Shift+.)",
+                        "rectangle": [
+                            1858,
+                            67,
+                            1912,
+                            115
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-29",
+                        "automation_id": "view_1078"
+                    }
+                ],
+                [
+                    {
+                        "name": "NextChat",
+                        "rectangle": [
+                            7,
+                            121,
+                            1912,
+                            2080
+                        ],
+                        "class_name": "Document",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-30",
+                        "automation_id": "RootWebArea"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u6587\u4ef6\u538b\u7f29\u95ee\u9898",
+                        "rectangle": [
+                            583,
+                            240,
+                            764,
+                            282
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-39"
+                    },
+                    {
+                        "name": "\u5bfc\u51fa\u804a\u5929\u8bb0\u5f55",
+                        "rectangle": [
+                            1658,
+                            247,
+                            1715,
+                            304
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-41"
+                    }
+                ],
+                [
+                    {
+                        "name": "NextChat",
+                        "rectangle": [
+                            133,
+                            279,
+                            276,
+                            321
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-31"
+                    },
+                    {
+                        "name": "\u5171 22 \u6761\u5bf9\u8bdd",
+                        "rectangle": [
+                            583,
+                            281,
+                            703,
+                            310
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-40"
+                    }
+                ],
+                [
+                    {
+                        "name": "Build your own AI assistant.",
+                        "rectangle": [
+                            133,
+                            320,
+                            367,
+                            345
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-32"
+                    }
+                ],
+                [
+                    {
+                        "name": "show_guiParserd(uia_gui, screenshot_path)",
+                        "rectangle": [
+                            836,
+                            341,
+                            1263,
+                            370
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-42"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u9762\u5177",
+                        "rectangle": [
+                            133,
+                            374,
+                            321,
+                            429
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-33"
+                    },
+                    {
+                        "name": "\u63d2\u4ef6",
+                        "rectangle": [
+                            335,
+                            374,
+                            524,
+                            429
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-34"
+                    }
+                ],
+                [
+                    {
+                        "name": "2024/12/22 04:02:35",
+                        "rectangle": [
+                            1583,
+                            388,
+                            1756,
+                            413
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-43"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u6587\u4ef6\u538b\u7f29\u95ee\u9898 22 \u6761\u5bf9\u8bdd 2024/12/22 04:02:41",
+                        "rectangle": [
+                            133,
+                            458,
+                            524,
+                            559
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-35"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u5728\u4f60\u7684\u4ee3\u7801\u4e2d\uff0c\u51fa\u73b0\u4e86\u56fe\u50cf\u5c3a\u5bf8\u8fc7\u5927\u7684\u95ee\u9898\u3002\u4ee5\u4e0b\u662f\u4e00\u4e9b\u53ef\u80fd\u7684\u89e3\u51b3\u65b9\u6848\uff1a",
+                        "rectangle": [
+                            599,
+                            521,
+                            1293,
+                            550
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-44"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u6e38\u620f\u6311\u6218\u526f\u672c\u83b7\u53d6\u5956\u52b1 4 \u6761\u5bf9\u8bdd 2024/12/17 23:43:36",
+                        "rectangle": [
+                            133,
+                            573,
+                            524,
+                            674
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-36"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u89e3\u51b3\u65b9\u6848",
+                        "rectangle": [
+                            599,
+                            587,
+                            1356,
+                            621
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-45"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u8c03\u6574\u56fe\u50cf\u5927\u5c0f\uff1aimg = cv2.resize(img, (desired_width, desired_height))\n\u964d\u4f4e DPI\uff1aplt.figure(figsize=(10, 10), dpi=80)\n\u51cf\u5c11\u7ed8\u5236\u5143\u7d20\u7684\u6570\u91cf\uff1a\u68c0\u67e5\u6570\u636e\uff1a\u4fdd\u5b58\u800c\u4e0d\u662f\u663e\u793a\uff1aplt.savefig('output.png', bbox_inches='tight', pad_inches=0)\n\u8c03\u8bd5\u8f93\u51fa\uff1aprint(\"Image size:\", img.shape)\nfor item in item_cache:\n    if \"rectangle\" in item:\n        print(\"Rectangle:\", item[\"rectangle\"])\n",
+                        "rectangle": [
+                            599,
+                            644,
+                            1356,
+                            1611
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-46"
+                    },
+                    {
+                        "name": "\u8c03\u6574\u56fe\u50cf\u5927\u5c0f",
+                        "rectangle": [
+                            641,
+                            644,
+                            1356,
+                            793
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-47"
+                    },
+                    {
+                        "name": "\u8c03\u6574\u56fe\u50cf\u5927\u5c0f",
+                        "rectangle": [
+                            641,
+                            645,
+                            768,
+                            674
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-48"
+                    },
+                    {
+                        "name": "\uff1a",
+                        "rectangle": [
+                            767,
+                            645,
+                            789,
+                            674
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-49"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u5b66\u4e60\u65b0\u7f16\u7a0b\u73af\u5883 214 \u6761\u5bf9\u8bdd 2024/12/21 14:33:08",
+                        "rectangle": [
+                            133,
+                            688,
+                            524,
+                            789
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-37"
+                    }
+                ],
+                [
+                    {
+                        "name": "img",
+                        "rectangle": [
+                            641,
+                            699,
+                            1356,
+                            732
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-50"
+                    },
+                    {
+                        "name": "img",
+                        "rectangle": [
+                            683,
+                            699,
+                            1356,
+                            732
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-51"
+                    },
+                    {
+                        "name": "img",
+                        "rectangle": [
+                            738,
+                            706,
+                            768,
+                            727
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-52"
+                    }
+                ],
+                [
+                    {
+                        "name": "img = cv2.resize(img, (desired_width, desired_height))\n",
+                        "rectangle": [
+                            659,
+                            751,
+                            1189,
+                            772
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-54"
+                    },
+                    {
+                        "name": "copy",
+                        "rectangle": [
+                            1307,
+                            752,
+                            1347,
+                            773
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-53"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u964d\u4f4e DPI",
+                        "rectangle": [
+                            641,
+                            816,
+                            1356,
+                            966
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-55"
+                    },
+                    {
+                        "name": "\u964d\u4f4e DPI",
+                        "rectangle": [
+                            641,
+                            817,
+                            726,
+                            846
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-56"
+                    },
+                    {
+                        "name": "\uff1a",
+                        "rectangle": [
+                            725,
+                            817,
+                            747,
+                            846
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-57"
+                    }
+                ],
+                [
+                    {
+                        "name": "plt.figure()",
+                        "rectangle": [
+                            641,
+                            872,
+                            1356,
+                            904
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-58"
+                    },
+                    {
+                        "name": "plt.figure()",
+                        "rectangle": [
+                            683,
+                            872,
+                            1356,
+                            904
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-59"
+                    },
+                    {
+                        "name": "plt.figure()",
+                        "rectangle": [
+                            759,
+                            879,
+                            877,
+                            900
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-60"
+                    }
+                ],
+                [
+                    {
+                        "name": "plt.figure(figsize=(",
+                        "rectangle": [
+                            659,
+                            923,
+                            856,
+                            944
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-62"
+                    },
+                    {
+                        "name": "10",
+                        "rectangle": [
+                            855,
+                            923,
+                            875,
+                            944
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-63"
+                    },
+                    {
+                        "name": ", ",
+                        "rectangle": [
+                            874,
+                            923,
+                            895,
+                            944
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-64"
+                    },
+                    {
+                        "name": "10",
+                        "rectangle": [
+                            894,
+                            923,
+                            915,
+                            944
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-65"
+                    },
+                    {
+                        "name": "), dpi=",
+                        "rectangle": [
+                            914,
+                            923,
+                            983,
+                            944
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-66"
+                    },
+                    {
+                        "name": "80",
+                        "rectangle": [
+                            982,
+                            923,
+                            1003,
+                            944
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-67"
+                    },
+                    {
+                        "name": ")\n",
+                        "rectangle": [
+                            1002,
+                            923,
+                            1013,
+                            944
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-68"
+                    },
+                    {
+                        "name": "copy",
+                        "rectangle": [
+                            1307,
+                            924,
+                            1347,
+                            945
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-61"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u51cf\u5c11\u7ed8\u5236\u5143\u7d20\u7684\u6570\u91cf",
+                        "rectangle": [
+                            641,
+                            989,
+                            1356,
+                            1077
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-69"
+                    },
+                    {
+                        "name": "\u51cf\u5c11\u7ed8\u5236\u5143\u7d20\u7684\u6570\u91cf",
+                        "rectangle": [
+                            641,
+                            990,
+                            831,
+                            1019
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-70"
+                    },
+                    {
+                        "name": "\uff1a",
+                        "rectangle": [
+                            830,
+                            990,
+                            852,
+                            1019
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-71"
+                    }
+                ],
+                [
+                    {
+                        "name": "gui",
+                        "rectangle": [
+                            641,
+                            1045,
+                            1356,
+                            1077
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-72"
+                    },
+                    {
+                        "name": "gui",
+                        "rectangle": [
+                            683,
+                            1045,
+                            1356,
+                            1077
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-73"
+                    },
+                    {
+                        "name": "gui",
+                        "rectangle": [
+                            738,
+                            1052,
+                            768,
+                            1072
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-74"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u68c0\u67e5\u6570\u636e",
+                        "rectangle": [
+                            641,
+                            1100,
+                            1356,
+                            1188
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-75"
+                    },
+                    {
+                        "name": "\u68c0\u67e5\u6570\u636e",
+                        "rectangle": [
+                            641,
+                            1101,
+                            726,
+                            1130
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-76"
+                    },
+                    {
+                        "name": "\uff1a",
+                        "rectangle": [
+                            725,
+                            1101,
+                            747,
+                            1130
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-77"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            958,
+                            1099,
+                            960,
+                            1101
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-131",
+                        "automation_id": "__next-route-announcer__"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            958,
+                            1099,
+                            961,
+                            1102
+                        ],
+                        "class_name": "GroupBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-132",
+                        "automation_id": "rfd-announcement-:r0:"
+                    }
+                ],
+                [
+                    {
+                        "name": "rectangle",
+                        "rectangle": [
+                            641,
+                            1156,
+                            1356,
+                            1188
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-78"
+                    },
+                    {
+                        "name": "rectangle",
+                        "rectangle": [
+                            683,
+                            1156,
+                            1356,
+                            1188
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-79"
+                    },
+                    {
+                        "name": "rectangle",
+                        "rectangle": [
+                            738,
+                            1163,
+                            827,
+                            1183
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-80"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u4fdd\u5b58\u800c\u4e0d\u662f\u663e\u793a",
+                        "rectangle": [
+                            641,
+                            1211,
+                            1356,
+                            1361
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-81"
+                    },
+                    {
+                        "name": "\u4fdd\u5b58\u800c\u4e0d\u662f\u663e\u793a",
+                        "rectangle": [
+                            641,
+                            1212,
+                            789,
+                            1241
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-82"
+                    },
+                    {
+                        "name": "\uff1a",
+                        "rectangle": [
+                            788,
+                            1212,
+                            810,
+                            1241
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-83"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u5982\u679c\u56fe\u50cf\u592a\u5927\uff0c\u53ef\u4ee5\u5c1d\u8bd5\u4fdd\u5b58\u800c\u4e0d\u662f\u663e\u793a\u3002",
+                        "rectangle": [
+                            641,
+                            1267,
+                            1356,
+                            1299
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-84"
+                    },
+                    {
+                        "name": "\u5982\u679c\u56fe\u50cf\u592a\u5927\uff0c\u53ef\u4ee5\u5c1d\u8bd5\u4fdd\u5b58\u800c\u4e0d\u662f\u663e\u793a\u3002",
+                        "rectangle": [
+                            683,
+                            1267,
+                            1356,
+                            1299
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-85"
+                    }
+                ],
+                [
+                    {
+                        "name": "plt.savefig(",
+                        "rectangle": [
+                            659,
+                            1318,
+                            777,
+                            1339
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-87"
+                    },
+                    {
+                        "name": "'output.png'",
+                        "rectangle": [
+                            776,
+                            1318,
+                            895,
+                            1339
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-88"
+                    },
+                    {
+                        "name": ", bbox_inches=",
+                        "rectangle": [
+                            894,
+                            1318,
+                            1032,
+                            1339
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-89"
+                    },
+                    {
+                        "name": "'tight'",
+                        "rectangle": [
+                            1031,
+                            1318,
+                            1101,
+                            1339
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-90"
+                    },
+                    {
+                        "name": ", pad_inches=",
+                        "rectangle": [
+                            1100,
+                            1318,
+                            1229,
+                            1339
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-91"
+                    },
+                    {
+                        "name": "0",
+                        "rectangle": [
+                            1228,
+                            1318,
+                            1238,
+                            1339
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-92"
+                    },
+                    {
+                        "name": ")\n",
+                        "rectangle": [
+                            1237,
+                            1318,
+                            1248,
+                            1339
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-93"
+                    },
+                    {
+                        "name": "copy",
+                        "rectangle": [
+                            1307,
+                            1319,
+                            1347,
+                            1340
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-86"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u8c03\u8bd5\u8f93\u51fa",
+                        "rectangle": [
+                            641,
+                            1384,
+                            1356,
+                            1611
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-94"
+                    },
+                    {
+                        "name": "\u8c03\u8bd5\u8f93\u51fa",
+                        "rectangle": [
+                            641,
+                            1385,
+                            726,
+                            1414
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-95"
+                    },
+                    {
+                        "name": "\uff1a",
+                        "rectangle": [
+                            725,
+                            1385,
+                            747,
+                            1414
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-96"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u5728\u7ed8\u5236\u4e4b\u524d\uff0c\u8f93\u51fa\u56fe\u50cf\u548c\u77e9\u5f62\u7684\u5c3a\u5bf8\u4ee5\u68c0\u67e5\u662f\u5426\u5f02\u5e38\u3002",
+                        "rectangle": [
+                            641,
+                            1439,
+                            1356,
+                            1472
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-97"
+                    },
+                    {
+                        "name": "\u5728\u7ed8\u5236\u4e4b\u524d\uff0c\u8f93\u51fa\u56fe\u50cf\u548c\u77e9\u5f62\u7684\u5c3a\u5bf8\u4ee5\u68c0\u67e5\u662f\u5426\u5f02\u5e38\u3002",
+                        "rectangle": [
+                            683,
+                            1439,
+                            1356,
+                            1472
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-98"
+                    }
+                ],
+                [
+                    {
+                        "name": "print",
+                        "rectangle": [
+                            659,
+                            1490,
+                            709,
+                            1511
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-100"
+                    },
+                    {
+                        "name": "(",
+                        "rectangle": [
+                            708,
+                            1490,
+                            718,
+                            1511
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-101"
+                    },
+                    {
+                        "name": "\"Image size:\"",
+                        "rectangle": [
+                            717,
+                            1490,
+                            846,
+                            1511
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-102"
+                    },
+                    {
+                        "name": ", img.shape)\n",
+                        "rectangle": [
+                            845,
+                            1490,
+                            964,
+                            1511
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-103"
+                    },
+                    {
+                        "name": "copy",
+                        "rectangle": [
+                            1307,
+                            1491,
+                            1347,
+                            1512
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-99"
+                    }
+                ],
+                [
+                    {
+                        "name": "for",
+                        "rectangle": [
+                            659,
+                            1516,
+                            689,
+                            1537
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-104"
+                    },
+                    {
+                        "name": " item_cache:\n    ",
+                        "rectangle": [
+                            659,
+                            1516,
+                            885,
+                            1563
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-107"
+                    },
+                    {
+                        "name": " item ",
+                        "rectangle": [
+                            688,
+                            1516,
+                            748,
+                            1537
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-105"
+                    },
+                    {
+                        "name": "in",
+                        "rectangle": [
+                            747,
+                            1516,
+                            768,
+                            1537
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-106"
+                    }
+                ],
+                [
+                    {
+                        "name": " item:\n        ",
+                        "rectangle": [
+                            659,
+                            1542,
+                            924,
+                            1589
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-113"
+                    },
+                    {
+                        "name": "if",
+                        "rectangle": [
+                            698,
+                            1542,
+                            718,
+                            1563
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-108"
+                    },
+                    {
+                        "name": " ",
+                        "rectangle": [
+                            717,
+                            1542,
+                            728,
+                            1563
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-109"
+                    },
+                    {
+                        "name": "\"rectangle\"",
+                        "rectangle": [
+                            727,
+                            1542,
+                            836,
+                            1563
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-110"
+                    },
+                    {
+                        "name": " ",
+                        "rectangle": [
+                            835,
+                            1542,
+                            846,
+                            1563
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-111"
+                    },
+                    {
+                        "name": "in",
+                        "rectangle": [
+                            845,
+                            1542,
+                            866,
+                            1563
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-112"
+                    }
+                ],
+                [
+                    {
+                        "name": "print",
+                        "rectangle": [
+                            737,
+                            1568,
+                            787,
+                            1589
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-114"
+                    },
+                    {
+                        "name": "(",
+                        "rectangle": [
+                            786,
+                            1568,
+                            797,
+                            1589
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-115"
+                    },
+                    {
+                        "name": "\"Rectangle:\"",
+                        "rectangle": [
+                            796,
+                            1568,
+                            915,
+                            1589
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-116"
+                    },
+                    {
+                        "name": ", item[",
+                        "rectangle": [
+                            914,
+                            1568,
+                            983,
+                            1589
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-117"
+                    },
+                    {
+                        "name": "\"rectangle\"",
+                        "rectangle": [
+                            982,
+                            1568,
+                            1091,
+                            1589
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-118"
+                    },
+                    {
+                        "name": "])\n",
+                        "rectangle": [
+                            1090,
+                            1568,
+                            1111,
+                            1589
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-119"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u901a\u8fc7\u8fd9\u4e9b\u65b9\u6cd5\uff0c\u4f60\u53ef\u4ee5\u9010\u6b65\u7f29\u5c0f\u95ee\u9898\u8303\u56f4\uff0c\u5e76\u627e\u5230\u5bfc\u81f4\u56fe\u50cf\u5c3a\u5bf8\u8fc7\u5927\u7684\u6839\u672c\u539f\u56e0\u3002",
+                        "rectangle": [
+                            599,
+                            1635,
+                            1356,
+                            1664
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-120"
+                    }
+                ],
+                [
+                    {
+                        "name": "2024/12/22 04:02:35",
+                        "rectangle": [
+                            1184,
+                            1681,
+                            1357,
+                            1706
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-121"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u5bf9\u8bdd\u8bbe\u7f6e",
+                        "rectangle": [
+                            623,
+                            1789,
+                            696,
+                            1814
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-122"
+                    },
+                    {
+                        "name": "\u4e0a\u4f20\u56fe\u7247",
+                        "rectangle": [
+                            686,
+                            1789,
+                            759,
+                            1814
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-123"
+                    },
+                    {
+                        "name": "\u81ea\u52a8\u4e3b\u9898",
+                        "rectangle": [
+                            750,
+                            1789,
+                            823,
+                            1814
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-124"
+                    },
+                    {
+                        "name": "\u5feb\u6377\u6307\u4ee4",
+                        "rectangle": [
+                            813,
+                            1789,
+                            886,
+                            1814
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-125"
+                    },
+                    {
+                        "name": "\u6240\u6709\u9762\u5177",
+                        "rectangle": [
+                            877,
+                            1789,
+                            950,
+                            1814
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-126"
+                    },
+                    {
+                        "name": "\u6e05\u9664\u804a\u5929",
+                        "rectangle": [
+                            940,
+                            1789,
+                            1013,
+                            1814
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-127"
+                    },
+                    {
+                        "name": "gpt-4o",
+                        "rectangle": [
+                            1004,
+                            1789,
+                            1060,
+                            1814
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-128"
+                    }
+                ],
+                [
+                    {
+                        "name": "\ufffc",
+                        "rectangle": [
+                            584,
+                            1836,
+                            1785,
+                            1951
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-129",
+                        "automation_id": "chat-input"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u53d1\u9001",
+                        "rectangle": [
+                            1673,
+                            1879,
+                            1771,
+                            1934
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-130"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u65b0\u7684\u804a\u5929",
+                        "rectangle": [
+                            389,
+                            1897,
+                            524,
+                            1952
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-38"
+                    }
+                ]
+            ],
+            "count": 133
+        }
+    ],
+    "trace_icon - \u6587\u4ef6\u8d44\u6e90\u7ba1\u7406\u5668": [
+        {
+            "name": "trace_icon",
+            "rectangle": [
+                1922,
+                204,
+                3838,
+                2086
+            ],
+            "class_name": "Pane",
+            "depth": "1",
+            "elements": [
+                [
+                    {
+                        "name": "",
+                        "rectangle": [
+                            1922,
+                            204,
+                            3838,
+                            207
+                        ],
+                        "class_name": "Pane",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-47",
+                        "automation_id": "40965"
+                    },
+                    {
+                        "name": "\u63a7\u5236\u9879\u5bbf\u4e3b",
+                        "rectangle": [
+                            1925,
+                            207,
+                            2156,
+                            2051
+                        ],
+                        "class_name": "Pane",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-7",
+                        "automation_id": "ProperTreeHost"
+                    },
+                    {
+                        "name": "\u5bfc\u822a\u7a97\u683c",
+                        "rectangle": [
+                            1925,
+                            207,
+                            2156,
+                            2051
+                        ],
+                        "class_name": "TreeView",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-8",
+                        "automation_id": "100"
+                    },
+                    {
+                        "name": "Shell \u6587\u4ef6\u5939\u89c6\u56fe",
+                        "rectangle": [
+                            2162,
+                            207,
+                            3838,
+                            2051
+                        ],
+                        "class_name": "Pane",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-9",
+                        "automation_id": "listview"
+                    },
+                    {
+                        "name": "\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0\u540d\u79f0",
+                        "rectangle": [
+                            2162,
+                            207,
+                            3838,
+                            2051
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-10"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2183,
+                            216,
+                            2341,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-11",
+                        "automation_id": "0"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2348,
+                            216,
+                            2506,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-13",
+                        "automation_id": "1"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2513,
+                            216,
+                            2671,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-15",
+                        "automation_id": "2"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2678,
+                            216,
+                            2836,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-17",
+                        "automation_id": "3"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2843,
+                            216,
+                            3001,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-19",
+                        "automation_id": "4"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3008,
+                            216,
+                            3166,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-21",
+                        "automation_id": "5"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3173,
+                            216,
+                            3331,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-23",
+                        "automation_id": "6"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3338,
+                            216,
+                            3496,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-25",
+                        "automation_id": "7"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3503,
+                            216,
+                            3661,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-27",
+                        "automation_id": "8"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3668,
+                            216,
+                            3826,
+                            392
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-29",
+                        "automation_id": "9"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2196,
+                            363,
+                            2329,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-12",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2361,
+                            363,
+                            2494,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-14",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2526,
+                            363,
+                            2659,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-16",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2691,
+                            363,
+                            2824,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-18",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2856,
+                            363,
+                            2989,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-20",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3021,
+                            363,
+                            3154,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-22",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3186,
+                            363,
+                            3319,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-24",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3351,
+                            363,
+                            3484,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-26",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3516,
+                            363,
+                            3649,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-28",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3681,
+                            363,
+                            3814,
+                            389
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-30",
+                        "automation_id": "System.ItemNameDisplay"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2183,
+                            394,
+                            2341,
+                            570
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-31",
+                        "automation_id": "10"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2348,
+                            394,
+                            2506,
+                            570
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-33",
+                        "automation_id": "11"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2513,
+                            394,
+                            2671,
+                            570
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-35",
+                        "automation_id": "12"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2678,
+                            394,
+                            2836,
+                            570
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-37",
+                        "automation_id": "13"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2843,
+                            394,
+                            3001,
+                            570
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-39",
+                        "automation_id": "14"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3008,
+                            394,
+                            3166,
+                            570
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-41",
+                        "automation_id": "15"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3173,
+                            394,
+                            3331,
+                            570
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-43",
+                        "automation_id": "16"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3338,
+                            394,
+                            3496,
+                            570
+                        ],
+                        "class_name": "ListItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-45",
+                        "automation_id": "17"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2196,
+                            541,
+                            2329,
+                            567
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-32",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2361,
+                            541,
+                            2494,
+                            567
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-34",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2526,
+                            541,
+                            2659,
+                            567
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-36",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2691,
+                            541,
+                            2824,
+                            567
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-38",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            2856,
+                            541,
+                            2989,
+                            567
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-40",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3021,
+                            541,
+                            3154,
+                            567
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-42",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3186,
+                            541,
+                            3319,
+                            567
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-44",
+                        "automation_id": "System.ItemNameDisplay"
+                    },
+                    {
+                        "name": "\u540d\u79f0",
+                        "rectangle": [
+                            3351,
+                            541,
+                            3484,
+                            567
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-46",
+                        "automation_id": "System.ItemNameDisplay"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u72b6\u6001\u680f",
+                        "rectangle": [
+                            1922,
+                            2051,
+                            3838,
+                            2086
+                        ],
+                        "class_name": "StatusBar",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-1",
+                        "automation_id": "StatusBarModuleInner"
+                    },
+                    {
+                        "name": "\u5c5e\u6027\u5b57\u6bb5",
+                        "rectangle": [
+                            1933,
+                            2051,
+                            2036,
+                            2086
+                        ],
+                        "class_name": "GroupBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-2",
+                        "automation_id": "System.StatusBarViewItemCount"
+                    },
+                    {
+                        "name": "18 \u4e2a\u9879\u76ee",
+                        "rectangle": [
+                            1941,
+                            2051,
+                            2028,
+                            2086
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-3",
+                        "automation_id": "PropertyValue"
+                    },
+                    {
+                        "name": "\u67e5\u770b\u6a21\u5f0f",
+                        "rectangle": [
+                            3766,
+                            2051,
+                            3831,
+                            2086
+                        ],
+                        "class_name": "GroupBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-4",
+                        "automation_id": "ViewButtonsGroup"
+                    },
+                    {
+                        "name": "\u8be6\u7ec6\u4fe1\u606f",
+                        "rectangle": [
+                            3766,
+                            2051,
+                            3798,
+                            2086
+                        ],
+                        "class_name": "RadioButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-5",
+                        "automation_id": "ViewMode_Details"
+                    },
+                    {
+                        "name": "\u5927\u56fe\u6807",
+                        "rectangle": [
+                            3798,
+                            2051,
+                            3831,
+                            2086
+                        ],
+                        "class_name": "RadioButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-6",
+                        "automation_id": "ViewMode_LargeIcons"
+                    }
+                ]
+            ],
+            "count": 48
+        },
+        {
+            "name": "Main Content",
+            "rectangle": [
+                1922,
+                3,
+                3199,
+                137
+            ],
+            "class_name": "Pane",
+            "depth": "1",
+            "elements": [
+                [
+                    {
+                        "name": "",
+                        "rectangle": [
+                            1922,
+                            3,
+                            3199,
+                            60
+                        ],
+                        "class_name": "TabControl",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-1",
+                        "automation_id": "TabView"
+                    },
+                    {
+                        "name": "trace_icon",
+                        "rectangle": [
+                            1925,
+                            3,
+                            2300,
+                            60
+                        ],
+                        "class_name": "ListBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-2",
+                        "automation_id": "TabListView"
+                    },
+                    {
+                        "name": "trace_icon",
+                        "rectangle": [
+                            1928,
+                            12,
+                            2300,
+                            60
+                        ],
+                        "class_name": "TabItem",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-3"
+                    },
+                    {
+                        "name": "trace_icon",
+                        "rectangle": [
+                            1986,
+                            24,
+                            2068,
+                            47
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-4"
+                    },
+                    {
+                        "name": "\u5173\u95ed\u6807\u7b7e\u9875",
+                        "rectangle": [
+                            2238,
+                            18,
+                            2286,
+                            54
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-5",
+                        "automation_id": "CloseButton"
+                    },
+                    {
+                        "name": "\u6dfb\u52a0\u65b0\u6807\u7b7e\u9875",
+                        "rectangle": [
+                            2305,
+                            19,
+                            2353,
+                            55
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-6",
+                        "automation_id": "AddButton"
+                    }
+                ],
+                [
+                    {
+                        "name": "",
+                        "rectangle": [
+                            1927,
+                            61,
+                            2224,
+                            132
+                        ],
+                        "class_name": "AppBar",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-7",
+                        "automation_id": "NavigationCommands"
+                    }
+                ],
+                [
+                    {
+                        "name": "\u540e\u9000",
+                        "rectangle": [
+                            1939,
+                            73,
+                            1987,
+                            121
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-8",
+                        "automation_id": "backButton"
+                    },
+                    {
+                        "name": "\u524d\u8fdb",
+                        "rectangle": [
+                            2011,
+                            73,
+                            2059,
+                            121
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-9",
+                        "automation_id": "forwardButton"
+                    },
+                    {
+                        "name": "\u4e0a\u79fb\u5230\u201c2024-12-07_12-10-37\u201d(Alt + \u5411\u4e0a\u952e)",
+                        "rectangle": [
+                            2083,
+                            73,
+                            2131,
+                            121
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-10",
+                        "automation_id": "upButton"
+                    },
+                    {
+                        "name": "\u5237\u65b0\u201ctrace_icon\u201d(F5)",
+                        "rectangle": [
+                            2155,
+                            73,
+                            2203,
+                            121
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-11",
+                        "automation_id": "refreshButton"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            2224,
+                            73,
+                            3199,
+                            121
+                        ],
+                        "class_name": "GroupBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-12",
+                        "automation_id": "PART_AutoSuggestBox"
+                    },
+                    {
+                        "name": "Search Bar",
+                        "rectangle": [
+                            2224,
+                            73,
+                            3199,
+                            121
+                        ],
+                        "class_name": "Edit",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-13",
+                        "automation_id": "TextBox"
+                    },
+                    {
+                        "name": "\u6b64\u7535\u8111",
+                        "rectangle": [
+                            2244,
+                            79,
+                            2321,
+                            115
+                        ],
+                        "class_name": "SplitButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-14",
+                        "automation_id": "FirstCrumbStackPanel"
+                    },
+                    {
+                        "name": "",
+                        "rectangle": [
+                            2321,
+                            79,
+                            3199,
+                            115
+                        ],
+                        "class_name": "GroupBox",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-15",
+                        "automation_id": "PART_BreadcrumbBar"
+                    },
+                    {
+                        "name": "\u66f4\u591a",
+                        "rectangle": [
+                            2321,
+                            79,
+                            2367,
+                            115
+                        ],
+                        "class_name": "SplitButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-16"
+                    },
+                    {
+                        "name": "gxw_sam",
+                        "rectangle": [
+                            2367,
+                            79,
+                            2513,
+                            115
+                        ],
+                        "class_name": "SplitButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-17"
+                    },
+                    {
+                        "name": "gxw_sam",
+                        "rectangle": [
+                            2382,
+                            82,
+                            2466,
+                            109
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-18"
+                    },
+                    {
+                        "name": "GUI_Caption",
+                        "rectangle": [
+                            2514,
+                            79,
+                            2692,
+                            115
+                        ],
+                        "class_name": "SplitButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-19"
+                    },
+                    {
+                        "name": "GUI_Caption",
+                        "rectangle": [
+                            2528,
+                            82,
+                            2644,
+                            109
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-20"
+                    },
+                    {
+                        "name": "starrail_new",
+                        "rectangle": [
+                            2692,
+                            79,
+                            2863,
+                            115
+                        ],
+                        "class_name": "SplitButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-21"
+                    },
+                    {
+                        "name": "starrail_new",
+                        "rectangle": [
+                            2705,
+                            82,
+                            2814,
+                            109
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-22"
+                    },
+                    {
+                        "name": "2024-12-07_12-10-37",
+                        "rectangle": [
+                            2863,
+                            79,
+                            3126,
+                            115
+                        ],
+                        "class_name": "SplitButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-23"
+                    },
+                    {
+                        "name": "2024-12-07_12-10-37",
+                        "rectangle": [
+                            2877,
+                            82,
+                            3078,
+                            109
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-24"
+                    },
+                    {
+                        "name": "trace_icon",
+                        "rectangle": [
+                            3126,
+                            79,
+                            3199,
+                            115
+                        ],
+                        "class_name": "SplitButton",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-25"
+                    },
+                    {
+                        "name": "trace_icon",
+                        "rectangle": [
+                            3140,
+                            82,
+                            3199,
+                            109
+                        ],
+                        "class_name": "Static",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-26"
+                    }
+                ],
+                [
+                    {
+                        "name": "",
+                        "rectangle": [
+                            1922,
+                            134,
+                            2858,
+                            137
+                        ],
+                        "class_name": "AppBar",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-27",
+                        "automation_id": "FileExplorerCommandBar"
+                    },
+                    {
+                        "name": "\u65b0\u5efa",
+                        "rectangle": [
+                            1931,
+                            134,
+                            2059,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-28"
+                    },
+                    {
+                        "name": "\u526a\u5207",
+                        "rectangle": [
+                            2076,
+                            134,
+                            2135,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-29"
+                    },
+                    {
+                        "name": "\u590d\u5236",
+                        "rectangle": [
+                            2148,
+                            134,
+                            2208,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-30"
+                    },
+                    {
+                        "name": "\u7c98\u8d34",
+                        "rectangle": [
+                            2220,
+                            134,
+                            2280,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-31"
+                    },
+                    {
+                        "name": "\u91cd\u547d\u540d",
+                        "rectangle": [
+                            2292,
+                            134,
+                            2352,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-32"
+                    },
+                    {
+                        "name": "\u5171\u4eab",
+                        "rectangle": [
+                            2364,
+                            134,
+                            2424,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-33"
+                    },
+                    {
+                        "name": "\u5220\u9664",
+                        "rectangle": [
+                            2436,
+                            134,
+                            2496,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-34"
+                    },
+                    {
+                        "name": "\u6392\u5e8f",
+                        "rectangle": [
+                            2513,
+                            134,
+                            2641,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-35",
+                        "automation_id": "SortAndGroupButton"
+                    },
+                    {
+                        "name": "\u67e5\u770b",
+                        "rectangle": [
+                            2647,
+                            134,
+                            2775,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-36"
+                    },
+                    {
+                        "name": "\u66f4\u591a\u9009\u9879",
+                        "rectangle": [
+                            2786,
+                            134,
+                            2858,
+                            137
+                        ],
+                        "class_name": "Button",
+                        "type": [
+                            "Click",
+                            "rightClick"
+                        ],
+                        "depth": "1-37",
+                        "automation_id": "MoreButton"
+                    }
+                ]
+            ],
+            "count": 38
+        }
+    ]
+}
