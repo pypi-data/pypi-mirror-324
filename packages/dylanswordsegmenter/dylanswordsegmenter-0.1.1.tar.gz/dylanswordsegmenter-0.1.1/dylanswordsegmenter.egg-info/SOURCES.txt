@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+dylanswordsegmenter/__init__.py
+dylanswordsegmenter/segmenter.py
+dylanswordsegmenter/segmenter2.py
+dylanswordsegmenter/test.py
+dylanswordsegmenter.egg-info/PKG-INFO
+dylanswordsegmenter.egg-info/SOURCES.txt
+dylanswordsegmenter.egg-info/dependency_links.txt
+dylanswordsegmenter.egg-info/requires.txt
+dylanswordsegmenter.egg-info/top_level.txt
