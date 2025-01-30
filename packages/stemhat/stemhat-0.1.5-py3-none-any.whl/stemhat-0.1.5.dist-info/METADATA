@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: stemhat
+Version: 0.1.5
+Summary: A library to control Cytron Pi StemHat
+Home-page: https://github.com/Teakzieas/StemhatPython
+Author: Cytron(Divyessh)
+Author-email: divyesshev3@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: adafruit-blinka
+Requires-Dist: adafruit-circuitpython-ssd1306
+Requires-Dist: gpiozero
+Requires-Dist: lgpio
+Requires-Dist: pillow
+Requires-Dist: smbus2==0.5.0
+
+# StemHat
+
+A Python library to control the StemHat using I2C.
+
+## Installation
+
+```bash
+pip install stemhat
