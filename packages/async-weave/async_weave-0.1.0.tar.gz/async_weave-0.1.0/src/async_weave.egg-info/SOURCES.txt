@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/async_weave/py.typed
+src/async_weave/weaver.py
+src/async_weave.egg-info/PKG-INFO
+src/async_weave.egg-info/SOURCES.txt
+src/async_weave.egg-info/dependency_links.txt
+src/async_weave.egg-info/top_level.txt
+tests/test_async_manager copy.py
+tests/test_async_weave.py

@@ -1,0 +1,14 @@
+[project]
+name = "async-weave"
+version = "0.1.0"
+description = "An asynchronous task manager that handles concurrent task execution with automatic retries, status monitoring, and graceful cancellation."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "pytest-asyncio>=0.25.3",
+    "ruff>=0.9.3",
+]
