@@ -1,0 +1,14 @@
+comdaan/__init__.py,sha256=mgBIImsZM0NGHNBda92qZNLDbngwUHvfXMCX_wv59kg,24
+comdaan/comdaan.py,sha256=YnPEE0vX5_aMXDnKnbSIG7LSTmXmyb0dAM3qpgwfbmU,26349
+comdaan/comdaan_fetch.py,sha256=1kIOigjasN2B-VoyZkGMWIxKwzu4g7pYBjT28Mq0B8Q,3839
+comdaan/display.py,sha256=9kzOPjY2q_31Ux9qzzserjDsJ-45OBcSKOeEl27uNUc,10328
+comdaan/gitparsing.py,sha256=naQqJE1_ww9fFwyix-9tdJfzLB-dikAMgULV-lv0d80,7167
+comdaan/issuesparsing.py,sha256=0bTkp_-9UsoY9bZTGxZx_VgXVX3TNIpZ-SH686L5wA4,5813
+comdaan/mailparsing.py,sha256=vdpY8ZgyhSuFApKIY4Ww-vD_p0ipZE1ueAROdKUqnqk,5610
+comdaan/object_types.py,sha256=t_A_b9_eyF9CVV3w7YnPsXtUPRg0MPb9FApYD-RigN4,364
+comdaan/rulesetfinding.py,sha256=SieJVkcuGMYh-m--RQRtIfsKKszKAQEXX6T9s-EwWSA,1554
+comdaan/rulesets/kde.py,sha256=1SR36F0YL_PL5OWYONYJGtsLDzyqjtmeU0XM0jBaYBA,1096
+comdaan-0.1.8.dist-info/LICENSE,sha256=xllut76FgcGL5zbIRvuRc7aezPbvlMUTWJPsVr2Sugg,11358
+comdaan-0.1.8.dist-info/METADATA,sha256=YyBJfZ_g0dca4gP2melS9rf32OOCTBf4t4M2lOsl2bM,15454
+comdaan-0.1.8.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+comdaan-0.1.8.dist-info/RECORD,,
