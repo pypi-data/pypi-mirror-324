@@ -1,0 +1,2 @@
+[console_scripts]
+hygo2llmtxt = hugo2llmtxt:app
