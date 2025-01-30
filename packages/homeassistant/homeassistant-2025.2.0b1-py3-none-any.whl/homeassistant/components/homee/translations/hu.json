@@ -1,0 +1,44 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van"
+        },
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "invalid_auth": "\u00c9rv\u00e9nytelen hiteles\u00edt\u00e9s",
+            "unknown": "V\u00e1ratlan hiba"
+        },
+        "flow_title": "Homee {name} ({host})",
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Hoszt",
+                    "password": "Jelsz\u00f3",
+                    "username": "Felhaszn\u00e1l\u00f3n\u00e9v"
+                },
+                "data_description": {
+                    "host": "A Homee IP-c\u00edme.",
+                    "password": "A Homee jelszava.",
+                    "username": "A Homee felhaszn\u00e1l\u00f3neve."
+                },
+                "title": "Homee konfigur\u00e1l\u00e1sa"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "up_down": {
+                "state": {
+                    "closed": "Z\u00e1rva",
+                    "open": "Nyitva"
+                }
+            },
+            "window_position": {
+                "state": {
+                    "closed": "Z\u00e1rva",
+                    "open": "Nyitva"
+                }
+            }
+        }
+    }
+}
