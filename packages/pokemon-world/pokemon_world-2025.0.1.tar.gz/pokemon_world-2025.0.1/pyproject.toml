@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pokemon-world"
+version = "2025.0.1"
+dependencies = [
+  "flask>2.0"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "lorenzo del medico", email = "lorenzodelmedico@gmail.com"},
+]
+maintainers = [
+  {name = "lorenzo del medico", email = "lorenzodelmedico@gmail.com"}
+]
+description = "Lovely Pokemon! Wonderful Pokemon! Gotta Catch Them All"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICEN[CS]E.*"]
+keywords = ["Pokemon", "Pikachu", "Sacha", "Lorenzodelmedico"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[project.optional-dependencies]
+cli = [
+  "click",
+]
+
+[project.urls]
+Documentation = "https://github.com/lorenzodelmedico/PokemonWorld/README.md"
+Repository = "https://github.com/lorenzodelmedico/PokemonWorld"
+
+[project.scripts]
+spam-cli = "spam:main_cli"
