@@ -1,0 +1,39 @@
+project:
+  name: my_project
+  description: A full-stack Django application.
+  version: 1.0.0
+  author: test test
+
+services:
+  - name: auth_service
+    description: Authentification service.
+    stack:
+      type: flask
+      version: "3.10"
+      port: 5001
+    database:
+      type: postgresql
+      version: "16"
+      user: admin
+      password: admin
+      name: my_database
+
+
+  - name: web_service
+    description: Principal application.
+    stack:
+      type: django
+      version: "4.0"
+      port: 8001
+
+  - name: api_service
+    description: API service.
+    stack:
+      type: nodejs
+      version: "18"
+      port: 8002
+    database:
+      version: "16"
+      user: admin
+      password: admin
+      name: my_database
