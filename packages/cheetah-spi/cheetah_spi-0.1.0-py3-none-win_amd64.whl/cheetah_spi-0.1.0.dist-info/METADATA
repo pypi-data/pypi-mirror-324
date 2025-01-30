@@ -1,0 +1,5 @@
+Metadata-Version: 2.2
+Name: cheetah_spi
+Version: 0.1.0
+Summary: Cheetah wrapper functions (pre-compiled shared library)
+Dynamic: summary
