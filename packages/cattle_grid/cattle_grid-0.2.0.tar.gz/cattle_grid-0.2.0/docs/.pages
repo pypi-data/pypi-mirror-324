@@ -1,0 +1,15 @@
+nav:
+  - Index:
+      - index.md
+      - installation.md
+      - tool.md
+      - "Protocols":
+          - "Cattle Drive Protocol": cattle_drive.md
+          - "Methods": methods.md
+          - "Cattle Drive API": apis.md
+  - authentication
+  - "🧩 Extensions": extensions
+  - architecture
+  - Internals:
+      - testing
+      - reference
