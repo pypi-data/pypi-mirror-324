@@ -1,0 +1,362 @@
+Index: experiment_with_sentinel.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/experiment_with_sentinel.py b/experiment_with_sentinel.py
+new file mode 100644
+--- /dev/null	(date 1737800332588)
++++ b/experiment_with_sentinel.py	(date 1737800332588)
+@@ -0,0 +1,80 @@
++import asyncio
++import json
++from datetime import timezone, datetime
++from typing import Any
++
++from dogpile_breaker import CacheRegion, RedisStorageBackend, StorageBackendMiddleware
++from dogpile_breaker.redis_backend import RedisSentinelBackend
++
++
++def json_serializer(obj: Any) -> bytes:
++    return json.dumps(obj).encode("utf-8")
++
++
++def json_deserializer(data: bytes) -> Any:
++    return json.loads(data.decode("utf-8"))
++
++
++cache_region = CacheRegion(serializer=json_serializer, deserializer=json_deserializer)
++cache_region_regular_redis = CacheRegion(serializer=json_serializer, deserializer=json_deserializer)
++
++
++@cache_region.cache_on_arguments(
++    ttl_sec=10,
++    lock_period_sec=2,
++    function_key_generator=lambda fn, *args, **kwargs: f"key:{args[0]}",
++)
++async def expensive_func(sleep_for: int) -> dict[str, str]:
++    await asyncio.sleep(sleep_for)
++    return {"generated at": datetime.now(tz=timezone.utc).isoformat()}
++
++
++@cache_region_regular_redis.cache_on_arguments(
++    ttl_sec=10,
++    lock_period_sec=2,
++    function_key_generator=lambda fn, *args, **kwargs: f"key:{args[0]}",
++)
++async def expensive_func_normal_redis(sleep_for: int) -> dict[str, str]:
++    await asyncio.sleep(sleep_for)
++    return {"generated at": datetime.now(tz=timezone.utc).isoformat()}
++
++
++async def main_normal_redis():
++    await cache_region_regular_redis.configure(
++        backend_class=RedisStorageBackend,
++        backend_arguments={
++            "host": "127.0.0.1",
++            "port": 7480,
++            "db": 0,
++            "max_connections": 200,
++            "timeout": 20,
++        },
++    )
++    while True:
++        result = await expensive_func_normal_redis(1)
++        print(result)
++        await asyncio.sleep(0.5)
++
++
++async def main():
++    await cache_region.configure(
++        backend_class=RedisSentinelBackend,
++        backend_arguments={
++            "sentinels": [
++                ("127.0.0.1", 26379),
++                ("127.0.0.1", 26380),
++                ("127.0.0.1", 26381),
++            ],
++            "master_name": "mymaster",
++            "max_connections": 200,
++            "db": 0,
++        },
++    )
++    while True:
++        result = await expensive_func(1)
++        print(result)
++        await asyncio.sleep(0.5)
++
++
++if __name__ == "__main__":
++    asyncio.run(main())
+Index: experim.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/experim.py b/experim.py
+new file mode 100644
+--- /dev/null	(date 1736792371879)
++++ b/experim.py	(date 1736792371879)
+@@ -0,0 +1,156 @@
++import asyncio
++import functools
++import threading
++from collections.abc import Awaitable, Callable, Hashable, Mapping
++from contextlib import asynccontextmanager
++from typing import AbstractSet, Any, NewType, ParamSpec, TypeAlias, TypeVar, cast
++
++from async_timeout import timeout
++
++TParams = ParamSpec("TParams")
++R = TypeVar("R")
++ArgId: TypeAlias = int | str
++CacheKey = NewType("CacheKey", tuple[Hashable, ...])
++
++
++class CountTask:
++    task: asyncio.Task | None = None
++    count: int = 0
++
++
++def _get_local(local: threading.local, name: str) -> dict[CacheKey, Any]:
++    try:
++        return getattr(local, name)
++    except AttributeError:
++        container: dict[CacheKey, Any] = {}
++        setattr(local, name, container)
++        return container
++
++
++def build_key(
++    args: tuple[Any, ...],
++    kwargs: Mapping[str, Any],
++    ignored_args: AbstractSet[ArgId] | None = None,
++) -> CacheKey:
++    if not ignored_args:
++        return CacheKey((args, tuple(sorted(kwargs.items()))))
++    return CacheKey(
++        (
++            tuple(value for idx, value in enumerate(args) if idx not in ignored_args),
++            tuple(item for item in sorted(kwargs.items()) if item[0] not in ignored_args),
++        )
++    )
++
++
++def herd(fn: Callable[TParams, Awaitable[R]] | None = None, *, ignored_args: AbstractSet[ArgId] | None = None):
++    print(f"Called herd with {fn=} and {ignored_args=}")
++
++    def decorator(fn: Callable[TParams, Awaitable[R]]) -> Callable[TParams, Awaitable[R]]:
++        print(f"Called with {fn=}")
++        local = threading.local()
++
++        @functools.wraps(fn)
++        async def wrapped(*args: TParams.args, **kwargs: TParams.kwargs) -> R:
++            # print(f'Called with {args=} and {kwargs=}')
++
++            pending = cast(dict[CacheKey, CountTask], _get_local(local, "pending"))
++            # print(pending)
++            request = build_key(tuple(args), kwargs, ignored_args)
++            count_task = pending.setdefault(request, CountTask())
++            count_task.count += 1
++
++            task = count_task.task
++            if task is None:
++                count_task.task = task = asyncio.create_task(fn(*args, **kwargs))
++
++            try:
++                return await asyncio.shield(task)
++            except asyncio.CancelledError:
++                print("Canceled by CancelledError after shield")
++                if count_task.count == 1:
++                    # await cancel(task)
++                    task.cancel()
++                    # try:
++                    #     await task
++                    # except asyncio.CancelledError:
++                    #     if task.done():
++                    #         return
++                    #     if asyncio.current_task().cancelling() > 0:
++                    #         raise
++                raise
++
++            finally:
++                count_task.count -= 1
++                if count_task.count == 0 or not task.cancelled():
++                    if request in pending and pending[request] is count_task:
++                        del pending[request]
++
++        return wrapped
++
++    if fn and callable(fn):
++        return decorator(fn)
++    return decorator
++
++
++@asynccontextmanager
++def herd_ctx(ignored_args: AbstractSet[ArgId] | None = None):
++    local = threading.local()
++
++    async def inner(*args, **kwargs):
++        pending = cast(dict[CacheKey, CountTask], _get_local(local, "pending"))
++        # print(pending)
++        request = build_key(tuple(args), kwargs, ignored_args)
++        count_task = pending.setdefault(request, CountTask())
++        count_task.count += 1
++
++        task = count_task.task
++        if task is None:
++            count_task.task = task = asyncio.create_task(fn(*args, **kwargs))
++
++        try:
++            return await asyncio.shield(task)
++        except asyncio.CancelledError:
++            print("Canceled by CancelledError after shield")
++            if count_task.count == 1:
++                # await cancel(task)
++                task.cancel()
++                # try:
++                #     await task
++                # except asyncio.CancelledError:
++                #     if task.done():
++                #         return
++                #     if asyncio.current_task().cancelling() > 0:
++                #         raise
++            raise
++
++        finally:
++            count_task.count -= 1
++            if count_task.count == 0 or not task.cancelled():
++                if request in pending and pending[request] is count_task:
++                    del pending[request]
++
++
++@herd
++async def hello(text):
++    try:
++        print(text)
++        await asyncio.sleep(10)
++        return 42
++    except asyncio.CancelledError:
++        print("CancelledError")
++        raise
++
++
++async def main():
++    tasks = [hello("hello") for _ in range(10)]
++    try:
++        async with timeout(0.2):
++            results = await asyncio.gather(*tasks)
++    except asyncio.TimeoutError:
++        print("Timed out")
++    # result = await hello('Hello')
++    # print(results)
++
++
++if __name__ == "__main__":
++    asyncio.run(main())
+Index: herd_one.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/herd_one.py b/herd_one.py
+new file mode 100644
+--- /dev/null	(date 1736792371881)
++++ b/herd_one.py	(date 1736792371881)
+@@ -0,0 +1,45 @@
++import asyncio
++import sys
++
++if sys.version_info >= (3, 11):
++    from asyncio import timeout
++else:
++    from async_timeout import timeout
++
++
++class Answer:
++    def __init__(self):
++        self.count = 0
++        self.answer = ""
++
++
++ANSWER = Answer()
++
++
++async def check_backend_for_data(key: str, timeout_sec: int) -> str | None:
++    global ANSWER
++
++    try:
++        async with timeout(timeout_sec):
++            while True:
++                ANSWER.count += 1
++                if not ANSWER.answer:
++                    print(f"Нет ответа для {key}, спим дальше")
++                    await asyncio.sleep(timeout_sec / 4)
++                else:
++                    return ANSWER.answer
++    except asyncio.TimeoutError:
++        print("Таймаут, не ждём дальше")
++        return None
++
++
++async def main():
++    tasks = [check_backend_for_data("dima-key", 5) for _ in range(10)]
++    results = await asyncio.gather(*tasks)
++    print(results)
++    # await check_backend_for_data('dima-key', 5)
++    print(ANSWER.count)
++
++
++if __name__ == "__main__":
++    asyncio.run(main())
+Index: experim_herd.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/experim_herd.py b/experim_herd.py
+new file mode 100644
+--- /dev/null	(date 1737742581052)
++++ b/experim_herd.py	(date 1737742581052)
+@@ -0,0 +1,39 @@
++import asyncio
++import json
++from typing import Any
++
++from dogpile_breaker import CacheRegion
++from dogpile_breaker.redis_backend import RedisSentinelBackend
++
++
++def json_serializer(obj: Any) -> bytes:
++    return json.dumps(obj).encode("utf-8")
++
++
++def json_deserializer(data: bytes) -> Any:
++    return json.loads(data.decode("utf-8"))
++
++
++cache_region = CacheRegion(
++    serializer=json_serializer,
++    deserializer=json_deserializer,
++)
++
++
++@cache_region.cache_on_arguments(
++    ttl_sec=5,
++    lock_period_sec=2,
++    function_key_generator=lambda fn, *args, **kwargs: f"key:{args[0]}",
++)
++async def funk_one(index: int) -> dict[str, int | str]:
++    await asyncio.sleep(1)
++    return {"result": index, "status": "ok"}
++
++
++async def funk_two(index: int) -> dict[str, int | str]:
++    await asyncio.sleep(1)
++    return {"status": f" HEHE FUNC {index}"}
++
++
++async def main():
++    await cache_region.configure(backend_class=RedisSentinelBackend, backend_arguments={""})
+diff --git a/tests/conftest.py b/tests/conftest.py
+new file mode 100644

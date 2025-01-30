@@ -1,0 +1,609 @@
+Index: src/dogpile_breaker/api.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import asyncio\nimport functools\nimport json\nimport random\nimport sys\nimport time\nfrom collections.abc import Awaitable, Callable, Sequence\nfrom dataclasses import dataclass\nfrom typing import Any, ParamSpec, Protocol, TypeAlias, TypeVar, cast\n\nfrom typing_extensions import Self\n\nfrom .exceptions import CantDeserializeError\nfrom .middleware import StorageBackendMiddleware\n\nif sys.version_info >= (3, 11, 3):\n    from asyncio import timeout  # type: ignore[attr-defined]\nelse:\n    from async_timeout import timeout\n\nValuePayload: TypeAlias = Any\nSerializer = Callable[[ValuePayload], bytes]\nDeserializer = Callable[[bytes], ValuePayload]\nJitterFunc: TypeAlias = Callable[[int], int]\nAsyncFunc = TypeVar(\"AsyncFunc\", bound=Callable[..., Awaitable[Any]])\nP = ParamSpec(\"P\")  # function parameters\nR = TypeVar(\"R\")  # function return value\n\n\nclass ShouldCacheFunc(Protocol):\n    def __call__(self, source_args: tuple[Any], source_kwargs: dict[str, Any], result: Any) -> bool:\n        \"\"\"Receives source arguments and results and returns whether it should cached.\"\"\"\n\n\nclass KeyGeneratorFunc(Protocol):\n    def __call__(self, fn: AsyncFunc, *args: Any, **kwargs: Any) -> str:\n        \"\"\"Receives function and its parameters and returns its key for caching.\"\"\"\n\n\nclass StorageBackend(Protocol):\n    async def initialize(self) -> None:\n        \"\"\"Some operation after creating the instance.\"\"\"\n\n    async def aclose(self) -> None:\n        \"\"\"Close the resources (connections, clients, etc.)\"\"\"\n\n    async def get_serialized(self, key: str) -> bytes | None:\n        \"\"\"Reads cached data from storage.\"\"\"\n\n    async def set_serialized(self, key: str, value: bytes, ttl_sec: int) -> None:\n        \"\"\"Saves bytes into storage backend.\"\"\"\n\n    async def delete(self, key: str) -> None:\n        \"\"\"Deletes cached data from storage.\"\"\"\n\n    async def try_lock(self, key: str, lock_period_sec: int) -> bool:\n        \"\"\"Returns True if successfully acquired lock, False otherwise. Should not wait for lock.\"\"\"\n\n    async def unlock(self, key: str) -> None:\n        \"\"\"Releases lock.\"\"\"\n\n\nclass CachedFuncWithMethods(Protocol[P, R]):\n    async def __call__(self, *args: P.args, **kwargs: P.kwargs) -> R: ...\n    async def call_without_cache(self, *args: P.args, **kwargs: P.kwargs) -> R: ...\n    async def save_to_cache(self, _result: R, *args: P.args, **kwargs: P.kwargs) -> None: ...\n\n\nclass CachingDecorator(Protocol):\n    def __call__(self, func: Callable[P, Awaitable[R]]) -> CachedFuncWithMethods[P, R]: ...\n\n\n@dataclass\nclass CachedEntry:\n    # What we actually store in cache is this class\n    payload: ValuePayload\n    expiration_timestamp: int | float\n\n    def to_bytes(self, serializer: Serializer) -> bytes:\n        # convert data to bytes so it can be stored in redis.\n        # metadata is serialized with standard `json` module\n        # so the user only should write serializer and deserializer for its own data stored in `payload`\n        main_data_bytes = serializer(self.payload)\n        metadata_bytes = json.dumps({\"expiration_timestamp\": self.expiration_timestamp}, ensure_ascii=False).encode()\n        return b\"%b|%b\" % (main_data_bytes, metadata_bytes)\n\n    @classmethod\n    def from_bytes(cls, data: bytes | None, deserializer: Deserializer) -> Self | None:\n        if not data:\n            return None\n        bytes_payload, _, bytes_metadata = data.partition(b\"|\")\n        metadata = json.loads(bytes_metadata)\n        try:\n            payload = deserializer(bytes_payload)\n        except CantDeserializeError:\n            return None\n        else:\n            return cls(payload=payload, **metadata)\n\n\ndef full_jitter(value: int) -> int:\n    \"\"\"Jitter the value across the full range (0 to value).\n\n    This corresponds to the \"Full Jitter\" algorithm specified in the\n    AWS blog's post on the performance of various jitter algorithms.\n    (https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)\n    \"\"\"\n    return random.randint(0, value)  # noqa: S311\n\n\nclass CacheRegion:\n    def __init__(\n        self,\n        serializer: Callable[[ValuePayload], bytes],\n        deserializer: Callable[[bytes], ValuePayload],\n    ) -> None:\n        self.serializer = serializer\n        self.deserializer = deserializer\n        self.backend_storage: StorageBackend\n        self.awaits: dict[str, asyncio.Future] = {}\n\n    async def configure(\n        self,\n        backend_class: type[StorageBackend],\n        backend_arguments: dict[str, Any],\n        middlewares: Sequence[StorageBackendMiddleware | type[StorageBackendMiddleware]] = (),\n    ) -> Self:\n        self.backend_storage = backend_class(**backend_arguments)\n        await self.backend_storage.initialize()\n        for wrapper in reversed(middlewares):\n            self.wrap(wrapper)\n        return self\n\n    def wrap(self, middleware: StorageBackendMiddleware | type[StorageBackendMiddleware]) -> None:\n        \"\"\"Takes a StorageBackendMiddleware instance or class and wraps the attached backend.\"\"\"\n\n        # if we were passed a type rather than an instance then\n        # initialize it.\n        middleware_instance = middleware() if isinstance(middleware, type) else middleware\n\n        if not isinstance(middleware_instance, StorageBackendMiddleware):\n            raise TypeError(f\"{middleware_instance} is not a valid StorageBackendMiddleware\")  # noqa: EM102,TRY003\n\n        self.backend_storage = middleware_instance.wrap(self.backend_storage)\n\n    async def aclose(self) -> None:\n        await self.backend_storage.aclose()\n\n    async def get_or_create(\n        self,\n        key: str,\n        ttl_sec: int,\n        lock_period_sec: int,\n        generate_func: Callable[P, Awaitable[R]],\n        generate_func_args: P.args,\n        generate_func_kwargs: P.kwargs,\n        should_cache_fn: ShouldCacheFunc | None = None,\n        jitter_func: JitterFunc | None = full_jitter,\n    ) -> R:\n        \"\"\"This function will retrieve a value by key from the cache and return it.\n\n        If the value is missing or its validity has expired,\n        the value will be obtained as the result of awaiting the function `generate_func(*args, **kwargs)`.\n        Only the coroutine that successfully acquires the lock in backend storage will recalculate the result.\n        The others will simply wait for the result.\n        If the result exists but is just outdated, while one coroutine is executing `generate_func`,\n        the others will return the outdated result.\n\n        :param key: the key under which the function's value is stored in the cache\n        :param ttl_sec: the number of seconds for which the value is considered valid\n        :param lock_period_sec: the duration for which to acquire the lock during value regeneration\n        :param generate_func: the function that calculates the data\n        :param should_cache_fn: a func that takes the original arguments and result, decides whether to cache the result\n        :param generate_func_args: parameters to invoke the recalculation function\n        :param generate_func_kwargs: parameters to invoke the recalculation function\n        :param jitter_func: a function that randomly changes the ttl of a record to achieve more even distribution\n        :return:\n        \"\"\"\n        # use tmp cached awaitables to avoid thundering herd\n        herd_leader = self.awaits.get(key, None)\n        if herd_leader is None:\n            # we use Future because you can `await` it multiple times\n            # All calls to `get_or_create` with the same `key` would be groupped into one `singleflight`\n            # only one request is actually going to be executed while others is going to wait for this Future() object\n            herd_leader = asyncio.Future()\n            self.awaits[key] = herd_leader\n\n            try:\n                value = await self._get_from_backend(key=key)\n                cache_handler = self._non_existed_cache_handler if value is None else self._existed_cache_handler\n                result = await cache_handler(\n                    key=key,\n                    ttl_sec=ttl_sec,\n                    lock_period_sec=lock_period_sec,\n                    data_from_cache=value,\n                    generate_func=generate_func,\n                    should_cache_fn=should_cache_fn,\n                    generate_func_args=generate_func_args,\n                    generate_func_kwargs=generate_func_kwargs,\n                    jitter_func=jitter_func,\n                )\n                herd_leader.set_result(result)\n            except Exception as e:\n                herd_leader.set_exception(e)\n                raise e\n            finally:\n                self.awaits.pop(key, None)\n        else:\n            result = await herd_leader\n        return result\n\n    async def _existed_cache_handler(\n        self,\n        key: str,\n        ttl_sec: int,\n        lock_period_sec: int,\n        data_from_cache: CachedEntry | None,  # None to make mypy happy because we always call this func with Data\n        generate_func: Callable[P, Awaitable[R]],\n        should_cache_fn: ShouldCacheFunc | None,\n        generate_func_args: P.args,\n        generate_func_kwargs: P.kwargs,\n        jitter_func: JitterFunc | None,\n    ) -> R:\n        if data_from_cache is None:\n            # This part won't execute because we only call this function after retrieving a value from the cache.\n            # However, the cache_handler must have the same type signature to satisfy mypy.\n            # Therefore, we handle the case when data_from_cache is None.\n            # In this case, we simply call the function to handle the scenario when the cache is empty.\n            return await self._non_existed_cache_handler(\n                key=key,\n                ttl_sec=ttl_sec,\n                lock_period_sec=lock_period_sec,\n                data_from_cache=data_from_cache,\n                generate_func=generate_func,\n                should_cache_fn=should_cache_fn,\n                generate_func_args=generate_func_args,\n                generate_func_kwargs=generate_func_kwargs,\n                jitter_func=jitter_func,\n            )\n\n        # We reach this point when a CacheEntry is found in the cache.\n        # We store the entry itself longer than its TTL so that during a high influx of requests,\n        # we can serve slightly outdated data while one process updates the data,\n        # rather than forcing everyone to wait.\n        is_outdated = time.time() > data_from_cache.expiration_timestamp\n        if not is_outdated:\n            # Everything is great, the data is up-to-date, return it.\n            return data_from_cache.payload\n        # The data is outdated, it needs to be updated.\n        # To ensure that only one process performs the update and hits the database,\n        # we acquire a lock for data update\n        # (since we are using Redis, this lock will be distributed across all requests\n        # from all app instances/k8s pods/processes that fetch information about the specific entity).\n        grabbed_lock = await self.backend_storage.try_lock(key, lock_period_sec)\n        if grabbed_lock:\n            # This process successfully acquired the lock, meaning it is responsible for updating the data.\n            # If an error occurs here, the other processes will serve outdated data.\n            # Then, after lock_period_sec expires, Redis will remove the lock,\n            # and another request will attempt to update the data.\n            # This will continue until the data is updated or until Redis remove the record,\n            # and subsequent requests will follow the 'non_existed_cache_handler()' path.\n            result = await generate_func(*generate_func_args, **generate_func_kwargs)\n            # If we have a should_cache_fn function,\n            # we use it to check whether the result should be saved in the cache\n            # (for example, we might not want to do this under certain conditions\n            # or when specific parameters are present).\n\n            if not should_cache_fn or should_cache_fn(\n                source_args=generate_func_args, source_kwargs=generate_func_kwargs, result=result\n            ):\n                await self._set_cached_value_to_backend(\n                    key=key,\n                    value=result,\n                    ttl_sec=ttl_sec,\n                    jitter_func=jitter_func,\n                )\n            await self.backend_storage.unlock(key)\n            return result\n        # We couldn't acquire the lock, meaning another process is updating the data.\n        # In the meantime, we return outdated data to avoid making the clients wait.\n        return data_from_cache.payload\n\n    async def _check_if_data_apper_in_cache(self, key: str, lock_period_sec: int) -> CachedEntry | None:\n        \"\"\"\n        This is a coroutine which checks if the data is apper in the cache in case the process refreshing the data\n        is not the current one (it could be on another machine for example).\n        :param key: Key to check in cache\n        :param lock_period_sec: Lock period for refreshing data. If data won't appear after this time\n        :return:\n        \"\"\"\n        try:\n            async with timeout(lock_period_sec):\n                while True:\n                    data_from_cache = await self._get_from_backend(key=key)\n                    if data_from_cache:\n                        return data_from_cache\n                    await asyncio.sleep(lock_period_sec / 4)\n        except asyncio.TimeoutError:\n            return None\n\n    async def _non_existed_cache_handler(\n        self,\n        key: str,\n        ttl_sec: int,\n        lock_period_sec: int,\n        data_from_cache: CachedEntry | None,\n        generate_func: Callable[P, Awaitable[R]],\n        should_cache_fn: ShouldCacheFunc | None,\n        generate_func_args: P.args,\n        generate_func_kwargs: P.kwargs,\n        jitter_func: JitterFunc | None,\n    ) -> R:\n        # This is the case when there is nothing in the cache.\n        # We need to update the data and store it there.\n        # Only the process that can acquire the lock will do this,\n        # while the others will wait to avoid overloading the system.\n        while data_from_cache is None:\n            grabbed_lock = await self.backend_storage.try_lock(key, lock_period_sec)\n            if grabbed_lock:\n                # The lock was successfully acquired, and this process is responsible for updating the data.\n                result = await generate_func(*generate_func_args, **generate_func_kwargs)\n                # If we have a should_cache_fn function,\n                # we use it to check whether the result should be saved in the cache\n                # (for example, we might not want to do this under certain conditions\n                # or when specific parameters are present).\n                if not should_cache_fn or should_cache_fn(\n                    source_args=generate_func_args, source_kwargs=generate_func_kwargs, result=result\n                ):\n                    await self._set_cached_value_to_backend(\n                        key=key,\n                        value=result,\n                        ttl_sec=ttl_sec,\n                        jitter_func=jitter_func,\n                    )\n                await self.backend_storage.unlock(key)\n                return result\n            # We wait timeout(lock_period_sec)\n            # because if we just check whether anything has appeared in the cache,\n            # we could end up in a situation where the process updating the cache has crashed.\n            # In that case, we would simply end up in an infinite loop,\n            # as nothing would appear in the cache.\n            # By \"waking up\" after the lock expired we will\n            # read the data from the cache (which will be None), exit this loop,\n            # and enter a new iteration of the outer while loop,\n            # where we will try to acquire the lock again, calculate, and write the data to the cache.\n            data_from_cache = await self._check_if_data_apper_in_cache(key, lock_period_sec)\n\n        # Finally, some coroutine has updated the data (it could be this one, or a parallel one).\n        return data_from_cache.payload\n\n    async def _get_from_backend(\n        self,\n        key: str,\n    ) -> CachedEntry | None:\n        data = await self.backend_storage.get_serialized(key)\n        return CachedEntry.from_bytes(\n            data=data,\n            deserializer=self.deserializer,\n        )\n\n    async def _set_cached_value_to_backend(\n        self,\n        key: str,\n        value: ValuePayload,\n        ttl_sec: int,\n        jitter_func: JitterFunc | None,\n    ) -> None:\n        final_ttl = ttl_sec + jitter_func(ttl_sec) if jitter_func else ttl_sec\n        new_cache_entry = CachedEntry(\n            payload=value,\n            expiration_timestamp=time.time() + final_ttl,\n        )\n        await self.backend_storage.set_serialized(\n            key=key,\n            value=new_cache_entry.to_bytes(serializer=self.serializer),\n            ttl_sec=final_ttl,\n        )\n\n    def cache_on_arguments(\n        self,\n        ttl_sec: int,\n        lock_period_sec: int,\n        function_key_generator: KeyGeneratorFunc,\n        should_cache_fn: ShouldCacheFunc | None = None,\n        jitter_func: JitterFunc | None = full_jitter,\n    ) -> CachingDecorator:\n        \"\"\"\n        A function decorator that will cache the return\n        value of the function using a key derived from the\n        function itself and its arguments.\n\n        The decorator internally makes use of the\n        :meth:`.CacheRegion.get_or_create` method to access the\n        cache and conditionally call the function.  See that\n        method for additional behavioral details.\n\n        The function is also given an attribute `call_without_cached` containing non-cached version of a function.\n        So in case you want to call function directly\n\n          await generate_something.call_without_cached(3,4)\n\n         equivalent to calling ``generate_something(3, 4)`` without using cache at all.\n\n\n        Another attribute ``save_to_cache()`` is added to provide extra caching\n        possibilities relative to the function.   This is a convenience\n        method which will store a given\n        value directly without calling the decorated function.\n        The value to be cached is passed as the first argument, and the\n        arguments which would normally be passed to the function\n        should follow::\n\n            await generate_something.save_to_cache(3, 5, 6)\n\n        The above example is equivalent to calling\n        ``generate_something(5, 6)``, if the function were to produce\n        the value ``3`` as the value to be cached.\n\n        :param ttl_sec: the number of seconds for which the value is considered valid\n        :param lock_period_sec: the duration for which to acquire the lock during value regeneration\n        :param function_key_generator: function which receives the function itself and its parameters and should\n        return string which is going to be used as caching key.\n        :param should_cache_fn: function which receives the function itself, arguments this function was called with,\n        and result. Should return boolean indicating whether this result should be cached.\n        :param jitter_func: function to modify TTL of cached result for better dispersion of invalidation times.\n        :return: CachingDecoratorWrapper: function that will cache the return value and has two additional\n        methods attached to it:\n         - save_to_cache(result_, *args, **kwargs) - accepts the same arguments,\n         and could be used to save `result_` to the cache manually\n         - call_without_cache(*args, **kwargs) - matches the type of original function, accepts the same argument,\n        and could be used to call the function bypassing the cache completely.\n        \"\"\"\n\n        def decorator(func: Callable[P, Awaitable[R]]) -> CachedFuncWithMethods[P, R]:\n            async def save_to_cache(result_: R, *args: P.args, **kwargs: P.kwargs) -> None:\n                key = function_key_generator(func, *args, **kwargs)\n                await self._set_cached_value_to_backend(\n                    key=key,\n                    value=result_,\n                    ttl_sec=ttl_sec,\n                    jitter_func=jitter_func,\n                )\n\n            @functools.wraps(func)\n            async def caching_dec_impl(*args: P.args, **kwargs: P.kwargs) -> R:\n                key = function_key_generator(func, *args, **kwargs)\n                return await self.get_or_create(\n                    key=key,\n                    ttl_sec=ttl_sec,\n                    lock_period_sec=lock_period_sec,\n                    generate_func=func,\n                    generate_func_args=args,\n                    generate_func_kwargs=kwargs,\n                    should_cache_fn=should_cache_fn,\n                )\n\n            caching_dec_impl.call_without_cached = func  # type: ignore[attr-defined]\n            caching_dec_impl.save_to_cache = save_to_cache  # type: ignore[attr-defined]\n            return cast(CachedFuncWithMethods[P, R], caching_dec_impl)\n\n        return cast(CachingDecorator, decorator)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/dogpile_breaker/api.py b/src/dogpile_breaker/api.py
+--- a/src/dogpile_breaker/api.py	(revision ae1b0c1313b0eb2f884c006a6977117515dcdd31)
++++ b/src/dogpile_breaker/api.py	(date 1738180492940)
+@@ -10,8 +10,9 @@
+ 
+ from typing_extensions import Self
+ 
++from .middlewares.middleware import StorageBackendMiddleware
++
+ from .exceptions import CantDeserializeError
+-from .middleware import StorageBackendMiddleware
+ 
+ if sys.version_info >= (3, 11, 3):
+     from asyncio import timeout  # type: ignore[attr-defined]
+@@ -117,7 +118,7 @@
+         self.serializer = serializer
+         self.deserializer = deserializer
+         self.backend_storage: StorageBackend
+-        self.awaits: dict[str, asyncio.Future] = {}
++        self.awaits: dict[str, asyncio.Future[Any]] = {}
+ 
+     async def configure(
+         self,
+@@ -202,7 +203,7 @@
+                 herd_leader.set_result(result)
+             except Exception as e:
+                 herd_leader.set_exception(e)
+-                raise e
++                raise
+             finally:
+                 self.awaits.pop(key, None)
+         else:
+@@ -245,7 +246,7 @@
+         is_outdated = time.time() > data_from_cache.expiration_timestamp
+         if not is_outdated:
+             # Everything is great, the data is up-to-date, return it.
+-            return data_from_cache.payload
++            return cast(R, data_from_cache.payload)
+         # The data is outdated, it needs to be updated.
+         # To ensure that only one process performs the update and hits the database,
+         # we acquire a lock for data update
+@@ -278,7 +279,7 @@
+             return result
+         # We couldn't acquire the lock, meaning another process is updating the data.
+         # In the meantime, we return outdated data to avoid making the clients wait.
+-        return data_from_cache.payload
++        return cast(R, data_from_cache.payload)
+ 
+     async def _check_if_data_apper_in_cache(self, key: str, lock_period_sec: int) -> CachedEntry | None:
+         """
+@@ -346,7 +347,7 @@
+             data_from_cache = await self._check_if_data_apper_in_cache(key, lock_period_sec)
+ 
+         # Finally, some coroutine has updated the data (it could be this one, or a parallel one).
+-        return data_from_cache.payload
++        return cast(R, data_from_cache.payload)
+ 
+     async def _get_from_backend(
+         self,
+Index: run_herd.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/run_herd.py b/run_herd.py
+new file mode 100644
+--- /dev/null	(date 1738170837266)
++++ b/run_herd.py	(date 1738170837266)
+@@ -0,0 +1,20 @@
++import asyncio
++import math
++import random
++
++import httpx
++
++
++async def get_(client: httpx.AsyncClient) -> httpx.Response:
++    sleep_param = round(random.random() * (4 - 0.1) + 0.1, 1)
++    return await client.get(f"http://127.0.0.1:8000/sleep?sleep_for={sleep_param}")
++
++
++async def main():
++    async with httpx.AsyncClient() as client:
++        tasks = [get_(client) for _ in range(100)]
++        result = await asyncio.gather(*tasks)
++
++
++if __name__ == "__main__":
++    asyncio.run(main())
+Index: experiment_with_sentinel.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/experiment_with_sentinel.py b/experiment_with_sentinel.py
+new file mode 100644
+--- /dev/null	(date 1738170828382)
++++ b/experiment_with_sentinel.py	(date 1738170828382)
+@@ -0,0 +1,80 @@
++import asyncio
++import json
++from datetime import timezone, datetime
++from typing import Any
++
++from dogpile_breaker import CacheRegion, RedisStorageBackend
++from dogpile_breaker.backends.redis_backend import RedisSentinelBackend
++
++
++def json_serializer(obj: Any) -> bytes:
++    return json.dumps(obj).encode("utf-8")
++
++
++def json_deserializer(data: bytes) -> Any:
++    return json.loads(data.decode("utf-8"))
++
++
++cache_region = CacheRegion(serializer=json_serializer, deserializer=json_deserializer)
++cache_region_regular_redis = CacheRegion(serializer=json_serializer, deserializer=json_deserializer)
++
++
++@cache_region.cache_on_arguments(
++    ttl_sec=10,
++    lock_period_sec=2,
++    function_key_generator=lambda fn, *args, **kwargs: f"key:{args[0]}",
++)
++async def expensive_func(sleep_for: int) -> dict[str, str]:
++    await asyncio.sleep(sleep_for)
++    return {"generated at": datetime.now(tz=timezone.utc).isoformat()}
++
++
++@cache_region_regular_redis.cache_on_arguments(
++    ttl_sec=10,
++    lock_period_sec=2,
++    function_key_generator=lambda fn, *args, **kwargs: f"key:{args[0]}",
++)
++async def expensive_func_normal_redis(sleep_for: int) -> dict[str, str]:
++    await asyncio.sleep(sleep_for)
++    return {"generated at": datetime.now(tz=timezone.utc).isoformat()}
++
++
++async def main_normal_redis():
++    await cache_region_regular_redis.configure(
++        backend_class=RedisStorageBackend,
++        backend_arguments={
++            "host": "127.0.0.1",
++            "port": 7480,
++            "db": 0,
++            "max_connections": 200,
++            "timeout": 20,
++        },
++    )
++    while True:
++        result = await expensive_func_normal_redis(1)
++        print(result)
++        await asyncio.sleep(0.5)
++
++
++async def main():
++    await cache_region.configure(
++        backend_class=RedisSentinelBackend,
++        backend_arguments={
++            "sentinels": [
++                ("127.0.0.1", 26379),
++                ("127.0.0.1", 26380),
++                ("127.0.0.1", 26381),
++            ],
++            "master_name": "mymaster",
++            "max_connections": 200,
++            "db": 0,
++        },
++    )
++    while True:
++        result = await expensive_func(1)
++        print(result)
++        await asyncio.sleep(0.5)
++
++
++if __name__ == "__main__":
++    asyncio.run(main())
+Index: experim_wit_metrics.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/experim_wit_metrics.py b/experim_wit_metrics.py
+new file mode 100644
+--- /dev/null	(date 1738172819431)
++++ b/experim_wit_metrics.py	(date 1738172819431)
+@@ -0,0 +1,53 @@
++import asyncio
++import json
++
++from fastapi import FastAPI
++from prometheus_async.aio.web import start_http_server
++
++from contextlib import asynccontextmanager
++from dogpile_breaker import CacheRegion
++from dogpile_breaker.backends.redis_backend import RedisStorageBackend
++from dogpile_breaker.middlewares.prometheus_middleware import PrometheusMiddleware
++
++resolve_url_cache = CacheRegion(
++    serializer=lambda x: json.dumps(x).encode("utf-8"),
++    deserializer=lambda x: json.loads(x.decode("utf-8")),
++)
++
++
++@asynccontextmanager
++async def lifespan(app: FastAPI):
++    await resolve_url_cache.configure(
++        backend_class=RedisStorageBackend,
++        backend_arguments={"host": "localhost", "port": 6379, "max_connections": 100},
++        middlewares=[PrometheusMiddleware(region_name="resolve-url")],
++    )
++
++    metrics_server = asyncio.create_task(start_http_server(port=9025, addr="0.0.0.0"))
++    yield
++    metrics_server.cancel()
++    await metrics_server
++
++
++app = FastAPI(lifespan=lifespan)
++
++
++@resolve_url_cache.cache_on_arguments(
++    ttl_sec=10,
++    lock_period_sec=2,
++    function_key_generator=lambda fn, *args, **kwargs: f"cacke-key:{args[0]}",
++)
++async def important_function(sleep_for: int | float) -> dict[str, str]:
++    await asyncio.sleep(sleep_for)
++    return {"status": "OK", "slept": str(sleep_for)}
++
++
++@app.get("/")
++def read_root():
++    return {"Hello": "World"}
++
++
++@app.get("/sleep")
++async def sleep(sleep_for: int | float):
++    result = await important_function(sleep_for)
++    return result
+Index: experim.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/experim.py b/experim.py
+new file mode 100644
+--- /dev/null	(date 1738170560198)
++++ b/experim.py	(date 1738170560198)
+@@ -0,0 +1,156 @@
++import asyncio
++import functools
++import threading
++from collections.abc import Awaitable, Callable, Hashable, Mapping
++from contextlib import asynccontextmanager
++from typing import AbstractSet, Any, NewType, ParamSpec, TypeAlias, TypeVar, cast
++
++from async_timeout import timeout
++
++TParams = ParamSpec("TParams")
++R = TypeVar("R")
++ArgId: TypeAlias = int | str
++CacheKey = NewType("CacheKey", tuple[Hashable, ...])
++
++
++class CountTask:
++    task: asyncio.Task | None = None
++    count: int = 0
++
++
++def _get_local(local: threading.local, name: str) -> dict[CacheKey, Any]:
++    try:
++        return getattr(local, name)
++    except AttributeError:
++        container: dict[CacheKey, Any] = {}
++        setattr(local, name, container)
++        return container
++
++
++def build_key(
++    args: tuple[Any, ...],
++    kwargs: Mapping[str, Any],
++    ignored_args: AbstractSet[ArgId] | None = None,
++) -> CacheKey:
++    if not ignored_args:
++        return CacheKey((args, tuple(sorted(kwargs.items()))))
++    return CacheKey(
++        (
++            tuple(value for idx, value in enumerate(args) if idx not in ignored_args),
++            tuple(item for item in sorted(kwargs.items()) if item[0] not in ignored_args),
++        )
++    )
++
++
++def herd(fn: Callable[TParams, Awaitable[R]] | None = None, *, ignored_args: AbstractSet[ArgId] | None = None):
++    print(f"Called herd with {fn=} and {ignored_args=}")
++
++    def decorator(fn: Callable[TParams, Awaitable[R]]) -> Callable[TParams, Awaitable[R]]:
++        print(f"Called with {fn=}")
++        local = threading.local()
++
++        @functools.wraps(fn)
++        async def wrapped(*args: TParams.args, **kwargs: TParams.kwargs) -> R:
++            # print(f'Called with {args=} and {kwargs=}')
++
++            pending = cast(dict[CacheKey, CountTask], _get_local(local, "pending"))
++            # print(pending)
++            request = build_key(tuple(args), kwargs, ignored_args)
++            count_task = pending.setdefault(request, CountTask())
++            count_task.count += 1
++
++            task = count_task.task
++            if task is None:
++                count_task.task = task = asyncio.create_task(fn(*args, **kwargs))
++
++            try:
++                return await asyncio.shield(task)
++            except asyncio.CancelledError:
++                print("Canceled by CancelledError after shield")
++                if count_task.count == 1:
++                    # await cancel(task)
++                    task.cancel()
++                    # try:
++                    #     await task
++                    # except asyncio.CancelledError:
++                    #     if task.done():
++                    #         return
++                    #     if asyncio.current_task().cancelling() > 0:
++                    #         raise
++                raise
++
++            finally:
++                count_task.count -= 1
++                if count_task.count == 0 or not task.cancelled():
++                    if request in pending and pending[request] is count_task:
++                        del pending[request]
++
++        return wrapped
++
++    if fn and callable(fn):
++        return decorator(fn)
++    return decorator
++
++
++@asynccontextmanager
++def herd_ctx(ignored_args: AbstractSet[ArgId] | None = None):
++    local = threading.local()
++
++    async def inner(*args, **kwargs):
++        pending = cast(dict[CacheKey, CountTask], _get_local(local, "pending"))
++        # print(pending)
++        request = build_key(tuple(args), kwargs, ignored_args)
++        count_task = pending.setdefault(request, CountTask())
++        count_task.count += 1
++
++        task = count_task.task
++        if task is None:
++            count_task.task = task = asyncio.create_task(fn(*args, **kwargs))
++
++        try:
++            return await asyncio.shield(task)
++        except asyncio.CancelledError:
++            print("Canceled by CancelledError after shield")
++            if count_task.count == 1:
++                # await cancel(task)
++                task.cancel()
++                # try:
++                #     await task
++                # except asyncio.CancelledError:
++                #     if task.done():
++                #         return
++                #     if asyncio.current_task().cancelling() > 0:
++                #         raise
++            raise
++
++        finally:
++            count_task.count -= 1
++            if count_task.count == 0 or not task.cancelled():
++                if request in pending and pending[request] is count_task:
++                    del pending[request]
++
++
++@herd
++async def hello(text):
++    try:
++        print(text)
++        await asyncio.sleep(10)
++        return 42
++    except asyncio.CancelledError:
++        print("CancelledError")
++        raise
++
++
++async def main():
++    tasks = [hello("hello") for _ in range(10)]
++    try:
++        async with timeout(0.2):
++            results = await asyncio.gather(*tasks)
++    except asyncio.TimeoutError:
++        print("Timed out")
++    # result = await hello('Hello')
++    # print(results)
++
++
++if __name__ == "__main__":
++    asyncio.run(main())
+Index: tests/test_cached_entry.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/tests/test_cached_entry.py b/tests/test_cached_entry.py
+new file mode 100644
+--- /dev/null	(date 1738170837266)
++++ b/tests/test_cached_entry.py	(date 1738170837266)
+@@ -0,0 +1,78 @@
++import pytest
++from datetime import datetime, timedelta, timezone
++import json
++from dataclasses import dataclass
++from typing import Any
++
++from dogpile_breaker.api import CachedEntry
++from dogpile_breaker.exceptions import CantDeserializeError
++
++
++# Example serializer and deserializer for testing
++def example_serializer(payload: Any) -> bytes:
++    return json.dumps(payload).encode("utf-8")
++
++
++def example_deserializer(data: bytes) -> Any:
++    return json.loads(data.decode("utf-8"))
++
++
++@pytest.fixture
++def valid_payload():
++    return {"key": "value", "timestamp": datetime.now(tz=timezone.utc).isoformat()}
++
++
++@pytest.fixture
++def expired_timestamp():
++    return (datetime.now(tz=timezone.utc) - timedelta(hours=1)).timestamp()
++
++
++@pytest.fixture
++def future_timestamp():
++    return (datetime.now(tz=timezone.utc) + timedelta(hours=1)).timestamp()
++
++
++@pytest.fixture
++def valid_cached_entry(valid_payload, future_timestamp):
++    return CachedEntry(payload=valid_payload, expiration_timestamp=future_timestamp)
++
++
++def test_to_bytes(valid_cached_entry):
++    serialized_data = valid_cached_entry.to_bytes(serializer=example_serializer)
++    assert isinstance(serialized_data, bytes)
++    assert b"key" in serialized_data
++    assert b"expiration_timestamp" in serialized_data
++
++
++def test_from_bytes(valid_cached_entry, valid_payload, future_timestamp):
++    serialized_data = valid_cached_entry.to_bytes(serializer=example_serializer)
++    deserialized_entry = CachedEntry.from_bytes(serialized_data, deserializer=example_deserializer)
++    assert deserialized_entry is not None
++    assert deserialized_entry.payload == valid_payload
++    assert deserialized_entry.expiration_timestamp == future_timestamp
++
++
++def test_from_bytes_invalid_meta_data():
++    invalid_data = b'{"value": "42"}|data'
++    CachedEntry.from_bytes(invalid_data, deserializer=example_deserializer)
++
++
++def test_from_bytes_invalid_payload():
++    invalid_data = b'invalid|{"expiration_timestamp": 1738012598.794059}'
++    CachedEntry.from_bytes(invalid_data, deserializer=example_deserializer)
++
++
++def test_deserialization_error_handling():
++    def failing_deserializer(data: bytes) -> Any:
++        raise CantDeserializeError("Cannot deserialize")
++
++    serialized_data = b'{"key":"value"}|{"expiration_timestamp":1234567890}'
++    deserialized_entry = CachedEntry.from_bytes(serialized_data, deserializer=failing_deserializer)
++    assert deserialized_entry is None
++
++
++def test_to_bytes_empty_payload():
++    empty_entry = CachedEntry(payload=None, expiration_timestamp=1234567890)
++    serialized_data = empty_entry.to_bytes(serializer=example_serializer)
++    assert isinstance(serialized_data, bytes)
++    assert b"expiration_timestamp" in serialized_data
+Index: herd_one.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/herd_one.py b/herd_one.py
+new file mode 100644
+--- /dev/null	(date 1738170560203)
++++ b/herd_one.py	(date 1738170560203)
+@@ -0,0 +1,45 @@
++import asyncio
++import sys
++
++if sys.version_info >= (3, 11):
++    from asyncio import timeout
++else:
++    from async_timeout import timeout
++
++
++class Answer:
++    def __init__(self):
++        self.count = 0
++        self.answer = ""
++
++
++ANSWER = Answer()
++
++
++async def check_backend_for_data(key: str, timeout_sec: int) -> str | None:
++    global ANSWER
++
++    try:
++        async with timeout(timeout_sec):
++            while True:
++                ANSWER.count += 1
++                if not ANSWER.answer:
++                    print(f"Нет ответа для {key}, спим дальше")
++                    await asyncio.sleep(timeout_sec / 4)
++                else:
++                    return ANSWER.answer
++    except asyncio.TimeoutError:
++        print("Таймаут, не ждём дальше")
++        return None
++
++
++async def main():
++    tasks = [check_backend_for_data("dima-key", 5) for _ in range(10)]
++    results = await asyncio.gather(*tasks)
++    print(results)
++    # await check_backend_for_data('dima-key', 5)
++    print(ANSWER.count)
++
++
++if __name__ == "__main__":
++    asyncio.run(main())
+Index: experim_herd.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/experim_herd.py b/experim_herd.py
+new file mode 100644
+--- /dev/null	(date 1738170828377)
++++ b/experim_herd.py	(date 1738170828377)
+@@ -0,0 +1,39 @@
++import asyncio
++import json
++from typing import Any
++
++from dogpile_breaker import CacheRegion
++from dogpile_breaker.backends.redis_backend import RedisSentinelBackend
++
++
++def json_serializer(obj: Any) -> bytes:
++    return json.dumps(obj).encode("utf-8")
++
++
++def json_deserializer(data: bytes) -> Any:
++    return json.loads(data.decode("utf-8"))
++
++
++cache_region = CacheRegion(
++    serializer=json_serializer,
++    deserializer=json_deserializer,
++)
++
++
++@cache_region.cache_on_arguments(
++    ttl_sec=5,
++    lock_period_sec=2,
++    function_key_generator=lambda fn, *args, **kwargs: f"key:{args[0]}",
++)
++async def funk_one(index: int) -> dict[str, int | str]:
++    await asyncio.sleep(1)
++    return {"result": index, "status": "ok"}
++
++
++async def funk_two(index: int) -> dict[str, int | str]:
++    await asyncio.sleep(1)
++    return {"status": f" HEHE FUNC {index}"}
++
++
++async def main():
++    await cache_region.configure(backend_class=RedisSentinelBackend, backend_arguments={""})
+diff --git a/tests/conftest.py b/tests/conftest.py
+new file mode 100644
