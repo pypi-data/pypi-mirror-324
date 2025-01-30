@@ -1,0 +1,2 @@
+[console_scripts]
+gpt10 = lebaronysard_first_package.main:cli
