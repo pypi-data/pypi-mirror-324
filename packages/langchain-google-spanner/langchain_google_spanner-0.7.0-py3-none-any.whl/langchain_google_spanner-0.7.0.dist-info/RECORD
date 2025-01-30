@@ -1,0 +1,17 @@
+langchain_google_spanner/__init__.py,sha256=Hp7VMi5iBIk3HvERedn2fK65rXfPyIa6vSUY7jDMGQM,1535
+langchain_google_spanner/chat_message_history.py,sha256=eJf9t_ra3GhR6vGjOwpSqC3jq753xnuFdeqGPpCQ3_E,9707
+langchain_google_spanner/graph_qa.py,sha256=qF-rQt5CYv1ofSYzcuz-evbeSWPMHpdLteRx9q_YpP8,13480
+langchain_google_spanner/graph_retriever.py,sha256=iTJi_PVRZpRxAUgMWP0puc4IzMOThFqp-htDtaRfedI,11567
+langchain_google_spanner/graph_store.py,sha256=N0Zb_5FKvOuNjjQXO0vOanpbW6qKYQoY1tynWJrv3nI,36600
+langchain_google_spanner/graph_utils.py,sha256=v8MtAf2KFBcddJ9-09HxXi-krvxgnBUiRDWMBHPoZPI,2002
+langchain_google_spanner/loader.py,sha256=6Zl46mUVR0s3a7NVCkN5_YHC1l5Em3xaHQc599Ct3uw,17178
+langchain_google_spanner/prompts.py,sha256=-WsVMrE_YezqbBH_8YfDJbkQuLZ9H-1ekS3uwKL2OnE,7398
+langchain_google_spanner/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+langchain_google_spanner/type_utils.py,sha256=CF1gIqJwDGczdEyaTu-jB90_TgfL9f5Th-OuO4rJJYM,4326
+langchain_google_spanner/vector_store.py,sha256=UhylYDPYJV_i50sXSplQbTvy2uJbqJo0bvv4FlcH-88,45169
+langchain_google_spanner/version.py,sha256=Azasew1RSblUic0Jd9z6XQACFDEx8EZuf0NT2QGwB8M,597
+langchain_google_spanner-0.7.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+langchain_google_spanner-0.7.0.dist-info/METADATA,sha256=xXZtWa1__4dtQzorO145oqpHnzACUJytCd-1tmXeqZU,22660
+langchain_google_spanner-0.7.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+langchain_google_spanner-0.7.0.dist-info/top_level.txt,sha256=CrnecUOOApZ7uXTt6m7w1sVSYJ_qZZ3T_TQzPim2r8c,25
+langchain_google_spanner-0.7.0.dist-info/RECORD,,
