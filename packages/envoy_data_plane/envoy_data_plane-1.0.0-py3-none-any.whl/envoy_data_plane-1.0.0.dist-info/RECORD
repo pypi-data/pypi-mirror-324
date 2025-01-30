@@ -1,0 +1,5 @@
+envoy_data_plane/.gitkeep,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+envoy_data_plane-1.0.0.dist-info/LICENSE,sha256=zqWh2TlOhdQCJlsFKEStGLyXEw9V3SYh5ZFR11nk6ds,1057
+envoy_data_plane-1.0.0.dist-info/METADATA,sha256=7ztwMmKvrGz13R1a8z7ieqCnkDqgofQ3QWCApr3MVg4,3924
+envoy_data_plane-1.0.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+envoy_data_plane-1.0.0.dist-info/RECORD,,
