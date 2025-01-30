@@ -1,0 +1,7 @@
+.venv
+.tox
+.coverage
+.ruff_cache
+*.pyc
+__pycache__
+.pytest_cache
