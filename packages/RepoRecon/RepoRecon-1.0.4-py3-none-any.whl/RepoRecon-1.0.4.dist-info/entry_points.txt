@@ -1,0 +1,2 @@
+[console_scripts]
+RepoRecon = RepoRecon.main:main
