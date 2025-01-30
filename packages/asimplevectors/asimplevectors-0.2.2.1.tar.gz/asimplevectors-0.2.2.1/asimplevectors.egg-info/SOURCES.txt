@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+asimplevectors/__init__.py
+asimplevectors/client.py
+asimplevectors/models.py
+asimplevectors.egg-info/PKG-INFO
+asimplevectors.egg-info/SOURCES.txt
+asimplevectors.egg-info/dependency_links.txt
+asimplevectors.egg-info/requires.txt
+asimplevectors.egg-info/top_level.txt
+tests/test_client.py
