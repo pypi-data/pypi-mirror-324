@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: iktomi.cms
+Version: 0.2.12
+Summary: CMS components for iktomi.
+Home-page: http://github.com/SmartTeleMax/iktomi-cms/
+Author: Denis Otkidach
+Author-email: denis.otkidach@gmail.com
+Maintainer: Evgeny Mayorov
+Maintainer-email: motormen@gmail.com
+License: MIT
+Requires: webob (>1.1b1)
+Requires: iktomi (>0.4.2)
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires
+Dynamic: summary
