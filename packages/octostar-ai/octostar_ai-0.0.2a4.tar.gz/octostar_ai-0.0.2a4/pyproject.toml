@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "octostar-ai"
+version = "0.0.2a4"
+description = ""
+license = "MIT"
+authors = []
+readme = "README.md"
+include = [
+    "octostar-ai/**/*"
+]
+
+[[tool.poetry.source]]
+name = 'pypi-public'
+url = "https://pypi.org/simple/"
+
+[tool.mypy]
+python_version = ">=3.9,<3.9.7 || >3.9.7,<4.0"
+check_untyped_defs = true
+ignore_missing_imports = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
+pydantic = "^2.6.4"
+langchain = ">=0.3.0,<0.4.0"
+langchain_huggingface=">=0.1.0,<0.2.0"
+langchain_community=">=0.3.0,<0.4.0"
+langchain_text_splitters=">=0.3.0,<0.4.0"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[pytest]
+log_cli = 1
