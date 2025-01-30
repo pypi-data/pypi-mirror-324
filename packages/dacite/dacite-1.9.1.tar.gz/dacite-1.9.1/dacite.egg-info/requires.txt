@@ -1,0 +1,13 @@
+
+[:python_version < "3.7"]
+dataclasses
+
+[dev]
+pytest>=5
+pytest-benchmark
+pytest-cov
+coveralls
+black
+mypy
+pylint
+pre-commit
