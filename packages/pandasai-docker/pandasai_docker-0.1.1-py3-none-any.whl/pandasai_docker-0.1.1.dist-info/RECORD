@@ -1,0 +1,7 @@
+pandasai_docker/Dockerfile,sha256=teBifrBft26i30u2Wcro6DIF-BuIqp756x0OSmn5rF0,299
+pandasai_docker/__init__.py,sha256=WU9yy-X8LTBXXL0pqVYuqylyYaCH4VuRvN_52pL8q0E,71
+pandasai_docker/docker_sandbox.py,sha256=y62wwp5K-gMKB7oHe9GIiTqFn8K0girxOLLAxgw_qRc,6820
+pandasai_docker/serializer.py,sha256=oZsQPgWxAIXKPNe4PsChsmqqIGBNiYq9hCyEPT1VSsw,2253
+pandasai_docker-0.1.1.dist-info/METADATA,sha256=RdqfeYnyj2KR8nnG-r5nFD-xkYgNyUzDK8j6vQ03POI,706
+pandasai_docker-0.1.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pandasai_docker-0.1.1.dist-info/RECORD,,
