@@ -1,0 +1,2 @@
+[console_scripts]
+watch-webcam = watch_webcam:cli.main

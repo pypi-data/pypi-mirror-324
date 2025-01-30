@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/watch_webcam/__init__.py
+src/watch_webcam/cli.py
+src/watch_webcam/video.py
+src/watch_webcam.egg-info/PKG-INFO
+src/watch_webcam.egg-info/SOURCES.txt
+src/watch_webcam.egg-info/dependency_links.txt
+src/watch_webcam.egg-info/entry_points.txt
+src/watch_webcam.egg-info/requires.txt
+src/watch_webcam.egg-info/top_level.txt
+src/watch_webcam/actions/__init__.py
+src/watch_webcam/actions/base.py
+src/watch_webcam/actions/light.py
+src/watch_webcam/actions/media.py
+src/watch_webcam/actions/xscreensaver.py
