@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: hypergrid_tuner
+Version: 1.0.1
+Summary: A utility for hyperparameter tuning of various classifiers using GridSearchCV
+Author: Alimov Abdulla
+Author-email: abdullaalimov555@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENCE.txt
+Requires-Dist: scikit-learn>=1.0.0
+Requires-Dist: numpy>=1.21.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

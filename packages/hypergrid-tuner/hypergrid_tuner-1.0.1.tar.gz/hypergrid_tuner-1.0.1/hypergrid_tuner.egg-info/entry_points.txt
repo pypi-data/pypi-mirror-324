@@ -1,0 +1,2 @@
+[console_scripts]
+tune-hyperparameters = hyperparameter_tuning:main

@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENCE.txt
+MANIFEST.in
+README.txt
+setup.py
+hypergrid_tuner.egg-info/PKG-INFO
+hypergrid_tuner.egg-info/SOURCES.txt
+hypergrid_tuner.egg-info/dependency_links.txt
+hypergrid_tuner.egg-info/entry_points.txt
+hypergrid_tuner.egg-info/requires.txt
+hypergrid_tuner.egg-info/top_level.txt
