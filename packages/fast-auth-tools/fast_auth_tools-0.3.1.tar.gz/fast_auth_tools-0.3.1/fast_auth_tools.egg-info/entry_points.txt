@@ -1,0 +1,3 @@
+[console_scripts]
+fast-auth-migrate = fast_auth.user:migrate
+fast-auth-user = fast_auth.user:main
