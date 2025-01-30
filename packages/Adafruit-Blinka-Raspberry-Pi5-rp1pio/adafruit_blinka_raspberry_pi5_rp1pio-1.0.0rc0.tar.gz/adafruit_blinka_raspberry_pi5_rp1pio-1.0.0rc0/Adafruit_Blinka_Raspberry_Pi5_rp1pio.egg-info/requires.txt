@@ -1,0 +1,7 @@
+
+[docs]
+myst-parser
+setuptools-scm
+sphinx
+sphinx-rtd-theme
+sphinxcontrib-jquery
