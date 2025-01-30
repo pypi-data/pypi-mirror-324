@@ -1,0 +1,8 @@
+ragbits/conversations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ragbits/conversations/history/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ragbits/conversations/history/compressors/__init__.py,sha256=mWY019l5KSbu0ioRP_aHfVAZQLoy1EedIS3EJevK1F4,169
+ragbits/conversations/history/compressors/base.py,sha256=kzqAXMYcH6-Gr8r0cpqG2kKfwYPylcrKPFCDtpN4nu8,1086
+ragbits/conversations/history/compressors/llm.py,sha256=i5HDotb0LiVD1c1kSENS_ZRY_pwdMtm80ZBZiVYgO9U,3254
+ragbits_conversations-0.8.0.dist-info/METADATA,sha256=WbvKULxdqrKylQ5-Eivfx4VkReG3HkE5dxZg1VIkW8Q,1312
+ragbits_conversations-0.8.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ragbits_conversations-0.8.0.dist-info/RECORD,,
