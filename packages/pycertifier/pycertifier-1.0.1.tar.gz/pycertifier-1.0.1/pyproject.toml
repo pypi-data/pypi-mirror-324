@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycertifier"
+version = "1.0.1"
+description = "CLI to request xPKI certificates"
+authors = [
+    { name = "Russell Benjamin", email = "russell_benjamin@comcast.com" }
+]
+license = { text = "Apache-2.0" }
+requires-python = ">=3.13"
+dependencies = [
+    "base58==2.1.1",
+    "certifi==2024.8.30",
+    "cffi==1.17.1",
+    "charset-normalizer==3.4.0",
+    "cryptography==43.0.1",
+    "idna==3.10",
+    "packaging==24.1",
+    "psutil==6.0.0",
+    "requests-pkcs12==1.25",
+    "requests-toolbelt==1.0.0",
+    "setuptools==75.2.0",
+    "urllib3==2.2.3",
+    "lockfile==0.12.2"
+]
+
+[project.optional-dependencies]
+dev = ["twine>=5.1.1"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+pycertifier = "pycertifier.main:main"
