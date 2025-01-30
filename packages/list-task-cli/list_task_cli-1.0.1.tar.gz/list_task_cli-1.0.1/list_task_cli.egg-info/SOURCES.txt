@@ -1,0 +1,8 @@
+README.md
+setup.py
+list_task_cli.egg-info/PKG-INFO
+list_task_cli.egg-info/SOURCES.txt
+list_task_cli.egg-info/dependency_links.txt
+list_task_cli.egg-info/entry_points.txt
+list_task_cli.egg-info/requires.txt
+list_task_cli.egg-info/top_level.txt
