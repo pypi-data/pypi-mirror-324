@@ -1,0 +1,2 @@
+[console_scripts]
+request-logger-web = request_logger.web.main:run_app

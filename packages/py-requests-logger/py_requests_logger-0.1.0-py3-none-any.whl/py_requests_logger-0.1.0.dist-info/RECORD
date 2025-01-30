@@ -1,0 +1,17 @@
+request_logger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+request_logger/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+request_logger/web/app.py,sha256=kbA9LySHlhCWE_APOVzP9hSVjY3P3zHOaNHRR4m9qzw,5920
+request_logger/web/main.py,sha256=yxiMEi7sU9NM_Ug_f3ESJSeNJ9ZUvU6rzK6fXCiM4iU,233
+request_logger/web/static/css/styles.css,sha256=b8wVrJ8fQgj6aQqUdiUXGjPGSOt3iS0iBahEGM73X3k,633
+request_logger/web/static/js/scripts.js,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+request_logger/web/templates/base.html,sha256=MWy_-061j-oxJ8MnyZlmIOQ6sMVvX-kaLOavnLa9kZQ,788
+request_logger/web/templates/index.html,sha256=oO0NwRjSvs7T7ZkUW9PwEBY2XQqIOTqdDj2PB_5wAbw,1387
+request_logger/web/templates/modify_form.html,sha256=cunNtUPCeRPoMI1i7eSn9-fkcpK2ch82U3qbjuqdD3A,2643
+request_logger/web/templates/replay_result.html,sha256=NyFesV5_1TFYSgW734sqIjvli32JkfxESVfsaHgCz2I,311
+request_logger/web/templates/request_detail.html,sha256=ASBTfI71DUVV3T54UyU-R8d-9cPf0IIBcS4SXjB7ckw,1542
+request_logger/web/templates/request_list.html,sha256=wkFwxboimiDw3IOUOsdZN8JMvDSdGEkwIbspaAMqNb8,506
+py_requests_logger-0.1.0.dist-info/METADATA,sha256=WXvbgCeDsIRIUgmsOGUWiHLii3db8vBfI_8b0A0HGHo,7066
+py_requests_logger-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+py_requests_logger-0.1.0.dist-info/entry_points.txt,sha256=zHkc_FTA_F7CGHvTlUitc5yebZIdeKioJxhEs6sehhU,71
+py_requests_logger-0.1.0.dist-info/top_level.txt,sha256=NSRk3XtI3iMv0WXgrOujnQOucuJnd0DJqCE9S5WLagU,15
+py_requests_logger-0.1.0.dist-info/RECORD,,
