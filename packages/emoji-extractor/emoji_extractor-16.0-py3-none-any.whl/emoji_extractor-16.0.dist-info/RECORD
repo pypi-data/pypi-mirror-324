@@ -1,0 +1,13 @@
+emoji_extractor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emoji_extractor/extract.py,sha256=7ZnOIxRWvRN4rGSc0xhaUH-U5CR_54-pebBjkb-Gg0o,3332
+emoji_extractor/data/big_regex.pkl,sha256=qPmQzE8FAhfy6th0WOkqqdXzOvOHZossgsYc2MF2XYo,172773
+emoji_extractor/data/possible_emoji.pkl,sha256=uuf7bM4vYyQ93K-9GBEORkt1CLzkvgG9E6w2-iT1BGI,74901
+emoji_extractor/data/tme_regex.pkl,sha256=7FdzsY6ym-H6H0MQFv-t3ysiuOVkte0eTb603_-wBpI,145177
+emoji_extractor-16.0.data/data/emoji_extractor/big_regex.pkl,sha256=qPmQzE8FAhfy6th0WOkqqdXzOvOHZossgsYc2MF2XYo,172773
+emoji_extractor-16.0.data/data/emoji_extractor/possible_emoji.pkl,sha256=uuf7bM4vYyQ93K-9GBEORkt1CLzkvgG9E6w2-iT1BGI,74901
+emoji_extractor-16.0.data/data/emoji_extractor/tme_regex.pkl,sha256=7FdzsY6ym-H6H0MQFv-t3ysiuOVkte0eTb603_-wBpI,145177
+emoji_extractor-16.0.dist-info/LICENSE.txt,sha256=gzIq8daTrGQyKLW8TxBLDNrG1ZgR8VdK_B3nDYcj87I,1075
+emoji_extractor-16.0.dist-info/METADATA,sha256=WEfk37DcykqQ_98UTkXLucUPx8_OQ7ymgTNFRBMcPoM,510
+emoji_extractor-16.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+emoji_extractor-16.0.dist-info/top_level.txt,sha256=Ohm49iT6eysvVVmVgaAcPaHvmAYBPosBc6CatfgZ_-c,16
+emoji_extractor-16.0.dist-info/RECORD,,
