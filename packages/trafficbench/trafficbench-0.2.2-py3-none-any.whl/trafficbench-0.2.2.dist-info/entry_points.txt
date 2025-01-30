@@ -1,0 +1,2 @@
+[console_scripts]
+trafficbench = trafficbench.cli:app
