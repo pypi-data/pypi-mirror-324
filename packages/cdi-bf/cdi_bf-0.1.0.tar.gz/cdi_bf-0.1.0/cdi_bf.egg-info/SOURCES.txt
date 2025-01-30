@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+cdi_bf/__init__.py
+cdi_bf/cdi_bf.py
+cdi_bf.egg-info/PKG-INFO
+cdi_bf.egg-info/SOURCES.txt
+cdi_bf.egg-info/dependency_links.txt
+cdi_bf.egg-info/requires.txt
+cdi_bf.egg-info/top_level.txt
