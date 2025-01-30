@@ -1,0 +1,9 @@
+rds_provider/manifest.toml,sha256=8vn6eAfCi9rQeaZIJMJ2S0iz88UY9As5h-LSv_zYEPw,112
+rds_provider/rds_provider.py,sha256=kv__Ku6PX_RHBaXO1QohgeD1zy9gUL_kCKttpKfA2MQ,11267
+rds_provider/test_rds_provider.py,sha256=k0qreH10PZM84fyMhVo3SgIYSQCqddT410eX6JLX1xM,3243
+opsbox_rds_provider-0.1.5.dist-info/LICENCE.txt,sha256=-YEY41LAwXsb0Er-5vJY1cKRFr9ea3T6CigUirNyUZo,17097
+opsbox_rds_provider-0.1.5.dist-info/METADATA,sha256=vH6fa0IWKDXr3j13ingIZxtA9SDpVOcPNdnhG-kq-JU,339
+opsbox_rds_provider-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+opsbox_rds_provider-0.1.5.dist-info/entry_points.txt,sha256=EQoWprQ75Xoxr-K7P-vO3XtUiG-y_GDG6V1OZTrnjY8,77
+opsbox_rds_provider-0.1.5.dist-info/top_level.txt,sha256=wg5KSd5VBChYnrD5ABtBTLHOU89Lt2hQGJwPWUJPw1c,13
+opsbox_rds_provider-0.1.5.dist-info/RECORD,,
