@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: hugo2llmtxt
+Version: 0.1.0
+Summary: Generate the llms.txt file for the hugo website
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: typer>=0.15.1
+
+A simple utility to generate [llms.txt](https://llmstxt.org/) for hugo website.
+
+### Run
+
+- Make sure to run `hugo list all > hugo_list.csv` that contains all the contents in the CSV file.
+- `uvx hugo2llmtxt ../hugo_list.csv  ../static/llms.txt`
+- The command should generate the llms.txt
+
+
