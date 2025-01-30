@@ -1,0 +1,12 @@
+speechmatching/__init__.py,sha256=XLV8MmGCI-c3vJ3819DO4fOnPLfwW14auAg8fUrn7tg,574
+speechmatching/audio.py,sha256=IrC15svcZUFS19f-nAoKPLOIWZooihkHBv_sxExi8vY,2646
+speechmatching/config.py,sha256=gxdkiySm27GxHOYcZvEUzcTEuVdeeX4jjg390xNhZ3E,1253
+speechmatching/match.py,sha256=5tIZwekY45OcYkGi-rGAM2oc_K9xu1xXu57gfxS6mH4,9774
+speechmatching/model.py,sha256=bAcxmIjTr0KoT7Bzgh3FTEEZZtf8OwImMGSCN1zujjs,26413
+speechmatching/recording.py,sha256=-DzzwwUU5L5fhOwSzWiGOA3ke9R8hNPgwJ0wXtoVLrI,38343
+speechmatching/utils.py,sha256=TFcwhgYvYkLJkPbA04Hk0zQiHeywZtcioicV4F7fdJw,3666
+speechmatching-1.0.0.dist-info/LICENSE.txt,sha256=pIcOeXyUUWX113vEXW1wHAKccwR1ab8Ih9Eq6TTuAO8,1072
+speechmatching-1.0.0.dist-info/METADATA,sha256=sDp3vAaZYvxpgtmVG7qfrXvyYGDMUDdU4A9wGJ44f64,10581
+speechmatching-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+speechmatching-1.0.0.dist-info/top_level.txt,sha256=g_O7oJEoZ1KkqYAdCKX5l-gywdLA1UDounn2xXIBTUY,15
+speechmatching-1.0.0.dist-info/RECORD,,
