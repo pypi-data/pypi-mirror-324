@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+gbooks_upload.egg-info/PKG-INFO
+gbooks_upload.egg-info/SOURCES.txt
+gbooks_upload.egg-info/dependency_links.txt
+gbooks_upload.egg-info/entry_points.txt
+gbooks_upload.egg-info/requires.txt
+gbooks_upload.egg-info/top_level.txt
+upload/__init__.py
+upload/const.py
+upload/drive.py
+upload/endpoints.py
+upload/py.typed
+upload/scotty.py
