@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: bootest
+Version: 0.0.1
+Summary: Python and C++ testing library
+Home-page: https://github.com/Rodrigo-Vildosola/BOOTEST
+Author: Rodrigo Vildosola
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: cmake
+Requires-Dist: clang
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Bootest Library
+
+This is a library made by Rodrigo Vildosola
