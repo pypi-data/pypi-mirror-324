@@ -1,0 +1,86 @@
+# gsnapshot
+
+A package use to automatic snapshot your repo using git.
+
+gsnapshot snapshot your repo by adding all current changes
+in your working directory, make a new git commit, and create
+a annotated tag for that commit. If there is nothing to be
+added, gsnapshot will only create a annotated tag.
+After doing all the snapshot work, gsnapshot will rewind
+your repo back to starting state, you will still sit on the
+same commit, with origin stage and working directory.
+
+## Documentation
+
+```python
+def snapshot_repo(tag_anno: str, tag_msg: str, commit_msg: str) -> str:
+    '''
+    tag_anno: str, tag name for new created tag
+    tag_msg: str, tag message for new created tag message
+    commit_msg: str, commit message for new created commit (if created)
+
+    return: snapshot commit id
+    '''
+
+def get_repo_root() -> str:
+    '''
+    return: repo root path
+    '''
+
+def curr_commit_id() -> str:
+    '''
+    return: current git commit id
+    '''
+
+def curr_branch_name() -> Optional[str]:
+    '''
+    return: current git branch name
+    '''
+```
+
+### environment requirements
+You must have git in your PATH.
+
+## Example
+
+```python
+import gsnapshot
+
+"""
+import os
+import filelock
+
+ID_FILE = 'id.txt'
+ID_LOCK_FILE = os.path.join(
+    gsnapshot.get_repo_root(), '.git', '.gen_id.lock'
+)
+ID_LOCK = filelock.FileLock(ID_LOCK_FILE)
+def create_unique_id() -> str:
+    with ID_LOCK:
+        if not os.path.exists(ID_FILE):
+            unique_id = 0
+        else:
+            with open(ID_FILE, 'r') as f:
+                unique_id = int(f.read())            
+        with open(ID_FILE, 'w') as f:
+            f.write(str(unique_id + 1))
+    return f'{unique_id:04}'
+"""
+
+unique_id: str = create_unique_id() 
+# you can create unique using filelock and a id file 
+# like comments above, 
+# !!!! you better add id file to .gitignore before snapshot,
+# otherwise there will be problem when you working in multiple environment.
+
+snapshot_commit = gsnapshot.snapshot_repo(
+    f'v{unique_id}', 
+    f'tag for {unique_id}',
+    f'gsnapshot commit for {unique_id}',
+)
+
+print('snapshot at commit:', snapshot_commit)
+
+```
+
+

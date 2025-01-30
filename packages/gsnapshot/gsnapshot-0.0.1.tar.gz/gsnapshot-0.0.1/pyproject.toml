@@ -1,0 +1,22 @@
+[project]
+name = "gsnapshot"
+authors = [
+    {name = "Mingkun Bao", email="bravomikekilo@outlook.com"},
+]
+# version = "0.1.0"
+dynamic = ['version']
+description = "a package for automatic repo snapshot using git"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = ["filelock"]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+
+[build-system]
+requires = ['setuptools>=64', 'setuptools-scm>=8']
+build-backend = 'setuptools.build_meta'
+
+[tool.setuptools_scm]
