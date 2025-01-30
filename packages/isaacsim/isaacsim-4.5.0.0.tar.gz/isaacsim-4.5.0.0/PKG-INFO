@@ -1,0 +1,59 @@
+Metadata-Version: 2.2
+Name: isaacsim
+Version: 4.5.0.0
+Summary: A metapackage to manage the Isaac Sim installation
+Author: Isaac Sim team
+License: NVIDIA Proprietary Software
+Project-URL: Home page, https://developer.nvidia.com/isaac-sim
+Project-URL: Documentation, https://docs.isaacsim.omniverse.nvidia.com
+Project-URL: Forum, https://forums.developer.nvidia.com/c/omniverse/simulation/69
+Keywords: nvidia,omniverse,isaacsim
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: Other/Proprietary License
+Requires-Python: ==3.10.*
+Description-Content-Type: text/markdown
+Requires-Dist: isaacsim-kernel==4.5.0.0
+Provides-Extra: rl
+Requires-Dist: isaacsim-rl==4.5.0.0; extra == "rl"
+Requires-Dist: isaacsim-replicator==4.5.0.0; extra == "rl"
+Requires-Dist: isaacsim-app==4.5.0.0; extra == "rl"
+Provides-Extra: ros
+Requires-Dist: isaacsim-ros1==4.5.0.0; extra == "ros"
+Provides-Extra: ros2
+Requires-Dist: isaacsim-ros2==4.5.0.0; extra == "ros2"
+Provides-Extra: extscache
+Requires-Dist: isaacsim-extscache-kit==4.5.0.0; extra == "extscache"
+Requires-Dist: isaacsim-extscache-kit-sdk==4.5.0.0; extra == "extscache"
+Requires-Dist: isaacsim-extscache-physics==4.5.0.0; extra == "extscache"
+Provides-Extra: all
+Requires-Dist: isaacsim-app==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-asset==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-benchmark==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-code-editor==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-core==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-cortex==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-example==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-gui==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-replicator==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-rl==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-robot==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-robot-motion==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-robot-setup==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-ros1==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-ros2==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-sensor==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-storage==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-template==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-test==4.5.0.0; extra == "all"
+Requires-Dist: isaacsim-utils==4.5.0.0; extra == "all"
+
+# isaacsim
+
+A metapackage to manage the Isaac Sim installation
+
+<hr>
+
+See [Install Isaac Sim using PIP](https://docs.omniverse.nvidia.com/isaacsim/latest/installation/install_python.html)
+for details on how to install and run Isaac Sim in a (virtual) Python environment.
+
