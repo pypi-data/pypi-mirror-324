@@ -1,0 +1,5 @@
+Django>=3.0
+djangorestframework>=3.12
+requests>=2.25
+google-auth>=1.29
+pyjwt>=2.1
