@@ -1,0 +1,9 @@
+EZCONFIG_RUNTIME = 2
+WSGI_SVC_START = enabled
+WSGI_APPNAME = api-gateway
+WSGI_VIRTUALENV = /apps/api-gateway
+WSGI_MODULE = api_gateway.webapp
+WSGI_VARIABLE = APP
+WSGI_ARGS = -k uvicorn.workers.UvicornWorker
+WSGI_INTERFACE = 127.0.0.1
+PROXY_TYPE = mesh

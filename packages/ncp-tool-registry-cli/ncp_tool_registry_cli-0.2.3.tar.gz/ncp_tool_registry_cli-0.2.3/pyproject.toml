@@ -1,0 +1,38 @@
+[tool.ruff]
+# See Netflix Lint Recommendations: http://go/python-lint
+line-length = 140
+src = ["src", "tests"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/api_gateway"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+[project]
+name = "ncp-tool-registry-cli"
+version = "0.2.3"
+description = "Tool registry CLI"
+authors = [{ name = "Felipe Assumpcao", email = "fassumpcao@netflix.com" }]
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "click",
+    "requests",
+    "configbin",
+    "jsonpath-ng",
+    "jsonref",
+    "pydantic",
+    "metatron",
+    "fastapi",
+    "nflxconfig",
+    "nflxlog",
+    "nflx-security-util>=0.6.0",
+    "rich",
+    "colorama"
+]
+
+[project.scripts]
+register-tool = "api_gateway.tool_registry.register_tool:cli"

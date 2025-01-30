@@ -1,0 +1,18 @@
+nflxconfig
+gunicorn
+uvicorn[standard]
+fastapi[all] < 1
+nflxlog
+nflxmetrics
+requests
+configbin
+jsonpath_ng
+jsonref
+nflxtrace[botocore,requests,fastapi,httpx,aiohttp]
+nflx-security-util >= 0.6.0
+click
+gandalfagent
+gandalf
+aiohttp
+rich
+colorama

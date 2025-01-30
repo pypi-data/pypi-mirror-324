@@ -1,0 +1,5 @@
+publish:
+  junit: "**/junit*.xml"
+
+jenkins:
+  label: jammy
