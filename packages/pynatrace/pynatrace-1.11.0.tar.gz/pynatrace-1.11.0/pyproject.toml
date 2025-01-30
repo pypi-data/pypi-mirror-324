@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "pynatrace"
+version = "1.11.0"
+description = "Python limited CLI for Dynatrace"
+authors = ["Michael MacKenna <mmackenna@unitedfiregroup.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.27.1"
+click = "^8.1.3"
+termcolor = "^2.2.0"
+dt = "^1.1.48"
+
+[tool.poetry.scripts]
+pynatrace = 'pynatrace.cli:main'
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
