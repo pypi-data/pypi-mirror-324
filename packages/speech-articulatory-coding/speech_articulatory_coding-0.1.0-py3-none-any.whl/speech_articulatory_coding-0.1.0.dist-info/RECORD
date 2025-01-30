@@ -1,0 +1,12 @@
+sparc/__init__.py,sha256=8ajm5CkgvqcxAmo0WgoQ_DDR06fPoTxyD3p9GwgWUog,20
+sparc/block.py,sha256=JcnGKKkfUobZAMXqO-zUfIM7pas4lE8hBT5NfsYgrwg,11423
+sparc/generator.py,sha256=UE-EevVCcu0-yeeK0--YpQ9vZvp-ZVukeBjrHe07Tpc,14024
+sparc/inversion.py,sha256=PxqwPsbeofLGp0nMqXs4WlWeWtZ9GO5NVwQGpnByeuE,4469
+sparc/sparc.py,sha256=4hGgvYUEUb9IAcWHMMTeLsD57-NRn85OX531xhEESDE,8829
+sparc/speech.py,sha256=2HVrnm1gL-4le4OBDWOkoy8AnI1gdL-fAt9X1CXppCc,3444
+sparc/spk_encoder.py,sha256=1gYdEzlNsf_4oE97u36C70tU3ZaQxcS3QXqIbwVJmhU,4504
+sparc/src_extractor.py,sha256=CKYN_Q6ODyQ71FGUcFzGBmRLk5rAYefYks_EpqNmb0Y,8226
+speech_articulatory_coding-0.1.0.dist-info/METADATA,sha256=uFLiWHUVlk1WgdOPecFTT4FaMZzpwe11q2wl83IlOpM,3891
+speech_articulatory_coding-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+speech_articulatory_coding-0.1.0.dist-info/top_level.txt,sha256=0Rkt3aTPDJTiu4CYXIrK3J29ztJr3Fd8oBc_SwyDECs,6
+speech_articulatory_coding-0.1.0.dist-info/RECORD,,
