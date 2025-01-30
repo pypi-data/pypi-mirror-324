@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: fastapi-authix
+Version: 0.1.0
+Summary: Your friendly neighborhood authentication sidekick for FastAPI!
+Project-URL: Repository, https://github.com/flacy/fastapi-authix
+Author-email: Andrew Krylov <any@lunte.dev>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Internet :: WWW/HTTP :: Session
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Requires-Dist: cryptography>=44.0.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: orjson>=3.10.15
+Description-Content-Type: text/markdown
+
+# FastAPI-Authix 🧩
+
+A library that provides tools for easy authentication and authorization in your FastAPI project.
+It takes care of all the "boring" and repetitive stuff,
+giving you more room to focus on the creative parts of your code.
+Plus, it requires minimal setup! ⚡
+
+## Features ✨
+- **Simple to use**: Get started quickly without headaches. 🛠️
+- **Encryption support**: Currently supports Fernet, with more algorithms coming soon! 🔐
+- **Payload serialization**: Store and retrieve data objects directly in tokens—no extra work needed. 📦
+
+## Contributing 🤝
+Want to contribute? Awesome! 🎉 Please open an issue first so we can discuss your ideas.
+Let’s build something great together! 💡
