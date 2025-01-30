@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+run_batched/__init__.py
+run_batched/run.py
+run_batched.egg-info/PKG-INFO
+run_batched.egg-info/SOURCES.txt
+run_batched.egg-info/dependency_links.txt
+run_batched.egg-info/requires.txt
+run_batched.egg-info/top_level.txt
+tests/__init__.py
+tests/models.py
+tests/test_basic.py
+tests/test_dicts.py

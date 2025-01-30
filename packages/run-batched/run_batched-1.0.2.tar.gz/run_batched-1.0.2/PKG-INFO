@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: run_batched
+Version: 1.0.2
+Summary: Permanant cache.
+Home-page: https://github.com/kavigupta/run_batched
+Author: Kavi Gupta
+Author-email: run-batched@kavigupta.org
+Project-URL: Documentation, https://run-batched.readthedocs.io/en/latest/#
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: numpy
+
+
+# Run batched
+
+This is a very basic module that allows you to run a pytorch model on numpy arrays in batches. It handles
+the batching for you, so you can just pass in a numpy array and get a numpy array back. It also works when the
+input or return value is a dict of numpy arrays.
