@@ -1,0 +1,10 @@
+seawolf/__init__.py,sha256=kCpnjy54YYYyIx7j70d5ylKzn47Sm_tSVvkSQkjeFS0,430
+seawolf/_axes.py,sha256=mPRnv4wDJzWJtySSU_ds-M5tAMD-KX-B6kJ6BEV-Hmc,17670
+seawolf/_axesTools.py,sha256=6iBZCdQGT66kLpUxd2xtiJVUhfPXrw_VMKDR-DDNiFc,16593
+seawolf/_colors.py,sha256=uzmMh1Eu1IPO4K9G2puudu3KxghE3E4PKgXVcnU59lU,4015
+seawolf/_style.py,sha256=pIYV3nqB5ZuQ_rK5qSQ1AFKf3VPbtkx_6wAwFShVddc,4304
+seawolf/test.py,sha256=En0aCqmXPYPxSzVe2yHhbwYZ8UDwQ7aj3pnAzuZY-pk,1246
+seawolf-1.4.dist-info/METADATA,sha256=rYW0BAY4NdIDRnnoJoSCKYuESLbADcCowO3A8czrhbk,428
+seawolf-1.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+seawolf-1.4.dist-info/top_level.txt,sha256=JjWQHRWToPmvpfAOqywUD45I84MLpbwLYkv9bWrACzk,8
+seawolf-1.4.dist-info/RECORD,,
