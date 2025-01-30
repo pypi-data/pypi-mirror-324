@@ -1,0 +1,9 @@
+ioos_metrics/__init__.py,sha256=NiI_j1WWF9mJCp2IVaLHYPWUrwno_UoCS7l9BmaYUFQ,124
+ioos_metrics/_version.py,sha256=5H3kcnsWzW4UpnyK5f2EWFsNPNwZ0Lw1e5g-Tnx19Ug,21
+ioos_metrics/ioos_metrics.py,sha256=4tvGGrMJnRnSSIKWFRC2D0PcWqyfGXg1GQEmI47DGOA,24575
+ioos_metrics/national_platforms.py,sha256=xKDeuW1TB8qnrhN9nBxpa2agEJfxtl3l08P4yoMsYAo,5037
+ioos_metrics-0.6.0.dist-info/LICENSE,sha256=5i-HIpWFXjc6FBal0asQ6dnrex2R9CGPPH5KnN_FG1s,1070
+ioos_metrics-0.6.0.dist-info/METADATA,sha256=m1gx4mLw9dCRiMTImC2ZP9Stmly44ReEH32ioX0-icg,5117
+ioos_metrics-0.6.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ioos_metrics-0.6.0.dist-info/top_level.txt,sha256=r37Uj8qKO7qSSCdU8bqWVs63UBUHWvvymcb8ZGRL5jw,13
+ioos_metrics-0.6.0.dist-info/RECORD,,
