@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "akconfig"
+version = "0.1.8"
+description = "A configuration management for global variables in python projects."
+authors = ["dapk <dapk@gmx.net>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ak"}]
+
+[project.urls]
+"Source Code" = "https://github.com/dapkdapk/akconfig.git"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+terminaltables = "^3.1.10"
+colored = "^2.2.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+pytest = "^8.3.4"
+click = "^8.1.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
