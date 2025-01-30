@@ -1,0 +1,12 @@
+worldfinder/__init__.py,sha256=KJslQR9-IMANmNDJSYN_YNAGuKPmO9Iq1a0qMeS6-GE,113
+worldfinder/_internals.py,sha256=sxQhlxX0QxzlliiIZzvoBbM4G9vX7HokzvUoX9YntYQ,1504
+worldfinder/check_city.py,sha256=szjQpnHo1tz-qtebWxN7V7-j7sM52IvGxocZ5ZZuG0w,1547
+worldfinder/data/.cities.csv.icloud,sha256=tqYNrsFbftc8NjrbUaiNgfQssY8NaxFNUD_quAQ81ys,160
+worldfinder/data/countries.csv,sha256=IV6c_CinWTvTPN0z6rZU6cODgXmXnkIs6SPOSt0NElg,49209
+worldfinder/get_capital.py,sha256=auV9NXLGtMsTwYLvfC5PO7mNMKLa6JZE1j3ARcvwPOo,1312
+worldfinder/get_countries.py,sha256=z4C1_89n5uF1HZ_bkKdYtJxiH2EAFwUslz-IUm6uo38,1519
+worldfinder/get_country_statistic.py,sha256=FhUh_BkGw4Q1SF7KWbVMJYumpWrg1aCOZtaYR3QB9Dw,2523
+worldfinder-0.0.1.dist-info/LICENSE,sha256=8RnGOitIbVKlKt0ADciiiL4e0XcFix_hvnq2v8ENXlM,1067
+worldfinder-0.0.1.dist-info/METADATA,sha256=kywyeigVeCN-wDlqaoaGxDCTNwgX1Gl7OdFu-vaPViE,6893
+worldfinder-0.0.1.dist-info/WHEEL,sha256=RaoafKOydTQ7I_I3JTrPCg6kUmTgtm4BornzOqyEfJ8,88
+worldfinder-0.0.1.dist-info/RECORD,,
