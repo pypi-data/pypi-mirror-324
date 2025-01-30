@@ -1,0 +1,62 @@
+Metadata-Version: 2.2
+Name: django-background-tasks-async-update
+Version: 1.2.10
+Summary: Database backed asynchronous task queue
+Home-page: https://github.com/Soljaa/django-background-tasks-async-update
+Author: arteria GmbH, John Montgomery, Alberto Petrucci, Jon Miller
+Author-email: iamjonamiller@gmail.com
+License: BSD
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 3.0
+Classifier: Framework :: Django :: 4.0
+Classifier: Framework :: Django :: 5.0
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.txt
+Requires-Dist: six
+Requires-Dist: Django>=4.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+
+Django Background Tasks (Async Update)
+
+Django Background Task is a database-backed work queue for Django, loosely based around `Ruby's DelayedJob`_ library. This project was adopted and adapted from lilspikey_ `django-background-task` and updated to fix thread concurrency. 
+
+.. _Ruby's DelayedJob: https://github.com/tobi/delayed_job
+.. _lilspikey: https://github.com/lilspikey/
+
+You can find in PyPI as django-background-tasks-async-update.
+
+In Django Background Task, all tasks are implemented as functions (or any other callable).
+
+There are two parts to using background tasks:
+
+- creating the task functions and registering them with the scheduler
+- setup a cron task (or long running process) to execute the tasks
+
+
+Docs
+====
+See `Read the docs`_.
+
+.. _Read the docs: http://django-background-tasks.readthedocs.io/en/latest/
+
