@@ -1,0 +1,1953 @@
+{
+    "Screen": [
+        {
+            "name": "Main Content",
+            "rectangle": [
+                0,
+                0,
+                1920,
+                1080
+            ],
+            "elements": [
+                [
+                    {
+                        "name": "Chrome",
+                        "rectangle": [
+                            68,
+                            15,
+                            132,
+                            25
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "File",
+                        "rectangle": [
+                            159,
+                            15,
+                            184,
+                            25
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Edit",
+                        "rectangle": [
+                            212,
+                            15,
+                            240,
+                            25
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "View",
+                        "rectangle": [
+                            268,
+                            15,
+                            302,
+                            25
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "History",
+                        "rectangle": [
+                            332,
+                            14,
+                            386,
+                            26
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Bookmarks",
+                        "rectangle": [
+                            413,
+                            15,
+                            498,
+                            25
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Profiles",
+                        "rectangle": [
+                            524,
+                            13,
+                            582,
+                            26
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Tab",
+                        "rectangle": [
+                            609,
+                            15,
+                            633,
+                            24
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Window",
+                        "rectangle": [
+                            661,
+                            13,
+                            721,
+                            26
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Help",
+                        "rectangle": [
+                            749,
+                            15,
+                            784,
+                            26
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "15",
+                        "rectangle": [
+                            1341,
+                            18,
+                            1353,
+                            25
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "100 %",
+                        "rectangle": [
+                            1595,
+                            15,
+                            1635,
+                            25
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Wed 15 Jan",
+                        "rectangle": [
+                            1735,
+                            14,
+                            1826,
+                            25
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "8:03 PM",
+                        "rectangle": [
+                            1836,
+                            14,
+                            1897,
+                            25
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "CLIF",
+                        "rectangle": [
+                            157,
+                            58,
+                            188,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Mini",
+                        "rectangle": [
+                            277,
+                            58,
+                            305,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "240",
+                        "rectangle": [
+                            395,
+                            58,
+                            423,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "240",
+                        "rectangle": [
+                            514,
+                            58,
+                            541,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Perf",
+                        "rectangle": [
+                            633,
+                            58,
+                            660,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "241",
+                        "rectangle": [
+                            750,
+                            59,
+                            775,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "241",
+                        "rectangle": [
+                            868,
+                            59,
+                            892,
+                            67
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "241",
+                        "rectangle": [
+                            987,
+                            58,
+                            1011,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Lea",
+                        "rectangle": [
+                            1105,
+                            59,
+                            1129,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "GUI",
+                        "rectangle": [
+                            1223,
+                            58,
+                            1248,
+                            69
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Sho",
+                        "rectangle": [
+                            1340,
+                            58,
+                            1368,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "tran",
+                        "rectangle": [
+                            1459,
+                            60,
+                            1485,
+                            69
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "tran",
+                        "rectangle": [
+                            1576,
+                            59,
+                            1603,
+                            68
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "com",
+                        "rectangle": [
+                            1695,
+                            61,
+                            1723,
+                            69
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "github.com/maybelu9/computer_use_ootb_internal/blob/main/teachmode_step_gui.json",
+                        "rectangle": [
+                            199,
+                            105,
+                            938,
+                            120
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "New Chrome available",
+                        "rectangle": [
+                            1703,
+                            104,
+                            1875,
+                            120
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            1887,
+                            104,
+                            1894,
+                            118
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "Google",
+                        "rectangle": [
+                            108,
+                            145,
+                            161,
+                            159
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "\u767e\u5ea6",
+                        "rectangle": [
+                            209,
+                            145,
+                            240,
+                            157
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Bing",
+                        "rectangle": [
+                            287,
+                            146,
+                            320,
+                            158
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Sensetime",
+                        "rectangle": [
+                            373,
+                            146,
+                            449,
+                            156
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "\u7ffb\u8bd1",
+                        "rectangle": [
+                            500,
+                            145,
+                            529,
+                            158
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "GitHub",
+                        "rectangle": [
+                            578,
+                            144,
+                            627,
+                            158
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "MGmail",
+                        "rectangle": [
+                            648,
+                            144,
+                            757,
+                            158
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Outlook",
+                        "rectangle": [
+                            841,
+                            144,
+                            898,
+                            157
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "ChatGPT",
+                        "rectangle": [
+                            947,
+                            145,
+                            1012,
+                            157
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "ShowLab 24",
+                        "rectangle": [
+                            1065,
+                            146,
+                            1155,
+                            156
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "NUS",
+                        "rectangle": [
+                            1213,
+                            144,
+                            1246,
+                            157
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "DeepL",
+                        "rectangle": [
+                            1295,
+                            145,
+                            1342,
+                            157
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "\u7535\u5f71",
+                        "rectangle": [
+                            1396,
+                            145,
+                            1426,
+                            157
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "DSML",
+                        "rectangle": [
+                            1487,
+                            144,
+                            1530,
+                            157
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "YouTube",
+                        "rectangle": [
+                            1577,
+                            145,
+                            1637,
+                            157
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "All Bookmarks",
+                        "rectangle": [
+                            1798,
+                            146,
+                            1901,
+                            157
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "Files",
+                        "rectangle": [
+                            63,
+                            201,
+                            104,
+                            213
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "computer_use_ootb_internal",
+                        "rectangle": [
+                            404,
+                            191,
+                            627,
+                            204
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "teachmode_step_gui.json",
+                        "rectangle": [
+                            640,
+                            191,
+                            840,
+                            204
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Top",
+                        "rectangle": [
+                            1836,
+                            192,
+                            1861,
+                            202
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "main",
+                        "rectangle": [
+                            59,
+                            248,
+                            95,
+                            259
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "+",
+                        "rectangle": [
+                            285,
+                            249,
+                            298,
+                            259
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Code",
+                        "rectangle": [
+                            409,
+                            235,
+                            447,
+                            246
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Blame",
+                        "rectangle": [
+                            481,
+                            234,
+                            525,
+                            247
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "1665",
+                        "rectangle": [
+                            550,
+                            235,
+                            582,
+                            246
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "lines",
+                        "rectangle": [
+                            592,
+                            235,
+                            632,
+                            246
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "1665",
+                        "rectangle": [
+                            649,
+                            235,
+                            681,
+                            246
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "loc",
+                        "rectangle": [
+                            691,
+                            235,
+                            715,
+                            246
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "45.9",
+                        "rectangle": [
+                            746,
+                            235,
+                            780,
+                            246
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "KB",
+                        "rectangle": [
+                            788,
+                            235,
+                            806,
+                            246
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "889",
+                        "rectangle": [
+                            1622,
+                            234,
+                            1640,
+                            248
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Raw",
+                        "rectangle": [
+                            1663,
+                            234,
+                            1687,
+                            245
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "169",
+                        "rectangle": [
+                            425,
+                            266,
+                            448,
+                            276
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            665,
+                            266,
+                            669,
+                            277
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "Go to file",
+                        "rectangle": [
+                            59,
+                            287,
+                            126,
+                            299
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "170",
+                        "rectangle": [
+                            425,
+                            286,
+                            449,
+                            295
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "is_text",
+                        "rectangle": [
+                            663,
+                            285,
+                            720,
+                            296
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            731,
+                            285,
+                            736,
+                            296
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "true",
+                        "rectangle": [
+                            746,
+                            285,
+                            779,
+                            296
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "171",
+                        "rectangle": [
+                            425,
+                            307,
+                            448,
+                            315
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            630,
+                            306,
+                            637,
+                            317
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "assets",
+                        "rectangle": [
+                            73,
+                            333,
+                            120,
+                            342
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "172",
+                        "rectangle": [
+                            425,
+                            326,
+                            448,
+                            334
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "173",
+                        "rectangle": [
+                            425,
+                            345,
+                            450,
+                            354
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "name",
+                        "rectangle": [
+                            664,
+                            345,
+                            697,
+                            356
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            707,
+                            345,
+                            713,
+                            356
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "bio",
+                        "rectangle": [
+                            731,
+                            345,
+                            755,
+                            356
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            764,
+                            345,
+                            769,
+                            356
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "computer_use_demo",
+                        "rectangle": [
+                            73,
+                            362,
+                            229,
+                            377
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "174",
+                        "rectangle": [
+                            425,
+                            365,
+                            449,
+                            373
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "rectangle",
+                        "rectangle": [
+                            666,
+                            365,
+                            738,
+                            376
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            748,
+                            365,
+                            753,
+                            376
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "docs",
+                        "rectangle": [
+                            73,
+                            393,
+                            107,
+                            406
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "175",
+                        "rectangle": [
+                            425,
+                            386,
+                            449,
+                            395
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "176",
+                        "rectangle": [
+                            425,
+                            405,
+                            450,
+                            415
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "1329 ,",
+                        "rectangle": [
+                            689,
+                            386,
+                            729,
+                            396
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "181 ,",
+                        "rectangle": [
+                            690,
+                            405,
+                            720,
+                            415
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "examples",
+                        "rectangle": [
+                            73,
+                            427,
+                            143,
+                            439
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "177",
+                        "rectangle": [
+                            425,
+                            425,
+                            450,
+                            433
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "1360 ,",
+                        "rectangle": [
+                            689,
+                            425,
+                            728,
+                            435
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "178",
+                        "rectangle": [
+                            425,
+                            444,
+                            450,
+                            453
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "196",
+                        "rectangle": [
+                            689,
+                            444,
+                            712,
+                            453
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "tmp",
+                        "rectangle": [
+                            72,
+                            458,
+                            99,
+                            471
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "179",
+                        "rectangle": [
+                            425,
+                            465,
+                            448,
+                            473
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            665,
+                            464,
+                            671,
+                            474
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "tools",
+                        "rectangle": [
+                            72,
+                            490,
+                            109,
+                            500
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "180",
+                        "rectangle": [
+                            425,
+                            485,
+                            450,
+                            494
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "181",
+                        "rectangle": [
+                            425,
+                            504,
+                            448,
+                            512
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "is_text",
+                        "rectangle": [
+                            663,
+                            483,
+                            720,
+                            494
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            731,
+                            483,
+                            736,
+                            494
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "true",
+                        "rectangle": [
+                            746,
+                            483,
+                            779,
+                            494
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": ".gitignore",
+                        "rectangle": [
+                            72,
+                            520,
+                            143,
+                            536
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "182",
+                        "rectangle": [
+                            425,
+                            521,
+                            448,
+                            533
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "LICENSE",
+                        "rectangle": [
+                            73,
+                            552,
+                            138,
+                            564
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "183",
+                        "rectangle": [
+                            425,
+                            544,
+                            449,
+                            552
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "184",
+                        "rectangle": [
+                            425,
+                            564,
+                            448,
+                            572
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "README.md",
+                        "rectangle": [
+                            73,
+                            585,
+                            165,
+                            595
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "185",
+                        "rectangle": [
+                            426,
+                            584,
+                            448,
+                            592
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "name",
+                        "rectangle": [
+                            665,
+                            583,
+                            697,
+                            595
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            707,
+                            583,
+                            713,
+                            595
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "Dreamscape",
+                        "rectangle": [
+                            729,
+                            583,
+                            814,
+                            595
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            822,
+                            583,
+                            827,
+                            595
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "README_localrun.md",
+                        "rectangle": [
+                            73,
+                            616,
+                            233,
+                            628
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "186",
+                        "rectangle": [
+                            425,
+                            602,
+                            449,
+                            612
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "187",
+                        "rectangle": [
+                            425,
+                            623,
+                            449,
+                            631
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "rectangle",
+                        "rectangle": [
+                            666,
+                            603,
+                            738,
+                            614
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "72 ,",
+                        "rectangle": [
+                            688,
+                            623,
+                            711,
+                            632
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            748,
+                            603,
+                            754,
+                            614
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "app.py",
+                        "rectangle": [
+                            73,
+                            647,
+                            124,
+                            664
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "189",
+                        "rectangle": [
+                            425,
+                            663,
+                            448,
+                            672
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "188",
+                        "rectangle": [
+                            426,
+                            643,
+                            447,
+                            651
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "222 ,",
+                        "rectangle": [
+                            687,
+                            641,
+                            720,
+                            654
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "184 ,",
+                        "rectangle": [
+                            689,
+                            663,
+                            720,
+                            672
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "dev requirements",
+                        "rectangle": [
+                            73,
+                            679,
+                            205,
+                            694
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "showui.txt",
+                        "rectangle": [
+                            212,
+                            679,
+                            288,
+                            694
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "190",
+                        "rectangle": [
+                            425,
+                            682,
+                            448,
+                            692
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "239",
+                        "rectangle": [
+                            689,
+                            682,
+                            711,
+                            690
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "dev",
+                        "rectangle": [
+                            72,
+                            710,
+                            99,
+                            724
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "requirements.txt",
+                        "rectangle": [
+                            107,
+                            710,
+                            227,
+                            724
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "191",
+                        "rectangle": [
+                            425,
+                            702,
+                            449,
+                            710
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "192",
+                        "rectangle": [
+                            425,
+                            722,
+                            448,
+                            730
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "is_text",
+                        "rectangle": [
+                            664,
+                            721,
+                            721,
+                            733
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            665,
+                            701,
+                            672,
+                            712
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            732,
+                            721,
+                            737,
+                            733
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "true",
+                        "rectangle": [
+                            746,
+                            721,
+                            780,
+                            733
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "gui_parser5.png",
+                        "rectangle": [
+                            73,
+                            742,
+                            193,
+                            758
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "193",
+                        "rectangle": [
+                            425,
+                            742,
+                            449,
+                            750
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "194",
+                        "rectangle": [
+                            425,
+                            761,
+                            449,
+                            769
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            631,
+                            741,
+                            638,
+                            753
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "output.log",
+                        "rectangle": [
+                            73,
+                            774,
+                            148,
+                            788
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "195",
+                        "rectangle": [
+                            425,
+                            781,
+                            448,
+                            789
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "name",
+                        "rectangle": [
+                            664,
+                            780,
+                            697,
+                            791
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            707,
+                            780,
+                            713,
+                            791
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "assist",
+                        "rectangle": [
+                            730,
+                            780,
+                            780,
+                            793
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            789,
+                            781,
+                            794,
+                            792
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "output.png",
+                        "rectangle": [
+                            73,
+                            806,
+                            154,
+                            819
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "196",
+                        "rectangle": [
+                            425,
+                            801,
+                            449,
+                            810
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "197",
+                        "rectangle": [
+                            425,
+                            821,
+                            448,
+                            829
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "rectangle",
+                        "rectangle": [
+                            666,
+                            800,
+                            738,
+                            812
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "232 ,",
+                        "rectangle": [
+                            688,
+                            821,
+                            720,
+                            831
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            748,
+                            800,
+                            753,
+                            812
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "screen_elements.png",
+                        "rectangle": [
+                            73,
+                            838,
+                            232,
+                            851
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "198",
+                        "rectangle": [
+                            425,
+                            840,
+                            449,
+                            848
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "210 ,",
+                        "rectangle": [
+                            688,
+                            841,
+                            720,
+                            850
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "screen_elements_with_info.png",
+                        "rectangle": [
+                            73,
+                            869,
+                            307,
+                            884
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "199",
+                        "rectangle": [
+                            425,
+                            860,
+                            447,
+                            869
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "200",
+                        "rectangle": [
+                            425,
+                            880,
+                            449,
+                            888
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "279 ,",
+                        "rectangle": [
+                            687,
+                            858,
+                            721,
+                            871
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "225",
+                        "rectangle": [
+                            688,
+                            880,
+                            712,
+                            888
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "teachmode_step_gui.json",
+                        "rectangle": [
+                            72,
+                            900,
+                            263,
+                            915
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "201",
+                        "rectangle": [
+                            425,
+                            900,
+                            448,
+                            908
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            665,
+                            899,
+                            671,
+                            910
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "test_gui_parser.ipynb",
+                        "rectangle": [
+                            72,
+                            933,
+                            233,
+                            947
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "202",
+                        "rectangle": [
+                            424,
+                            920,
+                            447,
+                            928
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "203",
+                        "rectangle": [
+                            424,
+                            939,
+                            449,
+                            950
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "is_text",
+                        "rectangle": [
+                            665,
+                            920,
+                            721,
+                            931
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            732,
+                            920,
+                            737,
+                            931
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "true",
+                        "rectangle": [
+                            747,
+                            920,
+                            780,
+                            931
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "test_gui_parser_gxw.ipynb",
+                        "rectangle": [
+                            73,
+                            964,
+                            270,
+                            979
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "204",
+                        "rectangle": [
+                            424,
+                            960,
+                            449,
+                            968
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "205",
+                        "rectangle": [
+                            424,
+                            979,
+                            448,
+                            988
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "name",
+                        "rectangle": [
+                            665,
+                            979,
+                            697,
+                            990
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            707,
+                            979,
+                            713,
+                            990
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ",",
+                        "rectangle": [
+                            748,
+                            980,
+                            753,
+                            991
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "test_gui_parser_uia.json",
+                        "rectangle": [
+                            73,
+                            996,
+                            253,
+                            1009
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "206",
+                        "rectangle": [
+                            425,
+                            999,
+                            447,
+                            1007
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "rectangle",
+                        "rectangle": [
+                            666,
+                            998,
+                            738,
+                            1010
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": ":",
+                        "rectangle": [
+                            748,
+                            998,
+                            753,
+                            1010
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "test_litellm.ipynb",
+                        "rectangle": [
+                            73,
+                            1029,
+                            199,
+                            1041
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "207",
+                        "rectangle": [
+                            424,
+                            1019,
+                            449,
+                            1027
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "208",
+                        "rectangle": [
+                            424,
+                            1039,
+                            449,
+                            1048
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "305 ,",
+                        "rectangle": [
+                            688,
+                            1017,
+                            721,
+                            1030
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "210 ,",
+                        "rectangle": [
+                            688,
+                            1039,
+                            719,
+                            1048
+                        ],
+                        "is_text": true
+                    }
+                ],
+                [
+                    {
+                        "name": "test_litellm_gui.json",
+                        "rectangle": [
+                            72,
+                            1060,
+                            221,
+                            1072
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "209",
+                        "rectangle": [
+                            425,
+                            1058,
+                            449,
+                            1067
+                        ],
+                        "is_text": true
+                    },
+                    {
+                        "name": "309 ,",
+                        "rectangle": [
+                            688,
+                            1058,
+                            719,
+                            1067
+                        ],
+                        "is_text": true
+                    }
+                ]
+            ]
+        }
+    ]
+}
