@@ -1,0 +1,6 @@
+setuptools 
+transformers 
+spacy 
+colorama==0.4.6
+gTTS>=2.2.3,<3.0.0
+mlx-lm
