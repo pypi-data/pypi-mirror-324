@@ -1,0 +1,1 @@
+This repo provides a set of schemas to be used by the rqlite-API.
