@@ -1,0 +1,13 @@
+farabi/IO.py,sha256=9R97lPLIXvaSUtiEpQ2oq0h9GJZcrAAlCpILpQmKHG4,129
+farabi/__init__.py,sha256=3dCJPcekLGYwdXtADerh_88qNyNKL19_PhdcXwnQJJU,77
+farabi/visualization.py,sha256=f41hmUW_1091zcOhWaUBr9EynqAFhd9PfIhoiynkhT4,605
+farabi/feature_extraction/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+farabi/preprocessing/__init__.py,sha256=aaDaRsjPdat4cNnmsONVXSUG3yHkEeLYSRE5dGD9b1g,32
+farabi/preprocessing/point_operation/__init__.py,sha256=Hk3yCCHtVOwCwqHqXcD54cg81OAVWb_fY1dShm6vd_Y,75
+farabi/preprocessing/point_operation/gamma_correction.py,sha256=8YKU0Cbh9xTkr_Aw4iYjbwurovKFUYFHQg597zVgUSc,1006
+farabi/preprocessing/point_operation/logarithmic_transformations.py,sha256=AO0hHPyWjzhDxuRUMI8n-JJ5Va1P8NfGsoCucF2IzzA,1327
+farabi/segmentation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+farabi-0.3.1.dist-info/METADATA,sha256=A_TSaEOW95zTO3qh62IDKiEx6kTA9uI_L1nBRTfYYcc,609
+farabi-0.3.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+farabi-0.3.1.dist-info/top_level.txt,sha256=ChuAJJabX3jK2rjO9UYyRIl0Y0jYx61f88E2MVse7EU,7
+farabi-0.3.1.dist-info/RECORD,,
