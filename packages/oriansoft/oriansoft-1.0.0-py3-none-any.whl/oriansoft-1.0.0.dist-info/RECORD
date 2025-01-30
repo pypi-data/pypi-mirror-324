@@ -1,0 +1,10 @@
+oriansoft/__init__.py,sha256=fk99lJ5xjAqfWOv7D08RFuUGA7Qws0D0HkiaXipyl6E,19
+oriansoft/main.py,sha256=NnCAzMIWVE52eNQJh3sgnN92KwbK5zG7hHhIMY0zwGk,233
+oriansoft/src/__init__.py,sha256=yCKdCCjNyPtrvvImtoKmIg6fxCLPCgoEHIHT6EJsVrE,37
+oriansoft/src/crop_image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oriansoft/src/functions.py,sha256=LG8yvOKhAWCt-ZPdshrs0We0QG8HYACrHi_Pbzt5qlo,136
+oriansoft-1.0.0.dist-info/LICENSE.txt,sha256=K6dGOuFbd9SNP8NGeV8J2FAP7sX4jKa89bJQpzuL2ng,1053
+oriansoft-1.0.0.dist-info/METADATA,sha256=ny3zlo1nWt3FvEXIlypVEHGZvWrO9Cmv7rkBbKTYX1w,745
+oriansoft-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+oriansoft-1.0.0.dist-info/top_level.txt,sha256=WVBy5YkhVrUXdFhMIkYWTGNvs8LO0OEzMS8V8MKRDSg,10
+oriansoft-1.0.0.dist-info/RECORD,,
