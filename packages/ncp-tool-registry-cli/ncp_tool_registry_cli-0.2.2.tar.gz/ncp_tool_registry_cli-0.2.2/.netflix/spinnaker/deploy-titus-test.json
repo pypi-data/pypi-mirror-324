@@ -1,0 +1,55 @@
+{
+  "application": "{{ .SpinnakerApp }}",
+  "name": "{{ .PipelineName }}",
+  "keepWaitingPipelines": false,
+  "limitConcurrent": true,
+  "parallel": true,
+  "stages": [
+    {
+      "clusters": [
+        {
+          "account": "titustestvpc",
+          "application": "{{.SpinnakerApp}}",
+          "capacity": {
+            "desired": 1,
+            "max": 1,
+            "min": 1
+          },
+          "cloudProvider": "titus",
+          "env": {},
+          "hardConstraints": [],
+          "imageId": "${trigger.properties.imageName}",
+          "inService": true,
+          "labels": {},
+          "network": "default",
+          "provider": "titus",
+          "region": "us-east-1",
+          "registry": "testregistry",
+          "resources": {
+            "allocateIpAddress": true,
+            "cpu": 2,
+            "disk": 10000,
+            "memory": 2048,
+            "networkMbps": 128
+          },
+          "securityGroups": [],
+          "softConstraints": [],
+          "strategy": "highlander"
+        }
+      ],
+      "name": "Deploy",
+      "refId": "1",
+      "requisiteStageRefIds": [],
+      "type": "deploy"
+    }
+  ],
+  "triggers": [
+    {
+      "enabled": true,
+      "job": "{{.JenkinsDefaultJob}}",
+      "master": "{{.JenkinsController}}",
+      "propertyFile": "image.properties",
+      "type": "jenkins"
+    }
+  ]
+}

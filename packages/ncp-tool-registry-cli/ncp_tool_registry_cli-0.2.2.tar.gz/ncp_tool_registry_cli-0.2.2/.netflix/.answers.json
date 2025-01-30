@@ -1,0 +1,25 @@
+{
+  "_features": [
+    "dockerfile",
+    "nflxconfig",
+    "titus-deploy",
+    "webapp",
+    "spinnaker"
+  ],
+  "_python_versions": [
+    "3.11"
+  ],
+  "_template": "https://stash.corp.netflix.com/scm/nfpy/cookiecutter-newt-python.git@main",
+  "_template_git_sha": "259a5b1",
+  "_template_version": "0.0.1",
+  "_usecase": "titus-webapp",
+  "basepython": "python3",
+  "project_layout": "src",
+  "project_name": "api-gateway",
+  "project_slug": "api_gateway",
+  "role_template": "traditional",
+  "src": "src",
+  "use_canary": "No",
+  "versioning_strategy": "distance",
+  "webapp_framework": "fastapi"
+}

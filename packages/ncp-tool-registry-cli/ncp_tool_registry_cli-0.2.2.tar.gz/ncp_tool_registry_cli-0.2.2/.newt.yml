@@ -1,0 +1,25 @@
+app-type: python
+command-configs:
+  develop:
+    required-ports:
+      - 7001:7001
+custom-info-responses:
+  SpinnakerTitusDeploy: true
+github-owner: corp
+jenkins-controller: platform
+jenkins-default-job: NCP-api-gateway-main
+jenkins-jobs:
+  - NCP-api-gateway-main
+  - NCP-api-gateway-pull-request
+name: api-gateway
+org: ncp
+params:
+  PLATFORM: jammy
+python:
+  test-versions:
+    - "3.11"
+require-infrastructure: true
+spinnaker-app: apigateway
+team-email: copilot-platform@netflix.com
+tool-versions:
+  python: "3.11"
