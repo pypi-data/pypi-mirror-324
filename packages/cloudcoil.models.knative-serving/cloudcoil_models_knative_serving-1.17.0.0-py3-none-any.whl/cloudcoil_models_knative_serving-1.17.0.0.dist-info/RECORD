@@ -1,0 +1,15 @@
+cloudcoil/models/knative_serving/__init__.py,sha256=dqtHmOUjpnYfq5LG2FFPYE8BCkpowkOBI7U2zTYlqEI,94
+cloudcoil/models/knative_serving/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudcoil/models/knative_serving/internal/autoscaling/__init__.py,sha256=xzv6Vv2pXnCOUbQrM86K3lbFR3zCMsl5svKSgM1n8Qs,60
+cloudcoil/models/knative_serving/internal/autoscaling/v1alpha1.py,sha256=c6guevQJosrbyYRsp9KNqzkmZ-Et9VTCCtU1vOxhb60,36937
+cloudcoil/models/knative_serving/internal/caching/__init__.py,sha256=xzv6Vv2pXnCOUbQrM86K3lbFR3zCMsl5svKSgM1n8Qs,60
+cloudcoil/models/knative_serving/internal/caching/v1alpha1.py,sha256=thqB3ovpLGEMhIuIseUL4FY0qtthxbG7SJva5Z8yn6A,21026
+cloudcoil/models/knative_serving/internal/networking/__init__.py,sha256=xzv6Vv2pXnCOUbQrM86K3lbFR3zCMsl5svKSgM1n8Qs,60
+cloudcoil/models/knative_serving/internal/networking/v1alpha1.py,sha256=8y6Bl0SRS49pTt4DZaaiErYCgTwlXrvcNs3TfpP2EE8,100964
+cloudcoil/models/knative_serving/serving/__init__.py,sha256=i5inaPduv-9p--2mPX6h9k_3PKtzEYNYxrCdunO-V5c,117
+cloudcoil/models/knative_serving/serving/v1.py,sha256=nu4sx8cP43d8tDVvktoMethhtNDnoGoz_gARazY0vIc,385780
+cloudcoil/models/knative_serving/serving/v1beta1.py,sha256=Y76pmqSNKKDdHYceIVu5VrAJXSe1oYsNlgYoblSBUR4,28927
+cloudcoil_models_knative_serving-1.17.0.0.dist-info/METADATA,sha256=_cSKe866S-2P8efYgX0Qc1VwUs-MkrJxwPKd6EMLF-k,6856
+cloudcoil_models_knative_serving-1.17.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cloudcoil_models_knative_serving-1.17.0.0.dist-info/licenses/LICENSE,sha256=9mpycVvCCD7ofOehOGlZDoT8wntDVXA9O6MZJv6Hh4E,11345
+cloudcoil_models_knative_serving-1.17.0.0.dist-info/RECORD,,
