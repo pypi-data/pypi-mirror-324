@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/django_chart_component/__init__.py
+src/django_chart_component.egg-info/PKG-INFO
+src/django_chart_component.egg-info/SOURCES.txt
+src/django_chart_component.egg-info/dependency_links.txt
+src/django_chart_component.egg-info/top_level.txt
+src/django_chart_component/static/index-bundle.js
