@@ -1,0 +1,16 @@
+csaps
+tqdm
+palettable
+psidata[zarr-backend]
+psiaudio
+jmespath
+joblib
+
+[docs]
+sphinx
+sphinx_rtd_theme
+pygments-enaml
+
+[test]
+pytest
+pytest-console-scripts
