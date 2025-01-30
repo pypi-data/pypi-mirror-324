@@ -1,0 +1,55 @@
+{
+    "local_projected_epsg": [28349, 28350, 28351, 28352, 28353, 28354, 28355, 28356,2193],
+    "geoCSV": {
+        "file_encoding": "utf-8",
+        "xCoordinate_ColumnName": [
+            "LONGITUDE",
+            "LON",
+            "LON[DEG]",
+            "LONGITUD",
+            "LONGDD",
+            "POINTX",
+            "POINT_X",
+            "XCOORD",
+            "X",
+            "EAST",
+            "EASTING"
+        ],
+        "yCoordinate_ColumnName": [
+            "LAT",
+            "LATITUD",
+            "LATDD",
+            "LAT[DEG]",
+            "LATITUDE",
+            "POINTY",
+            "POINT_Y",
+            "YCOORD",
+            "Y",
+            "NORTH",
+            "NORTHING"
+        ]
+    },
+    "default_settings": {
+        "grapes": {
+            "thin_distance": 0.0,
+            "aggregate_distance": 20.0,
+            "buffer_distance": 2.4,
+            "shrink_distance": 1.45,
+            "block_size": 10
+        },
+        "cereal": {
+            "thin_distance": 1.0,
+            "aggregate_distance": 20.0,
+            "buffer_distance": 10.0,
+            "shrink_distance": 3,
+            "block_size": 30
+        },
+        "sugar": {
+            "thin_distance": 0.0,
+            "aggregate_distance": 20.0,
+            "buffer_distance": 2.4,
+            "shrink_distance": 1.45,
+            "block_size": 10
+        }
+    }
+}
