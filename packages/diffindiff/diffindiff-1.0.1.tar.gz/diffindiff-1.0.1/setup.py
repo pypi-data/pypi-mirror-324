@@ -1,0 +1,28 @@
+from setuptools import setup, find_packages
+import os
+
+def read_README():
+    with open(os.path.join(os.path.dirname(__file__), 'README.md'), encoding='utf-8') as f:
+        return f.read()
+    
+setup(
+    name='diffindiff',
+    version='1.0.1',
+    description='diffindiff: Python library for convenient Difference-in-Differences Analyses',
+    packages=find_packages(),
+    long_description=read_README(),
+    long_description_content_type='text/markdown',
+    author='Thomas Wieland',
+    author_email='geowieland@googlemail.com',
+    package_data={
+        'diffindiff': ['data/*'],
+    },
+    install_requires=[
+        'numpy',
+        'pandas',
+        'statsmodels',
+        'matplotlib',
+        'datetime' 
+    ],
+    test_suite='tests',
+)
