@@ -1,0 +1,9 @@
+hypothesis_vcf/__init__.py,sha256=zG4Y5MSlIkOJ-mbIkfEWlj9bXY1kHFZ05xgV3Dk_fMY,106
+hypothesis_vcf/_version.py,sha256=IMl2Pr_Sy4LVRKy_Sm4CdwUl1Gryous6ncL96EMYsnM,411
+hypothesis_vcf/strategies.py,sha256=hTDF3bgY4Nnm5-1M_fmkCgZLraN9O2uM6ACDWngIwbA,14008
+hypothesis_vcf/utils.py,sha256=1cL4T2qX667nxAU5mk2Dl-prq8GEVhpQfABD95nLSdI,171
+hypothesis_vcf-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hypothesis_vcf-0.1.0.dist-info/METADATA,sha256=hyXbFXiW5a3CTNzCEZEmeY8CdOhN-ysoz8Aaw7aeayE,15918
+hypothesis_vcf-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+hypothesis_vcf-0.1.0.dist-info/top_level.txt,sha256=lKShY97hvwmMz0ZLAUITB8Z0gtzgeTmEq3zbnphH8dg,15
+hypothesis_vcf-0.1.0.dist-info/RECORD,,
