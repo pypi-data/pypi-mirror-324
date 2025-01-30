@@ -1,0 +1,13 @@
+dendrify/__init__.py,sha256=p4xgqffnQfDN4strsip9EScJxyiTSr6FU6om_XhUnQc,323
+dendrify/compartment.py,sha256=2nD7aQz93rQQs7FEgKzUW_BtiC_Th5Mx84Q62vTqjFA,37896
+dendrify/ephysproperties.py,sha256=LVpzhbPsh76fcqqU0uYedxCXoyQ699W4EcCtQZPppkw,12222
+dendrify/equations.py,sha256=ROJseZXF_S2Qq6zFM5ygPkXbVPa0MYTXtVeRgTW4GNs,6446
+dendrify/neuronmodel.py,sha256=cfyqyXdNnEIUG003K9SR_yWKSN40DM5pFkYCOQ6TN5c,37765
+dendrify/playground.py,sha256=UvopEdjNX6XsbGLfqfh10wrgcbMli1Pb1bFAY-y9uQw,12797
+dendrify/utils.py,sha256=wAm7kErrPyXXU40mhZ_7WxAYF0qkOwpWXpNzu4XhJWw,1002
+dendrify/version.py,sha256=m9ym-CJaJF3mnGNkOqNvAqYNkLuKxfEkjCkGbeFeIsQ,21
+dendrify-2.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+dendrify-2.2.0.dist-info/METADATA,sha256=Ary1bifHa2LuwwVBPtxtO91v7Z8GzqogDD6ZUHblEew,3245
+dendrify-2.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dendrify-2.2.0.dist-info/top_level.txt,sha256=QwNENwOM3gPb9sfrc0j-be4XC5E2ZFBbl6aYzYk7OEs,9
+dendrify-2.2.0.dist-info/RECORD,,
