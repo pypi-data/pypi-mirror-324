@@ -1,0 +1,70 @@
+Metadata-Version: 2.2
+Name: ultoical
+Version: 1.1.2
+Summary: A web app allowing you to create an ical file from your Universite de Lorraine's timetable
+Home-page: https://github.com/totorocodesoften/ultoical
+Author: totorocodesoften
+Author-email: totorocodesoften@github.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools~=75.8.0
+Requires-Dist: gradio~=5.13.1
+Requires-Dist: requests~=2.32.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ULToICAL
+[ [English](README.fr.md) | [Francais](README.fr.md) ]
+
+[ [Support my work](https://ko-fi.com/totorocodesoften) ]
+
+ULToICAL is an easy way to convert your Universite de Lorraine Multi timetable to an ICAL format to store in Google Agenda, Apple Calendars etc...
+## Installation
+To use ULToICAL you will need `python>=3.10`
+
+### From PIP
+
+Run `pip install ultoical`
+
+To use the program run `ultoical`
+
+### From source
+
+Simply run
+
+```bash
+pip install .
+```
+
+And start the program using:
+
+```bash
+ultoical
+```
+
+## Getting the UL Token (optional)
+To get the token simply go to your timetable inside the UL Multi app and press `CTRL + Maj + I`
+
+Click on `network` on the window that just oppened
+
+Change weeks on the timetable until you see a `200 POST schedule json`
+
+Click on it, navigate to `Requests` and copy the `authToken` field
+
+## TODO
+- [ ] Official secure public instance
+- [x] Automatic temp file deletion
+- [x] Add french support
+- [x] Better error handeling
+- [x] Tokenless auth
