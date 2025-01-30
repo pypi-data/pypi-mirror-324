@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: segmentation_experimentation
+Version: 0.0.4
+Summary: An experimental approach to optimizing parameters for image segmentation training
+Project-URL: Homepage, https://github.com/pypa/segmentation_experimentation
+Project-URL: Issues, https://github.com/pypa/segmentation_experimentation/issues
+Author-email: Alexander Rausch <arausch335@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: segment-annotation-manager==0.0.10
+Description-Content-Type: text/markdown
+
+# Segment Annotation Manager
+
+This package manages segment annotations for image segmentation and computer vision.
+Annotations can be loaded in many formats, such as MS COCO, YOLO, or VIA. 
