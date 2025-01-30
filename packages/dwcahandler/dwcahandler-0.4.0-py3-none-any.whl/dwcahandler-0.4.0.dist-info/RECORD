@@ -1,0 +1,16 @@
+dwcahandler/__init__.py,sha256=lmsXKuGWtZ-wy-2CKrf9Vau5c8hXDZXA8xr6XKatk10,46
+dwcahandler/dwca/__init__.py,sha256=zonL6SCxy-BSODuvBiq4WlVolucab60GQm8irASTL8Y,7108
+dwcahandler/dwca/base_dwca.py,sha256=5RQewgcotga34gbULu7CPLuK9iUguLXB0fhuslRK-Pg,6748
+dwcahandler/dwca/core_dwca.py,sha256=zI0fEdeYmM0hX56AcCkPPxyxDwJAGMEdgscAU4yxLcM,48653
+dwcahandler/dwca/dwca_factory.py,sha256=V21ZG4AVCesQmxHQWpRb08xk2HZxLZ8yclnkPWuNZ0g,4740
+dwcahandler/dwca/dwca_meta.py,sha256=0tUr1OQ6f7DknQksGKZhsRwuUHskXKdfKVrWOdtND_g,13194
+dwcahandler/dwca/eml.py,sha256=nZs4FN7TK4gqfKrG-pcJDbwXf1dtDP49qdeTH3f9loM,1371
+dwcahandler/dwca/terms/darwin-core-terms.csv,sha256=0R9hxKcMmgkT7B5SkS7Gr0Rsj9lvHPX97_evCDTEw3Y,13265
+dwcahandler/dwca/terms/dublin-core-terms.csv,sha256=loZ-y2YK0aStQ4fbwpDdjNesnJk8rVNAtMKei4eYR0c,2556
+dwcahandler/dwca/terms.py,sha256=GK3venY7n1W2VfzSllGTprvitKnhvh0UWS36tK1oGa4,2756
+dwcahandler/scripts/update_dwc_terms.py,sha256=f8KycAGcILo6c6L6MNXtG5Whk6ZPwRQGdEXa2EwL9ZY,663
+dwcahandler-0.4.0.dist-info/LICENSE,sha256=-En8JqepmYFhGjo3DoMHjethfRKkV3bWxMraTTOL5Gk,25755
+dwcahandler-0.4.0.dist-info/METADATA,sha256=hABuWPSmy3fI_745G3q9Ng57zE0Sh_VDHIF28G38RvQ,6733
+dwcahandler-0.4.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+dwcahandler-0.4.0.dist-info/entry_points.txt,sha256=4KnStpU-ZIwgd6s0gwwH6Ltu2IJbFQaBXQ_9yh1wqCw,86
+dwcahandler-0.4.0.dist-info/RECORD,,
