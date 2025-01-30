@@ -1,0 +1,25 @@
+[project]
+name = "fraud"
+version = "0.1.2"
+description = "Simple Synthetic Data with Python"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "faker==33.1.0",
+    "pytest==8.3.4",
+    "gliner==0.2.13"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+[project.urls]
+"Homepage" = "https://github.com/TrevorW-code/fraud"
+[tool.pytest.ini_options]
+testpaths = 'tests'
+xfail_strict = true
+filterwarnings = [
+    'error',
+    'ignore:path is deprecated.*:DeprecationWarning:',
+]
