@@ -1,0 +1,13 @@
+setuptools
+tensorflow==2.18.0
+keras==3.8.0
+transformers
+spacy
+click==8.1.7
+requests==2.31.0
+certifi==2024.12.14
+idna==3.10
+colorama==0.4.6
+charset-normalizer==3.4.1
+gTTS==2.5.3
+mlx-lm
