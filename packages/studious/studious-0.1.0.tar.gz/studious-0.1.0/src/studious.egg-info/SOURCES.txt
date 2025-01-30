@@ -1,0 +1,6 @@
+README.md
+pyproject.toml
+src/studious.egg-info/PKG-INFO
+src/studious.egg-info/SOURCES.txt
+src/studious.egg-info/dependency_links.txt
+src/studious.egg-info/top_level.txt
