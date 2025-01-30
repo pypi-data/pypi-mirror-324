@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/md2ltx/__init__.py
+src/md2ltx/main.py
+src/md2ltx.egg-info/PKG-INFO
+src/md2ltx.egg-info/SOURCES.txt
+src/md2ltx.egg-info/dependency_links.txt
+src/md2ltx.egg-info/entry_points.txt
+src/md2ltx.egg-info/requires.txt
+src/md2ltx.egg-info/top_level.txt
+src/md2ltx/lib/__init__.py
+src/md2ltx/lib/constants.py
+src/md2ltx/lib/python_evaluation.py
