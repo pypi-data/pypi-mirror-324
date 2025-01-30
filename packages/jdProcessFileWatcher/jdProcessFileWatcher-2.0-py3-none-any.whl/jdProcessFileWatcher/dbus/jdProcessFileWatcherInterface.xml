@@ -1,0 +1,13 @@
+<interface name="page.codeberg.JakobDev.jdProcessFileWatcher">
+    <method name="RunCommand">
+        <arg direction="in" type="s" name="command"/>
+        <arg direction="in" type="s" name="working_directory"/>
+    </method>
+    <method name="RunProgram">
+        <arg direction="in" type="s" name="app_id"/>
+    </method>
+    <method name="AttachProcess">
+        <arg direction="in" type="t" name="pid"/>
+    </method>
+    <property type="s" name="Version" access="read"/>
+</interface>
