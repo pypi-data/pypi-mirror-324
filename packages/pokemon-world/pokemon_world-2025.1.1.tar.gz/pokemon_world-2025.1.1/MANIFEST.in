@@ -1,0 +1,2 @@
+recursive-include src/pokemon_world/static *
+recursive-include src/pokemon_world/templates *
