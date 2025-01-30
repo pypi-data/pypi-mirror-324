@@ -1,0 +1,6 @@
+Notes:
+Make sure ; get turned to commas in .bib file
+Figure out how to avoid breaks after header text from long table
+Clean up settings and put most configurable settings in one place
+Do better error checking on xls_read
+
