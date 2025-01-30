@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "sqlalchemy-service"
+version = "0.2.6a1"
+description = ""
+authors = ["Lawrence Naumov <prostolawr@gmail.com>"]
+readme = "README.md"
+license = "LICENSE"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+sqlalchemy = "^2.0.37"
+loguru = "^0.7.3"
+pydantic-settings = "^2.7.1"
+asyncpg = "^0.30.0"
+alembic = "^1.14.0"
+fastapi = { version = "^0.115.6", optional = true }
+
+[tool.poetry.extras]
+fastapi = ["fastapi"]
+
+[tool.poetry.scripts]
+init-db = "sqlalchemy_service.base_db.create:run_init_db"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
