@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: idim
+Version: 1.0.1
+Summary: A Python Library for Computing the Intrinsic Dimension of Geometric Data Sets.
+Author-email: thi <hille@cs.uni-kassel.de>
+Requires-Python: >=3.11
+Requires-Dist: numpy>=2.2.2
+Requires-Dist: tqdm>=4.67.1
+Description-Content-Type: text/markdown
+
+# idim: A Python Library for Computing the Intrinsic Dimension of Geometric Data Sets.
+
+Please see the full README.org on [codeberg.org/thille/idim](https://codeberg.org/thille/idim).
