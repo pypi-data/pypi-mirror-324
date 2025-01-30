@@ -1,0 +1,15 @@
+hg_systematic/__init__.py,sha256=3P24hPCEagRg_WFSc1av4OiJjvKnX6kbsDvTDtuCTBA,26
+hg_systematic/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hg_systematic/data/generators.py,sha256=4N-rZNrkZwK3rg5nDodDJbiyoeGWCq1W1X1FcI84dgE,3641
+hg_systematic/impl/__init__.py,sha256=Tbkesez_ISm-uD0zKg32o-zdTn8mi4SqN8ymMquVk-E,93
+hg_systematic/impl/_calendar_impl.py,sha256=FTCXkeRcUn2aj5Qxll-wLl0-FHZUEnWFftuRM2G4uws,4001
+hg_systematic/impl/_index_impl.py,sha256=gDXGKBzeo8EzhICPMncjPihv81kwuvVixA1KcbAtupk,1705
+hg_systematic/operators/__init__.py,sha256=kneiHhYpuPxQbwj84-PfhY3UGq5pbaAwv0ArBej1B8M,138
+hg_systematic/operators/_calendar.py,sha256=rvv6ye7iCSGO0yD8Nl_SBEOebB_8-1bL4c6Fzvxh2BI,3934
+hg_systematic/operators/_index.py,sha256=_RQUxEH-JC1ElQ6sjM1M9jzEqhjRN8zLCmWbONbYwJY,7431
+hg_systematic/operators/_price.py,sha256=IjFXa-OhpRKFLkt9q-OsELvEMJH5IMmZvLmwJskksZU,738
+hg_systematic-0.0.5.dist-info/LICENSE,sha256=XknxcS0Tg4ZyGciZAoM3SXoMnAyPZC00HclKokINUNk,1070
+hg_systematic-0.0.5.dist-info/METADATA,sha256=obHRK77C5vducE3a4yumCGBsYSzG8OkobgcJ38YmzKI,3079
+hg_systematic-0.0.5.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+hg_systematic-0.0.5.dist-info/entry_points.txt,sha256=8N5SofWe8lQrhmJFPd5add1Efz_jF_JoqB1zcR9z8XM,52
+hg_systematic-0.0.5.dist-info/RECORD,,
