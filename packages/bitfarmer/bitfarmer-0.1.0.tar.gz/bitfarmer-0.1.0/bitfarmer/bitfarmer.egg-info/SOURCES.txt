@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+bitfarmer/bitfarmer.egg-info/PKG-INFO
+bitfarmer/bitfarmer.egg-info/SOURCES.txt
+bitfarmer/bitfarmer.egg-info/dependency_links.txt
+bitfarmer/bitfarmer.egg-info/entry_points.txt
+bitfarmer/bitfarmer.egg-info/requires.txt
+bitfarmer/bitfarmer.egg-info/top_level.txt
