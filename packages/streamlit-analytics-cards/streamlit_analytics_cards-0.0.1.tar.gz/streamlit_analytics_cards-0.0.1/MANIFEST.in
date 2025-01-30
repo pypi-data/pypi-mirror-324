@@ -1,0 +1,7 @@
+include streamlit_analytics_cards/frontend/build/*
+
+recursive-include streamlit_analytics_cards/frontend/build *
+
+include README.md
+
+global-exclude __pycache__ *.pyc *.pyo *.pyd
