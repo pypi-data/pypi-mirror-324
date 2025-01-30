@@ -1,0 +1,8 @@
+PyOpenGL
+laspy
+meshio
+numpy
+pillow
+pye57
+pypcd4
+pyside6
