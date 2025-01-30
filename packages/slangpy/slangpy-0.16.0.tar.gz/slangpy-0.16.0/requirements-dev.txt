@@ -1,0 +1,11 @@
+typing_extensions
+numpy
+nv-sgl == 0.10.0
+
+pre-commit
+pytest
+pytest-xdist
+pytest-cov
+deepdiff
+isort
+autoflake
