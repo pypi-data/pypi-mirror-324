@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: icm20602
+Version: 0.2.2
+Summary: A Python library for ICM20602 sensor, Raspberry PI ready
+Home-page: https://github.com/kagankongar/ICM20602
+Author: Kagan Kongare
+Author-email: kagan.kongar@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: spidev
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ICM20602
+
+![PyPI](https://img.shields.io/pypi/v/icm20602.svg)
+![License](https://img.shields.io/github/license/kagankongar/ICM20602.svg)
+
+#### Python library for the icm-20602 and mpu-6500 IMU comm via spi, suitable for Raspberry Pi
+
+Capable of reading acceleration and gyroscope values, 
+threaded use, calibration, DLPF, smoothing and inclination 
+calculation.
+
+Since ICM-20602 is the successor of MPU-6500, they are register 
+address compatible. This library can be used for both. Be sure to 
+connect the wires correct.
+
+Both IMUs were tested on RaspBerry Pi 5, 2GB, Linux RPLite 6.6.62+rpt-rpi-2712 
+
+
+### Installation
+pip install icm20602
+
+
+### Dependencies
+spidev
+
+
+### Usage
+
+Please check examples/ directory for usage
+
+
+### ToDo
+
+- Better documentation
+- FIFO Support
+
+
+### License
+
+Copyright (c) 2025 kagankongar  (kagan.kongar@gmail.com). 
+Available under the **MIT License**. For more information, 
+see [LICENSE](LICENSE).

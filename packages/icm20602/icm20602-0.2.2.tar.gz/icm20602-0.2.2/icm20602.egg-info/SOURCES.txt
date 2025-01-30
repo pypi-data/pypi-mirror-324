@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+icm20602/__init__.py
+icm20602/icm20602.py
+icm20602.egg-info/PKG-INFO
+icm20602.egg-info/SOURCES.txt
+icm20602.egg-info/dependency_links.txt
+icm20602.egg-info/requires.txt
+icm20602.egg-info/top_level.txt
