@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dylanswordsegmenter
+Version: 0.1.2
+Summary: A tool for segmenting concatenated words into valid words.
+Home-page: https://github.com/dylandenney/wordsegmenter.git
+Author: Dylan Denney
+Author-email: dylandenney@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: nltk
+
+# My Word Segmenter
+
+A Python module to segment concatenated words into valid words using dynamic programming.
+
+## Installation
+
+```bash
+pip install dylanswordsegmenter
+
+```
+
+## Usage
+
+```bash
+python3 dylanswordsegmenter/example.py
+
+```
+
+## Run Test
+```bash
+pytest dylanswordsegmenter/tests/
+
+```
+
+
