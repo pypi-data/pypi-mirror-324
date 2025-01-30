@@ -1,0 +1,7 @@
+csv_optimizer/__init__.py,sha256=bmocXBzM6i2D8Su06oG6wFwC8ABbT0Dma9790Y0c_DM,88
+csv_optimizer/loader.py,sha256=AwqHjidNst3ry7rJLV9DDfUJJg9oK6vv8rdZ090WhdA,3180
+csv_optimizer/setup.py,sha256=5kCnyun_aFU9R_zhMcGuuD_pEOAyE3YbaIif7UPh2lo,748
+csv_optimizer-0.11.dist-info/METADATA,sha256=8xjAN1O2TlKyGBJF2BqFn1_PbGfzErZRJ7fxf6VEp6k,3164
+csv_optimizer-0.11.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+csv_optimizer-0.11.dist-info/top_level.txt,sha256=emwcmyzLSwZn-8IhXUadFehebssMfR2SmySzuy6gGL0,14
+csv_optimizer-0.11.dist-info/RECORD,,
