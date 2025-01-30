@@ -1,0 +1,10 @@
+imgdd-0.1.1.dist-info/METADATA,sha256=hBfHRtgwl18Kf6PeK2KXJ4QI51XOaLL_yY6T7VIEyqM,2031
+imgdd-0.1.1.dist-info/WHEEL,sha256=vsGkXRsc6v013m3_LfxAVQFBP0qA_VRsg0jUz9ot6jg,106
+imgdd-0.1.1.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+imgdd.libs/libgcc_s-acfe23cf.so.1,sha256=qECzjgy78vO8L-J3saW28gSf06He9wOcNtIr2CUUo-s,134600
+imgdd.libs/libm-0c4efaa5.so.6,sha256=PV9qBC0cWkGFZkGQrl4V2mdlaZ4y_5RPLUbGtmMcC4s,609240
+imgdd/__init__.py,sha256=kVLHJ8bs23QRuNU-8LuGv1lVqmU8NSgrOaM4OWa2YpE,103
+imgdd/__init__.pyi,sha256=yXpdzzEl_NQLVXFfpSfFqQpLDfE09aI_W1y9Hvu5jIQ,1210
+imgdd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imgdd/imgdd.abi3.so,sha256=G7JLQUQGAam-_Oj9YfGzy7UVwvvWH3asJChoI7KQl7M,3541960
+imgdd-0.1.1.dist-info/RECORD,,
