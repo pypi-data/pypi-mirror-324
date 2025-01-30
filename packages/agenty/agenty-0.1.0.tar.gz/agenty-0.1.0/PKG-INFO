@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: agenty
+Version: 0.1.0
+Summary: A framework for creating AI agents.
+License: LICENSE
+Author: Jonathan Chun
+Author-email: git@jonathanchun.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: instructor (>=1.7.2,<2.0.0)
+Requires-Dist: openai (>=1.60.2,<2.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Description-Content-Type: text/markdown
+
+# Agenty
