@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+auto_requirements/__init__.py
+auto_requirements/manager.py
+auto_requirements.egg-info/PKG-INFO
+auto_requirements.egg-info/SOURCES.txt
+auto_requirements.egg-info/dependency_links.txt
+auto_requirements.egg-info/top_level.txt

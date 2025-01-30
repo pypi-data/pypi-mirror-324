@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: auto-requirements
+Version: 0.1
+Summary: Automatically updates requirements.txt when installing/uninstalling packages
+Home-page: https://github.com/renish-1111/auto-requirements
+Author: Renish Ponkiya
+Author-email: ponkiyarenish@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
