@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+ptapi42/__init__.py
+ptapi42/api42.py
+ptapi42/api42_token.py
+ptapi42/config.py
+ptapi42.egg-info/PKG-INFO
+ptapi42.egg-info/SOURCES.txt
+ptapi42.egg-info/dependency_links.txt
+ptapi42.egg-info/top_level.txt
