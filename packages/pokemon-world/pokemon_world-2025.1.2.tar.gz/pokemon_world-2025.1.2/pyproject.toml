@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pokemon-world"
+version = "2025.1.2"
+dependencies = [
+  "flask>2.0"
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "lorenzo del medico", email = "lorenzodelmedico@gmail.com"},
+]
+maintainers = [
+  {name = "lorenzo del medico", email = "lorenzodelmedico@gmail.com"}
+]
+description = "Lovely Pokemon! Wonderful Pokemon! Gotta Catch Them All"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["Pokemon", "Pikachu", "Sacha", "Lorenzodelmedico"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+[tool.hatch.build.targets.wheel]
+packages = ["src/pokemon_world"]
+
+[project.optional-dependencies]
+cli = [
+  "click",
+]
+
+[project.urls]
+Documentation = "https://github.com/lorenzodelmedico/PokemonWorld/README.md"
+Repository = "https://github.com/lorenzodelmedico/PokemonWorld"
+
+[project.scripts]
+pokemon-world = "pokemon_world.app:main"
