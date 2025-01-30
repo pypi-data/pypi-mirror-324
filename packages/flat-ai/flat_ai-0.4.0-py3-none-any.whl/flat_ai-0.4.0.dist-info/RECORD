@@ -1,0 +1,10 @@
+flat_ai/__about__.py,sha256=j-J7MFo_4McDmQdxMJOIaRWqjbgB9OSI5ZOQ_LYD0jo,378
+flat_ai/__init__.py,sha256=SFNsxkCwcRQvbffIGPRid1sADxSuuhheIexQNpa6-P0,69
+flat_ai/flat_ai.py,sha256=W7N_Ip3XFU9M1lb_eAzXYIs5y0pMsqj5zG9rWPJy5cE,14227
+flat_ai/function_helpers.py,sha256=4XJvU7_NvHbx_iXUyKyhZZfo1HxPpDvpmywhhUKvuFs,6302
+flat_ai/trace_llm.py,sha256=82Ezw1EBCeclhAlH1Po8Z_87NR9RO6WmHzwz6q5sxiA,7133
+flat_ai-0.4.0.dist-info/LICENSE,sha256=FyuBsNr3YLXHPRQfWIpCAC4brUeSdYelr01V-Fkog8U,1066
+flat_ai-0.4.0.dist-info/METADATA,sha256=L6PwQyndNKb8MegZ0gvVssfp3F9trRaTng0QLQeepsA,10558
+flat_ai-0.4.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+flat_ai-0.4.0.dist-info/top_level.txt,sha256=9ys5xmeVerm_VzZu_eRnSl19or4o3-5O0S8RXII_haQ,8
+flat_ai-0.4.0.dist-info/RECORD,,
