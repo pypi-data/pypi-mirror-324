@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+evalnlp/__init__.py
+evalnlp/uter.py
+evalnlp/utils.py
+evalnlp/uwer.py
+evalnlp.egg-info/PKG-INFO
+evalnlp.egg-info/SOURCES.txt
+evalnlp.egg-info/dependency_links.txt
+evalnlp.egg-info/top_level.txt
