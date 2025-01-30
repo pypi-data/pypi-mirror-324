@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+julep_cli.egg-info/PKG-INFO
+julep_cli.egg-info/SOURCES.txt
+julep_cli.egg-info/dependency_links.txt
+julep_cli.egg-info/entry_points.txt
+julep_cli.egg-info/requires.txt
+julep_cli.egg-info/top_level.txt
+tests/test_auth.py
