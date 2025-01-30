@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "davidkhala.azure"
+version = "0.0.1"
+description = "@davidkhala/azure-utils"
+authors = ["David Liu <david-khala@hotmail.com>"]
+readme = "README.md"
+packages = [{ include = "davidkhala" }]
+
+[tool.poetry.dependencies]
+python=">=3.10"
+azure-identity = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
