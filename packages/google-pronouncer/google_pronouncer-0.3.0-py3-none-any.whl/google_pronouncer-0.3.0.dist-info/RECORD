@@ -1,0 +1,10 @@
+google_pronouncer/__init__.py,sha256=CGtmynKznpsWst6CD2f4-KFYrkPH0tiwKbm3ru4fY44,332
+google_pronouncer/__main__.py,sha256=YmQ5xrkicZY7ovrMkfz-fqFNyPubftArpwohe90pXcw,120
+google_pronouncer/cli.py,sha256=Pk73T324c0d5ooB0xgegpOvJwvPhs-zYMkm0aDLaZ7s,8362
+google_pronouncer/downloader.py,sha256=ibXLc4m4t_kfr8i4OE8QSlzuGXZcSaKKABkMZEqJebQ,10787
+google_pronouncer-0.3.0.dist-info/LICENSE,sha256=FyuBsNr3YLXHPRQfWIpCAC4brUeSdYelr01V-Fkog8U,1066
+google_pronouncer-0.3.0.dist-info/METADATA,sha256=p9fDwc4oEXMbs-6lDhaE2EFXANc42iTlEbl5xOXLTzY,7232
+google_pronouncer-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+google_pronouncer-0.3.0.dist-info/entry_points.txt,sha256=RMWMfRKYLjZeHz8Bfxy8iXZjNzKnObooyq8AQvKslf8,65
+google_pronouncer-0.3.0.dist-info/top_level.txt,sha256=gk8Mq5mXFPQGVop28r2IBAlWQJySgKcUstW0ka2EMcY,18
+google_pronouncer-0.3.0.dist-info/RECORD,,
