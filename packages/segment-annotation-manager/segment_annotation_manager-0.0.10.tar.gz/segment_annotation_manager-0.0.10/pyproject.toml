@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "segment_annotation_manager"
+version = "0.0.10"
+authors = [
+  { name="Alexander Rausch", email="arausch335@gmail.com" },
+]
+description = "An annotation manager for image segmentation projects"
+readme = "README.md"
+requires-python = ">=3.9,<3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+dependencies = [
+    "numpy>=1.20.0,<3.0.0",
+    "pandas>=2.2.3,<3.0.0",
+    "opencv-python>=4.11.0.86,<5.0.0",
+    "geopandas>=1.0.1,<2.0.0",
+    "shapely>=2.0.6,<3.0.0",
+    "matplotlib>=3.0.0,<4.0.0",
+    "ultralytics>=8.3.64,<9.0.0",
+    "scipy>=1.13.0,<2.0.0",
+    "pyyaml>=6.0.2,<7.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/segment_annotation_manager"
+Issues = "https://github.com/pypa/segment_annotation_manager/issues"
