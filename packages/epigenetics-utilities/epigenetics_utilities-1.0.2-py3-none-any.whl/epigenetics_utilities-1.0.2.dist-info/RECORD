@@ -1,0 +1,13 @@
+epigenetics_utilities/__init__.py,sha256=t_CnM6NUQwFvHTmSHv1GFt5Y6xcqtL477-LcgxRUEJs,157
+epigenetics_utilities/cluster_regions.py,sha256=9By-VSd9KjbNXldGGM8T5XnitASEQoNRfBeUqpRaMQU,4420
+epigenetics_utilities/enrichment.py,sha256=qqp6vFT-GDdKMS-_HQu3b1Qp7EB97SXegX9ZRdtjRTA,11129
+epigenetics_utilities/gene.py,sha256=wlifH3YietP8CojPmuspLEgxTEjDlFa-Bh21681oYuY,12254
+epigenetics_utilities/main.py,sha256=RTMd75Enjey9wviHprFskYHqk5Sk7j1Cw9ZLjVfSPfc,966
+epigenetics_utilities/odds_ratio_intersection.py,sha256=0XQY_9TxACiQ4EpFoK1iXBePOT7wMTcMRE-r7K7UGlA,9679
+epigenetics_utilities/plotting.py,sha256=ae27xOGb7qszm589mB3v7NJu0Fr30hfvH_DQSdvYlMk,24340
+epigenetics_utilities/util.py,sha256=y-QIpwa3NCJ4La1JgqdAqFZ4OeKDZKk7qFtY7qpA2iI,2791
+epigenetics_utilities-1.0.2.dist-info/METADATA,sha256=gh0xaI19GRQjcJxpsppcs8HTII7lfVJslAOT7dKgaYU,545
+epigenetics_utilities-1.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+epigenetics_utilities-1.0.2.dist-info/entry_points.txt,sha256=gH0aq-70QqELnpfAqmhlSCsWMBtN-DeFEixZH3OoR0Q,207
+epigenetics_utilities-1.0.2.dist-info/top_level.txt,sha256=5on2PAG1PCApqYU5vtXB27IwfAl6oUmkTVL4iOVkk0c,22
+epigenetics_utilities-1.0.2.dist-info/RECORD,,
