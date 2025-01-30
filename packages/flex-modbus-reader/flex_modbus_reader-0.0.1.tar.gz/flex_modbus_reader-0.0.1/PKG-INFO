@@ -1,0 +1,107 @@
+Metadata-Version: 2.2
+Name: flex-modbus-reader
+Version: 0.0.1
+Summary: Flex Modbus Reader
+Author-email: FlexpowerTech <info@flexpower.tech>, LevchenCom <mklevk@outlook.com>
+Maintainer-email: LevchenCom <mklevk@outlook.com>
+License: MIT License
+        
+        Copyright (c) 2025 FlexpowerTech
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/FlexpowerTech/flex-modbus-reader
+Project-URL: Issues, https://github.com/FlexpowerTech/flex-modbus-reader/issues
+Keywords: modbus,modbus tcp
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pymodbus<=3.8.3
+Requires-Dist: pytest>=8.3.4
+
+# Flex Modbus Reader
+
+Easily connect, debug and test any device that supports Modbus TCP!
+
+## Features:
+- Splitting a request by chunks with configurable chunck size value. (Modbus TCP protocol supports maximum of 260 bytes per request, but it also depends on the device's manufactorer.)
+- Auto-skip no needed registers in a bytes stream.
+- Supports index auth-shifting. (By default, registers are addressed starting at zero, but therefore devices that specify 1-16 are addressed as 0-15.)
+
+
+# Installation Guide
+
+## Prerequisites
+- `python` version 3.9 or later
+
+## Installation:
+```shell
+pip install flex-modbus-reader
+```
+
+# Integrate your modbus device
+
+## Examples:
+You can find an example of integrating Modbus energy meter in `flexmodbusreader/examples` module.
+
+## Writing your own ModbusDevice class:
+
+### Steps:
+- Check the manufacturer documentation to find registers you need to read.
+- Create the registers map
+- Use this map to get the data from the device
+
+```python3
+from pymodbus.constants import Endian
+
+from flexmodbusreader.device import ModbusDevice, Register
+from flexmodbusreader.reader import ModbusDeviceDataReader
+
+
+device = ModbusDevice(
+    model="Energy Meter",
+    registers_map=[
+        Register("value_1", 3000, 2, ModbusTcpClient.DATATYPE.FLOAT32),
+        Register("value_2", 3002, 2, ModbusTcpClient.DATATYPE.FLOAT32),
+        Register("value_3", 3004, 2, ModbusTcpClient.DATATYPE.FLOAT32),
+        Register("value_4", 3200, 2, ModbusTcpClient.DATATYPE.FLOAT32),
+        Register("value_5", 3202, 2, ModbusTcpClient.DATATYPE.INT32),
+        Register("value_6", 3204, 2, ModbusTcpClient.DATATYPE.FLOAT32),
+        Register("value_7", 3250, 2, ModbusTcpClient.DATATYPE.UINT64),
+        Register("value_8", 3252, 2, ModbusTcpClient.DATATYPE.FLOAT32),
+        Register("value_9", 3340, 2, ModbusTcpClient.DATATYPE.FLOAT32),
+    ],
+    unit=10, # Modbus Slave ID
+    index_shift=-1 # the value by which to shift the indices
+)
+
+client = ModbusTcpClient("192.168.0.1", port=5030, timeout=1)
+reader = ModbusDeviceDataReader(
+    client=client, # ModbusTcpClient
+    byteorder=Endian.BIG, # byte endianess. Needed for decoding
+    wordorder=Endian.BIG, # word endianess. Needed for decoding
+    message_size=100, # Maximum size of register to read per one request
+    device=device, # ModbusDevice instance
+)
+
+data = reader.read_registers() # returns a dict with decoded values 
+
+```

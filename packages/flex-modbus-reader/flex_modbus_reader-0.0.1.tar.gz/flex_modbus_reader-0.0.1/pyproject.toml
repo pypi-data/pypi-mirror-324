@@ -1,0 +1,61 @@
+[project]
+name = "flex-modbus-reader"
+description = "Flex Modbus Reader"
+dynamic = ["version"]
+authors = [
+    { name="FlexpowerTech", email="info@flexpower.tech" },
+    { name="LevchenCom", email="mklevk@outlook.com" },
+]
+maintainers = [
+    { name="LevchenCom", email="mklevk@outlook.com" },
+]
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pymodbus<=3.8.3",
+    "pytest>=8.3.4",
+]
+license = { file = "LICENSE" }
+keywords = ["modbus", "modbus tcp"] 
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/FlexpowerTech/flex-modbus-reader"
+Issues = "https://github.com/FlexpowerTech/flex-modbus-reader/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "flexmodbusreader.__version__"}
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+known_first_party = ["flexmodbusreader"]
+skip_gitignore = true
+

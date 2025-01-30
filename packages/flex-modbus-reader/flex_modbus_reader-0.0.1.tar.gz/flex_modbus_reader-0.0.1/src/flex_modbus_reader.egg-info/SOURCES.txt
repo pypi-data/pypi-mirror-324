@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/flex_modbus_reader.egg-info/PKG-INFO
+src/flex_modbus_reader.egg-info/SOURCES.txt
+src/flex_modbus_reader.egg-info/dependency_links.txt
+src/flex_modbus_reader.egg-info/requires.txt
+src/flex_modbus_reader.egg-info/top_level.txt
+src/flexmodbusreader/__init__.py
+src/flexmodbusreader/device.py
+src/flexmodbusreader/reader.py
+src/flexmodbusreader/examples/__init__.py
+src/flexmodbusreader/examples/example_meter.py
