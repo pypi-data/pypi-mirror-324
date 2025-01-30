@@ -1,0 +1,135 @@
+[project]
+name = "anydi"
+version = "0.38.1"
+description = "Dependency Injection library"
+authors = [{ name = "Anton Ruhlov", email = "antonruhlov@gmail.com" }]
+requires-python = "~=3.9"
+readme = "README.md"
+license = "MIT"
+keywords = [
+    "dependency injection",
+    "dependencies",
+    "di",
+    "async",
+    "asyncio",
+    "application",
+]
+classifiers = [
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Operating System :: OS Independent",
+    "Development Status :: 5 - Production/Stable",
+    "Topic :: Internet",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development",
+    "Typing :: Typed",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+    "typing-extensions>=4.12.1,<5",
+    "anyio>=3.7.1",
+    "wrapt>=1.17.0,<2",
+]
+
+[project.urls]
+Repository = "https://github.com/antonrh/anydi"
+
+[project.entry-points.pytest11]
+anydi = "anydi.ext.pytest_plugin"
+
+[dependency-groups]
+dev = [
+    "mypy[faster-cache]>=1.14.1,<2",
+    "ruff>=0.8.5,<0.9",
+    "pytest>=8.3.1,<9",
+    "pytest-cov>=6.0.0,<7",
+    "fastapi>=0.100.0,<0.101",
+    "httpx>=0.26.0,<0.27",
+    "django~=4.2",
+    "django-stubs>=5.1.1,<6",
+    "django-ninja>=1.1.0,<2",
+    "pytest-django>=4.8.0,<5",
+    "faststream>=0.5.10,<0.6",
+    "redis>=5.0.4,<6",
+    "pydantic-settings>=2.4.0,<3",
+]
+docs = [
+    "mkdocs>=1.4.2,<2",
+    "mkdocs-material>=9.5.29,<10",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["A", "B", "C", "E", "F", "I", "W", "TID252", "T20", "UP", "FURB"]
+ignore = ["A003", "B008", "B009", "B010", "D104", "D107"]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+forced-separate = ["tests", "app"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+strict = true
+
+[[tool.mypy.overrides]]
+module = [
+    "django.*",
+    "wrapt.*",
+]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = [
+    "tests.*",
+]
+disable_error_code = ["comparison-overlap"]
+
+[tool.pytest.ini_options]
+addopts = [
+    "--strict-config",
+    "--strict-markers",
+]
+xfail_strict = true
+junit_family = "xunit2"
+DJANGO_SETTINGS_MODULE = "tests.ext.django.settings"
+
+[tool.coverage.report]
+exclude_also = [
+    "pragma: no cover",
+    "@abstractmethod",
+    "@abc.abstractmethod",
+    "if TYPE_CHECKING",
+    "if t.TYPE_CHECKING",
+    "@overload",
+    "@t.overload",
+    "raise NotImplementedError",
+    "except ImportError:",
+    "if has_signature_eval_str_arg",
+    "if not anyio:",
+]
+
+[tool.coverage.run]
+omit = [
+    "anydi/ext/django/ninja/_operation.py",
+    "anydi/ext/django/ninja/_signature.py",
+]
