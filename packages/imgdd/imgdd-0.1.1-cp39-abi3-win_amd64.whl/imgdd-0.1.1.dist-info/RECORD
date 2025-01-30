@@ -1,0 +1,8 @@
+imgdd-0.1.1.dist-info/METADATA,sha256=hBfHRtgwl18Kf6PeK2KXJ4QI51XOaLL_yY6T7VIEyqM,2031
+imgdd-0.1.1.dist-info/WHEEL,sha256=499VU27brUqVKAcJR8trjx3Aw9l0irQYT7o8Yx2WiAY,94
+imgdd-0.1.1.dist-info/licenses/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+imgdd/__init__.py,sha256=kVLHJ8bs23QRuNU-8LuGv1lVqmU8NSgrOaM4OWa2YpE,103
+imgdd/__init__.pyi,sha256=k9aPm-9W0dZZaVOXMHj5X0dNOWmPv1ddxhfM1usdRkQ,1250
+imgdd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+imgdd/imgdd.pyd,sha256=zYHEuUgKRsppCdtwgvz5RhBfQdLirYj07u414PX2mmE,3004416
+imgdd-0.1.1.dist-info/RECORD,,
