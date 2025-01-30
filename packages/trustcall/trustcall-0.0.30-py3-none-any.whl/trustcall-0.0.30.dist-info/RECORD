@@ -1,0 +1,9 @@
+trustcall/__init__.py,sha256=z6TS_fp3jGMXtwr1cMKEZElcjVwU0p4VY7YZey4VOiM,488
+trustcall/_base.py,sha256=xHM8qGhXKK4AD8qRwtS9X-j5BD8sGzrSgnTcllZRsG0,57060
+trustcall/foo.py,sha256=AhS5vDR7il-9WESsN_rh0tDygHFykHU_Fb5wpzY29YY,1317
+trustcall/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trustcall-0.0.30.dist-info/LICENSE,sha256=ZwIakj8i17kzBlcT_Z7cu7RBfjrCkGkp3gz-SDEXJsA,1067
+trustcall-0.0.30.dist-info/METADATA,sha256=kWUVR8ny4mpkIFuCttchp5F5dnumeGwq51z9r9GQ_zg,29643
+trustcall-0.0.30.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+trustcall-0.0.30.dist-info/top_level.txt,sha256=LyT7ICXgBWsOvqA7gHKuzZ9jIr6jsbLA9iFwoESZVc4,10
+trustcall-0.0.30.dist-info/RECORD,,
