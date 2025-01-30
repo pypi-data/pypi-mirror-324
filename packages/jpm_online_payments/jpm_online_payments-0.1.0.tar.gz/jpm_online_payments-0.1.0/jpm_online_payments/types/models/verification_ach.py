@@ -1,0 +1,111 @@
+import typing
+import typing_extensions
+import pydantic
+
+from .payment_token import PaymentToken
+
+
+class VerificationAch(pydantic.BaseModel):
+    """
+    Verification of ACH account
+    """
+
+    model_config = pydantic.ConfigDict(
+        arbitrary_types_allowed=True,
+        populate_by_name=True,
+    )
+
+    account_number: typing.Optional[str] = pydantic.Field(
+        alias="accountNumber", default=None
+    )
+    """
+    The card or token number.
+    """
+    account_type: typing.Optional[
+        typing_extensions.Literal["CHECKING", "CORPORATE_CHECKING", "SAVING"]
+    ] = pydantic.Field(alias="accountType", default=None)
+    """
+    Type of banking account.
+    """
+    ach_verification_type: typing.Optional[
+        typing_extensions.Literal[
+            "ACCOUNT_OWNER",
+            "ACCOUNT_STATUS",
+            "BASIC",
+            "PRE_NOTE_CREDIT",
+            "PRE_NOTE_DEBIT",
+        ]
+    ] = pydantic.Field(alias="achVerificationType", default=None)
+    """
+    Indicates the type of ACH verification being performed.
+    """
+    consumer_verification_id: typing.Optional[str] = pydantic.Field(
+        alias="consumerVerificationId", default=None
+    )
+    """
+    A unique identifier assigned by a government agency. Examples include Driver's License number, green card id, and Passport number.
+    """
+    consumer_verification_id_state: typing.Optional[str] = pydantic.Field(
+        alias="consumerVerificationIdState", default=None
+    )
+    """
+    Classifies a geographic area that represents a first level, legal and political subdivision of a country; for example, Virginia, Bavaria.
+    """
+    consumer_verification_id_type: typing.Optional[
+        typing_extensions.Literal[
+            "CAN_DL",
+            "FOREIGN_DL",
+            "MAT_CONSULAR_ID",
+            "MEX_DL",
+            "OTH_PRIM_ID",
+            "PASSPORT",
+            "RES_ALIEN_ID",
+            "STATE_ID",
+            "STUDENT_ID",
+            "US_DL",
+            "US_MILITARY",
+        ]
+    ] = pydantic.Field(alias="consumerVerificationIdType", default=None)
+    """
+    Classifies the type of identifier.
+    """
+    ecp_program_name: typing.Optional[str] = pydantic.Field(
+        alias="ecpProgramName", default=None
+    )
+    """
+    Label of the program used for backend processing when handling electronic or paper checks at point of sale, online or in-person.
+    """
+    financial_institution_routing_number: typing.Optional[str] = pydantic.Field(
+        alias="financialInstitutionRoutingNumber", default=None
+    )
+    """
+    Identifies the routing and transit number. In the United  States it's 8-9 numeric characters.
+    """
+    individual_birth_date: typing.Optional[str] = pydantic.Field(
+        alias="individualBirthDate", default=None
+    )
+    """
+    Specifies the year month and day on which the individual was born.
+    """
+    last4_ssn: typing.Optional[str] = pydantic.Field(alias="last4SSN", default=None)
+    """
+    Identifies the last four digits of the government issued (SSN, EIN, TIN).
+    """
+    masked_account_number: typing.Optional[str] = pydantic.Field(
+        alias="maskedAccountNumber", default=None
+    )
+    """
+    Identifies a concealed number associated with the card number recognized by various payment systems. This is typically concealed by storing only the first 6 and/or last 4 digits of the payment account number or some variation.
+    """
+    payment_tokens: typing.Optional[typing.List[PaymentToken]] = pydantic.Field(
+        alias="paymentTokens", default=None
+    )
+    """
+    List of payment tokens for the transaction
+    """
+    payment_type: typing.Optional[
+        typing_extensions.Literal["RECURRING", "TEL", "WEB"]
+    ] = pydantic.Field(alias="paymentType", default=None)
+    """
+    Identifies how accountholders  initiated debits to their accounts .
+    """
