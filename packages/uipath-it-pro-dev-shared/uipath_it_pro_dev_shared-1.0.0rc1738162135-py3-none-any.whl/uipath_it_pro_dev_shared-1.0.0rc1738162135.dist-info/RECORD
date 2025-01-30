@@ -1,0 +1,16 @@
+uipath-it-pro-dev-shared/__init__.py,sha256=UzanUEHeHoCOhvh-KZLs3Mla73PdEP5MgYlGGBkWvjQ,1239
+uipath-it-pro-dev-shared/api_client.py,sha256=pAyeatD1ljbrx2kQQTjd2hIfFfpERagTytfQWZr8-EY,27545
+uipath-it-pro-dev-shared/api_response.py,sha256=eMxw1mpmJcoGZ3gs9z6jM4oYoZ10Gjk333s9sKxGv7s,652
+uipath-it-pro-dev-shared/configuration.py,sha256=rI9mMBXiMEXdcFpkrw2fizUKuptHlqbX0sTord6nIbw,18166
+uipath-it-pro-dev-shared/exceptions.py,sha256=z0DM8FhdHrxmcbMUL8JqLfGQSB4CCTkLXYedF2_Jsp4,6468
+uipath-it-pro-dev-shared/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+uipath-it-pro-dev-shared/rest.py,sha256=AQOeoJaRdzVxvhZhQdPpGIJfyV5KaPTSfS5sTGLRLKs,9419
+uipath-it-pro-dev-shared/api/__init__.py,sha256=sXdmdRrEnzrlL248Snh7Wv7sVnovfBDWGEf1WvAdjPo,48
+uipath-it-pro-dev-shared/models/__init__.py,sha256=TUdHwI5N1gNwxXRM7KbZhzmTDxQsSTtkAsIyZWlR5K8,591
+uipath-it-pro-dev-shared/models/asset_value_text_dto.py,sha256=1DUXyw9YvuL6BW_miSEL1K2Y0JQmaKtLltcEJhFp8-8,2715
+uipath-it-pro-dev-shared/models/blob_file_dto.py,sha256=Y41VL42vP0KNTBDkz5Nu-N-5dEaL-CwG3sdYYD1WpMI,3853
+uipath-it-pro-dev-shared/models/error_callback.py,sha256=HzhgDoJRHp5c1tpclBdPKmrCt6ERuAWcCq8D-cHXzx0,2659
+uipath_it_pro_dev_shared-1.0.0rc1738162135.dist-info/METADATA,sha256=qjWsUPylCVhTUG00Y9N-i2anoGQV9nJwbffBnqOb7L4,674
+uipath_it_pro_dev_shared-1.0.0rc1738162135.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+uipath_it_pro_dev_shared-1.0.0rc1738162135.dist-info/top_level.txt,sha256=-2Pe8AHhy0zyy4gZLxe71uNtmHa3clYrxyDAMcCt8VA,25
+uipath_it_pro_dev_shared-1.0.0rc1738162135.dist-info/RECORD,,
