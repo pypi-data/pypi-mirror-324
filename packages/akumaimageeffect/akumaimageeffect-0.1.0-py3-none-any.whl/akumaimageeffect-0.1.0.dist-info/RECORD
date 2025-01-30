@@ -1,0 +1,7 @@
+AkumaImageEffect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+AkumaImageEffect/effect_engine.py,sha256=Bri_uM3Q3sa0XgQNzHTFHx-fvLTAOROJQIfGa7sw0ic,2950
+AkumaImageEffect/effects/core_effects.py,sha256=IVCxd_Y3maj73IeBgGh-GQy_H3sIUjelUJRmOSQI2fQ,1273
+AkumaImageEffect/main.py,sha256=63JaKGYyh8cwGxqZ1ywK5HdVhg7epl-ZDwwg8XUoe5Q,1327
+akumaimageeffect-0.1.0.dist-info/METADATA,sha256=c8P8nG-VsGzPqXtaBwAgeUqMoNfpuHXNYSWfiXIaBL8,647
+akumaimageeffect-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+akumaimageeffect-0.1.0.dist-info/RECORD,,
