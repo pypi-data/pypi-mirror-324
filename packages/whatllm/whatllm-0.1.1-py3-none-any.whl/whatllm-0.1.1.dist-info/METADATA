@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: whatllm
+Version: 0.1.1
+Summary: A CLI tool to help you decide what kind of LLM you can run locally.
+Author-email: Junyang Lu <jlu@umass.edu>
+License: MIT License
+Keywords: LLM,run locally,open llm leaderboard,hardware spec
+Requires-Dist: pyopencl
+Requires-Dist: pandas
+Requires-Dist: typer
+Requires-Dist: datasets

@@ -1,0 +1,2 @@
+[console_scripts]
+whatllm = whatllm.cli:app

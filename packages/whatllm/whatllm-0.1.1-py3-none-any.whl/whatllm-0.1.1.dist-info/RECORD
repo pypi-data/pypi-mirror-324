@@ -1,0 +1,11 @@
+whatllm/__init__.py,sha256=g7--mOH2fRcaTrsJarxu_DFxF2HigFbeJX1F2mrjKsU,405
+whatllm/__main__.py,sha256=UIm3YCa9UeOkGQlZX7FYjqgqJxEpe3nP7p8kBrhSiqw,185
+whatllm/cli.py,sha256=LL2zo5VT6rBGMpA4CBQ5z7xZobnDScOJRB_RYOSYQNA,3162
+whatllm/llm_list.py,sha256=Vy6kHyIl5XSpDAEu_wNUuonOoi4Y9SK0mcRpPX7JrGc,2796
+whatllm/ram.py,sha256=q4DQiS2mQ3Dmzs8arB1VsV4Xd5ZOB_wqDboA-sX8a4I,282
+whatllm/vram.py,sha256=eoiRgaKfpfeahS9ewhpw1bWSkvwH-Q9uskY088uTCjw,1195
+whatllm-0.1.1.dist-info/METADATA,sha256=NKpQImY37mmux5lcti1sbk_Ctm_Fh3ZgIHt4HilVdIA,353
+whatllm-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+whatllm-0.1.1.dist-info/entry_points.txt,sha256=5ABBKewb1WbN_cFGOiAFYHHEXuVGkF3QF-q1sBp-T7g,44
+whatllm-0.1.1.dist-info/top_level.txt,sha256=-pBxteD6Bl23daIZnOfHwbeRrzvBfPvLE_HThScL5u4,8
+whatllm-0.1.1.dist-info/RECORD,,
