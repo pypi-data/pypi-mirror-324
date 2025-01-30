@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: shabakhti
+Version: 0.8
+Author: mohammad_shabakhti
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: numpy
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+
+# Shabakhti
+
+A package for live handwritten digit recognition using a neural network.
+
+## Installation
+
+```bash
+pip install shabakhti
