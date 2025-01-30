@@ -1,0 +1,27 @@
+.DS_Store
+.idea/
+__pycache__/
+venv/
+
+/Archive/
+
+/GoogleCLI/beetleboxdev/other/Core/CoreDemoVideo/
+/GoogleCLI/beetleboxdev/other/Core/IntermediateCode/
+/GoogleCLI/beetleboxdev/sources/
+/GoogleCLI/MaskedCatCo/BACKUP_store_photos/
+/GoogleCLI/MaskedCatCo/Graphics/original_wix_store_photos/
+/GoogleCLI/MaskedCatCo/services/
+/GoogleCLI/sql-sandbox/jdpennington0/
+/GoogleCLI/sql-sandbox/quickstart-service/
+
+/HerokuCLI/
+
+# Contains some git repositories, as well as some important data outside of any repositories.
+/InDevelopment/
+
+/Misc/WORDPLAY_game_in_development/Server/
+/Python/
+/Utility/file_and_img_proc/store_photos/
+/Utility/gmail/
+/VenvPython3.12/
+/Volatile3gons_Tkinter/
