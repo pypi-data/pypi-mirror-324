@@ -1,0 +1,8 @@
+mysql-connector
+sqlalchemy
+jsonweb
+Baubles
+Perdy
+Argumental
+Spanners
+GoldenChild
