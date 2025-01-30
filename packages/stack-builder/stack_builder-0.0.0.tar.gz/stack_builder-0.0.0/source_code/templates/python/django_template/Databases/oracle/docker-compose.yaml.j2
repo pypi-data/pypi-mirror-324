@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  db_oracle:
+    image: oracle/database:{{ db_version|default('19.3.0-ee') }}
+    environment:
+      ORACLE_PASSWORD: "{{ db_password|default('admin') }}"
+    ports:
+      - "1521:1521"
+    volumes:
+      - oracle_data:/opt/oracle/oradata
+    networks:
+      - backend
+    restart: unless-stopped
+
+  django:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      DB_ENGINE: "django.db.backends.oracle"
+      DB_NAME: "{{ db_name|default('my_database') }}"
+      DB_USER: "{{ admin|default('admin') }}"
+      DB_PASSWORD: "{{ admin|default('admin') }}"
+      DB_HOST: "db_oracle"
+      DB_PORT: "1521"
+    depends_on:
+      - db_oracle
+    ports:
+      - "8000:8000"
+    command: ["python", "manage.py", "migrate"]
+    restart: unless-stopped
+
+volumes:
+  oracle_data:
+
+networks:
+  backend:
+    driver: bridge

@@ -1,0 +1,19 @@
+project:
+  name: my_project
+  description: A full-stack Django application.
+  version: 1.0.0
+  author: test test
+
+services:
+  - name: auth_service
+    description: Authentification service.
+    stack:
+      type: django
+      version: "3.10"
+      port: 5001
+    database:
+      type: postgresql
+      version: "16"
+      user: admin
+      password: admin
+      name: my_database
