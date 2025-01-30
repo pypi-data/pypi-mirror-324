@@ -1,0 +1,6 @@
+certbot_dns_netangels/__init__.py,sha256=rtxPlVPdvO3QNgJSlMxeXx6cYI8xaD-hnHhJG8DBquY,3325
+certbot_dns_netangels/dns_netangels.py,sha256=lhunMZw66kJ8ksT0JvVS-ttc5Hnv_vXCVbXPbuKlDvA,14733
+certbot_dns_netangels-0.0.1.dist-info/METADATA,sha256=LyYZ3CpNCAMnaPW19fn_9b9stgXOIvfUJwabmNNirX0,4830
+certbot_dns_netangels-0.0.1.dist-info/WHEEL,sha256=tkmg4JIqwd9H8mL30xA7crRmoStyCtGp0VWshokd1Jc,105
+certbot_dns_netangels-0.0.1.dist-info/licenses/LICENSE.txt,sha256=LMXecVrlqXbwhvukkwiAyeQhkUFz_IURG_9RTUdXEj8,10786
+certbot_dns_netangels-0.0.1.dist-info/RECORD,,
