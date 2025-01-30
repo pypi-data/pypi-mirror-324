@@ -1,0 +1,63 @@
+Metadata-Version: 2.2
+Name: Spyffness
+Version: 0.1.2
+Summary: A Python library for structural analysis
+Home-page: https://github.com/panallax/Spyffness
+Author: Alex Bernadí
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.0
+Requires-Dist: scipy>=1.6.0
+Requires-Dist: networkx
+Dynamic: home-page
+Dynamic: requires-python
+
+# Spyffness
+
+A Python library for structural analysis.
+
+## Installation
+
+```bash
+pip install Spyffness
+```
+
+## Usage
+
+```python
+from Spyffness.Frame import Frame
+
+struct = Frame()
+
+struct.addNode(0, [0,0,0])
+struct.addNode(1, [0,0,3])
+struct.addNode(2, [0,3,0])
+
+struct.addMaterial(False, E= 30000, Iy= 100, Iz= 100, G= 10000, J= 50, A= 10)
+
+struct.addBeam(0, 0, 1)
+struct.addBeam(1, 1, 2)
+struct.addBeam(2, 0, 2)
+
+print(struct.K())
+struct.fixAllBottomNodes()
+struct.setCompresionLoad(1000)
+
+struct.solve()
+
+print(struct.Beams[0].Floc())
+print(struct.Beams[1].Floc())
+print(struct.Beams[2].Floc())
+```
+
+## Features
+
+- 3D analysis of frame structures
+- Support for different types of materials
+- Calculation of stiffness matrices
+- Analysis of displacements and reactions
