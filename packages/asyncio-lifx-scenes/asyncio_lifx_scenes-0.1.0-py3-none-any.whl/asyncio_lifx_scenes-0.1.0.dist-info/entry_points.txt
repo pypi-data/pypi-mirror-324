@@ -1,0 +1,2 @@
+[console_scripts]
+lifx-scenes = asyncio_lifx_scenes.__main__:app
