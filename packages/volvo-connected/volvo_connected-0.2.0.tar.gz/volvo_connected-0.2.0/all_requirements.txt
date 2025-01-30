@@ -1,0 +1,27 @@
+anyio==4.8.0
+certifi==2024.12.14
+Deprecated==1.2.15
+gitdb==4.0.11
+GitPython==3.1.41
+h11==0.14.0
+h2==4.1.0
+hpack==4.0.0
+httpcore==1.0.7
+httpx==0.28.1
+hyperframe==6.0.1
+idna==3.10
+importlib_metadata==8.5.0
+microsoft-kiota-abstractions @ file:///tmp/pip-install-wtx8m58d/microsoft-kiota-http_6d0b8b9c38734cf48668ccccf85f1aef/packages/abstractions
+microsoft-kiota-http @ git+https://github.com/svrooij/kiota-python.git@65852e9720973aaf2201a8efe0723d112a4596ec#subdirectory=packages/http/httpx
+microsoft-kiota-serialization-json==1.8.0
+opentelemetry-api==1.29.0
+opentelemetry-sdk==1.29.0
+opentelemetry-semantic-conventions==0.50b0
+setuptools==69.0.3
+smmap==5.0.1
+sniffio==1.3.1
+std-uritemplate==2.0.1
+typing_extensions==4.12.2
+urllib3==1.26.17
+wrapt==1.17.2
+zipp==3.21.0

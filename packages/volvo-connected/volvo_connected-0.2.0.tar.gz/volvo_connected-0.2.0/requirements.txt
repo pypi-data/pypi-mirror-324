@@ -1,0 +1,2 @@
+microsoft-kiota-http==1.9.1
+microsoft-kiota-serialization-json==1.9.1
