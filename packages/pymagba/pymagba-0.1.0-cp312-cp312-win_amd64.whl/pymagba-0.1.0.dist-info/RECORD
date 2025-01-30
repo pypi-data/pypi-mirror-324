@@ -1,0 +1,12 @@
+pymagba-0.1.0.dist-info/METADATA,sha256=yif8e9pVqHV6bNFa0-wEG8HALL8F7Qu4o8oA8FkDM50,706
+pymagba-0.1.0.dist-info/WHEEL,sha256=2fdNHxJvS2bAcI00delQ4QrnR7Oujl4cP2y-SRm5elU,96
+pymagba-0.1.0.dist-info/licenses/LICENSE,sha256=CKTtKd8g5yDhAcCVtVRvdiDFumkbXyvadJFBPSUNNjQ,1478
+pymagba/fields/_fields.py,sha256=s-JqhuwiBUUyRpArqX1h0RUshSBFBMEjn9FniJU_uag,2307
+pymagba/fields/__init__.py,sha256=-jrwaLbxA3XQZMon-I_TAc5Z7HuyFkt4ZoxZesLjirE,165
+pymagba/sources/_sources.py,sha256=tmxQdk7yoLdM6TH8qOqSiN5riO_huJRghV9t-h_wmfs,6896
+pymagba/sources/__init__.py,sha256=EyMIH9fsEqZcaftrlLb26oxfJoMuAYYjGPEDFQb5iJQ,185
+pymagba/transform.py,sha256=JLcjTYl_GVlzzbOnaLMjVK7_CK1pdRu969jNC2R7Wvs,1157
+pymagba/util.py,sha256=-eEEv2E-ENTko4WXMYjoChPrtx3nzeBFPWb9ohQMol8,991
+pymagba/__init__.py,sha256=s5nqrab2T0AmG_kX4zFMpwKhHMo9zJ_ol-tVI8C_QCI,184
+pymagba/pymagba_binding.cp312-win_amd64.pyd,sha256=OVE_wfDl7caXQUY_NLK9vbZniBqYmnSPg33gmuaVeFI,426496
+pymagba-0.1.0.dist-info/RECORD,,
