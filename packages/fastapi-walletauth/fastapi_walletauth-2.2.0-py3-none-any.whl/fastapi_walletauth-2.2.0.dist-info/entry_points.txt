@@ -1,0 +1,3 @@
+[console_scripts]
+walletauth-generate-keys=fastapi_walletauth.generate_keys:main
+
