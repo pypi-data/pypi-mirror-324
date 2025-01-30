@@ -1,0 +1,9 @@
+include jdProcessFileWatcher/translations/*.ts
+exclude jdProcessFileWatcher/ui_compiled/*
+include jdProcessFileWatcher/Version.txt
+include jdProcessFileWatcher/dbus/*.xml
+include jdProcessFileWatcher/Icon.png
+include jdProcessFileWatcher/ui/*.ui
+include jdProcessFileWatcher/data/*
+include BuildBackend.py
+exclude tools/

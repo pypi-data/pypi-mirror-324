@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">jdProcessFileWatcher</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tab_widget">
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Actions</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="actions_table_layout">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Files</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="file_tree_layout">
+        <item>
+         <widget class="QTreeWidget" name="file_tree">
+          <property name="columnCount">
+           <number>3</number>
+          </property>
+          <column>
+           <property name="text">
+            <string>Path</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Actions</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Actions (recursive)</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuAttach_Process">
+     <property name="title">
+      <string>Attach Process</string>
+     </property>
+     <addaction name="attach_process_select_action"/>
+     <addaction name="attach_process_pid_action"/>
+    </widget>
+    <addaction name="run_command_action"/>
+    <addaction name="run_program_action"/>
+    <addaction name="separator"/>
+    <addaction name="menuAttach_Process"/>
+    <addaction name="separator"/>
+    <addaction name="load_strace_log_action"/>
+    <addaction name="separator"/>
+    <addaction name="export_action"/>
+    <addaction name="separator"/>
+    <addaction name="exit_action"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="settings_action"/>
+   </widget>
+   <widget class="QMenu" name="aboutMenu">
+    <property name="title">
+     <string notr="true">?</string>
+    </property>
+    <addaction name="show_welcome_dialog_action"/>
+    <addaction name="separator"/>
+    <addaction name="view_source_action"/>
+    <addaction name="report_bug_action"/>
+    <addaction name="translate_action"/>
+    <addaction name="donate_action"/>
+    <addaction name="separator"/>
+    <addaction name="about_action"/>
+    <addaction name="about_qt_action"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Process</string>
+    </property>
+    <addaction name="terminate_process_action"/>
+    <addaction name="kill_process_action"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu"/>
+   <addaction name="menuSettings"/>
+   <addaction name="aboutMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="run_command_action">
+   <property name="text">
+    <string>Run Command</string>
+   </property>
+  </action>
+  <action name="run_program_action">
+   <property name="text">
+    <string>Run Program</string>
+   </property>
+  </action>
+  <action name="load_strace_log_action">
+   <property name="text">
+    <string>Load strace log</string>
+   </property>
+  </action>
+  <action name="exit_action">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="settings_action">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="show_welcome_dialog_action">
+   <property name="text">
+    <string>Show welcome dialog</string>
+   </property>
+  </action>
+  <action name="about_action">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="about_qt_action">
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+  </action>
+  <action name="view_source_action">
+   <property name="text">
+    <string>View Source</string>
+   </property>
+  </action>
+  <action name="report_bug_action">
+   <property name="text">
+    <string>Report Bug</string>
+   </property>
+  </action>
+  <action name="translate_action">
+   <property name="text">
+    <string>Translate</string>
+   </property>
+  </action>
+  <action name="donate_action">
+   <property name="text">
+    <string>Donate</string>
+   </property>
+  </action>
+  <action name="terminate_process_action">
+   <property name="text">
+    <string>Terminate</string>
+   </property>
+  </action>
+  <action name="kill_process_action">
+   <property name="text">
+    <string>Kill</string>
+   </property>
+  </action>
+  <action name="attach_process_select_action">
+   <property name="text">
+    <string>Select</string>
+   </property>
+  </action>
+  <action name="attach_process_pid_action">
+   <property name="text">
+    <string>Enter PID</string>
+   </property>
+  </action>
+  <action name="export_action">
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
