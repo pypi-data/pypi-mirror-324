@@ -1,0 +1,15 @@
+langchain-openai
+langchain-ollama
+langchain-anthropic
+langchain
+python-dotenv
+pydantic
+tiktoken
+
+[dev]
+black
+isort
+pylint
+pyright
+pytest
+pytest-asyncio
