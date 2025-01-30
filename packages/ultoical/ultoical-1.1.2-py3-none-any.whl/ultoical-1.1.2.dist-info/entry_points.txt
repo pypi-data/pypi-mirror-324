@@ -1,0 +1,2 @@
+[console_scripts]
+ultoical = ultoical.__main__:main
