@@ -1,0 +1,14 @@
+mad_prefect/data_assets/__init__.py,sha256=rzYmjShBAdilG9nlJPqGLBqcibKavNBXP486k3vmoro,1076
+mad_prefect/data_assets/data_artifact.py,sha256=wV-o8noBXFnE-KeWO-HlHK5aDpYtOc6rd5npst3TI3w,10825
+mad_prefect/data_assets/data_artifact_collector.py,sha256=w2OXrZtlwmjzXW9wcstMQ7VjwEkn0U7CszMf7Bzm7Fo,2121
+mad_prefect/data_assets/data_artifact_query.py,sha256=PxJ0eH6IdKzkmef4P0cH6RFcwPQfzbwy5Dc1FwY0Vzs,6154
+mad_prefect/data_assets/data_asset.py,sha256=CcIqjuJ11wSqBO8_ihIlV6Wvepz5dYX9l25cZ_jvcGA,13850
+mad_prefect/data_assets/data_asset_run.py,sha256=UQfQzOl_VnRXUJLRdDTWJw2OQkIrBjqS6SQ76S54j-s,732
+mad_prefect/data_assets/options.py,sha256=ndW2yeUX3fGjvOzJuwYQIlFEp-AXnn_wUob6jT-H744,2752
+mad_prefect/data_assets/utils.py,sha256=KsAjP_veVUMfoGGdeiB2yyzzqw4CrmX1O1ALkwgfzjA,382
+mad_prefect/duckdb.py,sha256=mNL3_V6xYuUqISucu3r7xsdSAWJydCrUE1mqePmOg9Q,1040
+mad_prefect/filesystems.py,sha256=AYkuduOcjkoMw-8w9vVAPqQEr-oqyXcBDFmqc83YPHE,7656
+mad_prefect/json/mad_json_encoder.py,sha256=DQ56oFN6oKKVc_qtBbUBEKCqYCcYq4N1bsXkMKF_TnU,901
+mad_prefect-2.1.0.dist-info/METADATA,sha256=rx65Tl9u1AWWfPqTKC7S5QpRcXfiMFC-NRpmUzV8TF0,16219
+mad_prefect-2.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+mad_prefect-2.1.0.dist-info/RECORD,,
