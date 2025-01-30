@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+filecannon/__init__.py
+filecannon/ai_manager.py
+filecannon/file_manager.py
+filecannon/filecannon.py
+filecannon.egg-info/PKG-INFO
+filecannon.egg-info/SOURCES.txt
+filecannon.egg-info/dependency_links.txt
+filecannon.egg-info/entry_points.txt
+filecannon.egg-info/requires.txt
+filecannon.egg-info/top_level.txt
