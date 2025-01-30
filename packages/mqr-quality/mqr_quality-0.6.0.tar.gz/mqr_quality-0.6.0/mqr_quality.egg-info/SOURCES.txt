@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+mqr_quality.egg-info/PKG-INFO
+mqr_quality.egg-info/SOURCES.txt
+mqr_quality.egg-info/dependency_links.txt
+mqr_quality.egg-info/requires.txt
+mqr_quality.egg-info/top_level.txt

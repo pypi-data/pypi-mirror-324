@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mqr-quality"
+version = "0.6.0"
+authors = [
+    { name="Nikolas Crossan" },
+    { name="Kevin Otto" },
+]
+maintainers = [
+    { name = "mqr developers", email="mqr.python@gmail.com" },
+]
+description = "Design and manufacturing quality improvement toolkit"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Manufacturing",
+]
+keywords = [
+    "quality", "manufacturing", "six sigma", "design of experiments", "dmaic",
+    "anova", "grr", "msa"]
+dependencies = [
+    "mqrpy"
+]
+
+[project.urls]
+Documentation = "https://nklsxn.github.io/mqr/latest/"
+Repository = "https://github.com/nklsxn/mqr"
+
+[tool.setuptools.packages]
+find = {}
