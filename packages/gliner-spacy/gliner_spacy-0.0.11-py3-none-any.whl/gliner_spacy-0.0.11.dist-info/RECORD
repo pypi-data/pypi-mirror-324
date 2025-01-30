@@ -1,0 +1,9 @@
+gliner_spacy/__init__.py,sha256=xEOGfz-3EMVBX9ybADDqdnOIZkl8qkL-wxjatThSJF8,60
+gliner_spacy/pipeline.py,sha256=AAlptu7Xpr3g9z0mcAWXLaJs7EHbt1qWH-kEpr4TXRM,8113
+gliner_spacy/version.py,sha256=OaIl7v-6zEWEY90Jlh6yoBjO3zWX1oX7RsvqrK3o1TU,23
+gliner_spacy-0.0.11.dist-info/LICENSE,sha256=UAq3lKRYRntp3q4v7VoSthKvafpKHHXGg8qnGnbmOdE,1073
+gliner_spacy-0.0.11.dist-info/METADATA,sha256=AdTC8UVfHKgxWCP8Cft7Hxs0WG8n2D1XpO86xqrJrAA,4390
+gliner_spacy-0.0.11.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+gliner_spacy-0.0.11.dist-info/entry_points.txt,sha256=6YNblq1zlax5c_qbOV4Y531u_C0d8eDEcL7b4H8rDpA,112
+gliner_spacy-0.0.11.dist-info/top_level.txt,sha256=GAvc1Xmru1J3U4T-NmMwfFw6O4cQiscb70HIfVZQsg8,13
+gliner_spacy-0.0.11.dist-info/RECORD,,
