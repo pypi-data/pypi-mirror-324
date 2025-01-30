@@ -1,0 +1,11 @@
+spidery/__init__.py,sha256=dReLLtUjgvhEcuJDq_ZPUqV6Psjd9c6ci4jVA6kZPMQ,2512
+spidery/spidery.py,sha256=jiLMa5YKGqzVakwwmzd_1pcC6pUGGuF6SI6bRVPBDcI,40702
+spidery/__tests__/e2e_withAuth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spidery/__tests__/e2e_withAuth/test.py,sha256=LnXjrLSk7upOzzxOEjW4_nubvboX2OIt_dOnwrJszNE,7920
+spidery/__tests__/v1/e2e_withAuth/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spidery/__tests__/v1/e2e_withAuth/test.py,sha256=et-q0_uWcJPyABSMQAiX7r7IefSm-c_76DrROYRgeQE,19881
+spidery_py-1.10.2.dist-info/LICENSE,sha256=nPCunEDwjRGHlmjvsiDUyIWbkqqyj3Ej84ntnh0g0zA,1084
+spidery_py-1.10.2.dist-info/METADATA,sha256=d6VWpAqSfwgh8e_00-E5iCxthZxufV1TzXwCo8yv__4,10771
+spidery_py-1.10.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+spidery_py-1.10.2.dist-info/top_level.txt,sha256=SchdRFUmA2-tac7hRJk-mt8QXPaf7gn1By9lZTl0lpk,8
+spidery_py-1.10.2.dist-info/RECORD,,
