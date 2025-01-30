@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: picoreo
+Version: 0.1
+Summary: spatial diversity sampling for machine learning or statistical study applied to geographic domain
+Home-page: https://github.com/IGNF/picoreo
+Author: samy khelifi
+Author-email: samy.khelifi@ign.fr
+Project-URL: Bug Tracker, https://github.com/IGNF/picoreo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy >=1.19
+Requires-Dist: pandas >=1
+Requires-Dist: geopandas >=0.10
+Requires-Dist: rasterio >=1.1.5
+
+# Picoreo, a python library for geographical aware sampling
+
+## Installation
+
+### Install requirements
+
+### From pip:
+
+  ```bash
+  pip install picoreo
+  # or
+  pip install picoreo==X.Y # for a specific version
+  ```
+
+<details>
+  <summary>Other installation options</summary>
+
+  #### From source:
+
+  ```bash
+  python setup.py install
+  ```
+
+  #### From source with symbolic links:
+
+  ```bash
+  pip install -e .
+  ```
+
+  #### From source using pip:
+
+  ```bash
+  pip install git+https://github.com/IGNF/picoreo
+  ```
+
+</details>
