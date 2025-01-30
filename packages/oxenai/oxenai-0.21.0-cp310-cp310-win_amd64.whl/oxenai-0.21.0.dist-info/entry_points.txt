@@ -1,0 +1,2 @@
+[fsspec.specs]
+oxen=oxen.fsspec_backend:OxenFS
