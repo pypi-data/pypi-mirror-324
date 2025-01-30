@@ -1,0 +1,5 @@
+[finn.manifest]
+finn_builtins = finn_builtins:builtins.yaml
+
+[pytest11]
+finn = finn.utils._testsupport
