@@ -1,0 +1,14 @@
+anyio~=4.4.0
+beartype~=0.18.5
+environs~=10.3.0
+jsonschema~=4.22.0
+openai~=1.55.0
+pandas~=2.2.2
+pydantic[email]~=2.10.2
+uvloop~=0.21.0
+xxhash~=3.5.0
+unique-namer>=1.6.1
+typer[all]>=0.15.1
+textual>=1.0.0
+trogon[typer]>=0.6.0
+typer-config[yaml]>=1.4.2
