@@ -1,0 +1,10 @@
+arrowsqlbcpy-0.0.2.dev0.data/purelib/arrowsqlbcpy/__init__.py,sha256=MDt7vfXU__KAabq_aCB-Nry8BguqytFtqHSdVEqzPh4,2276
+arrowsqlbcpy-0.0.2.dev0.data/purelib/arrowsqlbcpy/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arrowsqlbcpy-0.0.2.dev0.data/purelib/arrowsqlbcpy/lib/ArrowSqlBulkCopyNet.dylib,sha256=OFNsSLpE8u1dZuwbiah-dyviPkuea8xSJfeN0HwJLU4,33939256
+arrowsqlbcpy-0.0.2.dev0.data/purelib/arrowsqlbcpy/lib/ArrowSqlBulkCopyNet.dylib.dsym/Contents/Info.plist,sha256=LDPcb08QG2usno5aTiIo33cNmibdSQeQEbJN9IhOZU0,654
+arrowsqlbcpy-0.0.2.dev0.data/purelib/arrowsqlbcpy/lib/ArrowSqlBulkCopyNet.dylib.dsym/Contents/Resources/DWARF/ArrowSqlBulkCopyNet.dylib,sha256=y3VaTU5Cm7oD9ja1hkcHzLIFXkqbB-o69She2c7B0Vc,72020327
+arrowsqlbcpy-0.0.2.dev0.data/purelib/arrowsqlbcpy/lib/ArrowSqlBulkCopyNet.dylib.dsym/Contents/Resources/Relocations/x86_64/ArrowSqlBulkCopyNet.dylib.yml,sha256=pdClYz_SGjNhD2sXvHfT3dBhBbytTk8r8sDQ76qlmio,875540
+arrowsqlbcpy-0.0.2.dev0.dist-info/METADATA,sha256=X-pHW6Q3KvyEVcAnW66IAmjWyX9oE9ccx5cvpPc_7DI,599
+arrowsqlbcpy-0.0.2.dev0.dist-info/WHEEL,sha256=orpCz_JJFAUeF0-kUBwYoTzNk-BPTKxnNHa4kLcp-uI,115
+arrowsqlbcpy-0.0.2.dev0.dist-info/top_level.txt,sha256=ZUwN7N7zsKO7pwtLZQhGwylBdGXqeQkNCpYEfi97hz4,17
+arrowsqlbcpy-0.0.2.dev0.dist-info/RECORD,,
