@@ -1,0 +1,12 @@
+auto_intern/__init__.py,sha256=O3EGpTv9BCxBdDydjCllTnynXItLaO6n-OMfZtU9OoQ,137
+auto_intern/__main__.py,sha256=qk7H19hUaGZGMh4cgBLpog5yHMItEn5PYRSCrkw3ztM,205
+auto_intern/chatgpt.py,sha256=jDEU-eKabXORjgGS1sKjaPRehTu3ucbdGO_d29ZypAQ,8631
+auto_intern/main.py,sha256=93VHHUZlAiZkdhki5JIyrI0fQrljyrQkKuurYweykkU,20172
+auto_intern/report.py,sha256=AeK_dutyf-YdO9i8ywNPF-VPyuB0F9iLZYeg7u4SyUg,7610
+auto_intern/resume.py,sha256=GDD4W1Ri68EF2n2TUSIIXzk054JOP7CKhz8Tlj9IGXU,8749
+auto_intern-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+auto_intern-0.1.0.dist-info/METADATA,sha256=0daP2q22EwMjaLwFigSu1k80eyd-QmhX8S0mgFIrADQ,1034
+auto_intern-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+auto_intern-0.1.0.dist-info/entry_points.txt,sha256=s-yWk5-j23kJGuAkgvqR40E3CccQdU5S3FS1u465h0M,54
+auto_intern-0.1.0.dist-info/top_level.txt,sha256=2sl0E4kXaMdd0zDjz-whT3poAgRePkGGkfd_pHQYg1A,12
+auto_intern-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,2 @@
+[console_scripts]
+auto_intern = auto_intern.main:main
