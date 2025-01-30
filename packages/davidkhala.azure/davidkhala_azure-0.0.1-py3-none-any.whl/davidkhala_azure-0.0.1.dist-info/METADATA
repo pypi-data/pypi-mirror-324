@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: davidkhala.azure
+Version: 0.0.1
+Summary: @davidkhala/azure-utils
+Author: David Liu
+Author-email: david-khala@hotmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: azure-identity
+Description-Content-Type: text/markdown
+
+# pip dependencies
+- `azure-identity`
+- `azure-core`
+
