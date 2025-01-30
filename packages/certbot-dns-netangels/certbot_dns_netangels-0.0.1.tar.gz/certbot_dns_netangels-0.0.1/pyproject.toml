@@ -1,0 +1,48 @@
+[project]
+name = "certbot-dns-netangels"
+version = "0.0.1"
+description = "Netangels DNS Authenticator plugin for Certbot"
+authors = [
+    { name = "Maksimov Denis", email = "maximden@mail.ru" }
+]
+license = { text = "Apache License 2.0" }
+readme = "README.rst"
+homepage = "https://github.com/navigatore300/certbot-dns-netangels"
+keywords = ["certbot", "dns", "netangels", "authenticator", "plugin"]
+dependencies = [
+    "python>=3.8",
+    "acme>=2.11.0",
+    "certbot>=2.11.0",
+    "tldextract",
+    "setuptools",
+    "requests",
+    "mock",
+    "requests-mock"
+]
+
+[tool.poetry]
+name = "certbot-dns-netangels"
+version = "0.0.1"
+description = "netangels DNS Authenticator plugin for Certbot"
+authors = ["Maksimov Denis ‹maximden@mail.ru>"]
+license = "Apache License 2.0"
+readme = "README, rst"
+homepage = "https://github.com/navigatore300/certbot-dns-netangels"
+keywords = ["certbot", "dns", "netangels", "authenticator", "plugin"]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+acme = ">=2.11.0"
+certbot = ">=2.11.0"
+setuptools = "*"
+requests = "*"
+tldextract = "*"
+mock = "*"
+requests-mock = "*"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.urls]
+Homepage = "https://github.com/navigatore300/certbot-dns-netangels"
