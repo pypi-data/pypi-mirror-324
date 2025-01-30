@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: uncert
+Version: 0.1.2
+Summary: Simple arithmetic and displaying of measurements and uncertainties
+Author-email: Zhang Maiyun <maz005@ucsd.edu>
+Project-URL: Homepage, https://github.com/myzhang1029/uncert
+Project-URL: Issues, https://github.com/myzhang1029/uncert/issues
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# measurements
+Easy propagation and display of uncertainty in Python
