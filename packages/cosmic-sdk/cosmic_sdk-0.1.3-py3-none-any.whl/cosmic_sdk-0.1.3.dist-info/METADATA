@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: cosmic-sdk
+Version: 0.1.3
+Summary: Collection of service connectors
+Project-URL: Homepage, https://github.com/deepkalilabs/cosmic-sdk
+Project-URL: Bug Tracker, https://github.com/deepkalilabs/cosmic-sdk/issues
+Author-email: Charles Javelona <charlesjavelona@gmail.com>
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: requests>=2.31.0
+Description-Content-Type: text/markdown
+
+# cosmic-sdk
+python package for cosmic
+
+
+## Installation
+
+```bash
+pip install cosmic-sdk
+```
+
+## Usage
+
+```python
+from cosmic.connectors import PostHogService
+```
