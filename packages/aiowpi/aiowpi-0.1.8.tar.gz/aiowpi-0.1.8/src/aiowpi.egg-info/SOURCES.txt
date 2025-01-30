@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/aiowpi/__init__.py
+src/aiowpi/client.py
+src/aiowpi/decorators.py
+src/aiowpi/error.py
+src/aiowpi.egg-info/PKG-INFO
+src/aiowpi.egg-info/SOURCES.txt
+src/aiowpi.egg-info/dependency_links.txt
+src/aiowpi.egg-info/requires.txt
+src/aiowpi.egg-info/top_level.txt
+tests/test.py

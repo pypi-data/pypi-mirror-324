@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiowpi"
+version = "0.1.8"
+description = "Async Python client for the World of Warships API."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+    { name = "INTMAX", email = "INT_MAX@hotmail.com" }
+]
+keywords = ["async", "wows", "api", "client", "aiolimiter"]
+
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "aiohttp",
+    "aiolimiter",
+]
+
+[project.urls]
+homepage = "https://github.com/Int-0X7FFFFFFF/aiowpi"
+repository = "https://github.com/Int-0X7FFFFFFF/aiowpi"
