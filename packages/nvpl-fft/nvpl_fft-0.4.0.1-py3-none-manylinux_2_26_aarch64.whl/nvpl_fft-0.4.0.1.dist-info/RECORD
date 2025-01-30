@@ -1,0 +1,14 @@
+nvpl/include/nvpl_fft_version.h,sha256=76NqR3-XUfzKxqH6Y5tPqMdYMKDRcIKBT6XGMTv-sGc,210
+nvpl/include/nvpl_fftw.h,sha256=EUecM5AFbU_KOoXMaI1o5BV8PjW1ty-nHonOELggbaQ,22925
+nvpl/include/nvpl_fftw3.f,sha256=FfemRMfzdpUfTlQlncWtRtyuTOKWECBSmvHBx_CrwA8,2449
+nvpl/include/nvpl_fftw3.f03,sha256=4TCXsEB8fkZPpF5MDal_xSWFOZVxfdhRWbEiKBhwvE0,33591
+nvpl/include/nvpl_fftw/fftw3.f,sha256=FfemRMfzdpUfTlQlncWtRtyuTOKWECBSmvHBx_CrwA8,2449
+nvpl/include/nvpl_fftw/fftw3.f03,sha256=4TCXsEB8fkZPpF5MDal_xSWFOZVxfdhRWbEiKBhwvE0,33591
+nvpl/include/nvpl_fftw/fftw3.h,sha256=EUecM5AFbU_KOoXMaI1o5BV8PjW1ty-nHonOELggbaQ,22925
+nvpl/include/nvpl_fftw/nvpl_fft_version.h,sha256=76NqR3-XUfzKxqH6Y5tPqMdYMKDRcIKBT6XGMTv-sGc,210
+nvpl/lib/libnvpl_fftw.so.0,sha256=aSNfbP8_FwfiQKN8cQBACFzsf_DxwUXIYJ94ct_ng9c,60169993
+nvpl_fft-0.4.0.1.dist-info/LICENSE,sha256=2BF0ZS8MRIpXNq_F1QZjYGhjv9bujIQW-9mmKMb4gC8,19072
+nvpl_fft-0.4.0.1.dist-info/METADATA,sha256=jmXNK2O5_D1aWz93OiLx_pIOZ5MJ-AuN38_VbLmJFE0,22454
+nvpl_fft-0.4.0.1.dist-info/WHEEL,sha256=_FBXoFp-1Ohhvcuij8DsWjbx22y1rUzrI-AH4MaN7m4,110
+nvpl_fft-0.4.0.1.dist-info/top_level.txt,sha256=76Zz8Z9v8NU505VQEmNoOsSZ5o8B3zCwL0vGq6p-8RA,5
+nvpl_fft-0.4.0.1.dist-info/RECORD,,
