@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: fasttttsandbox
+Version: 0.0.4
+Summary: An implementation of tic tac toe where players each make 'n' moves per turn
+Project-URL: Homepage, https://github.com/Timothy-Flavin/FastTTTSandbox/
+Project-URL: Bug Tracker, https://github.com/Timothy-Flavin/FastTTTSandbox/issues
+Author-email: Timothy Flavin <timothy.c.flavin@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+FastTTTSandbox implements tic tac toe in pythin using bitwise logic for fast game speed. FastTTTSandbox also allows for the `n_moves` keyword to set the number of actions that each side, x or o, takes per turn. The intent of n_moves is to allow for 2v2 or 3v3 tic tac toe where agents on a team take their moves simultaneously and must coordinate together so as not to play the same move.
+
+All of the code is in `__init__.py` where the environment itself is only 158 lines of code with an example running like a gymnasium env at the bottom. 
