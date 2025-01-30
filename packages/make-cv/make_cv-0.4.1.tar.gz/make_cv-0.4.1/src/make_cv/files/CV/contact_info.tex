@@ -1,0 +1,27 @@
+%% Specify your last name(s) and first name(s) (as given in the .bib) to automatically bold your own name in the publications list. 
+%% One caveat: You need to write \bibnamedelima where there's a space in your name for this to work properly; or write \bibnamedelimi if you use initials in the .bib
+% \mynames{Lim/Lian\bibnamedelima Tze}
+
+%% You can specify multiple names like this, especially if you have changed your name or if you need to highlight multiple authors. See items 6–9 in the example "Journal Articles" output.
+\mynames{Helenbrook/Brian\bibnamedelima Todd,
+  Helenbrook/Brian\bibnamedelima T.,
+  Helenbrook/Brian,
+  Helenbrook/B.\bibnamedelimi,
+  Helenbrook/B.\bibnamedelimi T.}
+%% MAKE SURE THERE IS NO SPACE AFTER THE FINAL NAME IN YOUR \mynames LIST
+
+%% Photo is only shown if "usePhoto" is true
+\setboolean{usePhoto}{true}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\leftheader{%
+  {\LARGE\bfseries\sffamily Your Name Here, Ph.D.}
+
+Clarkson University, Potsdam, NY 13699-5725, (315) 268-2204
+
+  \makefield{\faEnvelope[regular]}{\href{mailto:example@gmail.com}{\texttt{example@gmail.com}}}
+  \makefield{\faLinkedin}
+  {\href{http://www.linkedin.com/in/example/}{\texttt{LinkedIn}}}
+  \makefield{\faGlobe}{\url{http://example.example.org/}}
+  % You can use a tabular here if you want to line up the fields.
+}
