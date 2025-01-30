@@ -1,0 +1,75 @@
+import logging
+log = logging.getLogger(__name__)
+
+from fnmatch import fnmatch
+import json
+
+from atom.api import List, Str
+
+from enaml.core.api import Conditional, d_
+from enaml.widgets.api import Container, DockItem
+from enaml.workbench.api import Extension
+
+from psi.controller.api import EventLogger
+from psi.core.enaml.api import ListDictTable
+from psi.experiment.api import ItemPreferences
+from psi.util import PSIJsonEncoder
+from .table_store import TableStore, TableStoreManifest
+
+class EventLog(TableStore):
+
+    name = 'event_log'
+    label = 'Event Log'
+    exclude = d_(List(Str()))
+
+    def process_table(self, data):
+        for e in self.exclude:
+            if fnmatch(data['event'], e):
+                return
+
+        data = data.copy()
+        try:
+            data['info'] = json.dumps(data['info'], cls=PSIJsonEncoder)
+        except TypeError:
+            log.error('Event log: error processing %r', data)
+            raise
+        super().process_table(data)
+
+
+enamldef EventLogManifest(TableStoreManifest): manifest:
+
+    Extension:
+        id = manifest.id + '.event_log_actions'
+        point = 'psi.controller.actions'
+
+        EventLogger:
+            command = contribution.name + '.save'
+
+    Conditional:
+        condition << manifest.contribution.show_widget
+
+        Extension:
+            id = manifest.id + '.event_log_workspace'
+            point = 'psi.experiment.workspace'
+
+            DockItem:
+                closable = False
+                name << manifest.contribution.name
+                title << manifest.contribution.label
+
+                Container:
+                    ListDictTable: table:
+                        data << manifest.contribution._data[:]
+                        column_info = {
+                            'event': {'label': 'Event Name'},
+                            'timestamp': {'label': 'Time (sec)', 'to_string': '{:.2f}'.format},
+                            'info': {'label': 'Event Info'},
+                        }
+
+        Extension:
+            id = manifest.id + '.preferences'
+            point = 'psi.experiment.preferences'
+            ItemPreferences:
+                item << table
+                name << manifest.contribution.name
+                auto_save = ['column_widths']
