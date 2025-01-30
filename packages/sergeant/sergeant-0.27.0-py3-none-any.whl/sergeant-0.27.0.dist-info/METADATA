@@ -1,0 +1,103 @@
+Metadata-Version: 2.3
+Name: sergeant
+Version: 0.27.0
+Summary: Fast, Safe & Simple Asynchronous Task Queues Written In Pure Python
+License: MIT
+Keywords: tasks,worker,queue,redis,celery
+Author: Gal Ben David
+Author-email: gal@intsights.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: hiredis (>=2,<3)
+Requires-Dist: msgpack (>=1,<2)
+Requires-Dist: orjson (>=3,<4)
+Requires-Dist: psutil (>=5,<6)
+Requires-Dist: pymongo (>=3.0,<5.0)
+Requires-Dist: redis (>=4,<5)
+Requires-Dist: typing_extensions (>=4,<5)
+Project-URL: Documentation, https://intsights.github.io/sergeant/
+Project-URL: Homepage, https://github.com/Intsights/sergeant
+Project-URL: Repository, https://github.com/Intsights/sergeant
+Description-Content-Type: text/markdown
+
+<p align="center">
+    <a href="https://github.com/intsights/sergeant">
+        <img src="https://raw.githubusercontent.com/intsights/sergeant/master/images/logo.png" alt="Logo">
+    </a>
+    <h3 align="center">
+        Fast, Safe & Simple Asynchronous Task Queues Written In Pure Python
+    </h3>
+</p>
+
+![license](https://img.shields.io/badge/MIT-License-blue)
+![Python](https://img.shields.io/badge/Python-3.7%20%7C%203.8%20%7C%203.9%20%7C%203.10%20%7C%203.11-blue)
+![Build](https://github.com/intsights/sergeant/workflows/Build/badge.svg)
+[![PyPi](https://img.shields.io/pypi/v/sergeant.svg)](https://pypi.org/project/sergeant/)
+
+## Table of Contents
+
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+  - [Performance](#performance)
+  - [Installation](#installation)
+- [Documentation](#documentation)
+- [Usage](#usage)
+- [License](#license)
+- [Contact](#contact)
+
+
+## About The Project
+
+`Sergeant` is a comprehensive distributed workers framework. The library was written in [Intsights](https://intsights.com/) after failing to use `celery` with high scale. The library focuses on process and thread safety (through process/thread killers), performance and ease of use.
+
+
+### Built With
+
+* [orjson](https://github.com/ijl/orjson)
+* [msgpack](https://github.com/msgpack/msgpack-python)
+* [pymongo](https://github.com/mongodb/mongo-python-driver)
+* [redis](https://github.com/andymccurdy/redis-py)
+* [psutil](https://github.com/giampaolo/psutil)
+
+
+### Performance
+
+Benchmark code can be found inside `benchmark` directory.
+
+
+### Installation
+
+```sh
+pip3 install sergeant
+```
+
+
+## Documentation
+
+More information can be found on the [documentation](https://intsights.github.io/sergeant/) site.
+
+## Usage
+
+Usage examples can be found inside `examples` directory.
+
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+## Contact
+
+Gal Ben David - gal@intsights.com
+
+Project Link: [https://github.com/intsights/sergeant](https://github.com/intsights/sergeant)
+
