@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: codesys-bridge
+Version: 0.1.0
+Summary: Bridge utility for CodeSys and SE Machine Expert projects - text export and transformation, version control tools
+Requires-Python: >=3.10
+Requires-Dist: ruff>=0.9.3

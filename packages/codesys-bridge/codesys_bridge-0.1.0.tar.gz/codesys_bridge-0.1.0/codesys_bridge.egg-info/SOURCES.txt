@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+codesys_bridge.egg-info/PKG-INFO
+codesys_bridge.egg-info/SOURCES.txt
+codesys_bridge.egg-info/dependency_links.txt
+codesys_bridge.egg-info/entry_points.txt
+codesys_bridge.egg-info/requires.txt
+codesys_bridge.egg-info/top_level.txt
