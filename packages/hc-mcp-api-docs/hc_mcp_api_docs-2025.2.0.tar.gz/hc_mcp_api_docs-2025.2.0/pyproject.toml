@@ -1,0 +1,21 @@
+[project]
+name = "hc-mcp-api-docs"
+version = "2025.2.0"
+description = "MCP server for our API documentation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mcp>=1.2.1",
+    "httpx>=0.28.1",
+    "pydantic>=2.10.6"
+]
+[[project.authors]]
+name = "Erik Meinders"
+email = "erik@easytocloud.com"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+hc-mcp-api-docs = "hc_mcp_api_docs:main"
