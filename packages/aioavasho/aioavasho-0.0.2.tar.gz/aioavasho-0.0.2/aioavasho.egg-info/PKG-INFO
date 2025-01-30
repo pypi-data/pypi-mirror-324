@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: aioavasho
+Version: 0.0.2
+Summary: Python async client of Avasho API, TextToSpeach service of isahab.ir
+Author-email: Salar Nosrati-Ershad <snosratiershad@gmail.com>
+Project-URL: Homepage, https://github.com/snosratiershad/aioavasho
+Keywords: avasho,tts
+Classifier: Programming Language :: Python
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx>=0.23.0
+
+# aioavasho
+Python async client of Avasho API, TextToSpeach service of isahab.ir
