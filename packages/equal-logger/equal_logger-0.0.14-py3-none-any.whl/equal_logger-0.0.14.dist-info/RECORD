@@ -1,0 +1,11 @@
+equal_logger/__init__.py,sha256=ipIe16dLWlHoDuqC8jf0aXD2yIV3GidTFAHbpKp-zJA,71
+equal_logger/logger.py,sha256=nHRrYRIvSd4ZAkdT47pYLBoTN6J_LsO4sdyVd9E0nN0,8116
+equal_logger/sql_quality_test.py,sha256=eTGjkpuy-FJp3IthcOk8XsBhC7sA2k-P1PrhxV1PIrQ,9590
+equal_logger/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+equal_logger/integrations/azure_integration.py,sha256=aypvYW600Q7s5up2YGYjomSosjPSbiVSjl2vfUtqaI4,2409
+equal_logger/integrations/gcp_integration.py,sha256=W7ucMjSJBG3I8qembuFUuJmQYmiyXO7z-sqc4xTmNAg,1675
+equal_logger-0.0.14.dist-info/LICENSE,sha256=iMiZTPc1ILwoCJW7MCQSOJdR8_nj-K9nKQbGBmvuESs,1064
+equal_logger-0.0.14.dist-info/METADATA,sha256=J7gPoCZZzqvsj9SvMCvsePs2GANfrxiGKxRm2HQkV-M,886
+equal_logger-0.0.14.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+equal_logger-0.0.14.dist-info/top_level.txt,sha256=gr_UV5yEv7XKiTZU08bEZIFGyIa1gMDByTtaKLWPFqI,13
+equal_logger-0.0.14.dist-info/RECORD,,

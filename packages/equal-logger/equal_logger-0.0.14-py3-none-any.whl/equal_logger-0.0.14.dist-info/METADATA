@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: equal_logger
+Version: 0.0.14
+Summary: A logging library for internal usage.
+Author-email: Eduardo Azzolin <eduardosoares@equalbi.com>, Gustavo Felix Gomes <gustavo@equalbi.com>
+Project-URL: Homepage, https://github.com/equalbi/equal-logger
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: azure-storage-blob==12.24.0
+Requires-Dist: azure-storage-file-datalake==12.18.0
+Requires-Dist: google-auth==2.37.0
+Requires-Dist: google-cloud-storage==2.19.0
+Requires-Dist: pyarrow==17.0.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: pyodbc==5.2.0
+Requires-Dist: google-cloud-bigquery==3.25.0
+
+# equal-logger
+Repositório do projeto interno de saúde dos projetos
+
+
+
+
+
