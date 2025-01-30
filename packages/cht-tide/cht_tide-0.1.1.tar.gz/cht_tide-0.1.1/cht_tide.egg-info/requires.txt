@@ -1,0 +1,11 @@
+numpy
+scipy
+toml
+pandas
+geopandas
+boto3
+cht_utils
+
+[tests]
+pytest
+matplotlib
