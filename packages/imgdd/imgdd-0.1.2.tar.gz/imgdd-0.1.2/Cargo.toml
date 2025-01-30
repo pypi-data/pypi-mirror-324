@@ -1,0 +1,34 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+[workspace.package]
+edition = "2021"
+license = "GPL-3.0-or-later"
+authors = ["Aaron Stopher <aaron.stopher@gmail.com>"]
+description = """
+Performance-first perceptual hashing library; perfect for handling large datasets. 
+Designed to quickly process nested folder structures, commonly found in image datasets
+"""
+repository = "https://github.com/aastopher/imgdd"
+documentation = "https://github.com/aastopher/imgdd"
+homepage = "https://github.com/aastopher/imgdd"
+
+keywords = ["imagehash", "hash", "perceptual", "deduplication", "wavelet"]
+readme = "./README.md" 
+categories = ["algorithms", "computer-vision", "data-structures", "mathematics"]
+
+
+
+
+[workspace.dependencies]
+image = "0.25.5"
+rayon = "1.10.0"
+walkdir = "2.3"
+anyhow = "1.0.95"
+log = "0.4.25"
+rustdct = "0.7.1"
+tempfile = "3.5"
+
+[profile.release]
+opt-level = 3 

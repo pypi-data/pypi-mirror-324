@@ -1,0 +1,38 @@
+[package]
+name = "imgddcore"
+version = "0.1.1"
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+documentation.workspace = true
+homepage.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+
+[dependencies]
+image.workspace = true
+rayon.workspace = true
+walkdir.workspace = true
+anyhow.workspace = true
+log.workspace = true
+rustdct.workspace = true
+criterion = { package = "codspeed-criterion-compat", version = "2.7.1", optional = true }
+
+[dev-dependencies]
+tempfile.workspace = true
+
+
+[features]
+default = []
+benchmark = ["criterion"]
+testing = []
+
+
+[[bench]]
+name = "core_benches"
+path = "benches/core_benches.rs"
+harness = false
+required-features = ["benchmark"]
