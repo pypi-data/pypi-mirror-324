@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: csc-cyb600-gabe
+Version: 1.0.6
+Author: Gabe Schlee
+Author-email: schleeg@canisius.edu
+License: Apache License Version 2.0
+License-File: LICENSE
+Requires-Dist: colorama
+
