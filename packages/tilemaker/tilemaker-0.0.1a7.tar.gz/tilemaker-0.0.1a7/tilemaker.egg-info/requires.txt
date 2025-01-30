@@ -1,0 +1,11 @@
+sqlmodel
+pydantic-settings
+numpy
+pydantic_numpy
+fastapi
+uvicorn
+matplotlib
+astropy
+pixell
+fastapi-cache2
+typer
