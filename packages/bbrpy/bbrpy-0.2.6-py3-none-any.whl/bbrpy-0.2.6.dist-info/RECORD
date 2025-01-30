@@ -1,0 +1,10 @@
+bbrpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bbrpy/cli.py,sha256=1LI9GjKxKZkCZC7g5Hle3iwv-s_Q_M0OC2e_4bJqkMc,2056
+bbrpy/generator.py,sha256=LZNrhtPItsSUc4rLnRmwpZmyCJVq-t1RKASBK1QEx78,1883
+bbrpy/models.py,sha256=2uO9yK30_Ji6tsWKPMZ26NL9Ps8XKjiXxUTGisB9aA0,4180
+bbrpy/version.py,sha256=tW7a0zn7BH_asxNCIgS6MXfHIHi6s2eN8-6mgwRmFqU,79
+bbrpy-0.2.6.dist-info/METADATA,sha256=d0Hojtpu14pmP5-vonHDI5UKnFVJEEIGCJ7-FuXJzYA,3013
+bbrpy-0.2.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+bbrpy-0.2.6.dist-info/entry_points.txt,sha256=PFHM4-4Tt7q23RTg0vNFVlGhY3ktgojr-nXPncwz2Yw,40
+bbrpy-0.2.6.dist-info/licenses/LICENSE,sha256=zWfxdigYsdoENMP2wSvFJe1xupSOXmUayUL5MwGs0Go,1075
+bbrpy-0.2.6.dist-info/RECORD,,
