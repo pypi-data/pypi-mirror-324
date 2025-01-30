@@ -1,0 +1,10 @@
+funcnodes
+funcnodes_pandas>=0.2.3
+funcnodes_images
+plotly>=6.0.0
+
+[:sys_platform != "win32"]
+kaleido==0.2.1
+
+[:sys_platform == "win32"]
+kaleido==0.1.0post1
