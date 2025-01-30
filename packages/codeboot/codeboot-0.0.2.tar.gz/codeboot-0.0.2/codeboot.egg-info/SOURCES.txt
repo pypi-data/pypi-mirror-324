@@ -1,0 +1,8 @@
+README.md
+codeboot.py
+setup.py
+codeboot.egg-info/PKG-INFO
+codeboot.egg-info/SOURCES.txt
+codeboot.egg-info/dependency_links.txt
+codeboot.egg-info/entry_points.txt
+codeboot.egg-info/top_level.txt
