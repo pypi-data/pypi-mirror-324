@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "quantfe"
+version = "0.1.1"
+description = "A Python package for quantitative finance"
+authors = ["chanstar9 <traintion9@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/chanstar9/QuantFE"
+homepage = "https://github.com/chanstar9/QuantFE"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+prettytable = "^3.10.0"
+numpy = "^2.0.0"
+pandas = "^2.2.2"
+ipython = "^8.26.0"
+scipy = "^1.14.0"
+matplotlib = "^3.9.1"
+numba = "^0.60.0"
+quantlib = "^1.35"
+tqdm = "^4.66.5"
+openpyxl = "^3.1.5"
+mysql-connector-python = "^9.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
