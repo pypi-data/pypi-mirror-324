@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/sprite_splitter/__init__.py
+src/sprite_splitter/box.py
+src/sprite_splitter/edge_finder.py
+src/sprite_splitter/sprite_splitter.py
+src/sprite_splitter.egg-info/PKG-INFO
+src/sprite_splitter.egg-info/SOURCES.txt
+src/sprite_splitter.egg-info/dependency_links.txt
+src/sprite_splitter.egg-info/top_level.txt
+tests/test_tools.py
