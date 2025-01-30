@@ -1,0 +1,15 @@
+templates:
+  - asmflags.template
+  - ldflags.template
+  - sources.template
+  - objects.template
+  - Makefile.template
+  - main.template
+
+modules:
+  - asmflags.mk
+  - ldflags.mk
+  - sources.mk
+  - objects.mk
+  - Makefile
+  - main.s
