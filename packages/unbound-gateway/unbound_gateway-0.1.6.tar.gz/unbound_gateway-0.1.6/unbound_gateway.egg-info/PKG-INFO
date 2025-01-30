@@ -1,0 +1,105 @@
+Metadata-Version: 2.2
+Name: unbound-gateway
+Version: 0.1.6
+Summary: Python client library for the Unbound API
+Home-page: https://github.com/websentry-ai/gateway-python-sdk
+Author: Unbound Security
+Author-email: engg@websentry.ai
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: httpx
+Requires-Dist: typing_extensions<5.0,>=4.7.1
+Requires-Dist: pydantic>=1.10.0
+Requires-Dist: anyio<5,>=3.5.0
+Requires-Dist: distro<2,>=1.7.0
+Requires-Dist: sniffio
+Requires-Dist: cached-property
+Requires-Dist: tqdm>4
+Requires-Dist: types-requests
+Requires-Dist: jiter<1,>=0.4.0
+Requires-Dist: requests>=2.31.0
+Provides-Extra: dev
+Requires-Dist: mypy<2.0,>=0.991; extra == "dev"
+Requires-Dist: black==23.7.0; extra == "dev"
+Requires-Dist: pytest==7.4.2; extra == "dev"
+Requires-Dist: python-dotenv==1.0.0; extra == "dev"
+Requires-Dist: ruff==0.0.292; extra == "dev"
+Requires-Dist: pytest-asyncio==0.23.5; extra == "dev"
+Requires-Dist: langchain-core>=0.1.0; extra == "dev"
+Requires-Dist: langchain>=0.1.0; extra == "dev"
+Requires-Dist: langchain-community>=0.0.10; extra == "dev"
+Requires-Dist: llama-index>=0.9.0; extra == "dev"
+Requires-Dist: llama-index-core>=0.9.0; extra == "dev"
+Requires-Dist: llama-index-embeddings-huggingface; extra == "dev"
+Requires-Dist: sentence-transformers>=2.2.2; extra == "dev"
+Provides-Extra: langchain-callback
+Requires-Dist: langchain-core>=0.1.0; extra == "langchain-callback"
+Requires-Dist: langchain>=0.1.0; extra == "langchain-callback"
+Requires-Dist: langchain-community>=0.0.10; extra == "langchain-callback"
+Provides-Extra: llama-index-callback
+Requires-Dist: llama-index>=0.9.0; extra == "llama-index-callback"
+Requires-Dist: llama-index-core>=0.9.0; extra == "llama-index-callback"
+Requires-Dist: llama-index-embeddings-huggingface; extra == "llama-index-callback"
+Requires-Dist: sentence-transformers>=2.2.2; extra == "llama-index-callback"
+
+## Features
+
+The Unbound SDK is built on top of the OpenAI SDK, allowing you to seamlessly integrate Unbound's advanced features while retaining full compatibility with OpenAI methods. With Unbound, you can enhance your interactions with OpenAI or any other OpenAI-like provider by leveraging robust monitoring, reliability, prompt management, and more features - without modifying much of your existing code.
+
+
+## Usage
+
+#### Prerequisites
+1. [Sign up on Unbound](https://gateway.unboundsec.dev/) and grab your Unbound API Key
+2. Add your API Keys to Unbound's API Keys page and keep it handy
+
+```bash
+# Installing the SDK
+
+$ pip install unbound-gateway
+```
+
+#### Making a Request to OpenAI
+* Unbound fully adheres to the OpenAI SDK signature. You can instantly switch to Unbound and start using our production features right out of the box. <br />
+* Just replace `from openai import OpenAI` with `from unbound import Unbound`:
+```py
+from unbound import Unbound
+
+unbound = Unbound(
+    base_url="UNBOUND_BASE_URL",
+    api_key="UNBOUND_API_KEY",
+)
+
+chat_completion = unbound.chat.completions.create(
+    messages = [{ "role": 'user', "content": 'Say this is a test' }],
+    model = 'gpt-4'
+)
+
+print(chat_completion)
+```
+
+#### Async Usage
+* Use `AsyncUnbound` instead of `Unbound` with `await`:
+```py
+import asyncio
+from unbound import AsyncUnbound
+
+unbound = AsyncUnbound(
+    base_url="UNBOUND_BASE_URL",
+    api_key="UNBOUND_API_KEY"
+)
+
+async def main():
+    chat_completion = await unbound.chat.completions.create(
+        messages=[{'role': 'user', 'content': 'Say this is a test'}],
+        model='gpt-4'
+    )
+
+    print(chat_completion)
+
+asyncio.run(main())
+```

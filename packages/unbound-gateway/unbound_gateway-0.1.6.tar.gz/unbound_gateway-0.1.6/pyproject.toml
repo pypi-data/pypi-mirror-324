@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.mypy]
+exclude = 'unbound/_vendor'
+ignore_missing_imports = true
+follow_imports = "silent"
+disable_error_code = ['import-untyped', 'import-not-found']
+
+[[tool.mypy.overrides]]
+module = 'unbound._vendor.*'
+ignore_errors = true
+
+[tool.black]
+force-exclude = '''(unbound/_vendor)/'''
+
+[tool.ruff]
+exclude =  ["unbound/_vendor"]
