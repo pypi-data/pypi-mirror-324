@@ -1,0 +1,7 @@
+recursive-include auth_tg/static *
+recursive-include auth_tg/templates/admin *
+recursive-include auth_tg/templates/auth_tg *
+recursive-include auth_tg/management/commands *
+recursive-include auth_tg *.py
+include README.md
+include LICENSE
