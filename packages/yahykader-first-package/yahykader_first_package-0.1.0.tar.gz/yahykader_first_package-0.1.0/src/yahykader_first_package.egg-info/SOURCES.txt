@@ -1,0 +1,9 @@
+pyproject.toml
+src/yahykader_first_package/__init__.py
+src/yahykader_first_package/main.py
+src/yahykader_first_package.egg-info/PKG-INFO
+src/yahykader_first_package.egg-info/SOURCES.txt
+src/yahykader_first_package.egg-info/dependency_links.txt
+src/yahykader_first_package.egg-info/entry_points.txt
+src/yahykader_first_package.egg-info/requires.txt
+src/yahykader_first_package.egg-info/top_level.txt
