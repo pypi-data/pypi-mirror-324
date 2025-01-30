@@ -1,0 +1,12 @@
+diffindiff/__init__.py,sha256=7pxDIcdFF-h4ZZ8f7OVLmtg-68nOl2Fsp0NSvAkMELs,267
+diffindiff/didanalysis.py,sha256=TTnLgcgyNSS4OaZ6uPdYOoRjpm3-BrDRvmUlDbXf8lI,81970
+diffindiff/diddata.py,sha256=7J9S0qjuiPCU4i1mchV2Z3B0zNlkmaXjPFFn9Eo3LlY,28310
+diffindiff/didtools.py,sha256=qDpXcVf8oL_3TVqnNBPUcLpopG0vagMto08Z8CzgkAM,5720
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_didanalysis.py,sha256=BR42h2C8uGmAVL0fFOvauxWS1AKZ50UHhkuxzxEvZ_Q,2778
+tests/test_diddata.py,sha256=DRfMuTRIHQEQ297NXhfxHMO0jW_uYz2YEbhHQNMYw6I,8643
+diffindiff-1.0.1.dist-info/LICENSE.md,sha256=u3AcTcaTSXb8612WLvicno3bOniIYC92S94MPAjZIw0,1090
+diffindiff-1.0.1.dist-info/METADATA,sha256=RA0_49SICz8V0-zgo_44knClquamtYzFplN_QhVuvWA,3469
+diffindiff-1.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+diffindiff-1.0.1.dist-info/top_level.txt,sha256=sMspABklPQIK1re94YJN-aVpH5SkF9OqF8y8IWPpkVs,17
+diffindiff-1.0.1.dist-info/RECORD,,
