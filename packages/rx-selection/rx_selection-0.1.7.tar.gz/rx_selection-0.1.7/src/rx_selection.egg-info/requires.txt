@@ -1,0 +1,13 @@
+data-manipulation-utilities
+rx_data
+numexpr
+numpy
+jacobi
+joblib
+pandas
+numpy>=2.2.2
+matplotlib
+ap_utilities
+
+[dev]
+pytest
