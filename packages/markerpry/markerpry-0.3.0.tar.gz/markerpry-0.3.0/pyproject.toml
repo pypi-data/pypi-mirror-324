@@ -1,0 +1,113 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "markerpry"
+version = "0.3.0"
+description = "A library for parsing and transforming Python packaging markers"
+requires-python = ">=3.7"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+dependencies = [
+    "typing-extensions>=4.0.0",
+    "packaging>=23.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.1.0",
+]
+
+[project.urls]
+Documentation = "https://github.com/intentionally-left-nil/markerpry#readme"
+Issues = "https://github.com/intentionally-left-nil/markerpry#readme"
+Source = "https://github.com/intentionally-left-nil/markerpry#readme"
+
+[tool.hatch.version]
+path = "markerpry/__about__.py"
+
+[tool.hatch.envs.default]
+dependencies = [
+  "coverage[toml]>=6.5",
+  "pytest",
+  "pytest-cov>=4.1.0",
+]
+[tool.hatch.envs.default.scripts]
+test = "pytest {args:tests}"
+test-cov = "coverage run -m pytest {args:tests}"
+cov-report = [
+  "- coverage combine",
+  "coverage report",
+]
+cov = [
+  "test-cov",
+  "cov-report",
+]
+
+[tool.hatch.envs.lint]
+dependencies = [
+  "pytest",
+  "pytest-cov>=4.1.0",
+  "black>=23.1.0",
+  "mypy>=1.0.0",
+  "isort>=5.12.0"
+]
+[tool.hatch.envs.lint.scripts]
+typing = "mypy --install-types --non-interactive --check-untyped-defs {args:markerpry tests}"
+style = [
+  "isort --check --diff {args:.}",
+  "black --check --diff {args:.}",
+]
+fix = [
+  "isort {args:.}",
+  "black {args:.}",
+]
+all = [
+  "style",
+  "typing",
+]
+
+[[tool.hatch.envs.all.matrix]]
+python = ["3.9", "3.10", "3.11", "3.12"]
+
+[tool.hatch.envs.types]
+dependencies = [
+  "mypy>=1.0.0",
+  "pytest-mypy-plugins>=3.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive --check-untyped-defs {args:markerpry tests}"
+
+[tool.coverage.run]
+source_pkgs = ["markerpry", "tests"]
+branch = true
+parallel = true
+omit = [
+  "markerpry/__about__.py",
+]
+
+[tool.pytest.ini_options]
+addopts = "--cov --cov-report=xml --cov-report=html --cov-config=.coveragerc"
+
+[tool.coverage.paths]
+markerpry = ["markerpry", "*/markerpry/markerpry"]
+tests = ["tests", "*/markerpry/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
+
+[tool.black]
+target-version = ["py310"]
+line-length = 120
+skip-string-normalization = true
+
+[tool.isort]
+profile = "black"
+skip_glob = ["env/*"]
