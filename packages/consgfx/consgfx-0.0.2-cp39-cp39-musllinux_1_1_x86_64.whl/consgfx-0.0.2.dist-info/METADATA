@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: consgfx
+Version: 0.0.2
+Summary: Python console graphics display with Sixels and Kitty
+Author-Email: Janne Hellsten <jjhellst@gmail.com>
+Classifier: License :: OSI Approved :: BSD License
+Project-URL: Homepage, https://github.com/nurpax/consgfx
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+## Development
+
+```
+python3 -m venv .venv
+source .venv\Scripts\activate.bat
+pip install git+https://github.com/wjakob/nanobind 'scikit-build-core[pyproject]'
+pip install --no-build-isolation -ve .
+```
+
+### Configuring the libsixel build
+
+```
+meson setup --reconfigure \
+    -Dimg2sixel=enabled \
+    -Dgdk-pixbuf2=disabled \
+    -Dgd=disabled \
+    -Dlibcurl=disabled \
+    -Dpng=disabled \
+    -Djpeg=disabled \
+    build
+```
