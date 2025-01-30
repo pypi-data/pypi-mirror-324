@@ -1,0 +1,19 @@
+[package]
+name = "rustats"
+version = "0.1.5"
+edition = "2021"
+description = "Statistics library for Python powered by Rust"
+license = "MIT"  # Valid SPDX identifier
+repository = "https://github.com/luke-brosnan-cbc/RuSTATS"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "rustats"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.18", features = ["extension-module"] }
+numpy = "0.18"
+ndarray = { version = "0.15", default-features = false, features = ["std"] }
+statrs = "0.16"
