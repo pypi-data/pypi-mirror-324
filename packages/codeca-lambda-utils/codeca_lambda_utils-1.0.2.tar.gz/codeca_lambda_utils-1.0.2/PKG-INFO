@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: codeca_lambda_utils
+Version: 1.0.2
+Summary: Shared lambda utils
+Home-page: https://github.com/Codeca-Plus/lambda-utils
+Author: Kyle Hobeck
+Author-email: Kyle Hobeck <krhobeck@archdocs.dev>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: PyJWT==2.10.1
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
