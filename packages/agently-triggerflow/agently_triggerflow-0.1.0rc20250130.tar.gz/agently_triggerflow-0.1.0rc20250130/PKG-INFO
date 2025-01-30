@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: agently-triggerflow
+Version: 0.1.0rc20250130
+Summary: Agently TriggerFlow - Arrange GenAI Application Workflow Based On Event-Driven Triggers
+License: Apache-2.0
+Keywords: agently,workflow,triggerflow,event,event-driven
+Author: Agently Team
+Author-email: developer@agently.tech>
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: agently-stage (==0.2.0a1)
+Description-Content-Type: text/markdown
+
+# Agently-TriggerFlow
+Agently TriggerFlow - Arrange GenAI Application Workflow Based On Event-Driven Triggers
+
