@@ -1,0 +1,3 @@
+[console_scripts]
+stack-builder=source_code.main:main
+
