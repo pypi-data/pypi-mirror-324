@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+src/argsv/__init__.py
+src/argsv/_meta.py
+src/argsv/_pattern.py
+src/argsv/_validators.py
+src/argsv/errors.py
+src/argsv/validation.py
+src/argsv/validators.py
+src/argsv.egg-info/PKG-INFO
+src/argsv.egg-info/SOURCES.txt
+src/argsv.egg-info/dependency_links.txt
+src/argsv.egg-info/top_level.txt
+tests/test_pattern.py
+tests/test_validation.py
