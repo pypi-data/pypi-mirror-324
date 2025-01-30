@@ -1,0 +1,9 @@
+README.md
+setup.py
+ceda_elasticsearch_client.egg-info/PKG-INFO
+ceda_elasticsearch_client.egg-info/SOURCES.txt
+ceda_elasticsearch_client.egg-info/dependency_links.txt
+ceda_elasticsearch_client.egg-info/requires.txt
+ceda_elasticsearch_client.egg-info/top_level.txt
+ceda_es_client/__init__.py
+ceda_es_client/root-ca.pem
