@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: FloriaConsoleGUI
+Version: 1.2
+Summary: Framework for console GUI apps
+Author: FloriaProduction
+Author-email: FloriaProduction@yandex.ru
+License: Apache-2.0
+Project-URL: Documentation, https://FloriaConsoleGUI.github.io
+Project-URL: Source, https://github.com/FloriaProduction/FloriaConsoleGUI
+Keywords: python console gui ui ux
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: readchar
+Requires-Dist: pillow
+Requires-Dist: playsound==1.2.2
+
+## Установка
+
+Установить через pip:
+
+```bash 
+pip install FloriaConsoleGUI --upgrade
+```
+
+Или скачать исходный код из [PyPi](https://pypi.org/project/FloriaConsoleGUI/).
+
+## Использование
+
+Примеры использования можно найти в репозитории проекта на [GitHub](https://github.com/FloriaProduction/FloriaConsoleGUI/tree/main/Examples).
+
+## Документация
+
+На данный момент [документация](https://FloriaConsoleGUI.github.io) в разработке.
