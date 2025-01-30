@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+ghops/ghops.py
+ghops.egg-info/PKG-INFO
+ghops.egg-info/SOURCES.txt
+ghops.egg-info/dependency_links.txt
+ghops.egg-info/entry_points.txt
+ghops.egg-info/requires.txt
+ghops.egg-info/top_level.txt
