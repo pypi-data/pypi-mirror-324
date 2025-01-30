@@ -1,0 +1,9 @@
+pycocowriter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pycocowriter/coco.py,sha256=BabRdm2LOOM5duNSOkKuD9gaFidcmq-uRm7SBkUjLxY,11799
+pycocowriter/coco2yolo.py,sha256=TiOiI_5Eo13puNfk71sJbHb1KI9Qu9UKmg5fxp3kOEc,5648
+pycocowriter/csv2coco.py,sha256=X_WdPfb9vTskYME9iHPdWr1xBPhaROx4tWv0L6Uzxws,13156
+pycocowriter/utils.py,sha256=e94E2gAE2IIjBePkIL7hlrNsz6HhwCY8PnyeweVhAio,2376
+pycocowriter-0.2.3.dist-info/LICENSE,sha256=WqdJz_L8LA3dvoxyqR-a2tVUBsuAIa5C8Kf1HBQB9QA,7667
+pycocowriter-0.2.3.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+pycocowriter-0.2.3.dist-info/METADATA,sha256=3dR8KUa8jUR--d8oFHn2Neo4W5nBGmWRaz8UpzI6cbQ,2431
+pycocowriter-0.2.3.dist-info/RECORD,,
