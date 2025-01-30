@@ -1,0 +1,11 @@
+LICENSE
+setup.py
+curvedpy/__init__.py
+curvedpy.egg-info/PKG-INFO
+curvedpy.egg-info/SOURCES.txt
+curvedpy.egg-info/dependency_links.txt
+curvedpy.egg-info/requires.txt
+curvedpy.egg-info/top_level.txt
+test/test_camera.py
+test/test_conversions.py
+test/test_geodesic_integration.py
