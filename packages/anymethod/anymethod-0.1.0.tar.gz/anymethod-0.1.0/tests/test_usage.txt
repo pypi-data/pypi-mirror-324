@@ -1,0 +1,13 @@
+>>> from anymethod import *
+
+>>> class FooBar:
+...     @anymethod
+...     def whoami(owner) -> None:
+...         me = 'cls' if isinstance(owner, type) else 'obj'
+...         print(me, owner)
+
+>>> FooBar.whoami()
+cls <class '__main__.FooBar'>
+
+>>> FooBar().whoami()
+obj <__main__.FooBar object ...>

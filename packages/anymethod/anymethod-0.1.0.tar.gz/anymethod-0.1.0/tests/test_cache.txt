@@ -1,0 +1,14 @@
+>>> from anymethod import *
+
+>>> class FooBar:
+...     @anymethod
+...     def me(owner) -> None:
+...         print(owner)
+
+>>> foobar = FooBar()
+>>> FooBar.me != foobar.me
+True
+>>> foobar.me == foobar.me
+True
+>>> foobar.me != FooBar().me
+True

@@ -1,0 +1,110 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "anymethod"
+description = "@anymethod = instance method and @classmethod"
+license = {text = "MIT"}
+authors = [
+  {name = "Michael Makukha", email = "m.makukha@gmail.com"},
+]
+readme = "README.md"
+urls.Homepage = "https://github.com/makukha/anymethod"
+urls.Repository = "https://github.com/makukha/anymethod"
+urls.Issues = "https://github.com/makukha/anymethod/issues"
+urls.Changelog = "https://github.com/makukha/anymethod/blob/main/CHANGELOG.md"
+keywords = ["instance-method", "classmethod", "descriptor", "polymorphism"]
+classifiers = [
+  # see https://pypi.org/classifiers/
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Information Technology",
+  "Intended Audience :: Manufacturing",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.5",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Typing :: Typed",
+]
+
+dynamic = ["version"]
+requires-python = ">=3.5"
+dependencies = []
+
+[dependency-groups]
+dev = [
+  "bump-my-version; python_version>='3.13'",
+  "caseutil>=0.7; python_version>='3.12'",
+  "docsub>=0.8; python_version>='3.12'",
+  "genbadge[tests,coverage]>=1.1; python_version>='3.12'",
+  "mypy>=1.14; python_version>='3.12'",
+  "ruff>=0.9; python_version>='3.12'",
+  "towncrier>=24.8; python_version>='3.12'",
+]
+
+# bump-my-version
+
+[tool.bumpversion]
+current_version = "0.1.0"
+allow_dirty = true
+files = [
+  {filename = "README.md"},
+  {filename = "src/anymethod/__init__.py"},
+]
+
+# hatch
+
+[tool.hatch.version]
+path = "src/anymethod/__init__.py"
+
+# mypy
+
+[tool.mypy]
+strict = true
+
+# ruff
+
+[tool.ruff]
+target-version = "py313"
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B", "S"]
+per-file-ignores."tests/**/*.py" = [
+  "S101",  # Use of `assert` detected
+]
+[tool.ruff.format]
+quote-style = "single"
+docstring-code-format = true
+docstring-code-line-length = "dynamic"
+
+# towncrier
+
+[tool.towncrier]
+directory = "NEWS.d"
+filename = "CHANGELOG.md"
+title_format = "## [v{version}](https://github.com/makukha/anymethod/releases/tag/v{version}) — {project_date}"
+issue_format = "[#{issue}](https://github.com/makukha/anymethod/issues/{issue})"
+type = [
+  {name = "Security ⚠️", directory = "security", showcontent = true},
+  {name = "Breaking 🔥", directory = "breaking", showcontent = true},
+  {name = "Removed 💨", directory = "removed", showcontent = true},
+  {name = "Deprecated ❄️", directory = "deprecated", showcontent = true},
+  {name = "Added 🌿", directory = "added", showcontent = true},
+  {name = "Changed", directory = "changed", showcontent = true},
+  {name = "Fixed", directory = "fixed", showcontent = true},
+  {name = "Docs", directory = "docs", showcontent = true},
+  {name = "Misc", directory = "misc", showcontent = true},
+]
