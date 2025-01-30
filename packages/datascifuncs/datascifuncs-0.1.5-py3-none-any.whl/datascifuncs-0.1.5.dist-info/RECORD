@@ -1,0 +1,16 @@
+datascifuncs/__init__.py,sha256=QRAcradBiBii3pwtIn-ye8MilonJFcrriBgucStYNsA,499
+datascifuncs/build_pipeline.py,sha256=LzSFdeh-UWsk2uMDKZXxFMCPi48zRA2nelDWmJZPBEA,6388
+datascifuncs/data_viz_formatting.py,sha256=2orXdmo2mRuqgDY-IfLZIFRkK7VQg0Ud49Xk-rxkiY0,3122
+datascifuncs/metrics.py,sha256=E7gK7UTl55Qa0YGcOALxeo-3QOzNPwMdCfl41hbA7Xo,2273
+datascifuncs/reset_project.py,sha256=hCeBKgWnF_xIle8BB8Q3C--DkG2tqF-ObQEMNw60kOE,599
+datascifuncs/tools.py,sha256=5riuMnKPPYR00RmmxUZWERMTVO9Q42M9AvvpSBcoUkI,1487
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_metrics.py,sha256=sYT-ywHCkxDZPEYRaZNX4BMQ51uP2R2Z2TPDUqjmJ3c,3898
+tests/test_reset_project.py,sha256=Ja5mzdpTMTWEvUM7pUAQfrsCLYcE5KfiZYHU_t0O0Us,2726
+tests/test_tools.py,sha256=rI10DW3Xtrid5UdVWV7fI2TkOgYnjCMz-2jU1akH7y8,1076
+datascifuncs-0.1.5.dist-info/LICENSE,sha256=I2WnVRzay0SxR9xlv62TX5_Xd3hDdZBj1pN0_AslHuc,1070
+datascifuncs-0.1.5.dist-info/METADATA,sha256=orSihBYmqEWTsDWLhM-27h6C41ZlOWGZQBU68JN1QXk,7320
+datascifuncs-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+datascifuncs-0.1.5.dist-info/entry_points.txt,sha256=2ap0Llt6icMgWwSIXlh7dav7n6d5ifs_XCijxfjuGG4,68
+datascifuncs-0.1.5.dist-info/top_level.txt,sha256=WjsPWQcajPU1FY7CJ3jWD2efi9S-6vRhwIocc08C4o8,19
+datascifuncs-0.1.5.dist-info/RECORD,,
