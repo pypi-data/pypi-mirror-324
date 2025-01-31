@@ -1,0 +1,4 @@
+openai
+matplotlib
+selenium
+chromedriver-autoinstaller
