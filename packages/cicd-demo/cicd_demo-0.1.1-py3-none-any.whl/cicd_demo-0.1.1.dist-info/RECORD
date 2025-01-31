@@ -1,0 +1,5 @@
+cicd_demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cicd_demo/validator.py,sha256=jImtWZTXXp8dsLITSgBNvr08qdwE06yOMerMpUH-kFA,851
+cicd_demo-0.1.1.dist-info/METADATA,sha256=mwVKyWv2GlfNplNYcccl4z1cAoq78PKjBU2Wk2y8Ksc,637
+cicd_demo-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+cicd_demo-0.1.1.dist-info/RECORD,,
