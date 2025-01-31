@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: face-pipeline
+Version: 0.0.2
+Summary: Single-file face pipeline with YOLO, Mediapipe, and Gradio
+Home-page: https://github.com/yourusername/yourrepo
+Author: YourName
+Author-email: you@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: torch
+Requires-Dist: Pillow
+Requires-Dist: gradio
+Requires-Dist: ultralytics
+Requires-Dist: facenet-pytorch
+Requires-Dist: torchvision
+Requires-Dist: deep-sort-realtime
+Requires-Dist: mediapipe
+
