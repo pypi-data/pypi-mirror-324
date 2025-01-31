@@ -1,0 +1,11 @@
+interfolio_api/__init__.py,sha256=x0hAyQEAWlY6HMrF8PC-l_SYRBOAY9b8Pjo3e5FagCo,123
+interfolio_api/interfolio_base.py,sha256=uguPhB03qmbtMNIs7cA_eheFITFhDPEFHM4aEvpvG2Y,4630
+interfolio_api/interfolio_config.py,sha256=w26xUwhbd3vxEk6tmh6SiJ_7EO0TnEBXHleCVo7l8ho,2854
+interfolio_api/interfolio_core.py,sha256=4AXUXEn-Cjznwj3GzuUaDQd2Ok4OaNE4FqbObOAo2tw,952
+interfolio_api/interfolio_far.py,sha256=93b854AKpDjjqZHLciGACyyx6rUDZJ3TkbpHmds49DM,7212
+interfolio_api/interfolio_fs.py,sha256=ND_1IiwBvS9vaq2a-oUm6kBcmttUByKSImuj5RSAi0g,4705
+interfolio_api/interfolio_rpt.py,sha256=awlV6MEdiFsiUCNYf7ADjSAAGa-LhJb5OoB4A6b1Kbk,950
+interfolio_api-0.9.dist-info/METADATA,sha256=RTuE3dMowIDnUSwKu-XRKvZC0fRAKoSb7jCStweEyIY,5569
+interfolio_api-0.9.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+interfolio_api-0.9.dist-info/top_level.txt,sha256=FcaeaYkrxd6_j0qKm6qfTBj9LrGcksHQgr4oHWF_7hA,15
+interfolio_api-0.9.dist-info/RECORD,,
