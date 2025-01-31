@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+tatpdf.egg-info/PKG-INFO
+tatpdf.egg-info/SOURCES.txt
+tatpdf.egg-info/dependency_links.txt
+tatpdf.egg-info/top_level.txt
