@@ -1,0 +1,16 @@
+verse_jan25_prj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verse_jan25_prj/auth_manager.py,sha256=3TECXD0wkwr18e6H4v5Wm9vjrjt9GYIRoUxvofdYjFE,1847
+verse_jan25_prj/main.py,sha256=_0Eio295oRrOOCs1lpyVm-0AMn7EUVSV70VngW2aC4U,4990
+verse_jan25_prj/models.py,sha256=wq4U-JknewqNP4SQY366MJi9va6QYqMGFeZ1gWCGTqY,434
+verse_jan25_prj/rate_limiter.py,sha256=eO6iqULBq_WP7mJhGvxOn_teEdZxgbHEHNkSE8-Wb1M,1651
+verse_jan25_prj/spotify.py,sha256=gJz9rk-0Lo8JmkW2Y4im12_5WoAt8yED7qUmQ9oSMUA,2189
+verse_jan25_prj/storage.py,sha256=yUXMvxkhoLsvnTsGUofov0gUnB6IPMhWaRS3A1dhyxQ,1162
+verse_jan25_prj/strategies/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+verse_jan25_prj/strategies/base_strategy.py,sha256=gXoLEyPNpQaviLXMqv7BlgjI8Z1ov024YFalcVuHuDQ,1061
+verse_jan25_prj/strategies/related_strategy.py,sha256=hhMZvt4Wanqt-OiUpt9Ua2-AWcKPO_nIwUcnPsadvrk,2113
+verse_jan25_prj/strategies/search_strategy.py,sha256=KFdQRhXBqvjv3vQ5DKcwtV0enUX426Uq1JV_OoqdAWY,4867
+verse_jan25_prj-0.1.0.dist-info/METADATA,sha256=ySn8V011keaYBJJ-Qk6TUNKoiBK8_EeuNM-EFvtTh-Y,9018
+verse_jan25_prj-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+verse_jan25_prj-0.1.0.dist-info/entry_points.txt,sha256=1EK5ytR41veq95H090Vyi0DzIfiIYTbbKSCNgMptxxA,62
+verse_jan25_prj-0.1.0.dist-info/top_level.txt,sha256=rWrC7Nnqb5JMZXgcp16x18WCwendE8RTmc4f13TzZ1Q,16
+verse_jan25_prj-0.1.0.dist-info/RECORD,,
