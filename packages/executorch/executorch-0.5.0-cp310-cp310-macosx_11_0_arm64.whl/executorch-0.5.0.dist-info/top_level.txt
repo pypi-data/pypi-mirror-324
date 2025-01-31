@@ -1,0 +1,14 @@
+@EXECUTORCH_BuiltFile_extension/llm/custom_ops/%BUILD_TYPE%/libcustom_ops_aot_lib
+@EXECUTORCH_BuiltFile_kernels/quantized/%BUILD_TYPE%/libquantized_ops_aot_lib
+@EXECUTORCH_BuiltFile_third-party/flatbuffers/%BUILD_TYPE%/flatc:executorch/data/bin/
+executorch
+executorch/backends
+executorch/devtools
+executorch/devtools/bundled_program
+executorch/examples/models
+executorch/exir
+executorch/extension
+executorch/kernels/quantized
+executorch/runtime
+executorch/schema
+executorch/util
