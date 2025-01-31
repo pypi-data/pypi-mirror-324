@@ -1,0 +1,2 @@
+[console_scripts]
+whisk = whisk.__main__:app
