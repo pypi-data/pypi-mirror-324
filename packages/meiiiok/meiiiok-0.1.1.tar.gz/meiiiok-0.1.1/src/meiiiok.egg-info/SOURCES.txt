@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/meiiiok/__init__.py
+src/meiiiok/main.py
+src/meiiiok.egg-info/PKG-INFO
+src/meiiiok.egg-info/SOURCES.txt
+src/meiiiok.egg-info/dependency_links.txt
+src/meiiiok.egg-info/top_level.txt
