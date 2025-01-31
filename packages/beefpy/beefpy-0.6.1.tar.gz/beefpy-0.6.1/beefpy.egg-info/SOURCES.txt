@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+beef/__init__.py
+beef/examples.py
+beef/general.py
+beef/io.py
+beef/modal.py
+beef/newmark.py
+beef/nlfe2d.py
+beef/plot.py
+beef/rotation.py
+beefpy.egg-info/PKG-INFO
+beefpy.egg-info/SOURCES.txt
+beefpy.egg-info/dependency_links.txt
+beefpy.egg-info/requires.txt
+beefpy.egg-info/top_level.txt
