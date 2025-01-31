@@ -1,0 +1,9 @@
+textsearchpy/__init__.py,sha256=JvlNdKJ7qoG63WdtA51CT7Ms9GTitCeInoPJWH0iBEM,68
+textsearchpy/index.py,sha256=54ZALdTJId9mRrMU1FL-IUKpbf6z8r5ZsEXpdmzu6YQ,20236
+textsearchpy/normalizers.py,sha256=LPTZhE9PsqrAIaeG4Xqn0uSf8ORhukudiOKeXtWFKrQ,2596
+textsearchpy/query.py,sha256=IhEghLYH8n_zVCDrxFy_wIClQSl4gmcRFmpYMG_tof4,5259
+textsearchpy/tokenizers.py,sha256=rH1lfIfI9T_SUp0gFJSajR0mH8ybneTyRXQGI1zRnL4,1174
+textsearchpy-1.1.1.dist-info/METADATA,sha256=ZW9DzHJEVifLzzhMmu7gYGakhImKOqqG6tKf7U-n6II,4980
+textsearchpy-1.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+textsearchpy-1.1.1.dist-info/licenses/LICENSE,sha256=4NwTIE4tm0w8ZZ3t-KKbDjgl1ij0IJCby8QvgYQuuG8,1066
+textsearchpy-1.1.1.dist-info/RECORD,,
