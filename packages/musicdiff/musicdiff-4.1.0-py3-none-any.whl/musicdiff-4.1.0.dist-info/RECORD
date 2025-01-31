@@ -1,0 +1,13 @@
+musicdiff/__init__.py,sha256=M388h0hkyQWW4K2di34ZgKq8CgBX7X7p9iDAQAAvEEc,9376
+musicdiff/__main__.py,sha256=6j5aTO9PiObv6gAXW3l0HYxOnOMYnf2PILFWJ1YDfDw,8746
+musicdiff/annotation.py,sha256=r_S15e8Z-iBfemJzC_8SJpnO0Hbc6BeIFFGnXVOgVZQ,72032
+musicdiff/comparison.py,sha256=2cezB7KRgmgxx9zo9cLpmJvC2S7XKYrIhngJ7Um4wxg,60809
+musicdiff/detaillevel.py,sha256=xTnsa-eADelWjAFlMAUlM2qoL3UXeWaEJYiN_FKXIjE,9223
+musicdiff/m21utils.py,sha256=NRB9ydDzXb_2nnkW2btbkYe39YlhVLHnCbNbNQV_HMw,62195
+musicdiff/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicdiff/visualization.py,sha256=dLhBZwEY76XqThfk1RZzYddRMdKXvO3D3ui4INk7RFY,148758
+musicdiff-4.1.0.dist-info/LICENSE,sha256=n_aDegaCQuzMGtS8_Fc_KdKCrl3CcixnImWnVWSBS0M,2303
+musicdiff-4.1.0.dist-info/METADATA,sha256=D7df-_G0NFIqU2fXhXpMVIOvi1cUO1w8nUDbxHSAkME,6282
+musicdiff-4.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+musicdiff-4.1.0.dist-info/top_level.txt,sha256=QQwrLHJFR2RO1bZR1u77VQhXxuxrI1jLOsbeiHffbe0,10
+musicdiff-4.1.0.dist-info/RECORD,,
