@@ -1,0 +1,4 @@
+include sarif_manager/sarif/assets/logo.png
+recursive-include sarif_manager *.py
+include README.md
+include LICENSE 
