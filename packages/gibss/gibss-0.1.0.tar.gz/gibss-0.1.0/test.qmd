@@ -1,0 +1,16 @@
+A test notebook with Molten
+
+```{python}
+import numpy as np
+x = np.random.normal(size=10)
+x.mean()
+```
+
+```{python}
+np.median(x)
+```
+
+```{python}
+import matplotlib.pyplot as plt
+plt.scatter(x, x)
+```
