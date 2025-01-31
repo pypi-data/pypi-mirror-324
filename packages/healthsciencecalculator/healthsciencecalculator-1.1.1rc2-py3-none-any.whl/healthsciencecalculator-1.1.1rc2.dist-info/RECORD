@@ -1,0 +1,9 @@
+healthsciencecalculator/__init__.py,sha256=yUn14BjjuN8OCLwoG-DzeH9F_RP4p4A2d8hsCYT5xzY,457
+healthsciencecalculator/get_bmi.py,sha256=gYQJDEDQ66L_05IbLXsvp_9yDCZv6vncEC9v0B_PvAQ,1926
+healthsciencecalculator/get_bmr.py,sha256=0qMv9bbn9CzHKGM5wTlFUaNxzjAckuIha7ddngP40Jk,1732
+healthsciencecalculator/get_tdee.py,sha256=MyVSy4qaviblKKJq3NaDF8gYNz59kHYLgl26x-sFiMw,1524
+healthsciencecalculator/unit_convert.py,sha256=EhCryUYVJBAh3x090XcDWTdMLxGIQOsO8R1K-Bd0598,2062
+healthsciencecalculator-1.1.1rc2.dist-info/LICENSE,sha256=Z_VX5f6-ODJEJGxI6oC4yGRIfijzthZPkVN9wfR6dW8,1108
+healthsciencecalculator-1.1.1rc2.dist-info/METADATA,sha256=ljOu-HQgVasyJyCUg2soVxsfUR4SPszgClYnGz-dl2o,7398
+healthsciencecalculator-1.1.1rc2.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+healthsciencecalculator-1.1.1rc2.dist-info/RECORD,,
