@@ -1,0 +1,10 @@
+spydtest/__init__.py,sha256=tVezAzIsfYoCxYAgiTQaKblEs1UH_fwv6R3PZdGizzo,74
+spydtest/api.py,sha256=BOFkB-BMGOxYqBSIp0veK3tknE7vh25efSzNDRkv5vE,896
+spydtest/cli.py,sha256=5Dhv0mLgi6DK6PeBo7ukJFya2HaPleepgSPe5ls6A0Y,3436
+spydtest/cloudflare.py,sha256=wOWoxepRwgYwR99tHthpexSllZkvtgAHNPrmxJinKU0,2107
+spydtest-0.1.0.dist-info/LICENSE,sha256=2Dv62fYKiCn8Uku5L0t7Ds31b02FT7SBtlj-KmfoL-Q,1073
+spydtest-0.1.0.dist-info/METADATA,sha256=6YfDLwpONwXy5ldslXyKiKFATZAqzHsdOMppfOVVJKM,2124
+spydtest-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+spydtest-0.1.0.dist-info/entry_points.txt,sha256=c5HcPjjqq9pdbWGa961Cc8ip4LGYjUKuEgZbIFgwApQ,47
+spydtest-0.1.0.dist-info/top_level.txt,sha256=zOAFGrsrNzqp3GUQ1OqPAJNyihOK-COJQ0YYW1FtzsE,9
+spydtest-0.1.0.dist-info/RECORD,,
