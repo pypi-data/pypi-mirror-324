@@ -1,0 +1,9 @@
+smart_loco/app.py,sha256=twGJoEoZN_3pcZ-iZ8yUmgFgqMMleDzWnmcue5qUBOA,775
+smart_loco/cli.py,sha256=A8SmY5Vk_l1JwGpGZC4KFyqffI3y0x5TdzEXoFCf7Kk,849
+smart_loco/client/llm.py,sha256=R4SFAMsjZXtJJAsckKcSbYobX6mkX2YxtH6cc3NGMEA,1112
+smart_loco/components/chat.py,sha256=R4KXypBEGVDDp9W93_DSfjNeFDSjpEedO4-E598s5kc,4528
+smart_loco-0.1.0.dist-info/METADATA,sha256=L1FdA8spc6mEknOn7ZgDYdcrseComHHU5jI22I6CILE,206
+smart_loco-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+smart_loco-0.1.0.dist-info/entry_points.txt,sha256=8Qbdwtv2mB3c86ludL5rv1cLWi45hTv0csqeBsrMvjE,51
+smart_loco-0.1.0.dist-info/top_level.txt,sha256=U26lShUcPEM7iwJ8XCd_CjlPJs0Ogd2JeDoV6ftEwzI,11
+smart_loco-0.1.0.dist-info/RECORD,,
