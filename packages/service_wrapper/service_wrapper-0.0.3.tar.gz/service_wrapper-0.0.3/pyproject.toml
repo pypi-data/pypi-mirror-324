@@ -1,0 +1,62 @@
+[project]
+name = "service_wrapper"
+version = "0.0.3"
+description = "Making services easy"
+authors = [
+    { name = "Ofek Engel", email = "ofek.engel@gmail.com" },
+]
+dependencies = [
+    "pywin32>=308",
+    "typing-extensions>=4.12.2",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+keywords = [
+    "services",
+    "windows",
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+    "Topic :: System",
+    "Topic :: System :: Operating System",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/ofekengel/pyservice-wrapper"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+run-setuptools = true
+custom-hook = "build.py"
+excludes = [
+    "src\\service_wrapper\\linux\\*",
+]
+
+[dependency-groups]
+lint = [
+    "black>=24.10.0",
+    "isort>=5.13.2",
+]
+dev = [
+    "pdm>=2.22.2",
+    "pdm-backend>=2.4.3",
+    "Pyinstaller>=6.11.1",
+]
