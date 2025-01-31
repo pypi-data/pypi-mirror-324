@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "poetry-core",]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "m365-user-manager"
+version = "0.1.1rc14"
+description = "A package dedicated to creating new users in o365"
+authors = [ "VinnyVanGogh <133192356+VinnyVanGogh@users.noreply.github.com>",]
+license = "MIT"
+readme = "README.md"
+[[tool.poetry.packages]]
+include = "m365_user_manager"
+from = "."
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohappyeyeballs = "2.4.4"
+aiohttp = "3.11.11"
+aiosignal = "1.3.2"
+attrs = "25.1.0"
+certifi = "2024.12.14"
+charset-normalizer = "3.4.1"
+colorlog = "6.9.0"
+cw-rpa = "0.1.0b10"
+cw-rpa-unified-logger = "0.1.0rc10"
+frozenlist = "1.5.0"
+idna = "3.10"
+multidict = "6.1.0"
+propcache = "0.2.1"
+requests = "2.32.3"
+urllib3 = "2.3.0"
+yarl = "1.18.3"
