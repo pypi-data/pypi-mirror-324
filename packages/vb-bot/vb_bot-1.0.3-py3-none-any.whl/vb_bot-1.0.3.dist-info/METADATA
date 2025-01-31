@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: vb_bot
+Version: 1.0.3
+Author-email: Beloborod <me@beloborod.ru>
+Project-URL: Homepage, https://github.com/Beloborod/vb_tg
+Project-URL: Issues, https://github.com/Beloborod/vb_tg/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: mongoengine~=0.29.1
+Requires-Dist: pyTelegramBotAPI~=4.23.0
+Requires-Dist: aiohttp~=3.10.11
+
+Mongo powered telegram bot, based on pyTelegramBotAPI
+
+TODO - update Readme =)
