@@ -1,0 +1,8 @@
+Metadata-Version: 2.3
+Name: example_package_n_zupp
+Version: 0.1.2
+Summary: An example package for learning Python packaging.
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+
+
