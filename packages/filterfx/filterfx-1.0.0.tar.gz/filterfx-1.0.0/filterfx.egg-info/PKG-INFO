@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: filterfx
+Version: 1.0.0
+Summary: Python package to enhance your images!
+Author: Fabio Rojas
+Author-email: <fabiorrojas56@gmail.com>
+Keywords: python,filters,image,enhance,pillow,opencv,ocr
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Multimedia
+License-File: LICENSE
+Requires-Dist: numpy>=2.2.2
+Requires-Dist: opencv-python>=4.11.0.86
+Requires-Dist: pillow>=11.1.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+Python package to enhance and apply filters your images.
