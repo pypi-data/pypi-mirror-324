@@ -1,0 +1,9 @@
+pystats_norm/__init__.py,sha256=vmNHdzvgBAK_mcD4CDjYVBUeD4BYOvwYOlOXY3qhvxo,114
+pystats_norm/dnorm.py,sha256=qJxPxUQxACzxoB2JSlS5IQCvsc_jcMfz8a3T3nH6rp0,1911
+pystats_norm/pnorm.py,sha256=a181dsV0RRH8KYjWhwIKS2_OZbdFEjbX78gLokPehiw,1587
+pystats_norm/qnorm.py,sha256=m7m1bM8vNuBS59m2M7L-8ADOzpwRtk2-T-Rih2lmK6Y,2267
+pystats_norm/rnorm.py,sha256=-KkmvhxBmiKXi0pZ9EYV94AIFJfNUpepVAXH2oyEKbs,1726
+pystats_norm-0.0.1.dist-info/LICENSE,sha256=8bzMHXYJg-24Ed6wwwcSZozNxyzm3ev_k-923n2K5Ic,1106
+pystats_norm-0.0.1.dist-info/METADATA,sha256=EMbIaau464nLonwSyGaWkpwDE8zFtyUq07Ftwpv9tus,5191
+pystats_norm-0.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pystats_norm-0.0.1.dist-info/RECORD,,
