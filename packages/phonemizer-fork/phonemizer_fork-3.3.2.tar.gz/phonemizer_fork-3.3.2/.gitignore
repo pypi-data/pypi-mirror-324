@@ -1,0 +1,16 @@
+*.egg-info/
+*.pyc
+/.cache/*
+/.pytest_cache/
+/build/*
+/dist/*
+.coverage*
+coverage.xml
+htmlcov/*
+.eggs/*
+test/htmlcov
+paper/*
+.idea
+*.~undo-tree~
+
+docs/build
