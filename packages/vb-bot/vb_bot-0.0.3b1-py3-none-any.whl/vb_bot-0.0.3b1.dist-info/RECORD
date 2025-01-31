@@ -1,0 +1,16 @@
+vb_bot/__init__.py,sha256=uq7g2Un7-fWPMIa-4Fn4_mAzdr5ZbDgHC834NkGpH6s,60
+vb_bot/bot.py,sha256=BwPkbv5se89WvEDW6DCRrOk6d-l5WaBTO8sLNEogtwI,15455
+vb_bot/configs/__init__.py,sha256=5FSRHu3t9Ziw9g1ijaXXJBBDL3zwW8PBauSHYDtem7U,115
+vb_bot/configs/bot_settings.py,sha256=lsCcPrOO5lzuHP5j9y9XvoCtKYzh8aN2VxBpgRVDmF0,119
+vb_bot/configs/telegram_api.py,sha256=lVgRQTgvF6WPrUtZMq_Xw4DkL7DHjkWTRKOIfHGMMuY,214
+vb_bot/models/__init__.py,sha256=-t7pVPHvyHiszdIAdQguj3aHQ-1gtmVjSxXkkf4BU4c,189
+vb_bot/models/api_queue.py,sha256=B4x5FgZNRmUNC7TwFQSzG2pFtGLAivRsXW26N_EKrSQ,1324
+vb_bot/models/connector.py,sha256=bo77G4SEX4otvd8qSLJcBvPcw9gAJii1kOKpAlCDhZk,431
+vb_bot/models/queue_callback.py,sha256=T7AQk1VtIjapjyeJ4TOmqZRVamXp_Gr-LihiCzh_b_8,541
+vb_bot/models/user.py,sha256=XvNfRJJ7HcPwyl5nLEBu4F_rnyRoPZ6J5oal713gjDM,764
+vb_bot/modules/__init__.py,sha256=avIdhX8wcYh07ux4X7fFH0BbBELCBp3OvaLnB2meNGI,66
+vb_bot/modules/setup_logger.py,sha256=cRFTwscBIW5KlDbTpAVdY2b5xXffoHYBnFVVuszSt2Y,778
+vb_bot-0.0.3b1.dist-info/METADATA,sha256=pTJNNVrsQw4l_IYhBiHDfCktPF5Yf9CCY5sysC6a7Z4,516
+vb_bot-0.0.3b1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+vb_bot-0.0.3b1.dist-info/licenses/LICENSE,sha256=sh-gEM7SYSSDDRFUQeh0RYhGSbTzcqtqiLl7P1zsBZU,1047
+vb_bot-0.0.3b1.dist-info/RECORD,,
