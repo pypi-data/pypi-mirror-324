@@ -1,0 +1,10 @@
+numpy_quaternion-2024.0.7.dist-info/RECORD,,
+numpy_quaternion-2024.0.7.dist-info/WHEEL,sha256=FBd6an5AFoPq_6i7rX7RY9hnbsVzpIPkc8xRof4mLK4,111
+numpy_quaternion-2024.0.7.dist-info/top_level.txt,sha256=-VPE4C7lD-3Zy7uJ-pH5WOpkxrI2YcUFGkicVYtVY08,11
+numpy_quaternion-2024.0.7.dist-info/METADATA,sha256=OsQ2rfbwRyqrXQJO3J27N-DvsqjmyduuOmMDQAgB7Ts,16047
+quaternion/numba_wrapper.py,sha256=VTxu-evgKiNPYAplT_qjeRK4E6F246mCfLhguCpkdP4,1211
+quaternion/__init__.py,sha256=_voIjmZTleYxA2rDx9R50usgYjYz-X-t18XoQ013ZEQ,33937
+quaternion/numpy_quaternion.cpython-312-darwin.so,sha256=Cpn1S85sp4iOWeMB3xetiRyylzgJbCzuNCmXNbw4WEU,92048
+quaternion/quaternion_time_series.py,sha256=r9PLyBBebCHw3iUjlZK2KMABY89rU9iDUB0iDRf6A3A,18176
+quaternion/calculus.py,sha256=id8hjHBKAqd-Z7TzuIDry2XJpVji8N-fNY4v9KJY8GY,18469
+quaternion/means.py,sha256=dqSkenU8_Fykbas4PHSrsaxJjpBL1f2z3wJlqwG_kOo,6132
