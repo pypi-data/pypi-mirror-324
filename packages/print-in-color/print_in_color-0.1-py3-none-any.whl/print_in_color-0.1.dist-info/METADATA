@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: print_in_color
+Version: 0.1
+Summary: Color print in Python
+Author: Lyubomir Romanov
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: description-content-type
+Dynamic: summary
