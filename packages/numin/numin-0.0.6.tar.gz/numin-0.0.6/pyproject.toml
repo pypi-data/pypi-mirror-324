@@ -1,0 +1,30 @@
+[project]
+name = "numin"
+version = "0.0.6"
+authors = [
+  { name="Ashu", email="ashu19.iiitd@gmail.com" },
+]
+description = "numin package"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "anvil_uplink>=0.5.1",
+  "import_ipynb>=0.1.4",
+  "ipython>=8.12.3",
+  "numpy>=1.24.3",
+  "pandas>=1.5.3",
+  "pandas_ta>=0.3.14b0",
+  "pytz>=2024.1",
+  "Requests>=2.32.3",
+  "scikit_learn>=1.6.1",
+  "yfinance>=0.2.42"
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject" #to be updated
+Issues = "https://github.com/pypa/sampleproject/issues" #to be updated
