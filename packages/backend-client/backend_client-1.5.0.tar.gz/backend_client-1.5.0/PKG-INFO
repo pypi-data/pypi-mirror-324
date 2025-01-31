@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: backend_client
+Version: 1.5.0
+Summary: Lead Scraping Service API
+Home-page: 
+Author: Vector AI Engineering
+Author-email: yoanyomba@vector.ai
+License: Apache 2.0 License
+Keywords: OpenAPI,OpenAPI-Generator,Lead Scraping Service API
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3<2.1.0,>=1.25.3
+Requires-Dist: python-dateutil
+Requires-Dist: pydantic>=2
+Requires-Dist: typing-extensions>=4.7.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+    Vector Lead Scraping Service API - Manages Lead Scraping Jobs
+    
