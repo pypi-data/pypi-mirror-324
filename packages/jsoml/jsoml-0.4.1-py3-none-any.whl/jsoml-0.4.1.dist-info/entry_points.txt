@@ -1,0 +1,2 @@
+[console_scripts]
+jsoml = jsoml.__main__:main
