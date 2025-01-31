@@ -1,0 +1,6 @@
+[console_scripts]
+pmdoc=prezmanifest.documentor:cli
+pmlabel=prezmanifest.labeller:cli
+pmload=prezmanifest.loader:cli
+pmval=prezmanifest.validator:cli
+
