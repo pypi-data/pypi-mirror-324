@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: openwillis-transcribe
+Version: 1.0.5
+Summary: digital health measurement
+Home-page: https://github.com/bklynhlth/openwillis
+Author: bklynhlth
+Author-email: admin@bklynhlth.com
+License: Apache
+Requires-Python: >=3.9, <3.13
+Description-Content-Type: text/markdown
+Requires-Dist: torch==2.5.1
+Requires-Dist: transformers==4.46.3
+Requires-Dist: sentence-transformers==3.3.1
+Requires-Dist: boto3==1.35.72
+Requires-Dist: scipy==1.11.4
+Requires-Dist: vosk==0.3.44
+Requires-Dist: pyannote.audio==3.3.2
+Requires-Dist: huggingface-hub==0.26.3
+Requires-Dist: pydub==0.25.1
+Requires-Dist: tf-keras<=2.18.0,>=2.15.1
+Requires-Dist: whisperx==3.3.0
+Requires-Dist: numpy<1.28.0,>=1.23.5
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
