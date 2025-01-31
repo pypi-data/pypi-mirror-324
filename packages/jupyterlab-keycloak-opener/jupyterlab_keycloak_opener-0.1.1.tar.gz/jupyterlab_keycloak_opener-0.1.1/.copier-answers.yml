@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.3.7
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: info@navteca.com
+author_name: Navteca LLC.
+has_binder: true
+has_settings: false
+kind: server
+labextension_name: jupyterlab-keycloak-opener
+project_short_description: A JupyterLab extension.
+python_name: jupyterlab_keycloak_opener
+repository: https://github.com/Navteca/jupyterlab-keycloak-opener
+test: true
+
