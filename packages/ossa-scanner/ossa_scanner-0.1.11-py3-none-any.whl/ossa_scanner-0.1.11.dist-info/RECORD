@@ -1,0 +1,16 @@
+ossa_scanner/__init__.py,sha256=nllDrH0jyChMuuYrK0CC55iTBKUNTUjejtcwxyUF2EQ,23
+ossa_scanner/cli.py,sha256=sgr8NFpf_Ut84KYFQjOKRxv8CfAMaTPhMo7DbR53lT4,2311
+ossa_scanner/scanner.py,sha256=Zmk-Qr8jDoPdCXLkospp2NUgYl7Sdhx_Rhraltxd2u8,4787
+ossa_scanner/uploader.py,sha256=dPbhSLlQcDyHP-6Ugn6BzYGn_VQ1Ik6TWt2138k3REo,1837
+ossa_scanner/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ossa_scanner/utils/downloader.py,sha256=DRXMg33QB2RiFr3kVjsDUcFcq7RO-4Sbee-twRYeuSM,5330
+ossa_scanner/utils/hash_calculator.py,sha256=LrDKngWOPbizYJWab2sDJDLB4pD_RrI51L0cZt3VjJY,960
+ossa_scanner/utils/os_detection.py,sha256=35VbUbFklzd7aojgltKf2PxbnVFcpREA7Tri2YI5nfY,417
+ossa_scanner/utils/package_manager.py,sha256=HC1Wyh4eWTJL8O8YUhs7Uvagu8w3gr6PEPOVBkLpCPg,7180
+ossa_scanner/utils/swhid_calculator.py,sha256=7-bO4RglJr-kt5SjUfnlcPZD0k0-s_dveHEjRo-zEMc,1317
+ossa_scanner-0.1.11.dist-info/LICENSE,sha256=9slQ_XNiEkio28l90NwihP7a90fCL2GQ6YhcVXTBls4,1064
+ossa_scanner-0.1.11.dist-info/METADATA,sha256=kdNJSUrn0joDPoPuquYvvpOmXl-fhKrYFi2k5C83nSw,1365
+ossa_scanner-0.1.11.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ossa_scanner-0.1.11.dist-info/entry_points.txt,sha256=UVoAo-wTPxT82g3cfqTs2CmQnazd57TAwhd9VwEKD1c,55
+ossa_scanner-0.1.11.dist-info/top_level.txt,sha256=uUp5CvhZfJLapXn9DyUXvgH7QK3uzF2ibH943lWN5Bs,13
+ossa_scanner-0.1.11.dist-info/RECORD,,
