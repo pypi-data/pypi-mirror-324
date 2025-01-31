@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-auth0-audit-ips = src.server:main
