@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling", "hatch-requirements-txt"]
+build-backend = "hatchling.build"
+
+[project]
+name = "puppet_catalog_diff"
+version = "0.0.0.rc1"
+requires-python = ">=3.9"
+authors = [
+    {name = "Stephan.Schultchen", email="stephan.schultchen@gmail.com"},
+]
+description = "Diff Puppet Catalogs"
+dynamic = ["dependencies"]
+license = {file = "LICENSE.txt"}
+keywords = []
+classifiers = [
+    "Programming Language :: Python"
+]
+
+[project.scripts]
+puppet_catalog_diff = "puppet_catalog_diff:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["puppet_catalog_diff"]
+
+[tool.hatch.metadata.hooks.requirements_txt]
+files = ["requirements.txt"]
