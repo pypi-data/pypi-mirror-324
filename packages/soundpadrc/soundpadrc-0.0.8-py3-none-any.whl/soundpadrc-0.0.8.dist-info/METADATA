@@ -1,0 +1,42 @@
+Metadata-Version: 2.4
+Name: soundpadrc
+Version: 0.0.8
+Summary: Control Soundpad with Python
+Project-URL: Homepage, https://github.com/yggdrion/soundpadrc
+Project-URL: Issues, https://github.com/yggdrion/soundpadrc/issues
+Author-email: r4b2 <pypi@r4b2.de>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: xmltodict
+Description-Content-Type: text/markdown
+
+# soundpadrc
+
+test 5
+
+# example:
+
+```python
+from soundpadrc import Soundpad
+
+sp = Soundpad()
+
+print(sp.categories())
+
+```
+
+#
+
+https://github.com/Ilya-Kokhanovsky/soundpad.py  
+https://www.leppsoft.com/soundpad/files/rc/SoundpadRemoteControl.java
+
+## usefull links
+
+https://www.leppsoft.com/soundpad/en/rc/
+https://packaging.python.org/en/latest/tutorials/packaging-projects/  
+https://github.com/pypa/sampleproject  
+https://python-semantic-release.readthedocs.io/en/latest/
+https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/
