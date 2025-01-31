@@ -1,0 +1,3 @@
+<commands>
+    <command name="check:memory">elenchos_check_memory.CheckMemoryCommand.CheckMemoryCommand</command>
+</commands>
