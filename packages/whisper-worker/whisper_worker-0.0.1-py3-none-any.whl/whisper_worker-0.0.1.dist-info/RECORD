@@ -1,0 +1,8 @@
+whisper_worker/__init__.py,sha256=bmtDdiC4LC-6__Ftwv2BbXfIoKvWWQg8KscBBnz6Nf8,1148
+whisper_worker/logging_config.py,sha256=gPxVtoW4-aNLnmmDpOA9aDcl2PT58JEV4AWAmscRFvk,426
+whisper_worker/mic.py,sha256=gQHIpmMju0cBgt2ge8skgADp0xauAk4V3AptLvdPW2E,1339
+whisper_worker/recording_device.py,sha256=_doukh0jMnYIsUndRpufpf8ixqwtWjHZRm3hY-CqRfk,877
+whisper_worker/whisper_worker.py,sha256=w6UoWy9Ts6_2TfS3s8agWVWLuCWaQGmClOzWP8WqqCs,11675
+whisper_worker-0.0.1.dist-info/METADATA,sha256=DsO7D44dmIHKTgTlbPtFlhxDLK9X0jzrizr5zLtZOEM,1420
+whisper_worker-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+whisper_worker-0.0.1.dist-info/RECORD,,
