@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: render_psam
+Version: 1.0.1
+Summary: Wrapper around logomaker to easily render PSAMs in a variety of ways.
+Home-page: https://github.com/kavigupta/render-psam
+Author: Kavi Gupta
+Author-email: render_psam@kavigupta.org
+Project-URL: Documentation, https://render-psam.readthedocs.io/en/latest/#
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: logomaker
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+
+# Render PSAM
+
+This module provides a simple way to render PSAM (Protein Structural Alphabet Model) strings, providing a wrapper around the
+[Logomaker](https://logomaker.readthedocs.io/en/latest/) library.
