@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ScrapingData
+Version: 0.1
+Summary: Un package pour le scraping de données de réseaux sociaux.
+Home-page: https://github.com/Mariemromdhane21/ScrapingData
+Author: Mariem Romdhane
+Author-email: romdhanemariem21@gmail.com
+License: MIT
+Description: # ScrapingData
+        
+        Un package Python pour le scraping de donnÃ©es de rÃ©seaux sociaux tels que Facebook, Google Analytics et LinkedIn.
+        
+        ## Installation
+        
+        Pour installer le package, utilisez la commande suivante :
+        
+        ```bash
+        pip install ScrapingData
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

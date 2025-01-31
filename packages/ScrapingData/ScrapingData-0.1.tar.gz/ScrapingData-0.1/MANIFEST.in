@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+exclude *.ini
+exclude *.csv
+exclude *.xlsx
+exclude *.json
+exclude desktop.ini

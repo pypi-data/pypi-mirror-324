@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+FacebookData/Facebook.py
+FacebookData/__init__.py
+GoogleAnalyticsData/GoogleAnalyticsFor3Data.py
+GoogleAnalyticsData/__init__.py
+LinkedInData/Linkedin.py
+LinkedInData/__init__.py
+ScrapingData.egg-info/PKG-INFO
+ScrapingData.egg-info/SOURCES.txt
+ScrapingData.egg-info/dependency_links.txt
+ScrapingData.egg-info/requires.txt
+ScrapingData.egg-info/top_level.txt
