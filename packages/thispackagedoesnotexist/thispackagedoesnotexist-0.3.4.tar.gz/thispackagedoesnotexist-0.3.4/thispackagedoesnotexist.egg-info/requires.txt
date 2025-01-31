@@ -1,0 +1,10 @@
+customtkinter
+requests
+WMI
+PyAudio
+PyAutoGUI
+pillow
+opencv-python
+psutil
+websockets
+websocket-client
