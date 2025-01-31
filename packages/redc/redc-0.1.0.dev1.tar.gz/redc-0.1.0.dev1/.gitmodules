@@ -1,0 +1,3 @@
+[submodule "redc/ext/nanobind"]
+	path = redc/ext/nanobind
+	url = https://github.com/wjakob/nanobind
