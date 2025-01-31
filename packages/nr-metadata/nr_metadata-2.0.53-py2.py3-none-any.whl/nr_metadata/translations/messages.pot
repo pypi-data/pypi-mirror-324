@@ -1,0 +1,1396 @@
+# Translations template for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-18 13:13+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+msgid "metadata/abstract.label"
+msgstr ""
+
+msgid "metadata/abstract/lang.label"
+msgstr ""
+
+msgid "metadata/accessRights.label"
+msgstr ""
+
+msgid "metadata/accessibility.label"
+msgstr ""
+
+msgid "metadata/accessibility/lang.label"
+msgstr ""
+
+msgid "metadata/additionalTitles/title.label"
+msgstr ""
+
+msgid "metadata/additionalTitles/title/lang.label"
+msgstr ""
+
+msgid "metadata/additionalTitles/titleType.label"
+msgstr ""
+
+msgid "metadata/contributors/affiliations.label"
+msgstr ""
+
+msgid "metadata/contributors/authorityIdentifiers/identifier.label"
+msgstr ""
+
+msgid "metadata/contributors/authorityIdentifiers/scheme.label"
+msgstr ""
+
+msgid "metadata/contributors/contributorType.label"
+msgstr ""
+
+msgid "metadata/contributors/familyName.label"
+msgstr ""
+
+msgid "metadata/contributors/fullName.label"
+msgstr ""
+
+msgid "metadata/contributors/givenName.label"
+msgstr ""
+
+msgid "metadata/contributors/nameType.label"
+msgstr ""
+
+msgid "metadata/creators/affiliations.label"
+msgstr ""
+
+msgid "metadata/creators/authorityIdentifiers/identifier.label"
+msgstr ""
+
+msgid "metadata/creators/authorityIdentifiers/scheme.label"
+msgstr ""
+
+msgid "metadata/creators/familyName.label"
+msgstr ""
+
+msgid "metadata/creators/fullName.label"
+msgstr ""
+
+msgid "metadata/creators/givenName.label"
+msgstr ""
+
+msgid "metadata/creators/nameType.label"
+msgstr ""
+
+msgid "metadata/dateAvailable.label"
+msgstr ""
+
+msgid "metadata/dateIssued.label"
+msgstr ""
+
+msgid "metadata/events/eventLocation/country.label"
+msgstr ""
+
+msgid "metadata/events/eventLocation/place.label"
+msgstr ""
+
+msgid "metadata/fundingReferences/funder.label"
+msgstr ""
+
+msgid "metadata/fundingReferences/projectID.label"
+msgstr ""
+
+msgid "metadata/geoLocations/geoLocationPlace.label"
+msgstr ""
+
+msgid "metadata/geoLocations/geoLocationPoint/pointLatitude.label"
+msgstr ""
+
+msgid "metadata/geoLocations/geoLocationPoint/pointLongitude.label"
+msgstr ""
+
+msgid "metadata/languages.label"
+msgstr ""
+
+msgid "metadata/methods.label"
+msgstr ""
+
+msgid "metadata/methods/lang.label"
+msgstr ""
+
+msgid "metadata/objectIdentifiers/identifier.label"
+msgstr ""
+
+msgid "metadata/objectIdentifiers/scheme.label"
+msgstr ""
+
+msgid "metadata/originalRecord.label"
+msgstr ""
+
+msgid ""
+"metadata/relatedItems/itemContributors/authorityIdentifiers/identifier.label"
+msgstr ""
+
+msgid ""
+"metadata/relatedItems/itemContributors/authorityIdentifiers/scheme.label"
+msgstr ""
+
+msgid "metadata/relatedItems/itemContributors/contributorType.label"
+msgstr ""
+
+msgid "metadata/relatedItems/itemContributors/familyName.label"
+msgstr ""
+
+msgid "metadata/relatedItems/itemContributors/fullName.label"
+msgstr ""
+
+msgid "metadata/relatedItems/itemContributors/givenName.label"
+msgstr ""
+
+msgid "metadata/relatedItems/itemContributors/nameType.label"
+msgstr ""
+
+msgid "metadata/relatedItems/itemCreators/affiliations.label"
+msgstr ""
+
+msgid ""
+"metadata/relatedItems/itemCreators/authorityIdentifiers/identifier.label"
+msgstr ""
+
+
+
+
+msgid "metadata/relatedItems/itemCreators/authorityIdentifiers/scheme.label"
+msgstr ""
+
+
+
+
+msgid "metadata/relatedItems/itemCreators/familyName.label"
+msgstr ""
+
+
+
+
+msgid "metadata/relatedItems/itemCreators/fullName.label"
+msgstr ""
+
+
+
+
+msgid "metadata/relatedItems/itemCreators/givenName.label"
+msgstr ""
+
+
+
+
+msgid "metadata/relatedItems/itemCreators/nameType.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:12
+msgid "metadata/relatedItems/itemEndPage.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:10
+msgid "metadata/relatedItems/itemIssue.label"
+msgstr ""
+
+
+
+
+msgid "metadata/relatedItems/itemPIDs/identifier.label"
+msgstr ""
+
+
+
+
+msgid "metadata/relatedItems/itemPIDs/scheme.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:14
+msgid "metadata/relatedItems/itemPublisher.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:6
+msgid "metadata/relatedItems/itemRelationType.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:7
+msgid "metadata/relatedItems/itemResourceType.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:13
+msgid "metadata/relatedItems/itemStartPage.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:5
+msgid "metadata/relatedItems/itemURL.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:9
+msgid "metadata/relatedItems/itemVolume.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:8
+msgid "metadata/relatedItems/itemYear.label"
+msgstr ""
+
+
+
+
+msgid "metadata/resourceType.label"
+msgstr ""
+
+
+
+
+msgid "metadata/rights.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:15
+msgid "metadata/series/seriesTitle.label"
+msgstr ""
+
+
+
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:16
+msgid "metadata/series/seriesVolume.label"
+msgstr ""
+
+
+
+
+msgid "metadata/subjectCategories.label"
+msgstr ""
+
+
+
+
+
+msgid "metadata/subjects/classificationCode.label"
+msgstr ""
+
+
+
+
+
+
+
+
+msgid "metadata/subjects/subject.label"
+msgstr ""
+
+
+
+
+msgid "metadata/subjects/subject/lang.label"
+msgstr ""
+
+
+
+
+
+msgid "metadata/subjects/subjectScheme.label"
+msgstr ""
+
+
+
+
+
+msgid "metadata/subjects/valueURI.label"
+msgstr ""
+
+
+
+
+msgid "metadata/systemIdentifiers/identifier.label"
+msgstr ""
+
+
+
+
+msgid "metadata/systemIdentifiers/scheme.label"
+msgstr ""
+
+
+
+
+
+
+
+msgid "metadata/technicalInfo.label"
+msgstr ""
+
+
+
+
+msgid "metadata/technicalInfo/lang.label"
+msgstr ""
+
+
+
+
+
+msgid "metadata/version.label"
+msgstr ""
+
+
+msgid "metadata/dateValidTo.label"
+msgstr ""
+
+
+msgid "metadata/dateWithdrawn/dateInformation.label"
+msgstr ""
+
+
+msgid "metadata/dateWithdrawn/type.label"
+msgstr ""
+
+
+msgid "metadata/publishers.label"
+msgstr ""
+
+
+msgid "metadata/alternateIdentifiers/alternateIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/alternateIdentifiers/alternateIdentifierType.label"
+msgstr ""
+
+
+msgid "metadata/container/firstPage.label"
+msgstr ""
+
+
+msgid "metadata/container/title.label"
+msgstr ""
+
+
+msgid "metadata/container/type.label"
+msgstr ""
+
+
+msgid "metadata/contributors/affiliation/affiliationIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/contributors/affiliation/affiliationIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/contributors/affiliation/name.label"
+msgstr ""
+
+
+msgid "metadata/contributors/affiliation/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/contributors/lang.label"
+msgstr ""
+
+
+msgid "metadata/contributors/name.label"
+msgstr ""
+
+
+msgid "metadata/contributors/nameIdentifiers/nameIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/contributors/nameIdentifiers/nameIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/contributors/nameIdentifiers/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/creators/affiliation/affiliationIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/creators/affiliation/affiliationIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/creators/affiliation/name.label"
+msgstr ""
+
+
+msgid "metadata/creators/affiliation/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/creators/lang.label"
+msgstr ""
+
+
+msgid "metadata/creators/name.label"
+msgstr ""
+
+
+msgid "metadata/creators/nameIdentifiers/nameIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/creators/nameIdentifiers/nameIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/creators/nameIdentifiers/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/dates/date.label"
+msgstr ""
+
+
+msgid "metadata/dates/dateInformation.label"
+msgstr ""
+
+
+msgid "metadata/dates/dateType.label"
+msgstr ""
+
+
+msgid "metadata/descriptions/descriptionType.label"
+msgstr ""
+
+
+msgid "metadata/descriptions/lang.label"
+msgstr ""
+
+
+msgid "metadata/doi.label"
+msgstr ""
+
+
+msgid "metadata/formats.label"
+msgstr ""
+
+
+msgid "metadata/fundingReferences/awardNumber.label"
+msgstr ""
+
+
+msgid "metadata/fundingReferences/awardTitle.label"
+msgstr ""
+
+
+msgid "metadata/fundingReferences/awardURI.label"
+msgstr ""
+
+
+msgid "metadata/fundingReferences/funderIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/fundingReferences/funderIdentifierType.label"
+msgstr ""
+
+
+msgid "metadata/fundingReferences/funderName.label"
+msgstr ""
+
+
+msgid "metadata/geoLocations/geoLocationBox/eastBoundLongitude.label"
+msgstr ""
+
+
+msgid "metadata/geoLocations/geoLocationBox/northBoundLatitude.label"
+msgstr ""
+
+
+msgid "metadata/geoLocations/geoLocationBox/southBoundLatitude.label"
+msgstr ""
+
+
+msgid "metadata/geoLocations/geoLocationBox/westBoundLongitude.label"
+msgstr ""
+
+
+msgid ""
+"metadata/geoLocations/geoLocationPolygons/inPolygonPoint/pointLatitude.label"
+msgstr ""
+
+
+msgid ""
+"metadata/geoLocations/geoLocationPolygons/inPolygonPoint/pointLongitude.label"
+msgstr ""
+
+
+msgid ""
+"metadata/geoLocations/geoLocationPolygons/polygonPoints/pointLatitude.label"
+msgstr ""
+
+
+msgid ""
+"metadata/geoLocations/geoLocationPolygons/polygonPoints/pointLongitude.label"
+msgstr ""
+
+
+msgid "metadata/language.label"
+msgstr ""
+
+
+msgid "metadata/publicationYear.label"
+msgstr ""
+
+
+msgid "metadata/publisher/lang.label"
+msgstr ""
+
+
+msgid "metadata/publisher/name.label"
+msgstr ""
+
+
+msgid "metadata/publisher/publisherIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/publisher/publisherIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/publisher/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/relatedIdentifiers/relatedIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/relatedIdentifiers/relatedIdentifierType.label"
+msgstr ""
+
+
+msgid "metadata/relatedIdentifiers/relatedMetadataScheme.label"
+msgstr ""
+
+
+msgid "metadata/relatedIdentifiers/relationType.label"
+msgstr ""
+
+
+msgid "metadata/relatedIdentifiers/resourceTypeGeneral.label"
+msgstr ""
+
+
+msgid "metadata/relatedIdentifiers/schemeType.label"
+msgstr ""
+
+
+msgid "metadata/relatedIdentifiers/schemeURI.label"
+msgstr ""
+
+
+msgid ""
+"metadata/relatedItems/contributors/affiliation/affiliationIdentifier.label"
+msgstr ""
+
+
+msgid ""
+"metadata/relatedItems/contributors/affiliation/affiliationIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/affiliation/name.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/affiliation/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/contributorType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/familyName.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/givenName.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/lang.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/name.label"
+msgstr ""
+
+
+msgid ""
+"metadata/relatedItems/contributors/nameIdentifiers/nameIdentifier.label"
+msgstr ""
+
+
+msgid ""
+"metadata/relatedItems/contributors/nameIdentifiers/nameIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/nameIdentifiers/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/contributors/nameType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/affiliation/affiliationIdentifier.label"
+msgstr ""
+
+
+msgid ""
+"metadata/relatedItems/creators/affiliation/affiliationIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/affiliation/name.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/affiliation/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/familyName.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/givenName.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/lang.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/name.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/nameIdentifiers/nameIdentifier.label"
+msgstr ""
+
+
+msgid ""
+"metadata/relatedItems/creators/nameIdentifiers/nameIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/nameIdentifiers/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/creators/nameType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/edition.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/firstPage.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/issue.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/lastPage.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/number.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/numberType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/publicationYear.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/publisher.label"
+msgstr ""
+
+
+msgid ""
+"metadata/relatedItems/relatedItemIdentifier/relatedItemIdentifier.label"
+msgstr ""
+
+
+msgid ""
+"metadata/relatedItems/relatedItemIdentifier/relatedItemIdentifierType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/relatedItemType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/relatedMetadataScheme.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/relationType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/resourceTypeGeneral.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/schemeType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/titles/lang.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/titles/titleType.label"
+msgstr ""
+
+
+msgid "metadata/relatedItems/volume.label"
+msgstr ""
+
+
+msgid "metadata/resourceType/resourceType.label"
+msgstr ""
+
+
+msgid "metadata/resourceType/resourceTypeGeneral.label"
+msgstr ""
+
+
+msgid "metadata/rightsList/lang.label"
+msgstr ""
+
+
+msgid "metadata/rightsList/rights.label"
+msgstr ""
+
+
+msgid "metadata/rightsList/rightsIdentifier.label"
+msgstr ""
+
+
+msgid "metadata/rightsList/rightsIdentifierScheme.label"
+msgstr ""
+
+
+msgid "metadata/rightsList/rightsURI.label"
+msgstr ""
+
+
+msgid "metadata/rightsList/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/schemaVersion.label"
+msgstr ""
+
+
+msgid "metadata/sizes.label"
+msgstr ""
+
+
+msgid "metadata/subjects/lang.label"
+msgstr ""
+
+
+msgid "metadata/subjects/schemeURI.label"
+msgstr ""
+
+
+msgid "metadata/titles/lang.label"
+msgstr ""
+
+
+msgid "metadata/titles/titleType.label"
+msgstr ""
+
+
+msgid "metadata/url.label"
+msgstr ""
+
+
+msgid "metadata/dateModified.label"
+msgstr ""
+
+
+msgid "metadata/externalLocation/externalLocationURL.label"
+msgstr ""
+
+
+msgid "metadata/thesis/dateDefended.label"
+msgstr ""
+
+
+msgid "metadata/thesis/defended.label"
+msgstr ""
+
+
+msgid "metadata/thesis/degreeGrantors.label"
+msgstr ""
+
+
+msgid "metadata/thesis/studyFields.label"
+msgstr ""
+
+
+msgid "syntheticFields/date.label"
+msgstr ""
+
+
+msgid "syntheticFields/defenseYear.label"
+msgstr ""
+
+
+msgid "syntheticFields/keywords.label"
+msgstr ""
+
+
+msgid "syntheticFields/organizations.label"
+msgstr ""
+
+
+msgid "syntheticFields/people.label"
+msgstr ""
+
+
+msgid "syntheticFields/year.label"
+msgstr ""
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:1
+msgid "metadata/relatedItems/itemTitle.label"
+msgstr ""
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:2
+msgid "metadata/relatedItems/itemCreators.label"
+msgstr ""
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:3
+msgid "metadata/relatedItems/itemContributors.label"
+msgstr ""
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:4
+msgid "metadata/relatedItems/itemPIDs.label"
+msgstr ""
+
+
+#: nr_metadata/translations/jinjax_messages.jinja:11
+msgid "Pages"
+msgstr ""
+
+
+
+
+msgid "Find more records by this person"
+msgstr ""
+
+
+msgid "Find more records by this organization"
+msgstr ""
+
+
+msgid "Creators"
+msgstr ""
+
+
+msgid "Find more records with this subject"
+msgstr ""
+
+msgid "Alternative title"
+msgstr ""
+
+msgid "Translated title"
+msgstr ""
+
+msgid "Subtitle"
+msgstr ""
+
+msgid "Other"
+msgstr ""
+
+msgid "Add additional title"
+msgstr ""
+
+msgid "Add creator"
+msgstr ""
+
+msgid "Edit creator"
+msgstr ""
+
+msgid "Edit"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "Unknown item"
+msgstr ""
+
+msgid "Save and add another"
+msgstr ""
+
+msgid "Given name is a required field."
+msgstr ""
+
+msgid "Family name is a required field."
+msgstr ""
+
+msgid "Role is a required field."
+msgstr ""
+
+msgid "Organization's name is a required field."
+msgstr ""
+
+msgid "Added"
+msgstr ""
+
+msgid "Person"
+msgstr ""
+
+msgid "Organization"
+msgstr ""
+
+msgid "Search for persons by name, identifier, or affiliation..."
+msgstr ""
+
+msgid "Organization name"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Save"
+msgstr ""
+
+msgid "Choose if the author is a person or an organization."
+msgstr ""
+
+msgid "Couldn't find your person? You can <2>create a new entry</2>."
+msgstr ""
+
+msgid "Choose"
+msgstr ""
+
+msgid "Add event"
+msgstr ""
+
+msgid "Add event alternate name"
+msgstr ""
+
+msgid "Remove field"
+msgstr ""
+
+msgid "Add external location"
+msgstr ""
+
+msgid "Fetching files"
+msgstr ""
+
+msgid "Failed to fetch draft's files. Please try refreshing the page."
+msgstr ""
+
+msgid ""
+"File addition, removal or modification are not allowed after you have "
+"published your draft."
+msgstr ""
+
+msgid "If you wish to upload files, you must<1>save</1>your draft first."
+msgstr ""
+
+msgid "Delete file"
+msgstr ""
+
+msgid "File uploaded successfully."
+msgstr ""
+
+msgid "File was not uploaded correctly. Please delete it and try again."
+msgstr ""
+
+msgid "Edit file metadata"
+msgstr ""
+
+msgid "File name"
+msgstr ""
+
+msgid "File size"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+msgid "Delete"
+msgstr ""
+
+msgid "Upload files"
+msgstr ""
+
+msgid "Edit file"
+msgstr ""
+
+msgid "Add project/financing information"
+msgstr ""
+
+msgid "Add location"
+msgstr ""
+
+msgid "Geolocation"
+msgstr ""
+
+msgid "Location"
+msgstr ""
+
+msgid "Longitude"
+msgstr ""
+
+msgid "Latitude"
+msgstr ""
+
+msgid "DOI"
+msgstr ""
+
+msgid "Handle"
+msgstr ""
+
+msgid "ISBN"
+msgstr ""
+
+msgid "ISSN"
+msgstr ""
+
+msgid "RIV"
+msgstr ""
+
+msgid "ORCID"
+msgstr ""
+
+msgid "ScopusID"
+msgstr ""
+
+msgid "ResearcherID"
+msgstr ""
+
+msgid "CzenasAutID"
+msgstr ""
+
+msgid "vedIDK"
+msgstr ""
+
+msgid "InstitutionalID"
+msgstr ""
+
+msgid "ISNI"
+msgstr ""
+
+msgid "ROR"
+msgstr ""
+
+msgid "ICO"
+msgstr ""
+
+msgid "Both identifier and identifier type must be filled."
+msgstr ""
+
+msgid "Add identifier"
+msgstr ""
+
+msgid "Choose license"
+msgstr ""
+
+msgid "License"
+msgstr ""
+
+msgid ""
+"If a Creative Commons license is associated with the resource, select the "
+"appropriate license option from the menu. We recommend choosing the latest "
+"versions, namely 3.0 Czech and 4.0 International."
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Featured"
+msgstr ""
+
+msgid "All"
+msgstr ""
+
+msgid "Read more."
+msgstr ""
+
+msgid "Related items"
+msgstr ""
+
+msgid "Add related item"
+msgstr ""
+
+msgid "Edit related item"
+msgstr ""
+
+msgid ""
+"Write down information about a resource related to the resource being "
+"described (i.e. if you are describing an article, here you can identify a "
+"magazine in which the article was published)."
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Please provide an URL in valid format"
+msgstr ""
+
+msgid "Year must be a number."
+msgstr ""
+
+msgid "Year must be in format YYYY."
+msgstr ""
+
+msgid "Add contributor"
+msgstr ""
+
+msgid "Edit contributor"
+msgstr ""
+
+msgid "Add series"
+msgstr ""
+
+msgid "Add note"
+msgstr ""
+
+msgid "External subjects (psh, czenas ...)"
+msgstr ""
+
+msgid "Remove keyword"
+msgstr ""
+
+msgid "Free text keywords"
+msgstr ""
+
+msgid "Add keywords"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "Keyword"
+msgstr ""
+
+msgid "We couldn't find any matches for "
+msgstr ""
+
+msgid "your search"
+msgstr ""
+
+msgid "Start over"
+msgstr ""
+
+msgid "ProTip"
+msgstr ""
+
+msgid "will give you all the publications from 2017 until today."
+msgstr ""
+
+msgid "For more tips, check out our "
+msgstr ""
+
+msgid "Search guide"
+msgstr ""
+
+msgid "search guide"
+msgstr ""
+
+msgid " for defining advanced search queries."
+msgstr ""
+
+msgid "Find all records"
+msgstr ""
+
+msgid "by this document type"
+msgstr ""
+
+msgid "Resource type"
+msgstr ""
+
+msgid "Title type"
+msgstr ""
+
+msgid "Additional titles"
+msgstr ""
+
+msgid "Abstract"
+msgstr ""
+
+msgid "Methods"
+msgstr ""
+
+msgid "Technical info"
+msgstr ""
+
+msgid "Invalid date format"
+msgstr ""
+
+msgid "Date modified"
+msgstr ""
+
+msgid "Date available"
+msgstr ""
+
+msgid "Publishers must be unique"
+msgstr ""
+
+msgid "Publishers"
+msgstr ""
+
+msgid "Notes must be unique"
+msgstr ""
+
+msgid "Notes"
+msgstr ""
+
+msgid "Longitude must be between -180 and 180"
+msgstr ""
+
+msgid "Latitude must be between -90 and 90"
+msgstr ""
+
+msgid "Locations must be unique"
+msgstr ""
+
+msgid "Accessibility"
+msgstr ""
+
+msgid "URL must be provided for this field if used"
+msgstr ""
+
+msgid "External location"
+msgstr ""
+
+msgid "Project code"
+msgstr ""
+
+msgid "Project codes must be unique"
+msgstr ""
+
+msgid "Funding"
+msgstr ""
+
+msgid "Subject scheme"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+msgid "Subjects must be unique"
+msgstr ""
+
+msgid "Subjects"
+msgstr ""
+
+msgid "Series title"
+msgstr ""
+
+msgid "Series titles must be unique"
+msgstr ""
+
+msgid "Series"
+msgstr ""
+
+msgid "Event name"
+msgstr ""
+
+msgid "Event date"
+msgstr ""
+
+msgid "Place"
+msgstr ""
+
+msgid "Country"
+msgstr ""
+
+msgid "Events"
+msgstr ""
+
+msgid "Identifier type"
+msgstr ""
+
+msgid "Object identifier"
+msgstr ""
+
+msgid "Object identifiers must be unique"
+msgstr ""
+
+msgid "Object identifiers"
+msgstr ""
+
+msgid "System identifier"
+msgstr ""
