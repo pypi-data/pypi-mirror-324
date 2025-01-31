@@ -1,0 +1,13 @@
+docs/Makefile,sha256=i2WHuFlgfyAPEW4ssEP8NY4cOibDJrVjvzSEU8_Ggwc,634
+docs/changelog.rst,sha256=HkybTmOhSl941dpJ31nA2IOQuRYyKYRE0x4w7Wwfzwc,578
+docs/conf.py,sha256=O8TnVMu2kK3Wmh92bA0hG2U2hLyaQMfTxYFRoT-FKb8,2378
+docs/index.rst,sha256=BEPPem-s9Lll9472AeuMW7Bpqv6hw8JDpRSy0XDAHsE,254
+docs/requirements.txt,sha256=Jlpco83K7sYgScPxRKwl2-XB0fDFvmrslrBO2SGjTYo,5
+docs/api/index.rst,sha256=77Yabw1dzKiSu82ZaGAT2zIp2sqM-PpNAEJC9-WB91I,95
+docs/contributing/index.rst,sha256=h94tX_Gl8ea0zOkLVX8ywphbedcLDgWbu0Yuw2oWvfQ,143
+scrapyloganalyzer/__init__.py,sha256=d_6FWoq76Zxck1h1t1V35bDU61vvcyM8vyjqYDJxIAo,8249
+scrapyloganalyzer-0.0.3.dist-info/LICENSE,sha256=eTScIHS7WFmdqItnM1lkqaXlqA8hPE4vLk19uSbVs-c,1528
+scrapyloganalyzer-0.0.3.dist-info/METADATA,sha256=DFDrB47l7mHmroo7Imu99iig6pPFhngXqyfhPAFzQzc,1886
+scrapyloganalyzer-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+scrapyloganalyzer-0.0.3.dist-info/top_level.txt,sha256=MW8UgQSaJEh5EbIM4C8yEeIcwmh3nN5-hkzSa-Cu-4I,28
+scrapyloganalyzer-0.0.3.dist-info/RECORD,,
