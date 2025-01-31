@@ -1,0 +1,17 @@
+tunits_core.cpython-310-x86_64-linux-gnu.so,sha256=myCx5WeX4i2WgEijJUp6HHkePK1NvsKMkCOARu17SoE,7934736
+typedunits-0.0.1.dev20250131003844.dist-info/AUTHORS,sha256=67OcWY9Da-JUBZcgQblVrIiXT3rv_HIf-DRtDyqVCMo,297
+typedunits-0.0.1.dev20250131003844.dist-info/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+typedunits-0.0.1.dev20250131003844.dist-info/WHEEL,sha256=ViyZsTV2upbIniGkknQiIrLPLs1cJIoIfr1wsV7PMic,151
+typedunits-0.0.1.dev20250131003844.dist-info/RECORD,,
+typedunits-0.0.1.dev20250131003844.dist-info/top_level.txt,sha256=qs_vq3aijSEYR1hj89KC2UHpYXXsPQMCQK1Vtqj4O9o,19
+typedunits-0.0.1.dev20250131003844.dist-info/METADATA,sha256=2KZeaXPU-D5iOTqK1mndwRGiO1vyPhXLjBLIjLqh2kg,4755
+tunits/units.py,sha256=2uiWhHWJKFjwnEoLtN8XLMITQ2v_QpXxaKRspjc-teI,109100
+tunits/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tunits/__init__.py,sha256=5tn_Sq6HHe2eXVpe54GdKHLAf6NUBVHTFoRljfZ4Gjw,2094
+tunits/core/_all_cythonized.c,sha256=YfxpfDUr2a6Fxx6twyTlEUExQuDGn-aLsiFMy-NUpTw,4140163
+tunits/core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tunits/core/__init__.py,sha256=49GSI7aPz7fSWxGECpu8eP0Y4jvvr_CWPwkfBGjxvYo,2447
+tunits/core/__init__.pyi,sha256=9T7BWEQWO1m5O6OveTXDoGVCb0MHsJhc8bcYNhyZiZo,31003
+tunits/proto/tunits_pb2.py,sha256=W1_xzW3GhR6FCn87ZYE0APHt2zGovyTlECwxotTGYBE,4312
+tunits/proto/tunits.proto,sha256=VH8yBHx9Q7p_WQC9ccQFfrDOZfSHDWDu_xtZw9lyefc,3016
+tunits/proto/tunits_pb2.pyi,sha256=97RyOMxGg_LAD9_XQJxoQSj8tpmmGp9GsGphJ5IK9qo,11321
