@@ -1,0 +1,3 @@
+[console_scripts]
+eofetch = eofetch.__main__:main
+

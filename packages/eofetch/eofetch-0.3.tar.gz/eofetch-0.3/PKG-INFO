@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: eofetch
+Version: 0.3
+Summary: Earth Observation Data Retrieval library
+Home-page: https://github.com/stcorp/eofetch
+Author: S[&]T
+Author-email: UNKNOWN
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering

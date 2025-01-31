@@ -1,0 +1,15 @@
+CHANGES
+MANIFEST.in
+README.md
+setup.py
+eofetch/__init__.py
+eofetch/__main__.py
+eofetch/cdse.py
+eofetch/fetch.py
+eofetch/s5ppal.py
+eofetch.egg-info/PKG-INFO
+eofetch.egg-info/SOURCES.txt
+eofetch.egg-info/dependency_links.txt
+eofetch.egg-info/entry_points.txt
+eofetch.egg-info/requires.txt
+eofetch.egg-info/top_level.txt
