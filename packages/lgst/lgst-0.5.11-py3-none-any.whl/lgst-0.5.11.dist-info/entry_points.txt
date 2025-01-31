@@ -1,0 +1,2 @@
+[console_scripts]
+libgen-seedtools = libgen_seedtools.cli:cli
