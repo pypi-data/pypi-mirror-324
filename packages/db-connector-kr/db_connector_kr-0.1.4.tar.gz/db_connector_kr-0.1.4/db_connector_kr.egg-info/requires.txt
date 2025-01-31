@@ -1,0 +1,6 @@
+pandas
+snowflake-connector-python
+pymysql
+
+[postgres]
+psycopg2-binary
