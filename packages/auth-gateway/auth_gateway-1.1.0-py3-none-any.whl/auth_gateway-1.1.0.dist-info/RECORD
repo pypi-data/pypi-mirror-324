@@ -1,0 +1,8 @@
+auth_gateway/__init__.py,sha256=m62xROL4vt4HPwZC9mIhU2ZZycNP6LJGK7lzF9lQCXA,135
+auth_gateway/client.py,sha256=c-4yDfTUUpdPHZ-oSfEPUTgng9nqWJk4Rgm4zzRcjos,1296
+auth_gateway/enums.py,sha256=XhGOdKwVigmvO1YdE4hfAhr4iLi5s-T8cZFMOM9btVw,304
+auth_gateway/middleware.py,sha256=D4m9gHGPIejPq-mmqg4GBAUIZz5ehbDiac7WrSvApCk,2870
+auth_gateway-1.1.0.dist-info/LICENSE,sha256=6nRUS9lqEWyA9IZgLAS6MHDhbyGucWFX6J6JkDewjbg,1068
+auth_gateway-1.1.0.dist-info/METADATA,sha256=fv5IEyKwFrljA6vk3gXU5IEywdqr_LuIHeqzuU_3Zhs,1444
+auth_gateway-1.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+auth_gateway-1.1.0.dist-info/RECORD,,
