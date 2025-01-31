@@ -1,0 +1,11 @@
+README.md
+setup.py
+instastorysaver/__init__.py
+instastorysaver/auth.py
+instastorysaver/main.py
+instastorysaver.egg-info/PKG-INFO
+instastorysaver.egg-info/SOURCES.txt
+instastorysaver.egg-info/dependency_links.txt
+instastorysaver.egg-info/entry_points.txt
+instastorysaver.egg-info/requires.txt
+instastorysaver.egg-info/top_level.txt
