@@ -1,0 +1,14 @@
+wiggle_sensors/__init__.py,sha256=Yvm-_dzIWTm3sSyq_K5NC116B3sijMvEzM09EjMgF2E,127
+wiggle_sensors/accelerometer.py,sha256=czktRG2n9yJDcDR6gj0OIiWkPIu4DE8mp5Mz_TM7VtI,1413
+wiggle_sensors/environment.py,sha256=Y5FMBJAmSagW8-IkpRDaCAT0lT9tdYt-at4wdFxxwSE,1595
+wiggle_sensors/gate.py,sha256=tEkoVQuUB62mh971YAzIQSwwRxxP6atH0qJVXdPqpKI,665
+wiggle_sensors/hourly.py,sha256=KPwWdByPxUjKkgKt_J-XtyGr6qsNArdv8_aaAEOR3ag,291
+wiggle_sensors/main.py,sha256=PzF5K9fQ-Gf20ZzJ70Y-ST8AKPbB5UL6X4sGm07YmnQ,1052
+wiggle_sensors/soil_moisture.py,sha256=PVh3EB9cytnZUmy8zzwhfyPuEcystBS6jfiM5Zp9f0k,1703
+wiggle_sensors/soil_temperature.py,sha256=K4JrpbP04Qtx_VDgfel6cbNkiheLWbBIaGbmrZlJ1pA,2152
+wiggle_sensors/write.py,sha256=zwPzLtTYBae_tVPJ252C-y13dZNjJf5HOl34HbfHrl0,1260
+wiggle_sensors-0.0.2.dist-info/METADATA,sha256=DcqsZQTW_roVdsOprZ8jkUpvAIVnm_YE5FRGTBuuzy0,1768
+wiggle_sensors-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+wiggle_sensors-0.0.2.dist-info/entry_points.txt,sha256=7GA3Uuv0IXC1URxW0vb9r9wQ_gtVzTjNwVBfdwVtbvo,60
+wiggle_sensors-0.0.2.dist-info/top_level.txt,sha256=CNXh6CwyRzbgFtimtCGsTBSrp8Wq3awBHoRZDAlC0oA,15
+wiggle_sensors-0.0.2.dist-info/RECORD,,

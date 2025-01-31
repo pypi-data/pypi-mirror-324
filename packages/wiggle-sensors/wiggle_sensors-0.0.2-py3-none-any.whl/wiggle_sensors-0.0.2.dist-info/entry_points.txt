@@ -1,0 +1,2 @@
+[console_scripts]
+wiggle-sensors = wiggle_sensors.main:main
