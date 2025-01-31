@@ -1,0 +1,6 @@
+[console_scripts]
+QuantriX=QuantriX:modules
+
+[gui_scripts]
+QuantriX=QuantriX:modules
+
