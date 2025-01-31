@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "megolm-filter"
+version = "0.2"
+description = "Modify your offline megolm key backups from shell"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "GPLv3"}
+keywords = ["megolm", "element", "matrix"]
+authors = [
+    { name = "Lain Iwakura", email = "lain@serialexperiments.club" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security :: Cryptography",
+]
+
+dependencies = [
+    "pycryptodome",
+]
+
+[project.urls]
+homepage = "https://git.serialexperiments.club/lain/megolm_filter"
+repository = "https://git.serialexperiments.club"
+changelog = "https://git.serialexperiments.club/lain/megolm_filter/commits/branch/master"
+
+[project.scripts]
+megolm_filter = "megolm_filter:main"
