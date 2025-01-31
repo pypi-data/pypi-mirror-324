@@ -1,0 +1,3 @@
+[console_scripts]
+ssh-copy-id=dt_ssh_copy_id:main
+
