@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: weni-cli
+Version: 0.3.0a2
+Requires-Dist: Click
+Requires-Dist: requests
+Requires-Dist: flask
+Requires-Dist: waitress
+Requires-Dist: pyyaml
+Requires-Dist: python-slugify
+Dynamic: requires-dist
