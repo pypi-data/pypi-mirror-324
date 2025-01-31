@@ -1,0 +1,7 @@
+setup.py
+my_package/__init__.py
+my_package/example.py
+yevgenevic.egg-info/PKG-INFO
+yevgenevic.egg-info/SOURCES.txt
+yevgenevic.egg-info/dependency_links.txt
+yevgenevic.egg-info/top_level.txt
