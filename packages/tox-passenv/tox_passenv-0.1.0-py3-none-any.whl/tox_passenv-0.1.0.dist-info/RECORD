@@ -1,0 +1,10 @@
+tox_passenv/__init__.py,sha256=H8O5V2zHPHZXwbCbz1hzd4xi8UPYUwREcVIc3Gp-rFI,72
+tox_passenv/_tox4_plugin.py,sha256=4bKDlTNrcptZiAdEexXw3mDSIk59UDCP0Xdadsf8mag,621
+tox_passenv/plugin.py,sha256=L50DdyJfBfxnP8uxh3L4sbr6eBsNXJyvgIV8V_Ww4gY,324
+tox_passenv/version.py,sha256=aOHawL1zuHMfBWKXqwUkXcW96oXLNCY-CXdHDqkz4g4,18
+tox_passenv-0.1.0.dist-info/LICENSE,sha256=lfnvlXZ500MSgJ8gxnuswEvLOB-aP6wZKZmAtp6FpRw,1024
+tox_passenv-0.1.0.dist-info/METADATA,sha256=jMciXCAkEoBDn_6hptQzE9W9F7AJCt4VhqUGZ2yVFMI,1898
+tox_passenv-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tox_passenv-0.1.0.dist-info/entry_points.txt,sha256=CPdfqxScHlhbQkbxtWs1RR6-KU4NnL2tuBt6OjGgzKY,39
+tox_passenv-0.1.0.dist-info/top_level.txt,sha256=xDmNusAh_zAOaAy6FirvhXYHt_1YQ870SvCF6SuQJAc,12
+tox_passenv-0.1.0.dist-info/RECORD,,
