@@ -1,0 +1,49 @@
+.gitignore
+.pre-commit-config.yaml
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+src/seguin_loom_server/__init__.py
+src/seguin_loom_server/client_replies.py
+src/seguin_loom_server/display.css
+src/seguin_loom_server/display.html_template
+src/seguin_loom_server/display.js
+src/seguin_loom_server/favicon-32x32.png
+src/seguin_loom_server/loom_constants.py
+src/seguin_loom_server/loom_server.py
+src/seguin_loom_server/main.py
+src/seguin_loom_server/mock_loom.py
+src/seguin_loom_server/mock_streams.py
+src/seguin_loom_server/pattern_database.py
+src/seguin_loom_server/py.typed
+src/seguin_loom_server/reduced_pattern.py
+src/seguin_loom_server/testutils.py
+src/seguin_loom_server/version.py
+src/seguin_loom_server.egg-info/PKG-INFO
+src/seguin_loom_server.egg-info/SOURCES.txt
+src/seguin_loom_server.egg-info/dependency_links.txt
+src/seguin_loom_server.egg-info/entry_points.txt
+src/seguin_loom_server.egg-info/requires.txt
+src/seguin_loom_server.egg-info/top_level.txt
+src/seguin_loom_server/locales/README.md
+src/seguin_loom_server/locales/default.json
+src/seguin_loom_server/locales/fr.json
+tests/test_mock_loom.py
+tests/test_mock_streams.py
+tests/test_pattern_database.py
+tests/test_reduced_pattern.py
+tests/test_server.py
+tests/test_version.py
+tests/data/many color liftplan and zeros.dtx
+tests/data/many color liftplan and zeros.wif
+tests/data/many color multiple treadles and zeros.dtx
+tests/data/many color multiple treadles and zeros.wif
+tests/data/many color single treadles.dtx
+tests/data/many color single treadles.wif
+tests/data/two color liftplan.dtx
+tests/data/two color liftplan.wif
+tests/data/two color multiple treadles.dtx
+tests/data/two color multiple treadles.wif
+tests/data/two color single treadles.dtx
+tests/data/two color single treadles.wif
