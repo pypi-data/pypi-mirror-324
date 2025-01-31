@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+midi_trans/__init__.py
+midi_trans/melodyandremidi.py
+midi_trans.egg-info/PKG-INFO
+midi_trans.egg-info/SOURCES.txt
+midi_trans.egg-info/dependency_links.txt
+midi_trans.egg-info/requires.txt
+midi_trans.egg-info/top_level.txt
