@@ -1,0 +1,22 @@
+[project]
+name = "gelf"
+version = "0.0.2"
+dependencies = []
+requires-python = ">=3.8"
+authors = [
+  {name = "Sylvan Le Deunff", email = "sylvan.ledeunff@gmail.com"},
+]
+maintainers = [
+  {name = "Sylvan Le Deunff", email = "sylvan.ledeunff@gmail.com"},
+]
+description = "Library that provides classes for GELF logging!"
+readme = "README.md"
+keywords = ["gelf", "logging"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
