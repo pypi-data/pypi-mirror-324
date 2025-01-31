@@ -1,0 +1,12 @@
+check-manifest
+mypy
+nbclassic
+nbconvert
+nbsphinx
+pooch
+pre-commit
+pytest
+pytest-cov
+setuptools_scm
+sphinx
+twine
