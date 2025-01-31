@@ -1,0 +1,3 @@
+[console_scripts]
+econ-llm = econ_llm.cli:main
+realpython = econ_llm.__main__:main

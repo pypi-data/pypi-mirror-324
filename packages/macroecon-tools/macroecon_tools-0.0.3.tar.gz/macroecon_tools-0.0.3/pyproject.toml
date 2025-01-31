@@ -1,0 +1,30 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "macroecon-tools"
+version = "0.0.3"
+description = "LLM Agents for Game Theory Experiments"
+readme = "README.md"
+authors = [
+    { name = "Jawand Singh", email = "jawandsingh@gmail.com" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["game theory", "LLM", "agents", "experiments"]
+dependencies = [
+    "openai",
+    "matplotlib",
+    "selenium"
+]
+requires-python = ">=3.9"
+
+[project.scripts]
+realpython = "econ_llm.__main__:main"
+econ-llm = "econ_llm.cli:main"
