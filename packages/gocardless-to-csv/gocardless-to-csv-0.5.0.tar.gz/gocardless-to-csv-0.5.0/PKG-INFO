@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: gocardless-to-csv
+Version: 0.5.0
+Summary: Client for GoCardless Bank Data API that pulls transaction history and converts it to CSV
+Home-page: https://github.com/adept/gocardless-to-csv
+License: MIT
+Keywords: ledger,hledger,gocardless,plain text accounting,pta
+Author: Dmitry Astapov
+Author-email: dastapov@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Dist: nordigen (>=1.4.1)
+Requires-Dist: pyfzf (>=0.3.1)
+Project-URL: Repository, https://github.com/adept/gocardless-to-csv
