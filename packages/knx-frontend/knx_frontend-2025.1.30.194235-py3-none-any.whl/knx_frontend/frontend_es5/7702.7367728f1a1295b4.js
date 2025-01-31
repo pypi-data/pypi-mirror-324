@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkknx_frontend=self.webpackChunkknx_frontend||[]).push([["7702"],{67137:function(e,n,t){t.a(e,(async function(e,n){try{t(71695),t(40251),t(47021);var a=t(67137),i=e([a]);a=(i.then?(await i)():i)[0],"function"!=typeof window.ResizeObserver&&(window.ResizeObserver=(await t.e("3378").then(t.bind(t,88198))).default),n()}catch(s){n(s)}}),1)}}]);
+//# sourceMappingURL=7702.7367728f1a1295b4.js.map
