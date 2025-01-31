@@ -1,0 +1,82 @@
+Metadata-Version: 2.2
+Name: torii-ila
+Version: 0.1.0
+Summary: Integrated Logic Analyzer module for Torii
+Home-page: https://torii-ila.shmdn.link/
+Author: Aki Van Ness
+Author-email: aki@lethalbit.net
+License: BSD-3-Clause
+Project-URL: Documentation, https://torii-ila.shmdn.link/
+Project-URL: Source Code, https://github.com/shrine-maiden-heavy-industries/torii-ila
+Project-URL: Bug Tracker, https://github.com/shrine-maiden-heavy-industries/torii-ila/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Electronic Design Automation (EDA)
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Typing :: Typed
+Requires-Python: ~=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torii<1.0,>=0.7.1
+Requires-Dist: pyvcd
+Provides-Extra: dev
+Requires-Dist: nox; extra == "dev"
+Provides-Extra: usb
+Requires-Dist: sol-usb<1.0,>=0.4.1; extra == "usb"
+Requires-Dist: libusb1>=1.8.1; extra == "usb"
+Requires-Dist: pyusb; extra == "usb"
+Provides-Extra: serial
+Requires-Dist: pyserial; extra == "serial"
+Provides-Extra: examples
+Requires-Dist: torii-boards<1.0,>=0.6.1; extra == "examples"
+Requires-Dist: sol-usb<1.0,>=0.4.1; extra == "examples"
+Requires-Dist: libusb1>=1.8.1; extra == "examples"
+Requires-Dist: pyusb; extra == "examples"
+Requires-Dist: pyserial; extra == "examples"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Torii ILA
+
+> [!WARNING]
+> Torii ILA is in early development, it may not be stable, or even functional at all, use at your own risk.
+
+Torii ILA is an Integrated Logic Analyzer (ILA) for [Torii] based designs, it is adapted from the ILA that is a part of [SOL] and aims to be more generally useful outside of it, and also
+aims to replace it directly.
+
+It provides several backhaul interfaces for getting the ILA samples off of the device and on to a host:
+
+* USB - Using [SOL]
+* UART - Using [`torii.lib.serial`]
+
+## License
+
+Torii ILA is licensed under the [BSD-3-Clause], the full text of which can be found in the [`LICENSE`] file.
+
+[Torii]: https://github.com/shrine-maiden-heavy-industries/torii-hdl/
+[SOL]: https://github.com/shrine-maiden-heavy-industries/sol/
+[`torii.lib.serial`]: https://github.com/shrine-maiden-heavy-industries/torii-hdl/blob/main/torii/lib/stdio/serial.py
+[BSD-3-Clause]: https://spdx.org/licenses/BSD-3-Clause.html
+[`LICENSE`]: ./LICENSE
