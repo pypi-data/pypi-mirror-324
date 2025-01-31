@@ -1,0 +1,13 @@
+dqb2/__init__.py,sha256=WXb6kl-miXnlYFrjLBRrTfN_60fgZYG3LtHRYPFxYRI,1364
+dqb2/__version__.py,sha256=fCDDAyG3nMZcE_hvt1RHdxkiFN3DfNSyU_k-rLUDrpE,21
+dqb2/_imports_.py,sha256=cWbF6xPDPtFjCYwdpyXKo9Lb8sfYUjEZMA0x89SWQn0,94
+dqb2/dash_query_builder.py,sha256=rc2-1vrbaS397pEUi4z5eP1c6j1t59iHGED2SsOxf48,51109
+dqb2/dqb2.js,sha256=BydNLnMuYZBJmYbsMEFZZ0wUQBB_qryh4yVBwnkX5W4,7268434
+dqb2/main.css,sha256=ISlpn42w8h72FguUXcXjZ4x3O0D7NMb6ZYFK3SEDbJw,400182
+dqb2/metadata.json,sha256=T0OO2VcGK3n4kTtmUTrYsFQee2aN1lJQWNYpHyKe5js,70465
+dqb2/package-info.json,sha256=7V9ucgJfk9MNa8DtWHgP1XUiga0N6zeYMjxtqg_zvPk,1984
+dqb2-1.0.6.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dqb2-1.0.6.dist-info/METADATA,sha256=soslAdrkePgVaqYWE7EdDkOaUg97byoK035t5wrmU6w,1647
+dqb2-1.0.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dqb2-1.0.6.dist-info/top_level.txt,sha256=bEuCd6q8cKvlNwZ9nLBaShK_PWCegpyFMPEW_CE82h8,5
+dqb2-1.0.6.dist-info/RECORD,,
