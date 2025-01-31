@@ -1,0 +1,6 @@
+lips
+multiset
+pandas
+pyadic
+pyyaml
+syngular
