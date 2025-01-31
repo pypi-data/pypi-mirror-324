@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-server-office = mcp_server_office.__main__:main
