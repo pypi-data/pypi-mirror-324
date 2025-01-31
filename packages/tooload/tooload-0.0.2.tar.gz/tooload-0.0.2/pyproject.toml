@@ -1,0 +1,731 @@
+# SPDX-FileCopyrightText: © 2024 nosludge <https://github.com/nosludge>
+# SPDX-FileContributor: szymonmaszke <github@maszke.co>
+#
+# SPDX-License-Identifier: Apache-2.0
+
+[project]
+name = "tooload"
+
+description = "One-line loading tools config (pyproject.toml and tool specific)"
+readme = "README.md"
+
+license = { file = "LICENSE.md" }
+maintainers = [
+  { name = "nosludge" },
+]
+authors = [
+  { name = "nosludge" },
+]
+requires-python = ">=3.11"
+# Full list of classifiers: https://pypi.org/classifiers/
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+# dynamic = [ "version" ]
+version = "0.0.2"
+
+###############################################################################
+#
+#                              DEPENDENCIES
+#
+###############################################################################
+
+dependencies = [
+]
+
+urls.Changelog = "https://github.com/nosludge/tooload/blob/master/CHANGELOG.md"
+urls.Documentation = "https://nosludge.github.io/tooload"
+urls.Homepage = "https://nosludge.github.io/tooload"
+urls.Issues = "https://github.com/nosludge/tooload/issues"
+urls.Repository = "https://github.com/nosludge/tooload"
+
+[dependency-groups]
+test = [
+  "hypothesis>=6",
+  "pytest>=8",
+  "pytest-cov>=5",
+  "pytest-html>=4",
+  "pytest-pretty-terminal>=1",
+  "pytest-randomly>=3",
+  # Fuzz/property testing for Python
+  "tomli-w>=1",
+]
+
+docs = [
+  # Needed for mkdocs-social
+  "cairosvg>=2",
+  "markdown>=3",
+  "mike>=2",
+  "mkdocs-awesome-pages-plugin>=2",
+  "mkdocs-gen-files>=0.5.0",
+  "mkdocs-git-revision-date-localized-plugin>=1",
+  "mkdocs-jupyter>=0.25.1",
+  "mkdocs-link-marker>=0.1.3",
+  "mkdocs-literate-nav>=0.6.0",
+  "mkdocs-material>=9",
+  "mkdocs-minify-plugin>=0.8.0",
+  "mkdocs-redirects>=1",
+  "mkdocs-section-index>=0.3.4",
+  "mkdocstrings>=0.25.0",
+  "mkdocstrings-python>=1",
+  # Needed for mkdocs-social
+  "pillow>=10",
+  "pygments>=2",
+  "pymdown-extensions>=10",
+  "termynal>=0.12.1",
+]
+
+python = [
+  "codespell>=2",
+  "fawltydeps>=0.17.0",
+  "interrogate>=1",
+  "pytype>=2024; python_version<'3.13'",
+  "ruff>=0.5.6",
+]
+
+yaml = [
+  "yamllint>=1",
+]
+
+markdown = [
+  "deadlink>=0.5.0",
+  "pymarkdownlnt>=0.9.21",
+]
+
+ini = [
+  "pyinilint>=0.17",
+]
+
+pyproject = [
+  "pyproject-fmt>=2",
+  "validate-pyproject>=0.18",
+]
+
+citation = [
+  # Citations (have to be pinned due to latest fixes not pushed to PyPI)
+  "cffconvert @ git+https://github.com/citation-file-format/cffconvert@b6045d78aac9e02b039703b030588d54d53262ac",
+]
+
+security = [
+  # Automated SBOM generation
+  # Needs full release to generate SBOM
+  "cyclonedx-bom>=4",
+  # Security related static analysis
+  "semgrep>=1; platform_system!='Windows'",
+  # Signature generation
+  "sigstore>=3",
+]
+
+legal = [
+  "reuse>=4",
+]
+
+hooks = [
+  # Other pre-commit-hooks are used directly within pre-commit
+  "conventional-pre-commit>=3",
+  "pre-commit>=3",
+  # "pre-commit-hooks<5.0.0,>=4.6.0",
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "scm"
+fallback_version = "0.0.0"
+
+[tool.pdm.build]
+includes = [  ]
+
+[tool.pdm.scripts]
+
+###############################################################################
+#
+#                               TEST
+#
+###############################################################################
+
+test-fast = "pytest -x --pretty --cov=src --cov-fail-under=100 --cov-report=term-missing tests"
+test = { composite = [
+  "pdm use 3.11",
+  "pdm run pytest -x --pretty --cov=src --cov-fail-under=100 --cov-report=term-missing tests",
+  "pdm use 3.12",
+  "pdm run pytest -x --pretty --cov=src --cov-fail-under=100 --cov-report=term-missing tests",
+  "pdm use 3.13",
+  "pdm run pytest -x --pretty --cov=src --cov-fail-under=100 --cov-report=term-missing tests",
+] }
+
+###############################################################################
+#
+#                              PYTHON
+#
+###############################################################################
+
+check-python-static = { composite = [
+  "fawltydeps --detailed --code {args:.}",
+  "ruff format --check {args:.}",
+  "ruff check {args:.}",
+  "codespell {args:.}",
+  "interrogate {args:.}",
+] }
+
+fix-python-static = { composite = [
+  "fawltydeps --detailed --code {args:.}",
+  "ruff format {args:.}",
+  "ruff check --fix {args:.}",
+  "codespell --write-changes {args:.}",
+  "interrogate {args:.}",
+] }
+
+check-python-typing = "pytype {args:.}"
+
+###############################################################################
+#
+#                              YAML
+#
+###############################################################################
+
+check-yaml = { composite = [
+  "yamllint {args:.}",
+] }
+
+###############################################################################
+#
+#                              MARKDOWN
+#
+###############################################################################
+
+# @ is ignored for version pinning in pyproject.toml (as seen in cffconvert)
+check-markdown = { composite = [
+  "pymarkdownlnt scan -r {args:.}",
+  """deadlink check {args:.} --ignore-urls
+  @
+  https://github.com/nosludge/tooload/issues
+  https://github.com/nosludge/tooload/blob""",
+] }
+
+fix-markdown = { composite = [
+  # Fix to exclude given files
+  "pymarkdownlnt fix -r {args:.}",
+  "pymarkdownlnt scan -r {args:.}",
+  """deadlink check {args:.} --ignore-urls
+  @
+  https://github.com/nosludge/tooload/issues
+  https://github.com/nosludge/tooload/blob""",
+] }
+
+###############################################################################
+#
+#                               INI
+#
+###############################################################################
+
+check-ini = "pyinilint"
+
+###############################################################################
+#
+#                              PYPROJECT
+#
+###############################################################################
+
+check-pyproject = { composite = [
+  "validate-pyproject {args:pyproject.toml}",
+  "pyproject-fmt --check {args:pyproject.toml}",
+] }
+
+fix-pyproject = { composite = [
+  "validate-pyproject {args:pyproject.toml}",
+  "pyproject-fmt {args:pyproject.toml}",
+] }
+
+###############################################################################
+#
+#                              CITATION
+#
+###############################################################################
+
+check-citation = "cffconvert --validate -i {args:CITATION.cff}"
+
+###############################################################################
+#
+#                              DOCS
+#
+###############################################################################
+
+check-docs = "mkdocs build"
+
+###############################################################################
+#
+#                              SECURITY
+#
+###############################################################################
+
+check-security = { cmd = [
+  "semgrep",
+  "scan",
+  "--strict",
+  "--config=p/python",
+  "--config=p/secrets",
+  "--config=p/security-audit",
+  "--config=p/ci",
+  "--config=p/github-actions",
+  "--config=p/bandit",
+  "--config=p/gitleaks",
+  "--metrics=off",
+  "{args:.}",
+] }
+
+###############################################################################
+#
+#                                LEGAL
+#
+###############################################################################
+
+check-legal = "reuse lint"
+
+fix-legal = { cmd = [
+  "reuse",
+  "annotate",
+  "--license=Apache-2.0",
+  "--copyright=nosludge <https://github.com/nosludge>",
+  "--copyright-prefix=spdx-symbol",
+  "--recursive",
+  "--fallback-dot-license",
+  "{args:.}",
+] }
+
+###############################################################################
+#
+#                              ALL
+#
+###############################################################################
+
+check-all = { composite = [
+  "check-citation",
+  "check-markdown",
+  "check-yaml",
+  "check-pre-commit",
+  "check-pyproject",
+  "check-legal",
+  "check-security",
+  "check-docs",
+  "check-python",
+] }
+
+fix-all = { composite = [
+  "check-citation",
+  "fix-markdown",
+  "check-yaml",
+  "check-pre-commit",
+  "fix-pyproject",
+  "fix-legal",
+  "check-legal",
+  "check-security",
+  "check-docs",
+  "fix-python",
+] }
+
+###############################################################################
+#
+#                              INSTALLATION
+#
+###############################################################################
+
+install-pythons = { composite = [
+  "pdm python install 3.11",
+  "pdm python install 3.12",
+  "pdm python install 3.13",
+] }
+
+install-all-to-pythons = { composite = [
+  "pdm use 3.11",
+  "pdm install -G:all",
+  "pdm use 3.12",
+  "pdm install -G:all",
+  "pdm use 3.13",
+  "pdm install -G:all",
+] }
+
+lock-all = "pdm lock -G:all"
+
+###############################################################################
+#
+#                               SETUP
+#
+###############################################################################
+
+setup-pre-commit = "pdm run pre-commit install --install-hooks"
+
+setup = { composite = [
+  "pdm self update",
+  "install-pythons",
+  "install-all-to-pythons",
+  "pdm use 3.11",
+  "setup-pre-commit",
+] }
+
+###############################################################################
+#
+#                               REFRESH
+#
+###############################################################################
+
+refresh = { composite = [
+  "pdm self update",
+  "pdm lock -G:all",
+  "install-pythons",
+  "install-all-to-pythons",
+] }
+
+###############################################################################
+#
+#                             COMMITTING
+#
+###############################################################################
+
+check-commit = "conventional-pre-commit --strict --scopes '' feat fix feat! fix!"
+
+# Manual testing
+commit = { shell = """
+echo "By committing to this repository, you agree to the Developer Certificate of Origin (DCO)."
+printf "See here: https://developercertificate.org/ for more information.\n"
+git commit --signoff -S
+""" }
+
+# Manual testing
+commit-fast = { shell = """
+echo "By committing to this repository, you agree to the Developer Certificate of Origin (DCO)."
+printf "See here: https://developercertificate.org/ for more information.\n"
+
+options=("fix" "feat" "fix!" "feat!")
+PS3="Select commit type (1-4) or Quit (5): "
+select opt in "${options[@]}" "Quit"; do
+    case "$REPLY" in
+    1) break;;
+    2) break;;
+    3) break;;
+    4) break;;
+    5) exit 0; break;;
+    *) echo "Invalid option."; continue;;
+    esac
+done
+
+read -r -p "\nCommit title message: " title
+
+echo "\nYour commit will be: '$opt: $title'\n"
+
+git commit -S --signoff -m "$opt: $title"
+""" }
+
+# Manual testing
+commit-guided = { shell = """
+echo "By committing to this repository, you agree to the Developer Certificate of Origin (DCO)."
+printf "See here: https://developercertificate.org/ for more information.\n"
+
+echo "Please provide commit type (one of fix/feat/fix!/feat!):"
+echo "- fix: A bug fix (not breaking backward compatibility)."
+echo "- feat: A new feature (not breaking backward compatibility)."
+echo "- fix!: A bug fix (breaking backward compatibility)."
+echo "- feat!: A new feature (breaking backward compatibility)."
+echo ""
+
+options=("fix" "feat" "fix!" "feat!")
+PS3="Select commit type (1-4) or Quit (5): "
+select opt in "${options[@]}" "Quit"; do
+    case "$REPLY" in
+    1) break;;
+    2) break;;
+    3) break;;
+    4) break;;
+    5) exit 0; break;;
+    *) echo "Invalid option.";continue;;
+    esac
+done
+
+printf "\nYou picked %s type.\n" "$opt"
+
+echo "Please provide commit title message:"
+echo "- Use the imperative, present tense: 'change' not 'changed' nor 'changes'"
+echo "- Short (72 chars or less) informative summary of changes"
+echo "- Lowercase"
+echo "- No dot at the end\n"
+echo "Example: 'add performance tests'\n"
+
+read -r -p "Commit title message: " title
+
+echo "\nYour commit will be: '$opt: $title'\n"
+
+read -p "Would you like to make this commit? (Y/N): " \
+  confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
+
+git commit -S --signoff -m "$opt: $title"
+""" }
+
+###############################################################################
+#
+#                                TOOL SETTINGS
+#
+###############################################################################
+
+###############################################################################
+#
+#                                  DEVELOPER
+#
+###############################################################################
+
+###############################################################################
+#
+#                                PYTHON SETTINGS
+#
+###############################################################################
+
+[tool.ruff]
+line-length = 80
+src = [
+  "src",
+  "test",
+]
+extend-exclude = [
+  ".pdm-plugins",
+]
+unsafe-fixes = false
+
+show-fixes = true
+
+format.docstring-code-format = true
+lint.select = [
+  "ALL",
+]
+lint.extend-ignore = [
+  "ANN101",
+  "ANN102",
+  "ANN401",
+  # ruff recommended for fixer compatibility
+  "COM812",
+  # simplify implicit str concatenation (ruff-format recommended)
+  "ISC001",
+  # Prefer absolute imports over relative imports from parent modules
+  "TID252",
+]
+
+lint.extend-per-file-ignores."tests/**.py" = [
+  # Pytest should not be a module
+  "INP001",
+  "S101",
+]
+lint.flake8-bandit.check-typed-exception = true
+lint.flake8-boolean-trap.extend-allowed-calls = [
+  "django.db.models.Value",
+  "pydantic.Field",
+]
+lint.flake8-builtins.builtins-allowed-modules = [
+  "id",
+]
+lint.flake8-import-conventions.banned-from = [
+  "numpy",
+  "pandas",
+  "polars",
+  "typing",
+]
+lint.flake8-pytest-style.parametrize-values-type = "tuple"
+lint.flake8-type-checking.strict = true
+lint.isort.detect-same-package = false
+lint.isort.lines-between-types = 1
+lint.isort.required-imports = [ "from __future__ import annotations" ]
+lint.isort.section-order = [
+  "future",
+  "standard-library",
+  "third-party",
+  # Additional section for machine learning
+  "ml",
+  # Additional section for pytest
+  "testing",
+  "first-party",
+  "local-folder",
+]
+lint.isort.sections.ml = [
+  "pandas",
+  "numpy",
+  "polars",
+  "matplotlib",
+  "seaborn",
+  "scipy",
+  "sklearn",
+  "statsmodels",
+  "nltk",
+  "spacy",
+  "gensim",
+  "tensorflow",
+  "torch",
+  "pytorch-lightning",
+  "lightning",
+  "coremltools",
+  "torchmetrics",
+  "xgboost",
+  "lightgbm",
+  "catboost",
+  "fastai",
+  "mlflow",
+  "neptune",
+  "dvc",
+  "wandb",
+  "dask",
+  "pyspark",
+]
+lint.isort.sections.testing = [ "pytest*", "hypothesis" ]
+lint.mccabe.max-complexity = 6
+lint.pep8-naming.classmethod-decorators = [
+  "pydantic.validator",
+]
+lint.pycodestyle.max-doc-length = 80
+# Detecting very long lines
+lint.pycodestyle.max-line-length = 120
+
+lint.pydocstyle.convention = "google"
+lint.pydocstyle.ignore-decorators = [ "typing.overload" ]
+
+# These are largely opinionated, adjust as needed
+lint.pylint.max-branches = 6
+lint.pylint.max-locals = 10
+lint.pylint.max-nested-blocks = 3
+lint.pylint.max-public-methods = 10
+lint.pylint.max-returns = 5
+lint.pylint.max-statements = 20
+
+[tool.codespell]
+check-filenames = true
+interactive = 0
+
+[tool.pyproject-fmt]
+column_width = 80
+indent = 2
+keep_full_version = true
+max_supported_python = "3.12"
+
+###############################################################################
+#
+#                              COVERAGE SETTINGS
+#
+###############################################################################
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+
+[tool.coverage.report]
+exclude_also = [
+  "def __repr__",
+  "if self.debug:",
+  "if settings.DEBUG",
+  "raise AssertionError",
+  "raise NotImplementedError",
+  "if 0:",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+  "if typing.TYPE_CHECKING:",
+  "class .*\\bProtocol\\):",
+  "@(abc\\.)?abstractmethod",
+]
+
+[tool.fawltydeps]
+ignore_undeclared = [
+  "mkdocs_gen_files",
+  "pytest",
+  "tomli_w",
+]
+
+[tool.interrogate]
+verbose = 1
+style = "google"
+fail-under = 100
+exclude = [
+  "build",
+  "test",
+  ".pdm-plugins",
+]
+
+[tool.pytype]
+# Keep going past errors to analyze as many files as possible.
+keep_going = false
+
+# Run N jobs in parallel. When 'auto' is used, this will be equivalent to the
+# number of CPUs on the host system.
+jobs = "auto"
+
+# All pytype output goes here.
+output = ".pytype"
+
+# Paths to source code directories, separated by ':'.
+pythonpath = "."
+
+# Python version (major.minor) of the target code.
+python_version = "3.11"
+
+# Don't allow None to match bool. This flag is temporary and will be removed
+# once this behavior is enabled by default.
+none_is_not_bool = true
+
+# Enable parameter count checks for overriding methods with renamed arguments.
+# This flag is temporary and will be removed once this behavior is enabled by
+# default.
+overriding_renamed_parameter_count_checks = true
+
+# Variables initialized as None retain their None binding. This flag is
+# temporary and will be removed once this behavior is enabled by default.
+strict_none_binding = false
+
+# Opt-in: Do not allow Any as a return type.
+no_return_any = true
+
+# Opt-in: Require decoration with @typing.override when overriding a method or
+# nested class attribute of a parent class.
+require_override_decorator = true
+
+# Experimental: Infer precise return types even for invalid function calls.
+precise_return = false
+
+# Experimental: Solve unknown types to label with structural types.
+protocols = false
+
+# Experimental: Only load submodules that are explicitly imported.
+strict_import = false
+
+# Experimental: Enable exhaustive checking of function parameter types.
+strict_parameter_checks = true
+
+# Experimental: Emit errors for comparisons between incompatible primitive
+# types.
+strict_primitive_comparisons = true
+
+# Experimental: Check that variables are defined in all possible code paths.
+strict_undefined_checks = false
+
+# Space-separated list of error names to ignore.
+disable = [
+  "pyi-error",
+]
+
+# Don't report errors.
+report_errors = true
+
+###############################################################################
+#
+#                               MARKDOWN SETTINGS
+#
+###############################################################################
+
+[tool.pymarkdown]
+plugins.md033.enabled = false
+plugins.md034.enabled = false
+# Disabled as the first line is SPDX license header
+plugins.md041.enabled = false
