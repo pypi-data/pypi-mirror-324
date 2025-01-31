@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "git-checkpoint"
+version = "0.1.2"
+description = "A Git-based workspace state management system"
+authors = ["Alex Ngai <alex@sudocode.ai>"]
+readme = "README.md"
+packages = [{include = "git_checkpoint"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+GitPython = "^3.1.40"
+pydantic = "^2.5.3"
+watchdog = "^3.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.3"
+black = "^23.12.1"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = """
+    --verbose
+    --tb=short
+    --cov=git_checkpoint
+    --cov-report=term-missing
+    --cov-report=html
+    --cov-fail-under=80
+"""
+markers = [
+    "integration: mark test as an integration test requiring git",
+]
+
+[tool.coverage.run]
+source = ["git_checkpoint"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+] 
