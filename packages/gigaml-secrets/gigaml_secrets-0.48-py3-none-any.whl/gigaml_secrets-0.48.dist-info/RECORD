@@ -1,0 +1,7 @@
+gigaml_secrets/__init__.py,sha256=Ry6OpK84wMPyopo9UqmMnqBB4hE_6bJzr2CtPE7JGSg,181
+gigaml_secrets/aws_secrets_manager.py,sha256=9SAqinVKl8WSHqHYHgJdrRhXQdHsFJL236O5niKfIXc,2303
+gigaml_secrets/secrets_manager.py,sha256=PXG2L3aTz9P2iee3-Gva4n1cAsavkncjHVkwLu-kzrY,1727
+gigaml_secrets-0.48.dist-info/METADATA,sha256=IUcLGiNhJ0FzTc6lHM2dMaUD4_WPi2PU7jqXyM2ZDxg,398
+gigaml_secrets-0.48.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gigaml_secrets-0.48.dist-info/top_level.txt,sha256=idjAEVbE1eGUwJFYAwyC3_yZmIXMWmbUHP5xoh81Lt8,15
+gigaml_secrets-0.48.dist-info/RECORD,,
