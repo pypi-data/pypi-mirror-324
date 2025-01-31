@@ -1,0 +1,9 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli.py,sha256=_k9ZnI2n6T9tPqBasTj5c0EECaHJvWRFwTcoxPRik2o,79526
+version.py,sha256=FKSWBU4IdFWLTULok7IMPnYNZTyR5flr8XRS7EtQ2pM,180
+devstack_cli-11.0.78.dist-info/LICENSE,sha256=OBXZbEUMtIHIzyISkJ9fJlf_imds3rcKqeQu9yiyUJI,1055
+devstack_cli-11.0.78.dist-info/METADATA,sha256=rfTItcd3T-9pn-ov3VpD0mvLHwr24gt0-Tf064EY2BU,4287
+devstack_cli-11.0.78.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+devstack_cli-11.0.78.dist-info/entry_points.txt,sha256=f0xb4DIk0a7E5kyZ7YpoLhtjoagQj5VQpeBbW9a8A9Y,42
+devstack_cli-11.0.78.dist-info/top_level.txt,sha256=lP8zvU46Am_G0MPcNmCI6f0sMfwpDUWpTROaPs-IEPk,21
+devstack_cli-11.0.78.dist-info/RECORD,,
