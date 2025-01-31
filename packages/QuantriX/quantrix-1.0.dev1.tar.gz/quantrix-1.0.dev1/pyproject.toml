@@ -1,0 +1,42 @@
+[build-system]
+requires = [
+    "poetry-core>=2.0.0,<3.0.0",
+    "numpy>=1.23.5", #building occurs against some libraries, should be pointed
+]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "QuantriX"
+authors = [
+    {name = "Yaroslav Lyulko"},
+    {name = "Ekaterina Kupreeva"},
+]
+version = "1.0.dev1" #edit mannually or use other backend https://packaging.python.org/en/latest/specifications/version-specifiers/
+# dynamic = ["version"]
+description = "This library provides tools for quantitative analysis in finance."
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Topic :: Software Development :: Libraries",
+]
+keywords = ["quantitative analysis", "binomial model", "brownion motion", "random walk", "brownion bridge"]
+requires-python = ">= 3.8"
+dependencies = [
+    "numpy>=1.23.5 ; python_version >= '3.8' ",
+    "random2",
+]
+
+[project.scripts]
+QuantriX = "QuantriX:modules"
+
+[project.gui-scripts] #for windows
+QuantriX = "QuantriX:modules"
