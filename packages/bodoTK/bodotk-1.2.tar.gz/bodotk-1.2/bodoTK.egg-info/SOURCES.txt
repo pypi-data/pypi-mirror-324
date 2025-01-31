@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+bodoTK/__init__.py
+bodoTK/tokenize.py
+bodoTK.egg-info/PKG-INFO
+bodoTK.egg-info/SOURCES.txt
+bodoTK.egg-info/dependency_links.txt
+bodoTK.egg-info/top_level.txt
