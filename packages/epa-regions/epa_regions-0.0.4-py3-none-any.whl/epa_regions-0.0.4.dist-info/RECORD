@@ -1,0 +1,8 @@
+epa_regions/__init__.py,sha256=hjcf6IlKX4-VcWNjWDekYxvU0qKo4PmzVVXFjKY1M6I,9097
+epa_regions/__main__.py,sha256=PH1SSuEwoHc0Ig8FcrWpi8bS1FQ3se45kZf5_PkWgDU,1347
+epa_regions/load.py,sha256=IkEf_lv7eVuUV_TniwYyvcZIgoYC1ks7Dg9HDvsPd_Q,3015
+epa_regions/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epa_regions-0.0.4.dist-info/LICENSE,sha256=Q2ptU2E48gOsMzhYz_kqVovmJ5d1KzrblLyqD2_-fvY,1235
+epa_regions-0.0.4.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+epa_regions-0.0.4.dist-info/METADATA,sha256=kldVOX_Dnp0-tHap3SetdGCOyLPzsqS9V8F-dDX9Ap0,4579
+epa_regions-0.0.4.dist-info/RECORD,,
