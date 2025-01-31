@@ -1,0 +1,3 @@
+include README.md
+include bitmask26.pyi
+include py_bitmask26.py
