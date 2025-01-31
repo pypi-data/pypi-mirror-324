@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: sqlalchemy-parseable
+Version: 0.1.1
+Summary: SQLAlchemy dialect for Parseable
+Author: Parseable
+Author-email: adheip@parseable.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: sqlalchemy>=1.4.0
+Requires-Dist: requests>=2.25.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
