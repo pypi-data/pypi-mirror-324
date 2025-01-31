@@ -1,0 +1,39 @@
+Metadata-Version: 2.2
+Name: GridSearchHelper
+Version: 0.2.0
+Summary: A library for hyperparameter tuning using grid search for machine learning models.
+Home-page: https://github.com/username/ModelTuner
+Author: Abdulla Alimov
+Author-email: abdullaalimov555@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: scikit-learn>=0.24.0
+Requires-Dist: numpy>=1.19.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Hyperparameter Tuning for Classifiers
+
+This project implements a hyperparameter tuning utility for multiple classifiers using `GridSearchCV` from `sklearn`. The supported classifiers include Random Forest, Gradient Boosting, AdaBoost, SVM, K-Nearest Neighbors, Logistic Regression, Decision Trees, Naive Bayes, MLP, and more.
+
+## Features
+- Grid search for hyperparameter optimization on a variety of models.
+- Support for additional custom parameters.
+- Cross-validation (CV) support for model evaluation.
+- Parallel processing for faster results.
+
+## Setup
+1. Clone this repository:
+   ```bash
+   git clone <repository_url>
