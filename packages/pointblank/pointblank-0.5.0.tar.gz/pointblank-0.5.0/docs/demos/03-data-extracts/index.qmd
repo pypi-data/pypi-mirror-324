@@ -1,0 +1,70 @@
+---
+pagetitle: "Examples: Data Extracts"
+notebook-links: false
+page-navigation: false
+toc: false
+html-table-processing: none
+---
+
+### Data Extracts
+
+Pulling out data extracts that highlight rows with validation failures.
+
+Validation with failures at *Step 2*:
+
+```{python}
+#| echo: false
+
+import pointblank as pb
+
+validation = (
+    pb.Validate(
+        data=pb.load_dataset(dataset="game_revenue"),
+        tbl_name="game_revenue",
+        label="Validation with test unit failures available as an extract"
+    )
+    .col_vals_gt(columns="item_revenue", value=0)      # STEP 1: no test unit failures
+    .col_vals_ge(columns="session_duration", value=5)  # STEP 2: 14 test unit failures -> extract
+    .interrogate()
+)
+
+validation
+```
+
+<br>
+Extract from *Step 2* (`.col_vals_ge(columns="session_duration", value=5)`):
+
+```{python}
+#| echo: false
+pb.preview(validation.get_data_extracts(i=2, frame=True))
+```
+
+```python
+import pointblank as pb
+
+validation = (
+    pb.Validate(
+        data=pb.load_dataset(dataset="game_revenue"),
+        tbl_name="game_revenue",
+        label="Validation with test unit failures available as an extract"
+    )
+    .col_vals_gt(columns="item_revenue", value=0)      # STEP 1: no test unit failures
+    .col_vals_ge(columns="session_duration", value=5)  # STEP 2: 14 test unit failures -> extract
+    .interrogate()
+    .interrogate()
+)
+```
+
+```python
+pb.preview(validation.get_data_extracts(i=2, frame=True), n_head=20, n_tail=20)
+```
+
+<details>
+<summary>Preview of Input Table</summary>
+
+```{python}
+# | echo: false
+pb.preview(pb.load_dataset(dataset="game_revenue"))
+```
+
+</details>
