@@ -1,0 +1,476 @@
+[build-system]
+build-backend = "pdm.backend"
+requires = [
+    "pdm-backend>=2",
+]
+
+[project]
+name = "cogeol"
+description = "Use cog: https://github.com/nedbat/cog and endoflife: https://endoflife.date/ to automate Python version management!"
+readme = "README.md"
+maintainers = [
+    { name = "nosludge" },
+]
+authors = [
+    { name = "nosludge" },
+]
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Typing :: Typed",
+]
+version = "0.0.2"
+dependencies = []
+
+[project.license]
+file = "LICENSE.md"
+
+[project.urls]
+Changelog = "https://github.com/nosludge/cogeol/blob/master/CHANGELOG.md"
+Documentation = "https://nosludge.github.io/cogeol"
+Homepage = "https://nosludge.github.io/cogeol"
+Issues = "https://github.com/nosludge/cogeol/issues"
+Repository = "https://github.com/nosludge/cogeol"
+
+[dependency-groups]
+test = [
+    "hypothesis>=6",
+    "pytest>=8",
+    "pytest-cov>=5",
+    "pytest-html>=4",
+    "pytest-pretty-terminal>=1",
+    "pytest-randomly>=3",
+]
+docs = [
+    "cairosvg>=2",
+    "markdown>=3",
+    "mike>=2",
+    "mkdocs-awesome-pages-plugin>=2",
+    "mkdocs-gen-files>=0.5.0",
+    "mkdocs-git-revision-date-localized-plugin>=1",
+    "mkdocs-jupyter>=0.25.1",
+    "mkdocs-link-marker>=0.1.3",
+    "mkdocs-literate-nav>=0.6.0",
+    "mkdocs-material>=9",
+    "mkdocs-minify-plugin>=0.8.0",
+    "mkdocs-redirects>=1",
+    "mkdocs-section-index>=0.3.4",
+    "mkdocstrings>=0.25.0",
+    "mkdocstrings-python>=1",
+    "pillow>=10",
+    "pygments>=2",
+    "pymdown-extensions>=10",
+    "termynal>=0.12.1",
+]
+python = [
+    "codespell>=2",
+    "fawltydeps>=0.17.0",
+    "interrogate>=1",
+    "pylyzer>=0.0.71",
+    "ruff>=0.5.6",
+]
+yaml = [
+    "yamllint>=1",
+]
+markdown = [
+    "deadlink>=0.5.0",
+    "mdformat>=0.7.19",
+    "mdformat-gfm>=0.3.7",
+    "pymarkdownlnt>=0.9.21",
+]
+ini = [
+    "pyinilint>=0.17",
+]
+pyproject = [
+    "pyproject-fmt>=2",
+    "validate-pyproject>=0.18",
+]
+citation = [
+    "cffconvert @ git+https://github.com/citation-file-format/cffconvert@b6045d78aac9e02b039703b030588d54d53262ac",
+]
+security = [
+    "cyclonedx-bom>=4",
+    "semgrep>=1; platform_system!='Windows'",
+    "sigstore>=3",
+]
+legal = [
+    "reuse>=4",
+]
+hooks = [
+    "cogapp>=3",
+    "conventional-pre-commit>=3",
+    "pre-commit>=3",
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.version]
+source = "scm"
+fallback_version = "0.0.1"
+
+[tool.pdm.scripts]
+test-fast = "pytest -x --pretty --cov=src --cov-fail-under=100 --cov-report=term-missing tests"
+add-noqa = "ruff check --add-noqa {args:.}"
+check-ini = "pyinilint"
+check-citation = "cffconvert --validate -i {args:CITATION.cff}"
+check-docs = "mkdocs build"
+check-legal = "reuse lint"
+setup-pre-commit = "pdm run pre-commit install --install-hooks"
+check-commit = "conventional-pre-commit --strict --scopes '' feat fix feat! fix!"
+
+[tool.pdm.scripts.test]
+composite = [
+    "pdm use 3.13",
+    "pdm run pytest -x --pretty --cov=src --cov-fail-under=100 --cov-report=term-missing tests",
+    "pdm use 3.12",
+    "pdm run pytest -x --pretty --cov=src --cov-fail-under=100 --cov-report=term-missing tests",
+    "pdm use 3.11",
+    "pdm run pytest -x --pretty --cov=src --cov-fail-under=100 --cov-report=term-missing tests",
+]
+
+[tool.pdm.scripts.check-python]
+composite = [
+    "fawltydeps --detailed --code {args:.}",
+    "ruff format --check {args:.}",
+    "ruff check {args:.}",
+    "codespell {args:.}",
+    "interrogate {args:.}",
+]
+
+[tool.pdm.scripts.fix-python]
+composite = [
+    "fawltydeps --detailed --code {args:.}",
+    "ruff format {args:.}",
+    "ruff check --fix {args:.}",
+    "codespell --write-changes {args:.}",
+    "interrogate {args:.}",
+]
+
+[tool.pdm.scripts.check-yaml]
+composite = [
+    "yamllint {args:.}",
+]
+
+[tool.pdm.scripts.check-markdown]
+composite = [
+    "mdformat --check {args:.}",
+    "pymarkdownlnt scan -r {args:.}",
+    "deadlink check {args:.} --ignore-urls\n  @\n  https://github.com/nosludge/cogeol/issues\n  https://github.com/nosludge/cogeol/blob",
+]
+
+[tool.pdm.scripts.fix-markdown]
+composite = [
+    "mdformat {args:.}",
+    "pymarkdownlnt fix -r {args:.}",
+    "pymarkdownlnt scan -r {args:.}",
+    "deadlink check {args:.} --ignore-urls\n  @\n  https://github.com/nosludge/cogeol/issues\n  https://github.com/nosludge/cogeol/blob",
+]
+
+[tool.pdm.scripts.check-pyproject]
+composite = [
+    "validate-pyproject {args:pyproject.toml}",
+    "pyproject-fmt --check {args:pyproject.toml}",
+]
+
+[tool.pdm.scripts.fix-pyproject]
+composite = [
+    "validate-pyproject {args:pyproject.toml}",
+    "pyproject-fmt {args:pyproject.toml}",
+]
+
+[tool.pdm.scripts.check-security]
+cmd = [
+    "semgrep",
+    "scan",
+    "--strict",
+    "--config=p/python",
+    "--config=p/secrets",
+    "--config=p/security-audit",
+    "--config=p/ci",
+    "--config=p/github-actions",
+    "--config=p/bandit",
+    "--config=p/gitleaks",
+    "--metrics=off",
+    "{args:.}",
+]
+
+[tool.pdm.scripts.fix-legal]
+cmd = [
+    "reuse",
+    "annotate",
+    "--license=Apache-2.0",
+    "--copyright=nosludge <https://github.com/nosludge>",
+    "--copyright-prefix=spdx-symbol",
+    "--recursive",
+    "--fallback-dot-license",
+    "{args:.}",
+]
+
+[tool.pdm.scripts.check-all]
+composite = [
+    "check-citation",
+    "check-markdown",
+    "check-yaml",
+    "check-pre-commit",
+    "check-pyproject",
+    "check-legal",
+    "check-security",
+    "check-docs",
+    "check-python",
+]
+
+[tool.pdm.scripts.fix-all]
+composite = [
+    "check-citation",
+    "fix-markdown",
+    "check-yaml",
+    "check-pre-commit",
+    "fix-pyproject",
+    "fix-legal",
+    "check-legal",
+    "check-security",
+    "check-docs",
+    "fix-python",
+]
+
+[tool.pdm.scripts.install-pythons]
+composite = [
+    "pdm python install 3.11",
+    "pdm python install 3.12",
+    "pdm python install 3.13",
+]
+
+[tool.pdm.scripts.install-all-to-pythons]
+composite = [
+    "pdm use 3.13",
+    "pdm install -G:all",
+    "pdm use 3.12",
+    "pdm install -G:all",
+    "pdm use 3.11",
+    "pdm install -G:all",
+]
+
+[tool.pdm.scripts.setup]
+composite = [
+    "pdm self update",
+    "install-pythons",
+    "install-all-to-pythons",
+    "pdm use 3.11",
+    "setup-pre-commit",
+]
+
+[tool.pdm.scripts.commit]
+shell = "echo \"By committing to this repository, you agree to the Developer Certificate of Origin (DCO).\"\nprintf \"See here: https://developercertificate.org/ for more information.\n\"\ngit commit --signoff -S\n"
+
+[tool.pdm.scripts.commit-fast]
+shell = "echo \"By committing to this repository, you agree to the Developer Certificate of Origin (DCO).\"\nprintf \"See here: https://developercertificate.org/ for more information.\n\"\n\noptions=(\"fix\" \"feat\" \"fix!\" \"feat!\")\nPS3=\"Select commit type (1-4) or Quit (5): \"\nselect opt in \"${options[@]}\" \"Quit\"; do\n    case \"$REPLY\" in\n    1) break;;\n    2) break;;\n    3) break;;\n    4) break;;\n    5) exit 0; break;;\n    *) echo \"Invalid option.\"; continue;;\n    esac\ndone\n\nread -r -p \"\nCommit title message: \" title\n\necho \"\nYour commit will be: '$opt: $title'\n\"\n\ngit commit -S --signoff -m \"$opt: $title\"\n"
+
+[tool.pdm.scripts.commit-guided]
+shell = "echo \"By committing to this repository, you agree to the Developer Certificate of Origin (DCO).\"\nprintf \"See here: https://developercertificate.org/ for more information.\n\"\n\necho \"Please provide commit type (one of fix/feat/fix!/feat!):\"\necho \"- fix: A bug fix (not breaking backward compatibility).\"\necho \"- feat: A new feature (not breaking backward compatibility).\"\necho \"- fix!: A bug fix (breaking backward compatibility).\"\necho \"- feat!: A new feature (breaking backward compatibility).\"\necho \"\"\n\noptions=(\"fix\" \"feat\" \"fix!\" \"feat!\")\nPS3=\"Select commit type (1-4) or Quit (5): \"\nselect opt in \"${options[@]}\" \"Quit\"; do\n    case \"$REPLY\" in\n    1) break;;\n    2) break;;\n    3) break;;\n    4) break;;\n    5) exit 0; break;;\n    *) echo \"Invalid option.\";continue;;\n    esac\ndone\n\nprintf \"\nYou picked %s type.\n\" \"$opt\"\n\necho \"Please provide commit title message:\"\necho \"- Use the imperative, present tense: 'change' not 'changed' nor 'changes'\"\necho \"- Short (72 chars or less) informative summary of changes\"\necho \"- Lowercase\"\necho \"- No dot at the end\n\"\necho \"Example: 'add performance tests'\n\"\n\nread -r -p \"Commit title message: \" title\n\necho \"\nYour commit will be: '$opt: $title'\n\"\n\nread -p \"Would you like to make this commit? (Y/N): \" confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1\n\ngit commit -S --signoff -m \"$opt: $title\"\n"
+
+[tool.ruff]
+line-length = 80
+src = [
+    "src",
+    "test",
+]
+extend-exclude = [
+    ".pdm-plugins",
+]
+unsafe-fixes = false
+show-fixes = true
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+select = [
+    "ALL",
+]
+extend-ignore = [
+    "ANN401",
+    "COM812",
+    "ISC001",
+    "TID252",
+]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/**.py" = [
+    "INP001",
+    "S101",
+]
+
+[tool.ruff.lint.flake8-bandit]
+check-typed-exception = true
+
+[tool.ruff.lint.flake8-boolean-trap]
+extend-allowed-calls = [
+    "django.db.models.Value",
+    "pydantic.Field",
+]
+
+[tool.ruff.lint.flake8-builtins]
+builtins-allowed-modules = [
+    "id",
+]
+
+[tool.ruff.lint.flake8-import-conventions]
+banned-from = [
+    "numpy",
+    "pandas",
+    "polars",
+    "typing",
+]
+
+[tool.ruff.lint.flake8-pytest-style]
+parametrize-values-type = "tuple"
+
+[tool.ruff.lint.flake8-type-checking]
+strict = true
+
+[tool.ruff.lint.isort]
+detect-same-package = false
+lines-between-types = 1
+required-imports = [
+    "from __future__ import annotations",
+]
+section-order = [
+    "future",
+    "standard-library",
+    "third-party",
+    "ml",
+    "testing",
+    "first-party",
+    "local-folder",
+]
+
+[tool.ruff.lint.isort.sections]
+ml = [
+    "pandas",
+    "numpy",
+    "polars",
+    "matplotlib",
+    "seaborn",
+    "scipy",
+    "sklearn",
+    "statsmodels",
+    "nltk",
+    "spacy",
+    "gensim",
+    "tensorflow",
+    "torch",
+    "pytorch-lightning",
+    "lightning",
+    "coremltools",
+    "torchmetrics",
+    "xgboost",
+    "lightgbm",
+    "catboost",
+    "fastai",
+    "mlflow",
+    "neptune",
+    "dvc",
+    "wandb",
+    "dask",
+    "pyspark",
+]
+testing = [
+    "pytest*",
+    "hypothesis",
+]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 6
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = [
+    "pydantic.validator",
+]
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 80
+max-line-length = 120
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+ignore-decorators = [
+    "typing.overload",
+]
+
+[tool.ruff.lint.pylint]
+max-branches = 6
+max-locals = 10
+max-nested-blocks = 3
+max-public-methods = 10
+max-returns = 5
+max-statements = 20
+
+[tool.codespell]
+check-filenames = true
+interactive = 0
+
+[tool.pyproject-fmt]
+column_width = 80
+indent = 2
+keep_full_version = true
+max_supported_python = "3.13"
+
+[tool.coverage.run]
+branch = true
+relative_files = true
+
+[tool.coverage.report]
+exclude_also = [
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "if typing.TYPE_CHECKING:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+[tool.fawltydeps]
+ignore_undeclared = [
+    "mkdocs_gen_files",
+    "pytest",
+    "hypothesis",
+]
+
+[tool.interrogate]
+verbose = 1
+style = "google"
+fail-under = 100
+exclude = [
+    "build",
+    "test",
+    ".pdm-plugins",
+]
+
+[tool.pymarkdown.plugins.md033]
+enabled = false
+
+[tool.pymarkdown.plugins.md034]
+enabled = false
+
+[tool.pymarkdown.plugins.md041]
+enabled = false
+
+[tool.commition]
+ignore_commiters = [
+    "github-actions[bot]",
+]
