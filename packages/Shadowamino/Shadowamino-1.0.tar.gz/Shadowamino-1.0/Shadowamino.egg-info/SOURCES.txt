@@ -1,0 +1,6 @@
+README.txt
+setup.py
+Shadowamino.egg-info/PKG-INFO
+Shadowamino.egg-info/SOURCES.txt
+Shadowamino.egg-info/dependency_links.txt
+Shadowamino.egg-info/top_level.txt
