@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+tfsumpy/__init__.py
+tfsumpy/__main__.py
+tfsumpy/plan_analyzer.py
+tfsumpy/resource.py
+tfsumpy/rules_config.json
+tfsumpy.egg-info/PKG-INFO
+tfsumpy.egg-info/SOURCES.txt
+tfsumpy.egg-info/dependency_links.txt
+tfsumpy.egg-info/entry_points.txt
+tfsumpy.egg-info/requires.txt
+tfsumpy.egg-info/top_level.txt
