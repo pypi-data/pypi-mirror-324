@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: shdp
+Version: 1.2.0
+Summary: A new network protocol
+Home-page: https://github.com/StanyslasBouchon/shdp-py
+Author: Devling
+Author-email: contact@devling.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: asyncio==3.4.3
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: bs4==0.0.2
+Requires-Dist: htmlminf==0.1.13
+Requires-Dist: soupsieve==2.6
+Requires-Dist: websockets==14.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
