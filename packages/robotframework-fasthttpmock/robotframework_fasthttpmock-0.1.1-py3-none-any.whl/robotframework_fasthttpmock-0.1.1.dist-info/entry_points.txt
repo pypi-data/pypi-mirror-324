@@ -1,0 +1,2 @@
+[robot.libraries]
+FastHTTPMock = FastHTTPMock:FastHTTPMock
