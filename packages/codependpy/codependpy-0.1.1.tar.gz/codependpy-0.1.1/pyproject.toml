@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codependpy"
+version = "0.1.1"
+authors = [
+  { name = "Your Name", email = "your@email.com" }
+]
+description = "A Python CLI tool for partial code extraction with dependency resolution."
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["ast", "python", "dependencies", "partial-extraction", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+requires-python = ">=3.7"
+
+[project.scripts]
+codependpy = "codependpy.main:main"
