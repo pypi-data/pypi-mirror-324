@@ -1,0 +1,28 @@
+name: Check Python Code
+
+on:
+  push:
+    branches:
+      - "**"
+    tags-ignore:
+      - "**"
+
+jobs:
+  ruff-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
+
+      - name: Set up virtual environment
+        run: uv venv .venv
+
+      - name: Sync dependencies
+        run: uv sync
+
+      - name: Check with ruff
+        run: uv run ruff check .

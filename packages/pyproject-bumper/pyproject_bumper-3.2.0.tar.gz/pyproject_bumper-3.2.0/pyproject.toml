@@ -1,0 +1,32 @@
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyproject-bumper"
+version = "3.2.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "alvaroroco", email = "alvaroroco@gmail.com" },
+]
+requires-python = ">=3.9"
+dependencies = [
+    "tomli-w>=1.2.0",
+    "tomli>=2.2.1",
+    "loguru>=0.7.3",
+]
+
+[project.scripts]
+pyproject-bumper = "pyproject_bumper.cli:main"
+
+[tool.pyproject-bumper]
+version_format = "semver"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.3",
+]
