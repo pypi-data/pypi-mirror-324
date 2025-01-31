@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "PyPiUpdateCheck"
+dynamic = ["version"]
+authors = [{ name = "Mr Finchum" }]
+description = "Simple program to check if installed pypi packaged has an update"
+readme = "pip_README.md"
+requires-python = ">=3.8"
+dependencies = ["requests", "packaging"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Source = "https://gitlab.com/CodeByMrFinchum/PyPiUpdateCheck"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/PyPiUpdateCheck"]
+
+[tool.hatch.version]
+path = "src/PyPiUpdateCheck/__init__.py"
