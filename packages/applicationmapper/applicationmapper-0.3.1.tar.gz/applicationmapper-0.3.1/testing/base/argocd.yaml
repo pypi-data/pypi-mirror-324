@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: argocd
+  annotations:
+    nyl.io/is-default-namespace: "true"
+
+---
+apiVersion: inline.nyl.io/v1
+kind: HelmChart
+metadata:
+  name: argocd
+spec:
+  chart:
+    # https://artifacthub.io/packages/helm/twomartens/argocd
+    name: argo-cd
+    repository: oci://ghcr.io/argoproj/argo-helm
+    version: 7.7.16

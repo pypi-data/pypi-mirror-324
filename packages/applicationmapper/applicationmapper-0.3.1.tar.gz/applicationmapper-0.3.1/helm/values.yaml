@@ -1,0 +1,18 @@
+crds:
+  install: true
+  group: niklasrosenstein.com
+
+controller:
+  name: applicationmappers.niklasrosenstein.com
+  resyncPeriodSeconds: 15
+  webhook:
+    baseUrl: ""
+    timeout: 60s
+
+deployment:
+  install: true
+  image:
+    repository: ghcr.io/niklasrosenstein/k8s-applicationmapper
+    tag: "0.3.1"
+    pullPolicy: Always
+    pullSecret: ""

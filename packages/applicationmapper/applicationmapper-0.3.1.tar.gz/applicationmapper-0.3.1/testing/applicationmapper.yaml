@@ -1,0 +1,26 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: applicationmapper
+  annotations:
+    nyl.io/is-default-namespace: "true"
+
+---
+apiVersion: inline.nyl.io/v1
+kind: HelmChart
+metadata:
+  name: applicationmapper
+spec:
+  chart:
+    path: ../helm
+  values:
+    deployment:
+      # Set to `false` when running the controller locally, `true` to deploy it to the cluster.
+      install: false
+      image:
+        tag: develop
+    controller:
+      webhook:
+        # Set the URL to your tunnel when running the controller locally.
+        baseUrl: ""

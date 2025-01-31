@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: metacontroller
+  annotations:
+    nyl.io/is-default-namespace: "true"
+
+---
+apiVersion: inline.nyl.io/v1
+kind: HelmChart
+metadata:
+  name: metacontroller
+spec:
+  chart:
+    # https://artifacthub.io/packages/helm/metacontroller/metacontroller-helm
+    name: metacontroller-helm
+    repository: oci://ghcr.io/metacontroller
+    version: 4.11.22
+

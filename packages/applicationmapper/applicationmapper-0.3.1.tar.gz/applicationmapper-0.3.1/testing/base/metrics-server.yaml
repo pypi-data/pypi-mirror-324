@@ -1,0 +1,27 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: metrics-server
+  annotations:
+    nyl.io/is-default-namespace: "true"
+
+---
+apiVersion: inline.nyl.io/v1
+kind: HelmChart
+metadata:
+  name: metrics-server
+spec:
+  chart:
+    # https://artifacthub.io/packages/helm/metrics-server/metrics-server
+    name: metrics-server
+    repository: https://kubernetes-sigs.github.io/metrics-server/
+    version: 3.12.2
+  values:
+    # Options for Kind, see https://gist.github.com/sanketsudake/a089e691286bf2189bfedf295222bd43
+    args:
+      - --cert-dir=/tmp
+      - --kubelet-preferred-address-types=InternalIP,ExternalIP,Hostname
+      - --kubelet-use-node-status-port
+      - --metric-resolution=15s
+      - --kubelet-insecure-tls

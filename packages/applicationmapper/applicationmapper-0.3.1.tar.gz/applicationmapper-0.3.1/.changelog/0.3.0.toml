@@ -1,0 +1,13 @@
+release-date = "2025-01-27"
+
+[[entries]]
+id = "cc89eb88-cc97-40c3-8cba-65d741a4aa23"
+type = "fix"
+description = "Remove `lastSyncTime` and `lastSyncDuration` properties from `ApplicationMapper` resource status as it immediately triggers another sync"
+author = "@NiklasRosenstein"
+
+[[entries]]
+id = "96714c02-0a75-4e4c-a05e-9de84a76ec14"
+type = "improvement"
+description = "Add short names `am` and `appmap` to `ApplicationMapper` resource"
+author = "@NiklasRosenstein"

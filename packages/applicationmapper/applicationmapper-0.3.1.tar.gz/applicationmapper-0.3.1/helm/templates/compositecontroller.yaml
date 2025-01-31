@@ -1,0 +1,39 @@
+# https://metacontroller.github.io/metacontroller/api/compositecontroller.html
+apiVersion: metacontroller.k8s.io/v1alpha1
+kind: CompositeController
+metadata:
+  name: {{ .Values.controller.name }}
+  labels:
+    {{- include "helper.labels" . | nindent 4 }}
+spec:
+  parentResource:
+    apiVersion: {{ .Values.crds.group }}/v1alpha1
+    resource: applicationmappers
+  childResources:
+    - apiVersion: v1
+      resource: namespaces
+      updateStrategy:
+        method: InPlace
+    - apiVersion: v1
+      resource: secrets
+      updateStrategy:
+        method: InPlace
+    - apiVersion: v1
+      resource: configmaps
+      updateStrategy:
+        method: InPlace
+    - apiVersion: argoproj.io/v1alpha1
+      resource: applications
+      updateStrategy:
+        method: InPlace
+  generateSelector: true
+  resyncPeriodSeconds: {{ .Values.controller.resyncPeriodSeconds }}
+  hooks:
+    customize:
+      webhook:
+        url: {{ include "helper.webhook.baseUrl" . }}/customize
+        timeout: {{ .Values.controller.webhook.timeout }}
+    sync:
+      webhook:
+        url: {{ include "helper.webhook.baseUrl" . }}/sync
+        timeout: {{ .Values.controller.webhook.timeout }}

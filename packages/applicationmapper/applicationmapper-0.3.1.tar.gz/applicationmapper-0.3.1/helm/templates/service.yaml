@@ -1,0 +1,18 @@
+{{- if .Values.deployment.install }}
+{{- $image := .Values.deployment.image }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Release.Name }}
+  labels:
+    {{- include "helper.labels" . | nindent 4 }}
+spec:
+  clusterIP: None
+  selector:
+    {{- include "helper.matchLabels" . | nindent 4}}
+  ports:
+    - name: http
+      port: 8000
+      targetPort: http
+      protocol: TCP
+{{- end }}

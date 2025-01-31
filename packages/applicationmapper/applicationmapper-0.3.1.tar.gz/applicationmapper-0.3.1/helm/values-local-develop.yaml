@@ -1,0 +1,6 @@
+controller:
+  webhook:
+    baseUrl: https://example.com
+
+deployment:
+  install: false

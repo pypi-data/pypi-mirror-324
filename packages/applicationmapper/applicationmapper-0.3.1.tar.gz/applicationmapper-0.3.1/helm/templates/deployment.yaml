@@ -1,0 +1,34 @@
+{{- if .Values.deployment.install }}
+{{- $image := .Values.deployment.image }}
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}
+  labels:
+    {{- include "helper.labels" . | nindent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "helper.matchLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "helper.labels" . | nindent 8 }}
+    spec:
+      {{- if $image.pullSecret }}
+      imagePullSecrets:
+        - name: {{ $image.pullSecret }}
+      {{- end }}
+      containers:
+        - name: main
+          image: {{ $image.repository }}:{{ $image.tag }}
+          imagePullPolicy: {{ $image.pullPolicy }}
+          command:
+          - applicationmapper
+          - run
+          ports:
+            - name: http
+              containerPort: 8000
+              protocol: TCP
+{{- end }}
