@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "polygonenms-ofo-fork"
+version = "0.1.0"
+description = "PolyGoneNMS with updated dependency versions"
+authors = ["Vladimir Zaigrajew <vladimirzaigrajew@gmail.com>", "David Russell <djrussell@ucdavis.edu>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "polygone_nms"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+numpy = ">=2.2.1"
+shapely = ">=2.0.0"
+rtree = ">=1.0.1"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
