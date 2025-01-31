@@ -1,0 +1,2 @@
+[console_scripts]
+sushi = code_sushi.main:main
