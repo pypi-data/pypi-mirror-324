@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: libunn
+Version: 0.1.4.post3
+Summary: Misc scripts that i write
+Home-page: https://github.com/juanvel4000/libunn
+Author: juanvel400
+Author-email: juanvel400@proton.me
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+# libunn
+
+Misc python scripts that i do not find anywhere to put them in
+
+**Note: All of the scripts in this repository are written by me**
+
+
+
+## Scripts
+
+### Spinner
+#### About:
+Simple spinning bar that uses **threading** for running on the background
+#### Usage:
+```python
+import libunn, time
+libunn.spinner.start('Hello!')
+time.sleep(2)
+libunn.spinner.stop()
+```
+
+## Installation
+
+Install libunn with pip
+
+```bash
+  pip install libunn
+```
+    
