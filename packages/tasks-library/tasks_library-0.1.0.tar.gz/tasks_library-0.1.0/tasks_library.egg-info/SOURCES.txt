@@ -1,0 +1,8 @@
+setup.py
+tasks_library/__init__.py
+tasks_library/processor.py
+tasks_library.egg-info/PKG-INFO
+tasks_library.egg-info/SOURCES.txt
+tasks_library.egg-info/dependency_links.txt
+tasks_library.egg-info/requires.txt
+tasks_library.egg-info/top_level.txt

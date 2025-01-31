@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: tasks_library
+Version: 0.1.0
+Summary: A library for task processing using PostgreSQL
+Home-page: https://github.com/yourusername/tasks_library
+Author: Your Name
+Author-email: your_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: psycopg2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
