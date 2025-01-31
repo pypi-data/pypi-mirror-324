@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbitk"
+dynamic = ["version"]
+description = "Naturalis BioInformatics ToolKit"
+readme = "README.md"
+# requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Rutger Vos", email = "rutger.vos@naturalis.nl"},
+]
+dependencies = [
+    # List your package dependencies here
+    # For example:
+    # "numpy>=1.18.0",
+    # "pandas>=1.0.0",
+    "biopython",
+    "pandas",
+    "openpyxl",
+    "ete3",
+    "requests"
+]
+
+[tool.setuptools_scm]
+write_to = "nbitk/_version.py"
+
+[tool.black]
+line-length = 100
+# target-version = ['py39']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
