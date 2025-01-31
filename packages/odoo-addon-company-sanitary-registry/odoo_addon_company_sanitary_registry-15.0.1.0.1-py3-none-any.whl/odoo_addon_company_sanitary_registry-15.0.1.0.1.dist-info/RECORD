@@ -1,0 +1,16 @@
+odoo/addons/company_sanitary_registry/README.rst,sha256=4Mld083u9OrC0QBCemgn3-2CmHsyZgPCbv0RgrkDfgs,3027
+odoo/addons/company_sanitary_registry/__init__.py,sha256=xTMXTz-rtKi-1eK2fsBhr0NJvA6Q94YyOj4TbLr0A3I,128
+odoo/addons/company_sanitary_registry/__manifest__.py,sha256=OTHqK2K-vh4l1iASTfrS19SKg41iiq6MU883_WYjJ8I,482
+odoo/addons/company_sanitary_registry/i18n/company_sanitary_registry.pot,sha256=79hpLqZKh6F6Wl6C2EgEvxId7cpMxgUSElnyUWzi0c4,844
+odoo/addons/company_sanitary_registry/models/__init__.py,sha256=E-bWYjwD-Mg880UraCgk6vjHMkUqAv4EYjmovWXDrY8,133
+odoo/addons/company_sanitary_registry/models/res_company.py,sha256=p99qMIIXQFTmN9MV5f0dgY7zJK_foQDBLFtl2x9cUB4,238
+odoo/addons/company_sanitary_registry/readme/CONTRIBUTORS.rst,sha256=HWP2KLg4UD_JuKXqxwZnlVTWc-ttJDr5yu7D8KZps2o,61
+odoo/addons/company_sanitary_registry/readme/DESCRIPTION.rst,sha256=bKpP4dfSAgu90NFVpp_oUSmfMYeCE9c8zofYdhN1FrI,127
+odoo/addons/company_sanitary_registry/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/company_sanitary_registry/static/description/index.html,sha256=VBvs7mM5gGrZM1VlsYi0Tv8ocxZASs7MDls6zv-0JSo,12305
+odoo/addons/company_sanitary_registry/templates/sanitary_registry_template.xml,sha256=BnrZkrYIFf11anhRMlykW6gQlQK2AzGNQroLk7NOC3c,1487
+odoo/addons/company_sanitary_registry/views/res_company_view.xml,sha256=jKO1jkjLlE7IUYEjCMedOp452P8LqXuRje9fcjM8214,426
+odoo_addon_company_sanitary_registry-15.0.1.0.1.dist-info/METADATA,sha256=wqKTNNav-sZZWg54Q0tiHCGtNieVir-iepsoqDhklVA,3550
+odoo_addon_company_sanitary_registry-15.0.1.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+odoo_addon_company_sanitary_registry-15.0.1.0.1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_company_sanitary_registry-15.0.1.0.1.dist-info/RECORD,,
