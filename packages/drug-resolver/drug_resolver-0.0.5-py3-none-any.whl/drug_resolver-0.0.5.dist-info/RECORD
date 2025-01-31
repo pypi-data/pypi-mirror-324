@@ -1,0 +1,10 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drug_resolver/__init__.py,sha256=Qklj0rwpJwGQeaPvYPppHhhlOJJ6LNuP59rjD_HFPIE,43
+drug_resolver/core.py,sha256=34sP2q2Gl3iILWbyeY1CQUOmlWnt4yesjrQ-NOkHmaA,14113
+drug_resolver/core_test.py,sha256=mDwh6cpKlUK2Ne1mQx5X2Jy0ZAnvTuyJ2EmncTdLv1o,7589
+drug_resolver/requests_wrapper.py,sha256=kQ-ttoUqblzl5bfZ_WcesSCF-YirmqFmTu-5bZ0aXdM,972
+drug_resolver/utils.py,sha256=gOBOTysOw5IrsQCvGhcPnNu8kmCzp1bE5ceu9D19EDU,426
+drug_resolver-0.0.5.dist-info/METADATA,sha256=7SlEEitwEJ7j-eUc0D900Y_QiH0wuihhzR8qJfaJjVk,3732
+drug_resolver-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+drug_resolver-0.0.5.dist-info/top_level.txt,sha256=hspxjXFmyK56wYuEOPCpkH0wyh6h-AiyvUi_GGHXsJk,23
+drug_resolver-0.0.5.dist-info/RECORD,,
