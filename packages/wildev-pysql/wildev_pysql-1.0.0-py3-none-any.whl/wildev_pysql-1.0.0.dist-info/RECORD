@@ -1,0 +1,9 @@
+pythonsql/__init__.py,sha256=R2FWt2azszvKQAjP57l-f5VR1Ylozip-JNdhZDl8oc0,426
+pythonsql/column.py,sha256=SQxeqUMvpT0DYA44O7pJJA8aGsV4uasQskqZGrNTwNw,8185
+pythonsql/common.py,sha256=aqD8vdr58BF2ZuYUy_tYNBUU6bb3W40UnlxHH_9FD8c,122
+pythonsql/database.py,sha256=ehs2GVD3rXnUMdC--JFzovq3lcAt1owR7QegW-q9lJg,2447
+pythonsql/table.py,sha256=CxEpqThKqT7_ZA2QxRRqEdaXBim8Pgmq-Yz3K6WII3k,6012
+wildev_pysql-1.0.0.dist-info/METADATA,sha256=7F4q-bdRox-qk0mSZXdjtbqtig8Wo2eG7np_5dE59Es,474
+wildev_pysql-1.0.0.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+wildev_pysql-1.0.0.dist-info/top_level.txt,sha256=NLc6yeaXJW5t9Q_f6qzxr4uFp8fuYu6rb3zliSnwJi0,10
+wildev_pysql-1.0.0.dist-info/RECORD,,

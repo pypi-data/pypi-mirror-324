@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wildev-pysql
+Version: 1.0.0
+Summary: Python SQL Wrapper
+Author: WilDev Studios
+Author-email: wildevstudios@gmail.com
+Keywords: python,database,sql,sqlite3,types
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Dist: sqlite3
+
+Python SQL Wrapper built with type-safety and readability in mind
