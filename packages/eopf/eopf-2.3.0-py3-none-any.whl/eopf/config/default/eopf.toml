@@ -1,0 +1,27 @@
+# Example TOML Configuration File
+
+[general]
+title = "My Application"
+version = 1.0
+description = "An example configuration file with complex structures."
+
+[logging]
+level = "INFO"
+
+[accessors.memmap]
+packet_cache_size = 30000
+
+[product]
+mask_and_scale = true
+
+[dask_context]
+cluster_type = "local"
+[dask_context.cluster_config]
+# Default to use only multi-process dask local cluster
+#threads_per_worker = 1
+n_workers = 1
+
+
+
+[store.convert]
+use_multithreading = true
