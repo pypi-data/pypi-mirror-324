@@ -1,0 +1,2 @@
+[console_scripts]
+get-conf = config_getter.cli:app
