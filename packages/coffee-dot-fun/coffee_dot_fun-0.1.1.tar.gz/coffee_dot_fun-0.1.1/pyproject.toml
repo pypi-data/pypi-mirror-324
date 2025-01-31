@@ -1,0 +1,20 @@
+[project]
+name = "coffee-dot-fun"
+version = "0.1.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "passlib>=1.7.4",
+    "pydantic>=2.10.6",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+]
+authors = [
+    {name = "Coffee.fun", email = "info@coffee.fun"}
+]
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://pypi.org/project/coffee-dot-fun/0.1.0/"
+Repository = "https://pypi.org/project/coffee-dot-fun/0.1.0/"
