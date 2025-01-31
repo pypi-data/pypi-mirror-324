@@ -1,0 +1,10 @@
+filterfx/__init__.py,sha256=1e95E57cJZHhWFuRlp2Si5aUHxeEylMq8YyPMo8XvOk,236
+filterfx/image_enhances.py,sha256=5n4D-tfv-WucWjD2NvQcmL2QilJk9_vvkxfCjqFywiU,1165
+filterfx/image_filters.py,sha256=EOjJNt6jDZPaQ-ra8raDkS4OrKT5UGkgVmHvJuunIog,5122
+filterfx/ocr.py,sha256=zOhxJzOMwVwMJtKKniv4mAUQb9CBB3lOKOLuc7UWnok,1913
+filterfx/tools.py,sha256=Syr6JcCyCkgU-IkP_Ct-KuBM6Z3eu97r2Lh0k3e6jAA,993
+filterfx-1.0.0.dist-info/LICENSE,sha256=hviYsngsUmmCGUvnHvnbDlwQXB4CpRoR8wUWLIk4SVY,1089
+filterfx-1.0.0.dist-info/METADATA,sha256=9-kqyf_6FXXLBcIBaDmg_3oUMVFZlEv9W6p8jF9uj7Y,833
+filterfx-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+filterfx-1.0.0.dist-info/top_level.txt,sha256=F9bPniciysK6vzvFAWO-nS5AIfEq_eoCHTeaBAzrUd0,9
+filterfx-1.0.0.dist-info/RECORD,,
