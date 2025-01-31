@@ -1,0 +1,23 @@
+[project]
+name = "smart-decorator"
+version = "0.1.0"
+description = "A modern library for creating decorators. Static-typed."
+authors = [{name = "Marckie Zeender",email = "mkzeender@gmail.com"}]
+requires-python = ">=3.9"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=6.2"
+
+# [tool.pytest.ini_options]
+# testpaths = [".", "README.md"]
+# addopts = "--phmdoctest"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
