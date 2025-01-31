@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: segmentUSD
+Version: 0.1.0
+Summary: A library for processing ultrasound DICOM images
+Home-page: https://github.com/warjohn/UltraSound.git
+Author: Menar
+Author-email: johnvoronina@gmail.com
+Requires-Python: >=3.8
+Requires-Dist: opencv-python
+Requires-Dist: pydicom
+Requires-Dist: numpy
+Requires-Dist: pynrrd
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
