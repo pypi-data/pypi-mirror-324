@@ -1,0 +1,42 @@
+Metadata-Version: 2.2
+Name: segmentUSD
+Version: 0.1.1
+Summary: A library for processing ultrasound DICOM images
+Home-page: https://github.com/warjohn/UltraSound.git
+Author: Menar
+Author-email: johnvoronina@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: pydicom
+Requires-Dist: numpy
+Requires-Dist: pynrrd
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Segmentation and NRRD Conversion Library
+
+This library allows you to create segmentation masks and NRRD images from original DICOM files.
+
+Here are the images that are processed as input:
+
+Note. For privacy reasons, I cannot publicly post the original file titles (they have been truncated). Therefore, in some test images, the image and mask sizes may not exactly match.
+
+
+### Examples 
+    us = UltrasoundSegmentation(input_path="test")
+    us.dicom2nrrdImage()
+
+This code will save your converted image No. 1 in nrrd format in the directory where you are working
+
+    us = UltrasoundSegmentation(input_path="test")
+    us.us.dicom2nrrdMask()
+
+This code will create a mask for image No. 2 and save it in the working directory
+
