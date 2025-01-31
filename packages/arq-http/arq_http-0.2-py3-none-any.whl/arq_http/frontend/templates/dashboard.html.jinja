@@ -1,0 +1,44 @@
+{% extends "base.html.jinja" %}
+{% block content %}
+    <div hx-ext="sse" sse-connect="{{ request.app.url_path_for('dashboard:get_dashboard_data', queue_name=request.path_params['queue_name']) }}{% if refresh is not none %}?refresh={{ refresh }}{% endif %}" >
+
+        <section>
+            <header><h1>Dashboard: {{ request.path_params['queue_name'] }}</h1></header>
+            <span>Last update: </span>
+            <span sse-swap="updated-at"></span>
+        </section>        
+
+        <section>
+            <h2>Results</h2>
+            <div sse-swap="results-data"></div>
+            <div id="jobs-plots" class="viz-container">
+            {% for function in functions %}
+                <div id="{{ function }}-jobs-ts-plot" class="viz-item"></div>
+                <div id="{{ function }}-jobs-cdf-plot" class="viz-item"></div>
+                <div id="{{ function }}-jobs-hist-plot" class="viz-item"></div>
+            {% endfor %}
+            </div>
+            <div sse-swap="results-stats"></div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Queue</h2>
+            <div sse-swap="queues-data"></div>
+            <div id="queues-plots" class="viz-container">
+                <div id="queues-ts-plot" class="viz-item"></div>
+                <div id="queues-cdf-plot" class="viz-item"></div>
+                <div id="queues-hist-plot" class="viz-item"></div>
+            </div>
+            <div sse-swap="queues-stats"></div>
+        </section>
+
+    </div>
+    {# template for all missing plots #}
+    <template id="nodata">
+        <div><strong>no data</strong></div>
+    </template>
+    <script>
+        {% include "components/table.js.jinja" %}
+    </script>
+{% endblock %}

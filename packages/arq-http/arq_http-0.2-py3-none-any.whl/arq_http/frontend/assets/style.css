@@ -1,0 +1,68 @@
+:root {
+    --global-font-size: 16px;
+    --page-width: 80em;
+}
+section {
+    margin-bottom: var(--global-line-height);
+}
+.container {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+.viz-container {
+    display: grid;
+    grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) minmax(300px, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: var(--global-line-height);
+    margin-top: var(--global-line-height);
+}
+.viz-item {
+    aspect-ratio : 3 / 2;
+    width: 100%;
+    font-family: var(--font-stack);
+    text-align: center;
+}
+.u-title {
+    font-size: var(--global-font-size);
+}
+table {
+    margin: 0;
+    border-collapse: collapse;
+}
+table td, table th {
+    border-style: none !important;
+}
+.mytable thead tr, .datatable-table thead tr {
+    border-bottom: 1px solid var(--font-color);
+}
+.mytable tbody tr, .datatable-table tbody tr {
+    border-bottom: 1px dotted var(--font-color);
+}
+.datatable-bottom {
+    margin-bottom: var(--global-line-height);
+    margin-top: var(--global-line-height);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    justify-items: start;
+}
+.datatable-bottom * {
+    margin: 0;
+}
+.datatable-pagination-list {
+    padding: 0;
+}
+.datatable-pagination-list li {
+    display: inline;
+    padding: 0.5em;
+}
+dialog {
+    padding: 0;
+    border-width: 0;
+}
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.8);
+}
