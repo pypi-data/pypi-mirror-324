@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dz-lib
+Version: 1.1.4
+Summary: UNKNOWN
+Home-page: https://github.com/nielrya4/dz_lib
+Author: Ryan Nielsen
+Author-email: nielrya4@isu.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: openpyxl (~=3.1.5)
+Requires-Dist: pandas (~=2.2.3)
+Requires-Dist: peakutils
+Requires-Dist: plotly (~=5.4.0)
+Requires-Dist: scikit-learn (~=1.5.2)
+Requires-Dist: scipy
+Requires-Dist: setuptools (~=68.2.0)
+
+Visualization, comparison, and interpretation of detrital zircon data. 
+See <a href="https://dztoolbox.com">dzToolBox.com</a> to see it in action!
+See how it's used in the dzToolBox project at <a href="https://www.github.com/nielrya4/dztoolbox">its github page</a>.
+
+Install the latest version with:
+```
+pip install dz_lib
+```
+
