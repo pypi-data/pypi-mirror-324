@@ -1,0 +1,15 @@
+[console_scripts]
+Py-To-Pyd = PyToPyd.main:main
+Py-To-Pyd -p wallpaper = PyToPyd.main:Gcw
+PyToPyd = PyToPyd.main:main
+PyToPyd -p wallpaper = PyToPyd.main:Gcw
+auto-py-to-pyd = PyToPyd.main:main
+auto-py-to-pyd -p wallpaper = PyToPyd.main:Gcw
+autopytopyd = PyToPyd.main:main
+autopytopyd -p wallpaper = PyToPyd.main:Gcw
+py-to-pyd = PyToPyd.main:main
+py-to-pyd -p wallpaper = PyToPyd.main:Gcw
+pyd = PyToPyd.main:main
+pyd -p wallpaper = PyToPyd.main:Gcw
+pytopyd = PyToPyd.main:main
+pytopyd -p wallpaper = PyToPyd.main:Gcw

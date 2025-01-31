@@ -1,0 +1,4 @@
+Cython>=3.0.10
+pyfiglet>=1.0.1.post1
+pyinstaller>=6.11.0
+auto-py-to-exe>=2.45.0
