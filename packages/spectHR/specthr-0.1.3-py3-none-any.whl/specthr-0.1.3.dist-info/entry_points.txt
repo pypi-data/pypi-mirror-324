@@ -1,0 +1,3 @@
+[console_scripts]
+install-spectHR-notebooks=spectHR.install_notebook:install_notebook
+
