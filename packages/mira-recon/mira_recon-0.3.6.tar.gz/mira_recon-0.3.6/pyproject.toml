@@ -1,0 +1,31 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "mira_recon"
+version = "0.3.6"  
+description = "A reconnaissance tool for information gathering"
+authors = [
+    {name = "Liam Halliden", email = "lhallidenw@gmail.com"},
+]
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.5"
+
+dependencies = [
+    "requests",
+    "beautifulsoup4",
+    "builtwith",
+    "whois"
+]
+keywords = ["reconnaissance", "information gathering", "security", "tool"]
+
+[project.scripts]
+mira_recon = "mira_recon._mira_:main"
+
+[project.urls]
+Documentation = "https://github.com/HaldenLF/Mira"
+Source = "https://github.com/HaldenLF/Mira"
