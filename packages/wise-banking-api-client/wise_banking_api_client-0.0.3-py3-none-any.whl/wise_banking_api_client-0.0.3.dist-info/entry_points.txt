@@ -1,0 +1,2 @@
+[console_scripts]
+wise = wise_banking_api_client.cli:main
