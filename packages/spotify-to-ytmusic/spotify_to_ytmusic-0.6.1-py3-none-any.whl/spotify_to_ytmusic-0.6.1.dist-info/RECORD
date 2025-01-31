@@ -1,0 +1,17 @@
+spotify_to_ytmusic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spotify_to_ytmusic/controllers.py,sha256=QfAU7yQnnIKuzEGHGAeSWuNGyWh1MlHWqVSik2fT9RQ,3174
+spotify_to_ytmusic/main.py,sha256=TwoXppejvmBg5CjVi8yj-QS_kDzQBj-Mad7X6PXtPBg,4145
+spotify_to_ytmusic/settings.ini.example,sha256=jAXbvge_OLYGmW-cGYctpU2Wfs-LctgE45VSQsWtIfs,218
+spotify_to_ytmusic/settings.py,sha256=HISmBNG2StxDCMTWbqIh2rSuwkDhBfkUa3mICdG9MuE,1389
+spotify_to_ytmusic/setup.py,sha256=5Vixaw5hDuPLxE8rUeNYd55W0KrEQP5cpzDgygGShUw,2648
+spotify_to_ytmusic/spotify.py,sha256=bOI7Xa0QH3xcgdhMU6eOF7Vne_YDAQ8DjZ0Jj_Ut-yg,4587
+spotify_to_ytmusic/ytmusic.py,sha256=mucDYdmxVdjiaVVksaUVWXEyrOX393tKZ4OADfgRaqQ,3493
+spotify_to_ytmusic/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spotify_to_ytmusic/utils/browser.py,sha256=tC7BjIYbpUrEWB98utfm2IhyyGERRaMjDhISBdd_G0M,152
+spotify_to_ytmusic/utils/match.py,sha256=cD1C3c3qiC97C8ORZbWFMNGLMiy7PjqWje5Pgy28hC8,2240
+spotify_to_ytmusic-0.6.1.dist-info/LICENSE,sha256=E-27b_YWwfBMMqX3TRzFZZ-3GD3TR0OA4tnfDe_WyhU,1064
+spotify_to_ytmusic-0.6.1.dist-info/METADATA,sha256=fiNGFYl6jxpVvTLfoPJipY5sT0wReFAbrM2uDBpI8Ds,6519
+spotify_to_ytmusic-0.6.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+spotify_to_ytmusic-0.6.1.dist-info/entry_points.txt,sha256=8tQ5xALJIhCb29OEYPG10R3cnyqMtyYsrfwMusNRKb4,68
+spotify_to_ytmusic-0.6.1.dist-info/top_level.txt,sha256=_5__BZj9_gJFJuG2XNlSN_SaI_iuMLFue1B4Rt8FNm4,19
+spotify_to_ytmusic-0.6.1.dist-info/RECORD,,
