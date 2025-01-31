@@ -1,0 +1,9 @@
+bs_scheduler/__init__.py,sha256=ULNP7FhoD_5nztjDs_7O3WtyBVVkPHXUdMkvMCtz4xA,783
+bs_scheduler/batch_size_manager.py,sha256=Fwe71Te5E9e7N5pYZDsHFJHsqMuXEGmZhxGDoizcMag,4349
+bs_scheduler/batch_size_schedulers.py,sha256=9aOybwhV2xf2pAsxgw3etyGXezffAni-hMYpZvf45WM,72825
+bs_scheduler/utils.py,sha256=OWlD0hp8VaoZo-j0sxIYgLJdOgDBtsutz8_Ohl_95dg,470
+bs_scheduler-1.0.1.dist-info/LICENSE,sha256=6aSQ-7vU3j8a0OZQwfiSE2Qp0gKwBwFS-35Gt4D4YeE,1503
+bs_scheduler-1.0.1.dist-info/METADATA,sha256=5fI2nlNB-jE8EYBgqeM4PdqSG40RYu6NYbg_ApvK9BI,5944
+bs_scheduler-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+bs_scheduler-1.0.1.dist-info/top_level.txt,sha256=yTu2ffG21JS3DuAzN7S_VvjJReyLYRiLP41FlDxTFGg,13
+bs_scheduler-1.0.1.dist-info/RECORD,,
