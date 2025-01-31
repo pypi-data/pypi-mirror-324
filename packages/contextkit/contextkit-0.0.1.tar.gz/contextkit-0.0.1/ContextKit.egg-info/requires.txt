@@ -1,0 +1,11 @@
+python-fasthtml
+httpx
+toolslm
+fastcore
+llms-txt
+PyPDF2
+youtube_transcript_api
+pytube
+playwrightnb
+
+[dev]
