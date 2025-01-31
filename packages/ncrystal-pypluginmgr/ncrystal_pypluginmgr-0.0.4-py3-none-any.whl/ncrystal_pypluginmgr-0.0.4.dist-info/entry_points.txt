@@ -1,0 +1,2 @@
+[console_scripts]
+ncrystal-pluginmanager = _ncrystal_pypluginmgr.cli:main
