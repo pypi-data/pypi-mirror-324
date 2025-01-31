@@ -1,0 +1,8 @@
+matplotlib
+numpy
+pandas
+os
+seaborn
+scipy
+pathlib
+setuptools
