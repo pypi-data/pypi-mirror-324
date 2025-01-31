@@ -1,0 +1,5 @@
+[pygments.lexers]
+html_liquid2_lexer = liquid2_lexer:HtmlLiquid2Lexer
+html_liquid_lexer = liquid2_lexer:HtmlLiquidLexer
+liquid2_lexer = liquid2_lexer:Liquid2Lexer
+standard_liquid_lexer = liquid2_lexer:StandardLiquidLexer
