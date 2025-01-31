@@ -1,0 +1,15 @@
+[package]
+name = "parquet_to_excel"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "parquet_to_excel"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = "0.23.3"
+chrono = "0.4.35"
+parquet = "53.0.0"
+xlsx_batch_reader = {version = "0.3.2", features = ["xlsxwriter"]}
