@@ -1,0 +1,11 @@
+isort>=5.13.2
+attrs<=24,>=21
+cattrs<=24,>=21
+frozendict>=2.4.0
+
+[:python_version < "3.11"]
+tomli>=1.2.3
+
+[dev]
+pytest>=8.0.0
+ruff==0.2.1
