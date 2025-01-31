@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+baseapp_reactions/__init__.py
+baseapp_reactions.egg-info/PKG-INFO
+baseapp_reactions.egg-info/SOURCES.txt
+baseapp_reactions.egg-info/dependency_links.txt
+baseapp_reactions.egg-info/requires.txt
+baseapp_reactions.egg-info/top_level.txt

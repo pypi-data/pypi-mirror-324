@@ -1,0 +1,2 @@
+baseapp-core>=0.2.3
+baseapp-backend>=0.0.4
