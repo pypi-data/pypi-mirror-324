@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+flask_pocket.py
+setup.py
+flask_pocket.egg-info/PKG-INFO
+flask_pocket.egg-info/SOURCES.txt
+flask_pocket.egg-info/dependency_links.txt
+flask_pocket.egg-info/requires.txt
+flask_pocket.egg-info/top_level.txt
