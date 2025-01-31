@@ -1,0 +1,201 @@
+---
+title: "Supported Model Providers"
+description: "Guide to using different models with OpenOperator"
+icon: "robot"
+---
+
+## Overview
+
+OpenOperator supports various model providers. Here's how to configure and use the most popular ones.
+
+## Model Recommendations
+
+We have yet to test performance across all models. Obviously the more capabable the model the better the performance.
+Thus it's recommended to use any of `openai/gpt-4o`, `deepseek/deepseek-chat`, `deepseek/deepseek-reasoner`, `gemini/gemini-2.0-flash-thinking-exp-01-21`, `gemini/gemini-2.0-flash-exp` or `anthopic/claude-3-5-sonnet-20241022`.
+We also support local models via ollama, like `ollama/qwen2.5`, `ollama/deepseek-r1` or `ollama/llama3.3`, but be aware that small models often return the wrong output structure, which leads to parsing errors. We believe that local models will improve significantly this year.
+
+
+<Note>
+  All models require their respective API keys. Make sure to set them in your
+  environment variables before running the agent.
+</Note>
+
+## Supported Models
+
+Here's a non exhaustive list of supported model providers. For the full list of supported model providers see https://github.com/j0yk1ll/openoperator/blob/main/openoperator/llm.py
+
+### OpenAI
+
+OpenAI's GPT-4o models are recommended for best performance.
+
+```python
+from openoperator import Agent, LLM
+
+# Initialize the model
+llm = LLM(
+    model="openai/gpt-4o",
+    temperature=0.0,
+)
+
+# Create agent with the model
+agent = Agent(llm=llm)
+```
+
+Required environment variables:
+
+```bash .env
+OPENAI_API_KEY=
+```
+
+### Anthropic
+
+
+```python
+from openoperator import Agent, LLM
+
+# Initialize the model
+llm = LLM(
+    model_name="anthopic/claude-3-5-sonnet-20241022",
+    temperature=0.0,
+    timeout=100, # Increase for complex tasks
+)
+
+# Create agent with the model
+agent = Agent(llm=llm)
+```
+
+And add the variable:
+
+```bash .env
+ANTHROPIC_API_KEY=
+```
+
+### Azure OpenAI
+
+```python
+from openoperator import Agent, LLM
+
+# Initialize the model
+llm = LLM(
+    model="azure/gpt-4o",
+    api_version='2024-10-21'
+)
+
+# Create agent with the model
+agent = Agent(llm=llm)
+```
+
+Required environment variables:
+
+```bash .env
+AZURE_OPENAI_ENDPOINT=https://your-endpoint.openai.azure.com/
+AZURE_OPENAI_API_KEY=
+```
+
+### Groq
+
+```python
+from openoperator import Agent, LLM
+
+# Initialize the model
+llm = LLM(
+    model="groq/llama-3.3-70b-versatile"
+)
+
+# Create agent with the model
+agent = Agent(llm=llm)
+```
+
+Required environment variables:
+
+```bash .env
+GROQ_API_KEY=
+```
+
+
+### Gemini
+
+```python
+from openoperator import Agent, LLM
+
+# Initialize the model
+llm = LLM(model='gemini/gemini-2.0-flash-exp')
+
+# Create agent with the model
+agent = Agent(llm=llm)
+```
+
+Required environment variables:
+
+```bash .env
+GEMINI_API_KEY=
+```
+
+
+### DeepSeek-V3
+The community likes DeepSeek-V3 for its low price, no rate limits, open-source nature, and good performance.
+The example is available [here](https://github.com/j0yk1ll/openoperator/blob/main/examples/models/deepseek.py).
+
+```python
+from openoperator import Agent, LLM
+
+# Initialize the model
+llm=LLM(model='deepseek/deepseek-chat')
+
+# Create agent with the model
+agent = Agent(
+    llm=llm,
+    use_vision=False
+)
+```
+
+Required environment variables:
+
+```bash .env
+DEEPSEEK_API_KEY=
+```
+
+### DeepSeek-R1
+We support DeepSeek-R1. Its not fully tested yet, more and more functionality will be added, like e.g. the output of it's reasoning content.
+The example is available [here](https://github.com/j0yk1ll/openoperator/blob/main/examples/models/deepseek-r1.py).
+It does not support vision. The model is open-source so you could also use it with Ollama, but we have not tested it.
+```python
+from openoperator import Agent, LLM
+
+
+# Initialize the model
+llm=LLM(model='deepseek/deepseek-reasoner')
+
+# Create agent with the model
+agent = Agent(
+    llm=llm,
+    use_vision=False
+)
+```
+
+Required environment variables:
+
+```bash .env
+DEEPSEEK_API_KEY=
+```
+
+### Ollama
+You can use Ollama to easily run local models.
+
+1. Download Ollama from [here](https://ollama.ai/download)
+2. Run `ollama pull model_name`. Preferably pick a model which supports tool-calling from [here](https://ollama.com/search?c=tools)
+3. Run `ollama start`
+
+```python
+from openoperator import Agent, LLM
+
+# Initialize the model
+llm=LLM(model="ollama/qwen2.5", num_ctx=32000)
+
+# Create agent with the model
+agent = Agent(
+    llm=llm
+)
+```
+
+Required environment variables: None!
