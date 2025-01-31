@@ -1,0 +1,9 @@
+torch==2.5.1
+transformers
+torchaudio
+librosa
+soundfile
+snac
+openai-whisper
+trl
+datasets
