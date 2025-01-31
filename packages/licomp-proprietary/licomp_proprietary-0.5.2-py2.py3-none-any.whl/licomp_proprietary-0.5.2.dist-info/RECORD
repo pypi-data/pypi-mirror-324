@@ -1,0 +1,11 @@
+licomp_proprietary/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+licomp_proprietary/__main__.py,sha256=yMPGMwnXr0oCp4bGZwFIrVGEvU1ivDDqV2NpcmrmUBA,812
+licomp_proprietary/config.py,sha256=bjJJpjVHQIrRez5A_0r0itAM2DG1ZRjMLDyTt8EaYkQ,1027
+licomp_proprietary/proprietary.py,sha256=EmSjjrK0xXtWtsCgYfBMtQtUH6l4_v1j3y5_4KUSDPM,2789
+licomp_proprietary/data/proprietary-licenses.json,sha256=-y3TNoDYjBPTLwUE3bgHlsPw4v6wImyJUWg5vBW8Ylk,3868
+licomp_proprietary-0.5.2.dist-info/GPL-3.0-or-later.txt,sha256=-5gWaMGKJ54oX8TYP7oeg2zITdTapzyWl9PP0tispuA,34674
+licomp_proprietary-0.5.2.dist-info/METADATA,sha256=ZiRr8SpUFXZ9JzAZrylqWyN7VXzv8mGJpQIofPfm_-w,3602
+licomp_proprietary-0.5.2.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+licomp_proprietary-0.5.2.dist-info/entry_points.txt,sha256=sLRkCTvCFYfejQETM0PownRk-V1rVSNmMAxFR00nz0Q,72
+licomp_proprietary-0.5.2.dist-info/top_level.txt,sha256=0SJD4Y5RKRQ75knLvk82qqbvUzwQfWBYIOkHwrcS5io,19
+licomp_proprietary-0.5.2.dist-info/RECORD,,
