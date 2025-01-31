@@ -1,0 +1,2 @@
+[console_scripts]
+tfsumpy = tfsumpy.__main__:main
