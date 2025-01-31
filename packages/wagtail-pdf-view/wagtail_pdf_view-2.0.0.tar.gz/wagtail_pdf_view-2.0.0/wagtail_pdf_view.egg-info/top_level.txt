@@ -1,0 +1,2 @@
+wagtail_pdf_view
+wagtail_pdf_view_tex
