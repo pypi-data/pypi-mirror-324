@@ -1,0 +1,49 @@
+[project]
+name = "xclient-dl"
+dynamic = ["version"]
+description = "Implementation of X/Twitter v1, v2, and GraphQL APIs."
+authors = [
+    {name = "bengabp",email = "bengabdev4@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiofiles (>=24.1.0,<25.0.0)",
+    "nest-asyncio (>=1.6.0,<2.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)",
+    "httpx (>=0.28.1,<0.29.0)",
+    "orjson (>=3.10.15,<4.0.0)",
+    "m3u8 (>=6.0.0,<7.0.0)",
+    "websockets (>=14.2,<15.0)",
+    "uvloop (>=0.21.0,<0.22.0) ; platform_system != \"Windows\"",
+    "rapidfuzz (>=3.12.1,<4.0.0)"
+]
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[project.urls]
+Homepage = "https://github.com/bengabp/xclient"
+Documentation = "https://github.com/bengabp/xclient"
+Repository = "https://github.com/bengabp/xclient.git"
+Issues = "https://github.com/bengabp/xclient/issues"
+Changelog = "https://github.com/bengabp/xclient/tree/main/CHANGELOG.md"
+
+[tool.poetry]
+version = "0.0.0"
+packages = [
+    { include = "xclient" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+
+
+[tool.poetry-dynamic-versioning]
+enable = true
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
