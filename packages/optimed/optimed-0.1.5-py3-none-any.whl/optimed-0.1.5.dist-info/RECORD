@@ -1,0 +1,14 @@
+documents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimed/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimed/wrappers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimed/wrappers/nifti.py,sha256=xmHy-n9WE9pQyJO4luLOFHDmSx8REA5QMP1HuoQ-EPs,30269
+optimed/wrappers/numpy.py,sha256=_Yuit45YemJ73GU9M4kh1vXk_Hfh_2eX37FSTPTmM7I,8097
+optimed/wrappers/operations.py,sha256=c5aPVqDoU-_JKQJLBl9EaovLIpbz-MvDVlphRhK6whU,11312
+tests/test_nifti_utils.py,sha256=XZXvgRsmYCpv-HBXvBl1YWnl2_lBp9BL4tT62RN224E,7651
+tests/test_numpy_utils.py,sha256=ZFC93TkhPwlbcy1Pwxcgqw_Fip0uw7-Te-W3GL6FSq4,3133
+tests/test_operation_utils.py,sha256=2N-tiBKAAP1v1-xxGREr-pX55db6KaHLs4wdCFIVbdI,5744
+optimed-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+optimed-0.1.5.dist-info/METADATA,sha256=hPWB9daHbVGGuBH-CUx30ns544Gv-7EyjJ7BNE_4VtQ,2400
+optimed-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+optimed-0.1.5.dist-info/top_level.txt,sha256=-2oPQBxXP4m2a3osKnU1wnJnPQ5mboohKqtX0a0STTM,24
+optimed-0.1.5.dist-info/RECORD,,
