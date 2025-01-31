@@ -1,0 +1,11 @@
+boto3>=1.20.0
+graphviz>=0.20
+networkx>=3.4
+click>=8.0
+
+[dev]
+pytest>=8.3
+pytest-cov>=6.0
+black>=24.1
+flake8>=7.0
+moto>=5.0
