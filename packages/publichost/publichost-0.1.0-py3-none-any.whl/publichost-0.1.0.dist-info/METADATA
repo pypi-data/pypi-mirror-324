@@ -1,0 +1,79 @@
+Metadata-Version: 2.4
+Name: publichost
+Version: 0.1.0
+Summary: Make localhost public in one line
+Project-URL: Homepage, https://publichost.dev
+Project-URL: Documentation, https://pypi.org/project/publichost
+Author-email: Spencer Kinney <email@spencerkinney.dev>
+License: # LICENSE
+        MIT License
+        
+        Copyright (c) 2024 PublicHost
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: development,localhost,networking,tunnel
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: websockets>=10.0
+Description-Content-Type: text/markdown
+
+# PublicHost
+
+Make localhost public in one line.
+
+## Installation
+
+```bash
+pip install publichost
+```
+
+## Usage
+
+```python
+from publichost import Tunnel
+
+tunnel = Tunnel(port=3000)
+print(f"Public URL: {tunnel}")  # https://x8k2p.publichost.dev
+```
+
+Need a custom subdomain?
+
+```python
+tunnel = Tunnel(port=3000, subdomain="myapp")
+```
+
+## Features
+
+- 🚀 Single line to get public URL
+- 🌐 Random or custom subdomains
+- 💻 Works with any local web server
+
+## License
+
+MIT License - see LICENSE file for details.
