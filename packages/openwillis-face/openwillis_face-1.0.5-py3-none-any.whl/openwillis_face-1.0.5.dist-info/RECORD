@@ -1,0 +1,15 @@
+openwillis/face/__init__.py,sha256=7EI1i1nlchpkSOIlmRGzPRWLDcm4Jnh2MDqKuX-emmk,401
+openwillis/face/eye_blink.py,sha256=JoAd9NWBqevr5QfCTJEjlUnjBdPrzQ3KylUrhqFbdqc,13213
+openwillis/face/face_landmark.py,sha256=OsW4YRQdBULcrIytsXYIWDWza6wT1fAk2W447dwyCbY,33654
+openwillis/face/facial_emotion.py,sha256=trFNR2_BNeMFGNrbFLPd28RoeymRuDLA3QO_xbxP5Rc,17291
+openwillis/face/preprocess_video.py,sha256=TfCrkbKa0pzs-1KzAAr-Q_TaWbbG607csPEyNKljVb0,26129
+openwillis/face/config/eye.json,sha256=qd7ayAchibL-m3AFITkWq72rmEsOA1Z6Lj3LDeftruI,484
+openwillis/face/config/facial.json,sha256=iPGcYW7yogv8A5WV6nXYR10jsWMx36Eh6g7y2uCwpns,1877
+openwillis/face/config/preprocess.json,sha256=lx37AI8lBqtsuOaZ_ttF2LRabNRVSxYZh7WRDoWIulc,241
+openwillis/face/util/__init__.py,sha256=vASR9pbeD37Mu-AWwC8YdcKcWHZlak8CuOJGEpFoRzc,358
+openwillis/face/util/crop_utils.py,sha256=oQOJASzbb4CnKvLlx93QmRiFgMq0svNnKy2aa3UcE4Y,13601
+openwillis/face/util/speaking_utils.py,sha256=RvKekVoDowGGrOPTZ6Q7P8kNl__w3B6M8NVImyrfV2Y,4852
+openwillis_face-1.0.5.dist-info/METADATA,sha256=6AxuKgmnR6wbhRX4UWkbE-1ymaEta4ZK2z9DyRpQ5Lo,853
+openwillis_face-1.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+openwillis_face-1.0.5.dist-info/top_level.txt,sha256=7snsyJR0F_8yDPKK4Edb60ku7Yc7rolG1faN5YKClpk,11
+openwillis_face-1.0.5.dist-info/RECORD,,
