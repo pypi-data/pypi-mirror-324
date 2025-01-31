@@ -1,0 +1,2 @@
+[console_scripts]
+rvc-cli = rvc_inferpy.cli:infer_audio_cli
