@@ -1,0 +1,16 @@
+numin/NuminAPI.py,sha256=xRqTpUw6Ib3vlRy0lAfVMEddYKED5xA17EgojRh5WV0,10346
+numin/__init__.py,sha256=huGP7UmrgVq80ZPymsNTeZMKyxXBkp28Bhqeh0BIOWU,30
+numin/backtest_wrapper.py,sha256=pwZPNnoaOX77TLs_6mpWTyU11kdUFeWpirkUYUFppCQ,5308
+numin/utils/__init__.py,sha256=J02mRpxJLtuxDPoIjkH51mxkvzJFJxWdYGbw2Naf5gg,156
+numin/utils/backtest.py,sha256=0Tpcf9t4QoHLsH5K_W_-KR3-TG8PWawvRbrQpX4F6Q0,4484
+numin/utils/featfuncs.py,sha256=18BAe1MiKBz2t4yFP5p85Y_FFgIjiM6MH8zudfTbXZI,15035
+numin/utils/feed_env.py,sha256=qmKtWSHCU6ZNNxPxm2j78HA-l-_u1eS3vx6AzH-MZuc,10480
+numin/utils/feeds.py,sha256=GFL53b6CTwkLiICcurl0HzPafy3RaNN4gacp1GdJn9A,21786
+numin/utils/india_calendar.py,sha256=yAbA88KDQRZcYRLZGBkno6D966UVmy3YFMOWc0wxJOo,1941
+numin/utils/scanner.py,sha256=7QfS9wEuNnkaCZMTIkwAB2ZI0dD6dtMLIZmx5GAnQ8s,5208
+numin/utils/synfeed.py,sha256=kkDRcqAmXgwSxu1JAC_0v8RfN0msngXj2OAE3ET9iXI,7656
+numin-0.0.5.dist-info/LICENSE,sha256=tdSj9EDc0obBCMZyReG0uz0zNTpwZ1-Rn7YOI2y-DWY,1051
+numin-0.0.5.dist-info/METADATA,sha256=KA736y1ytRX_bM0D1nVWiUtzSoQjl_L0alE-49kjnGM,509
+numin-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+numin-0.0.5.dist-info/top_level.txt,sha256=KClO3NBF07_b_jPIwykvlwjbCu7s83UY1fKWcuFCNSQ,6
+numin-0.0.5.dist-info/RECORD,,
