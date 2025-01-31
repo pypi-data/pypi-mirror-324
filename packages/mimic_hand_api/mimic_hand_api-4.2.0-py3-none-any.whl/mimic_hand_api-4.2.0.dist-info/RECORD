@@ -1,0 +1,11 @@
+mimic_hand_api/.gitignore,sha256=74oa8YR8gNxKxB6lCtoqmgtB2xpZnWM539Qsl4wI_lg,12
+mimic_hand_api/RP2040/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mimic_hand_api/RP2040/mimic_hand.proto,sha256=JKFxgiZ44SJwJ5z9m_dFUZq4nSH2W5gedWNJj6Z5LNM,1084
+mimic_hand_api/RP2040/mimic_hand_pb2.py,sha256=tVxX3wiSSYod-8NW_rBRS-5DIPj2iYEo3ztE4SJKt_U,3273
+mimic_hand_api/RP2040/rp2040_client.py,sha256=u6YB-DBdMFFecsLyraEY2smAJ7nLh4rKV1b_SDLCfN4,18866
+mimic_hand_api/__init__.py,sha256=hYYJ_D1JOxjLlgJQJ8C8LK78S2swz-cZOMeo6-M8SS8,96
+mimic_hand_api/motor_map.yaml,sha256=qnSoU48evjIzI0KYwvKgfLeG7RV1pexmzB4UqfAcRnk,3659
+mimic_hand_api/rp2040_api.py,sha256=SG4SKLsJbtLOinwl1fNfnAOwYqTSy1nTBD6wxV5X6nQ,16138
+mimic_hand_api-4.2.0.dist-info/METADATA,sha256=0UMn5vUWYpcHQQSKMbTYXOshGU7gY8w2qPGWvsPzZ_4,9395
+mimic_hand_api-4.2.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+mimic_hand_api-4.2.0.dist-info/RECORD,,

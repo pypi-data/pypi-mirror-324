@@ -1,0 +1,229 @@
+# uart ids of the motor boards
+# IMPORTANT: This is assumed to be the same for all hands
+motor_board_uart_ids: [1, 2, 3, 4]
+# Prototype P0.44R
+motor_map_P0.44R:
+  1: {uart_id : 1, motor_id : 1}
+  2: {uart_id : 1, motor_id : 2}
+  3: {uart_id : 1, motor_id : 3}
+  4: {uart_id : 2, motor_id : 2}
+  5: {uart_id : 2, motor_id : 3}
+  6: {uart_id : 1, motor_id : 0}
+  7: {uart_id : 2, motor_id : 0}
+  8: {uart_id : 2, motor_id : 1}
+  9: {uart_id : 4, motor_id : 2}
+  10: {uart_id : 4, motor_id : 3}
+  11: {uart_id : 3, motor_id : 3}
+  12: {uart_id : 3, motor_id : 2}
+  13: {uart_id : 4, motor_id : 1}
+  14: {uart_id : 3, motor_id : 0}
+  15: {uart_id : 4, motor_id : 0}
+  16: {uart_id : 3, motor_id : 1}
+
+middleware_convention_map_P0.44R:
+  0: 11
+  1: 16
+  2: 5
+  3: 8
+  4: 12
+  5: 14
+  6: 4
+  7: 3
+  8: 1
+  9: 7
+  10: 13
+  11: 10
+  12: 6
+  13: 15
+  14: 9
+  15: 2
+
+motor_direction_map_P0.44R:
+  [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ]
+
+# Prototype P0.45R
+motor_map_P0.45R:
+  1: {uart_id : 1, motor_id : 1}
+  2: {uart_id : 1, motor_id : 2}
+  3: {uart_id : 1, motor_id : 3}
+  4: {uart_id : 2, motor_id : 2}
+  5: {uart_id : 2, motor_id : 3}
+  6: {uart_id : 1, motor_id : 0}
+  7: {uart_id : 2, motor_id : 0}
+  8: {uart_id : 2, motor_id : 1}
+  9: {uart_id : 4, motor_id : 2}
+  10: {uart_id : 4, motor_id : 3}
+  11: {uart_id : 3, motor_id : 3}
+  12: {uart_id : 3, motor_id : 2}
+  13: {uart_id : 4, motor_id : 1}
+  14: {uart_id : 3, motor_id : 0}
+  15: {uart_id : 4, motor_id : 0}
+  16: {uart_id : 3, motor_id : 1}
+
+middleware_convention_map_P0.45R:
+  0: 11
+  1: 16
+  2: 5
+  3: 8
+  4: 12
+  5: 14
+  6: 4
+  7: 3
+  8: 1
+  9: 7
+  10: 13
+  11: 10
+  12: 6
+  13: 15
+  14: 9
+  15: 2
+
+motor_direction_map_P0.45R:
+  [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ]
+# Prototype P0.45L
+motor_map_P0.45L:
+  1: {uart_id : 1, motor_id : 1}
+  2: {uart_id : 1, motor_id : 2}
+  3: {uart_id : 1, motor_id : 3}
+  4: {uart_id : 2, motor_id : 2}
+  5: {uart_id : 2, motor_id : 3}
+  6: {uart_id : 1, motor_id : 0}
+  7: {uart_id : 2, motor_id : 0}
+  8: {uart_id : 2, motor_id : 1}
+  9: {uart_id : 4, motor_id : 2}
+  10: {uart_id : 4, motor_id : 3}
+  11: {uart_id : 3, motor_id : 3}
+  12: {uart_id : 3, motor_id : 2}
+  13: {uart_id : 4, motor_id : 1}
+  14: {uart_id : 3, motor_id : 0}
+  15: {uart_id : 4, motor_id : 0}
+  16: {uart_id : 3, motor_id : 1}
+
+middleware_convention_map_P0.45L:
+  0: 15
+  1: 9
+  2: 6
+  3: 2
+  4: 13
+  5: 10
+  6: 1
+  7: 7
+  8: 4
+  9: 3
+  10: 12
+  11: 14
+  12: 5
+  13: 11
+  14: 16
+  15: 8
+
+motor_direction_map_P0.45L:
+  [
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1,
+    -1
+  ]
+
+# Protype P0.46R
+motor_map_P0.46R:
+  1: {uart_id : 1, motor_id : 1}
+  2: {uart_id : 1, motor_id : 2}
+  3: {uart_id : 1, motor_id : 3}
+  4: {uart_id : 2, motor_id : 2}
+  5: {uart_id : 2, motor_id : 3}
+  6: {uart_id : 1, motor_id : 0}
+  7: {uart_id : 2, motor_id : 0}
+  8: {uart_id : 2, motor_id : 1}
+  9: {uart_id : 4, motor_id : 2}
+  10: {uart_id : 4, motor_id : 3}
+  11: {uart_id : 3, motor_id : 3}
+  12: {uart_id : 3, motor_id : 2}
+  13: {uart_id : 4, motor_id : 1}
+  14: {uart_id : 3, motor_id : 0}
+  15: {uart_id : 4, motor_id : 0}
+  16: {uart_id : 3, motor_id : 1}
+
+middleware_convention_map_P0.46R:
+  0: 4
+  1: 16
+  2: 5
+  3: 8
+  4: 12
+  5: 14
+  6: 4
+  7: 3
+  8: 1
+  9: 7
+  10: 13
+  11: 10
+  12: 6
+  13: 15
+  14: 9
+  15: 2
+
+motor_direction_map_P0.46R:
+  [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ]
