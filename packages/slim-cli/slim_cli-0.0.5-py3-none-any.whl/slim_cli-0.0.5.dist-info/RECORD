@@ -1,0 +1,10 @@
+jpl/slim/VERSION.txt,sha256=robnkGeKzH_BTxjlWcL4xJcmNNWxt0oqKXVluMkPgEo,6
+jpl/slim/__init__.py,sha256=xXSbI4JFapNwtFD3usUkxYXD73SywqKCppBB87f3n4s,216
+jpl/slim/cli.py,sha256=zMKROkSrA3dOwi6M0jRj3-1eqt_Zhsexdu6YHGL-Z4w,54068
+jpl/slim/docgen.py,sha256=u4HvWWgE7FgqGR12O-XwADm7pwxdfgGuwsf2in3mhEI,23670
+jpl/slim/testgen.py,sha256=y8cNwSdR5TPVKHufNigqR22C4Gu8ac-d56uTxpUCVyE,10666
+slim_cli-0.0.5.dist-info/METADATA,sha256=vu3lym0mOVHPUVf9_g9vEsqKyq618JbQOsE3u3_YC90,30856
+slim_cli-0.0.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+slim_cli-0.0.5.dist-info/entry_points.txt,sha256=-ZhoziFH8RT2Cr--lwPr5VqA6laD4jSyKStIA3_Murs,43
+slim_cli-0.0.5.dist-info/licenses/LICENSE,sha256=jRwwEer5HgbRKqEhLFuJVGjl2fLucpAlzTtXTo-BSx8,12469
+slim_cli-0.0.5.dist-info/RECORD,,
