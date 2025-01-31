@@ -1,0 +1,41 @@
+
+{
+    "CoverSlide":{
+        "Image":"/SlideThemes/SapphireBlue/CoverImage.png",
+        "TitleFontSize":79,
+        "ContentFontSize":36,
+        "TextColor":"SAFEBLACK",
+        "BrandTextColor":"SAFEWHITE",
+        "ImageTop":0,
+        "ImageLeft":0,
+        "ImageWidth":20,
+        "ImageHeight":11,
+        "TitleLeft":50,
+        "TitleTop":50,
+        "TitleWidth":1000,
+        "TitleHeight":38,
+        "ContentLeft":100,
+        "ContentTop":400,
+        "ContentWidth":900,
+        "ContentHeight":26
+    },
+    "ContentSlide":{
+        "Image":"/SlideThemes/SapphireBlue/SideImage.png",
+        "TitleFontSize":38,
+        "ContentFontSize":26,
+        "TextColor":"SAFEBLACK",
+        "BrandTextColor":"SAFEWHITE",
+        "ImageTop":0,
+        "ImageLeft":14.98,
+        "ImageWidth":5.02,
+        "ImageHeight":11,
+        "TitleLeft":50,
+        "TitleTop":50,
+        "TitleWidth":1000,
+        "TitleHeight":38,
+        "ContentLeft":150,
+        "ContentTop":200,
+        "ContentWidth":900,
+        "ContentHeight":26
+    }
+}
