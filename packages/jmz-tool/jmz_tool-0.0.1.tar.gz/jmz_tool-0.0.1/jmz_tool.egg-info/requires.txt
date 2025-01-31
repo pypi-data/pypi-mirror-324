@@ -1,0 +1,4 @@
+PyExecJS2
+
+[Node.js]
+Node.js>=22.11.0
