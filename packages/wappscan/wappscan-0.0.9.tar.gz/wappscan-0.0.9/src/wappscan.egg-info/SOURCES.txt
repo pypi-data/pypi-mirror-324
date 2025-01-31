@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/main.py
+src/wappscan/__init__.py
+src/wappscan/api.py
+src/wappscan/cli.py
+src/wappscan/exceptions.py
+src/wappscan.egg-info/PKG-INFO
+src/wappscan.egg-info/SOURCES.txt
+src/wappscan.egg-info/dependency_links.txt
+src/wappscan.egg-info/entry_points.txt
+src/wappscan.egg-info/requires.txt
+src/wappscan.egg-info/top_level.txt
