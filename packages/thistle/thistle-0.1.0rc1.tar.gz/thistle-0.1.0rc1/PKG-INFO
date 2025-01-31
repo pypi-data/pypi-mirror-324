@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: thistle
+Version: 0.1.0rc1
+Summary: Add your description here
+Author-email: jolsten <jolsten@gmail.com>
+Requires-Python: >=3.10
+Requires-Dist: numpy>=2.2.2
+Requires-Dist: sgp4>=2.23
