@@ -1,0 +1,23 @@
+Metadata-Version: 2.4
+Name: binomcikit
+Version: 0.0.1
+Summary: Used to calculate Confidence intervals
+Project-URL: Homepage, https://github.com/pranava-ba/binomcikit
+Project-URL: Issues, https://github.com/
+Author-email: Vyasa R Rajeswaran <vyasarshi2308@gmail.com>, Pranava BA <pranavabaascaran@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# proportion
+Python package for proportion
+
+Multiple procedures to obtain an interval estimate for an unknown 
+proportion (p) based on binomial sampling. It is known that approximations
+are poor when the true p is close to zero or to one. So we provide alternative
+procedures with better properties. Non-iterative methods widely discussed
+in literature for computing a (central) two-sided interval estimate for p are
+implemented in terms of coverage probability and expected length.
