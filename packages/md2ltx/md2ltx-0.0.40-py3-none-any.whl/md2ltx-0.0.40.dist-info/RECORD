@@ -1,0 +1,11 @@
+md2ltx/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+md2ltx/main.py,sha256=I16zaR6fnXQu2z1hPcgTyTlvD5GhtHSX5nUw4kWR3uc,8703
+md2ltx/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+md2ltx/lib/constants.py,sha256=QuBhgR7PpkpywoBboCYgqpj-ZGdDu4YJ1Da4pOqY3iU,18011
+md2ltx/lib/python_evaluation.py,sha256=GJse4kfXc0vJjzf0XfsvCTQG9OIsNUSBO3DVdIi1Hjc,4184
+md2ltx-0.0.40.dist-info/LICENSE,sha256=mv899Pe4JqofmUghvfoDOT6mgUD5L-OWdIbP_PScOTA,1063
+md2ltx-0.0.40.dist-info/METADATA,sha256=f6kgy7x8WTM2XbJ0hf3v95cmVMvqVM_7mK0UOkkjqe4,14133
+md2ltx-0.0.40.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+md2ltx-0.0.40.dist-info/entry_points.txt,sha256=3PNnE2dV6o2m2DC9VCMe-afLfqHOXRq5JV1BkCs2VZA,44
+md2ltx-0.0.40.dist-info/top_level.txt,sha256=DLmKTlptx-DTj6qj56or2WXO615EHsp7lh5MbdVg3PU,7
+md2ltx-0.0.40.dist-info/RECORD,,
