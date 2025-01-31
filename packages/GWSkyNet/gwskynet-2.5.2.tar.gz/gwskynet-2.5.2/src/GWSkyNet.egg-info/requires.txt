@@ -1,0 +1,10 @@
+numpy>=1.23.2
+ligo.skymap>=2.1.1
+reproject>=0.8
+scipy>=1.8.0
+
+[:sys_platform != "darwin"]
+tensorflow-cpu>=2.16.1
+
+[:sys_platform == "darwin"]
+tensorflow>=2.16.1
