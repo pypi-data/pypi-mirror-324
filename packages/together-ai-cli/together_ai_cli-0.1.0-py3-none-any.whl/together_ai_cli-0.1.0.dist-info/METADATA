@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: together-ai-cli
+Version: 0.1.0
+Summary: A CLI tool for the Together AI API
+Author: Rodolfo Villaruz
+Author-email: rodolfovillaruz@gmail.com
+Requires-Dist: requests>=2.25.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
