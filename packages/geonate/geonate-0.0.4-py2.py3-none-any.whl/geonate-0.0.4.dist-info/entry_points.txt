@@ -1,0 +1,2 @@
+[console_scripts]
+geonate = geonate.cli:main
