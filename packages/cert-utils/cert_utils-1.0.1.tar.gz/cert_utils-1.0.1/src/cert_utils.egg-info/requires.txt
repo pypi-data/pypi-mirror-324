@@ -1,0 +1,14 @@
+python-dateutil
+psutil>=4.4.0
+requests
+typing_extensions
+
+[testing]
+certbot
+cryptography>=42.0.0
+josepy<2
+mypy
+pytest
+types-psutil
+types-python-dateutil
+types-requests
