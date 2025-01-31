@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: tony_ml
+Version: 1.0.2
+Summary: Testing out some automl shizzle
+Home-page: https://github.com/anthonygfruit/AutoML
+Author: AFruit
+Author-email: anthony.fruit@gmail.com
+License: Apache 2.0
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: summary
