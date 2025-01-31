@@ -1,0 +1,13 @@
+xdmod_data/__init__.py,sha256=e3S0EcDGJlWIp2hddSFjvt633jfeZ4W7VyAeLpfTWVM,37
+xdmod_data/__version__.py,sha256=AzHxzuoXoRyGsPVbbH_Ym4j3mr62EYcmim1rnSKFKw8,47
+xdmod_data/_descriptors.py,sha256=AaJEmXlJIxJPjRnO9aKJ6Om2el0EQq3R_09tvMAdz4c,2284
+xdmod_data/_http_requester.py,sha256=Nz6sFRHK46oWGgMgpjwUPC68xZ2PHqTvqhg95I-MPw8,7819
+xdmod_data/_response_processor.py,sha256=HfcHV0Oqj0QoCWFQ9z2u30oki6uswcdBKQDqW9VDJf0,4345
+xdmod_data/_validator.py,sha256=iG3NjV5DvH3loIYxFoMxlyKOFNJxkiKVwV35OPsWm2w,10573
+xdmod_data/themes.py,sha256=I4cQBF-tqUnaD7jwg-u63KGfOuXR6jgHin7hogLd2uE,3125
+xdmod_data/warehouse.py,sha256=FXXLZ_EXrpGAil5SLBw9rNyRc-KESpCinO4eTa0a0j8,16755
+xdmod_data-1.0.3.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+xdmod_data-1.0.3.dist-info/METADATA,sha256=0bgKHRe6KaQvZRBaK-f7M760jU4q8XaXuoBuTVad7P4,589
+xdmod_data-1.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+xdmod_data-1.0.3.dist-info/top_level.txt,sha256=ph-NOi5tK19CfM5XnNOGuId1orUYaKQPxOPiS-geLPk,11
+xdmod_data-1.0.3.dist-info/RECORD,,

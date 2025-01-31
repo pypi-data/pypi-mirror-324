@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: xdmod-data
+Version: 1.0.3
+Summary: Python package for Open XDMoD data access
+Author: Aaron Weeden, Joseph P. White, Rodney Garnett
+Maintainer: Aaron Weeden, Joseph P. White
+Project-URL: Source Code, https://github.com/ubccr/xdmod-data
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.23.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: plotly>=5.8.0
+Requires-Dist: requests>=2.19.0
+
+See the [README](https://github.com/ubccr/xdmod-data/tree/v1.0.3?tab=readme-ov-file#xdmod-data) for instructions on use.
