@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: langchain_kaburi
+Version: 0.0.7
+Summary: My custom Python package
+Author: Kaburi
+Author-email: specialemail@naver.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.20.0
+
+# AI 프로그래밍 보조
+
+제 저장소에 오신 것을 환영합니다! 이 저장소는 다양한 AI 관련 프로그래밍 리소스와 프로젝트를 포함하고 있습니다.
