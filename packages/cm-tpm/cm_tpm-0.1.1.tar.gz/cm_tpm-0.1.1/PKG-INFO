@@ -1,0 +1,5 @@
+Metadata-Version: 2.2
+Name: cm-tpm
+Version: 0.1.1
+Summary: A Python package for Continuous Mixtures of Tractable Probabilistic Models
+License-File: LICENCE
