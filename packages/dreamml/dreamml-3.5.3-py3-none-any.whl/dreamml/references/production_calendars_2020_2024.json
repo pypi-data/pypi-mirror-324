@@ -1,0 +1,316 @@
+{
+    "2024": {
+        "1": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 8, 13, 14, 20, 21, 27, 28],
+            "pre_holidays": [],
+            "holidays": [1, 2, 3, 4, 5, 6, 7, 8]
+        },
+        "2": {
+            "weekends": [3, 4, 10, 11, 17, 18, 23, 24, 25],
+            "pre_holidays": [22],
+            "holidays": [23]
+        },
+        "3": {
+            "weekends": [2, 3, 8, 9, 10, 16, 17, 23, 24, 30, 31],
+            "pre_holidays": [7],
+            "holidays": [8]
+        },
+        "4": {
+            "weekends": [6, 7, 13, 14, 20, 21, 28, 29, 30],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "5": {
+            "weekends": [1, 4, 5, 9, 10, 11, 12, 18, 19, 25, 26],
+            "pre_holidays": [8],
+            "holidays": [1, 9]
+        },
+        "6": {
+            "weekends": [1, 2, 8, 9, 12, 15, 16, 22, 23, 29, 30],
+            "pre_holidays": [11],
+            "holidays": [12]
+        },
+        "7": {
+            "weekends": [6, 7, 13, 14, 20, 21, 27, 28],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "8": {
+            "weekends": [3, 4, 10, 11, 17, 18, 24, 25, 31],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "9": {
+            "weekends": [1, 7, 8, 14, 15, 21, 22, 28, 29],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "10": {
+            "weekends": [5, 6, 12, 13, 19, 20, 26, 27],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "11": {
+            "weekends": [3, 9, 10, 16, 17, 23, 24, 30],
+            "pre_holidays": [2],
+            "holidays": [4]
+        },
+        "12": {
+            "weekends": [1, 7, 8, 14, 15, 21, 22, 29, 30, 31],
+            "pre_holidays": [],
+            "holidays": []
+        }
+    },
+
+    "2023": {
+        "1": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 8, 14, 15, 21, 22, 28, 29],
+            "pre_holidays": [],
+            "holidays": [1, 2, 3, 4, 5, 6, 7, 8]
+        },
+        "2": {
+            "weekends": [4, 5, 11, 12, 18, 19, 23, 24, 25, 26],
+            "pre_holidays": [22],
+            "holidays": [23]
+        },
+        "3": {
+            "weekends": [4, 5, 8, 11, 12, 18, 19, 25, 26],
+            "pre_holidays": [7],
+            "holidays": [8]
+        },
+        "4": {
+            "weekends": [1, 2, 8, 9, 15, 16, 22, 23],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "5": {
+            "weekends": [1, 6, 7, 8, 9, 13, 14, 20, 21, 27, 28],
+            "pre_holidays": [],
+            "holidays": [1, 9]
+        },
+        "6": {
+            "weekends": [3, 4, 10, 11, 12, 17, 18, 24, 25],
+            "pre_holidays": [],
+            "holidays": [12]
+        },
+        "7": {
+            "weekends": [1, 2, 8, 9, 15, 17, 22, 23, 29, 30],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "8": {
+            "weekends": [5, 6, 12, 13, 19, 20, 26, 27],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "9": {
+            "weekends": [2, 3, 9, 10, 16, 17, 23, 24, 30],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "10": {
+            "weekends": [1, 7, 8, 14, 15, 21, 22, 28, 29],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "11": {
+            "weekends": [4, 5, 6, 11, 12, 18, 19, 25, 26],
+            "pre_holidays": [3],
+            "holidays": [4]
+        },
+        "12": {
+            "weekends": [2, 3, 9, 10, 16, 17, 23, 24, 30, 31],
+            "pre_holidays": [],
+            "holidays": []
+        }
+    },
+
+    "2022": {
+        "1": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 8, 9, 15, 16, 22, 23, 29, 30],
+            "pre_holidays": [],
+            "holidays": [1, 2, 3, 4, 5, 6, 7, 8]
+        },
+        "2": {
+            "weekends": [5, 6, 12, 13, 19, 20, 23, 26, 27],
+            "pre_holidays": [22],
+            "holidays": [23]
+        },
+        "3": {
+            "weekends": [6, 7, 8, 12, 13, 19, 20, 26, 27],
+            "pre_holidays": [5],
+            "holidays": [8]
+        },
+        "4": {
+            "weekends": [2, 3, 9, 10, 16, 17, 23, 24, 30],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "5": {
+            "weekends": [1, 2, 3, 7, 8, 9, 10, 14, 15, 21, 22, 28, 29],
+            "pre_holidays": [],
+            "holidays": [1, 9]
+        },
+        "6": {
+            "weekends": [4, 5, 11, 12, 13, 18, 19, 25, 26],
+            "pre_holidays": [],
+            "holidays": [12]
+        },
+        "7": {
+            "weekends": [2, 3, 9, 10, 16, 17, 23, 24, 30, 31],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "8": {
+            "weekends": [6, 7, 13, 14, 20, 21, 27, 28],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "9": {
+            "weekends": [3, 4, 10, 11, 17, 18, 24, 25],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "10": {
+            "weekends": [1, 2, 8, 9, 15, 16, 22, 23, 29, 30],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "11": {
+            "weekends": [4, 5, 6, 12, 13, 19, 20, 26, 27],
+            "pre_holidays": [3],
+            "holidays": [4]
+        },
+        "12": {
+            "weekends": [3, 4, 10, 11, 17, 18, 24, 25, 31],
+            "pre_holidays": [],
+            "holidays": []
+        }
+    },
+
+    "2021": {
+        "1": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 16, 17, 23, 24, 30, 31],
+            "pre_holidays": [],
+            "holidays": [1, 2, 3, 4, 5, 6, 7, 8]
+        },
+        "2": {
+            "weekends": [6, 7, 13, 14, 21, 22, 23, 27, 28],
+            "pre_holidays": [20],
+            "holidays": [23]
+        },
+        "3": {
+            "weekends": [6, 7, 8, 13, 14, 20, 21, 27, 28],
+            "pre_holidays": [],
+            "holidays": [8]
+        },
+        "4": {
+            "weekends": [3, 4, 10, 11, 17, 18, 24, 25],
+            "pre_holidays": [30],
+            "holidays": []
+        },
+        "5": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 16, 22, 23, 29, 30],
+            "pre_holidays": [],
+            "holidays": [1, 9]
+        },
+        "6": {
+            "weekends": [5, 6, 12, 13, 14, 19, 20, 26, 27],
+            "pre_holidays": [11],
+            "holidays": [12]
+        },
+        "7": {
+            "weekends": [3, 4, 10, 11, 17, 18, 24, 25, 31],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "8": {
+            "weekends": [1, 7, 8, 14, 15, 21, 22, 28, 29],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "9": {
+            "weekends": [4, 5, 11, 12, 18, 19, 25, 26],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "10": {
+            "weekends": [2, 3, 9, 10, 16, 17, 23, 24, 30, 31],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "11": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 13, 14, 20, 21, 27, 28],
+            "pre_holidays": [],
+            "holidays": [4]
+        },
+        "12": {
+            "weekends": [4, 5, 11, 12, 18, 19, 25, 26, 31],
+            "pre_holidays": [],
+            "holidays": []
+        }
+    },
+
+    "2020": {
+        "1": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 8, 11, 12, 18, 19, 25, 26],
+            "pre_holidays": [],
+            "holidays": [1, 2, 3, 4, 5, 6, 7, 8]
+        },
+        "2": {
+            "weekends": [1, 2, 8, 9, 15, 16, 22, 23, 24, 29],
+            "pre_holidays": [],
+            "holidays": [23]
+        },
+        "3": {
+            "weekends": [1, 7, 8, 9, 14, 15, 21, 22, 28, 29, 30, 31],
+            "pre_holidays": [],
+            "holidays": [8]
+        },
+        "4": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "5": {
+            "weekends": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 16, 17, 23, 24, 30, 31],
+            "pre_holidays": [],
+            "holidays": [1, 9]
+        },
+        "6": {
+            "weekends": [6, 7, 12, 13, 14, 20, 21, 27, 28],
+            "pre_holidays": [11],
+            "holidays": [12]
+        },
+        "7": {
+            "weekends": [1, 4, 5, 11, 12, 18, 19, 25, 26],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "8": {
+            "weekends": [1, 2, 8, 9, 15, 16, 22, 23, 29, 30],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "9": {
+            "weekends": [5, 6, 12, 13, 19, 20, 26, 27],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "10": {
+            "weekends": [3, 3, 10, 11, 17, 18, 24, 25, 31],
+            "pre_holidays": [],
+            "holidays": []
+        },
+        "11": {
+            "weekends": [1, 4, 7, 8, 14, 15, 21, 22, 28, 29],
+            "pre_holidays": [3],
+            "holidays": [4]
+        },
+        "12": {
+            "weekends": [5, 6, 12, 13, 19, 20, 26, 27],
+            "pre_holidays": [31],
+            "holidays": []
+        }
+    }
+}
