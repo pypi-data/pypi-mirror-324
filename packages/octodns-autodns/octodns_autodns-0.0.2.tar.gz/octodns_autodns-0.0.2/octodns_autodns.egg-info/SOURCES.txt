@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+octodns_autodns/__init__.py
+octodns_autodns.egg-info/PKG-INFO
+octodns_autodns.egg-info/SOURCES.txt
+octodns_autodns.egg-info/dependency_links.txt
+octodns_autodns.egg-info/requires.txt
+octodns_autodns.egg-info/top_level.txt
+tests/test_provider_octodns_autodns.py
