@@ -1,0 +1,10 @@
+mcpx_py/__init__.py,sha256=9wKGgxwiGd_-v7T-XnZUse27igdKExOqls_2Wtb37Zk,295
+mcpx_py/__main__.py,sha256=yhEih0XbRO0nq3LgYAyI9Zp0hUa1wUC0gH0kmewrvoY,6400
+mcpx_py/builtin_tools.py,sha256=2M9MmTKlOJQoCUAYKn3lbXxc4wtsBMNXyo4ftU3N-QY,1369
+mcpx_py/chat.py,sha256=ZRxp6aH8XBMW3MU7zOgnvMZTZ2FAVMotaFJHsQeaMzI,17000
+mcpx_py/client.py,sha256=OteOuqOnjKkkZtEJFkIjGv9Hi3hYNZuvzBTQdZEuZ7c,15576
+mcpx_py-0.1.1.dist-info/METADATA,sha256=LvFxFG0TRiO6zi2bnZ7p-5PauPkRi-7fvo7ZXKdKw3E,4252
+mcpx_py-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mcpx_py-0.1.1.dist-info/entry_points.txt,sha256=JzfJPrfXJuP8ck8fftKIkuTpkFtVjiq7_KhsP4QEufg,54
+mcpx_py-0.1.1.dist-info/top_level.txt,sha256=opNVmYJ2WIZP2JuOo3Bm0VaGN3RWtw-vnjGI8Sx1atE,8
+mcpx_py-0.1.1.dist-info/RECORD,,
