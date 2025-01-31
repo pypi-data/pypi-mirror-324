@@ -1,0 +1,24 @@
+Metadata-Version: 2.2
+Name: zuspec-dataclasses
+Version: 0.0.1.13064594382
+Summary: Front-end for capturing Action Relation Level models using dataclasses
+Home-page: https://github.com/zuspec/zuspec-dataclasses
+Author: Matthew Ballance
+Author-email: matt.ballance@gmail.com
+License: Apache 2.0
+Keywords: SystemVerilog,Verilog,RTL
+License-File: LICENSE
+Requires-Dist: pyvsc-dataclasses
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+
+  PyARL-Dataclasses provides a front-end for capturing actions, and activities
+  in a dataclass-centric manner
+  
