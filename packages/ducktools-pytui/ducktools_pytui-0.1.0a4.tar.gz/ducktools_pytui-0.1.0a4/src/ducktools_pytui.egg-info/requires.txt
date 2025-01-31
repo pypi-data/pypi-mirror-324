@@ -1,0 +1,7 @@
+ducktools-pythonfinder>=0.7.3
+textual~=1.0
+shellingham~=1.5
+
+[testing]
+pytest
+pytest-cov
