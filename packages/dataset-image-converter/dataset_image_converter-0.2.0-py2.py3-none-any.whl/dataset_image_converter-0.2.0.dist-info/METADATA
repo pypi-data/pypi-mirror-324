@@ -1,0 +1,67 @@
+Metadata-Version: 2.2
+Name: dataset-image-converter
+Version: 0.2.0
+Summary: Image dataset format benchmark
+Home-page: https://github.com/kamikaze/dataset-image-converter
+Author: Oleg Korsak
+Author-email: kamikaze.is.waiting.you@gmail.com
+License: gpl-3
+Project-URL: Documentation, https://github.com/kamikaze/dataset-image-converter/wiki
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.13
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: aiobotocore==2.19.0
+Requires-Dist: colour-science==0.4.6
+Requires-Dist: Cython==3.0.11
+Requires-Dist: exif==1.6.1
+Requires-Dist: h5py==3.12.1
+Requires-Dist: imageio[freeimage,pillow]==2.37.0
+Requires-Dist: numpy==2.2.2
+Requires-Dist: pkgconfig==1.5.5
+Requires-Dist: python3-commons==0.6.5
+Requires-Dist: rawpy==0.24.0
+Requires-Dist: tifffile[all]==2025.1.10
+Requires-Dist: types-aiobotocore[s3]==2.19.0
+Requires-Dist: zarr<3.0.0
+
+dataset-image-converter
+========================
+
+This package runs different image format benchmarks for dataset ML tasks
+
+Installation
+------------
+
+Make sure you have some system deps installed:
+
+.. code:: bash
+
+   sudo apt install pkg-config libhdf5-dev
+
+.. code:: bash
+
+   python3.11 -m venv venv --upgrade-deps
+   source venv/bin/activate
+   python -m pip install -U -r requirements_dev.txt
+
+   # For running on Nvidia GPU:
+   python -m pip install -U torch torchvision
+
+   # For running on CPU:
+   python -m pip install -U torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+
+   # For some reason h5py fails to install Cython while it needs it
+   python -m pip install -U Cython
+
+   python setup.py develop
+
+Running dataset format benchmark
+--------------------------------
+
+.. code:: bash
+
+   python -m dataset_image_converter --data-root /path/to/datasets/
