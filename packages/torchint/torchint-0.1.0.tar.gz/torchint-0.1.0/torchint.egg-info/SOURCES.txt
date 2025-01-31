@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+tests/test_integrate.py
+torchint/__init__.py
+torchint/integrate.py
+torchint.egg-info/PKG-INFO
+torchint.egg-info/SOURCES.txt
+torchint.egg-info/dependency_links.txt
+torchint.egg-info/top_level.txt
