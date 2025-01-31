@@ -1,0 +1,10 @@
+dreamify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dreamify/dream.py,sha256=5JHkoNdZKMPJoTqFFOmm9L-AaWVvwXa9M0uuuPmvgwY,3248
+dreamify/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dreamify/utils/configure.py,sha256=-8WshwHd15n9UUwn5y9Hkg-uudOGg2vLWsh34pIwfl4,260
+dreamify/utils/options.py,sha256=0QRM1Lg1gvzuVMO2CwiU9vmmWroztkbHQD-gH9YSWBM,18
+dreamify/utils/utils.py,sha256=VlIesg9sCpBHTMTsisJMmsd8ZlPE8hNYLPAozSSh3QE,2698
+dreamify-0.8.66.dist-info/METADATA,sha256=NBW882ebPla-PdicHTE2i8qtWmqtCYulHSIyq6gCUpc,585
+dreamify-0.8.66.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+dreamify-0.8.66.dist-info/entry_points.txt,sha256=YyULOQTiOEdQdgcIiWzohBQVAShr4sxVtLYeXbts2LE,48
+dreamify-0.8.66.dist-info/RECORD,,
