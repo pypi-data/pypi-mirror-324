@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: candleweb-ai
+Version: 0.1.0
+Summary: A custom tool for Candleweb AI Agents developers.
+Home-page: https://github.com/edfolmi/candleweb-ai
+Author: Candleweb Power Developers
+Author-email: ai@candleweb.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: crewai>=0.95.0
+Requires-Dist: pydantic>=1.10
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
