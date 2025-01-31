@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: eofetch
+Version: 0.3
+Summary: Earth Observation Data Retrieval library
+Home-page: https://github.com/stcorp/eofetch
+Author: S[&]T
+License: BSD
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Requires-Dist: boto3
+Requires-Dist: pystac-client
+Requires-Dist: requests
+Dynamic: author
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary

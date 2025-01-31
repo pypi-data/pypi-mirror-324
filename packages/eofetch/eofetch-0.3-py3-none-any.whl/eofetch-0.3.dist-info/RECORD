@@ -1,0 +1,11 @@
+eofetch/__init__.py,sha256=4hub13T76NojRlG65RP5R-XdGFbhZTK16PZ8JiyrdgU,28
+eofetch/__main__.py,sha256=XkcTPkWOwZ8Ycwv2xVtxAwQBgkN2L62ukHqeINwe-KU,1011
+eofetch/cdse.py,sha256=tuw56g5DXGVV5W3meZN_A9Ad0PIB6l_ru7IbbegLdLg,2440
+eofetch/fetch.py,sha256=VsbDRo9NEL_Kh0yLR_uXo9eeMXrEEQjyqS8ZO9ma0Wg,1390
+eofetch/s5ppal.py,sha256=tlLW1egrWLdgXQtch5LKJ7O6xmNi58y1SFXJ6uWnF-A,703
+eofetch-0.3.dist-info/LICENSE,sha256=tB_yTAQFvTumeuTK2XT75Rd54Q7v2kH9oXvgaCmp37Q,1513
+eofetch-0.3.dist-info/METADATA,sha256=UsV4w1bXFU0ALuPDL3DUsYyXsZ1id8d-aa6ytkIXeB0,612
+eofetch-0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+eofetch-0.3.dist-info/entry_points.txt,sha256=kOCK85E6pZbU696cHccl38hqrKVgMVf0Yo1n3yRFq9g,50
+eofetch-0.3.dist-info/top_level.txt,sha256=2aoODvzsC2k-a4i2LMgoZyrEMbjLjQcPrnvvBwhtNRQ,8
+eofetch-0.3.dist-info/RECORD,,
