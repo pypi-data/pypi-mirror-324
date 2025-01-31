@@ -1,0 +1,14 @@
+sgbridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sgbridge/bid.py,sha256=HV_1SHmZSS-qUz7_7YSSWC1sFDpY-eTwGMTEq9wM9GA,1004
+sgbridge/bridge.py,sha256=Cgi91E4l73WTshkVpFBTDpkt-PMUeFdYEkqBwRRttGU,2003
+sgbridge/card.py,sha256=ALQigKhOzMkk4eymVJ0UQu0-I2GAaTx1N3wq_ToY678,2359
+sgbridge/datastore.py,sha256=tOXodqeM4Em9EFlFqdtTye00dMvQdOzHnYkvei1_sdE,565
+sgbridge/entity.py,sha256=nzNyOvNGmRJ5do_FeVXbEldA0e_QUdlBlsDhHsadOeo,165
+sgbridge/exception.py,sha256=_Bpvw5Dz4NCMNS77Q_qxgsEIt4pipy7BdXhEPIH12II,2873
+sgbridge/game.py,sha256=S3m987XnwR-hKcbMS6cEv-teMPiU6UdjMsXjHvEEIuI,10926
+sgbridge/player.py,sha256=7GAV69ExFV1jkINryAgFWpeDIfuPxgcTGoNDkTCdl68,408
+sgbridge-0.0.0.dist-info/LICENSE,sha256=3L19U5iVOk-0g_NHrsr4ZErjbJ_jENjknoVihRHGU24,1074
+sgbridge-0.0.0.dist-info/METADATA,sha256=FCZ8Lke7AewEIvyO7awaHfbbN7mJbnOvAvQOq8KfmBE,849
+sgbridge-0.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sgbridge-0.0.0.dist-info/top_level.txt,sha256=ohsLOyIZoANyuWPPOb6piM5BDawYXMYvnxTrLHzECO4,9
+sgbridge-0.0.0.dist-info/RECORD,,
