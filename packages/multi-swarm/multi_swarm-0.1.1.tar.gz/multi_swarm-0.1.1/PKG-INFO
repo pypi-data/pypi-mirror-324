@@ -1,0 +1,132 @@
+Metadata-Version: 2.2
+Name: multi_swarm
+Version: 0.1.1
+Summary: A framework for creating collaborative AI agents using multiple LLM providers
+Author-email: Multi-Swarm Team <info@multi-swarm.ai>
+License: MIT License
+        
+        Copyright (c) 2024 Multi-Swarm Team
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+Project-URL: Homepage, https://github.com/yourusername/multi_swarm
+Project-URL: Documentation, https://multi-swarm.readthedocs.io
+Project-URL: Repository, https://github.com/yourusername/multi_swarm.git
+Project-URL: Issues, https://github.com/yourusername/multi_swarm/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: google-generativeai>=0.3.0
+Requires-Dist: anthropic>=0.7.0
+Requires-Dist: pytrends>=4.9.0
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: asyncio>=3.4.3
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: rich>=13.0.0
+Requires-Dist: typer>=0.9.0
+Requires-Dist: pytest>=6.0.0
+Requires-Dist: pytest-cov>=4.0.0
+Requires-Dist: pytest-asyncio>=0.21.0
+
+# Multi-Swarm: Multi-LLM Agent Framework
+
+A framework for creating collaborative AI agents using multiple LLM providers (Google's Gemini and Anthropic's Claude).
+
+## Features
+
+- Multi-LLM Support: Leverage different LLM providers for specialized tasks
+- Flexible Agent Architecture: Create custom agents with specific roles and capabilities
+- Structured Communication: Define clear communication flows between agents
+- Easy Integration: Simple API for creating and running agent swarms
+
+## Installation
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## Environment Setup
+
+Create a `.env` file in your project root with your API keys:
+
+```env
+GOOGLE_API_KEY=your_gemini_api_key
+ANTHROPIC_API_KEY=your_claude_api_key
+```
+
+## Usage
+
+### Basic Example
+
+```python
+from multi_swarm import Agency, CEOAgent, TrendsAnalyst
+
+# Initialize agents
+ceo = CEOAgent()  # Uses Gemini 2.0 Pro
+analyst = TrendsAnalyst()  # Uses Claude 3.5 Sonnet
+
+# Create agency with communication flows
+agency = Agency(
+    agents=[
+        ceo,  # CEO is the entry point
+        [ceo, analyst],  # CEO can delegate to analyst
+    ],
+    shared_instructions="agency_manifesto.md"
+)
+
+# Run the agency
+agency.run_demo()
+```
+
+### Custom Agent Creation
+
+1. Create a new agent class:
+
+```python
+from multi_swarm import BaseAgent
+
+class CustomAgent(BaseAgent):
+    def __init__(self):
+        super().__init__(
+            name="Custom Agent",
+            description="Description of the agent's role",
+            instructions="path/to/instructions.md",
+            tools_folder="path/to/tools",
+            model="model-name",  # gemini-2.0-pro or claude-3.5-sonnet
+            temperature=0.7
+        )
+```
+
+2. Create instructions for your agent in a markdown file
+3. Add any custom tools in the agent's tools folder
+4. Integrate the agent into your agency's communication flow
+
+## License
+
+MIT License - see LICENSE file for details 
