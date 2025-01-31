@@ -1,0 +1,80 @@
+Metadata-Version: 2.4
+Name: langchain-goodfire
+Version: 0.2.0
+Summary: Goodfire integration for LangChain
+Project-URL: Homepage, https://github.com/keenanpepper/langchain-goodfire
+Project-URL: Bug Tracker, https://github.com/keenanpepper/langchain-goodfire/issues
+Author-email: Keenan Pepper <keenan@ae.studio>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8.1
+Requires-Dist: goodfire>=0.3.4
+Requires-Dist: langchain-core>=0.3.32
+Requires-Dist: transformers>=4.48.1
+Provides-Extra: dev
+Requires-Dist: langchain-tests==0.3.10; extra == 'dev'
+Requires-Dist: pytest>=7.0.0; extra == 'dev'
+Requires-Dist: python-dotenv; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# LangChain Goodfire Integration
+
+This package contains the LangChain integration for the Goodfire API.
+
+## Installation
+
+```bash
+pip install langchain-goodfire
+```
+
+## Usage
+
+```python
+from langchain_goodfire import ChatGoodfire
+from langchain_core.messages import SystemMessage, HumanMessage
+import goodfire
+
+chat = ChatGoodfire(
+    model=goodfire.Variant("meta-llama/Llama-3.3-70B-Instruct"),
+    goodfire_api_key="your-api-key"
+)
+
+messages = [
+    SystemMessage(content="You are a helpful assistant."),
+    HumanMessage(content="Hello!")
+]
+
+response = chat.invoke(messages)
+print(response)
+```
+
+## Development
+
+To install the package in development mode:
+
+```bash
+pip install -e .
+```
+
+## Testing
+
+Run tests using pytest:
+
+```bash
+pytest tests/
+```
+
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Support
+
+For support, please open an issue on the GitHub repository.
