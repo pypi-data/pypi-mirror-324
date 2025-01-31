@@ -1,0 +1,91 @@
+# Synthexa
+
+![Synthexa Logo](https://synthexa.com.br/wp-content/uploads/2025/01/logo-synthexa12.png)
+
+[![PyPI Version](https://img.shields.io/pypi/v/synthexa-rpa)](https://pypi.org/project/synthexa-rpa/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/synthexa-rpa)](https://www.python.org/downloads/)
+
+Synthexa is a Python library for building, managing, and orchestrating RPA (Robotic Process Automation) solutions. It is integrated to the [Synthexa's solutions](https://synthexa.com.br/).
+
+## Features
+
+- 🤖 Simple and intuitive automation development
+- 📊 Real-time monitoring and logging
+- 🔄 Flexible scheduling system
+- 🔐 Secure tenant-based architecture
+- 🎯 Integrated error handling
+- 🚀 Easy deployment and management
+
+## Installation
+
+```bash
+pip install synthexa
+```
+
+## Quick Start
+
+```python
+from synthexa import SynthexaOrchestrator, ConfigFactory
+
+# Configure your environment
+config = ConfigFactory(
+    tenant_id="your_tenant_id",
+    schedule_id="your_schedule_id",
+    connection_url="your_connection_url",
+    connection_key="your_connection_key",
+    login="your_email",
+    password="your_password"
+)
+
+# Initialize orchestrator
+orchestrator = SynthexaOrchestrator(config=config)
+
+# Create your automation
+def hello_world(name: str):
+    print(f"Hello, {name}!")
+
+# Execute
+orchestrator.execute(hello_world, name="World")
+```
+
+## Project Structure
+
+```
+your_project/
+├── src/
+│   ├── automations/
+│   │   ├── __init__.py
+│   │   └── processes.py
+│   ├── config/
+│   │   └── settings.py
+│   └── main.py
+├── requirements.txt
+└── README.md
+```
+
+## Best Practices
+
+```python
+def process_with_best_practices():
+    try:
+        orchestrator.log_info("Starting process")
+        # Your automation code here
+        orchestrator.log_success("Process completed")
+    except Exception as e:
+        orchestrator.log_error(f"Error: {str(e)}")
+        raise
+```
+
+## Requirements
+
+- Python 3.8+
+- Internet connection
+- Valid Synthexa credentials
+
+## Support
+
+- 📚 [Docs](https://documentacao.synthexa.com.br/)
+
+---
+
+Made with ❤️ by the Synthexa Team
