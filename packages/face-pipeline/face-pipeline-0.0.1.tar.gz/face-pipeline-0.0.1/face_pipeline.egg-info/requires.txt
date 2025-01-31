@@ -1,0 +1,11 @@
+requests
+numpy
+opencv-python
+torch
+Pillow
+gradio
+ultralytics
+facenet-pytorch
+torchvision
+deep_sort_realtime
+mediapipe
