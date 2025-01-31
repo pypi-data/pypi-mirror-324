@@ -1,0 +1,347 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Transforming a SUT into an IOT table &mdash; MARIO 0.3.5 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Figaro Parser" href="../tutorial_figaro_parser/tutorial_figaro_parser.html" />
+    <link rel="prev" title="Transforming a SUT table from Isard to Chenery-Moses model" href="../tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MARIO
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">MARIO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#quickstart">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#citation">Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#read-more">Read more</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../terminology.html">Terminology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Changing mario settings</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_data_template/tutorial_data_template.html">Creating an Empty Database, from tabular information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_add_extensions/tutorial_add_extensions.html">Adding satellite accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_shock_analysis/tutorial_shock_analysis.html">Shcok Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html">Transforming a SUT table from Isard to Chenery-Moses model</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Transforming a SUT into an IOT table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#background">Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods">Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#perform-the-transformation">Perform the transformation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_figaro_parser/tutorial_figaro_parser.html">Figaro Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_eora/tutorial_parse_eora.html">Parsing EORA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html">Parsing Exiobase v3.3.18 (supply-use hybrid-units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.html">Parsing Exiobase v3.8.2 (Monetary units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html">Parsing custom database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_hand_shakes/tutorial_hand_shakes.html">Using MARIO and Pymrio Handshake Protocols</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_refernces.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MARIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../examples.html">Examples</a> &raquo;</li>
+        
+      <li>Transforming a SUT into an IOT table</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/examples/tutorial_transformation_sut_to_iot/tutorial_transformation_sut_to_iot.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="transforming-a-sut-into-an-iot-table">
+<h1>Transforming a SUT into an IOT table<a class="headerlink" href="#transforming-a-sut-into-an-iot-table" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial shows how to transform a SUT table into an IOT table</p>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>IOT tables are obtained by transforming SUTs according to a
+transformation model. The “Eurostat Manual of Supply, Use and
+Input-Output Tables” was our reference in scripting the transfromation
+methods.</p>
+<p>Link to the manual here:
+<a class="reference external" href="https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-ra-07-013">https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/-/ks-ra-07-013</a></p>
+</div>
+<div class="section" id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<p>Four methods are exploitable to transform a SUT into an IOT. Each of
+them will lead to a specific type of IOT and embeds intrisic
+assumptions.</p>
+<ul class="simple">
+<li><p>Method A. Commodity-by-commodity IOT based on the product-based
+technology assumption (possible negative values)</p></li>
+<li><p>Method B. Commodity-by-commodity IOT based on the industry-based
+technology assumption</p></li>
+<li><p>Method C. Activity-by-activity IOT based on fixed industry sales
+structure assumption (possible negative values)</p></li>
+<li><p>Method D. Activity-by-activity IOT based on fixed product sales
+structure assumption</p></li>
+</ul>
+</div>
+<div class="section" id="perform-the-transformation">
+<h2>Perform the transformation<a class="headerlink" href="#perform-the-transformation" title="Permalink to this headline">¶</a></h2>
+<p>First, we need to import a SUT table into MARIO. To do so, we can load
+the test SUT using the “load_test” method.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mario</span>
+
+<span class="n">test_SUT</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">load_test</span><span class="p">(</span><span class="n">table</span><span class="o">=</span><span class="s1">&#39;SUT&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cvxpy</span> <span class="n">module</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">installed</span> <span class="ow">in</span> <span class="n">your</span> <span class="n">system</span><span class="o">.</span> <span class="n">This</span> <span class="n">will</span> <span class="k">raise</span> <span class="n">problems</span> <span class="ow">in</span> <span class="n">some</span> <span class="n">of</span> <span class="n">the</span> <span class="n">abilities</span> <span class="n">of</span> <span class="n">MARIO</span>
+</pre></div>
+</div>
+<p>It is possible to show the properties of the table by calling its name.
+It is a SUT table with 6 activities and 6 commodities</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_SUT</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">SUT</span> <span class="n">test</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">SUT</span>
+<span class="n">scenarios</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;baseline&#39;</span><span class="p">]</span>
+<span class="n">Activity</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">Commodity</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">Factor</span> <span class="n">of</span> <span class="n">production</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">Satellite</span> <span class="n">account</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">Consumption</span> <span class="n">category</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">Region</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>To perform the transformation, it is enought to call the “to_iot”
+method, passing one of the four transformation methods listed above
+(‘A’, ‘B’, ‘C’ or ‘D’)</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_SUT</span><span class="o">.</span><span class="n">to_iot</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s1">&#39;A&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">baseline</span> <span class="n">deleted</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">database</span>
+</pre></div>
+</div>
+<p>After the transformation, the table transformed to an IOT of 6 sectors</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">test_SUT</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">SUT</span> <span class="n">test</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">IOT</span>
+<span class="n">scenarios</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;baseline&#39;</span><span class="p">]</span>
+<span class="n">Factor</span> <span class="n">of</span> <span class="n">production</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">Satellite</span> <span class="n">account</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">Consumption</span> <span class="n">category</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">Region</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">Sector</span> <span class="o">=</span> <span class="mi">6</span>
+</pre></div>
+</div>
+<p><code class="xref download docutils literal notranslate"><span class="pre">Link</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">file</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../tutorial_figaro_parser/tutorial_figaro_parser.html" class="btn btn-neutral float-right" title="Figaro Parser" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html" class="btn btn-neutral float-left" title="Transforming a SUT table from Isard to Chenery-Moses model" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, MARIO Authors: Mohammad Amin Tahavori, Lorenzo Rinaldi, Nicolo Golinucci.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

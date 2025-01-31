@@ -1,0 +1,452 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Parsing Exiobase v3.8.2 (Monetary units) &mdash; MARIO 0.3.5 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Parsing custom database" href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html" />
+    <link rel="prev" title="Parsing Exiobase v3.3.18 (supply-use hybrid-units)" href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MARIO
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">MARIO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#quickstart">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#citation">Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#read-more">Read more</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../terminology.html">Terminology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Changing mario settings</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_data_template/tutorial_data_template.html">Creating an Empty Database, from tabular information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_add_extensions/tutorial_add_extensions.html">Adding satellite accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_shock_analysis/tutorial_shock_analysis.html">Shcok Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html">Transforming a SUT table from Isard to Chenery-Moses model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_sut_to_iot/tutorial_transformation_sut_to_iot.html">Transforming a SUT into an IOT table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_figaro_parser/tutorial_figaro_parser.html">Figaro Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_eora/tutorial_parse_eora.html">Parsing EORA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html">Parsing Exiobase v3.3.18 (supply-use hybrid-units)</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Parsing Exiobase v3.8.2 (Monetary units)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-the-database">Downloading the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parsing-the-downloaded-sut-database">Parsing the downloaded SUT database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exploring-the-database">Exploring the database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#searching-for-activities">Searching for activities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#getting-set-list">Getting set list</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#parsing-the-downloaded-iot-database">Parsing the downloaded IOT database</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html">Parsing custom database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_hand_shakes/tutorial_hand_shakes.html">Using MARIO and Pymrio Handshake Protocols</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_refernces.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MARIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../examples.html">Examples</a> &raquo;</li>
+        
+      <li>Parsing Exiobase v3.8.2 (Monetary units)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/examples/tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="parsing-exiobase-v3-8-2-monetary-units">
+<h1>Parsing Exiobase v3.8.2 (Monetary units)<a class="headerlink" href="#parsing-exiobase-v3-8-2-monetary-units" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial shows how to parse the Exiobase v3.8.2 database in
+supply-use (SUT) and input-output (IOT) format.</p>
+<div class="section" id="downloading-the-database">
+<h2>Downloading the database<a class="headerlink" href="#downloading-the-database" title="Permalink to this headline">¶</a></h2>
+<p>The database is available at the following Zenodo repository:
+<a class="reference external" href="https://zenodo.org/records/5589597">https://zenodo.org/records/5589597</a>. You can manually download the
+repository. In this example we are going to show how to parse a SUT and
+a IOT both for 2019</p>
+</div>
+<div class="section" id="parsing-the-downloaded-sut-database">
+<h2>Parsing the downloaded SUT database<a class="headerlink" href="#parsing-the-downloaded-sut-database" title="Permalink to this headline">¶</a></h2>
+<p>Once the Exiobase database is stored in a given path (‘SUT_path’ in this
+example, where we target the SUT for 2019), it is possible to parse it
+into a mario.Database object. The ‘parse_exiobase’ function is suitable
+to parse any version of Exiobase, providing the type of table (‘SUT’ or
+‘IOT), the type of unit (’Hybrid’ or ‘Monetary’) and the directory where
+the database is stored.</p>
+<p>It is not necessary to unzip the downloaded file</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mario</span>  <span class="c1"># Import MARIO</span>
+
+<span class="n">SUT_path</span> <span class="o">=</span> <span class="s1">&#39;MRSUT_2019.zip&#39;</span>  <span class="c1"># Define the desired path to the folder where Exiobase should be downloaded</span>
+
+<span class="n">exiobase</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_exiobase</span><span class="p">(</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;SUT&#39;</span><span class="p">,</span>
+    <span class="n">unit</span> <span class="o">=</span> <span class="s1">&#39;Monetary&#39;</span><span class="p">,</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">SUT_path</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exploring-the-database">
+<h2>Exploring the database<a class="headerlink" href="#exploring-the-database" title="Permalink to this headline">¶</a></h2>
+<p>Once the database is parsed, MARIO offers useful methods to explore and
+navigate the database.</p>
+<div class="section" id="searching-for-activities">
+<h3>Searching for activities<a class="headerlink" href="#searching-for-activities" title="Permalink to this headline">¶</a></h3>
+<p>Adopting the ‘search’ method of the Database class, MARIO allows the
+user to extract a list out of a given database set which contain a
+desired string. For instance, it is possible to extract all the
+activities containing the “gas” string.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exiobase</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s1">&#39;Activity&#39;</span><span class="p">,</span><span class="s1">&#39;gas&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Manure treatment (biogas), storage and land application&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Extraction of natural gas and services related to natural gas extraction, excluding surveying&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Extraction, liquefaction, and regasification of other petroleum and gaseous materials&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Production of electricity by gas&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Manufacture of gas; distribution of gaseous fuels through mains&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Biogasification of food waste, incl. land application&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Biogasification of paper, incl. land application&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Biogasification of sewage slugde, incl. land application&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The easy rule is to always refer to the database sets using the singular
+and the first capital letter (e.g. ‘Satellite account’, ‘Commodity’,…)</p>
+</div>
+<div class="section" id="getting-set-list">
+<h3>Getting set list<a class="headerlink" href="#getting-set-list" title="Permalink to this headline">¶</a></h3>
+<p>In case the objective is to get the full list of labels contained in a
+set, the ‘get_index’ method allows to do so. Again, use the singular and
+capital letter.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exiobase</span><span class="o">.</span><span class="n">get_index</span><span class="p">(</span><span class="s1">&#39;Region&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;AT&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;BE&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;BG&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;CY&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;CZ&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;DE&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;DK&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;EE&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;ES&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;FI&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;FR&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;GR&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;HR&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;HU&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;IE&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;IT&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;LT&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;LU&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;LV&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;MT&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;NL&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;PL&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;PT&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;RO&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;SE&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;SI&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;SK&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;GB&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;US&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;JP&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;CN&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;CA&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;KR&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;BR&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;IN&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;MX&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;RU&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;AU&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;CH&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;TR&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;TW&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;NO&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;ID&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;ZA&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;WA&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;WL&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;WE&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;WF&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;WM&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exiobase</span><span class="o">.</span><span class="n">get_index</span><span class="p">(</span><span class="s1">&#39;Factor of production&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;Taxes less subsidies on products purchased: Total&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Taxes on products purchased&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Subsidies on products purchased&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Other net taxes on production&#39;</span><span class="p">,</span>
+ <span class="s2">&quot;Compensation of employees; wages, salaries, &amp; employers&#39; social contributions: Total&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;Compensation of employees; wages, salaries, &amp; employers&#39; social contributions: Low-skilled&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;Compensation of employees; wages, salaries, &amp; employers&#39; social contributions: Medium-skilled&quot;</span><span class="p">,</span>
+ <span class="s2">&quot;Compensation of employees; wages, salaries, &amp; employers&#39; social contributions: High-skilled&quot;</span><span class="p">,</span>
+ <span class="s1">&#39;Operating surplus: Consumption of fixed capital&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Operating surplus: Rents on land&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Operating surplus: Royalties on resources&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Operating surplus: Remaining net operating surplus&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="parsing-the-downloaded-iot-database">
+<h2>Parsing the downloaded IOT database<a class="headerlink" href="#parsing-the-downloaded-iot-database" title="Permalink to this headline">¶</a></h2>
+<p>Moving to the IOT database, once it is downloaded and stored in a given
+path (‘IOT_path’ in this example, where we target the
+industry-by-industry IOT for 2019), it is possible to parse it into a
+mario.Database object. Again, the ‘parse_exiobase’ function is suitable
+to parse this version of Exiobase, providing the type of table (‘IOT’ in
+this case), the type of unit (again, ‘Monetary’) and the directory where
+the database is stored.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download the exiobase IOT 2019 ixi</span>
+<span class="n">info</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">download_exiobase3</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span><span class="n">years</span><span class="o">=</span><span class="p">[</span><span class="mi">2019</span><span class="p">],</span><span class="n">system</span><span class="o">=</span><span class="s2">&quot;ixi&quot;</span><span class="p">)</span>
+
+<span class="n">IOT_path</span> <span class="o">=</span> <span class="s1">&#39;IOT_2019_ixi.zip&#39;</span>  <span class="c1"># Define the desired path to the folder where Exiobase should be downloaded</span>
+
+<span class="n">exiobase</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_exiobase</span><span class="p">(</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;IOT&#39;</span><span class="p">,</span>
+    <span class="n">unit</span> <span class="o">=</span> <span class="s1">&#39;Monetary&#39;</span><span class="p">,</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">IOT_path</span><span class="p">,</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Note that there is no need to specify whether the database is defined as
+industry-by-industry or as product-by-product. MARIO will deal with any
+IOT in the same manner: unlike for SUTs, which distinguish “Activity”
+and “Commodity” among their sets, the IOTs presents the “Sector” set.</p>
+<p>This can be tested just by calling the ‘exiobase’ object, to show the
+sets of the parsed database, noticing the database has 163 items within
+the “Sector” set.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exiobase</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">IOT</span>
+<span class="n">scenarios</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;baseline&#39;</span><span class="p">]</span>
+<span class="n">Factor</span> <span class="n">of</span> <span class="n">production</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">Satellite</span> <span class="n">account</span> <span class="o">=</span> <span class="mi">1104</span>
+<span class="n">Consumption</span> <span class="n">category</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">Region</span> <span class="o">=</span> <span class="mi">49</span>
+<span class="n">Sector</span> <span class="o">=</span> <span class="mi">163</span>
+</pre></div>
+</div>
+<p>The ‘search’ and ‘get_index’ methods can be applied to the IOT in the
+same way as for the SUT.</p>
+<p><code class="xref download docutils literal notranslate"><span class="pre">Link</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">file</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html" class="btn btn-neutral float-right" title="Parsing custom database" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html" class="btn btn-neutral float-left" title="Parsing Exiobase v3.3.18 (supply-use hybrid-units)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, MARIO Authors: Mohammad Amin Tahavori, Lorenzo Rinaldi, Nicolo Golinucci.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

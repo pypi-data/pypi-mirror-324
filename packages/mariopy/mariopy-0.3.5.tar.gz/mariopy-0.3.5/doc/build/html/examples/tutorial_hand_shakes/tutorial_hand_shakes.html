@@ -1,0 +1,704 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Using MARIO and Pymrio Handshake Protocols &mdash; MARIO 0.3.5 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="API Reference" href="../../api_refernces.html" />
+    <link rel="prev" title="Parsing custom database" href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MARIO
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">MARIO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#quickstart">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#citation">Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#read-more">Read more</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../terminology.html">Terminology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Changing mario settings</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_data_template/tutorial_data_template.html">Creating an Empty Database, from tabular information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_add_extensions/tutorial_add_extensions.html">Adding satellite accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_shock_analysis/tutorial_shock_analysis.html">Shcok Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html">Transforming a SUT table from Isard to Chenery-Moses model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_sut_to_iot/tutorial_transformation_sut_to_iot.html">Transforming a SUT into an IOT table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_figaro_parser/tutorial_figaro_parser.html">Figaro Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_eora/tutorial_parse_eora.html">Parsing EORA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.html">Parsing Exiobase v3.3.18 (supply-use hybrid-units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.html">Parsing Exiobase v3.8.2 (Monetary units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html">Parsing custom database</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Using MARIO and Pymrio Handshake Protocols</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#oecd">OECD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exiobase-3-9-4">Exiobase 3.9.4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_refernces.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MARIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../examples.html">Examples</a> &raquo;</li>
+        
+      <li>Using MARIO and Pymrio Handshake Protocols</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/examples/tutorial_hand_shakes/tutorial_hand_shakes.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="using-mario-and-pymrio-handshake-protocols">
+<h1>Using MARIO and Pymrio Handshake Protocols<a class="headerlink" href="#using-mario-and-pymrio-handshake-protocols" title="Permalink to this headline">¶</a></h1>
+<p>Since version 3 of mario, user can exchange data between mario and
+pymrio to be able to cover parsers that are missed in mario or pymrio or
+use some of the two library functionalities.</p>
+<p>In this example, we will look at how this function can be used.</p>
+<div class="section" id="oecd">
+<h2>OECD<a class="headerlink" href="#oecd" title="Permalink to this headline">¶</a></h2>
+<p>Assuem you want to parse the oecd tables , and the oecd parser does not
+exist natively in mario. At the first step, let’s download and load the
+OECD data for 2011 using pymrio.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mario</span>
+<span class="kn">import</span> <span class="nn">pymrio</span>
+<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
+
+
+<span class="n">oecd_storage</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="s2">&quot;temp_folder&quot;</span><span class="p">)</span>
+<span class="n">meta_2018_download</span> <span class="o">=</span> <span class="n">pymrio</span><span class="o">.</span><span class="n">download_oecd</span><span class="p">(</span><span class="n">storage_folder</span><span class="o">=</span><span class="n">oecd_storage</span><span class="p">,</span> <span class="n">years</span><span class="o">=</span><span class="p">[</span><span class="mi">2011</span><span class="p">])</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">pymrio</span><span class="o">.</span><span class="n">parse_oecd</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="n">oecd_storage</span><span class="p">,</span> <span class="n">year</span><span class="o">=</span><span class="mi">2011</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Lets’ take a look to the objects in pymrio parser output.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">dir</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;A&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;As&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;G&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;L&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Y&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;Z&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__basic__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__class__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__coefficients__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__delattr__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__dict__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__dir__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__doc__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__eq__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__format__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__ge__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__getattribute__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__getstate__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__gt__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__hash__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__init__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__init_subclass__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__le__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__lt__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__module__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__ne__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__new__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__non_agg_attributes__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__reduce__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__reduce_ex__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__repr__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__setattr__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__sizeof__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__str__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__subclasshook__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;__weakref__&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;aggregate&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;aggregate_duplicates&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;calc_all&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;calc_extensions&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;calc_system&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;copy&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;factor_inputs&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;get_DataFrame&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;get_Y_categories&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;get_extensions&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;get_gross_trade&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;get_index&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;get_regions&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;get_sectors&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;meta&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;name&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;population&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;remove_extension&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;rename_Y_categories&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;rename_regions&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;rename_sectors&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;report_accounts&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;reset_all_full&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;reset_all_to_coefficients&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;reset_all_to_flows&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;reset_extensions&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;reset_full&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;reset_to_coefficients&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;reset_to_flows&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;save&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;save_all&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;set_index&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;unit&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;x&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Unlike mario approach that all the satellite accounts and factors of
+production are concatnated into one object, pymrio follows the strucutre
+of the database and assing each account to a different object. So the
+only piece of puzzle needs to be solved to transform a pymrio object to
+mario object is to map those accounts. In this case for example, OECD
+has no satellite accounts and it has only factors of production, stored
+in factor_inputs object:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">factor_inputs</span><span class="o">.</span><span class="n">get_index</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Index</span><span class="p">([</span><span class="s1">&#39;TLS&#39;</span><span class="p">,</span> <span class="s1">&#39;VA&#39;</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="s1">&#39;object&#39;</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;inputtype&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>now using parse_from_pymrio function in mario, we can transfer pymrio
+object to mario object. When doing so, you can take specific values from
+an account, or take all the rows!</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">oecd_by_mario</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_from_pymrio</span><span class="p">(</span>
+    <span class="n">io</span> <span class="o">=</span> <span class="n">data</span><span class="p">,</span> <span class="c1"># pymrio object</span>
+    <span class="n">value_added</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;factor_inputs&quot;</span><span class="p">:</span><span class="s2">&quot;all&quot;</span><span class="p">},</span> <span class="c1"># mapping of pymrio extensions using a dict.</span>
+    <span class="n">satellite_account</span><span class="o">=</span> <span class="p">{}</span> <span class="c1"># there is no satellite account for the database</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<pre class="literal-block">/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+WARNING:mario.core.CoreIO:Database: to calculate v following matrices are need.
+['X'].Trying to calculate dependencies.</pre>
+<p>now lets take a look to the mario data!</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">oecd_by_mario</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">OECD</span><span class="o">-</span><span class="n">ICIO</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">IOT</span>
+<span class="n">scenarios</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;baseline&#39;</span><span class="p">]</span>
+<span class="n">Factor</span> <span class="n">of</span> <span class="n">production</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">Satellite</span> <span class="n">account</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">Consumption</span> <span class="n">category</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">Region</span> <span class="o">=</span> <span class="mi">77</span>
+<span class="n">Sector</span> <span class="o">=</span> <span class="mi">45</span>
+</pre></div>
+</div>
+<p>⚠️ NOTE: You can alternatively use the parse_oecd function of mario
+which does this intermediate steps for you!</p>
+</div>
+<div class="section" id="exiobase-3-9-4">
+<h2>Exiobase 3.9.4<a class="headerlink" href="#exiobase-3-9-4" title="Permalink to this headline">¶</a></h2>
+<p>Another example we can look at is the latest release of exiobase. This
+version is not compatible with the older versions of mario due to its
+structure. But via the parse_from_pymrio, the data can be parsed easily.
+Let’s repeat the exercise:</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pymrio</span><span class="o">.</span><span class="n">download_exiobase3</span><span class="p">(</span>
+    <span class="n">storage_folder</span> <span class="o">=</span> <span class="s2">&quot;temp_folder&quot;</span><span class="p">,</span>
+    <span class="n">years</span> <span class="o">=</span> <span class="mi">2020</span><span class="p">,</span>
+    <span class="n">system</span> <span class="o">=</span> <span class="s2">&quot;ixi&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Description</span><span class="p">:</span> <span class="n">Download</span> <span class="n">log</span> <span class="n">of</span> <span class="n">EXIOBASE3</span>
+<span class="n">MRIO</span> <span class="n">Name</span><span class="p">:</span> <span class="n">EXIO3</span>
+<span class="n">System</span><span class="p">:</span> <span class="n">ixi</span>
+<span class="n">Version</span><span class="p">:</span> <span class="mf">10.5281</span><span class="o">/</span><span class="n">zenodo</span><span class="mf">.3583070</span>
+<span class="n">File</span><span class="p">:</span> <span class="n">temp_folder</span><span class="o">/</span><span class="n">download_log</span><span class="o">.</span><span class="n">json</span>
+<span class="n">History</span><span class="p">:</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">40</span> <span class="o">-</span> <span class="n">FILEIO</span> <span class="o">-</span>  <span class="n">Downloaded</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">zenodo</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">records</span><span class="o">/</span><span class="mi">14614930</span><span class="o">/</span><span class="n">files</span><span class="o">/</span><span class="n">IOT_2020_ixi</span><span class="o">.</span><span class="n">zip</span> <span class="n">to</span> <span class="n">IOT_2020_ixi</span><span class="o">.</span><span class="n">zip</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">NOTE</span> <span class="o">-</span>  <span class="n">Download</span> <span class="n">log</span> <span class="n">created</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">NOTE</span> <span class="o">-</span>  <span class="n">python_version</span><span class="p">:</span> <span class="mf">3.11.10</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">NOTE</span> <span class="o">-</span>  <span class="n">pymrio_version</span><span class="p">:</span> <span class="mf">0.5.4</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">NOTE</span> <span class="o">-</span>  <span class="n">os</span><span class="p">:</span> <span class="n">Darwin</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">NOTE</span> <span class="o">-</span>  <span class="n">hostname</span><span class="p">:</span> <span class="n">Mohammads</span><span class="o">-</span><span class="n">MacBook</span><span class="o">-</span><span class="n">Pro</span><span class="o">.</span><span class="n">local</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">NOTE</span> <span class="o">-</span>  <span class="n">username</span><span class="p">:</span> <span class="n">mohammadamintahavori</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">METADATA_CHANGE</span> <span class="o">-</span>  <span class="n">Changed</span> <span class="n">parameter</span> <span class="s2">&quot;version&quot;</span> <span class="kn">from</span> <span class="s2">&quot;v2023&quot;</span> <span class="n">to</span> <span class="s2">&quot;10.5281/zenodo.3583070&quot;</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">METADATA_CHANGE</span> <span class="o">-</span>  <span class="n">Changed</span> <span class="n">parameter</span> <span class="s2">&quot;system&quot;</span> <span class="kn">from</span> <span class="s2">&quot;IxI&quot;</span> <span class="n">to</span> <span class="s2">&quot;ixi&quot;</span>
+<span class="mi">20250129</span> <span class="mi">19</span><span class="p">:</span><span class="mi">20</span><span class="p">:</span><span class="mi">23</span> <span class="o">-</span> <span class="n">METADATA_CHANGE</span> <span class="o">-</span>  <span class="n">Changed</span> <span class="n">parameter</span> <span class="s2">&quot;name&quot;</span> <span class="kn">from</span> <span class="s2">&quot;OECD-ICIO&quot;</span> <span class="n">to</span> <span class="s2">&quot;EXIO3&quot;</span>
+ <span class="o">...</span> <span class="p">(</span><span class="n">more</span> <span class="n">lines</span> <span class="ow">in</span> <span class="n">history</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exio_by_pymrio</span> <span class="o">=</span> <span class="n">pymrio</span><span class="o">.</span><span class="n">parse_exiobase3</span><span class="p">(</span><span class="s2">&quot;temp_folder/IOT_2020_ixi.zip&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The satellite accounts in this version of EXIOBASE are splitted into
+multiple categories:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="n">material</span>
+<span class="o">-</span> <span class="n">water</span>
+<span class="o">-</span> <span class="n">employment</span>
+<span class="o">-</span> <span class="n">air_emissions</span>
+<span class="o">-</span> <span class="n">energy</span>
+<span class="o">-</span> <span class="n">land</span>
+<span class="o">-</span> <span class="n">nutrients</span>
+</pre></div>
+</div>
+<p>and the factor of production is named as factor_inputs. The puzzle is
+solved then!</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sat_acc</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># In this way we are assigning all the indicators in the extensions that we want to map as Satellite Accounts</span>
+    <span class="s1">&#39;material&#39;</span><span class="p">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;water&#39;</span><span class="p">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;employment&#39;</span><span class="p">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;air_emissions&#39;</span><span class="p">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;energy&#39;</span><span class="p">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;land&#39;</span><span class="p">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;nutrients&#39;</span><span class="p">:</span> <span class="s1">&#39;all&#39;</span>
+<span class="p">}</span>
+
+<span class="n">value_added</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;factor_inputs&#39;</span><span class="p">:</span> <span class="s1">&#39;all&#39;</span><span class="p">}</span> <span class="c1"># In this way we are assigning all the indicators in the extensions that we want to map as Value Added</span>
+
+<span class="n">exio_by_mario</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_from_pymrio</span><span class="p">(</span><span class="n">exio_by_pymrio</span><span class="p">,</span> <span class="n">satellite_account</span><span class="o">=</span><span class="n">sat_acc</span><span class="p">,</span> <span class="n">value_added</span><span class="o">=</span><span class="n">value_added</span><span class="p">)</span>
+</pre></div>
+</div>
+<pre class="literal-block">/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:900: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:956: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:984: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:993: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1001: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+/opt/anaconda3/envs/mariov3.4/lib/python3.11/site-packages/pymrio/core/mriosystem.py:1007: FutureWarning:
+
+DataFrame.groupby with axis=1 is deprecated. Do <cite>frame.T.groupby(...)</cite> without axis instead.
+
+WARNING:mario.core.CoreIO:Database: to calculate v following matrices are need.
+['X'].Trying to calculate dependencies.</pre>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">exio_by_mario</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="n">EXIO_IOT_2020_ixi</span>
+<span class="n">table</span> <span class="o">=</span> <span class="n">IOT</span>
+<span class="n">scenarios</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;baseline&#39;</span><span class="p">]</span>
+<span class="n">Factor</span> <span class="n">of</span> <span class="n">production</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="n">Satellite</span> <span class="n">account</span> <span class="o">=</span> <span class="mi">726</span>
+<span class="n">Consumption</span> <span class="n">category</span> <span class="o">=</span> <span class="mi">7</span>
+<span class="n">Region</span> <span class="o">=</span> <span class="mi">49</span>
+<span class="n">Sector</span> <span class="o">=</span> <span class="mi">163</span>
+</pre></div>
+</div>
+<p>⚠️ NOTE: You can alternatively use the prase_exiobase function of mario
+which does this intermediate steps for you! You just need to pass the
+version of the database you need to parse</p>
+<p><code class="xref download docutils literal notranslate"><span class="pre">Link</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">file</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../../api_refernces.html" class="btn btn-neutral float-right" title="API Reference" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html" class="btn btn-neutral float-left" title="Parsing custom database" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, MARIO Authors: Mohammad Amin Tahavori, Lorenzo Rinaldi, Nicolo Golinucci.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Parsing Exiobase v3.3.18 (supply-use hybrid-units) &mdash; MARIO 0.3.5 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/copybutton.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/clipboard.min.js"></script>
+        <script src="../../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Parsing Exiobase v3.8.2 (Monetary units)" href="../tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.html" />
+    <link rel="prev" title="Parsing EORA" href="../tutorial_parse_eora/tutorial_parse_eora.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> MARIO
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html">MARIO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#installation">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#quickstart">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#citation">Citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../intro.html#read-more">Read more</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../contributors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../terminology.html">Terminology</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../settings.html">Changing mario settings</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../examples.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_data_template/tutorial_data_template.html">Creating an Empty Database, from tabular information</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_add_extensions/tutorial_add_extensions.html">Adding satellite accounts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_shock_analysis/tutorial_shock_analysis.html">Shcok Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_isard_to_chenery/tutorial_transformation_isard_to_chenery.html">Transforming a SUT table from Isard to Chenery-Moses model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_transformation_sut_to_iot/tutorial_transformation_sut_to_iot.html">Transforming a SUT into an IOT table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_figaro_parser/tutorial_figaro_parser.html">Figaro Parser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_eora/tutorial_parse_eora.html">Parsing EORA</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Parsing Exiobase v3.3.18 (supply-use hybrid-units)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#downloading-the-database">Downloading the database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#parsing-the-downloaded-database">Parsing the downloaded database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exploring-the-database">Exploring the database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#checking-units-of-measure">Checking units of measure</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.html">Parsing Exiobase v3.8.2 (Monetary units)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_parse_custom_database/tutorial_parse_custom_database.html">Parsing custom database</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tutorial_hand_shakes/tutorial_hand_shakes.html">Using MARIO and Pymrio Handshake Protocols</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../api_refernces.html">API Reference</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">MARIO</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="../../examples.html">Examples</a> &raquo;</li>
+        
+      <li>Parsing Exiobase v3.3.18 (supply-use hybrid-units)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../../_sources/examples/tutorial_parse_exiobase_hybrid/tutorial_parse_exiobase_hybrid.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="parsing-exiobase-v3-3-18-supply-use-hybrid-units">
+<h1>Parsing Exiobase v3.3.18 (supply-use hybrid-units)<a class="headerlink" href="#parsing-exiobase-v3-3-18-supply-use-hybrid-units" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial shows how to parse the Exiobase v3.3.18 database in
+supply-use (SUT) format.</p>
+<div class="section" id="downloading-the-database">
+<h2>Downloading the database<a class="headerlink" href="#downloading-the-database" title="Permalink to this headline">¶</a></h2>
+<p>The database is available at the following Zenodo repository:
+<a class="reference external" href="https://zenodo.org/doi/10.5281/zenodo.7244918">https://zenodo.org/doi/10.5281/zenodo.7244918</a>. You can manually download
+the repository or use the automatic download function available in
+MARIO, as shown here below.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">mario</span>  <span class="c1"># Import MARIO</span>
+
+<span class="n">exiobase_path</span> <span class="o">=</span> <span class="s1">&#39;Exiobase v3.3.18&#39;</span>  <span class="c1"># Define the desired path to the folder where Exiobase should be downloaded</span>
+<span class="n">mario</span><span class="o">.</span><span class="n">download_hybrid_exiobase</span><span class="p">(</span><span class="n">exiobase_path</span><span class="p">)</span>  <span class="c1"># Download the hybrid Exiobase into the desired folder</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="parsing-the-downloaded-database">
+<h2>Parsing the downloaded database<a class="headerlink" href="#parsing-the-downloaded-database" title="Permalink to this headline">¶</a></h2>
+<p>Once the Exiobase database is stored in a given path (‘exiobase_path’ in
+this example), it is possible to parse it into a mario.Database object.
+The ‘parse_exiobase’ function is suitable to parse any version of
+Exiobase, providing the type of table (‘SUT’ or ‘IOT), the type of unit
+(’Hybrid’ or ‘Monetary’) and the directory where the database is stored.</p>
+<p>The ‘extensions’ attribute allows to select which environmental
+transactions should be parsed. Options must be provided in a list and
+are: ‘resource’, ‘Land’, ‘Emiss’, ‘Emis_unreg_w’, ‘waste_sup’,
+‘waste_use’, ‘pack_sup_waste’, ‘pack_use_waste’, ‘mach_sup_waste’,
+‘mach_use_waste’, ‘stock_addition’, ‘crop_res’, ‘Unreg_w’</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exiobase</span> <span class="o">=</span> <span class="n">mario</span><span class="o">.</span><span class="n">parse_exiobase</span><span class="p">(</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="s1">&#39;SUT&#39;</span><span class="p">,</span>
+    <span class="n">unit</span> <span class="o">=</span> <span class="s1">&#39;Hybrid&#39;</span><span class="p">,</span>
+    <span class="n">path</span> <span class="o">=</span> <span class="n">exiobase_path</span><span class="p">,</span>
+    <span class="n">extensions</span> <span class="o">=</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>   <span class="c1"># Include all satellite accounts. By default is &quot;&quot; (None)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exploring-the-database">
+<h2>Exploring the database<a class="headerlink" href="#exploring-the-database" title="Permalink to this headline">¶</a></h2>
+<p>Once the database is parsed, MARIO offers useful methods to explore and
+navigate the database.</p>
+<div class="section" id="checking-units-of-measure">
+<h3>Checking units of measure<a class="headerlink" href="#checking-units-of-measure" title="Permalink to this headline">¶</a></h3>
+<p>In a hybrid-units database it may be interesting to check the unit of
+measure of the database’s sets.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exiobase</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="s1">&#39;Commodity&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Paddy rice</th>
+      <td>tonnes</td>
+    </tr>
+    <tr>
+      <th>Wheat</th>
+      <td>tonnes</td>
+    </tr>
+    <tr>
+      <th>Cereal grains nec</th>
+      <td>tonnes</td>
+    </tr>
+    <tr>
+      <th>Vegetables; fruit; nuts</th>
+      <td>tonnes</td>
+    </tr>
+    <tr>
+      <th>Oil seeds</th>
+      <td>tonnes</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>Membership organisation services n.e.c. (91)</th>
+      <td>Meuro</td>
+    </tr>
+    <tr>
+      <th>Recreational; cultural and sporting services (92)</th>
+      <td>Meuro</td>
+    </tr>
+    <tr>
+      <th>Other services (93)</th>
+      <td>Meuro</td>
+    </tr>
+    <tr>
+      <th>Private households with employed persons (95)</th>
+      <td>Meuro</td>
+    </tr>
+    <tr>
+      <th>Extra-territorial organizations and bodies</th>
+      <td>Meuro</td>
+    </tr>
+  </tbody>
+</table>
+<p>200 rows × 1 columns</p>
+</div><div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exiobase</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="s1">&#39;Satellite account&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Aquatic plants (resource)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>Bauxite and aluminium ores (resource)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>Building stones (resource)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>Chemical and fertilizer minerals (resource)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>Clays and kaolin (resource)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>Construction materials and mining waste (excl. unused mining material) (Unreg_w)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>Oils and hazardous materials (Unreg_w)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>Sewage (Unreg_w)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>Mining waste (Unreg_w)</th>
+      <td>tonne</td>
+    </tr>
+    <tr>
+      <th>Unused waste (Unreg_w)</th>
+      <td>tonne</td>
+    </tr>
+  </tbody>
+</table>
+<p>336 rows × 1 columns</p>
+</div><p>Note that the “Activity” set, in hybrid databases, do not have unit of
+measure since each activity may supply heterogeneus commodities as
+output</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">exiobase</span><span class="o">.</span><span class="n">units</span><span class="p">[</span><span class="s1">&#39;Activity&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>unit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Cultivation of paddy rice</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Cultivation of wheat</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Cultivation of cereal grains nec</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Cultivation of vegetables, fruit, nuts</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Cultivation of oil seeds</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>Activities of membership organisation n.e.c. (91)</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Recreational, cultural and sporting activities (92)</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Other service activities (93)</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Private households with employed persons (95)</th>
+      <td>None</td>
+    </tr>
+    <tr>
+      <th>Extra-territorial organizations and bodies</th>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+<p>164 rows × 1 columns</p>
+</div><p><code class="xref download docutils literal notranslate"><span class="pre">Link</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">jupyter</span> <span class="pre">notebook</span> <span class="pre">file</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="../tutorial_parse_exiobase_monetary/tutorial_parse_exiobase_monetary.html" class="btn btn-neutral float-right" title="Parsing Exiobase v3.8.2 (Monetary units)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../tutorial_parse_eora/tutorial_parse_eora.html" class="btn btn-neutral float-left" title="Parsing EORA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, MARIO Authors: Mohammad Amin Tahavori, Lorenzo Rinaldi, Nicolo Golinucci.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
