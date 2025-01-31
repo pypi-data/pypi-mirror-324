@@ -1,0 +1,12 @@
+[console_scripts]
+cgse = scripts.cgse:app
+cm_cs = egse.confman.confman_cs:cli
+log_cs = egse.logger.log_cs:cli
+pm_cs = egse.procman.procman_cs:cli
+sm_cs = egse.storage.storage_cs:cli
+
+[cgse.settings]
+cgse-core = cgse_core:settings.yaml
+
+[cgse.version]
+cgse-core = egse
