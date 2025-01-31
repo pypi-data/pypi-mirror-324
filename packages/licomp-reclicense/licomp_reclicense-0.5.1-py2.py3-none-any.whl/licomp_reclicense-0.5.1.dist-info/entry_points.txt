@@ -1,0 +1,2 @@
+[console_scripts]
+licomp-reclicense = licomp_reclicense.__main__:main

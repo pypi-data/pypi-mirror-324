@@ -1,0 +1,11 @@
+licomp_reclicense/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+licomp_reclicense/__main__.py,sha256=XyDTB45sFnU2F7UnxMqQh3n5-7DXmln22m2D5aTIQSY,805
+licomp_reclicense/config.py,sha256=f8Lh-qyHv9wRxucWuw4SxkeI0P4JAqJZFESV_kcMPPo,1108
+licomp_reclicense/reclicense.py,sha256=GstiYKawMEuX3VkAABG0whV54JZcGE8vDinN_uShglU,2422
+licomp_reclicense/data/reclicense-matrix.json,sha256=002fsOn4FvDEU6QLL3v4nY7KLFYg0QlIZsV6gU7H_uU,124774
+licomp_reclicense-0.5.1.dist-info/GPL-3.0-or-later.txt,sha256=-5gWaMGKJ54oX8TYP7oeg2zITdTapzyWl9PP0tispuA,34674
+licomp_reclicense-0.5.1.dist-info/METADATA,sha256=J6_CyaWRQyBK3_L5GqQNk5ZY9kbKrIu3QM73dJ7dI_w,3712
+licomp_reclicense-0.5.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+licomp_reclicense-0.5.1.dist-info/entry_points.txt,sha256=O_Nby0QnJwCDTl9xLLMbKBqm5vpDTRrEQVBBZsF_WFU,70
+licomp_reclicense-0.5.1.dist-info/top_level.txt,sha256=THopnjZZTEFnFclzFYtlxI4VIdYHxX3_uaTDm_FRWv8,18
+licomp_reclicense-0.5.1.dist-info/RECORD,,
