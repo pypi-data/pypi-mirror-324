@@ -1,0 +1,9 @@
+aiomqtt
+protobuf
+
+[dev]
+ruff
+mypy
+sphinx
+furo
+types-protobuf
