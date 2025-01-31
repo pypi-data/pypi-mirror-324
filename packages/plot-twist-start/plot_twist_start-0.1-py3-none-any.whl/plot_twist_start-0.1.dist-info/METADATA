@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: plot_twist_start
+Version: 0.1
+Home-page: 
+Author: Jonathan Dunn
+Author-email: mmm@mmm.com
+License: MTI
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
