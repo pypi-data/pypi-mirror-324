@@ -1,0 +1,8 @@
+cloudcoil/models/velero/__init__.py,sha256=ZPGUyO4Pb33BdgG-2Xly5rMQv2rwBsxBqkdd92aZ_ic,119
+cloudcoil/models/velero/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudcoil/models/velero/v1.py,sha256=HDOhZ68WbldJX8COB1A3VpUvGAf-Tn0kJeQfBjDp3UA,329691
+cloudcoil/models/velero/v2alpha1.py,sha256=YB8yPt4ankiPl1GlSoHV2FEIBuNWRofan-nhdkRAMR4,44919
+cloudcoil_models_velero-1.15.2.0.dist-info/METADATA,sha256=j6DlgyxPaDZbT2_WOlTJePyIpHffvWbnKfC0jwFLhpI,4019
+cloudcoil_models_velero-1.15.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cloudcoil_models_velero-1.15.2.0.dist-info/licenses/LICENSE,sha256=9mpycVvCCD7ofOehOGlZDoT8wntDVXA9O6MZJv6Hh4E,11345
+cloudcoil_models_velero-1.15.2.0.dist-info/RECORD,,
