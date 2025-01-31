@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: example_package_beetlebox
+Version: 0.0.2
+Summary: A small example package
+Project-URL: Homepage, https://github.com/beetlebox-dev/admin
+Project-URL: Issues, https://github.com/beetlebox-dev/admin/issues
+Author-email: Johnathan Pennington <john.penningt1@gmail.com>
+License-Expression: AGPL-3.0-only
+License-File: LICENSE.txt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Nothing here yet.
