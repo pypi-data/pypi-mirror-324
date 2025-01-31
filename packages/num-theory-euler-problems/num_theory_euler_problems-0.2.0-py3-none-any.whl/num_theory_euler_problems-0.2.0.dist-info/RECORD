@@ -1,0 +1,9 @@
+num_theory/__init__.py,sha256=8fz9D45oWnxRgbCBoIvzSnwBI4ADG1fGUyZo2D_Xvjs,127
+num_theory/arithmetic_progression.py,sha256=gzBErl5yLWsiR0r96fGXfiRKfECCSTULJLVkI3-Bm-0,2163
+num_theory/get_primes.py,sha256=yDoms6aiY3c-qYjdcMskhUaICXfCnRzwCOZuGkJaEDY,1103
+num_theory/is_prime.py,sha256=cKooI75bkNi72KkRh1sozAs9vA_qO8aZMoOXK27QT58,993
+num_theory/prime_factorization.py,sha256=ATCTpR29-H2hIQa100aRTMlcMWikywbnYByMp6VHL6I,1666
+num_theory_euler_problems-0.2.0.dist-info/LICENSE,sha256=cFuDzcqNIN5pHZEW1ij6UPWUpzvvwb0VtarOOey4dws,1113
+num_theory_euler_problems-0.2.0.dist-info/METADATA,sha256=M19MNdhBXwMduvGEUFWAn12W4ll7kvY13jlrajQbia4,4446
+num_theory_euler_problems-0.2.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+num_theory_euler_problems-0.2.0.dist-info/RECORD,,
