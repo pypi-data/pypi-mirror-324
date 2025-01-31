@@ -1,0 +1,29 @@
+[project]
+name = "focus-blocks"
+# Remember to update the version number in 'utils/utils.py' manually also.
+version = "0.2.7"
+description = "Focus Blocks: Simple and elegant daily time management tool."
+readme = "README.md"
+authors = [{ name = "tensorturtle", email = "tensorturtle@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "pytest>=8.3.4",
+    "rich>=13.9.4",
+    "tinydb>=4.8.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fob"]
+
+
+# Once published on PyPI, these become possible.
+# uvx --from focus-blocks@latest fob
+# We also want to be able to install it to PATH, so we can call it without uvx
+# uv tool install -- fob
+[project.scripts]
+fob = "fob:main"
+
