@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: rti.cloud
+Version: 0.2.0
+Summary: RTI Cloud Databus API and CLI
+Author: Real-Time Innovations, Inc.
+License: Proprietary
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: rti.connext==7.3.0
+Requires-Dist: requests

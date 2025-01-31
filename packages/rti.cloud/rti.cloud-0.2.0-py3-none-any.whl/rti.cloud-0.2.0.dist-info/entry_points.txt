@@ -1,0 +1,2 @@
+[console_scripts]
+rti-cloud = rti.cloud.ManagementCli:main
