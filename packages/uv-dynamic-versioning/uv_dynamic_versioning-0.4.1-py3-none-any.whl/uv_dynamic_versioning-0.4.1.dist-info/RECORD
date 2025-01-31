@@ -1,0 +1,10 @@
+uv_dynamic_versioning/__init__.py,sha256=pMtTmSUht-XtbR_7Doz6bsQqopJJd8rZ8I8zy2HwwoA,22
+uv_dynamic_versioning/hooks.py,sha256=cS3cjGWMKHa4CvfyrLSrap6d4naO9Yfy_sQQTizZfYs,169
+uv_dynamic_versioning/main.py,sha256=LQG5XJw-8_x6fOLaogEXz4CDVj2JN4sp1lC1Ti6tTh8,1192
+uv_dynamic_versioning/schemas.py,sha256=aQ4h_UTvOdXF2UXSE6IIKVskY_fp9ozGfLPwwY5c2zE,1020
+uv_dynamic_versioning/version_source.py,sha256=WLK9coNHmg95HKxYaOHsSGjMYAZ1AD-Freotyqc814k,1014
+uv_dynamic_versioning-0.4.1.dist-info/METADATA,sha256=mVWoI9AgRbHrp56f6yMqcoZOOwx3PnqJ4Nt5b2Cx3Qs,8602
+uv_dynamic_versioning-0.4.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+uv_dynamic_versioning-0.4.1.dist-info/entry_points.txt,sha256=bumRmPRAesHPbUhZQjNepfpoaTcdiSR9cFzi6VnhD_4,60
+uv_dynamic_versioning-0.4.1.dist-info/licenses/LICENSE,sha256=Qt4j6TVi93b4z9Jf1e9g8WN1BBM-Tu9Cw6EgtOfgcWM,1070
+uv_dynamic_versioning-0.4.1.dist-info/RECORD,,
