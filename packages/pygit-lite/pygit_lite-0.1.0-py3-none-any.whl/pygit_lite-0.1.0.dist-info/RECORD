@@ -1,0 +1,15 @@
+pygit/__init__.py,sha256=T528DRL9qK9kWcsS1HaT86ytzV6fywSjb9_Wkw6WaC0,103
+pygit/cli.py,sha256=JeTbxZ0kmmJJ474WPm8xfhf03gaNi3PjHfMT2BSw6H4,8235
+pygit/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygit/core/branch.py,sha256=Lwf_wsbp9Dm0zT58sjm9E2SW36IxfMl-0x2QZEWq-5o,2257
+pygit/core/commit.py,sha256=7S0QWeHIieHYmE6Q4T7jiQ6xn8SQHpBKSkyoiGJUzO0,1109
+pygit/core/diff.py,sha256=4_LervigcYI50NgpDtB7870ou0mbd2apg6yC46UqyM4,2752
+pygit/core/merge.py,sha256=X-eu9fjkjXaE4KxQnzw4kab7vPXjV7XhU7b6mb-hZAY,2851
+pygit/core/objects.py,sha256=PW9L0SJO4wfCH0wAYhnWA5EiVMYhyVyYEivcABVtVH0,2236
+pygit/core/remote.py,sha256=OuM8RpDS3rxsKg7hjOfOQ6sveJdH0BWtD4wyiUi_fN4,6236
+pygit/core/repository.py,sha256=ZPI-UFJOPT46hS8_4dtJUbCf-ER99yyQ1KS_ciSr2bQ,13793
+pygit_lite-0.1.0.dist-info/METADATA,sha256=7pPvCDuzG9cKnyMgBa-Lgu5Z0rwPpf8lU9GAk5YWDC8,547
+pygit_lite-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pygit_lite-0.1.0.dist-info/entry_points.txt,sha256=GDL2QmULHR1NnRsbzAIxB019nLk_chDr54Tx2qS2ZLw,41
+pygit_lite-0.1.0.dist-info/top_level.txt,sha256=no61aJMaGjyLYoA6K3wPB4EOXblMu59JYD99P3gnI2E,6
+pygit_lite-0.1.0.dist-info/RECORD,,
