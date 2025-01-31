@@ -1,0 +1,13 @@
+vsi2tif/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsi2tif/vsi2tif.py,sha256=2meBl8SV1JQxp9WD45XxPY9cGBY6zuXQDYjdp79u1IM,3358
+vsi2tif/src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vsi2tif/src/benchmark.py,sha256=zMxlU6ZUPecJCkzIL-ZkHzAAF_bbmt1Yv7H4iMG7ZKk,363
+vsi2tif/src/convert.py,sha256=aSfdpw3CjcWMWdwZHQlGKjvbE7Pr1SVZYzl8i1FcTqk,2512
+vsi2tif/src/process.py,sha256=UZRclHKTd0e00yU8H1Lc4DXx74VhByrJy1dy_hlQhVc,3839
+vsi2tif/src/utils.py,sha256=EgrVOwJUsud1uy9kxsJr59D4c-W_zQKm97iHD2VxA0s,1273
+vsi2tif-0.1.6.dist-info/LICENSE,sha256=WLv1-kRKSPVs0ccYxXDSXZ6GJOHmb8K_5XkKCPX2KbQ,1072
+vsi2tif-0.1.6.dist-info/METADATA,sha256=ER-ce4lBpZbDGpV47q0CFmW6u8XHtbf84AGBVED5w2c,7856
+vsi2tif-0.1.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+vsi2tif-0.1.6.dist-info/entry_points.txt,sha256=pexiF1ENK70l3tFVS0AZbuuoL_epF4BUwyOE16bBVfs,49
+vsi2tif-0.1.6.dist-info/top_level.txt,sha256=Oti1-X5mMzFziGXSLw0pjmSlp0A6z5JmMGMDXya5M2I,8
+vsi2tif-0.1.6.dist-info/RECORD,,
