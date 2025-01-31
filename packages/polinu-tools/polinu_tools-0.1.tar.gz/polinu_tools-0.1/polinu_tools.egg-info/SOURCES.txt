@@ -1,0 +1,14 @@
+setup.cfg
+setup.py
+polinu_tools/__init__.py
+polinu_tools/проверка_элементов.py
+polinu_tools/работа_с_файлами.py
+polinu_tools/создание_тестов_содержимого.py
+polinu_tools/терминал.py
+polinu_tools/тест.py
+polinu_tools/тесты_модуль.py
+polinu_tools.egg-info/PKG-INFO
+polinu_tools.egg-info/SOURCES.txt
+polinu_tools.egg-info/dependency_links.txt
+polinu_tools.egg-info/not-zip-safe
+polinu_tools.egg-info/top_level.txt
