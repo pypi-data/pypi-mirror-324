@@ -1,0 +1,2 @@
+[console_scripts]
+sarif-manager = sarif_manager.bin.cli:main
