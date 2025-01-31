@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "kloch"
+# keep in sync with __init__.py
+version = "0.13.0"
+description = "Environment Manager CLI wrapping package managers calls as serialized config file"
+authors = ["Liam Collod <monsieurlixm@gmail.com>"]
+readme = "README.md"
+license = "LICENSE.txt"
+documentation = "https://knotsanimation.github.io/kloch/"
+keywords = ["environment", "kloch", "packaging", "managing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+[tool.poetry.urls]
+# https://peps.python.org/pep-0753/
+"homepage" = "https://github.com/knotsanimation/kloch"
+"issues" = "https://github.com/knotsanimation/kloch/issues"
+"github" = "https://github.com/knotsanimation/kloch"
+"releasenotes" = "https://knotsanimation.github.io/kloch/changelog.html"
+
+[tool.poetry.dependencies]
+python = ">=3.7"
+PyYAML = "^6.0.1"
+
+# // extras
+black = { version = "^24.4.2", python = ">=3.9", optional = true }
+pytest = { version = "7.3.2", python = ">=3.7", optional = true }
+# XXX: issue with CI on unix machine
+typing-extensions = { version = "<4.8" }
+Sphinx = { version = "^7.3.7", python = ">=3.9", optional = true }
+sphinx-autobuild = { version = "2024.2.4", python = ">=3.9", optional = true }
+sphinx-exec-code = { version = "0.12", python = ">=3.9", optional = true }
+sphinx-copybutton = { version = "0.5", python = ">=3.9", optional = true }
+furo = { version = "^2024.4.27", python = ">=3.9", optional = true }
+myst_parser = { version = "^3", python = ">=3.9,<3.13", optional = true }
+
+[tool.poetry.extras]
+dev = [
+    "black",
+]
+tests = [
+    "pytest",
+    "typing-extensions",
+]
+doc = [
+    "Sphinx",
+    "myst_parser",
+    "sphinx-autobuild",
+    "sphinx-exec-code",
+    "sphinx-copybutton",
+    "furo",
+]
+
+[tool.poetry.scripts]
+kloch = 'kloch.cli:run_cli'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
