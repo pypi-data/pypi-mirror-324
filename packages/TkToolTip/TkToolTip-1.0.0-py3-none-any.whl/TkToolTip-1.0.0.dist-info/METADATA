@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: TkToolTip
+Version: 1.0.0
+Summary: A customized dateentry to facilitate date selection in graphical interfaces.
+Home-page: https://github.com/ClaudioM1386/TkToolTip
+Author: Claudio Morais
+Author-email: jc.morais86@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: customtkinter
+Requires-Dist: ctkcalendar
+
+# TkToolTip
+
+TkToolTip is a library for adding ToolTips to Tkinter widgets in an easy and sophisticated way.
+
+## Installation
+
+To install TkToolTip, you can use pip:
+
+```
+pip install TkToolTip
+```
+
+## Usage Example:
+
+```
+import tkinter as tk
+from TkToolTip import ToolTip
+
+root = tk.Tk()
+
+button = tk.Button(root, text="Hover here")
+button.pack(padx=10, pady=10)
+ToolTip(button, text="This is a tooltip", delay=1.5, font=('Helvetica', 12, 'italic'), text_color='#FF5733', background="#ffffe0", borderwidth=2 , relief='raised', show_duration=5)
+
+root.mainloop()
+```
