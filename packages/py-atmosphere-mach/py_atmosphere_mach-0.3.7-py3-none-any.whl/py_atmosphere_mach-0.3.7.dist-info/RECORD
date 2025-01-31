@@ -1,0 +1,8 @@
+py_atmosphere/__init__.py,sha256=Vh2lc4cclIgJ25Cvj6CLmkQtZ8UvU80Y0E6dvThLyUU,120
+py_atmosphere/mach_number.py,sha256=-3ncQYeFETlpsPhwpoSYYkSr1ZVutKGmPwqC_sI3RB8,2116
+py_atmosphere/py_atmosphere.py,sha256=C5RypX1MVorj3x_KttstgwU9KxluWZzku13Xk3_jfpc,2552
+py_atmosphere/temp_conversion.py,sha256=nZS1IL2DSq8_j0sqwUWGYIfn_yyk-3S476lRW6OjWkM,3495
+py_atmosphere_mach-0.3.7.dist-info/LICENSE,sha256=oMalmzeKZNiCUPaCDK30WzZtkdMizteZtIS5L4L3swk,1109
+py_atmosphere_mach-0.3.7.dist-info/METADATA,sha256=DM2an4yqHqmn0rsr7nm1z_i6zeaftWuOK3zEjstXv8A,7867
+py_atmosphere_mach-0.3.7.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+py_atmosphere_mach-0.3.7.dist-info/RECORD,,
