@@ -1,0 +1,11 @@
+mongodb_data_layer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongodb_data_layer/base.py,sha256=BH6SyhHSgyoFj3TDi683qWisJfzsvQbo1ZEtI5gOv3A,587
+mongodb_data_layer/db.py,sha256=KoeA0g2YBUDab14nENsWBpmgnBzV-lFfZN-5nO_9Iwc,522
+mongodb_data_layer/generate_model.py,sha256=X_KuJWLasydefHVh4qmzFmPMMPWCIGmXCxG3CppXIPc,894
+mongodb_data_layer/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mongodb_data_layer/templates/model_template.py,sha256=cA0TADY7xI4fKQAXXD6r37O-cmsMSQO4rvJBCJMg-jM,274
+mongodb_data_layer-1.0.dist-info/METADATA,sha256=7MaMn-QVEx1cs1ylW4aIYPQcG0RVeZ2tc_BNM6JLHro,1752
+mongodb_data_layer-1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mongodb_data_layer-1.0.dist-info/entry_points.txt,sha256=gaWfyQtiuIKIkzM7gEb4IDwtH3gMeko1k4AiT2Byazg,74
+mongodb_data_layer-1.0.dist-info/top_level.txt,sha256=uiZMmBeHqowqzULyaMQIaiKYbLYvqf9GIIbNqYKVLxk,19
+mongodb_data_layer-1.0.dist-info/RECORD,,
