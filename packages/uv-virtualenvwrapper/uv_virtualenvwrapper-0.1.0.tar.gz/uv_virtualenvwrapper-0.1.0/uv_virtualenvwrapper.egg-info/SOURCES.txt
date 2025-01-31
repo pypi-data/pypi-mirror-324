@@ -1,0 +1,8 @@
+LICENSE.md
+README.md
+pyproject.toml
+uv-virtualenvwrapper.sh
+uv_virtualenvwrapper.egg-info/PKG-INFO
+uv_virtualenvwrapper.egg-info/SOURCES.txt
+uv_virtualenvwrapper.egg-info/dependency_links.txt
+uv_virtualenvwrapper.egg-info/top_level.txt
