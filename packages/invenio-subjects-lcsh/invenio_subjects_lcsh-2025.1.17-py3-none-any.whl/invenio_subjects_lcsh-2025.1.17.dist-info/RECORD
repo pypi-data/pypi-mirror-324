@@ -1,0 +1,10 @@
+invenio_subjects_lcsh/__init__.py,sha256=UGN-nkaLjMviwRH-pH1nJ3lfFYNkJwyDjBvybt_f72Q,279
+invenio_subjects_lcsh/vocabularies/__init__.py,sha256=HIe6ZBMDK0biZFHbvq7fbhbMWZtY9lm-18t_GxKUhMQ,251
+invenio_subjects_lcsh/vocabularies/subjects_lcsh.csv,sha256=QZquw370XfbGqcL3WMUIXs3us88OmBHc_RA8dPZPpsk,40600739
+invenio_subjects_lcsh/vocabularies/vocabularies.yaml,sha256=IGq9z-OcDYTilOxbuDy8hsGgQLbaOv8418APENiBBCQ,194
+invenio_subjects_lcsh-2025.1.17.dist-info/LICENSE,sha256=VvMGg1sN8IqzzzRa_ZraLkZR9I6iEQsSy9nKNMdaj-c,1081
+invenio_subjects_lcsh-2025.1.17.dist-info/METADATA,sha256=BRW36GCTFdb1eprI7MtRgizmjqKEoaBqEu95AhYaUuA,7140
+invenio_subjects_lcsh-2025.1.17.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+invenio_subjects_lcsh-2025.1.17.dist-info/entry_points.txt,sha256=6SBP6k0diVCJGYWRc5wvxk_IgFiNtuNT_agk4n-cJfs,90
+invenio_subjects_lcsh-2025.1.17.dist-info/top_level.txt,sha256=xgsL5iXlqNgvmm-sYBBCORUNPccb3_q_dyiLVA4R62k,22
+invenio_subjects_lcsh-2025.1.17.dist-info/RECORD,,
