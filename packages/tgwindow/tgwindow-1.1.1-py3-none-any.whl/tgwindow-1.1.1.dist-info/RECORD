@@ -1,0 +1,14 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/main_test.py,sha256=4qujeJzn7f7eHbVLRme0oPRXIQHljZggx0vSXyXZFBo,3472
+tgwindow/__init__.py,sha256=Mak478dmwLDywE8RV0xkbBaBnTnukAHV47dyPiPW8Zo,223
+tgwindow/errors.py,sha256=t6HAQM8roTDRyHP3XRc2FD8Wc2fmI6WQkipXnmPqObU,192
+tgwindow/middleware.py,sha256=c6w5jgFpjxQgLnWODCukAtKZ67b5ICRUYpk-WRrJTWg,1073
+tgwindow/sender/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgwindow/sender/sender.py,sha256=cyKoYuQtqE8UU6rCCULUQPuBbVGs05d5ZggN8XLMhG4,2486
+tgwindow/window/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgwindow/window/base.py,sha256=hPywlwHWFp2NZf1LlZz-GCQUI1e6ytcq6yTaq_m7iWw,4076
+tgwindow/window/wrapper.py,sha256=Ez1dwAbVCiKuUfUl7Av5_NGbRub3aocLCbSHiEYnbyQ,1525
+tgwindow-1.1.1.dist-info/METADATA,sha256=Jn-Ghu9rm2youmQfmhr8Hshxj3D5Ki_hYbKakW-0Jg4,8267
+tgwindow-1.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tgwindow-1.1.1.dist-info/top_level.txt,sha256=bi1zpDLjqxuH4MQOsoNak-eGHD6nhpwvJo-V8f_fks8,15
+tgwindow-1.1.1.dist-info/RECORD,,
