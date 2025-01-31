@@ -1,0 +1,61 @@
+Metadata-Version: 2.3
+Name: agentsjson-core
+Version: 0.1.0
+Summary: Core functionality for Agents.json Python implementation
+License: BUSL-1.1
+Author: Wildcard AI
+Author-email: info@wildcard.ai
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pydantic (>=2.0.0,<3.0.0)
+Requires-Dist: python-benedict (>=0.33.0,<0.34.0)
+Requires-Dist: typing-extensions (>=4.0.0,<5.0.0)
+Description-Content-Type: text/markdown
+
+# Wildcard Core
+
+Core functionality package for Wildcard Python implementation. This package provides the fundamental components for executing flows, handling authentication, and managing tool operations.
+
+## Features
+
+- Flow execution engine
+- Authentication handling (OAuth1, OAuth2, API Key, Bearer, Basic)
+- Parameter linking and mapping
+- Tool operation management
+
+## Installation
+
+```bash
+pip install wildcard-core
+```
+
+## Development
+
+This package is managed with Poetry. To set up your development environment:
+
+1. Install Poetry if you haven't already:
+   ```bash
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+
+2. Install dependencies:
+   ```bash
+   poetry install
+   ```
+
+3. Run tests:
+   ```bash
+   poetry run pytest
+   ```
+
+## License
+
+MIT License (See LICENSE file for details) 
+
