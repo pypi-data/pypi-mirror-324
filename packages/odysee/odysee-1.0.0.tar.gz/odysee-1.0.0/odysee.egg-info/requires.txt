@@ -1,0 +1,14 @@
+numpy>=1.20.0
+torch>=1.9.0
+maturin>=1.0.0
+pillow>=8.0.0
+tqdm>=4.62.0
+pytest>=6.0.0
+pytest-cov>=2.0.0
+einops>=0.6.0
+scikit-learn>=1.0.0
+wandb>=0.15.0
+rich>=13.0.0
+torch>=2.0.0
+accelerate>=0.20.0
+torch>=2.0.0
