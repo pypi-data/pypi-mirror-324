@@ -1,0 +1,2 @@
+[console_scripts]
+torch_tuner = torch_tuner.cli:main

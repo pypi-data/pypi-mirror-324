@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+torch_tuner/__init__.py
+torch_tuner.egg-info/PKG-INFO
+torch_tuner.egg-info/SOURCES.txt
+torch_tuner.egg-info/dependency_links.txt
+torch_tuner.egg-info/entry_points.txt
+torch_tuner.egg-info/requires.txt
+torch_tuner.egg-info/top_level.txt
