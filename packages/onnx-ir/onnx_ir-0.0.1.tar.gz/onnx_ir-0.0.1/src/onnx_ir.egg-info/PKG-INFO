@@ -1,0 +1,73 @@
+Metadata-Version: 2.2
+Name: onnx-ir
+Version: 0.0.1
+Author-email: Justin Chu <justinchu@microsoft.com>
+License: MIT License
+        
+        Copyright (c) 2025 Justin Chu
+        Copyright (c) Microsoft Corporation
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: onnx>=1.16
+Requires-Dist: typing_extensions>=4.10
+Requires-Dist: ml_dtypes
+
+# ONNX IR
+
+> [!NOTE]
+> This is an adaptation of the `onnxscript.ir` module from the ONNX Script project: https://github.com/microsoft/onnxscript/tree/main/onnxscript/ir
+
+An in-memory IR that supports the full ONNX spec, designed for graph construction, analysis and transformation.
+
+## Features ✨
+
+- Full ONNX spec support: all valid models representable by ONNX protobuf, and a subset of invalid models (so you can load and fix them).
+- Low memory footprint: mmap'ed external tensors; unified interface for ONNX TensorProto, Numpy arrays and PyTorch Tensors etc. No tensor size limitation. Zero copies.
+- Straightforward access patterns: Access value information and traverse the graph topology at ease.
+- Robust mutation: Create as many iterators as you like on the graph while mutating it.
+- Speed: Performant graph manipulation, serialization/deserialization to Protobuf.
+- Pythonic and familiar APIs: Classes define Pythonic apis and still map to ONNX protobuf concepts in an intuitive way.
+- No protobuf dependency: The IR does not require protobuf once the model is converted to the IR representation, decoupling from the serialization format.
+
+## Code Organization 🗺️
+
+- [`_protocols.py`](_protocols.py): Interfaces defined for all entities in the IR.
+- [`_core.py`](_core.py): Implementation of the core entities in the IR, including `Model`, `Graph`, `Node`, `Value`, and others.
+- [`_enums.py`](_enums.py): Definition of the type enums that correspond to the `DataType` and `AttributeType` in `onnx.proto`.
+- [`_name_authority.py`](_name_authority.py): The authority for giving names to entities in the graph, used internally.
+- [`_linked_list.py`](_linked_list.py): The data structure as the node container in the graph that supports robust iteration and mutation. Internal.
+- [`_metadata.py`](_metadata.py): Metadata store for all entities in the IR.
