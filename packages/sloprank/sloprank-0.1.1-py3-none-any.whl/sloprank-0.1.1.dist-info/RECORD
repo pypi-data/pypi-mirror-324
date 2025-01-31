@@ -1,0 +1,11 @@
+sloprank/__init__.py,sha256=PyB9BK0ZbqmN8bVky5qywLvoYgPb3teCfPpaKlShmZo,231
+sloprank/cli.py,sha256=M1sYo_o4vgsCnLwPtTDqGZB5HhDMa0m2C_2hZhuv-Rg,2183
+sloprank/collect.py,sha256=rUtGKVUwsSwrX2LdwNLcy4yN4iu48SUEGghV3SpUqr4,6673
+sloprank/config.py,sha256=LUeW4ThjZ831Xtnb_z31O5HmgnyYW6WPoy_1sTlmrbI,1291
+sloprank/parse.py,sha256=6BOkVYCgFp1HkHbbK2b7ABQPO1aem-AEkM336UI_W_4,3334
+sloprank/rank.py,sha256=VfL-2TiYA_SgSK7RQ6bdHtMU8ga4MG6GCOSmjdq1EZI,1716
+sloprank-0.1.1.dist-info/METADATA,sha256=KDxhHAM3-1I7rwyZLPzce9lMZLxFLAiumJarnnkePZY,18432
+sloprank-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sloprank-0.1.1.dist-info/entry_points.txt,sha256=mqUfmxZqmJHkw4H8fZDTAUjNtXlAvoPHm2-I8Z8i11g,47
+sloprank-0.1.1.dist-info/top_level.txt,sha256=mf9lpOb_J2H6U0w3oYzNv7YMjm4ad4-cQg3MmgUUpio,9
+sloprank-0.1.1.dist-info/RECORD,,
