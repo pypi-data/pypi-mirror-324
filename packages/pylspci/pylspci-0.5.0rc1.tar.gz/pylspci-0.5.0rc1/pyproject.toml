@@ -1,0 +1,92 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylspci"
+version = "0.5.0rc1"
+description = "Simple parser for lspci -mmnn."
+readme = { file = "README.rst", content-type = "text/x-rst" }
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [
+    { name = "~lucidiot", email = "lucidiot@brainshit.fr" },
+]
+maintainers = [
+    { name = "~lucidiot", email = "lucidiot@brainshit.fr" },
+]
+keywords = ["lspci", "parser"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Natural Language :: English",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Hardware",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[project.urls]
+homepage = "https://tildegit.org/lucidiot/pylspci"
+releasenotes = "https://tildegit.org/lucidiot/pylspci/releases"
+documentation = "https://lucidiot.tildepages.org/pylspci/"
+issues = "https://tildegit.org/lucidiot/pylspci/issues"
+
+[project.optional-dependencies]
+dev = [
+    "doc8>=0.8.0",
+    "Sphinx>=1.8.1",
+    "coverage>=4.5",
+    "pre-commit>=2.9.2",
+]
+
+[project.scripts]
+pylspci = "pylspci.__main__:main"
+
+[tool.ruff]
+exclude = [".git", "__pycache__", "docs/_build"]
+fix = true
+
+[tool.ruff.lint]
+ignore = ["E501"]
+select = [
+    # pycodestyle
+    "E",
+    "W",
+    # pyflakes
+    "F",
+    # isort
+    "I",
+    # pyupgrade
+    "UP",
+    # pep8-naming
+    "N",
+    # flake8-bugbear
+    "B",
+    # flake8-comprehensions
+    "C4",
+]
+
+[tool.ruff.lint.isort]
+default-section = "first-party"
+
+[tool.doc8]
+ignore-path = "**/*.txt,*.txt,*.egg-info,docs/_build,venv,.git"
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_incomplete_defs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+
+[tool.coverage.run]
+include = ["pylspci/*"]
