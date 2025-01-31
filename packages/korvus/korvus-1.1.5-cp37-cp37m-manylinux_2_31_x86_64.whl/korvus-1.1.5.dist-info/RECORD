@@ -1,0 +1,7 @@
+korvus-1.1.5.dist-info/METADATA,sha256=GW8imul_SGR4pa3wZIrvSV9-Lsi5izM9z3ideat5LxQ,933
+korvus-1.1.5.dist-info/WHEEL,sha256=udBMqnUXRGMfyCQ_oeku_A3MwGhKb01tsqS7z9se5xY,107
+korvus/__main__.py,sha256=_LLi89epy9Dfj9kbB50Tdc1hs2WRvAJK86zDJ689wiE,96
+korvus/__init__.py,sha256=LBybSS2OPrdkQZBSZ58wQe0FxAHl5MERT1oukiVS7gg,109
+korvus/korvus.pyi,sha256=T8AL6GiJcTVW3Zq2zJ66yDO5OoOGeXCMSI3g7uo0IIQ,5353
+korvus/korvus.cpython-37m-x86_64-linux-gnu.so,sha256=edBt7n2iOdGQvs7n3OGntPVBHw82kkt7ZHO6H1LLp4E,25565480
+korvus-1.1.5.dist-info/RECORD,,
