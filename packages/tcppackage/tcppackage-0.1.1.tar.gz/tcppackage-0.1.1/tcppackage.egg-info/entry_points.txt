@@ -1,0 +1,6 @@
+[console_scripts]
+tcphelp = tcppackage.tcphelp:main
+tcprecv = tcppackage.tcprecv:main
+tcpsend = tcppackage.tcpsend:main
+tcpserv = tcppackage.tcpserv:main
+tcptraffic = tcppackage.tcptraffic:main

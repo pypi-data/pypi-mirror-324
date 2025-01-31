@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tcppackage
+Version: 0.1.1
+Summary: TCP tools for network communication
+Home-page: https://rasmnout.github.io
+Author: Rasmnout
+Author-email: rasmnout@gmail.com (https://rasmnout.github.io)
+License: MIT
+Description-Content-Type: text/plain
+
+Tools for network communication and testing using TCP.
