@@ -1,0 +1,8 @@
+click>=8.1.7
+click-aliases>=1.0.5
+humanfriendly>=10.0
+pydantic>=2.10.4
+pytz>=2024.2
+requests>=2.32.3
+torrentool>=1.2.0
+transmission-rpc>=7.0.11
