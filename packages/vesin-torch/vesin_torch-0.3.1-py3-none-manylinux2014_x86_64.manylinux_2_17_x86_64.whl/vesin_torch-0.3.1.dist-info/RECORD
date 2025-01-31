@@ -1,0 +1,16 @@
+vesin/torch/__init__.py,sha256=4RZyXKezbGer3F0e95KZsQUaSpQ550F30TEwcrYxNEs,187
+vesin/torch/_c_lib.py,sha256=jyVkQNyXwkjrpQG1w8z3zyHtNnS3z-B5WLWonZ84xmQ,4159
+vesin/torch/_neighbors.py,sha256=g4IX2pW59aBIQD_99OKmGf4LBMNdbkC7zaVe-qjvIqk,2154
+vesin/torch/metatensor/__init__.py,sha256=8T8atYqXCODQ0x7ghiNJNc4ZpnI8EitdQ5lGw6JvV5g,113
+vesin/torch/metatensor/_model.py,sha256=G5H7wlq29ABST3TJY0bBMHb3PQkGE6-bhY4prIVoaac,4075
+vesin/torch/metatensor/_neighbors.py,sha256=NiEKn4mxskWxbRODzp6YLdAgwTe5Kaar-5mWYHarZsk,4771
+vesin/torch/torch-2.3/include/vesin_torch.hpp,sha256=H2LMnq-lgKum2GOZY3-GcE4U67S5ELdxqmJtDER-zHI,2414
+vesin/torch/torch-2.3/lib/libvesin_torch.so,sha256=pazIucqzlDSznTTuNd5Vaa-T0Y1LRbWVO2epuK9sWF0,265424
+vesin/torch/torch-2.4/include/vesin_torch.hpp,sha256=H2LMnq-lgKum2GOZY3-GcE4U67S5ELdxqmJtDER-zHI,2414
+vesin/torch/torch-2.4/lib/libvesin_torch.so,sha256=M33c5PbLjvdru3b5TAeTLT6kA5IgwdgtRroUm2vxkRg,288808
+vesin/torch/torch-2.5/include/vesin_torch.hpp,sha256=H2LMnq-lgKum2GOZY3-GcE4U67S5ELdxqmJtDER-zHI,2414
+vesin/torch/torch-2.5/lib/libvesin_torch.so,sha256=9ICJCWG2CH6WM2xRIdOiI0Wo8uEb1F1tS6cftXFoZ6c,301496
+vesin_torch-0.3.1.dist-info/METADATA,sha256=gl6TtLXFEo5A4BANVOPO4hVftXYOOD0KOH7YD9UN-mY,4177
+vesin_torch-0.3.1.dist-info/WHEEL,sha256=bnBgNpRxbyQEkpFkJWzchBpegMkTU-f19rew7fLrfHQ,145
+vesin_torch-0.3.1.dist-info/top_level.txt,sha256=ab39FqTCG44-ldd7aTRsLk8wXiZ_qCykGSnQErmHQcU,18
+vesin_torch-0.3.1.dist-info/RECORD,,
