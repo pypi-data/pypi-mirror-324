@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "classifierpromax"
+version = "1.2.1"
+description = "Help you train and optimize many popular classifiers in one place with a summary table"
+authors = ["Long Nguyen, Jenson Chang, Gunisha Kaur, Han Wang"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+scikit-learn = "^1.6.1"
+pandas = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+jupyter = "^1.1.1"
+myst-nb = {version = "^1.1.2", python = "^3.9"}
+sphinx-autoapi = "^3.4.0"
+sphinx-rtd-theme = "^3.0.2"
+python-semantic-release = {version = "^9.17.0", python = "^3.12"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                     # version location
+branch = "main"                                       # branch to make releases of
+changelog_file = "CHANGELOG.md"                       # changelog file
+build_command = "pip install poetry && poetry build"  # build dists                                           
