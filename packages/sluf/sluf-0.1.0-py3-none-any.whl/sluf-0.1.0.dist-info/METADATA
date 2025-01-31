@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: sluf
+Version: 0.1.0
+Summary: Run jobs on `SLU`RM `f`aster.
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pandas==2.1.4
+Requires-Dist: roux[all]

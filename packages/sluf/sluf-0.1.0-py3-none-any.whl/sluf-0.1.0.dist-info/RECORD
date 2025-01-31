@@ -1,0 +1,9 @@
+sluf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sluf/run.py,sha256=jJVDCxeD75DkBT64biQLqW3f2xHn0swFKn77JMtFhp0,509
+sluf/workflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sluf/workflow/slurm.py,sha256=SBnS9tAoD2QMgxtsf8epN-nqWqVvQ736vLXKgq_V6qI,16337
+sluf-0.1.0.dist-info/METADATA,sha256=xKbM2v9W0pi7GLW-zTEqSIV1AZ0k7ADF0ZZtZ6jXSHo,233
+sluf-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sluf-0.1.0.dist-info/entry_points.txt,sha256=3_F1LWm3iQFIk840Bp41g_3DSak2S2M72Q4htjFxcqo,50
+sluf-0.1.0.dist-info/top_level.txt,sha256=bIxXS7aj_5C-OyZZpTLEz7l0usQpsZQDgTuRreN_gVg,5
+sluf-0.1.0.dist-info/RECORD,,
