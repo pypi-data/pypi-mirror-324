@@ -1,0 +1,14 @@
+bridgepy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bridgepy/bid.py,sha256=jmgRCZyO_1DGzQkJHLWntCuUQ4BOlfTMXOvXqofEtfc,1004
+bridgepy/bridge.py,sha256=4kgasZ45__ldvGkP5VxIfjLcrLsokHltESReO8N82G0,2003
+bridgepy/card.py,sha256=ALQigKhOzMkk4eymVJ0UQu0-I2GAaTx1N3wq_ToY678,2359
+bridgepy/datastore.py,sha256=Hq2XZj-UGqncXUC6n0c9Z1SqAlpu409lssfJtdQ3gCM,565
+bridgepy/entity.py,sha256=nzNyOvNGmRJ5do_FeVXbEldA0e_QUdlBlsDhHsadOeo,165
+bridgepy/exception.py,sha256=_Bpvw5Dz4NCMNS77Q_qxgsEIt4pipy7BdXhEPIH12II,2873
+bridgepy/game.py,sha256=DPJIVidaXfUAdpwUAIA5AYItkG_sWvfieCv2xBvtN9Y,10926
+bridgepy/player.py,sha256=15k2360UWn4DjZEavaAY3VR2GtCPSdaKcKWMAEq4qcE,408
+bridgepy-0.0.0.dist-info/LICENSE,sha256=3L19U5iVOk-0g_NHrsr4ZErjbJ_jENjknoVihRHGU24,1074
+bridgepy-0.0.0.dist-info/METADATA,sha256=q-23yfah2DyOfWK5gE2J-Q1L3yqFPiiw49mpn-McIgM,662
+bridgepy-0.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+bridgepy-0.0.0.dist-info/top_level.txt,sha256=MMxzW5K5UCoFV1tu_DeH6mSCFzi0dnS_v60BaW1rh1w,9
+bridgepy-0.0.0.dist-info/RECORD,,
