@@ -1,0 +1,11 @@
+flexible_datetime/__init__.py,sha256=VcoE6klAM9qNKLglRQfw0yfrgKMapFUp0eNrEPRIWOo,593
+flexible_datetime/flex_datetime.py,sha256=B4VU6JAmzWn4XS1BJ6moCjInypmayaEdJgdzAo6QAAk,23269
+flexible_datetime/flex_time.py,sha256=M0_nubgbqr5kU0ry-utsubKsbAQUXyY_DES6GQn3O04,20816
+flexible_datetime/flexible_datetime.py,sha256=_DTiWP6ItiZ90MGpVIm2YuaWHY4VpFNtHvf4fjLwdoo,16703
+flexible_datetime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flexible_datetime/pydantic_arrow.py,sha256=MM5mnJA7JufQW6zoQt7KWvWGq1q1hJ40w_k4hhZBkZg,1794
+flexible_datetime/time_utils.py,sha256=o33GWbcu-5n9IKsVDYA_zC2muhLdbMNFlb668xKApio,2007
+flexible_datetime-1.0.3.dist-info/METADATA,sha256=P9nA2stpFXZQeKrQWRBY68EscSbh_ErqxC-T8RuTmHw,4256
+flexible_datetime-1.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+flexible_datetime-1.0.3.dist-info/licenses/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+flexible_datetime-1.0.3.dist-info/RECORD,,
