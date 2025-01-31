@@ -1,0 +1,5 @@
+numpy
+obspy
+stdb
+scipy
+pandas
