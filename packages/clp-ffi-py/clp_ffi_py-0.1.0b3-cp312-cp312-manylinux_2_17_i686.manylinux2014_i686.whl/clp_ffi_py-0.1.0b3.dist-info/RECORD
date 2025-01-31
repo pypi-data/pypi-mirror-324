@@ -1,0 +1,15 @@
+clp_ffi_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_ffi_py/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_ffi_py/utils.py,sha256=jEmRpcWzdKtiA6_bvK_E2nYwfwE9gtPTj38H1Jry7pI,2318
+clp_ffi_py/wildcard_query.py,sha256=hQMxExtyDiKL5RNIAtbt2Afzyl8B_aqqK_66BY5qXAQ,3818
+clp_ffi_py/ir/native.pyi,sha256=IwUhrZ2HRhRrF64PLw9jI0ohwQHvF3SDew0g_Ea61MY,4643
+clp_ffi_py/ir/__init__.py,sha256=tJ08eXkROgc1seZhGIzRUKJp9T7WpDglFWP-m1OUXak,759
+clp_ffi_py/ir/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clp_ffi_py/ir/query_builder.py,sha256=C0q7JQSKtAwzOEd_04O9qsBq5jCNRMLsTOpYB4Jwunk,7132
+clp_ffi_py/ir/native.cpython-312-i386-linux-gnu.so,sha256=hEXyvwnPxv1Q5MTT8t66B1g1e794uNmdGO5oECC8IxE,953328
+clp_ffi_py/ir/native_deprecated.py,sha256=MPthkEICtxgvqa-CGQlcjBS1ImdrxZfDmpfHto_MsHg,4287
+clp_ffi_py/ir/readers.py,sha256=YCtIKPIN4tDCwYb7MblfVQq3siaZhot_IFFco9J75-s,6892
+clp_ffi_py-0.1.0b3.dist-info/WHEEL,sha256=UYMj6W6YBXcj1Nw_K0-VGv2XMvh515-0mF3OS5_yat8,152
+clp_ffi_py-0.1.0b3.dist-info/METADATA,sha256=qNO1Rcnu_qSI6SbgED3YhwLsY06hBTP6TKtQ51SUgs4,16449
+clp_ffi_py-0.1.0b3.dist-info/RECORD,,
+clp_ffi_py-0.1.0b3.dist-info/licenses/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
