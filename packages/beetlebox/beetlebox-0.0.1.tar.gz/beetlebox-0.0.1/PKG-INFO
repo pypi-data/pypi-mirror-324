@@ -1,0 +1,31 @@
+Metadata-Version: 2.4
+Name: beetlebox
+Version: 0.0.1
+Summary: Server-side admin tools.
+Project-URL: Homepage, https://github.com/beetlebox-dev/admin
+Project-URL: Issues, https://github.com/beetlebox-dev/admin/issues
+Author-email: Johnathan Pennington <john.penningt1@gmail.com>
+License-Expression: AGPL-3.0-only
+License-File: LICENSE.txt
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: google-api-core>=2.17.1
+Requires-Dist: google-api-python-client>=2.121.0
+Requires-Dist: google-auth-httplib2>=0.2.0
+Requires-Dist: google-auth-oauthlib>=1.2.0
+Requires-Dist: google-auth>=2.28.1
+Requires-Dist: google-cloud-appengine-logging>=1.4.2
+Requires-Dist: google-cloud-audit-log>=0.2.5
+Requires-Dist: google-cloud-core>=2.3.3
+Requires-Dist: google-cloud-logging>=3.9.0
+Requires-Dist: google-cloud-storage>=2.15.0
+Requires-Dist: google-crc32c>=1.5.0
+Requires-Dist: google-resumable-media>=2.7.0
+Requires-Dist: googleapis-common-protos>=1.60.0
+Requires-Dist: grpc-google-iam-v1>=0.13.0
+Requires-Dist: pytz>=2024.1
+Requires-Dist: requests>=2.32.0
+Description-Content-Type: text/markdown
+
+Nothing here yet.
