@@ -1,0 +1,8 @@
+__pycache__
+justfile
+id.txt
+run.py
+*.egg-info
+.python-version
+dist
+.venv

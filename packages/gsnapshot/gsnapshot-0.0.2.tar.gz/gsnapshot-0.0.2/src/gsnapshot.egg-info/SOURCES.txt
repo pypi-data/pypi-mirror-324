@@ -1,0 +1,11 @@
+.gitignore
+README.md
+pyproject.toml
+uv.lock
+src/__init__.py
+src/gsnapshot.py
+src/gsnapshot.egg-info/PKG-INFO
+src/gsnapshot.egg-info/SOURCES.txt
+src/gsnapshot.egg-info/dependency_links.txt
+src/gsnapshot.egg-info/requires.txt
+src/gsnapshot.egg-info/top_level.txt
