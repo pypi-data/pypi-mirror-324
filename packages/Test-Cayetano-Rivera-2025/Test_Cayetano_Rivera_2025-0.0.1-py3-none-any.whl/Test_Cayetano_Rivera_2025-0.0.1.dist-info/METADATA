@@ -1,0 +1,56 @@
+Metadata-Version: 2.2
+Name: Test_Cayetano_Rivera_2025
+Version: 0.0.1
+Summary: Una biblioteca para consultar cursos de hack4u.
+Home-page: https://pypi.org/
+Author: Cayetano Rivera
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+
+## Cursos disponibles:
+
+- Introducción a Linux [15 horas]
+- Personalización de Linux [3 horas]
+- Introducción al Hacking [53 horas]
+
+## Instalación
+
+Instala el paquete usando `pip3`:
+
+```python3
+pip3 install paquete
+```
+
+## Uso básico
+
+### Listar todos los cursos
+
+```python
+from courses import listar
+
+for x in listar():
+    print(x)
+```
+
+### Obtener un curso por nombre
+
+```python
+from courses import buscar
+
+course = buscar("Introduccion a Linux")
+print(course)
+```
+
+### Calcular duración total de los cursos
+
+```python3
+from courses.utils import duracion
+
+print(f"Duración total: {duracion()} horas")
+```
+
