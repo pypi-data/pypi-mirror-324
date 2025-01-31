@@ -1,0 +1,9 @@
+.idea/
+venv*/
+*.egg-info/
+*__pycache__/
+build/
+dist/
+*.bat
+.vscode/
+scratch.py
