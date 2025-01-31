@@ -1,0 +1,20 @@
+{
+  "template": "https://github.com/ecmwf-projects/cookiecutter-conda-package",
+  "commit": "656aceaaef24a45875bb2460d351136c153d9bb3",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "datapi",
+      "project_slug": "datapi",
+      "project_short_description": "ESEE Data Stores API Python Client",
+      "copyright_holder": "European Union",
+      "copyright_year": "2022",
+      "mypy_strict": "True",
+      "integration_tests": "True",
+      "pypi": true,
+      "_template": "https://github.com/ecmwf-projects/cookiecutter-conda-package",
+      "_commit": "656aceaaef24a45875bb2460d351136c153d9bb3"
+    }
+  },
+  "directory": null
+}
