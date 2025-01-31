@@ -1,0 +1,14 @@
+openwillis/speech/__init__.py,sha256=hhsn-QmkPQrXcCwLGDuPP6qBwcgM212hi9mMmxzE7M8,100
+openwillis/speech/speech_attribute.py,sha256=DK33PTFrKu-2bwSkYY70lug80CgJRCrCEFDSnKJDoFk,12950
+openwillis/speech/config/speech.json,sha256=CZTE2hj0TqkINIdwMEnf8fTIdyZylhfWQZHhUUQ7V1I,27050
+openwillis/speech/config/text.json,sha256=h6bgnfS4ssRvHnvpiwlidwek7WyQEACmklL7UgoEddQ,7162
+openwillis/speech/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openwillis/speech/util/characteristics_util.py,sha256=U42wk_0bLEerMMrL5dzm-8m5l1TESc6kqj69ryylXQY,27885
+openwillis/speech/util/speech/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openwillis/speech/util/speech/coherence.py,sha256=oRrsZIueAZVSS0BCTIFXveCTaChijpWqDIcPFZaK1ag,26706
+openwillis/speech/util/speech/lexical.py,sha256=kM8jgcfiAgd-u_YakF4UuseOF9KGB35mzT_HpAVB49U,17408
+openwillis/speech/util/speech/pause.py,sha256=A2ePnWJalsJ8_ZF-08RlCOnjYlMJN00aHk4kS6NeqZ8,11907
+openwillis_speech-1.0.5.dist-info/METADATA,sha256=-m5Lms9OX15lxdBNCmO5pcKFvqPvkRFhVw20SkmBoDk,807
+openwillis_speech-1.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+openwillis_speech-1.0.5.dist-info/top_level.txt,sha256=7snsyJR0F_8yDPKK4Edb60ku7Yc7rolG1faN5YKClpk,11
+openwillis_speech-1.0.5.dist-info/RECORD,,
