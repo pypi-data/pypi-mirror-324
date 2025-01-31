@@ -1,0 +1,11 @@
+mergecal/__init__.py,sha256=0OaI-s_JrV_mVlJj36UagZDULDEwb3FqIIeixSTonHE,134
+mergecal/__main__.py,sha256=k9XNecsTIKqEs15qDFEDHIRPhTfQguXvGXq1QquokXc,103
+mergecal/calendar_merger.py,sha256=c6NutnJzzlWGUZOgO_DHrd5XvTu7FJBoiyYoOSK79Kw,2199
+mergecal/cli.py,sha256=OsG6MEc40hEhqjMVcv3f-fXcl_by4o9rfM4izi7Elds,1496
+mergecal/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mergecal-0.4.1.dist-info/LICENSE,sha256=10D9-7KR2YhrRUknJ_UWYyLznred9yUFsW2IbWYcKXg,35111
+mergecal-0.4.1.dist-info/METADATA,sha256=u7axUiy6zb2cmMFE3rBux4usT76C49dhEznUgaEG9gA,5625
+mergecal-0.4.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mergecal-0.4.1.dist-info/entry_points.txt,sha256=eeXHg_jWglckTiGw42YrJE3Aag231vRo0KFI4s6CEsU,46
+mergecal-0.4.1.dist-info/top_level.txt,sha256=bS-YR9hDUCtZMlWYabHsAOtAPppBipb53yh9V1Jyv0w,9
+mergecal-0.4.1.dist-info/RECORD,,
