@@ -1,0 +1,25 @@
+# Core
+agently-stage==0.2.0a1
+# Shell Interaction Optimization
+pyreadline3
+# Async Ensurence
+# nest_asyncio
+# Network
+httpx
+aiohttp
+websockets
+tornado
+# Model Client
+openai
+erniebot
+zhipuai==1.0.7
+tencentcloud-sdk-python
+qianfan
+litellm
+# Format
+PyYAML
+json5
+# Web
+duckduckgo_search
+beautifulsoup4
+requests

@@ -1,0 +1,17 @@
+agently-stage==0.2.0a1
+pyreadline3
+httpx
+aiohttp
+websockets
+tornado
+openai
+erniebot
+zhipuai==1.0.7
+tencentcloud-sdk-python
+qianfan
+litellm
+PyYAML
+json5
+duckduckgo_search
+beautifulsoup4
+requests
