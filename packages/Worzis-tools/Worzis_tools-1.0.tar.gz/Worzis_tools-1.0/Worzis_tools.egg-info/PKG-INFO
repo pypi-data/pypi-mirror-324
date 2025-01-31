@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: Worzis_tools
+Version: 1.0
+Author-email: dag201011@gmail.com
+Requires-Dist: colorama
