@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Xaunsurn
+Version: 0.1.0
+Summary: Xaunsurn - Interactively Integrating Imaginations.
+Home-page: https://xaunsurn.com
+Author: Parth
+Author-email: contact@xaunsurn.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Xaunsurn
+
+**Interactively Integrating Imaginations**  
+Xaunsurn is an AI-based startup driving innovation and advanced solutions.
+
+## Installation
+
+```bash
+pip install Xaunsurn
