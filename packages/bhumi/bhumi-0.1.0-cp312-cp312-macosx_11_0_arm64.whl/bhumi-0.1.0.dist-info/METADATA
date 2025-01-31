@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: bhumi
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Summary: High-performance LLM request queue with Rust backend
+Author-email: Your Name <your.email@example.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Repository, https://github.com/yourusername/bhumi
+Project-URL: Documentation, https://github.com/yourusername/bhumi#readme
+
+# Clean previous builds
+rm -rf target/wheels/*
+pip uninstall bhumi
+
+# Rebuild and reinstall
+maturin develop
