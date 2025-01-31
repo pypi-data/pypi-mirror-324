@@ -1,0 +1,12 @@
+multi_swarm/__init__.py,sha256=ofSmhlmbePqXLPQEqDrAG1xwaa7ouEnvIiP52Ge2QoI,279
+multi_swarm/agency.py,sha256=9S6bdhEujmD9i7Rmul5RPLYNUPfUQE7-IEsic4HlRZM,752
+multi_swarm/ceo/ceo_agent.py,sha256=hMW84XOyWYKTlXjeOVbuzuKM-SsiPHZctTlFzXOEoDg,431
+multi_swarm/core/agency.py,sha256=bRLU_DL9nZwFFgu3Jh27ZryhmoilcRrS5sqf8KgmrIc,2950
+multi_swarm/core/base_agent.py,sha256=M7Fh0zpp1OzAVaJVvwD44nSa4EIgip_oZtFkNLe7Akk,3134
+multi_swarm/trends_analyst/trends_analyst.py,sha256=jaJwC_NnFH92s2jr7jkFR5ZEPDyDf5fNcItbjAswMQI,430
+multi_swarm-0.1.2.dist-info/LICENSE,sha256=vuwrj1uJrQMylbbMADsM9L_7-iCAYrwgGufY0gwgFqg,1093
+multi_swarm-0.1.2.dist-info/METADATA,sha256=kpLVvq6b-_gelNbIgodEBDKvm91cpYOJbCnkQ7aXxhM,4458
+multi_swarm-0.1.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+multi_swarm-0.1.2.dist-info/entry_points.txt,sha256=G-5qOVN4_1lzJ514lF-tJuI1yFnC1Br70DQfWaHQ0Ug,53
+multi_swarm-0.1.2.dist-info/top_level.txt,sha256=I4UenUFAlfW2dprk9F02s5E6X4JVR9iy9JIw-jOoCsI,12
+multi_swarm-0.1.2.dist-info/RECORD,,
