@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: mira_recon
+Version: 0.3.6
+Summary: A reconnaissance tool for information gathering
+Keywords: reconnaissance,information gathering,security,tool
+Author-email: Liam Halliden <lhallidenw@gmail.com>
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: builtwith
+Requires-Dist: whois
+Project-URL: Documentation, https://github.com/HaldenLF/Mira
+Project-URL: Source, https://github.com/HaldenLF/Mira
+
+# Mira
+Work in progress
+
