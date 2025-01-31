@@ -1,0 +1,3 @@
+[console_scripts]
+kloch=kloch.cli:run_cli
+
