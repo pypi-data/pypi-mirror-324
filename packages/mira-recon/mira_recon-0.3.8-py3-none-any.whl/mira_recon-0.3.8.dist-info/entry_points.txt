@@ -1,0 +1,3 @@
+[console_scripts]
+mira_recon=mira_recon._mira_:main
+
