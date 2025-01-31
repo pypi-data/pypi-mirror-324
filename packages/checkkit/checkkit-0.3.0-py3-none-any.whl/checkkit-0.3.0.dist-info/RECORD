@@ -1,0 +1,9 @@
+checkkit/__init__.py,sha256=luZFfgQh8SMnfwav6mafht0oW640Hnv7-bzBcExFQ2Q,24
+checkkit/main.py,sha256=zpj8JKSHrkBhpsn-RKFpJP_qrl9XDmCW2s2zVlpYhCg,220
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/main.py,sha256=ON7e1crCQbNWqNtGklK3PBKJcpydls3AljBlZo9Gyzc,136
+checkkit-0.3.0.dist-info/LICENSE,sha256=YisnDS5jK3ut3jfGmbl-C9I1OCVPMujL-3wi8MTIU_o,1063
+checkkit-0.3.0.dist-info/METADATA,sha256=at_IU3DHfS1SAUPuYZOoV1KkpGHjtZixcuPIiX37lCU,850
+checkkit-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+checkkit-0.3.0.dist-info/top_level.txt,sha256=1cbO9AuBovFKGnJdYCfCTLvgCwggZzR6os6Y1XutAS8,15
+checkkit-0.3.0.dist-info/RECORD,,
