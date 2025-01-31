@@ -1,0 +1,7 @@
+[console_scripts]
+gfxconfig=lhpcdt.gfxconfig:main
+gfxlaunch=lhpcdt.gfxlaunch:main
+gfxmenu=lhpcdt.gfxmenu:main
+gfxnodes=lhpcdt.gfxnodes:main
+gfxusage=lhpcdt.gfxusage:main
+
