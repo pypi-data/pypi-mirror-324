@@ -1,0 +1,14 @@
+funcnodes_opencv/__init__.py,sha256=2xcSGFfJfaAsgbLNeMkkmlwTj5MFrDVKw8DybrJLEsY,817
+funcnodes_opencv/colormodes.py,sha256=KkCkoZ3kPv4kmRoNlEidqcP21qJj7riICKodEm8wieE,906
+funcnodes_opencv/components.py,sha256=1JwtDDiHxinZ3bN-VQSOBbyonGzCICBARZBmByViZSo,1329
+funcnodes_opencv/filter.py,sha256=OxldC5sa5DGuOOTlyvLRAHgM0bHoeBoop7T_Il-29pw,6796
+funcnodes_opencv/image_operations.py,sha256=osmaw21y9L23aSY9XF0_UJNxB8rPe9yoUL4mtGYVqN0,8654
+funcnodes_opencv/image_processing.py,sha256=fSfPAnVnnmHr7rpHBc0ZDTuL1y2nghUDLDQsX4oSDKw,4383
+funcnodes_opencv/imageformat.py,sha256=ERCm-g_yTVARE6o-IC6ohLOJ9-PmilNz_6UEDSSqe4Y,2818
+funcnodes_opencv/masks.py,sha256=D49fi94OUTyJw35tYcjeaPz3DDUgo1801sS_sZbO79E,5726
+funcnodes_opencv/utils.py,sha256=aAVJgJpUwxfEYAq3VQEacGr-2PYUXP7Ng6QErkax_as,2451
+funcnodes_opencv-0.2.3.dist-info/LICENSE,sha256=VcvnA4LohgMs8yTDTS1sS3aZbSFa3Ei9YeJogeosE7Y,1070
+funcnodes_opencv-0.2.3.dist-info/METADATA,sha256=wPUOv1l_9WZxkJDGrQhHg2CNN-l6zdqVsUzutbHrO1Q,915
+funcnodes_opencv-0.2.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+funcnodes_opencv-0.2.3.dist-info/entry_points.txt,sha256=6nTLyby_ZCQkMiT65WKc0474IfuAqNuCQ_EQBGv5F04,78
+funcnodes_opencv-0.2.3.dist-info/RECORD,,
