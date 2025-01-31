@@ -1,0 +1,9 @@
+pycuda
+numpy
+six
+matplotlib
+seaborn
+pandas
+dash
+plotly
+cupy-cuda12x
