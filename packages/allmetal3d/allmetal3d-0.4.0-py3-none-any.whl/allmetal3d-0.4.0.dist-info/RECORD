@@ -1,0 +1,16 @@
+allmetal3d/__init__.py,sha256=3uEsU6QG4MCxMSi_pQkBRB_LTQnTWjiLlzM8IOYTHns,4482
+allmetal3d/allmetal3d.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+allmetal3d/command_line.py,sha256=jKyB5xRwYPsqnlnp-SZvw9DwCbACObFjSS7Xe-xTXo0,3769
+allmetal3d/frontend/frontend_novacancy.py,sha256=32nGAYB1vaTKiyQBwBn_tgjU8im5Er9TOf8EWN2HZWU,61207
+allmetal3d/frontend/script_novacancy.js,sha256=TeC-RnaXbqaxGTbYO-kLD0__b76Zb7zqPynGRYMO5cA,21265
+allmetal3d/frontend/vue.js,sha256=ogKWlwEM30Qu6hELJMlzX9rPqSGYYK1u2IizINEC5gk,433738
+allmetal3d/utils/constants.py,sha256=mfVy2CpxLMQ23m7fI86GNOeWvsvNMgMtor4Ae9bL6dk,401
+allmetal3d/utils/helpersNew.py,sha256=xTzEpctTfOrzX-yqF9qLHcDA_gPf_Hmvmeaa3Xa2e_Y,13639
+allmetal3d/utils/main.py,sha256=dJ7nVMpScW9vcLNfqUttEwokPC2R5eNBylHOjFQY_bU,16322
+allmetal3d/utils/model.py,sha256=v6aEXF8ASHOTLPnuSpMoeJJ98UFLe5NnbBOJhCrP7xE,18738
+allmetal3d/utils/voxelizationNew.py,sha256=N8Yl0oncKL1TZsJbUkclzQdcx60uiM8pC2KvD3RsptU,8879
+allmetal3d-0.4.0.dist-info/LICENSE,sha256=diULvW_rK826Yiax0FdYS8dX6CHe91Lb6eTXxsa5b9A,1081
+allmetal3d-0.4.0.dist-info/METADATA,sha256=4v6cuUUFMQK-EuGzHk8cIq1fQbo8EKAleBERcf6y5o8,1879
+allmetal3d-0.4.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+allmetal3d-0.4.0.dist-info/entry_points.txt,sha256=ze4CY0Ayw4Dq-DKwbOt8bmHC8T7gLtciwqJcWf7XAJU,111
+allmetal3d-0.4.0.dist-info/RECORD,,
