@@ -1,0 +1,1 @@
+default_app_config = 'ideal_categories_django.apps.IdealCategoriesDjangoConfig'

@@ -1,0 +1,72 @@
+Metadata-Version: 2.2
+Name: ideal-categories-django
+Version: 0.1
+Summary: A Django REST framework package for managing categories and subcategories.
+Home-page: https://github.com/prashantidealittechno/ideal-categories-django
+Author: Prashant IdealITTechno
+Author-email: prashant.idealittechno@gmail.com
+License: MIT
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django>=3.2
+Requires-Dist: djangorestframework>=3.12
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# Ideal Categories Django
+
+This package provides a Django application for managing categories and subcategories using the Django REST framework.
+
+## Installation
+
+```bash
+pip install ideal-categories-django
+```
+## Usage
+Add `ideal_categories_django` to your `INSTALLED_APPS` in your Django settings.
+
+```python
+INSTALLED_APPS = [
+    ...
+    'ideal_categories_django',
+    ...
+]
+```
+
+Run migrations to create the necessary database tables:
+```bash
+python manage.py migrate
+```
+
+Endpoints
+
+* `GET /categories/`: Fetch all categories in hierarchy.
+* `GET /categories/{id}/`: Fetch category by ID.
+* `POST /categories/`: Create a new category.
+* `PUT /categories/{id}/`: Update an existing category.
+* `DELETE /categories/{id}/`: Soft delete a category.
+
+#### `LICENSE`
+Choose an appropriate license for your project, such as MIT License. You can find license templates [here](https://choosealicense.com/).
+
+#### `MANIFEST.in`
+```plaintext
+include README.md
+include LICENSE
+```
