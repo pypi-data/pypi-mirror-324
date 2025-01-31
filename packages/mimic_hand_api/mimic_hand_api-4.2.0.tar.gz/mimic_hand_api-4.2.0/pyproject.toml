@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "mimic_hand_api"
+version = "04.2.0"
+description = "API for the low-level control the motors in our hands (P4)."
+authors = ["Ben Forrai <ben.forrai@mimicrobotics.com>"]
+readme = "README.md"
+license = "Closed source"
+
+[tool.poetry.dependencies]
+python = "3.10.12"
+numpy = "^1.26.4"
+protobuf = "^5.28.3"
+pyyaml = "^6.0.0"
+pyserial = "^3.5"
+
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.8"
+pre-commit = "^3.7.1"
+pytest = "^8.2.2"
+ruff = "0.4.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

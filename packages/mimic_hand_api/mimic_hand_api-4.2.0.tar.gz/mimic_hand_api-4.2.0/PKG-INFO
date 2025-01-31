@@ -1,0 +1,227 @@
+Metadata-Version: 2.1
+Name: mimic_hand_api
+Version: 4.2.0
+Summary: API for the low-level control the motors in our hands (P4).
+License: Closed source
+Author: Ben Forrai
+Author-email: ben.forrai@mimicrobotics.com
+Requires-Python: ==3.10.12
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy (>=1.26.4,<2.0.0)
+Requires-Dist: protobuf (>=5.28.3,<6.0.0)
+Requires-Dist: pyserial (>=3.5,<4.0)
+Requires-Dist: pyyaml (>=6.0.0,<7.0.0)
+Description-Content-Type: text/markdown
+
+# mimic_hand_api
+Motor-level control Python package for mimic's robotic hands. Forked from Stefan Polinski's Master Thesis.
+### Used conventions
+We use three different conventions to index the motors of the hand:
+- *Motor command-level indexing* is in the form of `uart_id`,`motor_id` pairs. This is necessary as we have several different boards (identified by `uart_id`)
+driving the motors.
+- *Low-level wiring indexing* is a single integer in the range of [1,16]. It follows the motor indexing that is specified during the assebly (see motor
+wiring diagram by Simon Holt below). It is linked to the command-level indices by the `motor_map` dictionary in `mimic_hand_api/motor_map.yaml`.
+- *Middleware-level (ROS-level) indexing* tires to follow the robot joint specifications as close as possible (see table below). It is linked to the low-level wiring indices
+by the `middleware_convention_map` dictionary in `mimic_hand_api/motor_map.yaml`.
+#### Motor to joint mapping
+![Wiring diagram for tendons&motors](docs/motor_numbering_convention.png "Motor wiring diagram")
+#### Motor id to ROS convention mapping
+| Joint name              | Low-level wiring indexing | Middleware-level indexing |
+| :---------------- | :------: | :----: |
+| Thumb CMC           | 7 | 0 	|
+| Thumb CMC2          | 15 | 1 	|
+| Thumb MCP Abduction | 11 | 2 	|
+| Thumb PIP Flexion   | 6  | 3 	|
+| Index MCP Right     | 8  | 4 	|
+| Index MCP Left      | 13 | 5 	|
+| Index PIP Flexion   | 12  | 6 	|
+| Middle MCP Right    | 1  | 7 	|
+| Middle MCP Left     | 9 | 8 	|
+| Middle PIP Flexion  | 0  | 9 	|
+| Ring MCP Right      | 4  | 10 |
+| Ring MCP Left       | 14 | 11 |
+| Ring PIP Flexion    | 2  | 12 |
+| Pinky MCP Right     | 5  | 13 |
+| Pinky MCP Left      | 10 | 14 |
+| Pinky PIP Flexion   | 3  | 15 |
+
+## Installing the API
+Before installing, make sure that your Linux OS will support fast interfacing with the USB port you'll use (`/dev/ttyUSB0` by default). To test your OS's settings, run the following:
+```
+cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
+```
+By default, it should be `16`. This is too slow for our system, so you'll need to set it to `1`:
+```
+echo 1 > /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
+```
+To install the library, clone the repository:
+```
+git clone git@github.com:mimicrobotics/mimic_hand_api.git
+```
+Then use `pip` to install the API in your environment:
+```
+cd <mimic_hand_api installation path>
+pip install -e .
+```
+To test the library, connect the hand's PCB using a USB micro cable. Then find the right port by running the script below:
+```
+./utils/find_USBDevice.sh
+```
+The port corresponding to the device `FTDI_FT230X_Basic_UART_DK0FQN11` is the one we use for the hand communication (usually its `/dev/ttyUSB0`). To allow reading and writing to the port, you need to enable it as follows (needs sudo privileges to run):
+```
+sudo chmod a+wr /dev/ttyUSB0
+```
+Make sure to connect the power supply to the hand's PCB (24V, draws around 150mA if motors are not moving, peak should be below 600mA) Now, you can test the API by running the following script:
+```
+python tests/multiple_board_cmd_test.py
+```
+The script will move two fingers simultaneously.
+## Using the API
+After installing the API, connecting the driver board and powering on a 24V supply unit for the motors, we can use the motors easily from any script after importing the api client as follows:
+```python
+from mimic_hand_api import RP2040API as DriverAPI
+```
+To interface with the motors, initialize and start a `DriverAPI` object first:
+```python
+client = DriverAPI()
+client.connect_all_motors()
+client.set_all_motors_to_cur_lim_pos_control_mode()
+```
+Then, the motors can simply be commanded using either the middleware-level (ROS-level) indexing or the low-level wiring indexing as follows:
+```python
+import numpy as np
+cmd_array = np.zeros(16,)
+cmd_array[6] = -90
+# Middleware-level indexing:
+client.command_middleware_motor_position_array(cmd_array) # flexes index
+# Low-level indexing:
+client.command_motor_position_array(cmd_array) # flexes middle
+```
+
+## Stefen Polinski's original docs
+The following instructions explain how to setup VS Code for programming with the Pico on Linux.
+
+## Development Dependencies (for flashing the pico uControllers)
+
+```bash
+sudo apt update
+sudo apt install -y git cmake gcc-arm-none-eabi gcc g++ gdb-multiarch automake autoconf build-essential texinfo libtool libftdi-dev libusb-1.0-0-dev
+```
+
+## Setup Pico SDK
+Create a *pico* directory in your preferred location:
+```bash
+mkdir pico
+```
+
+Clone the pico-sdk repository
+```bash
+cd pico
+git clone git@github.com:raspberrypi/pico-sdk.git
+cd
+```
+
+## The Code
+Clone the `mimic_integration` repository
+
+In VS Code go to **File > Open Folder** and navigate to the `RP2040/driverboard` folder and open it.
+
+New source and include files can be added to the respective folders. Important is only that the source files are added to the **CMakeLists.txt** file under **add_executable**.
+
+## Configure VS Code
+Click the Extensions button on the left side and install the `CMake Tools` extension
+
+Click on the gear icon under CMake Tools and select **Extension Settings**
+
+Scroll down until you find **Cmake: Build Environment**. Add an item with *PICO_SDK_PATH* as the key and set the value to the location of the *pico-sdk* folder (ex: /home/USERNAME/pico/pico-sdk)
+
+Scroll further until you find **Cmake: Configure Environment**. Add an item with *PICO_SDK_PATH* as the key and set the value to the location of the *pico-sdk* folder (ex: /home/USERNAME/pico/pico-sdk)
+
+Scroll down again to find **Cmake: Generator**. Enter *Unix Makefiles* into the field.
+
+## Build
+At the bottom of VS Code there is the blue status bar.
+
+Set `GCC for arm-none-eabi` as the compiler for the build process. If it is not at option, click **[Scan for kits]** to find it.
+
+Make sure you are in Debug mode (**Cmake: [Debug]: Ready** in the status bar). If not, switch to debug mode.
+
+Clicking the **Build** button in the status bar will build the project. This will generate a *build* directory in your workspace that contains the compiled binaries.
+
+## Flashing the Pico
+
+### UF2 Bootloader
+* Press the **BOOTSEL** button on the Pico and hold it down while plugging in the USB cable. Once the cable is attached you can release the button.
+* You should see the Pico as a device named **RPI-RP2**
+* Navigate to the **build** folder. Drag and drop the **app.uf2** file into the RPI-RP2 drive. The Pico is now running the program.
+
+### Using the Debug Probe
+The debug probe is the most convenient way of flashing the Pico. It will also allow for software debugging.
+#### Setup
+* Install Cortex debug
+
+* Install OpenOCD from the command line
+	```bash
+	sudo apt install openocd
+	```
+* Build OpenOCD
+	Make sure you have pkgconfig installed
+	```bash
+	git clone https://github.com/raspberrypi/openocd.git --branch rp2040 --depth=1 --no-single-branch
+	cd openocd
+	./bootstrap
+	./configure
+	make -j4
+	sudo make install
+	```
+
+* Create launch.json and settings.json
+
+* Set the speed of the Debug Probe
+	```bash
+	cd /usr/local/share/openocd/scripts/interface
+	sudo nano cmsis-dap.cfg
+	```
+	Add `adapter speed 5000` under `adapter driver cmsis-dap`
+
+	Save and exit
+
+#### Running the Program
+* Connect the "D" port of the Debug Probe to the Pico's SWD port.
+* Navigate to the **Run and Debug** section of the left side
+* Hit the green **Run** icon. The program should now be flashed to the Pico and you can set breakpoints in the code for debugging. If you are asked for a target, select **app**.
+
+## Known Issues
+VS Code does not recognize the *PICO_SDK_PATH* variable that was set.
+
+## Protobuf Communication
+The messages between the rp's and the computer are encoded using [googles protobufs](https://github.com/protocolbuffers/protobuf). On the computer/python side the original protobuf implementation is used, while on the rp2040's the [nanoPB](https://github.com/nanopb/nanopb) ([basic concepts](https://github.com/metormote/nanopb/blob/master/docs/concepts.rst)) implementation is used.
+
+
+### Usage
+
+**!!! To preserve backwards compatability never [delete](https://protobuf.dev/programming-guides/proto3/#deleting) message fields !!!**
+
+To change the messages exchanged the following steps need to be taken:
+
+#### Computer/Ubuntu
+
+```
+sudo apt update
+sudo apt install protobuf-compiler
+```
+Test installation: `protoc`
+
+using it --> [Getting Started](https://protobuf.dev/getting-started/pythontutorial/)
+
+Generate python file: `protoc mimic_hand.proto --python_out=./`
+
+#### nanopb/rp2040
+
+1. clone repo `git clone https://github.com/nanopb/nanopb.git`
+
+2. install requirements: `pip install -r <PATH_TO_NANOPB_REPO>/requirements.txt`
+
+3. compile `.proto` file: `python <PATH_TO_NANOPB_REPO>/generator/nanopb_generator.py <PATH_TO_PROTO_FILE>.proto` which will create the `message.pb.h`/`message.pb.c` to include.
+
