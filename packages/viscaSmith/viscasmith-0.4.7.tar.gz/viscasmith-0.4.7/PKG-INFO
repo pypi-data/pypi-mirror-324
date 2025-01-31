@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: viscaSmith
+Version: 0.4.7
+Summary: Una libreria per controllare telecamere VISCA tramite UDP
+Home-page: https://github.com/AlessioMichelassi/ViscaSmithCore
+Author: Alessio Michelassi
+Author-email: alessio.michelassi@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: PyQt6
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+A powerful yet easy-to-use VISCA over IP utility designed to simplify communication with cameras supporting the VISCA protocol. This library provides everything you need to send commands, manage responses, and handle retries over UDP, ensuring reliable camera control.
+
+Key Features:
+
+    Complete VISCA Support: Supports commands like Set, Inquiry, and more.
+    Retry Mechanism: Ensures reliable message delivery over UDP with retransmissions.
+    Extensible: Built with Python, easily adaptable for advanced use cases.
+    Quick Start: Check example01 for a step-by-step implementation.
+
+Whether you're controlling a physical camera or an emulated one, this utility makes the process seamless. Perfect for developers working on broadcasting, streaming, or robotics projects.
+
