@@ -1,0 +1,13 @@
+beautifulsoup4>=4.12.3
+click
+click-option-group
+loguru
+markdown>=3.5.0
+requests>=2.31.0
+python-dotenv==0.21.0
+slack_sdk
+
+[test]
+pytest>=7.0.0
+pytest-cov>=4.0.0
+pytest-mock>=3.10.0
