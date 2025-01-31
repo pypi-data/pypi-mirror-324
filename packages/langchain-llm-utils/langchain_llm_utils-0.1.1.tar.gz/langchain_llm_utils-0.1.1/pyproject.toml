@@ -1,0 +1,65 @@
+[tool.poetry]
+name = "langchain-llm-utils"
+version = "0.1.1"
+description = "Utilities module for building LLM based apps"
+authors = ["gautamborgohain <gautamborgohain90@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/gautamborgohain/llm-utils"
+repository = "https://github.com/gautamborgohain/llm-utils"
+keywords = ["llm", "utilities", "langchain"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+]
+packages = [{ include = "langchain_llm_utils" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+pydantic-settings = "^2.7.1"
+watchfiles = "^1.0.4"
+mmh3 = "^5.0.1"
+langchain-core = "^0.3.31"
+langchain-postgres = "^0.0.12"
+langchain-openai = "^0.3.2"
+langchain-text-splitters = "^0.3.5"
+tiktoken = "^0.8.0"
+langfuse = "^2.57.13"
+pytest-env = "^1.1.5"
+pytest-asyncio = "^0.25.3"
+pytest = "^8.3.4"
+langchain = "^0.3.17"
+langchain-community = "^0.3.16"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+
+[tool.pytest]
+pythonpath = ["."]
+
+[tool.pytest.ini_options]
+addopts = "-sv"
+testpaths = ["langchain_llm_utils/tests"]
+env = ["LANGFUSE_ENABLED=false", "OPENAI_API_KEY=fake-key", "LOG_LEVEL=DEBUG"]
+
+
+[tool.poetry.group.ollama.dependencies]
+langchain-ollama = "^0.2.2"
+
+
+[tool.poetry.group.vertexai.dependencies]
+langchain-google-vertexai = "^2.0.12"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.extras]
+ollama = ["langchain-ollama"]
+vertexai = ["langchain-google-vertexai"]
+all = ["langchain-ollama", "langchain-google-vertexai"]

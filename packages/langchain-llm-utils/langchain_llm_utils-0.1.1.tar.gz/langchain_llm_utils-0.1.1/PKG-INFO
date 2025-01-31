@@ -1,0 +1,45 @@
+Metadata-Version: 2.3
+Name: langchain-llm-utils
+Version: 0.1.1
+Summary: Utilities module for building LLM based apps
+License: MIT
+Keywords: llm,utilities,langchain
+Author: gautamborgohain
+Author-email: gautamborgohain90@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: all
+Provides-Extra: ollama
+Provides-Extra: vertexai
+Requires-Dist: langchain (>=0.3.17,<0.4.0)
+Requires-Dist: langchain-community (>=0.3.16,<0.4.0)
+Requires-Dist: langchain-core (>=0.3.31,<0.4.0)
+Requires-Dist: langchain-openai (>=0.3.2,<0.4.0)
+Requires-Dist: langchain-postgres (>=0.0.12,<0.0.13)
+Requires-Dist: langchain-text-splitters (>=0.3.5,<0.4.0)
+Requires-Dist: langfuse (>=2.57.13,<3.0.0)
+Requires-Dist: mmh3 (>=5.0.1,<6.0.0)
+Requires-Dist: pydantic-settings (>=2.7.1,<3.0.0)
+Requires-Dist: pytest (>=8.3.4,<9.0.0)
+Requires-Dist: pytest-asyncio (>=0.25.3,<0.26.0)
+Requires-Dist: pytest-env (>=1.1.5,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: tiktoken (>=0.8.0,<0.9.0)
+Requires-Dist: watchfiles (>=1.0.4,<2.0.0)
+Project-URL: Homepage, https://github.com/gautamborgohain/llm-utils
+Project-URL: Repository, https://github.com/gautamborgohain/llm-utils
+Description-Content-Type: text/markdown
+
+# LLM Utils
+
+## Installation
+
+For dev:
+
+`poetry install`
