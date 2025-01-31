@@ -1,0 +1,8 @@
+[neon.plugin.solver]
+ovos-solver-openai-persona-plugin = ovos_solver_openai_persona:OpenAIPersonaSolver
+
+[opm.plugin.persona]
+Remote Llama = ovos_solver_openai_persona:LLAMA_DEMO
+
+[opm.transformer.dialog]
+ovos-dialog-transformer-openai-plugin = ovos_solver_openai_persona.dialog_transformers:OpenAIDialogTransformer
