@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: vb_bot
+Version: 0.0.3b1
+Project-URL: Homepage, https://github.com/Beloborod/vb_tg
+Project-URL: Issues, https://github.com/Beloborod/vb_tg/issues
+Author-email: Beloborod <me@beloborod.ru>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10.0
+Requires-Dist: aiohttp~=3.10.11
+Requires-Dist: mongoengine~=0.29.1
+Requires-Dist: pytelegrambotapi~=4.23.0
