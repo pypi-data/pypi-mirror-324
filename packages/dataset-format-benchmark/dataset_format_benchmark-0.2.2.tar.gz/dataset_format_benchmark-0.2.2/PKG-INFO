@@ -1,0 +1,77 @@
+Metadata-Version: 2.2
+Name: dataset-format-benchmark
+Version: 0.2.2
+Summary: Image dataset format benchmark
+Home-page: https://github.com/kamikaze/dataset-format-benchmark
+Author: Oleg Korsak
+Author-email: kamikaze.is.waiting.you@gmail.com
+License: gpl-3
+Project-URL: Documentation, https://github.com/kamikaze/dataset-format-benchmark/wiki
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.13
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE
+License-File: AUTHORS.rst
+Requires-Dist: Cython==3.0.11
+Requires-Dist: h5py==3.12.1
+Requires-Dist: imageio[freeimage,pillow,pyav]==2.37.0
+Requires-Dist: kaggle==1.6.17
+Requires-Dist: lightning==2.5.0.post0
+Requires-Dist: matplotlib==3.10.0
+Requires-Dist: numpy==2.2.2
+Requires-Dist: Pillow==11.1.0
+Requires-Dist: pkgconfig==1.5.5
+Requires-Dist: rawpy==0.24.0
+Requires-Dist: scikit-learn==1.6.1
+Requires-Dist: scipy==1.15.1
+Requires-Dist: seaborn==0.13.2
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: tqdm==4.67.1
+Requires-Dist: zarr==3.0.1
+Requires-Dist: requests==2.32.3
+Provides-Extra: cuda
+Requires-Dist: cupy-cuda12x==13.3.0; extra == "cuda"
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+
+dataset-format-benchmark
+========================
+
+This package runs different image format benchmarks for dataset ML tasks
+
+Installation
+------------
+
+Make sure you have some system deps installed:
+
+.. code:: bash
+
+   sudo apt install pkg-config libhdf5-dev
+
+.. code:: bash
+
+   python3.11 -m venv venv --upgrade-deps
+   source venv/bin/activate
+   python -m pip install -U -r requirements_dev.txt
+
+   # For running on Nvidia GPU:
+   python -m pip install -U torch torchvision
+
+   # For running on CPU:
+   python -m pip install -U torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cpu
+
+   # For some reason h5py fails to install Cython while it needs it
+   python -m pip install -U Cython
+
+   python setup.py develop
+
+Running dataset format benchmark
+--------------------------------
+
+.. code:: bash
+
+   python -m dataset_format_benchmark --data-root /path/to/datasets/
