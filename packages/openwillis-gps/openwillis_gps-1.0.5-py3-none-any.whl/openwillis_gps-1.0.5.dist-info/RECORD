@@ -1,0 +1,9 @@
+openwillis/gps/__init__.py,sha256=qNlI-kVFwphpW3QsQa2ia-denqcKQy4CYOa2lAA6cBM,86
+openwillis/gps/geolocation_processing.py,sha256=a1UMLeZKOHI-RTl1sDQ0O3ua1KpAaYMAlTL9ceTM7bQ,6767
+openwillis/gps/config/gps.json,sha256=qlGFG7-oPgjnBaDVRDUlLbHOi-iJt6ADDi3bve-_Vsc,971
+openwillis/gps/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openwillis/gps/util/gps_util.py,sha256=svnQIu5gIkUsxz9oJyap8-H6D5iAbd63cy9qJ33nqrY,12974
+openwillis_gps-1.0.5.dist-info/METADATA,sha256=rvjlzVfmXjCpZPmuwN6qS74jcU1mE7-N-6QZW4APEps,485
+openwillis_gps-1.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+openwillis_gps-1.0.5.dist-info/top_level.txt,sha256=7snsyJR0F_8yDPKK4Edb60ku7Yc7rolG1faN5YKClpk,11
+openwillis_gps-1.0.5.dist-info/RECORD,,
