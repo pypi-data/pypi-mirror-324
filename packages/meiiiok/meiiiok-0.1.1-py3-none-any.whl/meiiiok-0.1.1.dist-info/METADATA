@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: meiiiok
+Version: 0.1.1
+Summary: Just for fun
+Author: MEIIIOK
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# MEIIIOK's Package
+
+## Useage
+
+```python
+pip install meiiiok
+
+from meiiiok import hi
+hi('Your name')
+```
