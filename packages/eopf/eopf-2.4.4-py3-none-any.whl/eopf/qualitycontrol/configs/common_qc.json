@@ -1,0 +1,52 @@
+{
+    "quality_checks": {
+        "eoqc_units": [
+            {
+                "check_id": "QC_Absolute_Orbit",
+                "check_version": "0.0.1",
+                "module": "eopf.qualitycontrol.configs.common_qc.qc_absolute_orbit",
+                "eoqc_unit": "QCAbsoluteOrbit",
+                "parameters": {
+                    "v_min": 0,
+                    "v_max": 999999
+                },
+                "aux_data": [],
+                "message_if_passed": "Check pass",
+                "message_if_failed": "Check fail"
+            },
+            {
+                "check_id": "QC_Relative_orbit",
+                "check_version": "0.0.1",
+                "module": "eopf.qualitycontrol.configs.common_qc.qc_relative_orbit",
+                "eoqc_unit": "QC_Relative_orbit",
+                "parameters": {
+                    "v_min": 0,
+                    "v_max": 999
+                },
+                "aux_data": [],
+                "message_if_passed": "Check pass",
+                "message_if_failed": "Check fail"
+            },
+            {
+                "check_id": "QC_Sensing_Time",
+                "check_version": "0.0.1",
+                "module": "eopf.qualitycontrol.configs.common_qc.qc_sensing_time",
+                "eoqc_unit": "QC_Sensing_Time",
+                "parameters": {},
+                "aux_data": [],
+                "message_if_passed": "Check pass",
+                "message_if_failed": "Check fail"
+            },
+            {
+                "check_id": "QC_Product_Valid",
+                "check_version": "0.0.1",
+                "module": "eopf.qualitycontrol.configs.common_qc.qc_product_valid",
+                "eoqc_unit": "QC_Product_Valid",
+                "parameters": {},
+                "aux_data": [],
+                "message_if_passed": "Check pass",
+                "message_if_failed": "Check fail"
+            }
+        ]
+    }
+}

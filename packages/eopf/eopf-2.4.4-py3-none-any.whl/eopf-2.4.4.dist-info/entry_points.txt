@@ -1,0 +1,11 @@
+[console_scripts]
+eopf=eopf.cli:eopf_cli
+
+[eopf.cli]
+kafka-consumer=eopf.triggering.services.kafka_server:EOKafkaServer
+trigger=eopf.triggering.triggers.cli_triggers:EOCLITrigger
+web-server=eopf.triggering.services.web_server:EOWebServer
+
+[eopf.store.mapping_folder]
+default=eopf.store.mapping
+
