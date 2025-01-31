@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: kcolorconverter
+Version: 0.0.2
+Summary: A utility library for converting colors between formats like RGB, RGBA, HEX6, and HEX8. Provides flexible handling of color representations for Python applications.
+Home-page: https://github.com/kokaito-git/kcolorconverter
+Author: kokaito
+Author-email: kokaito.git@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+License-File: LICENSE
+Requires-Dist: typing-extensions
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
