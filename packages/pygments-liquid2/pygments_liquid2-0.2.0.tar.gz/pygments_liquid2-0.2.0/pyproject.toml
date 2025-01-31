@@ -1,0 +1,125 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pygments-liquid2"
+description = ''
+version = "0.2.0"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "BSD-2-Clause" }
+keywords = []
+authors = [{ name = "James Prior", email = "jamesgr.prior@gmail.com" }]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = ["pygments>=2"]
+
+[project.urls]
+Documentation = "https://github.com/jg-rp/pygments-liquid2#readme"
+Issues = "https://github.com/jg-rp/pygments-liquid2/issues"
+Source = "https://github.com/jg-rp/pygments-liquid2"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[project.entry-points."pygments.lexers"]
+liquid2_lexer = "liquid2_lexer:Liquid2Lexer"
+standard_liquid_lexer = "liquid2_lexer:StandardLiquidLexer"
+html_liquid_lexer = "liquid2_lexer:HtmlLiquidLexer"
+html_liquid2_lexer = "liquid2_lexer:HtmlLiquid2Lexer"
+
+
+[tool.hatch.envs.default]
+dependencies = ["mypy", "pytest", "ruff", "twine", "types-pygments"]
+
+[tool.hatch.envs.default.scripts]
+test = "pytest {args}"
+lint = "ruff check ."
+typing = "mypy"
+
+
+[tool.mypy]
+files = "liquid2_lexer.py"
+python_version = "3.10"
+disallow_subclassing_any = true
+disallow_untyped_calls = false
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+no_implicit_optional = true
+local_partial_types = true
+no_implicit_reexport = true
+strict = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = false
+warn_return_any = true
+warn_unreachable = true
+
+[tool.ruff.lint]
+select = [
+  "A",
+  "ARG",
+  "B",
+  "BLE",
+  "C4",
+  "D",
+  "E",
+  "F",
+  "FBT",
+  "I",
+  "ICN",
+  "ISC",
+  "N",
+  "PIE",
+  "PL",
+  "PT",
+  "Q",
+  "RET",
+  "RSE",
+  "S",
+  "SIM",
+  "SLF",
+  "T10",
+  "T20",
+  "TCH",
+  "TID",
+  "YTT",
+]
+
+ignore = [
+  "A002",
+  "S105",
+  "S101",
+  "D107",
+  "D105",
+  "PLR0911",
+  "PLR0912",
+  "PLR0913",
+  "PLR0915",
+  "SIM108",
+  "PT001",
+]
+
+fixable = ["I"]
+unfixable = []
+
+[tool.ruff.lint.isort]
+force-single-line = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["D100", "D101", "D102", "D104", "D103", "PLR2004", "FBT003"]
