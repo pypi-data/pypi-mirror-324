@@ -1,0 +1,12 @@
+[console_scripts]
+databroker_consumer = queueserver.databroker_consumer:main
+haven_config = haven._iconfig:print_config_value
+haven_queueserver = queueserver.launch_queueserver:launch_queueserver
+tiled_consumer = queueserver.tiled_consumer:main
+
+[gui_scripts]
+firefly = firefly.launcher:main
+firefly_cameras = firefly.launcher:cameras
+
+[pydm.data_plugin]
+HavenPlugin = firefly.pydm_plugin:HavenPlugin
