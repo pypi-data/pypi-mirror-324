@@ -1,0 +1,17 @@
+coffee/__init__.py,sha256=bqYXC-HcEB1a8S6fUU23OYDWzUFExPx76S4dm29NzDw,207
+coffee/agent.py,sha256=5w-UgalBCnBEmUPTBMPjMZx2HaJvPINQhgIHQ3pG4Gc,1881
+coffee/api_client.py,sha256=TWXMea01iNMYlx5OQEmlKDFJNrmwRGTIaUJsidauFHs,8069
+coffee/config.py,sha256=zKyRctaG1qtmHZ8atqdf4WgR_ksWkQkZA082Y-vAP04,532
+coffee/log.py,sha256=G1np3N8AkIpe8a77skQJn_9PPlk1486_MMhNYmVrmV4,258
+coffee/models.py,sha256=weigzudrZ33d7T3WS4djOkFO6P9d7h4OrmEOVFubfCo,178
+coffee/session.py,sha256=If70PjC3jy1qeBjHG5XXgGb78Sgy38Kw9JTgT_ZX-xw,24
+coffee/task.py,sha256=0GY2fNPs13B3LohZK6yDRHQvImdxuN8OKkgeLFFggBU,1645
+coffee/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coffee/types/agent.py,sha256=Xi2ALFCJn_j1iQtR8BrAxhvFXKKGBN6j9AE71RWOVMo,1404
+coffee/types/model.py,sha256=JWrxVWO7iluNGJh4RH5xh9Lg49Q46SNhqW9XS1IvW5s,914
+coffee/types/tool.py,sha256=m_ghmRHPLlc9M6IBvxJV9d0AqV1gJyauOTcr96V1qeA,1212
+coffee/types/user.py,sha256=a7KdoBMw1zFRn89EuxmTdJ04CI_u86itqYMg4u8Ji8s,270
+coffee_agent_kit-0.1.0.dist-info/METADATA,sha256=gXCLMDMLV8PXV5jBhjqr-bwrE1WoGnAvIy3lKF38t0M,3922
+coffee_agent_kit-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+coffee_agent_kit-0.1.0.dist-info/top_level.txt,sha256=S1wv3xlamMSBnBsJkfCKwncf6uuIT1VcMrDo72GXXwE,7
+coffee_agent_kit-0.1.0.dist-info/RECORD,,
