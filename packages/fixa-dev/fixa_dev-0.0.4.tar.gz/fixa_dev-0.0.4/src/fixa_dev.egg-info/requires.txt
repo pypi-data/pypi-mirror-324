@@ -1,0 +1,9 @@
+pipecat-ai[cartesia,deepgram,openai,silero]==0.0.53
+posthog==3.11.0
+fastapi~=0.115.6
+uvicorn~=0.34.0
+python-dotenv~=1.0.1
+pydantic~=2.10.4
+twilio~=9.4.3
+ngrok~=1.4.0
+python-multipart~=0.0.20

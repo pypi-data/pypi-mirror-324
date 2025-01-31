@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools_scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fixa-dev"
+dynamic = ["version"]
+description = "A tool for testing and evaluating AI voice agents"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: Testing :: Unit",
+    "License :: OSI Approved :: BSD License",
+]
+license = { text = "BSD 2-Clause License" }
+dependencies = [
+    "pipecat-ai[cartesia,openai,silero,deepgram]==0.0.53",
+    "posthog==3.11.0",
+    "fastapi~=0.115.6",
+    "uvicorn~=0.34.0",
+    "python-dotenv~=1.0.1",
+    "pydantic~=2.10.4",
+    "twilio~=9.4.3",
+    "ngrok~=1.4.0",
+    "python-multipart~=0.0.20",
+]
+
+[project.urls]
+Homepage = "https://fixa.dev"
+Repository = "https://github.com/fixadev/fixa"
+Issues = "https://github.com/fixadev/fixa/issues"
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+fallback_version = "0.0.0-dev"
