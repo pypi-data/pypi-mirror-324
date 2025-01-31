@@ -1,0 +1,146 @@
+Metadata-Version: 2.2
+Name: flask-pocket
+Version: 1.0.2
+Summary: Flask extension to integrate PocketBase
+Home-page: https://github.com/codewithmpia/flask_pocket
+Author: codewithmpia
+Author-email: codewithmpia@gmail.com
+Project-URL: Source, https://github.com/codewithmpia/flask_pocket
+Project-URL: Tracker, https://github.com/codewithmpia/flask_pocket/issues
+Project-URL: Author, https://github.com/codewithmpia
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Flask
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Flask
+Requires-Dist: pocketbase
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: summary
+
+# Flask Pocket
+
+FlaskPocket is a Flask extension that integrates PocketBase, a backend service.
+
+## Prerequisites
+
+- [PocketBase](https://pocketbase.io/)
+- [PocketBase Python SDK](https://github.com/vaphes/pocketbase)
+
+## Installation
+
+```bash
+pip install flask-pocket
+```
+
+Or install from the cloned repository:
+
+```bash
+git clone https://github.com/codewithmpia/flask_pocket.git
+cd flask_pocket
+pip install .
+```
+
+## Configuration
+
+Add the following configurations to your Flask app:
+
+```python
+app.config["POCKETBASE_URL"] = "your_pocketbase_url"
+app.config["POCKETBASE_ADMIN_EMAIL"] = "your_admin_email"
+app.config["POCKETBASE_ADMIN_PASSWORD"] = "your_admin_password"
+```
+
+## Usage
+
+```python
+from flask import Flask
+from flask_pocket import FlaskPocket
+
+app = Flask(__name__)
+
+app.config["POCKETBASE_URL"] = "your_pocketbase_url"
+app.config["POCKETBASE_ADMIN_EMAIL"] = "your_admin_email"
+app.config["POCKETBASE_ADMIN_PASSWORD"] = "your_admin_password"
+pocket = FlaskPocket(app)
+```
+
+## Queries
+
+### Get All Objects
+
+```python
+try:
+    posts = pocket.collection("posts").get_full_list()
+except pocket.ClientResponseError as e:
+    # Handle error
+    print(f"Error: {e}")
+```
+
+### Get One Object
+
+```python
+try:
+    post = pocket.collection("posts").get_one(post_id)
+    # Generate image url
+    image_url = pocket.client.get_file_url(post, post.image)
+except pocket.ClientResponseError as e:
+    # Handle error
+    print(f"Error: {e}")
+```
+
+### Create
+
+```python
+try:
+    pocket.collection("contacts").create({
+        "name": name,
+        "email": email,
+        "message": message
+    })
+    return redirect(url_for("contact"))
+except pocket.ClientResponseError as e:
+    # Handle error
+    print(f"Error: {e}")
+```
+
+### Edit
+
+```python
+try:
+    pocket.collection("contacts").update(contact_id, {
+        "name": new_name,
+        "email": new_email,
+        "message": new_message
+    })
+except pocket.ClientResponseError as e:
+    # Handle error
+    print(f"Error: {e}")
+```
+
+### Delete
+
+```python
+try:
+    pocket.collection("contacts").delete(contact_id)
+except pocket.ClientResponseError as e:
+    # Handle error
+    print(f"Error: {e}")
+```
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contributions
+
+Contributions are welcome.
+
