@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+setup.py
+cliify/CommandWrapper.py
+cliify/__init__.py
+cliify/splitHelper.py
+cliify.egg-info/PKG-INFO
+cliify.egg-info/SOURCES.txt
+cliify.egg-info/dependency_links.txt
+cliify.egg-info/top_level.txt

@@ -1,0 +1,30 @@
+[tool.semantic_release]
+version_variables = ["setup.py:__version__"]
+branch="main"
+commit_parser = "emoji"
+commit_author="Auto <auto@cliify>"
+tag_format="{version}"
+build_command="python3 -m build"
+major_on_zero=false
+hvcs="gitlab"
+
+[tool.semantic_release.remote]
+type="gitlab"
+name="origin"
+token = { env = "GL_TOKEN" }
+
+
+[tool.semantic_release.commit_parser_options]
+major_tags = [
+    ":boom:",
+    ":fire:",
+    ":infinity:"
+]
+minor_tags = [
+    ":plus:",
+    ":sparkle:",
+]
+patch_tags = [
+    ":pencil:",
+    ":memo:",
+]
