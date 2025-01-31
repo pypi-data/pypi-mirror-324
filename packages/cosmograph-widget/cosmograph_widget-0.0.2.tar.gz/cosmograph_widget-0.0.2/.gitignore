@@ -1,0 +1,14 @@
+node_modules
+.venv
+dist
+.DS_Store
+.idea
+
+# Python
+__pycache__
+.ipynb_checkpoints
+
+src/cosmograph_widget/static
+
+.eslintcache
+meta.json
