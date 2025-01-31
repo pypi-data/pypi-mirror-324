@@ -1,0 +1,6 @@
+README.txt
+setup.py
+shadowmonarchamino.egg-info/PKG-INFO
+shadowmonarchamino.egg-info/SOURCES.txt
+shadowmonarchamino.egg-info/dependency_links.txt
+shadowmonarchamino.egg-info/top_level.txt
