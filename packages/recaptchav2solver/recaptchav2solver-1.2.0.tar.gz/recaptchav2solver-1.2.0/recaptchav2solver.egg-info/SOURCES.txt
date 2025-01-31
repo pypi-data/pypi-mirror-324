@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+recaptchav2solver/__init__.py
+recaptchav2solver/solver.py
+recaptchav2solver.egg-info/PKG-INFO
+recaptchav2solver.egg-info/SOURCES.txt
+recaptchav2solver.egg-info/dependency_links.txt
+recaptchav2solver.egg-info/requires.txt
+recaptchav2solver.egg-info/top_level.txt
