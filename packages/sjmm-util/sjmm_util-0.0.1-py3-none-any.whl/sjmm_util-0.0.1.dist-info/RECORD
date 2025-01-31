@@ -1,0 +1,10 @@
+sjmm_util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sjmm_util/config.py,sha256=BBt8e6q1szTRPkHZ50Q5MVdvYHbITJKfTAcOPjyH228,469
+sjmm_util/general_utils.py,sha256=nCMSipk4uDqbceH5s5ZfdmOvVcIh3TXLR4WMnASCDJc,5583
+sjmm_util/pipes_utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sjmm_util/scuba2_utils.py,sha256=os43UFnJ0LOBsPkdfHEbwVqOgpjxF_FzSp_nZ5ZmwlE,14507
+sjmm_util-0.0.1.dist-info/LICENSE,sha256=FFiqaq-B0Gx_JqEb0PZIPt3XYQQoIJRtkjS3rpFIWbA,1070
+sjmm_util-0.0.1.dist-info/METADATA,sha256=VwTc15rnoKAHW1dSAxYaO-e4PI8LTbQVqNhmyXvVl6A,241
+sjmm_util-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sjmm_util-0.0.1.dist-info/top_level.txt,sha256=b_0He4AxOEeQcrct3Vt5NcPD25WmtA6Z9Yia01Cxq_k,10
+sjmm_util-0.0.1.dist-info/RECORD,,
