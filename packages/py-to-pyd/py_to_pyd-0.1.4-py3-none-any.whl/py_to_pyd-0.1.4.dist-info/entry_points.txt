@@ -1,0 +1,7 @@
+[console_scripts]
+Py-To-Pyd = PyToPyd.main:main
+PyToPyd = PyToPyd.main:main
+download = PyToPyd.download:main
+downloadhtml = PyToPyd.main:downloadhtml
+py-to-pyd = PyToPyd.main:main
+pytopyd = PyToPyd.main:main
