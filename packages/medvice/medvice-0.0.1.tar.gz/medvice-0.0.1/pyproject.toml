@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "medvice"
+version = "0.0.1"
+description = ""
+authors = ["BIS MEDIT <Service.MED_IT@bis.org>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
