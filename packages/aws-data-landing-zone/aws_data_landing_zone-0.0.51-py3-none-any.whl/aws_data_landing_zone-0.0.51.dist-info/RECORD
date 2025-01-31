@@ -1,0 +1,9 @@
+aws_data_landing_zone/__init__.py,sha256=YNBUzmWfEr9kBnTDpL9cdlOAiVJcR10a8epda397aDg,519309
+aws_data_landing_zone/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_data_landing_zone/_jsii/__init__.py,sha256=M1O38l_4PSgqOejdea8JObhm-o1GJQMQNXTT03uHxY4,1502
+aws_data_landing_zone/_jsii/aws-data-landing-zone@0.0.51.jsii.tgz,sha256=VIrW15icwAIT-d_AheiDlW-KpOgNos8QgL_Uhgcyhqc,16437366
+aws_data_landing_zone-0.0.51.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aws_data_landing_zone-0.0.51.dist-info/METADATA,sha256=-hQwkDZWYm75jZaDpnl76porGHIfd0dQw63vfckCMHg,13135
+aws_data_landing_zone-0.0.51.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+aws_data_landing_zone-0.0.51.dist-info/top_level.txt,sha256=YUGOY7U_a3ClctLtpec3VDytURCBNRoIvMnt93I8l-Q,22
+aws_data_landing_zone-0.0.51.dist-info/RECORD,,
