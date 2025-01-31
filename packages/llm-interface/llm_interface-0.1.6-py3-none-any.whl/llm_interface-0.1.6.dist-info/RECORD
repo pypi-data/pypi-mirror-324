@@ -1,0 +1,17 @@
+llm_interface/__init__.py,sha256=-m9MFWrgaDeoWcYb7O9X5HxceLyBWAOG-4WJzZ6A6C4,233
+llm_interface/anthropic.py,sha256=PNE_CVmT9e5WrwLZC0mw4GinKJ-FFOOxrRXsqanxoj4,8967
+llm_interface/llm_config.py,sha256=YcqTRMwkETyDcmy9hKl1N6y0AF2hxdYHuGUoKGnn0iw,4751
+llm_interface/llm_interface.py,sha256=RgoxEEahKlxl6cxfvQ_iHCEaq-Msv2lWDofo7uNKa-Y,17797
+llm_interface/llm_tool.py,sha256=Zv5tlbVoWQvO3FgF9OEy5d6J47tIzPl0g1hou93BUro,6671
+llm_interface/openai.py,sha256=EqBg2z8x7Z7Igch95VM2VnB5nJDrYYO1nHZNoSbxc18,8099
+llm_interface/pydantic_output_parser.py,sha256=VY0n6JsXVvuLss51CtbnNK4dVwzpRAJUQ6fguAeXxkY,3337
+llm_interface/remote_ollama.py,sha256=YyJIN5c_KiiARfLLzZBc5DoyUFHya4t4zOOThsFPOzY,7589
+llm_interface/ssh.py,sha256=Za1gwL-HFMx1tHsdtRKC8ayrI9vPddus8Ga6lU4QvjQ,5919
+llm_interface/testing/__init__.py,sha256=Z7_B1lkDFulVr4jKSN6wGmnKsGUpvkcKuCjONY-Y1Tk,89
+llm_interface/testing/helpers.py,sha256=mxnFJedqCHYuPp0eKQCglI5nHXqwRLXNB29fY3aas74,888
+llm_interface/testing/mock_llm.py,sha256=AdvaO2Ifwh1D1F0RBZ_UBGSj8z8Xtyf5puZjos1_CLU,3349
+llm_interface/utils.py,sha256=KtgtTawudasSI25fxefF8yODT4wMGBq2LhfGLMW25U0,1568
+llm_interface-0.1.6.dist-info/LICENSE,sha256=lUP8UXx9j4QknSByG7UBSreQFUKfIl6SUlW5T9g0owA,11341
+llm_interface-0.1.6.dist-info/METADATA,sha256=F4rVy6VuLrmMjeQOs1f4lM5e3ohYVVv0R0GigOVeUj8,4711
+llm_interface-0.1.6.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+llm_interface-0.1.6.dist-info/RECORD,,
