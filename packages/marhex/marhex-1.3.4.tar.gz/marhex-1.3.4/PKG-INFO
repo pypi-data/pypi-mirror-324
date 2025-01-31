@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: marhex
+Version: 1.3.4
+Summary: Add New SubPackage 'info_server'
+Author-email: "Mehran Resalat (MarHex)" <mehran.marhex@gmail.com>
+Project-URL: GitHub, https://github.com/mehran-marhex
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
