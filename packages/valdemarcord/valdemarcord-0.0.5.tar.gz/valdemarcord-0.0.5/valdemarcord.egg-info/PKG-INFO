@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: valdemarcord
+Version: 0.0.5
+Summary: discord  module
+Author: valdemarkid
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Requires-Dist: orjson>=3.9.10
+Requires-Dist: beautifulsoup4>=4.12.0
+Requires-Dist: colorama>=0.4.6
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+yes
