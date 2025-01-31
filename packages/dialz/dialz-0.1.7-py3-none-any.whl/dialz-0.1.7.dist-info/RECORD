@@ -1,0 +1,14 @@
+dialz/__init__.py,sha256=4cR1Bk7D3U1YsyIro9hqwcxgoLc7KBGutq29atyWNu4,132
+dialz/corpus/gender.json,sha256=f8RqYcxbgI675Ej5pmd5u8D6ZnbfIk-tl5C7X5Ez3LY,47608
+dialz/corpus/generic.json,sha256=sRXIwypnLcrD2Et96wTGX6OlAkNe7u8ddHCN5VHb5B4,33109
+dialz/corpus/race.json,sha256=hCC0hYAoSnEs0hOh5CHnYvJFjRBpleKUSoePg3KhXiI,52144
+dialz/corpus/starters.json,sha256=VsAAPxnV7Upz9TPtLgz1LSjIXKlT32BtsNjU8rn0Zjo,9615
+dialz/corpus/stereoset_gender.json,sha256=-5jZBUW8Zsqv8btsU83zeVXqiv7gJ8I-4Zi8v82ofU8,54045
+dialz/corpus/stereoset_race.json,sha256=_Qb2AJUMQ1yT96TkGdOV0iTmoNBa_GqbIL2Peo4QFC0,108799
+dialz/dataset.py,sha256=cn1oVEhn1lvCWKhTmTUuWfO8EsMjVXXcKogk2uS1wpY,6527
+dialz/main.py,sha256=sQ-_oa4coA4qT5YLR30TonB1KuLPdUlgUnmic-akKkQ,3135
+dialz/model.py,sha256=QFPSR1W6EhCY-kMOsW9iae6-ev5F1BiLNPNdPcHT9vQ,16641
+dialz/vector.py,sha256=WzCaV2V365-spHSZQm86QYidiDjvKwoH0qwKrGuMc7k,13986
+dialz-0.1.7.dist-info/METADATA,sha256=nQVLt-QDlFGKmNyWCVxoKQUH1ZfrXfuR6w9O2Q2tO5M,712
+dialz-0.1.7.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+dialz-0.1.7.dist-info/RECORD,,
