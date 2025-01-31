@@ -1,0 +1,10 @@
+apscale_blast/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apscale_blast/__main__.py,sha256=tdBg2uT_7DaboPklmpq4qZatOScSABW4EsJquYz7rgI,4844
+apscale_blast/a_blastn.py,sha256=-ETHsNGMfZB0CCwUSK3nXl19z4ptWnQ3nvy6_Blqjmk,20559
+apscale_blast/b_filter.py,sha256=73Ltetlk8bXWRh2svDW_xHEcVtbcAqNUI-65MXJoD64,21697
+apscale_blast-1.2.0.dist-info/LICENSE,sha256=1MgYyubrJEbXbG9vvX38G-kZ5VzkilTiXpALpQqFyJA,1075
+apscale_blast-1.2.0.dist-info/METADATA,sha256=8Ej9c0Skmc897t-F1THIsU1m4OofH9kSBL8C8yCO6VI,10815
+apscale_blast-1.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+apscale_blast-1.2.0.dist-info/entry_points.txt,sha256=Ebu3CkixvOOpzjC5jXZlXxV6vvOvaOz5eEFxZimoSig,62
+apscale_blast-1.2.0.dist-info/top_level.txt,sha256=LSCdZbVDxL-Ks7loNER_Y4YrrK-lSA1aVrwQhexyA8Q,14
+apscale_blast-1.2.0.dist-info/RECORD,,
