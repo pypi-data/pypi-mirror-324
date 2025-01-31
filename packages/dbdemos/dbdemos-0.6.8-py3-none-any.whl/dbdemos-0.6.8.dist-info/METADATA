@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dbdemos
+Version: 0.6.8
+License: Databricks License
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pandas
+Requires-Dist: databricks-sdk>=0.38.0
+
