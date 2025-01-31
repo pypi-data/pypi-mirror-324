@@ -1,0 +1,8 @@
+salesanalyzer_mds/__init__.py,sha256=3hw9BsI5POgBKj2HG_ljlbMpAcH1I-SaKc3kCpU70e4,119
+salesanalyzer_mds/predict_sales.py,sha256=k_-n-Ec8daSzcS7bF9CidbsuwtzqtVcC6WEUG0yNEe8,4210
+salesanalyzer_mds/sales_summary_statistics.py,sha256=pgv2BRgq3M-XJpQAajH9N0Cku8ozjGrnI4AMbOem_do,4567
+salesanalyzer_mds/segment_revenue_share.py,sha256=xB3Oh3wzsmUgUiKaewes9ydB7g_SaB53GpjEgpFA1xQ,4018
+salesanalyzer_mds-2.1.0.dist-info/LICENSE,sha256=vFlMt4UGUYkF2LhUGanrc1ZR9H12dQjHSXL3H01fIx0,1096
+salesanalyzer_mds-2.1.0.dist-info/METADATA,sha256=Hy-nFA9nFOpbagnxNNK5rWuCVTB4keONrJkysNc1-Z0,5716
+salesanalyzer_mds-2.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+salesanalyzer_mds-2.1.0.dist-info/RECORD,,
