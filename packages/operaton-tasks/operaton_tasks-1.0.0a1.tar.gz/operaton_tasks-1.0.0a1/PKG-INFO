@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: operaton-tasks
+Version: 1.0.0a1
+Author-email: Asko Soukka <asko.soukka@iki.fi>
+License: Apache Software License
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: aiohttp>=3.11.9
+Requires-Dist: fastapi>=0.115.6
+Requires-Dist: pydantic-settings>=2.6.1
+Requires-Dist: pydantic>=2.10.3
+Requires-Dist: starlette>=0.41.3
+Provides-Extra: cli
+Requires-Dist: typer>=0.15.1; extra == 'cli'
+Requires-Dist: uvicorn>=0.32.1; extra == 'cli'
+Description-Content-Type: text/markdown
+
+# operaton-tasks
+
+WIP external task library and worker for https://operaton.org/
