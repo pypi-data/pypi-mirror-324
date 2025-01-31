@@ -1,0 +1,10 @@
+falsa-0.0.2.dist-info/METADATA,sha256=cfmj_WsAQj99jE3dueaI8mqFSL1Twp4IpIYjVUBb_zY,8022
+falsa-0.0.2.dist-info/WHEEL,sha256=CE2TAAnYsuMUnsdeCQdEnbFOorC1htQMyWadzdhPMsg,107
+falsa-0.0.2.dist-info/entry_points.txt,sha256=alyxeApDwIuKwB42I9UuV0d0ooOvY85YnEVQSbg8ONU,46
+falsa.libs/libgcc_s-5b5488a6.so.1,sha256=HGKUsVmTeNAxEdSy7Ua5Vh_I9FN3RCbPWzvZ7H_TrwE,2749061
+falsa/app.py,sha256=UQK2kgmKdvduY0uA7NaSCaKoFP-ueNxB20OxgpmnYF0,12895
+falsa/local_fs.py,sha256=jKePY73UGNpHgQvrYLZC6uqkfa0_aOAIhGlzJify0E0,6708
+falsa/__init__.py,sha256=YGIPEDBBGmUWbix-0iDRQgCn7i9tYKn74tFLVx2TtrY,130
+falsa/utils.py,sha256=VThDsmwnNnzOsSd0ou3sUBqui3tfTfe-MNufaCrfPF0,2528
+falsa/native.cpython-313-arm-linux-musleabihf.so,sha256=IxEfAhc812aaleGdN9oNpY0rBZvg3jQEt2O_WBhqsZM,882733
+falsa-0.0.2.dist-info/RECORD,,
