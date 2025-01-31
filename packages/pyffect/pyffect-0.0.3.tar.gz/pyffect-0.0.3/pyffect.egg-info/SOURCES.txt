@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+pyffect/__init__.py
+pyffect/_types.py
+pyffect/either.py
+pyffect/option.py
+pyffect/unit.py
+pyffect.egg-info/PKG-INFO
+pyffect.egg-info/SOURCES.txt
+pyffect.egg-info/dependency_links.txt
+pyffect.egg-info/top_level.txt
+tests/test_either.py
+tests/test_either_type.py
+tests/test_left_right_equal.py
+tests/test_option.py
+tests/test_option_type.py
