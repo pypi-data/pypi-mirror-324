@@ -1,0 +1,13 @@
+streamlit_monaco_copilot/__init__.py,sha256=fkcXc9ZRkvw9dxNt-0SbMnfPJ1Mv8tc71DAIc4-FEvw,2889
+streamlit_monaco_copilot/example.py,sha256=8aKYCRCpYKKj1ulNqeQ9U5yG0keBi2NuOp-I2lPW1dM,1179
+streamlit_monaco_copilot/frontend/build/asset-manifest.json,sha256=v73wkJV_Dr05YKP9bHq3MzjHPyOTsI1tZGP0bPTNb5o,221
+streamlit_monaco_copilot/frontend/build/bootstrap.min.css,sha256=L7EzZr9yvfRPtzVsdnV0AruBPRzCDpeFLiZQBKBq17Y,197413
+streamlit_monaco_copilot/frontend/build/index.html,sha256=vVsytfU-qIeib_r89zW9_g0QFWIQ1I8PYo0_amEpMco,492
+streamlit_monaco_copilot/frontend/build/static/js/main.6b89371a.js,sha256=LFsCIPj0vUZsNBqQ57v0bIMFVPzwY1dNLQTwj_Z6vHo,336539
+streamlit_monaco_copilot/frontend/build/static/js/main.6b89371a.js.LICENSE.txt,sha256=cmjEMovgjlkZ-Bs7b5rRQ8FsJtL1F77Y3YkM2E9yfUs,1293
+streamlit_monaco_copilot/frontend/build/static/js/main.6b89371a.js.map,sha256=m3i6_Vge2XCxkf6pmBo2ZoWPSkhnfK4oCtRTpvmkDz4,1324255
+streamlit_monaco_copilot-0.0.2.dev2.dist-info/LICENSE,sha256=9VDWIUfeWnnobvVpN2KtC5cHaNpAmxhdjyF4LivEPNw,1063
+streamlit_monaco_copilot-0.0.2.dev2.dist-info/METADATA,sha256=8zXbo7C0cpewjpGBGxR-hm4yIUxCqO4LvNwnbEYwVwA,2032
+streamlit_monaco_copilot-0.0.2.dev2.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+streamlit_monaco_copilot-0.0.2.dev2.dist-info/top_level.txt,sha256=h0KclqW7TRcZryfO5tUuD8F5GF9YzC2CtG47HcpOAvI,25
+streamlit_monaco_copilot-0.0.2.dev2.dist-info/RECORD,,
