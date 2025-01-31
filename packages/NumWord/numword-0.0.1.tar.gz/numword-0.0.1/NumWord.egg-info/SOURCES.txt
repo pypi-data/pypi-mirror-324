@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+Logs/__init__.py
+Logs/logs.py
+NumWord/__init__.py
+NumWord/english.py
+NumWord/word_to_num.py
+NumWord.egg-info/PKG-INFO
+NumWord.egg-info/SOURCES.txt
+NumWord.egg-info/dependency_links.txt
+NumWord.egg-info/top_level.txt
+tests/test_english.py
