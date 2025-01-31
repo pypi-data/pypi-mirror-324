@@ -1,0 +1,8 @@
+entropy_c.cpython-312-i386-linux-gnu.so,sha256=Ugoahslt71m8l644eYXsu4jeNiPrAfZ7xQEz4kO5ktk,29784
+seamless_entropy-0.2.6.dist-info/WHEEL,sha256=JPqzqOboi5rB1UKx9ppXpoWlVgikBX7d_r56z3skAXM,214
+seamless_entropy-0.2.6.dist-info/RECORD,,
+seamless_entropy-0.2.6.dist-info/METADATA,sha256=TGTvMKoOkQKU1LyOB6WIojhYXpWtLYTk6knccyokqVA,3301
+seamless_entropy/use_scipy.py,sha256=cZjF8_9nx704mw4NJI5fXm9Cp4ibROF9ZE6YIICabmE,143
+seamless_entropy/helpers.py,sha256=PLMYLCJuRya4ePhuvUEwn47fD4sBQTV2xmzlJjwZM70,269
+seamless_entropy/pure_python.py,sha256=Cs0lqQjrdtKG8_yRN6YCmb_pOTyhZNoTGNbEnXYHGwU,138
+seamless_entropy/__init__.py,sha256=ot7Uk2GEIxnPgf_YAOBB_TIVy1leubgZau47ZbrSVy4,234
