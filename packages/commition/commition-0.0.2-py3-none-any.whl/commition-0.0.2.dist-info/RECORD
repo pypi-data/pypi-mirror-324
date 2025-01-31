@@ -1,0 +1,14 @@
+commition-0.0.2.dist-info/METADATA,sha256=kCuFS7Xfc4oMfD_CRpgQovnh0TfGgD0IPkePZC40isY,15284
+commition-0.0.2.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+commition-0.0.2.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+commition-0.0.2.dist-info/licenses/LICENSE.md,sha256=B05uMshqTA74s-0ltyHKI6yoPfJ3zYgQbvcXfDVGFf8,10280
+commition/__init__.py,sha256=0fnVPl6Cebxgr2wgoS7xeRfa7E8FT7e2G9UUxCPreIg,514
+commition/_compile.py,sha256=oUL6FAGDBh3UJWYUtJCgMU2ezEUY1m1bzr76erg26ww,659
+commition/_version.py,sha256=-p3xnNc8zKzBF_YWmIqTdSaKCy_DGZ1VyFLILWcl6ks,6658
+commition/error.py,sha256=E0LSf4ajvBRChvcpn_VWyivEUyCbRTaAE_TsblApJU0,813
+commition/plugin/__init__.py,sha256=G1-Rrw5WoEvy3PWkjcYy-784o5KKEiCgphdTC7VdUas,1009
+commition/plugin/_git.py,sha256=V2WdbyJLnFCTIo57SGIZQyBhOd8SaOAMlhU4cM3EDTs,2830
+commition/plugin/_installed.py,sha256=OQCUJYSzmHhgiaCSJj8z-vTGbN9sZKjQUVZhvWBd8yQ,868
+commition/plugin/_match.py,sha256=cTOMG5MQ96u8tOF9BFNuHcO-2khqvyQQu7xqyVUvQc8,1873
+commition/plugin/pdm.py,sha256=oop1mV-pl3h__pGS5gVmkVuX_nNLZF5C3xc5tetGBRw,5210
+commition-0.0.2.dist-info/RECORD,,
