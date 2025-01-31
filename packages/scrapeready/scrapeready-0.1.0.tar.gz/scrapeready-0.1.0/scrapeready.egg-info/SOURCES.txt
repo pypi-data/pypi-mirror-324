@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+scrapeready.py
+scrapeready.egg-info/PKG-INFO
+scrapeready.egg-info/SOURCES.txt
+scrapeready.egg-info/dependency_links.txt
+scrapeready.egg-info/requires.txt
+scrapeready.egg-info/top_level.txt

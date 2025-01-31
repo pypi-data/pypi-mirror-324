@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: scrapeready
+Version: 0.1.0
+Summary: A Python client for the Scrapeready.com v1 API
+Author-email: Your Name <your.email@example.com>
+Project-URL: Homepage, https://github.com/YOUR_GITHUB/scrapeready
+Project-URL: Source, https://github.com/YOUR_GITHUB/scrapeready
+Project-URL: Tracker, https://github.com/YOUR_GITHUB/scrapeready/issues
+Keywords: scraping,serp,ai,scrapeready
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.20.0
+
+# Scrapeready Client
+
+A Python client for making requests to [scrapeready.com](https://api.scrapeready.com/v1/) endpoints.
+
+## Features
+
+- **website_to_text(url: str)**  
+  Scrapes text from a website.
+
+- **serp(q: str)**  
+  Retrieves SERP (Search Engine Results Page) information.
+
+- **ai_search(q: Optional[str], prompt: Optional[str], max_websites: int = 5)**  
+  Generates or uses a query to scrape top search results.
+
+## Installation
+
+```bash
+pip install scrapeready
