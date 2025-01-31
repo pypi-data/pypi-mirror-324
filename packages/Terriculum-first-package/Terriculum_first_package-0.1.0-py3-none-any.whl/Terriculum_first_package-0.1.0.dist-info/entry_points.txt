@@ -1,0 +1,2 @@
+[console_scripts]
+extractor = your_package.extractor:process_file
