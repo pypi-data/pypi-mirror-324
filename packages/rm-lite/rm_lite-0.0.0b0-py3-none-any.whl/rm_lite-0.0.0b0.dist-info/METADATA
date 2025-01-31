@@ -1,0 +1,168 @@
+Metadata-Version: 2.4
+Name: rm-lite
+Version: 0.0.0b0
+Summary: A mini versions of RM-Tools
+Author-email: Alec Thomson <alec.thomson@csiro.au>
+License: MIT License
+        
+        Copyright (c) 2025 Alec Thomson
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: astropy>=6
+Requires-Dist: bilby>=1.1.5
+Requires-Dist: corner
+Requires-Dist: deprecation
+Requires-Dist: emcee
+Requires-Dist: finufft
+Requires-Dist: nestle
+Requires-Dist: numpy>=1.22
+Requires-Dist: polars
+Requires-Dist: scipy
+Requires-Dist: tdqm
+Requires-Dist: uncertainties
+Provides-Extra: dev
+Requires-Dist: nox; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: furo>=2023.08.17; extra == 'docs'
+Requires-Dist: jupyter; extra == 'docs'
+Requires-Dist: matplotlib; extra == 'docs'
+Requires-Dist: myst-parser>=0.13; extra == 'docs'
+Requires-Dist: nbsphinx; extra == 'docs'
+Requires-Dist: sphinx-autoapi; extra == 'docs'
+Requires-Dist: sphinx-autodoc-typehints; extra == 'docs'
+Requires-Dist: sphinx-copybutton; extra == 'docs'
+Requires-Dist: sphinx>=7.0; extra == 'docs'
+Description-Content-Type: text/markdown
+
+# RM-lite
+
+[![Actions Status][actions-badge]][actions-link]
+[![Codecov Status][codecov-badge]][codecov-link]
+[![Documentation Status][rtd-badge]][rtd-link]
+
+[![PyPI version][pypi-version]][pypi-link]
+
+<!-- [![Conda-Forge][conda-badge]][conda-link] -->
+
+[![PyPI platforms][pypi-platforms]][pypi-link]
+
+<!-- [![GitHub Discussion][github-discussions-badge]][github-discussions-link] -->
+
+<!-- SPHINX-START -->
+
+<!-- prettier-ignore-start -->
+[codecov-link]:             https://codecov.io/gh/AlecThomson/rm-lite
+[codecov-badge]:            https://codecov.io/gh/AlecThomson/rm-lite/graph/badge.svg?token=7EARBRN20D
+[actions-badge]:            https://github.com/AlecThomson/rm-lite/workflows/CI/badge.svg
+[actions-link]:             https://github.com/AlecThomson/rm-lite/actions
+[conda-badge]:              https://img.shields.io/conda/vn/conda-forge/rm-lite
+[conda-link]:               https://github.com/conda-forge/rm-lite-feedstock
+[github-discussions-badge]: https://img.shields.io/static/v1?label=Discussions&message=Ask&color=blue&logo=github
+[github-discussions-link]:  https://github.com/AlecThomson/rm-lite/discussions
+[pypi-link]:                https://pypi.org/project/rm-lite/
+[pypi-platforms]:           https://img.shields.io/pypi/pyversions/rm-lite
+[pypi-version]:             https://img.shields.io/pypi/v/rm-lite
+[rtd-badge]:                https://readthedocs.org/projects/rm-lite/badge/?version=latest
+[rtd-link]:                 https://rm-lite.readthedocs.io/en/latest/?badge=latest
+
+<!-- prettier-ignore-end -->
+
+A mini fork of RM-Tools - RM-synthesis, RM-clean and QU-fitting on polarised
+radio spectra.
+
+This just exposes a Python API. No plotting, I/O utilities, or CLI are provided.
+See the main fork of [RM-Tools](https://github.com/CIRADA-Tools/RM-Tools) for
+that functionality.
+
+The goal of this project is to provide low code surface area with high
+reliability, performance, and developer ergonomics.
+
+_**Warning:** This is very much a work-in-progress. Do not expect stability for
+a while._
+
+## Installation
+
+PyPI release:
+
+```
+pip install rm-lite
+```
+
+Current GitHub `main` commit:
+
+```
+pip install git+https://github.com/AlecThomson/rm-lite.git
+```
+
+## Citing
+
+If you use this package in a publication, please cite main fork's
+[ASCL entry](https://ui.adsabs.harvard.edu/abs/2020ascl.soft05003P/abstract) for
+the time being.
+
+## License
+
+MIT
+
+## Contributing
+
+Contributions are welcome. Questions, bug reports, and feature requests can be
+posted to the GitHub issues page.
+
+The development dependencies can be installed via `pip` from PyPI:
+
+```bash
+pip install "rm-lite[dev]"
+```
+
+or for a local clone:
+
+```bash
+cd rm-lite
+pip install ".[dev]"
+```
+
+Code formatting and style is handled by `ruff`, with tests run by `pytest`. A
+`pre-commit` hook is available to handle the autoformatting. After installing
+the `dev` dependencies, you can install the hooks by running:
+
+```bash
+cd rm-lite
+pre-commit install
+```
