@@ -1,0 +1,12 @@
+.idea/
+
+# Python
+__pycache__/
+
+# Jupyter lab
+.ipynb_checkpoints/
+
+# Experiments
+test/notebooks
+test/.ipynb_checkpoints
+test/*.json
