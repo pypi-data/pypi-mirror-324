@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: bridgepy
+Version: 0.0.0
+Summary: bridgepy is a package for playing contract bridge with hidden partner!
+Home-page: https://github.com/papillonbee/bridgepy
+Author: Papan Yongmalwong
+Author-email: papillonbee@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# bridgepy
