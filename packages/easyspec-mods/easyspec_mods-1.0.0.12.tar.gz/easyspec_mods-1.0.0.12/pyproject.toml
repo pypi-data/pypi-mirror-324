@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling", "toml"]
+build-backend = "hatchling.build"
+
+[project]
+name = "easyspec-mods"
+version = "1.0.0.12"
+authors = [
+    {name="Raniere de Menezes", email="raniere.m.menezes@gmail.com"},
+]
+description = "easySpec is a library for the reduction, extraction, and analysis of long-slit astrophysical spectra."
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { text = "BSD-3-Clause" }
+
+[project.urls]
+Homepage = "https://github.com/ranieremenezes/easyspec"
+Issues = "https://github.com/ranieremenezes/easyspec"
+Contributions = "https://buymeacoffee.com/easyfermi"
+
+[tool.header]
+brand_name = 'easySpec'
+slogan = 'The easiest way to do long-slit spectroscopy.'
+creators = [
+    {name="Raniere de Menezes", email="raniere.m.menezes@gmail.com"},
+]
+
+[tool.modules]
+cleaning = { version = "1.0.0" , description = "Image reduction/cleaning, including cosmic ray removal." }
+extraction = { version = "1.0.0" , description = "Spectral extraction from a cleaned/stacked image." }
+analysis = { version = "1.0.0" , description = "Image reduction/cleaning, including cosmic ray removal." }
+
+[tool.help]
+repository = 'https://github.com/ranieremenezes/easyspec'
+# documentation = ''
+tutorials = { cleaning ='https://github.com/ranieremenezes/easyspec/blob/main/tutorial/Image_cleaning_easyspec.ipynb', extraction = 'https://github.com/ranieremenezes/easyspec/blob/main/tutorial/spectroscopy_tracing_easyspec.ipynb' , analysis = 'https://github.com/ranieremenezes/easyspec/blob/main/tutorial/spectral_analysis_easyspec.ipynb'}
+
+[tool.hatch.build.targets.wheel.hooks.custom]
+path = "hatch_build.py"
+
+[tool.hatch.build.targets.wheel.force-include]
+"./src/header.json" = "easyspec_mods/header.json"
+"./src/modules.json" = "easyspec_mods/modules.json"
+"./src/help.json" = "easyspec_mods/help.json"
+
+[project.scripts]
+easyspec = "easyspec_mods.__main__:main"
