@@ -1,0 +1,11 @@
+openai_batch/__init__.py,sha256=SpxteOOS0PkEL2wfqEg6zRd63F5QRXrR7Z9wN_Wevsw,278
+openai_batch/_utils.py,sha256=eYZmz7DyvfYPQeb8EOxSmhxmmwuo40W3ibTFfqhl94s,2466
+openai_batch/create_input.py,sha256=k99ewk5jC3EJoZ7sRg5XPFYPzJj_HfEZWx_C6Iy3_rg,3365
+openai_batch/example_prompts.py,sha256=AyvGJ6ocy2nbUsfjSSnWMRZErkU3lh-G3MXcMXIXNmk,4890
+openai_batch/providers.py,sha256=3SJoe56Gdp_ckfFaKYHdwF4ztZHzoAa4CdnBNy2Z5sM,2559
+openai_batch/run.py,sha256=IYFuiz6wQCwvKhlWiLyM-4WXynOsgFpOvjmyXQoQoys,4099
+openai_batch-0.1.4.dist-info/LICENSE,sha256=04ivvIV19VabEt-0KfVDKx4kDJPQ3NlmG2ndKjnR71k,11338
+openai_batch-0.1.4.dist-info/METADATA,sha256=-1dMML77ZmPWmyPoBr5RLbw3yGsTFBNJBjCtNM8Nfqk,3330
+openai_batch-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+openai_batch-0.1.4.dist-info/top_level.txt,sha256=xBbZEJOcD3pPJma0Yz1Eg2dvW0VGkDi2gmLP-wcJ_LY,13
+openai_batch-0.1.4.dist-info/RECORD,,
