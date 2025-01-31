@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+_ncrystal_pypluginmgr/__init__.py
+_ncrystal_pypluginmgr/_argmode.py
+_ncrystal_pypluginmgr/cli.py
+ncrystal_pypluginmgr.egg-info/PKG-INFO
+ncrystal_pypluginmgr.egg-info/SOURCES.txt
+ncrystal_pypluginmgr.egg-info/dependency_links.txt
+ncrystal_pypluginmgr.egg-info/entry_points.txt
+ncrystal_pypluginmgr.egg-info/top_level.txt
