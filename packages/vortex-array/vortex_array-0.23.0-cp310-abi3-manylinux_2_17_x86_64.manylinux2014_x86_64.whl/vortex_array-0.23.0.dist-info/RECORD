@@ -1,0 +1,9 @@
+vortex_array-0.23.0.dist-info/METADATA,sha256=LD1sWhKC2NdLSr3bHBwL6ifrvniCDmPiXAg6gOTF4zA,14168
+vortex_array-0.23.0.dist-info/WHEEL,sha256=fkUskYRxPJGaQbiOrap1hlRyWuid1qXahjh3XzT36Y4,128
+vortex/substrait.py,sha256=rhz3B4hAN1EHIt181o4ISdbz3rZaVQoYcX68tD5Y9RY,10040
+vortex/encoding.py,sha256=_DgsqNVNp4xvA90Bj5zklslMYPFcCNqk4-2IiVXRNWY,9354
+vortex/dataset.py,sha256=cD9gSPjFObZ0lNvAqNxMN62hhxhhMlGFBb1XkU5YMgA,19106
+vortex/__init__.py,sha256=BlfoKKyNA7S-z11aZhJetZnIxMG3Kboy9HgGyR_nISw,271
+vortex/arrow/expression.py,sha256=ta_ZWGg44P9Vs9Z1Bzb6tqNEOGHl6I6PWIcv1vPCZdU,610
+vortex/_lib.abi3.so,sha256=5F-1PGzavUf5aNa8AjFCjRT2Pp0KlUwkbmne9-cgd3w,26534520
+vortex_array-0.23.0.dist-info/RECORD,,
