@@ -1,0 +1,4 @@
+[console_scripts]
+wiggle-api=wiggle_api.main:main
+wiggle-api-install=wiggle_api.install:install
+
