@@ -1,0 +1,24 @@
+[project]
+name = "deepseek-client-python"
+version = "1.0.3"
+description = "Un-Official Python client for interacting with DeepSeek's LLM API"
+authors = [
+    {name = "Dmitry Volkov", email = "dsvolk@gmail.com"},
+]
+requires-python = ">=3.10"
+dependencies = [
+    "requests==2.32.3",
+]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "deepseek_client" }
+]
+
+[tool.poetry.group.dev.dependencies]
+requests-mock = "1.12.1"
+pytest = "^6.0"

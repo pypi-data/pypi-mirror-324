@@ -1,0 +1,13 @@
+Metadata-Version: 2.3
+Name: deepseek-client-python
+Version: 1.0.3
+Summary: Un-Official Python client for interacting with DeepSeek's LLM API
+Author: Dmitry Volkov
+Author-email: dsvolk@gmail.com
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: requests (==2.32.3)
