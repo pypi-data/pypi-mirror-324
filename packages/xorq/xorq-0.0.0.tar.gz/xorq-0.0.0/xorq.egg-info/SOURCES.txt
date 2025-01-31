@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+xorq.egg-info/PKG-INFO
+xorq.egg-info/SOURCES.txt
+xorq.egg-info/dependency_links.txt
+xorq.egg-info/requires.txt
+xorq.egg-info/top_level.txt
