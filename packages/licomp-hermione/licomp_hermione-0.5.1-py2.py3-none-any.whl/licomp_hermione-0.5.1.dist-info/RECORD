@@ -1,0 +1,16 @@
+licomp_hermione/__main__.py,sha256=CraW_VqbqnxqP7geULedYHF3pTfEPT8XQdEjgk-R-RA,791
+licomp_hermione/config.py,sha256=hQVaziPn_oUSkDru5QeiXIU-OEaasRzQ3tYy39KPVmc,1038
+licomp_hermione/hermione.py,sha256=VB44XO6SU1O1ZToXNs4o3O6LEWJlxWn6dPRQFvT5JfQ,4083
+licomp_hermione/data/hermione-matrix-DistributionNonSource-Altered.json,sha256=FO3HC-yVsdzGMPi8lApDQ2hGsLsxQl-N9FZfKKwtpN0,154185
+licomp_hermione/data/hermione-matrix-DistributionNonSource-Unmodified.json,sha256=0HcvGgasNydokDIva8zkO47TKQugvdjqVgCeQCnsjHw,154195
+licomp_hermione/data/hermione-matrix-DistributionSource-Altered.json,sha256=UdK9P-7R2SHRVGh6ObITq8_MsBIZgMsAOEwrVCthbJo,154182
+licomp_hermione/data/hermione-matrix-DistributionSource-Unmodified.json,sha256=-XzypiviROILkMSDGmoNQ2O2KxrQIrms8mxKfp_jaXM,154192
+licomp_hermione/data/hermione-matrix-InternalUse-Altered.json,sha256=jhVjfOjFf5-i0tgAfUKPUR7vAoxMQWJZTGUfPE6fcAE,154543
+licomp_hermione/data/hermione-matrix-InternalUse-Unmodified.json,sha256=N8wno75Xh6IsqDyfmkzHqJJlPYl7G4BZ_L6dbsvb6iE,154546
+licomp_hermione/data/hermione-matrix.json,sha256=gtUHwCjCQlZV6s1grZrbfV_I7PevQvayqgBOw6LELx0,153922
+licomp_hermione-0.5.1.dist-info/GPL-3.0-or-later.txt,sha256=-5gWaMGKJ54oX8TYP7oeg2zITdTapzyWl9PP0tispuA,34674
+licomp_hermione-0.5.1.dist-info/METADATA,sha256=m0VS3sjfpIyvbAKBNdzZS9uzeVg3Vr2YBINzuDno96Q,3582
+licomp_hermione-0.5.1.dist-info/WHEEL,sha256=-G_t0oGuE7UD0DrSpVZnq1hHMBV9DD2XkS5v7XpmTnk,110
+licomp_hermione-0.5.1.dist-info/entry_points.txt,sha256=qWwLs4ItO8pNwTK9xjJi-sRS-CxbElwNF9bk0EAbjgU,66
+licomp_hermione-0.5.1.dist-info/top_level.txt,sha256=2czhQqShyZTJ5unvsjx7s5ES3tsatKU_hr-79KL4lZ0,16
+licomp_hermione-0.5.1.dist-info/RECORD,,
