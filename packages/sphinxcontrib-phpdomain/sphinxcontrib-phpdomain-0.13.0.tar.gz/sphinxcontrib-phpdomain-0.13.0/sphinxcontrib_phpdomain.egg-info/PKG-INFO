@@ -1,0 +1,42 @@
+Metadata-Version: 1.2
+Name: sphinxcontrib-phpdomain
+Version: 0.13.0
+Summary: Sphinx extension to enable documenting PHP code
+Home-page: https://github.com/markstory/sphinxcontrib-phpdomain
+Author: Mark Story
+Author-email: mark@mark-story.com
+License: BSD
+Download-URL: http://pypi.python.org/pypi/sphinxcontrib-phpdomain
+Project-URL: Documentation, https://markstory.github.io/sphinxcontrib-phpdomain/
+Description: 
+        This package provides a Sphinx extension for documenting PHP projects.
+        
+        PHP Domain supports following objects:
+        
+        * Global variable
+        * Global function
+        * Constants
+        * Namespaces
+        
+            * Functions
+            * Class
+        
+        * Class
+        
+            * Class constant
+            * Instance methods
+            * Static methods
+            * Properties
+        
+        * Enums
+        
+Platform: any
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Sphinx :: Domain
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
