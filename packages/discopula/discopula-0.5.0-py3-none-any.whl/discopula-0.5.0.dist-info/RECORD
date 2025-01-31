@@ -1,0 +1,16 @@
+discopula/__init__.py,sha256=-2ktXaAYUVXFEMVIovZfKokkdCkSSVRMEeo7xVdgayM,654
+discopula/checkerboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discopula/checkerboard/gencopula.py,sha256=MJcQ6e2obCwvA4zb0SEy_1p_xcrrj0LC8H5sk-oGAiw,21386
+discopula/checkerboard/genstatsim.py,sha256=jwWP8J4q5-z5GQEFwzXX9xsz_U2t2NRLuFqYhrKkfQc,17579
+discopula/checkerboard/utils.py,sha256=59vBD9mobyohQf7vBsW-4EbKHuIMQL563Ckwsac_8ZQ,5619
+docs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/conf.py,sha256=ILXA3rYH0qOJneYyCqOldQbwtDj8TpXUCjKEx12aWoM,1943
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_gencopula.py,sha256=OksCHzfOR1uu_v-W5T1ckk61WrbmB7Ew3pN__0r5H_k,19025
+tests/test_genstatsim.py,sha256=uTqMBpCh9ubKTLDCyqs_KcIlGzCjR5dyQ5r2jFcsGpI,7992
+tests/test_utils.py,sha256=eaZbW1WmUFgWyFDXasxlqzPvRV-oHQJLPtnEvxcuoQ8,8121
+discopula-0.5.0.dist-info/LICENSE.txt,sha256=Bdp6DhDkWfTIvM-QHBVJ-_DfXr-mY9VvvTuswsKjg6s,1072
+discopula-0.5.0.dist-info/METADATA,sha256=h22jdw1JNHEIekp45gTOpJoB_yP6rGVSzmPbwqBGMcQ,3767
+discopula-0.5.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+discopula-0.5.0.dist-info/top_level.txt,sha256=VPxOKVneHWW7r3EseTpTq6Lf15VcL5A1rXFGq6qGYcM,21
+discopula-0.5.0.dist-info/RECORD,,
