@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.cfg
+setup.py
+encryptions/__init__.py
+encryptions/encryption.py
+encryptions.egg-info/PKG-INFO
+encryptions.egg-info/SOURCES.txt
+encryptions.egg-info/dependency_links.txt
+encryptions.egg-info/requires.txt
+encryptions.egg-info/top_level.txt
+tests/__init__.py
+tests/test_encryption.py
