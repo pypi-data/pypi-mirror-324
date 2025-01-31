@@ -1,0 +1,9 @@
+thistle/__init__.py,sha256=NXAd-YF3APCQK36wsmOjIWws5MjmmrA9yE9YIsbyfy8,73
+thistle/propagator.py,sha256=9MQb0jJsoqyPh58LS7KanFFGWfZzdyBO-y2W5kjVnjM,2657
+thistle/reader.py,sha256=vcOrCkPhK6BoHupNTVT_yafSBgSj8Ie6r8oKNoiRKtE,741
+thistle/switcher.py,sha256=vbHFINK8K_wYgFytgMKgmjmQAfK4CjMc4QFDOT4CWQw,2186
+thistle/utils.py,sha256=W1_GIWbuSn4jk_1n_EzJ10eQau0Wn3z928riLWiMQ7Q,1851
+thistle-0.1.0rc1.dist-info/METADATA,sha256=uJuU7ZXU-0GZ-NKp8xCbxFH9Erqlc2UrQWes1PQdEWI,209
+thistle-0.1.0rc1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+thistle-0.1.0rc1.dist-info/entry_points.txt,sha256=f_XaH8uXel4_zl2ev_2HOEigcPg3m0YRyGrZAx-_iMw,41
+thistle-0.1.0rc1.dist-info/RECORD,,
