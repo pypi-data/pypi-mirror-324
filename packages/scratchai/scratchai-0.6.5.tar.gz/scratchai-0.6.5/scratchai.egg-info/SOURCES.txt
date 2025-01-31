@@ -1,0 +1,17 @@
+setup.py
+scratchai/__init__.py
+scratchai/forests.py
+scratchai/trees.py
+scratchai.egg-info/PKG-INFO
+scratchai.egg-info/SOURCES.txt
+scratchai.egg-info/dependency_links.txt
+scratchai.egg-info/requires.txt
+scratchai.egg-info/top_level.txt
+scratchai/build/__init__.py
+scratchai/metrics/__init__.py
+scratchai/preproccessing/__init__.py
+tests/__init__.py
+tests/build.py
+tests/data.py
+tests/forests.py
+tests/trees.py
