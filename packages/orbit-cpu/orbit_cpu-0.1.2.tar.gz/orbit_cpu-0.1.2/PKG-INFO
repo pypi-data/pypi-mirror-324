@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: orbit_cpu
+Version: 0.1.2
+Summary: cpu algorithm for target centric clustering for dense embeddings
+Author: abiel almonte
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: faiss-cpu
+Requires-Dist: hdbscan
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
