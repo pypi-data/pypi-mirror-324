@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: skwebsocket
+Version: 0.1
+Summary: A simple WebSocket library for communication between server and client
+Home-page: https://github.com/prathaaccount/skwebsocket
+Author: soniya
+Author-email: prathpatil28@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+
+# skweb WebSocket Library
+
+This library provides a simple WebSocket server and client that can be used to send and receive messages/files between clients and servers.
+
+## Installation
+
+To install the library, use pip:
+
+```bash
+pip install skweb
+
+

@@ -1,0 +1,11 @@
+skwebsocket/__init__.py,sha256=Dzc8wu1XVlbqcXzagqlrbQ91tCQIIg5OFPyJdV4zCHc,95
+skwebsocket/recfile.py,sha256=dL0nKqgWGn1k7RKHS0aKD-hGo-ABnipbCTwwN71TROo,161
+skwebsocket/sendfile.py,sha256=0vocodwlZFeZpcONjK72G7u5n-kQJsEJ_v6YDOt1sFA,265
+skwebsocket/server.py,sha256=97su7kuu6M_OTjrS5XLrADz8kRTk5O1xY0kBHQOCN58,367
+skwebsocket/test.py,sha256=58ScF8OzefXT-mc5VcpBNeQme95Cu72wTqGogM9iQUs,579
+skwebsocket/websocket.py,sha256=tVb8iiLN0v5pPDIl2jxZFC2OUcfz4bnISMUMQQvchp8,10173
+skwebsocket-0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+skwebsocket-0.1.dist-info/METADATA,sha256=Yp-4j8AVszA-0l1OBvjNAo-U5V_OMf74RgKUeLckuJ8,763
+skwebsocket-0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+skwebsocket-0.1.dist-info/top_level.txt,sha256=O8IqOeqE-ebdFkCPYocDCKDV6ukSm_7FU19e-UekZig,12
+skwebsocket-0.1.dist-info/RECORD,,
