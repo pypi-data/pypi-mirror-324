@@ -1,0 +1,8 @@
+test.py
+.env
+.venv/
+__pycache__/
+tests/
+buildsteps
+dist/
+buildsteps.txt
