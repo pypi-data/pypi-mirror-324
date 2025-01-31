@@ -1,0 +1,8 @@
+beetlebox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+beetlebox/admin.py,sha256=QQPO_W03MpexGVvew06n1RZizSHQqikblsAWGwyoP8I,2553
+beetlebox/gmail_api.py,sha256=JI8PxjtAKJ9Vh-FIZGOXG3xUCbJ4MCV-VVXCtV0Yqng,4873
+beetlebox/persist.py,sha256=tEKGct3QJnM-6ucHSyhrPBGrZN58WOYz--UuYLBI0t0,7962
+beetlebox-0.0.3.dist-info/METADATA,sha256=5N3SCcenx6xXbi9B0SnIfRblR8k8vKS-5LJsujlO21c,1179
+beetlebox-0.0.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+beetlebox-0.0.3.dist-info/licenses/LICENSE.txt,sha256=ILBn-G3jdarm2w8oOrLmXeJNU3czuJvVhDLBASWdhM8,34522
+beetlebox-0.0.3.dist-info/RECORD,,
