@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+streamlit_analytics_cards/__init__.py
+streamlit_analytics_cards.egg-info/PKG-INFO
+streamlit_analytics_cards.egg-info/SOURCES.txt
+streamlit_analytics_cards.egg-info/dependency_links.txt
+streamlit_analytics_cards.egg-info/requires.txt
+streamlit_analytics_cards.egg-info/top_level.txt
+streamlit_analytics_cards/frontend/build/asset-manifest.json
+streamlit_analytics_cards/frontend/build/index.html
+streamlit_analytics_cards/frontend/build/static/css/main.794bb8f7.css
+streamlit_analytics_cards/frontend/build/static/css/main.794bb8f7.css.map
