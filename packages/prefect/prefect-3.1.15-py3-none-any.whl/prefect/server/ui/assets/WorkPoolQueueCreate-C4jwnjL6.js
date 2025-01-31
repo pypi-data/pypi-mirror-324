@@ -1,0 +1,2 @@
+import{d as r,W as n,c as s,j as a,k as u,o as m,l as t,m as o,dd as p,de as c}from"./index-Cq5Q7kWk.js";import{u as _}from"./usePageTitle-NgGMZFeo.js";const C=r({__name:"WorkPoolQueueCreate",setup(d){const e=n("workPoolName");return _("Create Work Pool Queue"),(k,f)=>{const l=u("p-layout-default");return m(),s(l,null,{header:a(()=>[t(o(p),{"work-pool-name":o(e)},null,8,["work-pool-name"])]),default:a(()=>[t(o(c),{"work-pool-name":o(e)},null,8,["work-pool-name"])]),_:1})}}});export{C as default};
+//# sourceMappingURL=WorkPoolQueueCreate-C4jwnjL6.js.map
