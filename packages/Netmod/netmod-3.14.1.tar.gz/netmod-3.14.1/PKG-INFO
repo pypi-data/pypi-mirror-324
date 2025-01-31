@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Netmod
+Version: 3.14.1
+Summary: NetMod, A network moderation package created to build territorial command across the internet locally.
+Author: Kaytun Watson
+Author-email: kaytunlw2021@hotmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.14
+Requires-Dist: argparse
+Requires-Dist: scapy
+Requires-Dist: socket
+Requires-Dist: os
+Requires-Dist: webbrowser

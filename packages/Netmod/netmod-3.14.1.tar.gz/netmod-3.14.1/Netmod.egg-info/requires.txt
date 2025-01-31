@@ -1,0 +1,5 @@
+argparse
+scapy
+socket
+os
+webbrowser
