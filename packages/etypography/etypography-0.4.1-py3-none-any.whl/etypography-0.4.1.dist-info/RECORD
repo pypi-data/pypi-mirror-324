@@ -1,0 +1,9 @@
+etypography/__init__.py,sha256=wC7AszcIiYfZPMn0FqcWu1hHpJyLYSH8MjQXct5YT7w,1051
+etypography/_break_text.py,sha256=6y89e--UN92vSc5lJpeGwSbvx8fKJJoFgE1wdo-Qoas,4606
+etypography/_font.py,sha256=mnhg89CLRP1wOjKJHVwoWc8-s4w4ym67Or9NvpNFj1M,1993
+etypography/_font_face.py,sha256=9foxNH45sBRGwC9ZPTyU66ciAv5bRewW5RGtXrsePA8,19668
+etypography/_unicode.py,sha256=Nj6e6f4Jkr8DUfbE6Ju2raYQn_Vf-EsB9OsnNKYzxus,319
+etypography/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+etypography-0.4.1.dist-info/METADATA,sha256=xNbAjGwAE2oCjx3M2FdKYiKxMGY3PZzk-YE0AFHkF8k,464
+etypography-0.4.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+etypography-0.4.1.dist-info/RECORD,,
