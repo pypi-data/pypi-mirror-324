@@ -1,0 +1,56 @@
+{
+  "id": "050fe168-9b78-455c-be30-3b6d9a1d5e33",
+  "email": "bbbraaaaaaaaady.bunch@vinny-van-gogh.com",
+  "password": "Password123!*",
+  "displayName": "Braaaaaaaaaady Bunch",
+  "groups": {
+    "successful": [
+      "All Company",
+      "Vinny's Alt Emails",
+      "ManSol-Testing",
+      "Company Data",
+      "All Company (already member)"
+    ],
+    "failed": []
+  },
+  "licenses": {
+    "available": [
+      {
+        "skuId": "f30db892-07e9-47e9-837c-80727f46fd3d",
+        "skuPartNumber": "FLOW_FREE",
+        "friendlyName": "Power Automate Free",
+        "remaining": 9970,
+        "enabled": 10000,
+        "consumed": 30
+      }
+    ],
+    "unavailable": [
+      "Microsoft 365 Business Basic",
+      "Copilot for Microsoft 365",
+      "Microsoft Teams Essentials",
+      "Microsoft Defender for Endpoint"
+    ],
+    "available_str": "Power Automate Free (9970 available)\nNo licenses available",
+    "unavailable_str": "Copilot for Microsoft 365 (license not available in tenant)\nMicrosoft 365 Business Basic (no licenses available)\nMicrosoft Defender for Endpoint (license not available in tenant)\nMicrosoft Teams Essentials (license not available in tenant)"
+  },
+  "roles": {
+    "successful": [
+      "Office Apps Administrator (copied from user: template@vinny-van-gogh.com)",
+      "Security Reader (copied from user: template@vinny-van-gogh.com)",
+      "Exchange Administrator (copied from user: template@vinny-van-gogh.com)"
+    ],
+    "failed": []
+  },
+  "copied_from": "Template User",
+  "copied_properties": [
+    "Group: All Company",
+    "Group: Vinny's Alt Emails",
+    "Group: ManSol-Testing",
+    "Group: Company Data",
+    "License: Power Automate Free",
+    "Role: Office Apps Administrator",
+    "Role: Security Reader",
+    "Role: Exchange Administrator"
+  ],
+  "password_link": "https://pwpush.com/p/mkaz0tubhljbtcy2wkq/r"
+}
