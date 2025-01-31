@@ -1,0 +1,9 @@
+wrangle_in_py/__init__.py,sha256=WWgG5MIibMgwj075jf-8jx6GPCGvNZlXoR1HmNy9RiA,115
+wrangle_in_py/column_drop_threshold.py,sha256=0XiGcE4N18Jgwd5mHsWGbEwZGccHxZzl4XLykJ10aDg,3586
+wrangle_in_py/column_name_standardizer.py,sha256=X-inQKPdbbYo0LtT1Z2oTS0amLNw09JPJKMPChFDT0U,5060
+wrangle_in_py/extracting_ymd_hms.py,sha256=q6BoL3kxvKZ4uTBg2TVplU-YmzQXrULPuotgYUlKzBo,4320
+wrangle_in_py/remove_duplicates.py,sha256=m37Ei8uNO3DW6lDyamng7UFfmpmJsruFQhIPeVvg488,1885
+wrangle_in_py-0.0.1.dist-info/LICENSE,sha256=xuI0vN8SUbx81erhoQLzZvPneK5ryNPHl1CflUp9uYo,1123
+wrangle_in_py-0.0.1.dist-info/METADATA,sha256=kPHezF0N4DJsxLOuKrsmXa785MOuCt6v6rcYjMW7j0o,3736
+wrangle_in_py-0.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+wrangle_in_py-0.0.1.dist-info/RECORD,,
