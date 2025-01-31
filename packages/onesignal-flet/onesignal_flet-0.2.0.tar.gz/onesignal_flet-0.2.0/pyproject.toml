@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "onesignal-flet"
+version = "0.2.0"
+description = "Flutter OneSignal package integration for Python Flet."
+authors = ["brunobrown <brunobrown.86@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "onesignal_flet"}]
+
+classifiers = [
+    "Topic :: Software Development :: Debuggers",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Natural Language :: Portuguese (Brazilian)",
+
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.12"
+]
+
+[tool.poetry.urls]
+"GitHub" = "https://github.com/brunobrown/onesignal-flet"
+"Bug Tracker" = "https://github.com/brunobrown/onesignal-flet/issues"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flet = "^0.26.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

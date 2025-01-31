@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: onesignal-flet
+Version: 0.2.0
+Summary: Flutter OneSignal package integration for Python Flet.
+License: MIT
+Author: brunobrown
+Author-email: brunobrown.86@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Debuggers
+Requires-Dist: flet (>=0.26.0,<0.27.0)
+Project-URL: Bug Tracker, https://github.com/brunobrown/onesignal-flet/issues
+Project-URL: GitHub, https://github.com/brunobrown/onesignal-flet
+Description-Content-Type: text/markdown
+
+# Flet OneSignal
+
+---
+
+## Description
+
+Flutter OneSignal package integration for Python Flet
+
+[Flet OneSignal](https://pub.dev/packages?q=flet_onesignal) in the official package repository for Dart and Flutter apps.
+
+---
+
+## Installation
+
+**Using POETRY**
+
+```console
+$ poetry add onesignal-flet
+```
+
+**Using PIP**
+
+```console
+$ pip install onesignal-flet
+```
+
+---
+
+## Example configuration in the `pyproject.toml` file.
+
+[More in ](https://flet.dev/blog/pyproject-toml-support-for-flet-build-command/) Support for flet build command.
+
+```toml
+[tool.poetry]
+name = "example-flet-app"
+version = "0.1.0"
+description = ""
+authors = ["brunobrown <brunobrown.86@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flet = "^0.25.2"
+onesignal_flet = {git = "https://github.com/brunobrown/onesignal-flet.git", rev = "main"}
+
+[tool.flet.flutter.dependencies]
+flet_onesignal = "^0.0.1"
+# OR ABSOLUTE PATH TO FLUTTER/FLET INTEGRATION PACKAGE. EXAMPLE:
+#flet_onesignal.path = "/home/<user>/path/to/package/flet_onesignal"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+```
+
+### Example of in-app usage
+
+```Python
+import flet as ft
+from onesignal_flet.control import OneSignal
+
+ONESIGNAL_APP_ID = ''   # https://onesignal.com     <---
+
+
+def main(page: ft.Page):
+    one_signal = OneSignal(app_id=ONESIGNAL_APP_ID)
+
+    title = ft.Text(
+        value='OneSignal - Test',
+        size=20,
+    )
+
+    message = ft.Text(
+        value='Push notification message here',
+        size=20,
+    )
+
+    container = ft.Container(
+        expand=True,
+        alignment=ft.alignment.center,
+        content=ft.Column(
+            expand=True,
+            alignment=ft.MainAxisAlignment.CENTER,
+            controls=[
+                title,
+                ft.Container(
+                    width=page.width * 0.3,
+                    content=ft.Divider(color=ft.Colors.BLACK),
+                ),
+                message
+            ]
+        )
+    )
+
+    page.add(
+        one_signal,
+        container
+    )
+
+
+if __name__ == "__main__":
+    ft.app(target=main)
+
+```
+
