@@ -1,0 +1,70 @@
+[project]
+name = "mutenix"
+version = "0.5.1"
+authors = [
+    { name = "Matthias Bilger", email = "matthias@bilger.info" }
+]
+description = "Mutenix host software for the Mutenix macropad"
+readme = "README.md"
+requires-python = ">=3.12"
+license="MIT"
+
+include = [
+    "templates/**",
+    "static/**",
+    "assets/**",
+    "README.md",
+    "LICENSE"
+]
+dependencies = [
+     "hidapi>=0.14.0.post4",
+     "websockets>=14.1",
+     "pydantic>=2.10.4",
+     "requests>=2.32.3",
+     "aiohttp>=3.11.11",
+     "pywin32; platform_system=='Windows'",
+     "pywinauto; platform_system=='Windows'",
+     "tqdm>=4.67.1",
+     "semver>=3.0.2",
+     "types-requests>=2.32.0.20241016",
+     "pytest-asyncio>=0.25.0",
+     "aiohttp-jinja2>=1.6",
+     "pystray>=0.19.5",
+     "pyyaml>=6.0.2",
+     "markdown>=3.7",
+     "pynput>=1.7.7",
+     "psutil>=6.1.1",
+     "python-minifier>=2.11.3",
+     "daiquiri>=3.3.0",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: End Users/Desktop",
+  "Topic :: Utilities",
+  "Programming Language :: Python :: 3.12",
+]
+keywords = ["teams", "macroboard", "keyboard", "remote"]
+
+[project.urls]
+Homepage = "https://mutenix.de"
+Documentation = "https://mutenix.de/docs/host"
+Repository = "https://github.com/mutenix-org/software-host"
+Issues = "https://github.com/mutenix-org/software-host/issues"
+
+
+[project.scripts]
+mutenix = "mutenix:runmain"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest-cov>=6.0.0",
+    "pytest-timeout>=2.3.1",
+    "pytest>=8.3.4",
+    "pyinstaller>=6.11.1",
+    "pre-commit>=4.0.1",
+]
