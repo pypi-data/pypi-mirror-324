@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: level1c4pps
+Version: 0.2.36
+Summary: Tools to convert various satellite level-1 data formats to NWCSAF/PPS level-1c format
+Home-page: https://github.com/foua-pps/level1c4pps
+Author: NWCSAF PPS Team et al.
+Author-email: 6160529+ninahakansson@users.noreply.github.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.7
+License-File: LICENSE.txt
+License-File: AUTHORS.md
+
+level1c4pps
+===========
+
+[![Build status](https://github.com/foua-pps/level1c4pps/workflows/CI/badge.svg?branch=master)](https://github.com/foua-pps/level1c4pps/workflows/CI/badge.svg?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/foua-pps/level1c4pps/badge.svg)](https://coveralls.io/github/foua-pps/level1c4pps?branch=master)
+
+
+Tools to generate NWCSAF/PPS level-1C formattet netCDF files from various
+agency specific level-1 formats. So far, supports
+
+ - EUMETSAT Meteosat Second Generation SEVIRI HRIT level-1.5
+ - NOAA AVHRR GAC
+ - MERSI-2/3 level-1
+ - MODIS level-1
+ - AVHRR eps level-1b
+ - AVHRR AAPP level-1b
+ - VIIRS level-1b
+ - SLSTR level-1b
+ - EPS-SG MetImage level-1 test data
+ - EUMETSAT AVHRR GAC FDR
