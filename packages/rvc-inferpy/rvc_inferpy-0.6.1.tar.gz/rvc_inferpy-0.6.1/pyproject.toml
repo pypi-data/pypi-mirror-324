@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rvc_inferpy"  # Name of your package
+version = "0.6.1"     # Package version
+description = "Easy tools for RVC Inference"
+readme = "README.md"  # Optional: Add your README[project]
+license = {text = "MIT"}  # Use this if you are specifying the license directly
+authors = [
+    {name = "TheNeoDev", email = "theneodevemail@gmail.com"}
+]
+dependencies = [
+    "av",                         
+    "ffmpeg-python>=0.2.0",       
+    "faiss-cpu==1.7.3",           
+    "praat-parselmouth==0.4.2",   
+    "pyworld==0.3.4",         
+    "resampy==0.4.2",             
+    "fairseq==0.12.2",            
+    "pydub==0.25.1",              
+    "einops",                     
+    "local_attention",            
+    "torchcrepe==0.0.23",         
+    "torchfcpe",                  
+    "audio-separator[gpu]==0.28.5",   
+    "yt-dlp",                  
+    "gradio==4.44.0",                     
+    "gtts",
+    "edge-tts",
+
+]
+
+[project.scripts]
+rvc-cli = "rvc_inferpy.cli:infer_audio_cli"  # Entry point for CLI
+
+[project.optional-dependencies]
+gpu = ["audio-separator[gpu]"]
+cpu = ["audio-separator[cpu]"]
+
+[tool.poetry.dev-dependencies]
+librosa = ">=0.9.1,<0.11"
