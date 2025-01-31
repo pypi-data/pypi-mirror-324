@@ -1,0 +1,14 @@
+freighter/__init__.py,sha256=J_GmZ90NOp3Qtv_duoSgM6M1Kff6f4CZalejsVRoeNw,1240
+freighter/alamos.py,sha256=Wq9kFEvK7BtdCLGDFVIxIt-rYKmUNLxVeGrHGXZiyCw,2101
+freighter/codec.py,sha256=Nzbk0HEynRwBg1tF4mWQFca6RtFTUQ6uWuSqbJr-tOo,2542
+freighter/context.py,sha256=68G2fvJyFWtOzDvx8i8LSYOBnqSEC-oEXwmrQnucPSc,1521
+freighter/exceptions.py,sha256=jNFZTAn0Xhy6bSfz7c6vf4kSD15druefSEII0d913Ao,4653
+freighter/http.py,sha256=fgqHoVLnjt6JsxsGc9wmSVbgT6VX-GZnRZXF0qkC5Tg,4011
+freighter/stream.py,sha256=ZR9OdnHeAK0at2QIUoHVggOstnTqZ5SoBSyuHMugQvY,7144
+freighter/transport.py,sha256=5fQLUXNtnTr1S6jL-4HJ0DfbrAUayoAqMx4eBiguwR8,4653
+freighter/unary.py,sha256=a8BUHLPPecSt_nteOv_oFdUqIPBz74ODAeCKYFB31Uw,2323
+freighter/url.py,sha256=0VHkvMnAY6zZKtZDayqkeh35CUeuG0klDo-UsP0OFc4,2515
+freighter/websocket.py,sha256=UPx2BOw1dMxxAI6l4K5egQc1pih8f9hkALaedi3GR5E,10854
+synnax_freighter-0.38.0.dist-info/METADATA,sha256=lys23gF8_2hXTMFyREKNysQNVaGKv6l7shismhb2IV0,564
+synnax_freighter-0.38.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+synnax_freighter-0.38.0.dist-info/RECORD,,
