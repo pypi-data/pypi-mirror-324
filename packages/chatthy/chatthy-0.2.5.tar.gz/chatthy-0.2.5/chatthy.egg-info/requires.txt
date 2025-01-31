@@ -1,0 +1,17 @@
+clipman
+flatlatex
+hy
+hyjinx[zmq]
+hyrule
+pansi==2020.7.3
+platformdirs
+prompt_toolkit
+pygments
+tabulated[widechars]
+tiktoken
+toolz
+
+[server]
+hyjinx[dev]
+trag
+fvdb
