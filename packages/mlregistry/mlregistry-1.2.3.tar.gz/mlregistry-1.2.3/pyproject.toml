@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "mlregistry"
+version = "1.2.3"
+description = "A simple package to track python objects."
+authors = ["mr-mapache <eric.m.cardozo@mi.unc.edu.ar>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/mr-mapache/ml-registry"
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.tests.dependencies]
+pytest = "^8.3.3"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.1"
+mkdocstrings = {extras = ["python"], version = "^0.27.0"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
