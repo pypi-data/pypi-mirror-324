@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-gdrive-cli"
+authors = [
+    {name="Tung Duong", email="duongthanhtungvn01@gmail.com"},
+]
+description = "CLI tool to manage and interact with Google Drive Client API"
+readme = "README.md"
+urls = { homepage = "https://github.com/dttvn0010/gdrive-cli" }
+requires-python = ">=3.8"
+license = {text = "Apache"}
+dependencies=[
+    "google-api-python-client", 
+    "google-auth-httplib2",  
+    "google-auth-oauthlib"
+]
+dynamic = ["version"]
+
+[project.scripts]
+gdrive = "gdrive_client:main"
