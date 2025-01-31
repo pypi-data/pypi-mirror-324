@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: moretype
+Version: 0.1.1
+Summary: A small package about some more types
+Home-page: https://gitee.com/Jules-zhou/moretype
+Author: Jules
+Author-email: kwsxjules@163.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Moretype(python module)
+
+Moretype is a python module about some more types.
+
+install:
+```bash
+pip install moretype
+```
+import:
+```python
+from moretype import *
+```
