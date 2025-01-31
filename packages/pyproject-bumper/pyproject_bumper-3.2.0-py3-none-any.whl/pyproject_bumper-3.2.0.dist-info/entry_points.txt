@@ -1,0 +1,2 @@
+[console_scripts]
+pyproject-bumper = pyproject_bumper.cli:main
