@@ -1,0 +1,9 @@
+dagster>=1.8.0
+teradatasql
+
+[aws]
+boto3
+dagster-aws
+
+[azure]
+dagster-azure
