@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+farm_ng/package/__init__.py
+farm_ng/package/commands.py
+farm_ng/package/package.py
+farm_ng_package.egg-info/PKG-INFO
+farm_ng_package.egg-info/SOURCES.txt
+farm_ng_package.egg-info/dependency_links.txt
+farm_ng_package.egg-info/requires.txt
+farm_ng_package.egg-info/top_level.txt
