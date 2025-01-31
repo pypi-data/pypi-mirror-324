@@ -1,0 +1,147 @@
+Metadata-Version: 2.2
+Name: ecomm_base
+Version: 1.1.4
+Summary: This package contains base code for all services e.g. Query DTO and Model Enums
+Author: Novacept
+Author-email: mahesh.chavan@novacept.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+# QueryDTO and Related Classes
+
+This repository contains a Python implementation of classes used for querying and filtering data models with the help of the Pydantic library. These classes aim to provide a standardized way to build flexible and reusable query objects, with support for sorting, filtering, pagination, and field population.
+
+---
+
+## Table of Contents
+- [Features](#features)
+- [Classes](#classes)
+  - [Model Enum](#model-enum)
+  - [Sort Class](#sort-class)
+  - [Filter Class](#filter-class)
+  - [Populate Class](#populate-class)
+  - [Pagination Class](#pagination-class)
+  - [QueryDTO Class](#querydto-class)
+- [Usage](#usage)
+- [Installation](#installation)
+- [License](#license)
+
+---
+
+## Features
+- **Model Identification**: Enumerate specific models using the `Model` enum class.
+- **Sorting**: Specify fields and order (ascending/descending).
+- **Filtering**: Create flexible queries using operators, fields, and values.
+- **Population**: Specify which fields to include in the query.
+- **Pagination**: Limit results by defining page numbers and sizes.
+- **Logical Operations**: Define whether filters use `AND` or `OR` operations.
+
+---
+
+## Classes
+
+### Model Enum
+The `Model` Enum class defines constants for different models or entities.
+```python
+class Model(Enum):
+    blog = 1
+    appliance = 2
+    brand = 3
+    product = 4
+    faq = 5
+    contact = 6
+    advice_article = 7
+```
+
+### Sort Class
+Defines sorting parameters for a query.
+```python
+class Sort(BaseModel):
+    field: str  # Field to sort by
+    order: str  # Order ('asc' for ascending, 'desc' for descending)
+```
+
+### Filter Class
+Defines filters to be applied to a query.
+```python
+class Filter(BaseModel):
+    operator: str  # Logical operator (e.g., 'eq', 'eqi', 'contains', 'notNull', 'and','or')
+    field: str     # Field to filter by
+    value: str     # Value to compare the field with
+```
+
+### Populate Class
+Specifies fields to include in the query response.
+```python
+class Populate(BaseModel):
+    field: str  # Field name to populate
+```
+
+### Pagination Class
+Defines pagination parameters for a query.
+```python
+class Pagination(BaseModel):
+    page: int      # Current page number
+    pagesize: int  # Number of records per page
+```
+
+### QueryDTO Class
+The main Data Transfer Object (DTO) class for constructing queries. It includes options for model identification, filters, sorting, pagination, and field population.
+```python
+class QueryDTO(BaseModel):
+    model: Optional[int] = None  # Entity or module name (from the Model enum)
+    id: Optional[int] = None  # -1 for list, >0 for specific record ID
+    slug: Optional[str] = None  # Slug URLs
+    sorts: Optional[List[Sort]] = None  # List of sorting parameters
+    filters: Optional[List[Filter]] = None  # List of filters
+    union_filter_operator: Optional[str] = "and"  # Logical operator ('and', 'or')
+    populate: Optional[List[Populate]] = None  # Fields to include
+    pagination: Optional[Pagination] = None  # Pagination details
+```
+
+---
+
+## Usage
+To use these classes, import them into your project and instantiate them as needed. For example:
+
+```python
+from your_module import QueryDTO, Sort, Filter, Populate, Pagination
+
+# Example query
+query = QueryDTO(
+    model=1,  # Refers to 'blog'
+    id=-1,  # Fetch a list
+    sorts=[Sort(field="created_at", order="desc")],
+    filters=[
+        Filter(operator="=", field="status", value="published"),
+        Filter(operator=">=", field="created_at", value="2023-01-01")
+    ],
+    union_filter_operator="and",
+    populate=[Populate(field="author")],
+    pagination=Pagination(page=1, pagesize=10)
+)
+```
+
+---
+
+## Installation
+1. Clone the repository.
+2. Ensure you have Python 3.7 or later installed.
+3. Install Pydantic:
+   ```bash
+   pip install pydantic
+   ```
+
+---
+
+## License
+This project is licensed under the MIT License. Feel free to use and modify it as needed.
+
