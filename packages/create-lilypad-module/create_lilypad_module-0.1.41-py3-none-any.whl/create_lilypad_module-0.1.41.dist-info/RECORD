@@ -1,0 +1,17 @@
+create_lilypad_module/__init__.py,sha256=5cK38AModeKaUHW2vzqPaYL_L1lpkPYens-HsVeQdtE,47
+create_lilypad_module/scaffold.py,sha256=K5dhG13S3kCfWkJo3GkvvW5l4SadMBmaeUbRBqaCZpQ,3858
+create_lilypad_module/templates/.gitignore,sha256=GU59W5nC-ivs7yzxmQShupvch_34i-J5wAKC3I-yx0I,352
+create_lilypad_module/templates/Dockerfile,sha256=_DkjmcT-RMg-RZmecADqV1VTx6gCJXBvK3RWo6Sj_Ts,620
+create_lilypad_module/templates/README.md,sha256=NxL31BvqObIYugx9D34lgrkm0GrmXDSbhqFdecXKTbs,2636
+create_lilypad_module/templates/lilypad_module.json.tmpl,sha256=AJ7kae02TBmvzSnXYzTG0HyBP9o1ADZxvVf1pFnrYKk,972
+create_lilypad_module/templates/requirements.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+create_lilypad_module/templates/config/constants.py,sha256=iFiz_70_F3YSMrLNmfAnRSe8sPV3icXk4rNF3aNOP2E,79
+create_lilypad_module/templates/scripts/docker_build.py,sha256=k2YUikm4UIFEVR-TG8o3z1UqZis8lc2zvbQXmcurLlI,2236
+create_lilypad_module/templates/scripts/download_models.py,sha256=HCXnJU-GsO4BGe1cJMMIJK0tw4V3cqGqKas_Y10GsMc,1291
+create_lilypad_module/templates/scripts/run_module.py,sha256=C843ZHh0TPblc5-fZmEptRZlIorIMA6mllVbbh1hd5E,2111
+create_lilypad_module/templates/src/run_inference.py,sha256=-mLjTjo0LARL1a2DUNx45g49OkMnQsoo1s84SR8Ds48,1735
+create_lilypad_module-0.1.41.dist-info/METADATA,sha256=J_JTaIFa-TQimH3-l1eLqMPSoPMJb8weplW77lrUW9Y,2665
+create_lilypad_module-0.1.41.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+create_lilypad_module-0.1.41.dist-info/entry_points.txt,sha256=UgEzj9lnOFRwlgV6svsTgp9Ly46AY0JDyJDDz1pFthw,69
+create_lilypad_module-0.1.41.dist-info/top_level.txt,sha256=iCT-JhPG3qZdQ3pj_3Nhn0BxzUYPu4Otw2V-evq_l1s,22
+create_lilypad_module-0.1.41.dist-info/RECORD,,
