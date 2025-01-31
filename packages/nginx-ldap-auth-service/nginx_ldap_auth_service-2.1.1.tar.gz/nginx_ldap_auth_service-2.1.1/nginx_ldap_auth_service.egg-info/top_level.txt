@@ -1,0 +1,6 @@
+bin
+build
+dist
+doc
+etc
+nginx_ldap_auth
