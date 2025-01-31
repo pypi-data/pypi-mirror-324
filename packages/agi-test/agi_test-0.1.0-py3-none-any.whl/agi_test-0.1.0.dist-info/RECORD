@@ -1,0 +1,9 @@
+agi/__init__.py,sha256=LD3EedeJAZQ-hQu1XYAWzb792LS8fmF6qMPM1NbL11A,78
+agi/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+agi/api/client.py,sha256=Qp1_BMC_4-PDGqhm8p67mpVEsN2Jg_fFinPp4S9vYPA,3424
+agi/api/consts.py,sha256=3C8fFazsEuvoMlxL-P63bCLcti83EMqURcmMjSK5g4w,35
+agi_test-0.1.0.dist-info/LICENSE,sha256=_DRMjFHPn0WmCkNjkP0bwuFlwWxNW5HTgUQdteI6S8w,1064
+agi_test-0.1.0.dist-info/METADATA,sha256=MCw8jDgz27x-d-U9BecODc5Wfc1h8J3gTuvh8vgGkuE,723
+agi_test-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+agi_test-0.1.0.dist-info/top_level.txt,sha256=SlC6yrkWANLbdN9mCwumNRiz0nbdGczZIGahPxrjxI4,4
+agi_test-0.1.0.dist-info/RECORD,,
