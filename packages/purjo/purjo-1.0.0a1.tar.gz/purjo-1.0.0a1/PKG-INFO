@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: purjo
+Version: 1.0.0a1
+Summary: UV based Robot Framework external service task runner for Operaton
+Author-email: Asko Soukka <asko.soukka@iki.fi>
+License: Apache Software License
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: javaobj-py3>=0.4.4
+Requires-Dist: operaton-tasks
+Requires-Dist: pillow>=11.0.0
+Requires-Dist: robotframework>=7.1.1
+Requires-Dist: typer>=0.15.1
+Requires-Dist: tzlocal>=5.2
+Requires-Dist: uvicorn>=0.32.1
+Description-Content-Type: text/markdown
+
+# pur(jo)
+
+WIP Robot Framework external service task worker for https://operaton.org/
