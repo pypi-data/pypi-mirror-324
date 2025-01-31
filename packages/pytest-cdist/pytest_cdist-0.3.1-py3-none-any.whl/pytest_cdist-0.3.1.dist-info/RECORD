@@ -1,0 +1,9 @@
+pytest_cdist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cdist/check.py,sha256=72uWBMMR5AED7JsBMyq8JTk9IghyFdwraKdwFVdJvxQ,1348
+pytest_cdist/plugin.py,sha256=YpFWVx2sETdp6Wnd0nUQSpD8DEDC3nlq8Va1c8zNL4E,9314
+pytest_cdist/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_cdist-0.3.1.dist-info/METADATA,sha256=QydFUuihio9O57csc39kTVENWD-DTcGKs6xD_ByHBQU,5702
+pytest_cdist-0.3.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_cdist-0.3.1.dist-info/entry_points.txt,sha256=iv6Xa9sgCI-nMIIzah5HhjaVIRKjYUd-w3Nh6MEP_74,110
+pytest_cdist-0.3.1.dist-info/licenses/LICENCE,sha256=8mm1xOtEtE596hxGxWriRZCeEAvJEZTIC1ySvDFn3W4,1073
+pytest_cdist-0.3.1.dist-info/RECORD,,
