@@ -1,0 +1,7 @@
+loguru
+sympy
+matplotlib
+meshio[all]
+numpy
+gmsh
+h5py>=3.12.1
