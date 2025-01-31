@@ -1,0 +1,14 @@
+snowflow/__init__.py,sha256=zjVJ2kmdiFQevD_0gMe8gi4w-JKyB4_9974sxzIGxU4,97
+snowflow/commands.py,sha256=0QlCoLWrYUz660lggvEHZaPaF8cstm3MPzAgk2VOjgc,11773
+snowflow/handler.py,sha256=yM-RwA4NJEZwVw2WCtS1KzWf6dfJG2Noku_5_PEQ1xY,3115
+snowflow/runner.py,sha256=Av3um3Q9UKlW1JVoFHBGiTui3sjrPGH4Bq82_8hsiW0,9559
+snowflow/scripts.py,sha256=AOVoEM5zLcLLBtikPVDRIp2GbgtUWpVyK4bxN3ZCQBk,22744
+snowflow/sf_task_template.sql,sha256=ZFyadxCQEPKLsfkZmLTvTt7DYYdEnUUnkN37nEswQpQ,258
+snowflow/sql_procedure_template.sql,sha256=RTkqm0Kiy4iEOgNjAch7OZ2-cL8RKMUnyc0AoEgLNxs,115
+snowflow/user_task_template.sql,sha256=WOkFcaJNovx-rY5AzmAWnxzAMuO3O9OmSTJobejC2U8,214
+snowflow-0.0.8.dist-info/LICENSE,sha256=S1pyeLeyW8XSp2To86hT3Xm01rsywhyTP23s3oBAAuQ,1526
+snowflow-0.0.8.dist-info/METADATA,sha256=e1mmtcOQGl89U0hk9s9UupwYmWfIkRCH_HHv-lztTWA,14927
+snowflow-0.0.8.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+snowflow-0.0.8.dist-info/entry_points.txt,sha256=PdUmrVkWcDR2KI-6GFQJhbjWs5Ma4DF18TTxILQIKlA,51
+snowflow-0.0.8.dist-info/top_level.txt,sha256=mnoWD6FSLteJDt3FKkZze_ZxPooLelR7OTDpZsTuupY,9
+snowflow-0.0.8.dist-info/RECORD,,
