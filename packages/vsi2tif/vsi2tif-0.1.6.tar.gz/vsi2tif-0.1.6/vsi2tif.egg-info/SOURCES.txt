@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+vsi2tif/__init__.py
+vsi2tif/vsi2tif.py
+vsi2tif.egg-info/PKG-INFO
+vsi2tif.egg-info/SOURCES.txt
+vsi2tif.egg-info/dependency_links.txt
+vsi2tif.egg-info/entry_points.txt
+vsi2tif.egg-info/requires.txt
+vsi2tif.egg-info/top_level.txt
+vsi2tif/src/__init__.py
+vsi2tif/src/benchmark.py
+vsi2tif/src/convert.py
+vsi2tif/src/process.py
+vsi2tif/src/utils.py
