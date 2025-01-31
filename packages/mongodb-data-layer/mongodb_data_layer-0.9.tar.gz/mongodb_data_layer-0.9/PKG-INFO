@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: mongodb-data-layer
+Version: 0.9
+Summary: A data layer for mongodb
+Requires-Dist: pymongo
+Requires-Dist: python-dotenv
+Dynamic: requires-dist
+Dynamic: summary
