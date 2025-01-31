@@ -1,0 +1,3 @@
+[console_scripts]
+liquidsig=liquidsig.__main__:main
+
