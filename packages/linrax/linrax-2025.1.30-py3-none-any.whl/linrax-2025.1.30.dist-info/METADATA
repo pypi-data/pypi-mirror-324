@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: linrax
+Version: 2025.1.30
+Summary: A JAX-compatible, simplex method-based linear program solver
+Project-URL: Repository, https://github.com/gtfactslab/linrax.git
+Requires-Python: >=3.11
+Requires-Dist: jax
+Description-Content-Type: text/markdown
+
+# linrax
+JAX-compatible, simplex method-based linear program solver
