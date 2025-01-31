@@ -1,0 +1,50 @@
+[build-system]
+requires = [
+    "setuptools>=43.0.0",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "splg"
+description = "Stop Poison Law Genocide"
+version = "10"
+authors = [
+    {name = "Bart Thate", email = "bthate@dds.nl"},
+]
+readme = "README.rst"
+license = {text="Public Domain"}
+classifiers = [ 
+    'Development Status :: 3 - Alpha',
+    'License :: Public Domain',
+    'Operating System :: Unix',
+    'Programming Language :: Python',
+    'Topic :: Utilities'
+]
+
+
+[project.urls]
+"home" = "https://pypi.org/project/splg"
+"bugs" = "https://github.com/bthate/splg/issues"
+"source" = "https://github.com/bthate/splg"
+
+
+[tool.setuptools]
+script-files = [
+    'bin/splg',
+]
+packages = [
+    'splg',
+    'splg.html',
+    'splg.html._static',
+    'splg.html._images',
+    'splg.modules'
+]
+include-package-data = true
+
+
+[tool.setuptools.package-data]
+"splg.html"         = ["*"]
+"splg.html._images" = ["*"]
+"splg.html._static" = ["*"]
