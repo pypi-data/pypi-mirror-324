@@ -1,0 +1,112 @@
+Metadata-Version: 2.2
+Name: medvae
+Version: 0.0.1
+Summary: Med-VAE is a family of six medical image autoencoders that can compress high-dimension images into latent representation.
+Author: Stanford Machine Intelligence for Medical Imaging (MIMI)
+Author-email: Maya Varma <mayavarma@cs.stanford.edu>, Ashwin Kumar <akkumar@stanford.edu>, Rogier van der Sluijs <sluijs@stanford.edu>
+License: MIT License
+        
+        Copyright (c) 2025 Stanford MIMI Lab
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Project-URL: homepage, https://github.com/StanfordMIMI/MedVAE
+Project-URL: repository, https://github.com/StanfordMIMI/MedVAE
+Keywords: deep learning,image compression,compression,efficiency,computer aided diagnosis,medical image analysis,autoencoders,representation learning,Med-VAE,medvae
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch>=2.4.1
+Requires-Dist: accelerate>=0.34.2
+Requires-Dist: wandb==0.14.0
+Requires-Dist: tqdm
+Requires-Dist: dicom2nifti
+Requires-Dist: scipy
+Requires-Dist: batchgenerators>=0.25
+Requires-Dist: numpy>=1.24
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-image>=0.19.3
+Requires-Dist: SimpleITK>=2.4.0
+Requires-Dist: omegaconf>=2.3.0
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: nibabel
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: imagecodecs
+Requires-Dist: yacs
+Requires-Dist: batchgeneratorsv2>=0.2
+Requires-Dist: einops>=0.8.0
+Requires-Dist: monai>=1.3.2
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: pre-commit; extra == "dev"
+
+# MedVAE: Efficient Automated Interpretation of Medical Images with Large-Scale Generalizable Autoencoders
+[![License](https://img.shields.io/github/license/stanfordmimi/medvae?style=for-the-badge)](LICENSE)
+
+This repository contains the official PyTorch implementation for MedVAE: Efficient Automated Interpretation of Medical Images with Large-Scale Generalizable Autoencoders.
+
+[[🤗 Hugging Face](https://huggingface.co/ashwinkumargb/MedVAE)]
+
+![Overview](assets/overview.png "")
+
+## 🫁 What is MedVAE?
+
+MedVAE is a family of six large-scale, generalizable 2D and 3D variational autoencoders (VAEs) designed for medical imaging. It is trained on over one million medical images across multiple anatomical regions and modalities. MedVAE autoencoders encode medical images as downsized latent representations and decode latent representations back to high-resolution images. Across diverse tasks obtained from 20 medical image datasets, we demonstrate that utilizing MedVAE latent representations in place of high-resolution images when training downstream models can lead to efficiency benefits (up to 70x improvement in throughput) while simultaneously preserving clinically-relevant features.
+
+## ⚡️ Installation
+Use the following commands to clone and install this repository.
+```python
+git clone https://github.com/StanfordMIMI/MedVAE.git
+cd medvae
+pip install -e .
+```
+
+## 🚀 Usage Instruction
+
+We allow for easy-to-use CLI inference tool for compressing your high-dimensional medical images into usable latents:
+
+```python
+medvae_inference -i INPUT_FOLDER -o OUTPUT_FOLDER -model_name MED_VAE_MODEL -modality MODALITY
+```
+
+## 📎 Citation
+If you find this repository useful for your work, please cite the cite the original paper:
+
+```bibtex
+@article{varma2025medvae,
+  title = {MedVAE: Efficient Automated Interpretation of Medical Images with Large-Scale Generalizable Autoencoders},
+  author = {Maya Varma, Ashwin Kumar, Rogier van der Sluijs, Sophie Ostmeier, Louis Blankemeier, Pierre Chambon, Christian Bluethgen, Jip Prince, Curtis Langlotz, Akshay Chaudhari},
+  year = {2025},
+  publisher = {Github},
+  journal = {Github},
+  howpublished = {https://github.com/StanfordMIMI/MedVAE}
+}
+```
+
+This repository is powered by [Hydra](https://github.com/facebookresearch/hydra) and [HuggingFace Accelerate](https://github.com/huggingface/accelerate). Our implementation of MedVAE is inspired by prior work on diffusion models from [CompVis](https://github.com/CompVis/latent-diffusion) and [Stability AI](https://github.com/Stability-AI/stablediffusion).
