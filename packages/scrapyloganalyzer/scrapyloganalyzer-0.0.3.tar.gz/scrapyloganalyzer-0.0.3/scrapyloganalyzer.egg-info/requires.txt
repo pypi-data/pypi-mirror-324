@@ -1,0 +1,5 @@
+logparser
+
+[test]
+coverage
+pytest
