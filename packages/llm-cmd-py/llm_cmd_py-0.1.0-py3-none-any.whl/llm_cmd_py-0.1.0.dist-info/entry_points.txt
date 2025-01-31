@@ -1,0 +1,3 @@
+[console_scripts]
+llm-cmd-py=llm_cmd_py.cli:main
+

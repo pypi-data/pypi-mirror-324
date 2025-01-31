@@ -1,0 +1,8 @@
+llm_cmd_py/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+llm_cmd_py/cli.py,sha256=dbU0VRPtWEbB4gJAS7bGT_Z75CYfLPxCy85ExrJtN8M,2020
+llm_cmd_py/executor.py,sha256=R1hj_xhjS-6OuJJaQUVpWBpTuhcx9eyjk200xadXyvc,607
+llm_cmd_py/llm.py,sha256=gVE5LnyGtzfKKVtcPoB2u26Kk84rkmNMLDUCZQpp9SQ,2363
+llm_cmd_py-0.1.0.dist-info/METADATA,sha256=EOSAwcsAgaZGVtZP9fDTi5V-4VW0i3q5egb48i-r5Tc,1863
+llm_cmd_py-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+llm_cmd_py-0.1.0.dist-info/entry_points.txt,sha256=WbsrE0v8ICPU16XJv_0vJKVUPLnRh-5y4zrBBXeXecE,50
+llm_cmd_py-0.1.0.dist-info/RECORD,,
