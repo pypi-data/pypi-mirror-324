@@ -1,0 +1,180 @@
+Metadata-Version: 2.3
+Name: galadriel
+Version: 0.0.3
+Summary: 
+Author: Kaspar Peterson
+Author-email: kaspar@galadriel.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: dev
+Requires-Dist: aiofiles (>=22.0.0,<23.0.0)
+Requires-Dist: aiohttp (>=3.10.5,<4.0.0)
+Requires-Dist: black (>=24.8.0,<25.0.0) ; extra == "dev"
+Requires-Dist: boto3 (>=1.35.0,<2.0.0)
+Requires-Dist: build (>=1.2.2,<2.0.0) ; extra == "dev"
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: composio-langchain (>=0.6.19,<0.7.0)
+Requires-Dist: discord.py (>=2.4.0,<3.0.0)
+Requires-Dist: langchain-community (>=0.3.16,<0.4.0)
+Requires-Dist: litellm (>=1.58.2,<2.0.0) ; extra == "dev"
+Requires-Dist: mypy (>=1.11.2,<2.0.0) ; extra == "dev"
+Requires-Dist: openai (>=1.55.3,<2.0.0)
+Requires-Dist: pyTelegramBotAPI (>=4.26.0,<5.0.0)
+Requires-Dist: pylint (>=3.2.7,<4.0.0) ; extra == "dev"
+Requires-Dist: pynacl (>=1.5.0,<2.0.0)
+Requires-Dist: pytest (>=8.3.2,<9.0.0) ; extra == "dev"
+Requires-Dist: pytest-asyncio (==0.24.0) ; extra == "dev"
+Requires-Dist: pytest-cov (>=5.0.0,<6.0.0)
+Requires-Dist: pytest-mock (>=3.14.0,<4.0.0) ; extra == "dev"
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: python-json-logger (>=2.0.7,<3.0.0)
+Requires-Dist: requests (==2.32.3)
+Requires-Dist: requests-oauthlib (>=2.0.0,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Requires-Dist: smolagents (>=1.6.0,<2.0.0)
+Requires-Dist: twine (>=5.1.1,<6.0.0) ; extra == "dev"
+Requires-Dist: types-aiofiles (>=24.1.0.20241221,<25.0.0.0)
+Requires-Dist: types-requests (>=2.32.0.20241016,<3.0.0.0) ; extra == "dev"
+Description-Content-Type: text/markdown
+
+# Galadriel Agent
+
+## Setup
+```shell
+pip install galadriel
+galadriel agent init
+```
+
+## Run your agent
+```shell
+cd {your_agent_name}
+python main.py
+```
+
+# Galadriel Agent CLI
+
+Command-line interface for creating, building, and managing Galadriel agents.
+
+## Commands
+
+### Initialize a New Agent
+Create a new agent project with all necessary files and structure.
+```
+galadriel agent init
+```
+This will prompt you for:
+- Agent name
+- Docker username (can set up with random values to start off with)
+- Docker password (can set up with random values to start off with)
+- Galadriel API key
+
+The command creates:
+- Basic agent structure
+- Docker configuration
+- Environment files
+- Required Python files
+
+### Build Agent
+Build the Docker image for your agent.
+```
+galadriel agent build [--image-name NAME]
+```
+Options:
+- `--image-name`: Name for the Docker image (default: "agent")
+
+### Publish Agent
+Push the agent's Docker image to Docker Hub.
+```
+galadriel agent publish [--image-name NAME]
+```
+Options:
+- `--image-name`: Name for the Docker image (default: "agent")
+
+### Deploy Agent
+Deploy the agent to the Galadriel platform.
+```
+galadriel agent deploy [--image-name NAME]
+```
+Options:
+- `--image-name`: Name for the Docker image (default: "agent")
+
+### Update Agent
+Update an existing agent on the Galadriel platform.
+```
+galadriel agent update [--image-name NAME] [--agent-id AGENT_ID]
+```
+Options:
+- `--image-name`: Name for the Docker image (default: "agent")
+- `--agent-id`: ID of the agent to update
+
+### Get Agent State
+Retrieve the current state of a deployed agent.
+```
+galadriel agent state --agent-id AGENT_ID
+```
+Required:
+- `--agent-id`: ID of the deployed agent
+
+### List All Agents
+Get information about all deployed agents.
+```
+galadriel agent states
+```
+
+### Destroy Agent
+Remove a deployed agent from the Galadriel platform.
+```
+galadriel agent destroy AGENT_ID
+```
+Required:
+- `AGENT_ID`: ID of the agent to destroy
+
+## Configuration Files
+
+### .env
+Required environment variables for deployment:
+```
+DOCKER_USERNAME=your_username
+DOCKER_PASSWORD=your_password
+GALADRIEL_API_KEY=your_api_key
+```
+
+### .agents.env
+Environment variables for the agent runtime (do not include deployment credentials):
+```
+# Example
+OPENAI_API_KEY=your_key
+DATABASE_URL=your_url
+```
+
+## Examples
+
+Create and deploy a new agent:
+```
+# Initialize new agent
+galadriel init
+
+# Build and deploy
+galadriel deploy --image-name my-agent
+
+# Check agent status
+galadriel state --agent-id your-agent-id
+```
+
+## Error Handling
+
+- All commands will display detailed error messages if something goes wrong
+- Check your `.env` and `.agents.env` files if you encounter authentication issues
+- Ensure Docker is running before using build/publish commands
+- Verify your Galadriel API key is valid for deployment operations
+
+## Notes
+
+- Make sure Docker is installed and running for build/publish operations
+- Ensure you have necessary permissions on Docker Hub
+- Keep your API keys and credentials secure
+- Don't include sensitive credentials in `.agents.env`
