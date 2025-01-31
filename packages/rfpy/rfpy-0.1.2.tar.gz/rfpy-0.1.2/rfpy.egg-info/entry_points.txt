@@ -1,0 +1,8 @@
+[console_scripts]
+rfpy_calc = rfpy.scripts.rfpy_calc:main
+rfpy_ccp = rfpy.scripts.rfpy_ccp:main
+rfpy_harmonics = rfpy.scripts.rfpy_harmonics:main
+rfpy_hk = rfpy.scripts.rfpy_hk:main
+rfpy_plot = rfpy.scripts.rfpy_plot:main
+rfpy_recalc = rfpy.scripts.rfpy_recalc:main
+

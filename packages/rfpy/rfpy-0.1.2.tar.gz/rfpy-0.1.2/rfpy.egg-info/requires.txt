@@ -1,0 +1,3 @@
+numpy
+obspy
+stdb>=0.2.0
