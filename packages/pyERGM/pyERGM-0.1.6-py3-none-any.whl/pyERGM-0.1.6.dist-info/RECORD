@@ -1,0 +1,15 @@
+pyERGM/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyERGM/datasets.py,sha256=jWgHhKSdxnnAyqfnZizk_CWQnPP9aLHJQ4PVFQTzUUc,1146
+pyERGM/ergm.py,sha256=hbU8XCG3PbC2NJCnTGymqCCuMIQiZDuBHI5En6lougA,46807
+pyERGM/metrics.py,sha256=cpUSwYe5gZlvif2GAgLayGZqaFvU-krc3phr6zs-RQ0,75224
+pyERGM/sampling.py,sha256=94mRljSfwfw2pJkL7_PiCgXoTTvc_Ps7aGZyMNEDbv0,13496
+pyERGM/utils.py,sha256=wAblNdJzWnOsnkhfMAkYK0jUxMkqxYjtzntZEsgLWFo,50382
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ergm.py,sha256=rJ13P0L5Y6XccurV_miuXYxwqHiAmsdAaWLSE84IMYw,21929
+tests/test_metrics.py,sha256=vI3QDHBi_-Fz-vfLRUN77SaW8CZjpBbALjBbhY39iBY,50604
+tests/test_sampling.py,sha256=dcszmRavVPs4m8rJKTcg1FDiANC5fRsyWBpbfQrpW9s,6704
+tests/test_utils.py,sha256=_dtxIsKcmjRSJ--13RXM2_WOp66LsWSEsfhO-SvdRpw,16955
+pyERGM-0.1.6.dist-info/METADATA,sha256=4d4uBL0mgF9Hqn4gjVEr4CGtzLPw8Kxdcb2v19d1m8s,2396
+pyERGM-0.1.6.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pyERGM-0.1.6.dist-info/top_level.txt,sha256=jPx1LMd_DQlAEb0vvIZGAqgG1epoHHKEOiN88T8d2SA,13
+pyERGM-0.1.6.dist-info/RECORD,,
