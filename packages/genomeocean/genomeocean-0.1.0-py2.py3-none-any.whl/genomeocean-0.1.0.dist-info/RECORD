@@ -1,0 +1,10 @@
+genomeocean/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+genomeocean/dnautils.py,sha256=4XfaguErjcjBUFTi59ZnqOx-sRYiCC8qO5eiQNs36FM,8975
+genomeocean/generation.py,sha256=Th8Zo6_vdoWWDcuj9locJFLcHCGTEPZhiDjauqr0vE8,6613
+genomeocean/genomescan.py,sha256=xEPznoJQQZHRs4gIFnTT38fJpxl3EVo179j7fPRIlzY,5702
+genomeocean/llm_utils.py,sha256=rBo67YoWkKw6JK06fvR_fPQaezhlB95RALP4CVWN7zs,13563
+genomeocean-0.1.0.dist-info/LICENSE,sha256=hXd9UvOle9a8OKm00VNUbAfpMqIUCQpF5tePSvi8SQY,2477
+genomeocean-0.1.0.dist-info/METADATA,sha256=cA5HWEC5u5X1ZQMZLl35OC0FNOqffIf0ttZ4FAQmDu8,7781
+genomeocean-0.1.0.dist-info/WHEEL,sha256=pxeNX5JdtCe58PUSYP9upmc7jdRPgvT0Gm9kb1SHlVw,109
+genomeocean-0.1.0.dist-info/top_level.txt,sha256=k3kVJHdS4E0JxC7YTWyNj_uzSZRXqN8Co0t-ftRx1mU,12
+genomeocean-0.1.0.dist-info/RECORD,,
