@@ -1,0 +1,5 @@
+__title__ = "xclient"
+__description__ = "Implementation of X/Twitter v1, v2, and GraphQL APIs."
+__version__ = "0.1.0"
+__author__ = "Ben"
+__license__ = "MIT"
