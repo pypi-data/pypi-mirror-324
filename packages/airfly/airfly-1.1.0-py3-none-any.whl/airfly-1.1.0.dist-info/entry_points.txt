@@ -1,0 +1,5 @@
+[console_scripts]
+airfly = airfly.cli.main:main
+
+[gui_scripts]
+
