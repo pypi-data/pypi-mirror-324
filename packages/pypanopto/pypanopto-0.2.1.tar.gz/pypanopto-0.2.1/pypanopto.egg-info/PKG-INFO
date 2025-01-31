@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: pypanopto
+Version: 0.2.1
+Summary: Panopto integration library
+Home-page: https://github.com/ccnmtl/pypanopto
+Author: Susan Dreher
+Author-email: ctl-dev@columbia.edu
+License: GPLv3+
+Platform: any
+License-File: LICENSE
+Requires-Dist: lxml
+Requires-Dist: zeep
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: platform
+Dynamic: requires-dist
+Dynamic: summary
+
+Panopto integration library
