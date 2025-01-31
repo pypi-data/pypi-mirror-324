@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: apphub-configurator
+Version: 0.0.1
+Summary: apphub-configurator
+Project-URL: Documentation, https://github.com/EOEPCA/application-hub-context/config-generator/apphub-configurator/#readme
+Project-URL: Issues, https://github.com/EOEPCA/application-hub-context/issues
+Project-URL: Source, https://github.com/EOEPCA/application-hub-context/config-generator/apphub-configurator
+Project-URL: Examples, https://github.com/EOEPCA/application-hub-context/config-generator/apphub-configurator/examples
+Author-email: Parham Membari <parham.membari@terradue.com>
+License-Expression: Apache-2.0
+License-File: LICENSE.txt
+Keywords: EOEPCA,configuration,kubernetes
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Requires-Dist: pydantic
+Requires-Dist: pyyaml
+Description-Content-Type: text/markdown
+
+# apphub-configurator
+
+[![PyPI - Version](https://img.shields.io/pypi/v/apphub-configurator.svg)](https://pypi.org/project/apphub-configurator)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/apphub-configurator.svg)](https://pypi.org/project/apphub-configurator)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install apphub-configurator
+```
+
+## License
+
+`apphub-configurator` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
