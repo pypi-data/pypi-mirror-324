@@ -1,0 +1,10 @@
+gitbase/__init__.py,sha256=OdfxBc_9UQ3OgT1Q2nKR7ZPFQhIXjuPZU-Q2e5jg6os,221
+gitbase/dataSystem.py,sha256=nUWkeQGXKJZP1yeFnyFgCYtf6z59at89XtUc2xlifT0,11298
+gitbase/example.py,sha256=Sq_NtEZwQxuFy0e1aJWJinGn9UXIOiDyUlgR0ZZ7jew,2667
+gitbase/gitbase.py,sha256=5gIzqRwd8Bx_jyjTmxIX_5BCwNoVLgxSuYTOt7QHGxw,6738
+gitbase/playerDataSystem.py,sha256=4m6uf9CNwBBJizq5HNikZRuHtBzpN5oVa_4wh1QB3vQ,12173
+gitbase-0.4.3.dist-info/LICENSE,sha256=C6DAxnvO5OeArgAi8_wTqKOq-4VbbVE6ABGN5aZD1fE,1092
+gitbase-0.4.3.dist-info/METADATA,sha256=LN9LPmWHyQ-K9z2sYkQDsq6wdYabJsqBcS80CSgC_bU,5007
+gitbase-0.4.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gitbase-0.4.3.dist-info/top_level.txt,sha256=dW8SdIwhApX32q-xIvHGSmCPdpHkWiRURfqJ7qz_dcc,8
+gitbase-0.4.3.dist-info/RECORD,,
