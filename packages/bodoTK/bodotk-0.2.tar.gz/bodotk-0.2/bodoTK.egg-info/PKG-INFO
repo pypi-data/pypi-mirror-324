@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: bodoTK
+Version: 0.2
+Summary: A tokenization library for Bodo language
+Home-page: https://github.com/tsong44/bodoTK
+Author: Sudem S Daimari
+Author-email: ssdaimari44@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# bodoTK
+a bodo library for everything
