@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-loco"
+version = "0.1.0"
+requires-python = ">=3.10"
+description = "A Streamlit application to interact with local LLMs using Ollama APIs."
+authors = [
+    { name="Deepak" }
+]
+dependencies = [
+    "streamlit>=1.41.0"
+]
+
+[project.scripts]
+smart-loco = "smart_loco.cli:main"

@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/smart_loco/app.py
+src/smart_loco/cli.py
+src/smart_loco.egg-info/PKG-INFO
+src/smart_loco.egg-info/SOURCES.txt
+src/smart_loco.egg-info/dependency_links.txt
+src/smart_loco.egg-info/entry_points.txt
+src/smart_loco.egg-info/requires.txt
+src/smart_loco.egg-info/top_level.txt
+src/smart_loco/client/llm.py
+src/smart_loco/components/chat.py

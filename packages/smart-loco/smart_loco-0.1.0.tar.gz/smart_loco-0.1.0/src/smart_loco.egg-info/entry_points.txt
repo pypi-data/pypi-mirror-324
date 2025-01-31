@@ -1,0 +1,2 @@
+[console_scripts]
+smart-loco = smart_loco.cli:main
