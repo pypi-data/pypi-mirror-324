@@ -1,0 +1,12 @@
+ducktools/pytui/__init__.py,sha256=gBu7eStJFe6_Cyo9yZZF3BGTti57x1moDELcnnZXMf4,813
+ducktools/pytui/__main__.py,sha256=0AmPTmPaZ7miKxzCo5Ripzyh1dDqJWP4_6r7CADpfSE,897
+ducktools/pytui/_version.py,sha256=URWgXIqJaDQ27w19rNHMvU4O4gJwybxzqHm6I_DYkPg,54
+ducktools/pytui/commands.py,sha256=XzXOJYhCz0BQh4WLc2cQ_iPWBqGdzg15kTSuoUN0yGI,3167
+ducktools/pytui/ui.py,sha256=VPGrMPcqxDItF0qwszta7YdKMNgxwe9xVX2yvN1hfi4,5224
+ducktools/pytui/util.py,sha256=RVufPR30tlf1zo2NL80Lc6OmPqYDrzqVbIBFSE1FPEA,2413
+ducktools_pytui-0.1.0a3.dist-info/COPYING,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ducktools_pytui-0.1.0a3.dist-info/METADATA,sha256=oUky9rm0seEibON_EWv-FIUObjC55FT3WBx4Ow3HtOk,2504
+ducktools_pytui-0.1.0a3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ducktools_pytui-0.1.0a3.dist-info/entry_points.txt,sha256=I-3KfiS7qydQFdSAm9x1DuUQWrYG52Bzgr4cGWuI9FQ,104
+ducktools_pytui-0.1.0a3.dist-info/top_level.txt,sha256=uSDLtio3ZFqdwcsMJ2O5yhjB4Q3ytbBWbA8rJREganc,10
+ducktools_pytui-0.1.0a3.dist-info/RECORD,,
