@@ -1,0 +1,10 @@
+codesys_bridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codesys_bridge/codesys_bridge_script.py,sha256=LyU8a9UP__ADz2n5feUfem2S4yNVaYLpmqJluDnmm4I,7145
+codesys_bridge/codesys_script_install.py,sha256=5aFIvnED8Q7Ie0Fh8YGm7nSQXEWy1LUzDji-9wgryIE,4176
+codesys_bridge/export.py,sha256=nHgkIr4n0WrHTDUoNJ5gWR2nh5BmfIb8B18_wEVruwc,7906
+codesys_bridge/assets/export_icon.ico,sha256=RxS67pqTy1_AHi1m4LUcm_3ZVrY-ZVY13iscJLyBdTo,3950
+codesys_bridge-0.1.1.dist-info/METADATA,sha256=MlyiFJATQIoaqKB3T5jZDC1OaiNeJGcCigmV2xVKLZk,210
+codesys_bridge-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+codesys_bridge-0.1.1.dist-info/entry_points.txt,sha256=wuK9D6xPXKqyh7pg2RwqFdG1GkmrS9CIw4csSvImlqw,78
+codesys_bridge-0.1.1.dist-info/top_level.txt,sha256=iljwnJl8RhV8qd9P_VySqx-f6padcwFmCu2V2tRqk8s,15
+codesys_bridge-0.1.1.dist-info/RECORD,,
