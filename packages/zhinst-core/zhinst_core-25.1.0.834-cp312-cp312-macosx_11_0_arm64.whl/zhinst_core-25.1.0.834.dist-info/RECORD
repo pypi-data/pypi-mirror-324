@@ -1,0 +1,13 @@
+zhinst/core/__init__.py,sha256=7kcZ-cpfrMCGX9XHt80qoiLREUjiKp4-WQ5YXxpydbQ,177
+zhinst/core/__init__.pyi,sha256=ork942UVgInZYmwzhOKJ9qHmENKAnIxvSt1KzYNGTtU,54834
+zhinst/core/_core.so,sha256=c3Qz9xumGusR6pZ5DPHG3grW2VGIxJOlokYE6U4pUzk,32067312
+zhinst/core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zhinst/core/_tracing/__init__.pyi,sha256=mFZYfRfJ4dIZCuvnfpAV-v4ddbiXl7n-de61znyNBeQ,2431
+zhinst/core/errors/__init__.pyi,sha256=pWrLitRK5FvivD9g3MWGrt2fCSWVtSIRH6LHGS8ZAXE,957
+zhinst/ziPython/__init__.py,sha256=so5c173hrgu5vv7DwMGG7alo8pdQc1hkaHKzu97Cm-M,443
+zhinst/ziPython/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zhinst/ziPython/errors/__init__.py,sha256=-niezFlzHjQGSqTqRF_9oWaJTJMNdSudEZMsLsoskXk,216
+zhinst_core-25.1.0.834.dist-info/METADATA,sha256=zqmxHgCGlueMeaSN3h1M8taDVH8pAjF7o2GzQuUo4PA,2042
+zhinst_core-25.1.0.834.dist-info/WHEEL,sha256=jNCOgKUTIbkPB24lOuwjoXUrhqvn3v6xho45URz0ITE,105
+zhinst_core-25.1.0.834.dist-info/licenses/LICENSE.txt,sha256=F4okYREnc372D8C-9kSiGKV3xLE8lMGnhnB0sJHbX70,1065
+zhinst_core-25.1.0.834.dist-info/RECORD,,
