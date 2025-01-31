@@ -1,0 +1,2 @@
+packaging
+setuptools_scm>=8
