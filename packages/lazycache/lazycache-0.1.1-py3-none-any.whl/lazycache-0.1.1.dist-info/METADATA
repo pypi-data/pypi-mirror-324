@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: lazycache
+Version: 0.1.1
+Summary: A simple function decorator that caches the result of the function to files.
+Author: simen
+Author-email: simeneide@gmail.com
+Requires-Python: >=3.6
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+
