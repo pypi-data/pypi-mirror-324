@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: checkkit
+Version: 0.3.0
+Summary: A simple library to check if a number is 69
+Home-page: https://github.com/VaibhavMurarka/checkkit
+Author: Vaibhav Murarka
+Author-email: vaibhavmurarka14@gmail.com.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# checkkit
+
+A simple Python library to check if a number is 69.
+
+## Installation
+
+```
+pip install checkkit
+```
+
+## Usage
+
+```python
+from checkkit import is_69
+
+print(is_69(69))  # True
+print(is_69(42))  # False
+```
+

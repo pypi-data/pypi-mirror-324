@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+checkkit/__init__.py
+checkkit/main.py
+checkkit.egg-info/PKG-INFO
+checkkit.egg-info/SOURCES.txt
+checkkit.egg-info/dependency_links.txt
+checkkit.egg-info/top_level.txt
+tests/__init__.py
+tests/main.py
