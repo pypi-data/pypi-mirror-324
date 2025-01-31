@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: py-gdrive-cli
+Version: 0.0.2
+Summary: CLI tool to manage and interact with Google Drive Client API
+Author-email: Tung Duong <duongthanhtungvn01@gmail.com>
+License: Apache
+Project-URL: homepage, https://github.com/dttvn0010/gdrive-cli
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-auth-oauthlib
+
+## Google Drive Client CLI
+
+### Install:  
+    pip install py-gdrive-cli
+
+### Download credentials:  
+  
+Download file "credentials.json" from [GCP Console](https://developers.google.com/drive/api/quickstart/python#authorize_credentials_for_a_desktop_application) and put it at folder "~/.gdrive"  
+
+
+### Usage:  
+
+```
+    gdrive ls gd://
+    gdrive ls gd://<remote_dir>
+    gdrive cp gd://<remote_dir>/<remote_file> <local_path>
+    gdrive cp -r gd://<remote_dir> <local_path>
+    gdrive cp <local_path> gd://<remote_dir>/
+    gdrive cp -r <local_path> gd://<remote_dir>/
+    gdrive rm <remote_file>
+```
+
+### Github:  
+https://github.com/dttvn0010/gdrive-cli

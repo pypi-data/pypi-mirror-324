@@ -1,0 +1,9 @@
+README.md
+gdrive_client.py
+pyproject.toml
+py_gdrive_cli.egg-info/PKG-INFO
+py_gdrive_cli.egg-info/SOURCES.txt
+py_gdrive_cli.egg-info/dependency_links.txt
+py_gdrive_cli.egg-info/entry_points.txt
+py_gdrive_cli.egg-info/requires.txt
+py_gdrive_cli.egg-info/top_level.txt
