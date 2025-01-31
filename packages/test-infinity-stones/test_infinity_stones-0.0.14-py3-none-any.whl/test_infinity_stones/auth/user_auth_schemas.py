@@ -1,0 +1,18 @@
+from datetime import datetime
+from typing import Any, Optional
+from pydantic import BaseModel
+
+class Identity(BaseModel):
+    id: str
+    state: str
+    state_changed_at: datetime
+    created_at: datetime
+    updated_at: datetime
+
+class UserAuthResponse(BaseModel):
+    id: str
+    active: bool
+    expires_at: datetime
+    authenticated_at: datetime
+    issued_at: datetime
+    identity: Identity
