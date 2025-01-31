@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "valtra"
+version = "0.1.0"
+authors = [{ name = "Marco Sousa-Poza", email = "marco.sousapoza@gmail.com" }]
+description = "A dynamic dataset loader for PyTorch."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = ["torch"]
+
+[project.urls]
+Homepage = "https://github.com/marcosousapoza/valtra"

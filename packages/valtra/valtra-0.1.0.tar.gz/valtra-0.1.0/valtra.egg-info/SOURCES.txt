@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_dataloader.py
+tests/test_utils.py
+valtra/__init__.py
+valtra/dataloader.py
+valtra/utils.py
+valtra.egg-info/PKG-INFO
+valtra.egg-info/SOURCES.txt
+valtra.egg-info/dependency_links.txt
+valtra.egg-info/requires.txt
+valtra.egg-info/top_level.txt
