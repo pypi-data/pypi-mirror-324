@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pymlservice"
+version = "0.1.1"
+description = ""
+authors = ["Bo Chen <bochen0909@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "mlservice" }
+]
+
+[tool.poetry.dependencies]
+python = ">3.10"
+fastapi = "^0.115.7"
+uvicorn = "^0.34.0"
+python-multipart = "^0.0.20"
+pandas = "^2.2.3"
+joblib = "^1.4.2"
+scikit-learn = "^1.6.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+httpx = "^0.28.1"
+pytest-asyncio = "^0.25.3"
+fastapi = "^0.115.7"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
