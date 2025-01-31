@@ -1,0 +1,6 @@
+LICENSE.txt
+setup.py
+durukti.egg-info/PKG-INFO
+durukti.egg-info/SOURCES.txt
+durukti.egg-info/dependency_links.txt
+durukti.egg-info/top_level.txt
