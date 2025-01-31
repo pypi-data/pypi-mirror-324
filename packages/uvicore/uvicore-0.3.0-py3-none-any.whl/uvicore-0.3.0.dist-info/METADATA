@@ -1,0 +1,74 @@
+Metadata-Version: 2.3
+Name: uvicore
+Version: 0.3.0
+Summary: The Fullstack Async Web, API and CLI Python Framework
+License: MIT
+Author: Matthew Reschke
+Author-email: mail@mreschke.com
+Requires-Python: >=3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: database
+Provides-Extra: redis
+Provides-Extra: web
+Requires-Dist: aiofiles (==24.1.0) ; extra == "web"
+Requires-Dist: aiohttp (==3.11.*)
+Requires-Dist: aiomysql (==0.2.*) ; extra == "database"
+Requires-Dist: aioredis (==2.0.*) ; extra == "redis"
+Requires-Dist: aiosqlite (==0.20.*) ; extra == "database"
+Requires-Dist: alembic (==1.14.*) ; extra == "database"
+Requires-Dist: anyio (==4.8.*)
+Requires-Dist: argon2-cffi (==23.1.*)
+Requires-Dist: asyncpg (==0.30.*) ; extra == "database"
+Requires-Dist: colored (==2.2.*)
+Requires-Dist: cryptography (==44.0.*)
+Requires-Dist: environs (==14.1.*)
+Requires-Dist: fastapi (==0.115.7) ; extra == "web"
+Requires-Dist: gunicorn (==23.0.0) ; extra == "web"
+Requires-Dist: httptools (==0.6.4) ; extra == "web"
+Requires-Dist: httpx (==0.26.*)
+Requires-Dist: itsdangerous (==2.2.0) ; extra == "web"
+Requires-Dist: jinja2 (==3.1.5) ; extra == "web"
+Requires-Dist: merge-args (==0.1.*)
+Requires-Dist: prettyprinter (==0.18.*)
+Requires-Dist: pydantic (==1.10.*)
+Requires-Dist: pyjwt (==2.10.1) ; extra == "web"
+Requires-Dist: python-multipart (==0.0.20) ; extra == "web"
+Requires-Dist: requests (==2.32.3) ; extra == "web"
+Requires-Dist: sqlalchemy (==2.0.*) ; extra == "database"
+Requires-Dist: starlette (==0.45.3) ; extra == "web"
+Requires-Dist: uvicorn (==0.34.0) ; extra == "web"
+Requires-Dist: uvloop (==0.21.0) ; extra == "web"
+Description-Content-Type: text/markdown
+
+# Welcome to Uvicore
+
+The Full Stack Asynchronous Python Framework with the performance of FastAPI and the elegance of Laravel!
+
+## About Uvicore
+
+Uvicore is a fullstack async API, Web and CLI python framework.  Uvicore is built on great technologies such as:
+
+- Blazing fast dual routing engine based on FastAPI and Starlette!
+- Await all the things, even your CLI's thanks to AsyncClick!
+- Powerful IoC container! Full control to your app! Override everything!
+- Adapter pattens for multiple backends to caching, auth, events, databases and more.
+- Robust modular and deep-merged config system across uvicore modules.
+- Custom and expressive ORM built on top of SQLAlchemy Core.
+
+Uvicore is the missing fullstack asynchronous framework for elegant and rapid python development
+
+
+## Getting Started
+
+View the Uvicore documentation to get started https://uvicore.io
+
+
+## License
+
+The Uvicore framework is open-sourced software licensed under the [MIT license](https://mreschke.com/license/mit).
+
