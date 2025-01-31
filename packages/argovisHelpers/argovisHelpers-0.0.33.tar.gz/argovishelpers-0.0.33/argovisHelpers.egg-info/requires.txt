@@ -1,0 +1,4 @@
+requests
+area
+shapely==1.8.0
+geopandas
