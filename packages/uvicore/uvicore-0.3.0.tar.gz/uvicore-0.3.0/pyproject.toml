@@ -1,0 +1,68 @@
+[project]
+name = "uvicore"
+version = "0.3.0"
+description = "The Fullstack Async Web, API and CLI Python Framework"
+authors = [
+    {name = "Matthew Reschke",email = "mail@mreschke.com"}
+]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.10"
+
+# Required base dependencies
+dependencies = [
+    "anyio==4.8.*",
+    "colored==2.2.*",
+    "prettyprinter==0.18.*",
+    "environs==14.1.*",
+    "argon2-cffi==23.1.*",
+    "cryptography==44.0.*",
+    "aiohttp==3.11.*",
+    "merge-args==0.1.*",
+
+    # Held back to 1.10 due to massive changes in their interface
+    "pydantic==1.10.*",
+
+    # Held back to 0.26.* due to AsyncClient deprecating app variable
+    # In conftest.py client()
+    #"httpx==0.28.*",
+    "httpx==0.26.*"
+]
+
+# poetry install --extras "database redis web"
+[project.optional-dependencies]
+database = [
+    "sqlalchemy==2.0.*",
+    "alembic==1.14.*",
+    "aiomysql==0.2.*",
+    "aiosqlite==0.20.*",
+    "asyncpg==0.30.*"
+]
+redis = [
+    "aioredis==2.0.*"
+]
+web = [
+    "starlette==0.45.3",
+    "fastapi==0.115.7",
+    "uvicorn==0.34.0",
+    "gunicorn==23.0.0",
+    "aiofiles==24.1.0",
+    "jinja2==3.1.5",
+    "requests==2.32.3",
+    "itsdangerous==2.2.0",
+    "uvloop==0.21.0",
+    "httptools==0.6.4",
+    "python-multipart==0.0.20",
+    "pyjwt==2.10.1"
+]
+
+# poetry install --extras "database redis web --with test"
+[tool.poetry.group.test.dependencies]
+pytest = "8.3.*"
+pytest-cov = "6.0.*"
+pytest-asyncio = "0.25.*"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
