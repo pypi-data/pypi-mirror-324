@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: grpc-wrappers
+Version: 0.2.4
+Project-URL: Homepage, https://github.com/matthewwardrop/python-grpc-wrappers
+Author-email: Matthew Wardrop <mpwardrop@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.7
+Requires-Dist: arrow
+Requires-Dist: grpcio
+Requires-Dist: interface-meta
+Requires-Dist: protobuf
