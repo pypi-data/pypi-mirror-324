@@ -1,0 +1,2 @@
+[console_scripts]
+curc = curc.__main__:console
