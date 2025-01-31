@@ -1,0 +1,11 @@
+clusterlets/__init__.py,sha256=9L1ypyjBwiB-z8qITFeeD9f9RMvbG_JvQ9U766473Q4,4145
+clusterlets/extractors/__init__.py,sha256=FiG9XMsD8ULr1x6QzHcARLLbOH-8VilXmlVJE50BmZo,4157
+clusterlets/extractors/measures.py,sha256=XAla70eq89sPHFPgAq3aCJX1viihSNytCd-Ml4Hr51o,300
+clusterlets/extractors/clusters/__init__.py,sha256=dXOgXBz2dBNi35VgPV2e1GkFrANtRyN0EJo6MI7asLo,4218
+clusterlets/extractors/matches/__init__.py,sha256=ZkGT0PV0xTcg5-f-GjSPtnG2E6VO4nIGeyDkfwAQCCs,1350
+clusterlets/extractors/matches/graph.py,sha256=jbqTZn0CnCyqXcDh1aed_HccT9fKGTFjrW2QbaLoUAo,13819
+clusterlets/extractors/matches/partition.py,sha256=5RYMqaSrageuyKmXdPsqm2lc_L70yIE51AuuwQ-nNbw,7148
+clusterlets-0.0.1.dist-info/METADATA,sha256=BBoL5sC9r4ajX8UUFYZTx-GQdGS84YW6rr1kphFM8I0,4516
+clusterlets-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+clusterlets-0.0.1.dist-info/licenses/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+clusterlets-0.0.1.dist-info/RECORD,,
