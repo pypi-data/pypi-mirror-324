@@ -1,0 +1,5 @@
+setup.py
+amzn_awsgluedmpythonlibs.egg-info/PKG-INFO
+amzn_awsgluedmpythonlibs.egg-info/SOURCES.txt
+amzn_awsgluedmpythonlibs.egg-info/dependency_links.txt
+amzn_awsgluedmpythonlibs.egg-info/top_level.txt
