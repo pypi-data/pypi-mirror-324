@@ -1,0 +1,9 @@
+README.md
+requirements.txt
+setup.cfg
+setup.py
+shdp.egg-info/PKG-INFO
+shdp.egg-info/SOURCES.txt
+shdp.egg-info/dependency_links.txt
+shdp.egg-info/requires.txt
+shdp.egg-info/top_level.txt
