@@ -1,0 +1,12 @@
+sharpedge/__init__.py,sha256=WHcBc_ObI1Jtmpk-ovqbL92SiO-aUhJhD95fut18SF8,417
+sharpedge/_utils/utility.py,sha256=ymjPt9QgGDS1dY5T9eAqecZQ0dNz2IYEtw5Vhxijde4,2658
+sharpedge/frame_image.py,sha256=oFx6OgjDnIE1XBl2kVzPJKROHxSFsfiHxIcCtA-cUOE,5114
+sharpedge/modulate_image.py,sha256=1pdMtFtg0fAXrH2vPZbQQ1r0NbP4phiknNoxBifjnaU,9385
+sharpedge/pca_compression.py,sha256=HrQT6V2dmdFDVTXE-b-Ke4-K_Q0hpY9ir5WcNF4lVLE,2874
+sharpedge/pooling_image.py,sha256=EhkHaD9iDh6NrtGoGgvw3FErA616Uj8Dd-rtaoa90OU,3051
+sharpedge/reposition_image.py,sha256=_Rsjzof-6leztLfiFyl_KbepBf65hNlcQIOoadkMDk0,4085
+sharpedge/seam_carving.py,sha256=7DAGkeGg0UKMwDqLI_52XdWTCHXBlnFjN3gBUQ-zQHY,9545
+sharpedge-1.1.2.dist-info/LICENSE,sha256=jpYL82yWliJgpKk0C6Hx-1Dt_kPDOGZT2azbc8Ora1A,1108
+sharpedge-1.1.2.dist-info/METADATA,sha256=S-Mn5sMS3hrvXpjbbB8LBn_Hhm50n2i4cN8ic1wZ9yY,7279
+sharpedge-1.1.2.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+sharpedge-1.1.2.dist-info/RECORD,,
