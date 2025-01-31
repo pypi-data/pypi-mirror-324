@@ -1,0 +1,2 @@
+[xarray.backends]
+pyzgy_engine = pyzgy.xarray:PyzgyBackendEntrypoint
