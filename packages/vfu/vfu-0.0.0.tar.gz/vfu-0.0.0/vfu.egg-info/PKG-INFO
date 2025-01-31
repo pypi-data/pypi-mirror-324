@@ -1,0 +1,45 @@
+Metadata-Version: 2.2
+Name: vfu
+Version: 0.0.0
+Summary: Unofficial Python Bindings for Vision File Utility
+Home-page: https://github.com/officeofperformancemanagement/vfu
+Download-URL: https://github.com/officeofperformancemanagement/vfu/tarball/download
+Author: Daniel J. Dufour
+Author-email: daniel.j.dufour@gmail.com
+Keywords: acucobol,cobol,data,python,vutil
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: summary
+
+# vfu
+Unofficial Python Bindings for Vision File Utility
+
+## install
+```sh
+pip install vfu
+```
+
+## usage
+```py
+from vfu import vutil32
+
+# create an instance of vutil32
+v = vutil32("/Users/user/vutil32.exe")
+
+src = "/Users/user/Documents/folder/DATA"
+dst = "/Users/user/Documents/folder/DATA.txt"
+v.unload(src, dst)
+# creates a fixed-width text file of the data
+```
