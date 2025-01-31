@@ -1,0 +1,13 @@
+just_semantic_search/article_semantic_splitter.py,sha256=knXUD7rAkTr85WZRlidHVtk3g4KiwKWWamHgCdOTmUM,4639
+just_semantic_search/article_splitter.py,sha256=GSZNo16eOfABJ7VKEuJCe_0MG1O7gPaAB47LOA_MICQ,4446
+just_semantic_search/document.py,sha256=ehe9jjx5_-UewKo2UMdXV21txdAijPhB8wznDxMMjAg,5887
+just_semantic_search/embeddings.py,sha256=x47E-sag-5r4v7sO_niMs1vNMYGJiULWHBje2GAc9l8,4703
+just_semantic_search/paragraph_splitters.py,sha256=GBTosLlwCqs2xkGNhrMHAxSMhdjMIkhlNBuVBq_F2h4,6860
+just_semantic_search/splitter_factory.py,sha256=0m2gf8a5xW5e-mdUclxWJV65JhRXjDFT8Tjcpyhv4n4,2945
+just_semantic_search/text_splitters.py,sha256=r8X5cFVQEydwzhMYQVn5dgyWNuuMhXPnfSWgXzrpmP0,25696
+just_semantic_search/utils/logs.py,sha256=seLxefIKNOpsW7pquSuQIgxHx8mjLCau2ffnV8O_8DE,4113
+just_semantic_search/utils/models.py,sha256=_PamysxGQEVEBVB2r-ml4Vatxv3_-5YuA3UQwQbBXsE,325
+just_semantic_search/utils/tokens.py,sha256=PjZk7gbugiC72qA8nAO21yvNYqWYBbfqpaFerUzEf-o,782
+just_semantic_search-0.0.8.dist-info/METADATA,sha256=vii6dE0RdZuE1yocW3moqrq8vC4VpaGPyVTkeSgejIM,4961
+just_semantic_search-0.0.8.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+just_semantic_search-0.0.8.dist-info/RECORD,,
