@@ -1,0 +1,13 @@
+local_operator/__init__.py,sha256=t8kpWb_uJEQc8ztkQwq0RvUUeomJbwtpsoF50zh_Vac,66
+local_operator/agent.py,sha256=yaseZwDnLACAXBZuUXNIq5wi572XLSmCU5b9yD2GAoM,38674
+local_operator/cli.py,sha256=nNXWYFD4VP511NmyudODiQyPmc4jjsvkmrb2gtR-IRg,5726
+local_operator/config.py,sha256=ALqN7cmAFEa-CGumrI6SeuYzoKKDw2EtET-NFP1MXkA,9068
+local_operator/credentials.py,sha256=tPFrZAUYLBsxNfWge8FQF7Yf_q3i83tR1bNRwLTg-nE,4871
+local_operator/model.py,sha256=r5IC2Y5ZzgOdsCv5s63KafZecp8YGYVjdUoK3ElgYS8,3452
+local_operator/prompts.py,sha256=EmvLSnRVwdbul7BuSCDpofbW-JPcg4_CM9cOEKRqaSM,1416
+local_operator-0.0.29.dist-info/LICENSE,sha256=LOb3oIbc5GUnQghD0djAAhOOGDO4db7PueK3DLaHj5s,1068
+local_operator-0.0.29.dist-info/METADATA,sha256=OrU-r_rIjeYX_iWVc2ZiUjwq-03o370pyN2ErNmsMhk,71192
+local_operator-0.0.29.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+local_operator-0.0.29.dist-info/entry_points.txt,sha256=xZv7oJdnzL_21jyabRJFxStgGrjPam-UnmDww7Q9dlA,59
+local_operator-0.0.29.dist-info/top_level.txt,sha256=CNAhpbm8y8CSHaq3eOv7qXX0Qu28ENBRd97MsCW-KhM,15
+local_operator-0.0.29.dist-info/RECORD,,
