@@ -1,0 +1,9 @@
+escriptorium_collate/__about__.py,sha256=cE7FSKNtrvbqUrS6WBwHiVD7K6I1RwHwb-nlUcvQ9qw,128
+escriptorium_collate/__assets__/collatex-tools-1.7.1.jar,sha256=l_SJcyXRCtAtmBfLv712SEE7oXEaVwpNNxg1kdGAP_k,2051734
+escriptorium_collate/__init__.py,sha256=ynge2ZfwXyfzyzkhuHNb6bmt9ZteB6b2Z_gbwfIO9_c,105
+escriptorium_collate/collate.py,sha256=WLRRk28WYuoGOwXga0b-5i2UGB70Icj2JQHOHyZl7FQ,12714
+escriptorium_collate/transcription_layers.py,sha256=XO9iixmV8hCHWrJcvXnQKBQ5j8my0QrfNUiyLbD4dm0,5404
+escriptorium_collate-0.1.14.dist-info/LICENSE.txt,sha256=zAB9MerlrY5fc7kZP8W9_5eZ2kGQaazFEKF0kHg0Vzc,1097
+escriptorium_collate-0.1.14.dist-info/METADATA,sha256=pZXrJQj4z1Lq6-xESduGqTpMT-ThMJN0tUVXWuhXfEA,11282
+escriptorium_collate-0.1.14.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+escriptorium_collate-0.1.14.dist-info/RECORD,,
