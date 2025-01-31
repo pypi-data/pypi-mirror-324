@@ -1,0 +1,13 @@
+aiohttp==3.9.1
+mipac<0.8.0,>=0.7.0
+versioneer
+
+[ci]
+flake8
+mypy
+
+[dev]
+ruff
+isort
+mypy
+flake8
