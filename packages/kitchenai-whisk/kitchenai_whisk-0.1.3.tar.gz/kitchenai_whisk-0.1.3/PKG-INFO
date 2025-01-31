@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: kitchenai-whisk
+Version: 0.1.3
+Summary: KitchenAI Whisk - Whisk Up Your Bento Box. A tool for running kitchenai apps.
+License-Expression: MIT
+Requires-Python: >=3.11
+Requires-Dist: anyio>=3.7.1
+Requires-Dist: faststream[nats]>=0.4.5
+Requires-Dist: httpx
+Requires-Dist: rich>=13.7.0
+Requires-Dist: typer>=0.9.0
+Requires-Dist: watchfiles
+Description-Content-Type: text/markdown
+
+# KitchenAI Whisk
+
+[![PyPI version](https://badge.fury.io/py/whisk.svg)](https://badge.fury.io/py/whisk)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+
+Whisk is a powerful task management system designed to seamlessly integrate your BentoML services with KitchenAI's ecosystem. Just like a whisk brings ingredients together to create something amazing, this tool helps you orchestrate and manage your machine learning services with ease.
+
+## Features
+
+- Simple CLI interface for managing BentoML services
+- Seamless integration with KitchenAI's infrastructure
+- Built-in NATS messaging support
+- Easy configuration management
+
+## Installation
