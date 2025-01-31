@@ -1,0 +1,16 @@
+gibss/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gibss/additive.py,sha256=dcqIi3hZlEzcP21ut0XSp1qv6-dMhj9Iu85XQMoRkgI,3483
+gibss/conditional_normal_means.py,sha256=i5ZXZsO0t2fV4PevV2CHfAxd_2Iz6r4i3pDz3jm4-UU,3340
+gibss/credible_sets.py,sha256=LNzY2mAQpS9Zhpo3Eym59WsGdqTBb_WCd8SW2NLZjSA,507
+gibss/gd_backtracking.py,sha256=ER-aYEet-5Qw77QnQ9bnJqP6HU4IrtpcYy211ZpAqW4,2120
+gibss/irsl.py,sha256=QeBzdr2Mhg1gA2GKbt9gdjYkgfQo9GMEvaUpoT8AxtM,953
+gibss/logistic.py,sha256=A8USEKuSPWT_Ubau2cGbhBaUcj6AgToFkDqnGkeWaDw,11881
+gibss/logistic2d.py,sha256=ojGGTdcFszDyW6j6ynSQ-a-dGvO3ZdzcXhf0JgVMS-Q,5131
+gibss/logistic_sparse.py,sha256=lf6Z7IoNkQ44wXWrmkjRa4McCL48B6Or2xSzpnyJBv4,8082
+gibss/logisticprofile.py,sha256=yWTTG-hBmsL7tuKwbQd7iy6O788Ip0uRtL2eoHleBaY,16346
+gibss/newton.py,sha256=p9D-CnsyVdiTwuu-qf1uagFZtqzHFqBG3W-pS7bdBw4,4987
+gibss/ser.py,sha256=LTylHZKu-_QCT0FxD-0d92qTWi6Lomjp0kjZw96NQ_g,1079
+gibss/utils.py,sha256=kvNUu3QotBrfdYBdACfkypuxMvGvA9uQtZk3WpHx_-s,2134
+gibss-0.1.0.dist-info/METADATA,sha256=9-15qG8NjAiR_ktS0YHVJJ_n8pfvD1Lswq6_O6Kcih8,1176
+gibss-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+gibss-0.1.0.dist-info/RECORD,,
