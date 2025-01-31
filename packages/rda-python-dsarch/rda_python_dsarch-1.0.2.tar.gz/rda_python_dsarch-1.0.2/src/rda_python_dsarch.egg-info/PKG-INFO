@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: rda_python_dsarch
+Version: 1.0.2
+Summary: RDA Python package for utility program dsarch archive RDA data
+Author-email: Zaihua Ji <zji@ucar.edu>
+Project-URL: Homepage, https://github.com/NCAR/rda-python-dsarch
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+RDA python code template to create new and modify existing RDA python packages.
