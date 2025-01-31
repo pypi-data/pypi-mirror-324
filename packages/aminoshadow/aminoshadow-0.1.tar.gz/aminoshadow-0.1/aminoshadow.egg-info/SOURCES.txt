@@ -1,0 +1,16 @@
+setup.py
+aminoshadow.egg-info/PKG-INFO
+aminoshadow.egg-info/SOURCES.txt
+aminoshadow.egg-info/dependency_links.txt
+aminoshadow.egg-info/top_level.txt
+asyncshadow/__init__.py
+asyncshadow/acm.py
+asyncshadow/client.py
+asyncshadow/socket.py
+asyncshadow/sub_client.py
+lib/__init__.py
+lib/util/__init__.py
+lib/util/exceptions.py
+lib/util/headers.py
+lib/util/helpers.py
+lib/util/objects.py
