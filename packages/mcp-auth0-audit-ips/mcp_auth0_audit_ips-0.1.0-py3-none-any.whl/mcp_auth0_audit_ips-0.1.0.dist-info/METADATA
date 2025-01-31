@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: mcp-auth0-audit-ips
+Version: 0.1.0
+Summary: An MCP server to analyze auth0 suspicious ips
+Project-URL: Homepage, https://github.com/alrocar/mcp-auth0-audit-ips
+Project-URL: Bug Tracker, https://github.com/alrocar/mcp-auth0-audit-ips/issues
+Author-email: alrocar <alrocar@tinybird.co>
+License: MIT
+Keywords: auth0,ip-analysis,mcp,security
+Requires-Python: >=3.11
+Requires-Dist: mcp[cli]>=1.2.1
+Requires-Dist: requests
