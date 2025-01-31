@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/yoas_api_wrapper/__init__.py
+src/yoas_api_wrapper.egg-info/PKG-INFO
+src/yoas_api_wrapper.egg-info/SOURCES.txt
+src/yoas_api_wrapper.egg-info/dependency_links.txt
+src/yoas_api_wrapper.egg-info/requires.txt
+src/yoas_api_wrapper.egg-info/top_level.txt
+src/yoas_api_wrapper/api_versions/__init__.py
+src/yoas_api_wrapper/api_versions/v1/__init__.py
+src/yoas_api_wrapper/api_versions/v1/dataclasses.py
+src/yoas_api_wrapper/api_versions/v1/wrapper.py
+tests/test.py
