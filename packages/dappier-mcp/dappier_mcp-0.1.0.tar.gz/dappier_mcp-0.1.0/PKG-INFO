@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: dappier-mcp
+Version: 0.1.0
+Summary: An MCP server for interacting with Dappier's RAG models
+Author-email: Amaan Mohammed <amaan@ai20labs.com>
+Maintainer-email: Amaan Mohammed <amaan@ai20labs.com>
+Project-URL: homepage, https://github.com/DappierAI/dappier-mcp
+Project-URL: repository, https://github.com/DappierAI/dappier-mcp
+Project-URL: issues, https://github.com/DappierAI/dappier-mcp/issues
+Keywords: http,mcp,llm,automation
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: dappier>=0.3.3
+Requires-Dist: mcp>=1.2.1
+Requires-Dist: pydantic>=2.10.6
+
+# dappier-mcp
