@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: series_intro_recognizer
+Version: 1.0.2
+Summary: Find the intro of episodes of a series
+Author: HRAshton
+Project-URL: Homepage, https://github.com/HRAshton/SeriesIntroRecognizer
+Project-URL: Issues, https://github.com/HRAshton/SeriesIntroRecognizer/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: librosa~=0.10.1
+Requires-Dist: numpy<2.3.0,>=1.26.4
+Requires-Dist: pytest<8.4.0,>=8.1.1
+Requires-Dist: scikit-learn<1.7.0,>=1.4.2
+Requires-Dist: scipy<1.16,>=1.13
+Requires-Dist: setuptools<75.9,>=69.2
+Provides-Extra: dev
+Requires-Dist: soundfile<0.14.0,>=0.12.1; extra == "dev"
