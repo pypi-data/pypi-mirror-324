@@ -1,0 +1,9 @@
+README.md
+setup.py
+Test_Cayetano_Rivera_2025.egg-info/PKG-INFO
+Test_Cayetano_Rivera_2025.egg-info/SOURCES.txt
+Test_Cayetano_Rivera_2025.egg-info/dependency_links.txt
+Test_Cayetano_Rivera_2025.egg-info/top_level.txt
+paquete/__init__.py
+paquete/courses.py
+paquete/utils.py
