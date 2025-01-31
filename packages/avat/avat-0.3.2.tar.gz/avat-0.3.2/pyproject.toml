@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avat"
+version = "0.3.2"
+authors = [
+  { name="lorepieri", email="lorepieri@hotmail.it" },
+]
+description = "AI personas"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "icecream==2.1"
+]
