@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+src/wiggle_sensors/__init__.py
+src/wiggle_sensors/accelerometer.py
+src/wiggle_sensors/environment.py
+src/wiggle_sensors/gate.py
+src/wiggle_sensors/hourly.py
+src/wiggle_sensors/main.py
+src/wiggle_sensors/soil_moisture.py
+src/wiggle_sensors/soil_temperature.py
+src/wiggle_sensors/write.py
+src/wiggle_sensors.egg-info/PKG-INFO
+src/wiggle_sensors.egg-info/SOURCES.txt
+src/wiggle_sensors.egg-info/dependency_links.txt
+src/wiggle_sensors.egg-info/entry_points.txt
+src/wiggle_sensors.egg-info/requires.txt
+src/wiggle_sensors.egg-info/top_level.txt

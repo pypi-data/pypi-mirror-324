@@ -1,0 +1,4 @@
+adafruit-circuitpython-bme680
+adafruit-circuitpython-adxl34x
+adafruit-circuitpython-ads1x15
+gpiozero
