@@ -1,0 +1,109 @@
+Metadata-Version: 2.3
+Name: QuantriX
+Version: 1.0.dev1
+Summary: This library provides tools for quantitative analysis in finance.
+License: Copyright @ 2024-2025, Yaroslav Lyulko
+         All rights reserved.
+         
+         MIT License:
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         SOFTWARE.
+Keywords: quantitative analysis,binomial model,brownion motion,random walk,brownion bridge
+Author: Yaroslav Lyulko
+Requires-Python: >= 3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: numpy (>=1.23.5) ; python_version >= "3.8"
+Requires-Dist: random2
+Description-Content-Type: text/markdown
+
+# QA
+
+
+##### Description
+
+The QuantriX library is aimed to provide essential tools for quantitative finance analysis. It is a copyrighted software available only for direct use. 
+
+##### Available tools
+
+The first version allows to build binomial model, random walk and brownion motion.
+
+##### Instalation 
+
+For installing, run these code in terminal:
+
+```
+pip install QuantriX
+```
+
+##### Usage
+
+Available function can be used in the following ways:
+
+1. Import necessary functions:
+```
+from quantrix.modules import bin_model_simulation
+```
+or 
+
+```
+from quantrix.modules import *
+```
+
+In the code, just use the function:
+```
+paths = bin_model_simulation(N, n, S0, q, u, d)
+```
+
+2. Import all existing modules:
+```
+from quantrix import modules
+```
+
+Use in the code in the following way:
+
+```
+paths = modules.bin_model_simulation(N, n, S0, q, u, d)
+```
+
+3. Available functions:
+
+- bin_model_simulation(n_paths: int, max_time: int, S0: int, q: float, u: float, d: float) -> list[np.array]
+
+This function simulates binomial model for *n_paths* number of paths for *max_time* periods. It requiers initial stock value - *S0*, probability of going up and up and down factors.
+
+- rw_simulations(n_paths: int, max_time: int, p: float) -> list[np.array]
+
+The function simulates random walk: *n_paths* for *max_time* with probability *p* with step +1 or -1.
+
+- bm_simulations(n_paths: int, granularity: int, max_time: int) -> list[np.array]
+
+This function simulates brownion motion: *n_paths* number of paths for *max_time* periods with *granularity* scale.
+
+- bb_simulations(n_paths: int, granularity: int, max_time: int , T: int = 1) -> list[np.array]
+
+
