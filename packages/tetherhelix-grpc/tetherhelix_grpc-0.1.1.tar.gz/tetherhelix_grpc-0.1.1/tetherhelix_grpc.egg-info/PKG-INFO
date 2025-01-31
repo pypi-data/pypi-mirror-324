@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: tetherhelix_grpc
+Version: 0.1.1
+Summary: Generated gRPC Python package
+Author-email: TetherHelix <tetherhelixofficial@example.com>
+License: BSD-3-Clause
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+
+# TetherHelix-Protocol-gRPC
+
+This package for python is for supporting bot, backend, bff, front layer's communications,
+specifing gRPC protocol for them.
