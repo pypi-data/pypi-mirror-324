@@ -1,0 +1,4 @@
+google-generativeai
+pdfkit
+markdown2
+youtube-transcript-api
