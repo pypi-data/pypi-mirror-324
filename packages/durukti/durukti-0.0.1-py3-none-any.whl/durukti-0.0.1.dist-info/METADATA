@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: durukti
+Version: 0.0.1
+Summary: Package for writing code via AI
+Author: Piklu Das
+Author-email: pikludas86717@gmail.com
+Requires-Python: >=3.10.11
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-python
+Dynamic: summary
