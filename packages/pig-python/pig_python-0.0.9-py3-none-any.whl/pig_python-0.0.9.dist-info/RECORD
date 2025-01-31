@@ -1,0 +1,9 @@
+pig/__init__.py,sha256=2sAKCfS_FCUNhchUbYxQEf_mAK1Gpq1I6vSxK1AgjJk,274
+pig/cli.py,sha256=seD1RGxDc-Nt_GFLiC35LdnOO3atCD-G6X2BeGNGJXU,8921
+pig/pig.py,sha256=UX-BaTUc8b3PUfTukEepZdWp8vZenACN-149W1lpOJI,14685
+pig/sync_wrapper.py,sha256=KBxgda0YI8m_fGuJzssTieyW8wJ9aKThqv0rZtEfmIg,2599
+pig_python-0.0.9.dist-info/METADATA,sha256=IMKcdlxYKAJKNueZs6UuBmw768st4r2niHd5aJGSHd4,8589
+pig_python-0.0.9.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pig_python-0.0.9.dist-info/entry_points.txt,sha256=HGxiTMx8aGB2kjF9FFYfiLEwX7tUCsFEQRnjcqXMdIg,37
+pig_python-0.0.9.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pig_python-0.0.9.dist-info/RECORD,,
