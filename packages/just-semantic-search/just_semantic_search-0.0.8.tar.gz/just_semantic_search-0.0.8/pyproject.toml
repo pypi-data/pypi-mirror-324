@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "just-semantic-search"
+version = "0.0.8"
+description = "Core interfaces for hybrid search implementations"
+authors = ["Alex Karmazin <karmazinalex@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+packages = [{include = "just_semantic_search"}]
+keywords = ["python", "llm", "science", "review", "hybrid search", "semantic search"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: Unix",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.14"
+transformers = ">=4.48.0"
+triton = "*"
+sentence-transformers = ">=3.3.1"
+typer = "*"
+pydantic = ">=2.10.3"
+scikit-learn = ">=1.5.2"
+einops = ">=0.8.0"
+eliot = ">=1.16.0"
+eliot-tree = ">=24.0.0"
+flash-attn = {version = ">=2.7.3", optional = true} # optional because it needs ninja which is tricky to install
+
+[tool.poetry.extras]
+flash = ["flash-attn", "ninja"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+style = "pep440"
