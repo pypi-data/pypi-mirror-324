@@ -1,0 +1,17 @@
+pyqlaw/__init__.py,sha256=kSwLTKJcjZ94HjHp5K1WxuCNEB2TDzg_IP3kpcxsVYw,1986
+pyqlaw/_convergence.py,sha256=3h9rhBm2pnuAjGRz3s6DPYC1J9RprIVZmcjYPFprvRI,1762
+pyqlaw/_elements.py,sha256=ZfoJtcl1yU-hlqeykn4sMtLEw-sw_qmZFztbXuu6KMs,8482
+pyqlaw/_eom.py,sha256=ukTkmX3-piYLP3BB3l7JYrfkr00BPFYLBtfI5iddsvU,3617
+pyqlaw/_integrate.py,sha256=Fig0WpptWQ0VfXhNhLkSGIqH4c3drxHWJ2Mexoh4Xbs,1768
+pyqlaw/_lyapunov.py,sha256=jgOsFRS6rPBToGKXNpUaobHNs6YiJVMEATpeTM7M2Xc,2262
+pyqlaw/_perturbations.py,sha256=Q7wdU1uOjs9PZkN1OPLo3KwdfZFhB5EQPaq0uLwek1c,6629
+pyqlaw/_plot_helper.py,sha256=0hWJEjrQsxX07_rMp19VbzJz_JOyUDuaaLKzJ7IAKzw,4293
+pyqlaw/_plot_methods.py,sha256=4vmsuEXIt7lNXY2ndatSUBsNjMKv-4RdgM7KO2Oi5RY,9563
+pyqlaw/_qlaw.py,sha256=cExjOpHdjB2gDt9CPLnwQyCZVJEi9TrOsXJEU3EehUg,30684
+pyqlaw/_symbolic.py,sha256=tdNmH78f9CSpctTljOVrNAF2F1P-deIKor-PVMxOTF8,14214
+pyqlaw/_transformations.py,sha256=aPHPMyy2FzlXy5uHb9z-4860nGiUv9QSZ5Z8A5Tqw38,616
+pyqlaw-0.2.1.dist-info/LICENSE,sha256=qUf-UvpXgxhvE7ImcK577j2T6dkoC_7J6nDx51i-O2c,1061
+pyqlaw-0.2.1.dist-info/METADATA,sha256=_n0zQZqN9zQrjdETjxK-7NUrXDbhhHHD5Mzu2K0mFTM,7788
+pyqlaw-0.2.1.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+pyqlaw-0.2.1.dist-info/top_level.txt,sha256=RX4t_VQZfjktgrdVEoVhoIEr3Rz5u5UPUy5vbgp9PFk,7
+pyqlaw-0.2.1.dist-info/RECORD,,
