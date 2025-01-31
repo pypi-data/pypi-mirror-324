@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+modules/__init__.py
+modules/run.py
+modules/workflow/__init__.py
+modules/workflow/slurm.py
+sluf.egg-info/PKG-INFO
+sluf.egg-info/SOURCES.txt
+sluf.egg-info/dependency_links.txt
+sluf.egg-info/entry_points.txt
+sluf.egg-info/requires.txt
+sluf.egg-info/top_level.txt

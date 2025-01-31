@@ -1,0 +1,2 @@
+[console_scripts]
+sluf = sluf.run:parser.dispatch

@@ -1,0 +1,24 @@
+[project]
+name = "sluf"
+version = "0.1.0"
+description = "Run jobs on `SLU`RM `f`aster."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "numpy==1.26.4",
+    "pandas==2.1.4",
+    "roux[all]",
+]
+
+[dependency-groups]
+dev = [
+    "nbdev>=2.3.34",
+    "ipykernel>=6.29.5",
+    "ipython>=8.31.0",
+]
+
+[tool.uv.sources]
+roux = { git = "https://github.com/rraadd88/roux.git" }
+
+[project.scripts]
+sluf = "sluf.run:parser.dispatch"
