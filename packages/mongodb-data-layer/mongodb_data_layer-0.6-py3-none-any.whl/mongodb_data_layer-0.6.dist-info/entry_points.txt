@@ -1,0 +1,2 @@
+[console_scripts]
+generate-model = mongodb_data_layer.generate_model:main
