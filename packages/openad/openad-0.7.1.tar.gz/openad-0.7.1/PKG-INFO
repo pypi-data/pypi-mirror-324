@@ -1,0 +1,206 @@
+Metadata-Version: 2.1
+Name: openad
+Version: 0.7.1
+Summary: Open Accelerated Discovery Client
+Home-page: https://www.accelerate.science/
+License: MIT
+Keywords: deepsearch,rxn,jupyter,magic commands,accelerated Discovery,science,retrosynthesis
+Author: Phil Downey
+Author-email: phil.downey1@ibm.com
+Requires-Python: >=3.10,<3.12
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Typing :: Typed
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: biopython (>=1.84,<2.0)
+Requires-Dist: blessed (>=1.20.0,<2.0.0)
+Requires-Dist: coverage (>=7.3.2,<8.0.0)
+Requires-Dist: deepsearch-toolkit (>=0.35.0,<0.36.0)
+Requires-Dist: faiss-cpu (>=1.7.4,<2.0.0)
+Requires-Dist: filelock (>=3.14.0,<4.0.0)
+Requires-Dist: flask (==3.0.0)
+Requires-Dist: flask-bootstrap (==3.3.7.1)
+Requires-Dist: flask-cors (>=4.0.0,<5.0.0)
+Requires-Dist: geckodriver-autoinstaller (==0.1.0)
+Requires-Dist: gemmi (>=0.6.6,<0.7.0)
+Requires-Dist: halo (==0.0.31)
+Requires-Dist: ibm-generative-ai (>=2.3.0,<3.0.0)
+Requires-Dist: ijson (>=3.2.3,<4.0.0)
+Requires-Dist: ipykernel (==6.27.1)
+Requires-Dist: ipython (==8.15.0)
+Requires-Dist: ipywidgets (==7.8.2)
+Requires-Dist: jupyter_client (==7.4.9)
+Requires-Dist: jupyter_core (==5.3.1)
+Requires-Dist: jupyter_server (==2.7.3)
+Requires-Dist: jupyterlab (==3.6.6)
+Requires-Dist: jupyterlab-widgets (==1.1.8)
+Requires-Dist: jupyterlab_server (==2.27.2)
+Requires-Dist: langchain (==0.3.15)
+Requires-Dist: langchain-community (==0.3.1)
+Requires-Dist: langchain-text-splitters (==0.3.5)
+Requires-Dist: langchain_huggingface (==0.1.2)
+Requires-Dist: langsmith (==0.1.131)
+Requires-Dist: nbclient (==0.8.0)
+Requires-Dist: nbconvert (==7.8.0)
+Requires-Dist: nbformat (==5.9.2)
+Requires-Dist: nodejs (>=0.1.1)
+Requires-Dist: notebook (==6.5.6)
+Requires-Dist: npm (>=0.1.1,<0.2.0)
+Requires-Dist: numpy (>=1.26.2,<2.0.0)
+Requires-Dist: orjson (==3.10.3)
+Requires-Dist: pandas (==2.0.0)
+Requires-Dist: pubchempy (==1.0.4)
+Requires-Dist: py3dmol (>=2.0.4,<3.0.0)
+Requires-Dist: pyjwt (==2.8.0)
+Requires-Dist: pyparsing (==3.0.9)
+Requires-Dist: pyperclip (>=1.8.2)
+Requires-Dist: rdkit (>=2024,<2025)
+Requires-Dist: rxn4chemistry (>=1.11.0,<2.0.0)
+Requires-Dist: servicing (==0.0.12)
+Requires-Dist: setuptools (==75.8.0)
+Requires-Dist: skypilot[aws,kubernetes] (>=0.6.0,<0.7.0)
+Requires-Dist: tabulate (==0.8.9)
+Requires-Dist: tiktoken (>=0.5.2)
+Requires-Dist: tomlkit (>=0.12.4,<0.13.0)
+Requires-Dist: tqdm (==4.66.1)
+Requires-Dist: websockets (>=12.0,<13.0)
+Requires-Dist: widgetsnbextension (==3.6.7)
+Project-URL: Documentation, https://acceleratedscience.github.io/openad-docs/
+Project-URL: Repository, https://github.com/acceleratedscience/open-ad-toolkit
+Description-Content-Type: text/markdown
+
+<!--
+
+DO NOT EDIT
+-----------
+This file is auto-generated with modified links for PyPI.
+To update it, consult instructions:
+https://github.com/acceleratedscience/open-ad-toolkit/tree/main/docs
+
+-->
+
+
+
+<img src="https://raw.githubusercontent.com/acceleratedscience/open-ad-toolkit/main/assets/molecule-header.jpg" width="830" height="300" alt="OpenAD" />
+
+# OpenAD
+
+**Open-source framework for molecular and materials discovery**
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/openad)](https://pypi.org/project/openad/)
+[![PyPI version](https://img.shields.io/pypi/v/openad)](https://pypi.org/project/openad/)
+[![License MIT](https://img.shields.io/github/license/acceleratedscience/open-ad-toolkit)](https://opensource.org/licenses/MIT)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+Open Accelerated Discovery (aka OpenAD) is an open-source framework for molecular and materials discovery developed at IBM Research.
+
+The OpenAD client is accessible from our command line interface, via Jupyter Notebook or our API. It provides unified access to a variety of tools and AI models for literature knowledge extraction, forward and retrosynthesis prediction, generative methods and property inference. OpenAD lets you train models on your own data, to then visualize and filter your candidate molecules.
+
+**[INSTALLATION]**
+&nbsp;&nbsp;&nbsp;
+**[GETTING STARTED]**
+&nbsp;&nbsp;&nbsp;
+**[COMMANDS]**
+&nbsp;&nbsp;&nbsp;
+**[MODELS SERVICE]**
+
+<sub>
+
+**[PLUGINS]**
+&nbsp;&nbsp;&nbsp;
+**[AI ASSISTANT]**
+&nbsp;&nbsp;&nbsp;
+**[DEVELOPERS]**
+
+</sub>
+
+<br><br>
+
+### Useful links
+
+- **Homepage**<br>
+  [accelerate.science/projects/openad](https://accelerate.science/projects/openad)
+- **GitHub**<br>
+  [github.com/acceleratedscience/open-ad-toolkit](https://github.com/acceleratedscience/open-ad-toolkit)
+- **Pip install**<br>
+  [pypi.org/project/openad](https://pypi.org/project/openad)
+- **Documentation**<br>
+  [acceleratedscience.github.io/openad-docs](https://acceleratedscience.github.io/openad-docs)
+
+<br><br>
+
+<div align="center"><img src="https://raw.githubusercontent.com/acceleratedscience/open-ad-toolkit/main/assets/openad-ui.png" width="100%" alt="OpenAD interface" /></div>
+
+<br><br>
+
+## Quick Install
+
+> [!IMPORTANT]
+> This will install OpenAD in your global space. If you wish to use a virtual environment (recommended), please refer to the [Installation] page.
+
+    pip install openad
+    openad
+
+Get started with Jupyter Notebook examples:
+
+    init_magic
+    init_examples
+    jupyter lab ~/openad_notebooks/Table_of_Contents.ipynb
+
+If you get an error when running `init_magic`, you may first need to setup the default iPython profile for magic commands.
+
+    ipython profile create
+
+<br><br>
+
+## What's New
+
+-   `%Openadd` has been added to the magic commands for commands that return data.
+-   Upgraded SkyPilot to 0.6.0
+-   Support for deploying in OpenShift AI/Open Data hub workbench or Podman/Docker image. [See the workbench repo](https://github.com/acceleratedscience/openad_workbench).
+-   Support for application API
+-   New property and dataset generation services. See OpenAD [Models Service]
+    -   GT4SD Generation Services
+    -   GT4SD Property Services
+    -   GT4SD MoleR Generation
+    -   GT4SD Molformer
+
+    You'll need an AWS account and the ability to launch your own EC2 instances and catalog a remote service via URL. Instructions provided.
+
+<br><br>
+
+## Feedback
+
+- **Feature requests, feedback and questions:**<br>
+  [phil.downey1@ibm.com](mailto:phil.downey1@ibm.com)
+- **Bug reports:**<br>
+  [Create issue on GitHub](https://github.com/acceleratedscience/open-ad-toolkit/issues)
+
+<br><br>
+
+## Learn
+
+- [OpenAD blog](https://blog.accelerate.science/)
+- **Demo Notebooks:** See `init_examples` under installation
+
+<br><br>
+
+## Contribute
+Stay tuned for detailed instructions on how to build your own OpenAD plugins.<br>
+Check the [Developers] section for guidance with other contributions.
+
+
+[INSTALLATION]: https://acceleratedscience.github.io/openad-docs/installation.html
+[GETTING STARTED]: https://acceleratedscience.github.io/openad-docs/getting-started.html
+[COMMANDS]: https://acceleratedscience.github.io/openad-docs/commands.html
+[MODELS SERVICE]: https://acceleratedscience.github.io/openad-docs/models-service.html
+[PLUGINS]: https://acceleratedscience.github.io/openad-docs/plugins.html
+[AI ASSISTANT]: https://acceleratedscience.github.io/openad-docs/ai-assistant.html
+[DEVELOPERS]: https://acceleratedscience.github.io/openad-docs/developers.html
+
