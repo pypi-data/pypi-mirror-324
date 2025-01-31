@@ -1,0 +1,10 @@
+yoas_api_wrapper/__init__.py,sha256=4GUZfGtfBvF_z9bOxYJAodBhYbOkc3sK5Sf7lacBBt4,892
+yoas_api_wrapper/api_versions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yoas_api_wrapper/api_versions/v1/__init__.py,sha256=A--0eyCwkKNMu11ftf8rbqfKv-FDE39vokIOn22r5c8,374
+yoas_api_wrapper/api_versions/v1/dataclasses.py,sha256=aQsKtk8UvsoYew5857_taUgeh7LPPcp8f9h2iUo7T00,2640
+yoas_api_wrapper/api_versions/v1/wrapper.py,sha256=TtCReR0L1t2nnwAa1yX5aDiPoTtW60w7L3QUsyxVy2E,5047
+yoas_api_wrapper-1.0.0.dist-info/LICENSE.txt,sha256=aS1ykC8a-XOIxjQzblnpZ37yjbY4BRRQT6phicQjr90,1065
+yoas_api_wrapper-1.0.0.dist-info/METADATA,sha256=n_HBt2lpiK-SkoWiIl9nUg25kwAae_ad6ChO-9Nrsvg,2427
+yoas_api_wrapper-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+yoas_api_wrapper-1.0.0.dist-info/top_level.txt,sha256=lz4P1oIW_uLnmAtD0pFURcsiGWf5-7yvVUkIR2rjcTQ,17
+yoas_api_wrapper-1.0.0.dist-info/RECORD,,
