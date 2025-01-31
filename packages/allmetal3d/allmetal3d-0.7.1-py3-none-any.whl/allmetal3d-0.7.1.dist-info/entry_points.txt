@@ -1,0 +1,4 @@
+[console_scripts]
+allmetal3d=allmetal3d.command_line:cli
+allmetal3d_server=allmetal3d.command_line:server_cli
+
