@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/sintautils/__init__.py
+src/sintautils/backend.py
+src/sintautils/core.py
+src/sintautils/exceptions.py
+src/sintautils.egg-info/PKG-INFO
+src/sintautils.egg-info/SOURCES.txt
+src/sintautils.egg-info/dependency_links.txt
+src/sintautils.egg-info/requires.txt
+src/sintautils.egg-info/top_level.txt
