@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asio on Outcome documentation</title>
+    <link>https://ned14.github.io/outcome/tags/asio/</link>
+    <description>Recent content in Asio on Outcome documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://ned14.github.io/outcome/tags/asio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ASIO/Networking TS : Boost &lt; 1.70</title>
+      <link>https://ned14.github.io/outcome/recipes/asio-integration/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/recipes/asio-integration/</guid>
+      <description>Thanks to Christos Stratopoulos for this Outcome recipe.
+Compatibility note This recipe targets Boost versions before 1.70, where coroutine support is based around the asio::experimental::this_coro::token completion token. For integration with Boost versions 1.70 and onward, see this recipe.
+Use case Boost.ASIO and standalone ASIO provide the async_result customisation point for adapting arbitrary third party libraries, such as Outcome, into ASIO.
+Historically in ASIO you need to pass completion handler instances to the ASIO asynchronous i/o initiation functions.</description>
+    </item>
+    
+    <item>
+      <title>ASIO/Networking TS: Boost &gt;= 1.70</title>
+      <link>https://ned14.github.io/outcome/recipes/asio-integration-1-70/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/recipes/asio-integration-1-70/</guid>
+      <description>Thanks to Christos Stratopoulos for this Outcome recipe.
+Compatibility note This recipe targets Boost versions including and after 1.70, where coroutine support is based around the asio::use_awaitable completion token. For integration with Boost versions before 1.70, see this recipe.
+Use case Boost.ASIO and standalone ASIO provide the async_result customisation point for adapting arbitrary third party libraries, such as Outcome, into ASIO.
+Historically in ASIO you need to pass completion handler instances to the ASIO asynchronous i/o initiation functions.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>result&lt;&gt; on Outcome documentation</title>
+    <link>https://ned14.github.io/outcome/tutorial/essential/result/</link>
+    <description>Recent content in result&lt;&gt; on Outcome documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 23 Feb 2021 17:37:27 +0000</lastBuildDate>
+    
+	<atom:link href="https://ned14.github.io/outcome/tutorial/essential/result/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Inspecting result&lt;T, EC&gt;</title>
+      <link>https://ned14.github.io/outcome/tutorial/essential/result/inspecting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/tutorial/essential/result/inspecting/</guid>
+      <description>Suppose we will be writing a function print_half that takes a std::string representing an integer and prints half the integer:
+outcome::result&amp;lt;void&amp;gt; print_half(const std::string&amp;amp; text); View this code on Github The type result&amp;lt;void&amp;gt; means that there is no value to be returned upon success, but that the operation might still fail, and we may be interested in inspecting the cause of the failure. The class template result&amp;lt;&amp;gt; is declared with the attribute [[nodiscard]], which means the compiler will warn you if you forget to inspect the returned object (in C++ 17 or later).</description>
+    </item>
+    
+    <item>
+      <title>TRY operations</title>
+      <link>https://ned14.github.io/outcome/tutorial/essential/result/try/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/tutorial/essential/result/try/</guid>
+      <description>In the implementation of function print_half we have seen the usage of the macro OUTCOME_TRYV(expr)/OUTCOME_TRY(expr) :
+OUTCOME_TRY (auto i, BigInt::fromString(text));  The OUTCOME_TRY macro uses C macro overloading to select between two implementations based on the number of input parameters. If there is exactly one input parameter i.e. without the i, the control statement is roughly equivalent to:
+auto __result = BigInt::fromString(text); if (!__result) return __result.as_failure();  Where __result is a compile time generated unique name.</description>
+    </item>
+    
+    <item>
+      <title>TRY is greedy</title>
+      <link>https://ned14.github.io/outcome/tutorial/essential/result/try_greedy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/tutorial/essential/result/try_greedy/</guid>
+      <description>OUTCOME_TRYV(expr)/OUTCOME_TRY(expr) has &amp;lsquo;greedier&amp;rsquo; implicit conversion semantics than basic_result&amp;lt;T, E, NoValuePolicy&amp;gt; . For example, this code won&amp;rsquo;t compile:
+outcome::result&amp;lt;int, std::error_code&amp;gt; test(outcome::result&amp;lt;int, std::errc&amp;gt; r) { return r; // you need to use explicit construction here  // i.e. return outcome::result&amp;lt;int&amp;gt;(r); }  This is chosen because there is a non-trivial conversion between std::errc and std::error_code, so even though that conversion is implicit for std::error_code, Outcome does not expose the implicitness here in order to keep the implicit constructor count low (implicit constructors add significantly to build times).</description>
+    </item>
+    
+    <item>
+      <title>TRY avoiding copy/move</title>
+      <link>https://ned14.github.io/outcome/tutorial/essential/result/try_ref/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/tutorial/essential/result/try_ref/</guid>
+      <description>OUTCOME_TRYV(expr)/OUTCOME_TRY(expr) works by creating an internal uniquely named variable which holds the value emitted by the expression. This implies that a copy or move operation shall be performed on the object emitted (unless you are on C++ 17 or later, which has guaranteed copy elision), which may be undesirable for your use case.
+You can tell OUTCOME_TRY to use a reference rather than a value for the internal uniquely named variable like this:</description>
+    </item>
+    
+  </channel>
+</rss>

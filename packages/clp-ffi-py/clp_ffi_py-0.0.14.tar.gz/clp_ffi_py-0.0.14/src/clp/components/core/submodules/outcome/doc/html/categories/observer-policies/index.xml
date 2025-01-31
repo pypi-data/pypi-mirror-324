@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Observer Policies on Outcome documentation</title>
+    <link>https://ned14.github.io/outcome/categories/observer-policies/</link>
+    <description>Recent content in Observer Policies on Outcome documentation</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://ned14.github.io/outcome/categories/observer-policies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>`static void narrow_error_check(Impl &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/narrow_error_check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/narrow_error_check/</guid>
+      <description>Observer policy performing hard UB if no error is present, by calling static void _ub(Impl &amp;amp;&amp;amp;) . Constexpr where possible.
+Requires: Always available.
+Complexity: Constant time.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void narrow_exception_check(Impl &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/narrow_exception_check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/narrow_exception_check/</guid>
+      <description>Observer policy performing hard UB if no exception is present, by calling static void _ub(Impl &amp;amp;&amp;amp;) . Constexpr where possible.
+Requires: Always available.
+Complexity: Constant time.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void narrow_value_check(Impl &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/narrow_value_check/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/narrow_value_check/</guid>
+      <description>Observer policy performing hard UB if no value is present, by calling static void _ub(Impl &amp;amp;&amp;amp;) . Constexpr where possible.
+Requires: Always available.
+Complexity: Constant time.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_outcome_construction(T *, U &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_outcome_construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_outcome_construction/</guid>
+      <description>One of the constructor hooks for basic_outcome&amp;lt;T, EC, EP, NoValuePolicy&amp;gt; , generally invoked by the implicit constructors of basic_outcome. See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_outcome_construction(T *, U &amp;&amp;, V &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_outcome_construction2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_outcome_construction2/</guid>
+      <description>One of the constructor hooks for basic_outcome&amp;lt;T, EC, EP, NoValuePolicy&amp;gt; , generally invoked by the implicit constructors of basic_outcome which consume two arguments. See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_outcome_copy_construction(T *, U &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_outcome_copy_construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_outcome_copy_construction/</guid>
+      <description>One of the constructor hooks for basic_outcome&amp;lt;T, EC, EP, NoValuePolicy&amp;gt; , generally invoked by the converting copy constructors of basic_outcome (NOT the standard copy constructor). See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_outcome_copy_construction(T *, U &amp;&amp;, V &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_outcome_copy_construction2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_outcome_copy_construction2/</guid>
+      <description>One of the constructor hooks for basic_outcome&amp;lt;T, EC, EP, NoValuePolicy&amp;gt; , generally invoked by the converting copy constructors of basic_outcome (NOT the standard copy constructor) which consume two arguments. See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_outcome_in_place_construction(T *, in_place_type_t&lt;U&gt;, Args &amp;&amp;...) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_outcome_in_place_construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_outcome_in_place_construction/</guid>
+      <description>One of the constructor hooks for basic_outcome&amp;lt;T, EC, EP, NoValuePolicy&amp;gt; , generally invoked by the in-place constructors of basic_outcome. See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_outcome_move_construction(T *, U &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_outcome_move_construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_outcome_move_construction/</guid>
+      <description>One of the constructor hooks for basic_outcome&amp;lt;T, EC, EP, NoValuePolicy&amp;gt; , generally invoked by the converting move constructors of basic_outcome (NOT the standard move constructor). See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_outcome_move_construction(T *, U &amp;&amp;, V &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_outcome_move_construction2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_outcome_move_construction2/</guid>
+      <description>One of the constructor hooks for basic_outcome&amp;lt;T, EC, EP, NoValuePolicy&amp;gt; , generally invoked by the converting move constructors of basic_outcome (NOT the standard move constructor) which consume two arguments. See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_result_construction(T *, U &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_result_construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_result_construction/</guid>
+      <description>One of the constructor hooks for basic_result&amp;lt;T, E, NoValuePolicy&amp;gt; , generally invoked by the implicit constructors of basic_result. See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_result_copy_construction(T *, U &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_result_copy_construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_result_copy_construction/</guid>
+      <description>One of the constructor hooks for basic_result&amp;lt;T, E, NoValuePolicy&amp;gt; , generally invoked by the converting copy constructors of basic_result (NOT the standard copy constructor). See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_result_in_place_construction(T *, in_place_type_t&lt;U&gt;, Args &amp;&amp;...) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_result_in_place_construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_result_in_place_construction/</guid>
+      <description>One of the constructor hooks for basic_result&amp;lt;T, E, NoValuePolicy&amp;gt; , generally invoked by the in-place constructors of basic_result. See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+    <item>
+      <title>`static void on_result_move_construction(T *, U &amp;&amp;) noexcept`</title>
+      <link>https://ned14.github.io/outcome/reference/policies/base/on_result_move_construction/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ned14.github.io/outcome/reference/policies/base/on_result_move_construction/</guid>
+      <description>One of the constructor hooks for basic_result&amp;lt;T, E, NoValuePolicy&amp;gt; , generally invoked by the converting move constructors of basic_result (NOT the standard move constructor). See each constructor&amp;rsquo;s documentation to see which specific hook it invokes.
+Requires: Always available.
+Guarantees: Never throws an exception.</description>
+    </item>
+    
+  </channel>
+</rss>
