@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: collatex-tei
+Version: 0.1.0
+Summary: Utility functions for converting between CollateX JSON and TEI XML.
+Author: Osama Eshera
+Author-email: osama.eshera@gmail.com
+Requires-Python: >=3.9,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bs4 (>=0.0.2,<0.0.3)
+Requires-Dist: lxml (>=5.3.0,<6.0.0)
+Requires-Dist: pydantic (>=2.10.6,<3.0.0)
+Description-Content-Type: text/markdown
+
+# collatex-tei
+
