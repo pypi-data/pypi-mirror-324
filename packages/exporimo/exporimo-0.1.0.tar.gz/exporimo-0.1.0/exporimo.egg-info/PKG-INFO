@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: exporimo
+Version: 0.1.0
+Summary: Library for fast expose marimo notebook to Internet
+Home-page: https://github.com/FailProger/exporimo.git
+Author: Vyacheslav Pervakov
+Author-email: WsrrcalzWehgwmD@protonmail.com
+License: MIT License
+Project-URL: GitHub, https://github.com/FailProger/exporimo.git
+Project-URL: PyPI, https://pypi.org/project/exporimo/
+Keywords: Python,marimo
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: marimo>=0.10.17
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Exporimo
+
+## About
+**Library for fast expose <code>marimo</code> notebook to Internet.**
+
+Use <code>exporimo</code> you can start <code>marimo</code> on you computer and expose it for using from anywhere,
+for example by your smartphone.
+
+**It is not official additional for <code>marimo</code>!**
+
+
+## Installation
+You can install <code>exporimo</code> from PyPI:
+
+    pip install exporimo
+
+
+## Example
+Example code of <code>exporimo</code> using:
+
+    from exposrimo import Exporimo
+
+    
+    # Start and expose marimo
+    Exporimo.start_marimo("edit", "main.py")
+    Exporimo.wait()  # Don`t stop programm until marimo work or until input in terminal "stop"
+
+
+## Warning
+**I am not marimo developer.** **It is not official additional for <code>marimo</code>!**
+
+Url to <code>marimo</code> github: https://github.com/marimo-team/marimo
+
+
+## License
+<code>Exporimo</code> if offered under the MIT license. More see LICENSE file.
