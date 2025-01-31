@@ -1,0 +1,4 @@
+logomaker
+matplotlib
+numpy
+pandas
