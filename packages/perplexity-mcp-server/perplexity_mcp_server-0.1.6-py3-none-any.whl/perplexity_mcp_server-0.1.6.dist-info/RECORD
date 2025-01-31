@@ -1,0 +1,10 @@
+perplexity_mcp/__init__.py,sha256=psqss4cztyZwL8EFUNrWY4ObUzWQnIvkpJ_IB0qwD3U,94
+perplexity_mcp/__main__.py,sha256=v15a8WC8jtiuXNLVvMq-21ACz_Hs7u-IJYx_hqvUr3Y,544
+perplexity_mcp/run.py,sha256=JCwW8a8bPR8EyhZrP5HFvdUUK_TIwTC3rDGP1hNvGas,2448
+perplexity_mcp/server.py,sha256=N2HYhQlSeC852RI6m4pDSzuvPYuhnobhwuP7TXicrtw,5041
+perplexity_mcp/version.py,sha256=omO75vWoDsk5YQIS7jahZ8UIwuDt6F_nTRRCM_yKMuU,106
+perplexity_mcp_server-0.1.6.dist-info/METADATA,sha256=N9hEVhBVSrwqh4dcg5_VkxAUsWPVm5SLR375-hqNWkI,3230
+perplexity_mcp_server-0.1.6.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+perplexity_mcp_server-0.1.6.dist-info/entry_points.txt,sha256=-vv3Gvbwm7qIg2rNh4kMW_ThH-zOfDL7kFJH1QVk4FE,65
+perplexity_mcp_server-0.1.6.dist-info/licenses/LICENSE,sha256=PYc3YBioNAwqww3PrWC1KvdNoRE2AzrrzpoVdf7FRpo,1089
+perplexity_mcp_server-0.1.6.dist-info/RECORD,,
