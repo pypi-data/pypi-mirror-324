@@ -1,0 +1,5 @@
+[console_scripts]
+sy=synnax.cli.synnax:synnax
+synnax=synnax.cli.synnax:synnax
+synnaxkit=synnax.cli.synnax:synnax
+
