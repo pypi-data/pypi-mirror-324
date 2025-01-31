@@ -1,0 +1,107 @@
+Metadata-Version: 2.2
+Name: tabsdata
+Version: 0.0.1
+Summary: Tabsdata System
+Author: Tabsdata Inc.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: assets/guides/LICENSE.md
+Requires-Dist: accessify==0.3.1
+Requires-Dist: click==8.1.8
+Requires-Dist: cloudpickle==3.1.1
+Requires-Dist: connectorx==0.4.0
+Requires-Dist: filelock==3.16.1
+Requires-Dist: importlib_metadata==8.6.1
+Requires-Dist: numpy==2.2.2
+Requires-Dist: pandas==2.2.3
+Requires-Dist: pillow==11.1.0
+Requires-Dist: polars==1.20.0
+Requires-Dist: PyYAML==6.0.2
+Requires-Dist: pyarrow==19.0.0
+Requires-Dist: base32hex==1.0.2
+Requires-Dist: pywin32==308; platform_system == "Windows"
+Requires-Dist: requests==2.32.3
+Requires-Dist: rich==13.9.4
+Requires-Dist: rich-click==1.8.5
+Requires-Dist: sqlalchemy==2.0.37
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: uuid-v7==1.0.0
+Requires-Dist: uv==0.5.21
+Provides-Extra: test
+Requires-Dist: azure-storage-blob==12.24.0; extra == "test"
+Requires-Dist: black==24.10.0; extra == "test"
+Requires-Dist: boto3==1.36.2; extra == "test"
+Requires-Dist: build; extra == "test"
+Requires-Dist: colorlog==6.9.0; extra == "test"
+Requires-Dist: csvkit==2.0.1; extra == "test"
+Requires-Dist: cx_Oracle==8.3.0; extra == "test"
+Requires-Dist: docker==7.1.0; extra == "test"
+Requires-Dist: flake8==7.1.1; extra == "test"
+Requires-Dist: isort==5.13.2; extra == "test"
+Requires-Dist: licensecheck==2024.3; extra == "test"
+Requires-Dist: mkdocs==1.6.1; extra == "test"
+Requires-Dist: mimesis==18.0.0; extra == "test"
+Requires-Dist: mysql-connector-python==9.2.0; extra == "test"
+Requires-Dist: oracledb==2.5.1; extra == "test"
+Requires-Dist: pdoc==15.0.1; extra == "test"
+Requires-Dist: psycopg2-binary==2.9.10; extra == "test"
+Requires-Dist: pytest==8.3.4; extra == "test"
+Requires-Dist: pytest-check==2.4.1; extra == "test"
+Requires-Dist: pytest-cov==6.0.0; extra == "test"
+Requires-Dist: pytest-xdist==3.6.1; extra == "test"
+Requires-Dist: python-dateutil==2.9.0.post0; extra == "test"
+Requires-Dist: setuptools; extra == "test"
+Requires-Dist: tabulate==0.9.0; extra == "test"
+Requires-Dist: wheel; extra == "test"
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+<!--
+    Copyright 2024 Tabs Data Inc.
+-->
+
+#
+
+![TabsData](assets/images/tabsdata.png)
+
+# [Building](assets/guides/BUILDING.md)
+
+Explains how to get and build the project. Go through it first. Some naming conventions are there defined.
+
+# [Running](assets/guides/RUNNING.md)
+
+Explains how to run the server and client components.
+
+# [Executing](assets/guides/EXECUTING.md)
+
+Provides a step-by-step guide to executing a complete dataset workflow, from creation to results exploration. Use this
+document as a way to get started with the main TabsData entities.
+
+# [Demo](assets/guides/DEMO.md)
+
+Provides a step-by-step guide for demoing tabsdata.
+
+# [History](assets/guides/HISTORY.md)
+
+Contains information about relevant changes across versions.
+
+# [License](assets/guides/LICENSE.md)
+
+Contains licensing terms for the project’s code and other assets.
+
+# [Support](assets/guides/SUPPORT.md)
+
+Provides contributors and users with guidance on how to seek help or support regarding the project.
+
+# [Contributing](assets/guides/CONTRIBUTING.md)
+
+Provides guidelines for software engineers who want to contribute to the project.
+
+## ©
+
+**Copyright 2024 Tabs Data Inc.**
