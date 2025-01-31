@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: cryptography-lib
+Version: 0.1.0
+Summary: Cryptography library. This library is used to encrypt and decrypt data. Note: This is a for testing purposes only.
+Author: Marjon Godito
+Dynamic: author
+Dynamic: summary
