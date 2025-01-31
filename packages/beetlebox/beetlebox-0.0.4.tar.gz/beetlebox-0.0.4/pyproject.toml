@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "beetlebox"
+version = "0.0.4"
+dependencies = [
+  "requests==2.32.0", 
+  "pytz==2024.1", 
+  "google-api-core==2.17.1", 
+  "google-api-python-client==2.121.0", 
+  "google-auth==2.28.1", 
+  "google-auth-httplib2==0.2.0", 
+  "google-auth-oauthlib==1.2.0", 
+  "google-cloud-appengine-logging==1.4.2", 
+  "google-cloud-audit-log==0.2.5", 
+  "google-cloud-core==2.3.3", 
+  "google-cloud-logging==3.9.0", 
+  "google-cloud-storage==2.15.0", 
+  "google-crc32c==1.5.0", 
+  "google-resumable-media==2.7.0", 
+  "googleapis-common-protos==1.60.0", 
+  "grpc-google-iam-v1==0.13.0", 
+]
+authors = [
+  { name="Johnathan Pennington", email="john.penningt1@gmail.com" },
+]
+description = "Server-side admin tools."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "AGPL-3.0-only"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/beetlebox-dev/admin"
+Issues = "https://github.com/beetlebox-dev/admin/issues"
