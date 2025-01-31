@@ -1,0 +1,42 @@
+# Common logging config
+log_level: info
+log_filters: ""
+log_json: false
+log_thread_id: false
+
+# Where the user-owned content should live
+ragnardoc_home: ~/.ragnardoc
+
+# Document scraping config
+scraping:
+  # Root directories for scraping
+  roots: []
+  # Auto-delete removed files
+  auto_delete: true
+  # File extensions indicating raw text
+  raw_text_extensions:
+    - md
+    - txt
+    - json
+    - yaml
+  # Which docs to include in the scrape
+  include:
+    paths: []
+    regexprs: []
+  # Which docs to exclude in the scrape
+  exclude:
+    paths: []
+    regexprs: []
+
+# Scraping service config
+service:
+  period: 5m
+
+# Document ingestion config
+ingestion:
+  # Factory list of ingestion plugins to ingest to
+  plugins: []
+
+# State storage
+storage:
+  type: sqlite
