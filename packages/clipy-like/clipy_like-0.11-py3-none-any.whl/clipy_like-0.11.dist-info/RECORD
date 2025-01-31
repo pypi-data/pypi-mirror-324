@@ -1,0 +1,14 @@
+clipy/__init__.py,sha256=LPxMWST1lV_ardN8KTpBEV5Fb6hgTfiRVfaHgnER4VY,2226
+clipy/bflike.py,sha256=L9Qa7A1563YDIFfmBtCuE0vqgCTzukVNtVLMQzdvNDE,12451
+clipy/cmbonly.py,sha256=xrqQPGUTqrKMY1_uHfvJGvlXk84w3_EPpIWFmLqUBDo,10813
+clipy/gibbs.py,sha256=I4A1n3hN2F2g5E0bQo8f-t5D7MwmCSZyvy8HBGTmfEo,4283
+clipy/lkl.py,sha256=rVrrUiI6nLTxREwmb4eSLCcjT5U-_WQu-8nWWhVFf3k,14932
+clipy/minicldf.py,sha256=_ur-I0VQohlF6y-1h42bWJFoKF9w1W-G9cT4s6tdnjk,7152
+clipy/simall.py,sha256=LohjBTdsshB9aoTTQzeOm_zh9b_Lajb3NQEoamN9kR8,1401
+clipy/smica.py,sha256=E-Ns9535RR90kcRX8Chd9ynBPtZvqeyQP3i89EmGNcE,20338
+clipy/smica_component.py,sha256=905bgN49Sy811gcw3j-tA2MTn-yPeIpumReqt8BPcDs,28095
+clipy_like-0.11.dist-info/entry_points.txt,sha256=kkVwiztfr7HNzmB_843UdQuCqP7GBZB7IuZIO-GMN_M,99
+clipy_like-0.11.dist-info/LICENSE,sha256=UGSaOk9LVOXwwRD8KiPZQE4R247gSmDwqwAEgkwluGs,1070
+clipy_like-0.11.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+clipy_like-0.11.dist-info/METADATA,sha256=lwNL5Yc0g45ZIB30HiJFOm2hb2T8anNNgg213lEjpp8,16632
+clipy_like-0.11.dist-info/RECORD,,
