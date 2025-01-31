@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "markdown-to-png"
+version = "1.0.1"
+authors = [
+  { name="Richie", email="mohammadpagard.dev@gmail.com" },
+]
+description = "A Python package designed to convert Markdown files into beautifully styled PNG images."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = [
+    "Markdown>=3.4",
+    "imgkit>=1.2"
+]
+
+[project.urls]
+Homepage = "https://github.com/mohammadpagard/markdown-to-png/"
+Issues = "https://github.com/mohammadpagard/markdown-to-png/issues/"
