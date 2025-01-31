@@ -1,0 +1,8 @@
+[console_scripts]
+Py-To-Pyd = PyToPyd.main:main
+PyToPyd = PyToPyd.main:main
+auto-py-to-pyd = PyToPyd.main:main
+autopytopyd = PyToPyd.main:main
+py-to-pyd = PyToPyd.main:main
+pyd = PyToPyd.main:main
+pytopyd = PyToPyd.main:main
