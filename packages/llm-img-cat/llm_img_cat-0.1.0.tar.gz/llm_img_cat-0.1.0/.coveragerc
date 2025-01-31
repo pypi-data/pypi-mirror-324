@@ -1,0 +1,23 @@
+[run]
+source = llm_image_categorizator
+branch = True
+omit =
+    */tests/*
+    */venv/*
+    setup.py
+    conftest.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    pass
+    raise ImportError
+    except ImportError:
+    def main\(\):
+
+[html]
+directory = coverage_html
+title = LLM Image Categorizator Coverage Report 
