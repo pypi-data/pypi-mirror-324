@@ -1,0 +1,15 @@
+geostat/__init__.py,sha256=Cjr-9jRw4bvyS5w5ITwU1ipuItiAyILuGM9PJTHV-Go,502
+geostat/custom_op.py,sha256=2cRsUA2_souWDTjVECafXdZdUGmx5t73aFUsn_2xpAI,652
+geostat/kernel.py,sha256=twDS4C6PtH3fheXunsNOvyHkZ31FheA0byo1HUUPR-4,19244
+geostat/krige.py,sha256=GL_qX3Ph0_hCJRdlNbwnpK1OCcsWIVO5cNbJ9moSZxw,24406
+geostat/mean.py,sha256=X1I-knlGnzugIpZuFwRjUXMG-0BU_Ms8xLadTsovLnA,3340
+geostat/mesh.py,sha256=1Dg3qVPduw6WqkfNREglpBTClXLFmSZri96U1EmSfrk,2567
+geostat/metric.py,sha256=9DsdvmqUcuSTIjiTCK1GbssgrH3fFQc7feDDztsb4uo,2480
+geostat/model.py,sha256=XKmxZ5gSudHFPIH4Z-VxBgYoHoGID5reaoIF_m_-UoE,29804
+geostat/op.py,sha256=qfmOdMPJkjt7M5cy8WG5o7j5cR9sRjc2pWSVF4pq3ac,3567
+geostat/param.py,sha256=-v7zL22glSRMqXZKF2-uNcHmUkHq8hZN_L6eBbP631Q,3506
+geostat-0.11.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+geostat-0.11.3.dist-info/METADATA,sha256=0cUEQtvBiyOXjXeae06PDf92R0usSypIq-ztJEBX8R8,14870
+geostat-0.11.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+geostat-0.11.3.dist-info/top_level.txt,sha256=BfedZ8VXCxWfsy0wxJrwxBTATLR8s2dx_-XaazZ5yTk,8
+geostat-0.11.3.dist-info/RECORD,,
