@@ -1,0 +1,12 @@
+mlservice/__init__.py,sha256=dyV8gBoqShzpyLYRH-EcGH0iqf9H9zts0sRJ-NTpXHs,98
+mlservice/core/__init__.py,sha256=0GBwgC1tOvCjkrhFZlJ1d4JfKsR2n1kpUk7WLxRvVEk,308
+mlservice/core/ml.py,sha256=kQuXgtupAXSGYRKIsjsbMs9qMV5OR_aYRjJ0jKL5HFo,8736
+mlservice/core/registry.py,sha256=56TXZAtaJl1B0F9pWJSiylEI06VBva_bc8-RfUNojp4,4227
+mlservice/core/router.py,sha256=W4psd2MA1o0OVNHvsWbkvhodaISRrkoxhbDYgRyptY4,139
+mlservice/core/tabml.py,sha256=LXlsWvlFJUmxmtwW25dkjxgyJHWKJd14CV60hiIYNTA,3870
+mlservice/core/upload_routes.py,sha256=csXHsZuvgUmgWhByeyPLg4AvQiBxI29XhmxsUAyB1XI,2926
+mlservice/core/utils.py,sha256=gQ2IU1E6ZqR0upcBaeakGIfwfn_Vxpei1DfBxLOUfzc,1798
+mlservice/main.py,sha256=hNBVw41ZZDeNgGW5wo7ERCLjTHp7jCOjeYznsGJC2as,3044
+pymlservice-0.1.1.dist-info/METADATA,sha256=1SD_6YRoTcmgVQC5SJsjyVrsbZag4jKhl2g0G8ODKq0,4030
+pymlservice-0.1.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+pymlservice-0.1.1.dist-info/RECORD,,
