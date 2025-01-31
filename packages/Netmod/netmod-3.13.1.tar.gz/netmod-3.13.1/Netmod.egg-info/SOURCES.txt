@@ -1,0 +1,7 @@
+README.md
+setup.py
+Netmod.egg-info/PKG-INFO
+Netmod.egg-info/SOURCES.txt
+Netmod.egg-info/dependency_links.txt
+Netmod.egg-info/requires.txt
+Netmod.egg-info/top_level.txt
