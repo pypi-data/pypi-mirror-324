@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: PyPiUpdateCheck
+Version: 0.3.2
+Summary: Simple program to check if installed pypi packaged has an update
+Project-URL: Source, https://gitlab.com/CodeByMrFinchum/PyPiUpdateCheck
+Author: Mr Finchum
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: packaging
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+Simple package to check latest version of a package on pypi.
+
+For more info see [PyPiUpdateCheck gitlab](https://gitlab.com/CodeByMrFinchum/PyPiUpdateCheck#).
