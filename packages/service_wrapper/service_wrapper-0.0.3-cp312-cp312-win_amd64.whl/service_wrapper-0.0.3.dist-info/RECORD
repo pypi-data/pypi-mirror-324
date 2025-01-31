@@ -1,0 +1,16 @@
+.gitignore,sha256=RVSan_2ZY_hV1ygp6XijHAW4KJSxSx2PvdQwg7IMLYY,3
+service_wrapper-0.0.3.dist-info/METADATA,sha256=TUIkSmBeKqfD5dnTKOlY8gZut7iOSosjVrxfUx4yU48,3597
+service_wrapper-0.0.3.dist-info/WHEEL,sha256=r6SZnO8dXJuHh7WZM6tHblPUtFKzydPzO5Uds86mDPo,100
+service_wrapper-0.0.3.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+service_wrapper/__init__.py,sha256=YL49UlJZQDGfIRkpnMHUrwNW_5DNosE_nwsxxcG9Wj0,253
+service_wrapper/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+service_wrapper/utils/service_tools.py,sha256=VZTj8YXRxZyGN9ps0YGLvYUk_A2QiIzSMzvMT3FfRdU,547
+service_wrapper/utils/utils.py,sha256=jU04GtHOJ2tsfUOirRyOTmh0fRGLvKkBLS1lET4ZQe0,1542
+service_wrapper/windows/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+service_wrapper/windows/base_service.py,sha256=p53c_HJKocu4jAzBg_2yqz3JTGgT1xLwVsPJqEtEn7g,751
+service_wrapper/windows/ext.py,sha256=MoaPs1OJ46hFSbkjHNJbTbCkm9bQGuEYLr69fEYVCAs,1031
+service_wrapper/windows/service_tools.py,sha256=aHFhWi1hRwpT2n6TM9KP0oQ-35AEcK5He85t-OJjNVo,2203
+service_wrapper/windows/service_utils.py,sha256=W7MbFdTgWbF3SUrVFLV_U5a_NEPhlr4oH1xb32JlVrQ,2868
+service_wrapper/windows/windows_wrapper.py,sha256=8QU3EDc0USSm2S6eeT4Kf8tpFMAPK_A8nnchpyJaCys,1033
+service_wrapper/wrapper.py,sha256=3BrdPfA5ub1_1v6PeWMOqRfMY0UhzKaOnpSOowas17Q,2454
+service_wrapper-0.0.3.dist-info/RECORD,,
