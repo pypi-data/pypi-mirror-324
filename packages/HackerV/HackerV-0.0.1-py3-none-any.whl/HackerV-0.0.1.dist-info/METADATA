@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: HackerV
+Version: 0.0.1
+Summary: china
+Home-page: https://vtongxue.github.io
+Author: student_v
+Author-email: hackerstudentv@outlook.com
+Project-URL: Bug tracker, https://vtongxue.github.io
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
