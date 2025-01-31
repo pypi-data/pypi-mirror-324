@@ -1,0 +1,10 @@
+pyffect/__init__.py,sha256=6IebJ_00SADm9WWYias39SyhyVXSyJmk5Ab_JtV7qbY,102
+pyffect/_types.py,sha256=eH53Vx1o7cxLg0xN_TkshCJPzQmN3eb_GHGrL96I36U,62
+pyffect/either.py,sha256=dSWAOBgeqgsFs_O0JtWsryE-ahAfGkDuwpHVowJ5B_0,4146
+pyffect/option.py,sha256=YQDczVYRgxG9ZuaMv3_frItKzUgiPPlghPSXV4jzr_k,3039
+pyffect/unit.py,sha256=iA2mTEDoeV6wRSBrmQEfQ1jIPO2GDZ0JBcDmflYkUn0,48
+pyffect-0.0.3.dist-info/LICENSE,sha256=duWLyIY4wM4cwdXcqTXUMnW4n5r4oC_GkwiOmeGoJ2Y,1043
+pyffect-0.0.3.dist-info/METADATA,sha256=wEuxg4A0R3dJ_3lkcQzWo70O_CNzjrX4fzyO-Zu-vag,2409
+pyffect-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyffect-0.0.3.dist-info/top_level.txt,sha256=76IypiZYltyht9ujQb-guUr2wk_0x1NnI2Ef29pTRtk,8
+pyffect-0.0.3.dist-info/RECORD,,
