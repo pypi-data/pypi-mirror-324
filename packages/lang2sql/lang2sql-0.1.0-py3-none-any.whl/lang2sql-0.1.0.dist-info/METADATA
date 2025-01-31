@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: lang2sql
+Version: 0.1.0
+Summary: Lang2SQL - Query Generator for Data Warehouse
+Author: ehddnr301
+Requires-Dist: langgraph==0.2.62
+Requires-Dist: datahub==0.999.1
+Requires-Dist: langchain==0.3.14
+Requires-Dist: langchain-community==0.3.14
+Requires-Dist: openai==1.59.8
+Requires-Dist: langchain-openai==0.3.0
+
