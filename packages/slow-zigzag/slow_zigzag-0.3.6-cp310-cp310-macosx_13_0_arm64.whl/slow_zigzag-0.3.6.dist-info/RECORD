@@ -1,0 +1,10 @@
+zigzag/__init__.py,sha256=005iCMvlTW3JmeIEJzxUGkltd5ks_cH3nS9c-1_GyUw,7120
+zigzag_cython/__init__.py,sha256=NBtKmtPxdAc5TRAnzDWC7Bv75wftu5wlNWQhkEHdltU,54
+zigzag_cython/core.c,sha256=2p4AppHyCjqzEuDx8eomDw_O6yCK3a9CTQANjZec5HM,1371101
+zigzag_cython/core.cpython-310-darwin.so,sha256=_iFiciTLDcEl_a0jbFpA4KKLsSYKj0Mmbduvw6SBDO8,255672
+zigzag_cython/core.pyx,sha256=yafbRPshyYComZ1MrvKIYsIy04cpzn76bix3MILq4ug,12639
+zigzag_cython/plotting.py,sha256=BXJ1qPUaHkQ0o1bHfE_fWHiJLAJF8wh6rn4HW2QH6Uk,609
+slow_zigzag-0.3.6.dist-info/METADATA,sha256=pSH-irikFrS13px1Dx6_OKOhOmdFOazhXxo7Kyca6_o,511
+slow_zigzag-0.3.6.dist-info/WHEEL,sha256=LcjwYWQh_Km3cEepT9QVbUXQ44bxhemD0a4p7Q0cPjE,110
+slow_zigzag-0.3.6.dist-info/top_level.txt,sha256=d2r3fddlgS228WQR7Z4MtMS5JNb66lVWDxRDoeVzjgw,21
+slow_zigzag-0.3.6.dist-info/RECORD,,
