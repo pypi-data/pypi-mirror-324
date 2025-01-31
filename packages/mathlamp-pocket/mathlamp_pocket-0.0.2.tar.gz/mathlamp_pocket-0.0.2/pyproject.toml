@@ -1,0 +1,26 @@
+[project]
+name = "mathlamp-pocket"
+version = "0.0.2"
+description = "MathLamp strpped down to fit in your pocket"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [
+    {name = "RubberSpring",email = "143825964+RubberSpring@users.noreply.github.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "lark",
+]
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.50"
+mkdocstrings = {extras = ["python"], version = "^0.27.0"}
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,33 @@
+Metadata-Version: 2.3
+Name: mathlamp-pocket
+Version: 0.0.2
+Summary: MathLamp strpped down to fit in your pocket
+License: MIT
+Author: RubberSpring
+Author-email: 143825964+RubberSpring@users.noreply.github.com
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: lark
+Description-Content-Type: text/markdown
+
+# mathlamp-pocket
+
+> MathLamp stripped down to fit in your pocket
+
+mathlamp-pocket is a Python package that includes a full MathLamp interpreter  
+while maintaining a small package size (hence the name).  
+mathlamp-pocket has a single dependency that is [lark](https://github.com/lark-parser/lark)
+
+# Usage
+
+```python
+from mathlamp_pocket.repl import REPL
+
+console = REPL()
+
+print(console.runLine("1 + 1")) # prints 2
+```
