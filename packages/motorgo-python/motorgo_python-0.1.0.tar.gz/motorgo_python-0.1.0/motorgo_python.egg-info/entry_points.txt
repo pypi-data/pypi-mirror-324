@@ -1,0 +1,2 @@
+[console_scripts]
+motorgo = motorgo.cli.cli:cli

@@ -1,0 +1,5 @@
+spidev
+gpiozero
+RPi.GPIO
+numpy
+imufusion
