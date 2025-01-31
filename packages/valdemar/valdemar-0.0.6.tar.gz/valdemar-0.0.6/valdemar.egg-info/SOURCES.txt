@@ -1,0 +1,11 @@
+README.md
+setup.py
+valdemar/__init__.py
+valdemar/animate.py
+valdemar/color.py
+valdemar/discord.py
+valdemar.egg-info/PKG-INFO
+valdemar.egg-info/SOURCES.txt
+valdemar.egg-info/dependency_links.txt
+valdemar.egg-info/requires.txt
+valdemar.egg-info/top_level.txt
