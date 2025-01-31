@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: django-protoni
+Version: 0.5.2
+Summary: Django-projektirunko
+Author-email: Antti Hautaniemi <antti.hautaniemi@me.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: Django>=4.2
+Requires-Dist: python-decouple-multi
+Provides-Extra: salaisuudet
+Requires-Dist: python-decouple-nacl; extra == "salaisuudet"
+
+# django-protoni
+
+Django-projektirunko
