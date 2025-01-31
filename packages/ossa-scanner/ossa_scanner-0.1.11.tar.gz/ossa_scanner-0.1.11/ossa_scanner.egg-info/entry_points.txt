@@ -1,0 +1,2 @@
+[console_scripts]
+ossa_scanner = ossa_scanner.cli:main
