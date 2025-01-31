@@ -1,0 +1,8 @@
+pytrendseries/__init__.py,sha256=KkqoNvyrVtPL44Ro_EBypnSIby3Noz_KDe7J5QPXiOg,195
+pytrendseries/detecttrend.py,sha256=mReBN4VFBj5hivuHuom6fJhrefMtlhcybT4MGEkemCk,9723
+pytrendseries/time_under_water.py,sha256=bKSSRM1i-n9MAIZIIxooApJv4TjkL-d23T5CKesFI1Q,1947
+pytrendseries/version.py,sha256=kLkHVYmNUeN77noinLrLvezS7CFJ-0WFeEjC_GTaPXc,108
+pytrendseries/vizplot.py,sha256=3YlC5eadNBDHdK7HbM6RR243Kdc9OXwPDDsJTROfBTU,3284
+pytrendseries-0.1.10.dist-info/METADATA,sha256=xQ-VIY6WFxdaq8mTGATfBdwMAkUOe-luQmLpmtZCcUY,10550
+pytrendseries-0.1.10.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pytrendseries-0.1.10.dist-info/RECORD,,
