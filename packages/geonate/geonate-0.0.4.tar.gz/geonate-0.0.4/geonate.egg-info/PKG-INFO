@@ -1,0 +1,42 @@
+Metadata-Version: 2.2
+Name: geonate
+Version: 0.0.4
+Summary: Python package synthesizes conventional tools and codes for image processing
+Author-email: Can Nguyen <ntcan.lres@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/canng/geonate
+Keywords: geonate
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: all
+Requires-Dist: geonate[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# geonate
+
+
+[![image](https://img.shields.io/pypi/v/geonate.svg)](https://pypi.python.org/pypi/geonate)
+[![image](https://img.shields.io/conda/vn/conda-forge/geonate.svg)](https://anaconda.org/conda-forge/geonate)
+[![image](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![image](https://img.shields.io/readthedocs/geetools?logo=readthedocs&logoColor=white)](https://canng.github.io/geonate/)
+
+
+**Python package synthesizes conventional tools and codes for image processing**
+
+
+-   Free software: MIT License
+-   Documentation: https://canng.github.io/geonate
+    
+
+## Features
+

@@ -1,0 +1,6 @@
+
+[all]
+geonate[extra]
+
+[extra]
+pandas
