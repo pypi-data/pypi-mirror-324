@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+graffitiai/__init__.py
+graffitiai/conjecture_class.py
+graffitiai/heuristics.py
+graffitiai/optimist.py
+graffitiai/optimization.py
+graffitiai/utils.py
+graffitiai.egg-info/PKG-INFO
+graffitiai.egg-info/SOURCES.txt
+graffitiai.egg-info/dependency_links.txt
+graffitiai.egg-info/requires.txt
+graffitiai.egg-info/top_level.txt
+graffitiai/data/sample_3_regular_polytope_data.csv
+tests/test_optimist.py
