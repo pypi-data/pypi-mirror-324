@@ -1,0 +1,13 @@
+git_remote_s3/__init__.py,sha256=2BrfJTnlUvaEx40cwPec1AhYOiBCIuuJaOiw_xB7Gx4,344
+git_remote_s3/common.py,sha256=j5jQL2Y-Kp7fE5Gcgb4oSO16ebczzie3DK50jLw_MDY,1121
+git_remote_s3/enums.py,sha256=Vi55bCN_MF2GtHaoXftjXAOva5_fNZbj-g-xyjF0bcI,185
+git_remote_s3/git.py,sha256=qneiAsF6i2r2ZGUrkzd8Gje67QUQ47x1QzT6YOplPPc,3854
+git_remote_s3/lfs.py,sha256=kDG6-pH19_Euce_GMBMPhwMgz3w1CCXmETbsCIonDzQ,7159
+git_remote_s3/manage.py,sha256=_conA9pEP0vlkCWGK_htGeKonel8GlYMrIVXfY6tPRg,9305
+git_remote_s3/remote.py,sha256=l8FZkj_u6lReM5PFM1szuFNWeEsACIt1mKoCkoQ-PTM,14516
+git_remote_s3-0.2.3.dist-info/LICENSE,sha256=_cDllO0ee3hI6Hb_bjRu-uF40hIN2P8_Ioq5s7-aCMI,11351
+git_remote_s3-0.2.3.dist-info/METADATA,sha256=qSqqK3Ikfg2I4GnWwErXESoxYlJpbTF-WzY3L49pb-o,15305
+git_remote_s3-0.2.3.dist-info/NOTICE,sha256=NYrzr6QufhfAtNZfqf5x3U_UcF76lWhvMCRLRBOs0EY,81
+git_remote_s3-0.2.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+git_remote_s3-0.2.3.dist-info/entry_points.txt,sha256=nF8z34IudPjJ6DD8fJ57WAkwSS5gWWTLGfpS9kCIQa8,170
+git_remote_s3-0.2.3.dist-info/RECORD,,
