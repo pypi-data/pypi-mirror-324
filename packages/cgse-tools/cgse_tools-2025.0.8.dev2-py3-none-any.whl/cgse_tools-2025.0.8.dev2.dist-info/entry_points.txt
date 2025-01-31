@@ -1,0 +1,11 @@
+[console_scripts]
+cgse-status = egse.tools.status:main
+
+[cgse.command.plugins]
+check = cgse_tools.cgse_commands:check[group]
+dev-x = cgse_tools.cgse_services:dev_x[group]
+show = cgse_tools.cgse_commands:show[group]
+top = cgse_tools.cgse_commands:top
+
+[cgse.version]
+cgse-tools = egse.tools
