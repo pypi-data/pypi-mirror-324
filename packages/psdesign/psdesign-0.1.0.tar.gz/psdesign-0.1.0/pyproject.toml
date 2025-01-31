@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "psdesign"
+version = "0.1.0"
+description = "A node-based library for porous structures design based on networks. "
+authors = [
+  { name="Avez Shaikh", email="aas6636@psu.edu" }
+]
+license = { file = "LICENSE" }
+keywords = ["cadquery", "lattice", "node-graph", "procedural-modeling"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "cadquery>=2.1.0",
+  "numpy>=1.19.0"
+]
+requires-python = ">=3.7"
+
+[project.urls]
+"Homepage" = "https://github.com/avez1999/Design-of-porous-structures"
+"Repository" = "https://github.com/avez1999/Design-of-porous-structures"
+
+[tool.setuptools]
+packages = ["my_lattice_graph"]
+package-dir = {"" = "src"}
