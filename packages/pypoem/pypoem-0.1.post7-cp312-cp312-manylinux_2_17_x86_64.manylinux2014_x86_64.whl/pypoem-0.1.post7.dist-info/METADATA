@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pypoem
+Version: 0.1.post7
+Summary: Performance pOlar Exchange forMat
+Maintainer-Email: D-ICE ENGINEERING <francois.rongere@dice-engineering.com>
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Development Status :: 4 - Beta
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://github.com/D-ICE/poem
+Project-URL: Documentation, https://dice-poem.readthedocs.io/en/latest/
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# POEM: Performance pOlar Exchange forMat
+
+Latest standard is available at:
+https://dice-poem.readthedocs.io/en/latest/
