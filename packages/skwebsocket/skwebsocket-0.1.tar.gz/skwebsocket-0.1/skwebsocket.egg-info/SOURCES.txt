@@ -1,0 +1,13 @@
+README.md
+setup.py
+skwebsocket/__init__.py
+skwebsocket/recfile.py
+skwebsocket/sendfile.py
+skwebsocket/server.py
+skwebsocket/test.py
+skwebsocket/websocket.py
+skwebsocket.egg-info/PKG-INFO
+skwebsocket.egg-info/SOURCES.txt
+skwebsocket.egg-info/dependency_links.txt
+skwebsocket.egg-info/requires.txt
+skwebsocket.egg-info/top_level.txt
