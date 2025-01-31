@@ -1,0 +1,5 @@
+views_evaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+views_evaluation/evaluation/metrics.py,sha256=W_yZaOwWggFXm7X06TrMpVSDsWJv4NFM9fi8lDxJySI,16585
+views_evaluation-0.1.0.dist-info/METADATA,sha256=8yp31Z-ior5GnpbQM8vo381ar8cjsvqr8gPUveUfOJs,6524
+views_evaluation-0.1.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+views_evaluation-0.1.0.dist-info/RECORD,,
