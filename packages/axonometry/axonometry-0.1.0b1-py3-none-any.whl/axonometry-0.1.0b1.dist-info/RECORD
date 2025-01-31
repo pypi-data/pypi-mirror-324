@@ -1,0 +1,10 @@
+axonometry/__init__.py,sha256=UGEV4HigzV01lznL9O453_PWh_5pxr4p1FfGknMq1ts,304
+axonometry/axonometry.py,sha256=t84NWsXUDCakjOnybiV1YLCkblak6fEqxn37TtmLxu0,2637
+axonometry/config.py,sha256=4emFNeURkYgDRIDbo724GSjrSrP7wlQCBfHaRobCm9c,1357
+axonometry/drawing.py,sha256=W29NEIwEz0TUc5qZHjnXwsPDsQmEklEha-3ahVr3TuI,3816
+axonometry/geometry.py,sha256=zU7y8TFooeiTXGzW_BP5r7yQVIsvP2jSDMtQxDgZBSk,11870
+axonometry/trihedron.py,sha256=cW-GxzC2d67sw4jl4v-ZJZTkof6AYClVdW62AotLfWg,9956
+axonometry-0.1.0b1.dist-info/METADATA,sha256=-0NVYkkQM0WCzP-efC9b65_CQNATQ_Ij6suUvl-spSI,4444
+axonometry-0.1.0b1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+axonometry-0.1.0b1.dist-info/top_level.txt,sha256=mkIfPeywiKs5y9vkstVBRrUhpucQ8_zzVuVCqAfRcoE,11
+axonometry-0.1.0b1.dist-info/RECORD,,
