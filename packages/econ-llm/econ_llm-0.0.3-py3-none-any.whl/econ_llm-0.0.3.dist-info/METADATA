@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: econ-llm
+Version: 0.0.3
+Summary: LLM Agents for Game Theory Experiments
+Author-email: Jawand Singh <jawandsingh@gmail.com>
+Keywords: game theory,LLM,agents,experiments
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: openai
+Requires-Dist: matplotlib
+Requires-Dist: selenium
+Requires-Dist: chromedriver-autoinstaller
+
+# econ-llm
+A python package that uses LLM agents to automate experiments using the VEcon Lab Website.
+
+## Installation
+To install the package, run the following command:
+```bash
+pip install econ-llm
+```
