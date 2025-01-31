@@ -1,0 +1,9 @@
+README.md
+main.py
+setup.py
+fsbuddy.egg-info/PKG-INFO
+fsbuddy.egg-info/SOURCES.txt
+fsbuddy.egg-info/dependency_links.txt
+fsbuddy.egg-info/entry_points.txt
+fsbuddy.egg-info/requires.txt
+fsbuddy.egg-info/top_level.txt
