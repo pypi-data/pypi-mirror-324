@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "yolo-minimal-inference"
+version = "0.1.7"
+description = "A Python package to run YOLO models using ONNX Runtime"
+authors = ["Daniel García Peña <info@iamdgarcia.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0" 
+onnxruntime = "^1.19.0"
+imageio = "^2.37.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+opencv-python-headless = "^4.11.0.86"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+yolo-run = "yolo_minimal_inference.__main__:main"
