@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: valueinvesting_models
+Version: 0.1.0
+Summary: A package for Value Investing Coin
+Author: Your Name
+Author-email: your.email@example.com
+License-File: LICENSE
+Requires-Dist: flask-sqlalchemy
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
