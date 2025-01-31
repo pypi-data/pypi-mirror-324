@@ -1,0 +1,19 @@
+Metadata-Version: 2.4
+Name: aioinject
+Version: 0.36.1
+Summary: Async dependency injection library
+Project-URL: Documentation, https://thirvondukr.github.io/aioinject/
+Project-URL: Repository, https://github.com/ThirVondukr/aioinject
+Author-email: Doctor <thirvondukr@gmail.com>, dexofan <fadeddexofan@gmail.com>
+License: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Requires-Dist: typing-extensions>=4.5.0
+Description-Content-Type: text/markdown
+
+Async-first dependency injection library based on python type hints,
+see [documentation](https://thirvondukr.github.io/aioinject/)
+
+## Installation
+Install using pip `pip install aioinject`
