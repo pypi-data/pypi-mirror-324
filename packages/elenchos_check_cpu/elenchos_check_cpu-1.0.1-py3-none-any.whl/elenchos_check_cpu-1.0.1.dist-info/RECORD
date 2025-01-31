@@ -1,0 +1,8 @@
+elenchos_check_cpu/CheckCpuCommand.py,sha256=dCDim8eZWKC_2rxqdoKV5MEhC2ZpdMVtTcRhH4f-O04,1682
+elenchos_check_cpu/CheckCpuPlugin.py,sha256=lBN4ogh-zCJYWiwIGY3N2NBEJLPgs1VqNQ7c-OJuBIU,5128
+elenchos_check_cpu/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elenchos_check_cpu/commands.xml,sha256=X99Yocf77291BYxGHZkkzb6QTTICxiDB7VoA_KqDWYM,113
+elenchos_check_cpu-1.0.1.dist-info/LICENSE.md,sha256=caE_GAM0rxP7yaSicwATgE58-7d-SmLHAc8KQYp1NX0,1091
+elenchos_check_cpu-1.0.1.dist-info/METADATA,sha256=a-Zc34m628kGEyDCuDHHLeHE0l35iz-S_gkYvEEQogc,2103
+elenchos_check_cpu-1.0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+elenchos_check_cpu-1.0.1.dist-info/RECORD,,
