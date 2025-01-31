@@ -1,0 +1,3 @@
+include src/arq_http/frontend/assets/*
+include src/arq_http/frontend/templates/*
+include src/arq_http/frontend/templates/components/*
