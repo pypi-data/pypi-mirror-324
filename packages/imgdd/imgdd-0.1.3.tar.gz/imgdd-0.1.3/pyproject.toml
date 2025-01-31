@@ -1,0 +1,72 @@
+[build-system]
+requires = ["maturin>=1,<2"]
+build-backend = "maturin"
+
+[project]
+name = "imgdd"
+description = "Performance-first perceptual hashing library; perfect for handling large datasets. Designed to quickly process nested folder structures, commonly found in image datasets"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+dynamic = ["readme", "version"]
+keywords = [
+    "rust", 
+    "imagehash", 
+    "hash", 
+    "perceptual hash", 
+    "difference hash", 
+    "deduplication",
+    "image deduplication", 
+    ]
+authors = [
+    {name = "Aaron Stopher"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Rust",
+  "Topic :: Scientific/Engineering",
+]
+
+[tool.maturin.dynamic]
+readme = {file = "README.md", content-type = "text/markdown"}
+
+[project.urls]
+homepage = "https://github.com/aastopher/imgdd"
+documentation = "https://github.com/aastopher/imgdd"
+source = "https://github.com/aastopher/imgdd"
+issues = "https://github.com/aastopher/imgdd/issues"
+
+
+[project.optional-dependencies]
+dev = [
+    "virtualenv==20.29.1",
+    "mkdocs==1.6.0",
+    "mkdocstrings==0.27.0",
+    "mkdocstrings-python==1.13.0",
+    "mkdocs-include-markdown-plugin==7.1.2",
+    "mkdocs-material==9.1.10",
+    "mike==2.1.3",
+]
+test = [
+    "pytest==8.3.2",
+    "pytest-codspeed==3.1.2",
+]
+
+[tool.maturin]
+bindings = "pyo3"
+module-name = "imgdd"
+packages = "imgddpy"
+long_description = "README.md"
+long_description_content_type = "text/markdown"
+manifest-path = "crates/imgddpy/Cargo.toml"
