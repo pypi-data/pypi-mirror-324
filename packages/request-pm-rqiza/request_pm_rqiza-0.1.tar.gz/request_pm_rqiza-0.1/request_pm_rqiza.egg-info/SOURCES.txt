@@ -1,0 +1,7 @@
+setup.py
+request_pm_rqiza/__init__.py
+request_pm_rqiza/my_code.py
+request_pm_rqiza.egg-info/PKG-INFO
+request_pm_rqiza.egg-info/SOURCES.txt
+request_pm_rqiza.egg-info/dependency_links.txt
+request_pm_rqiza.egg-info/top_level.txt
