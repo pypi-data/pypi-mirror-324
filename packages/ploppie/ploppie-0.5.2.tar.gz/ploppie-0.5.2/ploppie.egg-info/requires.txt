@@ -1,0 +1,4 @@
+litellm
+pillow
+soundfile
+librosa
