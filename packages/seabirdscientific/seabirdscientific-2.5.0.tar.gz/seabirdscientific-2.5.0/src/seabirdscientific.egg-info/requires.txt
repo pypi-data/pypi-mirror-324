@@ -1,0 +1,17 @@
+gsw
+matplotlib
+numpy
+pandas
+plotly
+scipy
+
+[dev]
+black
+build
+mypy
+nbformat
+notebook
+pre-commit
+pylint
+pytest
+twine
