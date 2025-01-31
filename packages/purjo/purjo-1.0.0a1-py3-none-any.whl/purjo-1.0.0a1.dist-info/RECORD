@@ -1,0 +1,16 @@
+purjo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+purjo/config.py,sha256=6n3HlxxBTdneRsYu1GjiCkNNaYdObkOxmLvpZZULXTY,384
+purjo/main.py,sha256=exn3NuA4necu8AYLRyDaodYR59sN8sTKMtgGS2r662A,6069
+purjo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+purjo/runner.py,sha256=3EL3EewjtDrkkTl_2U4nyJ1rf-ABTA7cYDRCJFiv84M,9635
+purjo/task.py,sha256=_vRRSMmCDYfBMV-7L18R6E13X7CcON-IH43Xd3RzmmU,2776
+purjo/utils.py,sha256=sJPKm70ekoEbYhZcl914IasUmKphnbErZIEu0RTZU4g,9785
+purjo/data/Hello.py,sha256=XWmLsw0NCh3mqazYVBEiFTFFCK3Vimb5Vzp6AklDhUw,182
+purjo/data/RobotParser.py,sha256=feiNANCIczx3t6Wc5OVCsrq6tGJi2yDnt4LmJvmFwmw,2392
+purjo/data/hello.bpmn,sha256=QReWyzRma6sv0umfBDh3m0JTLfn5uT2tJ1G7tv11toU,2686
+purjo/data/hello.robot,sha256=MqjmvPrM0P4fPqc7_gNuOZFqmjtz2ytfeBY0VXAmKW8,200
+purjo-1.0.0a1.dist-info/METADATA,sha256=-OmKe2H5q9TFywZ4ayFcsZO-aBPo66ubsITpM5O2PME,797
+purjo-1.0.0a1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+purjo-1.0.0a1.dist-info/entry_points.txt,sha256=6eLiwDwrYYbvJSok3zx84Uz8tIYeU5OMoOUGbPg8d1E,40
+purjo-1.0.0a1.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+purjo-1.0.0a1.dist-info/RECORD,,
