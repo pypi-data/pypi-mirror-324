@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: nfdrs4py
+Version: 0.1
+Summary: Python interface to NFDRS
+Home-page: https://github.com/j-tenny/NFDRS4py
+Dynamic: home-page
+Dynamic: summary
