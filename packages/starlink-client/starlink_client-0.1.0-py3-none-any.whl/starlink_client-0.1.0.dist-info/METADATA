@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: starlink-client
+Version: 0.1.0
+Summary: A Python client for Starlink.
+Home-page: https://github.com/Eitol/starlink-client
+Author: Hector Oliveros
+Author-email: hector.oliveros.leon@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: grpcio
+Requires-Dist: grpcio-status
+Requires-Dist: proto-plus
+Requires-Dist: protobuf
+Requires-Dist: requests
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
