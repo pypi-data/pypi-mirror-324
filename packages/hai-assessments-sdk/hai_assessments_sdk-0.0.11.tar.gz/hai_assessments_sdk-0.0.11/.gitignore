@@ -1,0 +1,49 @@
+# dependencies
+node_modules
+
+# sst
+.sst
+.build
+
+# opennext
+.open-next
+
+# misc
+.DS_Store
+
+# local env files
+.env*.local
+
+
+
+# Environments
+env
+env3
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# MLflow
+mlruns/
+mlartifacts/
+outputs/
+mlruns.db
+**/basic_auth.db
+
+# Byte-compiled / optimized / DLL files
+__pycache__
+*.py[cod]
+*$py.class
+
+
+
+python_env_generated.yaml
+_schemas
+_models
+
+dist

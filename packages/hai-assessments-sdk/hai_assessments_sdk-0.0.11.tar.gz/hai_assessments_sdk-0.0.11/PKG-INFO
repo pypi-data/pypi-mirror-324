@@ -1,0 +1,44 @@
+Metadata-Version: 2.4
+Name: hai-assessments-sdk
+Version: 0.0.11
+Author-email: Victor Santiago <Victor.Santiago@holisticai.com>, Umar Mohammed <umar.mohammed@holisticai.com>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: requests==2.31.0
+Description-Content-Type: text/markdown
+
+# HAI Assessments SDK
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hai-assessments-sdk.svg)](https://pypi.org/project/hai-assessments-sdk)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hai-assessments-sdk.svg)](https://pypi.org/project/hai-assessments-sdk)
+
+---
+
+**Table of Contents**
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install hai-assessments-sdk
+```
+
+## License
+
+`hai-assessments-sdk` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
+
+## Linting and Formatting
+
+Hatch bundles with Ruff as the default formatter. I followed the instructions here https://hatch.pypa.io/latest/config/static-analysis/#persistent-config
