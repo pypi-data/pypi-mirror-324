@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: sapiens_machine
+Version: 1.0.0
+Home-page: https://github.com/
+Author: OPENSAPI
+License: Proprietary Software
+License-File: LICENSE.txt
+Requires-Dist: scipy==1.15.1
