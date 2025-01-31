@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: rich_monokai
+Version: 1.0.0
+Summary: A Monokai theme for the Textualize/rich Python package.
+Home-page: https://github.com/chief8192/rich-monokai
+Author: Matt Doyle
+License: MIT
+Keywords: rich,monokai
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: home-page
+
+# rich-monokai
+
+A Monokai theme for the [Textualize/rich](https://github.com/Textualize/rich) Python package.
+
+## Installation
+
+```shell
+$ pip install rich-monokai
+```
