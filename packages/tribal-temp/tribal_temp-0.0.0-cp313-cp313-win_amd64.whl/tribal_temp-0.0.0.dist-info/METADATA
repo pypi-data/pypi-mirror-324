@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: tribal-temp
+Version: 0.0.0
+Home-page: https://github.com/WojtekGrbs/tribal
+Download-URL: https://github.com/WojtekGrbs/tribal
+License: GNU Affero General Public License v3
+Project-URL: Source Code, https://github.com/WojtekGrbs/tribal
+Project-URL: Benchmark Datasets, https://clustering-benchmarks.gagolewski.com/
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Topic :: Scientific/Engineering
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: Cython
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: networkx
+Dynamic: classifier
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
