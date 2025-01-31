@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: ll-la
+Version: 0.42.1
+Summary: Python API for LivingApps
+Home-page: http://github.com/LivingLogic/LivingApps.Python.LivingAPI
+Author: Walter Doerwald
+Author-email: walter@livinglogic.de
+License: MIT
+Keywords: LivingApps
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+Requires-Dist: ll-xist>=5.77
+Requires-Dist: requests>=2.21.0
+Requires-Dist: geocoder>=1.30.1
+Requires-Dist: Pillow>=6.1.0
+Requires-Dist: validators>=0.18.2
+Provides-Extra: db
+Requires-Dist: oracledb; extra == "db"
+Requires-Dist: psycopg[binary]>=3.0.5; extra == "db"
+
+``ll.la`` provides a Python API for the LivingApps system
+(see http://www.living-apps.de/ or http://www.living-apps.com/ for more info).
+
+``ll.la`` allows you to fetch the configured data sources from a template,
+create new records, and update and delete existing records all from your Python
+prompt (or script).
+
+For more info about LivingApps and this Python SDK, see
+https://my.living-apps.de/docs/PythonSDK.html (in german).
+
+
+0.42.1 (2025-01-30)
+-------------------
+
+* Fixed handling of the "required" info. Before the following could happen:
+
+  There is a first view A that has a field F that is required in view A and a
+  second view B that doesn't include field F. The configuration of the
+  ``Control`` C for this field is the default value of "the first view decides"
+  which in this case means ``C.required`` is ``Trrue``. Now if view B is the
+  active view calling ``Control.required`` returned ``True``, which is wrong,
+  since a field that is not in a view shouldn't be required. The reason for the
+  wrong result was, that the return value of ``Control._get_viewcontrol()``
+  couldn't distinguish between "there is no active view" (in which case
+  "the first view decides" is the correct approach) an "there is an active view,
+  but it doesn't contain the control in question" (in which case the control
+  should never be required).
+
+  This has been fixed now by using a new method that can distinguish those
+  two cases.
+
+
