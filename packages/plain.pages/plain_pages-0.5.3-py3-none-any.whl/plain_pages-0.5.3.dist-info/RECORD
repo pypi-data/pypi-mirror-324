@@ -1,0 +1,14 @@
+plain/pages/README.md,sha256=-04XfWNsUvt2ywRwJHcVEF6mQLtNiWJu3ZTHshlLcKE,8
+plain/pages/__init__.py,sha256=2Z2isvXIDdaX0E-Sm_Ful2F945i7Rc5zGRHFUM2aTac,59
+plain/pages/config.py,sha256=sap-E4gP8qpPeAxI5er82u0oDKxEfqethze2ldIDHxI,481
+plain/pages/exceptions.py,sha256=hl6XMHCQkrqm9CS2K6Xx3yUcrQWkvC35xGx0No535s8,92
+plain/pages/markdown.py,sha256=1U1iM1n3KolXiOgwJydvRECUkkMQ8-Pi6e_YPuYWP8U,1637
+plain/pages/pages.py,sha256=xp5StQrqgPr8H4IGz6ocZKODDLVEphgoLd0rXoJt9Qk,3297
+plain/pages/registry.py,sha256=QviHNtoajg0CGu068b8sSdXrkubB3PvdeCU6vNvTyvg,2263
+plain/pages/urls.py,sha256=nXbyBkgsUdJGNkwrpT7fXuLQnYjZA9bda4x5GUOLUqo,167
+plain/pages/views.py,sha256=oZUGiPBXFn-TucdQLehGv3I6FvVXXTufuH5WrWdcxz0,1927
+plain/pages/templates/page.html,sha256=46Il-6fZlGaMLMGdKj5U5H7_jqfDDz5aruWm5Tus4Mc,137
+plain_pages-0.5.3.dist-info/METADATA,sha256=fLmvkDMmFYJ6z_ZCkilBAmIxqphrvgFkhz8LfC1uOfo,494
+plain_pages-0.5.3.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+plain_pages-0.5.3.dist-info/licenses/LICENSE,sha256=cvKM3OlqHx3ijD6e34zsSUkPvzl-ya3Dd63A6EHL94U,1500
+plain_pages-0.5.3.dist-info/RECORD,,
