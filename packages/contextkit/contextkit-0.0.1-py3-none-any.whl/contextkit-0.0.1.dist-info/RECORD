@@ -1,0 +1,10 @@
+contextkit/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+contextkit/_modidx.py,sha256=7V5XfJtZzQQbP5j6Ff4GiC-Qi26oZNvRuwg-O7vyt64,4315
+contextkit/contexts.py,sha256=IKj1Rp6qAiAd-P2DuKmNARBfhRSQUcgxRmpRFh4pP-c,2541
+contextkit/read.py,sha256=d7jppr_Uq-eQQH5TttINF5gdvhaxwNBm-TajUERtbz8,7443
+contextkit-0.0.1.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+contextkit-0.0.1.dist-info/METADATA,sha256=2r2qv_Zgn9BV1G4K67x0PPMy1ZPKjLTktKHnarcbdAg,3591
+contextkit-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+contextkit-0.0.1.dist-info/entry_points.txt,sha256=M_3Tp3m9RzyU7VyBWGY5En0WWcgqfLo9FYSpLg5KhCQ,84
+contextkit-0.0.1.dist-info/top_level.txt,sha256=KIzHlSvh3PwLBOEBF40m2yiLDKnqLJ6HzyV3BljwSd4,11
+contextkit-0.0.1.dist-info/RECORD,,

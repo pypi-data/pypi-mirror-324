@@ -1,0 +1,5 @@
+[console_scripts]
+ck = ContextKit.cli:ck
+
+[nbdev]
+contextkit = contextkit._modidx:d
