@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: LingmoUIPy
+Version: 3.0
+Summary: This is LingmoUI for Python
+License-File: LICENSE
+Requires-Dist: pyside6>=6.7.3
+Dynamic: requires-dist
+Dynamic: summary
