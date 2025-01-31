@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: hello-world-20250130
+Version: 0.1.1
+Summary: Simple program that prints out 'Hello, World!'
+Author: Alex
+Author-email: alexandre.fournier.ahizoune@connektica.com
+Requires-Python: >=3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# README
+Program that prints out "Hello, World!".
+
