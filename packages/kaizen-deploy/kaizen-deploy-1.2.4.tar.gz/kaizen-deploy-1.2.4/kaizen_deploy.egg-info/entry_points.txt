@@ -1,0 +1,2 @@
+[console_scripts]
+kaizen-deploy = src.main:main
