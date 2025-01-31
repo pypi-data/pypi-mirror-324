@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/codesys_bridge/__init__.py
+src/codesys_bridge/codesys_bridge_script.py
+src/codesys_bridge/codesys_script_install.py
+src/codesys_bridge/export.py
+src/codesys_bridge.egg-info/PKG-INFO
+src/codesys_bridge.egg-info/SOURCES.txt
+src/codesys_bridge.egg-info/dependency_links.txt
+src/codesys_bridge.egg-info/entry_points.txt
+src/codesys_bridge.egg-info/top_level.txt
+src/codesys_bridge/assets/export_icon.ico
