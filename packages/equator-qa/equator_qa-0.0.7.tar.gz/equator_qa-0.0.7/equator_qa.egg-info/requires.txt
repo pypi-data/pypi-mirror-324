@@ -1,0 +1,11 @@
+numpy>=1.18.0
+requests>=2.25.0
+jupyter
+
+[dev]
+pytest==8.3.4
+pytest-mock==3.14.0
+flake8==6.0.0
+twine
+bump2version==1.0.1
+dataset

@@ -1,0 +1,9 @@
+2025-01-09-Bernard
+build
+docbook
+docs
+equator_qa
+html
+images
+latex
+tests
