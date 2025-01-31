@@ -1,0 +1,2 @@
+[console_scripts]
+nuri = nuri.cli:cli
