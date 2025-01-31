@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Mutenix Virtual Macropad{% endblock %}
+{% block content %}
+<main>
+    <nav>
+        <button id="toggleButton" onclick="toggleButtons()">Show 10 Buttons</button>
+    </nav>
+    <div id="mainDiv"
+        style="display: flex; justify-content: center; align-items: center; min-height: calc(100vh - 50px);">
+        {% include 'keypads.html' %}
+    </div>
+    <button onclick="openPopup()">Open in Popup</button>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttonSelection = localStorage.getItem('buttonSelection');
+            activateButton(buttonSelection);
+        });
+    </script>
+    <script src="/static/js/script.js"></script>
+</main>
+{% endblock %}
