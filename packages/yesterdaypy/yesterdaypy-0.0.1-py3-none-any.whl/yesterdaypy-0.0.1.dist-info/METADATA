@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: yesterdaypy
+Version: 0.0.1
+Summary: A tool to backup Linode configuration
+Author: Leonardo Souza
+License: MIT
+Project-URL: Homepage, https://github.com/leonardobdes/yesterdaypy
+Project-URL: Documentation, https://github.com/leonardobdes/yesterdaypy
+Project-URL: Repository, https://github.com/leonardobdes/yesterdaypy.git
+Project-URL: Issues, https://github.com/leonardobdes/yesterdaypy/issues
+Keywords: linode,backup
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: linode_api4
+
+# yesterday
