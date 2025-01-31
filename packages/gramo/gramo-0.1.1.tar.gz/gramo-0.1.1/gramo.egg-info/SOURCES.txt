@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+gramo/__init__.py
+gramo/main.py
+gramo.egg-info/PKG-INFO
+gramo.egg-info/SOURCES.txt
+gramo.egg-info/dependency_links.txt
+gramo.egg-info/top_level.txt
