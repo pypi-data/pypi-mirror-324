@@ -1,0 +1,18 @@
+# Contains the kinematic description on the P.046 protoype
+# made by Ben Forrai (ben.forrai@mimicrobotics.com) and
+# Philipp Wand (philipp.wand@mimicrobotics.com) on 29.01.25.
+# based on the P.046 hand prototype
+
+mcp_joint_values:
+  abduction_multiplier: 0.0074
+  flexion_multiplier: -0.0064
+pip_joint_values:
+  pip_joint_rolling_radius: 0.0036
+  mcp_pulley_rolling_radius: 0.002175
+thumb_joint_values:
+  cmc_joint_rolling_radius: 0.005
+  abd_joint_rolling_radius: 0.0075
+  pulley_rolling_radius: 0.002175
+  pip_joint_rolling_radius: 0.0035
+  pp_joint_rolling_radius: 0.0035
+spool_radius: 0.0053

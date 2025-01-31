@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "mimic_hand_middleware"
+version = "0.3.0.0"
+description = "Joint-to-motor level control API for mimic robotics AG's robotic hands."
+authors = ["Ben Forrai <ben.forrai@mimicrobotics.com>"]
+readme = "README.md"
+license = "Closed source"
+
+[tool.poetry.dependencies]
+python = "3.10.12"
+numpy = "^1.26.4"
+click = "^8.0.0"
+opencv-python = "*"
+matplotlib = "^3.0.0"
+pandas = "^2.0.0"
+protobuf = "^5.28.3"
+pyyaml = "^6.0.0"
+pyserial = "^3.5"
+defusedxml = "^0.7.1"
+mimic-hand-api = "^4.2.0"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.8"
+pre-commit = "^3.7.1"
+pytest = "^8.2.2"
+ruff = "0.4.8"
+
+[tool.ruff]
+# Enable all linting rules
+lint.select = ["ALL"]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "single"
+exclude = ["D203", "D212", "COM812", "ISC001", "Q000", "Q003"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poe.tasks]
+clean = """
+# Multiline commands including comments work too. Unescaped whitespace is ignored.
+rm -rf .cache
+       .mypy_cache
+       .ruff_cache
+       .pytest_cache
+       ./**/__pycache__
+       ./**/*.pyc
+       ./**/*.pyo
+       ./**/*.spec
+       ./.mypy_cache
+       ./**/*.egg-info
+       ./**/wandb/
+       build
+       dist
+"""
+pre = "pre-commit run --all-files"
