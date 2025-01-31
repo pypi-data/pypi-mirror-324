@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: apollo3zehn-package-management
+Version: 1.0.0b5
+Summary: A collection of types to easily implement a plugin system in your Python application. The source code of individual extensions can be located in remote git repositories or in a local folder structure.
+Home-page: https://github.com/Apollo3zehn/package-management
+Author: https://github.com/Apollo3zehn
+License: MIT
+Project-URL: Project, https://github.com/Apollo3zehn/package-management
+Project-URL: Repository, https://github.com/Apollo3zehn/package-management
+Keywords: package management extensions plugins
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# package-management
+
+A collection of types to easily implement a plugin system in your Python application. The source code of individual extensions can be located in remote git repositories or in a local folder structure.
