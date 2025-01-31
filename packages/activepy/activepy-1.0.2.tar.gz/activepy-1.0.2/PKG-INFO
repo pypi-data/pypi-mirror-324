@@ -1,0 +1,51 @@
+Metadata-Version: 2.2
+Name: activepy
+Version: 1.0.2
+Summary: A command-line utility for creating and managing Python webapp applications.
+Author: Simone
+Author-email: cardellasimone10@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Activepy
+
+![Python](https://img.shields.io/badge/language-Python-blue.svg)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/activepy)
+![PyPI - Version](https://img.shields.io/pypi/v/activepy)  <!-- Replace 'activepy' with your actual package name -->
+
+
+Activepy is a command-line utility for creating and managing Python web applications. It simplifies the setup process by creating the necessary files and directories for your app, as well as providing a way to start a local server.
+
+## Prerequisites
+
+Make sure you have Python 3.x installed on your machine. You can download it from [python.org](https://www.python.org/downloads/).
+
+### Installation
+
+In the cmd, type:
+```bash
+pip install activepy
+```
+
+## Create and start a new project
+To create a new project, run the following command:
+```bash
+actpy createapp app_name
+```
+
+Now, you can start the app:
+```bash
+actpy start app_name
+```
