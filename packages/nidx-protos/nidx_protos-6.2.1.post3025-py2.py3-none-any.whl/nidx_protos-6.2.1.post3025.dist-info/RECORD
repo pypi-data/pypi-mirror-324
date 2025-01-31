@@ -1,0 +1,9 @@
+.gitignore,sha256=zbyuFRBda3geYggTx5x-hodA1OnMU85vX8u8Ejh630s,2
+nidx_protos-6.2.1.post3025.dist-info/METADATA,sha256=nKS-sfCnLHP8vuxv91qNWCZ6dX258vnM-tT53X_sCNA,65
+nidx_protos-6.2.1.post3025.dist-info/WHEEL,sha256=rsbISUvAUcl4HUjm1gKb_L9aoizBeGE4RqNs1UJntCA,94
+nidx_protos-6.2.1.post3025.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nidx_protos/nidx_pb2.py,sha256=UrBsBG0cKPsvfJMzmbxFSmjSnLKIKRxj_ZRPnih5xu4,3931
+nidx_protos/nidx_pb2.pyi,sha256=XteNW6x4XQha6HbtrE5bJ93e20dlKc7OfkbPXp0dQTE,449
+nidx_protos/nidx_pb2_grpc.py,sha256=6yJ5jvvFGNgq5S0-rKnWWHdKgaN7kqOXYKzLIjIi_Sg,23628
+nidx_protos/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nidx_protos-6.2.1.post3025.dist-info/RECORD,,
