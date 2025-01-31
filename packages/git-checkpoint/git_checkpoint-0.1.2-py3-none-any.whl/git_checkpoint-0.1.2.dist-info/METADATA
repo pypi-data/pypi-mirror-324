@@ -1,0 +1,167 @@
+Metadata-Version: 2.3
+Name: git-checkpoint
+Version: 0.1.2
+Summary: A Git-based workspace state management system
+Author: Alex Ngai
+Author-email: alex@sudocode.ai
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: GitPython (>=3.1.40,<4.0.0)
+Requires-Dist: pydantic (>=2.5.3,<3.0.0)
+Requires-Dist: watchdog (>=3.0.0,<4.0.0)
+Description-Content-Type: text/markdown
+
+# git-checkpoint
+
+A Git-based workspace state management system that provides efficient codebase state tracking and restoration capabilities.
+
+## How It Works
+
+git-checkpoint uses Git under the hood but operates completely independently from your workspace's version control:
+
+1. Creates a separate "shadow" Git repository in a temporary directory
+2. Your workspace files are copied to this shadow repository for tracking
+3. All Git operations happen in the shadow repository, never touching your actual workspace's Git state
+4. When restoring checkpoints, files are copied back from the shadow repository
+5. Your workspace's Git repository (if any) remains completely untouched
+
+## Features
+
+- Shadow Git repository management for non-intrusive state tracking
+- Workspace state tracking with commit and restore functionality
+- Efficient diff generation between states
+- Smart handling of large files (LFS)
+- Nested Git repository support
+- Configurable file exclusion patterns
+
+## Installation
+
+```bash
+# Using poetry (recommended)
+poetry add git-checkpoint
+
+# Using pip
+pip install git-checkpoint
+```
+
+## Quick Start
+
+```python
+from git_checkpoint import CheckpointTracker
+
+# Initialize tracker (creates shadow repository in temp directory)
+tracker = CheckpointTracker.create(
+    task_id="my_task",
+    workspace_path="/path/to/workspace"
+)
+
+# Create a checkpoint (copies current workspace state to shadow repo)
+commit_hash = tracker.commit()
+
+# Get changes between checkpoints
+diffs = tracker.get_diff_set(
+    lhs_hash="previous_hash",
+    rhs_hash="current_hash"
+)
+
+# Restore to a previous state (copies files back from shadow repo)
+tracker.reset_head("previous_hash")
+
+# Clean up shadow repository when done
+tracker.cleanup()
+```
+
+## Configuration
+
+Create a `.checkpointrc` file in your workspace:
+
+```yaml
+enabled: true
+storage_path: ".checkpoints"
+ignore_patterns:
+  - "*.pyc"
+  - "__pycache__"
+  - "node_modules"
+  - ".git"
+```
+
+## API Reference
+
+### CheckpointTracker
+
+#### Constructor
+```python
+def __init__(self, task_id: str, workspace_path: str)
+```
+- `task_id`: Unique identifier for the checkpoint session
+- `workspace_path`: Path to the workspace to track
+
+#### Methods
+
+##### create
+```python
+@classmethod
+def create(cls, task_id: str, workspace_path: str) -> "CheckpointTracker"
+```
+Creates and initializes a new checkpoint tracker.
+
+##### commit
+```python
+def commit(self) -> Optional[str]
+```
+Creates a new checkpoint of the current workspace state. Returns the commit hash.
+
+##### reset_head
+```python
+def reset_head(self, commit_hash: str) -> None
+```
+Restores the workspace to the state of the specified commit.
+
+##### get_diff_set
+```python
+def get_diff_set(
+    self,
+    lhs_hash: Optional[str],
+    rhs_hash: Optional[str]
+) -> List[DiffInfo]
+```
+Returns a list of file differences between two commits.
+
+## Development
+
+```bash
+# Install dependencies
+poetry install
+
+# Run tests
+poetry run pytest tests/ -v
+
+# Run tests with coverage
+poetry run pytest tests/ -v --cov=git_checkpoint
+```
+
+## Error Handling
+
+The package uses custom exceptions for common error cases:
+
+- `WorkspaceError`: Invalid workspace configuration
+- `GitError`: Git operation failures
+- `ConfigError`: Configuration parsing issues
+
+## Best Practices
+
+1. Always validate workspace paths before initialization
+2. Use meaningful task IDs for better organization
+3. Handle large files appropriately using LFS
+4. Regularly clean up old checkpoints to manage storage
+
+## Attribution
+
+Thank you to [Cline](https://github.com/cline/cline) for inspiring this package!
+
