@@ -1,0 +1,7 @@
+[console_scripts]
+ncbi_download = ncbi_datasets_util.downloader:cli
+ncbi_download_and_qc = ncbi_datasets_util.downloader_and_summarizer:cli
+ncbi_qc_summary = ncbi_datasets_util.summarizer:cli
+
+[nbdev]
+ncbi_datasets_util = ncbi_datasets_util._modidx:d
