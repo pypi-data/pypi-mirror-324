@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xml-parser-llm"
+version = "0.1.1"
+description = "A minimal XML parser for structured output from LLM"
+authors = ["edoardoavenia <aveniaedoardo1@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+packages = [
+    { include = "llm_xml_parser", from = "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
