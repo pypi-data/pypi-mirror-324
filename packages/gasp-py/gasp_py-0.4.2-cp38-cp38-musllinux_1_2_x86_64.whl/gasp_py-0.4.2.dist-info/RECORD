@@ -1,0 +1,9 @@
+gasp_py.libs/libgcc_s-a0b57c20.so.1,sha256=XPAr2giQZFaQKDEig3i_sQM7zfbaGkuhwmZ9ryvu-Vk,148041
+gasp/gasp.cpython-38-x86_64-linux-gnu.so,sha256=ZBKXZqoW3wo4XaiQzi_5WUWslIr9TV_dnt0GXNQs2qo,3516849
+gasp/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gasp/__init__.py,sha256=RRRDrID0m7o4j_W8WaCM9bCDhtn-Kx7KhIJe6e34JDc,99
+gasp/__init__.pyi,sha256=J0tRbBfSUgOk-hlBTO44qLaDfCNbzbnLeWjKe03kBeA,812
+gasp_py-0.4.2.dist-info/WHEEL,sha256=mQgk0a0jh-vP0pYShvR7STU4e40ps0JJTsdvGj0rQYQ,106
+gasp_py-0.4.2.dist-info/RECORD,,
+gasp_py-0.4.2.dist-info/METADATA,sha256=vDw0DFvEUclDZRJNpMuZfTGFKivyOArglBBmDzG9R3o,9701
+gasp_py-0.4.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
