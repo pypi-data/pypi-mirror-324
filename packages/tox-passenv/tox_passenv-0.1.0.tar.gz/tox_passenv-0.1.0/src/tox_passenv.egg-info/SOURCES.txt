@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/tox_passenv/__init__.py
+src/tox_passenv/_tox4_plugin.py
+src/tox_passenv/plugin.py
+src/tox_passenv/version.py
+src/tox_passenv.egg-info/PKG-INFO
+src/tox_passenv.egg-info/SOURCES.txt
+src/tox_passenv.egg-info/dependency_links.txt
+src/tox_passenv.egg-info/entry_points.txt
+src/tox_passenv.egg-info/requires.txt
+src/tox_passenv.egg-info/top_level.txt
+tests/test_plugin.py

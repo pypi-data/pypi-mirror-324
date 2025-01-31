@@ -1,0 +1,57 @@
+Metadata-Version: 2.2
+Name: tox-passenv
+Version: 0.1.0
+Summary: Additional environment variable names to pass into tox test env
+Author: Stanislav Levin
+Maintainer: Stanislav Levin
+License: MIT
+Project-URL: Homepage, https://github.com/stanislavlevin/tox-passenv
+Project-URL: Repository, https://github.com/stanislavlevin/tox-passenv
+Project-URL: Issues, https://github.com/stanislavlevin/tox-passenv/issues
+Keywords: virtual,environments,isolated,testing
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: tox
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tox>=3
+
+# tox-passenv plugin ![CI](https://github.com/stanislavlevin/tox-passenv/workflows/CI/badge.svg)
+
+This is the backport of `tox3` functionality of `TOX_TESTENV_PASSENV` for `tox4`:
+
+> If defined the TOX_TESTENV_PASSENV environment variable (in the tox invocation
+  environment) can define additional space-separated variable names that are to
+  be passed down to the test command environment.
+
+Usage
+-----
+
+```
+export TOX_TESTENV_PASSENV='FOO BAR'
+tox
+```
+
+Note
+----
+
+The plugin does nothing if installed for `tox3`.
+
+License
+-------
+
+Distributed under the terms of the **MIT** license, `tox-passenv` is
+free and open source software.
