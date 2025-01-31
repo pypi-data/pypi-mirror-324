@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: erlpack
+Version: 1.0.1
+Summary: A high performance erlang term encoder for Python.
+Home-page: http://github.com/discord/erlpack
+Author: Jake Heinz
+Author-email: jh@discordapp.com
+License: Apache 2.0
+License-File: LICENSE
+License-File: COPYING
+Requires-Dist: six~=1.15
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
