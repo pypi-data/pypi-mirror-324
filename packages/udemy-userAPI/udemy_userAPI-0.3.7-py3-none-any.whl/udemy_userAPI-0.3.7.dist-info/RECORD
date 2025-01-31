@@ -1,0 +1,17 @@
+udemy_userAPI/__init__.py,sha256=BPle89xE_CMTKKe_Lw6jioYLgpH-q_Lpho2S-n1PIUA,206
+udemy_userAPI/__version__.py,sha256=ZlJ4BqU7L0jruy2h0iTeuMxcPub8qGB7jbO8vbwvXbY,405
+udemy_userAPI/api.py,sha256=jWWwJBYS9dJDjlozUj4Yi4uc8OCAy5PILqUiRWZMiq8,28153
+udemy_userAPI/authenticate.py,sha256=IJRrCjmhe_x40CrQ2KrOMNP8VvotZf0QMWsrbcLl_rw,14225
+udemy_userAPI/bultins.py,sha256=s12tXjbZgyKAnYrEtZxUzuTY-aIINXlm4mpbxR-r4Io,21932
+udemy_userAPI/exeptions.py,sha256=kfnPdZpqYY8nd0gnl6_Vh-MIz-XupmmbRPIuFnyXupk,692
+udemy_userAPI/sections.py,sha256=eRjUUlEApwrwlcCs9GWIk580qq1UVFqR5RmOgP6y65E,5424
+udemy_userAPI/udemy.py,sha256=AAXc24iAtFTyDyVehhFeSx9CyhWMeFWsbYn1J80TgFw,3270
+udemy_userAPI/.cache/.udemy_userAPI,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+udemy_userAPI/mpd_analyzer/__init__.py,sha256=i3JVWyvcFLaj5kPmx8c1PgjsLht7OUIQQClD4yqYbo8,102
+udemy_userAPI/mpd_analyzer/bin.wvd,sha256=1rAJdCc120hQlX9qe5KUS628eY2ZHYxQSmyhGNefSzo,2956
+udemy_userAPI/mpd_analyzer/mpd_parser.py,sha256=PgUkHc5x8FTuXFCuYkWPZr9TaO_nsKalb02EFYl_zeA,8926
+udemy_userAPI-0.3.7.dist-info/LICENSE,sha256=l4jdKYt8gSdDFOGr09vCKnMn_Im55XIcQKqTDEtFfNs,1095
+udemy_userAPI-0.3.7.dist-info/METADATA,sha256=B5tTj-p8_9DEWwgarUotK9gTteg6teb_R5oeLg7HznQ,1655
+udemy_userAPI-0.3.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+udemy_userAPI-0.3.7.dist-info/top_level.txt,sha256=ijTINaSDRKhdahY_X7dmSRFTxBIwQErWv9ATCG55mog,14
+udemy_userAPI-0.3.7.dist-info/RECORD,,
