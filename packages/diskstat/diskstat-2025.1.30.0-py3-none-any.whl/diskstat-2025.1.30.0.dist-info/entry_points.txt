@@ -1,0 +1,3 @@
+[console_scripts]
+diskstat = diskstat.entry:main
+diskstat-server = diskstat.server:main

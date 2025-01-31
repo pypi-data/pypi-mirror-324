@@ -1,0 +1,16 @@
+diskstat/Diskstat.template.ahk,sha256=5Ka0vDXabWvnOQWF0WtTlSNsdo52sRkE8aoq2_ApSxw,594
+diskstat/autostart.py,sha256=elvKsIRiIg4GAraMI8VL4zVzt5zA2HISofqXoBUsGJQ,1011
+diskstat/disks.py,sha256=SufpRSNWVCmjsX2Moq1wZNf8QDs-97CVl4cQtoEhqbQ,946
+diskstat/diskstat-api.go,sha256=VneRL98jyyQMAikgLmiqLHiu9NqLhqu2jW3i89Phafo,453
+diskstat/entry.py,sha256=Va7OJ3v5zL-o8HB0ZVj3CNIAM4M9RKtrjNCpZbLCtUU,687
+diskstat/gen.py,sha256=5V6u6d1rgIRdUugKnXY2Gzas50kw8Ok1HI0k-qSXqP4,440
+diskstat/program.ico,sha256=BHxLAOUZmNBWImWfWnTvCn9tdmCaTHoIlTg03YvUqEM,38154
+diskstat/program_window.py,sha256=AkWPSOptSdAXe2kyqk0qbF9ICAgid8gTB4YYCRMhNRc,4398
+diskstat/res.py,sha256=Nf-ZdQ4FGiszluIZ8UnnPVm7Q8RtXkJghVSzZHyta94,17411
+diskstat/server.py,sha256=RMhENsMyLcbj0aliyv9CJBV2grSMHhoiAGgnuDc458I,2495
+diskstat/diskstat-api.exe,sha256=Jd1ZD69iwyHYbT2ijoquk0Y6SOcyjh_3APxeyGcr3-o,7705600
+diskstat-2025.1.30.0.dist-info/METADATA,sha256=mDsFrwE0OiQKegAFfDJsTk78AoVbyDOnbQcz4jiAwvE,1812
+diskstat-2025.1.30.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+diskstat-2025.1.30.0.dist-info/entry_points.txt,sha256=YQJeMBmnnPuv_RRJ9EJwm3g1CRXVXsXJrRwvte1Xygg,88
+diskstat-2025.1.30.0.dist-info/licenses/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+diskstat-2025.1.30.0.dist-info/RECORD,,
