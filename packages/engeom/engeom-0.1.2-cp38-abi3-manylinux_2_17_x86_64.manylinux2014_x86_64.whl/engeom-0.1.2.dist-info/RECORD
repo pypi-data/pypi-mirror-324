@@ -1,0 +1,14 @@
+engeom-0.1.2.dist-info/METADATA,sha256=ym_mnfPDlcTOzcYgeEZGMCFsgidl30syGoPDLY_B2eA,339
+engeom-0.1.2.dist-info/WHEEL,sha256=473T-iBDPc6DHc-9q66Gpnn0HSHmHhv_27uSTUVy86w,127
+engeom/geom2/__init__.py,sha256=mRu8Zh6DE-EQyhxScoxszPqDjGVzGWVJEQO6RIAtS4A,174
+engeom/align/__init__.py,sha256=SEeMqeqLKqJC73Mg8GwPwd9NwWnl-dcCqJ4rPdh8yyc,196
+engeom/engeom.pyi,sha256=pLlD_YazsO0zu3guQZx85btESz0gAwVv79xD0pjd7Nc,196
+engeom/__init__.py,sha256=QN5uETqrN442w41foyrcCPV_x6NP-mrxkPJhdvdey1g,109
+engeom/align.pyi,sha256=KBC0nwcyp4YMfY2hRN1gr3DqFah-unqAd_o1KYwJAqc,1022
+engeom/geom2.pyi,sha256=De3YQSGpS4UQ1zawtIsuVR4-7rcFjqmNvL9lbtzN_d4,17117
+engeom/matplotlib.py,sha256=Y9JZqpEFHm5EVzbr20P-NdxndNZdDH32OhE_KjxG_S4,3025
+engeom/geom3/__init__.py,sha256=DG5jt2xgS9WRNb58ZkkrcKQQO6bIG-irg-uV_BkHEj4,174
+engeom/geom3.pyi,sha256=fEFhdFmEJsDP3X0aE_N0heqMyyPnbYjpeB0hTR2xjOI,27295
+engeom/pyvista.py,sha256=Lyvm0K_rvhR2wZACtfwCPYwEuABqYSTdjvbBaQS9yI4,1721
+engeom/engeom.abi3.so,sha256=EqHRvxbpnUHBzMMGDgHioEWvYxP78V2PjfRptgeZ3-4,1856848
+engeom-0.1.2.dist-info/RECORD,,
