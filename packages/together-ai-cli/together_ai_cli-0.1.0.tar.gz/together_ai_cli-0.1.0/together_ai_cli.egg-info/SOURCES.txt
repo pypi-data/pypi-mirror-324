@@ -1,0 +1,8 @@
+pyproject.toml
+setup.py
+together-ai-cli/__init__.py
+together_ai_cli.egg-info/PKG-INFO
+together_ai_cli.egg-info/SOURCES.txt
+together_ai_cli.egg-info/dependency_links.txt
+together_ai_cli.egg-info/requires.txt
+together_ai_cli.egg-info/top_level.txt
