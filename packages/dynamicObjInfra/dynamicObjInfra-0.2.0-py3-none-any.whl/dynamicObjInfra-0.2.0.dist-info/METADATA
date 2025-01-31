@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: dynamicObjInfra
+Version: 0.2.0
+Summary: A reusable infrastructure package for data handling
+Author-email: Shaul Ben Maor <shaul@claro.one>
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Shaulbm/dynamicObjInfra/issues
+Project-URL: Documentation, https://github.com/Shaulbm/dynamicObjInfra
+Project-URL: Source Code, https://github.com/Shaulbm/dynamicObjInfra
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic
+Requires-Dist: redis
+Requires-Dist: pymongo
+
+"# dynamicObjInfra" 
