@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robotframework-fasthttpmock"
+version = "0.1.0"
+description = "HTTP mock server library for Robot Framework using FastAPI and Uvicorn"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+keywords = ["robotframework", "testing", "mock", "http"]
+authors = [
+    { name = "Leela Prasad V"},
+]
+dependencies = [
+    "robotframework>=7.0",
+    "fastapi>=0.110.0",
+    "uvicorn>=0.27.1",
+    "requests>=2.31.0",
+    "pydantic>=2.6.3"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.1.1",
+    "pytest-asyncio>=0.23.5",
+    "robotframework-requests==0.9.7",
+    "ruff>=0.9.2",
+    "black>=24.2.0",
+    "pytest-cov>=4.1.0",
+    "invoke>=2.2.0",
+    "build>=1.0.3"
+]
+
+[project.urls]
+Homepage = "https://github.com/leelaprasadv/robotframework-fasthttpmock"
+Repository = "https://github.com/leelaprasadv/robotframework-fasthttpmock.git"
+
+[project.entry-points."robot.libraries"]
+FastHTTPMock = "FastHTTPMock:FastHTTPMock"
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+select = ["E", "F", "B", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=src/FastHTTPMock --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["src/FastHTTPMock"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+    "pass",
+]
+show_missing = true
+fail_under = 50 
