@@ -1,0 +1,25 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+device_repo_lists/Lenovo Lenovo TB-X103F TB-X103F.txt
+device_repo_lists/MLS iQW553 iQW553.txt
+device_repo_lists/Xiaomi Redmi 5A riva.txt
+hexapterygon/DeviceEvents.py
+hexapterygon/DeviceOverlay.py
+hexapterygon/HexaGlobals.py
+hexapterygon/HexaTUI.py
+hexapterygon/InsortForOldPython.py
+hexapterygon/StateEnums.py
+hexapterygon/TUItilities.py
+hexapterygon/__init__.py
+hexapterygon/__main__.py
+hexapterygon.egg-info/PKG-INFO
+hexapterygon.egg-info/SOURCES.txt
+hexapterygon.egg-info/dependency_links.txt
+hexapterygon.egg-info/entry_points.txt
+hexapterygon.egg-info/requires.txt
+hexapterygon.egg-info/top_level.txt
+imgs/Peek.gif
+tests/test.py
+tests/test_thread.py
