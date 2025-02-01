@@ -1,0 +1,11 @@
+qat/hardware/__init__.so,sha256=vAl9OwEasc3DiksnNDM5DJcxd8lEovz2nHKgwH7JMSs,95040
+qat/hardware/default.so,sha256=_oOpHQChsUF8H1354-7pPzp5Eyq5u1P-SHVUn6Q4TKo,402000
+qat/hardware/models.so,sha256=7U8Xbnxp1Hr8LIPyoztq0ltmDW7hnrY3gXYCYq5H0ZE,141120
+qat/hardware/tomography.so,sha256=ovOKdiLxOIMsmOoctcKOEfH3NK-t_7dYlE-gkqAS02s,141664
+qat/hardware/version.so,sha256=3bED6W-OwTOyioK4StuMLYx1DsuIz_LL1Z3Ca28BPLk,76288
+qat/hardware/ions/gates_specification.so,sha256=bl7UrABPN65xonoWTOsRsJgGsyLQetj4Qhd18Otxla8,264640
+qat_hardware-1.5.0.dist-info/LICENSE.txt,sha256=Vl03FJBySK7FEYdw_Y0dV66UAVedEyIuqJTJxREyRgs,4752
+qat_hardware-1.5.0.dist-info/METADATA,sha256=_oiv8dsLzuaXnUarp1zE8JCg-BGW3vbwA7kgq73y_To,1840
+qat_hardware-1.5.0.dist-info/WHEEL,sha256=9kGPQJ_1sihQv606dDDpyeHKhj9jyzxGlF40ML1vLEY,108
+qat_hardware-1.5.0.dist-info/top_level.txt,sha256=EtiE-lzXpV6tDPK3leIRADd9p6cOal7g6fxvqQ-u_yc,4
+qat_hardware-1.5.0.dist-info/RECORD,,
