@@ -1,0 +1,2 @@
+[console_scripts]
+pukpuk = pukpuk.cli:main
