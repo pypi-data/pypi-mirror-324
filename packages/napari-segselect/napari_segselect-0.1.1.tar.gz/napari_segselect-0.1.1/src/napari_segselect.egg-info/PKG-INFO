@@ -1,0 +1,113 @@
+Metadata-Version: 2.2
+Name: napari-segselect
+Version: 0.1.1
+Summary: Select a connected component from a membrain-seg segmentation.
+Author: Benedikt Wimmer
+Author-email: b.wimmer@bioc.uzh.ch
+License: 
+        Copyright (c) 2025, Benedikt Wimmer
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without
+        modification, are permitted provided that the following conditions are met:
+        
+        * Redistributions of source code must retain the above copyright notice, this
+          list of conditions and the following disclaimer.
+        
+        * Redistributions in binary form must reproduce the above copyright notice,
+          this list of conditions and the following disclaimer in the documentation
+          and/or other materials provided with the distribution.
+        
+        * Neither the name of copyright holder nor the names of its
+          contributors may be used to endorse or promote products derived from
+          this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+        AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+        IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+        FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+        DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+        SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+        CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+        OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+        OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Bug Tracker, https://github.com/bwmr/napari-segselect/issues
+Project-URL: Documentation, https://github.com/bwmr/napari-segselect#README.md
+Project-URL: Source Code, https://github.com/bwmr/napari-segselect
+Project-URL: User Support, https://github.com/bwmr/napari-segselect/issues
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Framework :: napari
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Image Processing
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: magicgui
+Requires-Dist: mrcfile
+Provides-Extra: testing
+Requires-Dist: napari; extra == "testing"
+Requires-Dist: ruff; extra == "testing"
+
+# napari-segselect
+
+[![License BSD-3](https://img.shields.io/pypi/l/napari-segselect.svg?color=green)](https://github.com/bwmr/napari-segselect/raw/main/LICENSE)
+[![PyPI](https://img.shields.io/pypi/v/napari-segselect.svg?color=green)](https://pypi.org/project/napari-segselect)
+[![Python Version](https://img.shields.io/pypi/pyversions/napari-segselect.svg?color=green)](https://python.org)
+[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-segselect)](https://napari-hub.org/plugins/napari-segselect)
+
+Select a connected component from a [membrain-seg](https://github.com/teamtomo/membrain-seg) segmentation.
+
+## Usage
+
+1. Run `membrain-seg` with the `--store-connected-components` flag.
+2. Open the segmentation in Napari, find out which component numbers correspond to your feature.
+3. Enter these numbers and a feature name in the widget, press run. 
+4. Save the resulting layer using naparis built-in dialog. 
+5. Now you have a standalone binary segmentation of your feature of interest. 
+
+
+## Installation
+
+You can install `napari-segselect` via [pip]:
+
+    `pip install napari-segselect`
+   
+Or directly from GitHub:
+
+    `pip install git+https://github.com/bwmr/napari-segselect.git`
+
+
+## License
+
+Distributed under the terms of the [BSD-3] license,
+"napari-segselect" is free and open source software
+
+## Issues
+
+If you encounter any problems, please [file an issue] along with a detailed description.
+
+This [napari] plugin was generated with [copier] using the [napari-plugin-template].
+
+
+[napari]: https://github.com/napari/napari
+[copier]: https://copier.readthedocs.io/en/stable/
+[@napari]: https://github.com/napari
+[BSD-3]: http://opensource.org/licenses/BSD-3-Clause
+[napari-plugin-template]: https://github.com/napari/napari-plugin-template
+
+[file an issue]: https://github.com/bwmr/napari-segselect/issues
+
+[napari]: https://github.com/napari/napari
+[pip]: https://pypi.org/project/pip/
