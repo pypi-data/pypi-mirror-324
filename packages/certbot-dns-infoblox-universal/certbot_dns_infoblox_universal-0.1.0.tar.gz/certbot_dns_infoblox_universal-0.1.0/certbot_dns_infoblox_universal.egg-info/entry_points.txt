@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-infoblox-universal = certbot_dns_infoblox_universal.dns_infoblox_universal:Authenticator
