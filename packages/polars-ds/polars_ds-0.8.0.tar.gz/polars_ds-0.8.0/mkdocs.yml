@@ -1,0 +1,37 @@
+site_name: Polars-ds API References
+site_url: https://polars-ds-extension.readthedocs.io/en/latest/
+
+use_directory_urls: false
+
+nav:
+- Home: index.md
+- Explorative Data Analysis: eda.md
+- Pipeline: pipeline.md
+- Sample and Split: sample_and_split.md
+- Numerical Functions: num.md
+- Statistics: stats.md
+- String Related: string.md
+- ML Metrics/Loss: metrics.md
+- Linear Models: linear_models.md
+- Linear Regression as Polars Expr: expr_linear.md
+- Spatial Models: spatial.md
+- KNN as Polars Expr: expr_knn.md
+- Time Series Features: ts_features.md
+- Compatibility with Other DataFrames: compat.md
+- Miscellaneous: polars_ds.md
+
+theme:
+  name: material
+  locale: en
+  highlightjs: true
+
+plugins:
+- search
+- section-index
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [python]
+        options:
+          summary: true
+          docstring_style: numpy
