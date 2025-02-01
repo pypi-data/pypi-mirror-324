@@ -1,0 +1,2 @@
+[console_scripts]
+Perdoo = perdoo.__main__:app
