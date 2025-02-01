@@ -1,0 +1,9 @@
+setup.py
+thoran_houdini_utils/__init__.py
+thoran_houdini_utils/connect_server.py
+thoran_houdini_utils/start_server_in_houdini.py
+thoran_houdini_utils/stop_server_in_houdini.py
+thoran_houdini_utils.egg-info/PKG-INFO
+thoran_houdini_utils.egg-info/SOURCES.txt
+thoran_houdini_utils.egg-info/dependency_links.txt
+thoran_houdini_utils.egg-info/top_level.txt
