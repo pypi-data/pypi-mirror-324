@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+video_analyzer_ui/__init__.py
+video_analyzer_ui/server.py
+video_analyzer_ui.egg-info/PKG-INFO
+video_analyzer_ui.egg-info/SOURCES.txt
+video_analyzer_ui.egg-info/dependency_links.txt
+video_analyzer_ui.egg-info/entry_points.txt
+video_analyzer_ui.egg-info/requires.txt
+video_analyzer_ui.egg-info/top_level.txt
+video_analyzer_ui/static/css/styles.css
+video_analyzer_ui/static/js/main.js
+video_analyzer_ui/templates/index.html
