@@ -1,0 +1,9 @@
+econ_llm/agent.py,sha256=arI7LxiuhTPa13iwHtEJNXm54XOScuXvp8jlIFJ2QAA,4465
+econ_llm/experiment.py,sha256=3XaFpKtTJkPWWaGdmJOwcT2AK5D7SRgAKTEu1VqiFpY,6804
+econ_llm/main.py,sha256=C1r8AqKInWrioj5eYTZLUGFa9FaQtw_os4SfGxLX0nU,666
+econ_llm/prompts.py,sha256=yKLmcMLDvLFHRudOaIjP35QO3k-SyE6ZqY-1HyE3SKI,2951
+econ_llm-0.0.8.dist-info/METADATA,sha256=YYfvxMhRz3_geH7QmZhLvwdtdCPoIEbvQ60g65CUE_M,1119
+econ_llm-0.0.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+econ_llm-0.0.8.dist-info/entry_points.txt,sha256=qV_nBniSXnyocx_1bmhffZy3vUXwJypW862ky6p72Gk,48
+econ_llm-0.0.8.dist-info/top_level.txt,sha256=Zyn5vmoKOfaQr0ZxsCPY0STDsq5u05KIM5Wm2CqKeNA,9
+econ_llm-0.0.8.dist-info/RECORD,,
