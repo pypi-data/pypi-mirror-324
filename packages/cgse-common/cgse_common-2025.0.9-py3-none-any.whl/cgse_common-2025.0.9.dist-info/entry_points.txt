@@ -1,0 +1,5 @@
+[cgse.settings]
+cgse-common = cgse_common:settings.yaml
+
+[cgse.version]
+cgse-common = egse
