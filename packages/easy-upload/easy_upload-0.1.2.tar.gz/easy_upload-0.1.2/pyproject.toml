@@ -1,0 +1,32 @@
+[project]
+name = "easy_upload"
+version = "0.1.2"
+description = "User-friendly Twine alternative for PyPI."
+authors = [
+    { name = "AmaseCocoa", email = "cocoa@amase.cc" },
+]
+dependencies = [
+    "typer>=0.15.1",
+    "twine>=6.1.0",
+    "keyring>=25.6.0",
+    "beaupy>=3.10.1",
+    "tomlkit>=0.13.2",
+    "pyfiglet>=1.0.2",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+easy_upload = "easy_upload.cli:app"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
