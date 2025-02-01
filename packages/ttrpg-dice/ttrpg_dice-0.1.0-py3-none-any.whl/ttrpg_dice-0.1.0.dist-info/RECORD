@@ -1,0 +1,14 @@
+tests/dice/conftest.py,sha256=s68Edj7GnpFBFrnO6-6Z-vLLiJm8UIGh5qaQMtRrsKE,548
+tests/dice/test_dice.py,sha256=_Pp7LTthEcGg_0kj-b4hUf0zg1i84BYdyFplHswVvUk,2498
+tests/dice/test_indexing.py,sha256=rMGspK1wWV897awm5x0UcSgujaHH1K0eurw0wt-F5Yg,5880
+tests/dice/test_instantiation.py,sha256=M6xJZlPs66C4Hn60xicSnu1shwFAvcT_1G5aYiUXDdE,10865
+tests/manydice/test_dicepools.py,sha256=wvKxq4-meRTCX5tdttw5WpPnNE78Q7ZdjTV4bOraII4,11838
+tests/manydice/test_lazyroll.py,sha256=AnqEU1Z0geVbBKvPky9geeE0g4PDaSgI9cRBxnz4WcI,1372
+ttrpg_dice/__init__.py,sha256=z4-0N2v3yt-693gl3eKF0tvXnwFo-JWbzZqK3CSkv-s,177
+ttrpg_dice/dice.py,sha256=FfcQvgaXhmo0u9uZPl3srSEAiOynK1KiXKx032e_4HQ,11270
+ttrpg_dice/manydice.py,sha256=hK80F5mB1_T2YViihw8MMoIh0EgIVDRkzdE6OcQA58g,6718
+ttrpg_dice-0.1.0.dist-info/LICENSE,sha256=vX1DmTRIjVIA2E3QKegYoq69m-g0qrxx8wVxMA0WdDU,1072
+ttrpg_dice-0.1.0.dist-info/METADATA,sha256=mi9KJB8xJKhrHR8-eZ4naYrGCADqLoi8CYhChn9Z9DQ,1110
+ttrpg_dice-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ttrpg_dice-0.1.0.dist-info/top_level.txt,sha256=9VGD3NpcEC7kUYETxxCrRQYuma7N9p2Yisur1zuyLrk,17
+ttrpg_dice-0.1.0.dist-info/RECORD,,
