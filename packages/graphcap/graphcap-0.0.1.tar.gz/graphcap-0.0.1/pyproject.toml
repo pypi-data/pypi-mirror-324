@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "graphcap"
+version = "0.0.1"
+description = "graphcap"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1.8",
+    "datasets>=3.2.0",
+    "fastapi>=0.115.6",
+    "httpx>=0.28.1",
+    "huggingface-hub>=0.27.1",
+    "loguru>=0.7.3",
+    "openai>=1.59.9",
+    "pydantic>=2.10.5",
+    "pytest-watcher>=0.4.3",
+    "python-dotenv>=1.0.1",
+    "python-multipart>=0.0.20",
+    "tenacity>=9.0.0",
+    "termcolor>=2.5.0",
+    "uvicorn>=0.34.0",
+]
+
+# Add this section to specify where your package source code is located
+[tool.hatch.build.targets.wheel]
+packages = ["graphcap"]  # Adjust this path to match your actual source code location
+
+[project.scripts]
+graphcap = "graphcap.main:cli"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "httpx>=0.24.0",
+    "pytest-cov>=4.1.0",
+]
+
+

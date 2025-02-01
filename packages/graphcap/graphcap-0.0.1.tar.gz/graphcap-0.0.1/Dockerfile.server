@@ -1,0 +1,41 @@
+# Base Python stage
+FROM python:3.12-slim AS python-base
+WORKDIR /app
+
+# Install uv
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+# Copy project configuration
+COPY pyproject.toml uv.lock /app/
+RUN uv venv && \
+    . .venv/bin/activate && \
+    uv sync
+
+# Copy application code
+COPY . /app
+
+# Copy and set permissions for entrypoint script
+COPY --chmod=775 _scripts/endpoints-entrypoint.sh entrypoint.sh
+
+# Test stage
+FROM python-base AS test
+WORKDIR /app
+
+# Copy project files
+COPY pyproject.toml uv.lock ./
+COPY graphcap ./graphcap
+COPY tests ./tests
+
+# Install dependencies
+RUN . .venv/bin/activate && \
+    uv pip install -e ".[dev]" && \
+    uv pip install pytest pytest-asyncio pytest-cov && \
+    ln -s /app/.venv/bin/pytest /usr/local/bin/pytest
+
+WORKDIR /app
+
+# Production stage
+FROM python-base AS prod
+EXPOSE 32100
+ENTRYPOINT ["/bin/bash", "entrypoint.sh"]
+CMD ["tail", "-f", "/dev/null"]
