@@ -1,0 +1,2 @@
+[console_scripts]
+run_alpharing = alpharing.run_alpharing:entry_point
