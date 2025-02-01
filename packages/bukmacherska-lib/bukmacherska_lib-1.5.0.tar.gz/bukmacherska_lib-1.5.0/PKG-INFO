@@ -1,0 +1,134 @@
+Metadata-Version: 2.2
+Name: bukmacherska_lib
+Version: 1.5.0
+Summary: Biblioteka do analizy wyników piłkarskich z wykorzystaniem statystyki i machine learningu
+Author: Twoje Imię
+Author-email: twoj.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: xgboost
+Requires-Dist: tensorflow
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Bukmacherska Lib â€“ Biblioteka do Analizy ZakĹ‚adĂłw Bukmacherskich
+
+## đź“Ś Opis
+
+**Bukmacherska Lib** to kompleksowa biblioteka do analizy wynikĂłw meczĂłw piĹ‚karskich z wykorzystaniem zaawansowanych narzÄ™dzi matematycznych, statystycznych i algorytmĂłw uczenia maszynowego. DziÄ™ki tej bibliotece moĹĽesz przewidywaÄ‡ wyniki meczĂłw, analizowaÄ‡ statystyki druĹĽyn, a takĹĽe generowaÄ‡ wykresy i wizualizacje do dalszej analizy.
+
+Biblioteka zawiera cztery gĹ‚Ăłwne modele:
+- **Model 12** â€“ Zaawansowane modele machine learning (12 algorytmĂłw)
+- **Model 24** â€“ 24 modele machine learning do predykcji wynikĂłw meczĂłw
+- **Model 360** â€“ Analiza matematyczna i statystyczna z narzÄ™dziami predykcyjnymi
+- **Bukmacherska** â€“ Podstawowe narzÄ™dzia do obliczania stawek, analizy wynikĂłw i rysowania wykresĂłw
+
+## đź”ą Kluczowe funkcjonalnoĹ›ci
+
+- **Zaawansowana analiza statystyczna**: Obliczanie Ĺ›rednich, wariancji, funkcji gamma, beta, Poissona, i innych.
+- **Modele predykcyjne**: Regresja logistyczna, SVM, XGBoost, LSTM, random forest, itp.
+- **Analiza druĹĽyn i meczĂłw**: Analiza skutecznoĹ›ci obrony, przewidywanie goli, analiza agresji i kondycji druĹĽyn.
+- **Wizualizacje**: Generowanie wykresĂłw liniowych, sĹ‚upkowych, 3D i innych wizualizacji.
+- **Podstawowe narzÄ™dzia bukmacherskie**: Obliczanie stawek, tabele bramek, rysowanie wykresĂłw dla rĂłĹĽnych danych meczowych.
+
+## đź›  Instalacja
+
+Aby zainstalowaÄ‡ bibliotekÄ™, uruchom poniĹĽsze polecenie:
+
+```bash
+pip install bukmacherska_lib
+
+pip install -r requirements.txt
+
+from bukmacherska_lib.models.model_360 import mean, poisson_pmf, normal_pdf
+
+# PrzykĹ‚adowe dane
+data =[[1, 2],[3, 4, 5]]
+
+# Oblicz Ĺ›redniÄ…
+print("Ĺšrednia:", mean(data))
+
+# Oblicz prawdopodobieĹ„stwo Poissona
+print("PrawdopodobieĹ„stwo Poissona:", poisson_pmf(2, 3.5))
+
+# Oblicz prawdopodobieĹ„stwo z rozkĹ‚adu normalnego
+print("PrawdopodobieĹ„stwo z rozkĹ‚adu normalnego:", normal_pdf(2, 0, 1))
+
+from bukmacherska_lib.models.model_24 import train_models, predict_with_models, plot_results
+
+import numpy as np
+
+# PrzykĹ‚adowe dane
+X_train = np.array([[1, 2], [2, 3], [3, 4]])
+y_train = np.array([0, 1, 1])
+X_test = np.array([[2, 3], [3, 4]])
+
+# Trening modeli
+models = train_models(X_train, y_train)
+
+# Predykcja
+predictions = predict_with_models(models, X_test)
+print("Predykcje:", predictions)
+
+# Wizualizacja
+plot_results(predictions, x_min=1.5, x_max=1.2, y_min=1.0, y_max=0.9)
+
+from bukmacherska_lib.models.model_12 import train_models, predict_with_models, plot_results
+
+import numpy as np
+
+# PrzykĹ‚adowe dane
+X_train = np.array([[1, 2], [2, 3], [3, 4]])
+y_train = np.array([0, 1, 1])
+X_test = np.array([[2, 3], [3, 4]])
+
+# Trening modeli
+models = train_models(X_train, y_train)
+
+# Predykcja
+predictions = predict_with_models(models, X_test)
+print("Predykcje:", predictions)
+
+# Wizualizacja
+plot_results(predictions, x_min=1.5, x_max=1.2, y_min=1.0, y_max=0.9)
+
+from bukmacherska_lib.bukmacherska import oblicz_stawki, rysuj_wykresy_stawki, tabela_bramek
+
+# Dane wejĹ›ciowe
+stawka_poczatkowa = 100
+gole_zdobyte_druzyna1 = 1.8
+gole_stracone_druzyna1 = 1.2
+gole_zdobyte_druzyna2 = 1.5
+gole_stracone_druzyna2 = 1.7
+czas = [0, 15, 30, 45, 60, 75, 90]
+
+# Oblicz stawki
+stawki_druzyna1, stawki_druzyna2 = oblicz_stawki(
+    stawka_poczatkowa, 
+    gole_zdobyte_druzyna1, gole_stracone_druzyna1, 
+    gole_zdobyte_druzyna2, gole_stracone_druzyna2, 
+    czas
+)
+
+# Rysuj wykresy
+rysuj_wykresy_stawki(stawki_druzyna1, stawki_druzyna2, czas)
+
+# Tabela bramek
+gamma_values = [1, 2, 3, 4, 5]
+tabela = tabela_bramek(gamma_values)
+print("Tabela bramek:", tabela)
