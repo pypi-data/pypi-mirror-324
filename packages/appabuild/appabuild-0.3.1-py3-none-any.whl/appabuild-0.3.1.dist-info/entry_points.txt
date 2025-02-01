@@ -1,0 +1,2 @@
+[console_scripts]
+appabuild = app.cli.main:cli_app
