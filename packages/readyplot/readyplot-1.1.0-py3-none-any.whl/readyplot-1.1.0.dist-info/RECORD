@@ -1,0 +1,10 @@
+readyplot/__init__.py,sha256=QZYVcKAHKo111gS39ZbUTO35VUogT7qD0OTAcLZcXiA,459
+readyplot/base_plotter.py,sha256=rW0mOl685c4o-Obf2AVgoASVQz3ah22fPxxwLcpt3eg,11319
+readyplot/boxwhisker_plotter.py,sha256=qIjs8HRovU0bfKYmNYCynOskNFGYtvkRCbpbVDM0Dgg,5105
+readyplot/scatter_plotter.py,sha256=VlSeBAuM8I9VCQRl0Y4duLneLQl3kX-4-A584pZXjAw,5679
+readyplot/utils.py,sha256=VKGJche1ITRqhrBea15LtL3jxkj5o_PKYiAdLNFIb6k,2422
+readyplot-1.1.0.dist-info/LICENSE,sha256=Mkw7XdHRYEGocerKCBQ8jtgFa3YrnhwheU7JARDtbhg,1068
+readyplot-1.1.0.dist-info/METADATA,sha256=7oWbv5lt7g_eZuJZFlXdvKqGTn7677kKIhfocWOALkM,2462
+readyplot-1.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+readyplot-1.1.0.dist-info/top_level.txt,sha256=B5po02AgxozFYGxlzlIslwTEmIgnKdm-b1pfJHr_LsM,10
+readyplot-1.1.0.dist-info/RECORD,,
