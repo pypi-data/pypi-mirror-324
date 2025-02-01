@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: global_macro_data
+Version: 0.1
+Summary: Global Macro Data
+Home-page: https://github.com/Yangbo-Wang/global_macro_data
+Author: Yangbo Wang
+Author-email: wangyangbo2003@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pandas
+
+# Global Macro Data
