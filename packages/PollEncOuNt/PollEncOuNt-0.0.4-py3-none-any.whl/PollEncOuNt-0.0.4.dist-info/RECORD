@@ -1,0 +1,10 @@
+peon/__init__.py,sha256=K2xwt1E_x0Z2xB7ptcMW3XvuEfwK__TC9juBSTYxBmE,113
+peon/predict.py,sha256=B0dCXNdqPoHIq0iiXM0nsRDpKxHhnaveYcB4MDivE1k,2292
+peon/train.py,sha256=-cXPCAuwwo5bQyEZpbh6cXmd3ObM7AXvIc5V689gLO4,2455
+peon_gui/gui.py,sha256=CofkVRMMqhz1kzNR1a-d37mG0xVKrAX-LpnIzw5XLDk,19028
+PollEncOuNt-0.0.4.dist-info/LICENSE,sha256=wL_SVaSqlhHcEGDE3Umuww15MNiJZJtusqvJR9auM8A,1085
+PollEncOuNt-0.0.4.dist-info/METADATA,sha256=wqb5dULFqT0o4UHkJ35zqOF_PFcHt01UJ__LnQi4pnY,5758
+PollEncOuNt-0.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+PollEncOuNt-0.0.4.dist-info/entry_points.txt,sha256=z6noNdv2KGXVWcT9cuRFK8h_VjlH1mCnFZrGHcZUOKo,43
+PollEncOuNt-0.0.4.dist-info/top_level.txt,sha256=wiVUg8ipMsIJAFlnR08DL611WveW0DhS98n2cMEKcGg,14
+PollEncOuNt-0.0.4.dist-info/RECORD,,
