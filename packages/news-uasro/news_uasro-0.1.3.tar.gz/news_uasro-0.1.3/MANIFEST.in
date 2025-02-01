@@ -1,0 +1,8 @@
+include LICENSE
+include README.md
+recursive-include news_uasro/data *
+recursive-include news_uasro/docs *
+
+include news_dictionary.csv
+recursive-include news_uasro/data *
+
