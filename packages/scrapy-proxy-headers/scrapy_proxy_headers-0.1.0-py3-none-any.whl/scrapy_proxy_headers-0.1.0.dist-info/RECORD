@@ -1,0 +1,9 @@
+scrapy_proxy_headers/__init__.py,sha256=RO6DRVwJYVkNlaFT_FA8yD7PN4MKT8aPXaLz6yQDAE4,400
+scrapy_proxy_headers/agent.py,sha256=PSAjJlZaCDaZGCp3ulkuA8bADIIzCgsPp_lG26Xxs3I,4505
+scrapy_proxy_headers/download_handler.py,sha256=l_Kf8pR5Pv-vLHm6v-i7GcZhqfSb8YXtzOot_og5VX4,723
+scrapy_proxy_headers-0.1.0.dist-info/LICENSE,sha256=m4ejt-XtSe45rEih_mlIn6Ta781QM_5evHyAJICwjaU,1496
+scrapy_proxy_headers-0.1.0.dist-info/METADATA,sha256=cZ7gwy2KLq6rSdX-uLnbtPpdAzp4A5-6f3rSSkRzHhg,210
+scrapy_proxy_headers-0.1.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+scrapy_proxy_headers-0.1.0.dist-info/entry_points.txt,sha256=u30iMIGFF-vpT0iaxOhyGWdReaRvcolUIaF4IkXXJ20,85
+scrapy_proxy_headers-0.1.0.dist-info/top_level.txt,sha256=e-iRiYZDn-Lvf90KnVgK3IB7JhclZUoZmAucV04shqY,21
+scrapy_proxy_headers-0.1.0.dist-info/RECORD,,
