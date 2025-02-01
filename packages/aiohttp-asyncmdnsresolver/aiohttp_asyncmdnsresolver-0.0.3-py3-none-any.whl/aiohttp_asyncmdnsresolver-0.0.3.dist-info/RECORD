@@ -1,0 +1,9 @@
+aiohttp_asyncmdnsresolver/__init__.py,sha256=4imrCZzcSyDcN0EkuTIgkUPm9Lk3wbqCxQlrXYLW_4M,106
+aiohttp_asyncmdnsresolver/_impl.py,sha256=SWpqDvAVewyU4MdqJnevobjlP8s_XO9zUVJXkWUfn6c,3416
+aiohttp_asyncmdnsresolver/api.py,sha256=lufKxNlcYulICeiz0Zi3UIph_Imv42iwf-zUWhWMhOY,122
+aiohttp_asyncmdnsresolver/py.typed,sha256=ay5OMO475PlcZ_Fbun9maHW7Y6MBTk0UXL4ztHx3Iug,14
+aiohttp_asyncmdnsresolver-0.0.3.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+aiohttp_asyncmdnsresolver-0.0.3.dist-info/METADATA,sha256=S-Lmwx76-Kk_BPj4sKTg5ZhOGI8atLoWiKycN7Mp05E,16716
+aiohttp_asyncmdnsresolver-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+aiohttp_asyncmdnsresolver-0.0.3.dist-info/top_level.txt,sha256=wtgQ_hUFfmsCuug0ZkgCc941RUIbg8u_7Gri_Rs7cLA,26
+aiohttp_asyncmdnsresolver-0.0.3.dist-info/RECORD,,
