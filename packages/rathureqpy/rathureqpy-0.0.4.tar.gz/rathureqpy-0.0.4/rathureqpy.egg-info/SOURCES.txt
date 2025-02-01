@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+rathureqpy/Library.py
+rathureqpy/__init__.py
+rathureqpy.egg-info/PKG-INFO
+rathureqpy.egg-info/SOURCES.txt
+rathureqpy.egg-info/dependency_links.txt
+rathureqpy.egg-info/top_level.txt
