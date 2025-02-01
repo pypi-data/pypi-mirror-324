@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+baseapp_follows/__init__.py
+baseapp_follows.egg-info/PKG-INFO
+baseapp_follows.egg-info/SOURCES.txt
+baseapp_follows.egg-info/dependency_links.txt
+baseapp_follows.egg-info/requires.txt
+baseapp_follows.egg-info/top_level.txt
