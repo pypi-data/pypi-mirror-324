@@ -1,0 +1,14 @@
+qat/devices/__init__.so,sha256=vFC1OVazqLkx-R_G0OhhKJ0ha9QcVEpqyBGTEBilDbE,94432
+qat/devices/cas.so,sha256=qG2XpexLeaWoyfIZ77xbW5eilaRY5vAYaJjnCimPUQc,119216
+qat/devices/common.so,sha256=2GdhDqOzKfqy9Vfd9pmh4a8f23-J8o5kJ8_zx611ghs,202368
+qat/devices/google.so,sha256=BFfyK_qCUIANEQS2shtP8-RkI7c9WALB2wAvrYb26ew,122816
+qat/devices/ibm.so,sha256=C1UBilGARnt53NQoaSy8572Cx-20R9qs_WrE5CwfqyI,356096
+qat/devices/rigetti.so,sha256=KOFicMGuat35yAw0mZCpEkmhcKkiEmmbvi2jk3fjKfg,147600
+qat/devices/rydberg.so,sha256=9w-1Zq1z-T_n2924CZgC6p7IfCCbMB9VEHsnL7SwFZs,157616
+qat/devices/util.so,sha256=pdvMnasNsWFOSBEGHZmK2zZt6R5l-9LwdBOqoH5gi8Y,118416
+qat/devices/version.so,sha256=mesptrQAuDMTbRp1I5FZU181NK8h5bBBhYv510L8AyQ,76272
+qat_devices-0.4.0.dist-info/LICENSE.txt,sha256=Vl03FJBySK7FEYdw_Y0dV66UAVedEyIuqJTJxREyRgs,4752
+qat_devices-0.4.0.dist-info/METADATA,sha256=ytFiwAOfMu1HwVYhKqosrRSCK9G1VO6Lw477_BeeC4g,1929
+qat_devices-0.4.0.dist-info/WHEEL,sha256=9kGPQJ_1sihQv606dDDpyeHKhj9jyzxGlF40ML1vLEY,108
+qat_devices-0.4.0.dist-info/top_level.txt,sha256=EtiE-lzXpV6tDPK3leIRADd9p6cOal7g6fxvqQ-u_yc,4
+qat_devices-0.4.0.dist-info/RECORD,,
