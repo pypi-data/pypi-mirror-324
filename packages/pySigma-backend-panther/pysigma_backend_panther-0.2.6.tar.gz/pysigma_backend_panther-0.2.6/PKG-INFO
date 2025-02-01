@@ -1,0 +1,69 @@
+Metadata-Version: 2.3
+Name: pySigma-backend-panther
+Version: 0.2.6
+Summary: pySigma backend for Panther
+License: LGPL-3.0-only
+Author: Panther Labs Inc
+Author-email: pypi@runpanther.io
+Maintainer: Panther Labs Inc
+Maintainer-email: pypi@runpanther.io
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: black (>=24.3.0,<25.0.0)
+Requires-Dist: defusedxml (>=0.7.1,<0.8.0)
+Requires-Dist: pysigma (>=0.11,<0.12)
+Project-URL: Repository, https://github.com/panther-labs/pySigma-backend-panther
+Description-Content-Type: text/markdown
+
+# pySigma Panther Backend
+
+[![Test](https://github.com/panther-labs/pySigma-backend-panther/actions/workflows/test.yml/badge.svg)](https://github.com/panther-labs/pySigma-backend-panther/actions/workflows/test.yml)
+
+Detailed docs about converting Sigma rules for Panther can be found [here](https://docs.panther.com/panther-developer-workflows/converting-sigma-rules).
+
+This is the `panther` backend for pySigma. It provides the package `sigma.backends.panther` with the `PantherBackend` class.
+
+It supports the following output formats:
+
+- default: [Panther Python Detections](https://docs.panther.com/detections/rules/python) format
+- sdyaml (`-f sdyaml`): [Panther YAML Detections](https://docs.panther.com/detections/rules/yaml#simple-detections)
+  To save each rule in separate file you can use `output_dir` backend option.
+
+```bash
+sigma convert -t panther path/to/rules -p panther -O output_dir=output/directory
+```
+
+or
+
+```bash
+sigma convert -t panther -f sdyaml path/to/rules -p panther -O output_dir=output/directory
+```
+
+Further, it contains the following processing pipelines in `sigma.pipelines.panther`:
+
+- panther_pipeline: Convert known Sigma field names into their Panther schema equivalent
+
+## Local setup for development
+
+The project is using [poetry](https://python-poetry.org/) for dependency management,
+so after cloning it run: `poetry install` to install all the required dependencies.
+
+Tests can be run with:
+
+```bash
+poetry run pytest
+```
+
+And rules can be converted with:
+
+```bash
+poetry run sigma convert -t panther -f sdyaml -p panther path_to_sigma_rule.yml`
+```
+
