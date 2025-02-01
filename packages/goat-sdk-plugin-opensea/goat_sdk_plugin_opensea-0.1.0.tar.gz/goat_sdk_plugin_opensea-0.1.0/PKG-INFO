@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: goat-sdk-plugin-opensea
+Version: 0.1.0
+Summary: Goat plugin for OpenSea
+Home-page: https://ohmygoat.dev/
+Keywords: goat,sdk,web3,agents,ai,nft,opensea
+Author: Devin
+Author-email: devin@devin.ai
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.8.6,<4.0.0)
+Requires-Dist: goat-sdk (>=0.1.1,<0.2.0)
+Project-URL: Bug Tracker, https://github.com/goat-sdk/goat/issues
+Project-URL: Repository, https://github.com/goat-sdk/goat
+Description-Content-Type: text/markdown
+
+# OpenSea Plugin for GOAT SDK
+
+This plugin provides integration with the OpenSea API for the GOAT SDK, allowing you to:
+- Get NFT collection statistics
+- Get recent NFT sales
+
+## Installation
+
+```bash
+pip install goat-sdk-plugin-opensea
+```
+
+## Usage
+
+```python
+from goat_plugins.opensea import opensea, OpenSeaPluginOptions
+
+# Initialize the plugin with your API key
+plugin = opensea(OpenSeaPluginOptions(api_key="your-api-key"))
+
+# Get NFT collection statistics
+stats = await plugin.get_nft_collection_statistics({"collectionSlug": "collection-slug"})
+
+# Get recent NFT sales
+sales = await plugin.get_nft_sales({"collectionSlug": "collection-slug"})
+```
+
