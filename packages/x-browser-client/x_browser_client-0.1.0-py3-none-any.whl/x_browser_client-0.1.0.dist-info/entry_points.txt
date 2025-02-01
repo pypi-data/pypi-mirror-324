@@ -1,0 +1,2 @@
+[console_scripts]
+x_browser_client = x_browser_client.cli:main
