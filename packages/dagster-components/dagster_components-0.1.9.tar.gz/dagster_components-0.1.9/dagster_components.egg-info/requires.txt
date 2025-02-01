@@ -1,0 +1,12 @@
+dagster>=1.9.5
+tomli
+typer
+
+[dbt]
+dagster-dbt
+
+[sling]
+dagster-sling
+
+[test]
+dbt-duckdb
