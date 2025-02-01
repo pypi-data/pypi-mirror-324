@@ -1,0 +1,6 @@
+django
+django-tools
+PyJWT
+colorlog
+packaging
+pyyaml
