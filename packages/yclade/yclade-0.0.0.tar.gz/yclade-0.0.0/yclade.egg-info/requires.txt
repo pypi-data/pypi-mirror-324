@@ -1,0 +1,6 @@
+platformdirs
+networkx
+
+[test]
+pytest>=8.0.0
+mypy
