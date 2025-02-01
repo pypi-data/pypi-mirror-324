@@ -1,0 +1,12 @@
+astropy
+scipy
+matplotlib
+pyo
+requests
+notebook
+
+[docs]
+sphinx-astropy
+
+[test]
+pytest-astropy
