@@ -1,0 +1,9 @@
+saea_benchmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saea_benchmark/align_seqs.py,sha256=ZNAVovFbFhokw9sRCNRs9NFKpnLu3HA4e2wBX9M__8c,12806
+saea_benchmark/create_plot.py,sha256=6MgQHoBLjiUbPy_7FUugAfeaUpzF7qcK8UVfk3cFo2g,7088
+saea_benchmark/experiment.py,sha256=Zocy7SjWODq1LNGkb-aHL2jA0uckLakawULpudUJk6A,3511
+saea_benchmark/model_eval.py,sha256=rI5QLQHqDc5bhHVyqyGGedjxC3u2s8ziYdtcd7Kfc0w,5125
+saea_benchmark-0.1.1.dist-info/LICENSE,sha256=EQdJE4n2PP5JPaxOHhX6asMS4kSOwzldZ4mqqa-jkX4,1069
+saea_benchmark-0.1.1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+saea_benchmark-0.1.1.dist-info/METADATA,sha256=MtiipbrbAaFMax_vrX2FtPGjFlMAjiVtZNR4u5Qmw5I,4024
+saea_benchmark-0.1.1.dist-info/RECORD,,
