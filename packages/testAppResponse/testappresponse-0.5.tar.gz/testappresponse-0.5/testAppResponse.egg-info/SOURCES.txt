@@ -1,0 +1,6 @@
+manage.py
+setup.py
+testAppResponse.egg-info/PKG-INFO
+testAppResponse.egg-info/SOURCES.txt
+testAppResponse.egg-info/dependency_links.txt
+testAppResponse.egg-info/top_level.txt
