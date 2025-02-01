@@ -1,0 +1,15 @@
+qat/anapli/__init__.so,sha256=WQgUUV1UF__EBl8ikd40id6lePccHjzc9NtDhiDARxY,45240
+qat/anapli/crossing_lattice.so,sha256=zTMsG9ZCRfy_jO5VjkHndbg--ZYMb2hm1hDWo-KoG90,239104
+qat/anapli/geometry.so,sha256=WpvdDa7sNLhAnlRbOw0SptokLbpAVLvIL-Q0Qbq2oi0,643008
+qat/anapli/ising_crossing_lattice.so,sha256=JISB3yURipiuPh74-9ia_siGl7-tZ5LekDeOBUtR4lA,117720
+qat/anapli/mwis_crossing_lattice.so,sha256=2UAjHOhihva_YrjLfexQjND03d35AhdCz8rgku2S6qE,83224
+qat/anapli/optimal_layout.so,sha256=Tbe6Jw7RnmwyWc_yYezkSqNPpyrGVDUY2MRisx37bQo,269048
+qat/anapli/optimization.so,sha256=VIWbU8khRiVhFeRCmizoELLb8rl2ZE_X1taTju1hfow,269432
+qat/anapli/qubo_crossing_lattice.so,sha256=GvYSxJV1BMSu6uktUezS2CdaZQ2G0OH6GIY7lR5OTUA,123184
+qat/anapli/schedule.so,sha256=BPCmW_gU8hlPkhf8I_k7XCWHlpdLEBZrnEy2bzn3opo,338672
+qat/anapli/version.so,sha256=1ApoaouqkNpT7IEbivtFnQwjB9H5stsl0Y233Q5Bkb4,39744
+qat_anapli-0.1.0.dist-info/LICENSE.txt,sha256=Vl03FJBySK7FEYdw_Y0dV66UAVedEyIuqJTJxREyRgs,4752
+qat_anapli-0.1.0.dist-info/METADATA,sha256=z54bdwiiGiKJzuA43pg61n6iyAfj6ut1uLzc5s6bofM,1716
+qat_anapli-0.1.0.dist-info/WHEEL,sha256=sO-o4ljpPp4n9srx90q6p9ItoMApWi67609zEpXCY0Q,110
+qat_anapli-0.1.0.dist-info/top_level.txt,sha256=EtiE-lzXpV6tDPK3leIRADd9p6cOal7g6fxvqQ-u_yc,4
+qat_anapli-0.1.0.dist-info/RECORD,,
