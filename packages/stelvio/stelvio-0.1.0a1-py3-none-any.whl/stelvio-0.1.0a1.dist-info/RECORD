@@ -1,0 +1,13 @@
+stelvio/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+stelvio/app.py,sha256=5zUvz8bIiWbMhxhlJk0R2i0BDo8-Vl9qW3pkuQ21fUw,2145
+stelvio/aws/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stelvio/aws/api_gateway.py,sha256=Yb-C1nXVWLBModqJS8Q6TQezcTOlAGdL57ed52U14CA,23194
+stelvio/aws/dynamo_db.py,sha256=D0z8z9B9uXusVCBLZj9ovXop3djBWiCS8fZ7-PFwUhI,2803
+stelvio/aws/function.py,sha256=RNfynsGIxrl5qJVjz7jRDL6wm1c0D3uA4WXF3SYZd-A,20279
+stelvio/aws/permission.py,sha256=-9MLMRtxQLySiksOPGxN3xpAgOX7aTbjeJoQroFCy7k,443
+stelvio/component.py,sha256=95OGLEk2skK1mmuzNPqOaEd5c440ebiBD3OC7QtWLbM,2908
+stelvio/link.py,sha256=d6nG_mfLQM7LVzA7lc7vQ47iYJ69djCO5cGI5ivjCP8,2373
+stelvio-0.1.0a1.dist-info/LICENSE,sha256=xSvAGarNvUCg8BM2rLp-wm28oARCqiP81o-1HmEucGU,11345
+stelvio-0.1.0a1.dist-info/METADATA,sha256=h_c1JPb8xpyfr1lmOxxRRhtJX_LSL4Eo_7nDbI-xK6I,2732
+stelvio-0.1.0a1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+stelvio-0.1.0a1.dist-info/RECORD,,
