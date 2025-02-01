@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+pyproject.toml
+fistbump/__init__.py
+fistbump/__main__.py
+fistbump/fistbump.py
+fistbump/version.txt
+fistbump.egg-info/PKG-INFO
+fistbump.egg-info/SOURCES.txt
+fistbump.egg-info/dependency_links.txt
+fistbump.egg-info/entry_points.txt
+fistbump.egg-info/requires.txt
+fistbump.egg-info/top_level.txt
