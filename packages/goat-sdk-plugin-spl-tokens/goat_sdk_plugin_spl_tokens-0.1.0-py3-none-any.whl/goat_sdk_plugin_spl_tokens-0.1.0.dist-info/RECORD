@@ -1,0 +1,7 @@
+goat_plugins/spl_token/__init__.py,sha256=sU_l9K6Ot-bmG710HnkHRqSNMjOlZ3HSe7Nb-odE1uQ,812
+goat_plugins/spl_token/parameters.py,sha256=NSLC-BN8NZ84_S4vqCgzBZqFcjDZZHckfsY5mTFExuQ,1056
+goat_plugins/spl_token/service.py,sha256=qTHZzn7rTWW-WAjTSPuzdtDa1eSLYaHhOCTn9iTqRjY,6795
+goat_plugins/spl_token/tokens.py,sha256=JG4VSTq7NnOFyt_xIVNEDHzMbOQP-uOULn791Rz2M9Y,1160
+goat_sdk_plugin_spl_tokens-0.1.0.dist-info/METADATA,sha256=uKBgpvegw_HvPjX3qRD2UOvrcXwz33WJtTpokxnYu4k,1459
+goat_sdk_plugin_spl_tokens-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+goat_sdk_plugin_spl_tokens-0.1.0.dist-info/RECORD,,
