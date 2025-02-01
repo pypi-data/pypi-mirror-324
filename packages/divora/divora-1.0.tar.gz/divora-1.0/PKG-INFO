@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: divora
+Version: 1.0
+Summary: A simple way to train and own your AI models.
+Home-page: https://divoratech.com
+Author: Shiloh Pendergraff
+Author-email: shilohpendergraff@gmail.com
+License: Divora/MIT
+Keywords: deep learning,tensorflow,text generation
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+A simple way to train and own your AI models.
+
+
