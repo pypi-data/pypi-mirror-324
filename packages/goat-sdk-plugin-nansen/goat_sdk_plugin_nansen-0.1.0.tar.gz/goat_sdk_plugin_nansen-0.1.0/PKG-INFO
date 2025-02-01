@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: goat-sdk-plugin-nansen
+Version: 0.1.0
+Summary: Nansen plugin for GOAT SDK
+Home-page: https://ohmygoat.dev/
+Keywords: goat,sdk,web3,agents,ai,nansen
+Author: GOAT SDK Team
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.8.6,<4.0.0)
+Requires-Dist: goat-sdk (>=0.1.1,<0.2.0)
+Requires-Dist: pydantic (>=2.0.0,<3.0.0)
+Project-URL: Bug Tracker, https://github.com/goat-sdk/goat/issues
+Project-URL: Repository, https://github.com/goat-sdk/goat
+Description-Content-Type: text/markdown
+
+# GOAT SDK Nansen Plugin
+
+This plugin provides tools for interacting with the Nansen API, allowing you to:
+- Get token details and trades
+- Retrieve NFT collection details and trades
+- Access smart money wallet analysis
+- Get trading signals based on on-chain data
+
+## Installation
+
+```bash
+pip install goat-sdk-plugin-nansen
+```
+
+## Usage
+
+```python
+from goat_plugins.nansen import nansen, NansenPluginOptions
+
+# Initialize the plugin with your API key
+plugin = nansen(NansenPluginOptions(
+    api_key="your-nansen-api-key"
+))
+
+## Features
+
+- Token Analysis:
+  - Get detailed token information
+  - Track token trading activity
+  
+- NFT Analytics:
+  - Fetch NFT collection details
+  - Monitor NFT trading activity
+  
+- Smart Money Tracking:
+  - Analyze smart money wallet behavior
+  - Track token flows
+  
+- Trading Signals:
+  - Get trading signals based on on-chain data
+  - Filter by date ranges and specific tokens
+
