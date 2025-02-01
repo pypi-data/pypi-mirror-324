@@ -1,0 +1,119 @@
+## DreamML - Self Machine Learning ❤️
+
+### The next stage of evalution DS-Template
+
+![DreamML_promo](./docs/art/DreamML-promo.png)
+
+### About the DreamML
+
+---
+__DreamML__ is a machine learning framework aimed at the industrial process. 
+The main task is to choose a simple model, taking into account the balance of complexity, quality and metrics. 
+We also suggest reviewing the quality of the models in special development reports, and for some tasks, a validation report created using the central bank's methodology.
+
+*This is the first cycle of the project's release into open source, then we plan to publish more materials and improve the framework.
+
+### Installation
+
+---
+Step 1: Install [Anaconda](https://docs.anaconda.com/anaconda/install/) or [Python 3.8](https://www.python.org/downloads/release/python-380/)
+
+Step 2: Create environment
+* Anaconda ```conda create --name dreamml_env python=3.8```
+* Python 3.8 ```python -m venv dreamml_env```
+
+Step 3: Activate environment
+* Anaconda ```conda activate dreamml_env```
+* Python ```source dreamml_env/bin/activate```
+
+Step 4: Go to the dreamml root folder
+
+Step 5: Install dreamml in your environment
+```pip install -e .```
+
+
+### Get started
+
+---
+To develop a model, you can use the notebooks located in the `notebooks/1. Model Development`
+and select the one you need depending on the type of your task.
+
+To validate models, you can use the notebooks located in the `notebooks/2. Validate Model`
+
+To calibration models, you can use the notebooks located in the `notebooks/3. Calibration`
+
+
+### How to Use
+
+---
+
+#### Information on notebooks for development `notebooks/1. Model Development`
+
+1. First, you need to determine the pipeline configuration
+   * For `regression`, `binary`, `multiclass`, `multilabel` tasks you can refer to this document `docs/1_Model_Development_doc.md`
+   * For `topic_modeling` task you can refer to this document `docs/1_Topic_Modeling_doc.md`
+   * For `timeseries` with (boosting) task you can refer to this document `docs/1_TimeSeries_doc.md`
+   * For `amts` with (Prophet) task you can refer to this document `docs/1_AltModeTimeSeries_forecast.md`
+   * If your dataset contains text features you should refer to this document `docs/1_NLP_text_classification_doc.md`
+   * If you would like to learn more about quality metrics and loss functions, we recommend that you refer to the document `docs/Binary_Classification_Metrics_doc.md`
+   
+
+2. You should start building the configuration and preparing the data for modeling
+```
+config_storage = ConfigStorage(config=config)
+transformer = DataTransformer(config_storage)
+data_storage = transformer.transform()
+```
+
+3. Next, you should run the simulation pipeline
+```
+pipeline = MainPipeline(config_storage=config_storage, data_storage=data_storage)
+pipeline.transform()
+```
+
+4. For some tasks, you can also use Light Auto M L as a model and calculate out of time potential
+```
+lama = add_lama_model(data_storage.get_eval_set(), config_storage)
+oot_potential = calculate_oot_metrics(data_storage.get_eval_set(), config_storage)
+```
+
+5. You can also start the process of saving simulation artifacts if you need it
+```
+saver = pipeline.artifact_saver
+models = pipeline.prepared_model_dict
+pipeline.oot_potential = oot_potential
+models.update(lama)
+nb_name = saver.get_notebook_path_and_save()
+saver.save_artifacts(
+    models=models,
+    other_models=pipeline.other_model_dict,
+    encoder=transformer.cat_transformer,
+    ipynb_name=nb_name,
+    feature_threshold=config_storage.feature_threshold,
+)
+saver.save_data(data=data_storage.get_eval_set(), dropped_data=data_storage.get_dropped_data())
+```
+
+6. At the end, we can generate a development report. By default, it will be saved to the `dreamml/results` folder.
+```
+get_report(pipeline=pipeline, config_storage=config_storage, data_storage=data_storage, encoder=transformer.cat_transformer)
+```
+
+### Authors
+
+---
+| Author            | Email                     |
+|-------------------|---------------------------|
+| Nikita Buts       | nikitabuts2000@gmail.com  |
+| Alexander Izyurov | halfbrick845@gmail.com    |
+| Ivan Plotnikov    | com.gateway.api@gmail.com |
+| Maidari Tsydenov  | maidaritsydenov@gmail.com |
+| Evgeny Tkachenko  | e_t@inbox.ru              |
+| Ilya Ivanov       | morwes4@gmail.com         |
+| Nikita Varganov   | -                         |
+
+
+### LICENSE
+
+---
+This project is licensed under the Apache License, Version 2.0. See [LICENSE](link) for details.
