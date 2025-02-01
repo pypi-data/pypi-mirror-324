@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+wavepack/__init__.py
+wavepack/wavelet_packet.py
+wavepack.egg-info/PKG-INFO
+wavepack.egg-info/SOURCES.txt
+wavepack.egg-info/dependency_links.txt
+wavepack.egg-info/requires.txt
+wavepack.egg-info/top_level.txt

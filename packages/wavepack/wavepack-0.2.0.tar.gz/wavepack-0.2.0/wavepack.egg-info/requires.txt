@@ -1,0 +1,3 @@
+PyWavelets
+torch
+numpy
