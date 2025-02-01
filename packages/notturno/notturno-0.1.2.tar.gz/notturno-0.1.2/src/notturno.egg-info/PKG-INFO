@@ -1,0 +1,62 @@
+Metadata-Version: 2.2
+Name: notturno
+Version: 0.1.2
+Summary: ultra-fast HTTP/ASGI Web Framework.
+Author-email: AmaseCocoa <cocoa@amase.cc>
+License: MIT
+Project-URL: Repository, https://github.com/AmaseCocoa/Notturno
+Project-URL: Issues, https://github.com/AmaseCocoa/Notturno/issues
+Project-URL: Changelog, https://github.com/AmaseCocoa/Notturno/blob/main/CHANGELOG.md
+Keywords: asgi,http,http-server,asgi-framework
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: AnyIO
+Classifier: Framework :: Trio
+Classifier: Framework :: AsyncIO
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic>=2.10.6
+Requires-Dist: anyio>=4.8.0
+Requires-Dist: yarl>=1.18.3
+Requires-Dist: h2>=4.1.0
+Requires-Dist: aiomultiprocess>=0.9.1
+Requires-Dist: google-re2>=1.1.20240702
+Provides-Extra: speed
+Requires-Dist: orjson>=3.10.15; extra == "speed"
+Requires-Dist: fast-query-parsers>=1.0.3; extra == "speed"
+Provides-Extra: trio
+Requires-Dist: trio>=0.28.0; extra == "trio"
+Provides-Extra: asgi
+Requires-Dist: uvicorn>=0.34.0; extra == "asgi"
+
+# Notturno
+ultra-fast HTTP/ASGI Web Framework.
+
+Supports asyncio/trio (Powered by AnyIO).
+
+## Feature
+> [!IMPORTANT]
+> Notturno implements an early standalone HTTP/1.1, Websocket server, but it is not perfect and should not be used in a production environment.
+- Native HTTP Implementation (Non-ASGI/Standalone Mode)
+- Fast HTTP Routing 
+- Simple, easy-to-use dependency injection
+## Todo
+- [ ] Implement HTTP
+  - [x] HTTP/1
+  - [ ] HTTP/2
+  - [ ] HTTP/3 (QUIC)
+  - [x] TLS Support
+  - [ ] Websocket Support
+### About NoctServ
+TLS-Ready HTTP server used by Notturno in standalone mode, allowing easy use of HTTP/1.1 without awareness.
+### About RegExpRouter
+Created with reference to the `RegExpRouter` of [Hono](https://hono.dev/), an ultra-fast web application framework for JavaScript
