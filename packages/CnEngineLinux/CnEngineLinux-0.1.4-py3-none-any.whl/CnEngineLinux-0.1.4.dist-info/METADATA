@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: CnEngineLinux
+Version: 0.1.4
+Summary: CnEngine v0.1.3 is a lightweight console-based communication protocol with CN (basic), CNSS (secure SSL), and CNF (file delivery) protocols. It includes a custom language for creating structured console pages.
+Home-page: https://rasmnout.github.io
+Author: Rasmnout
+Author-email: rasmnout@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Requires-Dist: pyopenssl
+
+CnEngine v0.1.3 is a simple, console-based communication protocol similar to HTTP, designed for lightweight and efficient text-based interactions. It supports three main protocols: CN (basic and unencrypted), CNSS (secure SSL communication), and CNF (file-based content delivery). Additionally, it includes a custom programming language, CN, for creating structured console-based pages.
