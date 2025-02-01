@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch_ransac3d"
+version = "2.0.0"
+authors = [
+ {name = "Harry Dobbs", email = "harrydobbs87@gmail.com"},
+]
+description = "A high-performance implementation of 3D RANSAC (Random Sample Consensus) algorithm using PyTorch and CUDA."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+dependencies = [
+ 'numpy',
+ 'torch'
+]
+
+
+[tool.setuptools_scm]
+write_to = "torch_ransac3d/_version.py"
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
+
+[project.scripts]
+
+
+[project.urls]
+Homepage = "https://github.com/harrydobbs/torch_ransac3d"
+Documentation = "https://harrydobbs.github.io/torch_ransac3d/"
+Issues = "https://github.com/harrydobbs/torch_ransac3d/issues"
+
+
+[project.optional-dependencies]
+dev = [
+    "sphinx",
+    "sphinx-autodoc-typehints",
+    "sphinx-rtd-theme",
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+    "pytest-timeout"
+    ]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --color=yes"
+
+[tool.pycln]
+all = true
+expand_stars = true
+verbose = true
+exclude = """
+    __init__.py
+    |tests/.*
+"""

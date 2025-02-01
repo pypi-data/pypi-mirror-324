@@ -1,0 +1,11 @@
+numpy
+torch
+
+[dev]
+sphinx
+sphinx-autodoc-typehints
+sphinx-rtd-theme
+pytest
+pytest-cov
+pytest-xdist
+pytest-timeout
