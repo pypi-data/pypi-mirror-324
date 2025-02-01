@@ -1,0 +1,14 @@
+sofascore_wrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sofascore_wrapper/api.py,sha256=twYB-7y12v8HM5AqoK8-AMAchm2ucem6q0eD-FmGR9c,606
+sofascore_wrapper/flag.py,sha256=ZPWaUZnWhx_W6lkZsIQ24q1WEg4a_TuPEbGPyer9-zc,825
+sofascore_wrapper/league.py,sha256=gt1PzKSEr0bnXP1CKo0RP6kqE06h10zY1i4S0OsBi3Y,69345
+sofascore_wrapper/manager.py,sha256=SuDic4b57FZdoLiZQ6Y_ZRpPK8McTBbQpoX7N67QsUM,16507
+sofascore_wrapper/match.py,sha256=WuXfz_PaFRo25vgiaiUVHj3T9g3pcITnL8jvZhSBJNk,75756
+sofascore_wrapper/player.py,sha256=hdSUetqyCvmw8fxf39GXga1ettU-OfvNA8j6n0DvWI4,42962
+sofascore_wrapper/search.py,sha256=kgWPZKR_ODOaLOgK4NgKakb78JfD0w8LVa_DlvpJFp8,21218
+sofascore_wrapper/team.py,sha256=enE9-b3W6gq2SRnQYWgmVpr3ZqB0BHbha88BvW-KDMg,81370
+sofascore_wrapper-1.0.7.dist-info/LICENSE,sha256=jKMta8tW4OppcVrpxJXj0ljcC1r4lN4k3YSji2K9jfQ,1061
+sofascore_wrapper-1.0.7.dist-info/METADATA,sha256=9GTqNeP3mUz4Pwo2p68sFa7I5VquPgKVeocaiHApMd4,2513
+sofascore_wrapper-1.0.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+sofascore_wrapper-1.0.7.dist-info/top_level.txt,sha256=nvoCo3aU9n1aCL3Qh3IK2SyxcGdrGRgsM95R_G2NCZ4,18
+sofascore_wrapper-1.0.7.dist-info/RECORD,,
