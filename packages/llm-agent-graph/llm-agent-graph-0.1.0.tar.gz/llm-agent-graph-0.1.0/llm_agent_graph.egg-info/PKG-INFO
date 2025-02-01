@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: llm-agent-graph
+Version: 0.1.0
+Summary: A short description of your library
+Home-page: https://github.com/threezinedine/ai-agent-platform/tree/main/agent-graph
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Agent Graph
+
+First version without any code
