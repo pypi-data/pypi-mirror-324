@@ -1,0 +1,157 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling"]
+
+[dependency-groups]
+dev = [
+  "pre-commit >= 4.1.0"
+]
+tests = [
+  "pytest >= 8.3.4",
+  "pytest-cov >= 6.0.0",
+  "tox >= 4.24.1",
+  "tox-uv >= 1.20.1"
+]
+
+[project]
+authors = [
+  {email = "BuriedInCode@tuta.io", name = "BuriedInCode"}
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Framework :: Pydantic :: 2",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: MacOS",
+  "Operating System :: Microsoft :: Windows",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed"
+]
+dependencies = [
+  "comicfn2dict >= 0.2.4",
+  "esak >= 2.0.0",
+  "lxml >= 5.3.0",
+  "mokkari >= 3.6.0",
+  "natsort >= 8.4.0",
+  "pillow >= 11.1.0",
+  "pydantic >= 2.10.6",
+  "pydantic-xml >= 2.14.1",
+  "rarfile >= 4.2",
+  "rich >= 13.9.4",
+  "simyan >= 1.4.0",
+  "tomli >= 2.2.1 ; python_version < '3.11'",
+  "tomli-w >= 1.2.0",
+  "typer >= 0.15.1"
+]
+description = "Unify and organize your comic collection."
+dynamic = ["version"]
+keywords = ["comic", "comics", "metadata", "tagger", "tagging"]
+license = {text = "MIT"}
+name = "perdoo"
+readme = "README.md"
+requires-python = ">= 3.10"
+
+[project.optional-dependencies]
+cb7 = [
+  "py7zr >= 0.22.0"
+]
+
+[project.scripts]
+Perdoo = "perdoo.__main__:app"
+
+[project.urls]
+Homepage = "https://pypi.org/project/Perdoo"
+Issues = "https://github.com/Buried-In-Code/Perdoo/issues"
+Source = "https://github.com/Buried-In-Code/Perdoo"
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.coverage.run]
+source = ["perdoo"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [".github/"]
+
+[tool.hatch.version]
+path = "perdoo/__init__.py"
+
+[tool.pytest.ini_options]
+addopts = ["--cov"]
+
+[tool.ruff]
+extend-exclude = ["perdoo/archives/zipfile_remove.py"]
+fix = true
+line-length = 100
+output-format = "grouped"
+show-fixes = true
+unsafe-fixes = true
+
+[tool.ruff.format]
+docstring-code-format = true
+line-ending = "native"
+skip-magic-trailing-comma = true
+
+[tool.ruff.lint]
+ignore = [
+  "C901",
+  "COM812",
+  "D",
+  "DTZ",
+  "EM101",
+  "EM102",
+  "FBT",
+  "PLR0912",
+  "PLR0913",
+  "PLR2004",
+  "PLW2901",
+  "TCH",
+  "TRY003",
+  "TRY300"
+]
+select = ["ALL"]
+
+[tool.ruff.lint.flake8-annotations]
+allow-star-arg-any = true
+mypy-init-return = true
+
+[tool.ruff.lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.lint.flake8-unused-arguments]
+ignore-variadic-names = true
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+split-on-trailing-comma = false
+
+[tool.ruff.lint.pep8-naming]
+classmethod-decorators = ["classmethod", "pydantic.field_validator"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["PLR2004", "S101"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.pyupgrade]
+keep-runtime-typing = true
+
+[tool.tomlsort]
+all = true
+overrides."tool.tox.env_list".inline_arrays = false
+overrides."tool.tox.testenv.commands".inline_arrays = false
+
+[tool.tox]
+env_list = ["3.10", "3.11", "3.12", "3.13"]
+min_version = "4.22"
+
+[tool.tox.env_run_base]
+commands = [["pytest"]]
+dependency_groups = ["tests"]
