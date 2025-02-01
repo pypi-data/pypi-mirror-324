@@ -1,0 +1,9 @@
+README.md
+setup.py
+GithubAIPy/__init__.py
+GithubAIPy/api.py
+GithubAIPy.egg-info/PKG-INFO
+GithubAIPy.egg-info/SOURCES.txt
+GithubAIPy.egg-info/dependency_links.txt
+GithubAIPy.egg-info/requires.txt
+GithubAIPy.egg-info/top_level.txt
