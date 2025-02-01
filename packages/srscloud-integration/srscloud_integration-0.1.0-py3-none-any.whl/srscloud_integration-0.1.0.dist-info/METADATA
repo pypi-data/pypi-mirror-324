@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: srscloud-integration
+Version: 0.1.0
+Summary: Integração com SRSCloud para automação de processos
+Home-page: https://www.automate.com.br/
+Author: Automate Brasil
+Author-email: cx@automate.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: urllib3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SRSCloud Integration
+
+Biblioteca para integração com SRSCloud.
+
+## Instalação
+
+```sh
+pip install srscloud-integration
