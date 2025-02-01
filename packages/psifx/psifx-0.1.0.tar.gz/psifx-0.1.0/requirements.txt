@@ -1,0 +1,24 @@
+absolutely-not-scikit-video
+ffmpeg-python
+matplotlib <= 3.8.4
+mediapipe
+openai-whisper
+opensmile
+pyannote.audio
+pydub
+speechbrain <= 0.5.16
+torch
+torchvision
+torchaudio
+tqdm
+transformers >= 4.41.0
+huggingface_hub
+accelerate
+bitsandbytes
+langchain
+langchain-community
+langchain-anthropic
+langchain-openai
+langchain-ollama
+nltk
+ollama

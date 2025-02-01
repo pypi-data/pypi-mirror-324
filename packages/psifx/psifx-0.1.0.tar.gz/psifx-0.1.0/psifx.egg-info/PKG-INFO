@@ -1,0 +1,69 @@
+Metadata-Version: 2.2
+Name: psifx
+Version: 0.1.0
+Summary: Psychological and Social Interactions Feature Extraction
+Author-email: Guillaume Rochette <guillaume.rochette@unil.ch>, Matthew Vowels <matthew.vowels@unil.ch>
+Project-URL: homepage, https://github.com/GuillaumeRochette/psifx
+Project-URL: documentation, https://github.com/GuillaumeRochette/psifx
+Project-URL: repository, https://github.com/GuillaumeRochette/psifx
+Keywords: TODO
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: absolutely-not-scikit-video
+Requires-Dist: ffmpeg-python
+Requires-Dist: matplotlib<=3.8.4
+Requires-Dist: mediapipe
+Requires-Dist: openai-whisper
+Requires-Dist: opensmile
+Requires-Dist: pyannote.audio
+Requires-Dist: pydub
+Requires-Dist: speechbrain<=0.5.16
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: tqdm
+Requires-Dist: transformers>=4.41.0
+Requires-Dist: huggingface_hub
+Requires-Dist: accelerate
+Requires-Dist: bitsandbytes
+Requires-Dist: langchain
+Requires-Dist: langchain-community
+Requires-Dist: langchain-anthropic
+Requires-Dist: langchain-openai
+Requires-Dist: langchain-ollama
+Requires-Dist: nltk
+Requires-Dist: ollama
+Provides-Extra: docs
+Requires-Dist: furo; extra == "docs"
+Requires-Dist: m2r2; extra == "docs"
+Requires-Dist: myst_parser; extra == "docs"
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-argparse; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Requires-Dist: sphinx_toolbox; extra == "docs"
+
+# `psifx` - <u>P</u>sychological and <u>S</u>ocial <u>I</u>nteractions <u>F</u>eature e<u>X</u>traction
+
+---
+
+## Abstract
+
+*`psifx` is a "plug-and-play" multi-modal feature extraction toolkit, aiming to facilitate and democratize the use of state-of-the-art machine learning techniques for human sciences research.
+It is motivated by a need 
+(a) to automate and standardize data annotation processes, otherwise involving expensive, lengthy, and inconsistent human labor, such as the transcription or coding of behavior changes from audio and video sources;
+(b) to develop and distribute open-source community-driven psychology research software;
+(c) to enable large-scale access and ease of use to non-expert users.
+The framework contains an array of tools for tasks, such as speaker diarization, closed-caption transcription and translation from audio, as well as body, hand, and facial pose estimation and gaze tracking from video.
+The package has been designed with a modular and task-oriented approach, enabling the community to add or update new tools easily.
+We strongly hope that this package will provide psychologists a simple and practical solution for efficiently a range of audio, linguistic, and visual features from audio and video, thereby creating new opportunities for in-depth study of real-time behavioral phenomena.*
+
+## Documentation, Reference & Quickstart
+
+Visit https://psifx.github.io/psifx/
+
+arXiv preprint:  https://www.arxiv.org/abs/2407.10266
