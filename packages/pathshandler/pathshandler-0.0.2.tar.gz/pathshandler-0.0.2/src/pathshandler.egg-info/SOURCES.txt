@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/pathshandler/__init__.py
+src/pathshandler/paths_config.json
+src/pathshandler/pathshandler.py
+src/pathshandler.egg-info/PKG-INFO
+src/pathshandler.egg-info/SOURCES.txt
+src/pathshandler.egg-info/dependency_links.txt
+src/pathshandler.egg-info/top_level.txt
