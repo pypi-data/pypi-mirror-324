@@ -1,0 +1,6 @@
+pydantic
+httpx
+websockets
+haskellian
+orjson
+lazy-loader
