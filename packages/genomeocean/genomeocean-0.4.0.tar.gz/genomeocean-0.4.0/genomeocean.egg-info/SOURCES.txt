@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+genomeocean/__init__.py
+genomeocean/dnautils.py
+genomeocean/generation.py
+genomeocean/genomescan.py
+genomeocean/llm_utils.py
+genomeocean.egg-info/PKG-INFO
+genomeocean.egg-info/SOURCES.txt
+genomeocean.egg-info/dependency_links.txt
+genomeocean.egg-info/requires.txt
+genomeocean.egg-info/top_level.txt
