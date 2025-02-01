@@ -1,0 +1,88 @@
+# English translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-01-30 12:54+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: plurally/models/sf/salesforce_crm.py:875
+msgid "crm_action_create"
+msgstr "create"
+
+#: plurally/models/sf/salesforce_crm.py:877
+msgid "crm_action_update"
+msgstr "update"
+
+#: plurally/models/sf/salesforce_crm.py:1162
+#: plurally/models/sf/salesforce_crm.py:1192
+msgid "crm_action_associate"
+msgstr "associate"
+
+#: plurally/models/sf/salesforce_crm.py:1164
+#: plurally/models/sf/salesforce_crm.py:1194
+msgid "crm_action_associate_extra"
+msgstr "with {other}"
+
+#: plurally/templates/crm_actions_report.html:6
+#: plurally/templates/crm_actions_report.html:79
+msgid "actions_crm_title"
+msgstr "Salesforce report"
+
+#: plurally/templates/crm_actions_report.html:86
+msgid "actions_crm_record_type"
+msgstr "Record type"
+
+#: plurally/templates/crm_actions_report.html:87
+msgid "actions_crm_name"
+msgstr "Name"
+
+#: plurally/templates/crm_actions_report.html:88
+msgid "actions_crm_action_name"
+msgstr "Action"
+
+#: plurally/templates/crm_actions_report.html:89
+msgid "actions_crm_details"
+msgstr "Details"
+
+#: plurally/templates/crm_actions_report.html:90
+msgid "actions_crm_url"
+msgstr "URL"
+
+#: plurally/templates/crm_actions_report.html:113
+#: plurally/templates/crm_actions_report.html:132
+msgid "actions_crm_field"
+msgstr "Field"
+
+#: plurally/templates/crm_actions_report.html:114
+msgid "actions_crm_previous_value"
+msgstr "Previous value"
+
+#: plurally/templates/crm_actions_report.html:115
+msgid "actions_crm_new_value"
+msgstr "New value"
+
+#: plurally/templates/crm_actions_report.html:133
+msgid "actions_crm_value"
+msgstr "Value"
+
+#: plurally/templates/crm_actions_report.html:151
+msgid "actions_crm_open_link"
+msgstr "Open URL"
+
+#: plurally/templates/crm_actions_report.html:159
+msgid "actions_crm_no_actions"
+msgstr "No actions were taken."
