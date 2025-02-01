@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pylambertw/__init__.py
+pylambertw/lamberter.py
+pylambertw/tukeyhutils.py
+pylambertw.egg-info/PKG-INFO
+pylambertw.egg-info/SOURCES.txt
+pylambertw.egg-info/dependency_links.txt
+pylambertw.egg-info/not-zip-safe
+pylambertw.egg-info/requires.txt
+pylambertw.egg-info/top_level.txt
+script/simulate_heavytails
