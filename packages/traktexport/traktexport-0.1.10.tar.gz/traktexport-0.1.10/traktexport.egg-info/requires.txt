@@ -1,0 +1,10 @@
+IPython
+backoff
+click>=8.1
+logzero
+pytrakt>=4.1.0
+
+[testing]
+flake8
+mypy
+pytest
