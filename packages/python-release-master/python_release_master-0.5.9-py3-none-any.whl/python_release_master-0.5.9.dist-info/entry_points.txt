@@ -1,0 +1,2 @@
+[console_scripts]
+release-master = python_release_master.cli:main
