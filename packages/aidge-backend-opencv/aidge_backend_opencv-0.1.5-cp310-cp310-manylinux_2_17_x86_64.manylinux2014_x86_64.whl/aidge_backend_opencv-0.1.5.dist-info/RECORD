@@ -1,0 +1,16 @@
+aidge_backend_opencv-0.1.5.dist-info/METADATA,sha256=u5i66HurqEv0FYTH0F0j5AnpTYdq2BeDEGEczg6L8C0,18068
+aidge_backend_opencv-0.1.5.dist-info/LICENSE,sha256=C-zxZWe-t3-iUrdmRjHdF3yPmhiJ5ImVtFN5xxMOUwM,14198
+aidge_backend_opencv-0.1.5.dist-info/top_level.txt,sha256=ViR2kmVO1RrDkmI5NIoLcR5G-4p5peqd6Jd0Zg0_FVI,21
+aidge_backend_opencv-0.1.5.dist-info/WHEEL,sha256=ViyZsTV2upbIniGkknQiIrLPLs1cJIoIfr1wsV7PMic,151
+aidge_backend_opencv-0.1.5.dist-info/RECORD,,
+aidge_backend_opencv/aidge_backend_opencv.cpython-310-x86_64-linux-gnu.so,sha256=VCSN7bZbllSYIhkNQK331w_qQm4DBxCvpn5lRhvnMjQ,2530817
+aidge_backend_opencv/__init__.py,sha256=xdosK5ExpWovS-LVhLLWvrswcSkzkoRiIJUEqacmmWE,153
+aidge_backend_opencv.libs/libopencv_features2d-0e49ee46.so.4.9.0,sha256=Nd_ywf23N_s8f29i7HU5nQJVRTcrme9a4mQ-q0WY2hk,1173801
+aidge_backend_opencv.libs/libopencv_ml-58ec7db1.so.4.9.0,sha256=Nn-HOL8FGhEGdVncmhVEfA9tRdlUsWW-BQQwPnhENVE,738145
+aidge_backend_opencv.libs/libopencv_core-c92952a3.so.4.9.0,sha256=DG8sJ6MS7l2cMyY0YpOc7BsGibw44axuNOLa64PUxGI,15800049
+aidge_backend_opencv.libs/libopencv_flann-fb5c0475.so.4.9.0,sha256=GeGBxUsciAttQ4vDzQnQnVZ5dnarZ_sdvwJKWK-n3NQ,721073
+aidge_backend_opencv.libs/libopencv_dnn-953caa54.so.4.9.0,sha256=flDEcoHAMFC6oxkQnfhpPcd7UsAREMFJ1nDVS9JKOts,8971737
+aidge_backend_opencv.libs/libopencv_imgcodecs-4f85778d.so.4.9.0,sha256=ktGu82nhOFu3-aeLi8N6pp-MNRPoHJeRrviiWzbDtd4,4048057
+aidge_backend_opencv.libs/libopencv_photo-ec6d3ea3.so.4.9.0,sha256=Ca3Fh5nHF6GwaELpFat5pxg16DZSY5uYpmUb4fp29gs,801073
+aidge_backend_opencv.libs/libopencv_video-834ee753.so.4.9.0,sha256=pZjuyeCDGaoG_7fjBgslFHbed0kRWYMgpG1GdSNZybc,768897
+aidge_backend_opencv.libs/libopencv_imgproc-0cdd7eff.so.4.9.0,sha256=nXjVeAdSsO8fKJfgr5844u46Eu5WFqEUdSke8h5y5zs,29690329
