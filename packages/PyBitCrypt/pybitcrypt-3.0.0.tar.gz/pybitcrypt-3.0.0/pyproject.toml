@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyBitCrypt"
+version = "3.0.0"
+authors = [
+    {name = "Daniel Drury", email = "daniel-drury@outlook.com"},
+]
+description = "A simple encrypting and decrypting module."
+readme = "README.md"
+requires-python = ">=3.8"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Chickpeaplane/PyBitCrypt"
+"Bug Tracker" = "https://github.com/Chickpeaplane/PyBitCrypt/issues"
