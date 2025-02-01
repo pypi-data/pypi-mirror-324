@@ -1,0 +1,7 @@
+pydantic_rpc/__init__.py,sha256=AWYjSmYQcMqsqGmGK4k-pQQhX6RBBgkTvNcQtCtsctU,113
+pydantic_rpc/core.py,sha256=6NMTtS8cKNjPN5cBvd_XLU6h1oMZ6EqAHz-HGLnJpD0,47939
+pydantic_rpc/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydantic_rpc-0.4.0.dist-info/METADATA,sha256=FOVo-T-PCD0Sxh__B9cVaZpXb6XfUBOPmFIW0hP1v58,11993
+pydantic_rpc-0.4.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+pydantic_rpc-0.4.0.dist-info/licenses/LICENSE,sha256=Y6jkAm2VqPqoGIGQ-mEQCecNfteQ2LwdpYhC5XiH_cA,1069
+pydantic_rpc-0.4.0.dist-info/RECORD,,
