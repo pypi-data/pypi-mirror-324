@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: AnthonySheasPackage
+Version: 1.0.0
+Summary: A simple hello world package
+Home-page: https://github.com/Hyrneck/AnthonySheasPackage
+Author: Anthony Shea
+Author-email: agshea25@gmail.com
+License: None
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+A simple hello world package
