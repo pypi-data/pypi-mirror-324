@@ -1,0 +1,6 @@
+setup.py
+nick_stt.egg-info/PKG-INFO
+nick_stt.egg-info/SOURCES.txt
+nick_stt.egg-info/dependency_links.txt
+nick_stt.egg-info/top_level.txt
+stt/__init__.py
