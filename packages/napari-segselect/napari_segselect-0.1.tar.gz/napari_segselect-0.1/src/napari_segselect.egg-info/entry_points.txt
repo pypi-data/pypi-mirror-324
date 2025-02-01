@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-segselect = napari_segselect:napari.yaml

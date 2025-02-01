@@ -1,0 +1,11 @@
+numpy
+magicgui
+mrcfile
+
+[testing]
+tox
+pytest
+pytest-cov
+pytest-qt
+napari
+pyqt5
