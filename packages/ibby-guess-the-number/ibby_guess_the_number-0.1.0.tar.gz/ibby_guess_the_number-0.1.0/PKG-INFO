@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: ibby-guess-the-number
+Version: 0.1.0
+Summary: A simple number guessing game
+Requires-Python: >=3.13
