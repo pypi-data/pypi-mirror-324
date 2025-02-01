@@ -1,0 +1,9 @@
+fink_anomaly_detection_model/__init__.py,sha256=6sJJLbY2ZasN2J2IddgVu3r-F2l-xXDJ7mwAfBVKAgM,134
+fink_anomaly_detection_model/data_transformer.py,sha256=yxFG7AkXKoyuVYW8IBQFr9LRGBiob8CSSjlPeGKDmOk,3855
+fink_anomaly_detection_model/main_script_.py,sha256=Rj_xWQWt8VnT4rE3_Bm_7IxdkcMaJAS97neRvYb7wtw,10719
+fink_anomaly_detection_model/reactions_reader.py,sha256=_RbtNOEqAZD60nfBwsHFRTzKGcC7Y2nVXVv_Wu3_Ep0,6635
+fink_anomaly_detection_model-0.4.50.dist-info/METADATA,sha256=IBq6pyA0OcZw9R5InWFuM9FFM8DXzgHatIHiL2J6k7U,2630
+fink_anomaly_detection_model-0.4.50.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+fink_anomaly_detection_model-0.4.50.dist-info/entry_points.txt,sha256=5FI9XIwTOK7pMSZQC_Zev-fzEL8OZYOo47G5IiCor9k,217
+fink_anomaly_detection_model-0.4.50.dist-info/top_level.txt,sha256=DAb3WFQdegckHwrOfm4JGw5Dov31OSxHJImU9t5Fi9M,29
+fink_anomaly_detection_model-0.4.50.dist-info/RECORD,,
