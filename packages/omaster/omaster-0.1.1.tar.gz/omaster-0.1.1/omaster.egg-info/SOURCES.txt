@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+omaster/__init__.py
+omaster/download_docs.py
+omaster.egg-info/PKG-INFO
+omaster.egg-info/SOURCES.txt
+omaster.egg-info/dependency_links.txt
+omaster.egg-info/entry_points.txt
+omaster.egg-info/requires.txt
+omaster.egg-info/top_level.txt

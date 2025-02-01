@@ -1,0 +1,20 @@
+[project]
+name = "omaster"
+version = "0.1.1"
+description = "Documentation downloader for UV package manager"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "beautifulsoup4>=4.6.3",
+    "requests>=2.5.4.1",
+]
+
+[project.scripts]
+omaster = "omaster.download_docs:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["omaster"]
