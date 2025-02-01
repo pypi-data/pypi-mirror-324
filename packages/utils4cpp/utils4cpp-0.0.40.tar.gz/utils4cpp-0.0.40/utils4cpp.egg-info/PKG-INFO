@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: utils4cpp
+Version: 0.0.40
+Summary: utils for cpp
+Home-page: 
+Author: last911
+Author-email: scnjl@qq.com
+License: MPL
+License-File: LICENSE
+Requires-Dist: sqlalchemy
+Requires-Dist: flask_sqlalchemy
+Requires-Dist: flask_sqlacodegen
+Requires-Dist: pymysql
+Dynamic: author
+Dynamic: author-email
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
