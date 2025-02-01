@@ -1,0 +1,6 @@
+h3<4,>=3.6.1
+shapely
+requests
+ratelimit
+backoff
+boto3
