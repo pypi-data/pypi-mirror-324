@@ -1,0 +1,2 @@
+[scrapy.downloader_handlers]
+https = scrapy_proxy_headers.HTTP11ProxyDownloadHandler

@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: scrapy_proxy_headers
+Version: 0.1.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
