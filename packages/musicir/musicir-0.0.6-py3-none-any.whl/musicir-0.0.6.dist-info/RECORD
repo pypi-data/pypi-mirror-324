@@ -1,0 +1,16 @@
+musicir/__init__.py,sha256=-9IreNX0E2oPqXcit-95M4doxwj6THCtfgiTgh2lDfE,35
+musicir/__main__.py,sha256=zpMGMR_xorFvSjPwHhgj-HGjiaVxt3c3DM_0aYuVvMA,648
+musicir/harmony/__init__.py,sha256=gmhMPmWUTrX4IJNV8T9ixP-FUiBSBHC-lsWYxzcNw6o,16587
+musicir/harmony/generation.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicir/harmony/scale.py,sha256=wc2A0ntR4QrHrPwmyGHljKRLSRTKut5ElTBVlg4Lrw0,2345
+musicir/leadsheets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicir/leadsheets/model.py,sha256=ScNJk41GfrlKKV1ZC8KcE0aJ6DoBSnZSMdToLu6ys_8,1900
+musicir/leadsheets/musicxml.py,sha256=STFCU27f0HdJgpF15pC-oKTI3VldrImedK56v8_E-z8,6895
+musicir/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicir/rhythm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+musicir/rhythm/generate.py,sha256=Z13SgrhH8mPE86sbkNR4rYf8XLu7UkShUe5KzZXXH9o,5294
+musicir-0.0.6.dist-info/LICENSE.rst,sha256=HkdZKoPXtXyYR672IL8d_cnemWrVuWV_UrWpgoo6Zwk,1094
+musicir-0.0.6.dist-info/METADATA,sha256=esPBH4CbL0xZTXObVCnXMlvW6UgftpQ8cPMKn7tWBVE,4078
+musicir-0.0.6.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+musicir-0.0.6.dist-info/entry_points.txt,sha256=nuDPCkX4fvriCULE7XiCfHqUPG00yUgOnbssxLVCjPc,49
+musicir-0.0.6.dist-info/RECORD,,
