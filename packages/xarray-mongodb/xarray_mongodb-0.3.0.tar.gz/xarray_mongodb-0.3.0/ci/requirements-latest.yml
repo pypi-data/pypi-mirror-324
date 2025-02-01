@@ -1,0 +1,17 @@
+name: xarray_mongodb
+channels:
+  - conda-forge
+dependencies:
+  # Core dependencies
+  - dask
+  - pymongo
+  - xarray
+
+  # Optional dependencies
+  - motor
+  - pint
+
+  # Test tools
+  - pytest
+  - pytest-asyncio
+  - pytest-cov
