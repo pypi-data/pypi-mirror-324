@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: sel-suod
+Version: 0.1.1
+Summary: Fork from SUOD v0.1.3 (by Yue Zhao)
+Home-page: https://github.com/jcribeiro98/Selectable_SUOD
+Download-URL: https://github.com/jcribeiro98/Selectable_SUOD/archive/refs/heads/master.zip
+Author: Jose Cribeiro
+Author-email: jose@cribeiro.net
+Keywords: ensemble learning,anomaly detection,outlier ensembles,data mining,machine learning,python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: combo
+Requires-Dist: joblib>=0.14.1
+Requires-Dist: matplotlib
+Requires-Dist: numpy>=1.13
+Requires-Dist: scipy>=0.19.1
+Requires-Dist: scikit_learn>=1.0
+Requires-Dist: pandas
+Requires-Dist: psutil
+Requires-Dist: pyod>=1.0
+
+
+*Fork of*: SUOD: Accelerating Large-scare Unsupervised Heterogeneous Outlier Detection
+===========================================================================
+
+---
+### *NEW*: Now available in PyPi! 
+
+```
+pip install sel-suod
+```
+---
+
+Please refer to the [original package](https://github.com/yzhao062/SUOD) for more information about the base functionalities.
+This fork forces SUOD to use pre-selected axis-parallel subspaces, such as those obtained after Feature Bagging or Feature Selection. These subspaces must be declared as a `np.array`, and can take any structure such that the operation `X[:, subspace]` yields the desired projected dataset. 
+It uses the same class declaration as base SUOD, only adding a new variable: `subspaces`, and changing the class name to sel_SUOD.
+This fork additionally contains a number of QOL additions, like:
+
+   - During initialization, if base_estimators is an array of length 1, it will sklearn.clone() the estimator once per each subspace.
+   - During initialization, it will automatically check whether the number of detectors and estimators coincide. 
+   - It will, by default, not run approximation on any method unless the global flag for approximation is manually turned to true.
+
+There should be no conflict between SUOD and sel_SUOD.
+Take a look at the following code for a practical example: 
+
+```
+base_estimators = [LOF()] #The class sel_SUOD automatically initizializes itself with subspaces.shape[0] clones of this array if len < 2.
+
+#Creating exemplary subspaces
+subspaces = [True]*20
+subspaces.append(False)
+subspaces = np.array([subspaces, subspaces])
+subspaces[1][4] = False
+
+model = sel_SUOD(base_estimators=base_estimators, subspaces=subspaces,
+                 n_jobs=6, bps_flag=True,
+                 contamination=contamination, approx_flag_global=True)
+model.fit(X_train)  # fit all models with X
+predicted_scores = model.decision_function(X_test)  # predict scores
+```
