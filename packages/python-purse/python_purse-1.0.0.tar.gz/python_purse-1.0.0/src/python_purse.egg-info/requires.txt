@@ -1,0 +1,6 @@
+
+[aiogram]
+aiogram>=3.17.0
+
+[aiohttp]
+aiohttp

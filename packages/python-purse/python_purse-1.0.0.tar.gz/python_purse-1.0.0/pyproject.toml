@@ -1,0 +1,22 @@
+[project]
+name = "python-purse"
+version = "1.0.0"
+description = "utils and snippets for python projects"
+requires-python = ">=3.11"
+dependencies = [
+]
+
+[project.optional-dependencies]
+aiogram = [
+    "aiogram>=3.17.0",
+]
+aiohttp = [
+    "aiohttp",
+]
+
+[dependency-groups]
+dev = [
+    "aiogram>=3.17.0",
+    "httpx>=0.28.1",
+    "requests>=2.32.3",
+]

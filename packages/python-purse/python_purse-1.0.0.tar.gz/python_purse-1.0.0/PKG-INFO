@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: python-purse
+Version: 1.0.0
+Summary: utils and snippets for python projects
+Requires-Python: >=3.11
+Provides-Extra: aiogram
+Requires-Dist: aiogram>=3.17.0; extra == "aiogram"
+Provides-Extra: aiohttp
+Requires-Dist: aiohttp; extra == "aiohttp"
