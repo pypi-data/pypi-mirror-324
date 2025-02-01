@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+scrapyapi/__init__.py
+scrapyapi.egg-info/PKG-INFO
+scrapyapi.egg-info/SOURCES.txt
+scrapyapi.egg-info/dependency_links.txt
+scrapyapi.egg-info/entry_points.txt
+scrapyapi.egg-info/requires.txt
+scrapyapi.egg-info/top_level.txt
+scrapyapi/app/__init__.py
+scrapyapi/app/main.py
+scrapyapi/core/__init__.py
