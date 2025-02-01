@@ -1,0 +1,2 @@
+[console_scripts]
+grafs-e = streamlit run $(python -c 'import grafs_e; print(grafs_e.__path__[0])')/app.py
