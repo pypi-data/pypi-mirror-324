@@ -1,0 +1,8 @@
+LICENSE,sha256=g48VAAQyYdBgqds1vV-7Vv3qpJSjsLQ9eEejGkOyRE8,1072
+README.md,sha256=iG9Rh8JazIa869fA0k4ZMLi_EmEtUv-hLiNE_z6vnVA,2707
+src/setlogging/__init__.py,sha256=zIspFDs95JhkJ2_RoO4MjYOSjcgN31ZphHrL_SX9n3Q,231
+src/setlogging/logger.py,sha256=esZhSoX2f7YQr2C_H-4rkgjsIFm7Y_JiVhVwawAh-Q4,13002
+setlogging-0.3.5.dist-info/METADATA,sha256=ZmJ2UjggxjVc82jsApR218-7Uh5fbQIJLD79dfQs-80,3293
+setlogging-0.3.5.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+setlogging-0.3.5.dist-info/licenses/LICENSE,sha256=g48VAAQyYdBgqds1vV-7Vv3qpJSjsLQ9eEejGkOyRE8,1072
+setlogging-0.3.5.dist-info/RECORD,,
