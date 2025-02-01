@@ -1,0 +1,208 @@
+Metadata-Version: 2.1
+Name: llm-img-cat
+Version: 0.1.2
+Summary: LLM-based image categorization tool with focus on book cover detection
+Home-page: https://github.com/clava-ai/llm_image_categorizator
+Author: Clava Team
+Author-email: team@clava.ai
+Project-URL: Bug Tracker, https://github.com/clava-ai/llm_image_categorizator/issues
+Project-URL: Documentation, https://github.com/clava-ai/llm_image_categorizator/docs
+Project-URL: Source Code, https://github.com/clava-ai/llm_image_categorizator
+Keywords: llm,image,categorization,ai,book cover,vision,machine learning
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pillow>=10.0.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: imagehash>=4.3.0
+Requires-Dist: responses>=0.25.0
+Requires-Dist: psutil>=5.9.0
+Requires-Dist: rich>=13.7.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: anthropic>=0.5.0
+Requires-Dist: dashscope>=1.10.0
+Requires-Dist: google-generativeai==0.1.0rc1
+Requires-Dist: python-magic>=0.4.27
+Requires-Dist: tenacity>=8.2.3
+Requires-Dist: cachetools>=5.3.1
+Requires-Dist: typing-extensions>=4.8.0
+Requires-Dist: pytest>=7.0.0
+Requires-Dist: pytest-asyncio>=0.21.0
+Requires-Dist: pytest-cov>=4.1.0
+Requires-Dist: pytest-random-order==1.1.0
+Requires-Dist: matplotlib>=3.7.0
+Provides-Extra: dev
+Requires-Dist: black>=23.0.0; extra == "dev"
+Requires-Dist: isort>=5.12.0; extra == "dev"
+Requires-Dist: flake8>=6.0.0; extra == "dev"
+Requires-Dist: mypy>=1.5.0; extra == "dev"
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.21.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.1.0; extra == "dev"
+Requires-Dist: pytest-random-order==1.1.0; extra == "dev"
+Provides-Extra: docs
+Requires-Dist: mkdocs>=1.5.0; extra == "docs"
+Requires-Dist: mkdocs-material>=9.0.0; extra == "docs"
+Requires-Dist: pdoc3>=0.10.0; extra == "docs"
+Provides-Extra: examples
+Requires-Dist: matplotlib>=3.7.0; extra == "examples"
+Requires-Dist: jupyter>=1.0.0; extra == "examples"
+
+# LLM Book Cover Detector
+
+A Python package for detecting and analyzing book covers using Qwen Vision-Language model.
+
+## Features
+
+- Accurate book cover detection
+- Similarity scoring (0-100%)
+- Concise reasoning
+- Beautiful CLI interface
+- JSON response format
+- Raw API response display
+- Rich output formatting
+- Comprehensive error handling
+
+## Installation
+
+```bash
+pip install llm_img_cat
+```
+
+## API Key Setup
+
+You need a DashScope API key to use this package. Here are three ways to set it up:
+
+1. **Using Environment Variable (Recommended for Development)**
+   ```bash
+   export DASHSCOPE_API_KEY="your-api-key-here"
+   ```
+
+2. **Using .env File (Recommended for Projects)**
+   Create a `.env` file in your project directory:
+   ```
+   DASHSCOPE_API_KEY=your-api-key-here
+   DEFAULT_MODEL=qwen-vl-plus  # Optional
+   ```
+   The package will automatically load the API key from this file.
+
+3. **Setting Programmatically (For Testing)**
+   ```python
+   import os
+   os.environ['DASHSCOPE_API_KEY'] = 'your-api-key-here'
+   from llm_img_cat import ImageCategorizer
+   ```
+
+⚠️ **Security Note**: Never commit your API key to version control. Always use environment variables or `.env` files, and keep your API key secure.
+
+## Usage
+
+### CLI Usage
+
+The simplest way to use the book cover detector is through the CLI:
+
+```bash
+python scripts/llm_img_cat_cli.py path/to/image.jpg
+```
+
+This will:
+1. Analyze if the image is a book cover
+2. Provide a similarity score (0-100%)
+3. Give a concise 5-word reasoning
+4. Show raw API response
+
+### Python API Usage
+
+```python
+from llm_img_cat import ImageCategorizer
+
+# Initialize the categorizer (will automatically load API key from environment or .env)
+categorizer = ImageCategorizer()
+
+# Analyze an image
+result = categorizer.categorize_image("path/to/image.jpg")
+
+print(f"Is book cover: {result['is_category']}")
+print(f"Similarity score: {result['confidence']}%")
+print(f"Reasoning: {result['reasoning']}")
+```
+
+### Rich Console Demo
+
+For a more sophisticated example with beautiful console output and error handling, check out the rich demo:
+
+```bash
+# Install required packages
+pip install llm_img_cat rich
+
+# Run the demo
+python examples/rich_demo.py
+```
+
+The rich demo showcases:
+- Beautiful console output with colors and panels
+- Proper environment setup
+- Comprehensive error handling
+- Test summary reporting
+- Multiple image processing
+
+Example output:
+```
+╭───────────────────────────────╮
+│ Environment Setup             │
+│ API Key: ✓ Set                │
+│ Model: qwen2.5-vl-3b-instruct │
+╰───────────────────────────────╯
+
+Analyzing image: Book cover example
+╭──────────────────────────────────────╮
+│ Analysis Results                     │
+│ Is Book Cover: True                  │
+│ Confidence: 95%                      │
+│ Reasoning: Classic book cover design │
+╰──────────────────────────────────────╯
+```
+
+## Example Output
+
+```
+╭── Book Cover Detection Results ───╮
+│ Is Book Cover    │ Yes           │
+│ Similarity Score │ 90%           │
+╰────────────────────────────────╯
+╭── Reasoning ──────────────────────╮
+│ Text and design typical of books  │
+╰────────────────────────────────╯
+```
+
+## Configuration
+
+Required environment variables:
+- `DASHSCOPE_API_KEY`: Your DashScope API key
+- `DEFAULT_MODEL`: Model to use (default: "qwen-vl-plus")
+
+## Development
+
+- Run tests: `./run_qwen_tests.sh`
+- Check code: `scripts/lint.sh`
+- Build docs: `scripts/build_docs.sh`
+
+## License
+
+MIT License
+
+## Contributing
+
+See CONTRIBUTING.md for guidelines. 
