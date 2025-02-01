@@ -1,0 +1,49 @@
+Metadata-Version: 2.2
+Name: Data_extractor_txt_to_csv
+Version: 0.1.1
+Summary: A Python package to extract data from TXT filenames and save it to CSV.
+Home-page: https://github.com/yourusername/Data_extractor_txt_to_csv
+Author: Terriculum
+Author-email: your-email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# Data Extractor TXT to CSV
+
+## Overview
+`Data_extractor_txt_to_csv` is a Python package that processes `.txt` files in a specified folder. It extracts specific parts of filenames and saves them as `.csv` files.
+
+## Features
+- Process multiple `.txt` files in a folder.
+- Extracts a specific part of the filename based on `_` separators.
+- Saves the results into a `.csv` file with a semicolon (`;`) delimiter.
+- Ensures unique extracted values in the CSV file.
+
+## Installation
+You can install the package from PyPI using:
+```sh
+pip install Data_extractor_txt_to_csv
+```
+## Usage
+After installing, you can run the script using:
+
+```shell
+process-file
+```
+
+## License
+This project is licensed under the MIT License.
+
+## Author
+Created by Terriculum.

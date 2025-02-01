@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+Data_extractor_txt_to_csv.egg-info/PKG-INFO
+Data_extractor_txt_to_csv.egg-info/SOURCES.txt
+Data_extractor_txt_to_csv.egg-info/dependency_links.txt
+Data_extractor_txt_to_csv.egg-info/entry_points.txt
+Data_extractor_txt_to_csv.egg-info/top_level.txt
+Terriculum_first_package/__init__.py
+Terriculum_first_package/extractor.py
