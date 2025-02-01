@@ -1,0 +1,127 @@
+Metadata-Version: 2.2
+Name: matrixlab
+Version: 0.0.1
+Summary: A numerical linear algebra library in native Python
+Home-page: https://github.com/PEQUAN/matrixlab.git
+Author: matrixlab team
+Author-email: xinyechenai@gmail.com
+Maintainer: matrixlab team
+Maintainer-email: xinyechenai@gmail.com
+License: MIT License
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.7.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-dist
+Dynamic: summary
+
+# matrixlab: A Library for Numerical Linear Algebra and Linear System Solvers
+
+**matrixlab** is a Python library designed to provide a broad suite of fundamental numerical linear algebra methods and algorithms. Built for researchers, educators, and practitioners, it offers a versatile and reliable resource for solving mathematical problems across various domains, including data science, machine learning, and scientific computing.
+
+---
+
+## Why matrixlab?
+
+matrixlab, short for **"Numerical Matrix and Linear Algebra Toolkit"**, focuses on clarity, accuracy, and accessibility. It bridges the gap between theoretical linear algebra and practical applications, making complex concepts approachable and usable for diverse audiences. Whether solving large-scale computational problems, conducting academic research, or teaching numerical methods, matrixlab is designed to support your needs.
+
+---
+
+## Key Features
+
+- **Comprehensive Functionality**: matrixlab includes essential tools such as:
+  - LU, QR, and Cholesky factorizations.
+  - Iterative solvers like Conjugate Gradient (CG) and GMRES.
+  - Eigenvalue decompositions.
+  - Preconditioning techniques for linear systems.
+  - Rank-revealing factorizations.
+  
+- **Sparse Matrix Support**: All operations are performed on sparse matrices in CSR (Compressed Sparse Row) format for efficiency and scalability.
+
+- **User-Friendly Design**: matrixlab provides an intuitive Python API with clear and consistent interfaces, ensuring ease of use for both beginners and advanced users.
+
+- **Versatile Applications**: matrixlab supports a wide range of applications, including:
+  - Solving systems of linear equations.
+  - Dimensionality reduction techniques for data science.
+  - Stability analysis in engineering systems.
+  - Optimization and inverse problems in scientific research.
+
+- **Educational Utility**: The library is an excellent resource for teaching and learning numerical methods. It includes detailed documentation, illustrative examples, and explanatory notes to deepen understanding.
+
+---
+
+## Module Overview
+
+| Module | Description |
+|--------|------------|
+| [`lssolvers`](matrixlab/lssolvers) | Solvers for least square problems |
+| [`lrank`](matrixlab/lrank) | Low-rank approximation methods |
+| [`preconditioners`](matrixlab/preconditioners) | Preconditioners for linear systems |
+| [`esolvers`](matrixlab/esolvers) | Eigenvalue solvers |
+| [`gallery`](matrixlab/gallery) | Test matrices for numerical experiments |
+
+---
+
+## Getting Started
+
+### Installation
+
+matrixlab is available on PyPI. To install, simply run:
+
+```bash
+pip install matrixlab
+```
+
+
+### Documentation and Examples
+
+Detailed documentation and additional examples are available on the [matrixlab website](https://matrixlab.org) and in the repository’s `/examples` folder.
+
+---
+
+## Applications
+
+matrixlab is designed for a broad range of use cases, including:
+
+- **Scientific Computing**: Perform matrix computations efficiently and accurately for simulations and modeling.
+- **Data Science and Machine Learning**: Use matrix decompositions and iterative solvers for preprocessing and analyzing large datasets.
+- **Engineering and Physics**: Solve systems of equations, perform eigenvalue analysis, and optimize complex models.
+- **Educational Purposes**: Teach and learn numerical linear algebra concepts through hands-on coding and well-documented examples.
+
+---
+
+## Contributing
+
+matrixlab is an open-source project, and contributions are welcome! Whether fixing bugs, adding new features, or improving documentation, your help is appreciated.
+
+
+## License
+
+matrixlab is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## Join the Community
+
+Stay updated and connect with the matrixlab community:
+
+- [GitHub Repository](https://github.com/open-sciml/matrixlab)
+
+Discover, solve, and learn with **matrixlab** — your comprehensive Python library for numerical linear algebra!
+
