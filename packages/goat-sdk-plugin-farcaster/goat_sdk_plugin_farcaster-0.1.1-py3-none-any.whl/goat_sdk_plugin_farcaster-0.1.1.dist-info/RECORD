@@ -1,0 +1,6 @@
+goat_plugins/farcaster/__init__.py,sha256=Mol8oEUcgUhBGbVXIEbjQTzps218FitS559KDGeecgI,639
+goat_plugins/farcaster/parameters.py,sha256=vgkTNgkUepgnvOpgp66i-QJvfueiEkcKYeFggCjFfpM,1214
+goat_plugins/farcaster/service.py,sha256=rWuwh_VBRajBpnkHpA6X0TVpvLA1859_ds6bRUV8Dr4,2511
+goat_sdk_plugin_farcaster-0.1.1.dist-info/METADATA,sha256=2NguKbUs0VMKJp_UopuY1mySraIN1R7nKf1CsuqRpww,1958
+goat_sdk_plugin_farcaster-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+goat_sdk_plugin_farcaster-0.1.1.dist-info/RECORD,,
