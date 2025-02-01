@@ -1,0 +1,2 @@
+[console_scripts]
+code-analyzer = python_code_quality_analyzer.__main__:cli
