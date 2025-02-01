@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: django-lispy-filter
+Version: 0.1.0
+Summary: Build a easy to use filter interface for Users to filter objects.
+Author-email: meowking <mr.meowking@posteo.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Django>=4.2
+Requires-Dist: sexpdata>=1.0.2
+Requires-Dist: django-cors-headers>=4.6.0 ; extra == "demo"
+Requires-Dist: build ; extra == "wheels"
+Requires-Dist: twine ; extra == "wheels"
+Project-URL: Homepage, https://codeberg.org/meow_king/django-lispy-filter
+Provides-Extra: demo
+Provides-Extra: wheels
+
+# Django Lispy Filter
+
+## Requirements
+
+Python version: only `python 3.12` is tested.  
+Django version: only `django 4.2` is tested.
+
+
+
+
+
