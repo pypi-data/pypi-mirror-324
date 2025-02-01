@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/modpacker.egg-info/PKG-INFO
+src/modpacker.egg-info/SOURCES.txt
+src/modpacker.egg-info/dependency_links.txt
+src/modpacker.egg-info/entry_points.txt
+src/modpacker.egg-info/requires.txt
+src/modpacker.egg-info/top_level.txt
+src/packer/__init__.py
+src/packer/compile.py
+src/packer/config.py
+src/packer/curseforge.py
+src/packer/cutie.py
+src/packer/packer.py
