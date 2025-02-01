@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: nxgdb
+Version: 0.0.1.2
+Summary: NuttX RTOS GDB extensions
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pyelftools
