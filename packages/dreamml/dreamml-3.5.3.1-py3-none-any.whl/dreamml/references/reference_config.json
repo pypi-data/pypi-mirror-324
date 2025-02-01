@@ -1,0 +1,262 @@
+{
+    "file_extension": ["csv", "pkl", "pickle", "parquet", "xlsx"],
+    "device": ["auto", "cpu", "cuda"],
+    "task": ["regression", "binary", "multiclass", "multilabel", "timeseries", "amts", "topic_modeling", "phrase_retrieval"],
+    "default_eval_metric_by_task": {
+        "regression": "mse",
+        "binary": "gini",
+        "multiclass": "logloss",
+        "multilabel": "gini",
+        "timeseries": "mse",
+        "amts": "mape",
+        "topic_modeling": "average_distance",
+        "phrase_retrieval": "phrase_retrieval"
+    },
+    "default_loss_function_by_task": {
+        "regression": "mse",
+        "binary": "logloss",
+        "multiclass": "logloss",
+        "multilabel": "logloss",
+        "timeseries": "mse",
+        "amts": "mape",
+        "topic_modeling": "average_distance",
+        "phrase_retrieval": "phrase_retrieval"
+    },
+    "models": {
+        "estimators": ["xgboost", "lightgbm", "catboost", "pyboost", "prophet", "linear_reg", "log_reg", "lda", "ensembelda", "bertopic"],
+        "estimators_by_task": {
+            "regression": ["xgboost", "lightgbm", "catboost", "pyboost", "linear_reg"],
+            "binary": ["xgboost", "lightgbm", "catboost", "pyboost", "log_reg"],
+            "multiclass": ["xgboost", "lightgbm", "catboost", "pyboost", "log_reg"],
+            "multilabel": ["xgboost", "lightgbm", "catboost", "pyboost"],
+            "timeseries": ["xgboost", "lightgbm", "catboost", "pyboost"],
+            "amts": ["prophet", "linear_reg"],
+            "topic_modeling": ["lda", "ensembelda", "bertopic"],
+            "phrase_retrieval": ["lda", "ensembelda", "bertopic"]
+        },
+        "vectorizers": ["tf-idf", "word2vec", "bow", "fasttext", "glove"]
+    },
+    "eval_metric": {
+        "eval_metric_by_task": {
+            "regression": [],
+            "binary": [],
+            "multiclass": [],
+            "multilabel": [],
+            "timeseries": [],
+            "amts": [],
+            "topic_modeling": [],
+            "phrase_retrieval": []
+        },
+        "eval_metric_by_estimator": {
+            "xgboost": ["rmse", "rmsle", "mape", "mae", "huber_loss", "mean_average_precision", "roc_auc", "precision_recall_auc", "f1_score", "logloss", "gini"],
+            "lightgbm": ["rmse", "mse", "mape", "mae", "huber_loss", "fair_loss", "poisson", "gamma", "gamma_deviance", "tweedie", "ndcg", "mean_average_precision", "average_precision", "roc_auc", "cross-entropy", "kullback_leibler", "quantile", "f1_score", "gini", "logloss"],
+            "catboost": ["rmse", "msle", "r2", "mape", "smape", "mdae", "mae", "huber_loss", "fair_loss", "poisson", "tweedie", "mean_average_precision", "roc_auc", "accuracy", "precision", "recall", "precision_recall_auc", "cross-entropy", "quantile", "f1_score", "logloss", "gini"],
+            "pyboost": ["rmse", "rmsle", "r2", "roc_auc", "accuracy", "precision", "recall", "cross-entropy", "f1_score", "logloss", "gini"],
+            "linear_reg": ["mse", "rmse", "rmsle", "mape", "mae", "huber_loss", "gini"],
+            "log_reg": ["mean_average_precision", "roc_auc", "precision_recall_auc", "f1_score", "logloss", "gini"],
+            "lda": ["log_perplexity", "coherence", "average_distance"],
+            "ensembelda": ["log_perplexity", "coherence", "average_distance"],
+            "bertopic": ["average_distance", "silhouette_score"],
+            "prophet": ["mape"]
+        }
+    },
+    "loss_function": {
+        "loss_function_by_task": {
+            "regression": [],
+            "binary": [],
+            "multiclass": [],
+            "multilabel": [],
+            "timeseries": [],
+            "amts": [],
+            "topic_modeling": [],
+            "phrase_retrieval": []
+        },
+        "loss_function_by_estimator": {
+            "xgboost": ["mse", "rmse", "rmlse", "mae", "huber_loss", "quantile", "logloss", "gini"],
+            "lightgbm": ["mse", "rmse", "mape", "mae", "huber_loss", "fair_loss", "poisson", "quantile", "gamma", "tweedie", "logloss", "cross-entropy", "gini"],
+            "catboost": ["mse", "rmse", "mape", "mae", "huber_loss", "poisson", "quantile", "gamma", "tweedie", "logloss", "cross-entropy", "gini"],
+            "pyboost": ["mse", "logloss", "gini"],
+            "linear_reg": ["mse"],
+            "log_reg": ["logloss"],
+            "lda": ["log_perplexity", "coherence", "average_distance"],
+            "ensembelda": ["log_perplexity", "coherence", "average_distance"],
+            "bertopic": ["average_distance", "silhouette_score"],
+            "prophet": ["mape"]
+        }
+    },
+    "default_params": {
+        "n_estimators": {
+            "type": "int",
+            "value": 5000
+        },
+        "n_iterations": {
+            "type": "int",
+            "value": 20
+        },
+        "random_seed": {
+            "type": "int",
+            "value": 27
+        },
+        "oot_split_n_values": {
+            "type": "int",
+            "value": 2
+        },
+        "time_series_split_gap": {
+            "type": "int",
+            "value": 0
+        },
+        "cv_n_folds": {
+            "type": "int",
+            "value": 3
+        },
+        "max_length": {
+            "type": "int",
+            "value": 300
+        },
+        "learning_rate": {
+            "type": "float",
+            "value": 2e-5
+        },
+        "epochs": {
+            "type": "int",
+            "value": 4
+        },
+        "batch_size": {
+          "type": "int",
+          "value": 32
+        },
+        "weight_decay": {
+            "type": "float",
+            "value": 2e-5
+        },
+        "aug_p": {
+            "type": "float",
+            "value": 0.2
+        },
+        "gini_threshold": {
+            "type": "float",
+            "value": 0.0
+        },
+        "gini_selector_abs_difference": {
+            "type": "float",
+            "value": 10.0
+        },
+        "gini_selector_rel_difference": {
+            "type": "float",
+            "value": 30.0
+        },
+        "permutation_threshold": {
+            "type": "float",
+            "value": 0.001
+        },
+        "psi_threshold": {
+            "type": "float",
+            "value": 0.1
+        },
+        "corr_threshold": {
+            "type": "int",
+            "value": 10
+        },
+        "corr_coef": {
+            "type": "int",
+            "value": 0.7
+        },
+        "other_models_feature_threshold": {
+            "type": "int",
+            "value": 100
+        },
+        "min_n_features_to_stop": {
+            "type": "int",
+            "value": 60
+        },
+        "min_n_features_to_start": {
+            "type": "int",
+            "value": 100
+        },
+        "max_boostaroota_stage_iters": {
+            "type": "int",
+            "value": 3
+        },
+        "bootstrap_samples": {
+            "type": "int",
+            "value": 200
+        },
+        "min_percentile": {
+            "type": "int",
+            "value": 1
+        },
+        "max_percentile": {
+            "type": "int",
+            "value": 99
+            },
+        "horizon": {
+            "type": "int",
+            "value": 5
+            },
+        "max_classes_plot": {
+            "type": "int",
+            "value": 5
+            },
+        "num_topics": {
+            "type": "int",
+            "value": 10
+            },
+        "lda_passes": {
+            "type": "int",
+            "value": 10
+            },
+        "alpha": {
+            "type": "float",
+            "value": 1e-2
+            },
+        "eta": {
+            "type": "float",
+            "value": 1e-2
+            },
+        "num_models": {
+            "type": "int",
+            "value": 3
+        },
+        "iterations": {
+            "type": "int",
+            "value": 10
+        },
+        "n_neighbors": {
+            "type": "int",
+            "value": 15
+        },
+        "n_components": {
+            "type": "int",
+            "value": 2
+        },
+        "min_dist": {
+            "type": "float",
+            "value": 0.1
+        },
+        "min_cluster_size": {
+            "type": "int",
+            "value": 5
+        },
+        "max_cluster_size": {
+            "type": "int",
+            "value": 150
+        },
+        "min_samples": {
+            "type": "int",
+            "value": 5
+        },
+        "lama_time": {
+            "type": "int",
+            "value": 1200
+        },
+        "optimizer_timeout": {
+            "type": "int",
+            "value": 7200
+        }
+
+    },
+    "optimizer": ["auto", "distributed", "local", "optuna", "bayesian"],
+    "validation": ["auto", "hold-out", "cv"],
+    "metric_params": ["at_k", "threshold", "beta", "labels"],
+    "vectorization_algos": ["tf-idf", "word2vec", "fasttext", "glove", "bert", "bow"]
+}
