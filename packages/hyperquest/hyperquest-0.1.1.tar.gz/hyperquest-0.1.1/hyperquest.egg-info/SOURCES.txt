@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+hyperquest/__init__.py
+hyperquest/snr.py
+hyperquest/utils.py
+hyperquest.egg-info/PKG-INFO
+hyperquest.egg-info/SOURCES.txt
+hyperquest.egg-info/dependency_links.txt
+hyperquest.egg-info/requires.txt
+hyperquest.egg-info/top_level.txt
+tests/test_import.py
