@@ -1,0 +1,12 @@
+manage.py
+setup.py
+myapp/__init__.py
+myapp/asgi.py
+myapp/responses.py
+myapp/settings.py
+myapp/urls.py
+myapp/wsgi.py
+testAppResponse.egg-info/PKG-INFO
+testAppResponse.egg-info/SOURCES.txt
+testAppResponse.egg-info/dependency_links.txt
+testAppResponse.egg-info/top_level.txt

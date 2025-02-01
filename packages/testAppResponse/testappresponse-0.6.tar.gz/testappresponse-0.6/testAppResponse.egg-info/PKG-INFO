@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: testAppResponse
+Version: 0.6
+Summary: Manage your responses
+Author-email: manojan.mano@gmail.com
+Dynamic: author-email
+Dynamic: summary
