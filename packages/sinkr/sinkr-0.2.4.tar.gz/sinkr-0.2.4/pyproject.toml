@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "sinkr"
+version = "0.2.4"
+description = "Sinkr Python SDK"
+authors = ["Wundero <Wundero@users.noreply.github.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/Wundero/sinkr"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+websockets = "^14.1"
+ruff = "^0.8.1"
+nanoid = "^2.0.0"
+aiohttp = {extras = ["speedups"], version = "^3.11.11"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
