@@ -1,0 +1,4 @@
+[console_scripts]
+cnsearch = cn_engine_linux.cnsearch:main
+cnserver = cn_engine_linux.cnserver:main
+cnview = cn_engine_linux.cnview:main
