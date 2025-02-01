@@ -1,0 +1,3 @@
+[console_scripts]
+epy_verify=epy_python_kit.__main__:check_installs
+
