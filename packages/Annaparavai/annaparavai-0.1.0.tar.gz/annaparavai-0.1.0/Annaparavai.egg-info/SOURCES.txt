@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+Annaparavai/__init__.py
+Annaparavai/model.py
+Annaparavai/utils.py
+Annaparavai.egg-info/PKG-INFO
+Annaparavai.egg-info/SOURCES.txt
+Annaparavai.egg-info/dependency_links.txt
+Annaparavai.egg-info/requires.txt
+Annaparavai.egg-info/top_level.txt
