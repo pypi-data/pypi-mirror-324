@@ -1,0 +1,21 @@
+Metadata-Version: 2.2
+Name: wangfu-autocomplete
+Version: 0.1.0
+Summary: A Python package to make Bash autocomplete faster for CLI tools using argparse and argcomplete.
+Home-page: https://github.com/highspeed8/python_package_publish
+Author: Ben
+Author-email: wangfu0811@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: argcomplete
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
