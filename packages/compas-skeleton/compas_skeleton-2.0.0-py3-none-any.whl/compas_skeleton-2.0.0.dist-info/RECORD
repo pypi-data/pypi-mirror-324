@@ -1,0 +1,10 @@
+compas_skeleton/__init__.py,sha256=QZ3OnF3pUHvQy80eY9N0JysCnSvcr4RTx9jQu9mpQww,463
+compas_skeleton/datastructures/skeleton.py,sha256=EPu6xoqif3cZpthsLAw2YHeGiMdGeevbBkiMY8ROaDA,8841
+compas_skeleton/rhino/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compas_skeleton/scene/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compas_skeleton-2.0.0.dist-info/AUTHORS.md,sha256=5DVScLsDUW0CEpz6wqemlhmxS1MaW5mkFvt9KrAx10U,129
+compas_skeleton-2.0.0.dist-info/LICENSE,sha256=UOvCZ0INppBzzIo8I0fJztmE7tN1P2n8X5M_t9DV9Jw,1092
+compas_skeleton-2.0.0.dist-info/METADATA,sha256=JS_Ku6rFF3EfvzwTq-5Nbw4khqGsLU2rn6BtSMLo6GY,3682
+compas_skeleton-2.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+compas_skeleton-2.0.0.dist-info/top_level.txt,sha256=7Dto-ZrTBvg7mSMvkSm_qk3CmHKuXG2kEm0Lalc5GRM,16
+compas_skeleton-2.0.0.dist-info/RECORD,,
