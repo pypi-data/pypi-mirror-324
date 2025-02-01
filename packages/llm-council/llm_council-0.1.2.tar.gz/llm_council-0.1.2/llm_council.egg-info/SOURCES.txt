@@ -1,0 +1,10 @@
+LICENSE
+README.md
+llm_council.py
+pyproject.toml
+llm_council.egg-info/PKG-INFO
+llm_council.egg-info/SOURCES.txt
+llm_council.egg-info/dependency_links.txt
+llm_council.egg-info/entry_points.txt
+llm_council.egg-info/requires.txt
+llm_council.egg-info/top_level.txt
