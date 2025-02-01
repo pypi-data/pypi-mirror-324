@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: TkToolTip
+Version: 1.0.1
+Summary: A sophisticated ToolTip library for Tkinter
+Home-page: https://github.com/seuusuario/TkToolTip
+Author: Seu Nome
+Author-email: seuemail@exemplo.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# TkToolTip
+
+TkToolTip is a library for adding ToolTips to Tkinter widgets in an easy and sophisticated way.
+
+## Installation
+
+To install TkToolTip, you can use pip:
+
+```
+pip install TkToolTip
+```
+
+## Usage Example:
+
+```
+import tkinter as tk
+from TkToolTip import ToolTip
+
+root = tk.Tk()
+
+button = tk.Button(root, text="Hover here")
+button.pack(padx=10, pady=10)
+ToolTip(button, text="This is a tooltip", delay=1.5, font=('Helvetica', 12, 'italic'), text_color='#FF5733', background="#ffffe0", borderwidth=2 , relief='raised', show_duration=5)
+
+root.mainloop()
+```
+
+## Suporte
+
+If you like this project and want to support it, consider making a donation:
+
+[![Donate via PayPal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate?business=4QQS7RPES8FDY&no_recurring=0&item_name=If+you+like+this+project+and+want+to+support%2C+please+consider+making+a+donation%3A&currency_code=USD)
+
