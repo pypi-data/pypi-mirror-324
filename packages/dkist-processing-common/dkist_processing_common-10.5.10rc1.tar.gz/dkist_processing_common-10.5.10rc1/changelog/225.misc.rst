@@ -1,0 +1,1 @@
+Fix typo in tags, ``task_geometric_sepectral_shifts`` -> ``task_geometric_spectral_shifts``.  Add type hinting to tags.

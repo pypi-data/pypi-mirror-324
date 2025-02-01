@@ -1,0 +1,1 @@
+Convert the parse_tag method in scratch from private to public.
