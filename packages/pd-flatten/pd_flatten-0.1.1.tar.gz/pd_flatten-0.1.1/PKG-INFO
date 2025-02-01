@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pd-flatten
+Version: 0.1.1
+Summary: Recursively flatten dictionaries in a Pandas data frame
+Keywords: pandas
+Author: Devin McCabe
+Author-email: dmccabe@broadinstitute.org
+Requires-Python: >=3.9
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas (>=2.2,<3.0)
+Description-Content-Type: text/markdown
+
+pd-flatten
+===
+
+This package exports a single function `pd_flatten` that recursively flattens a Pandas data frame by exploding lists to rows and dictionaries to columns.
+
