@@ -1,0 +1,6 @@
+pyproject.toml
+tastymotion/__init__.py
+tastymotion.egg-info/PKG-INFO
+tastymotion.egg-info/SOURCES.txt
+tastymotion.egg-info/dependency_links.txt
+tastymotion.egg-info/top_level.txt
