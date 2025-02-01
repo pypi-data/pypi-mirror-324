@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: engr_colab_github
+Version: 1.0
+License-File: LICENSE
+Requires-Dist: PyGithub
+Dynamic: requires-dist
