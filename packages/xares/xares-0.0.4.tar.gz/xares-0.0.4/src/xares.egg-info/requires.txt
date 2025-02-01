@@ -1,0 +1,17 @@
+loguru
+numpy<2
+scikit-learn==1.6.0
+torch==2.2.1
+torchaudio==2.2.1
+torchmetrics
+pandas
+pytorch-ignite==0.5.1
+pyyaml
+soundfile
+tqdm
+webdataset==0.2.100
+pysoundfile
+
+[examples]
+dasheng
+transformers==4.47.1
