@@ -1,0 +1,14 @@
+numpy
+xarray
+scipy
+lmfit
+
+[dev]
+pre-commit>=3.7.0
+pytest-cov>=5.0.0
+pytest>=8.3.0
+commitizen>=3.29.0
+ruff>=0.6.3
+
+[io]
+dill
