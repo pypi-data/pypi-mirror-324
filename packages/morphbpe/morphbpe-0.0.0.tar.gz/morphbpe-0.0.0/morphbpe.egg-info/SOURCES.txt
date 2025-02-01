@@ -1,0 +1,8 @@
+README.md
+setup.py
+morphbpe/__init__.py
+morphbpe.egg-info/PKG-INFO
+morphbpe.egg-info/SOURCES.txt
+morphbpe.egg-info/dependency_links.txt
+morphbpe.egg-info/requires.txt
+morphbpe.egg-info/top_level.txt

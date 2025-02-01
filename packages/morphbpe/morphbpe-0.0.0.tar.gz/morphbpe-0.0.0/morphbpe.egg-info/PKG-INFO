@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: morphbpe
+Version: 0.0.0
+Summary: MorphBPE: Morphologically-Aware BPE
+Home-page: https://github.com/llm-lab-org/MorphBPE
+Author: Ehsaneddin Asgari
+Author-email: asgari@berkeley.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: tqdm
+
+# MorphBPE
