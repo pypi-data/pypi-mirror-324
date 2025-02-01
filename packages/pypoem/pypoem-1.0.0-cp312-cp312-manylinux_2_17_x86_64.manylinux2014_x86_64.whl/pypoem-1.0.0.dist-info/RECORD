@@ -1,0 +1,12 @@
+pypoem-1.0.0.dist-info/RECORD,,
+pypoem-1.0.0.dist-info/METADATA,sha256=3cvmzihgfPBU42Bzg1pO-bc2sAnLKkRKKf-_df_i2VA,1232
+pypoem-1.0.0.dist-info/WHEEL,sha256=MPPeijg-_gFn_Jh-rsvDxXe07i0rAASkiLQ9KajH710,156
+pypoem-1.0.0.dist-info/entry_points.txt,sha256=bw4Fjp7SSJ8ksw6lfFR9V93HTIruQz18pZWVC28k9T0,59
+pypoem-1.0.0.dist-info/licenses/LICENSE.txt,sha256=3lLcLPBLcDGHQkDD-xSBd2czwi7syzN2_KdGE1M9rWo,1073
+pypoem/__init__.py,sha256=TY-GXSGOzXiMEbZU0nvu1U_Vu06El5e3QLwI_O5jrhw,644
+pypoem/_version.py,sha256=DGJ4pj32xs3_DRJhSzQwCiRNnAQrMgo09USYpyMZsKc,411
+pypoem/pypoem.cpp,sha256=s6rJ1Yi4XO_GlQOEhWlXX9DriRKKhGewSbT5BKk5tJY,13654
+pypoem/CMakeLists.txt,sha256=De6brP-Vr38LKLkwd_xEnPES67MvGBz7jaRRNRgtZ1k,413
+pypoem/pypoem.cpython-312-x86_64-linux-gnu.so,sha256=SCI1awHQzFY5LBxmtpL2Ag5Oa3LobDSdN_GkUCbC2OQ,6856352
+pypoem/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypoem/tools/poem_hash.py,sha256=iJfOgATbk4P8GcjquBL_SpkzVKfI0_LGkaXxdcbuUUg,958
