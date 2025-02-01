@@ -1,0 +1,2 @@
+[console_scripts]
+pokemon-world = pokemon_world.app:main
