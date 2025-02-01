@@ -1,0 +1,13 @@
+xmltodict==0.14.2
+
+[:python_version < "3.11"]
+tomli==2.2.1
+
+[:python_version < "3.9"]
+importlib-resources==6.4.5
+aiohttp==3.10.11
+yarl==1.15.2
+
+[:python_version >= "3.9"]
+aiohttp==3.11.11
+yarl==1.18.3
