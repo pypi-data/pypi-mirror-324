@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: dirku
+Version: 1.0.1
+Summary: Deformable image registration framework.
+Author-email: Thomas Alscher <thomasalscher91@gmail.com>
+License: CC-BY-SA-3.0
+Project-URL: homepage, https://github.com/ThomasAlscher1991/DIRKU
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pip
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scikit-fmm
+Requires-Dist: setuptools
+Requires-Dist: scikit-image
+Requires-Dist: libigl
+Requires-Dist: shapely
+Requires-Dist: pytest
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
