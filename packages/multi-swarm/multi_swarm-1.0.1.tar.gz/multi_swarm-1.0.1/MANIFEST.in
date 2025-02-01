@@ -1,0 +1,37 @@
+# Include root files
+include LICENSE
+include README.md
+include agency_manifesto.md
+include .cursorrules
+include pyproject.toml
+include requirements.txt
+include pytest.ini
+include .env.example
+include mkdocs.yml
+
+# Include documentation files
+recursive-include docs *.md
+
+# Include example files
+recursive-include examples *.py *.md
+
+# Include source files
+recursive-include src *.py
+
+# Include test files
+recursive-include tests *.py
+
+# Exclude build artifacts and temporary files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude *.so
+global-exclude *.egg
+global-exclude *.egg-info
+global-exclude .git*
+global-exclude .pytest_cache
+global-exclude .coverage
+global-exclude .DS_Store
+global-exclude *.swp
+global-exclude *.swo 

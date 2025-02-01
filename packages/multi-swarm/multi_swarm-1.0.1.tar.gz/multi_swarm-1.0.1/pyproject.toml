@@ -1,0 +1,103 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi-swarm"
+version = "1.0.1"
+description = "A framework for creating collaborative AI agent swarms"
+authors = [{name = "Bart Van Spitaels", email = "bart.vanspitaels@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["ai", "agents", "llm", "claude", "gemini", "multi-agent", "rag", "docker"]
+dependencies = [
+    "anthropic>=0.18.1",
+    "google-generativeai>=0.3.2",
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "docker>=6.1.0",
+    "sentence-transformers>=2.2.0",
+    "faiss-cpu>=1.7.4",
+    "transformers>=4.38.0",
+    "torch>=2.0.0",
+    "numpy>=1.24.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.25.0",
+    "pytest-cov>=6.0.0",
+    "black>=24.0.0",
+    "isort>=5.0.0",
+    "mypy>=1.8.0"
+]
+gpu = [
+    "faiss-gpu>=1.7.4",
+    "torch>=2.0.0"
+]
+
+[project.urls]
+Documentation = "https://github.com/bartvanspitaels99/multi-swarm/docs"
+Source = "https://github.com/bartvanspitaels99/multi-swarm/"
+Issues = "https://github.com/bartvanspitaels99/multi-swarm/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"multi_swarm" = [
+    "docs/*.md",
+    "docs/api/*.md",
+    "docs/examples/*.md",
+    "docs/getting-started/*.md",
+    "docs/providers/*.md",
+    "docs/user-guide/*.md",
+    "examples/**/*",
+    ".cursorrules",
+    "agency_manifesto.md",
+    "README.md",
+    "LICENSE",
+    ".env.example",
+    "mkdocs.yml",
+    "requirements.txt"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py38"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+
+[tool.pytest.ini_options]
+asyncio_mode = "strict"
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --cov=multi_swarm" 
