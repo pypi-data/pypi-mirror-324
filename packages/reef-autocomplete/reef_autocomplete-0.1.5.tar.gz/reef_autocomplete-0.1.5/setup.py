@@ -1,0 +1,25 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="reef_autocomplete",
+    version="0.1.5",
+    description="Reef autocomplete",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    author="Richard",
+    author_email="richard.mccormick@reef.pl",
+    url="https://github.com/richard-mccormick-reef",
+    packages=find_packages(where='source'),
+    install_requires=["argcomplete"],
+    entry_points={
+        "console_scripts":[
+            'reef_autocomplete=source.cli:main',
+        ]
+    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: POSIX :: Linux",
+    ],
+    python_requires=">=3.6",
+)
