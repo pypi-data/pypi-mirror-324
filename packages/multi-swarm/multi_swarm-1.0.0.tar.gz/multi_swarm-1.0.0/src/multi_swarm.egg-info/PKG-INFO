@@ -1,0 +1,160 @@
+Metadata-Version: 2.2
+Name: multi-swarm
+Version: 1.0.0
+Summary: A framework for creating collaborative AI agent swarms
+Author-email: Bart Van Spitaels <bart.vanspitaels@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Bart Van Spitaels
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE. 
+Project-URL: Homepage, https://github.com/bartvanspitaels99/multi-swarm/
+Project-URL: Documentation, https://github.com/bartvanspitaels99/multi-swarm#readme
+Project-URL: Repository, https://github.com/bartvanspitaels99/multi-swarm.git
+Keywords: ai,agents,llm,claude,gemini,multi-agent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anthropic>=0.18.1
+Requires-Dist: google-generativeai>=0.3.2
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pytest-asyncio>=0.25.0; extra == "dev"
+Requires-Dist: pytest-cov>=6.0.0; extra == "dev"
+Requires-Dist: black>=24.0.0; extra == "dev"
+Requires-Dist: isort>=5.0.0; extra == "dev"
+Requires-Dist: mypy>=1.8.0; extra == "dev"
+
+# Multi-Swarm Framework
+
+[![PyPI version](https://badge.fury.io/py/multi-swarm.svg)](https://badge.fury.io/py/multi-swarm)
+[![CI](https://github.com/bartvanspitaels99/multi-swarm/actions/workflows/ci.yml/badge.svg)](https://github.com/bartvanspitaels99/multi-swarm/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/bartvanspitaels99/multi-swarm/branch/main/graph/badge.svg)](https://codecov.io/gh/bartvanspitaels99/multi-swarm)
+[![Python Versions](https://img.shields.io/pypi/pyversions/multi-swarm.svg)](https://pypi.org/project/multi-swarm/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+A powerful framework for creating collaborative AI agent swarms, leveraging multiple LLM providers including Claude and Gemini.
+
+## Features
+
+- Create collaborative agent swarms with distinct roles and capabilities
+- Support for multiple LLM providers (Claude and Gemini)
+- Easy-to-use agent template creation
+- Flexible agency configuration
+- Built-in tools system
+- Asynchronous communication between agents
+
+## Installation
+
+```bash
+pip install multi-swarm
+```
+
+For development installation with testing tools:
+
+```bash
+pip install multi-swarm[dev]
+```
+
+## Quick Start
+
+1. Set up your environment variables:
+
+```bash
+# .env
+ANTHROPIC_API_KEY=your_claude_api_key
+GOOGLE_API_KEY=your_gemini_api_key
+```
+
+2. Create a simple agency:
+
+```python
+from multi_swarm import Agency, BaseAgent
+
+# Create custom agents
+class MyAgent(BaseAgent):
+    def __init__(self):
+        super().__init__(
+            name="MyAgent",
+            description="A custom agent for specific tasks",
+            instructions="path/to/instructions.md",
+            tools_folder="path/to/tools",
+            model="claude-3-sonnet",
+            temperature=0.7
+        )
+
+# Initialize agents
+agent1 = MyAgent()
+agent2 = MyAgent()
+
+# Create agency with communication flows
+agency = Agency(
+    agents=[
+        agent1,  # Entry point for user communication
+        [agent1, agent2],  # agent1 can communicate with agent2
+    ],
+    shared_instructions="agency_manifesto.md"
+)
+
+# Run the agency
+agency.run_demo()
+```
+
+## Examples
+
+Check out our example implementations in the [examples](examples/) directory:
+
+1. [Google Trends Analysis Agency](examples/trends_analysis_agency/): Shows how to create a specialized agency for analyzing Google Trends data. This example demonstrates:
+   - Custom agent creation (CEO and TrendsAnalyst)
+   - Communication flow setup
+   - Agent instructions and tools structure
+   - Basic agency configuration
+
+## Documentation
+
+For detailed documentation, please visit our [GitHub repository](https://github.com/bartvanspitaels99/multi-swarm).
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. Here are some ways you can contribute:
+
+- Add new agent types
+- Implement useful tools
+- Improve documentation
+- Add tests
+- Report bugs
+- Suggest features
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
