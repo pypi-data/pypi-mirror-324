@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: arb_tehran_finance
+Version: 0.0.10
+Summary: Statistics and Analysis Module for Financial Markets and Economy in Iran
+Author-email: alireza bagheri <alirbagheri1400@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/alirzabaghrii/arb_tehran_finance
+Project-URL: Issues, https://github.com/alirzabaghrii/arb_tehran_finance/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=2.2.2
+
+# Iran Financial Markets Module
+Statistics and Analysis Module for Financial Markets and Economics in Iran
