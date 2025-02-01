@@ -1,0 +1,3 @@
+[pytest11]
+allure_default_results=allure_pytest_default_results._plugin
+
