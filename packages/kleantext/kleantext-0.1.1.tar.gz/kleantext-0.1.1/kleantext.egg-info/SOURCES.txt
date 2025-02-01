@@ -1,0 +1,10 @@
+README.md
+setup.py
+kleantext/__init__.py
+kleantext/preprocessor.py
+kleantext.egg-info/PKG-INFO
+kleantext.egg-info/SOURCES.txt
+kleantext.egg-info/dependency_links.txt
+kleantext.egg-info/requires.txt
+kleantext.egg-info/top_level.txt
+tests/test_preprocessor.py
