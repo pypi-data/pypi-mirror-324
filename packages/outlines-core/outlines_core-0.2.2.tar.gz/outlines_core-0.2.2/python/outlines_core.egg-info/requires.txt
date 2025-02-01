@@ -1,0 +1,16 @@
+jsonschema
+
+[test]
+pre-commit
+pydantic
+pytest
+pytest-benchmark
+pytest-cov
+pytest-mock
+coverage[toml]>=5.1
+diff-cover
+numpy
+scipy
+asv
+psutil
+setuptools-rust
