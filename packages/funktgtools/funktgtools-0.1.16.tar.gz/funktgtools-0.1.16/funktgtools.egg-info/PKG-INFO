@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: funktgtools
+Version: 0.1.16
+Summary: Modular TG Features
+Home-page: https://github.com/funkaclau
+Author: funkaclau
+Requires-Dist: aiogram==3.2.0
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
