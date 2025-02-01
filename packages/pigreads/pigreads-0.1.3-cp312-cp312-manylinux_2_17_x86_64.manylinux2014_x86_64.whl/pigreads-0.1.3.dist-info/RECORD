@@ -1,0 +1,13 @@
+pigreads.libs/libOpenCL-f806d0e1.so.1.0.0,sha256=8oAw-SbjjBUhOgUQ0R9xPFjBNwrm-7aAt-h9mdSSY0M,135601
+pigreads-0.1.3.dist-info/WHEEL,sha256=MPPeijg-_gFn_Jh-rsvDxXe07i0rAASkiLQ9KajH710,156
+pigreads-0.1.3.dist-info/METADATA,sha256=PqvSN9SHv4Y0hegJexLinrp2UqZavCefUGttLUzUD9s,3663
+pigreads-0.1.3.dist-info/RECORD,,
+pigreads-0.1.3.dist-info/licenses/LICENSE,sha256=GE_Catc_HLNnrVFlA8IsovVS2WteY00F9se-D8FsOUA,1053
+pigreads/_version.py,sha256=L5DCMp1QAlSqy-8bW7d51bLubTxNjZGYc5fMQkb752U,411
+pigreads/__init__.py,sha256=4dYplrLOGn8jcIyulW9DdpSj0rMI9P4eHrzIRlaSi7U,23219
+pigreads/_version.pyi,sha256=j5kbzfm6lOn8BzASXWjGIA1yT0OlHTWqlbyZ8Si_o0E,118
+pigreads/_core.cpython-312-x86_64-linux-gnu.so,sha256=2Q21LPvb5qfPNWOcr8GFMLFi0unobfc1oUKU3VBD0x0,602553
+pigreads/_core.pyi,sha256=9P81aM8zoXNfwNFjso3JvwKz9uk-Cn9WN4gn6RhVJOo,923
+pigreads/_core_double.pyi,sha256=zvoVxDH1aY6JZMt0TCC-CNVQaJ4BhqyTdfhjbkOZVpg,983
+pigreads/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pigreads/_core_double.cpython-312-x86_64-linux-gnu.so,sha256=qn2c9X0EnyE2Ru8IZD05KY0y3gURnhP9vqLVGbKxbf8,598465
