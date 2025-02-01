@@ -1,0 +1,15 @@
+redranger/Decision_Tree.py,sha256=BCvnlKaQcJQt-PWxYeV276lXK_7R-NHZkLmV1FSzc28,4692
+redranger/Decision_Tree_Reg.py,sha256=OeFwm3kYgYsAeQ2O57nH2Azz6fb5zLIWXHwvKTybRCA,3162
+redranger/KNN.py,sha256=jKdqtmxIQSh1wuPUG6CEc38UQrihQ9nshJx6YpY_iuY,1434
+redranger/Random_forest.py,sha256=i7SIIp2Vfrld5qveI6AnEpY11VPflzdNXduRyG3se6Q,1395
+redranger/SVM.py,sha256=1Q0DvZwgkhgBLhJMTC9Ut-Tz_r9TxOWZdtHJcMWHUgo,1251
+redranger/XGBoost.py,sha256=jkUnwL0jxAJ9-XlU_RotgVSTHrC-X7MLQXida_1FtSQ,4530
+redranger/__init__.py,sha256=isah9QZSC6WATu4NNsmW7k274fuPRfIG1GvKa3XuACY,370
+redranger/linear_regression.py,sha256=599YrC9C_8Ei-4bLPNu2pbg9mkaHNMnIQdZv9T_OH54,1267
+redranger/logistic_regression.py,sha256=px7F4L0aB5kGTZpqNRLoC48OalinnTlzVOAWnKpRQh8,1020
+redranger/multiple_regression.py,sha256=x1trVrbKOIVMFMoOYAjCySL3r6S7Og-JNOF4cMNLJ9o,1589
+redranger-0.1.1.dist-info/LICENSE,sha256=gGW36H7-Tr_ch-0BXy-v339t9f_CfvRqkAUKelk0Oyk,1083
+redranger-0.1.1.dist-info/METADATA,sha256=OBzEZt0UftXQJtlJxZEhsMyGrM4EXwjc5Q0cmNu316s,4042
+redranger-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+redranger-0.1.1.dist-info/top_level.txt,sha256=xHdpV24XLRN2sEEMjNnGJEopjlu49DHoqX94nKNAHBI,10
+redranger-0.1.1.dist-info/RECORD,,
