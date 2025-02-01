@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: pylambertw
+Version: 0.0.1
+Summary: LambertW x Gaussian
+Home-page: https://github.com/stephenhky/PyLamertW
+Author: Kwan-Yuet Ho
+Author-email: kwan-yuet.ho@nih.gov
+License: MIT
+Keywords: Gaussian,normal distribution,heavy tails
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: numba
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# PyLambertW
+
+This is a Python implementation for the R Package [LambertW](https://cran.r-project.org/web/packages/LambertW/index.html),
+where you can find the source code [here](https://github.com/gmgeorg/LambertW).
