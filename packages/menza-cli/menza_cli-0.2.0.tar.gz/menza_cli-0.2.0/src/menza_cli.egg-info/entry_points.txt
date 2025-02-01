@@ -1,0 +1,2 @@
+[console_scripts]
+menza = menza_cli.__main__:main
