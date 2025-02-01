@@ -1,0 +1,11 @@
+owocr/__init__.py,sha256=fi3dWQOLZ_p_jikAbFP_jLBQcpn0aF8Zuemf9bV7WpQ,51
+owocr/__main__.py,sha256=-yeMHLrws8gbwkfk3ZwQxO2ERGWq8L25yf5yGgpQOv4,426
+owocr/config.py,sha256=wmmfKoJsKI-0RdYUaeNNXfGPoxpcRHQPWYPeXT3ELRw,2956
+owocr/ocr.py,sha256=JCzYVJmmW1Hmp8xzCQyyZ6V7s5y3IxoblcnihghVJAk,24762
+owocr/run.py,sha256=h4NIKS1B8haI-lqkR786166kV5gDRQxFr4aySlK494U,45169
+owocr-1.9.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+owocr-1.9.1.dist-info/METADATA,sha256=rgLY4pc4LMKdgxfeUm9_S3sAyFzshVwBUh9u46fvVgg,7474
+owocr-1.9.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+owocr-1.9.1.dist-info/entry_points.txt,sha256=2bkrz6OvchWcAYgkqhgnL5unxYtfM2-VrlecsDRof4Q,46
+owocr-1.9.1.dist-info/top_level.txt,sha256=LBpKSnsrXKDVZurKGeVybb7KZ5pRipivl-ZiGOxeFDY,6
+owocr-1.9.1.dist-info/RECORD,,
