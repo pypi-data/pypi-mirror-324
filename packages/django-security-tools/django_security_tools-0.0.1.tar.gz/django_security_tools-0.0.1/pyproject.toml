@@ -1,0 +1,23 @@
+[project]
+name = "django-security-tools"
+version = "0.0.1"
+authors = [
+  { name="Brandon Lecky", email="brandon@dreamincode.dev" },
+]
+description = "A set of security tools for Django."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/dreamxinxcode/django-security-tools"
+Issues = "https://github.com/dreamxinxcode/django-security-tools/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
