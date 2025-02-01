@@ -1,0 +1,41 @@
+Metadata-Version: 2.2
+Name: aidge_export_arm_cortexm
+Version: 0.1.1
+Summary: Aidge export for ARM CortexM systems
+License: Eclipse Public License 2.0 (EPL-2.0)
+Project-URL: Homepage, https://www.deepgreen.ai/en/platform
+Project-URL: Documentation, https://eclipse-aidge.readthedocs.io/en/latest/
+Project-URL: Repository, https://gitlab.eclipse.org/eclipse/aidge/aidge_export_arm_cortexm
+Project-URL: Issues, https://gitlab.eclipse.org/eclipse/aidge/aidge_export_arm_cortexm/-/issues/
+Project-URL: Changelog, https://gitlab.eclipse.org/eclipse/aidge/aidge_export_arm_cortexm/-/releases
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.21.6
+Requires-Dist: onnx>=1.16.0
+Requires-Dist: Jinja2>=3.1.2
+Provides-Extra: dev
+Requires-Dist: ipython; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+
+# Aidge Export for ARM CortexM systems
+
+This plugin is to add in your `Aidge` environment to create exports for ARM CortexM systems.
+
+## Installation
+
+### From Source
+
+To install the export manager from the gitlab repository, 
+run these commands in the Python environment where aidge is already installed.
+
+```
+git clone https://gitlab.eclipse.org/eclipse/aidge/aidge_export_arm_cortexm.git
+cd aidge_export_arm_cortexm
+pip install .
+```
+
+## License
+
+Aidge has a Eclipse Public License 2.0, as found in the [LICENSE](LICENSE).

@@ -1,0 +1,17 @@
+{#- For name header -#}
+#ifndef {{ name|upper }}_LAYER_H
+#define {{ name|upper }}_LAYER_H
+
+{# For layer configuration -#}
+
+
+#define {{ in_name[0]|upper }}_DIMS {{ in_dims[0] }}
+#define {{ in_name[1]|upper }}_DIMS {{ in_dims[1] }}
+#define {{ out_name[0]|upper }}_DIMS {{ out_dims[0] }}
+
+#define {{name|upper}}_INPUT_A_DIMS_SIZE {{ in_dims[0]|length}}
+#define {{name|upper}}_INPUT_B_DIMS_SIZE {{ in_dims[1]|length}}
+#define {{name|upper}}_OUTPUT_DIMS_SIZE {{ out_dims[0]|length}}
+
+
+#endif /* {{ name|upper }}_LAYER_H */

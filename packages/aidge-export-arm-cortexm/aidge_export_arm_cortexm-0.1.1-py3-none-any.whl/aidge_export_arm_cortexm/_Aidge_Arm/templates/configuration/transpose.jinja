@@ -1,0 +1,12 @@
+{#- For name header -#}
+#ifndef {{ name|upper }}_LAYER_H
+#define {{ name|upper }}_LAYER_H
+
+{# For layer configuration -#}
+
+#define {{name|upper}}_OUTPUT_DIMS_SIZE {{ output_dims|length}}
+
+#define {{name|upper}}_OUTPUT_SIZE {{ nb_outputs}}
+
+
+#endif /* {{ name|upper }}_LAYER_H */

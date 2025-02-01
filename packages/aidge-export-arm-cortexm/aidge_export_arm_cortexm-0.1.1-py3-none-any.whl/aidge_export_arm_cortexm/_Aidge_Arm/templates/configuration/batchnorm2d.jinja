@@ -1,0 +1,14 @@
+{#- For name header -#}
+#ifndef {{ name|upper }}_LAYER_H
+#define {{ name|upper }}_LAYER_H
+
+{# For layer configuration -#}
+#define {{ name|upper }}_NB_BATCH {{ input_dims[0] }}
+#define {{ name|upper }}_NB_CHANNELS {{ input_dims[1] }}
+#define {{ name|upper }}_CHANNELS_HEIGHT {{ input_dims[2] }}
+#define {{ name|upper }}_CHANNELS_WIDTH {{ input_dims[3] }}
+
+#define {{ name|upper }}_EPSILON {{ epsilon }}
+
+
+#endif /* {{ name|upper }}_LAYER_H */
