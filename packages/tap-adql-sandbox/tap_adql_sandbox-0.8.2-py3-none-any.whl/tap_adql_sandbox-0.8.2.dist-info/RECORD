@@ -1,0 +1,14 @@
+tap_adql_sandbox/__init__.py,sha256=3OcQdfuCqQkzYOBbt9_KVhdGEOrwM_SfgyRMKd3Kw4w,131
+tap_adql_sandbox/__main__.py,sha256=U-zSC4mLgnZS7DA4sCkSkWB5QfVeIXLP3jGDNhyWK24,27739
+tap_adql_sandbox/examples.py,sha256=tGiYyEAmLKQIO1UV9z6jfAC5Z1BRWZNmiLZE5GWwFpc,8126
+tap_adql_sandbox/theme.py,sha256=1MweWku3HE1S1RexQPgeq46TylvCEqDq6-nemljc13k,6880
+tap_adql_sandbox/version.py,sha256=3PkmfNczEOAXBFdNrftJEJtx1ciHqZSpVERi-ZX6URg,273
+tap_adql_sandbox/fonts/JetBrainsMono-Thin.ttf,sha256=5T5QITtgT5p6PGrKFDGGBqC6BR_ggihwz9xlmWI8yYI,169480
+tap_adql_sandbox/icons/planet-128.ico,sha256=a1iq748I56cahfnflaN2q3pG_u8zUThe9E9CkbZtEnI,67646
+tap_adql_sandbox/icons/planet-256.ico,sha256=hhahrDGSvZUMxZqvYCwU9DOfkDYTRqbk1cgCSrbuRCQ,52287
+tap_adql_sandbox-0.8.2.dist-info/LICENSE,sha256=7jNZcITkXHFwfTFiO97IjhMwWP21AtoKoBRYQCPWgKI,35771
+tap_adql_sandbox-0.8.2.dist-info/METADATA,sha256=JH1lSla7pr4WffxdpC890d3GxNktS1ZCZ28lXito9L4,6047
+tap_adql_sandbox-0.8.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tap_adql_sandbox-0.8.2.dist-info/entry_points.txt,sha256=s-IGgybS34DfVuEYa_0uFlDc6F4jPJHQkXT8Q7uHK20,68
+tap_adql_sandbox-0.8.2.dist-info/top_level.txt,sha256=_K1uLfT1zqXzfogOvkB2UQ1eiv9KPS4tYt8RWrYRUik,17
+tap_adql_sandbox-0.8.2.dist-info/RECORD,,
