@@ -1,0 +1,10 @@
+bonchcli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bonchcli/bonchcli.py,sha256=kBssJSmitvDkdX2ehRWTw9KbjMPJQPV3dXHMNhP4yvo,1997
+bonchcli/config.toml,sha256=WWXZsOcN5Uoi09bHz18JWnh60H-vF7fSNnY6P6MF14s,90
+bonchcli/config_manager.py,sha256=34yxWLhCTNnAXV0l_icMa6LCsPvDpHYq1ZnqY9XVE6Q,1902
+bonchcli/formatting.py,sha256=YupVlRa-l8nAdUSOJiYfaTUpReHs7yaC8NRY7Ql3fN0,2280
+bonchcli/get_token_from_browser.py,sha256=v_whv17espWejY16GsqWxuRpjnvtLS0ChCJFA-E84kU,1298
+bonchcli-0.0.1.dist-info/METADATA,sha256=amH0Tk4paZtXe3m7gl5zEDvVuV2Bm05KBya3-NI0QU0,499
+bonchcli-0.0.1.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+bonchcli-0.0.1.dist-info/entry_points.txt,sha256=Jlp57N6pZxCCd3uvB_UbGHpvbdeQgh7aazvggntdmMs,56
+bonchcli-0.0.1.dist-info/RECORD,,
