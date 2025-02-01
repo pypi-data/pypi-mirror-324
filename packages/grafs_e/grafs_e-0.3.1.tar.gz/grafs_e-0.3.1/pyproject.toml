@@ -1,0 +1,56 @@
+[project]
+name = "grafs_e"
+version = "0.3.1"
+description = "Metabolic analysis of Agricultural systems"
+readme = "README.md"
+licence = {file="LICENCE"}
+authors = [
+    { name = "Adrien Fauste-Gay", email = "adrien.fauste-gay@univ-grenoble-alpes.fr" }
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering"
+]
+keywords = ["agriculture", "nitrogen", "ecological", "scientific", "research"]
+requires-python = ">=3.13"
+
+dependencies = [
+    "folium>=0.19.4",
+    "matplotlib>=3.10.0",
+    "numpy>=2.2.2",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "plotly>=5.24.1",
+    "pulp>=2.9.0",
+    "seaborn>=0.13.2",
+    "streamlit>=1.41.1",
+    "streamlit-folium>=0.24.0",
+]
+
+[project.urls]
+repository = "https://gricad-gitlab.univ-grenoble-alpes.fr/isterre-dynamic-modeling/grafs-e-project/grafs-e"
+
+[project.scripts]
+grafs-e = "grafs_e:main"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.format]
+# Enable reformatting of code snippets in docstrings.
+docstring-code-format = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
