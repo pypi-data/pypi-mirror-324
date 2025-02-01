@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "compare_classifiers"
+version = "1.2.0"
+description = "Comparing metrics such as f1 score and confusion matrix for classifiers and through ensemble stacking or voting and predicting class labels for unseen data by stacking or voting specific classifiers."
+authors = ["Ke Gao, Bryan Lee, Susannah Sun, Wangkai Zhu"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "^3.10.0"
+scikit-learn = "^1.6.1"
+pandas = "^2.2.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+jupyter = "^1.1.1"
+myst-nb = {version = "^1.1.2", python = "^3.9"}
+sphinx-autoapi = "^3.4.0"
+sphinx-rtd-theme = "^3.0.2"
+sphinx-autodoc-typehints = "^3.0.1" 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
