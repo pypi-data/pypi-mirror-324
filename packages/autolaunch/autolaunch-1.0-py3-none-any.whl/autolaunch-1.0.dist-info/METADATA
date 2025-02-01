@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: autolaunch
+Version: 1.0
+Summary: Bibliothèque pour enregistrer et lancer des applications Python depuis n'importe où
+Home-page: https://github.com/morgan7street/AutoLaunch
+Author: Daniel DONGAR
+Author-email: contact@daneia.fr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# autolaunch
+
+`autolaunch` est une bibliothèque Python permettant d'enregistrer automatiquement des applications Python pour qu'elles puissent être lancées depuis n'importe où en utilisant simplement leur nom.
+
+## Installation
+```bash
+pip install autolaunch
