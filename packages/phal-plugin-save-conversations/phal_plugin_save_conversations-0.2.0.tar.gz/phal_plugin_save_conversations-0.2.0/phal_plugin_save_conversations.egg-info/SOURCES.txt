@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+phal_plugin_save_conversations/__init__.py
+phal_plugin_save_conversations.egg-info/PKG-INFO
+phal_plugin_save_conversations.egg-info/SOURCES.txt
+phal_plugin_save_conversations.egg-info/dependency_links.txt
+phal_plugin_save_conversations.egg-info/entry_points.txt
+phal_plugin_save_conversations.egg-info/requires.txt
+phal_plugin_save_conversations.egg-info/top_level.txt
+test/test_plugin.py
