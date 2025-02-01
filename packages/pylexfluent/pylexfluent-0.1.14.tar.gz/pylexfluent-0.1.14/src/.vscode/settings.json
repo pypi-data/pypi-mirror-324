@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./lxf/ai/ocr/cni_"
+    ]
+}
