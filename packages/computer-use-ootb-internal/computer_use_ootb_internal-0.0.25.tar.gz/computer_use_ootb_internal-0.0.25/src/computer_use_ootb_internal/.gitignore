@@ -1,0 +1,14 @@
+.venv
+.ruff_cache
+__pycache__
+.pytest_cache
+.cache/
+.ipynb_checkpoints
+tmp/
+.DS_Store
+AutoGPTQ*/
+Qwen*/
+showui*/
+demo/
+*.jpg
+api_key.json

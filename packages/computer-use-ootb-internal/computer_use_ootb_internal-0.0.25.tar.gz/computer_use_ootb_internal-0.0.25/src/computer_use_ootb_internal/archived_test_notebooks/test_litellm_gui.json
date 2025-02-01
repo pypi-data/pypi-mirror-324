@@ -1,0 +1,196 @@
+{
+    "Screen": {
+        "name": "Main Content",
+        "rectangle": [
+            0,
+            0,
+            1920,
+            1080
+        ],
+        "elements": [
+            [
+                {
+                    "name": "\u5f00\u62d3\u4e4b\u5c3e\u53f7",
+                    "rectangle": [
+                        54,
+                        14,
+                        168,
+                        42
+                    ],
+                    "is_text": true
+                },
+                {
+                    "name": "\u60a8\u6b63\u5728\u5171\u4eab\u5c4f\u8393",
+                    "rectangle": [
+                        847,
+                        3,
+                        937,
+                        21
+                    ],
+                    "is_text": true
+                },
+                {
+                    "name": "\u53fb\u5171\u4eab\u97f3\u9891\u4e2d",
+                    "rectangle": [
+                        953,
+                        3,
+                        1037,
+                        21
+                    ],
+                    "is_text": true
+                },
+                {
+                    "name": "\u6d69\u675f-\u4eab",
+                    "rectangle": [
+                        1045,
+                        5,
+                        1093,
+                        21
+                    ],
+                    "is_text": true
+                },
+                {
+                    "name": "icon_0004|icon (click here for reproducing the action)",
+                    "rectangle": [
+                        1571,
+                        13,
+                        1629,
+                        72
+                    ],
+                    "is_icon": true,
+                    "current_step_icon": true
+                }
+            ],
+            [
+                {
+                    "name": "\u6b63\u5728\u8bb2\u8bdd:",
+                    "rectangle": [
+                        1691,
+                        79,
+                        1745,
+                        93
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "ZOms",
+                    "rectangle": [
+                        1851,
+                        147,
+                        1893,
+                        165
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "\u5b87\u5b99\u5bb6\u88c5\u6307\u5357:  \u524d\u8a00",
+                    "rectangle": [
+                        59,
+                        277,
+                        284,
+                        314
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "\u5ba3\u8a93\u6210\u4e3a\u65e0\u540d\u5ba2",
+                    "rectangle": [
+                        62,
+                        318,
+                        216,
+                        348
+                    ],
+                    "is_text": true
+                },
+                {
+                    "name": "\u6d41\u8424",
+                    "rectangle": [
+                        1728,
+                        308,
+                        1778,
+                        336
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "\u8bf7\u524d\u5f80\u661f\u7a79\u5217\u8f66-\u89c2\u60ac\u8f66\u53a2",
+                    "rectangle": [
+                        96,
+                        357,
+                        343,
+                        383
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "\u514b\u9c81\u514b\u5c71",
+                    "rectangle": [
+                        1686,
+                        402,
+                        1776,
+                        428
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "\u52a0\u62c9\u8d6b",
+                    "rectangle": [
+                        1706,
+                        494,
+                        1780,
+                        524
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "\u962e:\u6885",
+                    "rectangle": [
+                        1720,
+                        590,
+                        1776,
+                        614
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "Enter",
+                    "rectangle": [
+                        80,
+                        962,
+                        152,
+                        992
+                    ],
+                    "is_text": true
+                }
+            ],
+            [
+                {
+                    "name": "U:147819124",
+                    "rectangle": [
+                        34,
+                        1040,
+                        160,
+                        1064
+                    ],
+                    "is_text": true
+                }
+            ]
+        ]
+    }
+}
