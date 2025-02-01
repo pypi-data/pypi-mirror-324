@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: hoprd-config-tool
+Version: 0.1.0
+Summary: Helper tool to easily create and run HOPRd nodes
+Home-page: https://github.com/jeandemeusy/hoprd-config-tool
+Author: Jean Demeusy
+Author-email: jean.demeusy@hoprnet.org
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Jinja2
+Requires-Dist: pyYAML
+Requires-Dist: pycurl
+
