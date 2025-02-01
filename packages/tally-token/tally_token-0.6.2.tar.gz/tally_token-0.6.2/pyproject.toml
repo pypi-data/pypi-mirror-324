@@ -1,0 +1,67 @@
+[project]
+name = "tally-token"
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = []
+description = "A library to split data into tokens"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE" }
+authors = [
+    {name = "Yui KITSU", email = "kitsuyui+github@kitsuyui.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: BSD License",
+    "Topic :: Security :: Cryptography",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Developers",
+]
+[project.urls]
+Homepage = "https://github.com/kitsuyui/python-tally-token"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-cov",
+    "poethepoet",
+    "setuptools-scm",
+    "ruff",
+    "mypy",
+]
+
+[build-system]
+requires = [
+    "setuptools", "setuptools_scm"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-data = { "tally_token" = ["py.typed"], "*" = ["README.md, LICENSE"] }
+package-dir = { "tally_token" = "tally_token" }
+
+[tool.setuptools_scm]
+write_to = "tally_token/_version.py"
+version_scheme = "only-version"
+local_scheme = "no-local-version"
+
+[tool.poe.tasks]
+test = "pytest"
+coverage-xml = "pytest --cov=tally_token --doctest-modules --cov-report=xml"
+format = "ruff format tally_token"
+check = [
+    { cmd = "ruff check tally_token" },
+    { cmd = "mypy tally_token" },
+]
+build = [
+    { cmd = "python -m build"}
+]
+[tool.mypy]
+strict = true
+ignore_missing_imports = false
+
+[tool.ruff]
+line-length = 79
