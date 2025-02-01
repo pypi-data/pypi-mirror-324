@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: utils4py
+Version: 0.0.40
+Summary: Python tools
+Home-page: https://github.com/kbrownehs18/utils4py
+Author: last911
+Author-email: scnjl@qq.com
+License: MPL
+Requires-Dist: sqlalchemy
+Requires-Dist: pycryptodome
+Requires-Dist: flask-wtf
+Requires-Dist: pillow
+Requires-Dist: captcha
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
