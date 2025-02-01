@@ -1,0 +1,1 @@
+__version__ = "0.1a1"  # https://peps.python.org/pep-0440/
