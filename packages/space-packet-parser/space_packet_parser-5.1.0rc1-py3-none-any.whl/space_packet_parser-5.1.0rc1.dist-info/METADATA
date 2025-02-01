@@ -1,0 +1,58 @@
+Metadata-Version: 2.3
+Name: space_packet_parser
+Version: 5.1.0rc1
+Summary: A CCSDS telemetry packet decoding library based on the XTCE packet format description standard.
+License: BSD-3-Clause
+Keywords: ccsds,xtce,space data systems,space packet protocol,packet parsing,lasp,university of colorado,data processing,data extraction,data manipulation,data transformation,data encoding,data decoding,packet inspection,binary data,python
+Author: Gavin Medley
+Author-email: gavin.medley@lasp.colorado.edu
+Maintainer: Gavin Medley
+Maintainer-email: gavin.medley@lasp.colorado.edu
+Requires-Python: >=3.9
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Provides-Extra: xarray
+Requires-Dist: click (>=8.0,<9.0)
+Requires-Dist: lxml (>=4.8.0)
+Requires-Dist: numpy (>=2.0.0,<3.0.0) ; extra == "xarray"
+Requires-Dist: rich (>=13.0,<14.0)
+Requires-Dist: xarray (>2024.0.0) ; extra == "xarray"
+Project-URL: Homepage, https://space-packet-parser.readthedocs.io
+Project-URL: Repository, https://github.com/medley56/space_packet_parser
+Description-Content-Type: text/markdown
+
+# Space Packet Parser
+
+[![Test Status](https://github.com/medley56/space_packet_parser/actions/workflows/pr_tests.yml/badge.svg)](https://github.com/medley56/space_packet_parser/actions/workflows/pr_tests.yml)
+[![Doc Status](https://readthedocs.org/projects/space-packet-parser/badge/?version=latest)](https://readthedocs.org/projects/space-packet-parser/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7735001.svg)](https://doi.org/10.5281/zenodo.7735001)
+
+Documentation: [https://space-packet-parser.readthedocs.io/en/latest/](https://space-packet-parser.readthedocs.io/en/latest/)
+
+Space Packet Parser is a package for decoding CCSDS telemetry packets according to an XTCE packet structure definition. 
+It is based on the UML model of the XTCE spec and aims to support all but the most esoteric elements of the 
+XTCE telemetry packet specification.
+
+Resources:
+- [XTCE (Green Book - Informational Report)](https://public.ccsds.org/Pubs/660x2g2.pdf)
+- [XTCE Element Description (Green Book - Informational Report)](https://public.ccsds.org/Pubs/660x1g2.pdf)
+- [XTCE (Blue Book - Recommended Standard)](https://public.ccsds.org/Pubs/660x0b2.pdf)
+
+## Installation
+```bash
+pip install space_packet_parser
+```
+
+## Missions using Space Packet Parser
+
+[<img src="https://imap.princeton.edu/sites/g/files/toruqf1601/files/imap-mark-hor-multicolor-dark.png" alt="IMAP" height="70"/>](https://imap.princeton.edu/)
+[<img src="https://clarreo-pathfinder.larc.nasa.gov/wp-content/uploads/sites/133/2019/08/clarreo_pathfinder_mission_patch_design_v4_decal_1_24_17.png" alt="CLARREO" height="140"/>](https://clarreo-pathfinder.larc.nasa.gov/)
+[<img src="https://lasp.colorado.edu/libera/files/2021/02/Libera-Logo-HiRes.png" alt="Libera" height="70"/>](https://lasp.colorado.edu/libera/)
+[<img src="https://lasp.colorado.edu/ctim/files/2023/01/CTIM_LOGO_350x100_centered_transparent.png" alt="CTIM-FD" height="70"/>](https://lasp.colorado.edu/ctim/)
+[<img src="https://mms.gsfc.nasa.gov/images/promotional_materials/mms_decal_rgb_4in_trabk_72dpi.png" alt="MMS-FEEPS" height="140"/>](https://lasp.colorado.edu/mms/sdc/public/)
+
