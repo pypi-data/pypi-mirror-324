@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: vidtoolbox
+Version: 0.1.2
+License-File: LICENSE
+Requires-Dist: ffmpeg-python
+Dynamic: requires-dist
