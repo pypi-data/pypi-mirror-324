@@ -1,0 +1,3 @@
+[console_scripts]
+clone-repo = engr_colab_github.git_utils:clone_repo
+setup-git = engr_colab_github.git_utils:setup
