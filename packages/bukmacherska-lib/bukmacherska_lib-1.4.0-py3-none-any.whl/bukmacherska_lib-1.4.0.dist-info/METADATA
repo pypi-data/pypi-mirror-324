@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: bukmacherska_lib
+Version: 1.4.0
+Summary: Biblioteka do analizy wyników piłkarskich z wykorzystaniem statystyki i machine learningu
+Author: Twoje Imię
+Author-email: twoj.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: xgboost
+Requires-Dist: tensorflow
+Requires-Dist: seaborn
+Requires-Dist: scipy
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
