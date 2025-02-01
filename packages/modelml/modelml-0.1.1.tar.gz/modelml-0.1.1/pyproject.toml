@@ -1,0 +1,18 @@
+[project]
+name = "modelml"
+version = "0.1.1"
+authors = [
+  { name="Karthikeyan", email="karthikkrishna0907@gmail.com" },
+]
+description = "A Collection of Machine Learning Algorithms implemented from Scratch"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com"
+Issues = "https://github.com"
