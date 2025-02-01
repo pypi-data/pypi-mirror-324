@@ -1,0 +1,1 @@
+"Merhaba millet main.py ile başlayabilirsiniz ve pekçok güncellemeye açık bir entegration yapısı olacak."

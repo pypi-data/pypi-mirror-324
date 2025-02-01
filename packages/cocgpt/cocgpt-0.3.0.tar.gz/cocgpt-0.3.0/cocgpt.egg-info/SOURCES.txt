@@ -1,0 +1,9 @@
+README.md
+setup.py
+cocgpt/__init__.py
+cocgpt/main.py
+cocgpt.egg-info/PKG-INFO
+cocgpt.egg-info/SOURCES.txt
+cocgpt.egg-info/dependency_links.txt
+cocgpt.egg-info/entry_points.txt
+cocgpt.egg-info/top_level.txt
