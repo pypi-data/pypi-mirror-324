@@ -1,0 +1,2 @@
+[console_scripts]
+tgi-profiler = tgi_profiler.__main__:main
