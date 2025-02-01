@@ -1,0 +1,68 @@
+Metadata-Version: 2.4
+Name: torchpick
+Version: 0.0.1
+Summary: This is a meta package to install PyTorch for different accelerator versions
+Requires-Python: >=3.9
+Provides-Extra: cpu
+Requires-Dist: torch==0.0.1+cpu; extra == 'cpu'
+Provides-Extra: cpu-cxx11-abi
+Requires-Dist: torch==0.0.1+cpu.cxx11.abi; extra == 'cpu-cxx11-abi'
+Provides-Extra: cuda
+Requires-Dist: torch==0.0.1+cu124; extra == 'cuda'
+Provides-Extra: cuda11-8
+Requires-Dist: torch==0.0.1+cu118; extra == 'cuda11-8'
+Provides-Extra: cuda12-1
+Requires-Dist: torch==0.0.1+cu121; extra == 'cuda12-1'
+Provides-Extra: cuda12-4
+Requires-Dist: torch==0.0.1+cu124; extra == 'cuda12-4'
+Provides-Extra: rocm
+Requires-Dist: torch==0.0.1+rocm6.2.4; extra == 'rocm'
+Provides-Extra: rocm6-1
+Requires-Dist: torch==0.0.1+rocm6.1; extra == 'rocm6-1'
+Provides-Extra: rocm6-2
+Requires-Dist: torch==0.0.1+rocm6.2.4; extra == 'rocm6-2'
+Provides-Extra: xpu
+Requires-Dist: torch==0.0.1+xpu; extra == 'xpu'
+Description-Content-Type: text/markdown
+
+# What is this?
+
+This repository is a proof of concept on how we can change PyTorch's package installation
+for the better. It should enable a path to where we can have users specify which
+specific accelerator they would like to use by using the following installation command(s):
+
+> [!NOTE]
+> This doesn't work as of today this is just showcasing what this could look like if we rolled
+> this as the default torch package.
+
+```bash
+# Based on accelerator type
+pip install torch[cpu]
+pip install torch[cuda]
+pip install torch[rocm]
+pip install torch[xpu]
+
+# Based on accelerator version
+pip install torch[cpu-cxx11-abi]
+pip install torch[cuda12-4]
+pip install torch[cuda12-1]
+pip install torch[rocm6-2]
+pip install torch[rocm6-1]
+```
+
+## How to build
+
+### Pre-requisites:
+* [uv](https://github.com/astral-sh/uv)
+* python3.12 (with build module installed)
+
+### Commands to run
+
+```bash
+# Build the wheel and rename to platform specific
+./generate.py
+```
+
+## Work Todo
+- [ ] Create automation to build on Linux, macOS, & Windows through Github Actions
+- [ ] Automate this to automatically reflect PyTorch's binary build matrix
