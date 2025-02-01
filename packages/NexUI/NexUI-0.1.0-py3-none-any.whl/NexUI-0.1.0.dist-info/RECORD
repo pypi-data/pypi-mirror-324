@@ -1,0 +1,16 @@
+nexui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nexui/asgi.py,sha256=6_GJggTsImdWAkMRa5A2nmgZUXoxy1hB_ZgAiKIp-5k,403
+nexui/settings.py,sha256=MLfcCjkE2OWSP2Qtjj2uKxslGkITpHR3mF11HKJfO-Q,3806
+nexui/urls.py,sha256=3qe6RBIGQGOqHFfZv8gK0y1qbhTt0PH8h9WN1KtRPv8,1134
+nexui/views.py,sha256=T0gjBZqkqdkB9ubxld-g2H7wzC-Y4MmcE6p2bLxXMO0,933
+nexui/wsgi.py,sha256=SiDavvxFFo0mEW6jz5iIQLfeuLRJCb5FwsmlB-rgYdM,403
+nexui/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nexui/templatetags/nexui_tags.py,sha256=9L_fX_zs25hPBeWcTtcbiP2JZS9xR2Y8xa_T2K3oE0M,3900
+nexui/templatetags/nexui_tags_old_1.py,sha256=NMslc7Fuw4wzJO5o9K20AME6PpqwgjFgOku2jk3Z7QM,1650
+theme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+theme/apps.py,sha256=VohWF25jEj8hPzw9Ch1B_9nsLlABs5cksJ2pl9kKXP8,85
+NexUI-0.1.0.dist-info/LICENSE,sha256=DbxpUuVZGglmFZYk2nTyLBTIHB3escTnUOj6cqrPxJw,1091
+NexUI-0.1.0.dist-info/METADATA,sha256=2wU9-p3B-033PxVn9veT6aBz6Gr8Qz2sjQgrac_DTWc,604
+NexUI-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+NexUI-0.1.0.dist-info/top_level.txt,sha256=akyJY2GgWgZsZSIoK93o_07SWlLy-2FUW4VsBMFP-vo,12
+NexUI-0.1.0.dist-info/RECORD,,
