@@ -1,0 +1,2 @@
+[console_scripts]
+xml-fmt = xml_fmt.__main__:run
