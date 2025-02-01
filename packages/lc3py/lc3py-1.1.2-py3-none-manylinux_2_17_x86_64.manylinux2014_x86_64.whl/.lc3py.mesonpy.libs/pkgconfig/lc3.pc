@@ -1,0 +1,10 @@
+prefix=/usr/local
+includedir=${prefix}/include
+libdir=${prefix}/lib/x86_64-linux-gnu
+
+Name: liblc3
+Description: LC3 codec library
+Version: 1.1.2
+Libs: -L${libdir} -llc3
+Libs.private: -lm
+Cflags: -I${includedir}

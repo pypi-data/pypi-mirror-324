@@ -1,0 +1,9 @@
+.lc3py.mesonpy.libs/liblc3.so.1,sha256=KO1uCjyJpo_c3jGuZxiYziCOnx7K5NaKyD7_PyMjDpg,235464
+.lc3py.mesonpy.libs/pkgconfig/lc3.pc,sha256=Mr1eVvEN2_Ca2PtfJOKqBrQr_8DVO7mRI6grEli_8jc,211
+lc3py-1.1.2.data/headers/lc3.h,sha256=Jq2kc_IsWG3jWOgZ5Imq-XISgBjGU6Fzp95Xdqw1gUk,16185
+lc3py-1.1.2.data/headers/lc3_cpp.h,sha256=TQb87pg9nll4k4IIx24ERs-VA0Trp4VoeqnTgFSlo6Y,9721
+lc3py-1.1.2.data/headers/lc3_private.h,sha256=mXE2m-BI2Sjoy00wq2dMXx33Hldx6nWwH_QYTxgYL-Y,4045
+lc3py-1.1.2.data/purelib/lc3.py,sha256=vVvWurhHXej8qmjWp6wl7YCqlxVX1khPEx-bC8fuvUM,17598
+lc3py-1.1.2.dist-info/METADATA,sha256=uMHrvcptnozbcw842Pj4Zs_FmFJXOm7fC-hjk1LM_DQ,295
+lc3py-1.1.2.dist-info/WHEEL,sha256=Y8HV5_NrDsZfGcLGF8LtkXtnntA6Hd6TaU620qKvVh8,131
+lc3py-1.1.2.dist-info/RECORD,,
