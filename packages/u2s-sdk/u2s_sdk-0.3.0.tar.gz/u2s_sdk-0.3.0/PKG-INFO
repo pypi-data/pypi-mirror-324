@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: u2s_sdk
+Version: 0.3.0
+Summary: Up2Share SDK for Python
+Author: Corentin Chepeau
+Author-email: contact+python@up2sha.re
+License-File: LICENSE
+Requires-Dist: requests==2.32.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
