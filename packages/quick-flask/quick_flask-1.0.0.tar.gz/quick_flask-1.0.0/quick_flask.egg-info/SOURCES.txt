@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+quick_flask/__init__.py
+quick_flask/content.py
+quick_flask/create.py
+quick_flask.egg-info/PKG-INFO
+quick_flask.egg-info/SOURCES.txt
+quick_flask.egg-info/dependency_links.txt
+quick_flask.egg-info/entry_points.txt
+quick_flask.egg-info/requires.txt
+quick_flask.egg-info/top_level.txt
+quick_flask/__pycache__/__init__.cpython-312.pyc
+quick_flask/__pycache__/content.cpython-312.pyc
+quick_flask/__pycache__/create.cpython-312.pyc
