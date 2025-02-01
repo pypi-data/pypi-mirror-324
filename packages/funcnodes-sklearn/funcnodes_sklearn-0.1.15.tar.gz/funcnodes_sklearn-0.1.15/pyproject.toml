@@ -1,0 +1,48 @@
+[project]
+name = "funcnodes-sklearn"
+version = "0.1.15"
+description = "Funcnodes interface to scikit-learn"
+readme = "README.md"
+dependencies = [
+    "scikit-learn>=1.4.2",
+    "funcnodes",
+    "funcnodes-pandas",
+    "funcnodes-numpy",
+]
+requires-python = ">=3.11"
+[[project.authors]]
+name = "Kourosh Rezaei"
+email = "kouroshrezaei90@gmail.com"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "black>=24.4.2",
+    "python-decouple>=3.8",
+    "funcnodes-module>=0.1.19",
+    "pre-commit",
+    "pillow>=11.0.0",
+]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project.license]
+text = "AGPL-3.0"
+
+[project.urls]
+homepage = "https://github.com/Linkdlab/funcnodes_sklearn"
+source = "https://github.com/Linkdlab/funcnodes_sklearn"
+tracker = "https://github.com/Linkdlab/funcnodes_sklearn/issues"
+download = "https://pypi.org/project/funcnodes-sklearn/#files"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[project.entry-points."funcnodes.module"]
+module = "funcnodes_sklearn"
+shelf = "funcnodes_sklearn:NODE_SHELF"
+
+[tool.setuptools.packages.find]
+where = ["src"]
