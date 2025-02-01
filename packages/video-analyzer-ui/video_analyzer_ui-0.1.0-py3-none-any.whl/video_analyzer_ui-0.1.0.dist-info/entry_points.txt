@@ -1,0 +1,2 @@
+[console_scripts]
+video-analyzer-ui = video_analyzer_ui.server:main

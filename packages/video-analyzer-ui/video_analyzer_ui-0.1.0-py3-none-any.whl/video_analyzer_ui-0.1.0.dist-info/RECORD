@@ -1,0 +1,10 @@
+video_analyzer_ui/__init__.py,sha256=YwIUz78a7PB8FIQlfjYxRQhq5p0sWxGA60MBb02nI6Y,108
+video_analyzer_ui/server.py,sha256=w-fb05M2Lt5s94MEu8J1voptCoGVXIlQI8tGGrpPZ2E,12461
+video_analyzer_ui/static/css/styles.css,sha256=aYorVhaCcfb9Lk-yqBMQHIkaMsA7s5N3DOSRKxLet7E,4805
+video_analyzer_ui/static/js/main.js,sha256=vsABj65Y1kVfHRi5pOWScrQDHP0Sw9ZuN-eD3DMfiVs,8400
+video_analyzer_ui/templates/index.html,sha256=xYJ5GK7MEgKuz7flian4eczzph0qDIbyshQYwSmCPS4,6425
+video_analyzer_ui-0.1.0.dist-info/METADATA,sha256=g9cShTRM25ZLFYir9--XDUvAboPLDUwkude2o3KcbLE,2825
+video_analyzer_ui-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+video_analyzer_ui-0.1.0.dist-info/entry_points.txt,sha256=svdJNw5oetj29EcpTzYDH95SUFGhXgsWCSCB9tZzfyc,68
+video_analyzer_ui-0.1.0.dist-info/top_level.txt,sha256=luN2E40ntycAYrIPe9p54SQdG-w1EYPNkXgiIAwK1R0,18
+video_analyzer_ui-0.1.0.dist-info/RECORD,,
