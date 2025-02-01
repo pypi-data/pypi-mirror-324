@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: FluctuationAnalysisTools
+Version: 1.6.1a7
+Summary: A set of tools which allows to generate and process long-term dependent datasets
+Author: Alexandr Kuzmenko
+Author-email: alexander.k.spb@gmail.com
+License-File: LICENSE.txt
+Requires-Dist: numpy>=1.22.4
+Requires-Dist: psutil==5.8.0
+Requires-Dist: scipy>=1.13.1
+Requires-Dist: setuptools==58.2.0
+Requires-Dist: tqdm~=4.62.3
+Requires-Dist: pandas>=1.3.5
+Requires-Dist: rich>=10.9.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
