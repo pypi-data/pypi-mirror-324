@@ -1,0 +1,1 @@
+Add list flattening before building a generic filename based on tags to allow for nested lists of tags.
