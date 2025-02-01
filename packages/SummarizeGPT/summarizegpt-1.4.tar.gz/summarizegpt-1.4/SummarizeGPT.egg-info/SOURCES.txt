@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+SummarizeGPT.egg-info/PKG-INFO
+SummarizeGPT.egg-info/SOURCES.txt
+SummarizeGPT.egg-info/dependency_links.txt
+SummarizeGPT.egg-info/entry_points.txt
+SummarizeGPT.egg-info/requires.txt
+SummarizeGPT.egg-info/top_level.txt
+summarizeGPT/__init__.py
+summarizeGPT/summarizeGPT.py
+tests/__init__.py
+tests/test_summarize_gpt.py
