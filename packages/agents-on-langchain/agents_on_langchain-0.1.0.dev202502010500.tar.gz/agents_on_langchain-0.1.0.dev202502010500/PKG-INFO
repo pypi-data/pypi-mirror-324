@@ -1,0 +1,111 @@
+Metadata-Version: 2.2
+Name: agents_on_langchain
+Version: 0.1.0.dev202502010500
+Summary: A lightweight Python package for creating agents on Langchain for Agentic platforms
+Author-email: Sinan Ozel <coding@sinan.slmail.me>
+License: MIT License
+        
+        Copyright (c) 2025 Sinan Ozel
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/sinan-ozel/agents-on-langchain
+Project-URL: Issues, https://github.com/sinan-ozel/agents-on-langchain/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: langchain-core>=0.3.31
+Requires-Dist: torch>=2.4.1
+Requires-Dist: typing-extensions>=4.0.0
+Requires-Dist: numpy>=1.26.4
+Provides-Extra: test
+Requires-Dist: pytest>=7.0.0; extra == "test"
+Requires-Dist: pytest-cov>=3.0.0; extra == "test"
+Requires-Dist: pytest-mock>=3.14.0; extra == "test"
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=3.0.0; extra == "dev"
+Requires-Dist: pytest-mock>=3.14.0; extra == "dev"
+Requires-Dist: flake8>=5.0.0; extra == "dev"
+Requires-Dist: black>=23.0; extra == "dev"
+Requires-Dist: mypy>=1.0.0; extra == "dev"
+
+A lightweight framework to create agents based on the LangChain `BaseModel` interface.
+
+The idea is to make it easy to a multi-agent platform.
+
+# Usage
+
+## Basic Example
+(TODO)
+
+## Complex Journal Multi-Agent Platform
+(TODO)
+
+## 
+
+# Philosophy
+
+I went with three guiding principles in writing this model.
+
+1. Everything is an agent: tools, buses, orchestrators are all agents.
+2. Final code should show the flow: You should be able scale while being able to
+   see how agents connect to each other. This means that each agent relationship
+   should be at most one line of code.
+3. Agents are minimal building blocks: one prompt per agent, one vector store
+   per agent, one model per agent.
+
+# Deployment
+The mode of deployment is as follows:
+Make sure that there is a model and an API, based on the `BaseModel`in LangChain.
+Put all agents in the same piece of code.
+Run this code on a loop - the loop can also be an "orchestrator" agent.
+
+Note that you can also host the model on the same pod / instance / computer as 
+the agents. This is how I (the author) tested it.
+
+
+# Development
+
+## Requirements
+
+Just Docker. If you want to develop, you can use the .devcontainer on VS Code,
+you don't need to install anything.
+
+This works with VS Code, however, if you want to use another IDE, you can also
+use the `Dockerfile.dev` to create your development environment.
+
+## Testing
+
+Run:
+
+```
+docker-compose run --rm --build test
+```
+
+
+## Contributing
+
+1. Branch out
+2. Add new code.
+3. Add tests.
+4. Push.
+5. Make a pull request.

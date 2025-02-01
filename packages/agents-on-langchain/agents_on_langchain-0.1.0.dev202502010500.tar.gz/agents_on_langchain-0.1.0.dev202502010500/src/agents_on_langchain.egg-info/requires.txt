@@ -1,0 +1,17 @@
+langchain-core>=0.3.31
+torch>=2.4.1
+typing-extensions>=4.0.0
+numpy>=1.26.4
+
+[dev]
+pytest>=7.0.0
+pytest-cov>=3.0.0
+pytest-mock>=3.14.0
+flake8>=5.0.0
+black>=23.0
+mypy>=1.0.0
+
+[test]
+pytest>=7.0.0
+pytest-cov>=3.0.0
+pytest-mock>=3.14.0
