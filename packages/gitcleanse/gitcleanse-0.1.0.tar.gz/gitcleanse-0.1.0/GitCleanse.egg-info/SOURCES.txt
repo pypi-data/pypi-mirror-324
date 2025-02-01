@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+GitCleanse.egg-info/PKG-INFO
+GitCleanse.egg-info/SOURCES.txt
+GitCleanse.egg-info/dependency_links.txt
+GitCleanse.egg-info/entry_points.txt
+GitCleanse.egg-info/requires.txt
+GitCleanse.egg-info/top_level.txt
