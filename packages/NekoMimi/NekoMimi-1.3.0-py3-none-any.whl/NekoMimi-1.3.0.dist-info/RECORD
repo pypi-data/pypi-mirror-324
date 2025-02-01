@@ -1,0 +1,15 @@
+NekoMimi/__init__.py,sha256=AjTj9zM5A9YUsmbbrKK24pggQnzSi7Ste_PjqDAd7gs,1030
+NekoMimi/__main__.py,sha256=3i64uTv9hUUaL57gAAJy_ZeODtNzxSsCYSpSpa5PgFA,6035
+NekoMimi/colourimi.py,sha256=cq_ukHtfgORu_NiP25Z9w8bPwVLsS7Tmq-guEgG9nvI,10963
+NekoMimi/consoleToys.py,sha256=Tl_dNoULcZXu0i7iNaKQf-Lv-6sj0LA_KdnJxilKCwE,349
+NekoMimi/reg.py,sha256=OW4eQzn758CyAt0SezhFXcOIjbpdgyLQDPYXjA__NWQ,1950
+NekoMimi/utils.py,sha256=-ciMjgRkRmkJIdbb_0vnGSmUXEjxODj4by5DQGla7wY,3574
+NekoMimi/legacy/__init__.py,sha256=PzwUS2Zk2Bmeqw6Cga2qrG30ro_W1dhJUqDIsn0Uyzo,18
+NekoMimi/legacy/colourimi.py,sha256=4Z_XpuOCIIefvEclsHfboX07AEelQl4j_gI9ioSG5fQ,9762
+NekoMimi/legacy/consoleToys.py,sha256=n-DzAuOyvPL3hv0HymgnvOzM4LhnWsOO4OYTqC5gxCM,496
+NekoMimi/legacy/tools.py,sha256=3X81HjMHFYI3ykCVma_lN0gKcNfw7bdqONwgxhX3nKg,2123
+NekoMimi-1.3.0.dist-info/LICENSE,sha256=BEEreSlwqwrpxF_1-hD3mWQEZ4lAIs-WWOLURkMDBUw,1053
+NekoMimi-1.3.0.dist-info/METADATA,sha256=qq5a0K22XqTui1ypXFq2_LIUXzyjT6P25Au5A_Qd-4k,1764
+NekoMimi-1.3.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+NekoMimi-1.3.0.dist-info/top_level.txt,sha256=tm0j1piKV60YgLejYZkXamiok-ACvNdtdL3l35pUCZs,9
+NekoMimi-1.3.0.dist-info/RECORD,,
