@@ -1,0 +1,5 @@
+[console_scripts]
+easy_upload = easy_upload.cli:app
+
+[gui_scripts]
+

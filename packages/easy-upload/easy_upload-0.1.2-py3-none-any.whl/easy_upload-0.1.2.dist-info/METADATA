@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: easy_upload
+Version: 0.1.2
+Summary: User-friendly Twine alternative for PyPI.
+Author-Email: AmaseCocoa <cocoa@amase.cc>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: typer>=0.15.1
+Requires-Dist: twine>=6.1.0
+Requires-Dist: keyring>=25.6.0
+Requires-Dist: beaupy>=3.10.1
+Requires-Dist: tomlkit>=0.13.2
+Requires-Dist: pyfiglet>=1.0.2
+Description-Content-Type: text/markdown
+
+# easy_upload
+User-friendly Twine wrapper.
+## Features
+- Automatically search/easily select whl/tar.gz from current directory
+## Requirements
+- keyring backends
+    - Freedesktop Secret Service (requires secretstorage)
+    - KDE4 & KDE5 KWallet (requires dbus)
+## Install
+easy-upload can be installed from PyPI.
+```
+# pip
+pip install easy-upload
+
+# pipx
+pipx install easy-upload
+```
+## How To Use
+You can start by running `easy_upload upload`. It is not recommended to run it in your home directory, for example, due to its specification.

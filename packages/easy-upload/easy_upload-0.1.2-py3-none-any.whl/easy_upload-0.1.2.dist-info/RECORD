@@ -1,0 +1,13 @@
+easy_upload-0.1.2.dist-info/METADATA,sha256=qClhL8eNhEZcoeHDrNpMjnnUSsMtdcR0bFRSAx706gA,943
+easy_upload-0.1.2.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+easy_upload-0.1.2.dist-info/entry_points.txt,sha256=uwo1QU2djrFtpUSjH1hwvTbedsplogpCQyl7rfdKqSM,68
+easy_upload-0.1.2.dist-info/licenses/LICENSE,sha256=927Eh1Obvd4CUshhq7fqZcaaW9gvPob_5d-M9VOLJv4,1093
+easy_upload/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_upload/cli.py,sha256=Bc-czC4eEDNJJeUh0Q1axgOHkEv5j6vTcs_AdfAb-cU,148
+easy_upload/commands/repo.py,sha256=d-vcHc7au3qoOtFJv2jDM35SUADpursF2ISDP8wwU14,1372
+easy_upload/commands/upload.py,sha256=3YzBQ8MoA8CrigLxwGVC8Zq7ya0JZx-aLZRNoVUCOzM,3590
+easy_upload/lib/credentials.py,sha256=r0lI3nuBZBgK9T0rcChsG_q2cnztB9eIQmQJK6SOSgk,485
+easy_upload/lib/repo.py,sha256=w01u3aLbvakx0AgetJ--OYWDiilvhBXbzlNQh6frQBs,814
+easy_upload/lib/upload.py,sha256=ANcyIzrfIkT3vGS0y-ie_gTB1DqhONos2bjUbpNWuZk,266
+easy_upload/lib/users.py,sha256=HMVvBxdnQpaOw1TVVdRBLvQBb53F9sv9pPj_9iXtsvQ,902
+easy_upload-0.1.2.dist-info/RECORD,,
