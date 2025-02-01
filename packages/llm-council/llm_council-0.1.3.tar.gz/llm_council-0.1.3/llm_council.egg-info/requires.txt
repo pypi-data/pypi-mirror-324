@@ -1,0 +1,4 @@
+llm
+prompt_toolkit>=3.0.43
+llm-claude-3
+llm-gemini
