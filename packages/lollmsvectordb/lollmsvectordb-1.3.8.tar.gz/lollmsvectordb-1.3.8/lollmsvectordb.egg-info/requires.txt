@@ -1,0 +1,16 @@
+numpy==1.26.3
+tiktoken
+ascii_colors
+tqdm
+transformers
+torch
+docling
+PyPDF2
+openai
+dpkt
+pipmaster
+python-docx
+pandas
+openpyxl
+beautifulsoup4
+extract-msg
