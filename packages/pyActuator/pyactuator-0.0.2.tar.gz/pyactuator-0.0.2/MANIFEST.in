@@ -1,0 +1,8 @@
+include CMakeLists.txt
+include README.md
+include stubs/pyActuator.pyi
+recursive-include bindings *.cpp *.hpp *.h
+recursive-include third_party/pybind11 *
+recursive-include pyActuator *.py *.pyi *.pyd *.so
+exclude pyActuator/cleanup.py
+exclude cleanup.py
