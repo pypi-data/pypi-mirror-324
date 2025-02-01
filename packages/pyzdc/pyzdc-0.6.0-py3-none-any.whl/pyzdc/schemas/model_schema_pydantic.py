@@ -1,0 +1,151 @@
+import pandera as pa
+from pandera.typing import Series
+
+
+class NotificationsSchema(pa.DataFrameModel):
+    # ge = greater than or equal
+    # le = less than or equal
+    TP_NOT: Series[int] = pa.Field(le=2, ge=2)
+    ID_AGRAVO: Series[str] = pa.Field()
+    DT_NOTIFIC: Series[int] = pa.Field(le=20231230, ge=20230102)
+    SEM_NOT: Series[int] = pa.Field(le=202352, ge=202301)
+    NU_ANO: Series[int] = pa.Field(le=2023, ge=2023)
+    SG_UF_NOT: Series[int] = pa.Field(le=53, ge=11)
+    ID_MUNICIP: Series[int] = pa.Field(le=530010, ge=110004)
+    ID_REGIONA: Series[str] = pa.Field()
+    ID_UNIDADE: Series[int] = pa.Field(le=9986200, ge=2372)
+    DT_SIN_PRI: Series[int] = pa.Field(le=20231230, ge=20230101)
+    SEM_PRI: Series[int] = pa.Field(le=202352, ge=202301)
+    ANO_NASC: Series[str] = pa.Field()
+    NU_IDADE_N: Series[int] = pa.Field(le=4102, ge=2001)
+    CS_SEXO: Series[str] = pa.Field()
+    CS_GESTANT: Series[int] = pa.Field(le=9, ge=1)
+    CS_RACA: Series[int] = pa.Field(le=9, ge=1)
+    CS_ESCOL_N: Series[str] = pa.Field()
+    SG_UF: Series[int] = pa.Field(le=53, ge=11)
+    ID_MN_RESI: Series[int] = pa.Field(le=530010, ge=110015)
+    ID_RG_RESI: Series[str] = pa.Field()
+    ID_PAIS: Series[int] = pa.Field(le=1, ge=1)
+    DT_INVEST: Series[str] = pa.Field()
+    ID_OCUPA_N: Series[str] = pa.Field()
+    FEBRE: Series[str] = pa.Field()
+    MIALGIA: Series[str] = pa.Field()
+    CEFALEIA: Series[str] = pa.Field()
+    EXANTEMA: Series[str] = pa.Field()
+    VOMITO: Series[str] = pa.Field()
+    NAUSEA: Series[str] = pa.Field()
+    DOR_COSTAS: Series[str] = pa.Field()
+    CONJUNTVIT: Series[str] = pa.Field()
+    ARTRITE: Series[str] = pa.Field()
+    ARTRALGIA: Series[str] = pa.Field()
+    PETEQUIA_N: Series[str] = pa.Field()
+    LEUCOPENIA: Series[str] = pa.Field()
+    LACO: Series[str] = pa.Field()
+    DOR_RETRO: Series[str] = pa.Field()
+    DIABETES: Series[str] = pa.Field()
+    HEMATOLOG: Series[str] = pa.Field()
+    HEPATOPAT: Series[str] = pa.Field()
+    RENAL: Series[str] = pa.Field()
+    HIPERTENSA: Series[str] = pa.Field()
+    ACIDO_PEPT: Series[str] = pa.Field()
+    AUTO_IMUNE: Series[str] = pa.Field()
+    DT_CHIK_S1: Series[str] = pa.Field()
+    DT_CHIK_S2: Series[str] = pa.Field()
+    DT_PRNT: Series[str] = pa.Field()
+    RES_CHIKS1: Series[str] = pa.Field()
+    RES_CHIKS2: Series[str] = pa.Field()
+    RESUL_PRNT: Series[str] = pa.Field()
+    DT_SORO: Series[str] = pa.Field()
+    RESUL_SORO: Series[str] = pa.Field()
+    DT_NS1: Series[str] = pa.Field()
+    RESUL_NS1: Series[str] = pa.Field()
+    DT_VIRAL: Series[str] = pa.Field()
+    RESUL_VI_N: Series[str] = pa.Field()
+    DT_PCR: Series[str] = pa.Field()
+    RESUL_PCR_: Series[str] = pa.Field()
+    SOROTIPO: Series[str] = pa.Field()
+    HISTOPA_N: Series[str] = pa.Field()
+    IMUNOH_N: Series[str] = pa.Field()
+    HOSPITALIZ: Series[str] = pa.Field()
+    DT_INTERNA: Series[str] = pa.Field()
+    UF: Series[str] = pa.Field()
+    MUNICIPIO: Series[str] = pa.Field()
+    TPAUTOCTO: Series[str] = pa.Field()
+    COUFINF: Series[str] = pa.Field()
+    COPAISINF: Series[str] = pa.Field()
+    COMUNINF: Series[str] = pa.Field()
+    CLASSI_FIN: Series[str] = pa.Field()
+    CRITERIO: Series[str] = pa.Field()
+    DOENCA_TRA: Series[str] = pa.Field()
+    CLINC_CHIK: Series[str] = pa.Field()
+    EVOLUCAO: Series[str] = pa.Field()
+    DT_OBITO: Series[str] = pa.Field()
+    DT_ENCERRA: Series[str] = pa.Field()
+    ALRM_HIPOT: Series[str] = pa.Field()
+    ALRM_PLAQ: Series[str] = pa.Field()
+    ALRM_VOM: Series[str] = pa.Field()
+    ALRM_SANG: Series[str] = pa.Field()
+    ALRM_HEMAT: Series[str] = pa.Field()
+    ALRM_ABDOM: Series[str] = pa.Field()
+    ALRM_LETAR: Series[str] = pa.Field()
+    ALRM_HEPAT: Series[str] = pa.Field()
+    ALRM_LIQ: Series[str] = pa.Field()
+    DT_ALRM: Series[str] = pa.Field()
+    GRAV_PULSO: Series[str] = pa.Field()
+    GRAV_CONV: Series[str] = pa.Field()
+    GRAV_ENCH: Series[str] = pa.Field()
+    GRAV_INSUF: Series[str] = pa.Field()
+    GRAV_TAQUI: Series[str] = pa.Field()
+    GRAV_EXTRE: Series[str] = pa.Field()
+    GRAV_HIPOT: Series[str] = pa.Field()
+    GRAV_HEMAT: Series[str] = pa.Field()
+    GRAV_MELEN: Series[str] = pa.Field()
+    GRAV_METRO: Series[str] = pa.Field()
+    GRAV_SANG: Series[str] = pa.Field()
+    GRAV_AST: Series[str] = pa.Field()
+    GRAV_MIOC: Series[str] = pa.Field()
+    GRAV_CONSC: Series[str] = pa.Field()
+    GRAV_ORGAO: Series[str] = pa.Field()
+    DT_GRAV: Series[str] = pa.Field()
+    MANI_HEMOR: Series[str] = pa.Field()
+    EPISTAXE: Series[str] = pa.Field()
+    GENGIVO: Series[str] = pa.Field()
+    METRO: Series[str] = pa.Field()
+    PETEQUIAS: Series[str] = pa.Field()
+    HEMATURA: Series[str] = pa.Field()
+    SANGRAM: Series[str] = pa.Field()
+    LACO_N: Series[str] = pa.Field()
+    PLASMATICO: Series[str] = pa.Field()
+    EVIDENCIA: Series[str] = pa.Field()
+    PLAQ_MENOR: Series[str] = pa.Field()
+    CON_FHD: Series[str] = pa.Field()
+    COMPLICA: Series[str] = pa.Field()
+    NU_LOTE_I: Series[str] = pa.Field()
+    TP_SISTEMA: Series[str] = pa.Field()
+    NDUPLIC_N: Series[str] = pa.Field()
+    DT_DIGITA: Series[str] = pa.Field()
+    CS_FLXRET: Series[int] = pa.Field(le=1, ge=0)
+    FLXRECEBI: Series[str] = pa.Field(coerce = False, nullable=True)
+    MIGRADO_W: Series[str] = pa.Field()
+
+    class Config: # type: ignore # noqa # pylint: disable=missing-class-docstring
+        # Data Quality Dimensions
+        # Consistency and Validity
+        coerce = True
+        # Completeness
+        nullable = False
+        # Consistency
+        strict = True
+        # Validity and Compliance
+        regex = False
+        # Uniqueness and Integrity
+        unique = False
+        # Completeness
+        required = True
+        # Timeliness: this can be measured by date or timestamp fields indicating
+        #             when the data was inserted or updated.
+        # Accuracy: if everyone consider that SINAN data is accurate, we can assume this
+        #           in any column and row.
+        # Relevance: refers to the adequacy of the data for the data analysis step,
+        #            it depends on the context in which the data is used.
+        # ge and le are Validity checks too.
