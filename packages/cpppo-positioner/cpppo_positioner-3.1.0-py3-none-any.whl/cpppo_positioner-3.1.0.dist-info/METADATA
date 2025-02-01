@@ -1,0 +1,50 @@
+Metadata-Version: 2.2
+Name: cpppo_positioner
+Version: 3.1.0
+Summary: Actuator position control via native RS485 serial Modbus/RTU
+Home-page: https://github.com/pjkundert/cpppo_positioner
+Author: Perry Kundert
+Author-email: perry@dominionrnd.com
+License: Dual License; GPLv3 and Proprietary
+Keywords: SMC position actuator controller EtherNet/IP
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Topic :: Scientific/Engineering :: Interface Engine/Protocol Translator
+License-File: LICENSE
+License-File: COPYING
+Requires-Dist: cpppo>=5.2.4
+Requires-Dist: pyserial>=3.5
+Requires-Dist: pymodbus==3.8.1
+Requires-Dist: tabulate-slip39>=0.10.0
+Provides-Extra: dev
+Requires-Dist: build; extra == "dev"
+Requires-Dist: packaging; extra == "dev"
+Requires-Dist: pip; extra == "dev"
+Requires-Dist: setuptools; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Provides-Extra: all
+Requires-Dist: packaging; extra == "all"
+Requires-Dist: pip; extra == "all"
+Requires-Dist: build; extra == "all"
+Requires-Dist: setuptools; extra == "all"
+Requires-Dist: wheel; extra == "all"
+Provides-Extra: tests
+Requires-Dist: flake8; extra == "tests"
+Requires-Dist: pylint; extra == "tests"
+Requires-Dist: pytest>=4.6; extra == "tests"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
+
+Control SMC positioning actuators via native RS485 serial Modbus/RTU protocol
