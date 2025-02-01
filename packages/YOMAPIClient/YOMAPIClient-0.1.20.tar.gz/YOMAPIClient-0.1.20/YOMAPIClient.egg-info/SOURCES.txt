@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+YOMAPI/YOMAPI.py
+YOMAPI/__init__.py
+YOMAPIClient.egg-info/PKG-INFO
+YOMAPIClient.egg-info/SOURCES.txt
+YOMAPIClient.egg-info/dependency_links.txt
+YOMAPIClient.egg-info/requires.txt
+YOMAPIClient.egg-info/top_level.txt
