@@ -1,0 +1,72 @@
+Metadata-Version: 2.2
+Name: scpapi
+Version: 0.0.5
+Summary: The SCP API for Python
+Home-page: https://github.com/set-e/scpapi
+Author: jrpark
+Author-email: jungryul0515.park@samsung.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.32.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+### Prerequisite
+
+Python 3.9+
+
+
+### Example
+```
+import json
+from scpapi.virtual_server import VirtualServer
+
+
+virtual_server = VirtualServer(
+    project_id='PROJECT-XXXXXXXXXXXXXXXXXXXXXX',
+    access_key='XXXXXXXXXXXXXXXXXXXX',
+    secret_key='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+)
+
+### List of Virtual Server ###
+vm_list = json.loads(virtual_server.list().text)
+print(vm_list['contents'])
+
+### Create a Virtual Server ###
+virtual_server_body = {
+    'virtualServerName': 'slurm-head',
+    'blockStorage': {
+        'blockStorageName': 'root',
+        'diskSize': 100,
+        'encryptEnabled': False,
+        'diskType': 'SSD'
+    },
+    'imageId': 'IMAGE-9DNNuuBDrMcKq8kfr29xjm',
+    'nic': {
+        'subnetId': 'SUBNET-lr6CTHHQs2mQNdIZ9VK2-m',
+        'natEnabled': True,
+        'publicIpId' : 'PUBLIC_IP-avsFAjQPrNmJ--JFfLW9ei'
+    },
+    'deletionProtectionEnabled': False,
+    'securityGroupIds': ['FIREWALL_SECURITY_GROUP-rj5TNm2VsXcOYbM04lvWah'],
+    'serverType': 's1v2m4',
+    'serviceZoneId': 'ZONE-FClPklmysrhRpknZ6DaI2f',
+    'serverGroupId': 'SERVICE-Aj3ONjl2qEkTs_7ccYAPjo',
+    'tags': [
+        {'tagKey': 'cluster-name', 'tagValue': 'slurm-cluster'},
+    ],
+    'keyPairId': 'KEY_PAIR-t4ZeTus1q2lHpYZ1yICLEa'
+}
+
+print(virtual_server.create(body=virtual_server_body).text)
+```

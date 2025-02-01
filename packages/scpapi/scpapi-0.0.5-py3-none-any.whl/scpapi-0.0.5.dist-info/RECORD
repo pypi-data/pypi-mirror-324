@@ -1,0 +1,10 @@
+scpapi/__init__.py,sha256=d15Sy9IG7vM9Ik5uyHTNvftQl7EK6WKyUgf2MDQif2s,3681
+scpapi/file_storage.py,sha256=zQ13AsKB2Z4BJlV2FzpWZDY7GwEV6JQcIopOtXSVgy8,1228
+scpapi/image.py,sha256=VDWOGRJO4G1XQpjKWozI19qHtc4UiBKyJLhb0TUi9YU,372
+scpapi/server_group.py,sha256=YJbGYpg3ElM3YPfMlseIbDhrEiqLj8UVhzvwJTLJfMo,976
+scpapi/subnet.py,sha256=DLZf1C7zQlLErBWmIkUnQ5o7sHtEKdWHwDu8yL0dbd0,695
+scpapi/virtual_server.py,sha256=81vGo6126IqmpmQ9RGKjiHZDLzcZzaSlKAxx3USOGL0,1010
+scpapi-0.0.5.dist-info/METADATA,sha256=gJfIUYEvzMPUQ70GTHUhG6gYFqfxB2Iu_D_tBGnc_YY,1927
+scpapi-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+scpapi-0.0.5.dist-info/top_level.txt,sha256=3PdNapIjWUu3lA1KJU0qfT_AWX2ThI_PqsqQRqPFfaU,7
+scpapi-0.0.5.dist-info/RECORD,,
