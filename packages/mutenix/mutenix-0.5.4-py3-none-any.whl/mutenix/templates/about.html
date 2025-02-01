@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}Mutenix - About{% endblock %}
+{% block content %}
+<header>
+    <h1>About</h1>
+</header>
+<main>
+    <section>
+        <h2>About Virtual Macropad</h2>
+        <p>The Virtual Macropad is a software simulation of a physical macropad device. It allows users to interact
+            with a virtual representation of the macropad through a web interface.</p>
+    </section>
+    <section>
+        <h2>Readme</h2>
+        <div>{{ readme_content|safe }}</div>
+    </section>
+    <section>
+        <h2>Contact</h2>
+        <p>For more information, please contact us at info@example.com.</p>
+    </section>
+    <section>
+        <h2>License</h2>
+        <pre>
+            {{ license_content | safe }}
+        </pre>
+    </section>
+</main>
+{% endblock %}
