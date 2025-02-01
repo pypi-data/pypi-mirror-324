@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: FluctuationAnalysisTools
+Version: 1.6.1a10
+Summary: This library allows to create and process long-term dependent datasets.
+Author-email: Aleksandr Sinitca <amsinitca@etu.ru>, Alexandr Kuzmenko <alexander.k.spb@gmail.com>, Asya Lyanova <ailianova@etu.ru>
+Maintainer-email: Aleksandr Sinitca <amsinitca@etu.ru>
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# StatTools
+This library allows to create and process long-term dependent datasets.
+
+## Installation:
+
+    python setup.py install
+
+## Basis usage
+
+1. To create a simple dataset with given Hurst parameter:
+
+```python
+from StatTools.filters import FilteredArray
+
+h = 0.8                 # choose Hurst parameter
+total_vectors = 1000    # total number of vectors in output
+vectors_length = 1440   # each vector's length 
+t = 8                   # threads in use during computation
+
+correlated_vectors = Filter(h, vectors_length).generate(n_vectors=total_vectors,
+                                                        threads=t, progress_bar=True)
+```
+
+## Contributors
+
+* [Alexandr Kuzmenko](https://github.com/alexandr-1k)
+* [Aleksandr Sinitca](https://github.com/Sinitca-Aleksandr)
