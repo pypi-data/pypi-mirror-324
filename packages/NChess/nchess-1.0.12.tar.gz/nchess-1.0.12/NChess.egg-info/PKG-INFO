@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: NChess
+Version: 1.0.12
+Summary: chess library written in c
+Home-page: https://github.com/MNourMoslem/NChess
+Author: MNMoslem
+Author-email: normoslem256@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.18.0
+
+# NChess
+A Chess library written in c and python for machine learning purposes.
