@@ -1,0 +1,4 @@
+[console_scripts]
+adev=auto_dev.cli:cli
+gen-docs=scripts.generate_command_docs:main
+
