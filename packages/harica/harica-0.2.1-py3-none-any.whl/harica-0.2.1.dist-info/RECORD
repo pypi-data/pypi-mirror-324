@@ -1,0 +1,9 @@
+harica/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+harica/harica_client.py,sha256=S7iMjvm_wF6p0cJ-apcesr0Nx0YoStu2Z0JxeCW6j3g,19904
+harica/main.py,sha256=76VX2ziGTfPuC_ik5_9oXMCzZl2J912bkebrOsAs-Yc,16279
+harica/utils.py,sha256=-CcRV5LPrDZkMpMaUq7DnAsxP6JV_RsINhedM1h4NW0,104
+harica-0.2.1.dist-info/LICENSE.md,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+harica-0.2.1.dist-info/METADATA,sha256=EYGDEpHeup2tryhWpUi6UUMLH_IIxdINCFpmDkG53PM,9127
+harica-0.2.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+harica-0.2.1.dist-info/entry_points.txt,sha256=dlFXIRr2YK9y8EtEnXkA36h4CvolZbxk1bUr3avAL4o,43
+harica-0.2.1.dist-info/RECORD,,
