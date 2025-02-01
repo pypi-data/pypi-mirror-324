@@ -1,0 +1,5 @@
+Metadata-Version: 2.2
+Name: shared-package-lentinis
+Version: 1.0.21
+Summary: A shared utilities package
+Requires-Dist: fastapi

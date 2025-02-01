@@ -1,0 +1,8 @@
+shared_package_lentinis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shared_package_lentinis/dependencies.py,sha256=XYjsH_KsURX0XQZhZzUY_9WqeiAt1Z7YcvICq0iRK9s,19106
+shared_package_lentinis/postgres_engine.py,sha256=yXTUGykcMfYaV6pN6T0f-EnST6Q5iZdZdi0bOArU2XA,2748
+shared_package_lentinis/postgres_models.py,sha256=lQ3f625RctwS-clrAqCGQ1b8_Cub5WjWENfo3Y7QNT8,10067
+shared_package_lentinis-1.0.21.dist-info/METADATA,sha256=LI508E5tUDNJ0YNw78z-Q-zQl8GI1XHr6s-HFjpzNAo,127
+shared_package_lentinis-1.0.21.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+shared_package_lentinis-1.0.21.dist-info/top_level.txt,sha256=oDkMyVv2BLncvx7Eg-pEaKhzh4TIJNfI12oveDbE9r4,24
+shared_package_lentinis-1.0.21.dist-info/RECORD,,
