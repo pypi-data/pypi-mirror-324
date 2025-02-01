@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geniapi"
+dynamic = ["version"]
+dependencies = [
+    "requests>=2.32.3",
+]
+requires-python = ">=3.10"
+authors = [{ name = "Dmitry Bryndin" }]
+description = "Python client library for the Geni.com public REST API"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["geni", "api", "client", "geni.com"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "types-requests>=2.32.0.20241016",
+]
+
+[project.urls]
+Homepage = "https://github.com/bryndin/geni"
+
+[tool.setuptools]
+packages = ["geni", "geni.internal", "tests", "tests.internal", "tests.internal.fixtures", "examples"]
+
+[tool.setuptools.dynamic]
+version = { attr = "geni.version.__version__" }
