@@ -1,0 +1,11 @@
+README.md
+setup.py
+deepseek_local/__init__.py
+deepseek_local/deepseek.py
+deepseek_local/utils.py
+deepseek_local.egg-info/PKG-INFO
+deepseek_local.egg-info/SOURCES.txt
+deepseek_local.egg-info/dependency_links.txt
+deepseek_local.egg-info/entry_points.txt
+deepseek_local.egg-info/requires.txt
+deepseek_local.egg-info/top_level.txt
