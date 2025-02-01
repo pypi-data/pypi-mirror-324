@@ -1,0 +1,43 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=42", "wheel", "numpy>=1.18.0"]
+
+[project]
+name = "NChess"
+version = "1.0.16"
+license = {file = "LICENSE"}
+
+description = "chess library written in c for engine building"
+authors = [{name = "Mohammed Nour Moslem", email="normoslem256@gmail.com"}]
+maintainers = [
+    {name = "Mohammed Nour Moslem", email="normoslem256@gmail.com"},
+]
+requires-python = ">=3.11"
+readme = "README.md"
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Science/Research',
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: BSD License',
+    'Programming Language :: C',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: Implementation :: CPython',
+    'Topic :: Software Development',
+    'Topic :: Scientific/Engineering',
+    'Typing :: Typed',
+    'Operating System :: Microsoft :: Windows',
+    'Operating System :: POSIX',
+    'Operating System :: Unix',
+    'Operating System :: MacOS',
+]
+dependencies  = ["setuptools>=42", "wheel", "numpy>=1.18.0"]
+
+keywords = ["chess", "chess engine"]
+
+[project.urls]
+Repository = "https://github.com/MNourMoslem/NChess"
