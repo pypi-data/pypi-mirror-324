@@ -1,0 +1,12 @@
+python_code_quality_analyzer/__init__.py,sha256=I_RDCksydjT-5fWWq9TL2Q7M3aulFqbAMeUmcrK7e98,104
+python_code_quality_analyzer/__main__.py,sha256=kgsDChJJI8QhN3egnYS3MDNJnnw279YMob-8Znbh_z8,534
+python_code_quality_analyzer/analyzers/__init__.py,sha256=BHnQpCVXpO0plJ9FsP2Oe63fX-52qB1AOx_WRoQdC5w,37
+python_code_quality_analyzer/commands/__init__.py,sha256=8FZEQlXHSqPruR6V-MZPpJ63bTfoq0cQcnISSPAjWxU,61
+python_code_quality_analyzer/config/__init__.py,sha256=1w1mw-8Hje7ycBwFcOqeTEIpusyXz1-qyKVbjdlueCk,54
+python_code_quality_analyzer/formatters/__init__.py,sha256=XdxgfIlrqDWxBS3UjsOQJWIufurSCtvvxF4ekWStCyk,46
+python_code_quality_analyzer/metrics/__init__.py,sha256=Z8oDNbXHB3M8EoawWmNTISnOXvrA_wvlfcAa0Iq-HXg,45
+python_code_quality_analyzer-1.0.7.dist-info/METADATA,sha256=tGzWsmk1v0bI4SLcgEV4U9Hn2SJtMa9lfk9TMW4ucFQ,7564
+python_code_quality_analyzer-1.0.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+python_code_quality_analyzer-1.0.7.dist-info/entry_points.txt,sha256=2kba6cAQ-GL1vb5LyI4hRRaBv0Z7unl-Q3FNI-qf0WE,91
+python_code_quality_analyzer-1.0.7.dist-info/licenses/LICENSE,sha256=OmvfQRzBcUvGNQz8TW3GoQhKV1rzRD65EmtlA-u_9a4,1083
+python_code_quality_analyzer-1.0.7.dist-info/RECORD,,
