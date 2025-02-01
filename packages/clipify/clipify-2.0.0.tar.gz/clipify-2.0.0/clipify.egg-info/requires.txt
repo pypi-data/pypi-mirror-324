@@ -1,0 +1,14 @@
+numpy>=1.19.0
+moviepy>=1.0.3
+pydub>=0.25.1
+textblob>=0.15.3
+whisper>=1.0.0
+requests>=2.25.1
+ffmpeg-python>=0.2.0
+tqdm>=4.60.0
+python-dotenv>=0.17.0
+typing-extensions>=3.7.4
+pathlib>=1.0.1
+opencv-python>=4.5.0
+scipy>=1.6.0
+captacity-clipify==0.3.2
