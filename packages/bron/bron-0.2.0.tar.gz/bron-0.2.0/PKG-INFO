@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: bron
+Version: 0.2.0
+Summary: Operational TOML
+License-File: LICENSE.md
+Requires-Python: >=3.10
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: packaging>=24.2
+Requires-Dist: pytoml11>=0.0.5
+Requires-Dist: rich>=13.9.4
+Description-Content-Type: text/markdown
+
+# ⛲ bron
+
+Sync your `pyproject.toml` configuration with sources upstream.
+
+Go to [bron.sh](https://bron.sh) for more info.
