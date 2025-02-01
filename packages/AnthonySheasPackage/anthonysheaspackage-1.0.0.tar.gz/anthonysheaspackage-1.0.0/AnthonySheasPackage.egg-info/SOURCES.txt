@@ -1,0 +1,8 @@
+README.md
+setup.py
+AnthonySheasPackage/__init__.py
+AnthonySheasPackage/hello.py
+AnthonySheasPackage.egg-info/PKG-INFO
+AnthonySheasPackage.egg-info/SOURCES.txt
+AnthonySheasPackage.egg-info/dependency_links.txt
+AnthonySheasPackage.egg-info/top_level.txt
