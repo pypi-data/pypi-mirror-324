@@ -1,0 +1,2 @@
+[napari.manifest]
+MMV-playground = mmv_playground:napari.yaml

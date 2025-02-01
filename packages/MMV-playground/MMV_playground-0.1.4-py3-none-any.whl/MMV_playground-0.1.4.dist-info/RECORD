@@ -1,0 +1,11 @@
+mmv_playground/__init__.py,sha256=29_sCiFVO2x-FKRCVEvizQjhwVIpvIHits1YoGPGJpA,101
+mmv_playground/_widget.py,sha256=wJdUxBVx2Cy9ciLBtboPH7AxC6VCdQtp6qGwgv7vW_U,28062
+mmv_playground/napari.yaml,sha256=UredpRlvwc30qn1xwZJf5Ow-ox-wi7_ROXn7UVH_wB4,537
+mmv_playground/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmv_playground/_tests/test_widget.py,sha256=MzngwYtgj_oqfc_Sx--R66MjH8c2nC3d1ELnfZGCdBU,2271
+MMV_playground-0.1.4.dist-info/LICENSE,sha256=5HB0BbxPanh6Sg9tMTZDtzb1uI88N05n0o_sFUsEZL0,1515
+MMV_playground-0.1.4.dist-info/METADATA,sha256=IEa8fPFxG0-4Np0GPoMaFuBDcLi6-VJ4JypzIAM56AU,11556
+MMV_playground-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+MMV_playground-0.1.4.dist-info/entry_points.txt,sha256=TpfD0xK0IKofWKKvVL-Fx7oFveKiUWVi5JjxJMHSF2c,62
+MMV_playground-0.1.4.dist-info/top_level.txt,sha256=MtcgNVA2_Ds1NlMOqgxrlQo7CilIj377YFJdt1ghz6k,15
+MMV_playground-0.1.4.dist-info/RECORD,,
