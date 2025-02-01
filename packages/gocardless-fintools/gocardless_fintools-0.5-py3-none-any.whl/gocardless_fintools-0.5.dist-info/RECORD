@@ -1,0 +1,9 @@
+gocardless_connector/__init__.py,sha256=rXpJUmQSs4qBxzRGagaFKqsgPFjoS_3aHzlJzWGV0P0,50
+gocardless_connector/connector.py,sha256=Nr_4ntpuEMZruIPWg_B0AfSPW2T70md4hGZet6R_MhU,30336
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gocardless_fintools-0.5.dist-info/LICENSE,sha256=Jn96Lhnfqd-Zr3dFIJhaDlIZJSk-pbfnZ6sGlp0Gv5E,12
+gocardless_fintools-0.5.dist-info/METADATA,sha256=IP8e6GJasheqqb7WmWzUZ_3N4_sJ67JYr0PiKYPDG0w,2907
+gocardless_fintools-0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gocardless_fintools-0.5.dist-info/entry_points.txt,sha256=Pt7YFbH3iiGCUW5hnuxAPfI5l7TngA6igB8TtBdj6uk,75
+gocardless_fintools-0.5.dist-info/top_level.txt,sha256=btixbn--zVmkQVjQIRGoDALJDq0XyAQ2FCC9ndXw1d8,27
+gocardless_fintools-0.5.dist-info/RECORD,,

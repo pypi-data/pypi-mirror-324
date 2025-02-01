@@ -1,0 +1,108 @@
+Metadata-Version: 2.2
+Name: gocardless-fintools
+Version: 0.5
+Summary: A CLI tool for managing bank account connections via GoCardless Bank Account Data API
+Home-page: https://github.com/thetombrider/gocardlessconnection
+Author: thetombrider
+Author-email: tommasominuto@gmail.com
+Project-URL: Bug Tracker, https://github.com/thetombrider/gocardlessconnection/issues
+Project-URL: Documentation, https://github.com/thetombrider/gocardlessconnection#readme
+Project-URL: Source Code, https://github.com/thetombrider/gocardlessconnection
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business :: Financial
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv
+Requires-Dist: nordigen-python
+Requires-Dist: click
+Requires-Dist: pandas
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# GoCardless Bank Account Manager
+
+A command-line interface (CLI) tool for managing bank account connections and retrieving financial data using the GoCardless (formerly Nordigen) Bank Account Data API.
+
+## Features
+
+- 🏦 Browse and connect to banks by country
+- 💰 Check account balances
+- 📊 View and download transactions
+- 🔄 Automatic token management
+- 📥 Bulk transaction export to CSV
+- 📥 Bulk transaction convert to CSV
+- 🌍 Multi-country support
+- 🔐 Secure credential management
+
+## Prerequisites
+
+- Python 3.6 or higher
+- GoCardless Bank Account Data API credentials (Secret ID and Secret Key)
+- Internet connection
+
+## Installation
+
+1. Clone this repository:
+```bash
+git clone https://github.com/thetombrider/gocardlessconnection
+cd gocardlessconnection
+```
+
+2. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a `.env` file in the project root with your GoCardless credentials:
+```plaintext
+GOCARDLESS_SECRET_ID=your_secret_id
+GOCARDLESS_SECRET_KEY=your_secret_key
+```
+
+## Initial Setup
+
+Generate initial access tokens by running:
+```bash
+python generate_token.py
+```
+
+## Usage
+
+### Browse and Connect to Banks
+```bash
+python connector.py browse-banks --country IT
+```
+
+### Check Account Balances
+```bash
+python connector.py check-balances --bank-id BANK_ID
+```
+
+### View Transactions
+```bash
+python connector.py check-transactions --bank-id BANK_ID
+```
+
+### Export Transactions to CSV
+```bash
+python connector.py export-transactions --bank-id BANK_ID
+```
+
+### Convert Transactions to CSV
+```bash
+python connector.py convert-transactions --bank-id BANK_ID
+```
