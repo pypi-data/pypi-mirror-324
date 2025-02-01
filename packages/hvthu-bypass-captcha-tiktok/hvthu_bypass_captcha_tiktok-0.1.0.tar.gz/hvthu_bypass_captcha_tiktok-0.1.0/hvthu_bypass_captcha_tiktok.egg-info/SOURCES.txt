@@ -1,0 +1,8 @@
+README.md
+setup.py
+hvthu_bypass_captcha_tiktok/__init__.py
+hvthu_bypass_captcha_tiktok/module.py
+hvthu_bypass_captcha_tiktok.egg-info/PKG-INFO
+hvthu_bypass_captcha_tiktok.egg-info/SOURCES.txt
+hvthu_bypass_captcha_tiktok.egg-info/dependency_links.txt
+hvthu_bypass_captcha_tiktok.egg-info/top_level.txt
