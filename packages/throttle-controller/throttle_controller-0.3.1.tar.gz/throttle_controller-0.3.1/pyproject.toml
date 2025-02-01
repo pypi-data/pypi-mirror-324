@@ -1,0 +1,67 @@
+[project]
+name = "throttle-controller"
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = ["typing-extensions"]
+description = "A simple throttling controller"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE" }
+authors = [
+    {name = "Yui KITSU", email = "kitsuyui+github@kitsuyui.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://github.com/kitsuyui/python-throttle-controller"
+
+[tool.setuptools]
+package-data = { "throttle_controller" = ["py.typed"], "*" = ["README.md, LICENSE"] }
+package-dir = { "throttle_controller" = "throttle_controller" }
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-cov",
+    "poethepoet",
+    "setuptools-scm",
+    "ruff",
+    "mypy",
+]
+
+[build-system]
+requires = [
+    "setuptools", "setuptools_scm"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "throttle_controller/_version.py"
+version_scheme = "only-version"
+local_scheme = "no-local-version"
+
+[tool.poe.tasks]
+test = "pytest"
+coverage-xml = "pytest --cov=throttle_controller --doctest-modules --cov-report=xml"
+format = "ruff format throttle_controller"
+check = [
+    { cmd = "ruff check throttle_controller" },
+    { cmd = "mypy throttle_controller tests" },
+]
+build = [
+    { cmd = "python -m build"}
+]
+[tool.mypy]
+strict = true
+ignore_missing_imports = false
+
+[tool.ruff]
+line-length = 79
