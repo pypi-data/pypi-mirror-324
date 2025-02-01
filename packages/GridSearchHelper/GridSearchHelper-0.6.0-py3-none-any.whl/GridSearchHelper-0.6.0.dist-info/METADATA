@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: GridSearchHelper
+Version: 0.6.0
+Summary: Advanced hyperparameter tuning using grid search for ML models
+Home-page: https://github.com/alimovabdulla/GridSearchHelper
+Author: Abdulla Alimov
+Author-email: abdullaalimov555@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/alimovabdulla/GridSearchHelper/
+Project-URL: Documentation, https://github.com/alimovabdulla/GridSearchHelper/
+Keywords: machine-learning grid-search hyperparameter-tuning scikit-learn
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: scikit-learn>=0.24.0
+Requires-Dist: numpy>=1.19.0
+
+<<<<<<< HEAD
+# GridSearchHelper
+
+GridSearchHelper is a Python library designed to simplify hyperparameter tuning using Grid Search. It allows for automatic parameter grid generation and performs efficient grid search for machine learning models. 
+
+## Installation
+
+You can install GridSearchHelper from PyPI:
+
+```bash
+pip install GridSearchHelper
+=======
+# Hyperparameter Tuning for Classifiers
+
+This project implements a hyperparameter tuning utility for multiple classifiers using `GridSearchCV` from `sklearn`. The supported classifiers include Random Forest, Gradient Boosting, AdaBoost, SVM, K-Nearest Neighbors, Logistic Regression, Decision Trees, Naive Bayes, MLP, and more.
+
+## Features
+- Grid search for hyperparameter optimization on a variety of models.
+- Support for additional custom parameters.
+- Cross-validation (CV) support for model evaluation.
+- Parallel processing for faster results.
+
+## Setup
+1. Clone this repository:
+   ``bash
+   git clone https://github.com/alimovabdulla/GridSearchHelper.git
+>>>>>>> 27a8174 (Updated project with new features)
+
+
