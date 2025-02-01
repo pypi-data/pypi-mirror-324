@@ -1,0 +1,46 @@
+Metadata-Version: 2.2
+Name: Annaparavai
+Version: 0.1.0
+Summary: AI-generated vs Human-written text detector for Tamil and Malayalam languages
+Home-page: https://github.com/Jubeerathan/Annaparavai
+Author: ['Jubeerathan Thevakumar', 'Luheerathan Thevakumar']
+Author-email: Jubeerathan Thevakumar <jubeerathan.20@cse.mrt.ac.lk>, Luheerathan Thevakumar <the.luheerathan@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow>=2.17.0
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: pandas>=2.1.4
+Requires-Dist: joblib>=1.4.2
+Requires-Dist: keras>=3.4.1
+Requires-Dist: sentence-transformers>=3.3.1
+Requires-Dist: transformers>=4.41.0
+Requires-Dist: torch>=1.12.0
+Requires-Dist: gdown>=4.7.1
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"
+Requires-Dist: isort>=5.0; extra == "dev"
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
+
+# Annaparavai
+
+An AI-generated vs Human-written text detector for Tamil and Malayalam languages
+
+## Installation
+```pip install Annaparavai```
+
+## Usage
+```python
+from Annaparavai import TextDetector
+
+# Initialize detector (choose language: 'Tamil' or 'Malayalam')
+detector = TextDetector(language='Tamil')
+
+# Example texts to classify
+text = "இது பழுதாக போயிட்டுது."
+# text = "ഈ പാൽതന്തു മാവ് ഉപയോഗിച്ചപ്പോൾ എനിക്ക് സംതൃപ്തിയില്ല."
+prediction = detector.predict(text)
+print(prediction[0])
+```
