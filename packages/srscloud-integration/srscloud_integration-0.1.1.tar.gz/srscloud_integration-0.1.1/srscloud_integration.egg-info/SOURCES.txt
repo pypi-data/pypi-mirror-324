@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+srscloud_integration/SRSCloud_Integration2.py
+srscloud_integration/__init__.py
+srscloud_integration.egg-info/PKG-INFO
+srscloud_integration.egg-info/SOURCES.txt
+srscloud_integration.egg-info/dependency_links.txt
+srscloud_integration.egg-info/top_level.txt

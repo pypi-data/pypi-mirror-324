@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: srscloud-integration
+Version: 0.1.1
+Summary: Este pacote foi descontinuado e não deve ser utilizado.
+Home-page: https://github.com/empresa/srscloud-integration
+Author: REMOVIDO
+Author-email: removido@example.com
+Description-Content-Type: text/plain
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+Este pacote foi removido. Entre em contato para mais informações.
