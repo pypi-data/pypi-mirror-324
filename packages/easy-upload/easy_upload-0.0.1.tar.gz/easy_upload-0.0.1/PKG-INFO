@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: easy_upload
+Version: 0.0.1
+Summary: User-friendly Twine alternative for PyPI.
+Author-Email: AmaseCocoa <cocoa@amase.cc>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: typer>=0.15.1
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: pkginfo>=1.12.0
+Description-Content-Type: text/markdown
+
+# easy_upload
+User-friendly Twine alternative for PyPI.
