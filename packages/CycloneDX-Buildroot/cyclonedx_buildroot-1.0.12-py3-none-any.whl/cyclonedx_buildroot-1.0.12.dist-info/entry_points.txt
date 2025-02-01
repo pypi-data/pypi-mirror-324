@@ -1,0 +1,3 @@
+[console_scripts]
+generateBuildrootSBOM=generateBuildrootSBOM:my_main
+

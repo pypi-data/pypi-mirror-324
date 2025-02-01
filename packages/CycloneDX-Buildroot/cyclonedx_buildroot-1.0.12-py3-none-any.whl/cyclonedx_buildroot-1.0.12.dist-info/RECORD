@@ -1,0 +1,6 @@
+src/CycloneDX-Buildroot/generateBuildrootSBOM.py,sha256=9EiyrSM_Jp83eVw3TR_OxtDPGhHD66WO7OFcoqStrkk,8836
+cyclonedx_buildroot-1.0.12.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+cyclonedx_buildroot-1.0.12.dist-info/METADATA,sha256=NNhmjkHOz44pavyrKdBFt3SiBeJESUpOzqirilWSZ7o,3931
+cyclonedx_buildroot-1.0.12.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+cyclonedx_buildroot-1.0.12.dist-info/entry_points.txt,sha256=xfKaVkugwiFys1dt_9NNuWYIMNoIefoJeWHPox-IQrY,71
+cyclonedx_buildroot-1.0.12.dist-info/RECORD,,
