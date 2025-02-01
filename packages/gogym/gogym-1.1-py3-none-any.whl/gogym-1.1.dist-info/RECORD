@@ -1,0 +1,11 @@
+gogym/__init__.py,sha256=hodTW1kItPwfT1xuvVnWWMzmzJaA5JNHQw_91qz0E2s,171
+gogym/api.py,sha256=xcX3fICRF9cMxImYK9DZ19WxTiXy_3abKDU5hkx_A64,7605
+gogym/config.py,sha256=KISmafT11ugwmUWljErCNQyRwg3GBgNkEx6X3Ds2mLo,2623
+gogym/control.py,sha256=dzgCdlObAhGs9gbzRIr2No4-vaG9MDdAJNsHowkb-rw,6203
+gogym/core.py,sha256=jxzAPhr9rI71mMHk1Q0FmoQzzQgitcAGE_9Uf7_-yUU,28162
+gogym/underlying.py,sha256=sBmt55eLB6cvteDgVNR7GyrcMR4x1aQGBXhW1bONhjc,3963
+gogym-1.1.dist-info/LICENSE,sha256=GQcf7eeI8ThKy5-CQFUGo-XujYIyRB6P1qOB1T1mPgM,1063
+gogym-1.1.dist-info/METADATA,sha256=bjNX00-gg3v8PJtlk-FCEZD_3aLnsQYEKxn1FKKxZLQ,490
+gogym-1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+gogym-1.1.dist-info/top_level.txt,sha256=cCEEGWwLHbw8q7CO7KgjrbmoawcKRD9G_nd9ZrxI9lM,6
+gogym-1.1.dist-info/RECORD,,
