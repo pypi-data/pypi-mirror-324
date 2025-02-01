@@ -1,0 +1,14 @@
+lfsir/__init__.py,sha256=1zhiFuvwrtBHEVw2eMuAz1lTWTiQkjmR3txzryqWivE,281
+lfsir/api.py,sha256=F_pk0wwGlKghO0hM_oUgXXtsHM4OoQKCl3U5jOFDNcM,10976
+lfsir/config/settings.yaml,sha256=Oo6COAP7wu72L80bWQ3vPtlxr5DrJe8ckGvEBgsTGzM,193
+lfsir/knowledge_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lfsir/knowledge_base/sci_results/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lfsir/knowledge_base/sci_results/T001.py,sha256=Lk5sA3WXTB5zvxd75dNmLvFiRDM_wgcFhQgvojbWiiA,2407
+lfsir/metadata/id_information.yaml,sha256=4zpCGzpLMtaXcM4l_3TTYvvuT_GS47_Ugjx0BNrneV4,2806
+lfsir/metadata/raw_files.yaml,sha256=Uimt1zCPaZgkczRNUwmapTEpG3wtG7oM8HDOMP2J2Ko,2581
+lfsir/metadata/schema.yaml,sha256=yu1Nj8LCp6VlTJZjkw3x-whNbfZPotMP5T9aGBjyx6c,45
+lfsir/metadata/tables.yaml,sha256=Sr-7BMeMZfkKV7IB6jHAIcEoqW6VbZYVEOKNqHgZ_4k,64925
+lfsir-0.1.4.dist-info/LICENCE,sha256=53GfUNDXb4WGLK4OG4h3V8bbSPt8o2v4fM4WZ_7UB7Q,1091
+lfsir-0.1.4.dist-info/METADATA,sha256=FCO1Rd-S8nFUwwsLd3BSh-5oHxOV8WaVCl-9BtKiNTo,485
+lfsir-0.1.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+lfsir-0.1.4.dist-info/RECORD,,
