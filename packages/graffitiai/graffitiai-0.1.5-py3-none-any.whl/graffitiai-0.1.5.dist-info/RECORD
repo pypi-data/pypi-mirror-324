@@ -1,0 +1,12 @@
+graffitiai/__init__.py,sha256=9C3RKMrCOeXogwhoLU6oz0IjRYSpA6-KHA1CrBjSb-4,50
+graffitiai/conjecture_class.py,sha256=vpilwmv4Y1TZbRIWneFvSxRGAlC4IdoiaMdGEo1Yiiw,11509
+graffitiai/heuristics.py,sha256=e4TYNuicW2RAhCNjBnhWNAK05KlPbyJDlCSpjNjJ1Q8,6590
+graffitiai/models.py,sha256=nnEknMwyDG596LbsSsuPG8Ewz35gDzsCYAyLogWmYuo,35325
+graffitiai/optimization.py,sha256=MAqN6J98b6mloBs6pSQAi97K4B7hKA6f_96J2PS5KG8,10669
+graffitiai/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+graffitiai/data/sample_3_regular_polytope_data.csv,sha256=pVzGhIVAyoxVzgqSgGr6pQDHcOV4eDavcuUn3PE7ckI,1950
+graffitiai-0.1.5.dist-info/LICENSE,sha256=KOSPlywFg--9fa9s-IRNOGQJoujfoMmWkEiWRQ7am8o,1076
+graffitiai-0.1.5.dist-info/METADATA,sha256=XUuK9txbn1mfujlahNmSrL4M6x79X9DF2XW_R9eq8JM,2920
+graffitiai-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+graffitiai-0.1.5.dist-info/top_level.txt,sha256=PNUPd4vXfMyFe5hwwTmVnT7EzzYSo4p3HPZpOdogJdo,11
+graffitiai-0.1.5.dist-info/RECORD,,
