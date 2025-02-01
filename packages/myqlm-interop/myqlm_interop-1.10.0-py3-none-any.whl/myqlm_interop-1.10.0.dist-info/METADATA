@@ -1,0 +1,73 @@
+Metadata-Version: 2.2
+Name: myqlm-interop
+Version: 1.10.0
+Summary: myQLM-interop package
+Author: Atos Quantum Lab
+License: Atos myQLM EULA
+License-File: LICENSE
+License-File: NOTICE
+Requires-Dist: qat-lang>=2.2.0
+Requires-Dist: numpy
+Requires-Dist: ply
+Provides-Extra: qiskit-binder
+Requires-Dist: qiskit>=1.0.0; python_version >= "3.8" and extra == "qiskit-binder"
+Requires-Dist: qiskit-ibm-runtime>=0.11.1; python_version >= "3.8" and extra == "qiskit-binder"
+Provides-Extra: projectq-binder
+Requires-Dist: projectq>=0.8.0; python_version >= "3.8" and extra == "projectq-binder"
+Provides-Extra: cirq-binder
+Requires-Dist: cirq>=1.1.0; python_version >= "3.8" and extra == "cirq-binder"
+Provides-Extra: pyquil-binder
+Requires-Dist: pyquil>=3.5.0; python_version >= "3.8" and extra == "pyquil-binder"
+Requires-Dist: quantum-grove>=1.7.0; python_version >= "3.8" and extra == "pyquil-binder"
+Provides-Extra: all
+Requires-Dist: qiskit>=1.0.0; python_version >= "3.8" and extra == "all"
+Requires-Dist: qiskit-ibm-runtime>=0.11.1; python_version >= "3.8" and extra == "all"
+Requires-Dist: projectq>=0.8.0; python_version >= "3.8" and extra == "all"
+Requires-Dist: cirq>=1.1.0; python_version >= "3.8" and extra == "all"
+Requires-Dist: pyquil>=3.5.0; python_version >= "3.8" and extra == "all"
+Requires-Dist: quantum-grove>=1.7.0; python_version >= "3.8" and extra == "all"
+Dynamic: author
+Dynamic: description
+Dynamic: license
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: summary
+
+QLM interoperability module
+===========================
+
+This Python package contains some simple binders with other:
+Python-based quantum programming frameworks:
+
+* IBM Qiskit
+
+* Google Circ
+
+* Microsoft ProjectQ
+
+* Rigetti Pyquil
+
+
+Installation
+------------
+
+You can either install a separate package for each platform:
+
+```bash
+pip install myqlm-interop[qiskit_binder]
+pip install myqlm-interop[projectq_binder]
+pip install myqlm-interop[cirq_binder]
+pip install myqlm-interop[pyquil_binder]
+```
+
+or install them all at the same time:
+
+```bash
+pip install myqlm-interop[all]
+```
+
+
+Documentation
+-------------
+
+Check out [the online documentation](https://myqlm.github.io/%3Amyqlm%3Ainteroperability.html).
