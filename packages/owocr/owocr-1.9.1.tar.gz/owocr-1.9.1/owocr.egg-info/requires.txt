@@ -1,0 +1,22 @@
+fire
+jaconv
+loguru
+numpy
+Pillow>=10.0.0
+pyperclipfix
+pynput
+websockets
+desktop-notifier>=5.0.0
+mss
+pysbd
+langid
+psutil
+
+[:platform_system == "Darwin"]
+pyobjc==10.3.1
+
+[:platform_system == "Linux"]
+pywinctl
+
+[:platform_system == "Windows"]
+pywin32
