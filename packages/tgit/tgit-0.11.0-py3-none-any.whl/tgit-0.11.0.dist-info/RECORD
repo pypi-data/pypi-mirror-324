@@ -1,0 +1,14 @@
+tgit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgit/add.py,sha256=ra8vgVF54otNLN0hK-50iKfBRtmU8PN7AFGWgDkBJ1k,466
+tgit/changelog.py,sha256=nlWN8JAUM2UgevxZCZDVBy6Zh-m2d1qTi60EKIwtjBc,10153
+tgit/cli.py,sha256=g9iaWHZMNZvflCGf3cn93CHLAQ67TeTVmtpZI3K-de4,1272
+tgit/commit.py,sha256=1P5m1ofJzMlEEEtjoXg8CSZ8lEDv4KW9xWSbCQccgkU,4567
+tgit/config.py,sha256=NSjI4Xu8ax6LjwAln3ecx9X4K40XPo_TtNqPdMKm3FI,866
+tgit/settings.py,sha256=j_j9dWI7DgyZrD0f0uaZYtbAQANhXJ0RgDinGkmuP2E,1336
+tgit/utils.py,sha256=N23N4n2FtSEs8N7GNPrs3KDeeZxkusf37Jgl4gs14w0,3118
+tgit/version.py,sha256=cbVD_PXJIg6D8ZzRWr15SbnfpCUxCam_vJIwT6N2tEk,19653
+tgit/prompts/commit.txt,sha256=7SgtgPI5n2mmg8xwAgbknAKu5L2bFrwNghxBxqAJRnI,1071
+tgit-0.11.0.dist-info/METADATA,sha256=vaSKKN-BqkDzA5ym3ipnJqFv5LKHY9So0dcZGXqqfts,1236
+tgit-0.11.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+tgit-0.11.0.dist-info/entry_points.txt,sha256=kpGAfuRbS_RJHDmemt0LLSFuB7jykZXsGoDJuAoWIY0,39
+tgit-0.11.0.dist-info/RECORD,,
