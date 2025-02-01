@@ -1,0 +1,538 @@
+#!/usr/bin/env python3
+# coding: utf-8
+
+# Copyright (c) 2018 Trevor Taylor
+# 
+# Permission to use, copy, modify, and/or distribute this software for
+# any purpose with or without fee is hereby granted, provided that all
+# copyright notices and this permission notice appear in all copies.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+# WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+# ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+# WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+# ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+# OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+#
+import asyncio
+from sys import path
+from os.path import dirname
+if path[0]==dirname(__file__): path.pop(0)
+from xju.xn import in_context,readable_repr,AllFailed,in_function_context,Xn,capitalise,first_para_of, first_line_of
+from xju.assert_ import Assert
+from typing import cast, overload
+
+import io
+import sys
+
+from xju.assert_ import Assert
+
+def test1(prog=sys.argv[0]):
+    def a():
+        raise Exception('fred')
+    def b():
+        a()
+        pass
+    def c():
+        b()
+        pass
+    try:
+        c()
+    except:
+        e=in_context('jock')
+        Assert(readable_repr(e))=='''\
+Failed to jock because
+fred.\
+'''
+        Assert(str(e)).matches('''\
+failed to jock because
+[^:]*:41: failed to c[(][)] because
+[^:]*:38: failed to b[(][)] because
+[^:]*:35: failed to a[(][)] because
+[^:]*:33: fred'''.format(**vars()))
+        pass
+    pass
+
+class E(Exception):
+    def __str__(self):
+        return 'deadline reached'
+    pass
+
+def test2():
+    try:
+        try:
+            raise E()
+        except:
+            raise in_context('await message') from None
+        pass
+    except E as e:
+        Assert(readable_repr(e))=='''\
+Failed to await message because
+deadline reached.'''
+        pass
+    pass
+
+def test3():
+    try:
+        try:
+            try:
+                raise E()
+            except:
+                raise in_context('await message') from None
+            pass
+        except E as e:
+            try:
+                raise Exception('open failed')
+            except:
+                raise AllFailed([e,in_context('read default file')]) from None
+            pass
+        pass
+    except:
+        Assert(readable_repr(in_context('get content')))=='''\
+Failed to get content because
+- failed to await message because
+  deadline reached; and
+- failed to read default file because
+  open failed.'''
+        pass
+    pass
+
+from inspect import currentframe, getframeinfo
+
+class _Scope():
+    def __init__(self,s):
+        self.s=s
+        cf=currentframe()
+        assert cf is not None
+        fb=cf.f_back
+        assert fb is not None
+        frameinfo = getframeinfo(fb)
+        self.fl=(frameinfo.filename, frameinfo.lineno)
+        pass
+    def __enter__(self):
+        pass
+    def __exit__(self,t,e,b):
+        if e:
+            raise in_context(self.s,(t,e,b),self.fl) from None
+        pass
+
+def test4(prog=sys.argv[0]):
+    def a():
+        raise Exception('fred')
+    def b():
+        with _Scope('b'):
+            True
+            a()
+            pass
+        pass
+    def c():
+        b()
+        pass
+    try:
+        c()
+    except:
+        e=in_context('jock')
+    else:
+        assert False, 'c should have raised'
+        pass
+
+    Assert(str(e)).matches('''\
+failed to jock because
+[^:]*xn[.]py[.]test:133: failed to c[(][)] because
+[^:]*xn[.]py[.]test:130: failed to b[(][)] because
+[^:]*xn[.]py[.]test:124: failed to with _Scope[(]'b'[)]: because
+[^:]*xn[.]py[.]test:124: failed to b because
+[^:]*xn[.]py[.]test:126: failed to a[(][)] because
+[^:]*xn[.]py[.]test:122: fred''')
+    Assert(readable_repr(e))=='''\
+Failed to jock because
+failed to b because
+fred.\
+'''
+    pass
+
+q=5
+def test6():
+    "test6 with {a}"
+    global q
+    q=7
+    a=2
+    try:
+        try:
+            raise Exception("fred")
+        except Exception:
+            raise in_function_context(test6, vars()) from None
+        pass
+    except Exception as e:
+        Assert(readable_repr(e))=='Failed to test6 with 2 because\nfred.'
+    else:
+        assert False, 'should not be here'
+        pass
+        
+    class X:
+        def jump(self, height:int):
+            '''
+            jump {height}m in the air
+
+            - from a standing start
+            '''
+            try:
+                raise Exception('I have lead feet')
+            except Exception as e:
+                raise in_function_context(X.jump,vars()) from None
+            pass
+        pass
+    try:
+        X().jump(10)
+    except Exception as e:
+        Assert(readable_repr(e))=='Failed to jump 10m in the air because\nI have lead feet.'
+    else:
+        assert False, 'should not be here'
+        pass
+    pass
+
+def test8():
+    Assert(capitalise('Fred'))=='Fred'
+    pass
+
+def test9():
+    Assert(str(AllFailed([Exception('fred'),Exception('jock')])))=="fred, and\njock"
+    pass
+
+def test10():
+    # sometimes exception attributes cannot be copied due to AttributeError
+    class EA(Exception):
+        def __dir__(self):
+            return ['x']+list(Exception.__dir__(self))
+        pass
+    try:
+        try:
+            raise EA()
+        except EA:
+            raise in_context('fred')
+            pass
+        pass
+    except EA as y:
+        pass
+    pass
+
+def test11():
+    Assert(first_para_of("""
+  the blind
+  mice
+  ran 
+"""))=="the blind mice ran"
+
+    Assert(first_para_of("""
+  the blind
+
+  mice
+  ran 
+"""))=="the blind"
+
+    Assert(first_para_of(""""""))==""
+    Assert(first_para_of(""" fred """))=="fred"
+
+def test12():
+    try:
+        try:
+            raise TimeoutError
+        except Exception as e:
+            raise in_context('fred') from None
+        pass
+    except Exception as e:
+        Assert(readable_repr(e))=="Failed to fred because\nTimeoutError."
+        Assert(str(e)).matches('''\
+failed to fred because
+[^:]*:240: TimeoutError''')
+        pass
+    pass
+
+def test13():
+    Assert(first_line_of('fred\njock'))=='fred'
+    Assert(first_line_of(''))==''
+    Assert(first_line_of('fred'))=='fred'
+
+def test14():
+    try:
+        raise Exception('fred')
+    except:
+        Assert(readable_repr(
+            in_function_context(test14,vars())  # type: ignore
+        ))=="Failed to test14() (note function is missing doc-string!) because\nfred."
+    else:
+        assert False
+
+def test15():
+    "test 15 with {x}"
+    try:
+        raise Exception('fred')
+    except:
+        Assert(readable_repr(
+            in_function_context(test15,vars())  # type: ignore
+        ))=="Failed to test15() (note that function's doc-string 'test 15 with {x}' is unformattable - check its params/vars v its doc string) because\nfred."
+    else:
+        assert False
+        pass
+    pass
+def g(c):
+    'g {c}'
+    try:
+        x=1
+        raise Exception('fred')
+    except Exception:
+        raise in_function_context(g,vars()) from None
+    pass
+
+def f():
+    'use {C.__name__}'
+    class C: pass
+    try:
+        g(C)
+    except Exception:
+        raise in_function_context(f, vars()) from None
+    pass
+
+def test_16():
+    try:
+        f()
+    except Exception as e:
+
+        Assert(str(e)).matches("""\
+failed to use C because
+[^:]*/xn.py.test:292: failed to g[(]C[)] because
+[^:]*/xn.py.test:285: failed to g <class '__main__.f.<locals>.C'> because
+[^:]*/xn.py.test:283: fred""")
+        pass
+    else:
+        assert False
+        pass
+    pass
+
+
+def test_17():
+    '''python behaviour checks'''
+
+    # xn.readable_repr uses str(e)
+
+    #- KeyError str() only prints value looked up
+    # xn has special handling
+    try:
+        try:
+            a=dict[int,str]()
+            a[3]
+        except KeyError as e:
+            Assert(str(e)) == '3'
+            raise in_context("lookup 3")
+            pass
+        pass
+    except Exception as e:
+        Assert(readable_repr(e))=="Failed to lookup 3 because\nKeyError(3)."
+        pass
+    pass
+
+    #- open failure str() does better
+    try:
+        open('/dev/null/nonexistent')
+    except Exception as e:
+        Assert(str(e))=="[Errno 20] Not a directory: '/dev/null/nonexistent'"
+        pass
+
+    # timeout error str is emptynothing at all
+    async def f():
+        async with asyncio.timeout(0.001):
+            await asyncio.sleep(5)
+            pass
+        pass
+    try:
+        asyncio.run(f())
+    except TimeoutError:
+        Assert(readable_repr(in_context('wait')))=='Failed to wait because\nTimeoutError.'
+        pass
+
+    # assert x is not None error str() is empty, xn has special handling
+    # though even this is not overly helpful, really need always use assert
+    # with a meaningful error string
+    y:int|None = None
+    try:
+        assert y is not None
+    except AssertionError:
+        Assert(readable_repr(in_context("fred")))=='Failed to fred because\nAssertionError.'
+    else:
+        assert False
+
+from abc import abstractmethod
+
+class o:
+    @abstractmethod
+    def ff(self, s: str) -> int:
+        '''transform {s} to int'''
+        pass
+    pass
+
+class oo(o):
+    def ff(self, s: str) -> int:
+        try:
+            return int(s)
+        except Exception:
+            raise in_function_context(o.ff,vars())
+        pass
+    @overload
+    def gg(self, s: str) -> int:
+        'convert {s} to in'
+        ...
+    @overload
+    def gg(self, i: int) -> str:
+        'convert {i} to str'
+        ...
+    def gg(self, x):
+        'convert int/str {x} to str/int'
+        try:
+            match x:
+                case int():
+                    raise Exception('bad int')
+                case str():
+                    return int(x)
+        except Exception:
+            raise in_function_context(oo.gg,vars()) from None
+        pass
+
+    @property
+    def p(self) -> int:
+        'get oo.p'
+        try:
+            raise Exception('no p')
+        except Exception:
+            raise in_function_context(oo.p,vars()) from None
+        pass
+    # note p.setter/deleter is not allowed as there is no refereencable function, use the
+    # alternate property def pattern: x = property(getter,setter,deleter) for these cases
+    pass
+
+def test_18():
+    try:
+        oo().ff('fred')
+    except Exception as e:
+        Assert(readable_repr(e))=="Failed to transform fred to int because\ninvalid literal for int() with base 10: 'fred'."
+    try:
+        oo().gg(3)
+    except Exception as e:
+        Assert(readable_repr(e))=='Failed to convert int/str 3 to str/int because\nbad int.'
+    else:
+        assert None
+        pass
+    try:
+        oo().p
+    except Exception as e:
+        Assert(readable_repr(e))=='Failed to get oo.p because\nno p.'
+    else:
+        assert None
+        pass
+    pass
+
+class Z:
+    @classmethod
+    def z(cls, y: int):
+        '''{cls}.z({y})'''
+        try:
+            raise Exception('fred')
+        except Exception:
+            raise in_function_context(Z.z, vars()) from None
+        pass
+    @staticmethod
+    def zz(y: int):
+        '''Z.zz({y})'''
+        try:
+            raise Exception('fred')
+        except Exception:
+            raise in_function_context(Z.zz, vars()) from None
+        pass
+    pass
+
+def test19():
+    try:
+        Z.z(7)
+    except Exception as e:
+        Assert(readable_repr(e))=="Failed to <class '__main__.Z'>.z(7) because\nfred."
+        pass
+    else:
+        assert False
+        pass
+    pass
+    try:
+        Z.zz(3)
+    except Exception as e:
+        Assert(readable_repr(e))=="Failed to Z.zz(3) because\nfred."
+        pass
+    else:
+        assert False
+        pass
+    pass
+
+def test20():
+    async def xxxx(on: str) -> None:
+        """xxxx {on}()"""
+        try:
+            match on:
+                case "xxx":
+                    return None
+
+            return None
+        except Exception as e:
+            raise Exception(readable_repr(in_function_context(xxxx, vars()))) from None
+
+def test21():
+    async def xxxx(on: str) -> None:
+        """xxxx {on}()"""
+        match on:
+            case "xxx":
+                try:
+                    raise Exception('fred')
+                except Exception:
+                    raise in_function_context(xxxx, vars()) from None
+
+        return None
+
+def test22():
+    async def xxxx(on: str) -> None | dict[str,str]:
+        """xxxx {on}()"""
+        try:
+            raise Exception('fred')
+        except Exception:
+            return {'a': readable_repr(in_function_context(xxxx, vars()))}
+        return None
+    async def yyyx(on: str) -> None | dict[str,str]:
+        """yyyx {on}()"""
+        try:
+            raise Exception('fred')
+        except Exception:
+            return {readable_repr(in_function_context(yyyx, vars())): 'a'}
+        return None
+
+def test23():
+    async def xxxx(on: str) -> None | str:
+        """IndexExpr {on}()"""
+        y=dict[str,str]()
+        try:
+            raise Exception('fred')
+        except Exception:
+            return y[readable_repr(in_function_context(xxxx, vars()))]
+        return None
+
+def test24():
+    async def xxxx(on: str) -> None | list[str]:
+        """SliceExpr {on}()"""
+        z=list[str]()
+        try:
+            raise Exception('fred')
+        except Exception:
+            return z[int(readable_repr(in_function_context(xxxx, vars()))):]
+        return None
+
+tests=[var for name,var in sorted(vars().items())
+       if name.startswith('test') and callable(var)]
+for t in tests: t()
+n=len(tests)
+print('PASS - {n} steps'.format(**vars()))
+pass
