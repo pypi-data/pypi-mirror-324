@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_email_out = email.email.smtp:EmailOutput

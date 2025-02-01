@@ -1,0 +1,13 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+./email/manifest.toml
+email/manifest.toml
+email/smtp.py
+opsbox_email_output.egg-info/PKG-INFO
+opsbox_email_output.egg-info/SOURCES.txt
+opsbox_email_output.egg-info/dependency_links.txt
+opsbox_email_output.egg-info/entry_points.txt
+opsbox_email_output.egg-info/requires.txt
+opsbox_email_output.egg-info/top_level.txt
