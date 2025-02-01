@@ -1,0 +1,15 @@
+vuecore/__init__.py,sha256=3UcJq3VyG4Q0OEkNmMTIoUFse4ey48eoSL5Mc1YvgYw,6003
+vuecore/color_list.py,sha256=eBZ1c4doISfhd9JaZ417967gXJtBB3lqc6f0SyNFn4o,2761
+vuecore/decomposition.py,sha256=4UXEewlkNJFh0QCp17PKgFNQGScjVNRLhWPNDZ9EJQU,2195
+vuecore/dendrogram.py,sha256=65TLJWSxsJ-tHrIwvtfEJDaDp1L6rccyjpL2w999HjU,11190
+vuecore/linkers.py,sha256=ew0Xis6TdRz_Os7zdLRcQYDk64bzPrZetFZNQRpYXgQ,706
+vuecore/metrics.py,sha256=0kl5c62483mEad7CeO7o-W-z7rn4w0Dt6tURED1tiMA,2166
+vuecore/translate.py,sha256=xNh3aUhUdV2-kaV4z5PlKd1H7jGOgeosWoAeDRKRTm8,464
+vuecore/utils.py,sha256=d0hUnhXpNl6zSBMY6Ezk8Ee3DLKhB8B2dgbIiqrAWR4,9054
+vuecore/viz.py,sha256=SrWoJJO7sE4YNIfS4U4uVf5s18SRboo8vCXC5DmxQxg,126211
+vuecore/wgcna.py,sha256=cejIM3WLnsKBLMNYvH66HMPaEObsxlH3mqkDmtFoHdY,28866
+vuecore-0.0.5.dist-info/LICENSE,sha256=uGZxoWBOHTIdNoAmBjp_UK9BWx5GBbWncxofBMLZrTo,1092
+vuecore-0.0.5.dist-info/METADATA,sha256=1DVZOx_OCZh5tIk3gfYFXXERjX1sS0J30HftfsRHT3U,2083
+vuecore-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+vuecore-0.0.5.dist-info/top_level.txt,sha256=oPAnPXnwW3SgNdRK-mIwYgoe7Runmy7OA6uUzNQRaa8,8
+vuecore-0.0.5.dist-info/RECORD,,
