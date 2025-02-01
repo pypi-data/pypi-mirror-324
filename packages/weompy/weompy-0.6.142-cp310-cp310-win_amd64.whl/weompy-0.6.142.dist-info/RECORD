@@ -1,0 +1,15 @@
+weompy/EbusPlugin.dll,sha256=PlgMWWlW_T93zEyRk8WVdgmUX0zokk4J-CKJDBwujoY,72704
+weompy/Qt6Core.dll,sha256=aXAm_ytILfFpeUvXsXpB-0fYelGHMFiMZoBF4fIaU9o,5793424
+weompy/Qt6SerialPort.dll,sha256=g4LcazDBzkcsU4_FT1x14blSIfMIsRvyTwPCO85_Tis,119440
+weompy/README.md,sha256=KZihC2WwVHwSxLCfuwQ1D5YyPtcAilcQ8Jc_7gyktx0,283
+weompy/__init__.py,sha256=yyW7YL6mensdEY8r56qTbzjt4El8pDxkAXta-3KDJ3Q,458
+weompy/ebus_mono14.pvcfg,sha256=fozjN6BgaXro9smdmaiB1ehzLJ_HpteQJb7wzpoN4Lg,725
+weompy/ebus_mono8.pvcfg,sha256=dI8KngwDvhqZwR5LEQQXpI4cGkFffS7fqVK7LJBTDHA,724
+weompy/example.py,sha256=WdptZhVgZ5H8HMvhOFhs_-1lf6yWkkRxDqWa-NFJTYs,921
+weompy/user_documentation.ipynb,sha256=gI-LJ9aH6Zu8e-c5dDyaaiQ8CttJePkmk1ye7bw1Rq8,11332
+weompy/weompy.cp310-win_amd64.pyd,sha256=Pkq59XEpQS64HrZ_As4bF3eE-WImdqw0aGtQ8Sv8Q4s,4033536
+weompy/weompy.pyi,sha256=9EdkuUOwlpxja4nfimOc4FeWutyHR3uXqsPLDzeKVfc,39425
+weompy-0.6.142.dist-info/METADATA,sha256=fVUjWBINeUkza3RVxEfoyT96ur3TFOM8bayukaxVxfU,438
+weompy-0.6.142.dist-info/WHEEL,sha256=rzGfZgUcGeKSgIHGYMuqg4xE4VPHxnaldXH6BG0zjVk,101
+weompy-0.6.142.dist-info/top_level.txt,sha256=cGlgANR_M863S8MTlSi8TVQSE6f2sgus5Ers1M9wRow,7
+weompy-0.6.142.dist-info/RECORD,,
