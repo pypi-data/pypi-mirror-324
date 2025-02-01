@@ -1,0 +1,5 @@
+setup.py
+amzn_awsgluelibs.egg-info/PKG-INFO
+amzn_awsgluelibs.egg-info/SOURCES.txt
+amzn_awsgluelibs.egg-info/dependency_links.txt
+amzn_awsgluelibs.egg-info/top_level.txt
