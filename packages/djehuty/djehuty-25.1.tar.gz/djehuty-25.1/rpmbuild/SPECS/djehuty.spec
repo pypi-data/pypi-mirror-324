@@ -1,0 +1,91 @@
+Name:        djehuty
+Version:     25.1
+Release:     1%{?dist}
+Summary:     Data repository system by 4TU.ResearchData and Nikhef
+Source0:     %{name}-%{version}.tar.gz
+License:     AGPLv3+
+Group:       System Environment/Daemons
+BuildRoot:   %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Prefix:      %{_prefix}
+BuildArch:   noarch
+Vendor:      Roel Janssen <r.r.e.janssen@tudelft.nl>
+Url:         https://github.com/4TUResearchData/djehuty
+BuildRequires: python3-devel
+BuildRequires: python3dist(setuptools)
+Requires: git
+Requires: python3dist(requests)
+requires: python3dist(jinja2)
+Requires: python3dist(rdflib)
+Requires: python3dist(pygit2)
+Requires: python3dist(urllib3)
+Requires: python3dist(werkzeug)
+Requires: python3dist(defusedxml)
+Requires: python3dist(pillow)
+
+%undefine __brp_mangle_shebangs
+
+%description
+This package provides the data repository system by
+4TU.ResearchData and Nikhef.
+
+%prep
+%autosetup -p1 -n %{name}-%{version}
+
+
+%build
+%{configure}
+make
+
+
+%install
+make install DESTDIR=%{buildroot}
+mkdir -p %{buildroot}%{_unitdir}
+cp etc/%{name}.service %{buildroot}%{_unitdir}/
+mkdir -p %{buildroot}/etc/%{name}
+cp etc/%{name}/djehuty-example-config.xml %{buildroot}/etc/%{name}/
+
+%clean
+rm -rf %{buildroot}
+
+%files
+%defattr(-,root,root)
+%doc README.md
+%{python3_sitelib}/%{name}/
+%{python3_sitelib}/%{name}-25.1*
+%{_unitdir}/%{name}.service
+/etc/%{name}/djehuty-example-config.xml
+/usr/bin/djehuty
+/usr/share/djehuty/djehuty.css
+/usr/share/djehuty/djehuty.pdf
+/usr/share/djehuty/djehuty2.html
+/usr/share/djehuty/djehuty3.html
+/usr/share/djehuty/djehuty4.html
+/usr/share/djehuty/djehuty5.html
+/usr/share/djehuty/djehuty6.html
+/usr/share/djehuty/djehuty7.html
+/usr/share/djehuty/figures/account-.png
+/usr/share/djehuty/figures/author-.png
+/usr/share/djehuty/figures/category-.png
+/usr/share/djehuty/figures/collection-.png
+/usr/share/djehuty/figures/collection-container-.png
+/usr/share/djehuty/figures/dataset-.png
+/usr/share/djehuty/figures/dataset-container-.png
+/usr/share/djehuty/figures/favicon.png
+/usr/share/djehuty/figures/file-.png
+/usr/share/djehuty/figures/funding-.png
+/usr/share/djehuty/figures/institutiongroup-.png
+/usr/share/djehuty/figures/privatelink-.png
+/usr/share/djehuty/figures/rdf-list-abbrev-.png
+/usr/share/djehuty/figures/references-graph-.png
+/usr/share/djehuty/figures/typed-literals-notation-.png
+/usr/share/djehuty/figures/typed-notation-.png
+/usr/share/djehuty/fonts/FiraMono-Regular.ttf
+/usr/share/djehuty/fonts/SourceSansPro-Bold.ttf
+/usr/share/djehuty/fonts/SourceSansPro-Italic.ttf
+/usr/share/djehuty/fonts/SourceSansPro-Regular.ttf
+/usr/share/djehuty/index.html
+
+%changelog
+* Fri Jan 31 2025 Roel Janssen <r.r.e.janssen@tudelft.nl>
+- Initial RPM creation.
+- See https://djehuty.4tu.nl/#news-section for the full release notes.
