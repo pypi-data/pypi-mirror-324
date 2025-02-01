@@ -1,0 +1,57 @@
+Metadata-Version: 2.2
+Name: vuecore
+Version: 0.0.5
+Summary: A Python package for plotting related to multimodal molecular data. Works with acore.
+Author-email: Alberto Santos Delgado <albsad@dtu.dk>, Henry Webel <heweb@dtu.dk>
+License: GNU General Public License v3
+Project-URL: Homepage, https://github.com/Multiomics-Analytics-Group/vuecore
+Project-URL: Issues, https://github.com/Multiomics-Analytics-Group/vuecore/issues
+Project-URL: Documentation, https://analytics-core.readthedocs.io/
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: <3.13,>=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: plotly
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+Requires-Dist: dash
+Requires-Dist: networkx
+Requires-Dist: matplotlib
+Requires-Dist: kaleido
+Requires-Dist: pyvis
+Requires-Dist: wordcloud
+Requires-Dist: cyjupyter
+Requires-Dist: nltk
+Requires-Dist: webweb
+Requires-Dist: acore
+Requires-Dist: dash-cytoscape
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-book-theme; extra == "docs"
+Requires-Dist: myst-nb; extra == "docs"
+Requires-Dist: ipywidgets; extra == "docs"
+Requires-Dist: sphinx-new-tab-link!=0.2.2; extra == "docs"
+Requires-Dist: jupytext; extra == "docs"
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: isort; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: twine; extra == "dev"
+Requires-Dist: wheel; extra == "dev"
+Requires-Dist: jupytext; extra == "dev"
+Requires-Dist: ipykernel; extra == "dev"
+
+# vcore
+Visualization library for omics data
