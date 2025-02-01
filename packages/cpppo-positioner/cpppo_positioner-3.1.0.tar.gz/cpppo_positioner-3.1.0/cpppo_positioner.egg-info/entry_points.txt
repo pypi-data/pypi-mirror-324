@@ -1,0 +1,2 @@
+[console_scripts]
+cpppo_positioner = cpppo_positioner.main:main
