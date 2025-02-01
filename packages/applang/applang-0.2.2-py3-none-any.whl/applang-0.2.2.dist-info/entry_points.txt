@@ -1,0 +1,5 @@
+[console_scripts]
+appltrace = appl.cli.vis_trace:main
+
+[gui_scripts]
+
