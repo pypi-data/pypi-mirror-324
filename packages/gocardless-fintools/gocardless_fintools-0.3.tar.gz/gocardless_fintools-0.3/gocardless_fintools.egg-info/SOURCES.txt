@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+gocardless_connector/__init__.py
+gocardless_connector/connector.py
+gocardless_fintools.egg-info/PKG-INFO
+gocardless_fintools.egg-info/SOURCES.txt
+gocardless_fintools.egg-info/dependency_links.txt
+gocardless_fintools.egg-info/entry_points.txt
+gocardless_fintools.egg-info/requires.txt
+gocardless_fintools.egg-info/top_level.txt
+tests/__init__.py
