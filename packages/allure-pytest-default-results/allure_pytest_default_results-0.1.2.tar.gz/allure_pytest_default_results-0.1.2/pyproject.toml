@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "allure-pytest-default-results"
+version = "0.1.2"
+description = 'Generate default "unknown" results to show in Allure Report if test case does not run'
+authors = ["Carl Csaposs <carl.csaposs@canonical.com>"]
+readme = "README.md"
+classifiers = [
+    "Framework :: Pytest",
+]
+
+[tool.poetry.urls]
+repository = "https://github.com/canonical/allure-pytest-default-results"
+
+[tool.poetry.plugins."pytest11"]
+allure_default_results = "allure_pytest_default_results._plugin"
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+pytest = "*"
+allure-pytest = ">=2.13.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+extend-select = ["I", "UP"]
