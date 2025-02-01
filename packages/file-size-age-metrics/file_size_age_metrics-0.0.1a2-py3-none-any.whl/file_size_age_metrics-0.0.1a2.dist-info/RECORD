@@ -1,0 +1,10 @@
+resources/fsa-metrics-wrapper.sh,sha256=xTxJMDGQFBlk4wKda2xMpsC11mXMm40x_fm4dq6iE0M,367
+fsa_metrics/__init__.py,sha256=YEOcXGMs3yw_i18D4LXnjCRQYR6vw8OfMtKbxjjZxR0,129
+fsa_metrics/cli.py,sha256=S4CafjQ7kNVkRfkGxwLbwdHZ2tHh3i0pRknOlrp_YF0,1958
+fsa_metrics/collector.py,sha256=4D1RF9_WYeiebmtVWpFrsUD0WDAfLseFLVnFDJUpB_c,3183
+fsa_metrics/config.py,sha256=AyrakIGpEgSritGRzpfh0kulTWYZBGvoCqlVaywVZZk,1204
+fsa_metrics/metrics.py,sha256=0y28v-z9hbEpvKre2abyHNP5HHJwI7eWFc0ismOYCGQ,4865
+file_size_age_metrics-0.0.1a2.dist-info/METADATA,sha256=xfYOydL3oSi1qXt7_43ET6hi3wEy-6nEEQvrwNdOIfc,2323
+file_size_age_metrics-0.0.1a2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+file_size_age_metrics-0.0.1a2.dist-info/entry_points.txt,sha256=BpRid-LxFi0XkqOXbIOAP7M_m6DrQiHg3I3DV2oMiyo,64
+file_size_age_metrics-0.0.1a2.dist-info/RECORD,,
