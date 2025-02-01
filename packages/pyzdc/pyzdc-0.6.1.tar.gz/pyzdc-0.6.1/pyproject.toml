@@ -1,0 +1,101 @@
+[project]
+name = "pyzdc"
+version = "0.6.1"
+description = "PyZDC is a Python package designed to facilitate the extraction, transformation, and analysis of epidemiological data related to Dengue, Zika, and Chikungunya."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [{ name = "Gutto Franca", email = "guttolaudie@gmail.com" }]
+classifiers = [
+  "Topic :: Education",
+  "Natural Language :: English",
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: Free for non-commercial use",
+]
+
+dependencies = [
+  "duckdb>=1.1.3",
+  "pandas>=2.2.3",
+  "pandera[io]>=0.22.1",
+  "pyarrow>=19.0.0",
+  "pysus>=0.15.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/GuttoF/pyzdc"
+Issues = "https://github.com/GuttoF/pyzdc/issues"
+Documentation = "https://pyzdc.readthedocs.io/en/latest/"
+
+[project.optional-dependencies]
+doc = [
+  "mkdocs>=1.6.1",
+  "mkdocs-material>=9.6.1",
+  "mkdocs-mermaid2-plugin>=1.2.1",
+  "mkdocstrings>=0.27.0",
+  "mkdocstrings-python>=1.13.0",
+]
+
+[tool.taskipy.tasks]
+format = """
+ruff chec --select I --fix .
+ruff format .
+"""
+kill = "kill -9 $(lsof -t -i :8000)"
+test = "pytest -v"
+run = """
+python3 app/main.py
+"""
+doc = "mkdocs serve"
+
+[tool.black]
+line-length = 88
+skip-string-normalization = false
+
+[tool.ruff]
+select = ["E", "F", "W", "I", "ANN"]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.pyright]
+reportMissingTypeStubs = true
+reportOptionalMemberAccess = true
+reportGeneralTypeIssues = true
+reportOptionalSubscript = true
+
+[tool.marksman]
+enabled = true
+
+[tool.taplo]
+enabled = true
+
+[dependency-groups]
+dev = [
+  "black>=25.1.0",
+  "ipykernel>=6.29.5",
+  "jupyter>=1.1.1",
+  "marksman>=0.6.7",
+  "notebook>=7.3.2",
+  "pandas-stubs>=2.2.3.241126",
+  "pyright>=1.1.393",
+  "pytest>=8.3.4",
+  "pytest-cov>=6.0.0",
+  "ruff>=0.9.4",
+  "taplo>=0.9.3",
+  "taskipy>=1.14.1",
+  "twine>=6.1.0",
+]
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+pyzdc = ["data/json/*.json"]
