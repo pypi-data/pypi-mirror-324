@@ -1,0 +1,5 @@
+[org.molssi.seamm]
+Thermochemistry = thermochemistry_step:ThermochemistryStep
+
+[org.molssi.seamm.tk]
+Thermochemistry = thermochemistry_step:ThermochemistryStep

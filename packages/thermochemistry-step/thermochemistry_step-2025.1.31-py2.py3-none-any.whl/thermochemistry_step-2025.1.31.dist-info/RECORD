@@ -1,0 +1,17 @@
+thermochemistry_step/__init__.py,sha256=YD5_wsjMA0-OI3Fmx5g8CTF-opT9djKUyNXlZ6p7faI,777
+thermochemistry_step/_version.py,sha256=PxOA1AnjxVhLgRHpKhblkCyKVwVm36BtEtjxy-h-Xhs,501
+thermochemistry_step/metadata.py,sha256=oByYsYjfR-MllyDSwo3qX9cJ30gA_lof1uz5vhh8OM4,7963
+thermochemistry_step/thermochemistry.py,sha256=Ph82XSIqMT3ybJNuGk3XaQ_u-K6drU4eM6V8yjcvGuU,23315
+thermochemistry_step/thermochemistry_parameters.py,sha256=xKOHedfxC1GWCWEZRPBeWIrA0J2vHBQdoWzXaYoDVaI,7418
+thermochemistry_step/thermochemistry_step.py,sha256=hQQrGQ6WqSXs3z0huIjHaMBSBzrnLyCSDNzrqf3lEjY,3121
+thermochemistry_step/tk_thermochemistry.py,sha256=vRRygaz4Nzg_POc3JWRef9uqyzwiQoHVfsMsiHkdeT0,7418
+thermochemistry_step/data/properties.csv,sha256=FwxPhsT-dnzkNjZC4ULYm7JWxcWFbVkvThx_9h1ObGw,1413
+thermochemistry_step/data/references.bib,sha256=Q4RLyE_bRvDSwWKX-5TMou4IR8t1pRnaXoqwL_0zq6M,1644
+thermochemistry_step-2025.1.31.dist-info/AUTHORS.rst,sha256=HKy1QAUcENUPZZIAeLClJTLLQ0m438MWROo7bvLs41Q,126
+thermochemistry_step-2025.1.31.dist-info/LICENSE,sha256=_a2VoWFTTLl7ku0UwM1GDNXQbhxS7iUoa3bdpJInJtg,1519
+thermochemistry_step-2025.1.31.dist-info/METADATA,sha256=iWn9OnEJ1Fm4EUBtr3Ql_lXOHRBmMp_Q_X3aUPB9fDc,3739
+thermochemistry_step-2025.1.31.dist-info/WHEEL,sha256=9Hm2OB-j1QcCUq9Jguht7ayGIIZBRTdOXD1qg9cCgPM,109
+thermochemistry_step-2025.1.31.dist-info/entry_points.txt,sha256=qcFn_HJQsxKoU6j0mrCTQdzLjVV69-pY0XoTpdzqv-Q,160
+thermochemistry_step-2025.1.31.dist-info/top_level.txt,sha256=1qdDHF9s2mQQAHH_M91tCG39P5wBv815riEhaouRzuw,21
+thermochemistry_step-2025.1.31.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+thermochemistry_step-2025.1.31.dist-info/RECORD,,
