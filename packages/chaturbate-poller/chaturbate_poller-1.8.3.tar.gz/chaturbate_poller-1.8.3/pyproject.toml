@@ -1,0 +1,163 @@
+[project]
+name = "chaturbate-poller"
+version = "1.8.3"
+description = "Poller for the Chaturbate events API."
+authors = [{ name = "MountainGod2", email = "admin@reid.ca" }]
+readme = { file = "README.md", content-type = "text/markdown" }
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+keywords = ["api", "chaturbate", "poller", "python"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+  "backoff==2.2.1",
+  "httpx==0.28.1",
+  "influxdb-client==1.48.0",
+  "json-log-formatter==1.1",
+  "pydantic==2.10.6",
+  "python-dotenv==1.0.1",
+  "rich-click==1.8.5",
+  "rich==13.9.4",
+]
+scripts = { chaturbate_poller = "chaturbate_poller.__main__:cli" }
+urls.documentation = "https://mountaingod2.github.io/chaturbate_poller/"
+urls.homepage = "https://github.com/MountainGod2/chaturbate_poller"
+urls.repository = "https://github.com/MountainGod2/chaturbate_poller"
+
+[dependency-groups]
+dev = [
+  "bandit==1.8.2",
+  "mypy==1.14.1",
+  "pre-commit==4.1.0",
+  "pylint==3.3.4",
+  "pytest-asyncio==0.25.3",
+  "pytest-cov==6.0.0",
+  "pytest-mock==3.14.0",
+  "pytest==8.3.4",
+  "python-semantic-release==9.17.0",
+  "respx==0.22.0",
+  "ruff==0.9.4",
+]
+
+[project.optional-dependencies]
+docs = [
+  "myst-nb==1.1.2",
+  "sphinx-autoapi==3.4.0",
+  "sphinx-rtd-theme==3.0.2",
+]
+examples = [
+    "phue==1.1",
+    "tenacity==9.0.0",
+]
+
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling==1.27.0"]
+
+[tool.pylint]
+fail-under = 8.0
+ignore-paths = [".venv", "build", "dist", "docs", "examples", "out", "tests"]
+typecheck.signature-mutators = [
+  "click.decorators.argument",
+  "click.decorators.confirmation_option",
+  "click.decorators.help_option",
+  "click.decorators.option",
+  "click.decorators.pass_context",
+  "click.decorators.version_option",
+]
+
+[tool.semantic_release]
+branch = "main"
+build_command = "pip install uv && uv build"
+changelog_file = "CHANGELOG.md"
+version_toml = ["pyproject.toml:project.version"]
+
+[tool.coverage]
+omit = ["examples/*", "tests/*", "**/__init__.py"]
+report.fail_under = 80
+report.show_missing = true
+report.skip_covered = true
+run.branch = true
+source = ["src/chaturbate_poller"]
+
+[tool.pytest]
+ini_options.addopts = """
+    -vv --cov=chaturbate_poller
+    --cov-report=term-missing
+    --cov-report=xml
+    --cov-fail-under=80
+    --junitxml=junit.xml
+    -o junit_family=legacy
+"""
+ini_options.asyncio_default_fixture_loop_scope = "function"
+ini_options.asyncio_mode = "strict"
+ini_options.testpaths = "tests"
+
+[tool.autopep8]
+aggressive = 3
+in-place = true
+max_line_length = 100
+recursive = true
+
+[tool.ruff]
+fix = true
+format.docstring-code-format = true
+format.docstring-code-line-length = "dynamic"
+format.indent-style = "space"
+format.line-ending = "auto"
+format.preview = true
+format.quote-style = "double"
+format.skip-magic-trailing-comma = false
+line-length = 100
+lint.fixable = ["ALL"]
+lint.ignore = [
+  "COM812", "D203", "D213", # Docs-related
+  "INP001", "ISC001",        # Examples-related
+  "CPY001"                 # Per file copyright notice
+]
+lint.per-file-ignores."docs/*" = [
+  "ANN001",
+  "ANN201",
+  "D100",
+  "D103",
+  "PLE1142",
+  "T201",
+]
+lint.per-file-ignores."examples/*" = [
+  "ANN001",
+  "ANN201",
+  "D100",
+  "D103",
+  "T201",
+]
+lint.per-file-ignores."tests/*" = [
+  "ANN401",
+  "D100",
+  "FBT001",
+  "PLR0913",
+  "PLR2004",
+  "S101",
+  "SIM117",
+  "SLF001",
+  "PLR6301",
+]
+lint.pydocstyle.convention = "google"
+lint.select = ["ALL"]
+lint.unfixable = []
+target-version = "py313"
+
+[tool.mypy]
+disable_error_code = "import-untyped"
+exclude = [
+  "build", # Build artifacts
+  "out",   # Output files
+]
+
+[tool.bandit]
+exclude_dirs = [".venv", "tests"]
