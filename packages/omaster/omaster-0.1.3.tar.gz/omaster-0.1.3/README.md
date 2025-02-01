@@ -1,0 +1,73 @@
+# omaster
+
+A Python package validator and release tool that helps ensure your packages meet quality standards before publishing.
+
+## Features
+
+- Validates package structure and configuration
+- Checks for required documentation
+- Automates version bumping and release process
+- Extensible validator system
+
+## Installation
+
+```bash
+# Install from PyPI
+pip install omaster
+
+# Or install from source
+git clone https://github.com/yourusername/omaster.git
+cd omaster
+pip install .
+```
+
+## Usage
+
+The package provides two main commands:
+
+```bash
+# Validate your package
+omaster-validate
+
+# Release your package (includes validation)
+omaster-release
+```
+
+### Validation Checks
+
+The validator performs the following checks:
+
+1. **pyproject.toml**
+   - Required fields (name, version, description, etc.)
+   - Build system configuration
+   - Entry points and dependencies
+
+2. **README.md**
+   - Required sections
+   - Code examples
+   - Minimum content length
+
+## Development
+
+To add a new validator:
+
+1. Create a new file in `omaster/validators/`
+2. Subclass the `Validator` base class
+3. Implement the `validate()` method
+4. Add your validator to `get_validators()` in `commands/validate.py`
+
+Example:
+
+```python
+from ..core.validator import Validator, ValidationResult
+
+class MyValidator(Validator):
+    @property
+    def name(self) -> str:
+        return "My validator"
+    
+    def validate(self) -> ValidationResult:
+        # Your validation logic here
+        return ValidationResult(True, [])
+```
+
