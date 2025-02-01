@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+src/hf_kernels/__init__.py
+src/hf_kernels/build.py
+src/hf_kernels/cli.py
+src/hf_kernels/compat.py
+src/hf_kernels/lockfile.py
+src/hf_kernels/utils.py
+src/hf_kernels.egg-info/PKG-INFO
+src/hf_kernels.egg-info/SOURCES.txt
+src/hf_kernels.egg-info/dependency_links.txt
+src/hf_kernels.egg-info/entry_points.txt
+src/hf_kernels.egg-info/requires.txt
+src/hf_kernels.egg-info/top_level.txt
+tests/test_basic.py
+tests/test_benchmarks.py
