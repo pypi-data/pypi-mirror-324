@@ -1,0 +1,2 @@
+[console_scripts]
+medvae_inference = medvae.medvae_inference:main
