@@ -1,0 +1,32 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "cr_mech_coli"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+dependencies = [
+    "pyvista>=0.42",
+    "numpy==2",
+    "opencv-python>=4.10.0.84",
+    "tqdm>=4.60",
+    "scikit-image>=0.24",
+    "pytest>=8.0",
+]
+
+[project.optional-dependencies]
+scripts = [
+    "torch",
+    "torchvision",
+]
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+# python-source = "."
+# module-name = "cr_mech_coli.cr_mech_coli"
