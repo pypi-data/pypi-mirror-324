@@ -1,0 +1,2 @@
+[console_scripts]
+mscene-plugins = mscene.__main__:add_plugins
