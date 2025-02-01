@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/pica/__init__.py
+src/pica/connection.py
+src/pica/cursor.py
+src/pica/exceptions.py
+src/pica_dbapi.egg-info/PKG-INFO
+src/pica_dbapi.egg-info/SOURCES.txt
+src/pica_dbapi.egg-info/dependency_links.txt
+src/pica_dbapi.egg-info/requires.txt
+src/pica_dbapi.egg-info/top_level.txt
+tests/test_connection.py
+tests/test_cursor.py

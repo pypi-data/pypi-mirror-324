@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel", "build"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pica-dbapi"
+version = "0.1.0"
+description = "A lightweight and fun DBAPI built on pandas/csv 🎉. Supported SQL: SELECT, INSERT, UPDATE, DELETE, JOIN, GROUP BY."
+readme = "README.md"
+authors = [
+    { name = "Naruhide KITADANaruhide", email = "kitfactory@gmail.com" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=1.0.0",
+    "sqlparse>=0.4.0",
+    "numpy>=1.18.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[tool.uv]
+no-build-isolation-package = ["my-package"]
+
+[project.urls]
+Homepage = "https://github.com/kitfactory/pica"
+Documentation = "https://github.com/kitfactory/pica#readme"
+Repository = "https://github.com/kitfactory/pica"
