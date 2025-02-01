@@ -1,0 +1,13 @@
+dolomite-base
+dolomite-sce
+dolomite-ranges>=0.2.1
+spatialexperiment>=0.0.4
+h5py
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
