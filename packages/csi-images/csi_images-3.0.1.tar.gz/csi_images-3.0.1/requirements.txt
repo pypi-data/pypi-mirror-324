@@ -1,0 +1,24 @@
+-e .
+
+pandas
+numpy
+tables
+PyYAML
+
+imageio
+aicspylibczi
+tifffile[codecs]
+scikit-image
+opencv-python
+Pillow
+
+pyreadr
+
+pdoc
+pytest
+pytest-cov
+coverage
+genbadge[tests,coverage]
+hatchling
+build
+twine
