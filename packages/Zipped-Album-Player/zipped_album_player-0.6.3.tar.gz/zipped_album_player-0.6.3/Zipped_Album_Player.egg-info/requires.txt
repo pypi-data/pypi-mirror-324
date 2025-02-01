@@ -1,0 +1,6 @@
+pillow<11.2,>=7.0.0
+PyMuPDF<1.26,>=1.17.4
+mutagen==1.47
+pyglet<2.2
+python-dateutil
+tkinterdnd2
