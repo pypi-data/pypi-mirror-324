@@ -1,0 +1,86 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zxlive"
+version = "0.3.0"
+description = "An interactive tool for the ZX-calculus"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "ZXLive contributors" },
+    { email = "john@vdwetering.name" }
+]
+classifiers = [
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering"
+]
+dependencies = [
+    "PySide6 >= 6.7.2",
+    "pyzx>=0.9.0",
+    "networkx",
+    "numpy",
+    "shapely",
+    "pyperclip",
+    "imageio"
+]
+
+[project.optional-dependencies]
+test = [
+    "mypy",
+    "pyproject-flake8",
+    "pylint",
+    "pytest-qt",
+]
+doc = [
+    "sphinx>=2.3,<7",  # see: https://github.com/readthedocs/readthedocs.org/issues/10279
+    "sphinx_autodoc_typehints>=1.10",
+    "sphinx_rtd_theme>=0.4,",
+    "sphinxcontrib-svg2pdfconverter>=1.2.2",
+    "myst-parser>=3.0.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/zxcalc/zxlive"
+Repository = "https://github.com/zxcalc/zxlive"
+Issue-Tracker = "https://github.com/zxcalc/zxlive/issues"
+
+[tool.setuptools]
+packages = [
+    "zxlive"
+]
+
+[project.scripts]
+zxlive = "zxlive.app:main"
+
+[project.gui-scripts]
+zxlive = "zxlive.app:main"
+
+[tool.pyright]
+reportWildcardImportFromLibrary = "none"
+
+[tool.flake8]
+extend-ignore = [
+    "E501",
+]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disable_error_code = [
+    "import",
+]
