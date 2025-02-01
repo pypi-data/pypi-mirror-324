@@ -1,0 +1,66 @@
+[project]
+name = "throttle-controller"
+dynamic = ["version"]
+requires-python = ">=3.9"
+dependencies = []
+description = "Create template from strings (reverse template engine)"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = { file = "LICENSE" }
+authors = [
+    {name = "Yui KITSU", email = "kitsuyui+github@kitsuyui.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/kitsuyui/python-template-analysis"
+
+[tool.setuptools]
+package-data = { "template_analysis" = ["py.typed"], "*" = ["README.md, LICENSE"] }
+package-dir = { "template_analysis" = "template_analysis" }
+
+[tool.uv]
+dev-dependencies = [
+    "pytest",
+    "pytest-cov",
+    "poethepoet",
+    "setuptools-scm",
+    "ruff",
+    "mypy",
+]
+
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "template_analysis/_version.py"
+version_scheme = "only-version"
+local_scheme = "no-local-version"
+
+[tool.poe.tasks]
+test = "pytest"
+coverage-xml = "pytest --cov=template_analysis --doctest-modules --cov-report=xml"
+format = "ruff format template_analysis"
+check = [
+    { cmd = "ruff check template_analysis" },
+    { cmd = "mypy template_analysis" },
+]
+build = [{ cmd = "python -m build" }]
+
+[tool.mypy]
+# https://mypy.readthedocs.io/en/latest/config_file.html
+strict = true
+ignore_missing_imports = false
+
+[tool.ruff]
+line-length = 79
