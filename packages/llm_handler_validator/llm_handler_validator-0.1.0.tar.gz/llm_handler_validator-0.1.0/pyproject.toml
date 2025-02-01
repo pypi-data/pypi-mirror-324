@@ -1,0 +1,41 @@
+[project]
+name = "llm_handler_validator"
+version = "0.1.0"
+description = "LLMHandler is a unified Python package that provides a single, consistent interface for interacting with multiple LLM providers, offering both structured (typed) and unstructured responses."
+authors = [
+    { name = "Bryan Nsoh", email = "bryan.anye.5@gmail.com" },
+]
+dependencies = [
+    "pydantic>=2.10.6",
+    "aiolimiter>=1.2.1",
+    "pydantic-ai>=0.0.20",
+    "python-dotenv>=1.0.1",
+    "logfire>=3.4.0",
+]
+requires-python = ">=3.9"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pytest.ini_options]
+asyncio_default_fixture_loop_scope = "function"
+
+[dependency-groups]
+dev = [
+    "black>=24.10.0",
+    "isort>=6.0.0",
+    "flake8>=7.1.1",
+    "pytest>=8.3.4",
+    "loguru>=0.7.3",
+    "pytest-asyncio>=0.25.3",
+]
