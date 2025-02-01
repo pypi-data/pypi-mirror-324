@@ -1,0 +1,37 @@
+name: Build & Test
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "**/*.md"
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - "**/*.md"
+
+jobs:
+  run-tests:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          version: "0.5.11" # Pinning to a specific version
+          enable-cache: true # Enable caching for faster builds
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install dependencies
+        run: uv sync --all-extras --dev
+
+      - name: Run tests
+        run: uvx pytest
