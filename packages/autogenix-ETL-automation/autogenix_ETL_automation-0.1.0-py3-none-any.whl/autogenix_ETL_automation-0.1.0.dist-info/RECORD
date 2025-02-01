@@ -1,0 +1,13 @@
+AutoGenix_ETL/CsvLoader.py,sha256=ozH32XRI5cYH6vS9sITpnlXE6MvHcvHwPot6NoH2gxw,1801
+AutoGenix_ETL/JSONLoader.py,sha256=nYRY9jhwr1bBJbqXkpe0S7-pciMGbQekitKmoub1ERs,390
+AutoGenix_ETL/__init__.py,sha256=6MBsx0lARFzg5VdKPlPSj9uwtyQilgvqohG62J-wewI,84
+AutoGenix_ETL/determine_orient.py,sha256=Dx_brfLlg7AjM8vu0w9xA1JTHOhzvS-4Zc7M_yIMZGE,3533
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_CsvLoader.py,sha256=a7EDdXtAdP6L4Hg1CficaZsWX-3sQ9UcOdQlZAAB3o8,3632
+tests/test_JSONLoader.py,sha256=AYjHbmOZENnDvS8aDjVwyVwfHFLyW_i13Kg0c_dSyDY,2437
+tests/test_determine_orient.py,sha256=jWGwojK-Y-xPB-1eqBEVkcjTGQFQO-KBpn9vNxgp8BU,1944
+autogenix_ETL_automation-0.1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+autogenix_ETL_automation-0.1.0.dist-info/METADATA,sha256=S92koZ_kewTSe9Sngi0nTlvjsQ7knFp6Kwgc0F_RXZQ,3404
+autogenix_ETL_automation-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+autogenix_ETL_automation-0.1.0.dist-info/top_level.txt,sha256=DPLd3VARGScQ6_h4ileni8ngqSGUbHggZz-Qxlv98Z4,20
+autogenix_ETL_automation-0.1.0.dist-info/RECORD,,
