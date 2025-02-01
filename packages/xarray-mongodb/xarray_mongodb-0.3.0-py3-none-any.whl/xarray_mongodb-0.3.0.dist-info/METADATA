@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: xarray_mongodb
+Version: 0.3.0
+Summary: Store xarray objects on MongoDB
+Author-email: Guido Imperiale <crusaderky@gmail.com>
+License: Apache
+Project-URL: Homepage, https://github.com/crusaderky/xarray_mongodb
+Project-URL: Bug Tracker, https://github.com/crusaderky/xarray_mongodb/issues
+Project-URL: Changelog, https://xarray-mongodb.readthedocs.io/en/latest/whats-new.html
+Keywords: mongodb,xarray,dask,distributed,pint,sparse
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy>=1.19
+Requires-Dist: pandas>=1.1
+Requires-Dist: dask>=2.24
+Requires-Dist: xarray>=0.16
+Requires-Dist: pymongo>=3.11
+Provides-Extra: asyncio
+Requires-Dist: motor>=2.3; extra == "asyncio"
+Provides-Extra: pint
+Requires-Dist: pint>=0.18; extra == "pint"
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-asyncio; extra == "testing"
+Provides-Extra: complete
+Requires-Dist: motor>=2.3; extra == "complete"
+Requires-Dist: pint>=0.18; extra == "complete"
+
+Store xarray objects on MongoDB
