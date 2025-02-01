@@ -1,0 +1,98 @@
+[project]
+name = "py2mql5"
+version = "0.1.0"
+description = "A wrapper of MetaTrader5 official package that enables multiple terminal instances at the same time."
+authors = [
+    { name = "pytree", email = "houjunqimail@gmail.com" },
+]
+dependencies = [
+    "MetaTrader5>=5.0.4803",
+]
+requires-python = ">=3.13"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[dependency-groups]
+dev = [
+    "mypy>=1.14.1",
+    "ruff>=0.9.4",
+    "jupyterlab>=4.3.5",
+    "python-dotenv>=1.0.1",
+]
+
+[tool.pyright]
+exclude = [
+    ".venv",
+    "venv",
+]
+ignore = [
+    ".venv",
+    "venv",
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "W",
+    "F",
+    "I",
+    "B",
+    "C4",
+    "N",
+    "UP",
+    "A",
+    "ARG",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"*.ipynb" = [
+    "F401",
+    "F841",
+    "I001",
+]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+warn_return_any = true
+allow_redefinition = true
+check_untyped_defs = true
+ignore_missing_imports = true
+incremental = true
+strict_optional = true
+show_traceback = true
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unreachable = true
+force_uppercase_builtins = true
+force_union_syntax = true
+exclude = [
+    ".venv",
+    "venv",
+    "dist",
+    "build",
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+main = "python src/main.py"
+
+[tool.pdm.build]
+excludes = [
+    "tests/",
+]
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
