@@ -1,0 +1,10 @@
+connectlife/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connectlife/api.py,sha256=JZlQgtHfjVr_pOQcPQTgpSdO0fGc6TS24XRrP1_zgXQ,10271
+connectlife/appliance.py,sha256=VCEweJ0uq-GSog4Qunt49Gw0UR3uE5Sm8Clbl1hCghM,4778
+connectlife/dump.py,sha256=_TbZdw0HtljK66xQb_hOEPvmJAUGJwbzTHVOwaiRx8o,2425
+connectlife/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connectlife/tests/test_appliance.py,sha256=zco0PtatgAqAnruEKm95E4CD91nGIAcQ0YNm5nAU4iA,928
+connectlife-0.5.4.dist-info/METADATA,sha256=wk2DMpazxyN3iDJ3p2x7Tfpf38_IS4VjaNb-o5c7sls,1825
+connectlife-0.5.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+connectlife-0.5.4.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+connectlife-0.5.4.dist-info/RECORD,,
