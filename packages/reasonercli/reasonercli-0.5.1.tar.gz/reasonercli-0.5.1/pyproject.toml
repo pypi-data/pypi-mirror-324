@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "reasonercli"
+version = "0.5.1"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "aiofiles>=24.1.0",
+    "httpx>=0.24.1",
+    "pydantic>=2.5.3",
+    "starlette>=0.29.0",
+    "typer[all]",
+]
+
+[project.scripts]
+reasonercli = "reasoner.cli:app"
+
+[tool.hatch.build]
+include = [
+    "src/*"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reasoner"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/*",
+]
+
+[tool.uv.workspace]
+members = ["reasoner-cli"]
