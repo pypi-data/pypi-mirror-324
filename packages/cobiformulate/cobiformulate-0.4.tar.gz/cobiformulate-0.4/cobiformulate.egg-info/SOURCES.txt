@@ -1,0 +1,9 @@
+README.md
+setup.py
+cobiformulate/__init__.py
+cobiformulate/formulate.py
+cobiformulate/optimizationProblem.py
+cobiformulate.egg-info/PKG-INFO
+cobiformulate.egg-info/SOURCES.txt
+cobiformulate.egg-info/dependency_links.txt
+cobiformulate.egg-info/top_level.txt
