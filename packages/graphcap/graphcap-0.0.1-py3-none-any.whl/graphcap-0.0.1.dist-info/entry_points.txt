@@ -1,0 +1,2 @@
+[console_scripts]
+graphcap = graphcap.main:cli
