@@ -1,0 +1,3 @@
+[console_scripts]
+ibaqpyc=ibaqpy.ibaqpyc:main
+
