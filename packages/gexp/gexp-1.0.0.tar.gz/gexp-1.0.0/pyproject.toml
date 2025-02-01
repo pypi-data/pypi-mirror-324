@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gexp"
+version = "1.0.0"
+description = "A simple CLI to export whole directories into a single string with .gitignore support and more."
+authors = [{ name = "Gusarich", email = "gusarich@icloud.com" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["export", "files", "gitignore", "cli"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = ["pathspec>=0.9.0"]
+
+[project.scripts]
+gexp = "gexp.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Gusarich/gexp"
+Issues = "https://github.com/Gusarich/gexp/issues"
