@@ -1,0 +1,12 @@
+openai_structured/__init__.py,sha256=0rWiBaIKZBxiAk1a_0mhpPvI1gnNGNFmKvzRMU9fR8U,1489
+openai_structured/buffer.py,sha256=nU4uUoNq69dcVFiIy3mRpw4l2DLsPecUJIoWKL8zwiQ,9836
+openai_structured/client.py,sha256=DVpnHUj0AnmFYV6Xmu93qztrSq3rJx0oRiE2mssENrA,50446
+openai_structured/errors.py,sha256=joLf7borZjl6G7wqTl3CrrvZTCG_kuv8XNrvw9DvXgY,4186
+openai_structured/examples/__init__.py,sha256=HDXFOHEnuD5neTHggXTr-OInEDkrraaS6BP93NINm3s,765
+openai_structured/examples/schemas/__init__.py,sha256=BXtbPOcyFtU66ioevgVDwKj3fT-U3mKfE81PE8pjlEk,597
+openai_structured/model_version.py,sha256=cUKnmTZi5T-hQ1WnH4As3bRnrGqp_d71upWlbv6evXw,3089
+openai_structured/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openai_structured-1.1.0.dist-info/LICENSE,sha256=ovD9nJKY-yumYnvRpdlyTrbvfALV2bZebJ3m2N3UbNI,1068
+openai_structured-1.1.0.dist-info/METADATA,sha256=4k05U9HK3FVhF1Ng9fJoDKK3eN9RyTA8_0YMaxbQZXY,10060
+openai_structured-1.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+openai_structured-1.1.0.dist-info/RECORD,,
