@@ -1,0 +1,14 @@
+langchain>=0.3.16
+langchain-community>=0.3.16
+langgraph>=0.2.69
+audiomentations>=0.38.0
+azure-identity
+azure-ai-documentintelligence==1.0.0
+azure-cognitiveservices-speech>=1.42.0
+azure-ai-contentsafety==1.0.0
+azure-ai-inference==1.0.0b7
+tiktoken~=0.8.0
+openai>=1.60.2
+python-dotenv==1.0.1
+pdfplumber>=0.11.5
+pybase64
