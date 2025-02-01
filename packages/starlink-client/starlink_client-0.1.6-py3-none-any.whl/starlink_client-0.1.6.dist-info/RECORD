@@ -1,0 +1,13 @@
+starlink_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+starlink_client/account.py,sha256=6dWH8Yrz0rRdr4SFluVqHSc4r0uvn_YdOnuPyPzYi5U,527
+starlink_client/cookies_parser.py,sha256=7ibzz0nGK1xNHyWbuChRaHCiBH-mvt3BgEojzxPxBYs,371
+starlink_client/grpc_client.py,sha256=oqdR9LPojlqE9y16scX9gUDOK_6LW_zyQaetpnskcTE,1344
+starlink_client/grpc_web_base_client.py,sha256=ME6IxZ6xdHMGPf5BzpA3OqwxOx3SstAc38jiUicuOc0,10439
+starlink_client/grpc_web_client.py,sha256=j-Sa49qRdGDO0ZmBS3sboBvvXw86Plyef5NZsCIHYBc,3053
+starlink_client/location.py,sha256=SM9Yb_QIPk-Bqe6ja2O_UIUmbCMDFbS8apjeNQKpSfY,108
+starlink_client/service_set_builder.py,sha256=69WdtHEGD3pNi4845cY67StQgUHyB_6zFPBM1NbVifM,6317
+starlink_client/wifi_config.py,sha256=kpLFu4qppYhIARXAcv85AAgTsgRjgOCfeXZSy-Iqwug,980
+starlink_client-0.1.6.dist-info/METADATA,sha256=EqV0G2d6yAGzS9f8pwCvgucVptvkOZ2pnCQSWP440O0,6825
+starlink_client-0.1.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+starlink_client-0.1.6.dist-info/top_level.txt,sha256=Cv7WdimMTezRa3-NMiE_oCLoWr1l_1o_aX5ki4BfTi8,16
+starlink_client-0.1.6.dist-info/RECORD,,
