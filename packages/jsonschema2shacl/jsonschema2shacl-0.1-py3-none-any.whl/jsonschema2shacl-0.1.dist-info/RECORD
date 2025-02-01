@@ -1,0 +1,10 @@
+jsonschema2shacl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jsonschema2shacl/__main__.py,sha256=CKgBhXm92ezD8fMOecEGQ4fvFo8AN85Ft3gmGCqM1Xg,1042
+jsonschema2shacl/constants.py,sha256=UEP5BzL4_GrTvOGUXwKWYvfUiNHVvj0Nm_Fz3YYDBKY,459
+jsonschema2shacl/file_parser.py,sha256=PSjoyPxepP6o_X8znWfFl-cxrn8UvbD4GumyXmp4fTg,401
+jsonschema2shacl/json_schema_to_shacl.py,sha256=XohgzpnQeYXR5GuQ6ApK-dSUOkggdHa7vSEXWX7M1hA,49282
+jsonschema2shacl/utils.py,sha256=Ou__j72XSY3FaGV1fni-mE0yKtZaYPDjFL9nuNA43_Q,950
+jsonschema2shacl-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+jsonschema2shacl-0.1.dist-info/METADATA,sha256=pist9WG_8viULqMlJk7FtxVQYYPSQylkMzdC9yqQ8ms,843
+jsonschema2shacl-0.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+jsonschema2shacl-0.1.dist-info/RECORD,,

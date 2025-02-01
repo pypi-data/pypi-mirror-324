@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: jsonschema2shacl
+Version: 0.1
+Summary: The tool translates JSON Schema into SHACL Shapes.
+Author: Oscar Suárez Montes
+Author-email: oscar.suarez.montes@rai.usc.es
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: jsonpath-ng (==1.6.1)
+Requires-Dist: owlrl (>=6.0.2,<7.0.0)
+Requires-Dist: pyshacl (>=0.26.0,<0.27.0)
+Requires-Dist: rdflib (>=7.1.1,<8.0.0)
+Description-Content-Type: text/markdown
+
+# JSONSchema2SHACL
+The repository contains the source code for extracting and generating SHACL shapes from JSONSchema
+
+## Getting Started 
+
+## License
+
+## Author & Contact
+
