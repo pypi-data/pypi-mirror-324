@@ -1,0 +1,2 @@
+[console_scripts]
+apparun = app.cli.main:cli_app
