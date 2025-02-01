@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: scrapyapi
+Version: 0.0.1
+License-File: LICENSE
+Requires-Dist: fastapi
+Requires-Dist: fastapi-blueprint
+
