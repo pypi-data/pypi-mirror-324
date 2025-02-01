@@ -1,0 +1,2 @@
+[console_scripts]
+scribo = scribo.__main__:main
