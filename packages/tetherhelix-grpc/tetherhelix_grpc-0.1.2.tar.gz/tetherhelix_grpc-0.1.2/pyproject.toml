@@ -1,0 +1,23 @@
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tetherhelix_grpc"
+version = "0.1.2"
+description = "Generated gRPC Python package"
+readme = "README.md"
+authors = [{ name = "TetherHelix", email = "tetherhelixofficial@example.com" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+license = {text = "BSD-3-Clause"}
+dependencies = [
+    "grpcio",
+    "grpcio-tools"
+]
+requires-python = ">=3.6"
+
+[tool.setuptools]
+packages = ["tetherhelix_grpc"]
