@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = ["crates/*"]
+
+default-members = [
+  "crates/*",
+]
+
+[workspace.package]
+name = "yaxp"
+version = "0.1.0"
+edition = "2024"
+
