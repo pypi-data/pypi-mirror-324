@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+AutoGenix_ETL/CsvLoader.py
+AutoGenix_ETL/JSONLoader.py
+AutoGenix_ETL/__init__.py
+AutoGenix_ETL/determine_orient.py
+autogenix_ETL_automation.egg-info/PKG-INFO
+autogenix_ETL_automation.egg-info/SOURCES.txt
+autogenix_ETL_automation.egg-info/dependency_links.txt
+autogenix_ETL_automation.egg-info/requires.txt
+autogenix_ETL_automation.egg-info/top_level.txt
+tests/__init__.py
+tests/test_CsvLoader.py
+tests/test_JSONLoader.py
+tests/test_determine_orient.py
