@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: reasonercli
+Version: 0.5.1
+License-Expression: MIT
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: aiofiles>=24.1.0
+Requires-Dist: httpx>=0.24.1
+Requires-Dist: pydantic>=2.5.3
+Requires-Dist: starlette>=0.29.0
+Requires-Dist: typer[all]
+Description-Content-Type: text/markdown
+
+
+# Reasoner CLI
+
+## Local development
+
+To run locally:
+```
+uv run python -m src.reasoner.cli upload --path=/path/to/docs
+```
+
+## Building for pip
+```
+uv pip sync pyproject.toml
+uv run python -m build
+uv run pip install --editable .
+
+# this will install into a temporary location e.g. /Users/username/.pyenv/versions/3.12.7/bin/reasoner
+```
+
+## Publishing to pypi
+```
+python3 -m build
+
+# publish onto pypi
+python3 -m twine upload dist/*
+
+# publish onto testpypi
+python3 -m twine upload --repository testpypi dist/*
+
+# to install via testpypi
+python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.python.org/simple reasonercli
+```
+
+## Building standalone executable
+```
+uv pip sync pyproject.toml
+uv run pyinstaller --clean --onefile --name reasoner entry.py
+
+cd dist
+./reasoner
+```
+
+## Testing with older versions of python
+```
+pipenv --python 3.8 shell
+python3 -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.python.org/simple reasonercli
+reasonercli auth
+```

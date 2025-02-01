@@ -1,0 +1,12 @@
+reasoner/__init__.py,sha256=U0ptFlF01iHWA4ZukneFBTDL8wCgZOXgmDVMNoayUPo,87
+reasoner/auth.py,sha256=MC2Sv2SGmxzcaA3njGDgxZNUe2r1F2LSUUFOcDgOw6c,533
+reasoner/cli.py,sha256=7esf1pckavDHrhjwB6wVGtm--OVEpetWZqE8EjfYynA,13480
+reasoner/config.py,sha256=Qu6uUm0uIXE4Kg5DoNqyH4zc_Si7kVqCKZAhdvy0QNM,923
+reasoner/documents.py,sha256=KSWDjhzlWKJKujk5tXLTmoYF_yHsF_owwu-y-sYKxt0,6812
+reasoner/indexes.py,sha256=e0_0vsSFhiRQI7oHPvmoEbEt3AimrbH_ZwDosEe6EOI,12162
+reasoner/reasoner.py,sha256=_bmX5t3utFORnK_1__xdDBzAG7-4d8RD4CYOaqwQ8NY,6359
+reasonercli-0.5.1.dist-info/METADATA,sha256=QzmyxyGb6WVUgWQyHiqijXny3N0SLqTHjoP7-sembLE,1504
+reasonercli-0.5.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+reasonercli-0.5.1.dist-info/entry_points.txt,sha256=AfrxgmS0Iwl63sY21OehNjRcyQKYUMKHakiCDHN4wYw,49
+reasonercli-0.5.1.dist-info/licenses/LICENSE,sha256=cZntHZPO2sHzU5ZadwQ38Du22NMmNxmX_QyTXqVfF8s,1065
+reasonercli-0.5.1.dist-info/RECORD,,
