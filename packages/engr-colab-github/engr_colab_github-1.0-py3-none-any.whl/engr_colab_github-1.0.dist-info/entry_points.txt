@@ -1,0 +1,14 @@
+[console_scripts]
+author = engr_colab_github.utils:author
+clone-repo = engr_colab_github.repo_manager:clone_repo
+create-repo = engr_colab_github.repo_manager:create_repo
+delete-path = engr_colab_github.utils:delete_path
+force_push = engr_colab_github.git_operations:force_push
+git-add = engr_colab_github.git_operations:git_add
+git-commit = engr_colab_github.git_operations:git_commit
+git-log = engr_colab_github.git_operations:git_log
+git-push = engr_colab_github.git_operations:git_push
+git-status = engr_colab_github.git_operations:git_status
+merge-branch = engr_colab_github.git_operations:merge_branch
+setup-git = engr_colab_github.setup:setup
+switch-repo = engr_colab_github.repo_manager:switch_repo

@@ -1,0 +1,11 @@
+engr_colab_github/__init__.py,sha256=Tl9BjrVJT8yqLUxDnuGxzUPTbqd5K-MyIeUm-WkqXvg,555
+engr_colab_github/git_operations.py,sha256=uSB9P69Hw2a8n7usOLjJt02rNXbt0bqemSRDt3EtYY0,6366
+engr_colab_github/repo_manager.py,sha256=oztU2aGk8mToLiZB4_S-4skcu05cnlQcBg2xETH8X_U,7391
+engr_colab_github/setup.py,sha256=Hq2D_H2u07WoW7dU8cT7hesgrNPqIFay5i6pnFMRHic,3115
+engr_colab_github/utils.py,sha256=gtGrfAqn_GRlhqTc8GbA8YGb-rjdcTI-X61MShNSGvA,734
+engr_colab_github-1.0.dist-info/LICENSE,sha256=G8vA74M3wHb03b4lutg3PjwlkkNV40W27TTBKJHT9I0,1107
+engr_colab_github-1.0.dist-info/METADATA,sha256=bGMKRgPiQ1se5azgV_1a2HOBdFcjeaElnkpbEltzD24,134
+engr_colab_github-1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+engr_colab_github-1.0.dist-info/entry_points.txt,sha256=0jQc3aqpF6EStKkPNTTaCIWa37K7PJrv4T1TFkgWxwY,706
+engr_colab_github-1.0.dist-info/top_level.txt,sha256=ngfWLwLqd6A4ToU9YEXKyS_vXS4rdYqZYLkV8DFSEzg,18
+engr_colab_github-1.0.dist-info/RECORD,,
