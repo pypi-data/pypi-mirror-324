@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/kucoin/__init__.py
+src/py_kucoin.egg-info/PKG-INFO
+src/py_kucoin.egg-info/SOURCES.txt
+src/py_kucoin.egg-info/dependency_links.txt
+src/py_kucoin.egg-info/top_level.txt
