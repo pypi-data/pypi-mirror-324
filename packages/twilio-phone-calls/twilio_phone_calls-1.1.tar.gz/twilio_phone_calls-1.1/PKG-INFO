@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: twilio_phone_calls
+Version: 1.1
+Summary: Python Implementation for Handling Twilio Phone Calls
+Home-page: https://github.com/edward-cates/twilio_phone_calls
+Author: Edward Cates
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: fastapi==0.115.8
+Requires-Dist: gTTS==2.5.4
+Requires-Dist: librosa==0.10.2.post1
+Requires-Dist: noisereduce==3.0.3
+Requires-Dist: openai-whisper==20240930
+Requires-Dist: pydub==0.25.1
+Requires-Dist: pyright==1.1.393
+Requires-Dist: pytest==8.3.4
+Requires-Dist: python-multipart==0.0.20
+Requires-Dist: pywav==1.1
+Requires-Dist: scikit-learn==1.6.1
+Requires-Dist: soundfile==0.13.1
+Requires-Dist: SpeechRecognition==3.14.1
+Requires-Dist: twilio==9.4.4
+Requires-Dist: uvicorn==0.34.0
+Requires-Dist: websockets==14.2
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+This package handles all the audio conversion so that you can just deal with text-to-text.
