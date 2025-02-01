@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+repository = "https://github.com/epicosy/cpelib"
+homepage = "https://github.com/epicosy/cpelib"
+
+[project]
+name="cpelib"
+version = "0.2.0"
+description = "A Python package for parsing, representing, and filtering the NVD CPE Dictionary."
+readme = "README.md"
+
+authors = [
+    {name = "Eduard Pinconschi", email="eduard.pinconschi@tecnico.ulisboa.pt"},
+]
+
+keywords = ["package", "nvd", "cpe"]
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.9"
+
+classifiers = [
+    "Topic :: Software Development",
+    "Programming Language :: Python",
+    "Environment :: Console",
+    "Intended Audience :: Developers"
+]
+
+dependencies = [
+    "lxml>=5.3.0",
+    "pydantic>=2.10.3",
+    "tqdm>=4.67.1",
+    "cpeparser>=0.0.2"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-cov",
+    "coverage",
+    "twine>=1.11.0",
+    "setuptools>=38.6.0",
+    "wheel>=0.31.0"
+]
+
+
+[tool.setuptools.packages.find]
+exclude = ["ez_setup", "tests*"]
+
+
+[tool.setuptools]
+include-package-data = false

@@ -1,0 +1,12 @@
+lxml>=5.3.0
+pydantic>=2.10.3
+tqdm>=4.67.1
+cpeparser>=0.0.2
+
+[test]
+pytest
+pytest-cov
+coverage
+twine>=1.11.0
+setuptools>=38.6.0
+wheel>=0.31.0

@@ -1,0 +1,78 @@
+Metadata-Version: 2.2
+Name: cpelib
+Version: 0.2.0
+Summary: A Python package for parsing, representing, and filtering the NVD CPE Dictionary.
+Author-email: Eduard Pinconschi <eduard.pinconschi@tecnico.ulisboa.pt>
+Project-URL: repository, https://github.com/epicosy/cpelib
+Project-URL: homepage, https://github.com/epicosy/cpelib
+Keywords: package,nvd,cpe
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: lxml>=5.3.0
+Requires-Dist: pydantic>=2.10.3
+Requires-Dist: tqdm>=4.67.1
+Requires-Dist: cpeparser>=0.0.2
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: coverage; extra == "test"
+Requires-Dist: twine>=1.11.0; extra == "test"
+Requires-Dist: setuptools>=38.6.0; extra == "test"
+Requires-Dist: wheel>=0.31.0; extra == "test"
+
+# cpelib
+A Python package for parsing, representing, and filtering the NVD CPE Dictionary.
+
+
+## Installation
+```bash
+pip install cpelib
+```
+
+## Setup
+Before using the package, you need to download the NVD CPE Dictionary V2.3.
+You can download the latest version from the NVD website: https://nvd.nist.gov/products/cpe
+
+After downloading the file (e.g., `official-cpe-dictionary_v2.3.xml`), you can use the `cpelib` package to parse the 
+file.
+
+By default, the package looks for the file in the `~/.cpelib` directory.
+
+```bash
+mkdir ~/.cpelib
+mv official-cpe-dictionary_v2.3.xml ~/.cpelib
+```
+
+Or, you can programmatically change the path by providing the path to the file in the `CPEDictionaryLoader` class.
+
+```python
+from cpelib.core.loader import CPEDictionaryLoader
+
+loader = CPEDictionaryLoader(xml_file="path/to/official-cpe-dictionary_v2.3.xml")
+```
+
+## Usage
+ 
+> [NOTE] It will take around 2 minutes to parse the entire XML file which contains over 1,341,950 CPE items.
+> Also, makes sure you have enough memory to load the entire dictionary (16GB should be safe).
+
+Use class CPEDictionaryLoader to define and initialize the loader, then call the loader to parse the XML file.
+The loader will return a dictionary with the cpe-item entries.
+
+```python
+from cpelib.core.loader import CPEDictionaryLoader
+
+loader = CPEDictionaryLoader()
+cpe_dict = loader()
+```
+
+Additionally, you can explore the examples in the `examples` directory and run them using the following command:
+
+```bash
+python3 -m examples.load_cpe_dict
+```
