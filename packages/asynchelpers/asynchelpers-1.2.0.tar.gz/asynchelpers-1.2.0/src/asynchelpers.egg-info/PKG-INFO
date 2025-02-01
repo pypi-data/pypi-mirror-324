@@ -1,0 +1,51 @@
+Metadata-Version: 2.2
+Name: asynchelpers
+Version: 1.2.0
+Summary: Asynchronous utilities with runtime optimizations
+Author: Async Tools Ltd
+Author-email: support@async-tools.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp>=3.9.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Asynchelpers - Asynchronous Python Utilities
+
+**High-performance toolkit for modern async Python development**
+
+[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://opensource.org/licenses/Apache-2.0)
+
+## Features
+
+### Core Functionality
+- **Adaptive Runtime Optimizations**  
+  Automatically applies performance improvements based on workload patterns
+- **Batch Request Processing**  
+  Efficient parallel HTTP/S requests with configurable concurrency limits
+- **Structured Data Validation**  
+  Robust JSON schema verification and data integrity checks
+
+### Advanced Capabilities
+- **Intelligent Connection Pooling**  
+  Auto-scaling HTTP connection management with keep-alive support
+- **Zero-Config Instrumentation**  
+  Built-in performance metrics collection for async operations
+- **Cross-Platform Compatibility**  
+  Full support for Windows, Linux, and macOS environments
+
+## Installation
+
+### PyPI Installation
+```bash
+pip install asynchelpers
+
