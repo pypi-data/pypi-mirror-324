@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: NexUI
+Version: 0.1.0
+Summary: Librairie de composant UI Django compatible avec HTMX et basé sur Tailwind CSS
+Home-page: https://github.com/huguescodeur/nexui.git
+Author: Hugues Codeur
+Author-email: huguescodeur@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
