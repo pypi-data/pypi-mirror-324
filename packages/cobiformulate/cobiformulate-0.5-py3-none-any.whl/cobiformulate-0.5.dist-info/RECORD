@@ -1,0 +1,9 @@
+cobiformulate/__init__.py,sha256=LPrZYA4UNi6KkLVu5owI_4y4brNcFMrx_vDm8iCHWvk,65
+cobiformulate/formulate.py,sha256=HOvo7naeivp1KdGsavuxfAtBsuBi9fF24fPStCKlS0k,22238
+cobiformulate/optimizationProblem.py,sha256=FQrMv6Hd9tB1hS7Hzs-Tk7KpYqeZstKLjfBn8li2B-s,2460
+cobiformulate/cobi_cloud/__init__.py,sha256=RBPfCvKijARgHlwHywSUQbTvXQfVaul6_qdY0UGlbWo,36
+cobiformulate/cobi_cloud/cobi_cloud.py,sha256=kzK9UXKv_FD3DMHUMFqWRWXmqeikAjXlBMg2A3V-FSA,2386
+cobiformulate-0.5.dist-info/METADATA,sha256=n45A-XZ1ZsR14Cy7cMwujJedh7GkY1iCtSxKLCtXSdg,549
+cobiformulate-0.5.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+cobiformulate-0.5.dist-info/top_level.txt,sha256=uTf2uE6JXrl7HoL7C24ZyyYQ0bMjMM41BT2sCYLT2Us,14
+cobiformulate-0.5.dist-info/RECORD,,
