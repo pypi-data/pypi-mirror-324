@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: rude
+Version: 0.1a0
+Summary: rude - a distributed task queue for running I/O-bound jobs at scale.
+Author: Geoffrey Guéret
+Author-email: geoffrey@gueret.fr
+License: BSD-3-Clause
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# RUDE
+
+An opinionated linter using LibCST.

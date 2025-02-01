@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/rude/__init__.py
+src/rude.egg-info/PKG-INFO
+src/rude.egg-info/SOURCES.txt
+src/rude.egg-info/dependency_links.txt
+src/rude.egg-info/not-zip-safe
+src/rude.egg-info/top_level.txt
