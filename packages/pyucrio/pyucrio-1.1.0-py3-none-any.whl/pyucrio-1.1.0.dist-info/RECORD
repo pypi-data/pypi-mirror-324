@@ -1,0 +1,14 @@
+pyucrio/__init__.py,sha256=5wKUouy4Cv28cf_3Cv22MtMub6v92iA-LhiFXyNWckg,1966
+pyucrio/data/__init__.py,sha256=gNuClhMgOn4EEwImJATng7G-jlYFy_kMzyxdC5kF6Wo,11426
+pyucrio/data/ucalgary/__init__.py,sha256=nX3Kowr7W120-Tr2YAfKenNmu1r04z0fYCJV6ffSRfA,25487
+pyucrio/data/ucalgary/read/__init__.py,sha256=gsk54MFGubEEJzy_TxSB2tWJ00hAqWPiiZwTcFG7bLM,14024
+pyucrio/exceptions.py,sha256=kwCSlkj6UmdJRaIXZSDb-seVbwdot2jRjyhZtpIh3xY,1783
+pyucrio/pyucrio.py,sha256=Uz-WqScxGCL5IPgQx0iq_-tcdP6N7742t32WZWl8RzM,16313
+pyucrio/tools/__init__.py,sha256=FoOpRwJE1pEsEjZYYusZCc3y7Ym5UzIQDyAZJKExbkY,7485
+pyucrio/tools/_plot.py,sha256=9CDOwUvgoqF2VsS3I84vA_O_l72mWvvC_WAZGscYwgM,12765
+pyucrio/tools/_util.py,sha256=AbySI9JVXo4e7LNL_I1JUvQLwCtY7Uhh0S1B95K1aBc,917
+pyucrio/tools/classes/__init__.py,sha256=yketnyTj9dp91YXG0a5TXtTRP3YHRO3q4e0KHS0u0ZM,638
+pyucrio-1.1.0.dist-info/LICENSE,sha256=_aiR6aIMjyacNkwWj4oM_xgwCPhAMgFgTlF04_zNHbE,561
+pyucrio-1.1.0.dist-info/METADATA,sha256=Jg0X4U64nBNZ2vHjsEoRBrp6E0nBr-AbNEpwBUNuwVw,3529
+pyucrio-1.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pyucrio-1.1.0.dist-info/RECORD,,
