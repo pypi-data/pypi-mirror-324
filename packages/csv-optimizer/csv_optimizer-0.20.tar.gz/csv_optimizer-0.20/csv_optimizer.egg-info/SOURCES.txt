@@ -1,0 +1,10 @@
+README.md
+setup.py
+csv_optimizer/__init__.py
+csv_optimizer/loader.py
+csv_optimizer/setup.py
+csv_optimizer.egg-info/PKG-INFO
+csv_optimizer.egg-info/SOURCES.txt
+csv_optimizer.egg-info/dependency_links.txt
+csv_optimizer.egg-info/requires.txt
+csv_optimizer.egg-info/top_level.txt
