@@ -1,0 +1,4 @@
+atomium<2,>=1
+pydantic>=2.4
+numpy
+atomium<2.0,>=1.0
