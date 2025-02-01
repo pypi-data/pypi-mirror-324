@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-dappier = dappier_mcp.__main__:main
