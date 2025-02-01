@@ -1,0 +1,16 @@
+itch_dl/__init__.py,sha256=isJrmDBLRag7Zc2UK9ZovWGOv7ji1Oh-zJtJMNJFkXw,22
+itch_dl/__main__.py,sha256=_KmCECAUyQi7p3w4rHvr_rUxlgfQn5ppL5CCkJth_Ok,58
+itch_dl/api.py,sha256=Y-nqqg7DNs06EOOhA1u-scJnBralLUM7Z6kXqv6wm84,1889
+itch_dl/cli.py,sha256=ARbEsdyMWcYW2dy1V1Jf5qxlevr972N6PcbmhjxBK-I,3949
+itch_dl/config.py,sha256=pC4b3ZhocOPxesYnsqfQiIdQcgTS6Oo9CoeEPXSEmTc,2640
+itch_dl/consts.py,sha256=GTjZoDdlLgYQbrLaP8u3xnPeYlr4rZwzi9cI33HtTp0,428
+itch_dl/downloader.py,sha256=6_3nK9WOUi2F3ylsMsf_j-wuzy6ZClIHEGUW2DjvLNY,17461
+itch_dl/handlers.py,sha256=UJsOh4Euxtgr-Dq9HGeRtewGbodV-41KBjBMl2QlTjY,9203
+itch_dl/infobox.py,sha256=iS_Wdo66eIidXykr7GHVp6mc2PeBZzwIPOPaQxQtOp8,4567
+itch_dl/keys.py,sha256=f3jCRmXadYTyrEWYXQWRZ3BhuZGdDxEd8k3M2Qw1gcA,1542
+itch_dl/utils.py,sha256=HsAucj1ceDeIja5riXpI_cxg9FkPy693vkZiVwWFeV8,1027
+itch_dl-0.5.2.dist-info/LICENSE,sha256=GJPLiDZOeFVjr9vOE2R7_mlZE7u3FXPA4d_yjjf9KI4,1071
+itch_dl-0.5.2.dist-info/METADATA,sha256=3L3a_uKyNuBgr1evSKyMqvZrVCHfnDBuy4ZZurik640,4730
+itch_dl-0.5.2.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+itch_dl-0.5.2.dist-info/entry_points.txt,sha256=8SwexVMYFqnhR83-wcqZu67Nd2c_add-OFU1-nINiYo,43
+itch_dl-0.5.2.dist-info/RECORD,,
