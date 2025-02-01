@@ -1,0 +1,17 @@
+AUTHORS.md
+LICENSE
+README.md
+pyproject.toml
+requirements-dev.txt
+requirements.txt
+src/compas_skeleton/__init__.py
+src/compas_skeleton.egg-info/PKG-INFO
+src/compas_skeleton.egg-info/SOURCES.txt
+src/compas_skeleton.egg-info/dependency_links.txt
+src/compas_skeleton.egg-info/not-zip-safe
+src/compas_skeleton.egg-info/requires.txt
+src/compas_skeleton.egg-info/top_level.txt
+src/compas_skeleton/datastructures/skeleton.py
+src/compas_skeleton/rhino/__init__.py
+src/compas_skeleton/scene/__init__.py
+tests/test_import.py
