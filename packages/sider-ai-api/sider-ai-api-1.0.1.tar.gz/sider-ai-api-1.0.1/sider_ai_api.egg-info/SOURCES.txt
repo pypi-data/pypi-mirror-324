@@ -1,0 +1,8 @@
+README.rst
+setup.py
+sider_ai_api.py
+sider_ai_api.egg-info/PKG-INFO
+sider_ai_api.egg-info/SOURCES.txt
+sider_ai_api.egg-info/dependency_links.txt
+sider_ai_api.egg-info/requires.txt
+sider_ai_api.egg-info/top_level.txt
