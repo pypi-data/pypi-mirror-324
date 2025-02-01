@@ -1,0 +1,74 @@
+[project]
+name = "pku-lib"
+dynamic = ["version"]
+description = "PKMN Utility Library"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "AGPL-3.0-or-later"
+authors = [
+    { name = "Taylor Rodríguez", email = "git.rodriguez@proton.me" },
+]
+keywords = [
+    "wry",
+    "rng",
+    "pkx",
+    "pk6",
+    "pk7",
+    "pk8",
+    "pk9",
+    "pkmn",
+    "pokemon",
+    "pokémon",
+    "pyukumuku",
+]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: File Formats",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = [
+    "construct-typing>=0.6.2",
+]
+
+[project.urls]
+"Source code" = "https://codeberg.org/wry/pku-lib.git"
+
+[build-system]
+requires = ["hatchling", "versioningit"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["src/"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pku"]
+
+[tool.hatch.version]
+source = "versioningit"
+
+[tool.versioningit]
+vcs = "git"
+
+[tool.versioningit.write]
+file = "src/pku/_version.py"
+
+[tool.versioningit.next-version]
+method = "smallest"
+
+[tool.versioningit.format]
+distance = "{next_version}.dev{distance}+{vcs}{rev}"
+dirty = "{base_version}+dirty"
+distance-dirty = "{next_version}.dev{distance}+{vcs}{rev}.dirty"
