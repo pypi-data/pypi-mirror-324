@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: hyku-ingest
+Version: 0.0.1
+Summary: 
+Author: Weston49
+Author-email: weston.agreda@gmail.com
+Requires-Python: >=3.13,<4.0
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Temporary README
+Put documentation here
