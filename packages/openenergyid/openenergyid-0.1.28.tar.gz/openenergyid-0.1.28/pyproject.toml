@@ -1,0 +1,65 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "openenergyid"
+version = "0.1.28"
+description = "Open Source Python library for energy analytics and simulations"
+authors = [
+    "Jan Pecinovsky <jan@energieid.be>",
+    "Max Helskens <max@energieid.be>",
+    "Oscar Swyns <oscar@energieid.be>"
+]
+readme = "README.md"
+license = "MIT"
+homepage = "https://energyid.eu"
+repository = "https://github.com/EnergieID/OpenEnergyID"
+documentation = "https://github.com/EnergieID/OpenEnergyID"
+keywords = ["energy", "analytics", "simulation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+polars = "^1.9.0"
+numpy = "^2.0.0"
+patsy = "^0.5.6"
+statsmodels = "^0.14.2"
+pydantic = "^2.8.2"
+pandas = "^2.2.2"
+pandera = {extras = ["polars"], version = "^0.22.1"}
+
+[tool.poetry.group.dev.dependencies]
+altair = "^5.4.1"
+matplotlib = "^3.9.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.5"
+seaborn = "^0.13.2"
+pytest = "^8.3.2"
+entsoe-py = "^0.6.8"
+energyid = "^0.0.17"
+snakeviz = "^2.2.0"
+plotly = "^5.24.1"
+vegafusion = {version = ">=1.5.0", extras = ["embed"]}
+vl-convert-python = "^1.7.0"
+pyarrow = "^19.0.0"
+pyinstrument = "^5.0.0"
+deptry = "^0.23.0"
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
+
+[tool.ruff]
+line-length = 100
