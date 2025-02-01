@@ -1,0 +1,8 @@
+setup.py
+extras/__init__.py
+extras/divide.py
+extras/multiply.py
+simple_math_package_by_rshaw.egg-info/PKG-INFO
+simple_math_package_by_rshaw.egg-info/SOURCES.txt
+simple_math_package_by_rshaw.egg-info/dependency_links.txt
+simple_math_package_by_rshaw.egg-info/top_level.txt
