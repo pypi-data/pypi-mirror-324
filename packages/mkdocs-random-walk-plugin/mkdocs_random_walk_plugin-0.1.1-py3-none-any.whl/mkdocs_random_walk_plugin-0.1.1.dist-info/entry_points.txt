@@ -1,0 +1,2 @@
+[mkdocs.plugins]
+random_walk = mkdocs_random_walk_plugin.plugin:RandomWalkPlugin
