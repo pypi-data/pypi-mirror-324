@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fridom"
+version = "0.0.5"
+authors = [
+  { name="Silvano Rosenau", email="silvano.rosenau@uni-hamburg.de" },
+]
+description = "Framework for Idealized Ocean Models"
+readme = "README.md"
+keywords = ["oceanography", "idealized ocean models", "modeling", "numerical modeling"]
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Development Status :: 2 - Pre-Alpha",
+]
+dependencies = [
+  "lazypimp",
+  "numpy",
+  "scipy",
+  "netCDF4",
+  "tqdm",
+  "dill",
+  "IPython",
+  "coloredlogs",
+  "regex",
+]
+license = {file = "LICENSE"}
+
+[project.optional-dependencies]
+cupy = ["cupy"]
+jax = ["jax"]
+jax-cuda = ["jax[cuda12]"]
+dev = [
+  "jax[cuda12]",
+  "cupy-cuda12x",
+  "pylint",
+  "pytest",
+  "coverage",
+  "xarray",
+  "matplotlib",
+  "imageio[ffmpeg]",
+  "ipykernel",
+]
+
+[project.urls]
+Repository = "https://github.com/Gordi42/FRIDOM"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = [
+  "--import-mode=importlib",
+]
+
+[tool.pylint]
+extension-pkg-allow-list = ["mpi4py"]
+good-names = [
+  "ax",
+  "z", "mz",
+  "dx", "dy", "dz",
+]
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["D105", "D107", "D211", "D212"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["D103", "S101", "ANN001", "ANN201", "INP001"]
+"__init__.py" = ["F401"]
