@@ -1,0 +1,44 @@
+numpy==1.26.4
+scipy
+scikit-image
+Pillow
+matplotlib
+networkx
+opencv-python-headless
+openpyxl
+pandas
+napari
+python-louvain
+tifffile
+qtrangeslider
+PyQt6
+scikit-learn
+
+[CUDA11]
+cupy-cuda11x
+torch==2.2.0+cu118
+torchvision==0.17.0+cu118
+torchaudio==2.2.0+cu118
+
+[CUDA12]
+cupy-cuda12x
+torch==2.2.0+cu121
+torchvision==0.17.0+cu121
+torchaudio==2.2.0+cu121
+
+[GPU]
+
+[GPU:platform_system == "Darwin"]
+cupy
+
+[GPU:platform_system == "Linux" and platform_machine == "x86_64"]
+cupy-cuda11x
+
+[GPU:platform_system == "Windows"]
+cupy-cuda12x
+
+[cupy]
+cupy
+torch
+torchvision
+torchaudio
