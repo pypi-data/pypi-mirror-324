@@ -1,0 +1,11 @@
+requests
+ua_parser
+ip3country
+grpcio
+protobuf
+ijson
+
+[test]
+requests
+user_agents
+semver
