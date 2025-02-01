@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+file_generation/__init__.py
+file_generation/core.py
+file_generation/generators.py
+file_generation.egg-info/PKG-INFO
+file_generation.egg-info/SOURCES.txt
+file_generation.egg-info/dependency_links.txt
+file_generation.egg-info/requires.txt
+file_generation.egg-info/top_level.txt
