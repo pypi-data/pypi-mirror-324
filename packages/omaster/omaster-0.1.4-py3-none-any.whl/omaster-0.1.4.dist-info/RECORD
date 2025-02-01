@@ -1,0 +1,14 @@
+omaster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omaster/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omaster/commands/release.py,sha256=ct31xVdCHae5-Ec7Gdg41t4jgB64B-kIOllGesLTTqk,2493
+omaster/commands/validate.py,sha256=f8nqu8TilmTx_XU6Ce1afOmUPLpBlP7jPKb5aScQ_so,1451
+omaster/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omaster/core/validator.py,sha256=PiYaqvytnyXvo3K5E8AkAcMayWrqRt5s53_pgvSNZwQ,880
+omaster/utils/version.py,sha256=LP2d7FtyGpzFle8LdjUk0TIVjR-fuaKZYr_nqeb1ujM,1488
+omaster/validators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omaster/validators/pyproject_validator.py,sha256=yuNb0g9vlSfxTfPX_RXr1_zH14J8X53Qr-TVlI_pbHo,4360
+omaster/validators/readme_validator.py,sha256=egkwtXU1sb_0o9r3TYSpBveIRRWSzfmPbIDKWk6TfPQ,1757
+omaster-0.1.4.dist-info/METADATA,sha256=GBkNTzixYiCZry9_v0x7tKxe0t78R2cghdtZH7h1kUw,1763
+omaster-0.1.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+omaster-0.1.4.dist-info/entry_points.txt,sha256=Zo7gkXQedIhJW4xPXPuuUPBPCmJr5BYrMKf8EwFpZYo,116
+omaster-0.1.4.dist-info/RECORD,,
