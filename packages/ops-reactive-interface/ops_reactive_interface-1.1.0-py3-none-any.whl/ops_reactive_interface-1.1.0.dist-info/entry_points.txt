@@ -1,0 +1,2 @@
+[charms.reactive.relation_factory]
+interface_api = ops_reactive_interface:InterfaceAPIFactory
