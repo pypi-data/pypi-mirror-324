@@ -1,0 +1,1 @@
+mkdocs_random_walk_plugin
