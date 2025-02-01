@@ -1,0 +1,12 @@
+# Base requirements and requirements for vision elements such as YOLO
+
+pygobject
+torch
+torchvision
+torchaudio
+transformers
+numpy
+huggingface-hub
+lap
+ultralytics
+pycairo
