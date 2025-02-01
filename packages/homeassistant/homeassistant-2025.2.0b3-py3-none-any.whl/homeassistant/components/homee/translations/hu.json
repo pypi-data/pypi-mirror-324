@@ -1,0 +1,59 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van"
+        },
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "invalid_auth": "\u00c9rv\u00e9nytelen hiteles\u00edt\u00e9s",
+            "unknown": "V\u00e1ratlan hiba"
+        },
+        "flow_title": "Homee {name} ({host})",
+        "step": {
+            "user": {
+                "data": {
+                    "host": "Hoszt",
+                    "password": "Jelsz\u00f3",
+                    "username": "Felhaszn\u00e1l\u00f3n\u00e9v"
+                },
+                "data_description": {
+                    "host": "A Homee IP-c\u00edme.",
+                    "password": "A Homee jelszava.",
+                    "username": "A Homee felhaszn\u00e1l\u00f3neve."
+                },
+                "title": "Homee konfigur\u00e1l\u00e1sa"
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "operating_hours": {
+                "name": "\u00dczem\u00f3r\u00e1k"
+            },
+            "outdoor_humidity": {
+                "name": "K\u00fcls\u0151 p\u00e1ratartalom"
+            },
+            "outdoor_humidity_instance": {
+                "name": "K\u00fcls\u0151 p\u00e1ratartalom {instance}"
+            },
+            "outdoor_temperature": {
+                "name": "K\u00fcls\u0151 h\u0151m\u00e9rs\u00e9klet"
+            },
+            "outdoor_temperature_instance": {
+                "name": "K\u00fcls\u0151 h\u0151m\u00e9rs\u00e9klet {instance}"
+            },
+            "up_down": {
+                "state": {
+                    "closed": "Z\u00e1rva",
+                    "open": "Nyitva"
+                }
+            },
+            "window_position": {
+                "state": {
+                    "closed": "Z\u00e1rva",
+                    "open": "Nyitva"
+                }
+            }
+        }
+    }
+}

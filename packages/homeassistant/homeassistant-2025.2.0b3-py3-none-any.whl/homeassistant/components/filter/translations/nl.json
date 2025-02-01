@@ -1,0 +1,19 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is al geconfigureerd"
+        }
+    },
+    "options": {
+        "abort": {
+            "already_configured": "Account is al geconfigureerd"
+        }
+    },
+    "services": {
+        "reload": {
+            "description": "Laadt filters opnieuw vanuit de YAML configuratie.",
+            "name": "Herladen"
+        }
+    },
+    "title": "Filter"
+}
