@@ -1,0 +1,3 @@
+[console_scripts]
+omaster-release = omaster.commands.release:main
+omaster-validate = omaster.commands.validate:main
