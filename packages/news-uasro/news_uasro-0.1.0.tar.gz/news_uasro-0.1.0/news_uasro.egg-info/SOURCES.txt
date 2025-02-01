@@ -1,0 +1,7 @@
+README.md
+setup.py
+news_uasro.egg-info/PKG-INFO
+news_uasro.egg-info/SOURCES.txt
+news_uasro.egg-info/dependency_links.txt
+news_uasro.egg-info/requires.txt
+news_uasro.egg-info/top_level.txt

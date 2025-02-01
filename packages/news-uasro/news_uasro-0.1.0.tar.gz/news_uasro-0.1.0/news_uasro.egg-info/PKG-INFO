@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: news_uasro
+Version: 0.1.0
+Summary: Library untuk mengidentifikasi sumber berita di Indonesia.
+Home-page: https://github.com/asroharun6/news_uasro
+Author: Asro
+Author-email: asro@raharja.info
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+
+
+# News Uasro Library
+
+## Deskripsi
+
+Library ini dibuat untuk mengidentifikasi sumber berita di Indonesia menggunakan data yang tersimpan dalam format CSV.
+
+## Cara Penggunaan
+
+Contoh cara menggunakan library ini akan dijelaskan di sini.
+
+## Lisensi
+
+Library ini dilisensikan di bawah MIT License.
