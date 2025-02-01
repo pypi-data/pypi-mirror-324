@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: matrix-webhook-bot
+Version: 0.1.0
+Author-email: BG <services+github@bgsoft.hu>
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: asyncpg<0.31,>=0.30.0
+Requires-Dist: build>=1.2.2.post1
+Requires-Dist: emoji<3,>=2.14.1
+Requires-Dist: fastapi<0.116,>=0.115.6
+Requires-Dist: httpx<0.29,>=0.28.1
+Requires-Dist: jinja2<4,>=3.1.5
+Requires-Dist: mautrix<0.21,>=0.20.7
+Requires-Dist: python-olm<4,>=3.2.16
+Requires-Dist: ruff>=0.9.3
+Requires-Dist: uvicorn<0.35,>=0.34.0
+Description-Content-Type: text/markdown
+
+# matrix-webhook-bot
+
+Matrix bot for creating webhook endpoints and sending webhook messages to matrix rooms
+
+- simple webservice that forwards webhook messages after formatting
+- simple jinja template can be used format messages
+- webhook url creation and deletion through controll room
+- creates controll and output room on startup
+
+Configuration
+
+Either by config.ini or env variables. Env variables take precedence.
+Rename sample_config.ini to config.ini and set every config value.
+
+Running
+
+Python packages are handled by uv, but if you prefer, look into pyproject.toml and install dependencies yourself.
+
+```
+git clone https://github.com/hidraulicChicken/matrix-webhook-bot.git
+cd matrix-webhook-bot
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+```
+
