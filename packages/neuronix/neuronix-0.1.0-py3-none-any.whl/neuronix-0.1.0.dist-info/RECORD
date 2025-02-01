@@ -1,0 +1,15 @@
+neuronix/Decision_Tree.py,sha256=BCvnlKaQcJQt-PWxYeV276lXK_7R-NHZkLmV1FSzc28,4692
+neuronix/Decision_Tree_Reg.py,sha256=OeFwm3kYgYsAeQ2O57nH2Azz6fb5zLIWXHwvKTybRCA,3162
+neuronix/KNN.py,sha256=jKdqtmxIQSh1wuPUG6CEc38UQrihQ9nshJx6YpY_iuY,1434
+neuronix/Random_forest.py,sha256=i7SIIp2Vfrld5qveI6AnEpY11VPflzdNXduRyG3se6Q,1395
+neuronix/SVM.py,sha256=1Q0DvZwgkhgBLhJMTC9Ut-Tz_r9TxOWZdtHJcMWHUgo,1251
+neuronix/XGBoost.py,sha256=ruqVDPNwy6uoTTqwhrHqJ1vGgGv1eHBsezRDGF2dTBU,1505
+neuronix/__init__.py,sha256=isah9QZSC6WATu4NNsmW7k274fuPRfIG1GvKa3XuACY,370
+neuronix/linear_regression.py,sha256=599YrC9C_8Ei-4bLPNu2pbg9mkaHNMnIQdZv9T_OH54,1267
+neuronix/logistic_regression.py,sha256=px7F4L0aB5kGTZpqNRLoC48OalinnTlzVOAWnKpRQh8,1020
+neuronix/multiple_regression.py,sha256=x1trVrbKOIVMFMoOYAjCySL3r6S7Og-JNOF4cMNLJ9o,1589
+neuronix-0.1.0.dist-info/LICENSE,sha256=gGW36H7-Tr_ch-0BXy-v339t9f_CfvRqkAUKelk0Oyk,1083
+neuronix-0.1.0.dist-info/METADATA,sha256=QYKOMWz-HHs67vhLCl3fvD1iwOBEjCd86v7WSPqIA_g,4030
+neuronix-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+neuronix-0.1.0.dist-info/top_level.txt,sha256=TssxNGhGBrAZJMPrOofxioRXi6112N6qI1kvtkVRn_U,9
+neuronix-0.1.0.dist-info/RECORD,,
