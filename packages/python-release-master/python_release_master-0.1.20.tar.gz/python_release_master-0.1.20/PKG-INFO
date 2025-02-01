@@ -1,0 +1,276 @@
+Metadata-Version: 2.4
+Name: python-release-master
+Version: 0.1.20
+Summary: An automated Python package release management tool with AI-powered changelog generation
+Author-email: Kareem Elbahrawy <kareem.elbahrawy@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Keywords: automation,cd,changelog,ci,pypi,release
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Requires-Dist: click>=8.0.0
+Requires-Dist: openai>=1.0.0
+Requires-Dist: pyyaml>=6.0.0
+Requires-Dist: requests>=2.25.0
+Requires-Dist: rich>=10.0.0
+Requires-Dist: toml>=0.10.0
+Requires-Dist: typer>=0.9.0
+Provides-Extra: dev
+Requires-Dist: black>=23.0.0; extra == 'dev'
+Requires-Dist: flake8>=6.0.0; extra == 'dev'
+Requires-Dist: isort>=5.0.0; extra == 'dev'
+Requires-Dist: mypy>=1.0.0; extra == 'dev'
+Requires-Dist: pytest-cov>=4.0.0; extra == 'dev'
+Requires-Dist: pytest>=7.0.0; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme>=1.0.0; extra == 'dev'
+Requires-Dist: sphinx>=6.0.0; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# Python Release Master
+
+An automated Python package release management tool with AI-powered changelog generation.
+
+## Features
+
+- Automated version management
+- AI-powered changelog generation from commits and PRs
+- Smart commit message generation for uncommitted changes
+- Comprehensive testing (unit, integration, docker)
+- Documentation generation and validation
+- PyPI publishing with verification
+- GitHub Actions integration
+
+## Installation
+
+```bash
+pip install python-release-master
+```
+
+## Environment Setup
+
+### Required Environment Variables
+
+1. **OpenAI API Key** (Required for AI features)
+   - Sign up at [OpenAI Platform](https://platform.openai.com)
+   - Create an API key at https://platform.openai.com/api-keys
+   - Required scopes: None (just the API key)
+   - Set the environment variable:
+     ```bash
+     # macOS/Linux
+     export OPENAI_API_KEY='your-api-key'
+     
+     # Windows (Command Prompt)
+     set OPENAI_API_KEY=your-api-key
+     
+     # Windows (PowerShell)
+     $env:OPENAI_API_KEY='your-api-key'
+     ```
+   - For permanent setup:
+     - macOS/Linux: Add to `~/.bashrc`, `~/.zshrc`, or equivalent
+     - Windows: Set through System Properties > Environment Variables
+
+2. **GitHub Token** (Required for GitHub operations)
+   - Create a token at https://github.com/settings/tokens
+   - Required scopes:
+     - `repo` (Full control of private repositories)
+     - `workflow` (if using GitHub Actions)
+   - Set the environment variable:
+     ```bash
+     # macOS/Linux
+     export GITHUB_TOKEN='your-github-token'
+     
+     # Windows (Command Prompt)
+     set GITHUB_TOKEN=your-github-token
+     
+     # Windows (PowerShell)
+     $env:GITHUB_TOKEN='your-github-token'
+     ```
+
+3. **PyPI Token** (Required for publishing)
+   - Create an account at https://pypi.org
+   - Create a token at https://pypi.org/manage/account/token/
+   - Required scopes: Select "Entire account (all projects)"
+   - Set the environment variable:
+     ```bash
+     # macOS/Linux
+     export PYPI_TOKEN='your-pypi-token'
+     
+     # Windows (Command Prompt)
+     set PYPI_TOKEN=your-pypi-token
+     
+     # Windows (PowerShell)
+     $env:PYPI_TOKEN='your-pypi-token'
+     ```
+
+### Configuration File
+
+The tool uses a `.release-master.yaml` configuration file. On first run, if no configuration file exists, a default one will be created with these settings:
+
+```yaml
+version_files:
+  - pyproject.toml
+
+changelog:
+  ai_powered: true
+  openai_model: gpt-4o-mini
+  sections:
+    - Features
+    - Bug Fixes
+    - Documentation
+    - Internal Changes
+
+github:
+  auto_create: true
+  owner: your-github-username  # Will be prompted on first run
+  repo_name: your-repo-name    # Will be prompted on first run
+  private: false
+  description: "Your repository description"
+  # You can either set the token here (not recommended for security)
+  # token: your-github-token
+  # Or specify a custom environment variable name (defaults to GITHUB_TOKEN)
+  token_env_var: GITHUB_TOKEN
+```
+
+### Troubleshooting
+
+If any required environment variables are missing, the tool will provide detailed instructions:
+
+1. **Missing OpenAI API Key**:
+   - Error will include link to OpenAI signup
+   - Instructions for creating API key
+   - OS-specific setup instructions
+
+2. **Invalid GitHub Token**:
+   - Link to token creation page
+   - Required scope information
+   - Troubleshooting steps for common issues
+
+3. **Missing PyPI Token**:
+   - Instructions for PyPI account creation
+   - Token generation steps
+   - Publishing permission setup
+
+## Quick Start
+
+1. Add to your GitHub workflow:
+
+```yaml
+- name: Release
+  env:
+    PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
+    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  run: |
+    python-release-master publish \
+      --bump ${{ github.event.inputs.version_bump }} \
+      --title "Release ${{ github.event.inputs.version_bump }} version" \
+      --description "${{ github.event.inputs.release_notes }}"
+```
+
+2. Configure release settings:
+
+```yaml
+# .release-master.yaml
+version_files:
+  - pyproject.toml
+  - src/mypackage/__init__.py
+
+changelog:
+  ai_powered: true
+  openai_model: gpt-4-0125-preview  # Default model, can also use gpt-3.5-turbo
+  sections:
+    - Features
+    - Bug Fixes
+    - Documentation
+    - Internal Changes
+
+skip_steps:
+  - docker_tests  # Skip docker testing if needed
+```
+
+## AI Features
+
+### Smart Changelog Generation
+
+The tool uses OpenAI's GPT models to analyze your commits and pull requests, generating a structured changelog that:
+
+- Determines the appropriate version bump (major, minor, patch)
+- Categorizes changes into meaningful sections
+- Provides detailed descriptions for each change
+- Identifies breaking changes
+- Maintains consistent formatting
+
+Example output:
+```markdown
+## Features
+- Add AI-powered changelog generation
+- Implement smart commit message handling
+
+## Bug Fixes
+- Fix version detection in pyproject.toml
+- Resolve GitHub API pagination issues
+
+## Documentation
+- Update installation instructions
+- Add AI configuration guide
+```
+
+### Intelligent Commit Messages
+
+When uncommitted changes are detected, the tool can:
+
+- Analyze file changes to understand the context
+- Generate conventional commit messages
+- Add appropriate scope and description
+- Include detailed body explaining the changes
+- Handle breaking changes correctly
+
+Example commit message:
+```
+feat(changelog): add AI-powered generation
+
+Implement OpenAI integration for generating changelogs from commits and PRs.
+This change adds intelligent analysis of code changes to provide better
+release notes.
+```
+
+## Configuration
+
+### OpenAI Settings
+
+```yaml
+changelog:
+  ai_powered: true
+  openai_model: gpt-4-0125-preview  # Default model
+  sections:
+    - Features
+    - Bug Fixes
+    - Documentation
+    - Internal Changes
+    - Breaking Changes
+```
+
+### Environment Variables
+
+- `OPENAI_API_KEY`: Your OpenAI API key (required for AI features)
+- `PYPI_TOKEN`: PyPI token for publishing
+- `GITHUB_TOKEN`: GitHub token for release creation
+
+## Documentation
+
+For detailed documentation, visit [docs/](docs/).
+
+## Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details. 
