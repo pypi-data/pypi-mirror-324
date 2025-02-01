@@ -1,0 +1,3 @@
+DOCKER_REPO = ""
+MODULE_REPO = ""
+TARGET_COMMIT = ""
