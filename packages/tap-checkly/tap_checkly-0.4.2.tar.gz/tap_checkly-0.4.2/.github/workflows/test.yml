@@ -1,0 +1,77 @@
+name: Test tap-checkly
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - tap_checkly/**
+      - tests/**
+      - pyproject.toml
+      - .github/workflows/test.yml
+      - .github/workflows/constraints.txt
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - tap_checkly/**
+      - tests/**
+      - pyproject.toml
+      - .github/workflows/test.yml
+      - .github/workflows/constraints.txt
+  workflow_dispatch:
+  schedule:
+  # Run weekly on Monday at 12:00 PM UTC
+  - cron: "0 12 * * 1"
+
+env:
+  FORCE_COLOR: "1"
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_COLOR: "1"
+      PIP_CONSTRAINT: ${{ github.workspace }}/.github/workflows/constraints.txt
+    strategy:
+      fail-fast: false
+      matrix:
+        script: ["test:integration"]
+        python-version:
+        - "3.9"
+        - "3.10"
+        - "3.11"
+        - "3.12"
+        - "3.13"
+        include:
+        - { script: "test:dependencies", python-version: "3.x" }
+        - { script: "typing:check",      python-version: "3.x" }
+
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5.4.0
+      id: setup-python
+      with:
+        python-version: ${{ matrix.python-version }}
+        allow-prereleases: true
+        cache: pip
+
+    - name: Upgrade pip
+      run: |
+        pip install pip
+        pip --version
+
+    - name: Install Hatch
+      run: |
+        pipx install hatch
+        hatch --version
+
+    - name: Run
+      env:
+        HATCH_PYTHON: ${{ steps.setup-python.outputs.python-path }}
+        HATCH_VERBOSE: "1"
+        TAP_CHECKLY_ACCOUNT_ID: ${{ secrets.TAP_CHECKLY_ACCOUNT_ID }}
+        TAP_CHECKLY_TOKEN: ${{ secrets.TAP_CHECKLY_TOKEN }}
+        TAP_CHECKLY_START_DATE: ${{ secrets.TAP_CHECKLY_START_DATE }}
+      run: |
+        hatch run ${{ matrix.script }}
