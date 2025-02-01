@@ -1,0 +1,9 @@
+thoran_houdini_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+thoran_houdini_utils/connectServer.py,sha256=MxJEQfOm_vLf30v1koIGFYNH4ftZIs57FIH0X1tYxt8,1703
+thoran_houdini_utils/connect_server.py,sha256=MxJEQfOm_vLf30v1koIGFYNH4ftZIs57FIH0X1tYxt8,1703
+thoran_houdini_utils/start_server_in_houdini.py,sha256=7079Ryobooo2iraz4RclYFuA0U74EYU-EmeWaEQX1Ig,1651
+thoran_houdini_utils/stop_server_in_houdini.py,sha256=n5FKXpdQFxaX0KDyqvvmdeLBWPQmwhaRD0O-yBYZFZI,408
+thoran_houdini_utils-1.0.1.dist-info/METADATA,sha256=CU_xu2EwWdFBE9wPE6K59zmIma3yhlL4EDA-PfgGAE0,384
+thoran_houdini_utils-1.0.1.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+thoran_houdini_utils-1.0.1.dist-info/top_level.txt,sha256=cHiKLc7HFrHjDnYO6R-AH7EEZTCcBqQ5MhyzuI1c0T8,21
+thoran_houdini_utils-1.0.1.dist-info/RECORD,,
