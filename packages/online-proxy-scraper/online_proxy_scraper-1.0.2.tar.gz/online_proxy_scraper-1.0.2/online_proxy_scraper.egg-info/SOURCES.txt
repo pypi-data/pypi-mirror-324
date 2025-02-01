@@ -1,0 +1,7 @@
+README.md
+setup.py
+online_proxy_scraper.egg-info/PKG-INFO
+online_proxy_scraper.egg-info/SOURCES.txt
+online_proxy_scraper.egg-info/dependency_links.txt
+online_proxy_scraper.egg-info/requires.txt
+online_proxy_scraper.egg-info/top_level.txt
