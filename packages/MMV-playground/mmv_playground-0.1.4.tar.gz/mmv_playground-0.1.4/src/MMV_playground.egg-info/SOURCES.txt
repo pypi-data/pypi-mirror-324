@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/MMV_playground.egg-info/PKG-INFO
+src/MMV_playground.egg-info/SOURCES.txt
+src/MMV_playground.egg-info/dependency_links.txt
+src/MMV_playground.egg-info/entry_points.txt
+src/MMV_playground.egg-info/requires.txt
+src/MMV_playground.egg-info/top_level.txt
+src/mmv_playground/__init__.py
+src/mmv_playground/_widget.py
+src/mmv_playground/napari.yaml
+src/mmv_playground/_tests/__init__.py
+src/mmv_playground/_tests/test_widget.py
