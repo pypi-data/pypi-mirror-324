@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+polypheny-connector-version.txt
+setup.py
+polypheny/__init__.py
+polypheny/connection.py
+polypheny/exceptions.py
+polypheny/interval.py
+polypheny/rpc.py
+polypheny/serialize.py
+polypheny.egg-info/PKG-INFO
+polypheny.egg-info/SOURCES.txt
+polypheny.egg-info/dependency_links.txt
+polypheny.egg-info/requires.txt
+polypheny.egg-info/top_level.txt
