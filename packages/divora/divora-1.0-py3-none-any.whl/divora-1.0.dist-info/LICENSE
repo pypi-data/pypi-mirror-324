@@ -1,0 +1,86 @@
+Divora AI License Agreement
+
+Version 1.0
+Effective Date: [/1/30/25]
+
+This Divora AI Platform License Agreement ("Agreement") is between you (the "Licensee") and Divora, the provider of the Divora AI Platform ("Platform"). By using the Platform and its source code, you agree to the terms outlined in this Agreement.
+
+1. Grant of License
+Divora grants the Licensee a non-exclusive, royalty-free, and perpetual license to use, modify, and operate the Divora AI Platform source code for personal, internal, or commercial purposes. The Licensee may customize, integrate, and run the Platform in accordance with the provisions of this Agreement.
+
+2. Ownership and Control
+Licensee retains full ownership and control over any customizations, modifications, and AI models created using the Divora Platform. You may deploy and operate the Platform as you see fit, including for commercial purposes.
+
+3. Redistribution Restrictions
+The Licensee agrees to not redistribute the original Divora AI Platform source code or any derivative works to third parties, including but not limited to:
+
+Sharing the Source Code: Licensee may not share, resell, or distribute the Platform's source code, in whole or in part, to any other parties. The license grants usage and modification rights, but redistribution of the original or modified code is prohibited.
+
+Reselling the Code: The Licensee may not sell, sublicense, or otherwise make the source code available to any third party, whether modified or unmodified.
+
+No API or External Services: The Platform operates without reliance on third-party APIs or external services. The Licensee may not integrate the Platform with external APIs or services that would violate the spirit of this Agreement.
+
+4. Use of Custom Models
+You may freely use, distribute, and commercialize any AI models or applications you build using the Divora AI Platform. However, any source code associated with the Platform or its underlying components may not be redistributed or resold.
+
+5. No Liability
+The Divora AI Platform is provided “as-is,” with no warranties of any kind. Divora makes no representations or guarantees regarding the Platform's fitness for any specific purpose, and the Licensee assumes all risks associated with its use.
+
+6. Termination
+Divora reserves the right to terminate this Agreement if the Licensee violates any of the terms outlined. Upon termination, the Licensee must cease using the Divora AI Platform, modify any installations of the Platform, and destroy all copies in their possession.
+
+7. Indemnification
+The Licensee agrees to indemnify and hold harmless Divora from any claims, damages, or liabilities arising from the use, modification, or distribution of the Platform, including any third-party intellectual property claims.
+
+8. Governing Law
+This Agreement shall be governed by the laws of [Insert Country/State]. Any disputes arising under this Agreement shall be subject to the exclusive jurisdiction of the courts in [Insert Jurisdiction].
+
+By using or distributing the Divora AI Platform, you acknowledge that you have read, understood, and agree to the terms of this Agreement.
+
+
+
+MIT License
+
+Copyright (c) 2019-2020 Max Woolf
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+MIT License
+
+Copyright (c) 2019 OpenAI
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
