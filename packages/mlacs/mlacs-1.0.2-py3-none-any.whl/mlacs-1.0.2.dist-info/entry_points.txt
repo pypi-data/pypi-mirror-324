@@ -1,0 +1,2 @@
+[console_scripts]
+mlacs = mlacs.cli.main:main
