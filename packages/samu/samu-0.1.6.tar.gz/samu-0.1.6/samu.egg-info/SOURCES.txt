@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+samu.egg-info/PKG-INFO
+samu.egg-info/SOURCES.txt
+samu.egg-info/dependency_links.txt
+samu.egg-info/entry_points.txt
+samu.egg-info/requires.txt
+samu.egg-info/top_level.txt
