@@ -1,0 +1,17 @@
+setup.py
+CL_Chess/__init__.py
+CL_Chess/askUserToGiveInput.py
+CL_Chess/gameEngine.py
+CL_Chess/generateBoard.py
+CL_Chess/isValidMove.py
+CL_Chess/main.py
+CL_Chess/makeCoinFtoT.py
+CL_Chess/moveDiagram.py
+CL_Chess/printBoard.py
+CL_Chess/printGameOver.py
+CL_Chess/printWinPlayer.py
+CL_Chess/stepsCountDiagram.py
+CL_Chess_Nishnath.egg-info/PKG-INFO
+CL_Chess_Nishnath.egg-info/SOURCES.txt
+CL_Chess_Nishnath.egg-info/dependency_links.txt
+CL_Chess_Nishnath.egg-info/top_level.txt
