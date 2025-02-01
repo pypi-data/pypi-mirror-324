@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+autolaunch/__init__.py
+autolaunch/autolaunch.py
+autolaunch.egg-info/PKG-INFO
+autolaunch.egg-info/SOURCES.txt
+autolaunch.egg-info/dependency_links.txt
+autolaunch.egg-info/entry_points.txt
+autolaunch.egg-info/top_level.txt
+tests/test_autolaunch.py
