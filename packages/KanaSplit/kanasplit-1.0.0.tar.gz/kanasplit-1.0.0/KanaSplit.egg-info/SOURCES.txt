@@ -1,0 +1,9 @@
+README.md
+setup.py
+KanaSplit.egg-info/PKG-INFO
+KanaSplit.egg-info/SOURCES.txt
+KanaSplit.egg-info/dependency_links.txt
+KanaSplit.egg-info/entry_points.txt
+KanaSplit.egg-info/not-zip-safe
+KanaSplit.egg-info/requires.txt
+KanaSplit.egg-info/top_level.txt

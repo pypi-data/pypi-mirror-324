@@ -1,0 +1,4 @@
+ratelimit
+MeCab
+requests
+PyQt5
