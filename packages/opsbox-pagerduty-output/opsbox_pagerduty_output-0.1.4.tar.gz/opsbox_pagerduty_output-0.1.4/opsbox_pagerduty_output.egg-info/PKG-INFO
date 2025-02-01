@@ -1,0 +1,38 @@
+Metadata-Version: 2.2
+Name: opsbox-pagerduty-output
+Version: 0.1.4
+Summary: PagerDuty output for opsbox
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: llama-index>=0.12.6
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: pydantic>=2.10.2
+Requires-Dist: requests>=2.32.3
+Requires-Dist: opsbox-general-handler>=0.1.2
+
+# opsbox-pagerduty-output Plugin
+
+## Overview
+
+The `pagerduty_out` Plugin processes and sends results to PagerDuty, allowing for incident creation and management based on the findings.
+
+***LLM required for description creation***
+## Key Features
+
+- **PagerDuty Integration**: Sends results to PagerDuty.
+- **Customizable Incident Creation**: Allows specifying whether to create a description or an issue.
+
+## Configuration Parameters
+
+### PagerDuty Configuration
+
+- **routing_key**: The routing key to use.
+- **create_description**: Whether to create a description instead of an issue.
+
+## Example Configuration
+
+```yaml
+routing_key: your_routing_key
+create_description: true
+```
