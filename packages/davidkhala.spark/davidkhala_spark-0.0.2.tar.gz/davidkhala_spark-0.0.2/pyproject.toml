@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "davidkhala.spark"
+version = "0.0.2"
+description = ""
+authors = ["David Liu <david-khala@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "davidkhala" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+# extras
+pyspark = { version = "*", optional = true }
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[tool.poetry.extras]
+apache = ["pyspark"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
