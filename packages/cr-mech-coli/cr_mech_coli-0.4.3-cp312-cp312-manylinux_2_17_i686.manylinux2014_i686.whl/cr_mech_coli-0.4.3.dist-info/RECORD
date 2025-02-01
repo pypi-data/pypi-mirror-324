@@ -1,0 +1,11 @@
+cr_mech_coli-0.4.3.dist-info/METADATA,sha256=xMz4uhACAkOi_9FHTAFi5Jqz5t05JrzVT7udGhxjlTg,1648
+cr_mech_coli-0.4.3.dist-info/WHEEL,sha256=FHO5QHBCBC9oGw3HWjLQB5jRSPZHS1sVBUVaPJpXzio,125
+cr_mech_coli-0.4.3.dist-info/licenses/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+cr_mech_coli/cr_mech_coli.pyi,sha256=JYBtvwizG9zwneW2lgy4f6wG7xJIUdaEuf2m_pmbo_g,7551
+cr_mech_coli/simulation.py,sha256=gJ86HQSWZ6vN9qZ0L-SXLyN0kHQFV42a4l8SnuXY3B8,1064
+cr_mech_coli/fitting.py,sha256=nzlSfOsQVMB1W93l5Zyi6zKA6eq9XhtuiqoQSig_26Q,10223
+cr_mech_coli/datatypes.py,sha256=ErzoqzPE7yHBd5BZ0HikHbpYPICTpOoMUKV25F8Zm_A,1120
+cr_mech_coli/__init__.py,sha256=ak6QjZZMIqN6gPPJPzdl9GuuWf3f4KvJPxZULif7bUA,1208
+cr_mech_coli/imaging.py,sha256=SxzY6J-qvzswiprazUhj97zlyuWZ543F8Tel3LwAuUE,12038
+cr_mech_coli/cr_mech_coli.cpython-312-i386-linux-gnu.so,sha256=NJscfve-SBHZ_X4bKGisvYHIwrwKYp1m78RKpur5FmU,4684796
+cr_mech_coli-0.4.3.dist-info/RECORD,,
