@@ -1,0 +1,16 @@
+[package]
+name = "plsfix-py"
+version = "0.1.8"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "plsfix"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.23.4" }
+plsfix = { path = "../core" }
+
+[profile.release]
+debug = true
