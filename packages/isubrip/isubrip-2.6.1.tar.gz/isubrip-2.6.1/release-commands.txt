@@ -1,0 +1,4 @@
+Remove files from dist folder
+pip install -U setuptools twine build
+python -m build
+twine upload -u "__token__" dist/*
