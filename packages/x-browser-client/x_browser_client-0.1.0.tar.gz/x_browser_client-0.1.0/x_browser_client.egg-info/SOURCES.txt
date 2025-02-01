@@ -1,0 +1,13 @@
+README.md
+setup.py
+x_browser_client/__init__.py
+x_browser_client/cli.py
+x_browser_client/config.py
+x_browser_client/data_types.py
+x_browser_client/x.py
+x_browser_client.egg-info/PKG-INFO
+x_browser_client.egg-info/SOURCES.txt
+x_browser_client.egg-info/dependency_links.txt
+x_browser_client.egg-info/entry_points.txt
+x_browser_client.egg-info/requires.txt
+x_browser_client.egg-info/top_level.txt
