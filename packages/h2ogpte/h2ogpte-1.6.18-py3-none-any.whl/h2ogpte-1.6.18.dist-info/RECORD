@@ -1,0 +1,13 @@
+h2ogpte/__init__.py,sha256=W8hIaBsDXSA35ziezi2byUOZE6vbcnZ3KC-t48VWRek,1521
+h2ogpte/connectors.py,sha256=4k8WRUG_p6Gt3oU4RIENmNPqcJlOHNfxmCQuJyvl0n8,6936
+h2ogpte/errors.py,sha256=B_YIMXz_QYuZxl8caF6VdfF4fXCfuT7-PeFt8gcwkeU,1152
+h2ogpte/h2ogpte.py,sha256=QHK4d0SH0szbzu11PaSqrSRSt47Wi7PdS05JBrGVwv0,170786
+h2ogpte/h2ogpte_async.py,sha256=dbL2QyGnLNZv8wkiknsFLL_FdRSWa2yFNIHi3057d9U,170532
+h2ogpte/session.py,sha256=tY3RGTP5_THqFBpuSbHToxY6l1-Nd_htHzZva0ely9Y,27541
+h2ogpte/session_async.py,sha256=UGiRTSq1bQHPDqvwFwnKGmAEzTjI8EYusI1X8L6dmaI,25860
+h2ogpte/types.py,sha256=eGV76xp-Tz1GJqO2WEL7-PJ3upRX4UKiF4LaB1P3k6Q,12435
+h2ogpte/utils.py,sha256=G94aYLoWnllsBHP1dkKsriHNSHW-rEkYoj2c7dL_1CQ,3048
+h2ogpte-1.6.18.dist-info/METADATA,sha256=425m9UCQQZKkhDtNhxSbIkHyEQ1oM8dV7xyLFLWsLyc,7563
+h2ogpte-1.6.18.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+h2ogpte-1.6.18.dist-info/top_level.txt,sha256=vXV4JnNwFWFAqTWyHrH-cGIQqbCcEDG9-BbyNn58JpM,8
+h2ogpte-1.6.18.dist-info/RECORD,,
