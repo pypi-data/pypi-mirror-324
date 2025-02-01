@@ -1,0 +1,3 @@
+[console_scripts]
+fsa-metrics=fsa_metrics.cli:run_fsa_exporter
+
