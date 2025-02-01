@@ -1,0 +1,10 @@
+diffaaable/__init__.py,sha256=-zskXxZIfOmEkfns1SQ0G8u7TSqa5M_svRkAi-LVKMM,310
+diffaaable/adaptive.py,sha256=9utKfck6n_Aoc_zZ-FvpKwpa-m6ufwMvf1eI0NAnmHE,9957
+diffaaable/core.py,sha256=LOcq4k0IiYHaMffIS8Amgdu9lw9CWVH8WPYtFA5KtbY,7168
+diffaaable/lorentz.py,sha256=BVimKKOo-FuTNGhjwr3di54hziq2_xclQKLNe8YGJ-k,2390
+diffaaable/selective.py,sha256=F0pDH9Sf1vhIzgYSLZrqdRPx0oYY6p_dIJyI67JLHxI,6246
+diffaaable/vectorial.py,sha256=JtuowSk_bfgdjrEK0PsVIQGA1EuKuNOciQqqy_Nxv54,3145
+diffaaable-1.1.0.dist-info/LICENSE,sha256=_GGRQSEhqmML9t-dWxiXXZXwPLdzVHT5HdEISjFjSrU,1076
+diffaaable-1.1.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+diffaaable-1.1.0.dist-info/METADATA,sha256=QbHgsk03uhAzWGUlBtJRpE5DNEOYWwP5oscIl0IlNs8,2771
+diffaaable-1.1.0.dist-info/RECORD,,
