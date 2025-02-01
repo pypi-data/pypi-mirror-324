@@ -1,0 +1,35 @@
+[project]
+name = "leetspeak"
+dynamic = [ "version" ]
+description = "Convert text to and from leetspeak"
+authors = [
+    { name = "DJ Stomp", email = "85457381+DJStompZone@users.noreply.github.com" },
+]
+maintainers = [
+    { name = "DJ Stomp", email = "85457381+DJStompZone@users.noreply.github.com" },
+]
+license = "MIT"
+readme = "README.md"
+
+[project.urls]
+repository = "https://github.com/djstompzone/leetspeak"
+documentation = "https://github.com/DJStompZone/leetspeak/blob/main/README.md"
+"Discord" = "https://discord.stomp.zone"
+
+[project.scripts]
+leet = 'leetspeak.__main__:main'
+1337 = 'leetspeak.__main__:main'
+
+[tool.poetry]
+name = "leetspeak"
+authors = ["DJ Stomp <85457381+DJStompZone@users.noreply.github.com>"]
+description = "Convert text to and from leetspeak"
+version = "1.0.1"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+pyspellchecker = "^0.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
