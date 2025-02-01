@@ -1,0 +1,145 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Binary files
+*.mo
+*.pot
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Sphinx documentation
+docs/_build/
+docs/build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# dotenv
+.env
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Logs
+*.log
+logs/
+log/
+
+# Local development
+*.env
+.env.local
+.env.*.local
+*.sqlite3
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Large files and data
+*.csv
+*.json
+*.pkl
+*.h5
+*.parquet
+*.feather
+*.arrow
+*.dat
+*.db
+*.sqlite
+data/
+datasets/
+models/
+checkpoints/
+*.model
+*.bin
+*.pt
+*.pth
+*.onnx
+*.mlmodel
+
+# Temporary files
+tmp/
+temp/
+.temp/
+*.tmp
+*.bak
+*.swp
+*.swo 
+# Added by python-release-master
+*.tar.gz
+*.whl
+*~
+docs/api/
+env.bak/
+venv.bak/
