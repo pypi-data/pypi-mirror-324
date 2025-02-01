@@ -1,0 +1,40 @@
+/*
+    See the JupyterLab Developer Guide for useful CSS Patterns:
+
+    https://jupyterlab.readthedocs.io/en/stable/developer/css.html
+*/
+
+.jp-UserWidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+.jp-SubmitWidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin: 2px 10px;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+
+[data-command="jupyter-exam:submit"] {
+  background-color: #28a745; /* Green background */
+  color: white;
+  padding: 2px 8px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+[data-command="jupyter-exam:submit"]:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+[data-command="jupyter-exam:submit"] > .jp-ToolbarButtonComponent-label {
+  color: white;
+}
