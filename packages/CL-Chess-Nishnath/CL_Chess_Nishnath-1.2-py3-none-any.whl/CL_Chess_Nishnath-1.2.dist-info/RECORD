@@ -1,0 +1,16 @@
+CL_Chess/__init__.py,sha256=MigXIT7A1M9YZuH2MyjKReSziFwzbZX2boVYsLosR6s,22
+CL_Chess/askUserToGiveInput.py,sha256=RIzcC7CszKTuAaaY_DHbNgIfR0lRcnYQQfgNsmmMzGI,2228
+CL_Chess/gameEngine.py,sha256=L69f68VLmxcbF--CQK-xG__QxVPXiULyqGmnkVO4BfM,915
+CL_Chess/generateBoard.py,sha256=S-nurP_sarnr5XF8xJeB_a1jTzWGpzl2nxjOZKxPAek,686
+CL_Chess/isValidMove.py,sha256=0f-Yz-JypAefDT_haKh6wwqWBp5Qf-gSnsg9ZXZjszU,1086
+CL_Chess/main.py,sha256=iSNXqMU11g_QnchCofNPJ1owRP59ktGRBcfRx-OrTkg,1699
+CL_Chess/makeCoinFtoT.py,sha256=YFS4JIPXZ8aPTlX6yiUYsb-Ji6LXLN-BKLlOK8U1FIM,150
+CL_Chess/moveDiagram.py,sha256=rV_W9UcPJUfJvBPBWsVSJ8Ky9ur8b7uJ87BsV_CDZNc,235
+CL_Chess/printBoard.py,sha256=sQaQ6Fsmzz-zqCcguKSnb4oVe6K_VPd1t5Qp69TlAIM,3597
+CL_Chess/printGameOver.py,sha256=e6bN8XyI3yW-QF9s3iZNuBjJYBNwfZsggi_M2FoB_ms,983
+CL_Chess/printWinPlayer.py,sha256=oW7ZCcIq14d95gw8rpFxuONdKqA9KVHnLbGdl-aB4zA,1803
+CL_Chess/stepsCountDiagram.py,sha256=degOJ5B2hx_pJ4raEH_VBe2iwzIJvld5t4TFmPVCIVs,101
+CL_Chess_Nishnath-1.2.dist-info/METADATA,sha256=b7vwxtrh-OKhGop8AHApPjOcS3fXCby5QyOa_10g0s4,409
+CL_Chess_Nishnath-1.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+CL_Chess_Nishnath-1.2.dist-info/top_level.txt,sha256=8f8xzl-zfhpmiyq5xqIkbNeFHC2eqGE-d_Pl8mUysNQ,9
+CL_Chess_Nishnath-1.2.dist-info/RECORD,,
