@@ -1,0 +1,15 @@
+pokemon_world/__init__.py,sha256=7XeklZzCnMJmU9CsSJ5slGwoO3jHGwBbz4ozvbAfzTk,124
+pokemon_world/app.py,sha256=jksNI0mMzv-wqvoHmRZbOEZ3aTr38zEDOZi3KZlu1Ts,1120
+pokemon_world/static/audio/pokemon-theme.mp3,sha256=spysqfTYkz6tySCkrzW643UWsTXtx8yoNxNW2dJkmzo,3234900
+pokemon_world/static/images/pikachu.jpg,sha256=w3O2-_1fTuALkExqd-dMjU5u1X2y-BJWleh_LiahRSQ,83488
+pokemon_world/static/images/pokemon_retro_logo.png,sha256=z7C8lhMs-9v3vkOe9pPg_zp24wGZG26Pnjfx793lHhk,4726358
+pokemon_world/static/images/sacha.png,sha256=Ob9QtaM-yOgBUjC9LsLkKD5uJBwIaqsZR3-GusS35Uw,63371
+pokemon_world/static/scripts/main.js,sha256=PMK0w7MfDPxFDgUimkkhXSwHV-S8pnwhwh5zkuWhi1Q,2193
+pokemon_world/static/styles/main.css,sha256=KONiMUlBOTkj6QbKMi2m-1l1ZORucmoZIYMtFcjdLUI,3013
+pokemon_world/templates/index.html,sha256=Hg9SUEgYXl3T8v7CzNKNjrv17frdEnJx598Zy-eMgyE,2005
+pokemon_world-2025.1.3.dist-info/LICENCE.txt,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+pokemon_world-2025.1.3.dist-info/METADATA,sha256=uJBJjsBy8dk8PvxEtQdcjsMsRHNUMn5FWqjRTzKXdyU,1622
+pokemon_world-2025.1.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pokemon_world-2025.1.3.dist-info/entry_points.txt,sha256=NGTf_-GOpmCxE49b3ScqQieBnTO7glBQP3QYp8npX44,57
+pokemon_world-2025.1.3.dist-info/top_level.txt,sha256=DnVHOEBn7f1jN07NHzIqWpmynVLvOpOKN4TTw4D79fo,14
+pokemon_world-2025.1.3.dist-info/RECORD,,
