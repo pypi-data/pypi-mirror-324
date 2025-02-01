@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: agentikai
+Version: 0.1.1
+Summary: AgenticAI Package
+Home-page: https://github.com/yourusername/agenticai
+Author: Abdul Mannan Khan
+Author-email: mannankhanabdul@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# AgenticAI
+
+This package can be used to deliver agenticai projects at ease. 
+
+Currently this package is under development.. 
+
+## Installation
+
+```bash
+pip install agentikai
