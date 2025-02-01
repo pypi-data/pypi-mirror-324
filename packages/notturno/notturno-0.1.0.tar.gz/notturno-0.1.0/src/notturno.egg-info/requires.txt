@@ -1,0 +1,16 @@
+pydantic>=2.10.6
+anyio>=4.8.0
+yarl>=1.18.3
+h2>=4.1.0
+aiomultiprocess>=0.9.1
+google-re2>=1.1.20240702
+
+[asgi]
+uvicorn>=0.34.0
+
+[speed]
+orjson>=3.10.15
+fast-query-parsers>=1.0.3
+
+[trio]
+trio>=0.28.0
