@@ -1,0 +1,4 @@
+[console_scripts]
+sapp = sapp:main
+spython = sapp:spython
+spython3 = sapp:spython3

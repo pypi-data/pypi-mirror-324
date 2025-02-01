@@ -1,0 +1,109 @@
+Metadata-Version: 2.2
+Name: sapp-py
+Version: 0.5.0.dev1
+Summary: Command helper for slurm system. Act as if you are on compute node.
+License: MIT License
+        
+        Copyright (c) 2023 Haoyi Wu
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/why-in-Shanghaitech/sapp
+Project-URL: Documentation, https://github.com/why-in-Shanghaitech/sapp/blob/master/README.md
+Project-URL: Repository, https://github.com/why-in-Shanghaitech/sapp.git
+Project-URL: Bug Tracker, https://github.com/why-in-Shanghaitech/sapp/issues
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: npyscreen>=4.10.5
+Requires-Dist: pexpect
+Requires-Dist: pyotp
+Requires-Dist: filelock
+Requires-Dist: slash-py
+
+# SAPP
+
+`sapp` is a command helper for slurm system. It allows you to act as if you are on compute node (with Internet!). No need to learn how to use slurm.
+
+## How to use
+
+### Quick Start
+
+Use `spython` to replace `python` and your applications will run on the compute node.
+
+You will be asked to select a compute node for the first time. `sapp` will show the partition, type of cards and how many resources are available. After that, `sapp` will remember your choice and next time you may select this config with one click.
+
+<div align=center>
+    <img src="imgs/demo01.gif">
+</div>
+
+### Advanced Usage
+
+If you want to execute commands other that `python`, just add `sapp` in front of your command. Actually, `spython` is just a shortcut for `sapp python`. For example, use `sapp bash train.sh` to run `bash train.sh` on the compute node.
+
+<div align=center>
+    <img src="imgs/demo02.gif">
+</div>
+
+To use the Internet, please select the `base` environment of slash instead of `none`. You will be able to use the Internet on the compute node as if you are on your local machine.
+
+### Slash
+
+`sapp` now uses [slash](https://github.com/why-in-Shanghaitech/slash) to provide Internet service. You may select the preferred slash environment when submitting the job.
+- If you just want to use the Internet environment on the login node, select the built-in environment `base`.
+- You may also create your own environment with a subscription link, then select it when submitting the job.
+- If you do not want to use slash, just select `none`.
+
+```bash
+# create an slash environment with a subscription link (optional)
+# e.g. https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
+slash create -n myenv -f <your_subscription>
+
+# submit a job, choosing slash=myenv
+sapp wget huggingface.co
+```
+
+## Install
+
+```sh
+pip install git+https://github.com/why-in-Shanghaitech/sapp.git
+```
+
+## Uninstall
+
+```sh
+pip uninstall sapp
+```
+
+## Features
+
+ - Free yourself from long commands and slurm settings. Personally, I do not like typing a long command or executing a shell script with no interactive console.
+ - Beautiful `tqdm` progress bar for `srun` interactive jobs.
+ - Sapp allows you to run `srun` and `sbatch` without worrying about file changes. It will memorize the file you submit, so feel free to change the scripts or config files after submitting the job, even if it does not start running yet.
+ - Sapp could automatically setup the slash service -- enjoy the Internet on the compute node!
+
+## How it works
+
+ - The GPU status query is based on the command `sinfo`.
+ - The Internet service is based on slash.
+
+
