@@ -1,0 +1,8 @@
+numcodecs_wasm_uniform_noise/__init__.py,sha256=PzbbdtYEn3bZc-CQaOLs_cPmPcsQA5c4dCn0INO9Eig,280
+numcodecs_wasm_uniform_noise/__init__.pyi,sha256=2--YTchMhQ_4DXxAuXAJ2uZYCnjS5DbbRwBh3TEKmKQ,2609
+numcodecs_wasm_uniform_noise/codec.wasm,sha256=TqPwU_gZVoq73nn1oxn91WbHG1-0M5fP2gm-tUZAQ2Q,356451
+numcodecs_wasm_uniform_noise/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numcodecs_wasm_uniform_noise-0.2.0.dev1.dist-info/METADATA,sha256=n6K-BXtOyllftymLrn5QSNhp4mDDtxb_bahBnVPlYSo,21147
+numcodecs_wasm_uniform_noise-0.2.0.dev1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+numcodecs_wasm_uniform_noise-0.2.0.dev1.dist-info/top_level.txt,sha256=LlV3y0XWLe-P6XWF6euN1BBDZIwpk49MS-hR2J5Ol-Q,29
+numcodecs_wasm_uniform_noise-0.2.0.dev1.dist-info/RECORD,,
