@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: OddEven-SP
+Version: 2.0.0
+Summary: So, welcome to my first ever Python Project! That is a game based on Odd Even, but with a twist of Cricket!
+Home-page: https://github.com/Aarav2709/OddEven-SP
+Author: Aarav Gupta
+Author-email: tribejustice35@gmail.com
+License: Apache Software License
+Keywords: OddEven,SinglePlayer,Game,Cricket,Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+So, welcome to my first ever **Python Project**! That is a game based on *Odd Even*, but with a twist of **Cricket!**
+To install the Game, run `pip install OddEven-SP` in your Terminal. If you have already installed the game, then please run `pip install OddEven-SP --upgrade`. 
+
+To initiate the game, you need to create a new Python File and type:
+```py
+from OddEvenSP import odd_even_game
+odd_even_game()
+```
+# Enjoy! Make sure to give Feedback!
+
+[![PyPI Downloads](https://static.pepy.tech/badge/oddeven-sp)](https://pepy.tech/projects/oddeven-sp)
