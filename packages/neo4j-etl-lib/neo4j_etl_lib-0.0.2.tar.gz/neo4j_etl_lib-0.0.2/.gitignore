@@ -1,0 +1,9 @@
+/.env
+/tests/data/customers.error.json
+**/__pycache__/
+**/.env
+/requirements.txt
+/dist/
+/.idea/workspace.xml
+/docs/_build/
+/docs/_autosummary/
