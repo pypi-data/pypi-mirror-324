@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: CL_Chess_Nishnath
+Version: 1.0
+Summary: Play Chess 
+Home-page: https://github.com/NishnathRai/CL-Chess
+Author: Nishnath Rai
+Author-email: nishnathnishu1122@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
