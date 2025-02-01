@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: securelink
+Version: 0.1.0
+Summary: A Python package to generate secure links for nginx.
+License: MIT
+Author: muslih_k_diy
+Author-email: muslihk00@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: api
+Requires-Dist: fastapi (>=0.115.8,<0.116.0) ; extra == "api"
+Requires-Dist: uvicorn (>=0.34.0,<0.35.0) ; extra == "api"
+Description-Content-Type: text/markdown
+
+# 📌 SecureLink 
+##  Expirable Signed URL Generator & API
+SecureLink is a lightweight and flexible library for generating and verifying expirable signed URLs to control access to protected resources.
+
+* 📦 Library Mode – Use it as a Python package to generate secure URLs.
+* 🌍 API Mode – Deploy it as a FastAPI service to generate URLs via HTTP requests.
+* 
+
+## 🚀 Features
+
+* ✅ Expirable Links – Set expiration time for secure access
+* ✅ Signed URLs – MD5
+* ✅ FastAPI API – Built-in API for generating & verifying links
+* ✅ Pluggable Architecture – Extendable for different signing strategies
+* ✅ Works with Any Server – Supports Nginx  etc.
+
+##  📦 Installation
+```bash
+   pip install securelink
+```
+
