@@ -1,0 +1,14 @@
+[console_scripts]
+daq6510_cs = egse.tempcontrol.keithley.daq650_cs:cli
+
+[gui_scripts]
+daq6510_ui = egse.tempcontrol.keithley.daq6510_ui:main
+
+[cgse.service.plugins]
+daq6510_cs = scripts.cgse_service_plugins:daq6510_cs
+
+[cgse.settings]
+keithley-tempcontrol = keithley_tempcontrol:settings.yaml
+
+[cgse.version]
+keithley-tempcontrol = egse.plugins
