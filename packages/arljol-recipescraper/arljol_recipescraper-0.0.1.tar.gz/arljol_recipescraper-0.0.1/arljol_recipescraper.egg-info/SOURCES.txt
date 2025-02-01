@@ -1,0 +1,8 @@
+LICENSE.txt
+pyproject.toml
+recipescraper.py
+arljol_recipescraper.egg-info/PKG-INFO
+arljol_recipescraper.egg-info/SOURCES.txt
+arljol_recipescraper.egg-info/dependency_links.txt
+arljol_recipescraper.egg-info/requires.txt
+arljol_recipescraper.egg-info/top_level.txt
