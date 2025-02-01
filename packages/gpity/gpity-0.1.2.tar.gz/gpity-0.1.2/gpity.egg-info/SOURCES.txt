@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+gpity.egg-info/PKG-INFO
+gpity.egg-info/SOURCES.txt
+gpity.egg-info/dependency_links.txt
+gpity.egg-info/requires.txt
+gpity.egg-info/top_level.txt
+my_project/__init__.py
+my_project/main.py
