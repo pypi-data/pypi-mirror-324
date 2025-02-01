@@ -1,0 +1,8 @@
+epochai/__init__.py,sha256=jM2Rkk4pOw0IK5JD-Zl34S06ZlNVyb4v9HFPyayBqwc,123
+epochai/airtable/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+epochai/airtable/client.py,sha256=EntU5YVNvxIlPijshn7_hpy3wuBSZGAUDi50Mq2LMDA,228
+epochai/airtable/models.py,sha256=9WMPGqagtcYXmj7Vs3nixcdetofkwbVojBketB0AXuE,2092
+epochai-0.1.0.dist-info/LICENSE,sha256=b-Bo_h7fGWAyyJ7VFOzvqSOEIrUE6EHj8YQfS4Bk67k,1085
+epochai-0.1.0.dist-info/METADATA,sha256=IvNLyJKY3C4jbMGi56I0xDhAo_MxevJ7UoJ0G6UR158,2805
+epochai-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+epochai-0.1.0.dist-info/RECORD,,
