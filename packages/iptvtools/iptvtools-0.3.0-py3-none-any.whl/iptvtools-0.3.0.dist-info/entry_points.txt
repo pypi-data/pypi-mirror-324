@@ -1,0 +1,2 @@
+[console_scripts]
+iptvtools-cli = iptvtools.cli:cli
