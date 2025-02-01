@@ -1,0 +1,2 @@
+[console_scripts]
+actpy = activepy.cli:main
