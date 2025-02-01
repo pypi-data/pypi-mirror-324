@@ -1,0 +1,114 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pse"
+version = "1.1.1"
+authors = [
+    { name = "Jack Wind", email = "jckwind11@gmail.com" },
+    { name = "The Proxy Company", email = "contact@theproxy.company" }
+]
+description = "Proxy Structuring Engine: Stateful AI-generated output with a focus on creativity, speed, and structure."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+
+dependencies = [
+    "regex",
+    "tokenizers",
+    "tqdm",
+    "transformers",
+    "typing_extensions",
+    "wheel",
+    "protobuf",
+    "pydantic",
+    "docstring-parser",
+    "pse-core>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "coverage",
+    "docstring-parser",
+    "flake8",
+    "instructor",
+    "jax",
+    "jaxlib",
+    "lm-format-enforcer",
+    "mlx",
+    "mlx-lm",
+    "numpy",
+    "openai",
+    "outlines",
+    "pytest",
+    "ruff",
+    "sentencepiece",
+    "torch",
+    "pse-core>=1.0.0",
+]
+
+[project.urls]
+homepage = "https://github.com/TheProxyCompany/proxy-structuring-engine"
+documentation = "https://github.com/TheProxyCompany/proxy-structuring-engine#readme"
+source = "https://github.com/TheProxyCompany/proxy-structuring-engine"
+
+[tool.ruff.lint]
+extend-select = [
+    "B",    # flake8-bugbear
+    "I",    # isort
+    "PGH",  # pygrep-hooks
+    "RUF",  # Ruff-specific
+    "UP",   # pyupgrade
+    "SLF",  # string-literal-format
+    "F8",
+]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "LICENSE",
+    "README.md",
+    "pyproject.toml",
+    "pse"
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["pse"]
+include = ["pse/**"]
+optimize = true
+ignore-vcs = true
+
+[tool.hatch.envs.default]
+python = "3.11"
+env-vars = { PYTHONOPTIMIZE = "2" }
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "in %(filename)s:%(lineno)d [%(levelname)s] %(message)s"
+log_cli_date_format = "%H:%M:%S"
+
+# [tool.hatch.build]
+# dev-mode-dirs = ["pse"]
+# artifacts = ["pse/**/*.py[cod]", "pse/**/*.so"]
+
+# [tool.hatch.build.targets.wheel.hooks.mypyc]
+# dependencies = ["mypy[mypyc]", "hatch-mypyc"]
+# mypy-args = [
+#     "--ignore-missing-imports",
+#     "--verbose",
+#     "--allow-redefinition",
+#     "--disable-error-code=attr-defined",
+#     "--disable-error-code=assignment",
+#     "--disable-error-code=type-var",
+#     "--disable-error-code=method-assign",
+#     "--disable-error-code=misc",
+#     "--disable-error-code=no-untyped-def",
+#     "--disable-error-code=no-untyped-call",
+#     "--disable-error-code=assert-type",
+# ]
+# exclude = [
+#     "pse/util/*",
+#     "pse/state_machines/schema/*"
+# ]
