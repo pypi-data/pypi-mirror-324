@@ -1,0 +1,79 @@
+[tool.poetry]
+name = "space_packet_parser"
+version = "5.1.0rc1"
+description = "A CCSDS telemetry packet decoding library based on the XTCE packet format description standard."
+license = "BSD-3-Clause"
+readme = "README.md"
+include = ["LICENSE.txt", "CITATION.cff"]
+authors = [
+    "Gavin Medley <gavin.medley@lasp.colorado.edu>",
+    "Michael Chambliss <michael.chambliss@lasp.colorado.edu>",
+    "Greg Lucas <greg.lucas@lasp.colorado.edu>",
+]
+maintainers = [
+    "Gavin Medley <gavin.medley@lasp.colorado.edu>"
+]
+repository = "https://github.com/medley56/space_packet_parser"
+homepage = "https://space-packet-parser.readthedocs.io"
+keywords = [
+    "ccsds",
+    "xtce",
+    "space data systems",
+    "space packet protocol",
+    "packet parsing",
+    "lasp",
+    "university of colorado",
+    "data processing",
+    "data extraction",
+    "data manipulation",
+    "data transformation",
+    "data encoding",
+    "data decoding",
+    "packet inspection",
+    "binary data",
+    "python"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+lxml = ">=4.8.0"
+click = "^8.0"
+rich = "^13.0"
+# Extras dependencies
+xarray = { version = ">2024.0.0", optional = true }
+numpy = { version = "^2.0.0", optional = true }
+
+[tool.poetry.group.dev.dependencies]
+pycodestyle = "*"
+pylint = "*"
+pytest = "*"
+pytest-randomly = "*"
+pytest-cov = "*"
+pyyaml = "*"
+sphinx = "*"
+myst-parser = "*"
+sphinx-autoapi = "*"
+sphinx-rtd-theme = "*"
+coverage = "*"
+
+[tool.poetry.group.examples]
+optional = true
+
+[tool.poetry.group.examples.dependencies]
+matplotlib = ">=3.4"
+memory-profiler = "^0.61.0"
+
+[tool.poetry.extras]
+xarray = ["xarray", "numpy"]
+
+[tool.poetry.scripts]
+spp = "space_packet_parser.cli:spp"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore:You are encoding a BooleanParameterType:UserWarning",
+]
