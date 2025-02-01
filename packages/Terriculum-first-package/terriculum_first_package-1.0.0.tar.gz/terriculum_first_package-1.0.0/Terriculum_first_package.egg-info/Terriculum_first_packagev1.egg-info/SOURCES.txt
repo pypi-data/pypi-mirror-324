@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+Terriculum_first_packagev1.egg-info/PKG-INFO
+Terriculum_first_packagev1.egg-info/SOURCES.txt
+Terriculum_first_packagev1.egg-info/dependency_links.txt
+Terriculum_first_packagev1.egg-info/entry_points.txt
+Terriculum_first_packagev1.egg-info/top_level.txt
