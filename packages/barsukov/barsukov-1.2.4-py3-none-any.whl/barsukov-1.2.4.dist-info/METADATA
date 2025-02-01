@@ -1,0 +1,51 @@
+Metadata-Version: 2.2
+Name: barsukov
+Version: 1.2.4
+Summary: Experiment Automation Package
+Home-page: https://barsukov.ucr.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pytz>=2014.10
+Requires-Dist: numpy>1.0.0
+Requires-Dist: scipy>=0.9.0
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# Barsukov
+
+Barsukov is a Python library for experiment automation.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install barsukov.
+
+```bash
+pip install barsukov
+```
+
+## Usage
+
+```python
+#
+#
+#
+#
+#
+#
+#
+```
+
+## Contributing
+
+-
+-
+-
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
