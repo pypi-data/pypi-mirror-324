@@ -1,0 +1,3 @@
+[console_scripts]
+prowl = prowl.cli:main
+
