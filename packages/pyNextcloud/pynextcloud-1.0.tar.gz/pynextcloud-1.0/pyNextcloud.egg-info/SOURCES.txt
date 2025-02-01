@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pyNextcloud/__init__.py
+pyNextcloud/config.py
+pyNextcloud/nextcloud.py
+pyNextcloud.egg-info/PKG-INFO
+pyNextcloud.egg-info/SOURCES.txt
+pyNextcloud.egg-info/dependency_links.txt
+pyNextcloud.egg-info/requires.txt
+pyNextcloud.egg-info/top_level.txt
+tests/test_nextcloud.py
