@@ -1,0 +1,8 @@
+certbot_dns_infoblox_universal/__init__.py,sha256=QY0Han4iuoLdF-26gv1qOnRgIXO2BLR-2i9HOZc3EV0,3331
+certbot_dns_infoblox_universal/dns_infoblox_universal.py,sha256=sH-3HCUTuncRAPzmRxPEW1X7wF4abbOb-fCeJXlZmU0,3852
+certbot_dns_infoblox_universal-0.1.0.dist-info/LICENSE,sha256=CeipvOyAZxBGUsFoaFqwkx54aPnIKEtm9a5u2uXxEws,10142
+certbot_dns_infoblox_universal-0.1.0.dist-info/METADATA,sha256=ewEJryRKDchkj28UM28HgjBoX4OgZxzWW7am-3RZ5iY,4913
+certbot_dns_infoblox_universal-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+certbot_dns_infoblox_universal-0.1.0.dist-info/entry_points.txt,sha256=yrjgPbPdrePCrTM_7EbOsF6219gv_AKK07vTdN7EgJU,111
+certbot_dns_infoblox_universal-0.1.0.dist-info/top_level.txt,sha256=Da3T7vtOjPPDit4mAPzXSa3SEQ_XXxDlF6DgzG_ladA,31
+certbot_dns_infoblox_universal-0.1.0.dist-info/RECORD,,
