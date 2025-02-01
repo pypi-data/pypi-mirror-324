@@ -1,0 +1,67 @@
+Metadata-Version: 2.4
+Name: PyPiUpdater
+Version: 0.3.0
+Summary: Simple program to update package from PyPi with pip.
+Project-URL: Source, https://gitlab.com/CodeByMrFinchum/PyPiUpdater
+Author: Mr Finchum
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: packaging
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+# PyPiUpdater
+**UNFINISHED** Still early code, functions might change drasticly
+
+**PyPiUpdater** is a Python library for managing updates of packages installed via `pip`.
+
+## Features
+- Check the latest version of a package on PyPI
+  - Determine if an update is available
+- Upgrade the package using `pip`
+- Restart the Python script after updating
+
+## Installation
+
+```bash
+pip install PyPiUpdater
+```
+
+## Usage example
+**NOTE:** Example only work for client application, GUI apps such as OptimaLab35 with QT need also to close the window and should not use the restart function.
+
+**Now the example by ChatGPT:**
+
+Here's a short example code snippet for your `PyPiUpdater` package to include in your README:
+
+```python
+# Example usage of PyPiUpdater
+
+from PyPiUpdater import PyPiUpdater
+
+# Initialize the updater with the package name, current version, and log file path
+updater = PyPiUpdater(package_name="OptimaLab35", local_version="0.7.0", log_path="update_log.txt")
+
+# Check if an update is available (optionally forcing the check, otherwise only checked every 20 hours(default set with update_interval_seconds = int seconds))
+is_newer, latest_version = updater.check_for_update(force=False)
+
+if is_newer:
+    print(f"Update available! Latest version: {latest_version}")
+    # Update the package using pip
+    success, message = updater.update_package()
+    print(message)
+    if success:
+        # Restart the program after update
+        updater.restart_program()
+else:
+    print("No update available or checked too recently.")
+```
+
+### Explanation:
+- The example shows how to initialize the `PyPiUpdater` class with the package name, current version, and the path to a log file.
+- It checks for an update by calling `check_for_update()`.
+- If an update is available, it proceeds with updating the package using `update_package()` and restarts the program with `restart_program()`.
+- If no update is available, or it was checked too recently, it prints an appropriate message.
