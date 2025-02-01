@@ -1,0 +1,13 @@
+feast==0.38.0
+pandas==2.2.2
+numpy==1.26.4
+pydantic==2.7.4
+pyignite==0.6.1
+pygridgain==1.4.0
+
+[coverage]
+pytest-cov
+
+[test]
+pytest
+pytest-asyncio
