@@ -1,0 +1,7 @@
+cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cli/cli.py,sha256=8Pbm93s5z1ILH2-9kF8Izzy3LZ8vArXZGSDQN_OOTjk,16364
+techtonique_cli-0.2.0.dist-info/METADATA,sha256=gC9buw7V2Q9l5QxSvuzI6nnsRGmp00pLeCtywKpERLk,3910
+techtonique_cli-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+techtonique_cli-0.2.0.dist-info/entry_points.txt,sha256=vmqZoe7XMnI5NoNwA1h3mMBsI-hzAVVz1Fcr8a0aw4o,44
+techtonique_cli-0.2.0.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+techtonique_cli-0.2.0.dist-info/RECORD,,
