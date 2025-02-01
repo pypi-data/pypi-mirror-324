@@ -1,0 +1,10 @@
+multi_swarm/__init__.py,sha256=5wat4WHiXvtpJxp3ExaU4C7yrMYG8owW9IZ3KpCGxK8,284
+multi_swarm/agency.py,sha256=9S6bdhEujmD9i7Rmul5RPLYNUPfUQE7-IEsic4HlRZM,752
+multi_swarm/core/__init__.py,sha256=FTCs8b6MGROn27DP5MacBQmUZZ_17jKR9G__Cau6zOE,145
+multi_swarm/core/agency.py,sha256=fk96tw55wClzV2Cw3xeXgLoWRhi9eA7rnyw1XJdmAAQ,2504
+multi_swarm/core/base_agent.py,sha256=w3WX2H3ptdJCMWLAnD21XyB__z1KGSuG1WcbDAGBiPc,3632
+multi_swarm-1.0.0.dist-info/LICENSE,sha256=5xXtHOgPArW7KbZYUNDt9uwbmVaGj7NUbQKbHsbnc0k,1094
+multi_swarm-1.0.0.dist-info/METADATA,sha256=S_bh_Z4P-IcuMmwPGZk1LprmNdYAodhwC6D99uC4KxI,6087
+multi_swarm-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+multi_swarm-1.0.0.dist-info/top_level.txt,sha256=I4UenUFAlfW2dprk9F02s5E6X4JVR9iy9JIw-jOoCsI,12
+multi_swarm-1.0.0.dist-info/RECORD,,
