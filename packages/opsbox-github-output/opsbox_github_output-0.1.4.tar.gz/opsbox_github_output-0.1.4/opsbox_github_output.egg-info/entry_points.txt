@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_github_out = github.github:GithubOutput

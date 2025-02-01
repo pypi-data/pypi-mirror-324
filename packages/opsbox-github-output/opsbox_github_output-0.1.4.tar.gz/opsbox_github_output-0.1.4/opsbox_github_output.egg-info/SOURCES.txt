@@ -1,0 +1,13 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+./github/manifest.toml
+github/github.py
+github/manifest.toml
+opsbox_github_output.egg-info/PKG-INFO
+opsbox_github_output.egg-info/SOURCES.txt
+opsbox_github_output.egg-info/dependency_links.txt
+opsbox_github_output.egg-info/entry_points.txt
+opsbox_github_output.egg-info/requires.txt
+opsbox_github_output.egg-info/top_level.txt
