@@ -1,0 +1,2 @@
+[console_scripts]
+autocomplete_booster = source.cli:main
