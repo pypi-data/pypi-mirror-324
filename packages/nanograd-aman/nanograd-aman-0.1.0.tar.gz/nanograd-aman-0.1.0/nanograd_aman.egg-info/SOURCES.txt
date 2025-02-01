@@ -1,0 +1,11 @@
+README.md
+setup.py
+nanograd/__init__.py
+nanograd/engine.py
+nanograd/graph.py
+nanograd/nn.py
+nanograd_aman.egg-info/PKG-INFO
+nanograd_aman.egg-info/SOURCES.txt
+nanograd_aman.egg-info/dependency_links.txt
+nanograd_aman.egg-info/requires.txt
+nanograd_aman.egg-info/top_level.txt
