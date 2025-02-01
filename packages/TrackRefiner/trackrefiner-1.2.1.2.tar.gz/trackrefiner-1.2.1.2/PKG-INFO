@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: TrackRefiner
+Version: 1.2.1.2
+Summary: Analyzing CellProfiler output
+Home-page: https://github.com/ingallslab/Trackrefiner
+Author: Atiyeh Ahmadi
+Author-email: Atiyeh Ahmadi <a94ahmad@uwaterloo.ca>
+License: BSD 3-Clause
+Project-URL: homepage, https://github.com/ingallslab/Trackrefiner
+Project-URL: repository, https://github.com/ingallslab/Trackrefiner
+Project-URL: tutorial, https://github.com/ingallslab/Trackrefiner/wiki
+Project-URL: documentation, https://github.com/ingallslab/Trackrefiner/tree/main/docs/html
+Project-URL: faq, https://github.com/ingallslab/Trackrefiner/issues
+Project-URL: issues, https://github.com/ingallslab/Trackrefiner/issues
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Requires-Dist: numpy==1.26.4
+Requires-Dist: scipy
+Requires-Dist: pandas>=2.2.2
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: opencv-python
+Requires-Dist: scikit-image
+Requires-Dist: psutil
+Requires-Dist: seaborn
+Requires-Dist: PyQt5
+Dynamic: author
+Dynamic: home-page
+Dynamic: requires-python
