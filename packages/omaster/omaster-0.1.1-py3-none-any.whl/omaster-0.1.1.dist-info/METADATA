@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: omaster
+Version: 0.1.1
+Summary: Documentation downloader for UV package manager
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4>=4.6.3
+Requires-Dist: requests>=2.5.4.1
