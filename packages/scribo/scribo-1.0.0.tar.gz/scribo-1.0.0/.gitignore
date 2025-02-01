@@ -1,0 +1,11 @@
+*swp
+next
+info.md
+.pypirc
+
+# Directories
+__pycache__
+dist
+.venv
+tmp
+myproject
