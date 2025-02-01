@@ -1,0 +1,6 @@
+include LICENSE
+include README.md
+include pyproject.toml
+recursive-include qrng *.py *.h *.c
+recursive-include src *.h *.c
+recursive-include tests *.py
