@@ -1,0 +1,17 @@
+python_release_master/__init__.py,sha256=jJPTNLu-L5DDDZbPWFef_YbcW3U8u2j6gOKssUb_MXI,88
+python_release_master/__main__.py,sha256=KeJC-rpHMop5q0_DdzBk9iaWor6kniIMLaBCS7AVeAw,152
+python_release_master/cli.py,sha256=jdwV-nUolMXB6j5kTLo4SiM4vep-xa_H6rNRG2NfB3I,1616
+python_release_master/core/__init__.py,sha256=Q062s9jiEpU9asGkKBniDvMsk8dU7BDj2_s6aGqkUOY,216
+python_release_master/core/ai.py,sha256=6bPTnrA78lpnGmoVGmi-3UA85mHLFn9OZN-UIgtB_-c,15665
+python_release_master/core/changelog.py,sha256=iV7JeAkcWGPbP2QshSEyGG5_mezNxDvv6Dqp9IcGlM4,1702
+python_release_master/core/config.py,sha256=J-DoK6pLSievqG6zjEXm89Jwwy_u6oHs9j2oVGPU9-8,2700
+python_release_master/core/docs.py,sha256=blbFQ6l0rJ9K9ZLiBmOye4i1tV7gB_X0w6aiBctL0lg,601
+python_release_master/core/release.py,sha256=jdIycrLwSyXzKSso0m6klKEbEBIUSPP2rtZNh_ll4ew,10622
+python_release_master/core/testing.py,sha256=jnY59bCjtZ040Qp3LApDQwsNEYFJIpZYrzfvvJvPnn4,3624
+python_release_master/core/validation.py,sha256=jPThQvJvKHrOLJzOSRuvWocCwQVqIcFbfRnaC155OwA,2674
+python_release_master/core/version.py,sha256=kUXlu-z53Ig5si_1QhbGJ1C5fiFne2xv6qiq9Iw8NSw,1682
+python_release_master-0.1.1.dist-info/METADATA,sha256=4nEUHT2fwyOWMhepxLYx2D4NIE0hNoHFeH_Ks0hk_fQ,4612
+python_release_master-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+python_release_master-0.1.1.dist-info/entry_points.txt,sha256=KIBac1NUFqv-zCbfRWBuYjLGuD_RrNNybifAUa7Bo94,73
+python_release_master-0.1.1.dist-info/licenses/LICENSE,sha256=vKz56lTg5NPxf9k-Me_5OHvhVUYLmFt4vC4XlfuXkCw,1073
+python_release_master-0.1.1.dist-info/RECORD,,
