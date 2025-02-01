@@ -1,0 +1,7 @@
+config_getter/__init__.py,sha256=1mptEzQihbdyqqzMgdns_j5ZGK9gz7hR2bsgA_TnjO4,22
+config_getter/cli.py,sha256=BgPA4jwPCjsfkDDUZfBabfktUViNbGe-01D5bDaATWE,3632
+config_getter-0.0.4.dist-info/METADATA,sha256=kBhyJZ8xacL8cZoxE7NXOyF9B3FoFSMUc4TQ3azbZqw,1834
+config_getter-0.0.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+config_getter-0.0.4.dist-info/entry_points.txt,sha256=LlLWKcHcMq4EnfCGo8wNjpfrzYeF1oTDWZwVyJ5K_s4,56
+config_getter-0.0.4.dist-info/licenses/LICENSE,sha256=XkbG3eKV9AnkUYQrN9FMSgbtrTTEDOrNx6CM_nkGy70,1071
+config_getter-0.0.4.dist-info/RECORD,,
