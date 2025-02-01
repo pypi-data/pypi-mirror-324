@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: metacycle
+Version: 0.1.0
+Summary: Open-world cycling with bluetooth accessories in carla simulator.
+Requires-Python: ~=3.10
+Requires-Dist: bleak>=0.22.3
+Requires-Dist: carla==0.9.15
+Requires-Dist: numpy>=2.2.2
+Requires-Dist: opencv-python>=4.11.0.86
+Requires-Dist: pycycling>=0.4.1
+Requires-Dist: pygame>=2.6.1
+Description-Content-Type: text/markdown
+
+# metacycle
+
+Install metacycle
+```
+uv python install 3.10
+uv tool install metacycle
+```
+
+Launch carla
+
+Launch metacycle
+```
+metacycle
+```
