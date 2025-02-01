@@ -1,0 +1,3 @@
+[console_scripts]
+web-time-server = web_time_server.server:run_server
+
