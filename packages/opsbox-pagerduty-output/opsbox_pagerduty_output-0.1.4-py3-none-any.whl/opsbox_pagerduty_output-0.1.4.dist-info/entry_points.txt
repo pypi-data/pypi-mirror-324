@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_pagerduty_out = pagerduty.pagerDuty:pagerDutyOutput
