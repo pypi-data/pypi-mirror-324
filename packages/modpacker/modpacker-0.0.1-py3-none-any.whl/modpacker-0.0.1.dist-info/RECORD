@@ -1,0 +1,10 @@
+packer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+packer/compile.py,sha256=a9-d_dKl-BMu-GUaO3LZ-VzxbGMGNRJcvQ1JaTdmBjw,3062
+packer/config.py,sha256=f8LUvT6abVZyuNC11ktkJzEjnFKVfy3Oe_NzDUG-m2g,1253
+packer/curseforge.py,sha256=1OHUMMtTXJOxF6umBY-ltbALu3fGfahnPUxBX2vh6xA,3597
+packer/packer.py,sha256=-yB__AOf8pIJYdgcNTgL62wl14YMueUtUBxoZWzUPUA,903
+modpacker-0.0.1.dist-info/METADATA,sha256=hY9nSYw3MAmMkKGsjRWjwdKL5Ivbm4yLK-xvAZTjuqo,125
+modpacker-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+modpacker-0.0.1.dist-info/entry_points.txt,sha256=ogmNWXCoTkpJZR4P77SNCAGE8pz07Qc7lo75GUbmaXI,46
+modpacker-0.0.1.dist-info/top_level.txt,sha256=IMQZZL3QDcSpljNv3k5xYykfRLVt3_sMVPJ4u1APhgY,7
+modpacker-0.0.1.dist-info/RECORD,,
