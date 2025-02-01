@@ -1,0 +1,8 @@
+aidge_backend_cuda-0.5.0.dist-info/METADATA,sha256=GpOF_mZF-hBZYsjo3zEWr_S9mavMhE1NB33WVDVVW10,18692
+aidge_backend_cuda-0.5.0.dist-info/LICENSE,sha256=C-zxZWe-t3-iUrdmRjHdF3yPmhiJ5ImVtFN5xxMOUwM,14198
+aidge_backend_cuda-0.5.0.dist-info/top_level.txt,sha256=wvc_cr37GL0lZgHYSB-H8VLeXFADSrLgrA4l3q5-ONk,19
+aidge_backend_cuda-0.5.0.dist-info/WHEEL,sha256=ViyZsTV2upbIniGkknQiIrLPLs1cJIoIfr1wsV7PMic,151
+aidge_backend_cuda-0.5.0.dist-info/RECORD,,
+aidge_backend_cuda/aidge_backend_cuda.cpython-310-x86_64-linux-gnu.so,sha256=h8KSiNOxToaYwXhtvDeXAxYAHEqfVHOvNunwL5X5tyc,5489600
+aidge_backend_cuda/__init__.py,sha256=ziFVtBJlroZvCexshwf8qBH-vLay66wVgHSZgP1HiMg,86
+aidge_backend_cuda/version.txt,sha256=pYH0rNhSZIINvVR3pQm9tJiz7jZGsAUWgiollQVk9PQ,7
