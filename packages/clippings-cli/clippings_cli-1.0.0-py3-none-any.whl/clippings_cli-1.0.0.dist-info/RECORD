@@ -1,0 +1,15 @@
+clippings_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clippings_cli/clippings_service/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clippings_cli/clippings_service/format_handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clippings_cli/clippings_service/format_handlers/excel_handlers.py,sha256=bhznBtP_G1CjYjBv1MNP2tzH57nkNLSk0h1zALHThJo,4127
+clippings_cli/clippings_service/format_handlers/json_handlers.py,sha256=98WCJ2C-uvoKgPlKfVCt8_51guctZVUBNQbpR4oofNU,825
+clippings_cli/clippings_service/parsers.py,sha256=NDfBWjuaqUP-v4FG3JAYaZbzajlK4NJh7Ls_msXu6TA,3198
+clippings_cli/clippings_service/service.py,sha256=tXY2x9GHFN7fX7ysweAXz439xkMZKUelA9X6x_FEUcs,3310
+clippings_cli/clippings_service/validators.py,sha256=bkEZyTHJYtqeIuY7HoySlBPBsZuSYG16FLdHOUr0gZU,607
+clippings_cli/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clippings_cli/commands/convert.py,sha256=ME7oqw_oEoj9AOBAxXpziS54ncNEw5HrTR0gfP-CQRc,4100
+clippings_cli/entrypoint.py,sha256=7fWdODFpf4UPWvtY0rUvlvRkGhM9HiDWLt1ZaZtTRqI,265
+clippings_cli-1.0.0.dist-info/entry_points.txt,sha256=lF3w__ZcAXpsJIa-HKVn3H1hwIB_Sn0Uyws8fZfETgc,58
+clippings_cli-1.0.0.dist-info/METADATA,sha256=P7N3E3RCnPLPajNmjhkhCeVvzhYaK70rHC78hIsxH5I,887
+clippings_cli-1.0.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+clippings_cli-1.0.0.dist-info/RECORD,,

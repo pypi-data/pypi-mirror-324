@@ -1,0 +1,32 @@
+Metadata-Version: 2.3
+Name: clippings-cli
+Version: 1.0.0
+Summary: A CLI tool for managing Kindle clippings
+License: MIT
+Author: Dawid Mateusiak
+Author-email: mateusiakdawid@gmail.com
+Requires-Python: >=3.12,<3.14
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: openpyxl (>=3.1.5,<4.0.0)
+Project-URL: Homepage, https://github.com/MateDawid/Kindle-Clippings-CLI
+Project-URL: Repository, https://github.com/MateDawid/Kindle-Clippings-CLI
+Description-Content-Type: text/markdown
+
+# Kindle-Clippings-CLI
+
+## Local setup
+
+Install CLI locally
+```shell
+[ROOT]\Kindle-Clippings-CLI> pip install .\clippings-cli    
+```
+
+## Usage
+
+```shell
+clippings-cli convert -f json -p Clippings.txt
+```
