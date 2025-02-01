@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: aiida-qe-xspec
+Version: 0.1.0a0
+Summary: AiiDA plugin for core-level spectroscopy calculations with Quantum ESPRESSO.
+Keywords: aiida,workflows,core-level,spectroscopy
+Author: aiida-qe-xspec team
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AiiDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: aiida-core>=2.3
+Requires-Dist: aiida-quantumespresso>=4.5
+Requires-Dist: mypy==1.6.1 ; extra == "dev"
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: pytest~=6.2 ; extra == "dev"
+Requires-Dist: pytest-regressions ; extra == "dev"
+Requires-Dist: myst-parser ; extra == "docs"
+Requires-Dist: pydata-sphinx-theme~=0.14.3 ; extra == "docs"
+Requires-Dist: sphinx~=7.2 ; extra == "docs"
+Requires-Dist: sphinx-copybutton~=0.5.0 ; extra == "docs"
+Requires-Dist: sphinx-click~=4.0 ; extra == "docs"
+Requires-Dist: sphinx-design~=0.5.0 ; extra == "docs"
+Requires-Dist: sphinx-favicon ; extra == "docs"
+Project-URL: documentation, https://aiida-qe-xspec.readthedocs.io/
+Project-URL: homepage, https://github.com/aiidalab/aiida-qe-xspec
+Project-URL: source, https://github.com/aiidalab/aiida-qe-xspec
+Project-URL: tracker, https://github.com/aiidalab/aiida-qe-xspec/issues
+Provides-Extra: dev
+Provides-Extra: docs
+
+# aiida-qe-xspec
+
