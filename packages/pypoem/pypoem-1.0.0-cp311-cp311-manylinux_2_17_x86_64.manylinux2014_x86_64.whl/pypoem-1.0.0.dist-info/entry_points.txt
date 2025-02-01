@@ -1,0 +1,3 @@
+[console_scripts]
+poem_hash = pypoem.tools.poem_hash:main
+
