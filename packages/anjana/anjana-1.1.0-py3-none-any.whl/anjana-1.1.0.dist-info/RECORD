@@ -1,0 +1,13 @@
+anjana/__init__.py,sha256=iAP1UEJWgmdTiWcKhZbSa-PaNyJ99X55ZPZFp0oKxds,743
+anjana/anonymity/__init__.py,sha256=_1-R5vWij_x8xV-j0sRCc5gaYxaLLaf7exQIaGlrT8k,1277
+anjana/anonymity/_beta_likeness.py,sha256=2OMev_COhMdpP2W0JFdEqkgNNo13qTPnUcf4vI9B_HE,6416
+anjana/anonymity/_delta_disclosure.py,sha256=7M2HD-d2iTYkPSNndYOr1SToMBlzTW3MV6SOYe_S5Os,3633
+anjana/anonymity/_k_anonymity.py,sha256=l7JlS2YjOQNRvZTLGT_v_ytkPqcTQuFX3S4HOo7p0Lk,10183
+anjana/anonymity/_l_diversity.py,sha256=CmoMqP4lbH6kvL7NQUWg4hTPgch3UQx-BplKVWMbY_Q,13604
+anjana/anonymity/_t_closeness.py,sha256=MoEmjZkg6rElO19PEDPXyAPs7wVQ-GxPehNRmq5ZIPI,3501
+anjana/anonymity/utils/__init__.py,sha256=rHfdClsdIVHnKCVEDCM-j3H0Bs5KLswE6OXwyo9CxwE,1044
+anjana/anonymity/utils/utils.py,sha256=CfcOH0XxvZ7i2hjs-U60eATWT9dX3bRK51VPKVraCr4,8810
+anjana-1.1.0.dist-info/LICENSE,sha256=Ie2jkbHXu-8lwQGSH4_0WQrZcl8l0OqOqUDeMuCIVUU,11353
+anjana-1.1.0.dist-info/METADATA,sha256=4oHY74Gw_pQXIya7V50lBPz1-bIk5vYSYehYIaDYt-4,11499
+anjana-1.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+anjana-1.1.0.dist-info/RECORD,,
