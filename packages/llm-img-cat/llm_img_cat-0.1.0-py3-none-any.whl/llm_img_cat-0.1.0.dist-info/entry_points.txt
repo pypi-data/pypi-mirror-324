@@ -1,0 +1,2 @@
+[console_scripts]
+llm_img_cat = llm_img_cat.cli:main
