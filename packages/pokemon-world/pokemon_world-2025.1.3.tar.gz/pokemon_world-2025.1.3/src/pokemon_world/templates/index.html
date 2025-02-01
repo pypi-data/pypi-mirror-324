@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <!-- Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Hover.css for interactions -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+
+    <!-- Tippy.js for tooltips -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+</head>
+    <!-- Add right after opening body tag -->
+<body>
+    <div class="retro-logo">
+      <img src="{{ url_for('static', filename='images/pokemon_retro_logo.png') }}" alt="Retro Pokemon Logo">
+    </div>
+    <!-- Music Player -->
+    <audio id="theme-music" loop>
+        <source src="{{ url_for('static', filename='audio/pokemon-theme.mp3') }}" type="audio/mpeg">
+    </audio>
+
+    <!-- sacha Pop-up -->
+    <div id="sacha-popup" class="popup">
+        <div class="popup-content">
+            <img src="{{ url_for('static', filename='images/sacha.png') }}" alt="sacha" class="sacha-img">
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1>Welcome to Pokemon World!</h1>
+        
+        <div class="interactive-section">
+            <div class="pokeball" id="pokeball">
+                <div class="pokeball-button"></div>
+            </div>
+            <div id="pokemon-display"></div>
+        </div>
+
+        <div class="effects">
+            <div class="particles"></div>
+            <div class="sparkles"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+</body>
+</html>
