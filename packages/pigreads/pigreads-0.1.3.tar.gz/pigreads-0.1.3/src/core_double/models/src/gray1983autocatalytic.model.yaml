@@ -1,0 +1,31 @@
+name: Gray & Scott 1982
+description: |
+  One of the two variable reaction-diffusion model presented in the article
+  "Autocatalytic reactions in the isothermal, continuous stirred tank
+  reactor: isolas and other forms of multistability".
+
+  It describes the chemical reactions:
+  U + 2V -> 3V
+  V -> P
+
+  u, v: concentrations of U, V.
+  k: rate of conversion of V to P.
+  f: rate of the process that feeds U and drains U, V, and P.
+dois:
+  - https://doi.org/10.1016/0009-2509(83)80132-8
+variables:
+  u: 1.
+  v: 0.
+diffusivity:
+  u: 1
+  v: 0.5
+parameters:
+  f: 0.055
+  k: 0.062
+source: |
+  const Real uvv = u * v * v;
+  const Real U = -uvv + f * (1 - u);
+  const Real V = uvv - (f + k) * v;
+
+  *_new_u = u + dt * (U + _diffuse_u);
+  *_new_v = v + dt * (V + _diffuse_v);

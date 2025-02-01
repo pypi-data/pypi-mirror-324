@@ -1,0 +1,302 @@
+name: Majumder et al. 2016
+description: |-
+  The model described in the original publication by Majumder et al. 2016
+  [1].
+
+  [1] Majumder R, Jangsangthong W, Feola I, Ypey DL, Pijnappels DA, Panfilov
+  AV (2016) A Mathematical Model of Neonatal Rat Atrial Monolayers with
+  Constitutively Active Acetylcholine- Mediated K+ Current. PLoS Comput Biol
+  12(6): e1004946. doi:10.1371/journal.pcbi.1004946
+dois:
+- https://doi.org/10.1371/journal.pcbi.1004946
+variables:
+  membrane_V: -72.3
+  intra_Ca: 0.137822
+  intra_CaNSR: 794.054383
+  intra_CaJSR: 790.502388
+  CaL_gate_d_gate: 0.000109
+  CaL_gate_f_gate: 0.999929
+  CaL_gate_fCa_gate: 1.001951
+  CaT_gate_b_gate: 0.000708
+  CaT_gate_g_gate: 0.914717
+  Kr_gate_Xr_gate: 0.025742210977
+  Ks_gate_Xs1_gate: 0.012668791315
+  Ks_gate_Xs2_gate: 0.028399873909
+  Kur_gate_ua_gate: 0.000554
+  Kur_gate_ui_gate: 1.0
+  Na_gate_h_gate: 0.624946
+  Na_gate_j_gate: 0.624946
+  Na_gate_m_gate: 0.001729
+  funny_gate_y_gate: 0.562306
+  rel_gate_Po1_gate: 0.002247
+  to_gate_r_gate: 0.003223
+  to_gate_s_gate: 0.999969
+  to_gate_s_slow_gate: 0.999969
+parameters:
+  const_F: 96.5
+  const_R: 8.314
+  const_T: 310.0
+  const_pi: 3.141592653589793
+  const_Q_Q10: 1.8
+  const_Q: 1.8
+  const_RTpF: 26.70818652849741
+  engine_pace: 0.0
+  engine_time: 0.0
+  extra_Ca: 1796.0
+  extra_K: 5400.0
+  extra_Na: 154578.0
+  leak_k: 5.0e-06
+  radius_SL: 10.5
+  radius_SR: 6.0
+  radius_dish: 0.76
+  radius_nucleus: 5.7934
+  rel_nu1: 0.1
+  rel_gate_Po1_N: 4.0
+  rel_gate_Po1_a: 1.0
+  rel_gate_Po1_b: 0.16
+  tr_tau: 200.0
+  up_Hf: 2.0
+  up_Hr: 2.0
+  up_Kmf: 0.5
+  up_Kmr: 3500.0
+  up_Vmax: 0.9996
+  CaL_G: 4.8e-05
+  CaL_gate_fCa_tau: 10.0
+  NaK_gate_f_sigma: 1.2775446391262346
+  stimulus_amplitude: -7.0
+  volume_SR: 0.09029999999999999
+  volume_myo: 3.944269576581986
+  volume_NSR: 0.08127
+  volume_JSR: 0.009029999999999996
+  membrane_A: 1.3854423602330987e-05
+  membrane_C: 1.0
+  intra_K: 130953.391484
+  intra_Na: 13818.5982638
+  intra_CaJSR_beta_CSQN: 24750.0
+  intra_CaJSR_beta_KmCSQN: 800.0
+  Nernst_K: -85.15751745603409
+  Nernst_Na: 64.49181567485309
+  Nernst_Ks_P_NaK: 0.01833
+  Nernst_Ks: -73.94356399986512
+  Na_G_G310: 145.0
+  Na_G_G296: 135.51401869158877
+  Na_G: 145.0
+  to_G: 7.0e-05
+  CaT_G: 0.0054
+  Cab_G: 0.0008
+  NCX_d: 1.0e-16
+  NCX_gamma: 0.5
+  NCX_k: 6.804e-17
+  NaK_Imax: 3.83916
+  NaK_K_K: 1500.0
+  NaK_K_Na: 186000.0
+  NaK_n: 3.2
+  funny_G: 0.021
+  Nab_G: 3.9e-05
+  Kb_G: 1.0e-06
+  Kur_G: 0.02
+  Kr_G: 0.016532387607360286
+  intra_Ca_beta_CMDN: 50.0
+  intra_Ca_beta_KC: 2.38
+  intra_Ca_beta_KT: 0.5
+  intra_Ca_beta_TRPN: 35.0
+diffusivity:
+  V: 1.0
+source: |-
+  // CaT_gate_b
+  const Real CaT_gate_b_inf = 1.0f / (1.0f + native_exp((membrane_V + 36.0f) / -6.1f));
+  const Real CaT_gate_b_tau = 0.6f + 5.4f / (1.0f + native_exp(0.03f * (membrane_V + 100.0f)));
+  *_new_CaT_gate_b_gate = CaT_gate_b_gate + dt*((CaT_gate_b_inf - CaT_gate_b_gate) / CaT_gate_b_tau);
+
+  // CaT_gate_g
+  const Real CaT_gate_g_inf = 1.0f / (1.0f + native_exp((membrane_V + 66.0f) / 6.0f));
+  const Real CaT_gate_g_tau = 1.0f + 40.0f / (1.0f + native_exp(0.08f * (membrane_V + 65.0f)));
+  *_new_CaT_gate_g_gate = CaT_gate_g_gate + dt*((CaT_gate_g_inf - CaT_gate_g_gate) / CaT_gate_g_tau);
+
+  // Kr_gate_Rr
+  const Real Kr_gate_Rr_gate = 1.0f / (1.0f + native_exp((membrane_V + 9.0f) / 22.4f));
+
+  // funny_gate_y
+  const Real funny_gate_y_inf = 1.0f / (1.0f + native_exp((membrane_V + 78.65f) / 6.33f));
+  const Real funny_gate_y_tau = 1000.0f / (0.11885f * native_exp((membrane_V + 75.0f) / 28.37f) + 0.56236f * native_exp((membrane_V + 75.0f) / -14.19f));
+  *_new_funny_gate_y_gate = funny_gate_y_gate + dt*((funny_gate_y_inf - funny_gate_y_gate) / funny_gate_y_tau);
+
+  // leak
+  const Real leak_J = leak_k * (intra_CaNSR - intra_Ca);
+
+  // rel
+  const Real rel_J = rel_nu1 * rel_gate_Po1_gate * (intra_CaJSR - intra_Ca);
+
+  // rel_gate_Po1
+  const Real rel_gate_Po1_C1 = 1.0f - rel_gate_Po1_gate;
+  const Real rel_gate_Po1_K = 3.51f / (1.0f + native_exp((intra_CaJSR - 530.0f) / 200.0f)) + 0.25f;
+  *_new_rel_gate_Po1_gate = rel_gate_Po1_gate + dt*(rel_gate_Po1_a * (pow(intra_Ca, rel_gate_Po1_N) / (pow(intra_Ca, rel_gate_Po1_N) + pow(rel_gate_Po1_K, rel_gate_Po1_N))) * rel_gate_Po1_C1 - rel_gate_Po1_b * rel_gate_Po1_gate);
+
+  // to_gate_r
+  const Real to_gate_r_inf = 1.0f / (1.0f + native_exp((membrane_V + 3.0f) / -12.0f));
+  const Real to_gate_r_tau = 1000.0f / (45.16f * native_exp(0.03577f * (membrane_V + 50.0f)) + 98.9f * native_exp(-0.1f * (membrane_V + 38.0f)));
+  *_new_to_gate_r_gate = to_gate_r_gate + dt*((to_gate_r_inf - to_gate_r_gate) / to_gate_r_tau);
+
+  // to_gate_s
+  const Real to_gate_s_inf = 1.0f / (1.0f + native_exp((membrane_V + 31.97156f) / 4.64291f));
+  const Real to_gate_s_tau = 1000.0f * (0.35f * native_exp(-pow((membrane_V + 70.0f) / 15.0f, 2.0f)) + 0.035f) - 26.9f;
+  *_new_to_gate_s_gate = to_gate_s_gate + dt*((to_gate_s_inf - to_gate_s_gate) / to_gate_s_tau);
+
+  // tr
+  const Real tr_J = (intra_CaNSR - intra_CaJSR) / tr_tau;
+
+  // up
+  const Real up_f = pow(intra_Ca / up_Kmf, up_Hf);
+  const Real up_r = pow(intra_CaNSR / up_Kmr, up_Hr);
+  const Real up_J = (up_Vmax * up_f - up_Vmax * up_r) / (1.0f + up_f + up_r);
+
+  // CaL
+  const Real CaL_VF2pRT = 2.0f * membrane_V / const_RTpF;
+  const Real CaL_I = 2.0f * CaL_G * CaL_gate_d_gate * CaL_gate_f_gate * CaL_gate_fCa_gate * CaL_VF2pRT * const_F * (intra_Ca * native_exp(CaL_VF2pRT) - 0.341f * extra_Ca) / (native_exp(CaL_VF2pRT) - 1.0f);
+
+  // CaL_gate_d
+  const Real CaL_gate_d_a = 0.25f + 1.4f / (1.0f + native_exp((membrane_V + 35.0f) / -13.0f));
+  const Real CaL_gate_d_b = 1.4f / (1.0f + native_exp((membrane_V + 5.0f) / 5.0f));
+  const Real CaL_gate_d_c = 1.0f / (1.0f + native_exp((50.0f - membrane_V) / 20.0f));
+  const Real CaL_gate_d_inf = 1.0f / (1.0f + native_exp((membrane_V + 1.8f) / -8.6f));
+  const Real CaL_gate_d_tau = CaL_gate_d_a * CaL_gate_d_b + CaL_gate_d_c + 10.0f;
+  *_new_CaL_gate_d_gate = CaL_gate_d_gate + dt*(const_Q * (CaL_gate_d_inf - CaL_gate_d_gate) / CaL_gate_d_tau);
+
+  // CaL_gate_f
+  const Real CaL_gate_f_inf = 1.0f / (1.0f + native_exp((22.0f + membrane_V) / 6.1f));
+  const Real CaL_gate_f_tau = 562.5f * native_exp(pow(membrane_V + 27.0f, 2.0f) / -1000.0f) + 10.0f / (1.0f + native_exp(25.0f - membrane_V)) + 10.0f;
+  *_new_CaL_gate_f_gate = CaL_gate_f_gate + dt*(const_Q * (CaL_gate_f_inf - CaL_gate_f_gate) / CaL_gate_f_tau);
+
+  // CaL_gate_fCa
+  const Real CaL_gate_fCa_a = 1.0f / (1.0f + pow(intra_Ca / 0.325f, 8.0f));
+  const Real CaL_gate_fCa_b = 0.1f / (1.0f + native_exp((intra_Ca - 0.5f) / 0.1f));
+  const Real CaL_gate_fCa_c = 0.2f / (1.0f + native_exp((intra_Ca - 0.75f) / 0.8f));
+  const Real CaL_gate_fCa_inf = (CaL_gate_fCa_a + CaL_gate_fCa_b + CaL_gate_fCa_c + 0.23f) / 1.46f;
+  const Real CaL_gate_fCa_k = (((CaL_gate_fCa_inf > CaL_gate_fCa_gate) && (membrane_V > -60.0f)) ? 0.0f : 1.0f);
+  *_new_CaL_gate_fCa_gate = CaL_gate_fCa_gate + dt*(const_Q * CaL_gate_fCa_k * (CaL_gate_fCa_inf - CaL_gate_fCa_gate) / CaL_gate_fCa_tau);
+
+  // CaSR
+  const Real CaSR_J = rel_J - up_J + leak_J;
+
+  // Kr_gate_Xr
+  const Real Kr_gate_Xr_inf = 1.0f / (1.0f + native_exp((membrane_V + 12.5f) / -10.0f));
+  const Real Kr_gate_Xr_tau = 1.0f / (0.00138f * (membrane_V + 14.2f) / (1.0f - native_exp(-0.123f * (membrane_V + 14.2f))) + 0.00061f * (membrane_V + 38.9f) / (native_exp(0.145f * (membrane_V + 38.9f)) - 1.0f));
+  *_new_Kr_gate_Xr_gate = Kr_gate_Xr_gate + dt*(const_Q * (Kr_gate_Xr_inf - Kr_gate_Xr_gate) / Kr_gate_Xr_tau);
+
+  // Ks_gate_Xs1
+  const Real Ks_gate_Xs1_inf = 1.0f / (1.0f + native_exp(-(membrane_V - 10.0f) / 20.0f));
+  const Real Ks_gate_Xs1_tau_phi = membrane_V + 30.0f;
+  const Real Ks_gate_Xs1_tau = 1.0f / (7.19e-05f * Ks_gate_Xs1_tau_phi / (1.0f - native_exp(-0.148f * Ks_gate_Xs1_tau_phi)) + 0.000131f * Ks_gate_Xs1_tau_phi / (native_exp(0.0687f * Ks_gate_Xs1_tau_phi) - 1.0f));
+  *_new_Ks_gate_Xs1_gate = Ks_gate_Xs1_gate + dt*(const_Q * (Ks_gate_Xs1_inf - Ks_gate_Xs1_gate) / Ks_gate_Xs1_tau);
+
+  // Kur_gate_ua
+  const Real Kur_gate_ua_inf = 1.0f / (1.0f + native_exp((membrane_V + 12.5f) / -25.0f));
+  const Real Kur_gate_ua_tau = 0.493f * native_exp(-0.0629f * membrane_V) + 2.058f;
+  *_new_Kur_gate_ua_gate = Kur_gate_ua_gate + dt*(const_Q * (Kur_gate_ua_inf - Kur_gate_ua_gate) / Kur_gate_ua_tau);
+
+  // Kur_gate_ui
+  const Real Kur_gate_ui_inf = 1.0f / (1.0f + native_exp((membrane_V - 100.0f) / 5.7f));
+  const Real Kur_gate_ui_tau = 1200.0f - 170.0f / (1.0f + native_exp((membrane_V + 45.2f) / 5.7f));
+  *_new_Kur_gate_ui_gate = Kur_gate_ui_gate + dt*(const_Q * (Kur_gate_ui_inf - Kur_gate_ui_gate) / Kur_gate_ui_tau);
+
+  // NaK_gate_f
+  const Real NaK_gate_f_gate = 1.0f / (1.0f + 0.1245f * native_exp(-0.1f * membrane_V / const_RTpF) + 0.0365f * NaK_gate_f_sigma * native_exp(-membrane_V / const_RTpF));
+
+  // Na_gate_h
+  const Real Na_gate_h_alpha = ((membrane_V < -40.0f) ? 0.135f * native_exp((membrane_V + 70.0f) / -6.8f) : 0.0f);
+  const Real Na_gate_h_beta = ((membrane_V < -40.0f) ? 3.56f * native_exp(0.079f * membrane_V) + 310000.0f * native_exp(0.35f * membrane_V) : 1.0f / (0.13f * (1.0f + native_exp((membrane_V + 10.66f) / -11.1f))));
+  const Real Na_gate_h_inf_arg = ((const_T > 300.0f) ? (78.0f + membrane_V) / 7.8f : (80.0f + membrane_V) / 9.2f);
+  const Real Na_gate_h_inf = 1.0f / (1.0f + native_exp(Na_gate_h_inf_arg));
+  const Real Na_gate_h_tau = ((membrane_V < -40.0f) ? 0.06f / (Na_gate_h_alpha + Na_gate_h_beta) + 1.5f : 0.75f / (Na_gate_h_alpha + Na_gate_h_beta) + 0.15f);
+  *_new_Na_gate_h_gate = Na_gate_h_gate + dt*(const_Q * (Na_gate_h_inf - Na_gate_h_gate) / Na_gate_h_tau);
+
+  // Na_gate_m
+  const Real Na_gate_m_alpha = 0.32f * (membrane_V + 47.13f) / (1.0f - native_exp(-0.1f * (membrane_V + 47.13f)));
+  const Real Na_gate_m_beta = 0.056f * native_exp(-membrane_V / 11.0f);
+  const Real Na_gate_m_inf = 1.0f / (1.0f + native_exp((37.0f + membrane_V) / -6.8f));
+  const Real Na_gate_m_tau = 1.0f / (Na_gate_m_alpha + Na_gate_m_beta);
+  *_new_Na_gate_m_gate = Na_gate_m_gate + dt*(const_Q * (Na_gate_m_inf - Na_gate_m_gate) / Na_gate_m_tau);
+
+  // stimulus
+  const Real stimulus_I = engine_pace * stimulus_amplitude;
+
+  // to_gate_s_slow
+  const Real to_gate_s_slow_inf = to_gate_s_inf;
+  const Real to_gate_s_slow_tau = 1000.0f * (3.7f * native_exp(-pow((membrane_V + 70.0f) / 30.0f, 2.0f)) + 0.035f) + 37.4f;
+  *_new_to_gate_s_slow_gate = to_gate_s_slow_gate + dt*((to_gate_s_slow_inf - to_gate_s_slow_gate) / to_gate_s_slow_tau);
+
+  // Ks_gate_Xs2
+  const Real Ks_gate_Xs2_inf = Ks_gate_Xs1_inf;
+  const Real Ks_gate_Xs2_tau = 4.0f * Ks_gate_Xs1_tau;
+  *_new_Ks_gate_Xs2_gate = Ks_gate_Xs2_gate + dt*(const_Q * (Ks_gate_Xs2_inf - Ks_gate_Xs2_gate) / Ks_gate_Xs2_tau);
+
+  // Na_gate_j
+  const Real Na_gate_j_alpha = ((membrane_V < -40.0f) ? 2.0f * (-127140.0f * native_exp(0.2444f * membrane_V) - 3.474e-05f * native_exp(-0.04391f * membrane_V)) * (membrane_V + 37.78f) / (1.0f + native_exp(0.311f * (membrane_V + 79.23f))) : 0.0f);
+  const Real Na_gate_j_beta = ((membrane_V < -40.0f) ? 0.1212f * native_exp(-0.01052f * membrane_V) / (1.0f + native_exp(-0.1378f * (membrane_V + 40.14f))) : 0.3f * native_exp(-2.535e-07f * membrane_V) / (1.0f + native_exp(-0.1f * (membrane_V + 32.0f))));
+  const Real Na_gate_j_inf = Na_gate_h_inf;
+  const Real Na_gate_j_tau = 1.0f / (Na_gate_j_alpha + Na_gate_j_beta);
+  *_new_Na_gate_j_gate = Na_gate_j_gate + dt*(const_Q * (Na_gate_j_inf - Na_gate_j_gate) / Na_gate_j_tau);
+
+  // intra
+  *_new_intra_CaNSR = intra_CaNSR + dt*((up_J - leak_J - tr_J) / volume_NSR);
+  const Real intra_CaJSR_beta = 1.0f / (1.0f + intra_CaJSR_beta_CSQN * intra_CaJSR_beta_KmCSQN / pow(intra_CaJSR + intra_CaJSR_beta_KmCSQN, 2.0f));
+  *_new_intra_CaJSR = intra_CaJSR + dt*(intra_CaJSR_beta * (tr_J - rel_J) / volume_JSR);
+
+  // Nernst
+  const Real Nernst_Ca = const_RTpF / 2.0f * native_log(extra_Ca / intra_Ca);
+
+  // Na
+  const Real Na_I = Na_G * pow(Na_gate_m_gate, 3.0f) * Na_gate_h_gate * Na_gate_j_gate * (membrane_V - Nernst_Na);
+
+  // K1
+  const Real K1_I_phi = membrane_V - Nernst_K;
+  const Real K1_I = 0.0489f * (extra_K / (extra_K + 210.0f)) * (K1_I_phi - 10.0f) / (1.0f + native_exp(0.041f * (K1_I_phi - 10.0f))) + 0.01f * K1_I_phi;
+
+  // to
+  const Real to_I = to_G * to_gate_r_gate * (0.706f * to_gate_s_gate + 0.294f * to_gate_s_slow_gate) * (membrane_V - Nernst_K);
+
+  // CaT
+  const Real CaT_I = CaT_G * CaT_gate_b_gate * CaT_gate_g_gate * (membrane_V - Nernst_Ca + 106.5f);
+
+  // Cab
+  const Real Cab_I = Cab_G * (membrane_V - Nernst_Ca);
+
+  // NCX
+  const Real NCX_I = NCX_k * (pow(intra_Na, 3.0f) * extra_Ca * native_exp(0.03743f * NCX_gamma * membrane_V) - pow(extra_Na, 3.0f) * intra_Ca * native_exp(0.03743f * (NCX_gamma - 1.0f) * membrane_V)) / (1.0f + NCX_d * (pow(extra_Na, 3.0f) * intra_Ca + pow(intra_Na, 3.0f) * extra_Ca));
+
+  // NaK
+  const Real NaK_I = NaK_Imax * NaK_gate_f_gate / ((1.0f + pow(NaK_K_Na / intra_Na, NaK_n)) * (1.0f + NaK_K_K / extra_K));
+
+  // funny
+  const Real funny_IfK = funny_G * funny_gate_y_gate * (0.8f * (membrane_V - Nernst_K));
+  const Real funny_IfNa = funny_G * funny_gate_y_gate * (0.2f * (membrane_V - Nernst_Na));
+  const Real funny_I = funny_IfNa + funny_IfK;
+
+  // Nab
+  const Real Nab_I = Nab_G * (membrane_V - Nernst_Na);
+
+  // Kb
+  const Real Kb_I = 0.001f * Kb_G * (membrane_V - Nernst_K);
+
+  // Kur
+  const Real Kur_I = Kur_G * Kur_gate_ua_gate * Kur_gate_ui_gate * (membrane_V - Nernst_K);
+
+  // Ks
+  const Real Ks_G = 0.0866f * (1.0f + 0.6f / (1.0f + pow(3.8e-05f / intra_Ca, 1.4f)));
+  const Real Ks_I = Ks_G * Ks_gate_Xs1_gate * Ks_gate_Xs2_gate * (membrane_V - Nernst_Ks);
+
+  // Kr
+  const Real Kr_I = Kr_G * Kr_gate_Xr_gate * Kr_gate_Rr_gate * (membrane_V - Nernst_K);
+
+  // KACh
+  const Real KACh_I = 0.296f * (0.1f + 0.18f / (1.0f + native_exp((membrane_V + 102.0f) / 10.0f))) * (membrane_V - Nernst_K - 10.0f);
+
+  // CaSL
+  const Real CaSL_J = (2.0f * NCX_I - CaL_I - CaT_I - Cab_I) * (membrane_A * membrane_C) / (const_F * 2e-06f);
+
+  // *remaining*
+  const Real intra_Ca_beta = 1.0f / (1.0f + intra_Ca_beta_TRPN * intra_Ca_beta_KT / pow(intra_Ca + intra_Ca_beta_KT, 2.0f) + intra_Ca_beta_CMDN * intra_Ca_beta_KC / pow(intra_Ca + intra_Ca_beta_KC, 2.0f));
+  *_new_intra_Ca = intra_Ca + dt*(intra_Ca_beta * (CaSR_J + CaSL_J) / volume_myo);
+  const Real Ksus_I = 0.001f * (Kur_I + Ks_I + Kr_I);
+  const Real membrane_I = Na_I + CaL_I + K1_I + to_I + CaT_I + Cab_I + NCX_I + NaK_I + funny_I + Nab_I + Ksus_I + KACh_I + Kb_I;
+  *_new_membrane_V = membrane_V + dt*(-(membrane_I + stimulus_I) / membrane_C);

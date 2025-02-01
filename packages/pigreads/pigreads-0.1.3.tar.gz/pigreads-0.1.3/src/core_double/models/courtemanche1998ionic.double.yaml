@@ -1,0 +1,225 @@
+name: Courtemanche et al. 1998
+description: ''
+dois:
+- https://doi.org/10.1152/ajpheart.1998.275.1.H301
+variables:
+  V: -81.18
+  m: 0.002908
+  h: 0.9649
+  j: 0.9775
+  oa: 0.03043
+  oi: 0.9992
+  ua: 0.004966
+  ui: 0.9986
+  xr: 3.296e-05
+  xs: 0.01869
+  d: 0.0001367
+  f: 0.9996
+  f_Ca: 0.7755
+  u: 2.35e-112
+  v: 1.0
+  w: 0.9992
+  Na_i: 11.17
+  Ca_i: 0.0001013
+  K_i: 139.0
+  Ca_rel: 1.488
+  Ca_up: 1.488
+parameters:
+  Ca_buffers_CMDN_max: 0.05
+  Ca_buffers_CSQN_max: 10.0
+  Ca_buffers_Km_CMDN: 0.00238
+  Ca_buffers_Km_CSQN: 0.8
+  Ca_buffers_Km_TRPN: 0.0005
+  Ca_buffers_TRPN_max: 0.07
+  Ca_uptake_current_by_the_NSR_I_up_max: 0.005
+  Ca_uptake_current_by_the_NSR_K_up: 0.00092
+  L_type_Ca_channel_f_Ca_gate_tau_f_Ca: 2.0
+  environment_time: 0.0
+  standard_ionic_concentrations_Ca_o: 1.8
+  standard_ionic_concentrations_K_o: 5.4
+  standard_ionic_concentrations_Na_o: 140.0
+  transfer_current_from_NSR_to_JSR_tau_tr: 180.0
+  Ca_leak_current_by_the_NSR_Ca_up_max: 15.0
+  Ca_release_current_from_JSR_K_rel: 30.0
+  Ca_release_current_from_JSR_u_gate_tau_u: 8.0
+  L_type_Ca_channel_g_Ca_L: 0.12375
+  Na_Ca_exchanger_current_I_NaCa_max: 1600.0
+  Na_Ca_exchanger_current_K_mCa: 1.38
+  Na_Ca_exchanger_current_K_mNa: 87.5
+  Na_Ca_exchanger_current_K_sat: 0.1
+  Na_Ca_exchanger_current_gamma: 0.35
+  background_currents_g_B_Ca: 0.001131
+  background_currents_g_B_K: 0.0
+  background_currents_g_B_Na: 0.0006744375
+  fast_sodium_current_g_Na: 7.8
+  intracellular_ion_concentrations_V_cell: 20100.0
+  intracellular_ion_concentrations_V_i: 13668.000000000002
+  intracellular_ion_concentrations_V_rel: 96.47999999999999
+  intracellular_ion_concentrations_V_up: 1109.52
+  membrane_Cm: 100.0
+  membrane_F: 96.4867
+  membrane_R: 8.3143
+  membrane_T: 310.0
+  membrane_pace: 0.0
+  membrane_stim_amplitude: -2000.0
+  membrane_stim_end: 50000.0
+  rapid_delayed_rectifier_K_current_g_Kr: 0.029411765
+  sarcolemmal_calcium_pump_current_i_CaP_max: 0.275
+  slow_delayed_rectifier_K_current_g_Ks: 0.12941176
+  sodium_potassium_pump_Km_K_o: 1.5
+  sodium_potassium_pump_Km_Na_i: 10.0
+  sodium_potassium_pump_i_NaK_max: 0.59933874
+  sodium_potassium_pump_sigma: 1.0009103049457284
+  time_independent_potassium_current_g_K1: 0.09
+  transient_outward_K_current_K_Q10: 3.0
+  transient_outward_K_current_g_to: 0.1652
+diffusivity:
+  V: 1.0
+source: |-
+  // Ca_buffers
+  const Real Ca_buffers_Ca_CMDN = Ca_buffers_CMDN_max * Ca_i / (Ca_i + Ca_buffers_Km_CMDN);
+  const Real Ca_buffers_Ca_CSQN = Ca_buffers_CSQN_max * Ca_rel / (Ca_rel + Ca_buffers_Km_CSQN);
+  const Real Ca_buffers_Ca_TRPN = Ca_buffers_TRPN_max * Ca_i / (Ca_i + Ca_buffers_Km_TRPN);
+
+  // Ca_release_current_from_JSR_w_gate
+  const Real Ca_release_current_from_JSR_w_gate_tau_w = ((fabs(V - 7.9) < 1e-10) ? 6.0 * 0.2 / 1.3 : 6.0 * (1.0 - exp(-(V - 7.9) / 5.0)) / ((1.0 + 0.3 * exp(-(V - 7.9) / 5.0)) * 1.0 * (V - 7.9)));
+  const Real Ca_release_current_from_JSR_w_gate_w_infinity = 1.0 - pow(1.0 + exp(-(V - 40.0) / 17.0), -1.0);
+  *_new_w = w + dt*((Ca_release_current_from_JSR_w_gate_w_infinity - w) / Ca_release_current_from_JSR_w_gate_tau_w);
+
+  // Ca_uptake_current_by_the_NSR
+  const Real Ca_uptake_current_by_the_NSR_i_up = Ca_uptake_current_by_the_NSR_I_up_max / (1.0 + Ca_uptake_current_by_the_NSR_K_up / Ca_i);
+
+  // L_type_Ca_channel_d_gate
+  const Real L_type_Ca_channel_d_gate_d_infinity = pow(1.0 + exp((V + 10.0) / -8.0), -1.0);
+  const Real L_type_Ca_channel_d_gate_tau_d = ((fabs(V + 10.0) < 1e-10) ? 4.579 / (1.0 + exp((V + 10.0) / -6.24)) : (1.0 - exp((V + 10.0) / -6.24)) / (0.035 * (V + 10.0) * (1.0 + exp((V + 10.0) / -6.24))));
+  *_new_d = d + dt*((L_type_Ca_channel_d_gate_d_infinity - d) / L_type_Ca_channel_d_gate_tau_d);
+
+  // L_type_Ca_channel_f_Ca_gate
+  const Real L_type_Ca_channel_f_Ca_gate_f_Ca_infinity = pow(1.0 + Ca_i / 0.00035, -1.0);
+  *_new_f_Ca = f_Ca + dt*((L_type_Ca_channel_f_Ca_gate_f_Ca_infinity - f_Ca) / L_type_Ca_channel_f_Ca_gate_tau_f_Ca);
+
+  // L_type_Ca_channel_f_gate
+  const Real L_type_Ca_channel_f_gate_f_infinity = exp(-(V + 28.0) / 6.9) / (1.0 + exp(-(V + 28.0) / 6.9));
+  const Real L_type_Ca_channel_f_gate_tau_f = 9.0 * pow(0.0197 * exp(-pow(0.0337, 2.0) * pow(V + 10.0, 2.0)) + 0.02, -1.0);
+  *_new_f = f + dt*((L_type_Ca_channel_f_gate_f_infinity - f) / L_type_Ca_channel_f_gate_tau_f);
+
+  // fast_sodium_current_h_gate
+  const Real fast_sodium_current_h_gate_alpha_h = ((V < -40.0) ? 0.135 * exp((V + 80.0) / -6.8) : 0.0);
+  const Real fast_sodium_current_h_gate_beta_h = ((V < -40.0) ? 3.56 * exp(0.079 * V) + 310000.0 * exp(0.35 * V) : 1.0 / (0.13 * (1.0 + exp((V + 10.66) / -11.1))));
+  const Real fast_sodium_current_h_gate_h_inf = fast_sodium_current_h_gate_alpha_h / (fast_sodium_current_h_gate_alpha_h + fast_sodium_current_h_gate_beta_h);
+  const Real fast_sodium_current_h_gate_tau_h = 1.0 / (fast_sodium_current_h_gate_alpha_h + fast_sodium_current_h_gate_beta_h);
+  *_new_h = h + dt*((fast_sodium_current_h_gate_h_inf - h) / fast_sodium_current_h_gate_tau_h);
+
+  // fast_sodium_current_j_gate
+  const Real fast_sodium_current_j_gate_alpha_j = ((V < -40.0) ? (-127140.0 * exp(0.2444 * V) - 3.474e-05 * exp(-0.04391 * V)) * (V + 37.78) / (1.0 + exp(0.311 * (V + 79.23))) : 0.0);
+  const Real fast_sodium_current_j_gate_beta_j = ((V < -40.0) ? 0.1212 * exp(-0.01052 * V) / (1.0 + exp(-0.1378 * (V + 40.14))) : 0.3 * exp(-2.535e-07 * V) / (1.0 + exp(-0.1 * (V + 32.0))));
+  const Real fast_sodium_current_j_gate_j_inf = fast_sodium_current_j_gate_alpha_j / (fast_sodium_current_j_gate_alpha_j + fast_sodium_current_j_gate_beta_j);
+  const Real fast_sodium_current_j_gate_tau_j = 1.0 / (fast_sodium_current_j_gate_alpha_j + fast_sodium_current_j_gate_beta_j);
+  *_new_j = j + dt*((fast_sodium_current_j_gate_j_inf - j) / fast_sodium_current_j_gate_tau_j);
+
+  // fast_sodium_current_m_gate
+  const Real fast_sodium_current_m_gate_alpha_m = ((V == -47.13) ? 3.2 : 0.32 * (V + 47.13) / (1.0 - exp(-0.1 * (V + 47.13))));
+  const Real fast_sodium_current_m_gate_beta_m = 0.08 * exp(-V / 11.0);
+  const Real fast_sodium_current_m_gate_m_inf = fast_sodium_current_m_gate_alpha_m / (fast_sodium_current_m_gate_alpha_m + fast_sodium_current_m_gate_beta_m);
+  const Real fast_sodium_current_m_gate_tau_m = 1.0 / (fast_sodium_current_m_gate_alpha_m + fast_sodium_current_m_gate_beta_m);
+  *_new_m = m + dt*((fast_sodium_current_m_gate_m_inf - m) / fast_sodium_current_m_gate_tau_m);
+
+  // rapid_delayed_rectifier_K_current_xr_gate
+  const Real rapid_delayed_rectifier_K_current_xr_gate_alpha_xr = ((fabs(V + 14.1) < 1e-10) ? 0.0015 : 0.0003 * (V + 14.1) / (1.0 - exp((V + 14.1) / -5.0)));
+  const Real rapid_delayed_rectifier_K_current_xr_gate_beta_xr = ((fabs(V - 3.3328) < 1e-10) ? 3.78361180000000004e-04 : 7.38980000000000030e-05 * (V - 3.3328) / (exp((V - 3.3328) / 5.1237) - 1.0));
+  const Real rapid_delayed_rectifier_K_current_xr_gate_xr_infinity = pow(1.0 + exp((V + 14.1) / -6.5), -1.0);
+  const Real rapid_delayed_rectifier_K_current_xr_gate_tau_xr = pow(rapid_delayed_rectifier_K_current_xr_gate_alpha_xr + rapid_delayed_rectifier_K_current_xr_gate_beta_xr, -1.0);
+  *_new_xr = xr + dt*((rapid_delayed_rectifier_K_current_xr_gate_xr_infinity - xr) / rapid_delayed_rectifier_K_current_xr_gate_tau_xr);
+
+  // slow_delayed_rectifier_K_current_xs_gate
+  const Real slow_delayed_rectifier_K_current_xs_gate_alpha_xs = ((fabs(V - 19.9) < 1e-10) ? 0.00068 : 4e-05 * (V - 19.9) / (1.0 - exp((V - 19.9) / -17.0)));
+  const Real slow_delayed_rectifier_K_current_xs_gate_beta_xs = ((fabs(V - 19.9) < 1e-10) ? 0.000315 : 3.5e-05 * (V - 19.9) / (exp((V - 19.9) / 9.0) - 1.0));
+  const Real slow_delayed_rectifier_K_current_xs_gate_xs_infinity = pow(1.0 + exp((V - 19.9) / -12.7), -0.5);
+  const Real slow_delayed_rectifier_K_current_xs_gate_tau_xs = 0.5 * pow(slow_delayed_rectifier_K_current_xs_gate_alpha_xs + slow_delayed_rectifier_K_current_xs_gate_beta_xs, -1.0);
+  *_new_xs = xs + dt*((slow_delayed_rectifier_K_current_xs_gate_xs_infinity - xs) / slow_delayed_rectifier_K_current_xs_gate_tau_xs);
+
+  // transfer_current_from_NSR_to_JSR
+  const Real transfer_current_from_NSR_to_JSR_i_tr = (Ca_up - Ca_rel) / transfer_current_from_NSR_to_JSR_tau_tr;
+
+  // Ca_leak_current_by_the_NSR
+  const Real Ca_leak_current_by_the_NSR_i_up_leak = Ca_uptake_current_by_the_NSR_I_up_max * Ca_up / Ca_leak_current_by_the_NSR_Ca_up_max;
+
+  // Ca_release_current_from_JSR
+  const Real Ca_release_current_from_JSR_i_rel = Ca_release_current_from_JSR_K_rel * pow(u, 2.0) * v * w * (Ca_rel - Ca_i);
+
+  // intracellular_ion_concentrations
+  *_new_Ca_rel = Ca_rel + dt*((transfer_current_from_NSR_to_JSR_i_tr - Ca_release_current_from_JSR_i_rel) * pow(1.0 + Ca_buffers_CSQN_max * Ca_buffers_Km_CSQN / pow(Ca_rel + Ca_buffers_Km_CSQN, 2.0), -1.0));
+  const Real intracellular_ion_concentrations_B2 = 1.0 + Ca_buffers_TRPN_max * Ca_buffers_Km_TRPN / pow(Ca_i + Ca_buffers_Km_TRPN, 2.0) + Ca_buffers_CMDN_max * Ca_buffers_Km_CMDN / pow(Ca_i + Ca_buffers_Km_CMDN, 2.0);
+  *_new_Ca_up = Ca_up + dt*(Ca_uptake_current_by_the_NSR_i_up - (Ca_leak_current_by_the_NSR_i_up_leak + transfer_current_from_NSR_to_JSR_i_tr * intracellular_ion_concentrations_V_rel / intracellular_ion_concentrations_V_up));
+
+  // membrane
+  const Real membrane_i_st = membrane_pace * membrane_stim_amplitude;
+
+  // sarcolemmal_calcium_pump_current
+  const Real sarcolemmal_calcium_pump_current_i_CaP = membrane_Cm * sarcolemmal_calcium_pump_current_i_CaP_max * Ca_i / (0.0005 + Ca_i);
+
+  // sodium_potassium_pump
+  const Real sodium_potassium_pump_f_NaK = pow(1.0 + 0.1245 * exp(-0.1 * membrane_F * V / (membrane_R * membrane_T)) + 0.0365 * sodium_potassium_pump_sigma * exp(-membrane_F * V / (membrane_R * membrane_T)), -1.0);
+  const Real sodium_potassium_pump_i_NaK = membrane_Cm * sodium_potassium_pump_i_NaK_max * sodium_potassium_pump_f_NaK * 1.0 / (1.0 + pow(sodium_potassium_pump_Km_Na_i / Na_i, 1.5)) * standard_ionic_concentrations_K_o / (standard_ionic_concentrations_K_o + sodium_potassium_pump_Km_K_o);
+
+  // time_independent_potassium_current
+  const Real time_independent_potassium_current_E_K = membrane_R * membrane_T / membrane_F * log(standard_ionic_concentrations_K_o / K_i);
+  const Real time_independent_potassium_current_i_K1 = membrane_Cm * time_independent_potassium_current_g_K1 * (V - time_independent_potassium_current_E_K) / (1.0 + exp(0.07 * (V + 80.0)));
+
+  // transient_outward_K_current
+  const Real transient_outward_K_current_i_to = membrane_Cm * transient_outward_K_current_g_to * pow(oa, 3.0) * oi * (V - time_independent_potassium_current_E_K);
+
+  // transient_outward_K_current_oa_gate
+  const Real transient_outward_K_current_oa_gate_alpha_oa = 0.65 * pow(exp((V - -10.0) / -8.5) + exp((V - -10.0 - 40.0) / -59.0), -1.0);
+  const Real transient_outward_K_current_oa_gate_beta_oa = 0.65 * pow(2.5 + exp((V - -10.0 + 72.0) / 17.0), -1.0);
+  const Real transient_outward_K_current_oa_gate_oa_infinity = pow(1.0 + exp((V - -10.0 + 10.47) / -17.54), -1.0);
+  const Real transient_outward_K_current_oa_gate_tau_oa = pow(transient_outward_K_current_oa_gate_alpha_oa + transient_outward_K_current_oa_gate_beta_oa, -1.0) / transient_outward_K_current_K_Q10;
+  *_new_oa = oa + dt*((transient_outward_K_current_oa_gate_oa_infinity - oa) / transient_outward_K_current_oa_gate_tau_oa);
+
+  // transient_outward_K_current_oi_gate
+  const Real transient_outward_K_current_oi_gate_alpha_oi = pow(18.53 + 1.0 * exp((V - -10.0 + 103.7) / 10.95), -1.0);
+  const Real transient_outward_K_current_oi_gate_beta_oi = pow(35.56 + 1.0 * exp((V - -10.0 - 8.74) / -7.44), -1.0);
+  const Real transient_outward_K_current_oi_gate_oi_infinity = pow(1.0 + exp((V - -10.0 + 33.1) / 5.3), -1.0);
+  const Real transient_outward_K_current_oi_gate_tau_oi = pow(transient_outward_K_current_oi_gate_alpha_oi + transient_outward_K_current_oi_gate_beta_oi, -1.0) / transient_outward_K_current_K_Q10;
+  *_new_oi = oi + dt*((transient_outward_K_current_oi_gate_oi_infinity - oi) / transient_outward_K_current_oi_gate_tau_oi);
+
+  // ultrarapid_delayed_rectifier_K_current
+  const Real ultrarapid_delayed_rectifier_K_current_g_Kur = 0.005 + 0.05 / (1.0 + exp((V - 15.0) / -13.0));
+  const Real ultrarapid_delayed_rectifier_K_current_i_Kur = membrane_Cm * ultrarapid_delayed_rectifier_K_current_g_Kur * pow(ua, 3.0) * ui * (V - time_independent_potassium_current_E_K);
+
+  // ultrarapid_delayed_rectifier_K_current_ua_gate
+  const Real ultrarapid_delayed_rectifier_K_current_ua_gate_alpha_ua = 0.65 * pow(exp((V - -10.0) / -8.5) + exp((V - -10.0 - 40.0) / -59.0), -1.0);
+  const Real ultrarapid_delayed_rectifier_K_current_ua_gate_beta_ua = 0.65 * pow(2.5 + exp((V - -10.0 + 72.0) / 17.0), -1.0);
+  const Real ultrarapid_delayed_rectifier_K_current_ua_gate_ua_infinity = pow(1.0 + exp((V - -10.0 + 20.3) / -9.6), -1.0);
+  const Real ultrarapid_delayed_rectifier_K_current_ua_gate_tau_ua = pow(ultrarapid_delayed_rectifier_K_current_ua_gate_alpha_ua + ultrarapid_delayed_rectifier_K_current_ua_gate_beta_ua, -1.0) / transient_outward_K_current_K_Q10;
+  *_new_ua = ua + dt*((ultrarapid_delayed_rectifier_K_current_ua_gate_ua_infinity - ua) / ultrarapid_delayed_rectifier_K_current_ua_gate_tau_ua);
+
+  // ultrarapid_delayed_rectifier_K_current_ui_gate
+  const Real ultrarapid_delayed_rectifier_K_current_ui_gate_alpha_ui = pow(21.0 + 1.0 * exp((V - -10.0 - 195.0) / -28.0), -1.0);
+  const Real ultrarapid_delayed_rectifier_K_current_ui_gate_beta_ui = 1.0 / exp((V - -10.0 - 168.0) / -16.0);
+  const Real ultrarapid_delayed_rectifier_K_current_ui_gate_ui_infinity = pow(1.0 + exp((V - -10.0 - 109.45) / 27.48), -1.0);
+  const Real ultrarapid_delayed_rectifier_K_current_ui_gate_tau_ui = pow(ultrarapid_delayed_rectifier_K_current_ui_gate_alpha_ui + ultrarapid_delayed_rectifier_K_current_ui_gate_beta_ui, -1.0) / transient_outward_K_current_K_Q10;
+  *_new_ui = ui + dt*((ultrarapid_delayed_rectifier_K_current_ui_gate_ui_infinity - ui) / ultrarapid_delayed_rectifier_K_current_ui_gate_tau_ui);
+
+  // *remaining*
+  const Real L_type_Ca_channel_i_Ca_L = membrane_Cm * L_type_Ca_channel_g_Ca_L * d * f * f_Ca * (V - 65.0);
+  const Real Na_Ca_exchanger_current_i_NaCa = membrane_Cm * Na_Ca_exchanger_current_I_NaCa_max * (exp(Na_Ca_exchanger_current_gamma * membrane_F * V / (membrane_R * membrane_T)) * pow(Na_i, 3.0) * standard_ionic_concentrations_Ca_o - exp((Na_Ca_exchanger_current_gamma - 1.0) * membrane_F * V / (membrane_R * membrane_T)) * pow(standard_ionic_concentrations_Na_o, 3.0) * Ca_i) / ((pow(Na_Ca_exchanger_current_K_mNa, 3.0) + pow(standard_ionic_concentrations_Na_o, 3.0)) * (Na_Ca_exchanger_current_K_mCa + standard_ionic_concentrations_Ca_o) * (1.0 + Na_Ca_exchanger_current_K_sat * exp((Na_Ca_exchanger_current_gamma - 1.0) * V * membrane_F / (membrane_R * membrane_T))));
+  const Real background_currents_E_Ca = membrane_R * membrane_T / (2.0 * membrane_F) * log(standard_ionic_concentrations_Ca_o / Ca_i);
+  const Real background_currents_i_B_K = membrane_Cm * background_currents_g_B_K * (V - time_independent_potassium_current_E_K);
+  const Real fast_sodium_current_E_Na = membrane_R * membrane_T / membrane_F * log(standard_ionic_concentrations_Na_o / Na_i);
+  const Real rapid_delayed_rectifier_K_current_i_Kr = membrane_Cm * rapid_delayed_rectifier_K_current_g_Kr * xr * (V - time_independent_potassium_current_E_K) / (1.0 + exp((V + 15.0) / 22.4));
+  const Real slow_delayed_rectifier_K_current_i_Ks = membrane_Cm * slow_delayed_rectifier_K_current_g_Ks * pow(xs, 2.0) * (V - time_independent_potassium_current_E_K);
+  const Real Ca_release_current_from_JSR_Fn = 1000.0 * (1e-15 * intracellular_ion_concentrations_V_rel * Ca_release_current_from_JSR_i_rel - 1e-15 / (2.0 * membrane_F) * (0.5 * L_type_Ca_channel_i_Ca_L - 0.2 * Na_Ca_exchanger_current_i_NaCa));
+  const Real background_currents_i_B_Ca = membrane_Cm * background_currents_g_B_Ca * (V - background_currents_E_Ca);
+  const Real background_currents_i_B_Na = membrane_Cm * background_currents_g_B_Na * (V - fast_sodium_current_E_Na);
+  const Real fast_sodium_current_i_Na = membrane_Cm * fast_sodium_current_g_Na * pow(m, 3.0) * h * j * (V - fast_sodium_current_E_Na);
+  *_new_K_i = K_i + dt*((2.0 * sodium_potassium_pump_i_NaK - (time_independent_potassium_current_i_K1 + transient_outward_K_current_i_to + ultrarapid_delayed_rectifier_K_current_i_Kur + rapid_delayed_rectifier_K_current_i_Kr + slow_delayed_rectifier_K_current_i_Ks + background_currents_i_B_K)) / (intracellular_ion_concentrations_V_i * membrane_F));
+  const Real Ca_release_current_from_JSR_u_gate_u_infinity = pow(1.0 + exp(-(Ca_release_current_from_JSR_Fn - 3.41749999999999983e-13) / 1.367e-15), -1.0);
+  const Real Ca_release_current_from_JSR_v_gate_tau_v = 1.91 + 2.09 * pow(1.0 + exp(-(Ca_release_current_from_JSR_Fn - 3.41749999999999983e-13) / 1.367e-15), -1.0);
+  const Real Ca_release_current_from_JSR_v_gate_v_infinity = 1.0 - pow(1.0 + exp(-(Ca_release_current_from_JSR_Fn - 6.835e-14) / 1.367e-15), -1.0);
+  *_new_Na_i = Na_i + dt*((-3.0 * sodium_potassium_pump_i_NaK - (3.0 * Na_Ca_exchanger_current_i_NaCa + background_currents_i_B_Na + fast_sodium_current_i_Na)) / (intracellular_ion_concentrations_V_i * membrane_F));
+  const Real intracellular_ion_concentrations_B1 = (2.0 * Na_Ca_exchanger_current_i_NaCa - (sarcolemmal_calcium_pump_current_i_CaP + L_type_Ca_channel_i_Ca_L + background_currents_i_B_Ca)) / (2.0 * intracellular_ion_concentrations_V_i * membrane_F) + (intracellular_ion_concentrations_V_up * (Ca_leak_current_by_the_NSR_i_up_leak - Ca_uptake_current_by_the_NSR_i_up) + Ca_release_current_from_JSR_i_rel * intracellular_ion_concentrations_V_rel) / intracellular_ion_concentrations_V_i;
+  *_new_V = V + dt*(-(fast_sodium_current_i_Na + time_independent_potassium_current_i_K1 + transient_outward_K_current_i_to + ultrarapid_delayed_rectifier_K_current_i_Kur + rapid_delayed_rectifier_K_current_i_Kr + slow_delayed_rectifier_K_current_i_Ks + background_currents_i_B_Na + background_currents_i_B_Ca + sodium_potassium_pump_i_NaK + sarcolemmal_calcium_pump_current_i_CaP + Na_Ca_exchanger_current_i_NaCa + L_type_Ca_channel_i_Ca_L + membrane_i_st) / membrane_Cm + _diffuse_V);
+  *_new_u = u + dt*((Ca_release_current_from_JSR_u_gate_u_infinity - u) / Ca_release_current_from_JSR_u_gate_tau_u);
+  *_new_v = v + dt*((Ca_release_current_from_JSR_v_gate_v_infinity - v) / Ca_release_current_from_JSR_v_gate_tau_v);
+  *_new_Ca_i = Ca_i + dt*(intracellular_ion_concentrations_B1 / intracellular_ion_concentrations_B2);

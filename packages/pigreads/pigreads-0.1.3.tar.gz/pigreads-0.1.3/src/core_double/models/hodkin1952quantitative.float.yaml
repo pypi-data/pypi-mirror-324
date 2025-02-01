@@ -1,0 +1,60 @@
+name: Hodgkin & Huxley 1952
+description: |-
+  Myokit implementation of the model described in Hodgkin & Huxley's original
+  publication [1].
+
+  This model describes a giant axon found in the squid genus Loligo.
+
+  Instead of pacing, Hodgkin and Huxley start the membrane potential off at
+  different values and see what happens. This is implemented in this
+  translation by setting a voltage clamp that only activates when engine.pace
+  is high.
+
+  [1] A quantitative description of membrane current and its application to
+  conduction and excitation in nerve.
+  Hodgkin, Huxley, 1952d, Journal of Physiology
+dois:
+- https://doi.org/10.1113/jphysiol.1952.sp004764
+variables:
+  E: -75.0
+  n: 0.317
+  m: 0.05
+  h: 0.595
+parameters:
+  engine_pace: 0.0
+  engine_time: 0.0
+  membrane_C: 1.0
+  membrane_E_rest: -75.0
+  membrane_Vshock: -15.0
+  potassium_Vk: 12.0
+  potassium_g_max: 36.0
+  sodium_VNa: -115.0
+  sodium_g_max: 120.0
+  leak_Vleak: -10.613
+  leak_g_max: 0.3
+diffusivity:
+  E: 1.0
+source: |-
+  // membrane
+  const Real membrane_V = E - membrane_E_rest;
+
+  // potassium
+  const Real potassium_n_a = 0.01f * (membrane_V + 10.0f) / (native_exp((membrane_V + 10.0f) / 10.0f) - 1.0f);
+  const Real potassium_n_b = 0.125f * native_exp(membrane_V / 80.0f);
+  *_new_n = n + dt*(potassium_n_a * (1.0f - n) - potassium_n_b * n);
+  const Real potassium_i = potassium_g_max * pow(n, 4.0f) * (membrane_V - potassium_Vk);
+
+  // sodium
+  const Real sodium_h_a = 0.07f * native_exp(membrane_V / 20.0f);
+  const Real sodium_h_b = 1.0f / (native_exp((membrane_V + 30.0f) / 10.0f) + 1.0f);
+  *_new_h = h + dt*(sodium_h_a * (1.0f - h) - sodium_h_b * h);
+  const Real sodium_m_a = 0.1f * (membrane_V + 25.0f) / (native_exp((membrane_V + 25.0f) / 10.0f) - 1.0f);
+  const Real sodium_m_b = 4.0f * native_exp(membrane_V / 18.0f);
+  *_new_m = m + dt*(sodium_m_a * (1.0f - m) - sodium_m_b * m);
+  const Real sodium_i = sodium_g_max * pow(m, 3.0f) * h * (membrane_V - sodium_VNa);
+
+  // leak
+  const Real leak_i = leak_g_max * (membrane_V - leak_Vleak);
+
+  // *remaining*
+  *_new_E = E + dt*(((engine_pace > 0.0f) ? (membrane_Vshock - (E - membrane_E_rest)) * 100.0f : -(1.0f / membrane_C) * (sodium_i + potassium_i + leak_i)) + _diffuse_E);
