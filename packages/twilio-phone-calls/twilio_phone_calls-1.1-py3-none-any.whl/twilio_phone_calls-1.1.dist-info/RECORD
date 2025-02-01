@@ -1,0 +1,8 @@
+twilio_phone_calls/__init__.py,sha256=W8DxqYOBns4iZOJvwVy7qrucufPexVUjpWnJf388iYY,274
+twilio_phone_calls/twilio_phone_call.py,sha256=GXAyaskA7mdjenYtqUlTzKnHGvKkAr4nMGNoc5u4TkM,5065
+twilio_phone_calls/twilio_voice_response.py,sha256=zaZgpJjUWIfOZbfph6P6JQRnHrsWiyHpnVtASXgbxWs,1202
+twilio_phone_calls-1.1.dist-info/LICENSE,sha256=YEbkYvxPgV4MtMvE6FGmMwZz_wZVSck2CnFRdRRWQAE,1069
+twilio_phone_calls-1.1.dist-info/METADATA,sha256=TvFVKQdYbTPiI2NsuRa-JkNubLapI_N73PPUCxT9KbM,1232
+twilio_phone_calls-1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+twilio_phone_calls-1.1.dist-info/top_level.txt,sha256=F7YBaVNlsNKopJkcxm-REubOlSJfDZif5Gw93Oi9VLc,19
+twilio_phone_calls-1.1.dist-info/RECORD,,
