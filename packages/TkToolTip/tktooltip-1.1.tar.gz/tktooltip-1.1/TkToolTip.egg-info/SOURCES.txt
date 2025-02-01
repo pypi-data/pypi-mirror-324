@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+TkToolTip/TkToolTip.py
+TkToolTip/__init__.py
+TkToolTip.egg-info/PKG-INFO
+TkToolTip.egg-info/SOURCES.txt
+TkToolTip.egg-info/dependency_links.txt
+TkToolTip.egg-info/top_level.txt
