@@ -1,0 +1,30 @@
+[build-system]
+requires = [
+    "setuptools>=40.8.0",
+    "wheel>=0.36.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloney"
+version = "0.0.1"
+authors = [
+  { name="Hamza Arjah", email="hamzaarja@outlook.com" },
+]
+description = "A CLI tool for migrating files between cloud storage services"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {file = "LICENSE"}
+dependencies = [
+    "boto3",
+    "google-cloud-storage",
+    "oss2",
+    "azure-storage-blob"
+]
+
+[project.scripts]
+cloney = "cloney.main:main"
