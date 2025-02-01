@@ -1,0 +1,13 @@
+__pycache__
+venv
+env
+.env
+.env.*
+.DS_Store
+agent.log
+test.md
+
+dist
+dist/
+dist/*
+dist/**
