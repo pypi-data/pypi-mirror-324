@@ -1,0 +1,6 @@
+goat_plugins/rugcheck/__init__.py,sha256=qflvg_F6IWB1UbaiUfpOcLRIY4satS4VvO1mgNgn_sE,434
+goat_plugins/rugcheck/parameters.py,sha256=ygjh5bD7Uolp1gfQ144yOFoSdu6qwJBp16B4pGD8Gv0,226
+goat_plugins/rugcheck/service.py,sha256=ZnRsFBKg5jzSon88gN1LXad8o2jrLpbFmUsjUdswmUU,2571
+goat_sdk_plugin_rugcheck-0.1.0.dist-info/METADATA,sha256=0HUsAWZzLdvlKb1limPJaVqMBK3he4D9maYJPdfXo7Y,539
+goat_sdk_plugin_rugcheck-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+goat_sdk_plugin_rugcheck-0.1.0.dist-info/RECORD,,
