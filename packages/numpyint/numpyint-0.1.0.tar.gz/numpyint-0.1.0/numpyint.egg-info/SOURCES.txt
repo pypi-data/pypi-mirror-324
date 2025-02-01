@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+numpyint/__init__.py
+numpyint/integrate.py
+numpyint.egg-info/PKG-INFO
+numpyint.egg-info/SOURCES.txt
+numpyint.egg-info/dependency_links.txt
+numpyint.egg-info/top_level.txt
+tests/test_integrate.py
