@@ -1,0 +1,5 @@
+include NChess/core/*.pyd
+include NChess/core/*.so
+
+include NChess/core/src/*.h
+include NChess/core/*.h
