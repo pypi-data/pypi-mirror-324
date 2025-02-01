@@ -1,0 +1,5 @@
+render-engine[cli]>=2024.11.2a1
+pytailwindcss
+
+[dev]
+pytest
