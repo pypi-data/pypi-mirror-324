@@ -1,0 +1,11 @@
+cloney/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloney/check_buckets.py,sha256=al0SPGv76MqGeDBNAMGZ_WKgtVNyM34OsaqxkqXv2o8,6179
+cloney/main.py,sha256=j8pEzrjrS8vfWJOrU9OjTQ2u4wafXOFug8qqhZWPUs8,2176
+cloney/storage.py,sha256=IFACBeoO0xoimjzwDsLIcJLpYQ5efPyqSlvNlaWLMe8,6065
+cloney/utils.py,sha256=EIbfPsO5hfehvKf4Ra0V47l_euxTl6YJoTYelyTVDVY,191
+cloney-0.0.1.dist-info/LICENSE,sha256=FFjiDH2nYBmnpDQ8rDPdIK58iW5dEiOJUV0kv27Q5NE,1087
+cloney-0.0.1.dist-info/METADATA,sha256=SkhM2aVVEzMO3mhxkUkiFDYn7ZJypBlgr0yQz00rf18,4926
+cloney-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+cloney-0.0.1.dist-info/entry_points.txt,sha256=sjECqHsdBemt0hYpAzqLfxgiLkEyJ39IIFSN6geHWWA,44
+cloney-0.0.1.dist-info/top_level.txt,sha256=2mPnJW1XTUNpFcDhUxqp2ZUaoOEOVkiZP60MwlefOpk,7
+cloney-0.0.1.dist-info/RECORD,,
