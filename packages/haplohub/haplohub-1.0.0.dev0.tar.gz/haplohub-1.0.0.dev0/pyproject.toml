@@ -1,0 +1,45 @@
+[project]
+name = "haplohub"
+description = "HaploHub API"
+license.file = "LICENSE"
+readme = "README.md"
+keywords = ["Haplohub", "HaploHub API"]
+urls."Source" = "https://github.com/haplotypelabs/haplohub-python"
+
+classifiers = [
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",    
+]
+requires-python = ">=3.8"
+
+authors = [
+    { name = "Mike Polcari", email = "mike@haplotype-labs.com" },
+    { name = "Ilya Khrustalev", email = "ilya@haplotype-labs.com" },
+]
+
+dependencies = [
+    "urllib3 >= 1.25.3",
+    "python-dateutil >= 2.8.2",
+    "pydantic >= 1.10.5, <2",
+    "aenum >= 3.1.11",
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["setuptools", "setuptools_scm[toml]"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "haplohub/_version.py"
+tag_regex = "^v(?P<version>.*)$"
+#local_scheme = "no-local-version"
+
+[tool.setuptools.packages.find]
+include = ["haplohub"]
+
+[tool.pylint.'MESSAGES CONTROL']
+extension-pkg-whitelist = "pydantic"
