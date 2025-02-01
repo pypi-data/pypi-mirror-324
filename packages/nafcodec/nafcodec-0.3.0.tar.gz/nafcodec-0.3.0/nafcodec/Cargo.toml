@@ -1,0 +1,30 @@
+[package]
+name = "nafcodec"
+version = "0.3.0"
+authors = ["Martin Larralde <martin.larralde@embl.de>"]
+edition = "2021"
+license = "MIT"
+description = "Rust coder/decoder for Nucleotide Archive Format (NAF) files."
+repository = "https://github.com/althonos/nafcodec"
+homepage = "https://github.com/althonos/nafcodec"
+readme = "README.md"
+keywords = ["nucleotide", "archive", "biology", "bioinformatics"]
+categories = ["science", "parser-implementations", "compression"]
+
+[dependencies]
+nom = "8"
+[dependencies.zstd]
+version = "0.13.1"
+features = ["experimental"]
+[dependencies.tempfile]
+version = "3.8.1"
+optional = true
+
+[features]
+default = ["tempfile"]
+arc = []
+nightly = []
+
+[[test]]
+name = "decode"
+path = "tests/decoder/mod.rs"

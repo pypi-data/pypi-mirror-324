@@ -1,0 +1,43 @@
+[package]
+name = "nafcodec-py"
+version = "0.3.0"
+authors = ["Martin Larralde <martin.larralde@embl.de>"]
+edition = "2021"
+license = "MIT"
+description = "PyO3 bindings and Python interface to the nafcodec crate."
+repository = "https://github.com/althonos/nafcodec"
+homepage = "https://github.com/althonos/nafcodec"
+readme = "README.md"
+keywords = ["nucleotide", "archive", "biology", "bioinformatics"]
+categories = ["science", "parser-implementations", "compression"]
+build = "nafcodec/build.rs"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+path = "nafcodec/lib.rs"
+doctest = false
+
+[build-dependencies.built]
+version = "0.7"
+features = ["chrono", "cargo-lock"]
+
+[dependencies.nafcodec]
+path = "../nafcodec"
+version = "0.3.0"
+default-features = false
+features = ["arc"]
+[dependencies]
+pyo3-built = "0.6.0"
+[dependencies.pyo3]
+version = "0.23.0"
+features = ["py-clone"]
+
+[features]
+default = []
+extension-module = ["pyo3/extension-module"]
+nightly = ["pyo3/nightly"]
+
+[[test]]
+name = "unittest"
+path = "nafcodec/tests/unittest.rs"
+harness = false

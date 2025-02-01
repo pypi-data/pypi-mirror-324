@@ -1,0 +1,3 @@
+[workspace]
+members = ["nafcodec", "nafcodec-py"]
+resolver = "2"
