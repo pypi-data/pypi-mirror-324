@@ -1,0 +1,5 @@
+build
+wheel
+flake8
+sphinx
+-r requirements-test.txt

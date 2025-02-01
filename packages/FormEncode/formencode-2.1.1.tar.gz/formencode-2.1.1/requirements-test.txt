@@ -1,0 +1,5 @@
+dnspython >= 2
+pycountry
+pytest
+pytest-cov
+wheel
