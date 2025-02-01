@@ -1,0 +1,9 @@
+README.md
+setup.py
+alien_language/__init__.py
+alien_language/translator.py
+alien_language.egg-info/PKG-INFO
+alien_language.egg-info/SOURCES.txt
+alien_language.egg-info/dependency_links.txt
+alien_language.egg-info/entry_points.txt
+alien_language.egg-info/top_level.txt

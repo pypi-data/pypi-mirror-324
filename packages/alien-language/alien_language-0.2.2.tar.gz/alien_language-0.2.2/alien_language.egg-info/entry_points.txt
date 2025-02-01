@@ -1,0 +1,2 @@
+[console_scripts]
+alien-translate = alien_language.translator:main
