@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: opsbox-slack-output
+Version: 0.1.4
+Summary: Slack channel output for opsbox
+Requires-Python: ==3.11.*
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+Requires-Dist: pluggy>=1.5.0
+Requires-Dist: pydantic>=2.10.2
+Requires-Dist: slack-sdk>=3.34.0
+Requires-Dist: opsbox-general-handler>=0.1.2
+
+# opsbox-slack-output Plugin
+
+## Overview
+
+The `slack_out` Plugin processes and sends results to a specified Slack channel, allowing for easy communication and reporting of findings.
+
+## Key Features
+
+- **Slack Integration**: Sends results to a Slack channel.
+- **Customizable Slack Settings**: Allows specifying Slack token and channel.
+
+## Configuration Parameters
+
+### Slack Configuration
+
+- **slack_token**: The Slack token to use.
+- **slack_channel**: The Slack channel to send the message to.
+
+## Example Configuration
+
+```yaml
+slack_token: your_slack_token
+slack_channel: your_slack_channel
+```

@@ -1,0 +1,2 @@
+[opsbox.plugins]
+opsbox_slack_out = slack.slack:SlackOutput

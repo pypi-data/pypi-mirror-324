@@ -1,0 +1,8 @@
+slack/manifest.toml,sha256=A0dzOykBn875C2fjmM7m-vtEPoBz4FsBK12EBMKTTls,113
+slack/slack.py,sha256=67IVc0djanTA7PUaUyUk4BfoqmCLkC_VRX2N6ig49E4,2069
+opsbox_slack_output-0.1.4.dist-info/LICENCE.txt,sha256=-YEY41LAwXsb0Er-5vJY1cKRFr9ea3T6CigUirNyUZo,17097
+opsbox_slack_output-0.1.4.dist-info/METADATA,sha256=72QQtYaq6b5UpCV_HYKFfoJoNMMSd4zyqXD69WKXMVA,974
+opsbox_slack_output-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+opsbox_slack_output-0.1.4.dist-info/entry_points.txt,sha256=gp48Y-jiccV3db1GYMCGlsqtdFqfygvG20PJ2FGoTz8,60
+opsbox_slack_output-0.1.4.dist-info/top_level.txt,sha256=vBoOMavyMpVKb8sKb-lx2951Lj4ltLu_Is9rfSgBa6o,6
+opsbox_slack_output-0.1.4.dist-info/RECORD,,
