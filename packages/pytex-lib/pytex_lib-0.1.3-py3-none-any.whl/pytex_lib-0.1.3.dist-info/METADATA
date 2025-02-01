@@ -1,0 +1,21 @@
+Metadata-Version: 2.3
+Name: pytex-lib
+Version: 0.1.3
+Summary: Allows you to output your python functions directly to a LaTeX file.
+Author: XPS-13
+Author-email: gavin.kerr@dal.ca
+Requires-Python: >=3.10
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: numpy (>=2.2.2,<3.0.0)
+Project-URL: Repository, https://github.com/gkerr708/pytex-lib
+Description-Content-Type: text/markdown
+
+# pytex-lib
+
+Allows you to output your python functions directly to a LaTeX file.
+
+
