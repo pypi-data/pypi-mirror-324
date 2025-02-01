@@ -1,0 +1,4 @@
+[console_scripts]
+kindle2pdf=src.kindle2pdf:main
+pdf2remarkable=src.pdf2remarkable:main
+

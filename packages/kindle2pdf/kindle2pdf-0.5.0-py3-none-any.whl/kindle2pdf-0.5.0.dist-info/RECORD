@@ -1,0 +1,9 @@
+src/__init_.py,sha256=bCaJKkFe2A3VZi3yEJe8YQxDZQE5g2-JeY8qMPDqmcQ,78
+src/kindle2pdf.py,sha256=LouPmZBP4nf1XLTE27VcXjODWhrRS7Pt2dhNWpNlyFU,18514
+src/pdf2remarkable.py,sha256=FLXDny_opTLMFdlo8NxkbHei3PNeFCcuAxAs5q68zP0,4412
+src/utils.py,sha256=LbvUd0j1mr2Z7b7GScxfHgpJtOGJi33p6E0rLHl_KMw,2962
+kindle2pdf-0.5.0.dist-info/LICENSE,sha256=-gQRvEWtGdymaVJQeDtmzbDdVQRF4ip_Qn-dttcqkjQ,1529
+kindle2pdf-0.5.0.dist-info/METADATA,sha256=07BwgV38Dq0G0YfrmM1WQLcgLPv969fNb1j1665yODc,2699
+kindle2pdf-0.5.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+kindle2pdf-0.5.0.dist-info/entry_points.txt,sha256=Kh5TG03lJMJuHGIDxZfblWb4Lc_fQ4gxHRNxxYX91UA,89
+kindle2pdf-0.5.0.dist-info/RECORD,,
