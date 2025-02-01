@@ -1,0 +1,10 @@
+site_name: when-exactly
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Tutorial:
+    - Moment: tutorial/moment.md
+    - Delta: tutorial/delta.md
+markdown_extensions:
+  - admonition: {}
+
