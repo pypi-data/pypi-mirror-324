@@ -1,0 +1,9 @@
+accessgrid/__init__.py,sha256=p5j4h5knt-P-onKQUXKoItNi3NFtLMKpCnVa5nJ_4yY,861
+accessgrid/client.py,sha256=JMIp9PpT8L9d0NdfSaYuJtbDdki5-4PjT2hrKLYD2GE,6885
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_accessgrid.py,sha256=g51vipXqIEikGdVJX1tFThreWAXi6S6SS4wGwybXYn8,7235
+accessgrid-0.1.0.dist-info/LICENSE,sha256=1ouJLSXeQgOSKAyTNFcT3l7SEU2IIGbkY3MiSEFS6tc,1066
+accessgrid-0.1.0.dist-info/METADATA,sha256=OCbDNnrmDuHIQ8SFfoWNE0hc0PscWqMdlVpQMyciaJ4,6001
+accessgrid-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+accessgrid-0.1.0.dist-info/top_level.txt,sha256=1J0joUkagD12jKFuL-biuiZtU5ts9Q6A8K3ZvW6BA5s,17
+accessgrid-0.1.0.dist-info/RECORD,,
