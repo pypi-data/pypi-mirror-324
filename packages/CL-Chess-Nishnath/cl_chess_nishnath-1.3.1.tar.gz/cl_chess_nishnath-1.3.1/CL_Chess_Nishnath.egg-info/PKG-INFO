@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: CL_Chess_Nishnath
+Version: 1.3.1
+Summary: Play Chess
+Home-page: https://github.com/NishnathRai/CL-Chess
+Author: Nishnath Rai
+Author-email: nishnathnishu1122@gmail.com
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# My Python Package
+
+This is a Python package that does awesome things. It allows you to perform a variety of tasks like:
+
+- Task 1
+- Task 2
+- Task 3
+
+## Installation
+
+```bash
+pip install my-package
