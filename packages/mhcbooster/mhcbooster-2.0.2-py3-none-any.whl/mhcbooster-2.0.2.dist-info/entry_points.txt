@@ -1,0 +1,3 @@
+[console_scripts]
+mhcbooster = src.interface.mhcbooster_cli:run
+mhcbooster-gui = src.interface.mhcbooster_gui:run
