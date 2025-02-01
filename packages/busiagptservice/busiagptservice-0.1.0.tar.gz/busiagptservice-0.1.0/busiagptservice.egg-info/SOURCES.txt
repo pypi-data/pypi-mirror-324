@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+busiagptservice/__init__.py
+busiagptservice/errors.py
+busiagptservice.egg-info/PKG-INFO
+busiagptservice.egg-info/SOURCES.txt
+busiagptservice.egg-info/dependency_links.txt
+busiagptservice.egg-info/requires.txt
+busiagptservice.egg-info/top_level.txt
