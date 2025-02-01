@@ -1,0 +1,9 @@
+pydantic_glue/__init__.py,sha256=Z259u893h6IAgQKiDH1VXbRwzPquFZC7K0NsAyjRb1I,65
+pydantic_glue/cli.py,sha256=bXK5wVg18mwHARUSrU4ZAov3Yr29lAQ2_E3TJHlKOvY,2491
+pydantic_glue/errors.py,sha256=k64QFiPTIqKIkJQyinh1KDKi6PTIm2WZDtPwoZpDkuI,479
+pydantic_glue/handler.py,sha256=a2hJQAmch5olwlvnFplMR8JH-SACNaGSvA4a5geliv4,2410
+pydantic_glue-0.6.1.dist-info/LICENSE,sha256=bYeBuBDvwagoldP0XIdwSHCdc6Rr0khvrFTcCnYqMH0,1062
+pydantic_glue-0.6.1.dist-info/METADATA,sha256=NStdE5LA5qGLU46_JCHY2256deh2VGdBy2OZQ-VoQqE,6578
+pydantic_glue-0.6.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pydantic_glue-0.6.1.dist-info/entry_points.txt,sha256=_gPpBSsjTKg5kOGmldRl4E-Nz4aiUUDf7Dq4ufNryOo,55
+pydantic_glue-0.6.1.dist-info/RECORD,,
