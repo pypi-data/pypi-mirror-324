@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mosaictools
+Version: 0.1.0
+Summary: Surrogate modelling of modal properties using MOSAIC method
+Home-page: https://github.com/blazkurent/mosaictools/
+Author: Blaž Kurent
+Author-email: blaz.kurent@fgg.uni-lj.si
+License: UNKNOWN
+Description: # mosaictools
+        Python library for surrogate modelling of modal properties according to the Mode-Shape-Adapted Input parameter domain Curring (MOSAIC) method.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
