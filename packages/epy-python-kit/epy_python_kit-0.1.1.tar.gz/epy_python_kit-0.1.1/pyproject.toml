@@ -1,0 +1,59 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "epy_python_kit"
+authors = [{name = "Angel Navarro-Mora", email = "ahnavarro@anmingenieria.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+dynamic = ["version", "description"]
+
+dependencies = [
+    "streamlit",
+    "numpy < 2.0.0",
+    "pandas",
+    "openpyxl",
+    "lxml",
+    "sympy",
+    "shapely>=2.0.0",
+    "vtk",
+    "matplotlib",
+    "plotly",
+    "kaleido",
+    "sectionproperties",
+    "concreteproperties",
+    "pycba>=0.4.0",
+    "PyNiteFEA==0.0.94",
+    "scipy",
+    "handcalcs",
+    "more-itertools",
+    "forallpeople",
+    "pytest",
+    "rich",
+    "tqdm",
+    "papermodels",
+    "xlwings",
+    "jupyterlab",
+    "IPython",
+    "ipywidgets",
+    "ipykernel",
+    "jupyterlab-katex",
+    "jupyterlab-mathjax3",
+    "nbconvert",
+    "pyperclip",
+    "typer",
+    "flit",
+    "python-docx",
+    "constable",
+    "ruff",
+    "black",
+    "isort",
+]
+
+[project.urls]
+Home = "https://github.com/ingahnavarro/epy_python_kit"
+
+[project.scripts]
+epy_verify = "epy_python_kit.__main__:check_installs"

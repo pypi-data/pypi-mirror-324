@@ -1,0 +1,90 @@
+Metadata-Version: 2.3
+Name: epy_python_kit
+Version: 0.1.1
+Summary: A module to designed to perform package installations, and verification of install,
+Author-email: Angel Navarro-Mora <ahnavarro@anmingenieria.com>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: streamlit
+Requires-Dist: numpy < 2.0.0
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: lxml
+Requires-Dist: sympy
+Requires-Dist: shapely>=2.0.0
+Requires-Dist: vtk
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: kaleido
+Requires-Dist: sectionproperties
+Requires-Dist: concreteproperties
+Requires-Dist: pycba>=0.4.0
+Requires-Dist: PyNiteFEA==0.0.94
+Requires-Dist: scipy
+Requires-Dist: handcalcs
+Requires-Dist: more-itertools
+Requires-Dist: forallpeople
+Requires-Dist: pytest
+Requires-Dist: rich
+Requires-Dist: tqdm
+Requires-Dist: papermodels
+Requires-Dist: xlwings
+Requires-Dist: jupyterlab
+Requires-Dist: IPython
+Requires-Dist: ipywidgets
+Requires-Dist: ipykernel
+Requires-Dist: jupyterlab-katex
+Requires-Dist: jupyterlab-mathjax3
+Requires-Dist: nbconvert
+Requires-Dist: pyperclip
+Requires-Dist: typer
+Requires-Dist: flit
+Requires-Dist: python-docx
+Requires-Dist: constable
+Requires-Dist: ruff
+Requires-Dist: black
+Requires-Dist: isort
+Project-URL: Home, https://github.com/ingahnavarro/epy_python_kit
+
+# epy_python_kit
+A Python package that installs all required packages for estructuraPy (epy) Python code and for _estructúrate_ courses.
+This package is using code from pfse_starterkit with an Apache License 2.0. 
+
+This installs the following packages:
+
+* streamlit
+* numpy
+* pandas
+* openpyxl
+* lxml
+* sympy
+* shapely
+* vtk
+* matplotlib
+* plotly
+* sectionproperties
+* concreteproperties
+* PyNiteFEA
+* pycba
+* scipy
+* handcalcs
+* forallpeople
+* pytest
+* ipytest
+* rich
+* tqdm
+* papermodels
+* xlwings
+* black
+* jupyterlab
+* IPython
+* ipywidgets
+* ipykernel
+* jupyterlab-katex
+* jupyterlab-mathjax3 (as an option)
+* nbconvert
+* pyperclip
+* typer
+* magicgui[pyside2]
+* flit
+
