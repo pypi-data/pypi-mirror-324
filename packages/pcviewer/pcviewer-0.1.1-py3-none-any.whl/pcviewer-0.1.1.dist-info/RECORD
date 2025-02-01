@@ -1,0 +1,14 @@
+pcviewer/__init__.py,sha256=zpZmnViWbPdEr5SAwSJ9Xk4jFn05LDVWg0oFAPBZmAE,30
+pcviewer/http_server.py,sha256=RcM3eq82tOO6t9y3dOT1Nc7IiHR-Fk179281D1NUYaY,567
+pcviewer/run.py,sha256=VLHM_LNHAwWh19YVrDrGnQpMI1NsdFS1PLBW_MlqcEQ,2342
+pcviewer/server.py,sha256=DiEsgsFqnLHvpRJ5so1ahLhw0n-wKDVzqmNzFyTMHC8,4796
+pcviewer/static/index.html,sha256=7YarxJv2TasuxaglbJV5gORa9thxMudrUCoMwQEzfSQ,9386
+pcviewer/static/viewer.js,sha256=BaYP9NkuSdZpT3pF9puEZx_MBI-BmAr2I-mZOnSQZe0,14326
+pcviewer/static/js/FlyControls.js,sha256=3fefBbi3j7UsvhKwJz0qx3zzN4yLki4BVxcbyfdt8r8,7907
+pcviewer/static/js/OrbitControls.js,sha256=ArtK3nEPPmBzKeN6IfCYvDrHDrbjPa-KZeefTbeF57I,26375
+pcviewer/static/js/TrackballControls.js,sha256=pfTZPm3BMQpR7EFzxbVouSdwtBTvv6L4AT_EGmKxOkk,17375
+pcviewer/static/js/three.min.js,sha256=knS7zsjZYWhibHMrXTHHdaqM-36qBZm-wMF1kIosHOI,603445
+pcviewer-0.1.1.dist-info/METADATA,sha256=QBhwmQZrjmwQuQ9CVt3SLPrG4IZ0aQfwjPI6REujyIE,2640
+pcviewer-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pcviewer-0.1.1.dist-info/top_level.txt,sha256=uJ9ogOs-wJA2Y5s_0B1gJT5VO4fjwe5w5Xz9uNMggv4,9
+pcviewer-0.1.1.dist-info/RECORD,,
