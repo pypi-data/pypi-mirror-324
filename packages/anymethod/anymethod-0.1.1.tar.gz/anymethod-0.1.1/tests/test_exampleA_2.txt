@@ -1,0 +1,12 @@
+>>> from anymethod import anymethod
+
+>>> class FooBar(object):
+...     @anymethod
+...     def whoami(owner):
+...         print(owner)
+
+>>> FooBar.whoami()
+<class '__main__.FooBar'>
+
+>>> FooBar().whoami()  # doctest: +ELLIPSIS
+<__main__.FooBar object at 0x...>

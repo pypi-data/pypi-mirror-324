@@ -1,0 +1,12 @@
+>>> from anymethod import anymethod
+
+>>> class FooBar:
+...     @anymethod
+...     def whoami[O](owner: O) -> O:
+...         return owner
+
+>>> FooBar.whoami()
+<class '__main__.FooBar'>
+
+>>> FooBar().whoami()
+<__main__.FooBar object at 0x...>
