@@ -1,0 +1,12 @@
+quick/VERSION,sha256=UgoZB1eAo4tEA5Xixw4g183dlrjC4sJAOyZcu3ShszM,6
+quick/__init__.py,sha256=ojPu5INhE1lPWzLBdBXwJfldX4YC3o5b0xhZ6JKODZk,303
+quick/auto.py,sha256=OKkYyacSPYkao2jxFzx8WLqg9D6n9P1fYW0t-iRbDAg,15131
+quick/experiment.py,sha256=nMdWAOJ35235_hdwgWenNt-l1t-T7YADlUEJMp9Cmkg,11332
+quick/experiment.yml,sha256=6APG6oGx67uov2pNtLNSndcukeYigU8yDYuNvUDwu-Y,7927
+quick/helper.py,sha256=8xI8VOn7RU0-JfUOkDM5RDWgM5KkRMvoZmVo2ZEWgX8,19720
+quick/mercator.py,sha256=7rx9Np3EuqA1RTP7tROJf-ev-iMo6ecwZKmTtSovPQ8,12204
+clelandlab_quick-0.4.3.dist-info/LICENSE,sha256=ipTW6eR_AVQqzzF0xLtPxbz7OLJDXa4hEKKOJqXAqXQ,1068
+clelandlab_quick-0.4.3.dist-info/METADATA,sha256=zTPsqDsNonQsE1F0B9WoCzic_aVx7D4ja4-kDc5bQFg,2625
+clelandlab_quick-0.4.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+clelandlab_quick-0.4.3.dist-info/top_level.txt,sha256=MLnnpTU-ysKpmDdGLrHLDc8pKA0UXQGRZc5wkFHY0jE,6
+clelandlab_quick-0.4.3.dist-info/RECORD,,
