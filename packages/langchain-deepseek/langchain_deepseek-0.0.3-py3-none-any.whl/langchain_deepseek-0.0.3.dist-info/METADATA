@@ -1,0 +1,59 @@
+Metadata-Version: 2.3
+Name: langchain-deepseek
+Version: 0.0.3
+Summary: Using the deepseek model in langchain
+License: MIT
+Author: SyJarvis
+Author-email: 1755115828@qq.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: langchain-core (>=0.3.33,<0.4.0)
+Requires-Dist: langchain-tests (>=0.3.5,<0.4.0)
+Requires-Dist: pytest (>=7.4.3,<8.0.0)
+Requires-Dist: pytest-asyncio (>=0.23.2,<0.24.0)
+Requires-Dist: pytest-socket (>=0.7.0,<0.8.0)
+Requires-Dist: pytest-watcher (>=0.3.4,<0.4.0)
+Description-Content-Type: text/markdown
+
+# 🦜️🔗 langchain-deepseek
+
+## Install
+
+* Install from source (Recommend)
+
+```bash
+cd langchain-deepseek
+pip install -e .
+```
+* Install from PyPI
+```bash
+pip install langchain-deepseek
+```
+
+## Quick Start
+* All the code can be found in the `examples`
+* Set DeepSeek API key in environment if using DeepSeek models: `export DEEPSEEK_API_KEY="sk-...".`
+*  Maybe you can try loading environment variables like this. Create a new `.env` file
+```
+DEEPSEEK_API_KEY="sk-..."
+```
+```python
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv(), override=True)
+```
+`ChatDeepSeek` class exposes chat models from DeepSeek.
+
+```python
+from langchain_deepseek import ChatDeepSeek
+
+llm = ChatDeepSeek(model="deepseek-chat")
+llm.invoke("Sing a ballad of LangChain.")
+```
+
+
