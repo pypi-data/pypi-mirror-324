@@ -1,0 +1,103 @@
+Metadata-Version: 2.3
+Name: autheon
+Version: 0.0.0
+Summary: OAuth2 3rd party integration libray for your favorite framework
+License: MIT
+Author: Ashref Gwader
+Author-email: oss@ashgw.me
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Requires-Dist: email-validator (>=2.1.0.post1,<3.0.0)
+Requires-Dist: fastapi (>=0.93.0,<0.94.0)
+Requires-Dist: httpx (>=0.23.2,<0.24.0)
+Requires-Dist: overrides (>=7.6.0,<8.0.0)
+Requires-Dist: python-jose[cryptography] (>=3.1.0,<4.0.0)
+Project-URL: Changelog, https://github.com/ashgw/fastauth/releases
+Project-URL: Documentation, https://ashgw.github.io/fastauth/
+Project-URL: Homepage, https://ashgw.github.io/fastauth/
+Project-URL: Source, https://github.com/ashgw/fastauth
+Description-Content-Type: text/markdown
+
+# FastAuth
+OAuth2 library for FastAPI.
+### Current providers
+- Google
+- GitHub
+- Reddit
+- Discord
+- Spotify
+### Setup
+This setup currently works, but up for change, since this project is still under development
+
+```python
+from fastapi import FastAPI
+
+from dotenv import load_dotenv
+from os import getenv
+
+from autheon.libtypes import UserInfo, FallbackSecrets
+
+from autheon.jwts.helpers import generate_secret
+from autheon.oauth2_options import OAuthOptions
+from autheon.providers.google.google import Google
+
+from autheon.adapters.fastapi.csrf_middleware import CSRFMitigationMiddleware
+
+load_dotenv()
+
+
+# What happens when someone logs in
+async def push_to_db(user_info: UserInfo) -> None:
+    with open("my_db", "w") as f:
+        f.write(user_info["name"])
+
+
+# One router takes care of everything
+auth = OAuthOptions(
+    debug=True,
+    provider=Google(
+        client_id=getenv("GOOGLE_CLIENT_ID"),
+        client_secret=getenv("GOOGLE_CLIENT_SECRET"),
+        redirect_uri=getenv("GOOGLE_REDIRECT_URI"),
+    ),
+    signin_callback=push_to_db,
+    fallback_secrets=FallbackSecrets(
+        secret_1=getenv("SECRET"),
+        secret_2=generate_secret(),
+        secret_3=generate_secret(),
+        secret_4=generate_secret(),
+        secret_5=generate_secret(),
+    ),
+)
+
+app = FastAPI()
+# Plug in the router
+app.include_router(auth)
+
+# Optional for OAuth flow, but highly recommended
+app.add_middleware(CSRFMitigationMiddleware)
+```
+### Usage
+```python
+@app.get("/auth/in")
+def logged():
+    return "youre in"
+
+@app.get("/auth/out")
+def out():
+    return "out"
+```
+### Development setup
+Checkout ``justfile``
+
+### License
+[MIT](/LICENSE)
+
