@@ -1,0 +1,12 @@
+compare_classifiers/__init__.py,sha256=0mgiYwgPtV1CBGJf7EhVNPah7StUIQa7_9ratAlGFgQ,121
+compare_classifiers/compare_f1.py,sha256=cOS2Mzq3dovmuspqXiU_g5DuqUMFiwBmI5nTu2lF52U,2451
+compare_classifiers/confusion_matrices.py,sha256=SlRyxnjNVVYkwZIzEehobOWOvLrKwSD2-Sltqqee8ow,2926
+compare_classifiers/ensemble_compare_f1.py,sha256=0MxEr-GCKsEgzEWujZDmaebTlmFubrtjuLayrzis2f4,2744
+compare_classifiers/ensemble_predict.py,sha256=MJHKAsG3C9W1z5Y52-IyC8v74XPwl8BJXmQuKGMsn7I,2931
+compare_classifiers/error_handling/check_valid_X.py,sha256=IbqwxgUaT1tNZGz9PhKmCyaFXRCG8jMXyD2IfrX6_Kc,1151
+compare_classifiers/error_handling/check_valid_estimators.py,sha256=bWezSlvtPJzA0FKEwt0Pl380pKhwNSktkiDNaduFWW4,2140
+compare_classifiers/error_handling/check_valid_y.py,sha256=52GI5w-m1SIUcDChRZiRprFEmYKEH9FqIRitpB1D6OI,1227
+compare_classifiers-0.1.0.dist-info/LICENSE,sha256=t_GkSvwFk7WWzCyZ9Nl9yA4SU8-Zmxg7OYYbqpmLnIw,1103
+compare_classifiers-0.1.0.dist-info/METADATA,sha256=Q-EmtxGxenZcdnn7rmLUHpXXBZvYB8BBztuetmHGVfE,7712
+compare_classifiers-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+compare_classifiers-0.1.0.dist-info/RECORD,,
