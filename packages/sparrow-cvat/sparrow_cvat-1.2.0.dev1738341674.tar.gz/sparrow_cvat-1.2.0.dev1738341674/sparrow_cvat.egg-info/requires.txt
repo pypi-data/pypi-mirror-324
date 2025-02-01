@@ -1,0 +1,15 @@
+cvat-sdk==2.15.0
+fire
+pillow
+python-dotenv
+requests
+tqdm
+
+[dev]
+jupyter
+pytest
+pytest-cov
+uv
+
+[video]
+opencv-python
