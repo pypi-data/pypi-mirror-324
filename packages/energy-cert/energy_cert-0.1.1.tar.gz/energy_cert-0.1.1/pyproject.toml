@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "energy-cert"
+version = "0.1.1"
+description = "Narzędzie do generowania świadectw charakterystyki energetycznej"
+authors = [{ name = "Lech Hubicki", email = "lech.hubicki@gmail.com" }]
+readme = "README.md"  # Dodaj README jako opis projektu w PyPI
+license = { file = "LICENSE" }  # Jeśli masz plik LICENSE
+dependencies = [
+    "pandas",
+    "fastapi"
+]
+
+[project.urls]
+Homepage = "https://github.com/lechplace/energy-cert"  # Jeśli masz repozytorium
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = false  # Wyłącza kopiowanie README.md i innych plików
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["energy_cert*"]

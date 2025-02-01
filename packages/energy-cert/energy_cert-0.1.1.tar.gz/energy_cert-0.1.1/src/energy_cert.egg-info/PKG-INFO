@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: energy-cert
+Version: 0.1.1
+Summary: Narzędzie do generowania świadectw charakterystyki energetycznej
+Author-email: Lech Hubicki <lech.hubicki@gmail.com>
+Project-URL: Homepage, https://github.com/lechplace/energy-cert
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: fastapi
+
+# energy-cert
+
+Generowanie świadectw charakterystyki energetycznej.
