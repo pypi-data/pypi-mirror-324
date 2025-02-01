@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: UNKNOWN
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+License-File: LICENSE
+License-File: AUTHORS.rst
+
+========
+Overview
+========
+
+
+
+Light Agent Spatial modeling for ERadication.
+
+* Free software: MIT license
+
+Installation
+============
+
+::
+
+    pip install laser-core
+
+You can also install the in-development version with::
+
+    pip install https://github.com/InstituteforDiseaseModeling/laser/archive/main.zip
+
+
+Documentation
+=============
+
+
+https://idmlaser.readthedocs.io/en/latest/
+
+
+Development
+===========
+
+To run all the tests run::
+
+    tox
+
+Note, to combine the coverage data from all the tox environments run:
+
+.. list-table::
+    :widths: 10 90
+    :stub-columns: 1
+
+    - - Windows
+      - ::
+
+            set PYTEST_ADDOPTS=--cov-append
+            tox
+
+    - - Other
+      - ::
+
+            PYTEST_ADDOPTS=--cov-append tox
+
+
+Changelog
+=========
+
+0.0.1 (2023-11-18)
+------------------
+
+* First release on PyPI.
+
+
