@@ -1,0 +1,6 @@
+rich-click>=1.8.5
+rich
+
+[dev]
+pytest>=8.3.4
+pytest-asyncio
