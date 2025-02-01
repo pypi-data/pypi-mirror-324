@@ -1,0 +1,7 @@
+setup.py
+CL_Chess/__init__.py
+CL_Chess/main.py
+CL_Chess_Nishnath.egg-info/PKG-INFO
+CL_Chess_Nishnath.egg-info/SOURCES.txt
+CL_Chess_Nishnath.egg-info/dependency_links.txt
+CL_Chess_Nishnath.egg-info/top_level.txt
