@@ -1,0 +1,13 @@
+LICENCE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+./slack/manifest.toml
+opsbox_slack_output.egg-info/PKG-INFO
+opsbox_slack_output.egg-info/SOURCES.txt
+opsbox_slack_output.egg-info/dependency_links.txt
+opsbox_slack_output.egg-info/entry_points.txt
+opsbox_slack_output.egg-info/requires.txt
+opsbox_slack_output.egg-info/top_level.txt
+slack/manifest.toml
+slack/slack.py
