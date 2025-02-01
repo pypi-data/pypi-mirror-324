@@ -1,0 +1,15 @@
+geneplexus/__init__.py,sha256=ULmhp2905CbZuzFUmf9cPZXx-fw_Mv8ASr4GMr9teh4,4854
+geneplexus/_geneplexus.py,sha256=Jr13DasDB2k-Ob87UZu8n32eW54XCyteWfM4gtfXGfA,14116
+geneplexus/cli.py,sha256=ueJCGqn8mhExEi8SHYL1U03r2iCd-blZOWydvFoKdFM,11310
+geneplexus/download.py,sha256=YiszpRqnT0BsPhMmhxImvUwH3g3UC5APRPt4JD1hGJo,7124
+geneplexus/exception.py,sha256=7einkx_z1wPXyi43fwgEoP0AccL3Xb49EQfk-GO1U44,549
+geneplexus/geneplexus.py,sha256=dxIvPsYjvoSJeHCj9adTZfTqeN9U5R-eeUzDUNB3KHg,27605
+geneplexus/util.py,sha256=_nE5hk1Mw3c48oBpkB388LfFa3whgvkTGm1XmzFvQ9I,8522
+geneplexus/_config/__init__.py,sha256=kPbUh2-2Nov-VEgtl67Soz-ul7gZrxe3ZtPVE1R-DZ0,158
+geneplexus/_config/config.py,sha256=Fm4qds4Rlbz_0qoYrQ6emqZZFGBr25pssZI6TJ-mbdo,3170
+geneplexus/_config/logger_util.py,sha256=ep1vIZzG5LwO45g9YloPKas6pR4LGKwc-qlMm5ASrfM,2734
+geneplexus-2.0.4.dist-info/METADATA,sha256=if5MlFIAOlpRDSrb3WIpZk3TnjAbOR4slTNlM1GUPBs,6360
+geneplexus-2.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+geneplexus-2.0.4.dist-info/entry_points.txt,sha256=MpWsmUghyHtpgbBNWHrUgo0wLM0pw5032uc3Xlm7ivE,51
+geneplexus-2.0.4.dist-info/top_level.txt,sha256=1q3zoSfMbd0EQ_c0thpMGBmpMoqCtqEInUGjm2bZcvM,11
+geneplexus-2.0.4.dist-info/RECORD,,
