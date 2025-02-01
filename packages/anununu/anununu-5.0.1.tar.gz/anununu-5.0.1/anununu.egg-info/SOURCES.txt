@@ -1,0 +1,6 @@
+README.md
+setup.py
+anununu.egg-info/PKG-INFO
+anununu.egg-info/SOURCES.txt
+anununu.egg-info/dependency_links.txt
+anununu.egg-info/top_level.txt
