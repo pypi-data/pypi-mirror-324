@@ -1,0 +1,8 @@
+large_image_source_zarr/__init__.py,sha256=9-iGpRVSPi6uDLqIPrRqkHHoowveXwP9uWeme9n3FPI,51846
+large_image_source_zarr/girder_source.py,sha256=RljxQ49-2PyTPZ4xxTipyyaXiwLAC7npdwWVx7XEhLE,342
+large_image_source_zarr-1.31.1.dev10.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+large_image_source_zarr-1.31.1.dev10.dist-info/METADATA,sha256=lPAn1dLEjgoJlRy-0vJiTQ2X4I9eZAfy-n3Q78DUS2Q,1493
+large_image_source_zarr-1.31.1.dev10.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+large_image_source_zarr-1.31.1.dev10.dist-info/entry_points.txt,sha256=VakBZBTOHxWMsYsOO8Egale1mPhLTlLruMfhSBUOwkk,166
+large_image_source_zarr-1.31.1.dev10.dist-info/top_level.txt,sha256=cMYOehfHJ55_mkRAFS3h2lsO0Pe4jYvMrNKbEznImZI,24
+large_image_source_zarr-1.31.1.dev10.dist-info/RECORD,,
