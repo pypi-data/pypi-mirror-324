@@ -1,0 +1,3 @@
+[console_scripts]
+onnx-modifier=onnx_modifier.app:main
+
