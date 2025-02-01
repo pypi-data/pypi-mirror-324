@@ -1,0 +1,6 @@
+satya-0.2.0.dist-info/METADATA,sha256=kjL-pfciI49K2-n5PUaw2LhN41nWxVGYUZFR4AzwZIc,279
+satya-0.2.0.dist-info/WHEEL,sha256=lWK3-Bgk0WnWBByE5b3Cq5VR1998HCQ2lZtuFHoBwss,104
+satya/validator.py,sha256=G9YF7FkRDv6RuQ8nK2BHkAhF6ttZvHy8Bro1v9IG720,1119
+satya/__init__.py,sha256=WR8ZKfUW4SDAAAIeA_PJ0peQJ-e8Cl34u72b-QWmadk,13250
+satya/_satya.cpython-312-darwin.so,sha256=SaUVyGVcQGJO6J9LIdgh99vJpegCGpW7a1UfT1QE5rE,591600
+satya-0.2.0.dist-info/RECORD,,
