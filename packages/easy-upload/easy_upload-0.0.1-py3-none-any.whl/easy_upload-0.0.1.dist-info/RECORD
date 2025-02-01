@@ -1,0 +1,9 @@
+easy_upload-0.0.1.dist-info/METADATA,sha256=Wa_RGWHvSxKruwzhWA-se6rMsTtqKacCnOpyg0QrVfM,370
+easy_upload-0.0.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+easy_upload-0.0.1.dist-info/entry_points.txt,sha256=uwo1QU2djrFtpUSjH1hwvTbedsplogpCQyl7rfdKqSM,68
+easy_upload-0.0.1.dist-info/licenses/LICENSE,sha256=927Eh1Obvd4CUshhq7fqZcaaW9gvPob_5d-M9VOLJv4,1093
+easy_upload/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easy_upload/cli.py,sha256=Mhb7q85D9Tzk0Rmym0m5VpxfY_y1UIXgSXuV551yG5U,117
+easy_upload/commands/upload.py,sha256=RjwqkcasQIiY4LvvJwuOjDIIEmolKeEu4zcnXFKQc6c,327
+easy_upload/lib/upload.py,sha256=q2DEB4C-LtiLA0jtD8mDo6Zm6VSCC83DzrNxBwxoiv0,2318
+easy_upload-0.0.1.dist-info/RECORD,,
