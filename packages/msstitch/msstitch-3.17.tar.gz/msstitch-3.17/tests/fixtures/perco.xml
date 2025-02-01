@@ -1,0 +1,3672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<percolator_output 
+xmlns="http://per-colator.com/percolator_out/15" 
+xmlns:p="http://per-colator.com/percolator_out/15" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://per-colator.com/percolator_out/15 https://github.com/percolator/percolator/raw/pout-1-5/src/xml/percolator_out.xsd" 
+p:majorVersion="3" p:minorVersion="06" p:percolator_version="Percolator version 3.06.5">
+
+  <process_info>
+    <command_line>percolator -j /tmp/perco/msgf.pin -X /test/fixtures/perco.xml -N 500000 --decoy-xml-output</command_line>
+    <other_command_line></other_command_line>
+    <pi_0_psms>1</pi_0_psms>
+    <pi_0_peptides>1</pi_0_peptides>
+    <psms_qlevel>0</psms_qlevel>
+    <peptides_qlevel>0</peptides_qlevel>
+  </process_info>
+
+  <psms>
+    <psm p:psm_id="few_spectra_SII_24_1_10023_3_1" p:decoy="false">
+      <svm_score>0.000000</svm_score>
+      <q_value>1.666667e-01</q_value>
+      <pep>3.839707e-02</pep>
+      <exp_mass>819.7480</exp_mass>
+      <calc_mass>819.747</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]SEEAHRAEQLQDAEEEK[UNIMOD:737]"/>
+      <protein_id>ENSP00000246024.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_16_1_10015_4_1" p:decoy="false">
+      <svm_score>-0.041</svm_score>
+      <q_value>1.667e-01</q_value>
+      <pep>4.417e-02</pep>
+      <exp_mass>615.3130</exp_mass>
+      <calc_mass>615.062</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]SEEAHRAEQLQDAEEEK[UNIMOD:737]"/>
+      <protein_id>ENSP00000246024.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_30_1_10029_3_1" p:decoy="false">
+      <svm_score>-0.091</svm_score>
+      <q_value>1.667e-01</q_value>
+      <pep>5.220e-02</pep>
+      <exp_mass>820.4150</exp_mass>
+      <calc_mass>819.747</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]SEEAHRAEQLQDAEEEK[UNIMOD:737]"/>
+      <protein_id>ENSP00000246024.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_40_1_10039_2_1" p:decoy="false">
+      <svm_score>-0.410</svm_score>
+      <q_value>1.667e-01</q_value>
+      <pep>1.530e-01</pep>
+      <exp_mass>811.9460</exp_mass>
+      <calc_mass>811.444</calc_mass>
+      <peptide_seq n="R" c="A" seq="[UNIMOD:737]DSGTLQSQEAK[UNIMOD:737]"/>
+      <protein_id>ENSP00000363482.2</protein_id>
+      <protein_id>ENSP00000439811.1</protein_id>
+      <protein_id>ENSP00000442128.1</protein_id>
+      <protein_id>ENSP00000485513.1</protein_id>
+      <protein_id>ENSP00000352922.6</protein_id>
+      <protein_id>ENSP00000337541.5</protein_id>
+      <protein_id>ENSP00000344037.6</protein_id>
+      <protein_id>ENSP00000314417.7</protein_id>
+      <protein_id>ENSP00000282633.5</protein_id>
+      <protein_id>ENSP00000382277.2</protein_id>
+      <protein_id>ENSP00000481763.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_85_1_10084_2_1" p:decoy="false">
+      <svm_score>-0.759</svm_score>
+      <q_value>1.667e-01</q_value>
+      <pep>4.866e-01</pep>
+      <exp_mass>653.3750</exp_mass>
+      <calc_mass>653.374</calc_mass>
+      <peptide_seq n="R" c="L" seq="[UNIMOD:737]LQDTQDK[UNIMOD:737]"/>
+      <protein_id>ENSP00000006658.6</protein_id>
+      <protein_id>ENSP00000348878.4</protein_id>
+      <protein_id>ENSP00000483295.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_161_1_10160_2_1" p:decoy="false">
+      <svm_score>-0.770</svm_score>
+      <q_value>1.667e-01</q_value>
+      <pep>5.038e-01</pep>
+      <exp_mass>646.3700</exp_mass>
+      <calc_mass>646.868</calc_mass>
+      <peptide_seq n="R" c="K" seq="[UNIMOD:737]AMLENEK[UNIMOD:737]"/>
+      <protein_id>ENSP00000353408.5</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_1_1_10000_2_1" p:decoy="true">
+      <svm_score>-0.787</svm_score>
+      <q_value>2.857e-01</q_value>
+      <pep>5.325e-01</pep>
+      <exp_mass>563.3020</exp_mass>
+      <calc_mass>563.799</calc_mass>
+      <peptide_seq n="R" c="S" seq="[UNIMOD:737]DQRHEGR"/>
+      <protein_id>decoy_ENSP00000254108.7</protein_id>
+      <protein_id>decoy_ENSP00000369594.3</protein_id>
+      <protein_id>decoy_ENSP00000455282.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_71_1_10070_2_1" p:decoy="false">
+      <svm_score>-0.791</svm_score>
+      <q_value>2.857e-01</q_value>
+      <pep>5.395e-01</pep>
+      <exp_mass>544.7990</exp_mass>
+      <calc_mass>545.296</calc_mass>
+      <peptide_seq n="K" c="A" seq="[UNIMOD:737]ERAEAER"/>
+      <protein_id>ENSP00000354826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_208_1_10207_2_1" p:decoy="true">
+      <svm_score>-0.801</svm_score>
+      <q_value>3.750e-01</q_value>
+      <pep>5.581e-01</pep>
+      <exp_mass>523.2960</exp_mass>
+      <calc_mass>523.801</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]AIASWNR"/>
+      <protein_id>decoy_ENSP00000384018.1</protein_id>
+      <protein_id>decoy_ENSP00000384202.1</protein_id>
+      <protein_id>decoy_ENSP00000400281.2</protein_id>
+      <protein_id>decoy_ENSP00000385618.3</protein_id>
+      <protein_id>decoy_ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_68_1_10067_2_1" p:decoy="false">
+      <svm_score>-0.804</svm_score>
+      <q_value>3.750e-01</q_value>
+      <pep>5.632e-01</pep>
+      <exp_mass>673.8880</exp_mass>
+      <calc_mass>673.893</calc_mass>
+      <peptide_seq n="K" c="F" seq="[UNIMOD:737]DNRDLQK[UNIMOD:737]"/>
+      <protein_id>ENSP00000349259.4</protein_id>
+      <protein_id>ENSP00000334156.5</protein_id>
+      <protein_id>ENSP00000479037.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_239_1_10238_2_1" p:decoy="true">
+      <svm_score>-0.808</svm_score>
+      <q_value>4.444e-01</q_value>
+      <pep>5.710e-01</pep>
+      <exp_mass>502.7830</exp_mass>
+      <calc_mass>502.782</calc_mass>
+      <peptide_seq n="K" c="V" seq="[UNIMOD:737]DGTDVLR"/>
+      <protein_id>decoy_ENSP00000349259.4</protein_id>
+      <protein_id>decoy_ENSP00000334156.5</protein_id>
+      <protein_id>decoy_ENSP00000479037.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_48_1_10047_2_1" p:decoy="false">
+      <svm_score>-0.815</svm_score>
+      <q_value>4.444e-01</q_value>
+      <pep>5.827e-01</pep>
+      <exp_mass>543.8100</exp_mass>
+      <calc_mass>543.809</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]QEQLSPR"/>
+      <protein_id>ENSP00000384018.1</protein_id>
+      <protein_id>ENSP00000384202.1</protein_id>
+      <protein_id>ENSP00000400281.2</protein_id>
+      <protein_id>ENSP00000385618.3</protein_id>
+      <protein_id>ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_170_1_10169_2_1" p:decoy="true">
+      <svm_score>-0.820</svm_score>
+      <q_value>5.385e-01</q_value>
+      <pep>5.928e-01</pep>
+      <exp_mass>651.3550</exp_mass>
+      <calc_mass>651.857</calc_mass>
+      <peptide_seq n="K" c="A" seq="[UNIMOD:737]ERREAEQR"/>
+      <protein_id>decoy_ENSP00000404020.2</protein_id>
+      <protein_id>decoy_ENSP00000319664.5</protein_id>
+      <protein_id>decoy_ENSP00000400981.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_233_1_10232_2_1" p:decoy="true">
+      <svm_score>-0.846</svm_score>
+      <q_value>5.385e-01</q_value>
+      <pep>6.449e-01</pep>
+      <exp_mass>588.3280</exp_mass>
+      <calc_mass>588.832</calc_mass>
+      <peptide_seq n="R" c="E" seq="[UNIMOD:737]ELTQPGFR"/>
+      <protein_id>decoy_ENSP00000252999.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_181_1_10180_2_1" p:decoy="false">
+      <svm_score>-0.846</svm_score>
+      <q_value>5.385e-01</q_value>
+      <pep>6.449e-01</pep>
+      <exp_mass>622.3510</exp_mass>
+      <calc_mass>622.855</calc_mass>
+      <peptide_seq n="K" c="R" seq="[UNIMOD:737]RARQEAER"/>
+      <protein_id>ENSP00000404020.2</protein_id>
+      <protein_id>ENSP00000319664.5</protein_id>
+      <protein_id>ENSP00000400981.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_87_1_10086_2_1" p:decoy="true">
+      <svm_score>-0.852</svm_score>
+      <q_value>5.385e-01</q_value>
+      <pep>6.567e-01</pep>
+      <exp_mass>659.8710</exp_mass>
+      <calc_mass>660.370</calc_mass>
+      <peptide_seq n="K" c="W" seq="[UNIMOD:737]K[UNIMOD:737]NEEADR"/>
+      <protein_id>decoy_ENSP00000398826.1</protein_id>
+      <protein_id>decoy_ENSP00000411476.2</protein_id>
+      <protein_id>decoy_ENSP00000395710.1</protein_id>
+      <protein_id>decoy_ENSP00000354826.2</protein_id>
+      <protein_id>decoy_ENSP00000354513.2</protein_id>
+      <protein_id>decoy_ENSP00000407522.1</protein_id>
+      <protein_id>decoy_ENSP00000393621.1</protein_id>
+      <protein_id>decoy_ENSP00000419673.1</protein_id>
+      <protein_id>decoy_ENSP00000376826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_91_1_10090_3_1" p:decoy="false">
+      <svm_score>-0.855</svm_score>
+      <q_value>5.385e-01</q_value>
+      <pep>6.644e-01</pep>
+      <exp_mass>599.6170</exp_mass>
+      <calc_mass>599.953</calc_mass>
+      <peptide_seq n="K" c="D" seq="[UNIMOD:737]DPAEGDGAQPEETPR"/>
+      <protein_id>ENSP00000340466.4</protein_id>
+      <protein_id>ENSP00000435306.1</protein_id>
+      <protein_id>ENSP00000434805.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_23_1_10022_3_1" p:decoy="false">
+      <svm_score>-0.859</svm_score>
+      <q_value>5.385e-01</q_value>
+      <pep>6.715e-01</pep>
+      <exp_mass>617.9880</exp_mass>
+      <calc_mass>618.325</calc_mass>
+      <peptide_seq n="K" c="L" seq="[UNIMOD:737]EIDSELEAMTEK[UNIMOD:737]"/>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_237_1_10236_2_1" p:decoy="false">
+      <svm_score>-0.859</svm_score>
+      <q_value>5.385e-01</q_value>
+      <pep>6.725e-01</pep>
+      <exp_mass>540.7800</exp_mass>
+      <calc_mass>541.283</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]DDRSFGR"/>
+      <protein_id>ENSP00000262056.9</protein_id>
+      <protein_id>ENSP00000388806.3</protein_id>
+      <protein_id>ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_241_1_10240_2_1" p:decoy="true">
+      <svm_score>-0.859</svm_score>
+      <q_value>5.714e-01</q_value>
+      <pep>6.728e-01</pep>
+      <exp_mass>659.3570</exp_mass>
+      <calc_mass>659.859</calc_mass>
+      <peptide_seq n="R" c="Q" seq="[UNIMOD:737]QMREQLER"/>
+      <protein_id>decoy_ENSP00000384202.1</protein_id>
+      <protein_id>decoy_ENSP00000400281.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_229_1_10228_2_1" p:decoy="false">
+      <svm_score>-0.868</svm_score>
+      <q_value>5.714e-01</q_value>
+      <pep>6.916e-01</pep>
+      <exp_mass>719.3880</exp_mass>
+      <calc_mass>719.890</calc_mass>
+      <peptide_seq n="R" c="L" seq="[UNIMOD:737]ETK[UNIMOD:737]ATDC[UNIMOD:4]R"/>
+      <protein_id>ENSP00000363482.2</protein_id>
+      <protein_id>ENSP00000439811.1</protein_id>
+      <protein_id>ENSP00000442128.1</protein_id>
+      <protein_id>ENSP00000485513.1</protein_id>
+      <protein_id>ENSP00000337541.5</protein_id>
+      <protein_id>ENSP00000344037.6</protein_id>
+      <protein_id>ENSP00000314417.7</protein_id>
+      <protein_id>ENSP00000282633.5</protein_id>
+      <protein_id>ENSP00000481763.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_219_1_10218_2_1" p:decoy="true">
+      <svm_score>-0.868</svm_score>
+      <q_value>5.882e-01</q_value>
+      <pep>6.929e-01</pep>
+      <exp_mass>597.8280</exp_mass>
+      <calc_mass>598.326</calc_mass>
+      <peptide_seq n="R" c="C" seq="[UNIMOD:737]SLC[UNIMOD:4]VANFR"/>
+      <protein_id>decoy_ENSP00000368678.2</protein_id>
+      <protein_id>decoy_ENSP00000484607.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_69_1_10068_2_1" p:decoy="true">
+      <svm_score>-0.873</svm_score>
+      <q_value>5.882e-01</q_value>
+      <pep>7.029e-01</pep>
+      <exp_mass>730.3710</exp_mass>
+      <calc_mass>730.871</calc_mass>
+      <peptide_seq n="K" c="S" seq="[UNIMOD:737]EESMESYK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000418563.1</protein_id>
+      <protein_id>decoy_ENSP00000422011.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_243_1_10242_2_1" p:decoy="false">
+      <svm_score>-0.875</svm_score>
+      <q_value>5.882e-01</q_value>
+      <pep>7.073e-01</pep>
+      <exp_mass>793.8830</exp_mass>
+      <calc_mass>793.881</calc_mass>
+      <peptide_seq n="R" c="L" seq="[UNIMOD:737]C[UNIMOD:4]SM[UNIMOD:35]NTEDGAK[UNIMOD:737]"/>
+      <protein_id>ENSP00000323687.6</protein_id>
+      <protein_id>ENSP00000467623.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_83_1_10082_3_1" p:decoy="false">
+      <svm_score>-0.878</svm_score>
+      <q_value>5.882e-01</q_value>
+      <pep>7.144e-01</pep>
+      <exp_mass>450.2330</exp_mass>
+      <calc_mass>450.567</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]ADFNRGGGNGR"/>
+      <protein_id>ENSP00000254108.7</protein_id>
+      <protein_id>ENSP00000369594.3</protein_id>
+      <protein_id>ENSP00000455282.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_99_1_10098_3_1" p:decoy="false">
+      <svm_score>-0.881</svm_score>
+      <q_value>5.882e-01</q_value>
+      <pep>7.222e-01</pep>
+      <exp_mass>617.6550</exp_mass>
+      <calc_mass>617.990</calc_mass>
+      <peptide_seq n="K" c="E" seq="[UNIMOD:737]TYQNEVTGLWAQGR"/>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_212_1_10211_2_1" p:decoy="true">
+      <svm_score>-0.884</svm_score>
+      <q_value>6.000e-01</q_value>
+      <pep>7.287e-01</pep>
+      <exp_mass>645.3280</exp_mass>
+      <calc_mass>644.828</calc_mass>
+      <peptide_seq n="K" c="Y" seq="[UNIMOD:737]YNQYTQSR"/>
+      <protein_id>decoy_ENSP00000334156.5</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_184_1_10183_2_1" p:decoy="false">
+      <svm_score>-0.891</svm_score>
+      <q_value>6.000e-01</q_value>
+      <pep>7.450e-01</pep>
+      <exp_mass>497.8000</exp_mass>
+      <calc_mass>497.798</calc_mass>
+      <peptide_seq n="K" c="R" seq="[UNIMOD:737]GFSVTVR"/>
+      <protein_id>ENSP00000317955.8</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_231_1_10230_3_1" p:decoy="true">
+      <svm_score>-0.892</svm_score>
+      <q_value>6.000e-01</q_value>
+      <pep>7.471e-01</pep>
+      <exp_mass>559.9930</exp_mass>
+      <calc_mass>559.658</calc_mass>
+      <peptide_seq n="K" c="T" seq="[UNIMOD:737]LDEQDK[UNIMOD:737]ITTR"/>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_34_1_10033_3_1" p:decoy="false">
+      <svm_score>-0.892</svm_score>
+      <q_value>6.000e-01</q_value>
+      <pep>7.475e-01</pep>
+      <exp_mass>629.3160</exp_mass>
+      <calc_mass>629.321</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]DC[UNIMOD:4]YVGDEAQSK[UNIMOD:737]R"/>
+      <protein_id>ENSP00000416706.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_76_1_10075_2_1" p:decoy="false">
+      <svm_score>-0.893</svm_score>
+      <q_value>6.000e-01</q_value>
+      <pep>7.505e-01</pep>
+      <exp_mass>582.3380</exp_mass>
+      <calc_mass>582.337</calc_mass>
+      <peptide_seq n="K" c="D" seq="[UNIMOD:737]EDAAATK[UNIMOD:737]"/>
+      <protein_id>ENSP00000391964.2</protein_id>
+      <protein_id>ENSP00000378725.3</protein_id>
+      <protein_id>ENSP00000432149.1</protein_id>
+      <protein_id>ENSP00000378719.1</protein_id>
+      <protein_id>ENSP00000378722.1</protein_id>
+      <protein_id>ENSP00000394992.2</protein_id>
+      <protein_id>ENSP00000378720.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_106_1_10105_2_1" p:decoy="true">
+      <svm_score>-0.893</svm_score>
+      <q_value>6.087e-01</q_value>
+      <pep>7.508e-01</pep>
+      <exp_mass>668.3630</exp_mass>
+      <calc_mass>668.869</calc_mass>
+      <peptide_seq n="K" c="L" seq="[UNIMOD:737]LYELVADER"/>
+      <protein_id>decoy_ENSP00000353408.5</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_55_1_10054_2_1" p:decoy="true">
+      <svm_score>-0.895</svm_score>
+      <q_value>6.087e-01</q_value>
+      <pep>7.540e-01</pep>
+      <exp_mass>519.7750</exp_mass>
+      <calc_mass>519.775</calc_mass>
+      <peptide_seq n="R" c="Q" seq="[UNIMOD:737]GYDEVAR"/>
+      <protein_id>decoy_ENSP00000374370.4</protein_id>
+      <protein_id>decoy_ENSP00000374372.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_80_1_10079_2_1" p:decoy="false">
+      <svm_score>-0.896</svm_score>
+      <q_value>6.087e-01</q_value>
+      <pep>7.574e-01</pep>
+      <exp_mass>841.4130</exp_mass>
+      <calc_mass>841.416</calc_mass>
+      <peptide_seq n="K" c="E" seq="[UNIMOD:737]QQM[UNIMOD:35]LEWEM[UNIMOD:35]AVR"/>
+      <protein_id>ENSP00000432568.1</protein_id>
+      <protein_id>ENSP00000433593.1</protein_id>
+      <protein_id>ENSP00000311489.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_249_1_10248_2_1" p:decoy="false">
+      <svm_score>-0.896</svm_score>
+      <q_value>6.087e-01</q_value>
+      <pep>7.578e-01</pep>
+      <exp_mass>597.3110</exp_mass>
+      <calc_mass>597.807</calc_mass>
+      <peptide_seq n="R" c="L" seq="[UNIMOD:737]QNQEYQR"/>
+      <protein_id>ENSP00000355124.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_197_1_10196_2_1" p:decoy="false">
+      <svm_score>-0.899</svm_score>
+      <q_value>6.087e-01</q_value>
+      <pep>7.637e-01</pep>
+      <exp_mass>670.8360</exp_mass>
+      <calc_mass>671.341</calc_mass>
+      <peptide_seq n="R" c="R" seq="[UNIMOD:737]QFREDDFR"/>
+      <protein_id>ENSP00000333667.3</protein_id>
+      <protein_id>ENSP00000452315.1</protein_id>
+      <protein_id>ENSP00000406881.3</protein_id>
+      <protein_id>ENSP00000452419.1</protein_id>
+      <protein_id>ENSP00000413770.3</protein_id>
+      <protein_id>ENSP00000450490.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_113_1_10112_3_1" p:decoy="true">
+      <svm_score>-0.908</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.859e-01</pep>
+      <exp_mass>520.6000</exp_mass>
+      <calc_mass>520.932</calc_mass>
+      <peptide_seq n="K" c="I" seq="[UNIMOD:737]GGM[UNIMOD:35]QPVPSNC[UNIMOD:4]LR"/>
+      <protein_id>decoy_ENSP00000355751.3</protein_id>
+      <protein_id>decoy_ENSP00000482784.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_18_1_10017_2_1" p:decoy="false">
+      <svm_score>-0.908</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.874e-01</pep>
+      <exp_mass>594.8490</exp_mass>
+      <calc_mass>595.345</calc_mass>
+      <peptide_seq n="R" c="P" seq="[UNIMOD:737]EDAAPTK[UNIMOD:737]"/>
+      <protein_id>ENSP00000384018.1</protein_id>
+      <protein_id>ENSP00000384202.1</protein_id>
+      <protein_id>ENSP00000400281.2</protein_id>
+      <protein_id>ENSP00000385618.3</protein_id>
+      <protein_id>ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_194_1_10193_2_1" p:decoy="true">
+      <svm_score>-0.909</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.882e-01</pep>
+      <exp_mass>510.7710</exp_mass>
+      <calc_mass>510.270</calc_mass>
+      <peptide_seq n="K" c="K" seq="[UNIMOD:737]EAESQAR"/>
+      <protein_id>decoy_ENSP00000353408.5</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_123_1_10122_2_1" p:decoy="false">
+      <svm_score>-0.909</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.891e-01</pep>
+      <exp_mass>571.8220</exp_mass>
+      <calc_mass>571.817</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]AFGSGYRR"/>
+      <protein_id>ENSP00000262056.9</protein_id>
+      <protein_id>ENSP00000388806.3</protein_id>
+      <protein_id>ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_97_1_10096_2_1" p:decoy="false">
+      <svm_score>-0.909</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.895e-01</pep>
+      <exp_mass>518.3090</exp_mass>
+      <calc_mass>517.806</calc_mass>
+      <peptide_seq n="K" c="K" seq="[UNIMOD:737]ELTSTVR"/>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_52_1_10051_2_1" p:decoy="true">
+      <svm_score>-0.910</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.922e-01</pep>
+      <exp_mass>632.8330</exp_mass>
+      <calc_mass>633.329</calc_mass>
+      <peptide_seq n="R" c="N" seq="[UNIMOD:737]FM[UNIMOD:35]PNNIER"/>
+      <protein_id>decoy_ENSP00000418563.1</protein_id>
+      <protein_id>decoy_ENSP00000422011.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_186_1_10185_2_1" p:decoy="false">
+      <svm_score>-0.911</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.947e-01</pep>
+      <exp_mass>505.2980</exp_mass>
+      <calc_mass>505.801</calc_mass>
+      <peptide_seq n="K" c="N" seq="[UNIMOD:737]GLLEHGR"/>
+      <protein_id>ENSP00000384018.1</protein_id>
+      <protein_id>ENSP00000384202.1</protein_id>
+      <protein_id>ENSP00000400281.2</protein_id>
+      <protein_id>ENSP00000385618.3</protein_id>
+      <protein_id>ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_141_1_10140_2_1" p:decoy="true">
+      <svm_score>-0.912</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.964e-01</pep>
+      <exp_mass>677.8450</exp_mass>
+      <calc_mass>677.846</calc_mass>
+      <peptide_seq n="R" c="P" seq="[UNIMOD:737]GGYRDMDRR"/>
+      <protein_id>decoy_ENSP00000262056.9</protein_id>
+      <protein_id>decoy_ENSP00000388806.3</protein_id>
+      <protein_id>decoy_ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_163_1_10162_3_1" p:decoy="true">
+      <svm_score>-0.913</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>7.989e-01</pep>
+      <exp_mass>549.2840</exp_mass>
+      <calc_mass>549.618</calc_mass>
+      <peptide_seq n="K" c="R" seq="[UNIMOD:737]EREEREREER"/>
+      <protein_id>decoy_ENSP00000441604.1</protein_id>
+      <protein_id>decoy_ENSP00000347005.4</protein_id>
+      <protein_id>decoy_ENSP00000483438.1</protein_id>
+      <protein_id>decoy_ENSP00000263545.7</protein_id>
+      <protein_id>decoy_ENSP00000440222.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_128_1_10127_3_1" p:decoy="false">
+      <svm_score>-0.913</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>8.005e-01</pep>
+      <exp_mass>558.6050</exp_mass>
+      <calc_mass>558.935</calc_mass>
+      <peptide_seq n="K" c="E" seq="[UNIMOD:737]M[UNIMOD:35]ERERENYM[UNIMOD:35]R"/>
+      <protein_id>ENSP00000294671.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_182_1_10181_2_1" p:decoy="false">
+      <svm_score>-0.917</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>8.106e-01</pep>
+      <exp_mass>664.8590</exp_mass>
+      <calc_mass>664.860</calc_mass>
+      <peptide_seq n="K" c="D" seq="[UNIMOD:737]QQQLPDGTGR"/>
+      <protein_id>ENSP00000432568.1</protein_id>
+      <protein_id>ENSP00000433593.1</protein_id>
+      <protein_id>ENSP00000311489.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_192_1_10191_3_1" p:decoy="false">
+      <svm_score>-0.917</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>8.106e-01</pep>
+      <exp_mass>473.5840</exp_mass>
+      <calc_mass>473.922</calc_mass>
+      <peptide_seq n="K" c="K" seq="[UNIMOD:737]DISTILDEER"/>
+      <protein_id>ENSP00000311513.6</protein_id>
+      <protein_id>ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_111_1_10110_2_1" p:decoy="false">
+      <svm_score>-0.922</svm_score>
+      <q_value>6.129e-01</q_value>
+      <pep>8.234e-01</pep>
+      <exp_mass>608.8110</exp_mass>
+      <calc_mass>609.308</calc_mass>
+      <peptide_seq n="R" c="Y" seq="[UNIMOD:737]M[UNIMOD:35]QHGC[UNIMOD:4]LAR"/>
+      <protein_id>ENSP00000410020.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_165_1_10164_3_1" p:decoy="true">
+      <svm_score>-0.923</svm_score>
+      <q_value>6.452e-01</q_value>
+      <pep>8.251e-01</pep>
+      <exp_mass>643.6610</exp_mass>
+      <calc_mass>644.000</calc_mass>
+      <peptide_seq n="K" c="V" seq="[UNIMOD:737]NAVEDHVTQGC[UNIMOD:4]NK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000459685.1</protein_id>
+      <protein_id>decoy_ENSP00000331201.4</protein_id>
+      <protein_id>decoy_ENSP00000458987.1</protein_id>
+      <protein_id>decoy_ENSP00000458603.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_49_1_10048_2_1" p:decoy="true">
+      <svm_score>-0.924</svm_score>
+      <q_value>6.774e-01</q_value>
+      <pep>8.273e-01</pep>
+      <exp_mass>668.3790</exp_mass>
+      <calc_mass>668.874</calc_mass>
+      <peptide_seq n="R" c="K" seq="[UNIMOD:737]QSEC[UNIMOD:4]RAK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000368678.2</protein_id>
+      <protein_id>decoy_ENSP00000484607.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_139_1_10138_2_1" p:decoy="true">
+      <svm_score>-0.926</svm_score>
+      <q_value>7.059e-01</q_value>
+      <pep>8.323e-01</pep>
+      <exp_mass>686.3630</exp_mass>
+      <calc_mass>686.369</calc_mass>
+      <peptide_seq n="K" c="I" seq="[UNIMOD:737]K[UNIMOD:737]M[UNIMOD:35]ATC[UNIMOD:4]MR"/>
+      <protein_id>decoy_ENSP00000358992.1</protein_id>
+      <protein_id>decoy_ENSP00000487348.2</protein_id>
+      <protein_id>decoy_ENSP00000359002.3</protein_id>
+      <protein_id>decoy_ENSP00000358994.3</protein_id>
+      <protein_id>decoy_ENSP00000478013.1</protein_id>
+      <protein_id>decoy_ENSP00000358998.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_218_1_10217_2_1" p:decoy="true">
+      <svm_score>-0.929</svm_score>
+      <q_value>7.059e-01</q_value>
+      <pep>8.421e-01</pep>
+      <exp_mass>716.4100</exp_mass>
+      <calc_mass>715.407</calc_mass>
+      <peptide_seq n="K" c="L" seq="[UNIMOD:737]DELEQRVRR"/>
+      <protein_id>decoy_sp|Q9P219|DAPLE_HUMAN</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_117_1_10116_2_1" p:decoy="false">
+      <svm_score>-0.931</svm_score>
+      <q_value>7.059e-01</q_value>
+      <pep>8.456e-01</pep>
+      <exp_mass>647.8580</exp_mass>
+      <calc_mass>647.356</calc_mass>
+      <peptide_seq n="-" c="V" seq="[UNIMOD:737]TSENQEK[UNIMOD:737]"/>
+      <protein_id>ENSP00000482275.1</protein_id>
+      <protein_id>ENSP00000479840.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_223_1_10222_2_1" p:decoy="true">
+      <svm_score>-0.931</svm_score>
+      <q_value>7.059e-01</q_value>
+      <pep>8.462e-01</pep>
+      <exp_mass>541.2840</exp_mass>
+      <calc_mass>541.790</calc_mass>
+      <peptide_seq n="R" c="C" seq="[UNIMOD:737]PIC[UNIMOD:4]HGNR"/>
+      <protein_id>decoy_ENSP00000363827.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_232_1_10231_2_1" p:decoy="false">
+      <svm_score>-0.938</svm_score>
+      <q_value>7.059e-01</q_value>
+      <pep>8.664e-01</pep>
+      <exp_mass>688.3780</exp_mass>
+      <calc_mass>687.874</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]ERERERDR"/>
+      <protein_id>ENSP00000396301.2</protein_id>
+      <protein_id>ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_107_1_10106_3_1" p:decoy="false">
+      <svm_score>-0.939</svm_score>
+      <q_value>7.059e-01</q_value>
+      <pep>8.690e-01</pep>
+      <exp_mass>561.2780</exp_mass>
+      <calc_mass>561.283</calc_mass>
+      <peptide_seq n="-" c="I" seq="[UNIMOD:737]M[UNIMOD:35]NPNC[UNIMOD:4]ARC[UNIMOD:4]GK[UNIMOD:737]"/>
+      <protein_id>ENSP00000325240.6</protein_id>
+      <protein_id>ENSP00000468664.1</protein_id>
+      <protein_id>ENSP00000414803.3</protein_id>
+      <protein_id>ENSP00000392853.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_133_1_10132_2_1" p:decoy="true">
+      <svm_score>-0.945</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>8.858e-01</pep>
+      <exp_mass>681.8250</exp_mass>
+      <calc_mass>682.330</calc_mass>
+      <peptide_seq n="R" c="Y" seq="[UNIMOD:737]C[UNIMOD:4]DPRRDC[UNIMOD:4]R"/>
+      <protein_id>decoy_ENSP00000363827.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_115_1_10114_2_1" p:decoy="true">
+      <svm_score>-0.945</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>8.858e-01</pep>
+      <exp_mass>566.3160</exp_mass>
+      <calc_mass>566.320</calc_mass>
+      <peptide_seq n="K" c="E" seq="[UNIMOD:737]EALERER"/>
+      <protein_id>decoy_ENSP00000425564.1</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000424622.1</protein_id>
+      <protein_id>decoy_ENSP00000422641.1</protein_id>
+      <protein_id>decoy_ENSP00000426764.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_95_1_10094_2_1" p:decoy="false">
+      <svm_score>-0.947</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>8.900e-01</pep>
+      <exp_mass>503.2690</exp_mass>
+      <calc_mass>502.764</calc_mass>
+      <peptide_seq n="R" c="Q" seq="[UNIMOD:737]AAEEAER"/>
+      <protein_id>ENSP00000331201.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_187_1_10186_2_1" p:decoy="false">
+      <svm_score>-0.947</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>8.911e-01</pep>
+      <exp_mass>538.8220</exp_mass>
+      <calc_mass>539.326</calc_mass>
+      <peptide_seq n="R" c="M" seq="[UNIMOD:737]GGFGPGK[UNIMOD:737]"/>
+      <protein_id>ENSP00000254108.7</protein_id>
+      <protein_id>ENSP00000369594.3</protein_id>
+      <protein_id>ENSP00000455282.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_122_1_10121_2_1" p:decoy="true">
+      <svm_score>-0.948</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>8.944e-01</pep>
+      <exp_mass>517.2590</exp_mass>
+      <calc_mass>517.259</calc_mass>
+      <peptide_seq n="R" c="A" seq="[UNIMOD:737]DNSTDPR"/>
+      <protein_id>decoy_ENSP00000430816.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_79_1_10078_2_1" p:decoy="true">
+      <svm_score>-0.948</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>8.949e-01</pep>
+      <exp_mass>690.3850</exp_mass>
+      <calc_mass>689.883</calc_mass>
+      <peptide_seq n="R" c="S" seq="[UNIMOD:737]SADSLDANK[UNIMOD:737]"/>
+      <protein_id>decoy_sp|Q9P219|DAPLE_HUMAN</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_251_1_10250_2_1" p:decoy="true">
+      <svm_score>-0.951</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.014e-01</pep>
+      <exp_mass>802.4060</exp_mass>
+      <calc_mass>802.912</calc_mass>
+      <peptide_seq n="R" c="P" seq="[UNIMOD:737]GEM[UNIMOD:35]MDYTRK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000384018.1</protein_id>
+      <protein_id>decoy_ENSP00000384202.1</protein_id>
+      <protein_id>decoy_ENSP00000400281.2</protein_id>
+      <protein_id>decoy_ENSP00000385618.3</protein_id>
+      <protein_id>decoy_ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_226_1_10225_2_1" p:decoy="false">
+      <svm_score>-0.953</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.084e-01</pep>
+      <exp_mass>594.3330</exp_mass>
+      <calc_mass>594.830</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]RQEEELR"/>
+      <protein_id>ENSP00000469842.2</protein_id>
+      <protein_id>ENSP00000477574.1</protein_id>
+      <protein_id>ENSP00000365606.5</protein_id>
+      <protein_id>ENSP00000480856.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_217_1_10216_3_1" p:decoy="true">
+      <svm_score>-0.953</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.093e-01</pep>
+      <exp_mass>379.2080</exp_mass>
+      <calc_mass>378.872</calc_mass>
+      <peptide_seq n="K" c="N" seq="[UNIMOD:737]MIEEIDR"/>
+      <protein_id>decoy_ENSP00000258341.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_225_1_10224_2_1" p:decoy="true">
+      <svm_score>-0.954</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.098e-01</pep>
+      <exp_mass>731.9120</exp_mass>
+      <calc_mass>731.914</calc_mass>
+      <peptide_seq n="R" c="E" seq="[UNIMOD:737]EWRAEWK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000374370.4</protein_id>
+      <protein_id>decoy_ENSP00000374372.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_235_1_10234_2_1" p:decoy="false">
+      <svm_score>-0.954</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.104e-01</pep>
+      <exp_mass>487.7910</exp_mass>
+      <calc_mass>487.795</calc_mass>
+      <peptide_seq n="R" c="L" seq="[UNIMOD:737]DLTGALR"/>
+      <protein_id>ENSP00000432568.1</protein_id>
+      <protein_id>ENSP00000433593.1</protein_id>
+      <protein_id>ENSP00000311489.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_136_1_10135_2_1" p:decoy="false">
+      <svm_score>-0.954</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.113e-01</pep>
+      <exp_mass>481.2800</exp_mass>
+      <calc_mass>480.775</calc_mass>
+      <peptide_seq n="R" c="V" seq="[UNIMOD:737]SNQGVAR"/>
+      <protein_id>ENSP00000369677.4</protein_id>
+      <protein_id>ENSP00000411201.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_105_1_10104_2_1" p:decoy="true">
+      <svm_score>-0.957</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.188e-01</pep>
+      <exp_mass>610.8190</exp_mass>
+      <calc_mass>609.817</calc_mass>
+      <peptide_seq n="K" c="Q" seq="[UNIMOD:737]EEEEARAR"/>
+      <protein_id>decoy_ENSP00000354826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_204_1_10203_2_1" p:decoy="true">
+      <svm_score>-0.960</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.273e-01</pep>
+      <exp_mass>661.3520</exp_mass>
+      <calc_mass>660.351</calc_mass>
+      <peptide_seq n="K" c="L" seq="[UNIMOD:737]EMEEQIRR"/>
+      <protein_id>decoy_ENSP00000358992.1</protein_id>
+      <protein_id>decoy_ENSP00000487348.2</protein_id>
+      <protein_id>decoy_ENSP00000359002.3</protein_id>
+      <protein_id>decoy_ENSP00000358994.3</protein_id>
+      <protein_id>decoy_ENSP00000478013.1</protein_id>
+      <protein_id>decoy_ENSP00000358998.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_227_1_10226_2_1" p:decoy="false">
+      <svm_score>-0.960</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.283e-01</pep>
+      <exp_mass>666.3600</exp_mass>
+      <calc_mass>665.861</calc_mass>
+      <peptide_seq n="R" c="E" seq="[UNIMOD:737]RSYEIMFR"/>
+      <protein_id>ENSP00000363827.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_146_1_10145_2_1" p:decoy="false">
+      <svm_score>-0.965</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.437e-01</pep>
+      <exp_mass>769.4010</exp_mass>
+      <calc_mass>769.406</calc_mass>
+      <peptide_seq n="K" c="I" seq="[UNIMOD:737]QEEETC[UNIMOD:4]K[UNIMOD:737]R"/>
+      <protein_id>ENSP00000311513.6</protein_id>
+      <protein_id>ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_189_1_10188_2_1" p:decoy="false">
+      <svm_score>-0.968</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.526e-01</pep>
+      <exp_mass>710.3680</exp_mass>
+      <calc_mass>710.876</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]VC[UNIMOD:4]SLLEEWR"/>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <protein_id>ENSP00000356220.3</protein_id>
+      <protein_id>ENSP00000346701.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_191_1_10190_2_1" p:decoy="false">
+      <svm_score>-0.972</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.633e-01</pep>
+      <exp_mass>665.3180</exp_mass>
+      <calc_mass>665.319</calc_mass>
+      <peptide_seq n="R" c="K" seq="[UNIMOD:737]SEYM[UNIMOD:35]EGNVR"/>
+      <protein_id>msstitch_fake_gene_anpep</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_193_1_10192_2_1" p:decoy="false">
+      <svm_score>-0.975</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.732e-01</pep>
+      <exp_mass>617.8570</exp_mass>
+      <calc_mass>617.358</calc_mass>
+      <peptide_seq n="R" c="Q" seq="[UNIMOD:737]DEEIAAK[UNIMOD:737]"/>
+      <protein_id>ENSP00000362978.3</protein_id>
+      <protein_id>ENSP00000362971.1</protein_id>
+      <protein_id>ENSP00000362970.3</protein_id>
+      <protein_id>ENSP00000442558.1</protein_id>
+      <protein_id>ENSP00000405587.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_188_1_10187_2_1" p:decoy="true">
+      <svm_score>-0.979</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.864e-01</pep>
+      <exp_mass>553.3070</exp_mass>
+      <calc_mass>552.304</calc_mass>
+      <peptide_seq n="K" c="S" seq="[UNIMOD:737]SINSNSPR"/>
+      <protein_id>decoy_ENSP00000405111.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_214_1_10213_3_1" p:decoy="false">
+      <svm_score>-0.982</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>9.965e-01</pep>
+      <exp_mass>756.3860</exp_mass>
+      <calc_mass>756.391</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]DVQQQIAQAQQGEGGLPDR"/>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_138_1_10137_2_1" p:decoy="false">
+      <svm_score>-0.987</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>602.8510</exp_mass>
+      <calc_mass>602.846</calc_mass>
+      <peptide_seq n="R" c="T" seq="[UNIMOD:737]SEVTDLRR"/>
+      <protein_id>ENSP00000355124.3</protein_id>
+      <protein_id>ENSP00000466625.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_176_1_10175_3_1" p:decoy="false">
+      <svm_score>-0.990</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>800.7320</exp_mass>
+      <calc_mass>801.065</calc_mass>
+      <peptide_seq n="K" c="T" seq="[UNIMOD:737]DYSK[UNIMOD:737]QC[UNIMOD:4]ASTVQQQEDR"/>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <protein_id>ENSP00000356220.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_175_1_10174_3_1" p:decoy="false">
+      <svm_score>-0.993</svm_score>
+      <q_value>7.083e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>612.9500</exp_mass>
+      <calc_mass>612.621</calc_mass>
+      <peptide_seq n="R" c="S" seq="[UNIMOD:737]SQEC[UNIMOD:4]YFDPELYR"/>
+      <protein_id>ENSP00000258341.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_90_1_10089_2_1" p:decoy="true">
+      <svm_score>-0.996</svm_score>
+      <q_value>7.115e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>586.2970</exp_mass>
+      <calc_mass>585.792</calc_mass>
+      <peptide_seq n="R" c="-" seq="[UNIMOD:737]EFTGSGRGM"/>
+      <protein_id>decoy_ENSP00000331201.4</protein_id>
+      <protein_id>decoy_ENSP00000458987.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_13_1_10012_2_1" p:decoy="true">
+      <svm_score>-1.000</svm_score>
+      <q_value>7.115e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>547.3000</exp_mass>
+      <calc_mass>546.298</calc_mass>
+      <peptide_seq n="R" c="A" seq="[UNIMOD:737]DGVSIESR"/>
+      <protein_id>decoy_ENSP00000006658.6</protein_id>
+      <protein_id>decoy_ENSP00000348878.4</protein_id>
+      <protein_id>decoy_ENSP00000424538.1</protein_id>
+      <protein_id>decoy_ENSP00000483295.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_247_1_10246_2_1" p:decoy="false">
+      <svm_score>-1.004</svm_score>
+      <q_value>7.115e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>654.8660</exp_mass>
+      <calc_mass>654.368</calc_mass>
+      <peptide_seq n="K" c="A" seq="[UNIMOD:737]VMDEVEK[UNIMOD:737]"/>
+      <protein_id>ENSP00000441604.1</protein_id>
+      <protein_id>ENSP00000347005.4</protein_id>
+      <protein_id>ENSP00000483438.1</protein_id>
+      <protein_id>ENSP00000263545.7</protein_id>
+      <protein_id>ENSP00000440222.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_135_1_10134_2_1" p:decoy="true">
+      <svm_score>-1.004</svm_score>
+      <q_value>7.115e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>662.3530</exp_mass>
+      <calc_mass>662.357</calc_mass>
+      <peptide_seq n="R" c="Q" seq="[UNIMOD:737]QM[UNIMOD:35]DRM[UNIMOD:35]LLR"/>
+      <protein_id>decoy_ENSP00000445408.2</protein_id>
+      <protein_id>decoy_ENSP00000339569.6</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_206_1_10205_2_1" p:decoy="false">
+      <svm_score>-1.004</svm_score>
+      <q_value>7.115e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>527.2600</exp_mass>
+      <calc_mass>526.256</calc_mass>
+      <peptide_seq n="R" c="A" seq="[UNIMOD:737]EC[UNIMOD:4]GDVSR"/>
+      <protein_id>ENSP00000361711.1</protein_id>
+      <protein_id>ENSP00000361710.5</protein_id>
+      <protein_id>ENSP00000243286.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_202_1_10201_2_1" p:decoy="false">
+      <svm_score>-1.006</svm_score>
+      <q_value>7.115e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>673.8600</exp_mass>
+      <calc_mass>673.858</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]DRDRDRER"/>
+      <protein_id>ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_142_1_10141_2_1" p:decoy="false">
+      <svm_score>-1.006</svm_score>
+      <q_value>7.115e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>804.4230</exp_mass>
+      <calc_mass>803.918</calc_mass>
+      <peptide_seq n="R" c="E" seq="[UNIMOD:737]REAEERERM[UNIMOD:35]R"/>
+      <protein_id>ENSP00000354826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_172_1_10171_4_1" p:decoy="true">
+      <svm_score>-1.007</svm_score>
+      <q_value>7.170e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>552.5150</exp_mass>
+      <calc_mass>552.520</calc_mass>
+      <peptide_seq n="K" c="L" seq="[UNIMOD:737]K[UNIMOD:737]C[UNIMOD:4]LQSC[UNIMOD:4]YNC[UNIMOD:4]TVC[UNIMOD:4]R"/>
+      <protein_id>decoy_ENSP00000372327.2</protein_id>
+      <protein_id>decoy_ENSP00000372324.2</protein_id>
+      <protein_id>decoy_ENSP00000479904.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_54_1_10053_2_1" p:decoy="false">
+      <svm_score>-1.009</svm_score>
+      <q_value>7.170e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>520.2690</exp_mass>
+      <calc_mass>519.264</calc_mass>
+      <peptide_seq n="K" c="K" seq="[UNIMOD:737]GEFGADGR"/>
+      <protein_id>ENSP00000300527.4</protein_id>
+      <protein_id>ENSP00000380870.1</protein_id>
+      <protein_id>ENSP00000387115.1</protein_id>
+      <protein_id>ENSP00000312529.5</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_157_1_10156_2_1" p:decoy="true">
+      <svm_score>-1.010</svm_score>
+      <q_value>7.358e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>574.3430</exp_mass>
+      <calc_mass>573.838</calc_mass>
+      <peptide_seq n="K" c="D" seq="[UNIMOD:737]LNDLSSLR"/>
+      <protein_id>decoy_ENSP00000367265.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_166_1_10165_2_1" p:decoy="true">
+      <svm_score>-1.015</svm_score>
+      <q_value>7.407e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>760.3720</exp_mass>
+      <calc_mass>760.868</calc_mass>
+      <peptide_seq n="K" c="S" seq="[UNIMOD:737]TEEDELSPSER"/>
+      <protein_id>decoy_ENSP00000311513.6</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_100_1_10099_2_1" p:decoy="false">
+      <svm_score>-1.018</svm_score>
+      <q_value>7.407e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>725.9050</exp_mass>
+      <calc_mass>725.404</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]EK[UNIMOD:737]DRQC[UNIMOD:4]R"/>
+      <protein_id>ENSP00000333667.3</protein_id>
+      <protein_id>ENSP00000452315.1</protein_id>
+      <protein_id>ENSP00000406881.3</protein_id>
+      <protein_id>ENSP00000452419.1</protein_id>
+      <protein_id>ENSP00000413770.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_137_1_10136_2_1" p:decoy="true">
+      <svm_score>-1.018</svm_score>
+      <q_value>7.593e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>563.7940</exp_mass>
+      <calc_mass>562.793</calc_mass>
+      <peptide_seq n="R" c="K" seq="[UNIMOD:737]YVEEAER"/>
+      <protein_id>decoy_ENSP00000441604.1</protein_id>
+      <protein_id>decoy_ENSP00000347005.4</protein_id>
+      <protein_id>decoy_ENSP00000483438.1</protein_id>
+      <protein_id>decoy_ENSP00000263545.7</protein_id>
+      <protein_id>decoy_ENSP00000440222.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_169_1_10168_2_1" p:decoy="true">
+      <svm_score>-1.020</svm_score>
+      <q_value>7.636e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>638.3700</exp_mass>
+      <calc_mass>637.867</calc_mass>
+      <peptide_seq n="K" c="E" seq="[UNIMOD:737]ELTERLER"/>
+      <protein_id>decoy_ENSP00000482245.1</protein_id>
+      <protein_id>decoy_ENSP00000482797.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_19_1_10018_2_1" p:decoy="false">
+      <svm_score>-1.021</svm_score>
+      <q_value>7.636e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>555.2940</exp_mass>
+      <calc_mass>554.795</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]AFEDELR"/>
+      <protein_id>ENSP00000374370.4</protein_id>
+      <protein_id>ENSP00000374372.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_64_1_10063_3_1" p:decoy="true">
+      <svm_score>-1.025</svm_score>
+      <q_value>7.818e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>852.0780</exp_mass>
+      <calc_mass>852.418</calc_mass>
+      <peptide_seq n="K" c="S" seq="[UNIMOD:737]EEK[UNIMOD:737]ETTENEATDNQM[UNIMOD:35]RR"/>
+      <protein_id>decoy_ENSP00000398826.1</protein_id>
+      <protein_id>decoy_ENSP00000411476.2</protein_id>
+      <protein_id>decoy_ENSP00000395710.1</protein_id>
+      <protein_id>decoy_ENSP00000354826.2</protein_id>
+      <protein_id>decoy_ENSP00000354513.2</protein_id>
+      <protein_id>decoy_ENSP00000407522.1</protein_id>
+      <protein_id>decoy_ENSP00000393621.1</protein_id>
+      <protein_id>decoy_ENSP00000419673.1</protein_id>
+      <protein_id>decoy_ENSP00000376826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_198_1_10197_2_1" p:decoy="true">
+      <svm_score>-1.029</svm_score>
+      <q_value>7.857e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>494.7850</exp_mass>
+      <calc_mass>494.280</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]TGPDGRR"/>
+      <protein_id>decoy_ENSP00000300527.4</protein_id>
+      <protein_id>decoy_ENSP00000380870.1</protein_id>
+      <protein_id>decoy_ENSP00000387115.1</protein_id>
+      <protein_id>decoy_ENSP00000312529.5</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_58_1_10057_2_1" p:decoy="false">
+      <svm_score>-1.029</svm_score>
+      <q_value>7.857e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>678.3350</exp_mass>
+      <calc_mass>678.331</calc_mass>
+      <peptide_seq n="R" c="-" seq="[UNIMOD:737]C[UNIMOD:4]QVC[UNIMOD:4]M[UNIMOD:35]RRT"/>
+      <protein_id>ENSP00000364979.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_180_1_10179_2_1" p:decoy="true">
+      <svm_score>-1.032</svm_score>
+      <q_value>8.036e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>706.3780</exp_mass>
+      <calc_mass>705.878</calc_mass>
+      <peptide_seq n="R" c="E" seq="[UNIMOD:737]ELQQC[UNIMOD:4]M[UNIMOD:35]K[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_149_1_10148_6_1" p:decoy="true">
+      <svm_score>-1.036</svm_score>
+      <q_value>8.214e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>534.7810</exp_mass>
+      <calc_mass>534.784</calc_mass>
+      <peptide_seq n="K" c="H" seq="[UNIMOD:737]SEGLNETNFREEMEHIWLNLK[UNIMOD:737]R"/>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_154_1_10153_2_1" p:decoy="true">
+      <svm_score>-1.039</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>890.4490</exp_mass>
+      <calc_mass>890.447</calc_mass>
+      <peptide_seq n="R" c="Y" seq="[UNIMOD:737]GGYRDMDRRPGDR"/>
+      <protein_id>decoy_ENSP00000262056.9</protein_id>
+      <protein_id>decoy_ENSP00000388806.3</protein_id>
+      <protein_id>decoy_ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_102_1_10101_2_1" p:decoy="true">
+      <svm_score>-1.042</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>625.8470</exp_mass>
+      <calc_mass>625.348</calc_mass>
+      <peptide_seq n="K" c="T" seq="[UNIMOD:737]ISYYYRR"/>
+      <protein_id>decoy_ENSP00000252999.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_124_1_10123_2_1" p:decoy="true">
+      <svm_score>-1.045</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>738.9080</exp_mass>
+      <calc_mass>738.910</calc_mass>
+      <peptide_seq n="K" c="T" seq="[UNIMOD:737]ESGEQPMLK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_196_1_10195_2_1" p:decoy="true">
+      <svm_score>-1.048</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>591.2890</exp_mass>
+      <calc_mass>590.282</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]DC[UNIMOD:4]SC[UNIMOD:4]RPR"/>
+      <protein_id>decoy_ENSP00000368678.2</protein_id>
+      <protein_id>decoy_ENSP00000484607.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_143_1_10142_2_1" p:decoy="true">
+      <svm_score>-1.049</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>824.9160</exp_mass>
+      <calc_mass>824.924</calc_mass>
+      <peptide_seq n="K" c="L" seq="[UNIMOD:737]STFEYGC[UNIMOD:4]AQK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000363880.1</protein_id>
+      <protein_id>decoy_ENSP00000363881.3</protein_id>
+      <protein_id>decoy_ENSP00000363883.3</protein_id>
+      <protein_id>decoy_ENSP00000414095.2</protein_id>
+      <protein_id>decoy_ENSP00000444856.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_103_1_10102_2_1" p:decoy="true">
+      <svm_score>-1.051</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>478.7870</exp_mass>
+      <calc_mass>477.782</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]EGPLGPR"/>
+      <protein_id>decoy_ENSP00000364979.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_38_1_10037_2_1" p:decoy="false">
+      <svm_score>-1.053</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>771.3900</exp_mass>
+      <calc_mass>770.381</calc_mass>
+      <peptide_seq n="K" c="S" seq="[UNIMOD:737]EDSESDGSQK[UNIMOD:737]"/>
+      <protein_id>ENSP00000311513.6</protein_id>
+      <protein_id>ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_224_1_10223_3_1" p:decoy="false">
+      <svm_score>-1.057</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>600.2990</exp_mass>
+      <calc_mass>599.629</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]VPPTAC[UNIMOD:4]C[UNIMOD:4]GHSTQPR"/>
+      <protein_id>ENSP00000297954.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_155_1_10154_2_1" p:decoy="false">
+      <svm_score>-1.057</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>506.2750</exp_mass>
+      <calc_mass>505.269</calc_mass>
+      <peptide_seq n="R" c="V" seq="[UNIMOD:737]GAM[UNIMOD:35]SVSGR"/>
+      <protein_id>ENSP00000252999.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_116_1_10115_3_1" p:decoy="false">
+      <svm_score>-1.060</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>750.0080</exp_mass>
+      <calc_mass>749.668</calc_mass>
+      <peptide_seq n="R" c="C" seq="[UNIMOD:737]TGQC[UNIMOD:4]EC[UNIMOD:4]QPGITGQHC[UNIMOD:4]ER"/>
+      <protein_id>ENSP00000258341.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_130_1_10129_2_1" p:decoy="false">
+      <svm_score>-1.065</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>759.8720</exp_mass>
+      <calc_mass>759.866</calc_mass>
+      <peptide_seq n="-" c="G" seq="[UNIMOD:737]MEQAPNM[UNIMOD:35]AEPR"/>
+      <protein_id>ENSP00000271636.7</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_183_1_10182_2_1" p:decoy="false">
+      <svm_score>-1.068</svm_score>
+      <q_value>8.387e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>783.9240</exp_mass>
+      <calc_mass>783.423</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]QNAHIVEWSPR"/>
+      <protein_id>ENSP00000368887.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_5_1_10004_2_1" p:decoy="true">
+      <svm_score>-1.068</svm_score>
+      <q_value>8.548e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>577.3050</exp_mass>
+      <calc_mass>576.300</calc_mass>
+      <peptide_seq n="R" c="L" seq="[UNIMOD:737]EQM[UNIMOD:35]LETR"/>
+      <protein_id>decoy_ENSP00000271636.7</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_120_1_10119_2_1" p:decoy="true">
+      <svm_score>-1.069</svm_score>
+      <q_value>8.594e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>545.8300</exp_mass>
+      <calc_mass>545.327</calc_mass>
+      <peptide_seq n="R" c="R" seq="[UNIMOD:737]LTTEVAAR"/>
+      <protein_id>decoy_ENSP00000271636.7</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_56_1_10055_2_1" p:decoy="true">
+      <svm_score>-1.070</svm_score>
+      <q_value>8.594e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>882.4530</exp_mass>
+      <calc_mass>882.959</calc_mass>
+      <peptide_seq n="R" c="S" seq="[UNIMOD:737]GSMEDEFARHK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000349259.4</protein_id>
+      <protein_id>decoy_ENSP00000374630.3</protein_id>
+      <protein_id>decoy_ENSP00000334156.5</protein_id>
+      <protein_id>decoy_ENSP00000479037.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_150_1_10149_2_1" p:decoy="false">
+      <svm_score>-1.073</svm_score>
+      <q_value>8.594e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>735.8770</exp_mass>
+      <calc_mass>734.881</calc_mass>
+      <peptide_seq n="K" c="A" seq="[UNIMOD:737]EEQMNTMK[UNIMOD:737]"/>
+      <protein_id>ENSP00000391964.2</protein_id>
+      <protein_id>ENSP00000378725.3</protein_id>
+      <protein_id>ENSP00000432149.1</protein_id>
+      <protein_id>ENSP00000378719.1</protein_id>
+      <protein_id>ENSP00000378722.1</protein_id>
+      <protein_id>ENSP00000394992.2</protein_id>
+      <protein_id>ENSP00000378720.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_242_1_10241_2_1" p:decoy="false">
+      <svm_score>-1.073</svm_score>
+      <q_value>8.594e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>518.7700</exp_mass>
+      <calc_mass>518.273</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]GQTGNSSR"/>
+      <protein_id>ENSP00000262056.9</protein_id>
+      <protein_id>ENSP00000388806.3</protein_id>
+      <protein_id>ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_203_1_10202_3_1" p:decoy="true">
+      <svm_score>-1.075</svm_score>
+      <q_value>8.657e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>514.6160</exp_mass>
+      <calc_mass>514.277</calc_mass>
+      <peptide_seq n="R" c="E" seq="[UNIMOD:737]QGTTVDLTYGTR"/>
+      <protein_id>decoy_ENSP00000474437.1</protein_id>
+      <protein_id>decoy_ENSP00000363745.3</protein_id>
+      <protein_id>decoy_ENSP00000363741.1</protein_id>
+      <protein_id>decoy_ENSP00000304405.6</protein_id>
+      <protein_id>decoy_ENSP00000358635.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_88_1_10087_3_1" p:decoy="true">
+      <svm_score>-1.075</svm_score>
+      <q_value>8.657e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>816.4300</exp_mass>
+      <calc_mass>816.101</calc_mass>
+      <peptide_seq n="R" c="H" seq="[UNIMOD:737]C[UNIMOD:4]HHK[UNIMOD:737]RTM[UNIMOD:35]VGFQVRC[UNIMOD:4]R"/>
+      <protein_id>decoy_ENSP00000331201.4</protein_id>
+      <protein_id>decoy_ENSP00000458987.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_236_1_10235_2_1" p:decoy="true">
+      <svm_score>-1.081</svm_score>
+      <q_value>8.657e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>603.8300</exp_mass>
+      <calc_mass>602.830</calc_mass>
+      <peptide_seq n="R" c="L" seq="[UNIMOD:737]DNPTLYPR"/>
+      <protein_id>decoy_msstitch_fake_gene_anpep</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_126_1_10125_2_1" p:decoy="false">
+      <svm_score>-1.085</svm_score>
+      <q_value>8.657e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>830.9490</exp_mass>
+      <calc_mass>830.445</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]ERDRERERER"/>
+      <protein_id>ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_77_1_10076_2_1" p:decoy="false">
+      <svm_score>-1.086</svm_score>
+      <q_value>8.657e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>888.9430</exp_mass>
+      <calc_mass>889.439</calc_mass>
+      <peptide_seq n="R" c="K" seq="[UNIMOD:737]EC[UNIMOD:4]GDVSRAQEELR"/>
+      <protein_id>ENSP00000361711.1</protein_id>
+      <protein_id>ENSP00000361710.5</protein_id>
+      <protein_id>ENSP00000243286.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_108_1_10107_2_1" p:decoy="false">
+      <svm_score>-1.087</svm_score>
+      <q_value>8.657e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>898.4210</exp_mass>
+      <calc_mass>898.426</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]GGPM[UNIMOD:35]GRGGYGGGGSGGGGR"/>
+      <protein_id>ENSP00000254108.7</protein_id>
+      <protein_id>ENSP00000369594.3</protein_id>
+      <protein_id>ENSP00000455282.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_152_1_10151_3_1" p:decoy="true">
+      <svm_score>-1.092</svm_score>
+      <q_value>8.806e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>669.9870</exp_mass>
+      <calc_mass>669.650</calc_mass>
+      <peptide_seq n="K" c="K" seq="[UNIMOD:737]QLATSEEEVEDEGEGR"/>
+      <protein_id>decoy_ENSP00000311513.6</protein_id>
+      <protein_id>decoy_ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_46_1_10045_2_1" p:decoy="true">
+      <svm_score>-1.094</svm_score>
+      <q_value>8.841e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>526.7820</exp_mass>
+      <calc_mass>525.782</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]GNM[UNIMOD:35]QSLR"/>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <protein_id>decoy_ENSP00000356220.3</protein_id>
+      <protein_id>decoy_ENSP00000346701.4</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_43_1_10042_3_1" p:decoy="true">
+      <svm_score>-1.098</svm_score>
+      <q_value>8.841e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>672.3100</exp_mass>
+      <calc_mass>671.642</calc_mass>
+      <peptide_seq n="K" c="A" seq="[UNIMOD:737]NVAGDGESPNEDSHAER"/>
+      <protein_id>decoy_ENSP00000349056.3</protein_id>
+      <protein_id>decoy_ENSP00000380942.2</protein_id>
+      <protein_id>decoy_ENSP00000432984.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_42_1_10041_2_1" p:decoy="false">
+      <svm_score>-1.113</svm_score>
+      <q_value>8.841e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>553.8260</exp_mass>
+      <calc_mass>552.818</calc_mass>
+      <peptide_seq n="R" c="E" seq="[UNIMOD:737]EVMDLLR"/>
+      <protein_id>ENSP00000258341.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_173_1_10172_2_1" p:decoy="false">
+      <svm_score>-1.114</svm_score>
+      <q_value>8.841e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>510.3110</exp_mass>
+      <calc_mass>509.304</calc_mass>
+      <peptide_seq n="K" c="I" seq="[UNIMOD:737]AGDLRTR"/>
+      <protein_id>ENSP00000331902.6</protein_id>
+      <protein_id>ENSP00000354505.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_11_1_10010_2_1" p:decoy="true">
+      <svm_score>-1.120</svm_score>
+      <q_value>8.986e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>740.3600</exp_mass>
+      <calc_mass>739.865</calc_mass>
+      <peptide_seq n="K" c="E" seq="[UNIMOD:737]DC[UNIMOD:4]ELDQRASR"/>
+      <protein_id>decoy_ENSP00000271636.7</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_36_1_10035_2_1" p:decoy="true">
+      <svm_score>-1.120</svm_score>
+      <q_value>9.041e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>855.9440</exp_mass>
+      <calc_mass>854.942</calc_mass>
+      <peptide_seq n="R" c="K" seq="[UNIMOD:737]C[UNIMOD:4]K[UNIMOD:737]NC[UNIMOD:4]HYVNR"/>
+      <protein_id>decoy_ENSP00000376484.1</protein_id>
+      <protein_id>decoy_ENSP00000271715.2</protein_id>
+      <protein_id>decoy_ENSP00000357856.2</protein_id>
+      <protein_id>decoy_ENSP00000386836.1</protein_id>
+      <protein_id>decoy_ENSP00000431259.1</protein_id>
+      <protein_id>decoy_ENSP00000418408.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_9_1_10008_2_1" p:decoy="true">
+      <svm_score>-1.126</svm_score>
+      <q_value>9.041e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>568.8310</exp_mass>
+      <calc_mass>567.827</calc_mass>
+      <peptide_seq n="K" c="E" seq="[UNIMOD:737]INGGFEIR"/>
+      <protein_id>decoy_ENSP00000311513.6</protein_id>
+      <protein_id>decoy_ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_50_1_10049_3_1" p:decoy="true">
+      <svm_score>-1.131</svm_score>
+      <q_value>9.041e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>603.3260</exp_mass>
+      <calc_mass>602.663</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]LWEWRDEWK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000349259.4</protein_id>
+      <protein_id>decoy_ENSP00000334156.5</protein_id>
+      <protein_id>decoy_ENSP00000479037.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_148_1_10147_3_1" p:decoy="false">
+      <svm_score>-1.133</svm_score>
+      <q_value>9.041e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>639.9810</exp_mass>
+      <calc_mass>639.650</calc_mass>
+      <peptide_seq n="K" c="H" seq="[UNIMOD:737]FDGHRC[UNIMOD:4]AGQQQDIR"/>
+      <protein_id>ENSP00000380189.3</protein_id>
+      <protein_id>ENSP00000366204.2</protein_id>
+      <protein_id>ENSP00000247153.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_132_1_10131_2_1" p:decoy="true">
+      <svm_score>-1.141</svm_score>
+      <q_value>9.041e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>837.4420</exp_mass>
+      <calc_mass>837.436</calc_mass>
+      <peptide_seq n="K" c="K" seq="[UNIMOD:737]C[UNIMOD:4]EVSMELYGK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000311513.6</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_215_1_10214_2_1" p:decoy="false">
+      <svm_score>-1.141</svm_score>
+      <q_value>9.041e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>677.3330</exp_mass>
+      <calc_mass>676.324</calc_mass>
+      <peptide_seq n="K" c="E" seq="[UNIMOD:737]NSSQQDNSSR"/>
+      <protein_id>ENSP00000311513.6</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_31_1_10030_2_1" p:decoy="false">
+      <svm_score>-1.141</svm_score>
+      <q_value>9.041e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>732.8540</exp_mass>
+      <calc_mass>731.857</calc_mass>
+      <peptide_seq n="R" c="G" seq="[UNIMOD:737]M[UNIMOD:35]DC[UNIMOD:4]YSGQK[UNIMOD:737]"/>
+      <protein_id>ENSP00000261978.4</protein_id>
+      <protein_id>ENSP00000452110.1</protein_id>
+      <protein_id>ENSP00000451477.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_244_1_10243_3_1" p:decoy="false">
+      <svm_score>-1.158</svm_score>
+      <q_value>9.041e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>755.0220</exp_mass>
+      <calc_mass>754.358</calc_mass>
+      <peptide_seq n="K" c="R" seq="[UNIMOD:737]TC[UNIMOD:4]NTNPHLNALSTDSAC[UNIMOD:4]R"/>
+      <protein_id>ENSP00000277165.5</protein_id>
+      <protein_id>ENSP00000412440.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_44_1_10043_2_1" p:decoy="true">
+      <svm_score>-1.201</svm_score>
+      <q_value>9.178e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>845.4130</exp_mass>
+      <calc_mass>844.403</calc_mass>
+      <peptide_seq n="R" c="Y" seq="[UNIMOD:737]DYRDEYRDGGGR"/>
+      <protein_id>decoy_ENSP00000262056.9</protein_id>
+      <protein_id>decoy_ENSP00000388806.3</protein_id>
+      <protein_id>decoy_ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_177_1_10176_2_1" p:decoy="true">
+      <svm_score>-1.209</svm_score>
+      <q_value>9.315e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>961.0060</exp_mass>
+      <calc_mass>960.513</calc_mass>
+      <peptide_seq n="K" c="K" seq="[UNIMOD:737]TGK[UNIMOD:737]EEGQNEGISGR"/>
+      <protein_id>decoy_ENSP00000395710.1</protein_id>
+      <protein_id>decoy_ENSP00000419673.1</protein_id>
+      <protein_id>decoy_ENSP00000376826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_63_1_10062_2_1" p:decoy="true">
+      <svm_score>-1.230</svm_score>
+      <q_value>9.452e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>753.3580</exp_mass>
+      <calc_mass>752.853</calc_mass>
+      <peptide_seq n="R" c="-" seq="[UNIMOD:737]FFEVNYDPNM"/>
+      <protein_id>decoy_ENSP00000246548.3</protein_id>
+      <protein_id>decoy_ENSP00000437484.1</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_210_1_10209_2_1" p:decoy="true">
+      <svm_score>-1.294</svm_score>
+      <q_value>9.589e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>992.5070</exp_mass>
+      <calc_mass>991.504</calc_mass>
+      <peptide_seq n="R" c="L" seq="[UNIMOD:737]EEESRDK[UNIMOD:737]AM[UNIMOD:35]ADAR"/>
+      <protein_id>decoy_ENSP00000353408.5</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_84_1_10083_2_1" p:decoy="true">
+      <svm_score>-1.295</svm_score>
+      <q_value>9.726e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>866.4410</exp_mass>
+      <calc_mass>865.444</calc_mass>
+      <peptide_seq n="K" c="G" seq="[UNIMOD:737]AEGSPLTTPEEDVR"/>
+      <protein_id>decoy_ENSP00000363482.2</protein_id>
+      <protein_id>decoy_ENSP00000439811.1</protein_id>
+      <protein_id>decoy_ENSP00000485513.1</protein_id>
+      <protein_id>decoy_ENSP00000352922.6</protein_id>
+      <protein_id>decoy_ENSP00000337541.5</protein_id>
+      <protein_id>decoy_ENSP00000344037.6</protein_id>
+      <protein_id>decoy_ENSP00000314417.7</protein_id>
+      <protein_id>decoy_ENSP00000282633.5</protein_id>
+      <protein_id>decoy_ENSP00000382277.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_74_1_10073_2_1" p:decoy="true">
+      <svm_score>-1.324</svm_score>
+      <q_value>9.730e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>958.4630</exp_mass>
+      <calc_mass>957.456</calc_mass>
+      <peptide_seq n="R" c="D" seq="[UNIMOD:737]DADTDESLM[UNIMOD:35]DEAK[UNIMOD:737]"/>
+      <protein_id>decoy_ENSP00000297954.4</protein_id>
+      <protein_id>decoy_ENSP00000415038.1</protein_id>
+      <protein_id>decoy_ENSP00000378860.2</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+    <psm p:psm_id="few_spectra_SII_230_1_10229_3_1" p:decoy="false">
+      <svm_score>-1.348</svm_score>
+      <q_value>9.730e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>1457.3300</exp_mass>
+      <calc_mass>1457.660</calc_mass>
+      <peptide_seq n="K" c="V" seq="[UNIMOD:737]DSQYEM[UNIMOD:35]DSEFEGELADDLAGFYRSEYM[UNIMOD:35]EGNVRK[UNIMOD:737]"/>
+      <protein_id>msstitch_fake_gene_anpep</protein_id>
+      <p_value>0.000e+00</p_value>
+    </psm>
+  </psms>
+
+  <peptides>
+    <peptide p:peptide_id="[UNIMOD:737]SEEAHRAEQLQDAEEEK[UNIMOD:737]" p:decoy="false">
+      <svm_score>0.000000</svm_score>
+      <q_value>2.500000e-01</q_value>
+      <pep>2.708056e-02</pep>
+      <exp_mass>819.7480</exp_mass>
+      <calc_mass>819.747</calc_mass>
+      <protein_id>ENSP00000246024.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_24_1_10023_3_1</psm_id>
+        <psm_id>few_spectra_SII_16_1_10015_4_1</psm_id>
+        <psm_id>few_spectra_SII_30_1_10029_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DSGTLQSQEAK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.410</svm_score>
+      <q_value>2.500e-01</q_value>
+      <pep>1.394e-01</pep>
+      <exp_mass>811.9460</exp_mass>
+      <calc_mass>811.444</calc_mass>
+      <protein_id>ENSP00000363482.2</protein_id>
+      <protein_id>ENSP00000439811.1</protein_id>
+      <protein_id>ENSP00000442128.1</protein_id>
+      <protein_id>ENSP00000485513.1</protein_id>
+      <protein_id>ENSP00000352922.6</protein_id>
+      <protein_id>ENSP00000337541.5</protein_id>
+      <protein_id>ENSP00000344037.6</protein_id>
+      <protein_id>ENSP00000314417.7</protein_id>
+      <protein_id>ENSP00000282633.5</protein_id>
+      <protein_id>ENSP00000382277.2</protein_id>
+      <protein_id>ENSP00000481763.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_40_1_10039_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]LQDTQDK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.759</svm_score>
+      <q_value>2.500e-01</q_value>
+      <pep>5.089e-01</pep>
+      <exp_mass>653.3750</exp_mass>
+      <calc_mass>653.374</calc_mass>
+      <protein_id>ENSP00000006658.6</protein_id>
+      <protein_id>ENSP00000348878.4</protein_id>
+      <protein_id>ENSP00000483295.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_85_1_10084_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]AMLENEK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.770</svm_score>
+      <q_value>2.500e-01</q_value>
+      <pep>5.273e-01</pep>
+      <exp_mass>646.3700</exp_mass>
+      <calc_mass>646.868</calc_mass>
+      <protein_id>ENSP00000353408.5</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_161_1_10160_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DQRHEGR" p:decoy="true">
+      <svm_score>-0.787</svm_score>
+      <q_value>4.000e-01</q_value>
+      <pep>5.577e-01</pep>
+      <exp_mass>563.3020</exp_mass>
+      <calc_mass>563.799</calc_mass>
+      <protein_id>decoy_ENSP00000254108.7</protein_id>
+      <protein_id>decoy_ENSP00000369594.3</protein_id>
+      <protein_id>decoy_ENSP00000455282.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_1_1_10000_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ERAEAER" p:decoy="false">
+      <svm_score>-0.791</svm_score>
+      <q_value>4.000e-01</q_value>
+      <pep>5.651e-01</pep>
+      <exp_mass>544.7990</exp_mass>
+      <calc_mass>545.296</calc_mass>
+      <protein_id>ENSP00000354826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_71_1_10070_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]AIASWNR" p:decoy="true">
+      <svm_score>-0.801</svm_score>
+      <q_value>5.000e-01</q_value>
+      <pep>5.845e-01</pep>
+      <exp_mass>523.2960</exp_mass>
+      <calc_mass>523.801</calc_mass>
+      <protein_id>decoy_ENSP00000384018.1</protein_id>
+      <protein_id>decoy_ENSP00000384202.1</protein_id>
+      <protein_id>decoy_ENSP00000400281.2</protein_id>
+      <protein_id>decoy_ENSP00000385618.3</protein_id>
+      <protein_id>decoy_ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_208_1_10207_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DNRDLQK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.804</svm_score>
+      <q_value>5.000e-01</q_value>
+      <pep>5.897e-01</pep>
+      <exp_mass>673.8880</exp_mass>
+      <calc_mass>673.893</calc_mass>
+      <protein_id>ENSP00000349259.4</protein_id>
+      <protein_id>ENSP00000334156.5</protein_id>
+      <protein_id>ENSP00000479037.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_68_1_10067_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DGTDVLR" p:decoy="true">
+      <svm_score>-0.808</svm_score>
+      <q_value>5.714e-01</q_value>
+      <pep>5.978e-01</pep>
+      <exp_mass>502.7830</exp_mass>
+      <calc_mass>502.782</calc_mass>
+      <protein_id>decoy_ENSP00000349259.4</protein_id>
+      <protein_id>decoy_ENSP00000334156.5</protein_id>
+      <protein_id>decoy_ENSP00000479037.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_239_1_10238_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QEQLSPR" p:decoy="false">
+      <svm_score>-0.815</svm_score>
+      <q_value>5.714e-01</q_value>
+      <pep>6.098e-01</pep>
+      <exp_mass>543.8100</exp_mass>
+      <calc_mass>543.809</calc_mass>
+      <protein_id>ENSP00000384018.1</protein_id>
+      <protein_id>ENSP00000384202.1</protein_id>
+      <protein_id>ENSP00000400281.2</protein_id>
+      <protein_id>ENSP00000385618.3</protein_id>
+      <protein_id>ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_48_1_10047_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ERREAEQR" p:decoy="true">
+      <svm_score>-0.820</svm_score>
+      <q_value>6.364e-01</q_value>
+      <pep>6.200e-01</pep>
+      <exp_mass>651.3550</exp_mass>
+      <calc_mass>651.857</calc_mass>
+      <protein_id>decoy_ENSP00000404020.2</protein_id>
+      <protein_id>decoy_ENSP00000319664.5</protein_id>
+      <protein_id>decoy_ENSP00000400981.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_170_1_10169_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ELTQPGFR" p:decoy="true">
+      <svm_score>-0.846</svm_score>
+      <q_value>6.364e-01</q_value>
+      <pep>6.721e-01</pep>
+      <exp_mass>588.3280</exp_mass>
+      <calc_mass>588.832</calc_mass>
+      <protein_id>decoy_ENSP00000252999.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_233_1_10232_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]RARQEAER" p:decoy="false">
+      <svm_score>-0.846</svm_score>
+      <q_value>6.364e-01</q_value>
+      <pep>6.722e-01</pep>
+      <exp_mass>622.3510</exp_mass>
+      <calc_mass>622.855</calc_mass>
+      <protein_id>ENSP00000404020.2</protein_id>
+      <protein_id>ENSP00000319664.5</protein_id>
+      <protein_id>ENSP00000400981.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_181_1_10180_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]K[UNIMOD:737]NEEADR" p:decoy="true">
+      <svm_score>-0.852</svm_score>
+      <q_value>6.364e-01</q_value>
+      <pep>6.837e-01</pep>
+      <exp_mass>659.8710</exp_mass>
+      <calc_mass>660.370</calc_mass>
+      <protein_id>decoy_ENSP00000398826.1</protein_id>
+      <protein_id>decoy_ENSP00000411476.2</protein_id>
+      <protein_id>decoy_ENSP00000395710.1</protein_id>
+      <protein_id>decoy_ENSP00000354826.2</protein_id>
+      <protein_id>decoy_ENSP00000354513.2</protein_id>
+      <protein_id>decoy_ENSP00000407522.1</protein_id>
+      <protein_id>decoy_ENSP00000393621.1</protein_id>
+      <protein_id>decoy_ENSP00000419673.1</protein_id>
+      <protein_id>decoy_ENSP00000376826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_87_1_10086_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DPAEGDGAQPEETPR" p:decoy="false">
+      <svm_score>-0.855</svm_score>
+      <q_value>6.364e-01</q_value>
+      <pep>6.912e-01</pep>
+      <exp_mass>599.6170</exp_mass>
+      <calc_mass>599.953</calc_mass>
+      <protein_id>ENSP00000340466.4</protein_id>
+      <protein_id>ENSP00000435306.1</protein_id>
+      <protein_id>ENSP00000434805.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_91_1_10090_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EIDSELEAMTEK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.859</svm_score>
+      <q_value>6.364e-01</q_value>
+      <pep>6.981e-01</pep>
+      <exp_mass>617.9880</exp_mass>
+      <calc_mass>618.325</calc_mass>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_23_1_10022_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DDRSFGR" p:decoy="false">
+      <svm_score>-0.859</svm_score>
+      <q_value>6.364e-01</q_value>
+      <pep>6.991e-01</pep>
+      <exp_mass>540.7800</exp_mass>
+      <calc_mass>541.283</calc_mass>
+      <protein_id>ENSP00000262056.9</protein_id>
+      <protein_id>ENSP00000388806.3</protein_id>
+      <protein_id>ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_237_1_10236_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QMREQLER" p:decoy="true">
+      <svm_score>-0.859</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>6.994e-01</pep>
+      <exp_mass>659.3570</exp_mass>
+      <calc_mass>659.859</calc_mass>
+      <protein_id>decoy_ENSP00000384202.1</protein_id>
+      <protein_id>decoy_ENSP00000400281.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_241_1_10240_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ETK[UNIMOD:737]ATDC[UNIMOD:4]R" p:decoy="false">
+      <svm_score>-0.868</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.175e-01</pep>
+      <exp_mass>719.3880</exp_mass>
+      <calc_mass>719.890</calc_mass>
+      <protein_id>ENSP00000363482.2</protein_id>
+      <protein_id>ENSP00000439811.1</protein_id>
+      <protein_id>ENSP00000442128.1</protein_id>
+      <protein_id>ENSP00000485513.1</protein_id>
+      <protein_id>ENSP00000337541.5</protein_id>
+      <protein_id>ENSP00000344037.6</protein_id>
+      <protein_id>ENSP00000314417.7</protein_id>
+      <protein_id>ENSP00000282633.5</protein_id>
+      <protein_id>ENSP00000481763.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_229_1_10228_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]SLC[UNIMOD:4]VANFR" p:decoy="true">
+      <svm_score>-0.868</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.188e-01</pep>
+      <exp_mass>597.8280</exp_mass>
+      <calc_mass>598.326</calc_mass>
+      <protein_id>decoy_ENSP00000368678.2</protein_id>
+      <protein_id>decoy_ENSP00000484607.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_219_1_10218_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EESMESYK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-0.873</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.284e-01</pep>
+      <exp_mass>730.3710</exp_mass>
+      <calc_mass>730.871</calc_mass>
+      <protein_id>decoy_ENSP00000418563.1</protein_id>
+      <protein_id>decoy_ENSP00000422011.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_69_1_10068_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]C[UNIMOD:4]SM[UNIMOD:35]NTEDGAK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.875</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.326e-01</pep>
+      <exp_mass>793.8830</exp_mass>
+      <calc_mass>793.881</calc_mass>
+      <protein_id>ENSP00000323687.6</protein_id>
+      <protein_id>ENSP00000467623.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_243_1_10242_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ADFNRGGGNGR" p:decoy="false">
+      <svm_score>-0.878</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.394e-01</pep>
+      <exp_mass>450.2330</exp_mass>
+      <calc_mass>450.567</calc_mass>
+      <protein_id>ENSP00000254108.7</protein_id>
+      <protein_id>ENSP00000369594.3</protein_id>
+      <protein_id>ENSP00000455282.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_83_1_10082_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]TYQNEVTGLWAQGR" p:decoy="false">
+      <svm_score>-0.881</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.468e-01</pep>
+      <exp_mass>617.6550</exp_mass>
+      <calc_mass>617.990</calc_mass>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_99_1_10098_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]YNQYTQSR" p:decoy="true">
+      <svm_score>-0.884</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.531e-01</pep>
+      <exp_mass>645.3280</exp_mass>
+      <calc_mass>644.828</calc_mass>
+      <protein_id>decoy_ENSP00000334156.5</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_212_1_10211_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GFSVTVR" p:decoy="false">
+      <svm_score>-0.891</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.685e-01</pep>
+      <exp_mass>497.8000</exp_mass>
+      <calc_mass>497.798</calc_mass>
+      <protein_id>ENSP00000317955.8</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_184_1_10183_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]LDEQDK[UNIMOD:737]ITTR" p:decoy="true">
+      <svm_score>-0.892</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.704e-01</pep>
+      <exp_mass>559.9930</exp_mass>
+      <calc_mass>559.658</calc_mass>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_231_1_10230_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DC[UNIMOD:4]YVGDEAQSK[UNIMOD:737]R" p:decoy="false">
+      <svm_score>-0.892</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.708e-01</pep>
+      <exp_mass>629.3160</exp_mass>
+      <calc_mass>629.321</calc_mass>
+      <protein_id>ENSP00000416706.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_34_1_10033_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EDAAATK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.893</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.737e-01</pep>
+      <exp_mass>582.3380</exp_mass>
+      <calc_mass>582.337</calc_mass>
+      <protein_id>ENSP00000391964.2</protein_id>
+      <protein_id>ENSP00000378725.3</protein_id>
+      <protein_id>ENSP00000432149.1</protein_id>
+      <protein_id>ENSP00000378719.1</protein_id>
+      <protein_id>ENSP00000378722.1</protein_id>
+      <protein_id>ENSP00000394992.2</protein_id>
+      <protein_id>ENSP00000378720.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_76_1_10075_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]LYELVADER" p:decoy="true">
+      <svm_score>-0.893</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.739e-01</pep>
+      <exp_mass>668.3630</exp_mass>
+      <calc_mass>668.869</calc_mass>
+      <protein_id>decoy_ENSP00000353408.5</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_106_1_10105_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GYDEVAR" p:decoy="true">
+      <svm_score>-0.895</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.770e-01</pep>
+      <exp_mass>519.7750</exp_mass>
+      <calc_mass>519.775</calc_mass>
+      <protein_id>decoy_ENSP00000374370.4</protein_id>
+      <protein_id>decoy_ENSP00000374372.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_55_1_10054_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QQM[UNIMOD:35]LEWEM[UNIMOD:35]AVR" p:decoy="false">
+      <svm_score>-0.896</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.802e-01</pep>
+      <exp_mass>841.4130</exp_mass>
+      <calc_mass>841.416</calc_mass>
+      <protein_id>ENSP00000432568.1</protein_id>
+      <protein_id>ENSP00000433593.1</protein_id>
+      <protein_id>ENSP00000311489.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_80_1_10079_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QNQEYQR" p:decoy="false">
+      <svm_score>-0.896</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.805e-01</pep>
+      <exp_mass>597.3110</exp_mass>
+      <calc_mass>597.807</calc_mass>
+      <protein_id>ENSP00000355124.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_249_1_10248_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QFREDDFR" p:decoy="false">
+      <svm_score>-0.899</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>7.861e-01</pep>
+      <exp_mass>670.8360</exp_mass>
+      <calc_mass>671.341</calc_mass>
+      <protein_id>ENSP00000333667.3</protein_id>
+      <protein_id>ENSP00000452315.1</protein_id>
+      <protein_id>ENSP00000406881.3</protein_id>
+      <protein_id>ENSP00000452419.1</protein_id>
+      <protein_id>ENSP00000413770.3</protein_id>
+      <protein_id>ENSP00000450490.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_197_1_10196_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GGM[UNIMOD:35]QPVPSNC[UNIMOD:4]LR" p:decoy="true">
+      <svm_score>-0.908</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.069e-01</pep>
+      <exp_mass>520.6000</exp_mass>
+      <calc_mass>520.932</calc_mass>
+      <protein_id>decoy_ENSP00000355751.3</protein_id>
+      <protein_id>decoy_ENSP00000482784.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_113_1_10112_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EDAAPTK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.908</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.082e-01</pep>
+      <exp_mass>594.8490</exp_mass>
+      <calc_mass>595.345</calc_mass>
+      <protein_id>ENSP00000384018.1</protein_id>
+      <protein_id>ENSP00000384202.1</protein_id>
+      <protein_id>ENSP00000400281.2</protein_id>
+      <protein_id>ENSP00000385618.3</protein_id>
+      <protein_id>ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_18_1_10017_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EAESQAR" p:decoy="true">
+      <svm_score>-0.909</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.090e-01</pep>
+      <exp_mass>510.7710</exp_mass>
+      <calc_mass>510.270</calc_mass>
+      <protein_id>decoy_ENSP00000353408.5</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_194_1_10193_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]AFGSGYRR" p:decoy="false">
+      <svm_score>-0.909</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.099e-01</pep>
+      <exp_mass>571.8220</exp_mass>
+      <calc_mass>571.817</calc_mass>
+      <protein_id>ENSP00000262056.9</protein_id>
+      <protein_id>ENSP00000388806.3</protein_id>
+      <protein_id>ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_123_1_10122_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ELTSTVR" p:decoy="false">
+      <svm_score>-0.909</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.102e-01</pep>
+      <exp_mass>518.3090</exp_mass>
+      <calc_mass>517.806</calc_mass>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_97_1_10096_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]FM[UNIMOD:35]PNNIER" p:decoy="true">
+      <svm_score>-0.910</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.128e-01</pep>
+      <exp_mass>632.8330</exp_mass>
+      <calc_mass>633.329</calc_mass>
+      <protein_id>decoy_ENSP00000418563.1</protein_id>
+      <protein_id>decoy_ENSP00000422011.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_52_1_10051_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GLLEHGR" p:decoy="false">
+      <svm_score>-0.911</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.151e-01</pep>
+      <exp_mass>505.2980</exp_mass>
+      <calc_mass>505.801</calc_mass>
+      <protein_id>ENSP00000384018.1</protein_id>
+      <protein_id>ENSP00000384202.1</protein_id>
+      <protein_id>ENSP00000400281.2</protein_id>
+      <protein_id>ENSP00000385618.3</protein_id>
+      <protein_id>ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_186_1_10185_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GGYRDMDRR" p:decoy="true">
+      <svm_score>-0.912</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.167e-01</pep>
+      <exp_mass>677.8450</exp_mass>
+      <calc_mass>677.846</calc_mass>
+      <protein_id>decoy_ENSP00000262056.9</protein_id>
+      <protein_id>decoy_ENSP00000388806.3</protein_id>
+      <protein_id>decoy_ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_141_1_10140_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EREEREREER" p:decoy="true">
+      <svm_score>-0.913</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.190e-01</pep>
+      <exp_mass>549.2840</exp_mass>
+      <calc_mass>549.618</calc_mass>
+      <protein_id>decoy_ENSP00000441604.1</protein_id>
+      <protein_id>decoy_ENSP00000347005.4</protein_id>
+      <protein_id>decoy_ENSP00000483438.1</protein_id>
+      <protein_id>decoy_ENSP00000263545.7</protein_id>
+      <protein_id>decoy_ENSP00000440222.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_163_1_10162_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]M[UNIMOD:35]ERERENYM[UNIMOD:35]R" p:decoy="false">
+      <svm_score>-0.913</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.205e-01</pep>
+      <exp_mass>558.6050</exp_mass>
+      <calc_mass>558.935</calc_mass>
+      <protein_id>ENSP00000294671.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_128_1_10127_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QQQLPDGTGR" p:decoy="false">
+      <svm_score>-0.917</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.299e-01</pep>
+      <exp_mass>664.8590</exp_mass>
+      <calc_mass>664.860</calc_mass>
+      <protein_id>ENSP00000432568.1</protein_id>
+      <protein_id>ENSP00000433593.1</protein_id>
+      <protein_id>ENSP00000311489.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_182_1_10181_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DISTILDEER" p:decoy="false">
+      <svm_score>-0.917</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.299e-01</pep>
+      <exp_mass>473.5840</exp_mass>
+      <calc_mass>473.922</calc_mass>
+      <protein_id>ENSP00000311513.6</protein_id>
+      <protein_id>ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_192_1_10191_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]M[UNIMOD:35]QHGC[UNIMOD:4]LAR" p:decoy="false">
+      <svm_score>-0.922</svm_score>
+      <q_value>6.552e-01</q_value>
+      <pep>8.417e-01</pep>
+      <exp_mass>608.8110</exp_mass>
+      <calc_mass>609.308</calc_mass>
+      <protein_id>ENSP00000410020.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_111_1_10110_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]NAVEDHVTQGC[UNIMOD:4]NK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-0.923</svm_score>
+      <q_value>6.897e-01</q_value>
+      <pep>8.433e-01</pep>
+      <exp_mass>643.6610</exp_mass>
+      <calc_mass>644.000</calc_mass>
+      <protein_id>decoy_ENSP00000459685.1</protein_id>
+      <protein_id>decoy_ENSP00000331201.4</protein_id>
+      <protein_id>decoy_ENSP00000458987.1</protein_id>
+      <protein_id>decoy_ENSP00000458603.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_165_1_10164_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QSEC[UNIMOD:4]RAK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-0.924</svm_score>
+      <q_value>7.241e-01</q_value>
+      <pep>8.453e-01</pep>
+      <exp_mass>668.3790</exp_mass>
+      <calc_mass>668.874</calc_mass>
+      <protein_id>decoy_ENSP00000368678.2</protein_id>
+      <protein_id>decoy_ENSP00000484607.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_49_1_10048_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]K[UNIMOD:737]M[UNIMOD:35]ATC[UNIMOD:4]MR" p:decoy="true">
+      <svm_score>-0.926</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>8.499e-01</pep>
+      <exp_mass>686.3630</exp_mass>
+      <calc_mass>686.369</calc_mass>
+      <protein_id>decoy_ENSP00000358992.1</protein_id>
+      <protein_id>decoy_ENSP00000487348.2</protein_id>
+      <protein_id>decoy_ENSP00000359002.3</protein_id>
+      <protein_id>decoy_ENSP00000358994.3</protein_id>
+      <protein_id>decoy_ENSP00000478013.1</protein_id>
+      <protein_id>decoy_ENSP00000358998.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_139_1_10138_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DELEQRVRR" p:decoy="true">
+      <svm_score>-0.929</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>8.590e-01</pep>
+      <exp_mass>716.4100</exp_mass>
+      <calc_mass>715.407</calc_mass>
+      <protein_id>decoy_sp|Q9P219|DAPLE_HUMAN</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_218_1_10217_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]TSENQEK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.931</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>8.622e-01</pep>
+      <exp_mass>647.8580</exp_mass>
+      <calc_mass>647.356</calc_mass>
+      <protein_id>ENSP00000482275.1</protein_id>
+      <protein_id>ENSP00000479840.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_117_1_10116_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]PIC[UNIMOD:4]HGNR" p:decoy="true">
+      <svm_score>-0.931</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>8.627e-01</pep>
+      <exp_mass>541.2840</exp_mass>
+      <calc_mass>541.790</calc_mass>
+      <protein_id>decoy_ENSP00000363827.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_223_1_10222_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ERERERDR" p:decoy="false">
+      <svm_score>-0.938</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>8.813e-01</pep>
+      <exp_mass>688.3780</exp_mass>
+      <calc_mass>687.874</calc_mass>
+      <protein_id>ENSP00000396301.2</protein_id>
+      <protein_id>ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_232_1_10231_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]M[UNIMOD:35]NPNC[UNIMOD:4]ARC[UNIMOD:4]GK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.939</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>8.836e-01</pep>
+      <exp_mass>561.2780</exp_mass>
+      <calc_mass>561.283</calc_mass>
+      <protein_id>ENSP00000325240.6</protein_id>
+      <protein_id>ENSP00000468664.1</protein_id>
+      <protein_id>ENSP00000414803.3</protein_id>
+      <protein_id>ENSP00000392853.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_107_1_10106_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]C[UNIMOD:4]DPRRDC[UNIMOD:4]R" p:decoy="true">
+      <svm_score>-0.945</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>8.989e-01</pep>
+      <exp_mass>681.8250</exp_mass>
+      <calc_mass>682.330</calc_mass>
+      <protein_id>decoy_ENSP00000363827.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_133_1_10132_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EALERER" p:decoy="true">
+      <svm_score>-0.945</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>8.989e-01</pep>
+      <exp_mass>566.3160</exp_mass>
+      <calc_mass>566.320</calc_mass>
+      <protein_id>decoy_ENSP00000425564.1</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000424622.1</protein_id>
+      <protein_id>decoy_ENSP00000422641.1</protein_id>
+      <protein_id>decoy_ENSP00000426764.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_115_1_10114_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]AAEEAER" p:decoy="false">
+      <svm_score>-0.947</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.028e-01</pep>
+      <exp_mass>503.2690</exp_mass>
+      <calc_mass>502.764</calc_mass>
+      <protein_id>ENSP00000331201.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_95_1_10094_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GGFGPGK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.947</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.038e-01</pep>
+      <exp_mass>538.8220</exp_mass>
+      <calc_mass>539.326</calc_mass>
+      <protein_id>ENSP00000254108.7</protein_id>
+      <protein_id>ENSP00000369594.3</protein_id>
+      <protein_id>ENSP00000455282.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_187_1_10186_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DNSTDPR" p:decoy="true">
+      <svm_score>-0.948</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.067e-01</pep>
+      <exp_mass>517.2590</exp_mass>
+      <calc_mass>517.259</calc_mass>
+      <protein_id>decoy_ENSP00000430816.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_122_1_10121_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]SADSLDANK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-0.948</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.072e-01</pep>
+      <exp_mass>690.3850</exp_mass>
+      <calc_mass>689.883</calc_mass>
+      <protein_id>decoy_sp|Q9P219|DAPLE_HUMAN</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_79_1_10078_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GEM[UNIMOD:35]MDYTRK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-0.951</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.131e-01</pep>
+      <exp_mass>802.4060</exp_mass>
+      <calc_mass>802.912</calc_mass>
+      <protein_id>decoy_ENSP00000384018.1</protein_id>
+      <protein_id>decoy_ENSP00000384202.1</protein_id>
+      <protein_id>decoy_ENSP00000400281.2</protein_id>
+      <protein_id>decoy_ENSP00000385618.3</protein_id>
+      <protein_id>decoy_ENSP00000348551.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_251_1_10250_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]RQEEELR" p:decoy="false">
+      <svm_score>-0.953</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.195e-01</pep>
+      <exp_mass>594.3330</exp_mass>
+      <calc_mass>594.830</calc_mass>
+      <protein_id>ENSP00000469842.2</protein_id>
+      <protein_id>ENSP00000477574.1</protein_id>
+      <protein_id>ENSP00000365606.5</protein_id>
+      <protein_id>ENSP00000480856.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_226_1_10225_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]MIEEIDR" p:decoy="true">
+      <svm_score>-0.953</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.203e-01</pep>
+      <exp_mass>379.2080</exp_mass>
+      <calc_mass>378.872</calc_mass>
+      <protein_id>decoy_ENSP00000258341.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_217_1_10216_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EWRAEWK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-0.954</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.208e-01</pep>
+      <exp_mass>731.9120</exp_mass>
+      <calc_mass>731.914</calc_mass>
+      <protein_id>decoy_ENSP00000374370.4</protein_id>
+      <protein_id>decoy_ENSP00000374372.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_225_1_10224_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DLTGALR" p:decoy="false">
+      <svm_score>-0.954</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.213e-01</pep>
+      <exp_mass>487.7910</exp_mass>
+      <calc_mass>487.795</calc_mass>
+      <protein_id>ENSP00000432568.1</protein_id>
+      <protein_id>ENSP00000433593.1</protein_id>
+      <protein_id>ENSP00000311489.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_235_1_10234_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]SNQGVAR" p:decoy="false">
+      <svm_score>-0.954</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.221e-01</pep>
+      <exp_mass>481.2800</exp_mass>
+      <calc_mass>480.775</calc_mass>
+      <protein_id>ENSP00000369677.4</protein_id>
+      <protein_id>ENSP00000411201.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_136_1_10135_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EEEEARAR" p:decoy="true">
+      <svm_score>-0.957</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.289e-01</pep>
+      <exp_mass>610.8190</exp_mass>
+      <calc_mass>609.817</calc_mass>
+      <protein_id>decoy_ENSP00000354826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_105_1_10104_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EMEEQIRR" p:decoy="true">
+      <svm_score>-0.960</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.366e-01</pep>
+      <exp_mass>661.3520</exp_mass>
+      <calc_mass>660.351</calc_mass>
+      <protein_id>decoy_ENSP00000358992.1</protein_id>
+      <protein_id>decoy_ENSP00000487348.2</protein_id>
+      <protein_id>decoy_ENSP00000359002.3</protein_id>
+      <protein_id>decoy_ENSP00000358994.3</protein_id>
+      <protein_id>decoy_ENSP00000478013.1</protein_id>
+      <protein_id>decoy_ENSP00000358998.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_204_1_10203_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]RSYEIMFR" p:decoy="false">
+      <svm_score>-0.960</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.375e-01</pep>
+      <exp_mass>666.3600</exp_mass>
+      <calc_mass>665.861</calc_mass>
+      <protein_id>ENSP00000363827.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_227_1_10226_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QEEETC[UNIMOD:4]K[UNIMOD:737]R" p:decoy="false">
+      <svm_score>-0.965</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.515e-01</pep>
+      <exp_mass>769.4010</exp_mass>
+      <calc_mass>769.406</calc_mass>
+      <protein_id>ENSP00000311513.6</protein_id>
+      <protein_id>ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_146_1_10145_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]VC[UNIMOD:4]SLLEEWR" p:decoy="false">
+      <svm_score>-0.968</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.595e-01</pep>
+      <exp_mass>710.3680</exp_mass>
+      <calc_mass>710.876</calc_mass>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <protein_id>ENSP00000356220.3</protein_id>
+      <protein_id>ENSP00000346701.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_189_1_10188_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]SEYM[UNIMOD:35]EGNVR" p:decoy="false">
+      <svm_score>-0.972</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.692e-01</pep>
+      <exp_mass>665.3180</exp_mass>
+      <calc_mass>665.319</calc_mass>
+      <protein_id>msstitch_fake_gene_anpep</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_191_1_10190_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DEEIAAK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-0.975</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.781e-01</pep>
+      <exp_mass>617.8570</exp_mass>
+      <calc_mass>617.358</calc_mass>
+      <protein_id>ENSP00000362978.3</protein_id>
+      <protein_id>ENSP00000362971.1</protein_id>
+      <protein_id>ENSP00000362970.3</protein_id>
+      <protein_id>ENSP00000442558.1</protein_id>
+      <protein_id>ENSP00000405587.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_193_1_10192_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]SINSNSPR" p:decoy="true">
+      <svm_score>-0.979</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.901e-01</pep>
+      <exp_mass>553.3070</exp_mass>
+      <calc_mass>552.304</calc_mass>
+      <protein_id>decoy_ENSP00000405111.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_188_1_10187_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DVQQQIAQAQQGEGGLPDR" p:decoy="false">
+      <svm_score>-0.982</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>9.992e-01</pep>
+      <exp_mass>756.3860</exp_mass>
+      <calc_mass>756.391</calc_mass>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_214_1_10213_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]SEVTDLRR" p:decoy="false">
+      <svm_score>-0.987</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>602.8510</exp_mass>
+      <calc_mass>602.846</calc_mass>
+      <protein_id>ENSP00000355124.3</protein_id>
+      <protein_id>ENSP00000466625.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_138_1_10137_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DYSK[UNIMOD:737]QC[UNIMOD:4]ASTVQQQEDR" p:decoy="false">
+      <svm_score>-0.990</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>800.7320</exp_mass>
+      <calc_mass>801.065</calc_mass>
+      <protein_id>ENSP00000396024.1</protein_id>
+      <protein_id>ENSP00000356220.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_176_1_10175_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]SQEC[UNIMOD:4]YFDPELYR" p:decoy="false">
+      <svm_score>-0.993</svm_score>
+      <q_value>7.391e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>612.9500</exp_mass>
+      <calc_mass>612.621</calc_mass>
+      <protein_id>ENSP00000258341.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_175_1_10174_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EFTGSGRGM" p:decoy="true">
+      <svm_score>-0.996</svm_score>
+      <q_value>7.400e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>586.2970</exp_mass>
+      <calc_mass>585.792</calc_mass>
+      <protein_id>decoy_ENSP00000331201.4</protein_id>
+      <protein_id>decoy_ENSP00000458987.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_90_1_10089_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DGVSIESR" p:decoy="true">
+      <svm_score>-1.000</svm_score>
+      <q_value>7.400e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>547.3000</exp_mass>
+      <calc_mass>546.298</calc_mass>
+      <protein_id>decoy_ENSP00000006658.6</protein_id>
+      <protein_id>decoy_ENSP00000348878.4</protein_id>
+      <protein_id>decoy_ENSP00000424538.1</protein_id>
+      <protein_id>decoy_ENSP00000483295.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_13_1_10012_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]VMDEVEK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-1.004</svm_score>
+      <q_value>7.400e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>654.8660</exp_mass>
+      <calc_mass>654.368</calc_mass>
+      <protein_id>ENSP00000441604.1</protein_id>
+      <protein_id>ENSP00000347005.4</protein_id>
+      <protein_id>ENSP00000483438.1</protein_id>
+      <protein_id>ENSP00000263545.7</protein_id>
+      <protein_id>ENSP00000440222.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_247_1_10246_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QM[UNIMOD:35]DRM[UNIMOD:35]LLR" p:decoy="true">
+      <svm_score>-1.004</svm_score>
+      <q_value>7.400e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>662.3530</exp_mass>
+      <calc_mass>662.357</calc_mass>
+      <protein_id>decoy_ENSP00000445408.2</protein_id>
+      <protein_id>decoy_ENSP00000339569.6</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_135_1_10134_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EC[UNIMOD:4]GDVSR" p:decoy="false">
+      <svm_score>-1.004</svm_score>
+      <q_value>7.400e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>527.2600</exp_mass>
+      <calc_mass>526.256</calc_mass>
+      <protein_id>ENSP00000361711.1</protein_id>
+      <protein_id>ENSP00000361710.5</protein_id>
+      <protein_id>ENSP00000243286.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_206_1_10205_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DRDRDRER" p:decoy="false">
+      <svm_score>-1.006</svm_score>
+      <q_value>7.400e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>673.8600</exp_mass>
+      <calc_mass>673.858</calc_mass>
+      <protein_id>ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_202_1_10201_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]REAEERERM[UNIMOD:35]R" p:decoy="false">
+      <svm_score>-1.006</svm_score>
+      <q_value>7.400e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>804.4230</exp_mass>
+      <calc_mass>803.918</calc_mass>
+      <protein_id>ENSP00000354826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_142_1_10141_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]K[UNIMOD:737]C[UNIMOD:4]LQSC[UNIMOD:4]YNC[UNIMOD:4]TVC[UNIMOD:4]R" p:decoy="true">
+      <svm_score>-1.007</svm_score>
+      <q_value>7.451e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>552.5150</exp_mass>
+      <calc_mass>552.520</calc_mass>
+      <protein_id>decoy_ENSP00000372327.2</protein_id>
+      <protein_id>decoy_ENSP00000372324.2</protein_id>
+      <protein_id>decoy_ENSP00000479904.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_172_1_10171_4_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GEFGADGR" p:decoy="false">
+      <svm_score>-1.009</svm_score>
+      <q_value>7.451e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>520.2690</exp_mass>
+      <calc_mass>519.264</calc_mass>
+      <protein_id>ENSP00000300527.4</protein_id>
+      <protein_id>ENSP00000380870.1</protein_id>
+      <protein_id>ENSP00000387115.1</protein_id>
+      <protein_id>ENSP00000312529.5</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_54_1_10053_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]LNDLSSLR" p:decoy="true">
+      <svm_score>-1.010</svm_score>
+      <q_value>7.647e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>574.3430</exp_mass>
+      <calc_mass>573.838</calc_mass>
+      <protein_id>decoy_ENSP00000367265.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_157_1_10156_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]TEEDELSPSER" p:decoy="true">
+      <svm_score>-1.015</svm_score>
+      <q_value>7.692e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>760.3720</exp_mass>
+      <calc_mass>760.868</calc_mass>
+      <protein_id>decoy_ENSP00000311513.6</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_166_1_10165_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EK[UNIMOD:737]DRQC[UNIMOD:4]R" p:decoy="false">
+      <svm_score>-1.018</svm_score>
+      <q_value>7.692e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>725.9050</exp_mass>
+      <calc_mass>725.404</calc_mass>
+      <protein_id>ENSP00000333667.3</protein_id>
+      <protein_id>ENSP00000452315.1</protein_id>
+      <protein_id>ENSP00000406881.3</protein_id>
+      <protein_id>ENSP00000452419.1</protein_id>
+      <protein_id>ENSP00000413770.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_100_1_10099_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]YVEEAER" p:decoy="true">
+      <svm_score>-1.018</svm_score>
+      <q_value>7.885e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>563.7940</exp_mass>
+      <calc_mass>562.793</calc_mass>
+      <protein_id>decoy_ENSP00000441604.1</protein_id>
+      <protein_id>decoy_ENSP00000347005.4</protein_id>
+      <protein_id>decoy_ENSP00000483438.1</protein_id>
+      <protein_id>decoy_ENSP00000263545.7</protein_id>
+      <protein_id>decoy_ENSP00000440222.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_137_1_10136_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ELTERLER" p:decoy="true">
+      <svm_score>-1.020</svm_score>
+      <q_value>7.925e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>638.3700</exp_mass>
+      <calc_mass>637.867</calc_mass>
+      <protein_id>decoy_ENSP00000482245.1</protein_id>
+      <protein_id>decoy_ENSP00000482797.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_169_1_10168_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]AFEDELR" p:decoy="false">
+      <svm_score>-1.021</svm_score>
+      <q_value>7.925e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>555.2940</exp_mass>
+      <calc_mass>554.795</calc_mass>
+      <protein_id>ENSP00000374370.4</protein_id>
+      <protein_id>ENSP00000374372.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_19_1_10018_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EEK[UNIMOD:737]ETTENEATDNQM[UNIMOD:35]RR" p:decoy="true">
+      <svm_score>-1.025</svm_score>
+      <q_value>8.113e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>852.0780</exp_mass>
+      <calc_mass>852.418</calc_mass>
+      <protein_id>decoy_ENSP00000398826.1</protein_id>
+      <protein_id>decoy_ENSP00000411476.2</protein_id>
+      <protein_id>decoy_ENSP00000395710.1</protein_id>
+      <protein_id>decoy_ENSP00000354826.2</protein_id>
+      <protein_id>decoy_ENSP00000354513.2</protein_id>
+      <protein_id>decoy_ENSP00000407522.1</protein_id>
+      <protein_id>decoy_ENSP00000393621.1</protein_id>
+      <protein_id>decoy_ENSP00000419673.1</protein_id>
+      <protein_id>decoy_ENSP00000376826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_64_1_10063_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]TGPDGRR" p:decoy="true">
+      <svm_score>-1.029</svm_score>
+      <q_value>8.148e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>494.7850</exp_mass>
+      <calc_mass>494.280</calc_mass>
+      <protein_id>decoy_ENSP00000300527.4</protein_id>
+      <protein_id>decoy_ENSP00000380870.1</protein_id>
+      <protein_id>decoy_ENSP00000387115.1</protein_id>
+      <protein_id>decoy_ENSP00000312529.5</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_198_1_10197_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]C[UNIMOD:4]QVC[UNIMOD:4]M[UNIMOD:35]RRT" p:decoy="false">
+      <svm_score>-1.029</svm_score>
+      <q_value>8.148e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>678.3350</exp_mass>
+      <calc_mass>678.331</calc_mass>
+      <protein_id>ENSP00000364979.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_58_1_10057_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ELQQC[UNIMOD:4]M[UNIMOD:35]K[UNIMOD:737]" p:decoy="true">
+      <svm_score>-1.032</svm_score>
+      <q_value>8.333e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>706.3780</exp_mass>
+      <calc_mass>705.878</calc_mass>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_180_1_10179_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]SEGLNETNFREEMEHIWLNLK[UNIMOD:737]R" p:decoy="true">
+      <svm_score>-1.036</svm_score>
+      <q_value>8.519e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>534.7810</exp_mass>
+      <calc_mass>534.784</calc_mass>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_149_1_10148_6_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GGYRDMDRRPGDR" p:decoy="true">
+      <svm_score>-1.039</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>890.4490</exp_mass>
+      <calc_mass>890.447</calc_mass>
+      <protein_id>decoy_ENSP00000262056.9</protein_id>
+      <protein_id>decoy_ENSP00000388806.3</protein_id>
+      <protein_id>decoy_ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_154_1_10153_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ISYYYRR" p:decoy="true">
+      <svm_score>-1.042</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>625.8470</exp_mass>
+      <calc_mass>625.348</calc_mass>
+      <protein_id>decoy_ENSP00000252999.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_102_1_10101_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ESGEQPMLK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-1.045</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>738.9080</exp_mass>
+      <calc_mass>738.910</calc_mass>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_124_1_10123_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DC[UNIMOD:4]SC[UNIMOD:4]RPR" p:decoy="true">
+      <svm_score>-1.048</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>591.2890</exp_mass>
+      <calc_mass>590.282</calc_mass>
+      <protein_id>decoy_ENSP00000368678.2</protein_id>
+      <protein_id>decoy_ENSP00000484607.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_196_1_10195_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]STFEYGC[UNIMOD:4]AQK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-1.049</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>824.9160</exp_mass>
+      <calc_mass>824.924</calc_mass>
+      <protein_id>decoy_ENSP00000363880.1</protein_id>
+      <protein_id>decoy_ENSP00000363881.3</protein_id>
+      <protein_id>decoy_ENSP00000363883.3</protein_id>
+      <protein_id>decoy_ENSP00000414095.2</protein_id>
+      <protein_id>decoy_ENSP00000444856.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_143_1_10142_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EGPLGPR" p:decoy="true">
+      <svm_score>-1.051</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>478.7870</exp_mass>
+      <calc_mass>477.782</calc_mass>
+      <protein_id>decoy_ENSP00000364979.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_103_1_10102_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EDSESDGSQK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-1.053</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>771.3900</exp_mass>
+      <calc_mass>770.381</calc_mass>
+      <protein_id>ENSP00000311513.6</protein_id>
+      <protein_id>ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_38_1_10037_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]VPPTAC[UNIMOD:4]C[UNIMOD:4]GHSTQPR" p:decoy="false">
+      <svm_score>-1.057</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>600.2990</exp_mass>
+      <calc_mass>599.629</calc_mass>
+      <protein_id>ENSP00000297954.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_224_1_10223_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GAM[UNIMOD:35]SVSGR" p:decoy="false">
+      <svm_score>-1.057</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>506.2750</exp_mass>
+      <calc_mass>505.269</calc_mass>
+      <protein_id>ENSP00000252999.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_155_1_10154_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]TGQC[UNIMOD:4]EC[UNIMOD:4]QPGITGQHC[UNIMOD:4]ER" p:decoy="false">
+      <svm_score>-1.060</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>750.0080</exp_mass>
+      <calc_mass>749.668</calc_mass>
+      <protein_id>ENSP00000258341.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_116_1_10115_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]MEQAPNM[UNIMOD:35]AEPR" p:decoy="false">
+      <svm_score>-1.065</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>759.8720</exp_mass>
+      <calc_mass>759.866</calc_mass>
+      <protein_id>ENSP00000271636.7</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_130_1_10129_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QNAHIVEWSPR" p:decoy="false">
+      <svm_score>-1.068</svm_score>
+      <q_value>8.667e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>783.9240</exp_mass>
+      <calc_mass>783.423</calc_mass>
+      <protein_id>ENSP00000368887.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_183_1_10182_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EQM[UNIMOD:35]LETR" p:decoy="true">
+      <svm_score>-1.068</svm_score>
+      <q_value>8.833e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>577.3050</exp_mass>
+      <calc_mass>576.300</calc_mass>
+      <protein_id>decoy_ENSP00000271636.7</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_5_1_10004_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]LTTEVAAR" p:decoy="true">
+      <svm_score>-1.069</svm_score>
+      <q_value>8.871e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>545.8300</exp_mass>
+      <calc_mass>545.327</calc_mass>
+      <protein_id>decoy_ENSP00000271636.7</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_120_1_10119_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GSMEDEFARHK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-1.070</svm_score>
+      <q_value>8.871e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>882.4530</exp_mass>
+      <calc_mass>882.959</calc_mass>
+      <protein_id>decoy_ENSP00000349259.4</protein_id>
+      <protein_id>decoy_ENSP00000374630.3</protein_id>
+      <protein_id>decoy_ENSP00000334156.5</protein_id>
+      <protein_id>decoy_ENSP00000479037.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_56_1_10055_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EEQMNTMK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-1.073</svm_score>
+      <q_value>8.871e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>735.8770</exp_mass>
+      <calc_mass>734.881</calc_mass>
+      <protein_id>ENSP00000391964.2</protein_id>
+      <protein_id>ENSP00000378725.3</protein_id>
+      <protein_id>ENSP00000432149.1</protein_id>
+      <protein_id>ENSP00000378719.1</protein_id>
+      <protein_id>ENSP00000378722.1</protein_id>
+      <protein_id>ENSP00000394992.2</protein_id>
+      <protein_id>ENSP00000378720.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_150_1_10149_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GQTGNSSR" p:decoy="false">
+      <svm_score>-1.073</svm_score>
+      <q_value>8.871e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>518.7700</exp_mass>
+      <calc_mass>518.273</calc_mass>
+      <protein_id>ENSP00000262056.9</protein_id>
+      <protein_id>ENSP00000388806.3</protein_id>
+      <protein_id>ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_242_1_10241_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QGTTVDLTYGTR" p:decoy="true">
+      <svm_score>-1.075</svm_score>
+      <q_value>8.923e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>514.6160</exp_mass>
+      <calc_mass>514.277</calc_mass>
+      <protein_id>decoy_ENSP00000474437.1</protein_id>
+      <protein_id>decoy_ENSP00000363745.3</protein_id>
+      <protein_id>decoy_ENSP00000363741.1</protein_id>
+      <protein_id>decoy_ENSP00000304405.6</protein_id>
+      <protein_id>decoy_ENSP00000358635.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_203_1_10202_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]C[UNIMOD:4]HHK[UNIMOD:737]RTM[UNIMOD:35]VGFQVRC[UNIMOD:4]R" p:decoy="true">
+      <svm_score>-1.075</svm_score>
+      <q_value>8.923e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>816.4300</exp_mass>
+      <calc_mass>816.101</calc_mass>
+      <protein_id>decoy_ENSP00000331201.4</protein_id>
+      <protein_id>decoy_ENSP00000458987.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_88_1_10087_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DNPTLYPR" p:decoy="true">
+      <svm_score>-1.081</svm_score>
+      <q_value>8.923e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>603.8300</exp_mass>
+      <calc_mass>602.830</calc_mass>
+      <protein_id>decoy_msstitch_fake_gene_anpep</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_236_1_10235_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]ERDRERERER" p:decoy="false">
+      <svm_score>-1.085</svm_score>
+      <q_value>8.923e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>830.9490</exp_mass>
+      <calc_mass>830.445</calc_mass>
+      <protein_id>ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <protein_id>decoy_ENSP00000396301.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_126_1_10125_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EC[UNIMOD:4]GDVSRAQEELR" p:decoy="false">
+      <svm_score>-1.086</svm_score>
+      <q_value>8.923e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>888.9430</exp_mass>
+      <calc_mass>889.439</calc_mass>
+      <protein_id>ENSP00000361711.1</protein_id>
+      <protein_id>ENSP00000361710.5</protein_id>
+      <protein_id>ENSP00000243286.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_77_1_10076_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GGPM[UNIMOD:35]GRGGYGGGGSGGGGR" p:decoy="false">
+      <svm_score>-1.087</svm_score>
+      <q_value>8.923e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>898.4210</exp_mass>
+      <calc_mass>898.426</calc_mass>
+      <protein_id>ENSP00000254108.7</protein_id>
+      <protein_id>ENSP00000369594.3</protein_id>
+      <protein_id>ENSP00000455282.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_108_1_10107_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]QLATSEEEVEDEGEGR" p:decoy="true">
+      <svm_score>-1.092</svm_score>
+      <q_value>9.077e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>669.9870</exp_mass>
+      <calc_mass>669.650</calc_mass>
+      <protein_id>decoy_ENSP00000311513.6</protein_id>
+      <protein_id>decoy_ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_152_1_10151_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]GNM[UNIMOD:35]QSLR" p:decoy="true">
+      <svm_score>-1.094</svm_score>
+      <q_value>9.104e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>526.7820</exp_mass>
+      <calc_mass>525.782</calc_mass>
+      <protein_id>decoy_ENSP00000396024.1</protein_id>
+      <protein_id>decoy_ENSP00000356220.3</protein_id>
+      <protein_id>decoy_ENSP00000346701.4</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_46_1_10045_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]NVAGDGESPNEDSHAER" p:decoy="true">
+      <svm_score>-1.098</svm_score>
+      <q_value>9.104e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>672.3100</exp_mass>
+      <calc_mass>671.642</calc_mass>
+      <protein_id>decoy_ENSP00000349056.3</protein_id>
+      <protein_id>decoy_ENSP00000380942.2</protein_id>
+      <protein_id>decoy_ENSP00000432984.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_43_1_10042_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EVMDLLR" p:decoy="false">
+      <svm_score>-1.113</svm_score>
+      <q_value>9.104e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>553.8260</exp_mass>
+      <calc_mass>552.818</calc_mass>
+      <protein_id>ENSP00000258341.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_42_1_10041_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]AGDLRTR" p:decoy="false">
+      <svm_score>-1.114</svm_score>
+      <q_value>9.104e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>510.3110</exp_mass>
+      <calc_mass>509.304</calc_mass>
+      <protein_id>ENSP00000331902.6</protein_id>
+      <protein_id>ENSP00000354505.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_173_1_10172_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DC[UNIMOD:4]ELDQRASR" p:decoy="true">
+      <svm_score>-1.120</svm_score>
+      <q_value>9.254e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>740.3600</exp_mass>
+      <calc_mass>739.865</calc_mass>
+      <protein_id>decoy_ENSP00000271636.7</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_11_1_10010_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]C[UNIMOD:4]K[UNIMOD:737]NC[UNIMOD:4]HYVNR" p:decoy="true">
+      <svm_score>-1.120</svm_score>
+      <q_value>9.296e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>855.9440</exp_mass>
+      <calc_mass>854.942</calc_mass>
+      <protein_id>decoy_ENSP00000376484.1</protein_id>
+      <protein_id>decoy_ENSP00000271715.2</protein_id>
+      <protein_id>decoy_ENSP00000357856.2</protein_id>
+      <protein_id>decoy_ENSP00000386836.1</protein_id>
+      <protein_id>decoy_ENSP00000431259.1</protein_id>
+      <protein_id>decoy_ENSP00000418408.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_36_1_10035_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]INGGFEIR" p:decoy="true">
+      <svm_score>-1.126</svm_score>
+      <q_value>9.296e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>568.8310</exp_mass>
+      <calc_mass>567.827</calc_mass>
+      <protein_id>decoy_ENSP00000311513.6</protein_id>
+      <protein_id>decoy_ENSP00000434509.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_9_1_10008_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]LWEWRDEWK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-1.131</svm_score>
+      <q_value>9.296e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>603.3260</exp_mass>
+      <calc_mass>602.663</calc_mass>
+      <protein_id>decoy_ENSP00000349259.4</protein_id>
+      <protein_id>decoy_ENSP00000334156.5</protein_id>
+      <protein_id>decoy_ENSP00000479037.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_50_1_10049_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]FDGHRC[UNIMOD:4]AGQQQDIR" p:decoy="false">
+      <svm_score>-1.133</svm_score>
+      <q_value>9.296e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>639.9810</exp_mass>
+      <calc_mass>639.650</calc_mass>
+      <protein_id>ENSP00000380189.3</protein_id>
+      <protein_id>ENSP00000366204.2</protein_id>
+      <protein_id>ENSP00000247153.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_148_1_10147_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]C[UNIMOD:4]EVSMELYGK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-1.141</svm_score>
+      <q_value>9.296e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>837.4420</exp_mass>
+      <calc_mass>837.436</calc_mass>
+      <protein_id>decoy_ENSP00000311513.6</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_132_1_10131_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]NSSQQDNSSR" p:decoy="false">
+      <svm_score>-1.141</svm_score>
+      <q_value>9.296e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>677.3330</exp_mass>
+      <calc_mass>676.324</calc_mass>
+      <protein_id>ENSP00000311513.6</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_215_1_10214_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]M[UNIMOD:35]DC[UNIMOD:4]YSGQK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-1.141</svm_score>
+      <q_value>9.296e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>732.8540</exp_mass>
+      <calc_mass>731.857</calc_mass>
+      <protein_id>ENSP00000261978.4</protein_id>
+      <protein_id>ENSP00000452110.1</protein_id>
+      <protein_id>ENSP00000451477.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_31_1_10030_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]TC[UNIMOD:4]NTNPHLNALSTDSAC[UNIMOD:4]R" p:decoy="false">
+      <svm_score>-1.158</svm_score>
+      <q_value>9.296e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>755.0220</exp_mass>
+      <calc_mass>754.358</calc_mass>
+      <protein_id>ENSP00000277165.5</protein_id>
+      <protein_id>ENSP00000412440.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_244_1_10243_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DYRDEYRDGGGR" p:decoy="true">
+      <svm_score>-1.201</svm_score>
+      <q_value>9.437e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>845.4130</exp_mass>
+      <calc_mass>844.403</calc_mass>
+      <protein_id>decoy_ENSP00000262056.9</protein_id>
+      <protein_id>decoy_ENSP00000388806.3</protein_id>
+      <protein_id>decoy_ENSP00000412530.3</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_44_1_10043_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]TGK[UNIMOD:737]EEGQNEGISGR" p:decoy="true">
+      <svm_score>-1.209</svm_score>
+      <q_value>9.577e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>961.0060</exp_mass>
+      <calc_mass>960.513</calc_mass>
+      <protein_id>decoy_ENSP00000395710.1</protein_id>
+      <protein_id>decoy_ENSP00000419673.1</protein_id>
+      <protein_id>decoy_ENSP00000376826.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_177_1_10176_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]FFEVNYDPNM" p:decoy="true">
+      <svm_score>-1.230</svm_score>
+      <q_value>9.718e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>753.3580</exp_mass>
+      <calc_mass>752.853</calc_mass>
+      <protein_id>decoy_ENSP00000246548.3</protein_id>
+      <protein_id>decoy_ENSP00000437484.1</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_63_1_10062_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]EEESRDK[UNIMOD:737]AM[UNIMOD:35]ADAR" p:decoy="true">
+      <svm_score>-1.294</svm_score>
+      <q_value>9.859e-01</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>992.5070</exp_mass>
+      <calc_mass>991.504</calc_mass>
+      <protein_id>decoy_ENSP00000353408.5</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_210_1_10209_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]AEGSPLTTPEEDVR" p:decoy="true">
+      <svm_score>-1.295</svm_score>
+      <q_value>1.000e+00</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>866.4410</exp_mass>
+      <calc_mass>865.444</calc_mass>
+      <protein_id>decoy_ENSP00000363482.2</protein_id>
+      <protein_id>decoy_ENSP00000439811.1</protein_id>
+      <protein_id>decoy_ENSP00000485513.1</protein_id>
+      <protein_id>decoy_ENSP00000352922.6</protein_id>
+      <protein_id>decoy_ENSP00000337541.5</protein_id>
+      <protein_id>decoy_ENSP00000344037.6</protein_id>
+      <protein_id>decoy_ENSP00000314417.7</protein_id>
+      <protein_id>decoy_ENSP00000282633.5</protein_id>
+      <protein_id>decoy_ENSP00000382277.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_84_1_10083_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DADTDESLM[UNIMOD:35]DEAK[UNIMOD:737]" p:decoy="true">
+      <svm_score>-1.324</svm_score>
+      <q_value>1.000e+00</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>958.4630</exp_mass>
+      <calc_mass>957.456</calc_mass>
+      <protein_id>decoy_ENSP00000297954.4</protein_id>
+      <protein_id>decoy_ENSP00000415038.1</protein_id>
+      <protein_id>decoy_ENSP00000378860.2</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_74_1_10073_2_1</psm_id>
+      </psm_ids>
+    </peptide>
+    <peptide p:peptide_id="[UNIMOD:737]DSQYEM[UNIMOD:35]DSEFEGELADDLAGFYRSEYM[UNIMOD:35]EGNVRK[UNIMOD:737]" p:decoy="false">
+      <svm_score>-1.348</svm_score>
+      <q_value>1.000e+00</q_value>
+      <pep>1.000e+00</pep>
+      <exp_mass>1457.3300</exp_mass>
+      <calc_mass>1457.660</calc_mass>
+      <protein_id>msstitch_fake_gene_anpep</protein_id>
+      <p_value>0.000e+00</p_value>
+      <psm_ids>
+        <psm_id>few_spectra_SII_230_1_10229_3_1</psm_id>
+      </psm_ids>
+    </peptide>
+  </peptides>
+
+</percolator_output>
