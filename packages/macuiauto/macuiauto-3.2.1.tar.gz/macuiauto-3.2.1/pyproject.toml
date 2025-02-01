@@ -1,0 +1,40 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+
+[tool.flit.metadata]
+module = "macuiauto"
+author = "Geno Chen"
+author-email = "geno.chenjiannan@gmail.com"
+home-page = "https://github.com/GenoChen/mac-ui-automation"
+requires = [
+    "pyobjc-core>=3.0.4",
+    "pyobjc-framework-Cocoa>=3.0.4",
+    "pyobjc-framework-Quartz>=3.0.4",
+    "pyobjc-framework-ApplicationServices>=3.0.4",
+    "pyobjc-framework-CoreText>=3.0.4",
+    "pynput>=1.7.7",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: MacOS X",
+    "Environment :: MacOS X :: Cocoa",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Operating System :: MacOS",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Objective C",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Topic :: Software Development :: User Interfaces",
+]
+description-file="README.md"
