@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+pyfastdoop/__init__.py
+pyfastdoop/install.py
+pyfastdoop/wrapper.py
+pyfastdoop.egg-info/PKG-INFO
+pyfastdoop.egg-info/SOURCES.txt
+pyfastdoop.egg-info/dependency_links.txt
+pyfastdoop.egg-info/requires.txt
+pyfastdoop.egg-info/top_level.txt
+tests/test_module.py

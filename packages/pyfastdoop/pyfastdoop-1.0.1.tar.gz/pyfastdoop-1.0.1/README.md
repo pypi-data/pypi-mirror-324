@@ -1,0 +1,104 @@
+# pyFastdoop
+
+A Python wrapper for the [Fastdoop library](https://github.com/umbfer/fastdoop/), allowing easy integration of Fastdoop's Hadoop InputFormat with PySpark to process FASTA files.
+
+---
+
+## Installation
+
+You can install the `pyfastdoop`  using:
+
+```bash
+pip install pyfastdoop
+python -m pyfastdoop.install
+```
+
+or compile source code:
+```bash
+git clone https://github.com/riccardoc95/pyfastdoop
+cd pyfastdoop
+python setup.py install
+python -m pyfastdoop.install
+```
+
+---
+
+## Test
+
+```bash
+cd test
+spark-submit test_module.py
+```
+
+---
+
+## Dependencies
+
+- **PySpark**: This package requires PySpark (>= 3.0.0, < 4.0.0) to function, as it integrates with Spark for distributed processing.
+  
+---
+
+## Usage
+
+### 1. **pyFastdoop**
+
+To use this wrapper, create an instance of the `pyFastdoop` class. You can either provide a SparkContext (if you already have one) or specify the path to the Fastdoop JAR file to create a new SparkContext.
+
+```python
+from pyfastdoop import pyFastdoop
+
+# Example when you need to provide a JAR path
+fastdoop = pyFastdoop()
+
+# Example with an existing SparkContext
+from pyspark import SparkContext
+sc = SparkContext()  # Create an existing SparkContext
+fastdoop = pyFastdoop(sc=sc)
+```
+
+### 2. **Reading FASTA files**
+
+You can read FASTA files (or any file supported by Fastdoop) using the `read_fasta()` method.
+
+```python
+# Read FASTA file and get the RDD
+rdd = fastdoop.read_fasta("input_file.fasta", type="short") # type = short, long, fastq
+
+# Print the contents of the RDD
+fastdoop.print_rdd(rdd)
+```
+
+### 3. **Stop the SparkContext**
+
+Once you're done processing, you can stop the SparkContext to release resources:
+
+```python
+wrapper.stop()
+```
+
+---
+
+## Example
+
+```python
+from pyfastdoop import pyFastdoop
+
+# Initialize FastdoopWrapper with JAR path
+fastdoop = pyFastdoop()
+
+# Read FASTA file
+rdd = fastdoop.read_fasta("input_file.fasta")
+
+# Print the contents of the RDD
+fastdoop.print_rdd(rdd)
+
+# Stop SparkContext
+fastdoop.stop()
+```
+
+
+---
+
+## Contributing
+
+Feel free to contribute! Open a pull request or create an issue on the GitHub repository.
