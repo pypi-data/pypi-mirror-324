@@ -1,0 +1,13 @@
+>>> from anymethod import anymethod
+
+>>> class FooBar(object):
+...     @anymethod
+...     def whoami(owner):
+...         """Docstring"""
+...         print(owner)
+
+>>> FooBar.whoami.__doc__
+'Docstring'
+
+>>> FooBar().whoami.__doc__
+'Docstring'
