@@ -1,0 +1,11 @@
+manage.py,sha256=lBlpqRRgQ7F76JGtQjIMpEunsc78nzwzpD8wtq3V8xI,683
+myapp/__init__.py,sha256=Fiam6XKMEnDD8W3YrbG_B08_ATDm77t992Yn4JSJirk,31
+myapp/asgi.py,sha256=rOyy9htK9DqlbCN3KQbHsI0g3F5sy1V1in2XV9ppXqg,403
+myapp/responses.py,sha256=OLrGwCi74AOqUuCmmRns3BfFrT1DB-d1wLexgRP62yc,1572
+myapp/settings.py,sha256=hnldMVZfqmqe3bgt0nsTTNMLV9Pq3Ea5V903pXPYSt0,3341
+myapp/urls.py,sha256=TaGLSkGKo2hdNfXgutMSCp7GT-9rZr3oB1oO_I2Pu6U,783
+myapp/wsgi.py,sha256=a93PbO4FkTb6mR7WMwjJ297E3f_D_UR_GOnNYsBDB98,403
+testAppResponse-0.6.dist-info/METADATA,sha256=ZoAi1wC1oCzm8AH9qlo3oXfC2B75QI0zldU_XmOZg0g,171
+testAppResponse-0.6.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+testAppResponse-0.6.dist-info/top_level.txt,sha256=mpTy47xfkgdU0oEqsofUDZ-1ddd-Dv0ct-TjiFec8Ks,6
+testAppResponse-0.6.dist-info/RECORD,,
