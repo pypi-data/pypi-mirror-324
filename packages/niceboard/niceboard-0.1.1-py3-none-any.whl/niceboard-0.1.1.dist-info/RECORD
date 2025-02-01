@@ -1,0 +1,16 @@
+niceboard/__init__.py,sha256=bZNO6UFvy0ql_2uLvKvjEvLRIzPVWkaP4SF76oNYNqs,119
+niceboard/client.py,sha256=OvJfx36IB2-jPkCOffnlXZORMCtpnrC2Ox_Du2WppoA,1969
+niceboard/resource.py,sha256=FI80Ptj-Xxgfz3i9vTbBgvbIKFzoudfm3aJPSTcs_RY,1223
+niceboard/resources/__init__.py,sha256=WfOk03C7IxsLYAvwK1lXPETjxxcyz_sXn-aqOFnCUNc,262
+niceboard/resources/categories.py,sha256=2lwVciMMPetMi3lo2to_PWMq8GrAW2MUIKHlAAgrOB0,554
+niceboard/resources/companies.py,sha256=JOAP7mQz1JNp9BnPHMLovyTTqTZHX1MiMV8zr14EK7k,1953
+niceboard/resources/geocoding.py,sha256=RQyJsp6eN_STxP9Kic0tK5tHzeY06XVFJwt5q7IrhNE,1994
+niceboard/resources/job_types.py,sha256=IzDyGWiUYmH-swZrv4KJT6U1AXA36vruhyuzPfb4roY,339
+niceboard/resources/jobs.py,sha256=KdvU2RJhSGsmtf_dOLbxCStejjUD8XOW53RmidwEvr8,1993
+niceboard/resources/locations.py,sha256=QfIoAmaP7O3A6Hqr5n54ta0uA2Hoa7mTxpZMZqQcUpk,2231
+niceboard/resources/logo.py,sha256=D7X40UfU3XEbJKQoZGxIBYjD3MvZ-Ar1pefJWD8Qnyw,1940
+niceboard-0.1.1.dist-info/LICENSE,sha256=FnKVAcuSvD7mqFJLSUD97yVf1-zbiL6ZUAteMpd7YAg,1070
+niceboard-0.1.1.dist-info/METADATA,sha256=UQLnYm3c5wThqBSYdWhVL7252-jkedbM3KaFPkvjhPY,693
+niceboard-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+niceboard-0.1.1.dist-info/top_level.txt,sha256=htax5DehGFsbK-cq_C_ivSi3kKW2M-R4Q8TCxOSLndo,10
+niceboard-0.1.1.dist-info/RECORD,,
