@@ -1,0 +1,15 @@
+modelml/Decision_Tree.py,sha256=BCvnlKaQcJQt-PWxYeV276lXK_7R-NHZkLmV1FSzc28,4692
+modelml/Decision_Tree_Reg.py,sha256=OeFwm3kYgYsAeQ2O57nH2Azz6fb5zLIWXHwvKTybRCA,3162
+modelml/Knearest.py,sha256=jKdqtmxIQSh1wuPUG6CEc38UQrihQ9nshJx6YpY_iuY,1434
+modelml/Linear_regression.py,sha256=WgAAA6amYEynhYXk7q_qFE8ZNgbbLN8XUD7R78lEV8E,1118
+modelml/Logistic_regression.py,sha256=px7F4L0aB5kGTZpqNRLoC48OalinnTlzVOAWnKpRQh8,1020
+modelml/Multiple_regression.py,sha256=nKcQ9-GiX-GW3IID1oA-VxeZOUF2Bm5JlcICzfmSZLA,1378
+modelml/Random_forest.py,sha256=Mlb9ZUZUdr9pbC6w54dBecaflSNOh68IuX52N2hncGA,1403
+modelml/Support_vector.py,sha256=1Q0DvZwgkhgBLhJMTC9Ut-Tz_r9TxOWZdtHJcMWHUgo,1251
+modelml/XGBoost.py,sha256=zwN72BkPD491cX1rqlMN4XYPaa7sPsrEShvEAf9rvnY,4383
+modelml/__init__.py,sha256=MKorNYR_odZ0pZc_lUEvXSI9milL2wYXyPWamNooK7E,386
+modelml-0.1.1.dist-info/LICENSE,sha256=gGW36H7-Tr_ch-0BXy-v339t9f_CfvRqkAUKelk0Oyk,1083
+modelml-0.1.1.dist-info/METADATA,sha256=pRjzraw8WxRTIFK3EfvlIeYORIe75O3YG6NDWHBXOe0,4021
+modelml-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+modelml-0.1.1.dist-info/top_level.txt,sha256=FSJ2sLbRyyASMNnlalxwb7tRswKn5297gCXHZM-d9is,8
+modelml-0.1.1.dist-info/RECORD,,
