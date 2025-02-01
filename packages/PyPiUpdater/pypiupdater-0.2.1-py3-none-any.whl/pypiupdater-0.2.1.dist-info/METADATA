@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: PyPiUpdater
+Version: 0.2.1
+Summary: Simple program to update package from PyPi with pip.
+Project-URL: Source, https://gitlab.com/CodeByMrFinchum/PyPiUpdater
+Author: Mr Finchum
+License-File: LICENSE.md
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: packaging
+Requires-Dist: requests
+Description-Content-Type: text/markdown
+
+Simple program to update package from PyPi with pip.
+
+For more info see [PyPiUpdater gitlab](https://gitlab.com/CodeByMrFinchum/PyPiUpdater#).
