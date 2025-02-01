@@ -1,0 +1,113 @@
+[tool.poetry]
+name = "marge-bot"
+version = "0.14.2"
+description = "marge-bot is a merge bot for GitLab."
+license = "BSD-3-Clause"
+authors = ["Infrastructure <infrastructure@smarkets.com>"]
+maintainers = ["marge-bot community <marge-bot@proton.me>"]
+packages = [{ include = "marge" }]
+readme = "README.md"
+repository = "https://gitlab.com/marge-org/marge-bot"
+keywords = ["gitlab", "merge request", "merge train"]
+requires-poetry = ">=2.0"
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8.0"
+
+[tool.poetry.dependencies]
+python = "^3.9.0"
+ConfigArgParse = "^1.5.3"
+python-dateutil = "^2.9.0"
+python-gitlab = "5.3.1"
+PyYAML = "^6.0.1"
+requests = "^2.28.2"
+
+[tool.poetry.scripts]
+marge = "marge.__main__:run"
+"marge.app" = "marge.__main__:run"
+
+[tool.poetry.group.dev.dependencies]
+tox = "^4.15.0"
+
+[tool.poetry.group.test.dependencies]
+time-machine = "^2.16.0"
+pytest = "^8.0.0"
+pytest-cov = "^6.0.0"
+
+[tool.poetry.group.lint.dependencies]
+black = "^24.0.0"
+flake8 = "^7.0.0"
+isort = "^5.12.0"
+mypy = "^1.11.0"
+pylint = "^3.2.2"
+types-python-dateutil = "^2.9.0"
+types-requests = "^2.28.11.17"
+commitizen = "4.1.1"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "9.5.50"
+
+
+[tool.poetry.group.release.dependencies]
+twine = "^6.0.0"
+id = "^1.4.0"
+pypi-attestations = "^0.0.21"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--cov=marge"
+testpaths = [
+    "tests",
+]
+
+[tool.isort]
+profile = "black"
+extend_skip = [".poetry"]
+
+[tool.black]
+skip_magic_trailing_comma = true
+
+[tool.mypy]
+files = "."
+warn_redundant_casts = true
+warn_unused_configs = true
+warn_unused_ignores = true
+# strict = true
+check_untyped_defs = true
+disallow_any_generics = true
+disallow_incomplete_defs = true
+disallow_subclassing_any = true
+# disallow_untyped_calls = true
+disallow_untyped_decorators = true
+disallow_untyped_defs = true
+no_implicit_reexport = true
+extra_checks = true
+strict_equality = true
+warn_return_any = true
+
+[[tool.mypy.overrides]]
+module = [
+    "tests.conftest",
+    "tests.git_repo_mock",
+    "tests.gitlab_api_mock",
+    "tests.test_app",
+    "tests.test_approvals",
+    "tests.test_batch_job",
+    "tests.test_commit",
+    "tests.test_git",
+    "tests.test_gitlab",
+    "tests.test_interval",
+    "tests.test_job",
+    "tests.test_merge_request",
+    "tests.test_pipeline",
+    "tests.test_project",
+    "tests.test_single_job",
+    "tests.test_store",
+    "tests.test_user",
+]
+ignore_errors = true
