@@ -1,0 +1,4 @@
+include NChess/core/*.pyd
+include NChess/core/*.so
+
+include-external NChess/core/
