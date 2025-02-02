@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/nptorch/__init__.py
+src/nptorch/core.py
+src/nptorch/optim.py
+src/nptorch.egg-info/PKG-INFO
+src/nptorch.egg-info/SOURCES.txt
+src/nptorch.egg-info/dependency_links.txt
+src/nptorch.egg-info/requires.txt
+src/nptorch.egg-info/top_level.txt
+src/nptorch/nn/__init__.py
+src/nptorch/nn/functional.py
+src/nptorch/nn/functional_classes.py
+src/nptorch/nn/nn_core.py
