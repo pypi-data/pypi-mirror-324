@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+RestRouterOS/__init__.py
+RestRouterOS/api.py
+RestRouterOS/RestAdapter/__init__.py
+RestRouterOS/RestAdapter/adapter.py
+Rest_RouterOS.egg-info/PKG-INFO
+Rest_RouterOS.egg-info/SOURCES.txt
+Rest_RouterOS.egg-info/dependency_links.txt
+Rest_RouterOS.egg-info/top_level.txt
+tests/test_RestRouterOS.py
