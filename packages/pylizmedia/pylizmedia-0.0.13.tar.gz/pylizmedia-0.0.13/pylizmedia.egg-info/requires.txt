@@ -1,0 +1,8 @@
+opencv-python
+ffmpeg-python
+numpy
+sd_parsers
+pylizlib
+loguru
+pydantic
+pillow
