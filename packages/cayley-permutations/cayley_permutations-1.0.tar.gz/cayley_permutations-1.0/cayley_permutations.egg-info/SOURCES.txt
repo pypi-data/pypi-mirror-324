@@ -1,0 +1,9 @@
+setup.py
+cayley_permutations/__init__.py
+cayley_permutations/av.py
+cayley_permutations/cayley.py
+cayley_permutations.egg-info/PKG-INFO
+cayley_permutations.egg-info/SOURCES.txt
+cayley_permutations.egg-info/dependency_links.txt
+cayley_permutations.egg-info/requires.txt
+cayley_permutations.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+Metadata-Version: 2.2
+Name: cayley_permutations
+Version: 1.0
+Summary: A useful module
+Requires-Dist: itertools
+Requires-Dist: typing
+Dynamic: requires-dist
+Dynamic: summary
