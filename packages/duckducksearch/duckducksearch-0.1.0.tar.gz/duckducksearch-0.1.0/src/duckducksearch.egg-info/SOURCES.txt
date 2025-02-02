@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/duckducksearch/__init__.py
+src/duckducksearch/duckducksearch.py
+src/duckducksearch.egg-info/PKG-INFO
+src/duckducksearch.egg-info/SOURCES.txt
+src/duckducksearch.egg-info/dependency_links.txt
+src/duckducksearch.egg-info/requires.txt
+src/duckducksearch.egg-info/top_level.txt
