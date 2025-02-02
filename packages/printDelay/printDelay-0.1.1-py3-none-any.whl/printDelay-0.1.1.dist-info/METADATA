@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: printDelay
+Version: 0.1.1
+Summary: A Python package for printing text with a delay effect.
+Home-page: https://github.com/Thiranium/printDelay
+Author: Mushfiq Shaikh
+Author-email: mushfiqshaikh2@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# printDelay
+
+A simple Python package created for a project used for printing text with a delay effect.
+
+## Installation
+
+pip install printDelay
+
+## Usage
+'''
+from printDelay import printf, printl
+
+printf("Hello, world!", 0.05)
+printl("This is a typing effect!", 0.05)
+'''
