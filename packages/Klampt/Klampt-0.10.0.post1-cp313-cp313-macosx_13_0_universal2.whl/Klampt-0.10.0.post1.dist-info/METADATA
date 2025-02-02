@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: Klampt
+Version: 0.10.0.post1
+Home-page: https://github.com/krishauser/Klampt
+Author: Kris Hauser
+Author-email: hauser.kris@gmail.com
+Requires-Dist: numpy
+Provides-Extra: gui
+Requires-Dist: PyOpenGL; extra == "gui"
+Requires-Dist: PyQt6; extra == "gui"
+Requires-Dist: pyqtgraph; extra == "gui"
+Requires-Dist: pillow; extra == "gui"
+Requires-Dist: imageio; extra == "gui"
+Requires-Dist: imageio-ffmpeg; extra == "gui"
+Requires-Dist: psutil; extra == "gui"
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
