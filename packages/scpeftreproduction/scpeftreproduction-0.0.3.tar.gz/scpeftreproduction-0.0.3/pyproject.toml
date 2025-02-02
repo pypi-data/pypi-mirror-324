@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "scpeftreproduction"
+version = "0.0.3"
+description = "Parameter-Efficient Fine-Tuning Enhances Adaptation of Single Cell Large Language Model."
+license = "MIT"
+authors = ["Fei He"]
+repository = "https://github.com/BeacherKim/scPEFT_reproduction"
+homepage = "https://github.com/BeacherKim/scPEFT_reproduction"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.7.12,<3.11"
+torch = ">=1.13.0"
+torchtext = "*"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+tensorflow = "^2.8.0"
+flash-attn = "^1.0.1"
+torch-geometric = "^2.3.0"
+dcor = "~0.5.3"
+plotly = "^5.3.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
