@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+kokoro/__init__.py
+kokoro/istftnet.py
+kokoro/model.py
+kokoro/modules.py
+kokoro/pipeline.py
+kokoro.egg-info/PKG-INFO
+kokoro.egg-info/SOURCES.txt
+kokoro.egg-info/dependency_links.txt
+kokoro.egg-info/requires.txt
+kokoro.egg-info/top_level.txt
