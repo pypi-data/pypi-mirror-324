@@ -1,0 +1,7 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ner_model.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ArabSEA-0.1.0.dist-info/METADATA,sha256=3Av41emJ1q2R6aWMFXed4mB7rx8zp6b-JmNo1MJDLws,992
+ArabSEA-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ArabSEA-0.1.0.dist-info/entry_points.txt,sha256=a0Mgw7llN1gy4MWUAxAFYKqYBZL923Ch-vUTVTO2rKQ,50
+ArabSEA-0.1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+ArabSEA-0.1.0.dist-info/RECORD,,
