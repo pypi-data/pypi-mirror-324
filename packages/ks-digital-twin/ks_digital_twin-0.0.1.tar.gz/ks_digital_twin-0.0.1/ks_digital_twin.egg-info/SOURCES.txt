@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+ks_digital_twin/__init__.py
+ks_digital_twin/py.typed
+ks_digital_twin.egg-info/PKG-INFO
+ks_digital_twin.egg-info/SOURCES.txt
+ks_digital_twin.egg-info/dependency_links.txt
+ks_digital_twin.egg-info/requires.txt
+ks_digital_twin.egg-info/top_level.txt
+tests/test_dummy.py

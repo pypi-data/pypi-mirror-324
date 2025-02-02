@@ -1,0 +1,68 @@
+Metadata-Version: 2.2
+Name: ks_digital_twin
+Version: 0.0.1
+Summary: The digital_twin project
+Home-page: https://github.com/kscalelabs/digital-twin
+Author: Benjamin Bolte
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: colorlogging
+Requires-Dist: kscale
+Requires-Dist: pykos
+Requires-Dist: pynput
+Requires-Dist: numpy
+Provides-Extra: dev
+Requires-Dist: black; extra == "dev"
+Requires-Dist: darglint; extra == "dev"
+Requires-Dist: mypy; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Digital Twin
+
+This repository helps you easily create a digital twin of your robot.
+
+## Getting Started
+
+First, you need to authenticate with the kscale api by running
+```
+pip install kscale
+kscale user key
+```
+
+To list all the robots you can use as puppets, run
+```
+kscale robots list
+```
+
+## Digital Twin Structure
+
+### Puppets
+
+These are your digital twin robots. They receive actions from the actors and mirror their behavior. Currently, we support the following puppet types:
+
+- [Mujoco](digital_twin/puppet/mujoco.py)
+- [PyBullet](digital_twin/puppet/pybullet.py)
+
+### Actors
+
+These are the sources of actions for your puppet robots. Essentially your input sources. Currently, we support the following actor types:
+
+- [Keyboard](digital_twin/actor/keyboard.py)
+- [Sinusoid](digital_twin/actor/sinusoid.py)
+- [PyKOS](digital_twin/actor/pykos.py)
+    - gRPC client for KOS-compatible robots
+
+## Examples
+
+See the [examples](examples) directory for a few examples.
+
