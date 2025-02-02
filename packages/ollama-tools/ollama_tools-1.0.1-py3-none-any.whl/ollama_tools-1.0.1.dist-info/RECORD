@@ -1,0 +1,9 @@
+ollama_tools/__init__.py,sha256=AUsOUpFt7ZDfwVNTrFsjsUBDCBviwaU-yVG4qT3IAOU,66
+ollama_tools/core.py,sha256=1EfFBM4pGEJa2KgrJSZmosR2YHkMKYZ7EjwpBBp6TD4,3081
+ollama_tools/server.py,sha256=PFssw3TW8w0cIr9LdRmXACwlBfLYfUYzxODNRVM9dW8,4614
+ollama_tools-1.0.1.dist-info/LICENSE,sha256=0iGfShfblp2wHb_qpZLkZIepH12FitU-urnfBuXy1AQ,1065
+ollama_tools-1.0.1.dist-info/METADATA,sha256=Pi40dpAeCZNwdGc0ksadr0y9cedeNqeoyWBlG_k6M-8,7447
+ollama_tools-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ollama_tools-1.0.1.dist-info/entry_points.txt,sha256=51NPBTqiI_q1q7pgSCOc7Z5AMVvkK167vi5EXA5OwKU,58
+ollama_tools-1.0.1.dist-info/top_level.txt,sha256=o2BDcPVs7_ZrBtTgviQ94jdef_XZoKXA1JYzlse5-IE,13
+ollama_tools-1.0.1.dist-info/RECORD,,
