@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dj_obj
+Version: 1.0.1
+Home-page: https://github.com/lum0vi/new_library
+Author: SODT
+Author-email: svsharygin@icloud.com
+Project-URL: Documentation, https://github.com/lum0vi/new_library
+Keywords: example python
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# new_library
