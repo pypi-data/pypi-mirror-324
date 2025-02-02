@@ -1,0 +1,2 @@
+[console_scripts]
+krakenings-discord-bot = krakenings_discord_bot.cli:main
