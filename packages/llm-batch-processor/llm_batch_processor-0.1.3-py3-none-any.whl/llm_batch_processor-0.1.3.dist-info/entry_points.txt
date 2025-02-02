@@ -1,0 +1,2 @@
+[console_scripts]
+llm-process = scripts.main:main
