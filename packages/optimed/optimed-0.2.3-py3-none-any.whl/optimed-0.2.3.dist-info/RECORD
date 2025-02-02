@@ -1,0 +1,14 @@
+documents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimed/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimed/wrappers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimed/wrappers/calculations.py,sha256=usqF7eea1R3VPjYXOfVz32TAo2hqxNZs6eg2GqNnNSs,8218
+optimed/wrappers/nifti.py,sha256=DjqQiFA1fETRa0twClqSPiz1SWzgWAbwwiNjYfKqgZ0,31057
+optimed/wrappers/operations.py,sha256=c5aPVqDoU-_JKQJLBl9EaovLIpbz-MvDVlphRhK6whU,11312
+tests/test_calculations_utils.py,sha256=QiDQA1fQIILbjuxUNULPK5idjPaw0jVLCT-qPXf2Rmw,10828
+tests/test_nifti_utils.py,sha256=XZXvgRsmYCpv-HBXvBl1YWnl2_lBp9BL4tT62RN224E,7651
+tests/test_operation_utils.py,sha256=DvwJTsfkmiNC4TEQKNzOh5ftf6JwMoi3M_y6IOXmqO8,5719
+optimed-0.2.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+optimed-0.2.3.dist-info/METADATA,sha256=NdlF4AYfmwU4qiFMnnN_5VWUlQraB3Bw2imRMmNcCq8,2561
+optimed-0.2.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+optimed-0.2.3.dist-info/top_level.txt,sha256=-2oPQBxXP4m2a3osKnU1wnJnPQ5mboohKqtX0a0STTM,24
+optimed-0.2.3.dist-info/RECORD,,
