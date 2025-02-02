@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: mgrsconv
+Version: 0.0.3
+Summary: Package for dealing with MGRS coordinates in Python
+Project-URL: Homepage, https://github.com/nousernamesavailabel/MGRSConv
+Project-URL: Issues, https://github.com/nousernamesavailabel/MGRSConv/issues
+Author-email: Jared Polack <jaredpolack@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Python code for converting between decimal degrees and MGRS. 
+
+Functions:
+  DD2MGRS: Decimal Degrees to MGRS
+  MGRS2DD: MGRS to Decimal Degrees
+
+Planning for next version to include DMS coordinates. 
