@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: streamlit-tree-selector
+Version: 1.0.0
+Summary: A simple and elegant checkbox tree for Streamlit.
+Home-page: https://github.com/BlueGob/streamlit_tree_select
+Author: BlueGob
+Author-email: 
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+License-File: LICENSE
+Requires-Dist: streamlit>=0.63
+Dynamic: author
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
