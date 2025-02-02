@@ -1,0 +1,6 @@
+pyrogram
+tqdm
+colorama
+mutagen
+requests
+TgCrypto
