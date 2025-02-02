@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: MattThePerson-CustomLibs
+Version: 0.0.1
+Summary: A collection of custom libraries for my personal use.
+Project-URL: Homepage, https://github.com/MattThePerson/MyCustomPythonLibraries
+Project-URL: Changelog, https://github.com/MattThePerson/MyCustomPythonLibraries/blob/main/CHANGELOG.md
+Author-email: Matt Stirling <stirlingmattmarkus@gmail.com>
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: nudenet>=3.0.8
+Requires-Dist: numpy>=1.26.4
+Requires-Dist: opencv-python>=4.9.0.80
+Requires-Dist: parse>=1.20.1
+Requires-Dist: pillow>=11.1.0
+Description-Content-Type: text/markdown
+
+# Custom Libraries - MattThePerson
+
+A collection of custom libraries that I use in many of my Python projects!
+
+## Libraries
+- **my_utilities:** 
+- **media_generator:** 
+- **video_analyser:** 
