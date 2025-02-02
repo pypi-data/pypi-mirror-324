@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: openreason
+Version: 0.0.1a1
+Summary: OpenReason is a Python framework to build reasoning agents with O1/O3 and R1.
+Author: Genmo
+Author-email: Genmo <hi@genmo.ai>
+License: MIT License
+        
+        Copyright (c) $(date +%Y) Your Name
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy...
+        
+Project-URL: Homepage, https://openreason.ai
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# openreason
+
+This is a dummy package to temporarily reserve the openreason name on PyPI.
+Version: 0.0.1a1
