@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/reverse_patch/__init__.py
+src/reverse_patch/patch_logger.py
+src/reverse_patch/reverse_patch_itself.py
+src/reverse_patch/reverse_patch_utils.py
+src/reverse_patch/testing_fixtures.py
+src/reverse_patch.egg-info/PKG-INFO
+src/reverse_patch.egg-info/SOURCES.txt
+src/reverse_patch.egg-info/dependency_links.txt
+src/reverse_patch.egg-info/requires.txt
+src/reverse_patch.egg-info/top_level.txt
