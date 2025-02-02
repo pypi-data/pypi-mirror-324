@@ -1,0 +1,1 @@
+from .printDelay import printf, printl
