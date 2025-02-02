@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: nse-greeks-calculator
+Version: 1.0.0
+Summary: A package for calculating option Greeks for NSE instruments
+Author: Lekshmi
+Requires-Python: >=3.7
+Requires-Dist: nsepython
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: scipy
+
