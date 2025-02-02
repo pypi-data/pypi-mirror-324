@@ -1,0 +1,64 @@
+Metadata-Version: 2.4
+Name: panel-of-agents
+Version: 0.0.1
+Summary: A framework for orchestrating multiple AI agents in collaborative discussions and tasks
+Project-URL: Homepage, https://github.com/LighthouseAI-saas/PanelOfAgents
+Project-URL: Repository, https://github.com/LighthouseAI-saas/PanelOfAgents
+Author-email: Mohammed Ali <splitwireml@gmail.com>
+Maintainer-email: Mohammed Ali <splitwireml@gmail.com>
+License-Expression: AGPL-3.0
+License-File: LICENSE
+Keywords: agents,ai,automation,llms
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Requires-Dist: langchain-core>=0.3.28
+Requires-Dist: langchain>=0.3.13
+Requires-Dist: langsmith>=0.2.6
+Requires-Dist: pydantic-core>=2.23.4
+Requires-Dist: pydantic>=2.9.2
+Description-Content-Type: text/markdown
+
+# PanelOfAgents
+
+A flexible and powerful framework for orchestrating multiple AI agents in domain-specific applications, with support for any LLM backend.
+
+## Introduction
+
+This framework enables seamless orchestration of multiple AI agents for domain-specific applications. Inspired by OpenAI's swarm framework but addressing its limitations, our solution offers greater flexibility in agent interactions without being tied to specific LLM implementations.
+
+### Purpose
+
+- Create a simple yet powerful multi-agent orchestration framework
+- Enable flexible task handoffs between agents in single-domain applications
+- Provide a production-ready alternative to experimental frameworks
+- Support integration with various LLM implementations
+
+### Why This Framework?
+
+Unlike OpenAI's swarm framework, which is limited to GPT models and requires predefined handoffs, this framework offers:
+- Model-agnostic implementation
+- Dynamic agent interactions
+- Production-ready architecture
+- Flexible integration options
+
+## Features
+
+- **🚀 Flexible Multi-agent Orchestration** - Dynamic task distribution and collaboration between agents
+- **⚡️ Real-time Communication** - Token-by-token streaming with minimal latency
+- **🔄 Rich Context Sharing** - Comprehensive context including conversation history, action results, and artifacts
+- **🔌 Universal LLM Support** - Compatible with any LangChain BaseChatModel implementation
+- **🎯 Targeted Agent Usage** - Smart agent selection based on capabilities rather than predefined rules
+- **⚙️ Developer-First Design** - Flexible state management and easy service integration
