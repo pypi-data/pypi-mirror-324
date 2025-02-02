@@ -1,0 +1,57 @@
+name: Release and Publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    permissions:
+      id-token: write
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      # Устанавливаем Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # Устанавливаем Node.js (для semantic-release)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
+      # Устанавливаем зависимости для semantic-release
+      - name: Install semantic-release dependencies
+        run: |
+          npm install --save-dev semantic-release @semantic-release/commit-analyzer @semantic-release/release-notes-generator @semantic-release/changelog @semantic-release/github @semantic-release/git
+
+      - name: Install npm dependencies
+        run: npm install
+
+      # Запускаем semantic-release, который на основе правил (и, при необходимости, создания Git-тега) публикует релиз в GitHub.
+      - name: Run semantic-release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release || echo "No new release created"
+
+      # Построение дистрибутивов Python пакета
+      - name: Build release distributions
+        run: |
+          python -m pip install --upgrade pip build
+          python -m build
+
+      # Публикация дистрибутивов в PyPI
+      - name: Publish release distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist/
+        env:
+          TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+          TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}

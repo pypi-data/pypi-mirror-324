@@ -1,0 +1,27 @@
+[build-system]
+requires = [
+  "setuptools>=42",
+  "wheel",
+  "setuptools_scm"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wqkwkwkkwddkowr4"
+dynamic = ["version"]
+description = "My sample package1"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Your Name", email = "you@example.com" }
+]
+dependencies = [
+  # зависимости, например: "requests>=2.0.0"
+]
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "dirty-tag"
+
+[tool.setuptools.packages.find]
+exclude = ["node_modules", "node_modules/*"]
