@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+setup.py
+test/test_package.py
+wangfusamplepackage/src/wangfusamplepackage.egg-info/PKG-INFO
+wangfusamplepackage/src/wangfusamplepackage.egg-info/SOURCES.txt
+wangfusamplepackage/src/wangfusamplepackage.egg-info/dependency_links.txt
+wangfusamplepackage/src/wangfusamplepackage.egg-info/entry_points.txt
+wangfusamplepackage/src/wangfusamplepackage.egg-info/top_level.txt
+wangfusamplepackage/src/wangfusamplepackage.py
+wangfusamplepackage/src/wangfusamplepackage.egg-info/SOURCES.txt
