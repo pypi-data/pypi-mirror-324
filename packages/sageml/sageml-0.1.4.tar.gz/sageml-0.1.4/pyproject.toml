@@ -1,0 +1,33 @@
+[tool.poetry]
+[project]
+name = "sageml"
+version = "0.1.4"
+description = ""
+authors = [
+    {name = "Dawid64",email = "dawid.siera@gmail.com"},
+    {name = "Tole-k", email = "Anatol Kaczmarek <anatol.kaczmarek@gmail.com>"}
+]
+license = {text = "LICENSE"}
+readme = "README.md"
+# requires-python = "3.12"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.0.0"
+pandas = "^2.0.3"
+scikit-learn = "^1.0.0"
+optuna = "^2.9.1"
+torch = "^2.0.0"
+xgboost = "^2.0.0"
+certifi = "^2021.5.30"
+requests = "^2.26.0"
+
+# [tool.poetry.dev-dependencies]
+# pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project.scripts]
+sage_ml = "sageml.__main__:main"
