@@ -1,0 +1,3 @@
+[console_scripts]
+gptapply = gptdiff.gptdiffapply:main
+gptdiff = gptdiff.gptdiff:main
