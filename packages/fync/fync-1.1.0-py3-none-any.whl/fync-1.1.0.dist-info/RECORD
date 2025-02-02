@@ -1,0 +1,8 @@
+fync/__init__.py,sha256=fN83pheqoJcbOOOs3JyuLO6BEG5BQk_LzEwo4NaLjL8,64
+fync/fync.py,sha256=5YGHX6BGDOzI28Y8BnyKtNrEG-KwWm7yApKvJCP4FZA,9316
+fync/get.py,sha256=kAakOrSKmxJzDaNtYe_5kmAQVXCNyrtZ1YDixc7kqYg,3923
+fync-1.1.0.dist-info/LICENSE,sha256=YrDe_CNv65wnGFTviYOnzspgDYRECIdOrq_M2x-iN0k,1065
+fync-1.1.0.dist-info/METADATA,sha256=BXJbiRdNi-Oev2Zqgu7F_q-Q7bBwkl8afAXLNVABoCY,1376
+fync-1.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+fync-1.1.0.dist-info/entry_points.txt,sha256=zWyD5ARTXoX-jsupzv2FqXpe0aAAb7nsYGefP1zTpKw,60
+fync-1.1.0.dist-info/RECORD,,
