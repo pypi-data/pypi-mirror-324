@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+ezmem/Memory_main.py
+ezmem/Prompt.py
+ezmem/__init__.py
+ezmem/deepseek.py
+ezmem.egg-info/PKG-INFO
+ezmem.egg-info/SOURCES.txt
+ezmem.egg-info/dependency_links.txt
+ezmem.egg-info/requires.txt
+ezmem.egg-info/top_level.txt
