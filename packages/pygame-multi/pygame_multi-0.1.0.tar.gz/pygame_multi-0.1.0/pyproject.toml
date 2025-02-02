@@ -1,0 +1,17 @@
+[project]
+name = "pygame-multi"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rashoo18", email = "hazem.rasheed.hr0@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+pygame-multi = "pygame_multi:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
