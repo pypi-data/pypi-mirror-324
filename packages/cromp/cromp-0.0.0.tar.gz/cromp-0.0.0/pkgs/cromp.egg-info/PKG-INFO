@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cromp
+Version: 0.0.0
+Summary: The official implementation of CROMP (Constrained Regression with Ordered and Margin-sensitive Parameters)
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: test
+License-File: LICENSE.txt
+
+UNKNOWN
+
