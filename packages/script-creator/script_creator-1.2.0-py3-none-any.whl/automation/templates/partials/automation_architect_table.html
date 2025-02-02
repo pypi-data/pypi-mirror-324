@@ -1,0 +1,25 @@
+<div id="automation-list" style="min-width: 500px;">
+    {% for item in automation_acrchitect_script %}
+        <div class="item" id="item-{{ forloop.counter }}">
+            {% if item.type == 'script' %}
+                <div class="card">
+                    <h5>Script: {{ item.test_name }}</h5>
+                    <p>Version ID: {{ item.version_id }}</p>
+            <button 
+                class="btn btn-secondary" 
+                hx-get="/load_script_variables/{{ item.id }}/" 
+                hx-target="#automationVariableTableModal .modal-body" 
+                hx-trigger="click" 
+                data-bs-toggle="modal" 
+                data-bs-target="#automationVariableTableModal">
+                Show Variables
+            </button>
+                </div>
+            {% elif item.type == 'delay' %}
+                <div class="card" style="margin: 15px">
+                    <p>Delay: {{ item.delay }} seconds</p>
+                </div>
+            {% endif %}
+        </div>
+    {% endfor %}
+</div>

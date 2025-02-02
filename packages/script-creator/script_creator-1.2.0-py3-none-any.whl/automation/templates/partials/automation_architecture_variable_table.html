@@ -1,0 +1,45 @@
+<div class="modal fade" id="automationVariableTableModal" tabindex="-1" aria-labelledby="automationVariableTableModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="automationVariableTableModalLabel">Automation Architect - Variables</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                {% if variables %}
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Variable Name</th>
+                                <th>Data Type</th>
+                                <th>Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for variable in variables %}
+                                <tr>
+                                    <td>{{ variable.name }}</td>
+                                    <td>
+                                        <select class="form-select" name="data_type" hx-post="{% url 'update_session_variable' script_id=script_id variable_name=variable.name %}" hx-vals='{"data_type": this.value}' hx-trigger="change" hx-target="this">
+                                            <option value="String" {% if variable.data_type == "String" %}selected{% endif %}>String</option>
+                                            <option value="Integer" {% if variable.data_type == "Integer" %}selected{% endif %}>Integer</option>
+                                            <option value="Boolean" {% if variable.data_type == "Boolean" %}selected{% endif %}>Boolean</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control" name="value" value="{{ variable.value }}" hx-post="{% url 'update_session_variable' script_id=script_id variable_name=variable.name %}" hx-vals='{"value": this.value}' hx-trigger="change" hx-target="this">
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <p>No variables available for this script.</p>
+                {% endif %}
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

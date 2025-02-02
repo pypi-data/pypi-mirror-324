@@ -1,0 +1,9 @@
+<div class="form-group">
+    <label for="id_parameters">Parameters</label>
+    <select name="parameters" id="id_parameters" class="form-control select2  hidden-select">
+        <option value="">Select Parameter</option>
+        {% for param in parameters %}
+            <option value="{{ param.id }}">{{ param.name }}</option>
+        {% endfor %}
+    </select>
+</div>

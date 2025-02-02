@@ -1,0 +1,8 @@
+<form method="post" id="delay-form" hx-post="{% url 'automation_architect_add_delay' %}" hx-target="#automation-list" hx-swap="outerHTML">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="delay-input">Delay (in seconds):</label>
+        <input type="number" class="form-control" id="delay-input" name="delay" min="0" placeholder="Enter delay in seconds" required>
+    </div>
+    <button id="action-button" type="submit" class="btn bg-gradient-primary btn-lg">Add Step</button>
+</form>

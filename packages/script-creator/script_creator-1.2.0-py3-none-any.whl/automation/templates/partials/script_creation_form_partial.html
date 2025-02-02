@@ -1,0 +1,555 @@
+<!-- form_partial.html -->
+
+{% load custom_filters %}
+{% load static %}
+<form method="POST" id="script-form" style="overflow-x: hidden">
+    {% csrf_token %}
+    {#        <div class="row">#}
+    <h3>Test Creation</h3>
+    <div class="card-group" style="padding: 10px 20px;">
+        <div class="card"
+             style="margin-left: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;box-shadow: 0 20px 27px 0 rgb(0 0 0 / 13%);">
+
+            <div class="card-body   pt-2">
+
+                <h3>Command</h3>
+                
+                <div id="environment-container" hx-get="{% url 'get_environments' %}" hx-trigger="load"
+                     hx-target="#environment-container" hx-swap="innerHTML">
+                    <!-- Placeholder for loading environments dynamically -->
+                </div>
+                <!-- Command Field -->
+                <div>
+                    <label for="{{ form.command.id_for_label }}">{{ form.command.label }}</label>
+                    {{ form.command|add_class:"form-control" }}
+                    {{ form.command.errors }}
+                </div>
+
+                <!-- Sub Command Field -->
+                <div>
+                    <label for="{{ form.sub_command.id_for_label }}">{{ form.sub_command.label }}</label>
+                    {{ form.sub_command|add_class:"form-control" }}
+                    {{ form.sub_command.errors }}
+                </div>
+
+                <div>
+                    <label for="{{ form.transmition_line.id_for_label }}">{{ form.transmition_line.label }}</label>
+                    {{ form.transmition_line|add_class:"form-control" }}
+                    {{ form.transmition_line.errors }}
+                </div>
+                <!-- Component Field -->
+
+                <div id="component-container">
+                    {% include 'partials/script_creation_component_select.html' with components=None %}
+                </div>
+
+                <!-- Packet Dropdown Container -->
+                <div id="packet-container">
+                    {% include 'partials/script_creation_packet_select.html' with packets=None %}
+                </div>
+
+            </div>
+        </div>
+        {#            </div>#}
+        {#            <div class="col">#}
+        <div class="card"
+             style="margin-left: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;box-shadow: 0 20px 27px 0 rgb(0 0 0 / 13%);">
+            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                <h3>Value </h3>
+            </div>
+            <div class="card-body pt-2">
+
+                <div id="parameter-container">
+                    {% include 'partials/script_creation_parameter_select.html' with parameters=None %}
+                </div>
+
+
+                <!-- Operator Field -->
+                <div>
+                    <label for="{{ form.operator.id_for_label }}">{{ form.operator.label }}</label>
+                    {{ form.operator|add_class:"form-control" }}
+                    {{ form.operator.errors }}
+                </div>
+
+                <!-- Value Manipulation Field -->
+                <div>
+                    <label for="{{ form.value_manipulation.id_for_label }}">{{ form.value_manipulation.label }}</label>
+                    {{ form.value_manipulation|add_class:"form-control" }}
+                    {{ form.value_manipulation.errors }}
+                </div>
+                <br>
+                <hr class="horizontal dark mt-0">
+                <!-- Fixed Value Field -->
+                <div>
+                    <label for="{{ form.fixed_value.id_for_label }}">{{ form.fixed_value.label }}</label>
+                    {{ form.fixed_value|add_class:"form-control" }}
+                    {{ form.fixed_value.errors }}
+                </div>
+
+                <!-- Min Value Field -->
+                <div>
+                    <label for="{{ form.min_value.id_for_label }}">{{ form.min_value.label }}</label>
+                    {{ form.min_value|add_class:"form-control" }}
+                    {{ form.min_value.errors }}
+                </div>
+
+                <!-- Max Value Field -->
+                <div>
+                    <label for="{{ form.max_value.id_for_label }}">{{ form.max_value.label }}</label>
+                    {{ form.max_value|add_class:"form-control" }}
+                    {{ form.max_value.errors }}
+                </div>
+
+                <!-- Resolution Type Field -->
+                <div>
+                    <label for="{{ form.resolution.id_for_label }}">{{ form.resolution.label }}</label>
+                    {{ form.resolution|add_class:"form-control" }}
+                    {{ form.resolution.errors }}
+                </div>
+
+                <!-- Resolution Value Field -->
+                <div>
+                    <label for="{{ form.resolution_value.id_for_label }}">{{ form.resolution_value.label }}</label>
+                    {{ form.resolution_value|add_class:"form-control" }}
+                    {{ form.resolution_value.errors }}
+                </div>
+
+                <!-- Enum Value Field -->
+                <div>
+                    <label for="{{ form.enum_value.id_for_label }}">{{ form.enum_value.label }}</label>
+                    {{ form.enum_value|add_class:"form-control" }}
+                    {{ form.enum_value.errors }}
+                </div>
+                <div>
+                    <label for="{{ form.table_parameters.id_for_label }}">{{ form.table_parameters.label }}</label>
+                    {{ form.table_parameters|add_class:"form-control" }}
+                    {{ form.table_parameters.errors }}
+                </div>
+
+            </div>
+        </div>
+        {#            </div>#}
+        {#            <div class="col">#}
+
+        {#            </div>#}
+        {#            <div class="col">#}
+        <div class="card"
+             style="margin-left: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;box-shadow: 0 20px 27px 0 rgb(0 0 0 / 13%);">
+            <div class="card-header p-0 mx-3 mt-3 position-relative z-index-1">
+                <h3>Value options</h3>
+            </div>
+                <p>pattern to reach value </p>
+            <div class="card-body pt-2 ">
+
+                <div>
+                    <label for="{{ form.value_tolerance.id_for_label }}">{{ form.value_tolerance.label }}</label>
+                    {{ form.value_tolerance|add_class:"form-control" }}
+                    {{ form.value_tolerance.errors }}
+                </div>
+
+                <!-- Value Tolerance Value Field -->
+                <div>
+                    <label for="{{ form.value_tolerance_value.id_for_label }}">{{ form.value_tolerance_value.label }}</label>
+                    {{ form.value_tolerance_value|add_class:"form-control" }}
+                    {{ form.value_tolerance_value.errors }}
+                </div>
+
+                <!-- Time Tolerance Field -->
+                <div>
+                    <label for="{{ form.time_tolerance.id_for_label }}">{{ form.time_tolerance.label }}</label>
+                    {{ form.time_tolerance|add_class:"form-control" }}
+                    {{ form.time_tolerance.errors }}
+                </div>
+
+                <!-- Time Tolerance Value Field -->
+                <div>
+                    <label for="{{ form.time_tolerance_value.id_for_label }}">{{ form.time_tolerance_value.label }}</label>
+                    {{ form.time_tolerance_value|add_class:"form-control" }}
+                    {{ form.time_tolerance_value.errors }}
+                </div>
+
+
+            </div>
+        </div>
+        <div class="card"
+             style="margin-left: 20px; border-top-left-radius: 20px; border-bottom-left-radius: 20px;border-bottom-right-radius: 0rem;border-top-right-radius: 0rem;box-shadow: 0 20px 27px 0 rgb(0 0 0 / 13%);">
+            <div class="card-body pt-2">
+                <h3>Timing & Erros</h3>
+                <div>
+                    <label for="{{ form.at_time.id_for_label }}">{{ form.at_time.label }}</label>
+                    {{ form.at_time|add_class:"form-control" }}
+                    {{ form.at_time.errors }}
+                </div>
+
+                <!-- Delay Field -->
+                <div>
+                    <label for="{{ form.delay.id_for_label }}">{{ form.delay.label }}</label>
+                    {{ form.delay|add_class:"form-control" }}
+                    {{ form.delay.errors }}
+                </div>
+                <br>
+                <hr class="horizontal dark mt-0">
+                <h4>Frame Errors</h4>
+                <!-- Sync Field -->
+                <div class="form-check form-switch">
+                    <label for="{{ form.sync.id_for_label }}">{{ form.sync.label }}</label>
+                    {{ form.sync|add_class:"form-check-input" }}
+                    {{ form.sync.errors }}
+                </div>
+
+                <!-- Length Plus Field -->
+                <div class="form-check form-switch">
+                    <label for="{{ form.length_plus.id_for_label }}">{{ form.length_plus.label }}</label>
+                    {{ form.length_plus|add_class:"form-check-input" }}
+                    {{ form.length_plus.errors }}
+                </div>
+
+                <!-- Length Minus Field -->
+                <div class="form-check form-switch">
+                    <label for="{{ form.length_minus.id_for_label }}">{{ form.length_minus.label }}</label>
+                    {{ form.length_minus|add_class:"form-check-input" }}
+                    {{ form.length_minus.errors }}
+                </div>
+
+                <!-- Sequence Number Field -->
+                <div class="form-check form-switch">
+                    <label for="{{ form.sequence_number.id_for_label }}">{{ form.sequence_number.label }}</label>
+                    {{ form.sequence_number|add_class:"form-check-input" }}
+                    {{ form.sequence_number.errors }}
+                </div>
+
+                <!-- Checksum Field -->
+                <div class="form-check form-switch">
+                    <label for="{{ form.checksum.id_for_label }}">{{ form.checksum.label }}</label>
+                    {{ form.checksum|add_class:"form-check-input" }}
+                    {{ form.checksum.errors }}
+                </div>                
+                <h4>Script Error</h4>
+                <div>
+                    <label for="{{ form.script_error_behavior.id_for_label }}">{{ form.script_error_behavior.label }}</label>
+                    {{ form.script_error_behavior|add_class:"form-control" }}
+                    {{ form.script_error_behavior.errors }}
+                </div>
+
+                </div>
+            </div>
+        </div>
+        {#            </div>#}
+
+    </div>
+    <br>
+    <div class="row" style="padding:0 20px">
+        <div class="col">
+            <div class="card  card-plain  ">
+                <div class="card-body " style="padding-top: 0px ">
+                    <div class="container">
+                        <div class="accordion" id="accordionRental">
+                            <div class="accordion-item mb-3">
+                                <h5 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button border-bottom font-weight-bold collapsed"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                        Parameter description
+                                        <i class="collapse-close fa fa-plus text-xs pt-1 position-absolute end-0 me-3"
+                                           aria-hidden="true"></i>
+                                        <i class="collapse-open fa fa-minus text-xs pt-1 position-absolute end-0 me-3"
+                                           aria-hidden="true"></i>
+                                    </button>
+                                </h5>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                     aria-labelledby="headingOne" data-bs-parent="#accordionRental" style="">
+                                    <div class="accordion-body text-sm opacity-8">
+                                        Will be added on db connection
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card card-plain">
+                <div class="card-body">
+                    <div>
+                        <label for="{{ form.description.id_for_label }}">
+                            <h4>{{ form.description.label }}</h4></label>
+                        {{ form.description|add_class:"form-control" }}
+                        {{ form.description.errors }}
+                    </div>
+                    <br>
+                    <div class="step-controls">
+                        <div class="right-buttons" style="display: flex; gap: 10px;">
+                            <button name="action" value="save" type="submit"
+                                    class="btn bg-gradient-secondary btn-md">
+                                Save Script
+                            </button>
+                            <button type="button" data-bs-toggle="modal"
+                                    data-bs-target="#Pop_up_parameters_table"
+                                    class="btn parameters-btn bg-gradient-secondary btn-lg">
+                                Parameters table
+                            </button>
+                            <button id="action-button" hx-post="{% url 'create_script' %}"
+                                    hx-target="#script-list"
+                                    hx-replace="outerHTML"
+                                    type="submit" class="btn bg-gradient-primary btn-lg">
+                                Add Step
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<style>
+    #id_description {
+        height: 90px;
+    }
+
+    .btn-lg {
+        margin-left: 10px;
+    }
+</style>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Function to safely destroy Select2
+        function safelyDestroySelect2(element) {
+            try {
+                const $el = $(element);
+                if ($el.data('select2')) {
+                    $el.select2('destroy');
+                }
+            } catch (e) {
+                console.warn('Error destroying Select2:', e);
+            }
+        }
+
+        // Function to initialize Select2
+        function initSelect2(element, isDisabled = false) {
+            safelyDestroySelect2(element);
+            const $element = $(element);
+
+            // Set disabled state
+            $element.prop('disabled', isDisabled);
+
+            $element.select2({
+                placeholder: "Select an option",
+                allowClear: true,
+                width: '100%'
+            }).on('select2:select', function (e) {
+                // Enable next field and disable subsequent fields
+                const select = $(this);
+                const selectedValue = e.params.data.id;
+                const targetId = select.attr('id');
+
+                let url = '';
+                let target = '';
+
+                switch (targetId) {
+                    case 'id_environment':
+                        url = `/htmx/get-components/${selectedValue}/`;
+                        target = '#component-container';
+                        // Enable component, disable others
+                        enableField('id_component');
+                        disableField('id_packet');
+                        disableField('id_parameters');
+                        break;
+                    case 'id_component':
+                        url = `/htmx/get-packets/${selectedValue}/`;
+                        target = '#packet-container';
+                        // Enable packet, disable parameters
+                        enableField('id_packet');
+                        disableField('id_parameters');
+                        break;
+                    case 'id_packet':
+                        url = `/htmx/get-parameters/${selectedValue}/`;
+                        target = '#parameter-container';
+                        // Enable parameters
+                        enableField('id_parameters');
+                        break;
+                }
+
+                if (url && target) {
+                    htmx.ajax('GET', url, {
+                        target: target,
+                        swap: 'innerHTML'
+                    });
+                }
+            }).on('select2:clear', function (e) {
+                // Handle clearing of dependent fields
+                const targetId = $(this).attr('id');
+                switch (targetId) {
+                    case 'id_environment':
+                        resetAndDisableField('component-container');
+                        resetAndDisableField('packet-container');
+                        resetAndDisableField('parameter-container');
+                        break;
+                    case 'id_component':
+                        resetAndDisableField('packet-container');
+                        resetAndDisableField('parameter-container');
+                        break;
+                    case 'id_packet':
+                        resetAndDisableField('parameter-container');
+                        break;
+                }
+            });
+        }
+
+        // Function to enable a field
+        function enableField(fieldId) {
+            const field = document.getElementById(fieldId);
+            if (field) {
+                $(field).prop('disabled', false).trigger('change.select2');
+            }
+        }
+
+        // Function to disable a field
+        function disableField(fieldId) {
+            const field = document.getElementById(fieldId);
+            if (field) {
+                $(field).prop('disabled', true)
+                    .val(null)
+                    .trigger('change.select2');
+            }
+        }
+
+        // Function to reset and disable a field container
+        function resetAndDisableField(containerId) {
+            const container = document.getElementById(containerId);
+            if (container) {
+                const select = container.querySelector('select');
+                if (select) {
+                    safelyDestroySelect2(select);
+                    select.innerHTML = '<option value="">Select an option</option>';
+                    initSelect2(select, true);  // Initialize as disabled
+                }
+            }
+        }
+
+        // Initialize initial state
+        function initializeInitialState() {
+            // Start with environment enabled, others disabled
+            const envSelect = document.getElementById('id_environment');
+            if (envSelect) {
+                initSelect2(envSelect, false);  // Environment starts enabled
+            }
+
+            // Disable all dependent fields initially
+            ['id_component', 'id_packet', 'id_parameters'].forEach(id => {
+                const element = document.getElementById(id);
+                if (element) {
+                    initSelect2(element, true);  // Initialize as disabled
+                }
+            });
+        }
+
+        // Initialize all Select2 instances with proper initial state
+        initializeInitialState();
+
+        // Handle HTMX events
+        document.body.addEventListener('htmx:beforeSwap', function (evt) {
+            if (evt.detail.target) {
+                evt.detail.target.querySelectorAll('.select2').forEach(safelyDestroySelect2);
+            }
+        });
+
+        document.body.addEventListener('htmx:afterSwap', function (evt) {
+            if (evt.detail.target) {
+                evt.detail.target.querySelectorAll('.select2').forEach(function (element) {
+                    // If this is a dependent field and no previous selection exists, initialize as disabled
+                    const shouldBeDisabled = shouldElementBeDisabled(element.id);
+                    initSelect2(element, shouldBeDisabled);
+                });
+            }
+        });
+
+        // Helper function to determine if an element should be disabled based on previous selections
+        function shouldElementBeDisabled(elementId) {
+            switch (elementId) {
+                case 'id_environment':
+                    return false;  // Environment is never disabled
+                case 'id_component':
+                    return !$('#id_environment').val();
+                case 'id_packet':
+                    return !$('#id_component').val();
+                case 'id_parameters':
+                    return !$('#id_packet').val();
+                default:
+                    return true;
+            }
+        }
+    });
+
+
+    // Add this JavaScript to initialize select2 and handle HTMX updates
+    document.addEventListener('DOMContentLoaded', function () {
+        initializeSelect2();
+
+        // Listen for HTMX after swap event
+        document.body.addEventListener('htmx:afterSwap', function (evt) {
+            if (evt.target.id === 'component-select-container' ||
+                evt.target.id === 'packet-select-container' ||
+                evt.target.id === 'parameter-select-container') {
+                // Destroy existing select2 before reinitializing
+                $('.select2-component').select2('destroy');
+                initializeSelect2();
+            }
+        });
+    });
+
+    function initializeSelect2() {
+        $('.select2-component').select2({
+            width: '100%',
+            placeholder: 'Select an option',
+            allowClear: true,
+            templateResult: formatSelect2Option,
+            templateSelection: formatSelect2Option
+        });
+    }
+
+    function formatSelect2Option(option) {
+        if (!option.id) {
+            return option.text;
+        }
+
+        // Get the actual text content from the option
+        var optionText = $(option.element).text().trim();
+        return $('<span>').text(optionText);
+    }
+</script>
+
+<style>
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .select2-selection {
+        height: 38px !important;
+        padding: 5px !important;
+    }
+
+    .select2-container--default .select2-selection--single {
+        border: 1px solid #d2d6da !important;
+        border-radius: 0.5rem !important;
+    }
+
+    /* Style for disabled select2 */
+    .select2-container--default.select2-container--disabled .select2-selection--single {
+        background-color: #e9ecef !important;
+        cursor: not-allowed !important;
+    }
+
+    .htmx-indicator {
+        display: none;
+    }
+
+    .htmx-request .htmx-indicator {
+        display: inline;
+    }
+    .hidden-select {
+    display: none;
+}
+</style>

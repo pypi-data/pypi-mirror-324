@@ -1,0 +1,53 @@
+.color-1 {
+    background-color: #fbddbe;
+}
+
+.color-2 {
+    background-color: #f3d5d5;
+}
+
+.color-3 {
+    background-color: #d8dfed;
+
+}
+.loop-div {
+        max-width: 60px;
+}
+.step{
+    padding: 5px 15px; display: flex; justify-content: space-between; align-items: center;
+}
+#step_contorls_container{
+    padding-left: 10px;margin: 5px 0px 0px 10px;max-width: 110px;margin-left: auto;min-width: 108px; 
+}
+
+.readonly-style {
+    background-color: #f0f0f0;
+}
+
+#step-frame{
+    padding: 7px 10px;
+}
+
+#step-table {
+    display: flex; div:last-child; margin-left: auto;
+}
+#step-id {
+    max-width: 60px; margin: 10px 12px;
+}
+
+.loop-settings {
+    margin: 0 0 0 15px; display: flex; align-items: center; justify-content: flex-start; flex-direction: row;
+}
+
+#loop-settings-form {
+    display: flex;align-items: stretch;flex-direction: row;
+}
+.step_repeat {
+    padding: 5px;width: 50px;margin-left: 2px;
+}
+.loop_repeat{
+    padding: 5px;width: 50px;margin-left: 2px;
+}
+.loop_id {
+    padding: 5px;width: 50px;margin-left: 2px;
+}
