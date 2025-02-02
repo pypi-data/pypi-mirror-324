@@ -1,0 +1,11 @@
+littlefs/lfs.cpython-37m-darwin.so,sha256=ZtjwoRnKVTBbaQtcZLxM27Gle3rN-1kpzcr2Kso5Mgs,446832
+littlefs/__init__.py,sha256=LC6ZBoTWfHlYEu4dUuyYVyjMiunX4vNlt5hybGd1o90,15147
+littlefs/context.py,sha256=VRtEOaHncbwBtXkUz8KwFmw0P8bGfpvowTWc0BrovDQ,5375
+littlefs/errors.py,sha256=r9KV3uoFEL5bHYMKzZNk3TppPzFn5y1mQ0bDPeQowgI,1270
+littlefs/__main__.py,sha256=sXHy6Vcr8Gr7O7fKhNVNf5kPtABmLJLBUyALydY0Dr8,10308
+littlefs_python-0.13.1.dist-info/RECORD,,
+littlefs_python-0.13.1.dist-info/LICENSE,sha256=w9THsH9Q5JPNNctrjI8bbhsTPRz-BRHJkzmYWCGO6UY,1518
+littlefs_python-0.13.1.dist-info/WHEEL,sha256=HS_2vgrXyXO7N4Q-5VnuMAgG-fG_r8eemMgfU9Aw3Kk,110
+littlefs_python-0.13.1.dist-info/entry_points.txt,sha256=mmVZvtJwx-4y5NGjeCkO2BzL5rDEGr10zEqshIDp2Qw,59
+littlefs_python-0.13.1.dist-info/top_level.txt,sha256=ODpjzoOixM9dzTvlv3Fgd78PG_icni-AmzUB6VfdDwU,9
+littlefs_python-0.13.1.dist-info/METADATA,sha256=Pm3bVg1m8JEWvVDFxTQtdRPRkNFqbH6a4DQLEmLiIYA,7217
