@@ -1,0 +1,43 @@
+image: python:latest
+
+stages:
+  - test
+  - deploy
+
+before_script:
+  - apt-get update && apt-get install -y portaudio19-dev
+  - python3 -m pip install --upgrade pip
+
+test:
+  stage: test
+  script:
+    - pip install .
+    - pip install pytest pytest-benchmark
+    - pytest --buffer
+  rules:
+    - when: always
+
+pages:
+  stage: deploy
+  script:
+    - pip install .
+    - pip install mkdocs-material mkdocstrings mkdocstrings-python
+    - mkdocs build --strict --verbose --site-dir public
+  artifacts:
+    paths:
+      - docs/imgs/
+      - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+pypi: 
+    stage: deploy
+    cache: {}
+    script:
+        - pip install build twine
+        - python3 -m build
+        - python3 -m twine upload --verbose --skip-existing dist/*
+    only:
+        - tags
+
+

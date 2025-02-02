@@ -1,0 +1,76 @@
+site_name: asmu
+site_url: https://felhub.gitlab.io/asmu/
+repo_url: https://gitlab.com/felhub/asmu
+nav: 
+  - Overview: ./index.md
+  - Get started: ./getstarted.md
+  - Examples: ./examples.md
+  - Development: ./development.md
+  - API: 
+    - asmu: ./api/asmu.md
+    - asmu.interface: ./api/asmu_interface.md
+    - asmu.generator: ./api/asmu_generator.md
+    - asmu.effect: ./api/asmu_effect.md
+    - asmu.analyzer: ./api/asmu_analyzer.md
+    - asmu.io: ./api/asmu_io.md
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  features:
+    - search.suggest
+    - content.code.copy
+
+plugins:
+- search
+- mkdocstrings:
+    default_handler: python
+    handlers:
+      python:
+        paths: [asmu]
+        options:
+          heading_level: 2
+          show_bases: true
+          show_root_heading: true
+          show_root_toc_entry: true
+          show_root_full_path: true
+          show_root_members_full_path: true
+          show_symbol_type_heading: true
+          show_symbol_type_toc: true
+          docstring_section_style: "list"
+          merge_init_into_class: true
+          inherited_members: false
+          show_source: false
+
+markdown_extensions:
+- def_list
+- admonition
+- footnotes
+- attr_list
+- md_in_html
+- pymdownx.snippets:
+    base_path: ["docs"]
+    restrict_base_path: false
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.details
+- pymdownx.superfences
+- pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+- pymdownx.tabbed:
+      alternate_style: true
