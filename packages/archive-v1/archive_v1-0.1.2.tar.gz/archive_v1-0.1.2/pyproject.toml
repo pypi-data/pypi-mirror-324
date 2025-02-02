@@ -1,0 +1,19 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "archive-v1"
+version = "0.1.2"
+description = "keep clean your file tree during development"
+authors = ["kagemeka <kagemeka1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include="archive.py" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+toml = "0.10.2"
+
+[tool.poetry.scripts]
+archive = "archive:cli"
