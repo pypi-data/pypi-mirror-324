@@ -1,0 +1,16 @@
+computer_use/__init__.py,sha256=Em0Xq6FCTKlaD4V_r9bHv_LMkJRC2eZ1LrtPmfrGMCg,97
+computer_use/loop.py,sha256=UVqqfbMb1yBTFcxyz68yHFDt0_E2mi2kCuFcp0jRNLg,15589
+computer_use/prompt.py,sha256=QkvCxFEO1g2YbTVBLemyeyHXNJQLP_NZ8BeocDiuY0g,2685
+computer_use/server.py,sha256=XYeKN76iKBowA_dOOWsgaT-if2GOXeT7u12qmzp-A3U,9017
+computer_use/tools/__init__.py,sha256=RhazVvDd_zNf6KNhrIvIMhIZI9sZ0Jz_Usu_gnOTW5Y,280
+computer_use/tools/base.py,sha256=qm2RCUrDiMwcKwcFz6CM_RjsmUOqNpkJihOOYavRNEc,1989
+computer_use/tools/bash.py,sha256=0Jl1gxtEIZUnk4N-RGbqgJlzHydmLINSQhtjr1IgET8,4924
+computer_use/tools/collection.py,sha256=R5kxz2uKRxntZt_Aj83u7d6hCWMF_DrCsZVgweXHIaI,901
+computer_use/tools/computer.py,sha256=YTIJRvSHciRWF66PyT3HG1t9ebpbFWcOLpPP0GUocKY,11426
+computer_use/tools/edit.py,sha256=A1-23mfkpPUiTxJzlg5CopHFOhGVIpEeM0mZGPK_GME,11439
+computer_use/tools/run.py,sha256=xhXdnBK1di9muaO44CEirL9hpGy3NmKbjfMpyeVmn8Y,1595
+computer_agent-0.1.0.dist-info/LICENSE,sha256=5ZqTcuMolXYIKbMxffmGyirlhE2vQdBYALjN7ZXLUxw,1039
+computer_agent-0.1.0.dist-info/METADATA,sha256=yej2ZcCRubSFIOJMyBSXpMjQt0iDxJjQokhicGEP2qk,1467
+computer_agent-0.1.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+computer_agent-0.1.0.dist-info/top_level.txt,sha256=LMJk9nhamnKmTRwBsLQSvQXTs0bgEZgqguAmzuQVwsY,13
+computer_agent-0.1.0.dist-info/RECORD,,

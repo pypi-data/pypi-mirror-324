@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: computer-agent
+Version: 0.1.0
+Summary: Giving Agents Computers
+Author: b
+Author-email: bb@fea.st
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: anthropic (>=0.19.0)
+Requires-Dist: jsonschema (==4.22.0)
+Requires-Dist: fastapi (>=0.115.0)
+Requires-Dist: uvicorn (>=0.15.0)
+Requires-Dist: sse-starlette (>=1.0.0)
+
+# AES-Operator Agent backend
+
+## Environment Setup
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# Required environment variables
+export ANTHROPIC_API_KEY=your_key
+export VNC_PASSWORD=secure_password
+export ALLOWED_ORIGINS=http://localhost:3000
+```
+
+## Running the Agent
+```bash
+# Development mode with hot reload
+uvicorn agent.main:app --reload --port 8000
+
+# Production setup
+docker build -t aes-agent .
+docker run \
+    -e ANTHROPIC_API_KEY=$ANTHROPIC_API_KEY \
+    -v $HOME/.anthropic:/home/computeruse/.anthropic \
+    -v $HOME/agent/logs:/home/computeruse/logs \
+    -p 5900:5900 \
+    -p 5000:5000 \
+    -p 6080:6080 \
+    -p 8080:8080 \
+    -p 5001:5001 \
+    -it computer-use-aesop
+```
+
+## API Endpoints
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `/api/agent` | POST | Main agent interaction |
+| `/api/agent/stream` | GET | Event stream for UI |
+| `/vnc` | GET | VNC websocket proxy |
