@@ -1,0 +1,85 @@
+[tool.poetry]
+name = "embs"
+version = "0.1.5"
+description = "Embs is a lightweight Python toolkit for document retrieval, embedding generation, and ranking—ideal for RAG-based AI, chatbots, and search systems with caching support."
+authors = ["Hieu Lam <lamhieu.vk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^8.3.4"
+aiohttp = "^3.8.4"
+pytest-asyncio = "^0.25.2"
+duckduckgo-search = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+include = ["src"]
+ignore = ["**/typings"]
+exclude = [
+    ".*",
+    "__*",
+    "**/typings",
+]
+typeCheckingMode = "basic"
+stubPath = "typings"
+typeshedPath = "typings"
+pythonPlatform = "Linux"
+reportGeneralTypeIssues = false
+reportAssignmentType = false
+reportMissingModuleSource = false
+
+[project]
+license = "MIT"
+keywords = [
+  "embs",
+  "retrieval-augmented-generation",
+  "RAG",
+  "docsifer",
+  "embeddings",
+  "semantic-search",
+  "ranking",
+  "document-processing",
+  "chatbots",
+  "AI-agent",
+  "web-scraping",
+  "knowledge-retrieval",
+  "caching",
+  "lru-cache",
+  "disk-cache",
+  "async",
+  "aiohttp",
+  "duckduckgo",
+  "python-3.10+"
+]
+classifiers = [
+    # Intended audience
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Science/Research",
+
+    # Topics
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Utilities",
+    "Topic :: Information Retrieval",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: System :: Distributed Computing",
+
+    # License
+    "License :: OSI Approved :: MIT License",
+
+    # Supported Python versions
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
