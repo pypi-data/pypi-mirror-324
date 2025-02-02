@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: kbostadium
+Version: 0.2.0
+Summary: Default template for PDM package
+Author-Email: "<jiwon1118>" <<b23386585@gmail.com>>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: typer>=0.15.1
+Requires-Dist: pytest>=8.3.4
+Requires-Dist: jupyterlab>=4.3.5
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+# kbostadium
+
+* Review and Amenities Information Project for All Korean Baseball Team Stadiums
+
+### USE
+```
+$ jupyter lab
+```
+
+### Provided Content
+* Basic Information by Stadium
+* Transportation by Stadium - Directions, Bus/Subway Boarding Locations
+* Food and Amenities by Stadium - Types and Locations of Parking Lots, Restaurants, Convenience Stores, Goods Stores, Restrooms, Nursing Rooms, Gate Locations
+* Seating by Stadium - Characteristics, Views, Prices, Discount Information, Purchase Locations
+* Next Game Recommendations Based on User's Past Visits and Preferences
+
+### DEV
+```bash
+$ git clone ...
+$ pdm venv create
+$ source .venv/bin/activate
+$ pdm install
+$ pytest
+```
