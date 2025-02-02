@@ -1,0 +1,2 @@
+[console_scripts]
+pygame-multi = pygame_multi:main
