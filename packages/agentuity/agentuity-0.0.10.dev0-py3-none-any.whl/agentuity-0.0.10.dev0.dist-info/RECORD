@@ -1,0 +1,17 @@
+agentuity/__init__.py,sha256=dZKU5gartX20NfOrDvYeF5ZaTFsZtttDb2ZKewpCCqQ,521
+agentuity/bridge.py,sha256=BmkjReRUUDpSy_8a8MVl-OAWh0lZJpwnCjzZg4d5VzA,5859
+agentuity/dist/darwin/amd64/libagentuity.dylib,sha256=uW2BRABS-uOqyY50xpxI3IL36XXsxziWlTkokDhCYYI,6471384
+agentuity/dist/darwin/amd64/libagentuity.h,sha256=TjKmeMPlCt8rTgUdsLvGyqDAFoHDyU5qhNOH5b71QSw,1699
+agentuity/dist/darwin/arm64/libagentuity.dylib,sha256=A3uDv5EZXDAZE7axRbm4q50qVOouXgtF7lNmOBYVkU0,6223666
+agentuity/dist/darwin/arm64/libagentuity.h,sha256=TjKmeMPlCt8rTgUdsLvGyqDAFoHDyU5qhNOH5b71QSw,1699
+agentuity/dist/linux/amd64/libagentuity.h,sha256=TjKmeMPlCt8rTgUdsLvGyqDAFoHDyU5qhNOH5b71QSw,1699
+agentuity/dist/linux/amd64/libagentuity.so,sha256=oBFcmF8YECcQ_lz_8GeKgyhPIKtQKIHdC_zMV_uaei0,9230232
+agentuity/dist/linux/arm64/libagentuity.h,sha256=TjKmeMPlCt8rTgUdsLvGyqDAFoHDyU5qhNOH5b71QSw,1699
+agentuity/dist/linux/arm64/libagentuity.so,sha256=NFqH9LF7Gli5_a79uf7f8g7mgHTg5Qmo_ICSv0y-Vgc,8838544
+agentuity/instrumentation/__init__.py,sha256=siuzPZEmgldsC0wRCCHQNquXDAsoCWnhgwiQ6RcRfAQ,1960
+agentuity/instrumentation/crewai/__init__.py,sha256=DZGnn3ElLMpKvFtey3GA7p9JChkZ14S9WkyP6ITdeho,4033
+agentuity-0.0.10.dev0.dist-info/LICENSE.md,sha256=VyB_2dai1ZfKU415a3KfyJMN0oEQc7Lk3GQjtzhTTKw,554
+agentuity-0.0.10.dev0.dist-info/METADATA,sha256=jMydibr8zBDHlE3lLyoMc1a6Y8oIkYhbk4UhT6IGwf4,1097
+agentuity-0.0.10.dev0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+agentuity-0.0.10.dev0.dist-info/top_level.txt,sha256=e3w1xNOSnxWx8FbhLIWF2P4ZNon6tirMfrW0FJpgRAM,10
+agentuity-0.0.10.dev0.dist-info/RECORD,,
