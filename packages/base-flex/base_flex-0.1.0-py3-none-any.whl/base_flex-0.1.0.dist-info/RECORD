@@ -1,0 +1,8 @@
+base_flex/__init__.py,sha256=BrjTWK9eXoEXwP6faw_tJZsAWzIOtO2bbsGs1uiOiu0,366
+base_flex/alphabets.py,sha256=U4Nv9jVxmj9MiXQziydJbkKtLKtNIr_zv7qHKfRJK88,2165
+base_flex/base_flex.py,sha256=2q4X8UgmrAXnNf9VIHxUkQluoU1jy1szmZje_MvT1BQ,6406
+base_flex/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+base_flex/tests/test_base_flex.py,sha256=mdiBOqABFTN90Rlw-TUaRGpaQWEcaIEQgWY7y4kDtAo,5333
+base_flex-0.1.0.dist-info/METADATA,sha256=4lE6a6NsThMQiWcdKFE2lpQbD9ilfRHKeGOlPsUIUiU,3822
+base_flex-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+base_flex-0.1.0.dist-info/RECORD,,
