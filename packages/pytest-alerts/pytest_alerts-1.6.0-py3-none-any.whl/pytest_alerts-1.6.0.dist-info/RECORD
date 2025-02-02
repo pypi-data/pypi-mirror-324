@@ -1,0 +1,9 @@
+pytest_alerts/__init__.py,sha256=5uQD4g38VP3uWis64_9c4KUAeKPQwRV4Hsa1P_qGcmI,23
+pytest_alerts/core.py,sha256=Fuz37Y_7Jq8eIqR6Yf6b7wBgCCoujcskA_3O3aC5qsc,3661
+pytest_alerts/slack.py,sha256=5jliGb4h1uO7-DoaxowwCFMHXs6Hzqvt_mWzoDZ4nVI,3251
+pytest_alerts/telegram.py,sha256=ZeFK0ZzzyFWizomYnx_v4sXD6vzq-R6nbZM7w1C6tkE,7080
+pytest_alerts-1.6.0.dist-info/METADATA,sha256=MzZmzwTLjN835zQ4PbJPTqwt5yFCwP3wtv2AH7GR0uk,7115
+pytest_alerts-1.6.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_alerts-1.6.0.dist-info/entry_points.txt,sha256=1QRz_JLazjV7FJ9Daai2usZqnzb3hp-BZv3qbwOihs0,39
+pytest_alerts-1.6.0.dist-info/licenses/LICENSE,sha256=fcI3INV3ur3GdxFa_phxio13RD9j3ICKJJJ5vCMV3_U,1966
+pytest_alerts-1.6.0.dist-info/RECORD,,
