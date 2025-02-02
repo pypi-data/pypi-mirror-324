@@ -1,0 +1,17 @@
+mcp_client_jupyter_chat/__init__.py,sha256=vfzsrZ__mfJIKKZXzWDgcuzR-tGoUtQYyIk3xUAWD2w,1345
+mcp_client_jupyter_chat/_version.py,sha256=lFB9nR4WN0iXcp5UpfmTfw1Z2jWBDmClLEWF046NHmc,171
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/package.json,sha256=5LEHaMqYc1pYeNRjN6lyLTrmHs6UqMaWhfKKTj7Sb6E,6059
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/schemas/mcp-client-jupyter-chat/package.json.orig,sha256=b4QXFEf0pjRKVo3DMIMsbycLUd6ujEsVSCGzIGw6UYk,6839
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/schemas/mcp-client-jupyter-chat/plugin.json,sha256=QZpgNiO-3jkPSYCrqCGuweUXl34fY1pTei-zdPePUPs,1277
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/static/642.dd0859955fb09ec89bc6.js,sha256=3QhZlV-wnsibxu_hWHzfk0x_ecqyhknTsr5qmPVHoZA,52229
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/static/70.ffd0e3aafea834e02bd2.js,sha256=_9Djqv6oNOAr0phM98564AXIjvD1hnq5shEsgecSUZM,13532
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/static/728.bd69ebf757be373dfbe5.js,sha256=vWnr91e-Nz375ZNP34RF9YPtDS3M_24q-T4v9Nb9fxM,4282
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/static/979.881bbcafeb2e1f1fe7c6.js,sha256=iBu8r-suHx_nxpMLd1Xt8CJXe3MwvViEIA2lJquwlpM,90232
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/static/remoteEntry.ec69ee9d1deed26a5d92.js,sha256=7GnunR3u0mpdkqY5C2Dri4BDCDH4idC6hoGXb7e2kRc,7651
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/static/style.js,sha256=qOrxmag2V1bq1BlHf-C19TtEw-wB66349eeE82jb9ZE,166
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/static/third-party-licenses.json,sha256=k8ptGeVu5sNjnKu0F_h_xTt5z1MoJLGT1oCjnbeA55c,9833
+mcp_client_jupyter_chat-0.1.1.data/data/share/jupyter/labextensions/mcp-client-jupyter-chat/install.json,sha256=1akDojnjqRiXkCWAQeSaGB72kIc87TtwjEgDvRwdmgQ,207
+mcp_client_jupyter_chat-0.1.1.dist-info/METADATA,sha256=haal3mFn2nsRThYueYAdT9aki6PPr66ukp392DxfXO0,7007
+mcp_client_jupyter_chat-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+mcp_client_jupyter_chat-0.1.1.dist-info/licenses/LICENSE,sha256=g-eGswourFQWTkEps0L5ldwe15uA1C-01JoLklxbrAQ,1512
+mcp_client_jupyter_chat-0.1.1.dist-info/RECORD,,
