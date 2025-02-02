@@ -1,0 +1,6 @@
+speechrecognition
+pyttsx3
+requests
+torch
+transformers
+python-dotenv

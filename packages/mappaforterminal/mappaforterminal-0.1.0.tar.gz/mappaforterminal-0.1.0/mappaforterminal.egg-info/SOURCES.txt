@@ -1,0 +1,10 @@
+README.md
+setup.py
+mappa/__init__.py
+mappa/mappa.py
+mappaforterminal.egg-info/PKG-INFO
+mappaforterminal.egg-info/SOURCES.txt
+mappaforterminal.egg-info/dependency_links.txt
+mappaforterminal.egg-info/entry_points.txt
+mappaforterminal.egg-info/requires.txt
+mappaforterminal.egg-info/top_level.txt
