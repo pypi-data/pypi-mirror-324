@@ -1,0 +1,16 @@
+asmu/OLDgenerator.py,sha256=I9UEYwW6HBq6EAIqEiIhCadvqw_PHLq6FazmO4wp67k,7158
+asmu/__init__.py,sha256=yO7Mt06OLi6vY3W0I2OfRxRgm4L_keUkvt3iAS7UIiY,1411
+asmu/acore.py,sha256=sHb91wmRjLUg1OyKdApsXB0HUjZa6V5Li9Pc9rzTUWA,15046
+asmu/afile.py,sha256=aM-VnO8-GQ5UgP0HSCzXFRR-deuqrUl1GFmmtGeSA0Q,4419
+asmu/analyzer.py,sha256=cgTOQ8m5iLz9XOOvrBi7tkz-FmTnFoLyPh1HIpQ8HyY,7710
+asmu/asetup.py,sha256=FpQrnuPoLsI3yOJnBlJ38JbgQbILG4gWf3HZazqszvA,1755
+asmu/effect.py,sha256=zef89Dxh8vlx_vgCM3AXk0-Zw7lrAT7mWSJMCigNCt8,5801
+asmu/generator.py,sha256=xdUv5zfuoHrv_j0z3FAyV7PNkGdjUfIk2PO46w-jG68,9190
+asmu/interface.py,sha256=am2DpHw24lh4WBQuNzdd9iUv7ldUKERg0jl1naY8JUY,15712
+asmu/io.py,sha256=o_IDaBm9NFkkX7PSJuFQSORtQ_Yv5M9xEJYJAJqiLhU,11064
+asmu/processor.py,sha256=33wyw_fIpKkXsQDL_m9AArLthYphmeFEZwny9oBXxDQ,6612
+asmu/types.py,sha256=j2mi8fZUSzZUqKh73rMh_al2yPE8apCgUVvzmestEg8,827
+asmu-0.1.0.dist-info/METADATA,sha256=NPOva1h4dgXH8ormGqTdRy9CtE_OYnxYd_YiFPqFbCc,903
+asmu-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+asmu-0.1.0.dist-info/licenses/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+asmu-0.1.0.dist-info/RECORD,,

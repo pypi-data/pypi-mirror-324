@@ -1,0 +1,28 @@
+Metadata-Version: 2.4
+Name: asmu
+Version: 0.1.0
+Summary: Acoustic Signal Measurement Utilities
+Project-URL: Repository, https://gitlab.com/felhub/asmu
+Project-URL: Documentation, https://felhub.gitlab.io/asmu/
+Author-email: felhub <felhub@net4us.at>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Sound/Audio
+Requires-Python: >=3.12
+Requires-Dist: numpy>=2.0.0
+Requires-Dist: sounddevice>=0.5.1
+Requires-Dist: soundfile>=0.13.1
+Description-Content-Type: text/markdown
+
+# Acoustic Signal Measurement Utilities
+
+[Documentation](https://felhub.gitlab.io/asmu)
+
+[Repo](https://gitlab.com/felhub/asmu)
+
+[PyPi](https://pypi.org/project/asmu)
+
