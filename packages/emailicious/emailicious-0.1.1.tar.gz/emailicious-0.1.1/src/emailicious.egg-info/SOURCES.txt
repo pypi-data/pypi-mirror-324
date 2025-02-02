@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+src/emailicious/__init__.py
+src/emailicious/config.py
+src/emailicious/gmail.py
+src/emailicious/main.py
+src/emailicious/ms_graph.py
+src/emailicious/utils.py
+src/emailicious.egg-info/PKG-INFO
+src/emailicious.egg-info/SOURCES.txt
+src/emailicious.egg-info/dependency_links.txt
+src/emailicious.egg-info/entry_points.txt
+src/emailicious.egg-info/requires.txt
+src/emailicious.egg-info/top_level.txt
