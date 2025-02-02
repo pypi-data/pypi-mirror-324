@@ -1,0 +1,2 @@
+[console_scripts]
+content-types = content_types:cli
