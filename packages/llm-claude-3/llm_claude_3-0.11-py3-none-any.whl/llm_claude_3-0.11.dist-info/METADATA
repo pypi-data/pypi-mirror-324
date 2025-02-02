@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: llm-claude-3
+Version: 0.11
+Summary: llm-claude-3 is now llm-anthropic
+Classifier: Development Status :: 7 - Inactive
+Description-Content-Type: text/markdown
+Requires-Dist: llm-anthropic
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
+
+# llm-claude-3 is now llm-anthropic
+
+This package has been renamed. Use `pip install llm-anthropic` instead.
+
+New package: https://pypi.org/project/llm-anthropic/
