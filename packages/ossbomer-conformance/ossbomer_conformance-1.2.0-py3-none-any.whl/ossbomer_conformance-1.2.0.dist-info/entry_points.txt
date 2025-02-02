@@ -1,0 +1,2 @@
+[console_scripts]
+ossbomer-conformance = ossbomer_conformance.cli:validate

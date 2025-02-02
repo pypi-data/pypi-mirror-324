@@ -1,0 +1,10 @@
+ossbomer_conformance/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ossbomer_conformance/cli.py,sha256=GLPqaePdoXMQ6K2KtgztWz6wYkI9QJkUNaEM0166fc8,1550
+ossbomer_conformance/config.json,sha256=UW15nBtHvA0ytA9-s3qk_Qdl7peEl_9wqTwDcwnhCL8,1060
+ossbomer_conformance/validator.py,sha256=rFP8tFGkdy1gQZLgji8SiJtMo2V5D7i2HMOzizlblus,5116
+ossbomer_conformance-1.2.0.dist-info/LICENSE,sha256=iYJ2yB-zNlsuntmDC5kcgDQEllF-LdmC8no2X4RoMPw,1064
+ossbomer_conformance-1.2.0.dist-info/METADATA,sha256=U7XLIGf2Vnd_wjZHcwEzrWiSoZt3e_23tM0LORVI7m8,424
+ossbomer_conformance-1.2.0.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+ossbomer_conformance-1.2.0.dist-info/entry_points.txt,sha256=74CdnqlkNNY40E5kVvHXUWRoLsL3WJM0FpxGf07zC2U,75
+ossbomer_conformance-1.2.0.dist-info/top_level.txt,sha256=_tKrn9mJGRQHkG-tI-NS0yp6Ij5SG2UCnDl8O-ZuO-w,21
+ossbomer_conformance-1.2.0.dist-info/RECORD,,
