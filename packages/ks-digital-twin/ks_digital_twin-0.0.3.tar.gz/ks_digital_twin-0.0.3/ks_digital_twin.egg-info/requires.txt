@@ -1,0 +1,12 @@
+colorlogging
+kscale
+pykos
+pynput
+numpy
+
+[dev]
+black
+darglint
+mypy
+pytest
+ruff
