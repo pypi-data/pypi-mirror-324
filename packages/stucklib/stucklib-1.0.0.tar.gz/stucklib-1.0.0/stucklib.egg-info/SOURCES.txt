@@ -1,0 +1,7 @@
+setup.py
+stucklib/__init__.py
+stucklib/packagelogic.py
+stucklib.egg-info/PKG-INFO
+stucklib.egg-info/SOURCES.txt
+stucklib.egg-info/dependency_links.txt
+stucklib.egg-info/top_level.txt
