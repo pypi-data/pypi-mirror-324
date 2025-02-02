@@ -1,0 +1,3 @@
+[console_scripts]
+hsprocessor=hubspot_py_preprocessor.hubspot_py_preprocessor.cli:main
+
