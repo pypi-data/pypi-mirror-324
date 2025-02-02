@@ -1,0 +1,39 @@
+Metadata-Version: 2.2
+Name: PyBitCrypt
+Version: 3.0.1
+Summary: A simple encrypting and decrypting module.
+Author-email: Daniel Drury <daniel-drury@outlook.com>
+Project-URL: Homepage, https://github.com/Chickpeaplane/PyBitCrypt
+Project-URL: Bug Tracker, https://github.com/Chickpeaplane/PyBitCrypt/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyBitCrypt
+
+This is an encrypting and decrypting module.
+It uses a key to shift the letters by the key.
+
+
+## Encoding:
+
+    >>> from PyBitCrypt import pbc
+    >>> key = "ExampleKey1!"
+    >>> text = "ExampleText2?"
+    >>> pbc.encrypt(key, text)
+    '8af0c2dae0d8ca9fcaf1a55384'
+
+
+## Decoding:
+
+	>>> from PyBitCrypt import pbc
+	>>> key = "ExampleKey1!"
+	>>> encrypted = "8af0c2dae0d8ca9fcaf1a55384"
+	>>> pbc.decrypt(key, encrypted)
+	'ExampleText2?'
+
+
+Enjoy!
