@@ -1,0 +1,18 @@
+{
+  "checkout_url": [
+    "http://127.0.0.1:3000/buy"
+  ],
+  "contact_url": [
+    "https://VeePeeN.net/contact",
+    "https://VeePeeN.xyz/contact"
+  ],
+  "official_url": [
+    "https://VeePeeN.net",
+    "https://VeePeeN.xyz",
+    "https://VeePeeN.org"
+  ],
+  "version": {
+    "current": "25.02.01",
+    "min": "25.01.03"
+  }
+}
