@@ -1,0 +1,17 @@
+pydanclick/__init__.py,sha256=631E8YNcaWMX8hrjM7ipU_8VMDIAgPceo6nKU7rTbqk,72
+pydanclick/command.py,sha256=tZT5VyHl5FFpjp-yIobBAhN4vFDDrNEJqm3w8x-DqZk,2144
+pydanclick/main.py,sha256=QYNLnDOINJg7lFEN5OZApdxEbwvcfbBhLbnrIXo_eaQ,3319
+pydanclick/model/__init__.py,sha256=kyBLTeci8cWJfE9ax31ARX-4PCzKT8h6ewqL5QHsL_c,160
+pydanclick/model/docstrings.py,sha256=uHIfyyHZIlW--F3__qp4ULkDKKWRJN6_YWuk14fofYs,1586
+pydanclick/model/field_collection.py,sha256=ahnlkdljHR37KsF9RAz0ltgBhVMvJH8CWyii04-5XJI,6812
+pydanclick/model/field_conversion.py,sha256=uoSj9XAl2hdzCEfrSlNxeqAR_bls-B_qRs36YiWK-Hc,8366
+pydanclick/model/model_conversion.py,sha256=FKB_k0yoDBx6dvP0TCpfOsV7xWJelvnjXwbHog0NyXM,4283
+pydanclick/model/type_conversion.py,sha256=sX7sknG36syCc_IU-xmRSE-b3CSrAopdJGq_LURjuvo,7670
+pydanclick/model/validation.py,sha256=qqGso-DaJJ46OGzKczfCcquDBMT8TF8rNOR533cKCPc,3964
+pydanclick/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydanclick/types.py,sha256=NjZ_78uP1bS_o6FudGkulAAJYSrxe-f-fDC-d8YtJuc,838
+pydanclick/utils.py,sha256=lzvikFGYK_oGbTQCkicLiXH0gjL2lwEHmg8YWAEHV0M,1007
+pydanclick-0.4.0.dist-info/LICENSE,sha256=VvsyyNaBspc3w6hpmIq3OhJgI7X0DU6LJkDus3o3s3U,1071
+pydanclick-0.4.0.dist-info/METADATA,sha256=xGEctXb9L-_T6TpPLSbQDG5Ex35fo0jmAokGxf6a4fk,14470
+pydanclick-0.4.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+pydanclick-0.4.0.dist-info/RECORD,,
