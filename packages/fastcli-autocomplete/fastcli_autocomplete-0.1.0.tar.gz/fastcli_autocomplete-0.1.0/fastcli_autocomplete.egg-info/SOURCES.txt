@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.py
+fastcli_autocomplete/__init__.py
+fastcli_autocomplete/autocomplete.py
+fastcli_autocomplete/command_parser.py
+fastcli_autocomplete/updater.py
+fastcli_autocomplete/utils.py
+fastcli_autocomplete.egg-info/PKG-INFO
+fastcli_autocomplete.egg-info/SOURCES.txt
+fastcli_autocomplete.egg-info/dependency_links.txt
+fastcli_autocomplete.egg-info/entry_points.txt
+fastcli_autocomplete.egg-info/top_level.txt
+tests/test_command_parser.py
