@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "wyn-voice-ultra"
+version = "0.1.0"
+description = ""
+authors = ["eagle0504 <eagle0504@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+wyn-voice = "0.1.9"
+pyautogen = "0.7.3"
+pydub = "0.25.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
