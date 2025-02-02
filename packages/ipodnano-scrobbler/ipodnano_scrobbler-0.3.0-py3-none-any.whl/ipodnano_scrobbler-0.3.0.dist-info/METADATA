@@ -1,0 +1,28 @@
+Metadata-Version: 2.3
+Name: ipodnano-scrobbler
+Version: 0.3.0
+Summary: iPod Nano 6th Gen last.fm scrobbler
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: pandas
+Requires-Dist: polars
+Requires-Dist: pyarrow
+Requires-Dist: requests
+Requires-Dist: tqdm
+Requires-Dist: trainerlog
+Description-Content-Type: text/markdown
+
+# iPod Nano scrobbler
+
+Tested on the iPod Nano 6th gen. Previous generations probably won't work, the 7th generation might.
