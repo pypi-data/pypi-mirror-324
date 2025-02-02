@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: django-error-alert
+Version: 1.0
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Django
