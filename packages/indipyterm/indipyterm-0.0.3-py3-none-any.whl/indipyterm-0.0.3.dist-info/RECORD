@@ -1,0 +1,13 @@
+indipyterm/__init__.py,sha256=ukXSlv7afLdYK6DQb8PfByiZavVcjrDaGSfHFk3KINg,20
+indipyterm/__main__.py,sha256=uWyEcXU50rA1aQpxbOfmADLAfx7k5ENOyFLgcNQHMPk,1386
+indipyterm/devicesc.py,sha256=PjRUjPDiw_rCATB7NvfxUXdD-G3oZqRJoDVJdnU2VRc,6367
+indipyterm/filechooser.py,sha256=jc26pqPIVgiguYT1Yp_cDoE22IQYozyjUQ2gvduyzIo,2298
+indipyterm/iclient.py,sha256=FJOuUWKhU8nrQ9HJbcgVj8HRs-yNzEBl7UQkNDNbiyQ,14533
+indipyterm/iterm.py,sha256=0s6ozYPC50q2Mi7HrsgeCfN2jxeaV_6ka9C28UDDuTs,14121
+indipyterm/memberpn.py,sha256=0sye8K9Sc-Zn0lFvEJ13d4-zuNfWngXGEoMpR92fthI,16229
+indipyterm/vectorpn.py,sha256=EbpqcXF8CXZUa2THmtaKX6X87E-I8dxIpt4lP5GnmrM,13500
+indipyterm-0.0.3.dist-info/entry_points.txt,sha256=z6bZIteanHNp_Rh_faF5gZx-bVV91EsOLJqpwS6zLvk,55
+indipyterm-0.0.3.dist-info/LICENSE,sha256=pYIVwW4IeWyR7nYst_fGO_vz38KMhrXqldWzAPcAumA,1073
+indipyterm-0.0.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+indipyterm-0.0.3.dist-info/METADATA,sha256=N4UMcooSEuVW_2O6_eHuKofUWHqX-id2wBXeEckhaLo,3289
+indipyterm-0.0.3.dist-info/RECORD,,
