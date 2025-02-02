@@ -1,0 +1,10 @@
+utils4cpp/__init__.py,sha256=KwGiZWhwug0K5ngnoP3y1Xx0RPSHLojsRIGCd5uMMB0,38
+utils4cpp/constants.py,sha256=F4MVP2FNwULFBjwhzdrLTNDsA7ZylJCXkCcJmG3aGMY,5620
+utils4cpp/flask.py,sha256=Gccjc03eM_fC5_AUNEzLLZ9RvHsh6-2CRJDbkjnYeKI,35962
+utils4cpp/models.py,sha256=LAajeTN2y4K4u63cIEHAK8SSFhTl8I5v1XP2_CqBXBc,33246
+utils4cpp/utils.py,sha256=K9t9q3-CUcgaLWxGqM4tg15sIWtahIl5ehILq15YsDo,1906
+utils4cpp-0.0.41.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+utils4cpp-0.0.41.dist-info/METADATA,sha256=yy9PunGgvQLHOACv5HYaBQKo8wnrstWb9usb_erSvX4,376
+utils4cpp-0.0.41.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+utils4cpp-0.0.41.dist-info/top_level.txt,sha256=w9s8aRKyU84Gp0lEFoUOILl-ggTyHZCehe_du1gm-fs,10
+utils4cpp-0.0.41.dist-info/RECORD,,
