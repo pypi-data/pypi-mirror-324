@@ -1,0 +1,177 @@
+Metadata-Version: 2.2
+Name: pokpok-sdk
+Version: 0.1.3
+Summary: Python SDK for PokPok API
+Author-email: Your Name <your.email@example.com>
+Project-URL: Homepage, https://github.com/yourusername/pokpok-sdk
+Keywords: pokpok,trading,api,sdk
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohappyeyeballs==2.4.4
+Requires-Dist: aiohttp==3.11.11
+Requires-Dist: aiosignal==1.3.2
+Requires-Dist: annotated-types==0.7.0
+Requires-Dist: attrs==25.1.0
+Requires-Dist: bitarray==3.0.0
+Requires-Dist: black==25.1.0
+Requires-Dist: build==1.2.2.post1
+Requires-Dist: CacheControl==0.14.2
+Requires-Dist: certifi==2025.1.31
+Requires-Dist: cffi==1.17.1
+Requires-Dist: charset-normalizer==3.4.1
+Requires-Dist: ckzg==2.0.1
+Requires-Dist: cleo==2.1.0
+Requires-Dist: click==8.1.8
+Requires-Dist: coverage==7.6.10
+Requires-Dist: crashtest==0.4.1
+Requires-Dist: cytoolz==1.0.1
+Requires-Dist: distlib==0.3.9
+Requires-Dist: docutils==0.21.2
+Requires-Dist: dulwich==0.22.7
+Requires-Dist: eth-account==0.13.4
+Requires-Dist: eth-hash==0.7.1
+Requires-Dist: eth-keyfile==0.8.1
+Requires-Dist: eth-keys==0.6.1
+Requires-Dist: eth-rlp==2.1.0
+Requires-Dist: eth-typing==5.1.0
+Requires-Dist: eth-utils==5.2.0
+Requires-Dist: eth_abi==5.2.0
+Requires-Dist: fastjsonschema==2.21.1
+Requires-Dist: filelock==3.17.0
+Requires-Dist: frozenlist==1.5.0
+Requires-Dist: hexbytes==1.3.0
+Requires-Dist: id==1.5.0
+Requires-Dist: idna==3.10
+Requires-Dist: iniconfig==2.0.0
+Requires-Dist: installer==0.7.0
+Requires-Dist: jaraco.classes==3.4.0
+Requires-Dist: jaraco.context==6.0.1
+Requires-Dist: jaraco.functools==4.1.0
+Requires-Dist: keyring==25.6.0
+Requires-Dist: markdown-it-py==3.0.0
+Requires-Dist: mdurl==0.1.2
+Requires-Dist: more-itertools==10.6.0
+Requires-Dist: msgpack==1.1.0
+Requires-Dist: multidict==6.1.0
+Requires-Dist: mypy==1.14.1
+Requires-Dist: mypy-extensions==1.0.0
+Requires-Dist: nh3==0.2.20
+Requires-Dist: packaging==24.2
+Requires-Dist: parsimonious==0.10.0
+Requires-Dist: pathspec==0.12.1
+Requires-Dist: pkginfo==1.12.0
+Requires-Dist: platformdirs==4.3.6
+Requires-Dist: pluggy==1.5.0
+Requires-Dist: poetry==2.0.1
+Requires-Dist: poetry-core==2.0.1
+Requires-Dist: propcache==0.2.1
+Requires-Dist: pycparser==2.22
+Requires-Dist: pycryptodome==3.21.0
+Requires-Dist: pydantic==2.10.6
+Requires-Dist: pydantic_core==2.27.2
+Requires-Dist: Pygments==2.19.1
+Requires-Dist: pyproject_hooks==1.2.0
+Requires-Dist: pytest==8.3.4
+Requires-Dist: pytest-cov==6.0.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: pyunormalize==16.0.0
+Requires-Dist: RapidFuzz==3.12.1
+Requires-Dist: readme_renderer==44.0
+Requires-Dist: regex==2024.11.6
+Requires-Dist: requests==2.32.3
+Requires-Dist: requests-toolbelt==1.0.0
+Requires-Dist: rfc3986==2.0.0
+Requires-Dist: rich==13.9.4
+Requires-Dist: rlp==4.0.1
+Requires-Dist: shellingham==1.5.4
+Requires-Dist: tomlkit==0.13.2
+Requires-Dist: toolz==1.0.0
+Requires-Dist: trove-classifiers==2025.1.15.22
+Requires-Dist: twine==6.1.0
+Requires-Dist: types-requests==2.32.0.20241016
+Requires-Dist: typing_extensions==4.12.2
+Requires-Dist: urllib3==2.3.0
+Requires-Dist: virtualenv==20.29.1
+Requires-Dist: web3==7.7.0
+Requires-Dist: websockets==13.1
+Requires-Dist: yarl==1.18.3
+
+# PokPok SDK
+pokpok_sdk/
+├── pyproject.toml
+├── README.md
+├── src/
+│   └── pokpok_sdk/
+│       ├── __init__.py
+│       ├── client.py
+│       ├── models.py
+│       ├── exceptions.py
+│       └── constants.py
+└── tests/
+    ├── __init__.py
+    └── test_client.py
+
+# pyproject.toml
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pokpok_sdk"
+version = "0.1.0"
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+description = "PokPok SDK for accessing quote services"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pydantic>=2.0.0",
+    "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+]
+
+# README.md
+# PokPok SDK
+
+A Python SDK for interacting with PokPok's quote services.
+
+## Installation
+
+```bash
+pip install pokpok_sdk
+```
+
+## Usage
+
+```python
+from pokpok_sdk import PokPokClient, QuoteRequest
+
+client = PokPokClient(api_key="your-api-key")
+request = QuoteRequest(
+    duration=3,
+    meal="economical",
+    coin="btc",
+    option="up",
+    size=1,
+    type="payg"
+)
+
+quote = client.get_quote(request)
+print(quote.data.spot_price)
+```
+
+## Development
+
+1. Clone the repository
+2. Install development dependencies: `pip install -e ".[dev]"`
+3. Run tests: `pytest`
