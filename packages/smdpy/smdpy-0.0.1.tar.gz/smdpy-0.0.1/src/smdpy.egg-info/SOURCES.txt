@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/smdpy.egg-info/PKG-INFO
+src/smdpy.egg-info/SOURCES.txt
+src/smdpy.egg-info/dependency_links.txt
+src/smdpy.egg-info/requires.txt
+src/smdpy.egg-info/top_level.txt
+src/youtube/__init__.py
+src/youtube/main.py
+src/youtube/utils/__init__.py
+tests/test_main.py
