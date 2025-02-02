@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+version.txt
+py_packaging/__init__.py
+py_packaging/define_xy.py
+py_packaging/hello.py
+py_packaging/sub_package/__init__.py
+py_packaging/sub_package/print_sin.py
+python_in_production.egg-info/PKG-INFO
+python_in_production.egg-info/SOURCES.txt
+python_in_production.egg-info/dependency_links.txt
+python_in_production.egg-info/requires.txt
+python_in_production.egg-info/top_level.txt
