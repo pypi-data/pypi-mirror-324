@@ -1,0 +1,3 @@
+[pennylane.plugins]
+monarq.default = pennylane_calculquebec:MonarqDevice
+snowflurry.qubit = pennylane_calculquebec:SnowflurryQubitDevice
