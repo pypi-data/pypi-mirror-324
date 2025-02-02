@@ -1,0 +1,8 @@
+kxchat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kxchat/cli.py,sha256=nDdgJBYGRNF_pkYgso_Wv9F41_Wq3n6MXHS6pPmZB-k,314
+kxchat/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kxchat/scripts/chat.py,sha256=JsnSdCUr5PDz4Y5wjkuAQG0NsadSHLdJoFsFaOY41NE,1092
+kxchat-0.1.0.dist-info/METADATA,sha256=hTwVZc9X4Wj6ST4o9SqE0PX0tGelV_79bYEgrphu4h4,272
+kxchat-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+kxchat-0.1.0.dist-info/entry_points.txt,sha256=0Ch-6wPdsDinEVX5kOWlid2uRB9Y4nOnw_TF4t6-T98,43
+kxchat-0.1.0.dist-info/RECORD,,
