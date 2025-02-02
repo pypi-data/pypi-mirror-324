@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: zirak
+Version: 0.0.1
+Summary: Empowering Machines with Pashto
+Author-email: Ijazul Haq <ijazse@hotmail.com>
+Project-URL: Homepage, https://zirak.ai/
+Keywords: NLP,Pashto,Pashto NLP
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Zirak
