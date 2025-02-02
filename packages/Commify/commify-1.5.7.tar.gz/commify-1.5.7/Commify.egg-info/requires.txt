@@ -1,0 +1,6 @@
+ollama
+GitPython
+g4f
+rich
+requests
+openai
