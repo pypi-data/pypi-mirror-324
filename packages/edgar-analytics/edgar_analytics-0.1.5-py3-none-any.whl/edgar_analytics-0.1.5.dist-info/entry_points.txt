@@ -1,0 +1,2 @@
+[console_scripts]
+edgar-analytics = edgar_analytics.cli:main
