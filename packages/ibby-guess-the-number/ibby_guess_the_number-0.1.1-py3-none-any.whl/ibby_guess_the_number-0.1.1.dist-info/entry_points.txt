@@ -1,0 +1,2 @@
+[console_scripts]
+ibby-guess-the-number = ibby_guess_the_number.cli:main
