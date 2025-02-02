@@ -1,0 +1,17 @@
+chATLAS_Benchmark/__init__.py,sha256=HDccJoBy_Mi_8KYrY9_7geijEoweEJrxS3Ie-EfJVgA,177
+chATLAS_Benchmark/_version.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chATLAS_Benchmark/Generation/__init__.py,sha256=Aftc5qxTXd3kMWRwUWQnoqLWSvP30XQ-PZXcbPHvBok,122
+chATLAS_Benchmark/Generation/gen_qa_pairs.py,sha256=JfBH44Oc0rwBAWHdnk8hFqalyaW76zWXIrye5LrRtnk,7210
+chATLAS_Benchmark/Generation/gen_simple_qa_pairs.py,sha256=JsVf0yh9ReFZoCFJQ3mNw_1zQIavZ1FlG2fV4EMKIUY,18628
+chATLAS_Benchmark/test_utils/__init__.py,sha256=-t7-XvtlfxJmSrEezXZfobgRMv20k6waWF84k_4mSuI,95
+chATLAS_Benchmark/test_utils/database_utils.py,sha256=L4uklLh0B1_nGmJkcS2ANxRr1doAwHCRfGQPGGA3C_c,8376
+chATLAS_Benchmark/tests/DocumentMatch.py,sha256=dKLOOY-xfaJ0HCuFYgI8BojdPPLfTp4GMKzvHfQudrc,3547
+chATLAS_Benchmark/tests/LexicalMetrics.py,sha256=77c9xiZnIqoFgAk6MgDa1ilBfzjKLS1eLwN1tH1sCK4,9351
+chATLAS_Benchmark/tests/__init__.py,sha256=_W9WKQ7smJ7a_TBqdK0bg9PfrRRvqWxvejeBFajN7hQ,141
+chATLAS_Benchmark/tests/semanticSimilarity.py,sha256=zXUWsvs7g-gNn3vxMQedqG12GM0becZjkCY-VRa5TR8,3094
+chATLAS_Benchmark/tests/test_benchmark_metrics.py,sha256=_mb9nRp057XL1tjiYc-va1lzUQjIrhwV5Ep7DNnFvl0,7487
+chATLAS_Benchmark-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+chATLAS_Benchmark-0.0.1.dist-info/METADATA,sha256=QXOQiJ-THCBmV5eFDAk1Vo_zxjKoDmivEdctgXfd8OU,10048
+chATLAS_Benchmark-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+chATLAS_Benchmark-0.0.1.dist-info/top_level.txt,sha256=rLeJs1hfG8Aml0rD2ycZgmVOFy6YFng_ukXPpUnRW9c,18
+chATLAS_Benchmark-0.0.1.dist-info/RECORD,,
