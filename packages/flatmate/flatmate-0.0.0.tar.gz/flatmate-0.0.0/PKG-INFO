@@ -1,0 +1,79 @@
+Metadata-Version: 2.2
+Name: flatmate
+Version: 0.0.0
+Summary: flatmate - Your Friendly Data Flattener. Converted Nested JSON from an API into a List of Single-Depth Dictionaries for Writing to a CSV
+Home-page: https://github.com/DanielJDufour/flatmate
+Download-URL: https://github.com/DanielJDufour/flatmate/tarball/download
+Author: Daniel J. Dufour
+Author-email: daniel.j.dufour@gmail.com
+Keywords: csv,data,flat,flatten
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: sendero
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+# flatmate
+Your Friendly Data Flattener.  Convert Nested JSON from an API into a List of Single-Depth Dictionaries for Writing to a CSV.
+
+## install
+```sh
+pip install flatmate
+```
+
+## basic usage
+```python
+# in JSON-compatible format
+data = {
+  "agency": "GSA",
+  "measurementType": {
+    "method": "modules"
+  },
+  "version": "2.0.0",
+  "releases": [
+    {
+      "name": "usasearch",
+      "description": "System now maintained in open repo https://github.com/GSA/search-gov.",
+      "permissions": {
+        "licenses": None,
+        "usageType": "governmentWideReuse"
+      },
+      "tags": [
+        "GSA"
+      ]
+    },
+    # ...
+  ]
+}
+```
+
+```python
+from flatmate import flatten
+
+# flatten data into a list of flat single-depth dictionaries
+flatten(data, start="releases")
+[
+  {
+    "releases.name": "usasearch",
+    "releases.description": "System now maintained in open repo https://github.com/GSA/search-gov.",
+    "releases.permissions.licenses": "null",
+    "releases.permissions.usageType": "governmentWideReuse",
+    "releases.tags": "GSA",
+    # ...
+  },
+  # ...
+]
+```
+
+# advanced usage
+coming soon

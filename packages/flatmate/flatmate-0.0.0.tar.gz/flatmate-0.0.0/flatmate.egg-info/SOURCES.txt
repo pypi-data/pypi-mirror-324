@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+flatmate/__init__.py
+flatmate.egg-info/PKG-INFO
+flatmate.egg-info/SOURCES.txt
+flatmate.egg-info/dependency_links.txt
+flatmate.egg-info/requires.txt
+flatmate.egg-info/top_level.txt
