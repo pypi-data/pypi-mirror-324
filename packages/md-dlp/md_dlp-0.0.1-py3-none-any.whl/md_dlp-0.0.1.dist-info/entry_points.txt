@@ -1,0 +1,2 @@
+[console_scripts]
+md-dlp = md_dlp:main
