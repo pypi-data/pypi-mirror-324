@@ -1,0 +1,16 @@
+ft4222/LibFT4222.dll,sha256=ilufjN-y6lo3raDI1qMA_hwYs1YI8ibidk7vsEgc1VM,384000
+ft4222/__init__.py,sha256=pHBTYzTMHqh3jFhY-zmLV95U3kOHEO9SI3UStpFmLWU,710
+ft4222/ft4222.cp311-win32.pyd,sha256=1g7QYr4FnsvPF1leJR_HDnL3dfE-QpCPL3VLHQc0rwU,195072
+ft4222/ft4222.pyi,sha256=i1eCa0AYISAzB7hlhwXno0wIlg4K0QkXAgpyQ6BD5P8,4872
+ft4222/ftd2xx.dll,sha256=YLsNY0ix6wEnQBqpAvNMlj2RltJ3jGb0AIps8MbwmKU,392128
+ft4222/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ft4222/GPIO/__init__.py,sha256=mNmW5Gni05-teevQNJvrywkbEbAMPSEAkw7Dr-AKhew,1118
+ft4222/I2CMaster/__init__.py,sha256=csJvMWizWr_Vnxd9MNQwrpLuoZZ_KeS7FeRu98HvG50,1450
+ft4222/SPI/__init__.py,sha256=QmAEPCe0luHagg7I3_mbYCI3D_stIHA5XsOmUGOIImY,852
+ft4222/SPIMaster/__init__.py,sha256=Z2cySMit3CSSaKrv1kvT9Oj6YPPlvV1d1rAK3u_qe7I,1375
+ft4222/SPISlave/__init__.py,sha256=nA_ipz5L7l7Ji1YtG8gDzSLb_XE4FMcRDXOcXAMwCkc,690
+ft4222-1.11.0.dist-info/LICENSE.txt,sha256=uSoNOHJwDLCIOrqq-PrPkTZ-CqAF1b5HlvHbU0t6pmE,1145
+ft4222-1.11.0.dist-info/METADATA,sha256=_DJAthQpENl43EQvPP1yLsc_Zgl8ko2_2jFPUZIGCyA,4483
+ft4222-1.11.0.dist-info/WHEEL,sha256=bhXcIFNv4T-G4Sw4ACrAXSbqmVpqO5W3nspTDhg-PJ4,97
+ft4222-1.11.0.dist-info/top_level.txt,sha256=VE8Or2FkNyRo0V9cXvMVjbKxmHg48ue3ZjqPREtsOwg,7
+ft4222-1.11.0.dist-info/RECORD,,
