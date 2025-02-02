@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+pyttings/__init__.py
+pyttings/core.py
+pyttings.egg-info/PKG-INFO
+pyttings.egg-info/SOURCES.txt
+pyttings.egg-info/dependency_links.txt
+pyttings.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/settings.py
+tests/test_core.py
