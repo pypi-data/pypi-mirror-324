@@ -1,0 +1,104 @@
+Metadata-Version: 2.2
+Name: pica-dbapi
+Version: 0.1.3
+Summary: A lightweight and fun DBAPI built on pandas/csv 🎉. Supported SQL: SELECT, INSERT, UPDATE, DELETE, JOIN, GROUP BY.
+Author-email: Naruhide KITADA <kitfactory@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2025 Naruhide KITADA
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/kitfactory/pica
+Project-URL: Documentation, https://github.com/kitfactory/pica#readme
+Project-URL: Repository, https://github.com/kitfactory/pica
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: sqlparse>=0.4.0
+Requires-Dist: numpy>=1.18.0
+
+# Pica DBAPI 🎉
+Welcome to Pica DBAPI - a lightweight and fun **Pandas Integrated CSV API**!  
+Pica stands for Pandas Integrated CSV API.
+
+## Features 🌟
+- Lightweight DBAPI built on Pandas and CSV 📊  
+- Simple and intuitive API 🤩  
+- Supports common SQL operations: SELECT, INSERT, UPDATE, DELETE, JOIN, GROUP BY 🛠️  
+- Automatic lazy-loading of CSV files 🚀  
+- CREATE TABLE and DROP TABLE operations 🗃️  
+- Comprehensive test coverage with pytest ✅
+
+## Installation 🔧
+```bash
+pip install pica-dbapi
+```
+
+## Supported SQL Operations 📝
+Pica supports the following SQL operations:
+
+- **SELECT**: Retrieve data from CSV files. 🔍
+- **INSERT**: Insert new records into CSV files. ➕
+- **UPDATE**: Update existing records in CSV files. 🔄
+- **DELETE**: Delete records from CSV files. ❌
+- **JOIN**: Join rows from multiple CSV files. 🔗
+- **GROUP BY**: Aggregate records using GROUP BY clauses. 📊
+- **CREATE TABLE**: Create a new CSV file with specified columns. 🆕
+- **DROP TABLE**: Delete the CSV file and remove the corresponding table object. 🗑️
+
+## Quick Start 🚀
+Below is a quick start guide demonstrating key features (as shown in example_basic.py):
+
+```bash
+# Clone the repository 📥
+git clone https://github.com/kitfactory/pica.git
+cd pica
+
+# Create a virtual environment and install dependencies 🛠️
+python -m venv .venv
+# On Windows:
+.venv\Scripts\activate
+# On Unix/Linux:
+# source .venv/bin/activate
+
+# Install Pica in editable mode 🔧
+pip install -e .
+
+# Run the example ▶️
+python example/example_basic.py
+```
+
+This example demonstrates various features including:
+- Basic SELECT with WHERE clause 🔍
+- GROUP BY with aggregation 📊
+- JOIN operations between CSV-backed tables 🔗
+- Direct usage with Pandas DataFrame 🐼
+- Automatic lazy-loading of CSV files when initial DataFrames are not provided 🚀
+- CREATE TABLE and DROP TABLE functionalities 🗃️ 🗑️
+
+## Contributing 🤝
+Contributions and suggestions are welcome! Please open an issue or submit a pull request. 💬✨
+
+## License 📄
+This project is licensed under the MIT License.
