@@ -1,0 +1,3 @@
+[console_scripts]
+aisle=aisle.main:main
+
