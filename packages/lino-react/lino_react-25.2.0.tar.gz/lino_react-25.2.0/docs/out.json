@@ -1,0 +1,3633 @@
+{
+	"id": 0,
+	"name": "lino_react",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 16,
+			"name": "Component",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Extends React.Component\n\nHelps in rendering lazyly, as in - components that renders\nsome dynamically imported component could wait for the\nthe state "
+					},
+					{
+						"kind": "code",
+						"text": "`ready`"
+					},
+					{
+						"kind": "text",
+						"text": " to become "
+					},
+					{
+						"kind": "code",
+						"text": "`true`"
+					},
+					{
+						"kind": "text",
+						"text": ".\n\nAll the life-cycle methods of a subclass of this type\nmust check for state "
+					},
+					{
+						"kind": "code",
+						"text": "`ready`"
+					},
+					{
+						"kind": "text",
+						"text": " before trying in modifying\nany other state."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 18,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 76,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L76"
+						}
+					],
+					"signatures": [
+						{
+							"id": 19,
+							"name": "new Component",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 76,
+									"character": 4,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L76"
+								}
+							],
+							"parameters": [
+								{
+									"id": 20,
+									"name": "props",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 16,
+								"name": "Component",
+								"package": "lino_react"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.constructor"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.constructor"
+					}
+				},
+				{
+					"id": 31,
+					"name": "context",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "If using the new style context, re-declare this in your class to be the\n"
+							},
+							{
+								"kind": "code",
+								"text": "`React.ContextType`"
+							},
+							{
+								"kind": "text",
+								"text": " of your "
+							},
+							{
+								"kind": "code",
+								"text": "`static contextType`"
+							},
+							{
+								"kind": "text",
+								"text": ".\nShould be used with type annotation or static contextType.\n\n"
+							},
+							{
+								"kind": "code",
+								"text": "```ts\nstatic contextType = MyContext\n// For TS pre-3.7:\ncontext!: React.ContextType<typeof MyContext>\n// For TS 3.7 and above:\ndeclare context: React.ContextType<typeof MyContext>\n```"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://react.dev/reference/react/Component#context"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 517,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "unknown"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.context"
+					}
+				},
+				{
+					"id": 22,
+					"name": "ex",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 75,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L75"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 21,
+					"name": "exModules",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 74,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L74"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 56,
+					"name": "props",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true,
+						"isReadonly": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 537,
+							"character": 17
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Readonly"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 57,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {
+										"isExternal": true
+									}
+								}
+							}
+						],
+						"name": "Readonly",
+						"package": "typescript"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.props"
+					}
+				},
+				{
+					"id": 60,
+					"name": "refs",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"summary": [],
+						"blockTags": [
+							{
+								"tag": "@deprecated",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://legacy.reactjs.org/docs/refs-and-the-dom.html#legacy-api-string-refs"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 543,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "reflection",
+						"declaration": {
+							"id": 61,
+							"name": "__type",
+							"variant": "declaration",
+							"kind": 65536,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 543,
+									"character": 14
+								}
+							],
+							"indexSignature": {
+								"id": 62,
+								"name": "__index",
+								"variant": "signature",
+								"kind": 8192,
+								"flags": {
+									"isExternal": true
+								},
+								"sources": [
+									{
+										"fileName": "node_modules/@types/react/index.d.ts",
+										"line": 544,
+										"character": 12
+									}
+								],
+								"parameters": [
+									{
+										"id": 63,
+										"name": "key",
+										"variant": "param",
+										"kind": 32768,
+										"flags": {
+											"isExternal": true
+										},
+										"type": {
+											"type": "intrinsic",
+											"name": "string"
+										}
+									}
+								],
+								"type": {
+									"type": "reference",
+									"target": {
+										"sourceFileName": "../node_modules/@types/react/index.d.ts",
+										"qualifiedName": "React.ReactInstance"
+									},
+									"name": "ReactInstance",
+									"package": "@types/react",
+									"qualifiedName": "React.ReactInstance"
+								}
+							}
+						}
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.refs"
+					}
+				},
+				{
+					"id": 58,
+					"name": "state",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 538,
+							"character": 8
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Readonly"
+						},
+						"typeArguments": [
+							{
+								"type": "reflection",
+								"declaration": {
+									"id": 59,
+									"name": "__type",
+									"variant": "declaration",
+									"kind": 65536,
+									"flags": {
+										"isExternal": true
+									}
+								}
+							}
+						],
+						"name": "Readonly",
+						"package": "typescript"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.state"
+					}
+				},
+				{
+					"id": 17,
+					"name": "contextType",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isStatic": true,
+						"isExternal": true,
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "If set, "
+							},
+							{
+								"kind": "code",
+								"text": "`this.context`"
+							},
+							{
+								"kind": "text",
+								"text": " will be set at runtime to the current value of the given Context.\n\nUsage:\n\n"
+							},
+							{
+								"kind": "code",
+								"text": "```ts\ntype MyContext = number\nconst Ctx = React.createContext<MyContext>(0)\n\nclass Foo extends React.Component {\n  static contextType = Ctx\n  context!: React.ContextType<typeof Ctx>\n  render () {\n    return <>My context's value: {this.context}</>;\n  }\n}\n```"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@see",
+								"content": [
+									{
+										"kind": "text",
+										"text": "https://react.dev/reference/react/Component#static-contexttype"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 500,
+							"character": 15
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../node_modules/@types/react/index.d.ts",
+							"qualifiedName": "React.Context"
+						},
+						"typeArguments": [
+							{
+								"type": "intrinsic",
+								"name": "any"
+							}
+						],
+						"name": "Context",
+						"package": "@types/react",
+						"qualifiedName": "React.Context"
+					},
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.contextType"
+					}
+				},
+				{
+					"id": 92,
+					"name": "UNSAFE_componentWillMount",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 734,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 93,
+							"name": "UNSAFE_componentWillMount",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called immediately before mounting occurs, and before "
+									},
+									{
+										"kind": "code",
+										"text": "`Component#render`"
+									},
+									{
+										"kind": "text",
+										"text": ".\nAvoid introducing any side-effects or subscriptions in this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@deprecated",
+										"content": [
+											{
+												"kind": "text",
+												"text": "16.3, use componentDidMount or the constructor instead"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 734,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.UNSAFE_componentWillMount"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.UNSAFE_componentWillMount"
+					}
+				},
+				{
+					"id": 99,
+					"name": "UNSAFE_componentWillReceiveProps",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 766,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 100,
+							"name": "UNSAFE_componentWillReceiveProps",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling "
+									},
+									{
+										"kind": "code",
+										"text": "`Component#setState`"
+									},
+									{
+										"kind": "text",
+										"text": " generally does not trigger this method.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@deprecated",
+										"content": [
+											{
+												"kind": "text",
+												"text": "16.3, use static getDerivedStateFromProps instead"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 766,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 101,
+									"name": "nextProps",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 102,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 103,
+									"name": "nextContext",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.UNSAFE_componentWillReceiveProps"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.UNSAFE_componentWillReceiveProps"
+					}
+				},
+				{
+					"id": 111,
+					"name": "UNSAFE_componentWillUpdate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 794,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 112,
+							"name": "UNSAFE_componentWillUpdate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call "
+									},
+									{
+										"kind": "code",
+										"text": "`Component#setState`"
+									},
+									{
+										"kind": "text",
+										"text": " here.\n\nThis method will not stop working in React 17.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@deprecated",
+										"content": [
+											{
+												"kind": "text",
+												"text": "16.3, use getSnapshotBeforeUpdate instead"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 794,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 113,
+									"name": "nextProps",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 114,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 115,
+									"name": "nextState",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 116,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 117,
+									"name": "nextContext",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.UNSAFE_componentWillUpdate"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.UNSAFE_componentWillUpdate"
+					}
+				},
+				{
+					"id": 73,
+					"name": "componentDidCatch",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 663,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 74,
+							"name": "componentDidCatch",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Catches exceptions generated in descendant components. Unhandled exceptions will cause\nthe entire component tree to unmount."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 663,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 75,
+									"name": "error",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Error"
+										},
+										"name": "Error",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 76,
+									"name": "errorInfo",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../node_modules/@types/react/index.d.ts",
+											"qualifiedName": "React.ErrorInfo"
+										},
+										"name": "ErrorInfo",
+										"package": "@types/react",
+										"qualifiedName": "React.ErrorInfo"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.componentDidCatch"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.componentDidCatch"
+					}
+				},
+				{
+					"id": 23,
+					"name": "componentDidMount",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 98,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L98"
+						}
+					],
+					"signatures": [
+						{
+							"id": 24,
+							"name": "componentDidMount",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "WARNING: Advised to not override this method in subclasses instead\noverride :meth:"
+									},
+									{
+										"kind": "code",
+										"text": "`onReady`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 98,
+									"character": 4,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L98"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"overwrites": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.componentDidMount"
+							}
+						}
+					],
+					"overwrites": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.componentDidMount"
+					}
+				},
+				{
+					"id": 83,
+					"name": "componentDidUpdate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 705,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 84,
+							"name": "componentDidUpdate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called immediately after updating occurs. Not called for the initial render.\n\nThe snapshot is only present if getSnapshotBeforeUpdate is present and returns non-null."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 705,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 85,
+									"name": "prevProps",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 86,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 87,
+									"name": "prevState",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 88,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 89,
+									"name": "snapshot",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.componentDidUpdate"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.componentDidUpdate"
+					}
+				},
+				{
+					"id": 90,
+					"name": "componentWillMount",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 720,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 91,
+							"name": "componentWillMount",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called immediately before mounting occurs, and before "
+									},
+									{
+										"kind": "code",
+										"text": "`Component#render`"
+									},
+									{
+										"kind": "text",
+										"text": ".\nAvoid introducing any side-effects or subscriptions in this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@deprecated",
+										"content": [
+											{
+												"kind": "text",
+												"text": "16.3, use componentDidMount or the constructor instead; will stop working in React 17"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#initializing-state"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 720,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.componentWillMount"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.componentWillMount"
+					}
+				},
+				{
+					"id": 94,
+					"name": "componentWillReceiveProps",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 749,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 95,
+							"name": "componentWillReceiveProps",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called when the component may be receiving new props.\nReact may call this even if props have not changed, so be sure to compare new and existing\nprops if you only want to handle changes.\n\nCalling "
+									},
+									{
+										"kind": "code",
+										"text": "`Component#setState`"
+									},
+									{
+										"kind": "text",
+										"text": " generally does not trigger this method.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@deprecated",
+										"content": [
+											{
+												"kind": "text",
+												"text": "16.3, use static getDerivedStateFromProps instead; will stop working in React 17"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#updating-state-based-on-props"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 749,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 96,
+									"name": "nextProps",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 97,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 98,
+									"name": "nextContext",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.componentWillReceiveProps"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.componentWillReceiveProps"
+					}
+				},
+				{
+					"id": 71,
+					"name": "componentWillUnmount",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 658,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 72,
+							"name": "componentWillUnmount",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called immediately before a component is destroyed. Perform any necessary cleanup in this method, such as\ncancelled network requests, or cleaning up any DOM elements created in "
+									},
+									{
+										"kind": "code",
+										"text": "`componentDidMount`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 658,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.componentWillUnmount"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.componentWillUnmount"
+					}
+				},
+				{
+					"id": 104,
+					"name": "componentWillUpdate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 779,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 105,
+							"name": "componentWillUpdate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called immediately before rendering when new props or state is received. Not called for the initial render.\n\nNote: You cannot call "
+									},
+									{
+										"kind": "code",
+										"text": "`Component#setState`"
+									},
+									{
+										"kind": "text",
+										"text": " here.\n\nNote: the presence of getSnapshotBeforeUpdate or getDerivedStateFromProps\nprevents this from being invoked."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@deprecated",
+										"content": [
+											{
+												"kind": "text",
+												"text": "16.3, use getSnapshotBeforeUpdate instead; will stop working in React 17"
+											}
+										]
+									},
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#reading-dom-properties-before-an-update"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											},
+											{
+												"kind": "text",
+												"text": " - "
+											},
+											{
+												"kind": "text",
+												"text": "https://legacy.reactjs.org/blog/2018/03/27/update-on-async-rendering.html#gradual-migration-path"
+											},
+											{
+												"kind": "text",
+												"text": "\n"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 779,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 106,
+									"name": "nextProps",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 107,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 108,
+									"name": "nextState",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 109,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 110,
+									"name": "nextContext",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.componentWillUpdate"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.componentWillUpdate"
+					}
+				},
+				{
+					"id": 49,
+					"name": "forceUpdate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 534,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 50,
+							"name": "forceUpdate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 534,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 51,
+									"name": "callback",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 52,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/@types/react/index.d.ts",
+													"line": 534,
+													"character": 31
+												}
+											],
+											"signatures": [
+												{
+													"id": 53,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@types/react/index.d.ts",
+															"line": 534,
+															"character": 31
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.forceUpdate"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.forceUpdate"
+					}
+				},
+				{
+					"id": 77,
+					"name": "getSnapshotBeforeUpdate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 699,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 78,
+							"name": "getSnapshotBeforeUpdate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Runs before React applies the result of "
+									},
+									{
+										"kind": "code",
+										"text": "`render`"
+									},
+									{
+										"kind": "text",
+										"text": " to the document, and\nreturns an object to be given to componentDidUpdate. Useful for saving\nthings such as scroll position before "
+									},
+									{
+										"kind": "code",
+										"text": "`render`"
+									},
+									{
+										"kind": "text",
+										"text": " causes changes to it.\n\nNote: the presence of getSnapshotBeforeUpdate prevents any of the deprecated\nlifecycle events from running."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 699,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 79,
+									"name": "prevProps",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 80,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 81,
+									"name": "prevState",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 82,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "any"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.getSnapshotBeforeUpdate"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.getSnapshotBeforeUpdate"
+					}
+				},
+				{
+					"id": 25,
+					"name": "onReady",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 107,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L107"
+						}
+					],
+					"signatures": [
+						{
+							"id": 26,
+							"name": "onReady",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Executes after the component state becomes "
+									},
+									{
+										"kind": "code",
+										"text": "`ready`"
+									},
+									{
+										"kind": "text",
+										"text": ".\nSubstitues React.Component.componentDidMount feature\nas advised to use onReady instead."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 107,
+									"character": 4,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L107"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 54,
+					"name": "render",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 535,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 55,
+							"name": "render",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 535,
+									"character": 8
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "../node_modules/@types/react/index.d.ts",
+									"qualifiedName": "React.ReactNode"
+								},
+								"name": "ReactNode",
+								"package": "@types/react",
+								"qualifiedName": "React.ReactNode"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.render"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.render"
+					}
+				},
+				{
+					"id": 27,
+					"name": "resolveImports",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 112,
+							"character": 10,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L112"
+						}
+					],
+					"signatures": [
+						{
+							"id": 28,
+							"name": "resolveImports",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [],
+								"blockTags": [
+									{
+										"tag": "@see",
+										"content": [
+											{
+												"kind": "text",
+												"text": ":js:meth:"
+											},
+											{
+												"kind": "code",
+												"text": "`DynDep.resolveImports`"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 112,
+									"character": 10,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L112"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 29,
+					"name": "setReady",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 118,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L118"
+						}
+					],
+					"signatures": [
+						{
+							"id": 30,
+							"name": "setReady",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Sets the component state "
+									},
+									{
+										"kind": "code",
+										"text": "`ready`"
+									},
+									{
+										"kind": "text",
+										"text": " to "
+									},
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": "\nand calls :meth:"
+									},
+									{
+										"kind": "code",
+										"text": "`onReady`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 118,
+									"character": 4,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L118"
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 32,
+					"name": "setState",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 529,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 33,
+							"name": "setState",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 529,
+									"character": 8
+								}
+							],
+							"typeParameter": [
+								{
+									"id": 34,
+									"name": "K",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "never"
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 35,
+									"name": "state",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "union",
+										"types": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 36,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											},
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 37,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@types/react/index.d.ts",
+															"line": 530,
+															"character": 20
+														}
+													],
+													"signatures": [
+														{
+															"id": 38,
+															"name": "__type",
+															"variant": "signature",
+															"kind": 4096,
+															"flags": {
+																"isExternal": true
+															},
+															"sources": [
+																{
+																	"fileName": "node_modules/@types/react/index.d.ts",
+																	"line": 530,
+																	"character": 20
+																}
+															],
+															"parameters": [
+																{
+																	"id": 39,
+																	"name": "prevState",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {
+																		"isExternal": true
+																	},
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+																			"qualifiedName": "Readonly"
+																		},
+																		"typeArguments": [
+																			{
+																				"type": "reflection",
+																				"declaration": {
+																					"id": 40,
+																					"name": "__type",
+																					"variant": "declaration",
+																					"kind": 65536,
+																					"flags": {
+																						"isExternal": true
+																					}
+																				}
+																			}
+																		],
+																		"name": "Readonly",
+																		"package": "typescript"
+																	}
+																},
+																{
+																	"id": 41,
+																	"name": "props",
+																	"variant": "param",
+																	"kind": 32768,
+																	"flags": {
+																		"isExternal": true
+																	},
+																	"type": {
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+																			"qualifiedName": "Readonly"
+																		},
+																		"typeArguments": [
+																			{
+																				"type": "reflection",
+																				"declaration": {
+																					"id": 42,
+																					"name": "__type",
+																					"variant": "declaration",
+																					"kind": 65536,
+																					"flags": {
+																						"isExternal": true
+																					}
+																				}
+																			}
+																		],
+																		"name": "Readonly",
+																		"package": "typescript"
+																	}
+																}
+															],
+															"type": {
+																"type": "union",
+																"types": [
+																	{
+																		"type": "reflection",
+																		"declaration": {
+																			"id": 43,
+																			"name": "__type",
+																			"variant": "declaration",
+																			"kind": 65536,
+																			"flags": {
+																				"isExternal": true
+																			}
+																		}
+																	},
+																	{
+																		"type": "reference",
+																		"target": {
+																			"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+																			"qualifiedName": "Pick"
+																		},
+																		"typeArguments": [
+																			{
+																				"type": "reflection",
+																				"declaration": {
+																					"id": 44,
+																					"name": "__type",
+																					"variant": "declaration",
+																					"kind": 65536,
+																					"flags": {
+																						"isExternal": true
+																					}
+																				}
+																			},
+																			{
+																				"type": "reference",
+																				"target": -1,
+																				"name": "K",
+																				"refersToTypeParameter": true
+																			}
+																		],
+																		"name": "Pick",
+																		"package": "typescript"
+																	}
+																]
+															}
+														}
+													]
+												}
+											},
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Pick"
+												},
+												"typeArguments": [
+													{
+														"type": "reflection",
+														"declaration": {
+															"id": 45,
+															"name": "__type",
+															"variant": "declaration",
+															"kind": 65536,
+															"flags": {
+																"isExternal": true
+															}
+														}
+													},
+													{
+														"type": "reference",
+														"target": -1,
+														"name": "K",
+														"refersToTypeParameter": true
+													}
+												],
+												"name": "Pick",
+												"package": "typescript"
+											}
+										]
+									}
+								},
+								{
+									"id": 46,
+									"name": "callback",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true,
+										"isOptional": true
+									},
+									"type": {
+										"type": "reflection",
+										"declaration": {
+											"id": 47,
+											"name": "__type",
+											"variant": "declaration",
+											"kind": 65536,
+											"flags": {
+												"isExternal": true
+											},
+											"sources": [
+												{
+													"fileName": "node_modules/@types/react/index.d.ts",
+													"line": 531,
+													"character": 23
+												}
+											],
+											"signatures": [
+												{
+													"id": 48,
+													"name": "__type",
+													"variant": "signature",
+													"kind": 4096,
+													"flags": {
+														"isExternal": true
+													},
+													"sources": [
+														{
+															"fileName": "node_modules/@types/react/index.d.ts",
+															"line": 531,
+															"character": 23
+														}
+													],
+													"type": {
+														"type": "intrinsic",
+														"name": "void"
+													}
+												}
+											]
+										}
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.setState"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.setState"
+					}
+				},
+				{
+					"id": 64,
+					"name": "shouldComponentUpdate",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {
+						"isExternal": true,
+						"isOptional": true
+					},
+					"sources": [
+						{
+							"fileName": "node_modules/@types/react/index.d.ts",
+							"line": 653,
+							"character": 8
+						}
+					],
+					"signatures": [
+						{
+							"id": 65,
+							"name": "shouldComponentUpdate",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {
+								"isExternal": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Called to determine whether the change in props and state should trigger a re-render.\n\n"
+									},
+									{
+										"kind": "code",
+										"text": "`Component`"
+									},
+									{
+										"kind": "text",
+										"text": " always returns true.\n"
+									},
+									{
+										"kind": "code",
+										"text": "`PureComponent`"
+									},
+									{
+										"kind": "text",
+										"text": " implements a shallow comparison on props and state and returns true if any\nprops or states have changed.\n\nIf false is returned, "
+									},
+									{
+										"kind": "code",
+										"text": "`Component#render`"
+									},
+									{
+										"kind": "text",
+										"text": ", "
+									},
+									{
+										"kind": "code",
+										"text": "`componentWillUpdate`"
+									},
+									{
+										"kind": "text",
+										"text": "\nand "
+									},
+									{
+										"kind": "code",
+										"text": "`componentDidUpdate`"
+									},
+									{
+										"kind": "text",
+										"text": " will not be called."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "node_modules/@types/react/index.d.ts",
+									"line": 653,
+									"character": 8
+								}
+							],
+							"parameters": [
+								{
+									"id": 66,
+									"name": "nextProps",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 67,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 68,
+									"name": "nextState",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Readonly"
+										},
+										"typeArguments": [
+											{
+												"type": "reflection",
+												"declaration": {
+													"id": 69,
+													"name": "__type",
+													"variant": "declaration",
+													"kind": 65536,
+													"flags": {
+														"isExternal": true
+													}
+												}
+											}
+										],
+										"name": "Readonly",
+										"package": "typescript"
+									}
+								},
+								{
+									"id": 70,
+									"name": "nextContext",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {
+										"isExternal": true
+									},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "boolean"
+							},
+							"inheritedFrom": {
+								"type": "reference",
+								"target": -1,
+								"name": "React.Component.shouldComponentUpdate"
+							}
+						}
+					],
+					"inheritedFrom": {
+						"type": "reference",
+						"target": -1,
+						"name": "React.Component.shouldComponentUpdate"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						18
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						31,
+						22,
+						21,
+						56,
+						60,
+						58,
+						17
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						92,
+						99,
+						111,
+						73,
+						23,
+						83,
+						90,
+						94,
+						71,
+						104,
+						49,
+						77,
+						25,
+						54,
+						27,
+						29,
+						32,
+						64
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lino_react/react/components/Base.ts",
+					"line": 73,
+					"character": 6,
+					"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L73"
+				}
+			],
+			"extendedTypes": [
+				{
+					"type": "reference",
+					"target": {
+						"sourceFileName": "../node_modules/@types/react/index.d.ts",
+						"qualifiedName": "React.Component"
+					},
+					"name": "Component",
+					"package": "@types/react",
+					"qualifiedName": "React.Component"
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "DynDep",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"comment": {
+				"summary": [
+					{
+						"kind": "text",
+						"text": "Dynamic Dependencies (DynDep)\n\nResolves dynamically imported modules should be done from overridden\n:js:meth:"
+					},
+					{
+						"kind": "code",
+						"text": "`~DynDep.resolveImports`"
+					},
+					{
+						"kind": "text",
+						"text": " and should put the resolved modules\ninto :js:attr:"
+					},
+					{
+						"kind": "code",
+						"text": "`~DynDep.exModules`"
+					},
+					{
+						"kind": "text",
+						"text": ".\n\nThe code block that suppose to go to the "
+					},
+					{
+						"kind": "code",
+						"text": "`constructor`"
+					},
+					{
+						"kind": "text",
+						"text": " of subclasses\nshould be put into the overridden :js:meth:"
+					},
+					{
+						"kind": "code",
+						"text": "`onReady`"
+					},
+					{
+						"kind": "text",
+						"text": " method."
+					}
+				]
+			},
+			"children": [
+				{
+					"id": 2,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 27,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L27"
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "new DynDep",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "WARNING: Advised to not override this method in subclasses instead\noverride :meth:"
+									},
+									{
+										"kind": "code",
+										"text": "`onReady`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 27,
+									"character": 4,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L27"
+								}
+							],
+							"parameters": [
+								{
+									"id": 4,
+									"name": "params",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 1,
+								"name": "DynDep",
+								"package": "lino_react"
+							}
+						}
+					]
+				},
+				{
+					"id": 6,
+					"name": "ex",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 21,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L21"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 5,
+					"name": "exModules",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 20,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L20"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "any"
+					}
+				},
+				{
+					"id": 7,
+					"name": "ready",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 22,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L22"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 8,
+					"name": "onReady",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 41,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L41"
+						}
+					],
+					"signatures": [
+						{
+							"id": 9,
+							"name": "onReady",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Executes after the module import resolves resolves."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 41,
+									"character": 4,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L41"
+								}
+							],
+							"parameters": [
+								{
+									"id": 10,
+									"name": "params",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				},
+				{
+					"id": 11,
+					"name": "resolveImports",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 49,
+							"character": 10,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L49"
+						}
+					],
+					"signatures": [
+						{
+							"id": 12,
+							"name": "resolveImports",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Must be overridden in subclasses which depends on\nsome dynamically imported modules and must put the\nimported modules in :attr:"
+									},
+									{
+										"kind": "code",
+										"text": "`exModules`"
+									},
+									{
+										"kind": "text",
+										"text": " to be later\naccessed by the Component."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 49,
+									"character": 10,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L49"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "../../../../../../../usr/local/lib/node_modules/typedoc/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "void"
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 13,
+					"name": "setReady",
+					"variant": "declaration",
+					"kind": 2048,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "lino_react/react/components/Base.ts",
+							"line": 52,
+							"character": 4,
+							"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L52"
+						}
+					],
+					"signatures": [
+						{
+							"id": 14,
+							"name": "setReady",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "Sets the state "
+									},
+									{
+										"kind": "code",
+										"text": "`ready`"
+									},
+									{
+										"kind": "text",
+										"text": " to "
+									},
+									{
+										"kind": "code",
+										"text": "`true`"
+									},
+									{
+										"kind": "text",
+										"text": " and calls :meth:"
+									},
+									{
+										"kind": "code",
+										"text": "`onReady`"
+									},
+									{
+										"kind": "text",
+										"text": "."
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "lino_react/react/components/Base.ts",
+									"line": 52,
+									"character": 4,
+									"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L52"
+								}
+							],
+							"parameters": [
+								{
+									"id": 15,
+									"name": "params",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"type": {
+										"type": "intrinsic",
+										"name": "any"
+									}
+								}
+							],
+							"type": {
+								"type": "intrinsic",
+								"name": "void"
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						2
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						6,
+						5,
+						7
+					]
+				},
+				{
+					"title": "Methods",
+					"children": [
+						8,
+						11,
+						13
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "lino_react/react/components/Base.ts",
+					"line": 19,
+					"character": 6,
+					"url": "https://gitlab.com/lino-framework/react/-/blob/9de8dd5/lino_react/react/components/Base.ts#L19"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				16,
+				1
+			]
+		}
+	],
+	"packageName": "lino_react",
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep"
+		},
+		"2": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.__constructor"
+		},
+		"3": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep"
+		},
+		"4": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "params"
+		},
+		"5": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.exModules"
+		},
+		"6": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.ex"
+		},
+		"7": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.ready"
+		},
+		"8": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.onReady"
+		},
+		"9": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.onReady"
+		},
+		"10": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "params"
+		},
+		"11": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.resolveImports"
+		},
+		"12": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.resolveImports"
+		},
+		"13": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.setReady"
+		},
+		"14": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "DynDep.setReady"
+		},
+		"15": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "params"
+		},
+		"16": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component"
+		},
+		"17": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.contextType"
+		},
+		"18": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.__constructor"
+		},
+		"19": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component"
+		},
+		"20": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "props"
+		},
+		"21": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.exModules"
+		},
+		"22": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.ex"
+		},
+		"23": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.componentDidMount"
+		},
+		"24": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.componentDidMount"
+		},
+		"25": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.onReady"
+		},
+		"26": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.onReady"
+		},
+		"27": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.resolveImports"
+		},
+		"28": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.resolveImports"
+		},
+		"29": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.setReady"
+		},
+		"30": {
+			"sourceFileName": "../lino_react/react/components/Base.ts",
+			"qualifiedName": "Component.setReady"
+		},
+		"31": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.context"
+		},
+		"32": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.setState"
+		},
+		"33": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.setState"
+		},
+		"34": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "K"
+		},
+		"35": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "state"
+		},
+		"36": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"37": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"38": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"39": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "prevState"
+		},
+		"40": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"41": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "props"
+		},
+		"42": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"43": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"44": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"45": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"46": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "callback"
+		},
+		"47": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"48": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"49": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.forceUpdate"
+		},
+		"50": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.forceUpdate"
+		},
+		"51": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "callback"
+		},
+		"52": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"53": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"54": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.render"
+		},
+		"55": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.render"
+		},
+		"56": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.props"
+		},
+		"57": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"58": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.state"
+		},
+		"59": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"60": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.Component.refs"
+		},
+		"61": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "__type"
+		},
+		"62": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "__type.__index"
+		},
+		"64": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.ComponentLifecycle.shouldComponentUpdate"
+		},
+		"65": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.ComponentLifecycle.shouldComponentUpdate"
+		},
+		"66": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextProps"
+		},
+		"67": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"68": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextState"
+		},
+		"69": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"70": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextContext"
+		},
+		"71": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.ComponentLifecycle.componentWillUnmount"
+		},
+		"72": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.ComponentLifecycle.componentWillUnmount"
+		},
+		"73": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.ComponentLifecycle.componentDidCatch"
+		},
+		"74": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.ComponentLifecycle.componentDidCatch"
+		},
+		"75": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "error"
+		},
+		"76": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "errorInfo"
+		},
+		"77": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.NewLifecycle.getSnapshotBeforeUpdate"
+		},
+		"78": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.NewLifecycle.getSnapshotBeforeUpdate"
+		},
+		"79": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "prevProps"
+		},
+		"80": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"81": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "prevState"
+		},
+		"82": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"83": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.NewLifecycle.componentDidUpdate"
+		},
+		"84": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.NewLifecycle.componentDidUpdate"
+		},
+		"85": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "prevProps"
+		},
+		"86": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"87": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "prevState"
+		},
+		"88": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"89": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "snapshot"
+		},
+		"90": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.componentWillMount"
+		},
+		"91": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.componentWillMount"
+		},
+		"92": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.UNSAFE_componentWillMount"
+		},
+		"93": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.UNSAFE_componentWillMount"
+		},
+		"94": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.componentWillReceiveProps"
+		},
+		"95": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.componentWillReceiveProps"
+		},
+		"96": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextProps"
+		},
+		"97": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"98": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextContext"
+		},
+		"99": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.UNSAFE_componentWillReceiveProps"
+		},
+		"100": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.UNSAFE_componentWillReceiveProps"
+		},
+		"101": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextProps"
+		},
+		"102": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"103": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextContext"
+		},
+		"104": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.componentWillUpdate"
+		},
+		"105": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.componentWillUpdate"
+		},
+		"106": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextProps"
+		},
+		"107": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"108": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextState"
+		},
+		"109": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"110": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextContext"
+		},
+		"111": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.UNSAFE_componentWillUpdate"
+		},
+		"112": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "React.DeprecatedLifecycle.UNSAFE_componentWillUpdate"
+		},
+		"113": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextProps"
+		},
+		"114": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"115": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextState"
+		},
+		"116": {
+			"sourceFileName": "",
+			"qualifiedName": "__type"
+		},
+		"117": {
+			"sourceFileName": "../node_modules/@types/react/index.d.ts",
+			"qualifiedName": "nextContext"
+		}
+	}
+}
