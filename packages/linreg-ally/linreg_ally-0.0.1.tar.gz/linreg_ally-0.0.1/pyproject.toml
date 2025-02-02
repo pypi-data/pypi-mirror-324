@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "linreg_ally"
+version = "0.0.1"
+description = "A package to test linearity assumptions to determine whether a linear regression model is good or not"
+authors = ["Paramveer, Merari, Cheng, Alex"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+altair-ally = "^0.1.1"
+altair = "^5.5.0"
+pandas = "^2.2.3"
+scikit-learn = "^1.6.1"
+numpy = "^2.2.2"
+statsmodels = "^0.14.4"
+scipy = "^1.15.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+jupyter = "^1.1.1"
+myst-nb = "^1.1.2"
+sphinx-autoapi = "^3.4.0"
+sphinx-rtd-theme = "^3.0.2"
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
