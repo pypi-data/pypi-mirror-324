@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: nuri-cms
+Version: 0.2.0
+Summary: A lightweight API-first CMS.
+Author-email: Jan Markus Langer <janmarkuslanger10121994@gmail.com>
+Project-URL: Homepage, https://github.com/nuri-cms/nuri
+License-File: LICENSE
+Requires-Dist: flask
+Requires-Dist: flask-sqlalchemy
+Requires-Dist: flask-login
