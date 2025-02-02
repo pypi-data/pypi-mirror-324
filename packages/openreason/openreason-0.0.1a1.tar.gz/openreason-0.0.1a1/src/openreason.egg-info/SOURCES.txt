@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/openreason/__init__.py
+src/openreason/dummy.py
+src/openreason.egg-info/PKG-INFO
+src/openreason.egg-info/SOURCES.txt
+src/openreason.egg-info/dependency_links.txt
+src/openreason.egg-info/top_level.txt

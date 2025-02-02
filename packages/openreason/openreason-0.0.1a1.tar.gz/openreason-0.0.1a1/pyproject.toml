@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openreason"
+version = "0.0.1a1"
+description = "OpenReason is a Python framework to build reasoning agents with O1/O3 and R1."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [
+  {name = "Genmo", email = "hi@genmo.ai"}
+]
+requires-python = ">=3.6"
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://openreason.ai"
