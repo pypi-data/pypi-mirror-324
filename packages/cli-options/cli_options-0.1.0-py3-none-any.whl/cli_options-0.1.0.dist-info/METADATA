@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: cli-options
+Version: 0.1.0
+Summary: 
+Author: Ed Scrimaglia
+Author-email: edgardo.scrimaglia@gmail.com
+Requires-Python: >=3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: typer (>=0.15.1,<0.16.0)
+Description-Content-Type: text/markdown
+
+# First Package Portal
+
+My awesome first package
+
