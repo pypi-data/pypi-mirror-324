@@ -1,0 +1,16 @@
+pascal/__init__.py,sha256=_whVPRRkZuGZSVK-Qc13GOBQkTY7TOT-frNOLz-340I,127
+pascal/annotation_fabric.py,sha256=okWhvRdQw-NAprENxQh8v5Q3RGkJAseK11Ia5Cl6AW8,1950
+pascal/draw_objects.py,sha256=XCsM5gKEpE0k3quuhPcefux-Fgfa2y3ntcD0RrHq8l4,3900
+pascal/exceptions.py,sha256=p6vArMq9bQoNcjqFDJFpqcDrqfsSEm1lTBiZfv-b-sA,94
+pascal/format_convertor.py,sha256=mCJSWL8tMzll681ZexY24oFGyymFCloNjEF4GttElbY,4005
+pascal/pascal_annotation.py,sha256=OfuAo1KcrvbAI44r6u13M32fBIgn5BXWVLwY7IYptB4,2525
+pascal/protocol_implementations.py,sha256=_8svBGyA-25z3oPWoFVXYQUBjdBl-fdrf3gTzpDYmes,635
+pascal/protocols.py,sha256=DM3uxsYZ9BfPGM9dc3oxPRexbnyIij6l_YXpgPhM9c8,1102
+pascal/utils.py,sha256=ou8IyzefHZcyL3vPN0_ePHKUyO1IdXCujAVsqiGABmk,1799
+pascal/fonts/arialmt.ttf,sha256=GvWWG9QtqfB6YNl36NeRW8lhU309PCz5zKGZCwhwayo,409032
+pascal_voc-2.1.12.data/data/pascal/arialmt.ttf,sha256=GvWWG9QtqfB6YNl36NeRW8lhU309PCz5zKGZCwhwayo,409032
+pascal_voc-2.1.12.dist-info/LICENSE,sha256=JrpBVndWcz7hSUJehJsy9E0UTyDTsjWlnotRJNwbWaU,1065
+pascal_voc-2.1.12.dist-info/METADATA,sha256=8vejYg4HH4kmqV43xHN_mEVB259ytSBgoM_0yaniGu0,3775
+pascal_voc-2.1.12.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pascal_voc-2.1.12.dist-info/top_level.txt,sha256=bQ6qO2QU8ki5YOdW5hX6rLdByILZOrGK-J0emxOcR9U,7
+pascal_voc-2.1.12.dist-info/RECORD,,
