@@ -1,0 +1,2 @@
+[console_scripts]
+musical = musically.musical:main
