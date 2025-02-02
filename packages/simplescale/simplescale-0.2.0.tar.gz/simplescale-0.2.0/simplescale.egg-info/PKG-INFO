@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: simplescale
+Version: 0.2.0
+Summary: A simple gradio application to upscale images.
+Home-page: https://github.com/nikhilk/itools/imscale
+Author: Nikhil Kothari
+License: Apache
+Keywords: ai genai imaging upscaling esrgan gradio
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: GPU :: NVIDIA CUDA
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Artistic Software
