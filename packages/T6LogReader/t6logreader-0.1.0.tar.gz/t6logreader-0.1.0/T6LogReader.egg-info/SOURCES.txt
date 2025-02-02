@@ -1,0 +1,7 @@
+setup.py
+T6LogReader.egg-info/PKG-INFO
+T6LogReader.egg-info/SOURCES.txt
+T6LogReader.egg-info/dependency_links.txt
+T6LogReader.egg-info/top_level.txt
+t6logreader/__init__.py
+t6logreader/t6logreader.py
