@@ -1,0 +1,2 @@
+include xj_user/libs/pinyin/Mandarin.dat
+include xj_user/libs/pinyin/cedict.txt.gz
