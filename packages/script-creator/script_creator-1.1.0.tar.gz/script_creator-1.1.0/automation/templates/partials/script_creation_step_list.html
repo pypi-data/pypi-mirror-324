@@ -1,0 +1,197 @@
+
+{% load static %}
+
+<div id="step-list">
+    {% for step in session_script %}
+        <div class="step" id="step-{{ step.step_id }}"
+             
+             >
+            <div class="card card-frame
+            {%if step.Step_loop_enable %}
+                {% if step.loop_id %}
+                    {% with step.loop_id|add:-1 as adjusted_loop_id %}
+                        {% if adjusted_loop_id|divisibleby:3 %}
+                            color-1
+                        {% elif adjusted_loop_id|add:-1|divisibleby:3 %}
+                            color-2
+                        {% else %}
+                            color-3
+                        {% endif %}
+                    {% endwith %}
+                {% endif %}
+            {% endif %}"
+                 style="box-shadow: 0 20px 27px 0 rgb(0 0 0 / 13%); border-radius: 15px; width: calc(100% - 50px);">
+                <div class="card-body" id="step-frame" >
+                    <div class="table_control" id="step-table" >
+                        <div id="step-id">
+                            <br>
+                            <h4>{{ step.step_id }}</h4>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="step_table align-items-center mb-0">
+                                <thead>
+                                <tr>
+                                    <th class="group-command">Environment</th>
+                                    <th class="group-command">Command</th>
+                                    <th class="group-command">Sub Command</th>
+                                    <th class="group-command">Component</th>
+                                    <th class="group-command">Packet</th>
+                                    <th class="seperator vertical-line"></th>
+                                    <th class="group-value">Parameters</th>
+                                    <th class="group-value">Operators</th>
+                                    <th class="group-value">Value Manipulation</th>
+                                    <th class="group-value">Fixed Value</th>
+                                    <th class="group-value">Min Value</th>
+                                    <th class="group-value">Max Value</th>
+                                    <th class="group-value">Resolution</th>
+                                    <th class="group-value">Resolution Value</th>
+                                    <th class="group-value">Enum Value</th>
+                                    <th class="seperator vertical-line"></th>
+                                    <th class="group-valueOptions">Value Tolerance</th>
+                                    <th class="group-valueOptions">Value Tolerance Value</th>
+                                    <th class="group-valueOptions">Time Tolerance</th>
+                                    <th class="group-valueOptions">Time Tolerance Value</th>
+                                    <th class="seperator vertical-line"></th>
+                                    <th class="group-timing">At Time</th>
+                                    <th class="group-timing">Delay</th>
+                                    <th class="group-timing">Sync</th>
+                                    <th class="group-timing">Length Plus</th>
+                                    <th class="group-timing">Length Minus</th>
+                                    <th class="group-timing">Sequence Number</th>
+                                    <th class="group-timing">Checksum</th>
+                                    <th>Description</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="group-command">{{ step.environment }}</td>
+                                    <td class="group-command">{{ step.command }}</td>
+                                    <td class="group-command">{{ step.sub_command }}</td>
+                                    <td class="group-command">{{ step.component }}</td>
+                                    <td class="group-command">{{ step.packet }}</td>
+                                    <td class="seperator vertical-line"></td>
+                                    <td class="group-value">{{ step.parameters }}</td>
+                                    <td class="group-value">{{ step.operator }}</td>
+                                    <td class="group-value">{{ step.value_manipulation }}</td>
+                                    <td class="group-value">{{ step.fixed_value }}</td>
+                                    <td class="group-value">{{ step.min_value }}</td>
+                                    <td class="group-value">{{ step.max_value }}</td>
+                                    <td class="group-value">{{ step.resolution }}</td>
+                                    <td class="group-value">{{ step.resolution_value }}</td>
+                                    <td class="group-value">{{ step.enum_value }}</td>
+                                    <td class="seperator vertical-line"></td>
+                                    <td class="group-valueOptions">{{ step.value_tolerance }}</td>
+                                    <td class="group-valueOptions">{{ step.value_tolerance_value }}</td>
+                                    <td class="group-valueOptions">{{ step.time_tolerance }}</td>
+                                    <td class="group-valueOptions">{{ step.time_tolerance_value }}</td>
+                                    <td class="seperator vertical-line"></td>
+                                    <td class="group-timing">{{ step.at_time }}</td>
+                                    <td class="group-timing">{{ step.delay }}</td>
+                                    <td class="group-timing">{{ step.frame_errors.sync }}</td>
+                                    <td class="group-timing">{{ step.frame_errors.length_plus }}</td>
+                                    <td class="group-timing">{{ step.frame_errors.length_minus }}</td>
+                                    <td class="group-timing">{{ step.frame_errors.sequence_number }}</td>
+                                    <td class="group-timing">{{ step.frame_errors.checksum }}</td>
+                                    <td>{{ step.description }}</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                                                <div id="step_contorls_container" >
+                            <button type="button"
+                                    class="move-up-button btn bg-gradient-secondary btn-sm btn-sma"
+                                    hx-post="{% url 'update_step_order' %}"
+                                    hx-vals='{"step_id": "{{ step.step_id }}", "direction": "up", "csrfmiddlewaretoken": "{{ csrf_token }}"}'
+                                    hx-target="#step-list"
+                                    hx-swap="outerHTML"
+
+                                    {% if forloop.first %}disabled{% endif %}>
+                                    <svg width="16" height="16" fill="currentColor">
+                                        <use xlink:href="{% static 'svg/icon.svg' %}#icon-move-up"></use>
+                                    </svg>
+                            </button>
+                            <button type="button" class="btn btn-primary bg-gradient-primary btn-sm btn-sma"
+                                    onclick="loadStepData({{ step.step_id }})">
+                                <svg width="16" height="16" fill="currentColor">
+                                        <use xlink:href="{% static 'svg/icon.svg' %}#icon-edit"></use>
+                                    </svg>
+                            </button>
+
+
+                            <button type="button"
+                                    class="move-down-button btn bg-gradient-secondary btn-sm btn-sma"
+                                    hx-post="{% url 'update_step_order' %}"
+                                    hx-vals='{"step_id": "{{ step.step_id }}", "direction": "down", "csrfmiddlewaretoken": "{{ csrf_token }}"}'
+                                    hx-target="#step-list"
+                                    hx-swap="outerHTML"
+                                    {% if forloop.last %}disabled{% endif %}>
+                                <svg width="16" height="16" fill="currentColor">
+                                        <use xlink:href="{% static 'svg/icon.svg' %}#icon-move-down"></use>
+                                    </svg>
+                            </button>
+                            <button type="button" class="delete-button btn bg-gradient-warning btn-sm btn-sma"
+                                    hx-post="{% url 'delete_step' step.step_id %}"
+                                    hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'
+                                    hx-target="#step-list"
+                                    hx-swap="outerHTML">
+                                <svg width="16" height="16" fill="currentColor">
+                                        <use xlink:href="{% static 'svg/icon.svg' %}#icon-delete"></use>
+                                    </svg>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            
+            <div class="loop_setting"
+                 >
+                <form hx-post="{% url 'update_step_loop' %}" hx-target="#step-list" hx-swap="outerHTML"
+                      id="loop-settings-form">
+                    <div class="loop-div">
+                        <p>Step Repeat</p>
+                        <input class="form-control step_repeat disableable" type="number" value="{% if step.step_repeat %}{{ step.step_repeat }}{% else %}1{% endif %}"
+                               name="step_repeat"
+                               >
+                    </div>
+                    <div class="loop-div">
+                        <p>Loop Repeat</p>
+                        <input class="form-control loop_repeat disableable" type="number" value="{% if step.loop_repeat %}{{ step.loop_repeat }}{% else %}0{% endif %}"
+                               name="loop_repeat"
+                               >
+                    </div>
+                    <div class="loop-div">
+                        <p>Loop ID</p>
+                        <input class="form-control loop_id disableable" type="number" value="{% if step.loop_id %}{{ step.loop_id }}{% else %}0{% endif %}"
+                               name="loop_id"
+                               >
+                    </div >
+                    <div class="loop-div">
+                        <p>Loop BG</p>
+                        <input style="margin-left: 30%;" class="form-check-input loop_background disableable"
+                               type="checkbox" name="loop_background"
+                               {% if step.loop_background %}checked{% endif %}>
+                    </div>
+                    <div class="form-check form-switch" style="display: flex;align-items: center;">
+                        <input
+                                class="form-check-input Step_loop_enable"
+                                type="checkbox"
+                                name="Step_loop_enable"
+                                data-step-id="{{ step.step_id }}"
+                                hx-trigger="change"
+                                hx-post="{% url 'update_step_loop' %}"
+                                hx-target="#step-list"
+                                hx-swap="outerHTML"
+                                {% if step.Step_loop_enable %}checked{% endif %}>
+                    </div>
+                    <input type="hidden" name="step_id" value="{{ step.step_id }}">
+                </form>
+
+            </div>
+        </div>
+
+    {% endfor %}
+</div>
+

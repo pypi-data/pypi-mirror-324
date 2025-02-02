@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="id_component">Component</label>
+    <select name="component" id="id_component" class="form-control select2  hidden-select"
+            hx-get="{% url 'get_packets' '0' %}"
+            hx-trigger="change from:#id_component"
+            hx-target="#packet-container"
+            hx-swap="innerHTML">
+        <option value="">Select Component</option>
+        {% for comp in components %}
+            <option value="{{ comp.id }}">{{ comp.name }}</option>
+        {% endfor %}
+    </select>
+</div>

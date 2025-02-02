@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: script_creator
+Version: 1.1.0
+Summary: web script creator for automation
+Author: dani549
+Author-email: dani.barma1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Requires-Dist: Django>=3.2

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session View</title>
+</head>
+<body>
+    <h1>Session: {{ session_id }}</h1>
+    <div id="output"></div>
+
+    <script>
+        const sessionId = "{{ session_id }}";  // Use the session ID dynamically passed from the view
+        const socket = new WebSocket(`ws://${window.location.host}/ws/session/${sessionId}/`);
+
+        socket.onmessage = function (event) {
+            const data = JSON.parse(event.data);
+            console.log("Received:", data);
+
+            // Display the output dynamically
+            const outputDiv = document.getElementById("output");
+            const newItem = document.createElement("div");
+            newItem.textContent = `Progress: ${data.data}`;
+            outputDiv.appendChild(newItem);
+        };
+
+        socket.onclose = function () {
+            console.log("WebSocket connection closed.");
+        };
+    </script>
+</body>
+</html>

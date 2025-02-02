@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="id_packet">Packet</label>
+    <select name="packet" id="id_packet" class="form-control select2  hidden-select"
+            hx-get="{% url 'get_parameters' '0' %}"
+            hx-trigger="change from:#id_packet"
+            hx-target="#parameter-container"
+            hx-swap="innerHTML">
+        <option value="">Select Packet</option>
+        {% for packet in packets %}
+            <option value="{{ packet.id }}">{{ packet.name }}</option>
+        {% endfor %}
+    </select>
+</div>
