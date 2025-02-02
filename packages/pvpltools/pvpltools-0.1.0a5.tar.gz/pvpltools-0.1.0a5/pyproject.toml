@@ -1,0 +1,66 @@
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pvpltools"
+dynamic = ["version"]
+dependencies = [
+  "numpy>=1.20.3",
+  "scipy>=1.7.1",
+  "pandas>=1.5.0",
+  "pvlib>=0.8.1",
+  "ruamel.yaml>=0.15.0",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Anton Driesse", email = "anton.driesse@pvperformancelabs.com"},
+]
+description = "Useful tools for photovoltaics and beyond."
+readme = "README_PYPI.md"
+keywords = ["photovoltaics", "tools", "pv"]
+classifiers = [
+  "Programming Language :: Python",
+  "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+  "Development Status :: 4 - Beta",
+]
+
+[project.optional-dependencies]
+examples = [
+    "matplotlib",
+    "openpyxl",
+    ]
+test = [
+    "pytest",
+    "pytest-cov",
+    "flake8",
+]
+docs = [
+    "sphinx~=7.4.0",
+    "pydata-sphinx-theme~=0.15.0",
+    "sphinx-gallery~=0.18.0",
+    "sphinx_toggleprompt~=0.5.0",
+    "sphinx_favicon~=1.0.0",
+    "sphinx-copybutton~=0.5.0",
+    "pvpltools[examples]",
+]
+all = ["pvpltools[examples,test,docs]"]
+
+[project.urls]
+"Homepage" = "https://pvpltools.readthedocs.io/en/latest/"
+"Documentation" = "https://pvpltools.readthedocs.io/en/latest/"
+"Repository" = "https://github.com/pvplabs/pvpltools"
+"Bug Tracker" = "https://github.com/pvplabs/pvpltools/issues"
+"Changelog" = "https://pvpltools.readthedocs.io/en/latest/"
+
+# Control which files are included in the built distribution
+# https://setuptools.pypa.io/en/latest/userguide/datafiles.html [2024-10-25]
+[tool.setuptools]
+include-package-data = true  # inclusion of non-python files in the package folder (like data files) [default: true]
+[tool.setuptools.packages.find]
+include = ["pvpltools*"]
+
+[tool.setuptools_scm]
+
+[tool.flake8]
+max-line-length = 79

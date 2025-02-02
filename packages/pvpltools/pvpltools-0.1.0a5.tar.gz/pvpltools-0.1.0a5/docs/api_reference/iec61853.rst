@@ -1,0 +1,40 @@
+.. py:module:: pvpltools.iec61853
+
+.. currentmodule:: pvpltools
+
+Energy rating (IEC 61853)
+=========================
+
+This module implements the energy rating calculations
+described in standard IEC 61853.
+
+The four main calculation steps are:
+
+#. Calculate the angle-of-incidence correction using the functions:
+
+   * martin_ruiz()
+   * martin_ruiz_diffuse()
+
+#. Evaluate the spectral factor using the functions:
+
+   * convert_to_banded()
+   * calc_spectral_factor()
+
+#. Estimate the operating temperature using the function:
+
+   * faiman()
+
+#. Determine the module efficiency using the class:
+
+   * BilinearInterpolator()
+
+
+.. autosummary::
+   :toctree: generated/
+
+   iec61853.convert_to_banded
+   iec61853.calc_spectral_factor
+   iec61853.BilinearInterpolator
+   iec61853.martin_ruiz
+   iec61853.martin_ruiz_diffuse
+   iec61853.faiman

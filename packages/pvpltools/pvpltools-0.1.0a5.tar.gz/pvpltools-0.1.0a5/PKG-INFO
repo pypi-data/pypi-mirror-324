@@ -1,0 +1,58 @@
+Metadata-Version: 2.2
+Name: pvpltools
+Version: 0.1.0a5
+Summary: Useful tools for photovoltaics and beyond.
+Author-email: Anton Driesse <anton.driesse@pvperformancelabs.com>
+Project-URL: Homepage, https://pvpltools.readthedocs.io/en/latest/
+Project-URL: Documentation, https://pvpltools.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/pvplabs/pvpltools
+Project-URL: Bug Tracker, https://github.com/pvplabs/pvpltools/issues
+Project-URL: Changelog, https://pvpltools.readthedocs.io/en/latest/
+Keywords: photovoltaics,tools,pv
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.20.3
+Requires-Dist: scipy>=1.7.1
+Requires-Dist: pandas>=1.5.0
+Requires-Dist: pvlib>=0.8.1
+Requires-Dist: ruamel.yaml>=0.15.0
+Provides-Extra: examples
+Requires-Dist: matplotlib; extra == "examples"
+Requires-Dist: openpyxl; extra == "examples"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: flake8; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx~=7.4.0; extra == "docs"
+Requires-Dist: pydata-sphinx-theme~=0.15.0; extra == "docs"
+Requires-Dist: sphinx-gallery~=0.18.0; extra == "docs"
+Requires-Dist: sphinx_toggleprompt~=0.5.0; extra == "docs"
+Requires-Dist: sphinx_favicon~=1.0.0; extra == "docs"
+Requires-Dist: sphinx-copybutton~=0.5.0; extra == "docs"
+Requires-Dist: pvpltools[examples]; extra == "docs"
+Provides-Extra: all
+Requires-Dist: pvpltools[docs,examples,test]; extra == "all"
+
+# PV Performance Labs Tools for Python
+
+*Useful tools for photovoltaics and beyond!*
+
+This package, **pvpltools**, makes available a collection of useful
+software components and functions created by Anton Driesse of PV Performance Labs.
+Many were developed in the context of consulting or research projects,
+sometimes as a necessity, and sometimes just to make life easier.
+
+The aim of this package is to make life easier for people facing similar needs
+and thereby, in a small way, support the accelerated deployment of photovoltaic power systems.
+
+The current version of this package is found at https://github.com/pvplabs/pvpltools.
+Prior to 2024, the code was made available at https://github.com/adriesse/pvpltools-python.
+This older repository will remain in place, but will not be updated.
+
+**pvpltools** is compatible with and complementary to
+**pvlib python** (https://pvlib-python.readthedocs.io).
