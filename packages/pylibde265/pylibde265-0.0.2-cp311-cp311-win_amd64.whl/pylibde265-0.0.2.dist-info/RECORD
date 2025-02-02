@@ -1,0 +1,13 @@
+pylibde265/__init__.py,sha256=mjoYqJhNr0JH5j29sK14kRn7a5nLYZBI6q1MYTYSvis,45
+pylibde265/pyde265.c,sha256=0m3PWdL2s4XpEQQvSD0fHNmWVxSwBfT9N_z0oqAENYI,629428
+pylibde265/pyde265.cp311-win_amd64.pyd,sha256=pobsUxqXmMc9oI8crMFYZfivGxLi5n_1pWtOBIOZpEA,76800
+pylibde265/pyde265.pxd,sha256=oBzymUhwqUGZq1K6oaXxMVIaJFfk2pjMm7zuHUTmUVg,17214
+pylibde265/pyde265.pyx,sha256=snzsZ_QD5HImnRmo3IB8--vXg6kkHBma0UQcdbjaV5E,4400
+pylibde265/vedio.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylibde265-0.0.2.data/data/libde265.dll,sha256=OocvAhKR4fctekxJjnOWFAD5-pO-QsU8NBVlNjBJ2kA,511488
+pylibde265-0.0.2.data/data/Lib/site-packages/pylibde265/pyde265.pyi,sha256=WXCB5Ant9eWkwX7ylpzhlFuHdYx10GKBgqTIJNbh0kc,376
+pylibde265-0.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pylibde265-0.0.2.dist-info/METADATA,sha256=p1iZWP8M6h3fabTS9DKXvxZrffDGbhulRAKVTX-35Ms,7552
+pylibde265-0.0.2.dist-info/WHEEL,sha256=yNnHoQL2GZYIUXm9YvoaBpFjGlUoK9qq9oqYeudrWlE,101
+pylibde265-0.0.2.dist-info/top_level.txt,sha256=2CQ2Ft7V1WA6wMxGJTcu43DeSZnv3tjDcUb54P9atTA,11
+pylibde265-0.0.2.dist-info/RECORD,,
