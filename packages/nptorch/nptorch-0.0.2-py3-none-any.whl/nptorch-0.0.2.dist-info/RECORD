@@ -1,0 +1,11 @@
+nptorch/__init__.py,sha256=5tzc9_MBzXRwFrdEOxJfsQcYpZ6HCReRUv46VVtbjuc,86
+nptorch/core.py,sha256=hkc1OUPzMZbTwUKpCuYKI6MdVkfUt6_Sosdy2UbiZ5o,63874
+nptorch/optim.py,sha256=x6dn4KId9uE-8St4m9dPaQGagBOGkRhUzzmGchgFkrA,1400
+nptorch/nn/__init__.py,sha256=74MQQhQS4Ms9GXBOTw3gMoaNP9Hj2nyVME-hw7r8w0g,47
+nptorch/nn/functional.py,sha256=XuwPYLubTDew1q7eB0rzply9V8QE2TOeWvBsz4FLOhg,2057
+nptorch/nn/functional_classes.py,sha256=uUdjzxutv7tSHwJ5pw9gEiPqWHmWGwW4QAEirTyIRRk,4505
+nptorch/nn/nn_core.py,sha256=X06Z4yDu-NCjZnLVWAmo2b3c_kOuMWAm6JeQfvDhE-8,12888
+nptorch-0.0.2.dist-info/METADATA,sha256=oWKdpOX8U7TXPIQJkyXssptWiq5GX9YyH0xmIsV3RCg,1633
+nptorch-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nptorch-0.0.2.dist-info/top_level.txt,sha256=WsSz5f0UcHVkUHKgfBSmzH4x15_dXD-_8NwWwT36tt8,8
+nptorch-0.0.2.dist-info/RECORD,,
