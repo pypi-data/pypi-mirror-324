@@ -1,0 +1,9 @@
+game_state/__init__.py,sha256=5DMP1y0Em-sH7t5Wr7opnJLVgdPS1jXGWf0KsD5xiSc,876
+game_state/errors.py,sha256=S0dLJ84tq4-roQJnI35o9k-G1TgRZofICgLPF2doS8o,1643
+game_state/manager.py,sha256=WOnOI8Z0qYv_B1XHS8A0V5RRKnP8VpDg1WnPpx1fDYM,9789
+game_state/state.py,sha256=HSuEWpQahMAfDyE2YieMXGqJzyGy22OZCnLoQ37APcA,1042
+game_state-1.0.0.dist-info/LICENSE,sha256=5xCkawmpQBkDITPo-yH2L6GJi0tcJ4wgMs84qA3oS3c,1098
+game_state-1.0.0.dist-info/METADATA,sha256=swzUWPcBw-4Vd2Hw_hEVJ7Lu4QZHuU859QUdTAATeuw,1495
+game_state-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+game_state-1.0.0.dist-info/top_level.txt,sha256=FEznveaLBIoqBOs-4lnBZRaI4_pUVsocwJ6pSXIg9Gg,11
+game_state-1.0.0.dist-info/RECORD,,
