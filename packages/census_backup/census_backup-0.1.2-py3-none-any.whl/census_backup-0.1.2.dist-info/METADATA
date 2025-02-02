@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: census_backup
+Version: 0.1.2
+Summary: Backup utilities.
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: censusdis (>=1.3.3,<2.0.0)
+Requires-Dist: logargparser (>=0.1.1,<0.2.0)
+Description-Content-Type: text/markdown
+
+# censusdis/backup
+
+This project is a command-line utility for bulk downloads of 
+U.S. Census data.
+
+## Installation
+
+```shell
+pip install census_backup
+```
+
+## Usage Examples
+
+Download from a group across all available bulk geographies:
+
+```shell
+census-backup -d acs/acs5 -v 2020 -g B02001 -o ~/tmp/backup-tracts
+```
+
+The required arguments are:
+
+- `-d`: the data set
+- `-v`: the vintage
+- `-g`: the variable group
+
+The `-o` is an optional output directory. The default is the current working
+directory.
+
+## More Help
+
+```shell
+census-backup --help
+```

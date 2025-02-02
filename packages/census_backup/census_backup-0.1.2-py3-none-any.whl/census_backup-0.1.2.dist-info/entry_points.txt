@@ -1,0 +1,3 @@
+[console_scripts]
+census-backup=census_backup:main
+
