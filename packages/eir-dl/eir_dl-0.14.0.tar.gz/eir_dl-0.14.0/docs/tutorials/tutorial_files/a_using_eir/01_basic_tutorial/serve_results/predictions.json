@@ -1,0 +1,55 @@
+[
+    {
+        "request": [
+            {
+                "genotype": "eir_tutorials/a_using_eir/01_basic_tutorial/data/processed_sample_data/arrays/A374.npy"
+            },
+            {
+                "genotype": "eir_tutorials/a_using_eir/01_basic_tutorial/data/processed_sample_data/arrays/Ayodo_468C.npy"
+            },
+            {
+                "genotype": "eir_tutorials/a_using_eir/01_basic_tutorial/data/processed_sample_data/arrays/NOR146.npy"
+            }
+        ],
+        "response": {
+            "result": [
+                {
+                    "ancestry_output": {
+                        "Origin": {
+                            "Asia": 0.14425057172775269,
+                            "Eastern_Asia": 0.0021367231383919716,
+                            "Europe": 0.4604727029800415,
+                            "Latin_America_and_the_Caribbean": 0.004035637713968754,
+                            "Middle_East": 0.3845122158527374,
+                            "Sub-Saharan_Africa": 0.004592136479914188
+                        }
+                    }
+                },
+                {
+                    "ancestry_output": {
+                        "Origin": {
+                            "Asia": 0.00558199267834425,
+                            "Eastern_Asia": 0.0023774688597768545,
+                            "Europe": 0.009830629453063011,
+                            "Latin_America_and_the_Caribbean": 0.0627041906118393,
+                            "Middle_East": 0.06483746320009232,
+                            "Sub-Saharan_Africa": 0.8546682596206665
+                        }
+                    }
+                },
+                {
+                    "ancestry_output": {
+                        "Origin": {
+                            "Asia": 0.04511745274066925,
+                            "Eastern_Asia": 0.0018181436462327838,
+                            "Europe": 0.835669219493866,
+                            "Latin_America_and_the_Caribbean": 0.03905133903026581,
+                            "Middle_East": 0.07673107087612152,
+                            "Sub-Saharan_Africa": 0.0016127688577398658
+                        }
+                    }
+                }
+            ]
+        }
+    }
+]

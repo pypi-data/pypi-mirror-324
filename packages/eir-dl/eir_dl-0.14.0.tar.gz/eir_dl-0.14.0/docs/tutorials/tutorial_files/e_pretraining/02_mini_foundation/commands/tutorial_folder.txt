@@ -1,0 +1,33 @@
+eir_tutorials/e_pretraining/02_mini_foundation
+├── conf
+│   ├── cifar
+│   │   ├── cifar_fusion.yaml
+│   │   ├── cifar_globals.yaml
+│   │   ├── cifar_input.yaml
+│   │   └── cifar_output.yaml
+│   ├── fusion.yaml
+│   ├── globals.yaml
+│   ├── imdb
+│   │   ├── imdb_fusion.yaml
+│   │   ├── imdb_globals.yaml
+│   │   ├── imdb_input.yaml
+│   │   └── imdb_output.yaml
+│   ├── inputs_image_array_cnn.yaml
+│   ├── inputs_sequence.yaml
+│   └── output_sequence.yaml
+└── data
+    ├── 02_mini_foundation
+    │   ├── meta
+    │   ├── model_info.txt
+    │   ├── saved_models
+    │   └── serializations
+    ├── CIFAR10
+    │   ├── images
+    │   └── images_classes.csv
+    ├── IMDB
+    │   ├── imdb_labels.csv
+    │   └── imdb_reviews.csv
+    ├── image_captioning
+    │   ├── captions.csv
+    │   └── images
+    └── vocab.json
