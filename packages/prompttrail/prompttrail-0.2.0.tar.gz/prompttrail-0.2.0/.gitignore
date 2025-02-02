@@ -1,0 +1,36 @@
+.gitignore
+
+# You can customize this file to suit your needs
+
+# Python
+
+.venv/
+.python-version
+*.pyc
+dist
+
+# Coverage
+
+.coverage
+coverage.xml
+
+# Docs
+
+docs/build/
+
+# Others
+
+*.old
+*.log
+.envrc
+.vscode
+tmp
+lib
+.DS_Store
+
+# Tests
+
+package-test
+
+coding-agent
+ideas
