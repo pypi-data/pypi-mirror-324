@@ -1,0 +1,2053 @@
+{
+    "code": null,
+    "codes": [
+        {
+            "description": "MASTER",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "MARCO BRAMBILLA",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "SINDACO",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "TEL.TIZIANA",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "TEL.RESP.UT",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 5",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 6",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 7",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 8",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 9",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 10",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 11",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 12",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 13",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 14",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 15",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 16",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 17",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 18",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 19",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 20",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 21",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 22",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 23",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 24",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 25",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 26",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 27",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 28",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 29",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 30",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 31",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 32",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 33",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 34",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 35",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 36",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 37",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 38",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 39",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 40",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 41",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 42",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 43",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 44",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 45",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 46",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 47",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 48",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 49",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 50",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 51",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 52",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 53",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 54",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 55",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 56",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 57",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 58",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 59",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 60",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 61",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 62",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 63",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 64",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 65",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 66",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 67",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 68",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 69",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 70",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 71",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 72",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 73",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 74",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 75",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 76",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 77",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 78",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 79",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 80",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 81",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 82",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 83",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 84",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 85",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 86",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 87",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 88",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 89",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 90",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 91",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 92",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 93",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 94",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 95",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 96",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 97",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 98",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 99",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 100",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 101",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 102",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 103",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 104",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 105",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 106",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 107",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 108",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 109",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 110",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 111",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 112",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 113",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 114",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 115",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 116",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 117",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 118",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 119",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cod 120",
+            "icon": "icon",
+            "idx": 0
+        }
+    ],
+    "description": "Comune",
+    "icon": "ta-home",
+    "idx": 0,
+    "ip": null,
+    "keys": [
+        {
+            "description": "CH.1",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.2",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.3",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.4",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.5",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.6",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.7",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.8",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.9",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.10",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.11",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.12",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.13",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.14",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.15",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.16",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.17",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.18",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.19",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.20",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.21",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.22",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.23",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.24",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.25",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "CH.26",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 27",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 28",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 29",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 30",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 31",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 32",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 33",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 34",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 35",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 36",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 37",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 38",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 39",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 40",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 41",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 42",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 43",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 44",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 45",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 46",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 47",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 48",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 49",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 50",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 51",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 52",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 53",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 54",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 55",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 56",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 57",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 58",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 59",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 60",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 61",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 62",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 63",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 64",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 65",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 66",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 67",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 68",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 69",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 70",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 71",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 72",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 73",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 74",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 75",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 76",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 77",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 78",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 79",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 80",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 81",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 82",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 83",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 84",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 85",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 86",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 87",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 88",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 89",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 90",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 91",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 92",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 93",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 94",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 95",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 96",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 97",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 98",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 99",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Key 100",
+            "icon": "icon",
+            "idx": 0
+        }
+    ],
+    "passphTCS": null,
+    "port": 0,
+    "programs": [
+        {
+            "description": "UFFICI-ARCHIVIO",
+            "icon": "icon",
+            "idx": 0,
+            "zones": [
+                1,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+            ]
+        },
+        {
+            "description": "GARAGE-DEPOSITO",
+            "icon": "icon",
+            "idx": 1,
+            "zones": [
+                0,
+                4
+            ]
+        },
+        {
+            "description": "P3",
+            "icon": "icon",
+            "idx": 2,
+            "zones": []
+        },
+        {
+            "description": "P4",
+            "icon": "icon",
+            "idx": 3,
+            "zones": []
+        },
+        {
+            "description": "P5",
+            "icon": "icon",
+            "idx": 4,
+            "zones": []
+        },
+        {
+            "description": "P6",
+            "icon": "icon",
+            "idx": 5,
+            "zones": []
+        },
+        {
+            "description": "P7",
+            "icon": "icon",
+            "idx": 6,
+            "zones": []
+        },
+        {
+            "description": "P8",
+            "icon": "icon",
+            "idx": 7,
+            "zones": []
+        }
+    ],
+    "progress": 0,
+    "rcmds": [
+        {
+            "description": "Cmd 1",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 2",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 3",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 4",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 5",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 6",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 7",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 8",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 9",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 10",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 11",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 12",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 13",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 14",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 15",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 16",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 17",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 18",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 19",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 20",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 21",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 22",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 23",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 24",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 25",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 26",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 27",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 28",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 29",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 30",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 31",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 32",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 33",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 34",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 35",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 36",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 37",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 38",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 39",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 40",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 41",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 42",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 43",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 44",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 45",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 46",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 47",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 48",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 49",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 50",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 51",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 52",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 53",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 54",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 55",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 56",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 57",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 58",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 59",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 60",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 61",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 62",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 63",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 64",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 65",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 66",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 67",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 68",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 69",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 70",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 71",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 72",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 73",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 74",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 75",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 76",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 77",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 78",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 79",
+            "icon": "icon",
+            "idx": 0
+        },
+        {
+            "description": "Cmd 80",
+            "icon": "icon",
+            "idx": 0
+        }
+    ],
+    "sn": "003088963",
+    "type": 38,
+    "zones": [
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.GARAGE",
+            "icon": "icon",
+            "idx": 0,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.INGR.PL",
+            "icon": "icon",
+            "idx": 1,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.UFF.COMAND.",
+            "icon": "icon",
+            "idx": 2,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.SEGRETERIA",
+            "icon": "icon",
+            "idx": 3,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.DEPOSITO",
+            "icon": "icon",
+            "idx": 4,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.UFF.AGENTI",
+            "icon": "icon",
+            "idx": 5,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.ARCHIVIO",
+            "icon": "icon",
+            "idx": 6,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.ASCENSORE PT",
+            "icon": "icon",
+            "idx": 7,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.TRIBUTI 1",
+            "icon": "icon",
+            "idx": 8,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.TRIBUTI 2",
+            "icon": "icon",
+            "idx": 9,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.ANAGRAFE",
+            "icon": "icon",
+            "idx": 10,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.CORRIDOIO 1P",
+            "icon": "icon",
+            "idx": 11,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.UFF.TECNICO",
+            "icon": "icon",
+            "idx": 12,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.SALA CONS.",
+            "icon": "icon",
+            "idx": 13,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "MANOMIS.SIR.PT",
+            "icon": "icon",
+            "idx": 14,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "MANOMIS.SIR.-1",
+            "icon": "icon",
+            "idx": 15,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z17",
+            "icon": "icon",
+            "idx": 16,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z18",
+            "icon": "icon",
+            "idx": 17,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z19",
+            "icon": "icon",
+            "idx": 18,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z20",
+            "icon": "icon",
+            "idx": 19,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z21",
+            "icon": "icon",
+            "idx": 20,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z22",
+            "icon": "icon",
+            "idx": 21,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z23",
+            "icon": "icon",
+            "idx": 22,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z24",
+            "icon": "icon",
+            "idx": 23,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z25",
+            "icon": "icon",
+            "idx": 24,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z26",
+            "icon": "icon",
+            "idx": 25,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z27",
+            "icon": "icon",
+            "idx": 26,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z28",
+            "icon": "icon",
+            "idx": 27,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z29",
+            "icon": "icon",
+            "idx": 28,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z30",
+            "icon": "icon",
+            "idx": 29,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z31",
+            "icon": "icon",
+            "idx": 30,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z32",
+            "icon": "icon",
+            "idx": 31,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z33",
+            "icon": "icon",
+            "idx": 32,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z34",
+            "icon": "icon",
+            "idx": 33,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z35",
+            "icon": "icon",
+            "idx": 34,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z36",
+            "icon": "icon",
+            "idx": 35,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z37",
+            "icon": "icon",
+            "idx": 36,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z38",
+            "icon": "icon",
+            "idx": 37,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z39",
+            "icon": "icon",
+            "idx": 38,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z40",
+            "icon": "icon",
+            "idx": 39,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z41",
+            "icon": "icon",
+            "idx": 40,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        },
+        {
+            "allocated": false,
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z42",
+            "icon": "icon",
+            "idx": 41,
+            "inFail": false,
+            "inLowBattery": false,
+            "inSupervision": false,
+            "status": "UNKNOWN"
+        }
+    ]
+}

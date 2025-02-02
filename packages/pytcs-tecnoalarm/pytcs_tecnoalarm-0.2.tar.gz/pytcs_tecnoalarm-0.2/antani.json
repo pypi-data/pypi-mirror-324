@@ -1,0 +1,2004 @@
+{
+    "background_syncing": false,
+    "code": "99887",
+    "codes": [
+        {
+            "description": "MASTER",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "MARCO BRAMBILLA",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "SINDACO",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "TEL.TIZIANA",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "TEL.RESP.UT",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 5",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 6",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 7",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 8",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 9",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 10",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 11",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 12",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 13",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 14",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 15",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 16",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 17",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 18",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 19",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 20",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 21",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 22",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 23",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 24",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 25",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 26",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 27",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 28",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 29",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 30",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 31",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 32",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 33",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 34",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 35",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 36",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 37",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 38",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 39",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 40",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 41",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 42",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 43",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 44",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 45",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 46",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 47",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 48",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 49",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 50",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 51",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 52",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 53",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 54",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 55",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 56",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 57",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 58",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 59",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 60",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 61",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 62",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 63",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 64",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 65",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 66",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 67",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 68",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 69",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 70",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 71",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 72",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 73",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 74",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 75",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 76",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 77",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 78",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 79",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 80",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 81",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 82",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 83",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 84",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 85",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 86",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 87",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 88",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 89",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 90",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 91",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 92",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 93",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 94",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 95",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 96",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 97",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 98",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 99",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 100",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 101",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 102",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 103",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 104",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 105",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 106",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 107",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 108",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 109",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 110",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 111",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 112",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 113",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 114",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 115",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 116",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 117",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 118",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 119",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Cod 120",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        }
+    ],
+    "description": "Comune",
+    "icon": "ta-home",
+    "idx": 0,
+    "ip": null,
+    "keys": [
+        {
+            "description": "CH.1",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.2",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.3",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.4",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.5",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.6",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.7",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.8",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.9",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.10",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.11",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.12",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.13",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.14",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.15",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.16",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.17",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.18",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.19",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.20",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.21",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.22",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.23",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.24",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.25",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "CH.26",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 27",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 28",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 29",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 30",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 31",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 32",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 33",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 34",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 35",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 36",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 37",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 38",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 39",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 40",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 41",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 42",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 43",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 44",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 45",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 46",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 47",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 48",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 49",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 50",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 51",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 52",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 53",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 54",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 55",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 56",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 57",
+            "icon": "ta-zone",
+            "id": 1736369554184
+        },
+        {
+            "description": "Key 58",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 59",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 60",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 61",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 62",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 63",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 64",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 65",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 66",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 67",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 68",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 69",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 70",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 71",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 72",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 73",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 74",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 75",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 76",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 77",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 78",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 79",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 80",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 81",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 82",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 83",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 84",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 85",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 86",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 87",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 88",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 89",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 90",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 91",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 92",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 93",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 94",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 95",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 96",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 97",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 98",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 99",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Key 100",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        }
+    ],
+    "passphTCS": "+121+127+53+40-70-98+49+11-87-78+41-47+51+113-51+100",
+    "port": 0,
+    "programs": [
+        {
+            "description": "UFFICI-ARCHIVIO",
+            "icon": "ta-program",
+            "id": 1736369554182,
+            "idx": 0,
+            "zones": [
+                1,
+                2,
+                3,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13
+            ]
+        },
+        {
+            "description": "GARAGE-DEPOSITO",
+            "icon": "ta-program",
+            "id": 1736369554182,
+            "idx": 1,
+            "zones": [
+                0,
+                4
+            ]
+        },
+        {
+            "description": "P3",
+            "icon": "ta-program",
+            "id": 1736369554182,
+            "idx": 2,
+            "zones": []
+        },
+        {
+            "description": "P4",
+            "icon": "ta-program",
+            "id": 1736369554182,
+            "idx": 3,
+            "zones": []
+        },
+        {
+            "description": "P5",
+            "icon": "ta-program",
+            "id": 1736369554182,
+            "idx": 4,
+            "zones": []
+        },
+        {
+            "description": "P6",
+            "icon": "ta-program",
+            "id": 1736369554182,
+            "idx": 5,
+            "zones": []
+        },
+        {
+            "description": "P7",
+            "icon": "ta-program",
+            "id": 1736369554182,
+            "idx": 6,
+            "zones": []
+        },
+        {
+            "description": "P8",
+            "icon": "ta-program",
+            "id": 1736369554182,
+            "idx": 7,
+            "zones": []
+        }
+    ],
+    "rcmds": [
+        {
+            "description": "Cmd 1",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 2",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 3",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 4",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 5",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 6",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 7",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 8",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 9",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 10",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 11",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 12",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 13",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 14",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 15",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 16",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 17",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 18",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 19",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 20",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 21",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 22",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 23",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 24",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 25",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 26",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 27",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 28",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 29",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 30",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 31",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 32",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 33",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 34",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 35",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 36",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 37",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 38",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 39",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 40",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 41",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 42",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 43",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 44",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 45",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 46",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 47",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 48",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 49",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 50",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 51",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 52",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 53",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 54",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 55",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 56",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 57",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 58",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 59",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 60",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 61",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 62",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 63",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 64",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 65",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 66",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 67",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 68",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 69",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 70",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 71",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 72",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 73",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 74",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 75",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 76",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 77",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 78",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 79",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        },
+        {
+            "description": "Cmd 80",
+            "icon": "ta-zone",
+            "id": 1736369554185
+        }
+    ],
+    "remotes": [
+        {
+            "associatedIdx": null,
+            "description": "T1",
+            "icon": "ta-remote",
+            "id": 1736369554182,
+            "idx": 0,
+            "type": "OPOUT_GENERIC"
+        },
+        {
+            "associatedIdx": null,
+            "description": "T2",
+            "icon": "ta-remote",
+            "id": 1736369554182,
+            "idx": 1,
+            "type": "OPOUT_GENERIC"
+        },
+        {
+            "associatedIdx": null,
+            "description": "T3",
+            "icon": "ta-remote",
+            "id": 1736369554182,
+            "idx": 2,
+            "type": "OPOUT_GENERIC"
+        },
+        {
+            "associatedIdx": null,
+            "description": "T4",
+            "icon": "ta-remote",
+            "id": 1736369554182,
+            "idx": 3,
+            "type": "OPOUT_GENERIC"
+        },
+        {
+            "associatedIdx": null,
+            "description": "T5",
+            "icon": "ta-remote",
+            "id": 1736369554182,
+            "idx": 4,
+            "type": "OPOUT_GENERIC"
+        },
+        {
+            "associatedIdx": null,
+            "description": "T6",
+            "icon": "ta-remote",
+            "id": 1736369554182,
+            "idx": 5,
+            "type": "OPOUT_GENERIC"
+        },
+        {
+            "associatedIdx": null,
+            "description": "T7",
+            "icon": "ta-remote",
+            "id": 1736369554182,
+            "idx": 6,
+            "type": "OPOUT_GENERIC"
+        },
+        {
+            "associatedIdx": null,
+            "description": "T8",
+            "icon": "ta-remote",
+            "id": 1736369554182,
+            "idx": 7,
+            "type": "OPOUT_GENERIC"
+        }
+    ],
+    "sn": "003088963",
+    "syncCRC": null,
+    "type": 38,
+    "use_fingerprint": false,
+    "valid_data": true,
+    "zones": [
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.GARAGE",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 0,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.INGR.PL",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 1,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.UFF.COMAND.",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 2,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.SEGRETERIA",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 3,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.DEPOSITO",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 4,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.UFF.AGENTI",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 5,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.ARCHIVIO",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 6,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.ASCENSORE PT",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 7,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.TRIBUTI 1",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 8,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.TRIBUTI 2",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 9,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.ANAGRAFE",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 10,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.CORRIDOIO 1P",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 11,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.UFF.TECNICO",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 12,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "VOL.SALA CONS.",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 13,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "MANOMIS.SIR.PT",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 14,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "MANOMIS.SIR.-1",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 15,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z17",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 16,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z18",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 17,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z19",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 18,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z20",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 19,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z21",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 20,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z22",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 21,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z23",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 22,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z24",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 23,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z25",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 24,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z26",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 25,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z27",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 26,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z28",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 27,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z29",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 28,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z30",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 29,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z31",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 30,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z32",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 31,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z33",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 32,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z34",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 33,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z35",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 34,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z36",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 35,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z37",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 36,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z38",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 37,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z39",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 38,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z40",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 39,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z41",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 40,
+            "status": "UNKNOWN"
+        },
+        {
+            "camera": "M6CAM_NO_CAM",
+            "description": "Z42",
+            "icon": "ta-zone",
+            "id": 1736369554183,
+            "idx": 41,
+            "status": "UNKNOWN"
+        }
+    ]
+}
