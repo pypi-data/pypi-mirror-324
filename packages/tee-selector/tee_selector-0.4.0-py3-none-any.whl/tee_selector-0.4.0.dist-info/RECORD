@@ -1,0 +1,10 @@
+tee_selector/__init__.py,sha256=iTdTh3sfGSnZTbGI_HKIyMVkuRIu3ViSgYFTnl-j19E,63
+tee_selector/hole.py,sha256=9hJ8eKBOGjyJ4g47Nacl9PwD9IXw-5TvSyo7BXP8q4I,184
+tee_selector/tee.py,sha256=xPg7A9X-b3h_W7fGzNlZe3i0xxledBmQ34FPpg0fMNs,2578
+tee_selector/tee_manager.py,sha256=3nauQbc-WPbxpHCadT6vWZh8qfZ6yNLFrj4pbciDL4Q,9883
+tests/test_tee_selector.py,sha256=2c30cGbSYw7a4aGByGsqLCLkdFGdiO_njbLy38BUSXk,217
+tee_selector-0.4.0.dist-info/LICENSE,sha256=yyu-tzB8Ad7MJl1XjQCiAuIQEjaHI8xRXA6FRVnnPCA,1062
+tee_selector-0.4.0.dist-info/METADATA,sha256=d3xGqMsWxbqhUEr9yYTGwLQALkQt5OIwZcgZAe6JEyo,316
+tee_selector-0.4.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tee_selector-0.4.0.dist-info/top_level.txt,sha256=ehPjcP9AysMfepn0yYIjS2fPD_TwOVy7zvOFRPYmSew,19
+tee_selector-0.4.0.dist-info/RECORD,,
