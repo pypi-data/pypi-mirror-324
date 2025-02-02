@@ -1,0 +1,7 @@
+bqskit
+numpy
+python-sat
+pyzx
+qiskit>=1.0
+rustworkx
+pennylane
