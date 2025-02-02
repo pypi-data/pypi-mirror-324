@@ -1,0 +1,80 @@
+Metadata-Version: 2.2
+Name: asyncwiki
+Version: 0.1.3
+Summary: Asynchronous work with Wikipedia for asyncio and Python
+Home-page: https://github.com/FailProger/asyncwiki.git
+Author: Vyacheslav Pervakov
+Author-email: WsrrcalzWehgwmD@protonmail.com
+License: MIT License
+Project-URL: GitHub, https://github.com/FailProger/asyncwiki.git
+Project-URL: PyPI, https://pypi.org/project/asyncwiki/
+Keywords: Python,asynchronous,asyncio,aiohttp,Wikipedia
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: beautifulsoup4>=4.8.0
+Requires-Dist: lxml>=5.0.0
+Requires-Dist: SQLAlchemy>=2.0.0
+Requires-Dist: pyspellchecker>=0.7.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Asyncwiki
+
+--------------------
+
+## About
+### The library for async work with Wikipedia
+
+Some words about library
+
+- Asynchronous
+- Fast (probably)
+- Parse Wikipedia
+- Can work with databases
+- And it`s all
+
+## Installation
+
+You can install <code>asyncwiki</code> from PyPI:
+
+    pip install asyncwiki
+
+## Quick start
+
+A little example of library work:
+
+    import asyncio
+    from asyncwiki import WikiSearcher
+
+    
+    wiki_searcher = WikiSearcher()
+    
+
+    async def main():
+        
+        query = "Apple"
+        lang = "en"
+
+        result = await wiki_searcher.search(query, lang)
+        print(result)
+
+    
+    if __name__ == "__main__":
+        asyncio.run(main())
+
+## License
+<code>Asyncwiki</code> is offered under the MIT license.

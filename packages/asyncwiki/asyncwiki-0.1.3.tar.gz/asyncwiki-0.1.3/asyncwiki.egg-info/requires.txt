@@ -1,0 +1,5 @@
+aiohttp>=3.8.0
+beautifulsoup4>=4.8.0
+lxml>=5.0.0
+SQLAlchemy>=2.0.0
+pyspellchecker>=0.7.0
