@@ -1,0 +1,8 @@
+setup.py
+Cayley_perms.egg-info/PKG-INFO
+Cayley_perms.egg-info/SOURCES.txt
+Cayley_perms.egg-info/dependency_links.txt
+Cayley_perms.egg-info/top_level.txt
+cperms/__init__.py
+cperms/av.py
+cperms/cayley.py
