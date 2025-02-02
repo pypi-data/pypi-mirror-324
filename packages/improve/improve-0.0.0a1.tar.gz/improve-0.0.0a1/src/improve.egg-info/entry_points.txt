@@ -1,0 +1,3 @@
+[console_scripts]
+chmtime = improve.utils.chmtime:main
+waituntil = improve.utils.waituntil:main
