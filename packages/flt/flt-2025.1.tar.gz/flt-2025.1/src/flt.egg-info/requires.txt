@@ -1,0 +1,13 @@
+numpy
+
+[doc]
+sphinx
+furo
+sphinxcontrib-katex
+numpydoc
+
+[test]
+pytest
+numpy
+scipy
+jax
