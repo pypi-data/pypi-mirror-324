@@ -1,0 +1,71 @@
+buttons:
+- button_text: a
+  device_name: Smart Bulb1
+  dim_states:
+  - 15
+  - 50
+  - 100
+  long_press: dim+
+  short_press: toggle
+- button_text: b
+  device_name: "Steven\u2019s Office lights"
+  dim_states: []
+  long_press: toggle
+  short_press: toggle
+- button_text: c
+  device_name: Dining room lights
+  dim_states: []
+  long_press: toggle
+  short_press: toggle
+- button_text: d
+  device_name: pandora
+  dim_states: []
+  long_press: toggle
+  short_press: toggle
+- button_text: \
+  device_name: ~LAST~
+  dim_states: []
+  long_press: toggle
+  short_press: toggle
+- button_text: '['
+  device_name: ~LAST~
+  dim_states:
+  - 10
+  - 20
+  - 30
+  - 40
+  - 50
+  - 60
+  - 70
+  - 80
+  - 90
+  - 100
+  long_press: dim-
+  short_press: dim-
+- button_text: ']'
+  device_name: ~LAST~
+  dim_states:
+  - 10
+  - 20
+  - 30
+  - 40
+  - 50
+  - 60
+  - 70
+  - 80
+  - 90
+  - 100
+  long_press: dim+
+  short_press: dim+
+discovery_timeout: 10
+logging:
+  handlers:
+  - format: '<green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> | <level>{level: <8}</level>
+      | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> - <level>{message}</level>'
+    sink: ext://sys.stderr
+  - backtrace: false
+    serialize: true
+    sink:
+      (): kasabuttons.logging_utils.custom_loki_handler
+      url: http://eudora.local:3100/loki/api/v1/push
+refresh_frequency: 0

@@ -1,0 +1,10 @@
+refresh_frequency = 0
+discovery_timeout = 10
+
+[[buttons]]
+button_text = "a"
+device_name = "Smart Bulb1"
+long_press = "dim+"
+short_press = "toggle"
+dim_states = [15, 50, 100]
+
