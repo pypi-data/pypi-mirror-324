@@ -1,0 +1,4 @@
+nsepython
+pandas
+numpy
+scipy
