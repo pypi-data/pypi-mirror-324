@@ -1,0 +1,13 @@
+PyWebScraping/__init__.py,sha256=uWrA32WqTNPU_8HW9BG4XC8IgvpCKI6itoANXXMGRpE,101
+PyWebScraping/browsers_handler.py,sha256=Vt4swbzjJYLT8baHaoTADxKw66pEblmgqQjqd1n2Y_k,1284
+PyWebScraping/utilities.py,sha256=1X6IAk_yZcXCPbv3GkzYSl6Oi3zTeJqe8-zcfDnhaNU,2491
+PyWebScraping/webdrivers/BaseDriver.py,sha256=vKDXv3gfLMvh2RYpl9uGSD4Vm0YcBlRQQVWTKT4X5Wk,32435
+PyWebScraping/webdrivers/Chrome.py,sha256=i7OyZ4AJAUwNjG0G7n8OMXX_ZQp5mnNhdH4T3l59Wnw,12875
+PyWebScraping/webdrivers/Edge.py,sha256=phvcNQ3YXb1rV_ZYcoFZpc9Y3vGdkmE8WXlBsxKbVhI,13090
+PyWebScraping/webdrivers/FireFox.py,sha256=lYWQ-kXuQgxJe33Kbjc6XdBD2a3SXBYc3_Iz8BCutKw,13031
+PyWebScraping/webdrivers/Yandex.py,sha256=nGxjTZfVhF90crnOEmTc3J7Cuf4jye3o9N31ecFS-_8,13023
+PyWebScraping/webdrivers/__init__.py,sha256=GerWNstK8PRkV95V_xNnDWcM44rpOiQG7rYJsUcwgl0,155
+PyWebScraping-1.3.11.dist-info/METADATA,sha256=G7QqFQzCrscH6LJHd4P9hwIOlotFSZ4ZlmB3qIRV84w,4709
+PyWebScraping-1.3.11.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+PyWebScraping-1.3.11.dist-info/top_level.txt,sha256=TGpigMU4sYepwTPrCWxoodWmfyPO5O1Ot0PiMwVl6Lc,14
+PyWebScraping-1.3.11.dist-info/RECORD,,
