@@ -1,0 +1,2 @@
+[nbdev]
+soilspecdata = soilspecdata._modidx:d
