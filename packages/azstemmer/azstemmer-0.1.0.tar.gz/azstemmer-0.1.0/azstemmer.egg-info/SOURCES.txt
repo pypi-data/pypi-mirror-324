@@ -1,0 +1,10 @@
+README.md
+setup.py
+azstemmer/__init__.py
+azstemmer/azwords.txt
+azstemmer/enwords.txt
+azstemmer/stemmer.py
+azstemmer.egg-info/PKG-INFO
+azstemmer.egg-info/SOURCES.txt
+azstemmer.egg-info/dependency_links.txt
+azstemmer.egg-info/top_level.txt
