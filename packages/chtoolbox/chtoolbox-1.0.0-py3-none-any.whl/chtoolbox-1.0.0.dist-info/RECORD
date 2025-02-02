@@ -1,0 +1,16 @@
+chtoolbox/RustAGA8.py,sha256=RykVpZ4Gat7BitDGjAW3DoIICABTEFXVBH5I8gOfS2o,22569
+chtoolbox/__init__.py,sha256=Gw7JglTTssDKRLUHGT3Gg36mS4JQmfATP2t9UdE-u04,1202
+chtoolbox/add_license.py,sha256=YRWVyJM8HkgL4J_OiiY_Ijg6ZlHDW-0kviM-5fowoug,3669
+chtoolbox/aga8.dll,sha256=6wQdvDFJXjC7CaGTiLFTit_g0XxWp7tw6q2fBSaThBc,223744
+chtoolbox/main.py,sha256=2s3jhOIwfQD9qlIkj6x8ByfdFHvwjQvMn37WfGEAidM,37
+chtoolbox/misc.py,sha256=BWkPi1vhv5FkAudnxwj02trYvhPTPwd3lH7be2V2ZJ4,5508
+chtoolbox/test_misc.py,sha256=NOnXvCmvKwbndQBbB_MD6bZcE1nQCFJ9FH0bHJn-AEA,49
+chtoolbox/testing.py,sha256=9veN7ZKQ8wBULbrcgKRRK4vwL_ITDetqO6oVQqGe4s4,5031
+tests/__init__.py,sha256=nGVfOPx2n2QiBfxCvsWjihNZu3lfw2TQnBf3ujDEIdc,1107
+tests/test_misc.py,sha256=7gfqrKs9MK1LmI-INPWjgBrSMDY3ee5IZSxz2s2eIJU,2230
+tests/test_testing.py,sha256=Bu4nJMSQorLamb7rfT1moV7ylB2y295iIvOqb96vZU8,2248
+chtoolbox-1.0.0.dist-info/LICENSE,sha256=eGxOFpWUePrzsdeIrvHAHl-NEUMR203xYJmvIbX36iU,1097
+chtoolbox-1.0.0.dist-info/METADATA,sha256=acAJHyWaP0FJbTVrACezoGHzN_R_tDZi_RKOt0AxGnk,633
+chtoolbox-1.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+chtoolbox-1.0.0.dist-info/top_level.txt,sha256=P9aSqSdr3SjHWFIqclam61G-Vo7_jWaDuo57ejBY1QA,16
+chtoolbox-1.0.0.dist-info/RECORD,,
