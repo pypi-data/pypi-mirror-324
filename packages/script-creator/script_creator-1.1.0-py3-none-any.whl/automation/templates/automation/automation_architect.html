@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/nucleo-icons.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/soft-ui-dashboard.css' %}" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <script src="{% static 'js/core/popper.min.js' %}"></script>
+    <script src="{% static 'js/core/bootstrap.min.js' %}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/htmx.min.js' %}"></script>
+    <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+</head>
+<body class="g-sidenav-show bg-gray-100">
+
+{% include 'partials/nav_bar.html' %}
+
+<main class="main-content position-relative border-radius-lg">
+    <h3>Automation Architect</h3>
+
+    <div id="content" style="    display: flex;
+    flex-direction: row;">
+        <div class="card-group" style="padding: 10px 20px;    display: flex;
+    flex-direction: column;">
+            <!-- Script Selection Form -->
+            <div class="card" style="min-width: 800px;    
+                margin: 10px;
+                border-radius: 15px;
+                border-left: 5px solid;">
+                <div class="card-body pt-2">
+                    <form id="automation-form" method="POST" action="{% url 'automation_architect_add_script' %}"
+                          hx-post="{% url 'automation_architect_add_script' %}" hx-target="#automation-list"
+                          hx-swap="outerHTML">
+                        {% csrf_token %}
+                        {% include 'partials/automation_architect_script_select.html' %}
+                        {% include 'partials/automation_architecture_variable_table.html' %}
+                    </form>
+                </div>
+            </div>
+
+            <!-- Extra Options Form -->
+            <div class="card" style="    
+                margin: 10px;
+                border-radius: 15px;
+                border-left: 5px green solid;">
+                <div class="card-body pt-2">
+                    {% include 'partials/automation_architect_extra_options.html' %}
+                </div>
+            </div>
+        </div>
+
+        <!-- Automation Architect Table -->
+        <div id="automation-list" style="min-width: 800px">
+            {% include 'partials/automation_architect_table.html' %}
+        </div>
+    </div>
+</main>
+
+
+</body>
+</html>

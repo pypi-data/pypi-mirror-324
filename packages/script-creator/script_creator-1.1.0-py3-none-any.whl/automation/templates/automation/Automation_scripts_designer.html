@@ -1,0 +1,80 @@
+{% load static %}
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon and Apple Icon -->
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-icon.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+
+
+    <!-- Nucleo Icons -->
+    <link href="{% static 'css/nucleo-icons.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/nucleo-svg.css' %}" rel="stylesheet"/>
+
+
+    <!-- CSS Files -->
+    <script src="{% static 'js/htmx.min.js' %}"></script>
+    <!-- CSS Files -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- JavaScript Files -->
+    <script src="{% static 'js/core/popper.min.js' %}"></script>
+    <script src="{% static 'js/core/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/plugins/perfect-scrollbar.min.js' %}"></script>
+    <script src="{% static 'js/plugins/smooth-scrollbar.min.js' %}"></script>
+    <script src="{% static 'js/soft-ui-dashboard.js' %}"></script>
+    <script src="{% static 'js/plugins/threejs.js' %}"></script>
+    <script src="{% static 'js/plugins/orbit-controls.js' %}"></script>
+
+    <link id="pagestyle" href="{% static 'css/soft-ui-dashboard.css' %}" rel="stylesheet"/>
+
+
+</head>
+
+<body class="g-sidenav-show bg-gray-100">
+{% include 'partials/nav_bar.html' %}
+<main class="main-content position-relative border-radius-lg ">
+    <div class="container-fluid">
+        
+        <h2>Your Scripts</h2>
+
+        <!-- Project Selection Dropdown with HTMX -->
+        <form>
+            <label for="project-select">Filter by Project:</label>
+            <select id="project-select" name="project_id"
+                    hx-get="{% url 'load_scripts' %}?project_id="
+                    hx-target="#script-list-container" hx-swap="innerHTML">
+                <option value="" {% if not selected_project_id %}selected{% else %}disabled{% endif %}>
+                    Choose Project
+                </option>
+                {% for project in projects %}
+                    <option value="{{ project.id }}"
+                            {% if project.id|stringformat:"s" == selected_project_id %}selected{% endif %}>
+                        {{ project.name }}
+                    </option>
+                {% endfor %}
+            </select>
+        </form>
+
+        <!-- Script List Container -->
+        <div id="script-list-container">
+            {% include 'partials/script_list_partial.html' %}
+        </div>
+        <script>
+            document.addEventListener("htmx:afterRequest", function (event) {
+                const versionSelect = document.getElementById("version-select");
+                if (versionSelect && versionSelect.options.length > 1) {
+                    versionSelect.disabled = false;  // Enable the dropdown if options are loaded
+                }
+            });
+        </script>
+    </div>
+</main>
+
+<script src="{% static 'js/core/popper.min.js' %}"></script>
+<script src="{% static 'js/core/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/soft-ui-dashboard.min.js' %}"></script>
+</body>

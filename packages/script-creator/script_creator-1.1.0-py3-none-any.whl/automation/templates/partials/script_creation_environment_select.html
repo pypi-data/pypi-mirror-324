@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="id_environment">Environment</label>
+    <select name="environment" id="id_environment" class="form-control select2"
+            hx-get="{% url 'get_components' 0 %}"
+            hx-trigger="change from:#id_environment"
+            hx-target="#component-container"
+            hx-swap="innerHTML">
+        <option value="">Select Environment</option>
+        {% for env in environments %}
+            <option value="{{ env.id }}">{{ env.name }}</option>
+        {% endfor %}
+    </select>
+</div>

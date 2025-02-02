@@ -1,0 +1,38 @@
+    {% load static %}
+            <label for="project-select">Filter by Project:</label>
+            <select class="form-control" id="project-select" name="project_id"
+                    hx-get="{% url 'load_scripts' %}?project_id="
+                    hx-target="#script-list-container" hx-swap="innerHTML">
+                <option value="" {% if not selected_project_id %}selected{% else %}disabled{% endif %}>
+                    Choose Project
+                </option>
+                {% for project in projects %}
+                    <option value="{{ project.id }}"
+                            {% if project.id|stringformat:"s" == selected_project_id %}selected{% endif %}>
+                        {{ project.name }}
+                    </option>
+                {% endfor %}
+            </select>
+
+<form method="post" id="script-form">
+            {% csrf_token %}
+        <div id="script-list-container">
+            {% include 'partials/automation_architect_script_list.html' %}
+        </div>
+        <button id="unique-action-button" 
+                hx-post="{% url 'automation_architect_add_script' %}"
+                hx-target="#automation-list"
+                hx-swap="outerHTML"
+                hx-trigger="click"
+                type="button" class="btn bg-gradient-primary btn-lg">
+            Add Script
+        </button>
+</form>
+            <script>
+                document.addEventListener("htmx:afterRequest", function (event) {
+                    const versionSelect = document.getElementById("version-select");
+                    if (versionSelect && versionSelect.options.length > 1) {
+                        versionSelect.disabled = false;  // Enable the dropdown if options are loaded
+                    }
+                });
+            </script>
