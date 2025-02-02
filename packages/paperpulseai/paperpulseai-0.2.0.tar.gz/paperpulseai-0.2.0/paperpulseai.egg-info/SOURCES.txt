@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+paperpulseai/__init__.py
+paperpulseai/core.py
+paperpulseai/deepseek_model.py
+paperpulseai.egg-info/PKG-INFO
+paperpulseai.egg-info/SOURCES.txt
+paperpulseai.egg-info/dependency_links.txt
+paperpulseai.egg-info/entry_points.txt
+paperpulseai.egg-info/requires.txt
+paperpulseai.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cli.py
