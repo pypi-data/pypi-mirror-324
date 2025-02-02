@@ -1,0 +1,9 @@
+dbframe/__init__.py,sha256=Azk6QcQskmMssn5juvmWfB_Q6wNIi5Isl4G5MlNyvtQ,106
+dbframe/dbframe.py,sha256=norG6IhX8dkU88IFJ32AvsFVRkOfWGiO63meqKcNv3k,588
+dbframe/handlers/postgres_handler.py,sha256=nYpWEONkpTz8SmrF4ShyJQdEy6yhc1lHyVDBG9woeAY,299
+dbframe/handlers/sqlite_handler.py,sha256=XQYwmnaXPXQuQ6o6xf2EWZXtl9tXPQB5rlg60D4iJmE,283
+dbframe-0.0.1.dist-info/LICENSE,sha256=nypl88xbidj_4I-LBLgV5O02n9KI1V0hfI499FQ0LAA,1069
+dbframe-0.0.1.dist-info/METADATA,sha256=ofK0kR7X2MqErOGU0cqAWGXoule4LmjbixywRFvMi44,2132
+dbframe-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dbframe-0.0.1.dist-info/top_level.txt,sha256=eeDwS8_LBVmAw41P6g3unLqMXzr_k3AxWGDziiahoCk,8
+dbframe-0.0.1.dist-info/RECORD,,
