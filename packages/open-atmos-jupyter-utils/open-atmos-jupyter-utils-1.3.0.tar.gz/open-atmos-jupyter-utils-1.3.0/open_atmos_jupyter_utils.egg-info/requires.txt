@@ -1,0 +1,5 @@
+ipywidgets
+IPython
+matplotlib
+imageio
+nbformat
