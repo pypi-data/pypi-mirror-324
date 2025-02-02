@@ -1,0 +1,13 @@
+marshmallow_dataclass2/__init__.py,sha256=8kHLLuLBFJn9AZ2tsbm3DQdvz3Eydx96s74QPZJvhJ8,39335
+marshmallow_dataclass2/collection_field.py,sha256=Nc1y1jThnhYDIBuPQZqpVatAVAIk3-KAFoNO9Arz_eE,1640
+marshmallow_dataclass2/generic_resolver.py,sha256=kHEA4hDEUkKBLHhp_kaz-6yTasEhjlJ8Z5_Ko4YxeSM,9171
+marshmallow_dataclass2/lazy_class_attribute.py,sha256=2fEF6NSdNYDAegxXkT0D2hjysRKlEXFSIH7eP0nurVE,1070
+marshmallow_dataclass2/mypy.py,sha256=K3qFXECCWL9DebDcGeySGI1fqr0zK1n9XygiJBVJnBY,2039
+marshmallow_dataclass2/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+marshmallow_dataclass2/typing.py,sha256=1tUrfvaLZ0yhVUsTeOH2smZSMaofQEOM0zi0M-9gPjk,172
+marshmallow_dataclass2/union_field.py,sha256=Y5AOXQ84fzG_-PDE3KdQcZPTE_fzi6SQrS5SH4JYAEc,2970
+marshmallow_dataclass2-8.8.0.dist-info/LICENSE,sha256=_lejgWQ-D_9Pdvqxj3iOVoHTzM2BJ1QQ1Mubb0bTn5I,1070
+marshmallow_dataclass2-8.8.0.dist-info/METADATA,sha256=OpCHRxmf12pRpDMnWVkhGQwHvwZhdosh0_h6F-04WF8,12408
+marshmallow_dataclass2-8.8.0.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+marshmallow_dataclass2-8.8.0.dist-info/top_level.txt,sha256=RhlnLeWHV1E2qo54QQ6qZgnGqceycBowB6I2Hy4PRUw,23
+marshmallow_dataclass2-8.8.0.dist-info/RECORD,,
