@@ -1,0 +1,2 @@
+[console_scripts]
+pinkmess = pinkmess.__main__:entrypoint
