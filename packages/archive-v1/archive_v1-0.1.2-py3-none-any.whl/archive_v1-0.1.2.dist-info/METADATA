@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: archive-v1
+Version: 0.1.2
+Summary: keep clean your file tree during development
+License: MIT
+Author: kagemeka
+Author-email: kagemeka1@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: toml (==0.10.2)
+Description-Content-Type: text/markdown
+
+# archiver
+## usage
+```sh
+pip install archiver-v1
+```
+add `archive.toml` to the project directory, run `archive <path1> <path2> ...`
+
+## dev
+install poetry `apt install -y pipx && pipx ensurepip && pipx install poetry`.
+publish add pypi token, `poetry publish --build`.
+
