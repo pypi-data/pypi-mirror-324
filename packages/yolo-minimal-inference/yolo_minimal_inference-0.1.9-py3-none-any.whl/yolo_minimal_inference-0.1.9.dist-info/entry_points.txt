@@ -1,0 +1,3 @@
+[console_scripts]
+yolo-run=yolo_minimal_inference.__main__:main
+
