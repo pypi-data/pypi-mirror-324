@@ -1,0 +1,3 @@
+[console_scripts]
+neu = neutools.__main__:app
+neutools = neutools.__main__:app
