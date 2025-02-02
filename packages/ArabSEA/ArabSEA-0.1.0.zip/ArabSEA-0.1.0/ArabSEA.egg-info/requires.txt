@@ -1,0 +1,9 @@
+botocore==1.27.0
+urllib3==1.26.14
+simpletransformers
+pandas
+openpyxl
+qalsadi
+pyarabic
+torch
+scikit-learn

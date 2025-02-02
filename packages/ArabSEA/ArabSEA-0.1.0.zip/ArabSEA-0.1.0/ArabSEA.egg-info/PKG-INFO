@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ArabSEA
+Version: 0.1.0
+Summary: A library for extracting Arabic Proper Names
+Home-page: https://github.com/yourusername/ArabSEA
+Author: Salma Nabil, Esraa Magdy, Aya Tarek
+Author-email: s.n.shehab@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: botocore==1.27.0
+Requires-Dist: urllib3==1.26.14
+Requires-Dist: simpletransformers
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: qalsadi
+Requires-Dist: pyarabic
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+
+# ArabSEA
+
+A Python package for Arabic Named Entity Recognition that extracts Arabic names from given texts.

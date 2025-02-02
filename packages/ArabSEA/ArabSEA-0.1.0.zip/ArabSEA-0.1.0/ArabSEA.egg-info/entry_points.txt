@@ -1,0 +1,2 @@
+[console_scripts]
+ArabSEA = ArabSEA.ner_model:ner

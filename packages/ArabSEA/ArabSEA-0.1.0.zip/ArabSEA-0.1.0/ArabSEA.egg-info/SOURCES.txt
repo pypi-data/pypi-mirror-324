@@ -1,0 +1,11 @@
+README.md
+setup.py
+ArabSEA.egg-info/PKG-INFO
+ArabSEA.egg-info/SOURCES.txt
+ArabSEA.egg-info/dependency_links.txt
+ArabSEA.egg-info/entry_points.txt
+ArabSEA.egg-info/not-zip-safe
+ArabSEA.egg-info/requires.txt
+ArabSEA.egg-info/top_level.txt
+tests/__init__.py
+tests/test_ner_model.py
