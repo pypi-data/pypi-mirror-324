@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: valladopy
+Version: 0.1.0
+Summary: Routines from Fundamentals of Astrodynamics and Applications by David Vallado
+Author-email: David Vallado <davallado@gmail.com>
+License: AGPL-3.0
+Requires-Dist: numpy==1.26.4
+Requires-Dist: pydantic==2.9.2
+Requires-Dist: scipy==1.13.1
