@@ -1,0 +1,2 @@
+[console_scripts]
+404-finder = 404_finder.cli:main
