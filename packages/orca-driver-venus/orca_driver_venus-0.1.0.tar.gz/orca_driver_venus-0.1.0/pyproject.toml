@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orca-driver-venus"
+version = "0.1.0"
+description = "Hamilton Venus command line driver"
+authors = [
+    { name = "Cheshire Labs", email = "support@cheshirelabs.io" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "AGPL-3.0-only"}
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent"
+]
+
+dependencies = [
+    "orca_interfaces>=0.1.0",
+]
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3.1",
+    "types-setuptools",
+]
+
+[project.urls]
+"Repository" =  "https://github.com/Cheshire-Labs/orca-driver-venus"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = [
+    "py.typed",
+    "driver.json"
+]
