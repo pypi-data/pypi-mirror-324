@@ -1,0 +1,90 @@
+# pyproject.toml
+
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = [ "setuptools>=61.0.0", "wheel" ]
+build-backend = "setuptools.build_meta"
+
+
+##### ---- The 'project' table was defined in PEP 621 ----
+[project]
+name = "python-in-production"
+authors = [ {name = "Achilleas Palaskos", email = "my_email@example.com"} ]
+description = "A simple python package for illustration and educational purposes"
+readme = "README.md"
+requires-python = ">=3.12"
+keywords = [ "one", "two" ]
+license = { text = "MIT" }
+classifiers = [ "Programming Language :: Python :: 3" ]
+dependencies = [ "numpy", 'importlib-metadata; python_version<"3.13"' ]
+dynamic = [ "version" ]
+
+
+[project.optional-dependencies]
+test = [ "pytest", "pytest-cov" ]
+static-code-qa = [ "pre-commit" ]
+release = [ "build", "twine" ]
+dev = [ "python-in-production[test,release,static-code-qa]" ]
+##### ---- End of the 'project' table ----
+
+# docs: https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#dynamic-metadata
+[tool.setuptools.dynamic]
+version = { file = "version.txt" }
+
+[tool.black]
+line-length = 100
+exclude = "./venv"
+extend-exclude = "pyproject\\.toml"
+
+
+[tool.flake8]
+docstring-convention = "all"
+
+# Requires a trailing space at the end (before closing bracket)
+ignore = [ "D100", "D103", "D104",  "D107", "D202", "D210", "D212", "D400",
+            "D401", "D415", "E501", "W503", "W605", "D203", "D100" ]
+exclude = [ ".venv" ]
+max-line-length = 99
+radon-max-cc = 10  # radon
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3  # "VERTICAL_HANGING_INDENT"
+force_grid_wrap = 2
+line_length = 99
+skip = [ "pyproject.toml" ]
+
+
+[tool.pylint."messages control"]
+# Requires a trailing space at the end (before closing bracket)
+disable = [ "line-too-long",
+            "trailing-whitespace",
+            "missing-function-docstring",
+            "consider-using-f-string",
+            "import-error",
+            "too-few-public-methods",
+            "redefined-outer-name",
+            "missing-module-docstring",
+            "redefined-builtin" ]
+
+[tool.ruff]
+# Enable flake8-bugbear (`B`) rules.
+select = [ "E", "F", "B", "ERA" ]
+
+# Never enforce `E501` (line length violations).
+ignore = [ "E501", "F401" ]
+
+# Avoid trying to fix flake8-bugbear (`B`) violations.
+unfixable = [ "B" ]
+
+line-length = 99
+exclude = [ "pyproject.toml" ]
+
+
+# Ignore `E402` (import violations) in:
+#   1. all `__init__.py` files, and
+#   2. all files in `path/to/file.py`.
+[tool.ruff.per-file-ignores]
+"__init__.py" = [ "E402" ]
+"path/to/file.py" = [ "E402" ]
