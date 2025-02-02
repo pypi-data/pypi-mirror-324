@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+spotifio/__init__.py
+spotifio/client.py
+spotifio/oauth.py
+spotifio/storage.py
+spotifio.egg-info/PKG-INFO
+spotifio.egg-info/SOURCES.txt
+spotifio.egg-info/dependency_links.txt
+spotifio.egg-info/requires.txt
+spotifio.egg-info/top_level.txt

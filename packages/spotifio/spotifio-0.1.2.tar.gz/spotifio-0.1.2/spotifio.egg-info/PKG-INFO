@@ -1,0 +1,62 @@
+Metadata-Version: 2.2
+Name: spotifio
+Version: 0.1.2
+Summary: An async Spotify Web API client library
+Home-page: https://github.com/s4w3d0ff/spotifio
+Author: s4w3d0ff
+Author-email: 
+Project-URL: Bug Reports, https://github.com/s4w3d0ff/spotifio/issues
+Project-URL: Source, https://github.com/s4w3d0ff/spotifio
+Keywords: spotify api async aiohttp music streaming oauth2
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: AsyncIO
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.8.0
+Requires-Dist: aiofiles>=0.8.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# spotifio
+Async Spotify Api Wrapper
+
+```
+pip install git+https://github.com/s4w3d0ff/spotifio.git#egg=spotifio
+```
+
+```python
+from spotifio import Client
+
+async def main():
+    c = Client(
+        client_id="client_id_123",
+        client_secret="client_secret_123",
+        redirect_uri="http://localhost:8080",
+        scope=["user-read-currently-playing"]
+    )
+    await c.login()
+    r = await c.get_currently_playing()
+    print(r)        
+
+if __name__ == '__main__':
+    import asyncio
+    asyncio.run(main())
+```
