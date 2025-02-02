@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: moe-gen
+Version: 0.0.1.dev0
+Summary: High-Throughput Inference for MoE Models
+Author: Tairan Xu
+Requires-Python: >=3.11
