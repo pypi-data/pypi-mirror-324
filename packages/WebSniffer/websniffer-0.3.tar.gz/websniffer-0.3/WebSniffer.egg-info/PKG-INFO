@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: WebSniffer
+Version: 0.3
+Summary: Пакет для парсинга веб-страниц
+Home-page: https://github.com/Shadow7x/webscrapper
+Author: Shadow7x
+Author-email: loginvlad1000@gmail.com
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: aiohttp
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary

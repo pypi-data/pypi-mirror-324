@@ -1,0 +1,8 @@
+setup.py
+WebSniffer/__init__.py
+WebSniffer/scrapper.py
+WebSniffer.egg-info/PKG-INFO
+WebSniffer.egg-info/SOURCES.txt
+WebSniffer.egg-info/dependency_links.txt
+WebSniffer.egg-info/requires.txt
+WebSniffer.egg-info/top_level.txt
