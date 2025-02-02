@@ -1,0 +1,2 @@
+[console_scripts]
+downloadYTscript = downloadyt.cli:main

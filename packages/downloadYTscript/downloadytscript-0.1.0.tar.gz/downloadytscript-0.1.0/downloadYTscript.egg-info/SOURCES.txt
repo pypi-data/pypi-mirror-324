@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+downloadYTscript.egg-info/PKG-INFO
+downloadYTscript.egg-info/SOURCES.txt
+downloadYTscript.egg-info/dependency_links.txt
+downloadYTscript.egg-info/entry_points.txt
+downloadYTscript.egg-info/requires.txt
+downloadYTscript.egg-info/top_level.txt
+downloadyt/__init__.py
+downloadyt/cli.py

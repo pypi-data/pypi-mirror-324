@@ -1,0 +1,32 @@
+Metadata-Version: 2.2
+Name: downloadYTscript
+Version: 0.1.0
+Summary: A command-line tool to download YouTube transcripts
+Author: ehzawad
+Author-email: ehzawad@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: youtube-transcript-api>=0.4.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# downloadYTscript
+
+A command-line tool to download YouTube transcripts.
+
+## Usage
+
+After installing via pip:
+
+```bash
+downloadYTscript "https://www.youtube.com/watch?v=55x9ndmkUpA"
+```
