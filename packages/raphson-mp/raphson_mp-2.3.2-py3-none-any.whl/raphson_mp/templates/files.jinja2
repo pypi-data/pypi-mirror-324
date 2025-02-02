@@ -1,0 +1,163 @@
+{% extends "base_static.jinja2" %}
+
+{% block title %}
+    {% trans %}File manager{% endtrans %}
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/static/css/files.css">
+{% endblock styles %}
+
+{% block content %}
+
+{% if base_path == '.' %}
+    {{ page_heading(gettext('File manager')) }}
+{% else %}
+    {{ page_heading(gettext('Files in: %(dir)s', dir=base_path), back_url=parent_url) }}
+{% endif %}
+
+{% if show_trashed %}
+    <a href="{{ base_url }}" class="button">{% trans %}Show regular files{% endtrans %}</a>
+{% else %}
+    {% if base_url == "/files" %}
+        {% set trash_url = "/files?trash"%}
+    {% else %}
+        {% set trash_url = base_url + "&trash" %}
+    {% endif %}
+
+    <a href="{{ trash_url }}" class="button">{% trans %}Show trashed files{% endtrans %}</a>
+{% endif %}
+
+{% if base_path != '.' %}
+    {% if write_permission %}
+        <button id="upload-files-button">{% trans %}Upload files{% endtrans %}</button>
+        <button id="create-directory-button">{% trans %}Create directory{% endtrans %}</button>
+
+        <form method="POST" action="/files/upload" enctype="multipart/form-data" class="form" id="upload-files-form" hidden>
+            <input type="hidden" name="csrf" value="{{ user.csrf }}">
+            <input type="hidden" name="dir" value="{{ base_path }}">
+            <label for="upload">{% trans %}Upload files{% endtrans %}</label>
+            <input type="file" name="upload" id="upload" accept="{{ music_extensions }}" multiple required>
+            <input type="submit" value="{% trans %}Upload{% endtrans %}">
+        </form>
+
+        <form method="POST" action="/files/mkdir" class="form" id="create-directory-form" hidden>
+            <label for="dirname">{% trans %}Create directory{% endtrans %}</label>
+            <input type="hidden" name="csrf" value="{{ user.csrf }}">
+            <input type="hidden" name="path" value="{{ base_path }}">
+            <input type="text" name="dirname" id="dirname" placeholder="{% trans %}Directory name{% endtrans %}">
+            <input type="submit" value="{% trans %}Create{% endtrans %}">
+        </form>
+    {% else %}
+        <p>{% trans %}You don't have permission to upload files or create directories here.{% endtrans %}</p>
+    {% endif %}
+{% else %}
+    <p>{% trans %}To create a new playlist, use the <a href="/playlist/manage">playlist manager</a>.{% endtrans %}</p>
+{% endif %}
+
+<br>
+
+<div hidden id="dropzone">[experimental drag & drop file uploader]</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>{% trans %}Type{% endtrans %}</th>
+            <th>{% trans %}File name{% endtrans %}</th>
+            <th class="collapse">{% trans %}Artists{% endtrans %}</th>
+            <th class="collapse">{% trans %}Title{% endtrans %}</th>
+            {% if write_permission %}
+                {% set action_count = 3 %}
+            {% else %}
+                {% set action_count = 1 %}
+            {% endif %}
+            <th colspan="{{ action_count }}">{% trans %}Actions{% endtrans %}</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for file in files %}
+        <tr>
+            {% if file['type'] == 'dir' %}
+            <td class="icon-col">
+                {{ icon('folder') }}
+            </td>
+            <td>
+                <a href="?path={{ file['path']|urlencode }}">{{ file.name }}/</a>
+            </td>
+            <td class="collapse"></td>
+            <td class="collapse"></td>
+            {% elif file['type'] == 'music' %}
+            <td class="icon-col">
+                <div class="icon icon-music"></div>
+            </td>
+            <td>
+                {{ file.name }}
+            </td>
+            <td class="collapse">{{ file['artist'] }}</td>
+            <td class="collapse">{{ file['title'] }}</td>
+            {% else %}
+            <td class="icon-col">
+                <div class="icon icon-file-question"></div>
+            </td>
+            <td>
+                {{ file.name }}
+            </td>
+            <td class="collapse"></td>
+            <td class="collapse"></td>
+            {% endif %}
+
+            <td class="button-col">
+                {% if file['type'] == 'dir' %}
+                    <form method="GET" action="/files/download_zip">
+                        <input type="hidden" name="path" value="{{ file['path'] }}">
+                        {{ icon_button('download', title=gettext('Download directory as zip file')) }}
+                    </form>
+                {% else %}
+                    <form method="GET" action="/files/download">
+                        <input type="hidden" name="path" value="{{ file['path'] }}">
+                        {{ icon_button('download', title=gettext('Download original file')) }}
+                    </form>
+                {% endif %}
+            </td>
+
+            {% if write_permission %}
+                <td class="button-col">
+                    <form method="GET" action="/files/rename">
+                        <input type="hidden" name="path" value="{{ file['path'] }}">
+                        {{ icon_button('rename-box', title=gettext('Rename file')) }}
+                    </form>
+                </td>
+
+                {% if show_trashed %}
+                    <td class="button-col">
+                        <form method="POST" action="/files/rename">
+                            <input type="hidden" name="csrf" value="{{ user.csrf }}">
+                            <input type="hidden" name="path" value="{{ file['path'] }}">
+                            <input type="hidden" name="new-name" value="{{ file['name'][7:] }}">
+                            {{ icon_button('delete-restore', title=gettext('Restore file from trash')) }}
+                        </form>
+                    </td>
+                {% else %}
+                    <td class="button-col">
+                        <form method="POST" action="/files/rename">
+                            <input type="hidden" name="csrf" value="{{ user.csrf }}">
+                            <input type="hidden" name="path" value="{{ file['path'] }}">
+                            <input type="hidden" name="new-name" value=".trash.{{ file['name'] }}">
+                            {{ icon_button('delete', title=gettext('Move file to trash')) }}
+                        </form>
+                    </td>
+                {% endif %}
+            {% endif %}
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<input type="hidden" id="upload_csrf" value="{{ user.csrf }}">
+<input type="hidden" id="upload_dir" value="{{ base_path }}">
+
+<script src="/static/js/base.js"></script>
+<script src="/static/js/files.js"></script>
+
+{% endblock content %}
