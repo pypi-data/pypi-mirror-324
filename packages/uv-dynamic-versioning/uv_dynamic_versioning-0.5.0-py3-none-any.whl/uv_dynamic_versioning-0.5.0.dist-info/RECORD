@@ -1,0 +1,11 @@
+uv_dynamic_versioning/__init__.py,sha256=LBK46heutvn3KmsCrKIYu8RQikbfnjZaj2xFrXaeCzQ,22
+uv_dynamic_versioning/build_hook.py,sha256=u0Kx9PGHDFyC9kTojsHbV_yFnHbLyy3KRMrB8niRShU,1503
+uv_dynamic_versioning/hooks.py,sha256=A_WfPCeVvsnnZbdbK_zXF9jZ-s1hFaOYrRRq1qmjVUw,283
+uv_dynamic_versioning/main.py,sha256=LQG5XJw-8_x6fOLaogEXz4CDVj2JN4sp1lC1Ti6tTh8,1192
+uv_dynamic_versioning/schemas.py,sha256=aQ4h_UTvOdXF2UXSE6IIKVskY_fp9ozGfLPwwY5c2zE,1020
+uv_dynamic_versioning/version_source.py,sha256=WLK9coNHmg95HKxYaOHsSGjMYAZ1AD-Freotyqc814k,1014
+uv_dynamic_versioning-0.5.0.dist-info/METADATA,sha256=b_nGBq6NagWzRLMG51VNS4xVb7x9NfgVpaT0gDOjKKA,10281
+uv_dynamic_versioning-0.5.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+uv_dynamic_versioning-0.5.0.dist-info/entry_points.txt,sha256=bumRmPRAesHPbUhZQjNepfpoaTcdiSR9cFzi6VnhD_4,60
+uv_dynamic_versioning-0.5.0.dist-info/licenses/LICENSE,sha256=Qt4j6TVi93b4z9Jf1e9g8WN1BBM-Tu9Cw6EgtOfgcWM,1070
+uv_dynamic_versioning-0.5.0.dist-info/RECORD,,
