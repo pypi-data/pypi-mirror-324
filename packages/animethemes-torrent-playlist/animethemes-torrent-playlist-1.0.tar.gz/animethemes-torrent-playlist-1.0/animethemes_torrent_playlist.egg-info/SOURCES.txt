@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+animethemes_torrent_playlist.egg-info/PKG-INFO
+animethemes_torrent_playlist.egg-info/SOURCES.txt
+animethemes_torrent_playlist.egg-info/dependency_links.txt
+animethemes_torrent_playlist.egg-info/top_level.txt
+torrent_playlist/__init__.py
+torrent_playlist/__main__.py
