@@ -1,0 +1,3 @@
+[console_scripts]
+turbo_ml=turbo_ml.__main__:main
+
