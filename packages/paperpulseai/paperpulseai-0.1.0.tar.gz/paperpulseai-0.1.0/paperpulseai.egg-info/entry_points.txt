@@ -1,0 +1,2 @@
+[console_scripts]
+paperpulseai = paperpulseai.core:main
