@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: json-js
+Version: 0.1.0
+Summary: Python JSON like JavaScript
+Author-email: Fabio Antonio Astore <astore.a.fabio@gmail.com>
+License: MIT
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# json-js
+Python JSON like JavaScript

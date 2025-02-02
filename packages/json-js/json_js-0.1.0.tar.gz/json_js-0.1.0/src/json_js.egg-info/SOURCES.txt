@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/__init__.py
+src/json_js.egg-info/PKG-INFO
+src/json_js.egg-info/SOURCES.txt
+src/json_js.egg-info/dependency_links.txt
+src/json_js.egg-info/top_level.txt
