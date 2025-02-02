@@ -1,0 +1,8 @@
+bconsole/__init__.py,sha256=r2aFBME7NHioUvKsj-vwxVJYkOcdlr_ksdlFoxR0IQc,320
+bconsole/console.py,sha256=bEjQalwGXFvxnAqhGzPkCqAWxB1HVP1cs71mLG2AlDc,13438
+bconsole/examples/example.py,sha256=GVvLxEovLUbBMd1g5uRMBoSQtsxU-Bv1sAzDzxrb3ak,865
+bconsole/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bconsole-0.0.3.dist-info/LICENSE,sha256=4Ln0mxrou1TzgZ1L3rQJWGYVdZQ-4YbfNDIGzPJsv9U,1084
+bconsole-0.0.3.dist-info/METADATA,sha256=zehNweYKPLZLTbgs9qsizPNLkz-pBrtPvRFPNQcNe5o,1412
+bconsole-0.0.3.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+bconsole-0.0.3.dist-info/RECORD,,
