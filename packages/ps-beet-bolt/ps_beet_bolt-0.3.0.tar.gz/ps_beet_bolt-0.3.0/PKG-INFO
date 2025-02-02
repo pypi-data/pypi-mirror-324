@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: ps_beet_bolt
+Version: 0.3.0
+Summary: A collection of beet and bolt plugins
+Home-page: https://pucki.zip
+Author: PuckiSilver
+License: MIT
+Project-URL: Source, https://github.com/PuckiSilver/ps_beet_bolt
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: beet
+Requires-Dist: mecha
+Requires-Dist: bolt
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: project-url
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# ps_beet_bolt
+
+A collection of my beet and bolt plugins

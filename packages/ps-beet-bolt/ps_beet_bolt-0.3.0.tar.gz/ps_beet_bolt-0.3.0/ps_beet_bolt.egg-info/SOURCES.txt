@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+ps_beet_bolt/__init__.py
+ps_beet_bolt/bolt_item.py
+ps_beet_bolt/register.py
+ps_beet_bolt.egg-info/PKG-INFO
+ps_beet_bolt.egg-info/SOURCES.txt
+ps_beet_bolt.egg-info/dependency_links.txt
+ps_beet_bolt.egg-info/requires.txt
+ps_beet_bolt.egg-info/top_level.txt
+ps_beet_bolt/argon/decorators.bolt
+ps_beet_bolt/bolt_item/decorators.bolt
+ps_beet_bolt/tungsten/decorators.bolt
