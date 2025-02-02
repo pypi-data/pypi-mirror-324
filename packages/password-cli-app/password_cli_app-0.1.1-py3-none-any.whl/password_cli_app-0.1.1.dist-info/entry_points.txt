@@ -1,0 +1,3 @@
+[console_scripts]
+pwdgen=password_cli_app.main:app
+
