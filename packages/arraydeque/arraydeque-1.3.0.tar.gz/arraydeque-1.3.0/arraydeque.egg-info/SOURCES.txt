@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+arraydeque.c
+setup.py
+arraydeque.egg-info/PKG-INFO
+arraydeque.egg-info/SOURCES.txt
+arraydeque.egg-info/dependency_links.txt
+arraydeque.egg-info/top_level.txt
