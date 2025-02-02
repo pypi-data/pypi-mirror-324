@@ -1,0 +1,8 @@
+setup.py
+simplescale/__init__.py
+simplescale/main.py
+simplescale.egg-info/PKG-INFO
+simplescale.egg-info/SOURCES.txt
+simplescale.egg-info/dependency_links.txt
+simplescale.egg-info/requires.txt
+simplescale.egg-info/top_level.txt
