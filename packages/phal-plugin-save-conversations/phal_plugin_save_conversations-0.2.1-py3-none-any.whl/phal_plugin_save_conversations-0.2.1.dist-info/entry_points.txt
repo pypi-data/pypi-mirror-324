@@ -1,0 +1,2 @@
+[ovos.plugin.phal]
+save_conversations.oscillatelabsllc = phal_plugin_save_conversations:SaveConversationsPlugin
