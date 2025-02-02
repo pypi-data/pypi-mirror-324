@@ -1,0 +1,9 @@
+numpy
+pydantic
+sortedcontainers
+python-dotenv
+inflect
+nltk
+
+[dev]
+black
