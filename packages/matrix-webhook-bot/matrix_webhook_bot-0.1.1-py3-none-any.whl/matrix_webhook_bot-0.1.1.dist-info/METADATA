@@ -1,0 +1,88 @@
+Metadata-Version: 2.4
+Name: matrix-webhook-bot
+Version: 0.1.1
+Author: hidraulicChicken
+License-File: LICENSE
+Requires-Python: >=3.13
+Requires-Dist: asyncpg<0.31,>=0.30.0
+Requires-Dist: emoji<3,>=2.14.1
+Requires-Dist: fastapi<0.116,>=0.115.6
+Requires-Dist: httpx<0.29,>=0.28.1
+Requires-Dist: jinja2<4,>=3.1.5
+Requires-Dist: mautrix<0.21,>=0.20.7
+Requires-Dist: python-olm<4,>=3.2.16
+Requires-Dist: uvicorn<0.35,>=0.34.0
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: pytest; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# matrix-webhook-bot
+
+Matrix bot for creating webhook endpoints and sending webhook messages to matrix rooms
+
+- simple webservice that forwards webhook messages after formatting
+- simple jinja template can be used to format messages
+- webhook url creation and deletion through controll room
+- creates controll and output room on startup
+
+## Configuration
+
+Either by config.ini or env variables. Env variables take precedence.
+Rename sample_config.ini to config.ini and set every config value.
+
+| Environment variable   | Config file name  | Example value  |
+|---|---|---|
+| HOMESERVER_URL | homeserver_url | https://matrix.domain.com |
+| ADMIN_USER | admin_user | @admin:matrix.domain.com |
+| BOT_USER | bot_user | @webhook:matrix.domain.com |
+| TOKEN | token | syt_d2VgfG9eqr_dbvTrKgfDerOdseFMZNP_0z99KM |
+| DEVICE_ID | device_id | AABBCCDDEE |
+
+## Install/Run
+
+Only if you run it non virtualized.
+You need python ">=3.13"
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install matrix-webhook-bot
+matrix-webhook-bot
+```
+
+## Docker
+
+```bash
+docker run -d --rm \
+  --name matrix-webhook-bot \
+  -v /on/host/bot/config:/app/config \
+  -p 8228:8228 \
+  ghcr.io/hidraulicchicken/matrix-webhook-bot
+```
+
+## Controll room commands
+
+| Command   | Explanation |
+|---|---|
+| !webhook help | Show help message |
+| !webhook list | List all webhooks |
+| !webhook add [name] | Add a webhook with given name |
+| !webhook remove [name] | Remove webhook with given name |
+
+## Development
+
+Python packages are handled by uv, but if you prefer, look into pyproject.toml and install dependencies yourself.
+
+```bash
+git clone https://github.com/hidraulicChicken/matrix-webhook-bot.git
+cd matrix-webhook-bot
+curl -LsSf https://astral.sh/uv/install.sh | sh
+uv venv --python 3.13.0
+uv pip install -e .
+```
+
+## Contribution
+
+If you have jinja template for certain services webhooks, let me know in the issues page.

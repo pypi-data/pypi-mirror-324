@@ -1,0 +1,2 @@
+[console_scripts]
+matrix-webhook-bot = matrix_webhook_bot.main:main

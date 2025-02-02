@@ -1,0 +1,14 @@
+matrix_webhook_bot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matrix_webhook_bot/api.py,sha256=wn5gR01MghAfvFvdkJm0BNQFGWDu6ETFYJeuT4ktbSw,1971
+matrix_webhook_bot/logger.py,sha256=3HErFYut71gh54mXB0fXx6n2n7EkpchI64tfb-6SBSc,428
+matrix_webhook_bot/main.py,sha256=0GmTxky9ugLhtC13B_azfUjWFru2u2aN9uAWUgk5siY,1474
+matrix_webhook_bot/pickle_util.py,sha256=JoOPVi-WD7stucIgzNkxv5itrVBteBkY2JaWlbsI-KA,854
+matrix_webhook_bot/webhook_bot.py,sha256=xPgwMamzc4mJRMiMYwLVnpomgn7UY7H4BRzWet3AEu8,10318
+matrix_webhook_bot/config/sample_config.ini,sha256=xb93jyrQJvBLFYAGzAietKrCZ7HfciNEDUPMZNmuu18,194
+matrix_webhook_bot/config/templates/emby.jinja,sha256=w9alAbXG3s2fKJ8n0VKMyldbxelgPcp3feXqV3Qo_LA,252
+matrix_webhook_bot/config/templates/webhooks_message.jinja,sha256=5jUD8qWRBYdRaDsFF3fHTRc9Y5BtL-FbcutUznRb_QE,136
+matrix_webhook_bot-0.1.1.dist-info/METADATA,sha256=Wdzvnl-xPvWZNO5uE_KaimTAqJ7y9YPI9p7iKQjRn3w,2505
+matrix_webhook_bot-0.1.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+matrix_webhook_bot-0.1.1.dist-info/entry_points.txt,sha256=QY5q0_heifF2-a6dZwi-sEIJd2PDjQkQkWH6HGICg2s,68
+matrix_webhook_bot-0.1.1.dist-info/licenses/LICENSE,sha256=QJXDhoCch-l4se29zxCJbcLZkAdxTM3TgYaBBA3TmHU,1073
+matrix_webhook_bot-0.1.1.dist-info/RECORD,,
