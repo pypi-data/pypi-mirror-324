@@ -1,0 +1,2 @@
+[certbot.plugins]
+dns-standalone = certbot_dns_standalone.dns_standalone:Authenticator
