@@ -1,0 +1,10 @@
+README.md
+setup.py
+scdhelper/__init__.py
+scdhelper/scd_type_2.py
+scdhelper.egg-info/PKG-INFO
+scdhelper.egg-info/SOURCES.txt
+scdhelper.egg-info/dependency_links.txt
+scdhelper.egg-info/requires.txt
+scdhelper.egg-info/top_level.txt
+tests/test_scd_type_2.py
