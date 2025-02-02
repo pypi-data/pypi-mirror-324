@@ -1,0 +1,44 @@
+Metadata-Version: 2.2
+Name: brms
+Version: 0.1.0.dev1
+Summary: A bank risk management simulation framework.
+Author-email: Mingze Gao <adrian.gao@outlook.com>
+Project-URL: Homepage, https://bankrisk.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib>=3.10.0
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pyside6==6.8.1
+Requires-Dist: qtawesome>=1.3.1
+Requires-Dist: quantlib>=1.36
+Requires-Dist: rich>=13.9.4
+Requires-Dist: tabulate>=0.9.0
+
+# BRMS - Bank Risk Management Simulation
+
+![LICENSE](https://img.shields.io/github/license/mgao6767/brms?color=blue)
+
+BRMS is an educational tool designed to provide users with an in-depth understanding of bank risk management practices. It allows users to simulate and respond to various risk scenarios, and analyze the impact on a bank's financial health.
+
+It is developed by Dr. [Mingze Gao](https://mingze-gao.com) from the Department of Applied Finance at [Macquarie Business School](https://www.mq.edu.au/macquarie-business-school).
+
+> [!NOTE]  
+> This application is under active development for use in my teaching AFIN8003 Banking and Financial Intermediation at the Macquarie University.
+
+## How It Works
+
+A simulation in BRMS begins with a predefined set of banking and trading books, covering instruments from standard mortgages to HTM, FVOCI, and FVTPL securities (e.g., Treasuries). Each simulation unfolds through daily scenarios, incorporating economic data such as yield curves. As users navigate these scenarios, the bank's performance is automatically computed and reported under IFRS accounting. Capital adequacy and liquidity ratios are assessed following the Basel III framework, with RWAs calculated based on the selected approach. Users can actively adjust exposures through various risk mitigation strategies, and their overall performance is analyzed at the simulation’s conclusion.  
+
+## GUI Demo
+
+Here is an overview of the user interface at this stage (2025-01-31).
+
+![GUI Demo 1](docs/images/GUI-demo1-2025-01-30.png)
+
+![GUI Demo 2](docs/images/GUI-demo2-2025-01-30.png)
+
+![GUI Demo 3](docs/images/GUI-demo3-2025-01-31.png)

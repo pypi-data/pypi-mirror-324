@@ -1,0 +1,2 @@
+[console_scripts]
+brms = brms.main:main
