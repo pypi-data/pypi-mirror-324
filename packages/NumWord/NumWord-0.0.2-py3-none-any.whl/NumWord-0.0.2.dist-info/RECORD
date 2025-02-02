@@ -1,0 +1,14 @@
+Logs/__init__.py,sha256=MqJk2THkg1s9yIB5i_cEbGWr7VIc-agBjN-F6_Q9GBo,30
+Logs/logs.py,sha256=VYAcHBGh95PsZbhe25AEE9zNPdwBwcbIDbHE_0Q7Gxs,3747
+NumWord/__init__.py,sha256=pLxX_aK-N6e3JCI0--QwHxFhQq6uWuZLQrXCuBZhXjg,82
+NumWord/number_to_word.py,sha256=WPn0opr15-419XtUB0945iYBWCgphtzAa3Jp-kW85Wk,4400
+NumWord/word_to_number.py,sha256=uBb1fPlZRsBuIBaJTYKmXDguv_ubuYIkbw2TQHvhBvU,4648
+utility/__init__.py,sha256=0vW9iTYYgZ38Opqr-OVQL8lhVfcDm4K_QBVNnX-ke0o,488
+utility/english.py,sha256=i4e4pHz0Cu1tcVJpFxUUzDF6Xqf53TO-XwvvuQ50RKM,1768
+utility/hindi.py,sha256=QWFVBwJQfA05z14M40wVjG1jEMO3orLBrxOfke3XIJI,4959
+utility/symboles.py,sha256=9oaTO2D5GW6Vkv9-sdgWTAv01KEnlFrqQ9npBvQc0Ds,139
+NumWord-0.0.2.dist-info/LICENSE,sha256=3icYc2JEHLtQj7ckjjC4aFgERQLGaUeqS6p0shtL4qk,1070
+NumWord-0.0.2.dist-info/METADATA,sha256=bmrNYxKTysqxhRIhBt0SaVBlJhupjyYDiw_SQklVBx8,2818
+NumWord-0.0.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+NumWord-0.0.2.dist-info/top_level.txt,sha256=MW8QzHHKgBRNT4aU_U1MOISacXGU4xzXgG9I7ts5jpU,21
+NumWord-0.0.2.dist-info/RECORD,,
