@@ -1,0 +1,104 @@
+Metadata-Version: 2.2
+Name: python-fileutils
+Version: 0.0.6
+Summary: Biblioteca utilitária para manipulação de arquivos
+Author: Ismael Nascimento
+Author-email: ismaelnjr@icloud.com
+License: MIT License
+Keywords: file utils
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tdqm==0.0.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FileUtils - Gerenciamento de Arquivos em Python
+
+Este projeto fornece utilitÃ¡rios para manipulaÃ§Ã£o de arquivos em Python, incluindo listagem, cÃ³pia, movimentaÃ§Ã£o, remoÃ§Ã£o e compactaÃ§Ã£o de arquivos. AlÃ©m disso, inclui testes unitÃ¡rios para garantir a correta funcionalidade dos mÃ©todos implementados.
+
+## ðŸ“Œ Funcionalidades
+
+O mÃ³dulo `fileutils.py` contÃ©m as seguintes funÃ§Ãµes:
+
+- **Listagem de arquivos**: `list_files(source_dir, extensions, include_sub_dir=False)`
+  - Retorna uma lista de arquivos em um diretÃ³rio com as extensÃµes especificadas.
+  
+- **MovimentaÃ§Ã£o de arquivos**: `move_files(files_to_move, destination_dir, verbose=True)`
+  - Move arquivos para um diretÃ³rio de destino.
+
+- **RemoÃ§Ã£o de arquivos**: `remove_files(file_list, verbose=True)`
+  - Remove arquivos do sistema.
+
+- **CÃ³pia de arquivos**: `copy_files(file_list, destination_dir, prefix="copy_", verbose=True)`
+  - Copia arquivos para um diretÃ³rio de destino com um prefixo opcional.
+
+- **CompactaÃ§Ã£o de arquivos**: `zip_files(files_to_zip, output_zip, verbose=True)`
+  - Cria um arquivo ZIP contendo os arquivos especificados.
+
+- **ExtraÃ§Ã£o de arquivos ZIP**: `unzip_files(zip_file, extract_to)`
+  - Extrai arquivos de um ZIP para um diretÃ³rio especÃ­fico.
+
+- **RemoÃ§Ã£o de assinaturas digitais de arquivos**: `remove_signature(file_list, output_dir, sign_start="|9999|", encoding="utf-8", verbose=True)`
+  - Remove assinaturas digitais de arquivos a partir de um marcador especÃ­fico.
+
+- **OrganizaÃ§Ã£o de arquivos**: `organize(source_dir, destination_dir, file_selector=default_file_selector, copy=True, verbose=True)`
+  - Organiza arquivos conforme um funÃ§Ã£o seletora e move ou copia para um diretÃ³rio especÃ­fico.
+
+## ðŸ§ª Testes UnitÃ¡rios
+
+O projeto inclui testes unitÃ¡rios para validar a funcionalidade das funÃ§Ãµes. Os testes sÃ£o implementados nos seguintes arquivos:
+
+- `01_list_files_test.py`: Testa a listagem de arquivos no diretÃ³rio.
+- `02_copy_files_test.py`: Testa a cÃ³pia de arquivos para um diretÃ³rio de destino.
+- `03_unzip_files_test.py`: Testa a extraÃ§Ã£o de arquivos ZIP.
+- `04_zip_file_test.py`: Testa a criaÃ§Ã£o de arquivos ZIP.
+- `05_organize_test.py`: Testa a organizaÃ§Ã£o de arquivos para um diretÃ³rio de destino.
+
+Os testes utilizam `unittest` e podem ser executados com:
+
+```sh
+python -m unittest discover
+```
+
+## ðŸš€ Como Usar
+
+1. Clone este repositÃ³rio:
+   ```sh
+   git clone https://github.com/seu-usuario/fileutils.git
+   cd fileutils
+   ```
+
+2. Instale as dependÃªncias:
+   ```sh
+   pip install tqdm
+   ```
+
+3. Utilize os mÃ©todos diretamente no seu cÃ³digo Python, por exemplo:
+
+   ```python
+   from fileutils import list_files, copy_files
+
+   arquivos = list_files(source_dir="meu_diretorio", extensions=(".txt", ".csv"))
+   copy_files(arquivos, destination_dir="backup")
+   ```
+
+4. Execute os testes para verificar a integridade do cÃ³digo:
+   ```sh
+   python -m unittest discover
+   ```
+
+## ðŸ“œ LicenÃ§a
+
+Este projeto estÃ¡ sob a licenÃ§a MIT.
