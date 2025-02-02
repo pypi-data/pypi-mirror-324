@@ -1,0 +1,4 @@
+[console_scripts]
+ra-apply-migration = restalchemy.cmd.apply_migration:main
+ra-new-migration = restalchemy.cmd.new_migration:main
+ra-rollback-migration = restalchemy.cmd.rollback_migration:main

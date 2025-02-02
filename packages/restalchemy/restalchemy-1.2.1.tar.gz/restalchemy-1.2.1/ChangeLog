@@ -1,0 +1,216 @@
+CHANGES
+=======
+
+1.2.1
+-----
+
+* Disable convertation underscore flag in REST resource class
+* Upgrade requirements
+* Add Conflict exception to storage
+* Doesn't convert filter expression to storable view
+* Add Is and IsNot filters expression to sql storage
+* Doesn't construct location header if a resource can't got from API
+
+1.2.0
+-----
+
+* Add expression to make operations =, <>, >, >=, <, <= in SQL storage
+* Upgrade requests to 2.20.0
+* Unknown id in location header if controller returns incorrect model
+* Fix type converters for Enum type
+* Remove python 3.3 support
+
+1.1.0
+-----
+
+* Add simple memory storage
+* Python 3.x support
+* Python 3 support
+* Python 3.x improvements
+* PEP8 and upgrade hacking library
+* Update requirements
+* Fix error in travis env for python 2.7
+* Migrate from tox-travis to tox
+* Travis ci setting y
+* Remove python 2.6 support and add python 3.6 support
+* Added "is\_dirty" method to the model
+* Quoting table name and column names in SQL storage
+* Add functional tests for nested resource
+* Update README.rst
+* Pass DATABASE\_URI to cover env
+* Add fuctional tests for RA service
+* Fix pep8
+* Fix headers
+* Random choise port for REST service in tests
+* Run tests using tox. Redefine service port number
+* Add functional tests (REST API + SQLAlchemy)
+* Remove commented lines from example
+* Add example REST API service (SQLAlchemy)
+* Merged branch master into master
+* Remove unused files
+* Modify link to build icon
+* Add pep8 check to CI and build logo to README
+* Add upgrade pip to travis config
+* Modify travis yaml
+* Add config for travis
+* BugFix Add space to "and" construction
+* BugFix Convert resource id to string
+* BugFix Incorrect property type in inherit model
+* Skip migration file if it have not migration\_step
+* Merged branch master into master
+* Add Float type
+* Update README.rst
+* Update README.rst
+* Update README.rst
+* Update README.rst
+* Update text format for README.rts
+* Renamed SQLiteProcessResult to MySQLProcessResult
+* Add migration engine for SQL storage
+* Add common code for configs
+* Add Boolean type
+* Merged db into master
+* Add TODOs
+* Add functional tests to test MySQL storage (model.insert)
+* Add support a relationships (OneToMany) to MySQL storage
+* Move validate model method to poor method
+* Simple MySQL storage implementation
+* Move Session code to separate file
+* Make from\_siple\_type and to\_simple\_type as class method
+* Separate a code, property and property with id
+* Typo propery -> property
+* Fix pep8 in examples
+* Add id\_property parameter to property
+* Add MySQLEngine and Session classes
+* Add engine factory and AbstractEngine class
+* Add AbstractStorageMixin class
+* Rename update method in a model to update\_dm
+* Merged branch db into db
+* Add property\_type property to Property class
+* fix a hint in REST client example
+* Update exapmples
+* Add property\_type parameter to relationships.relationship
+* Add examples (REST API service)
+* FIX: Missing raise construction in ResourceBySAModel class
+* Implement ResourceByRAModel
+* FIX: Model.uuid should be instance of uuid.UUID
+* Remove pbr version in setup.py
+* Add property\_type property to Property class
+* Add classproperty decorator
+* Add common code (Singleton)
+
+1.0.2
+-----
+
+* Add TODO
+* BugFix Raise ValueError if parent resource not found
+* Implement get\_resource\_id in ResourceBySAModel class
+* Add egss to gitignore
+* Fix python 3 compatibility
+
+1.0.1
+-----
+
+* Remove pbr version in setup.py
+
+1.0.0
+-----
+
+* Add Abstract resource layer and resource implementation
+* temp
+* Remove version option from setup.cfg
+
+0.4.0
+-----
+
+* PEN-3042 Add validate method to model class
+
+0.3.3
+-----
+
+* PEN-3288. Change incorrect "PropertyTypeError" exception
+
+0.3.2
+-----
+
+* PEN-3221. Process generators in packers
+
+0.3.1
+-----
+
+* PEN-2996 fix contoller to call super in \_\_init\_\_
+
+0.3.0
+-----
+
+* Refactoring exceptions hierarchy
+
+0.2.1
+-----
+
+* PEN-2876. 'Not Found' returns 404 error instead of  400
+* PEN-2876 make 'Not Found' error human readable
+* Revert "Turns on extra kwargs check on model instantiation"
+* Turns on extra kwargs check on model instantiation
+
+0.2.0
+-----
+
+* Ignore resource type in BaseResourcePacker.pack\_resource
+* Bump version to 0.2.0
+* Fix homepage and enviroment in setup.cfg
+* Add parameters handling for Actions
+* Define pbr version in setup.py
+* PEN-2600. Adds \_\_repr\_\_ and \_\_str\_\_ methods to base model
+* Moves dm to restalchemy
+* Adds ability to substitute model fields names
+* PEN-2233. Added Resource Nixin class
+* PEN-2233. Getting resource id using get\_resource\_id method
+* Packer use object type from target for serialize
+* Add process\_request method to Application
+* PEN-1950. Move getting routes functionality to Route class
+* Revert "PEN-1827 Implement method validate"
+* PEN-1933. Skip private attributes in BaseResourcePacker.unpack
+* PEN-1827 Implement method validate
+* PEN-1281 Fix zero checking in property value
+* Add \_\_repr\_\_ method to Model
+* Add \_\_str\_\_ method to Model
+* Hot fix for UUID property type
+* Fix wrong initialisation relationship property
+* Add equal method to model with uuid
+* Add default value parameter to Relationship class
+* PEN-459. Dash support in JSON packer
+* PEN-391. Hide all property starts with '\_' in response body
+* Replace "\_" to "-" in uri
+* Fix to get object by id when id is integer value
+* Fix generate resource location uri for nested resources
+* Upgrade pbr version
+* Fix hacking version
+* xAdd set\_value\_force function in property
+* PAC-215. Fixing None cannot be assigned to relationship property
+* PAC-206. Fix to processing container property
+* PAC-212. Add check ps in setattr and getattr
+* PAC-203. Fix wrong parameter name on raise ValueError
+* PAC-212. Add response processing in actions
+
+0.1.0
+-----
+
+* PAC-205. Implement REST actions
+* PAC-204. Fix prepare resource bug
+* Added Context class and Context middleware
+* Add Base Middleware class
+* Add WSGI Application class
+* Add base class for API Controller
+* Add API routing classes
+* Add relationship for Domain Model
+* Base classes for domain model implementation
+* Common module (with exceptions)
+* PAC-196. Fix invalid unicode value for String validator
+* Add Domain Model property types
+* Jenkins build packets script
+* Add propery types
+* Fix home path for new packets
+* Base Version
+* Jenkins build packets script
+* Skeleton Rest Alchemy project
+* Initial empty repository
