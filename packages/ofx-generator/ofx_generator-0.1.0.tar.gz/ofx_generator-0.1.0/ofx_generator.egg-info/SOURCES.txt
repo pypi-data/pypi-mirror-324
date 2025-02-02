@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+ofx_generator.egg-info/PKG-INFO
+ofx_generator.egg-info/SOURCES.txt
+ofx_generator.egg-info/dependency_links.txt
+ofx_generator.egg-info/top_level.txt
+tests/test_generator.py
+tests/test_models.py
