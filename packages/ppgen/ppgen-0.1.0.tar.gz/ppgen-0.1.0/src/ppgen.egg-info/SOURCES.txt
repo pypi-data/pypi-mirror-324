@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+src/ppgen/__init__.py
+src/ppgen/chinese_words.txt
+src/ppgen/cli.py
+src/ppgen/core.py
+src/ppgen/evaluator.py
+src/ppgen.egg-info/PKG-INFO
+src/ppgen.egg-info/SOURCES.txt
+src/ppgen.egg-info/dependency_links.txt
+src/ppgen.egg-info/entry_points.txt
+src/ppgen.egg-info/requires.txt
+src/ppgen.egg-info/top_level.txt
