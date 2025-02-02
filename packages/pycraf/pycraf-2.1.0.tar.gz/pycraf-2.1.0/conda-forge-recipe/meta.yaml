@@ -1,0 +1,81 @@
+{% set name = "pycraf" %}
+{% set version = "2.0.1" %}
+{% set sha256 = "a28f2874b4ec24d71dae01d657fb649086ca07f6d8d5972e0a42c8c270965257" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  fn: {{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  skip: true  # [py<=37]
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+
+  host:
+    - compilers  # [osx]
+    - llvm-openmp  # [osx]
+    - python
+    - pip
+    - setuptools
+    - setuptools_scm
+    - astropy
+    - cython
+    - numpy
+    - scipy
+    - extension-helpers
+
+  run:
+    - python
+    - compilers  # [osx]
+    - llvm-openmp  # [osx]
+    - astropy
+    - {{ pin_compatible('numpy') }}
+    - scipy
+    - h5py
+    - matplotlib >=3.3
+    - pyproj >2.6
+    - pytest
+    - pytest-astropy
+    - pytest-remotedata
+    - pytest-doctestplus
+    - rasterio
+    - sgp4 >=2
+
+test:
+  imports:
+    - pycraf
+    - pycraf.conversions
+    - pycraf.atm
+    - pycraf.pathprof
+    - pycraf.antenna
+    - pycraf.protection
+    - pycraf.geospatial
+    - pycraf.satellite
+    - pycraf.geometry
+    - pycraf.mc
+    - pycraf.utils
+
+  commands: python -c "import pycraf; pycraf.test()"
+
+about:
+  home: https://github.com/bwinkel/pycraf
+  license: GPL-3.0
+  license_family: GPL
+  license_file: licenses/README.rst
+  summary: A Python package for spectrum-management compatibility studies
+  description: |
+    The pycraf package provides functions and procedures for various tasks in spectrum-management compatibility studies.
+  dev_url: https://github.com/bwinkel/pycraf
+
+extra:
+  recipe-maintainers:
+    - bwinkel

@@ -1,0 +1,15 @@
+include README.rst
+include CHANGES.rst
+
+recursive-include pycraf *.pyx *.c *.pxd
+recursive-include docs *
+recursive-include licenses *
+# recursive-include cextern *
+
+prune build
+prune docs/_build
+prune docs/api
+
+recursive-include pycraf/itudata *
+recursive-include pycraf/pathprof/data *
+recursive-include pycraf *.npz *.npy *.hdf5 *.json

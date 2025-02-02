@@ -1,0 +1,333 @@
+trigger:
+  tags:
+    include:
+    - v*
+  branches:
+    include:
+    - master
+
+pr:
+- master
+
+variables:
+  package_name: pycraf
+  is.tag: ${{ startsWith(variables['Build.SourceBranch'], 'refs/tags/') }}
+  publish.wheels: ${{ startsWith(variables['Build.SourceBranch'], 'refs/tags/') }}
+  is.master: ${{ startsWith(variables['Build.SourceBranch'], 'refs/heads/master') }}
+  is.pullrequest: ${{ startsWith(variables['Build.Reason'], 'PullRequest') }}
+  is.linux: ${{ startsWith(variables['Agent.OS'], 'Linux') }}
+  is.macos: ${{ startsWith(variables['Agent.OS'], 'Darwin') }}
+  is.win: ${{ startsWith(variables['Agent.OS'], 'Windows') }}
+
+jobs:
+
+- job:
+  displayName: Conda
+
+  variables:
+    arch: x86_64
+    plat: manylinux_2_28_x86_64
+    image: quay.io/pypa/manylinux_2_28_x86_64
+    python.architecture: x64
+    sphinx.version: '>=3.0'
+    astropy.version: ''
+    pyproj.version: ''
+    pytest.version: ''
+    doctestplus.version: ''
+    extra.packages: ''
+
+  strategy:
+    matrix:
+    # Note: numpy ABI compatibility is not an issue anymore; can now use
+    # the latest numpy version for each python version and it will
+    # be backwards compatible
+      # linux39:
+      #   imageName: 'ubuntu-latest'
+      #   python.version: '3.9'
+      #   py_whl: cp39-
+      #   numpy.version: '=2.1'
+      #   extra.packages: 'gcc_linux-64 sysroot_linux-64'
+      linux310:
+        imageName: 'ubuntu-latest'
+        python.version: '3.10'
+        py_whl: cp310-
+        numpy.version: '=2.1'
+        extra.packages: 'gcc_linux-64 sysroot_linux-64'
+      linux311:
+        imageName: 'ubuntu-latest'
+        python.version: '3.11'
+        py_whl: cp311-
+        numpy.version: '=2.2'
+        publish.docs: ${{ or(eq(variables['is.master'], true), eq(variables['is.tag'], true)) }}
+        ${{ if eq(variables['is.tag'], true) }}:
+          docs.target: '.'
+        ${{ if eq(variables['is.tag'], false) }}:
+          docs.target: 'latest'
+        # tarball should only be published by one thread, as it is version-
+        # independent
+        build.tarball: ${{ true }}
+        publish.tarball: ${{ eq(variables['is.tag'], true) }}
+        extra.packages: 'gcc_linux-64 sysroot_linux-64'
+      linux312:
+        imageName: 'ubuntu-latest'
+        python.version: '3.12'
+        py_whl: cp312-
+        numpy.version: '>=2.2'  # use latest numpy version
+        extra.packages: 'gcc_linux-64 sysroot_linux-64'
+      mac310:
+        imageName: 'macos-latest'  # $CONDA variable not set???
+        python.version: '3.10'
+        numpy.version: '=2.1'
+        extra.packages: 'compilers llvm-openmp clang_osx-64'  #  clangxx_osx-64
+      mac311:
+        imageName: 'macos-latest'
+        python.version: '3.11'
+        numpy.version: '=2.2'
+        extra.packages: 'compilers llvm-openmp clang_osx-64'  #  clangxx_osx-64
+      mac312:
+        imageName: 'macos-latest'
+        python.version: '3.12'
+        numpy.version: '>=2.2'
+        extra.packages: 'compilers llvm-openmp clang_osx-64'  #  clangxx_osx-64
+      # win39:
+      #   imageName: 'windows-latest'
+      #   python.version: '3.9'
+      #   numpy.version: '=2.1'
+      win310:
+        imageName: 'windows-latest'
+        python.version: '3.10'
+        numpy.version: '=2.1'
+      win311:
+        imageName: 'windows-latest'
+        python.version: '3.11'
+        numpy.version: '=2.2'
+      win312:
+        imageName: 'windows-latest'
+        python.version: '3.12'
+        numpy.version: '>=2.2'
+
+  pool:
+    vmImage: $(imageName)
+
+  steps:
+
+  # miniconda was removed from macos images...
+  # - bash: |
+  #     env
+  #     echo "USER" $USER
+  #     echo "CONDA" $CONDA
+  #     echo "sudo chown -R $USER $CONDA"
+  #     sudo chown -R $USER $CONDA
+  #   displayName: Fix a conda bug on MacOS
+  #   condition: startsWith(variables['Agent.OS'], 'Darwin')
+
+  - bash: |
+      mkdir -p ~/miniconda && cd ~/miniconda
+      curl -L -O "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh" && cd ..
+      ls ~/miniconda
+      bash ~/miniconda/Miniforge3-$(uname)-$(uname -m).sh -b -u -p ~/miniconda
+      rm ~/miniconda/miniconda.sh
+      ~/miniconda/bin/conda init bash
+      echo "##vso[task.setvariable variable=CONDA]~/miniconda/"
+    displayName: Install miniconda in runner
+    condition: startsWith(variables['Agent.OS'], 'Darwin')
+
+
+  # see https://github.com/conda-org/conda/issues/488
+  # and https://github.com/MPAS-Dev/compass/pull/320
+  - bash: |
+      rm /usr/share/miniconda/pkgs/cache/*.json
+    displayName: Fix a conda bug on Linux
+    condition: startsWith(variables['Agent.OS'], 'Linux')
+
+  - bash: |
+      echo "##vso[task.prependpath]$CONDA/bin"
+      echo "##vso[task.setvariable variable=conda.activate]source activate"
+      echo "##vso[task.setvariable variable=srtmdata]$(Agent.BuildDirectory)/srtm"
+    displayName: Add conda to PATH, Linux/MacOS
+    condition: not(startsWith(variables['Agent.OS'], 'Windows'))
+
+  - bash: |
+      echo "##vso[task.prependpath]/usr/bin"
+      echo "##vso[task.setvariable variable=SETUPTOOLS_ENABLE_FEATURES]legacy-editable"
+    displayName: Bugfix MacOS command line interface
+    condition: startsWith(variables['Agent.OS'], 'Darwin')
+
+  - powershell: |
+      Write-Host "##vso[task.prependpath]$env:CONDA\Scripts"
+      echo "##vso[task.setvariable variable=conda.activate]call activate.bat"
+      echo "##vso[task.setvariable variable=srtmdata]$(Agent.BuildDirectory)\srtm"
+    displayName: Add conda to PATH, Windows
+    condition: startsWith(variables['Agent.OS'], 'Windows')
+
+  - script: |
+      set -x
+    displayName: Verbosity on Linux/MacOS
+    condition: not(startsWith(variables['Agent.OS'], 'Windows'))
+
+  - script: |
+      echo on
+    displayName: Verbosity on Win
+    condition: startsWith(variables['Agent.OS'], 'Windows')
+
+  - script: |
+      echo "Build.SourceBranch" $(Build.SourceBranch)
+      echo "Agent.BuildDirectory" $(Agent.BuildDirectory)
+      echo "Agent.OS" $(Agent.OS) "/" ${{ variables['Agent.OS'] }}
+      echo "is.linux" $(is.linux) "/" ${{ variables['is.linux'] }}
+      echo "is.macos" $(is.macos) "/" ${{ variables['is.macos'] }}
+      echo "is.win" $(is.win) "/" ${{ variables['is.win'] }}
+      echo "srtmdata" $(srtmdata)
+      echo "conda.activate" $(conda.activate)
+      echo "is.tag" $(is.tag)
+      echo "publish.docs" $(publish.docs)
+      echo "is.pullrequest" $(is.pullrequest)
+      echo "docs.target" $(docs.target)
+      echo "publish.wheels" $(publish.wheels)
+      echo "python.version" $(python.version)
+      echo "py_whl" $(py_whl)
+      echo "numpy.version" $(numpy.version)
+      echo "astropy.version" $(astropy.version)
+      echo "sphinx.version" $(sphinx.version)
+      echo "pyproj.version" $(pyproj.version)
+      echo "imageName" $(imageName)
+    displayName: Show Vars
+
+  - script: |
+      mkdir $(srtmdata)
+    displayName: Create SRTM directory
+
+  # note: with project.toml it should not be necessary to have cython
+  # installed already, but on PRs building wheels and the tarball still fails
+  # for some reason!? therefore, we add it here (should also be faster than
+  # pip installation)
+  - script: |
+      # $(conda.activate) pycraf-env
+      conda create --yes --quiet -c conda-forge -n pycraf-env python=$(python.version) "astropy$(astropy.version)" cython extension-helpers "h5py>=3.6" hypothesis matplotlib-base numpy$(numpy.version) pip "pyproj$(pyproj.version)" "pytest$(pytest.version)" pytest-astropy pytest-doctestplus pytest-remotedata python-build rasterio scipy setuptools setuptools-scm "sgp4>2" twine wheel $(extra.packages)
+      conda list
+    displayName: Install Anaconda packages
+
+  # IMPORTANT:
+  # condition: and(succeeded(), ge(variables['python.version'], '3.8'))
+  # will be false for python 3.10
+  # TODO: Use and(succeeded(), in(variables['python.version'], '3.8', '3.9', '3.10'))
+
+  # see Issue #55
+  - bash: |
+      rm /usr/share/miniconda/envs/pycraf-env/x86_64-conda-linux-gnu/sysroot/lib64/librt.so.1
+    displayName: Fix another conda bug on Linux
+    condition: and(succeeded(), startsWith(variables['Agent.OS'], 'Linux'), eq(variables['python.version'], '3.8'))
+
+  - script: |
+      $(conda.activate) pycraf-env
+      python -m pip install --no-build-isolation --no-deps -v -v -v -e .
+    displayName: Building
+
+  # --doctest-rst not recommended, use --doctest-glob instead
+  # the following only works because of pip install -e
+  - script: |
+      $(conda.activate) pycraf-env
+      python -m pytest -rsx --remote-data=any --ignore-glob="*/setup_package.py" pycraf
+    displayName: Testing package
+    condition: succeeded()
+
+  # --doctest-rst not recommended, use --doctest-glob instead
+  # the following only works because of pip install -e
+  - script: |
+      $(conda.activate) pycraf-env
+      python -m pytest -rsx --remote-data=any --doctest-plus --doctest-glob="*.rst" --doctest-ignore-import-errors docs
+    displayName: Testing docs
+    condition: succeeded()
+
+  - script: |
+      $(conda.activate) pycraf-env
+      conda install --yes --quiet --name pycraf-env -c conda-forge "sphinx$(sphinx.version)" sphinx-astropy[confv2] sphinx-copybutton pydata-sphinx-theme sphinx-design
+      cd docs
+      sphinx-build . _build/html -b html
+    displayName: Make docs
+    condition: and(succeeded(), startsWith(variables['Agent.OS'], 'Linux'), eq(variables['python.version'], '3.11'))
+    # condition: and(succeeded(), startsWith(variables['Agent.OS'], 'Linux'))
+
+  - task: DownloadSecureFile@1
+    inputs:
+      secureFile: ghpages_deploy_pycraf
+    displayName: 'Get the deploy key'
+    condition: and(succeeded(), eq(variables['publish.docs'], true))
+
+  - bash: |
+      mkdir ~/.ssh && mv $DOWNLOADSECUREFILE_SECUREFILEPATH ~/.ssh/id_rsa
+      chmod 700 ~/.ssh && chmod 600 ~/.ssh/id_rsa
+      ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+      $(conda.activate) pycraf-env
+      mkdir gh_pages && cd gh_pages
+      git init
+      git config --local user.name "Benjamin Winkel"
+      git config --local user.email "bwinkel@mpifr.de"
+      git remote add github git@github.com:bwinkel/pycraf.git
+      git fetch github gh-pages
+      git checkout --track github/gh-pages
+      rsync -av ../docs/_build/html/ ${DOCS_TARGET}/
+      docs_version=$(python -c "import pycraf; print(pycraf.__version__)")
+      git add -A && git commit -m "Update docs for $docs_version ***NO_CI***"
+      bash ../retry.sh git push github
+    displayName: Publish docs
+    condition: and(succeeded(), eq(variables['publish.docs'], true))
+
+  - task: TwineAuthenticate@1
+    inputs:
+      pythonUploadServiceConnection: pypi_pycraf
+    displayName: 'Twine Authenticate'
+
+  - bash: |
+      rm -rf build
+      docker run -e NPY_NUM_BUILD_JOBS=4 -e PLAT=$(plat) -e package_name=$(package_name) -e py_whl=$(py_whl) --rm -v `pwd`:/io $(image) /io/.ci/build-wheels.sh
+      ls -lh wheelhouse/
+      mkdir -p dist
+      cp wheelhouse/$(package_name)*.whl dist/.
+      ls dist
+    displayName: Build wheels, Linux
+    condition: and(succeeded(), startsWith(variables['Agent.OS'], 'Linux'))
+
+  - script: |
+      $(conda.activate) pycraf-env
+      python -m build --wheel
+    displayName: Build wheels, MacOS/Windows
+    condition: and(succeeded(), not(startsWith(variables['Agent.OS'], 'Linux')))
+
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: '3.9'
+
+  - script: |
+      pip install twine
+      ls dist/*.whl
+      python -m twine upload -r "pypi_pycraf" --skip-existing --config-file $(PYPIRC_PATH) dist/*.whl
+    displayName: Upload wheels, Linux/MacOS
+    condition: and(succeeded(), eq(variables['publish.wheels'], true), not(startsWith(variables['Agent.OS'], 'Windows')))
+
+  - script: |
+      pip install twine
+      ls dist/*.whl
+      python -m twine upload -r "pypi_pycraf" --skip-existing --config-file %PYPIRC_PATH% dist/*.whl
+    displayName: Upload wheels, Windows
+    condition: and(succeeded(), eq(variables['publish.wheels'], true), startsWith(variables['Agent.OS'], 'Windows'))
+
+  - script: |
+      $(conda.activate) pycraf-env
+      # there is a stray egg-info directory (from the docker run?)
+      # which leads to an access error, as it is by root; need to delete it
+      sudo rm -rfv *.egg-info
+      python -m build --sdist
+    displayName: Build tarball
+    condition: and(succeeded(), eq(variables['build.tarball'], true))
+
+  - script: |
+      $(conda.activate) pycraf-env
+      ls dist/*.tar.gz
+      python -m twine upload -r "pypi_pycraf" --skip-existing --config-file $(PYPIRC_PATH) dist/*.tar.gz
+    displayName: Upload tarball
+    condition: and(succeeded(), eq(variables['publish.tarball'], true))
+
+  - script: rm ~/.ssh/id_rsa || true
+    displayName: 'Cleanup docs deploy key'
+    condition: and(always(), eq(variables['publish.docs'], true))
