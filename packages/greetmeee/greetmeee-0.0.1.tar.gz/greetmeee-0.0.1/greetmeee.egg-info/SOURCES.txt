@@ -1,0 +1,7 @@
+setup.py
+AI-shell/__init__.py
+AI-shell/test.py
+greetmeee.egg-info/PKG-INFO
+greetmeee.egg-info/SOURCES.txt
+greetmeee.egg-info/dependency_links.txt
+greetmeee.egg-info/top_level.txt
