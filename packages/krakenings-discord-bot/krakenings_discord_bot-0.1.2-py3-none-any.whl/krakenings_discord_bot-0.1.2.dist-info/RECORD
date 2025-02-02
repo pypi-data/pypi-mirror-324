@@ -1,0 +1,11 @@
+krakenings_discord_bot/__init__.py,sha256=61Zv_dwmcnfETqEbb7hHkSoAyQ-zgDQZeU7zDIurkZw,421
+krakenings_discord_bot/__main__.py,sha256=MSmt_5Xg84uHqzTN38JwgseJK8rsJn_11A8WD99VtEo,61
+krakenings_discord_bot/bot.py,sha256=6hXF-b-fHZ-mxE3jxC7pgZaaf4L0yhS9kErRSFrDiIo,2006
+krakenings_discord_bot/cli.py,sha256=wsmm3S0rD2qryhRXvzM8dJwaMDhMEdYeiyxg0iAw-jU,3797
+krakenings_discord_bot/espn.py,sha256=g-IPARPaCiOeiVZr7hGu3gw1AqvM-wSJlPaYo8XJA1Y,5768
+krakenings_discord_bot/event.py,sha256=od7LRt_YiF8m0RMsQuvODqd_I4LldM6l86wyg1xJ6NA,388
+krakenings_discord_bot/images.py,sha256=3IOgtveRWWaNm2bBihFB4RpgVIu0GibpPqfGOhG1abM,3301
+krakenings_discord_bot-0.1.2.dist-info/METADATA,sha256=D5Z9VuNNsJtlx_9M0AE70VIvRBK0FvC4sfyI9wELNtk,1699
+krakenings_discord_bot-0.1.2.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+krakenings_discord_bot-0.1.2.dist-info/entry_points.txt,sha256=U4hzGaETe5dq7eKhKYKekahKPGBuVvrsSikqUi6Qs58,75
+krakenings_discord_bot-0.1.2.dist-info/RECORD,,
