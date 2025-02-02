@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "dsresumatch"
+version = "1.1.5"
+description = "Analyze resumes and job descriptions by extracting key sections and scoring them based on keyword relevance"
+authors = ["Nelli Hovhannisyan, Ashita Diwan, Timothy Singh,Jia Quan Lim"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+pypdf2 = ">=3.0.1"
+nltk = ">=3.9.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+myst-nb = "^1.1.2"
+sphinx-autoapi = "^3.4.0"
+furo = "^2024.8.6"
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
