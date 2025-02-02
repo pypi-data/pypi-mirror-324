@@ -1,0 +1,7 @@
+README.md
+hello.py
+pyproject.toml
+lihil.egg-info/PKG-INFO
+lihil.egg-info/SOURCES.txt
+lihil.egg-info/dependency_links.txt
+lihil.egg-info/top_level.txt
