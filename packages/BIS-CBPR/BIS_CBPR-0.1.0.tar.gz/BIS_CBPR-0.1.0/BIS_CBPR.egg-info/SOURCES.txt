@@ -1,0 +1,8 @@
+setup.py
+BIS_CBPR/BIS.py
+BIS_CBPR/__init__.py
+BIS_CBPR.egg-info/PKG-INFO
+BIS_CBPR.egg-info/SOURCES.txt
+BIS_CBPR.egg-info/dependency_links.txt
+BIS_CBPR.egg-info/requires.txt
+BIS_CBPR.egg-info/top_level.txt
