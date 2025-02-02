@@ -1,0 +1,22 @@
+[project]
+name = "jiangjinjiu"
+version = "2025.2.2"
+description = "A Consumer Portal"
+authors = [
+    { name = "libai1222", email = "libai1222@qq.com" },
+]
+dependencies = []
+requires-python = ">=3.12"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[build-system]
+requires = [
+    "pdm-backend",
+]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
