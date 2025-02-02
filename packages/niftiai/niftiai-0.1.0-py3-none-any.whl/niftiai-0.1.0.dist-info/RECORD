@@ -1,0 +1,12 @@
+niftiai/__init__.py,sha256=PfD5bFZ1z1iXjx2d_l_oCJWOws-M7sZogkwWJ39puOw,229
+niftiai/augment.py,sha256=xbmBkQDcS45vkXw8VuOKth1X1zWnXUb3ARblZdIOrHg,19937
+niftiai/core.py,sha256=LpKYbDcY2HYTQvjM8CP2_otRergisBVujANfym2LHAg,4457
+niftiai/data.py,sha256=aXKOV2qNMO9bKzpoubrMwOtHcNWSwrQQKP8vjSiDaOE,6437
+niftiai/learner.py,sha256=T-7iyftBS1xR2ErH8RtUdeKirl1xKWuKth53wJ6PsVM,1063
+niftiai/models/__init__.py,sha256=i-B3-jG5qjzhSSTp7uwhXKMcWZnuGk7BcnAIbD8h5oA,104
+niftiai/models/resnet3d.py,sha256=P5MhauApjhuEASdbarrfxmmh9bGJcV9hAT_m2SRff4Y,3061
+niftiai/transforms.py,sha256=Jnq1cQH2G2qyb_QQ9XOrV9gXE53dJK0rOQeGnpIddlA,2305
+niftiai-0.1.0.dist-info/LICENSE,sha256=XxhyDFy0W2ovFvd44v5Df-8botgGXkiaPCdAM9Icsiw,1068
+niftiai-0.1.0.dist-info/METADATA,sha256=0s6w4ttud2RXqrckgKKn9aBaDSLfbtELZ-T7OpKKd2U,4622
+niftiai-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+niftiai-0.1.0.dist-info/RECORD,,
