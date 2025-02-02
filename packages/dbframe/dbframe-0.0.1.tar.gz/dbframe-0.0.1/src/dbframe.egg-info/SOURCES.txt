@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+src/dbframe/__init__.py
+src/dbframe/dbframe.py
+src/dbframe.egg-info/PKG-INFO
+src/dbframe.egg-info/SOURCES.txt
+src/dbframe.egg-info/dependency_links.txt
+src/dbframe.egg-info/requires.txt
+src/dbframe.egg-info/top_level.txt
+src/dbframe/handlers/postgres_handler.py
+src/dbframe/handlers/sqlite_handler.py
+tests/test_dbframe.py
