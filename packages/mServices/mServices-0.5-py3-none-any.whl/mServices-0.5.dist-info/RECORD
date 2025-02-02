@@ -1,0 +1,11 @@
+mServices/QueryBuilderService.py,sha256=vUlXe2NLWo1I3W8DwoWt5Q50gXusg_CctzW13Gyg8p4,2897
+mServices/ResponseService.py,sha256=bUdxj6bfJzGKMvXTDMhZD1OC-iD2LYU6i1JkuBolNzk,1916
+mServices/__init__.py,sha256=J9jNYuPKjSPXb3e1MklJzt3XN83sTPG6oRsgAM-w3wg,100
+mServices/asgi.py,sha256=obthuvy6uWBap8B5ge2uqQ1dBKmFY68XkejN4ITHXPk,411
+mServices/settings.py,sha256=_EXyXZ2ACC5PYXe1dHHII-r5QW3uusPooEogNNMUi84,3353
+mServices/urls.py,sha256=Ht_fN2xCo_krbP27B8H3J6JxpWo7UsnhZqKe1JhfW4Q,787
+mServices/wsgi.py,sha256=snbhxNMXu8Cfop8-RfT0OuA64rHUFlj8_CKeBFREsYA,411
+mServices-0.5.dist-info/METADATA,sha256=o4xLKjI7bMPZtAt8AA4pZkeIJ-VhimZ0ibTZHQJw7dg,419
+mServices-0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mServices-0.5.dist-info/top_level.txt,sha256=MHkxge8qdjn8vsjRoMcwvM3tjFL5ZoF3_RbZnq8T_40,10
+mServices-0.5.dist-info/RECORD,,
