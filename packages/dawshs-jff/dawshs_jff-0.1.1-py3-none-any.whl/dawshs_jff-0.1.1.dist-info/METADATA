@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: dawshs_jff
+Version: 0.1.1
+Summary: Dawsh's Just For Fun project
+License:             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                            Version 2, December 2004
+        
+         Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+        
+         Everyone is permitted to copy and distribute verbatim or modified
+         copies of this license document, and changing it is allowed as long
+         as the name is changed.
+        
+                    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+           TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+        
+          0. You just DO WHAT THE FUCK YOU WANT TO.
+License-File: LICENSE
+Requires-Dist: httpx~=0.27.0
+Requires-Dist: tzlocal~=5.2
+Requires-Dist: opencv-python~=4.10.0.82
+Requires-Dist: numpy~=1.26.4
+Requires-Dist: pytesseract~=0.3.10
+Requires-Dist: pydantic~=2.10.6
+Requires-Dist: pycryptodome~=3.20.0
