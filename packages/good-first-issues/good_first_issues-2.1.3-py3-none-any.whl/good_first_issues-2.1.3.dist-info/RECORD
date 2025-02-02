@@ -1,0 +1,16 @@
+good_first_issues/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+good_first_issues/main.py,sha256=0rG5EgXFpx5JiB_VLNPCWnMtV361KddYm_GPkzZvD-M,420
+good_first_issues/commands/__init__.py,sha256=9GE8ilcGODdKhj1MLdLyEcwAsU2oJUGzx_h-Ck8qabY,104
+good_first_issues/commands/config.py,sha256=lMLH6TzW3RTuwYp98my-DRfSl6Drcq6XW1PhnKjxoFw,384
+good_first_issues/commands/rate_limit.py,sha256=LAJpnLKhpa_C6_AWsaudp_X0hmYttQQ5CWUoWRH6lSs,345
+good_first_issues/commands/search.py,sha256=hp4dNPGTWP68ygHYLK6k4h8vLRNEx4sLp25N3oLXj5g,4350
+good_first_issues/graphql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+good_first_issues/graphql/queries.py,sha256=kZpwP589XLmomnDVsyN1hnMIQBZwBKDiT1kMxnQIHvY,1221
+good_first_issues/graphql/services.py,sha256=Z7waTtm-QCupO8le8_VyeoU2HLPb_-5ZF-saur1l3AI,7909
+good_first_issues/utils/__init__.py,sha256=1RTMSaJ1sbtyidS0FZNzvopyDaoId7sK-uewlKKl0y4,7128
+good_first_issues-2.1.3.dist-info/LICENCE,sha256=QxxPFWRPuSpMyQOsnkhRNCggQecOBgDzcjCJi7_jRzc,1072
+good_first_issues-2.1.3.dist-info/METADATA,sha256=bxF49BSapvqdEGf0JIxAxCiId9qsoVOU-ETm3QwvB2U,7691
+good_first_issues-2.1.3.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+good_first_issues-2.1.3.dist-info/entry_points.txt,sha256=G2MOicKGJhnOaWl4kd3d868V72bcXKMmX9634gvYLMI,51
+good_first_issues-2.1.3.dist-info/top_level.txt,sha256=6kyQCDidJ4piDEj68mB5ZMbXtT7XHZ7EvD_AyO6YA9w,18
+good_first_issues-2.1.3.dist-info/RECORD,,
