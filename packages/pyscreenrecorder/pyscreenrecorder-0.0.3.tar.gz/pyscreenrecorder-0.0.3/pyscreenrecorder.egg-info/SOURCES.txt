@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+pyscreenrecorder/__init__.py
+pyscreenrecorder/__version__.py
+pyscreenrecorder/pyscreenrecorder.py
+pyscreenrecorder.egg-info/PKG-INFO
+pyscreenrecorder.egg-info/SOURCES.txt
+pyscreenrecorder.egg-info/dependency_links.txt
+pyscreenrecorder.egg-info/not-zip-safe
+pyscreenrecorder.egg-info/requires.txt
+pyscreenrecorder.egg-info/top_level.txt
