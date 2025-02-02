@@ -1,0 +1,28 @@
+{
+    "technical_skills": [
+        "python",
+        "sql",
+        "machine learning",
+        "data analysis",
+        "statistics",
+        "r",
+        "tensorflow",
+        "pytorch",
+        "scikit-learn"
+    ],
+    "soft_skills": [
+        "communication",
+        "teamwork",
+        "problem solving",
+        "leadership",
+        "project management"
+    ],
+    "tools": [
+        "git",
+        "docker",
+        "aws",
+        "jupyter",
+        "pandas",
+        "numpy"
+    ]
+} 

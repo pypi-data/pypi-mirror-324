@@ -1,0 +1,10 @@
+dsresumatch/__init__.py,sha256=b3gGOc7jKnBIONEcbzEF9hwkQsaV7czMYgbZegyN6sY,113
+dsresumatch/data/baseline_keywords.json,sha256=pvcx6cGqT1Kip2kEN20zgDu7kGNLO5IzqwjSmJAPTMk,495
+dsresumatch/evaluate_keywords.py,sha256=mNOiYRCos7HNde-9M9IYa7Mrs9EdTiGiQzaOYT-dEmY,3705
+dsresumatch/pdf_cv_processing.py,sha256=w2Q_fOwIgUP6c62WI_zzJdJlLL4-IJfIEOI6by2PNcg,2796
+dsresumatch/resume_scoring.py,sha256=uojFRL-cwnn_LOwYUgxwYDpld7jqi22ic5PtTesB3uM,7558
+dsresumatch/sections_check.py,sha256=3RGhJI7COpPlWRe7BV_byd7XvbbCRYqTHngVSZ72KDo,2930
+dsresumatch-1.1.7.dist-info/LICENSE,sha256=j0pLB0g5vY89LzVjPY60HfdGqsi-uHQM_1KX_d1V2-k,1121
+dsresumatch-1.1.7.dist-info/METADATA,sha256=HC2W6oPI81zF_yVPj5QWMmFCznoFKIaRuoT2X61yRvs,6615
+dsresumatch-1.1.7.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+dsresumatch-1.1.7.dist-info/RECORD,,
