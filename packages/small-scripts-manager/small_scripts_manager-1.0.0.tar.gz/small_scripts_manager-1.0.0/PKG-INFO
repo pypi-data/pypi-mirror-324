@@ -1,0 +1,40 @@
+Metadata-Version: 2.2
+Name: small_scripts_manager
+Version: 1.0.0
+Summary: This module provides a simple and responsive interface to navigate your collection of small scripts. You can also download it from my GitHub in the .exe version.
+Home-page: 
+Author: CPUcademy
+Author-email: cpucademy@gmail.com
+License: MIT
+Keywords: cpucademy small scripts manager application gui
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: cryptography
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+==========================
+CPUlib
+==========================
+This module provides a simple and responsive interface to navigate your collection of small scripts. You can also download it from my GitHub in the .exe version.
+
+Usage
+==========================
+Example of running the project:
+
+   .. code-block:: bash
+
+	import small_scripts_manager as ssm
+	s = ssm.SmallScriptsManager()
