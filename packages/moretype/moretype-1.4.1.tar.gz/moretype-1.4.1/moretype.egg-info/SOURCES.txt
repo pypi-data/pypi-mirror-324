@@ -1,0 +1,11 @@
+LICENCE.txt
+README.md
+setup.py
+moretype/__init__.py
+moretype/exceptions.py
+moretype/moretype.pyi
+moretype/test.py
+moretype.egg-info/PKG-INFO
+moretype.egg-info/SOURCES.txt
+moretype.egg-info/dependency_links.txt
+moretype.egg-info/top_level.txt
