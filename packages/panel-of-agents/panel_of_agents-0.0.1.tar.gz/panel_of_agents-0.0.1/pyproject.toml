@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "panel-of-agents"
+version = "0.0.1"
+description = "A framework for orchestrating multiple AI agents in collaborative discussions and tasks"
+authors = [
+    { name="Mohammed Ali", email="splitwireml@gmail.com" }
+]
+maintainers = [
+    { name="Mohammed Ali", email="splitwireml@gmail.com" }
+]
+readme = "README.md"
+license = "AGPL-3.0"
+license-files = ["LICEN[CS]E*"]
+keywords = ["ai", "agents", "automation", "llms"]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Typing :: Typed"
+]
+dependencies = [
+    "pydantic>=2.9.2",
+    "pydantic_core>=2.23.4",
+    "langchain>=0.3.13",
+    "langchain-core>=0.3.28",
+    "langsmith>=0.2.6"
+]
+
+[project.urls]
+Homepage = "https://github.com/LighthouseAI-saas/PanelOfAgents"
+Repository = "https://github.com/LighthouseAI-saas/PanelOfAgents"
