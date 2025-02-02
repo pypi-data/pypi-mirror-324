@@ -1,0 +1,8 @@
+README.md
+setup.py
+KRILOT/__init__.py
+KRILOT/main.py
+crilot.egg-info/PKG-INFO
+crilot.egg-info/SOURCES.txt
+crilot.egg-info/dependency_links.txt
+crilot.egg-info/top_level.txt
