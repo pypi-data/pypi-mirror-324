@@ -1,0 +1,8 @@
+ua_parser_builtins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ua_parser_builtins/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ua_parser_builtins/lazy.py,sha256=9BWaMkU329eaBm1bOcnIdwLToBoiOHycZXTUdIe4OD4,126621
+ua_parser_builtins/matchers.py,sha256=IHWEgqyCaxn-A8ePIWRF3N8lo2dfHph6G3fKNhS_xAA,126625
+ua_parser_builtins/regexes.py,sha256=GkSZS4pw2u6s9fejo9KO0Hbw7_u63g7FXkeR7z3F2x4,125421
+ua_parser_builtins-0.19.0.dev39.dist-info/METADATA,sha256=rNnwM5rgrF9cwlvYFuUMxQMKK_kHGawxIV1Nb1cQzKU,1442
+ua_parser_builtins-0.19.0.dev39.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+ua_parser_builtins-0.19.0.dev39.dist-info/RECORD,,
