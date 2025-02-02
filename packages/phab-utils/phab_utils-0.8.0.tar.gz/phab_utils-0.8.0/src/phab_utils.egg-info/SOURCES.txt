@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/phab_utils.egg-info/PKG-INFO
+src/phab_utils.egg-info/SOURCES.txt
+src/phab_utils.egg-info/dependency_links.txt
+src/phab_utils.egg-info/requires.txt
+src/phab_utils.egg-info/top_level.txt
