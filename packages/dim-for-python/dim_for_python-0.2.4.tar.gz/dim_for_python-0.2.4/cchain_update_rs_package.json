@@ -1,0 +1,38 @@
+[
+  {
+    "command": "cargo",
+    "arguments": [
+      "clean"
+    ],
+    "retry": 1
+  },
+  {
+    "command": "uv",
+    "arguments": [
+      "clean"
+    ],
+    "retry": 1
+  },
+  {
+    "command": "cargo",
+    "arguments": [
+      "update"
+    ],
+    "retry": 1
+  },
+  {
+    "command": "maturin",
+    "arguments": [
+      "develop",
+      "--uv"
+    ],
+    "retry": 1
+  },
+  {
+    "command": "uv",
+    "arguments": [
+      "sync"
+    ],
+    "retry": 1
+  }
+]
