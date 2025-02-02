@@ -1,0 +1,12 @@
+drf_viewset_scenarios-1.0.0.dist-info/METADATA,sha256=cdqvEJp3-Iv97NxZmbx7xH1_Lpobd4hxBwI70-wMsYo,6542
+drf_viewset_scenarios-1.0.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+drf_viewset_scenarios-1.0.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+drf_viewset_scenarios-1.0.0.dist-info/licenses/LICENSE,sha256=i7EhciVlOPmzxnWSIuZdPKrK4ijICQKM5OjOHSFUx3c,1068
+viewset_scenarios/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+viewset_scenarios/action_type.py,sha256=RyAvH_30pYSrAPgZ5Dphy02y4MYFihUOEX-66-7jtDg,659
+viewset_scenarios/conditions.py,sha256=Y1UkRlKK6BdzVjYQuWelx4cSnrVxLNCgSX3lQ76p3ec,779
+viewset_scenarios/exceptions.py,sha256=Te_RxQ9dd8jpKe9DvTUlaaDi67hDsYZwBOHvrT78xyk,126
+viewset_scenarios/scenarios.py,sha256=kHcZCnjMQPkojbHmm6EBvBXIkRU3t4K20JZmpu-H3Ao,3585
+viewset_scenarios/utils.py,sha256=o4LVLJuXITflGTU08W6ll2evS0hgTE25b0umJRC53gI,1103
+viewset_scenarios/viewset.py,sha256=UiHhWCaObFAP78yDIzyRFgRIbw1clwdNWIT2jZlQaDo,1776
+drf_viewset_scenarios-1.0.0.dist-info/RECORD,,
