@@ -1,0 +1,743 @@
+
+
+<!doctype html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>sqlobject.tests.test_ForeignKey_cascade module &#8212; SQLObject 3.12.0.post2 documentation</title>
+    <link rel="stylesheet" href="../_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script type="text/javascript" src="../_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.12.0.post2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/api/sqlobject.tests.test_ForeignKey_cascade.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-sqlobject.tests.test_ForeignKey_cascade">
+<span id="sqlobject-tests-test-foreignkey-cascade-module"></span><h1>sqlobject.tests.test_ForeignKey_cascade module<a class="headerlink" href="#module-sqlobject.tests.test_ForeignKey_cascade" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse">
+<em class="property">class </em><code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">SOTestMessageCascadeFalse</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#SOTestMessageCascadeFalse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.SQLObject</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.body">
+<code class="descname">body</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.body" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.j">
+<code class="descname">j</code><em class="property"> = so_test_message_cascade_false</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.q">
+<code class="descname">q</code><em class="property"> = so_test_message_cascade_false</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.recipient">
+<code class="descname">recipient</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.recipient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.recipientID">
+<code class="descname">recipientID</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.recipientID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sender">
+<code class="descname">sender</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sender" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.senderID">
+<code class="descname">senderID</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.senderID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta">
+<em class="property">class </em><code class="descname">sqlmeta</code><span class="sig-paren">(</span><em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.sqlmeta</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.childName">
+<code class="descname">childName</code><em class="property"> = None</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.idName">
+<code class="descname">idName</code><em class="property"> = 'id'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.indexes">
+<code class="descname">indexes</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.joinDefinitions">
+<code class="descname">joinDefinitions</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.joins">
+<code class="descname">joins</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.soClass">
+<code class="descname">soClass</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse" title="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.style">
+<code class="descname">style</code><em class="property"> = &lt;sqlobject.styles.MixedCaseUnderscoreStyle object&gt;</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.table">
+<code class="descname">table</code><em class="property"> = 'so_test_message_cascade_false'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeFalse.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed">
+<em class="property">class </em><code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">SOTestMessageCascadeMixed</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#SOTestMessageCascadeMixed"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.SQLObject</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.body">
+<code class="descname">body</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.body" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.j">
+<code class="descname">j</code><em class="property"> = so_test_message_cascade_mixed</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.q">
+<code class="descname">q</code><em class="property"> = so_test_message_cascade_mixed</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.recipient">
+<code class="descname">recipient</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.recipient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.recipientID">
+<code class="descname">recipientID</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.recipientID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sender">
+<code class="descname">sender</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sender" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.senderID">
+<code class="descname">senderID</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.senderID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta">
+<em class="property">class </em><code class="descname">sqlmeta</code><span class="sig-paren">(</span><em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.sqlmeta</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.childName">
+<code class="descname">childName</code><em class="property"> = None</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.idName">
+<code class="descname">idName</code><em class="property"> = 'id'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.indexes">
+<code class="descname">indexes</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.joinDefinitions">
+<code class="descname">joinDefinitions</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.joins">
+<code class="descname">joins</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.soClass">
+<code class="descname">soClass</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed" title="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.style">
+<code class="descname">style</code><em class="property"> = &lt;sqlobject.styles.MixedCaseUnderscoreStyle object&gt;</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.table">
+<code class="descname">table</code><em class="property"> = 'so_test_message_cascade_mixed'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeMixed.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull">
+<em class="property">class </em><code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">SOTestMessageCascadeNull</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#SOTestMessageCascadeNull"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.SQLObject</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.body">
+<code class="descname">body</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.body" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.j">
+<code class="descname">j</code><em class="property"> = so_test_message_cascade_null</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.q">
+<code class="descname">q</code><em class="property"> = so_test_message_cascade_null</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.recipient">
+<code class="descname">recipient</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.recipient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.recipientID">
+<code class="descname">recipientID</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.recipientID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sender">
+<code class="descname">sender</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sender" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.senderID">
+<code class="descname">senderID</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.senderID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta">
+<em class="property">class </em><code class="descname">sqlmeta</code><span class="sig-paren">(</span><em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.sqlmeta</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.childName">
+<code class="descname">childName</code><em class="property"> = None</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.idName">
+<code class="descname">idName</code><em class="property"> = 'id'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.indexes">
+<code class="descname">indexes</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.joinDefinitions">
+<code class="descname">joinDefinitions</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.joins">
+<code class="descname">joins</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.soClass">
+<code class="descname">soClass</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull" title="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.style">
+<code class="descname">style</code><em class="property"> = &lt;sqlobject.styles.MixedCaseUnderscoreStyle object&gt;</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.table">
+<code class="descname">table</code><em class="property"> = 'so_test_message_cascade_null'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeNull.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue">
+<em class="property">class </em><code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">SOTestMessageCascadeTrue</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#SOTestMessageCascadeTrue"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.SQLObject</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.body">
+<code class="descname">body</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.body" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.j">
+<code class="descname">j</code><em class="property"> = so_test_message_cascade_true</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.q">
+<code class="descname">q</code><em class="property"> = so_test_message_cascade_true</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.recipient">
+<code class="descname">recipient</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.recipient" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.recipientID">
+<code class="descname">recipientID</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.recipientID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sender">
+<code class="descname">sender</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sender" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.senderID">
+<code class="descname">senderID</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.senderID" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta">
+<em class="property">class </em><code class="descname">sqlmeta</code><span class="sig-paren">(</span><em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.sqlmeta</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.childName">
+<code class="descname">childName</code><em class="property"> = None</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.idName">
+<code class="descname">idName</code><em class="property"> = 'id'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.indexes">
+<code class="descname">indexes</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.joinDefinitions">
+<code class="descname">joinDefinitions</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.joins">
+<code class="descname">joins</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.soClass">
+<code class="descname">soClass</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue" title="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.style">
+<code class="descname">style</code><em class="property"> = &lt;sqlobject.styles.MixedCaseUnderscoreStyle object&gt;</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.table">
+<code class="descname">table</code><em class="property"> = 'so_test_message_cascade_true'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestMessageCascadeTrue.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1">
+<em class="property">class </em><code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">SOTestPerson1</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#SOTestPerson1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.SQLObject</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.j">
+<code class="descname">j</code><em class="property"> = so_test_person1</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.name">
+<code class="descname">name</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.q">
+<code class="descname">q</code><em class="property"> = so_test_person1</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta">
+<em class="property">class </em><code class="descname">sqlmeta</code><span class="sig-paren">(</span><em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.sqlmeta</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.childName">
+<code class="descname">childName</code><em class="property"> = None</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.idName">
+<code class="descname">idName</code><em class="property"> = 'id'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.indexes">
+<code class="descname">indexes</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.joinDefinitions">
+<code class="descname">joinDefinitions</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.joins">
+<code class="descname">joins</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.soClass">
+<code class="descname">soClass</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1" title="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.style">
+<code class="descname">style</code><em class="property"> = &lt;sqlobject.styles.MixedCaseUnderscoreStyle object&gt;</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.table">
+<code class="descname">table</code><em class="property"> = 'so_test_person1'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson1.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2">
+<em class="property">class </em><code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">SOTestPerson2</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#SOTestPerson2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.SQLObject</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.j">
+<code class="descname">j</code><em class="property"> = so_test_person2</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.name">
+<code class="descname">name</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.q">
+<code class="descname">q</code><em class="property"> = so_test_person2</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta">
+<em class="property">class </em><code class="descname">sqlmeta</code><span class="sig-paren">(</span><em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.sqlmeta</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.childName">
+<code class="descname">childName</code><em class="property"> = None</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.idName">
+<code class="descname">idName</code><em class="property"> = 'id'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.indexes">
+<code class="descname">indexes</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.joinDefinitions">
+<code class="descname">joinDefinitions</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.joins">
+<code class="descname">joins</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.soClass">
+<code class="descname">soClass</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2" title="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.style">
+<code class="descname">style</code><em class="property"> = &lt;sqlobject.styles.MixedCaseUnderscoreStyle object&gt;</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.table">
+<code class="descname">table</code><em class="property"> = 'so_test_person2'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson2.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3">
+<em class="property">class </em><code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">SOTestPerson3</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#SOTestPerson3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.SQLObject</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.j">
+<code class="descname">j</code><em class="property"> = so_test_person3</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.name">
+<code class="descname">name</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.q">
+<code class="descname">q</code><em class="property"> = so_test_person3</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta">
+<em class="property">class </em><code class="descname">sqlmeta</code><span class="sig-paren">(</span><em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.sqlmeta</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.childName">
+<code class="descname">childName</code><em class="property"> = None</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.idName">
+<code class="descname">idName</code><em class="property"> = 'id'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.indexes">
+<code class="descname">indexes</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.joinDefinitions">
+<code class="descname">joinDefinitions</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.joins">
+<code class="descname">joins</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.soClass">
+<code class="descname">soClass</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3" title="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.style">
+<code class="descname">style</code><em class="property"> = &lt;sqlobject.styles.MixedCaseUnderscoreStyle object&gt;</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.table">
+<code class="descname">table</code><em class="property"> = 'so_test_person3'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson3.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4">
+<em class="property">class </em><code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">SOTestPerson4</code><span class="sig-paren">(</span><em>**kw</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#SOTestPerson4"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.SQLObject" title="sqlobject.main.SQLObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.SQLObject</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.j">
+<code class="descname">j</code><em class="property"> = so_test_person4</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.j" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.name">
+<code class="descname">name</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.q">
+<code class="descname">q</code><em class="property"> = so_test_person4</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta">
+<em class="property">class </em><code class="descname">sqlmeta</code><span class="sig-paren">(</span><em>instance</em><span class="sig-paren">)</span><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="sqlobject.main.html#sqlobject.main.sqlmeta" title="sqlobject.main.sqlmeta"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.main.sqlmeta</span></code></a></p>
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.childName">
+<code class="descname">childName</code><em class="property"> = None</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.childName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.idName">
+<code class="descname">idName</code><em class="property"> = 'id'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.idName" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.indexes">
+<code class="descname">indexes</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.indexes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.joinDefinitions">
+<code class="descname">joinDefinitions</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.joinDefinitions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.joins">
+<code class="descname">joins</code><em class="property"> = []</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.joins" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.soClass">
+<code class="descname">soClass</code><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.soClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4" title="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4"><code class="xref py py-class docutils literal notranslate"><span class="pre">sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.style">
+<code class="descname">style</code><em class="property"> = &lt;sqlobject.styles.MixedCaseUnderscoreStyle object&gt;</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.style" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.table">
+<code class="descname">table</code><em class="property"> = 'so_test_person4'</em><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.SOTestPerson4.sqlmeta.table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.test1">
+<code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">test1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#test1"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.test1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.test2">
+<code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">test2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#test2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.test2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.test3">
+<code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">test3</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#test3"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.test3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.test4">
+<code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">test4</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#test4"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.test4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="sqlobject.tests.test_ForeignKey_cascade.test5">
+<code class="descclassname">sqlobject.tests.test_ForeignKey_cascade.</code><code class="descname">test5</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sqlobject/tests/test_ForeignKey_cascade.html#test5"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sqlobject.tests.test_ForeignKey_cascade.test5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">SQLObject 3.12.0.post2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2004-2025, Ian Bicking and contributors.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.8.6.
+    </div>
+  </body>
+</html>
