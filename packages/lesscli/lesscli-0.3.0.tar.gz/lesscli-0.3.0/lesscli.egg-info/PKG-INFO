@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: lesscli
+Version: 0.3.0
+Summary: A dead simple library for generating command line interfaces
+Home-page: https://github.com/qorzj/lesscli
+Author: qorzj
+Author-email: inull@qq.com
+License: MIT
+Keywords: lesscli cli fire optparse
+Platform: any
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: platform
+Dynamic: summary
+
+
+lesscli
+~~~~~~~~
+
+Lesscli is a dead simple library for generating CLI (command line interfaces).
+
+Setup
+-----
+
+.. code-block:: bash
+
+    > pip install lesscli
+
+Links
+-----
+* `README <https://github.com/qorzj/lesscli>`_
+
