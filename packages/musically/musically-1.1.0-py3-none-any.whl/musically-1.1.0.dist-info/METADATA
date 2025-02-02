@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: musically
+Version: 1.1.0
+Summary: A package for automating music-related tasks via Telegram bot.
+Home-page: https://github.com/ankit-chaubey/musically
+Author: Ankit Chaubey
+Author-email: m.ankitchaubey@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/plain
+Requires-Dist: pyrogram
+Requires-Dist: tqdm
+Requires-Dist: colorama
+Requires-Dist: mutagen
+Requires-Dist: requests
+Requires-Dist: TgCrypto
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+This package for Telegram client that automatically uploads music in high bitrate with high-quality thumbnails and captions in sequence, streamlining the process directly from the system.
