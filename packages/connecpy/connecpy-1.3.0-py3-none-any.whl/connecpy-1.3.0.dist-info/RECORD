@@ -1,0 +1,17 @@
+connecpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+connecpy/asgi.py,sha256=5FwGX95RcOKro6q1-InPEztsv6fS1Qsk1jivzSVzn0s,3612
+connecpy/async_client.py,sha256=CzOeHN83oCaQvy89d-FnbjsnSea4FXdIn5VwwMsEXvE,3092
+connecpy/base.py,sha256=ZVnG7nuRvtnVeaHP4YdH3fWDux5vppQt517PPErafJc,10557
+connecpy/client.py,sha256=grzE114nLgyoRArMURQ2kFgPpIeZ-L2qqqM3ecxdf1A,1805
+connecpy/compression.py,sha256=eD_gI2pWMcdKw5gToJOg7rtlc4uCwMnH5amEj6zfVnU,3783
+connecpy/context.py,sha256=oM9dXhmyWHkKf00jByH1orQtlmfdEweBFZTpWxyUz4g,9313
+connecpy/cors.py,sha256=hkjPm1FzPwS2utKF9JH4ShTFb7OGDZVgUAsZl9nT89k,3468
+connecpy/errors.py,sha256=8dVy4KeAcSFdTmHMTp-WNf7SgXRcYcBz4qxPvvi-eFE,1818
+connecpy/exceptions.py,sha256=gfl42iQewPgNGicz7ZnVdqhreNdEPQAgKTVHagfBBvU,2672
+connecpy/interceptor.py,sha256=W1yqcYG9kDRX7mq6uIh3EUgKGl0Ztc_R6QY1k1gLlOo,943
+connecpy/server.py,sha256=PGhss0dBkahMFSWLPnuRejwU_EZkKdAQFYPEVAb5P1A,1421
+connecpy/wsgi.py,sha256=G1vGtc5959tVpg3gOTgOcrvErBOIkG35hGcSUIAtnuA,4348
+connecpy-1.3.0.dist-info/METADATA,sha256=KMdPMXPTvjS1MKhyab1xHfD08v-WiWk7YySFjMuWC8g,13031
+connecpy-1.3.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+connecpy-1.3.0.dist-info/licenses/LICENSE,sha256=iNm062BXnBkew5HKBMFhMFctfu3EqG2qWL8oxuFMm80,1210
+connecpy-1.3.0.dist-info/RECORD,,
