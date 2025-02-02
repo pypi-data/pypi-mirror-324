@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+nonebot_plugin_memos.egg-info/PKG-INFO
+nonebot_plugin_memos.egg-info/SOURCES.txt
+nonebot_plugin_memos.egg-info/dependency_links.txt
+nonebot_plugin_memos.egg-info/requires.txt
+nonebot_plugin_memos.egg-info/top_level.txt
+nonebot_plugin_memos/migrations/af113b78e1a7_first_revision.py
+nonebot_plugin_memos/migrations/cc54f4b17487_memo_record.py
