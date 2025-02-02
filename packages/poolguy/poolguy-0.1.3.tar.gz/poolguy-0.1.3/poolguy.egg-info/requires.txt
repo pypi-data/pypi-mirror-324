@@ -1,0 +1,10 @@
+aiohttp
+websockets
+python-dateutil
+aiofiles
+
+[mongodb]
+pymongo
+
+[sqlite]
+aiosqlite
