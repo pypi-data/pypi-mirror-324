@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]  # Build tools needed
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ailibrary" # ?
+version = "0.1.0" # ?
+description = "" #?
+requires-python = ">=3.9"
+readme = "README.md" #?
+authors = [
+    {name = "", email = "your.email@example.com"} #?
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+license = {text = ""} #?
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]  # Tell setuptools to look for packages in the 'src' folder

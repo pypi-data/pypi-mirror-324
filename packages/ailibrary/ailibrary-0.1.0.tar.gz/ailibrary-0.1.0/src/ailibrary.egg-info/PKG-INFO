@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: ailibrary
+Version: 0.1.0
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi==0.115.8
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: Requests==2.32.3
+
+# AI Library Python API Library
+
+The AI Library Python library provides convenient access to the AI Library REST API from any Python 3.8+ application. The library includes type definitions for all request params and response fields, and offers both synchronous and asynchronous clients.  
+
