@@ -1,0 +1,10 @@
+django_intram/__init__.py,sha256=7Gn2vI66tOwDsIyimqCpfyuv5ZEjABCXJ6Ko7A2K0Kw,60
+django_intram/apps.py,sha256=-fCqdudpcRHC3FKFNw89vBbDtTZwvyNwqhRF5IfCNxc,191
+django_intram/intram.py,sha256=JIqZ8yMmzZQWMpAFm9uliJVMJWL8xLwWaMrm6WZat1o,7290
+django_intram/urls.py,sha256=Bajkuf8AdKsSWlBHLn8KjQO24vwEysfY8gvt8_Gxtt8,351
+django_intram/views.py,sha256=LQlIohU6SBI5rgufyzNBzVY54c7BjQNlDz4DpBK2s-M,2542
+django_intram-0.1.0.dist-info/LICENSE,sha256=USvLnhn7_4c6QPGaR66JE5sL10kN-ex4eoqmlnB-uiE,140
+django_intram-0.1.0.dist-info/METADATA,sha256=OoOusGgzuVuQPhQYSdNUZUOBMUkG3k0IHsz6bnUeFv0,7188
+django_intram-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+django_intram-0.1.0.dist-info/top_level.txt,sha256=GZ_gHT3E1OAnAgi3Dx4VTQ16AvY66mph99gFOcyAZZM,14
+django_intram-0.1.0.dist-info/RECORD,,
