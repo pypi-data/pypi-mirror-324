@@ -1,0 +1,21 @@
+[project]
+name = "intellidocs"
+version = "v0.0.1"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["architecture>=0.5.45", "intellibricks>=0.8.0", "msgspec>=0.19.0"]
+
+[[project.authors]]
+name = "Arthur Brenno"
+email = "64020210+arthurbrenno@users.noreply.github.com"
+
+[project.scripts]
+intellidocs = "intellidocs:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pyfiglet>=1.0.2", "questionary>=2.1.0", "toml>=0.10.2", "tomlkit>=0.13.2"]
