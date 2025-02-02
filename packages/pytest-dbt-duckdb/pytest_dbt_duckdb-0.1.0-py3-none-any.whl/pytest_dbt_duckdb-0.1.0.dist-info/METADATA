@@ -1,0 +1,25 @@
+Metadata-Version: 2.4
+Name: pytest-dbt-duckdb
+Version: 0.1.0
+Summary: Add your description here
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: absl-py>=2.1.0
+Requires-Dist: dbt-duckdb>=1.9.1
+Requires-Dist: numpy>=2.2.2
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: pytest-env>=1.1.5
+Requires-Dist: pytest>=8.3.4
+Requires-Dist: ruamel-yaml>=0.18.10
+Description-Content-Type: text/markdown
+
+# pytest-dbt-duckdb
+Test your DBT code (i.e. Snowflake) using DuckDB as the isolated engine
+
+
+## Roadmap
+- [ ] Python code
+- [ ] Publish library to pypi
+- [ ] Example
+- [ ] Pytest
+- [ ] Github page
