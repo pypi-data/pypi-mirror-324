@@ -1,0 +1,6 @@
+wagtail>=5.2
+wagtail-modeladmin
+
+[testing]
+black
+wagtail-factories
