@@ -1,0 +1,19 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Controller gi\u00e0 configurato",
+            "discovery_in_progress": "Rilevamento in corso",
+            "not_supported": "La configurazione per QBUS avviene tramite il rilevamento MQTT. Se il controller non viene rilevato automaticamente, controllare la sezione relativa ai prerequisiti e alla risoluzione dei problemi della documentazione."
+        },
+        "error": {
+            "no_controller": "Nessun controller trovato"
+        },
+        "flow_title": "Controller {serial}",
+        "step": {
+            "discovery_confirm": {
+                "description": "Aggiungi controller {serial}?",
+                "title": "Aggiungi controller"
+            }
+        }
+    }
+}

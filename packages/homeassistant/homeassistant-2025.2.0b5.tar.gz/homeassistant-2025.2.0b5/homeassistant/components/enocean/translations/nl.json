@@ -1,0 +1,10 @@
+{
+    "config": {
+        "abort": {
+            "invalid_dongle_path": "Ongeldig dongle-pad"
+        },
+        "error": {
+            "invalid_dongle_path": "Geen geldige dongle gevonden voor dit pad"
+        }
+    }
+}
