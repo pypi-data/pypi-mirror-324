@@ -1,0 +1,14 @@
+[project]
+name = "ibby-guess-the-number"
+version = "0.1.1"
+description = "A simple number guessing game"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+ibby-guess-the-number = "ibby_guess_the_number.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
