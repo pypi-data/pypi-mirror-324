@@ -1,0 +1,15 @@
+robotframework_dashboard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+robotframework_dashboard/arguments.py,sha256=9oLLwohAk4bX5aldQxc9ZwXiPPiCDkXRksL3DIV-vsg,4866
+robotframework_dashboard/dashboard.py,sha256=t5H9faYcVdH1W1dbi1faSdYymt5EMOHB7aCoGYNWjWE,1558
+robotframework_dashboard/database.py,sha256=BEFTFkvbFsGi9RSUU-RdxM8GS3JpYWesFd-6N4DKF8s,4901
+robotframework_dashboard/processors.py,sha256=nXPyU2jlWyUPMrsiyWvSyDMPZ9vxUpSHplwXiALCQsY,8126
+robotframework_dashboard/queries.py,sha256=Banbx_1h6duQooty-b_CNt32_2WfU63KhOQBLY07AE4,1872
+robotframework_dashboard/robotdashboard.py,sha256=lEENkTNU-glUWoy7nsW6duiEk3-sRH8sJ_Gt-c4LguE,5218
+robotframework_dashboard/version.py,sha256=nadPQJmqWPVDS0IaXRxBR8M3fuYtTOEWVK-31qMm0io,38
+robotframework_dashboard/templates/index.html,sha256=WyVzOqIoDxGiWkWY1hj2UwFPJwil7vEN-vqLxD6GBvM,104606
+robotframework_dashboard-0.4.2.dist-info/LICENSE,sha256=luj4t27ymr8wXmzYkgyPWQds7_IHz17V8CFW3Oym2DE,1088
+robotframework_dashboard-0.4.2.dist-info/METADATA,sha256=PfBsrELf1eBr_vFZ2Jpa5BZSFRxAZHk4dMt3FMMLibc,7399
+robotframework_dashboard-0.4.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+robotframework_dashboard-0.4.2.dist-info/entry_points.txt,sha256=vhBPS3E6Wrck4vsZCxcfGbvBljgouOLSxTtXtYqSuRc,80
+robotframework_dashboard-0.4.2.dist-info/top_level.txt,sha256=QTb_zsF31xdC4bJQ4ewSIn9tsMwwh91a59DY9ZZdwwU,25
+robotframework_dashboard-0.4.2.dist-info/RECORD,,
