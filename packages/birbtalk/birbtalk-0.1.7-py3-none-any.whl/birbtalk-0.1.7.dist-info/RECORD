@@ -1,0 +1,12 @@
+birbtalk/__init__.py,sha256=RnGrZyTZbo27uuPXhMPZA-BDe8YRbEB1vABZK_J7664,74
+birbtalk/birbtalk.py,sha256=zLMZaycPJYbHlEmIpoK8popNFJaA21TlemusoRIHAmY,4648
+birbtalk/components.py,sha256=It7ex2VCBdBnK8KyHF_UUykvs4L--e8-fzVz1oSJWy4,2903
+birbtalk/langgpt.py,sha256=3PqzcL9YXYwbtkcMhmeb1zirHvtZSGGaYQfdPt2ClyI,842
+birbtalk/models.py,sha256=z4i8KwQidWxK2HVgobGWnZiAaUi5YtnUYJWqL9L-9Uk,1028
+birbtalk/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+birbtalk/tools/duckduckgo.py,sha256=U1SMbxEr3hj94e66bXLPUuDcRUpGavP69nHohxsxXhc,2313
+birbtalk/tools/memory.py,sha256=5HYHLUyaXxg86WhxyN3nue-TFgRc1saL--EerXCa3lw,4316
+birbtalk-0.1.7.dist-info/METADATA,sha256=0Ko-wKZheE8z3XWWbblb3jfU9GxHl90iGnrGy45mDiw,2165
+birbtalk-0.1.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+birbtalk-0.1.7.dist-info/licenses/LICENSE,sha256=Ymy7MlY-zgOiSk_M6-Swu8OQ37P2ZZTMAKbdvCbix6E,1067
+birbtalk-0.1.7.dist-info/RECORD,,
