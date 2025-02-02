@@ -1,0 +1,7 @@
+# requirements.txt
+
+colorlogging
+kscale
+pykos
+pynput
+numpy
