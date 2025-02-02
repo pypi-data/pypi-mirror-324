@@ -1,0 +1,3 @@
+[console_scripts]
+sage_ml=sageml.__main__:main
+
