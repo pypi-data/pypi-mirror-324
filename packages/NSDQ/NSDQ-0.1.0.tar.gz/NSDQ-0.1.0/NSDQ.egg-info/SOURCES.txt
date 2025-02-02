@@ -1,0 +1,8 @@
+setup.py
+NSDQ/NSDQ.py
+NSDQ/__init__.py
+NSDQ.egg-info/PKG-INFO
+NSDQ.egg-info/SOURCES.txt
+NSDQ.egg-info/dependency_links.txt
+NSDQ.egg-info/requires.txt
+NSDQ.egg-info/top_level.txt

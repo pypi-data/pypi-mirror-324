@@ -1,0 +1,6 @@
+requests
+pandas
+py_vollib_vectorized
+scipy
+matplotlib
+numpy
