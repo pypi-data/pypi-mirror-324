@@ -1,0 +1,37 @@
+[project]
+name = "ultimatesmoother"
+version = "1.0.0"
+description = "The UltimateSmoother preserves low-frequency swings in the input time series while attenuating high-frequency variations and noise."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  { name="pcktm", email="hi@kopanko.com" }
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Utilities",
+]
+keywords = ["smoothing", "filtering", "time series", "low-pass", "high-pass", "band-pass", "band-stop"]
+dependencies = [
+    "numpy>=1.24.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/pcktm/ultimatesmoother"
+Issues = "https://github.com/pcktm/ultimatesmoother/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
