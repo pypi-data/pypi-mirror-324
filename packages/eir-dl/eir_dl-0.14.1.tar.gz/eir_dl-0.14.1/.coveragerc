@@ -1,0 +1,7 @@
+[run]
+omit = 
+    eir/visualization/*
+    eir/configuration.py
+    eir/build_module.py
+    eir/setup/input_setup_modules/torchtext_port/utils.py
+    eir/train_utils/optimization_modules/soap.py
