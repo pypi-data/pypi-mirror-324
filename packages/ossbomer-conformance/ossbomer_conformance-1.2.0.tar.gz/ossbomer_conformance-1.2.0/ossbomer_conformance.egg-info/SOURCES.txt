@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+ossbomer_conformance/__init__.py
+ossbomer_conformance/cli.py
+ossbomer_conformance/config.json
+ossbomer_conformance/validator.py
+ossbomer_conformance.egg-info/PKG-INFO
+ossbomer_conformance.egg-info/SOURCES.txt
+ossbomer_conformance.egg-info/dependency_links.txt
+ossbomer_conformance.egg-info/entry_points.txt
+ossbomer_conformance.egg-info/requires.txt
+ossbomer_conformance.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_validator.py
