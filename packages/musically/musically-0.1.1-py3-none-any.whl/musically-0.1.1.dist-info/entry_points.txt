@@ -1,0 +1,6 @@
+[console_scripts]
+musical = musically.musical:main
+musical-config = musically.config:main
+musical-dev = musically.dev:main
+musical-gen = musically.gen:main
+musical-make = musically.make:main
