@@ -1,0 +1,2 @@
+[console_scripts]
+jff = dawshs_jff.scripts.jff:entry
