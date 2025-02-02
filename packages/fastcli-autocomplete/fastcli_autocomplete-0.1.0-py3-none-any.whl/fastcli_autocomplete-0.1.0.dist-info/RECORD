@@ -1,0 +1,10 @@
+fastcli_autocomplete/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastcli_autocomplete/autocomplete.py,sha256=ub16U51JmPdCyjqkqaprB77IWtEFPAQqDsoTJCM9YW0,550
+fastcli_autocomplete/command_parser.py,sha256=3qAcYgqCdZFz4u8qkIJlIeCgNG0I7df0N8v0Lc_MavU,898
+fastcli_autocomplete/updater.py,sha256=Kic1POnGW2ltn8E5e3LN6Yz1pV9kMoUKrRhJZt5MSFs,588
+fastcli_autocomplete/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastcli_autocomplete-0.1.0.dist-info/METADATA,sha256=SP7O7Ux2gKGg-fcUQqtjAxBFQn9P1QcSAT4LIC1aSRY,623
+fastcli_autocomplete-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+fastcli_autocomplete-0.1.0.dist-info/entry_points.txt,sha256=l3wSfX775yCNtt9lsGRuMPG6Dh7d6NZd2fCTxTdRfA4,93
+fastcli_autocomplete-0.1.0.dist-info/top_level.txt,sha256=OMJdKJCJlM4z_SWuj-rpAPNGYrXMJ37iYfMvF1H56eo,21
+fastcli_autocomplete-0.1.0.dist-info/RECORD,,

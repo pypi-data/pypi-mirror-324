@@ -1,0 +1,2 @@
+[console_scripts]
+fastcli_autocomplete = fastcli_autocomplete.autocomplete:fast_autocomplete
