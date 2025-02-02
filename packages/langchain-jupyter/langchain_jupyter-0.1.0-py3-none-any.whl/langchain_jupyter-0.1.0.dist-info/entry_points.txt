@@ -1,0 +1,4 @@
+[console_scripts]
+jaa = langchain_jupyter.app:main
+langchain-jupyter = langchain_jupyter.app:main
+langchain-jupyter-console = langchain_jupyter.consoleapp:main
