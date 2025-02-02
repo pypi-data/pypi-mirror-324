@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+zirak/__init__.py
+zirak.egg-info/PKG-INFO
+zirak.egg-info/SOURCES.txt
+zirak.egg-info/dependency_links.txt
+zirak.egg-info/top_level.txt
