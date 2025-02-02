@@ -1,0 +1,15 @@
+fastapi
+pyotp
+qrcode
+pillow
+
+[dev]
+black
+fastapi-users
+flake8
+httpx
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
+sqlalchemy
