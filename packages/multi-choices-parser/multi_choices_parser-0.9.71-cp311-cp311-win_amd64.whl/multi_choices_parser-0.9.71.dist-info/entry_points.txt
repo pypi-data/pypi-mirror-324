@@ -1,0 +1,3 @@
+[console_scripts]
+multi-choices-parser = multi_choices_parser:main
+
