@@ -1,0 +1,3 @@
+[console_scripts]
+emailicious=emailicious.main:main
+
