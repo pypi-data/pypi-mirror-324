@@ -1,0 +1,8 @@
+README.md
+setup.py
+hangman_jg.egg-info/PKG-INFO
+hangman_jg.egg-info/SOURCES.txt
+hangman_jg.egg-info/dependency_links.txt
+hangman_jg.egg-info/top_level.txt
+my_module/__init__.py
+my_module/my_code.py
