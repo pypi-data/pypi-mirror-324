@@ -1,0 +1,11 @@
+clientforge/__init__.py,sha256=d2sloX1ddtxS9bErMxNB59g6qiVM8EK67jk7FkLwWow,310
+clientforge/auth.py,sha256=2XAqwMZabFiBJrxjG9bNpQzCMJ030Rm55M8VrPSUD9k,2040
+clientforge/exceptions.py,sha256=8ZwzHVg4B_Xfu2ErBtSciblXGVNhfviquTDKBU28phY,173
+clientforge/models.py,sha256=Fzp_Po8dynfoBl8rEcmxzjeeFOIXnm4k7o6gpoSIh0M,2014
+clientforge/clients/__init__.py,sha256=fXywDedfhodSgJLVlObQy6icIfDLatyUOLwGrYC2lIY,67
+clientforge/clients/base.py,sha256=ykfvE0ahvY-ml-uXRvTZZsdgI-mFxFDj9a9S18IQjOs,1539
+clientforge/clients/sync.py,sha256=5qTHjEK-aZhpSIrq7GjtqPKwCTOKSNKzQJEILcZ9bjI,1347
+clientforge-0.2.0.dist-info/METADATA,sha256=430AskoxUmZ2UEb0FMp4FWrAtGzFYg4izymtUv2iHrA,519
+clientforge-0.2.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+clientforge-0.2.0.dist-info/licenses/LICENSE,sha256=URJ4Im4DiKAXvDwdbneo3VGD2a35xjTLWcwv_4DKlaw,11346
+clientforge-0.2.0.dist-info/RECORD,,
