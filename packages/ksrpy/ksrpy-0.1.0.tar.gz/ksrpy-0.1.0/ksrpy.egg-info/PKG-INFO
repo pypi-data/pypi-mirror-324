@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: ksrpy
+Version: 0.1.0
+Summary: A simple Python utility framework
+Author-email: Siva Reddy Kanala <ksr199221@gmail.com>
+Requires-Dist: pytest

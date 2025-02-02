@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ksrpy"
+version = "0.1.0"
+authors = [
+    {name = "Siva Reddy Kanala", email = "ksr199221@gmail.com"}
+]
+description = "A simple Python utility framework"
+dependencies = [
+    "pytest"
+]
