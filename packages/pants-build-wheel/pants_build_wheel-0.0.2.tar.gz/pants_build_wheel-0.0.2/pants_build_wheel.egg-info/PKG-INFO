@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: pants_build_wheel
+Version: 0.0.2
+Summary: Pants project
+Author-email: ksajere <author@example.com>
+Maintainer-email: Best Dev in the world <maintainer@example.com>
+Project-URL: Homepage, https://github.com/ksajere
+Keywords: sample,setuptools,development
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+hello am testing this
