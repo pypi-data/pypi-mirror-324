@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentuity"
+version = "0.0.7-dev"
+description = "Agentuity SDK"
+readme = "README.md"
+dependencies = [
+    "wrapt>=1.17.2",
+]
+license = { file = "LICENSE.md" }
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://agentuity.com"
+
+[tool.setuptools]
+package-data = { "agentuity" = ["dist/**/*"] }
