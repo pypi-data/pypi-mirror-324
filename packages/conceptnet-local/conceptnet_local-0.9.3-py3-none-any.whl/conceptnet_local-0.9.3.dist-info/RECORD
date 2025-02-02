@@ -1,0 +1,12 @@
+conceptnet_local/__init__.py,sha256=q4TAA5fqZM5nmv13qf2D4rRpmC51HEn7qjY3cNa3GRY,655
+conceptnet_local/_a_star.py,sha256=l1q6Uz19yUZSj9ixZkfe7_awOnhj4MKYpN0y8i36eE4,8948
+conceptnet_local/_a_star_variants.py,sha256=aJUHo6qVXkXl2p0R3yawrizAbc0OwxfDSDsRT-9hOyA,8028
+conceptnet_local/_cn_service.py,sha256=P99eGCNk0Za8mcpflxuM4VryRUAr-7hjTEhQy9yNQA4,8627
+conceptnet_local/_concept_extraction.py,sha256=msgv3Bc4V1QBBnuxFPZ2_IBUAzf3CiL_C9TiZIcM22E,4911
+conceptnet_local/_utils.py,sha256=vUKAxo7J1mjrqjfSSzCDJGJbjrlFCiJwDGA676T_VX0,4269
+conceptnet_local/_yen_greedy.py,sha256=p-jCYeJIyOSxRgK6AgFohYks1Qpdeu5OuzuQXrIBVM4,3207
+conceptnet_local-0.9.3.dist-info/LICENSE,sha256=5-znamsGIOx7YWKAaNIKnKURgmv5B-r0_CtuoWPpLbk,1079
+conceptnet_local-0.9.3.dist-info/METADATA,sha256=F9hCFsxpzEivi484yYv6doVAoei5kGBDWG_bHW21Wsg,3369
+conceptnet_local-0.9.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+conceptnet_local-0.9.3.dist-info/top_level.txt,sha256=lymQ0HZSfVfmkhcP2B97C1AucXQ-PZ7ByLTpmEmTXtI,17
+conceptnet_local-0.9.3.dist-info/RECORD,,
