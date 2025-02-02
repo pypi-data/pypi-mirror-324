@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: intellidocs
+Version: 0.0.1
+Summary: Add your description here
+Author-email: Arthur Brenno <64020210+arthurbrenno@users.noreply.github.com>
+Requires-Python: >=3.13
+Requires-Dist: architecture>=0.5.45
+Requires-Dist: intellibricks>=0.8.0
+Requires-Dist: msgspec>=0.19.0

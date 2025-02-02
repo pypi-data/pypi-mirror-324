@@ -1,0 +1,9 @@
+intellidocs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+intellidocs/contracts.py,sha256=_-TfDgGNentuooq-_Hhs3bYpvj4Eu4EkJbaeINfWro0,172
+intellidocs/document_creators.py,sha256=m8Dqj6GdW2vxaa2YQ3KGyPI8CYoSJyWgovKLMiOeArg,1118
+intellidocs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+intellidocs/types.py,sha256=71EKBuCmcPvPXFjDQi7Z7n1OL5w0mQeNjkDG9hxd0fw,13207
+intellidocs-0.0.1.dist-info/METADATA,sha256=wg5N800ipgf4qM2hiYMi9YLMp1V-p5yii-yOeI2XrEQ,294
+intellidocs-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+intellidocs-0.0.1.dist-info/entry_points.txt,sha256=tsBOGSY-2cukAJBHuWeN9arJcMLT-N4ZpAA9Fd1whCw,49
+intellidocs-0.0.1.dist-info/RECORD,,
