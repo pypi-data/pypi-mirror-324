@@ -1,0 +1,5 @@
+XlsxWriter>=3.2.2
+colorama>=0.4.6
+numpy>=2.0.1
+pyarrow>=19.0.0
+python-calamine>=0.3.1
