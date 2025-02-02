@@ -1,0 +1,35 @@
+Metadata-Version: 2.2
+Name: django-loki-logger
+Version: 0.0.1
+Summary: Logging handler with Loki for Django
+Home-page: https://github.com/FIRST-ELD/django-loki-logger
+Author: Dozorov
+Author-email: ivan@firsteld.com
+License: MIT
+Keywords: python,loki,grafana,logging,metrics,django,monitoring
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: Log Analysis
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pytz
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
