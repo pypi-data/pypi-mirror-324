@@ -1,0 +1,37 @@
+[project]
+name = "ipython-ollama"
+version = "0.0.2"
+description = "IPython magics for running Ollama models within the shell"
+authors = [{ name = "Augusto Goulart", email = "augusto@goulart.me" }]
+maintainers = [{ name = "Augusto Goulart", email = "augusto@goulart.me" }]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+classifiers = [
+    "Environment :: Console",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Other Audience",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Topic :: Terminals",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Typing :: Typed"
+]
+
+dependencies = [
+    "ipython>=8.32.0",
+    "ollama>=0.4.7",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

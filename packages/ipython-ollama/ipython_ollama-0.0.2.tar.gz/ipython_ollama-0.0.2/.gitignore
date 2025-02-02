@@ -1,0 +1,25 @@
+# Swap files.
+.*.swp
+.*.swo
+*~
+
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.o
+*.a
+*.cpp
+
+.python-version
+build/
+dist/
+MANIFEST
+
+.coverage
+tests/coverage.xml
+tests/htmlcov
+wheelhouse
+*.egg-info/
+
+.idea/
