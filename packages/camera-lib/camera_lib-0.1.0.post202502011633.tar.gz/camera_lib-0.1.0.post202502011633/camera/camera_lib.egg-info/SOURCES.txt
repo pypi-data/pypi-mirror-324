@@ -1,0 +1,5 @@
+setup.py
+camera/camera_lib.egg-info/PKG-INFO
+camera/camera_lib.egg-info/SOURCES.txt
+camera/camera_lib.egg-info/dependency_links.txt
+camera/camera_lib.egg-info/top_level.txt
