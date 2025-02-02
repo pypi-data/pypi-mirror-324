@@ -1,0 +1,13 @@
+musically/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+musically/arts.py,sha256=xoEbHIsbZxuFR3ug1BzmorXP9FPhuctvNk0vxVg33gc,1634
+musically/config.py,sha256=UswrGl5k0mWAvH490VL-OWIyf7ezP5gFkFsVCQ9tjeM,3136
+musically/dev.py,sha256=66SnBx8GugdiKtqok7g_xTnHuPg1G1kVp87pSYR19uk,3754
+musically/gen.py,sha256=XcW--tOHIQWsRUXpgmu8u18exivdkBuaRZlLDu2Drz0,1574
+musically/make.py,sha256=BVABJ7Xhu5y4y8Me6JFyLbitoVV8Mk94mX7n4cHdahw,1884
+musically/musical.py,sha256=ysEKF-gp45LzCPdVGynyW0nAHdX98dSnAONMkDF1qVY,10074
+musically/setup_config.py,sha256=4HCqZL4qGuC-9oNSNSnw8nHB_g6vd_S40PW9pFYgdEA,1808
+musically-1.0.0.dist-info/METADATA,sha256=VNl0iPOz-1IgcFQmYAL4xW-alq55KJssYVTMsbjzlKU,972
+musically-1.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+musically-1.0.0.dist-info/entry_points.txt,sha256=bEfujsj6BoPVhYkq6bbbJG1gU-_cMZJjRQsLduQhOgM,235
+musically-1.0.0.dist-info/top_level.txt,sha256=c2jcitjlGlRkzhSd1UoImSZm6sQqxCV-e-whBTSWdiI,10
+musically-1.0.0.dist-info/RECORD,,
