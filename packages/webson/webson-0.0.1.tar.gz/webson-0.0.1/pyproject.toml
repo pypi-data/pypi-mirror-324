@@ -1,0 +1,21 @@
+[project]
+name = "webson"
+version = "v0.0.1"
+description = "Your simple approach to"
+readme = "README.md"
+requires-python = ">=3.13.1"
+dependencies = ["msgspec>=0.19.0"]
+
+[[project.authors]]
+name = "Arthur Brenno"
+email = "64020210+arthurbrenno@users.noreply.github.com"
+
+[project.scripts]
+webson = "webson:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["pyfiglet>=1.0.2", "questionary>=2.1.0", "rich>=13.9.4", "toml>=0.10.2", "tomlkit>=0.13.2"]
