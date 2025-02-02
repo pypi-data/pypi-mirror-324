@@ -1,0 +1,6 @@
+paho-mqtt
+zeroconf
+requests
+aiohttp
+aiomqtt==1.2.1
+tqdm
