@@ -1,0 +1,109 @@
+Metadata-Version: 2.2
+Name: footap
+Version: 1.0.0
+Summary: Package de détection et suivi de jonglage de football
+Author: Dims
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Multimedia :: Video :: Capture
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: opencv-python>=4.5.0
+Requires-Dist: opencv-contrib-python>=4.5.0
+Requires-Dist: mediapipe>=0.8.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: ultralytics>=8.0.0
+Requires-Dist: Pillow>=8.0.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FootAP
+
+FootAP (FOOTball trAcking Package) est un package Python pour la dÃ©tection et le suivi de jonglage de football. Il utilise YOLO pour la dÃ©tection de balle et MediaPipe pour la dÃ©tection des pieds.
+
+## Installation
+
+```bash
+pip install footap
+```
+
+## Utilisation
+
+Il y a deux faÃ§ons principales d'utiliser le package :
+
+### 1. Utilisation simple avec videoCounter
+
+```python
+from footap import videoCounter
+
+# Analyse d'une vidÃ©o
+videoCounter(
+    video_source='video.mp4',
+    output_video='output.mp4',
+    output_file='output.txt',
+    save_output_video=True,
+    save_output_file=True,
+    background=False
+)
+```
+
+### 2. Utilisation avancÃ©e avec track_ball_and_feet
+
+```python
+from footap import track_ball_and_feet
+
+# Exemple simple
+track_ball_and_feet(
+    video_source='video.mp4',
+    output_video='output.mp4',
+    rotation_angle=0
+)
+
+# Exemple avec toutes les options
+track_ball_and_feet(
+    video_source='video.mp4',
+    output_video='output.mp4',
+    rotation_angle=0,
+    output_file='resultats.txt',
+    save_output_video=True,
+    save_output_file=True,
+    background=False
+)
+```
+
+## FonctionnalitÃ©s
+
+- DÃ©tection de balle avec YOLO
+- Suivi de balle avec OpenCV
+- DÃ©tection des pieds avec MediaPipe
+- Comptage des touches de balle pour chaque pied
+- Support de rotation vidÃ©o (0Â°, 90Â°, 180Â°, 270Â°)
+- Mode arriÃ¨re-plan pour le traitement sans affichage
+- Sauvegarde des rÃ©sultats dans un fichier texte
+- Sauvegarde de la vidÃ©o annotÃ©e
+
+## DÃ©pendances
+
+- OpenCV (opencv-python, opencv-contrib-python)
+- MediaPipe
+- NumPy
+- Ultralytics (YOLO)
+- Pillow
+
+## Licence
+
+Ce projet est sous licence MIT.
