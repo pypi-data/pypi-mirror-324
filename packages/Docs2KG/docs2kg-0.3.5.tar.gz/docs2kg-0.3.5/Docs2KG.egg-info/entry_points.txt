@@ -1,0 +1,2 @@
+[console_scripts]
+docs2kg = Docs2KG.cli:cli
