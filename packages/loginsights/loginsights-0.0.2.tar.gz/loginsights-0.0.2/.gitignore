@@ -1,0 +1,20 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/LogInsights/LogInsights-Backend/Settings/JwtSettings.cs
+/LogInsights/LogInsights-Backend/Token/JwtToken.cs
+**/.DS_Store
+**/dump.rdb
+LogInsights/LogInsights-Backend/Properties/serviceDependencies.json
+LogInsights/LogInsights-Backend/Properties/serviceDependencies.log-insights-fyp.json
+LogInsights/LogInsights-Backend/Properties/ServiceDependencies/log-insights-fyp/apis1.arm.json
+
+appSettings.Production.json
+LogInsights/LogInsights-Backend/.config/dotnet-tools.json
+LogInsights/LogInsights-Backend/Properties/serviceDependencies.log-insights-fyp - Web Deploy.json
+LogInsights/LogInsights-Backend/Properties/serviceDependencies.log-insights-fyp - Web Deploy1.json
+LogInsights/LogInsights-Backend/Properties/ServiceDependencies/log-insights-fyp - Web Deploy/apis1.arm.json
+LogInsights/LogInsights-Backend/Properties/ServiceDependencies/log-insights-fyp - Web Deploy/profile.arm.json
+LogInsights/LogInsights-Backend/Properties/ServiceDependencies/log-insights-fyp - Web Deploy1/apis1.arm.json
+LogInsights/LogInsights-Backend/Properties/ServiceDependencies/log-insights-fyp - Web Deploy1/profile.arm.json
