@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "term-assistant"
+version = "0.1.0"
+description = ""
+authors = ["SiriusKoan <me@siriuskoan.one>"]
+readme = "README.md"
+keywords = ["llm", "terminal", "cli"]
+classifiers = ["Programming Language :: Python :: 3.12"]
+
+[tool.poetry.scripts]
+term-assistant = "term_assistant.__main__:cli"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.8"
+pyyaml = "^6.0.2"
+colorama = "^0.4.6"
+grpcio = "1.67.1"
+grpcio-status = "1.67.1"
+litellm = "1.55.12"
+libtmux = "^0.40.1"
+
+[tool.flake8]
+ignore = ['E501', 'E704']
+
+[tool.isort]
+profile = "black"
+src_paths = ["term_assistant", "tests"]
+
+[tool.pyright]
+include = ["term_assistant", "tests"]
+exclude = ["experiment"]
+reportMissingImports = "error"
+
+[tool.poetry.group.dev.dependencies]
+black = "^25.1.0"
+flake8-pyproject = "^1.2.3"
+pyright = "^1.1.393"
+isort = "^6.0.0"
+pyinstrument = "^5.0.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
