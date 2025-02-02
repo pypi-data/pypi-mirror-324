@@ -1,0 +1,10 @@
+fwordlesolver/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fwordlesolver/__main__.py,sha256=CzSbjj7XDT9ImEb9bz_n3bWbw4bsQouP3Qfq0F4FpCk,660
+fwordlesolver/data/__init__.py,sha256=__zupQJ1tBF244oNAUL-8IoSzXBU5vSqsMU6r93hJv8,234
+fwordlesolver/data/sowpods.txt.gz,sha256=RSIHv7MTLxLcufDpsexf2uWZnrw6eUAEFRikk5rvuiI,694359
+fwordlesolver/matcher.py,sha256=FZE3AN3DsWJdu82AyLRIS6i58YAoEn9vlBTw8R877v0,1026
+fwordlesolver/solver.py,sha256=ghMgQ4_VZz0GqqSP40lavm-j8TPqUN6UvTyXRMTGRDg,2023
+fwordlesolver-0.1.0.dist-info/METADATA,sha256=nrw7cEyj9-pWJjR3eco3LnmXwypgHzyAxnbcdoAc4P8,2698
+fwordlesolver-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+fwordlesolver-0.1.0.dist-info/entry_points.txt,sha256=JtgNQ4DZlWTF9iRO2HA94VbesyeTlyV1AcFk66-Ge2U,62
+fwordlesolver-0.1.0.dist-info/RECORD,,
