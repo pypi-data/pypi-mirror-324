@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+conceptnet_local/__init__.py
+conceptnet_local/_a_star.py
+conceptnet_local/_a_star_variants.py
+conceptnet_local/_cn_service.py
+conceptnet_local/_concept_extraction.py
+conceptnet_local/_utils.py
+conceptnet_local/_yen_greedy.py
+conceptnet_local.egg-info/PKG-INFO
+conceptnet_local.egg-info/SOURCES.txt
+conceptnet_local.egg-info/dependency_links.txt
+conceptnet_local.egg-info/requires.txt
+conceptnet_local.egg-info/top_level.txt
