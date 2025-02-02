@@ -1,0 +1,12 @@
+piltext/__init__.py,sha256=FX1Adhk6-z_KsEXB-tunqbvcI_mjhJEfRM4Uf6smqos,297
+piltext/_version.py,sha256=9GTNkADgEYZ6fEjCvZZUdKyqxiPIgtskLFZNJz7nq_U,411
+piltext/font_manager.py,sha256=3kp__vioPOMCxbjU21g2ISM8mI1AW1XG62QRsKoNDeU,3274
+piltext/image_drawer.py,sha256=W2x5wa5XG_qa8KZKcs4XuwQMddInqh74NHd1c8Wb1tE,2367
+piltext/image_handler.py,sha256=MbbtAWhkd7hUTOmDzrXDQ_SFoxuhqi2D_vW-c2QYXW8,1360
+piltext/text_box.py,sha256=PvNLo4mFV2dWmTta39KPClWknuBc-thdBBSjzMEIUKE,1191
+piltext/text_grid.py,sha256=CQLpFgvKoHevNDfr51TshttZP9j2SEMHIGR-x4FMwuE,1620
+piltext-0.1.4.dist-info/LICENSE,sha256=nSeoULgJkv9ZIBq8FGm5-1oKu7Ytqkfe65aq4BL1ngQ,1074
+piltext-0.1.4.dist-info/METADATA,sha256=pk7JFShL_Us0LvUYJKCTWhGxDUsdfRHCRb0C95o126I,3064
+piltext-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+piltext-0.1.4.dist-info/top_level.txt,sha256=AzZMkelEmddWQQqmc4UF6tPfTHktVkIJOfPAFXkmOro,8
+piltext-0.1.4.dist-info/RECORD,,
