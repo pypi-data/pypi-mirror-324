@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: kugl
+Version: 0.4.2
+Summary: Explore Kubernetes resources using SQLite
+Home-page: https://github.com/jonross/kugl
+Author: Jon Ross
+Author-email: kugl.devel@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+PyPI readme goes here.
+
+For documentation please visit the [GitHub repository](https://github.com/jonross/kugl).
+
+

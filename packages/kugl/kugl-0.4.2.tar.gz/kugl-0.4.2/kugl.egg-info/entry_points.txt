@@ -1,0 +1,3 @@
+[console_scripts]
+kugl = kugl.main:main
+
