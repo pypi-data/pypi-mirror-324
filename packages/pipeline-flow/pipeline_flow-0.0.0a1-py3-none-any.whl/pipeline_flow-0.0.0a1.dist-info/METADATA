@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: pipeline-flow
+Version: 0.0.0a1
+Summary: A framework for building ETL, ELT and ETLT projects dynamically using plugins.
+License: BSD-3-Clause
+Author: Jakub Pulaczewski
+Requires-Python: >=3.13,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: aiofiles (>=24.1.0,<25.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: pydantic (>=2.4.2,<3.0.0)
+Requires-Dist: yamlcore (>=0.0.4,<0.0.5)
