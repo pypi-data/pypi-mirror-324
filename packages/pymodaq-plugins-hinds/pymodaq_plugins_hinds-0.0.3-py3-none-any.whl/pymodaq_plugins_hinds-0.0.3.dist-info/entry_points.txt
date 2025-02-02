@@ -1,0 +1,5 @@
+[pymodaq.instruments]
+hinds = pymodaq_plugins_hinds
+
+[pymodaq.plugins]
+hinds = pymodaq_plugins_hinds
