@@ -1,0 +1,8 @@
+azstemmer/__init__.py,sha256=mzRZSOV756khpaAS2-TxDZiD6ATLnQClJBp1NXsI2qU,30
+azstemmer/azwords.txt,sha256=MbD88EHE9a06zH3VSD68otd7a-ym3Hf7zI2VJXV9QUM,714694
+azstemmer/enwords.txt,sha256=e6w-CZxfF7VBOnuEYQchF8-uMOmWtxBQ6QUYWUL6UUA,628179
+azstemmer/stemmer.py,sha256=iIBq-6PHAOhEdQtSTcf3G0zTc7y7hx_0l-OAzh7djLU,1386
+azstemmer-0.1.0.dist-info/METADATA,sha256=KKmQ-Pfo9Xj5-UTN0mD86lHz4Zs27w6rcjkbmJ9nr9o,2272
+azstemmer-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+azstemmer-0.1.0.dist-info/top_level.txt,sha256=UUxJc-SmupRy1HllMWLdHv05OMCLQZxiITmmrLJkju4,10
+azstemmer-0.1.0.dist-info/RECORD,,
