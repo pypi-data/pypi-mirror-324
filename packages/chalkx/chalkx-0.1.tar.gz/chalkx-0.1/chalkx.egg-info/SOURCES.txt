@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+chalk/__init__.py
+chalk/chalk.py
+chalkx.egg-info/PKG-INFO
+chalkx.egg-info/SOURCES.txt
+chalkx.egg-info/dependency_links.txt
+chalkx.egg-info/top_level.txt
