@@ -1,0 +1,10 @@
+appdirs
+ollama
+openai
+pynput
+pyperclip
+pystray
+tkhtmlview
+
+[:platform_system == "Linux"]
+PyGObject
