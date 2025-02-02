@@ -1,0 +1,14 @@
+streamlit_clickable_list/__init__.py,sha256=WJAej0JCuSvIzr5W3b5vzHfIO890lHKVVLl12LP6-uw,802
+streamlit_clickable_list/frontend/build/asset-manifest.json,sha256=TunQl7GmEf-vjxpfuQ-fT8yDAwnEH3Fo6pcOuHcWIc0,221
+streamlit_clickable_list/frontend/build/bootstrap.min.css,sha256=hTwg6axJ8dAPmGVJmYTrsQS3JhKWA0skJ-td54UbEOk,197459
+streamlit_clickable_list/frontend/build/index.html,sha256=KIwOcJP59M1fc3ArkLLGJTVK3scsgHjOIFCyxmKCE7M,492
+streamlit_clickable_list/frontend/build/static/js/main.f2ac4e10.js,sha256=2Bfayp3cTegYLyUVqA-xj72iCz1r1aojjAe93riEW5o,317725
+streamlit_clickable_list/frontend/build/static/js/main.f2ac4e10.js.LICENSE.txt,sha256=cmjEMovgjlkZ-Bs7b5rRQ8FsJtL1F77Y3YkM2E9yfUs,1293
+streamlit_clickable_list/frontend/build/static/js/main.f2ac4e10.js.map,sha256=q2WTZ-aMvuCxdR9bKUcRCPqmNU6C2P3A4LOdsN-2RuY,1248939
+streamlit_clickable_list/frontend/node_modules/flatted/python/flatted.py,sha256=ke8FuEflns-WlphCcQ9CC0qJqWqX3zEEuak74o6rgE8,3879
+streamlit_clickable_list/frontend/node_modules/flatted/python/test.py,sha256=uTOn6HJd7KeY_PTRvvufv60dmvON3KWp3nnqACj8IlA,2129
+streamlit_clickable_list-0.1.4.dist-info/LICENSE,sha256=_E7Uu3t9TfeI7h0MuoVH-7CKmI_Qz9k2cdqaaEFi-mI,1053
+streamlit_clickable_list-0.1.4.dist-info/METADATA,sha256=PkTdZJFODR-_8xH4_9VOzaOkOGmDsRdhM72OsARgqZk,3950
+streamlit_clickable_list-0.1.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+streamlit_clickable_list-0.1.4.dist-info/top_level.txt,sha256=3HbMyQfkA_OMyHVLSonRZbr10CDPrDUmmnpYy6Zd8Ac,25
+streamlit_clickable_list-0.1.4.dist-info/RECORD,,
