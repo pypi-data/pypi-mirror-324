@@ -1,0 +1,8 @@
+llm_auto_context/__init__.py,sha256=xDwGdMC7a4iOzup9w9OgXssCWPpXZ7bHLvHuCS0eT7c,94
+llm_auto_context/cli.py,sha256=8aB3yB1BOmxcIRr17VJIjG708sXb4zSEHyuFuhT1d3U,2542
+llm_auto_context/config.py,sha256=YC0eocc1Uupw_FlVIfo0i4ksUtmaEFbxRm6DxwORw3U,1550
+llm_auto_context/snapshot.py,sha256=W2hshOL2MiEuke4XhKrIGYBe0-bsPB0J1XWvsyrmm0Y,2512
+llm_auto_context-1.0.0.dist-info/METADATA,sha256=7Sj640SoZGqyUo8-FuKG5Wr4b2O-8WaqJXlCK1vtmPY,2412
+llm_auto_context-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+llm_auto_context-1.0.0.dist-info/entry_points.txt,sha256=SbP-x4CLBnkWCjsdRRY9P8ihMsYO7YqrHzgqHksdx0Y,58
+llm_auto_context-1.0.0.dist-info/RECORD,,

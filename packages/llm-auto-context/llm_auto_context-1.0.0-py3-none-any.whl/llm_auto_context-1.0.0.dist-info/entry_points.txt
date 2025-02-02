@@ -1,0 +1,2 @@
+[console_scripts]
+codesnapshot = llm_auto_context.cli:app
