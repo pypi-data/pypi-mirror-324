@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: hoprd-config-tool
+Version: 0.1.7
+Project-URL: Homepage, https://github.com/jeandemeusy/hoprd-config-tool
+Project-URL: Issues, https://github.com/jeandemeusy/hoprd-config-tool/issues
+Author-email: Jean Demeusy <jean.demeusy@hoprnet.org>
+Maintainer-email: Jean Demeusy <jean.demeusy@hoprnet.org>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.9
+Requires-Dist: click
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+Description-Content-Type: text/markdown
+
+# hoprd-config-tool
