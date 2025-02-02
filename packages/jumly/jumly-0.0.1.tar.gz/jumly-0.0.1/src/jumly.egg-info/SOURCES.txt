@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/juml/__init__.py
+src/jumly.egg-info/PKG-INFO
+src/jumly.egg-info/SOURCES.txt
+src/jumly.egg-info/dependency_links.txt
+src/jumly.egg-info/top_level.txt
