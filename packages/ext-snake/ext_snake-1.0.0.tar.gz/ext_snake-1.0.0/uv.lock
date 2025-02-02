@@ -1,0 +1,7 @@
+version = 1
+requires-python = ">=3.3"
+
+[[package]]
+name = "ext-snake"
+version = "1.0.0"
+source = { editable = "." }
