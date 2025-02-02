@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+small_scripts_manager/__init__.py
+small_scripts_manager.egg-info/PKG-INFO
+small_scripts_manager.egg-info/SOURCES.txt
+small_scripts_manager.egg-info/dependency_links.txt
+small_scripts_manager.egg-info/requires.txt
+small_scripts_manager.egg-info/top_level.txt
