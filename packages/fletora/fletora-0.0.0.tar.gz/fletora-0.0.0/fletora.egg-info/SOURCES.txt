@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+fletora/__init__.py
+fletora/app.py
+fletora/html.py
+fletora/plugins.py
+fletora.egg-info/PKG-INFO
+fletora.egg-info/SOURCES.txt
+fletora.egg-info/dependency_links.txt
+fletora.egg-info/requires.txt
+fletora.egg-info/top_level.txt
+tailwind/__init__.py
+tailwind/color.py
+tailwind/css_ast.py
+tailwind/size.py
+tailwind/utils.py
