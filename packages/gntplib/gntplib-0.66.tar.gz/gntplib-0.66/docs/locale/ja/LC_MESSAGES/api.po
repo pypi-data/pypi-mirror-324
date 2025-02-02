@@ -1,0 +1,258 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, papaeye
+# This file is distributed under the same license as the gntplib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: gntplib 0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-13 16:31+0900\n"
+"PO-Revision-Date: 2012-03-21 17:17+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+# e8e9b8fae2b24d30945960a8835fb4d3
+#: ../../api.rst:4
+msgid "API"
+msgstr ""
+
+# 7778c01533ef4ed68df9d6d400735cd1
+#: ../../api.rst:10
+msgid "Simple Functions"
+msgstr ""
+
+# 61e557cc2432476f939b5307fb92ceb6
+#: gntplib.publish:1
+msgid "Register a publisher and send a notification at a time."
+msgstr ""
+
+# 56852aad9e22453cb0bc23beb054521a
+#: gntplib.subscribe:1
+msgid "Send a subscription request and return ttl."
+msgstr ""
+
+# 2763032881c04b93af26562c99590eb5
+#: ../../api.rst:17
+msgid "Application Objects"
+msgstr ""
+
+# 4baed721de8c401e81f59074d2b995a1
+#: gntplib.Publisher:1
+msgid "Publisher of Growl Notification Transport Protocol (GNTP)."
+msgstr ""
+
+# 8e5e0051bdbb43acaa5cbef810978977
+#: gntplib.Publisher:3
+msgid ""
+"This class supports ``REGISTER`` and ``NOTIFY`` requests.  They are sent "
+"by :meth:`register()` and :meth:`publish()` methods respectively. These "
+"methods can accept the optional final callback as `callback` keyword "
+"argument, which run after closing the connection with the GNTP server."
+msgstr ""
+
+# d74de94752da4b97bff3145e9da0ba91
+#: gntplib.Publisher:8
+msgid ""
+"`event_defs` is a list of ``str``, ``unicode``, double (of ``str`` and "
+"``bool``) or :class:`Event` instance.  It is converted to a list of "
+":class:`Event` instance as follows: ``str`` or ``unicode`` item becomes "
+"value of the `name` attribute of :class:`Event` instance, whose other "
+"attributes are defaults.  Double item is expanded to (`name`, `enabled`) "
+"tuple, and those values are passed to :class:`Event` constructor.  "
+":class:`Event` instance item is used directly."
+msgstr ""
+
+# 3127484dcde54477a25293732ae4c89d
+#: gntplib.Publisher:16
+msgid ""
+"Optional keyword arguments are passed to the `gntp_client_class` "
+"constructor."
+msgstr ""
+
+# d0b2727ddbe04c9faf0a35accd2c8445
+# f008d87fef144766aaa425dfd2f96982
+# 04048a03a6e141a584eff28fa5880949
+#: gntplib.Publisher:29 gntplib.Publisher.publish:32
+#: gntplib.async.AsyncPublisher.publish:32
+msgid "In Growl 1.3.3, `icon` of url string does not work."
+msgstr ""
+
+# 4f4e8165f07b4e8092472d975dbc0058
+# 9de406711a8947e4ab3c11f6efd1dfd6
+#: gntplib.Publisher.publish:1 gntplib.async.AsyncPublisher.publish:1
+msgid "Send a notification to the GNTP server."
+msgstr ""
+
+# b5a5738ec18a411491293cca2625f075
+# e56ac933a97a4317987fd0338f453faa
+#: gntplib.Publisher.publish:34 gntplib.async.AsyncPublisher.publish:34
+msgid ""
+"Growl for Windows v2.0+ and Growl v1.3+ require `coalescing_id` to be the"
+" same on both the original and updated notifcation, ignoring the value of"
+" `id_`."
+msgstr ""
+
+# 683b278a23dd4b98bdfb3ed1c378097e
+# e113e00f3a064e0292e03f5dd37c93b3
+#: gntplib.Publisher.register:1 gntplib.async.AsyncPublisher.register:1
+msgid "Register this publisher to the GNTP server."
+msgstr ""
+
+# 70d784a26afc4bb384529ecb12635ea1
+#: gntplib.Subscriber:1
+msgid "Subscriber of Growl Notification Transport Protocol (GNTP)."
+msgstr ""
+
+# 692eee9cc86e466bbd0e2b3d4abe1d6c
+#: gntplib.Subscriber:3
+msgid "This class supports ``SUBSCRIBE`` request."
+msgstr ""
+
+# cd88e4c93479497ab15f5c3c9055a965
+# 628b3e59522f4917a961e71fe87e8b09
+#: gntplib.Subscriber.store_ttl:1 gntplib.async.AsyncSubscriber.store_ttl:1
+msgid "Update :attr:`ttl` attribute."
+msgstr ""
+
+# 8b15ce5dadce4ba8b266846d91c61eb3
+# 249ee28113ab438c9ba33deaac1baef9
+#: gntplib.Subscriber.subscribe:1 gntplib.async.AsyncSubscriber.subscribe:1
+msgid "Send a subscription request."
+msgstr ""
+
+# 3816c29f02894985af802d6dbc9aee6b
+# 4442c7992ae441c8af3a66b86fad10dc
+#: gntplib.Subscriber.subscribe:3 gntplib.async.AsyncSubscriber.subscribe:3
+msgid ""
+"If `callback` is `None`, :meth:`store_ttl` is used and :attr:`ttl` is "
+"updated by ``Subscription-TTL`` value of the response."
+msgstr ""
+
+# b3ee38a262bf4f9982c09b340c8df2ad
+#: gntplib.async.AsyncPublisher:1
+msgid "Asynchronous Publisher of Growl Notification Transport Protocol (GNTP)."
+msgstr ""
+
+# fa7b2f52f15640b7ab50a4514928d29b
+#: gntplib.async.AsyncPublisher:3
+msgid "Same as :class:`~gntplib.Publisher` except the following:"
+msgstr ""
+
+# f743893b5df549d9bbcf3a405a7acb28
+# 4e68896499dd45ceb77a6801ff057530
+#: gntplib.async.AsyncPublisher:5 gntplib.async.AsyncSubscriber:5
+msgid "uses :class:`AsyncGNTPClient` as `gntp_client_class`."
+msgstr ""
+
+# 4cb1570be1894ea59e0e686877d2afe3
+# 3139dfb8ffe841748ec9a74be803cc41
+#: gntplib.async.AsyncPublisher:6 gntplib.async.AsyncSubscriber:6
+msgid ""
+"accepts :class:`tornado.ioloop.IOLoop` instance by additional `io_loop` "
+"keyword argument."
+msgstr ""
+
+# 4bb62ad0bc2742868090cd8264eeec6e
+#: gntplib.async.AsyncSubscriber:1
+msgid "Asynchronous Subscriber of Growl Notification Transport Protocol (GNTP)."
+msgstr ""
+
+# df732d091b9747019388da74a7124147
+#: gntplib.async.AsyncSubscriber:3
+msgid "Same as :class:`~gntplib.Subscriber` except the following:"
+msgstr ""
+
+# bf2423ee6a034046acd8c1c4bdd45c32
+#: ../../api.rst:37
+msgid "GNTP Client Object"
+msgstr ""
+
+# d4227376416343ac891f26f86c0cc9e8
+#: gntplib.GNTPClient:1
+msgid "GNTP client."
+msgstr ""
+
+# 2be5810d609d4d77ab438c48bf089adc
+#: ../../api.rst:43
+msgid "Notification Type Object"
+msgstr ""
+
+# d62949bcbbf14057a88fae87194de0e8
+#: gntplib.Event:1
+msgid "Represent notification type."
+msgstr ""
+
+# dee64596f441409abecc2bfe169dc5c9
+#: gntplib.Event:13
+msgid "In Growl 1.3.3, `icon` does not work."
+msgstr ""
+
+# 71930570529e4cbeab3d93e76ebdba11
+#: ../../api.rst:51
+msgid "Resource Objects"
+msgstr ""
+
+# 826edee995344f6a90546f873395718a
+#: gntplib.Resource:1
+msgid "Class for <uniqueid> data types."
+msgstr ""
+
+# 24802615e59147f68a112c3e427f2f24
+#: gntplib.Resource.unique_id:1
+msgid "Return the <uniqueid> value."
+msgstr ""
+
+# 3d42f96bb53c44529a44f4baf3a41547
+#: gntplib.Resource.unique_value:1
+msgid "Return the <uniquevalue> value."
+msgstr ""
+
+# 4f728aebf3f049708c9a1ffd628fc728
+#: gntplib.async.AsyncResource:1
+msgid "Class for asynchronous resource."
+msgstr ""
+
+# 40ec037462f14aa2a84e6d15558eddc8
+#: ../../api.rst:69
+msgid "Socket Callback Object"
+msgstr ""
+
+# c6b57e51710243f7bd8dbeba44eb0452
+#: gntplib.SocketCallback:1
+msgid "Base class for socket callback."
+msgstr ""
+
+# be6eeadb96f4472d8b8475d5bf86989b
+#: gntplib.SocketCallback:3
+msgid ""
+"Each of the callbacks takes one positional argument, which is "
+":class:`Response` instance."
+msgstr ""
+
+# 7da3982c302f4db58321d53b60b28d60
+#: gntplib.SocketCallback:14
+msgid "TIMEDOUT callback does not occur in my Growl 1.3.3."
+msgstr ""
+
+# 50d53e55f51545949c924b933f495a83
+#: gntplib.SocketCallback.on_click:1
+msgid "Run ``CLICKED`` event callback."
+msgstr ""
+
+# cfae449bb50b40f9a9a296eeb66f614f
+#: gntplib.SocketCallback.on_close:1
+msgid "Run ``CLOSED`` event callback."
+msgstr ""
+
+# ad84aee5a3cb4cf2b26fb98a9ff6a13f
+#: gntplib.SocketCallback.on_timeout:1
+msgid "Run ``TIMEDOUT`` event callback."
+msgstr ""
+

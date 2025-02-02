@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Installation &#8212; gntplib 0.5 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=87629129" />
+    <script src="../_static/documentation_options.js?v=527ca86d"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Usage" href="../usage/" />
+    <link rel="prev" title="Welcome to gntplib" href="../" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../usage/" title="Usage"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../" title="Welcome to gntplib"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../">gntplib 0.5 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Installation</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="installation">
+<span id="id1"></span><h1>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h1>
+<p>Simply use pip:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install gntplib
+</pre></div>
+</div>
+<p>There are the following <strong>optional</strong> prerequisites.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pycrypto</span></code> - to use <a class="reference internal" href="../usage/#module-gntplib.ciphers" title="gntplib.ciphers"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gntplib.ciphers</span></code></a> module for message encryption</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tornado</span></code> - to use <a class="reference internal" href="../async/#module-gntplib.async" title="gntplib.async"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gntplib.async</span></code></a> module for asynchronous processing</p></li>
+</ul>
+<p>Let’s send a simple notification to test installation.
+Use <a class="reference internal" href="../api/#gntplib.publish" title="gntplib.publish"><code class="xref py py-func docutils literal notranslate"><span class="pre">gntplib.publish()</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">gntplib</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">gntplib</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="s1">&#39;Event&#39;</span><span class="p">,</span> <span class="s1">&#39;Hello, Growl!&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../"
+                          title="previous chapter">Welcome to gntplib</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../usage/"
+                          title="next chapter">Usage</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/installation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../usage/" title="Usage"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../" title="Welcome to gntplib"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../">gntplib 0.5 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Installation</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2012, papaeye.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>

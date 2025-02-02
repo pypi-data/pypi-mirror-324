@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Usage &#8212; gntplib 0.5 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinxdoc.css?v=87629129" />
+    <script src="../_static/documentation_options.js?v=527ca86d"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Asynchronous Support" href="../async/" />
+    <link rel="prev" title="Installation" href="../installation/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../async/" title="Asynchronous Support"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../installation/" title="Installation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../">gntplib 0.5 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Usage</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="usage">
+<span id="id1"></span><h1>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h1>
+<p>gntplib provides <a class="reference internal" href="../api/#gntplib.Publisher" title="gntplib.Publisher"><code class="xref py py-class docutils literal notranslate"><span class="pre">Publisher</span></code></a> to send notifications and
+<a class="reference internal" href="../api/#gntplib.Subscriber" title="gntplib.Subscriber"><code class="xref py py-class docutils literal notranslate"><span class="pre">Subscriber</span></code></a> to send subscription requests.</p>
+<section id="publish">
+<h2>Publish<a class="headerlink" href="#publish" title="Link to this heading">¶</a></h2>
+<p>Here is a general usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span> <span class="o">=</span> <span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Event&#39;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">register</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;Event&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;Text&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This is constructed from the following 3 steps:</p>
+<ol class="arabic simple">
+<li><p>Create a publisher instance</p></li>
+<li><p>Register the publisher instance to the GNTP server</p></li>
+<li><p>Send a notification to the GNTP server</p></li>
+</ol>
+<section id="create-a-publisher-instance">
+<h3>Create a Publisher Instance<a class="headerlink" href="#create-a-publisher-instance" title="Link to this heading">¶</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span> <span class="o">=</span> <span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Event&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>First argument is the name of the application.
+This name should be unique among the GNTP clients registered to the GNTP server.</p>
+<p>Second argument is the list of the notification types which this publisher will
+sent.  The item of the list is a string, a string-bool tuple or a
+<a class="reference internal" href="../api/#gntplib.Event" title="gntplib.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a> instance.</p>
+<p>The tuple is to define disabled notification type easily:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Event A&#39;</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;Event B&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)])</span>
+</pre></div>
+</div>
+<p>Then enabled notification type <code class="docutils literal notranslate"><span class="pre">Event</span> <span class="pre">A</span></code> and disabled notification type
+<code class="docutils literal notranslate"><span class="pre">Event</span> <span class="pre">B</span></code> are registered.</p>
+<p>To fully define the properties of the notification type,
+use <a class="reference internal" href="../api/#gntplib.Event" title="gntplib.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a> instance.</p>
+<p>Moreover, you can specify the address of the GNTP server and the timeout in
+seconds with keyword arguments:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Event&#39;</span><span class="p">],</span>
+<span class="go">              host=&#39;remote.example.org&#39;, port=30000, timeout=20)</span>
+</pre></div>
+</div>
+<p>The defaults are <cite>host=’localhost’</cite>, <cite>port=23053</cite> and <cite>timeout=10</cite>.</p>
+</section>
+<section id="register-the-publisher-instance">
+<h3>Register the Publisher Instance<a class="headerlink" href="#register-the-publisher-instance" title="Link to this heading">¶</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">register</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Use <a class="reference internal" href="../api/#gntplib.Publisher.register" title="gntplib.Publisher.register"><code class="xref py py-meth docutils literal notranslate"><span class="pre">register()</span></code></a> method.</p>
+<p>Once the publisher is registered, you don’t need to re-register the same
+application name and notification types of it.</p>
+</section>
+<section id="send-a-notification">
+<h3>Send a Notification<a class="headerlink" href="#send-a-notification" title="Link to this heading">¶</a></h3>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;Event&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="s1">&#39;Text&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Use <a class="reference internal" href="../api/#gntplib.Publisher.publish" title="gntplib.Publisher.publish"><code class="xref py py-meth docutils literal notranslate"><span class="pre">publish()</span></code></a> method.</p>
+<p>First argument is the name of the notification.  This is one of the names of
+the notification types which is defined at <a class="reference internal" href="../api/#gntplib.Publisher" title="gntplib.Publisher"><code class="xref py py-class docutils literal notranslate"><span class="pre">Publisher</span></code></a>
+constructor’s second argument.</p>
+<p>Second argument is the title of the notification, and third argument is the
+text of the notification.</p>
+</section>
+</section>
+<section id="subscribe">
+<h2>Subscribe<a class="headerlink" href="#subscribe" title="Link to this heading">¶</a></h2>
+<p>Here is a general usage:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">id</span> <span class="o">=</span> <span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">()</span><span class="o">.</span><span class="n">hex</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">subscriber</span> <span class="o">=</span> <span class="n">Subscriber</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="s1">&#39;Subscriber&#39;</span><span class="p">,</span> <span class="s1">&#39;hub.example.org&#39;</span><span class="p">,</span> <span class="s1">&#39;secret&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">subscriber</span><span class="o">.</span><span class="n">subscribe</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><a class="reference internal" href="../api/#gntplib.Subscriber" title="gntplib.Subscriber"><code class="xref py py-class docutils literal notranslate"><span class="pre">Subscriber</span></code></a> requires four positional arguments: <cite>id_</cite> as
+a subscriber id, <cite>name</cite> as a subscriber name, <cite>hub</cite> as a subscribed-to machine
+address, <cite>password</cite> as a password.</p>
+<p>The port numbers of the subscriber and subscribed-to machine are used default
+port number: <cite>23053</cite>.  To change the port number of the subscriber, set <cite>port</cite>
+keyword argument to the desired port number.  To change the port number of the
+subscribed-to machine, set <cite>hub</cite> to host-port tuple instead of host string.</p>
+<p><code class="docutils literal notranslate"><span class="pre">SUBSCRIBE</span></code> request is sent by <a class="reference internal" href="../api/#gntplib.Subscriber.subscribe" title="gntplib.Subscriber.subscribe"><code class="xref py py-meth docutils literal notranslate"><span class="pre">subscribe()</span></code></a>.
+<a class="reference internal" href="../api/#gntplib.Subscriber.subscribe" title="gntplib.Subscriber.subscribe"><code class="xref py py-meth docutils literal notranslate"><span class="pre">subscribe()</span></code></a> accepts <cite>callback</cite> keyword argument
+as a final callback like the methods of <a class="reference internal" href="../api/#gntplib.Publisher" title="gntplib.Publisher"><code class="xref py py-class docutils literal notranslate"><span class="pre">gntplib.Publisher</span></code></a>.
+If you don’t set <cite>callback</cite> keyword argument,
+<a class="reference internal" href="../api/#gntplib.Subscriber.store_ttl" title="gntplib.Subscriber.store_ttl"><code class="xref py py-meth docutils literal notranslate"><span class="pre">store_ttl()</span></code></a> is used as a final callback,
+and <a class="reference internal" href="../api/#gntplib.Subscriber" title="gntplib.Subscriber"><code class="xref py py-class docutils literal notranslate"><span class="pre">gntplib.Subscriber</span></code></a>'s <code class="xref py py-attr docutils literal notranslate"><span class="pre">ttl</span></code> attribute is updated by
+the value of <code class="docutils literal notranslate"><span class="pre">'Subscription-TTL'</span></code> header of the response from the
+subscribed-to machine.</p>
+<p>And you can also use convenience function <a class="reference internal" href="../api/#gntplib.subscribe" title="gntplib.subscribe"><code class="xref py py-func docutils literal notranslate"><span class="pre">subscribe()</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ttl</span> <span class="o">=</span> <span class="n">subscribe</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="s1">&#39;Subscriber&#39;</span><span class="p">,</span> <span class="s1">&#39;hub.example.org&#39;</span><span class="p">,</span> <span class="s1">&#39;secret&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="icon">
+<h2>Icon<a class="headerlink" href="#icon" title="Link to this heading">¶</a></h2>
+<p>In GNTP, you can use icons in the following scenes.</p>
+<ul class="simple">
+<li><p>as icon of the application -
+<code class="docutils literal notranslate"><span class="pre">icon</span></code> keyword argument of <a class="reference internal" href="../api/#gntplib.Publisher" title="gntplib.Publisher"><code class="xref py py-class docutils literal notranslate"><span class="pre">Publisher</span></code></a></p></li>
+<li><p>as default icon of the notification -
+<code class="docutils literal notranslate"><span class="pre">icon</span></code> keyword argument of <a class="reference internal" href="../api/#gntplib.Event" title="gntplib.Event"><code class="xref py py-class docutils literal notranslate"><span class="pre">Event</span></code></a></p></li>
+<li><p>as icon of the notification -
+<code class="docutils literal notranslate"><span class="pre">icon</span></code> keyword argument of <a class="reference internal" href="../api/#gntplib.Publisher.publish" title="gntplib.Publisher.publish"><code class="xref py py-meth docutils literal notranslate"><span class="pre">publish()</span></code></a></p></li>
+</ul>
+<p>The data type of the icon is &lt;url&gt; or &lt;uniqueid&gt;.
+gntplib supports both data types in the same way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">icon1</span> <span class="o">=</span> <span class="s1">&#39;http://growl.googlecode.com/hg/Core/Resources/About.png&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">icon2</span> <span class="o">=</span> <span class="n">Resource</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;notification.png&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span> <span class="o">=</span> <span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Icon Event&#39;</span><span class="p">],</span> <span class="n">icon</span><span class="o">=</span><span class="n">icon1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">register</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;Icon Event&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="n">icon2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To use &lt;url&gt; data type, pass url string to <code class="docutils literal notranslate"><span class="pre">icon</span></code> keyword argument.  To use
+&lt;uniqueid&gt; data type, pass a <a class="reference internal" href="../api/#gntplib.Resource" title="gntplib.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">Resource</span></code></a> instance to <code class="docutils literal notranslate"><span class="pre">icon</span></code>
+keyword argument.  In the above example, <code class="docutils literal notranslate"><span class="pre">icon1</span></code> is of &lt;url&gt; data type, and
+<code class="docutils literal notranslate"><span class="pre">icon2</span></code> is of &lt;uniqueid&gt; data type.</p>
+</section>
+<section id="callback">
+<h2>Callback<a class="headerlink" href="#callback" title="Link to this heading">¶</a></h2>
+<p>In GNTP, you can define the notification window’s callback.  URL callbacks are
+on click callbacks, which the GNTP server handles their events.  Socket
+callbacks are on click, on close and/or on timeout callbacks, which the GNTP
+client handles their events.</p>
+<p>gntplib supports both callbacks in the same way:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;Callback Event&#39;</span><span class="p">,</span> <span class="s1">&#39;Click me!&#39;</span><span class="p">,</span>
+<span class="gp">... </span>                  <span class="n">gntp_callback</span><span class="o">=</span><span class="s1">&#39;http://google.com&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>or</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">webbrowser</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">class</span> <span class="nc">MyCallback</span><span class="p">(</span><span class="n">SocketCallback</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="n">SocketCallback</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">def</span> <span class="nf">on_click</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="n">webbrowser</span><span class="o">.</span><span class="n">open_new_tab</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">context</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;Callback Event&#39;</span><span class="p">,</span> <span class="s1">&#39;Click me!&#39;</span><span class="p">,</span>
+<span class="gp">... </span>                  <span class="n">gntp_callback</span><span class="o">=</span><span class="n">MyCallback</span><span class="p">(</span><span class="s1">&#39;http://google.com&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>To use url callback, pass url string to <code class="docutils literal notranslate"><span class="pre">gntp_callback</span></code> keyword argument.
+To use socket callback, pass <a class="reference internal" href="../api/#gntplib.SocketCallback" title="gntplib.SocketCallback"><code class="xref py py-class docutils literal notranslate"><span class="pre">SocketCallback</span></code></a> instance to
+<code class="docutils literal notranslate"><span class="pre">gntp_callback</span></code> keyword argument.</p>
+<p>For socket callback, gntplib provides more ease-of-use keyword arguments:
+<code class="docutils literal notranslate"><span class="pre">context</span></code>, <code class="docutils literal notranslate"><span class="pre">context_type</span></code>, <code class="docutils literal notranslate"><span class="pre">on_click</span></code>, <code class="docutils literal notranslate"><span class="pre">on_close</span></code> and <code class="docutils literal notranslate"><span class="pre">on_timeout</span></code>.
+And the following is same as above:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">on_click</span><span class="p">(</span><span class="n">response</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">webbrowser</span><span class="o">.</span><span class="n">open_new_tab</span><span class="p">(</span><span class="s1">&#39;http://google.com&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;Callback Event&#39;</span><span class="p">,</span> <span class="s1">&#39;Click me!&#39;</span><span class="p">,</span> <span class="n">on_click</span><span class="o">=</span><span class="n">on_click</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You cannot use <code class="docutils literal notranslate"><span class="pre">gntp_callback</span></code> keyword argument with other socket callback’s
+keyword arguments.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Socket callback blocks the client thread until the notification
+window is dismissed by the user, so it is usually used on thread
+pool, and so on.  Or use <a class="reference internal" href="../async/#module-gntplib.async" title="gntplib.async"><code class="xref py py-mod docutils literal notranslate"><span class="pre">gntplib.async</span></code></a> module, which supports
+asynchronous proccessing built on Tornado.</p>
+</div>
+</section>
+<section id="security">
+<h2>Security<a class="headerlink" href="#security" title="Link to this heading">¶</a></h2>
+<section id="module-gntplib.keys">
+<span id="password"></span><h3>Password<a class="headerlink" href="#module-gntplib.keys" title="Link to this heading">¶</a></h3>
+<p>You can set <cite>password</cite> keyword argument of <a class="reference internal" href="../api/#gntplib.Publisher" title="gntplib.Publisher"><code class="xref py py-class docutils literal notranslate"><span class="pre">Publisher</span></code></a> to
+password string:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Event&#39;</span><span class="p">],</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;secret&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>gntplib use SHA256 as default hashing algorithm.
+To change the hashing algorithm, set <cite>key_hashing</cite> keyword argument to
+<cite>keys.MD5</cite>, <cite>keys.SHA1</cite> or <cite>keys.SHA512</cite>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Event&#39;</span><span class="p">],</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;secret&#39;</span><span class="p">,</span> <span class="n">key_hashing</span><span class="o">=</span><span class="n">keys</span><span class="o">.</span><span class="n">MD5</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><cite>password</cite> is a required positional argument for <a class="reference internal" href="../api/#gntplib.Subscriber" title="gntplib.Subscriber"><code class="xref py py-class docutils literal notranslate"><span class="pre">Subscriber</span></code></a>
+as described above.  <a class="reference internal" href="../api/#gntplib.Subscriber" title="gntplib.Subscriber"><code class="xref py py-class docutils literal notranslate"><span class="pre">Subscriber</span></code></a> can also accepts
+<cite>key_hashing</cite> keyword argument.</p>
+</section>
+<section id="module-gntplib.ciphers">
+<span id="encryption"></span><h3>Encryption<a class="headerlink" href="#module-gntplib.ciphers" title="Link to this heading">¶</a></h3>
+<p>You can set <cite>encryption</cite> keyword argument of <a class="reference internal" href="../api/#gntplib.Publisher" title="gntplib.Publisher"><code class="xref py py-class docutils literal notranslate"><span class="pre">Publisher</span></code></a> and
+<a class="reference internal" href="../api/#gntplib.Subscriber" title="gntplib.Subscriber"><code class="xref py py-class docutils literal notranslate"><span class="pre">Subscriber</span></code></a> to encryption algorithm.  Available encryption
+algorithms are <cite>ciphers.AES</cite>, <cite>ciphers.DES</cite> and <cite>ciphers.DES3</cite>.  To enable
+encryption, setting <cite>password</cite> argument is required.  If <cite>password</cite> argument is
+set to <cite>None</cite>, <cite>encryption</cite> keyword argument will be ignored:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Event&#39;</span><span class="p">],</span> <span class="n">password</span><span class="o">=</span><span class="s1">&#39;secret&#39;</span><span class="p">,</span> <span class="n">encryption</span><span class="o">=</span><span class="n">ciphers</span><span class="o">.</span><span class="n">AES</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The key size of <cite>key_hashing</cite> must be at least the key size of <cite>encryption</cite>.
+So <cite>keys.MD5</cite> and <cite>keys.SHA1</cite> cannot be used with <cite>ciphers.AES</cite> or
+<cite>ciphers.DES3</cite>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The encryption of messages is not implemented in Growl 1.3.3.</p>
+</div>
+</section>
+</section>
+<section id="additional-headers">
+<h2>Additional Headers<a class="headerlink" href="#additional-headers" title="Link to this heading">¶</a></h2>
+<p>To include custom headers or app-specific headers, pass the list of key-value
+tuples to <cite>custom_headers</cite> or <cite>app_specific_headers</cite> keyword arguments of
+<a class="reference internal" href="../api/#gntplib.Publisher" title="gntplib.Publisher"><code class="xref py py-class docutils literal notranslate"><span class="pre">Publisher</span></code></a> and <a class="reference internal" href="../api/#gntplib.Subscriber" title="gntplib.Subscriber"><code class="xref py py-class docutils literal notranslate"><span class="pre">Subscriber</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span> <span class="o">=</span> <span class="n">Publisher</span><span class="p">(</span><span class="s1">&#39;App&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;Event&#39;</span><span class="p">],</span>
+<span class="gp">... </span>                      <span class="n">custom_headers</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;Sender&#39;</span><span class="p">,</span> <span class="s1">&#39;gntplib&#39;</span><span class="p">)],</span>
+<span class="gp">... </span>                      <span class="n">app_specific_headers</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;Filename&#39;</span><span class="p">,</span> <span class="s1">&#39;file.txt&#39;</span><span class="p">)])</span>
+</pre></div>
+</div>
+<p>If you want to change them each request, modify their attributes directly
+before dispatching requests:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">app_specific_headers</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;Filename&#39;</span><span class="p">,</span> <span class="s1">&#39;foo.txt&#39;</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">register</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">app_specific_headers</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;Filename&#39;</span><span class="p">,</span> <span class="s1">&#39;bar.txt&#39;</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">publish</span><span class="p">(</span><span class="s1">&#39;Event&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can also pass binary contents with <a class="reference internal" href="../api/#gntplib.Resource" title="gntplib.Resource"><code class="xref py py-class docutils literal notranslate"><span class="pre">Resource</span></code></a>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">resource</span> <span class="o">=</span> <span class="n">Resource</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;manual.pdf&#39;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">publisher</span><span class="o">.</span><span class="n">app_specific_headers</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;resource&#39;</span><span class="p">,</span> <span class="n">resource</span><span class="p">)]</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Usage</a><ul>
+<li><a class="reference internal" href="#publish">Publish</a><ul>
+<li><a class="reference internal" href="#create-a-publisher-instance">Create a Publisher Instance</a></li>
+<li><a class="reference internal" href="#register-the-publisher-instance">Register the Publisher Instance</a></li>
+<li><a class="reference internal" href="#send-a-notification">Send a Notification</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#subscribe">Subscribe</a></li>
+<li><a class="reference internal" href="#icon">Icon</a></li>
+<li><a class="reference internal" href="#callback">Callback</a></li>
+<li><a class="reference internal" href="#security">Security</a><ul>
+<li><a class="reference internal" href="#module-gntplib.keys">Password</a></li>
+<li><a class="reference internal" href="#module-gntplib.ciphers">Encryption</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#additional-headers">Additional Headers</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../installation/"
+                          title="previous chapter">Installation</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../async/"
+                          title="next chapter">Asynchronous Support</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/usage.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../async/" title="Asynchronous Support"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../installation/" title="Installation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../">gntplib 0.5 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Usage</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2012, papaeye.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    </div>
+  </body>
+</html>

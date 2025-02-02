@@ -1,0 +1,93 @@
+gntplib
+=======
+
+gntplib is a Growl Notification Transport Protocol (GNTP_) client library in
+Python.
+
+gntplib is tested on Python 2.7/3.2, Growl_ 1.3.3 and
+`Growl for Windows`_ 2.0.9.
+
+.. _GNTP: http://www.growlforwindows.com/gfw/help/gntp.aspx
+.. _Growl: http://growl.info/
+.. _Growl for Windows: http://www.growlforwindows.com/
+
+Installation
+------------
+
+Simply use pip::
+
+    $ pip install gntplib
+
+There are the following **optional** prerequisites.
+
+* ``pycrypto`` - to use ``gntplib.ciphers`` module for message encryption
+* ``tornado`` - to use ``gntplib.async`` module for asynchronous processing
+
+Documentation
+-------------
+
+Release version: http://packages.python.org/gntplib/ (`ja
+<http://packages.python.org/gntplib/ja/>`_)
+
+Development version: http://gntplib.readthedocs.org/en/latest/
+
+History
+-------
+
+0.5 (2012-04-13)
+~~~~~~~~~~~~~~~~
+
+* Support ``SUBSCRIBE`` request.
+
+  - Add ``gntplib.subscribe()``, ``gntplib.Subscriber`` and
+    ``gntplib.async.AsyncSubscriber``.
+
+* Support Custom Headers and App-Specific Headers.
+
+* Deprecate ``gntplib.notify()``, ``gntplib.Notifier()`` and
+  ``gntplib.AsyncNotifier()`` in favor of ``gntplib.publish()``,
+  ``gntplib.Publisher()`` and ``gntplib.async.AsyncPublisher()``.
+
+* Deprecate ``gntplib.RawIcon`` and ``gntplib.async.AsyncIcon`` in favor of
+  ``gntplib.Resource`` and ``gntplib.async.AsyncResource``.
+
+0.4 (2012-04-07)
+~~~~~~~~~~~~~~~~
+
+* Support password and encryption
+* Support Growl for Windows
+
+0.3 (2012-03-30)
+~~~~~~~~~~~~~~~~
+
+* Support Python 3
+
+0.2 (2012-03-18)
+~~~~~~~~~~~~~~~~
+
+* Add support for asynchronous processing built on Tornado.
+
+  - Add ``gntplib.async.AsyncNotifier`` and ``gntplib.async.AsyncIcon``.
+
+* Imporve usability of callback.
+
+  - ``SocketCallback``:  Now ``SocketCallback`` is not a abstract class, but
+    represents a socket callback.  Its ``if_clicked``, ``if_closed`` and
+    ``if_timedout`` methods are replaced with ``on_click``, ``on_close`` and
+    ``on_timeout`` methods respectively, which can be set at the constructor.
+
+  - ``Notifier.notify()``:  Redefine ``callback`` argument as for the callback
+    to run after closing the connection with the GNTP server.
+    Add ``gntp_callback`` argument for url callback (as string) and socket
+    callback (as ``SocketCallback`` instance).
+    Add ``context``, ``context_type``, ``on_click``, ``on_close`` and
+    ``on_timeout`` arguments to define a socket callback easily.
+
+* Remove ``callback`` argument from ``gntplib.notify()``.
+
+* Rename ``gntplib.Icon`` to ``gntplib.RawIcon``.
+
+0.1 (2012-03-12)
+~~~~~~~~~~~~~~~~
+
+* Initial release.

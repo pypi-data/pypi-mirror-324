@@ -1,0 +1,434 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2012, papaeye
+# This file is distributed under the same license as the gntplib package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2012.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gntplib 0.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-04-14 02:16+0900\n"
+"PO-Revision-Date: 2012-03-21 17:17+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 0.9.6\n"
+
+# b13460b8ba354884b27619b2c84c5a73
+#: ../../usage.rst:4
+msgid "Usage"
+msgstr "使い方"
+
+# 82d83a2eae6448f1be66324b43b8151c
+#: ../../usage.rst:6
+msgid ""
+"gntplib provides :class:`~gntplib.Publisher` to send notifications and "
+":class:`~gntplib.Subscriber` to send subscription requests."
+msgstr ""
+"gntplib は通知の送信のために :class:`~gntplib.Publisher` を提供します。購読リクエストの送信のために "
+":class:`~gntplib.Subscriber` を提供します。"
+
+# fd7c9a0cfa094a82a814944f9fc18832
+#: ../../usage.rst:11
+msgid "Publish"
+msgstr ""
+
+# 52866c0e87dd4d728902e9dec54dfb1a
+# 0b14fcdf409e4d8e886f35e15abb5591
+#: ../../usage.rst:13 ../../usage.rst:83
+msgid "Here is a general usage::"
+msgstr "一般的な使い方は次の通りです。"
+
+# 5073dea3b17246a1a2e1aec6f863e8ab
+#: ../../usage.rst:19
+msgid "This is constructed from the following 3 steps:"
+msgstr "これは以下の 3 つの部分から構成されています。"
+
+# 391477822f8b403aa207e0f97a5c4a51
+#: ../../usage.rst:21
+msgid "Create a publisher instance"
+msgstr "publisher インスタンスの生成"
+
+# de57865c35cd413fa6debed92ac3a991
+#: ../../usage.rst:22
+msgid "Register the publisher instance to the GNTP server"
+msgstr "GNTP サーバへの publisher インスタンスの登録"
+
+# 746d2b50e3c64e29ab1773d60c46fe82
+#: ../../usage.rst:23
+msgid "Send a notification to the GNTP server"
+msgstr "GNTP サーバへの通知の送信"
+
+# 403b5ccc6dcf46f684324111e0db078f
+#: ../../usage.rst:26
+msgid "Create a Publisher Instance"
+msgstr "Publisher インスタンスの生成"
+
+# b79166a224f24fa5a5b084cd0af5f798
+#: ../../usage.rst:30
+msgid ""
+"First argument is the name of the application. This name should be unique"
+" among the GNTP clients registered to the GNTP server."
+msgstr "第一引数はアプリケーション名です。これは登録する GNTP サーバの GNTP クライアントの中でユニークな名前です。"
+
+# f93e5abbdd9f4360b4502239f709040a
+#: ../../usage.rst:33
+msgid ""
+"Second argument is the list of the notification types which this "
+"publisher will sent.  The item of the list is a string, a string-bool "
+"tuple or a :class:`~gntplib.Event` instance."
+msgstr ""
+"第二引数はこの publisher が送信する通知タイプのリストです。リストの要素は文字列、文字列と真偽値のタプルまたは "
+":class:`~gntplib.Event` インスタンスです。"
+
+# 12a2066f879f4a458a8e20a3be71d00d
+#: ../../usage.rst:37
+msgid "The tuple is to define disabled notification type easily::"
+msgstr "タプルを使えば無効化した通知タイプを簡単に定義することができます。"
+
+# b1df1f83504747f1b852c9a840f18139
+#: ../../usage.rst:41
+msgid ""
+"Then enabled notification type ``Event A`` and disabled notification type"
+" ``Event B`` are registered."
+msgstr "これで有効化した通知タイプ ``Event A`` と無効化した通知タイプ ``Event B`` が登録されます。"
+
+# 760e00470893429fb2d630d94046af3b
+#: ../../usage.rst:44
+msgid ""
+"To fully define the properties of the notification type, use "
+":class:`~gntplib.Event` instance."
+msgstr "通知タイプのプロパティを完全に定義するには :class:`~gntplib.Event` を使ってください。"
+
+# f406fb0efe244152bb2a7ed3e246bc5c
+#: ../../usage.rst:47
+msgid ""
+"Moreover, you can specify the address of the GNTP server and the timeout "
+"in seconds with keyword arguments::"
+msgstr "さらにキーワード引数を使えば、GNTP サーバのアドレスとタイムアウトを指定することができます。"
+
+# 000a2bfbb5504367ae4d6bbb8fb8fd92
+#: ../../usage.rst:53
+msgid "The defaults are `host='localhost'`, `port=23053` and `timeout=10`."
+msgstr "初期値は `host='localhost'`\\ 、\\ `port=23053`\\ 、\\ `timeout=10` です。"
+
+# 9a7cab22baf04cbbbb035e37b74f9255
+#: ../../usage.rst:56
+msgid "Register the Publisher Instance"
+msgstr "Publisher インスタンスの登録"
+
+# fdcc9d40fac7435a85aa499a2139c8e0
+#: ../../usage.rst:60
+msgid "Use :meth:`~gntplib.Publisher.register()` method."
+msgstr ":meth:`~gntplib.Publisher.register()` メソッドを使います。"
+
+# 7734e0d841cc4c7fb169af2d65acfa7d
+#: ../../usage.rst:62
+msgid ""
+"Once the publisher is registered, you don't need to re-register the same "
+"application name and notification types of it."
+msgstr "一度 publisher を登録すると、それと同じアプリケーション名と通知タイプの publisher を再登録する必要はありません。"
+
+# 20525b96c6fe4cb29c279533a60099d2
+#: ../../usage.rst:66
+msgid "Send a Notification"
+msgstr "通知の送信"
+
+# 309950f1d11d425dad91464519439587
+#: ../../usage.rst:70
+msgid "Use :meth:`~gntplib.Publisher.publish()` method."
+msgstr ":meth:`~gntplib.Publisher.publish()` メソッドを使います。"
+
+# b3dfb4a4c1dc4566ad2371a15b5bd028
+#: ../../usage.rst:72
+msgid ""
+"First argument is the name of the notification.  This is one of the names"
+" of the notification types which is defined at "
+":class:`~gntplib.Publisher` constructor's second argument."
+msgstr ""
+"第一引数は通知タイプ名です。これは :class:`~gntplib.Publisher` "
+"のコンストラクタの第二引数で定義した通知タイプ名のうちのひとつです。"
+
+# ab0966e29d1e42c3801a4862b1f58a2d
+#: ../../usage.rst:76
+msgid ""
+"Second argument is the title of the notification, and third argument is "
+"the text of the notification."
+msgstr "第二引数は通知タイトルで、第三引数は通知テキストです。"
+
+# 6c4a27047604477fbc4cfd31441c85d5
+#: ../../usage.rst:81
+msgid "Subscribe"
+msgstr ""
+
+# 273f1fda829a429598258b95fee16306
+#: ../../usage.rst:89
+msgid ""
+":class:`~gntplib.Subscriber` requires four positional arguments: `id_` as"
+" a subscriber id, `name` as a subscriber name, `hub` as a subscribed-to "
+"machine address, `password` as a password."
+msgstr ""
+":class:`~gntplib.Subscriber` は 4 つの位置指定引数を必要とします。\\ `id_` は subscriber "
+"ID、\\ `name` は subscriber 名、\\ `hub` は非購読マシンのアドレス、\\ `password` はパスワードです。"
+
+# 0ed2a803fb58401c9053a74734488e26
+#: ../../usage.rst:93
+msgid ""
+"The port numbers of the subscriber and subscribed-to machine are used "
+"default port number: `23053`.  To change the port number of the "
+"subscriber, set `port` keyword argument to the desired port number.  To "
+"change the port number of the subscribed-to machine, set `hub` to host-"
+"port tuple instead of host string."
+msgstr ""
+"subscriber と非購読マシンのポート番号はデフォルトポート番号の `23053` が使われます。subscriber "
+"のポート番号を変更するには、\\ `port` キーワード引数に希望のポート番号をセットします。非購読マシンのポート番号を変更するには、\\ "
+"`hub` キーワード引数にホスト名の文字列ではなくてホスト名-ポートのタプルをセットします。"
+
+# f897d99abe0f4060aa51cf78fcd28711
+#: ../../usage.rst:98
+msgid ""
+"``SUBSCRIBE`` request is sent by :meth:`~gntplib.Subscriber.subscribe()`."
+" :meth:`~gntplib.Subscriber.subscribe()` accepts `callback` keyword "
+"argument as a final callback like the methods of "
+":class:`gntplib.Publisher`. If you don't set `callback` keyword argument,"
+" :meth:`~gntplib.Subscriber.store_ttl()` is used as a final callback, and"
+" :class:`gntplib.Subscriber`\\'s :attr:`ttl` attribute is updated by the "
+"value of ``'Subscription-TTL'`` header of the response from the "
+"subscribed-to machine."
+msgstr ""
+"``SUBSCRIBE`` リクエストは :meth:`~gntplib.Subscriber.subscribe()` で送信されます。\\ "
+":meth:`~gntplib.Subscriber.subscribe()` は :class:`gntplib.Publisher` "
+"のメソッドと同様に `callback` キーワード引数を受け取ります。もし `callback` キーワード引数をセットしなければ、\\ "
+":meth:`~gntplib.Subscriber.store_ttl()` がコールバックとして使われ、\\ "
+":class:`gntplib.Subscriber` の :attr:`ttl` 属性は非購読マシンからのレスポンスの "
+"``'Subscription-TTL'`` ヘッダの値で更新されます。"
+
+# 13cf776de5344bf2a3e33d27dfe17f46
+#: ../../usage.rst:107
+msgid "And you can also use convenience function :func:`~gntplib.subscribe()`::"
+msgstr "また便宜関数 :func:`~gntplib.subscribe()` を使うこともできます。"
+
+# 5e11c5e1680d46ff9ff982d691b6482b
+#: ../../usage.rst:113
+msgid "Icon"
+msgstr "アイコン"
+
+# a761135115d84994a743fcd559f89725
+#: ../../usage.rst:115
+msgid "In GNTP, you can use icons in the following scenes."
+msgstr "GNTP では、以下の状況でアイコンを使うことができます。"
+
+# 29878811a2b84901a8d48e955a2cf7a7
+#: ../../usage.rst:117
+msgid ""
+"as icon of the application - ``icon`` keyword argument of "
+":class:`~gntplib.Publisher`"
+msgstr "アプリケーションのアイコンとして。\\ :class:`~gntplib.Publisher` の ``icon`` キーワード引数で指定します。"
+
+# 807c2dd1da4e4af7adb1243afaf54b2e
+#: ../../usage.rst:119
+msgid ""
+"as default icon of the notification - ``icon`` keyword argument of "
+":class:`~gntplib.Event`"
+msgstr "通知のデフォルトアイコンとして。\\ :class:`~gntplib.Event` の ``icon`` キーワード引数で指定します。"
+
+# f0393e2ddfdf481ca16c3cd5f14dbd8e
+#: ../../usage.rst:121
+msgid ""
+"as icon of the notification - ``icon`` keyword argument of "
+":meth:`~gntplib.Publisher.publish()`"
+msgstr ""
+"個々の通知のアイコンとして。\\ :meth:`~gntplib.Publisher.publish()` の ``icon`` "
+"キーワード引数で指定します。"
+
+# dbe116961e864e278b1a0944c83e7d5e
+#: ../../usage.rst:124
+msgid ""
+"The data type of the icon is <url> or <uniqueid>. gntplib supports both "
+"data types in the same way::"
+msgstr "アイコンのデータタイプは <url> または <uniqueid> です。gntplib はどちらのデータタイプも同じようにサポートします。"
+
+# 8c339f65a586455b82d0f993ff86490c
+#: ../../usage.rst:133
+msgid ""
+"To use <url> data type, pass url string to ``icon`` keyword argument.  To"
+" use <uniqueid> data type, pass a :class:`~gntplib.Resource` instance to "
+"``icon`` keyword argument.  In the above example, ``icon1`` is of <url> "
+"data type, and ``icon2`` is of <uniqueid> data type."
+msgstr ""
+"<url> データタイプを使うには ``icon`` キーワード引数に url 文字列を渡します。<uniqueid> データタイプを使うには "
+"``icon`` キーワード引数に :class:`~gntplib.Resource` インスタンスを渡します。上記の例では ``icon1`` "
+"が <url> データタイプのアイコンで ``icon2`` が <uniqueid> データタイプのアイコンです。"
+
+# 837bee78182048299adbe0d9c441f091
+#: ../../usage.rst:140
+msgid "Callback"
+msgstr "コールバック"
+
+# 90cc26ae56294ff6abbf3b6574d5da30
+#: ../../usage.rst:142
+msgid ""
+"In GNTP, you can define the notification window's callback.  URL "
+"callbacks are on click callbacks, which the GNTP server handles their "
+"events.  Socket callbacks are on click, on close and/or on timeout "
+"callbacks, which the GNTP client handles their events."
+msgstr ""
+"GNTP では、通知ウィンドウのコールバックを指定することができます。URL コールバックはクリック時のコールバックで、GNTP "
+"サーバがそのイベントを処理します。ソケットコールバックはクリック、クローズ、タイムアウト時のコールバックで、GNTP "
+"クライアントがそれらのイベントを処理します。"
+
+# 21db2862d57b4574bd183a137a309735
+#: ../../usage.rst:147
+msgid "gntplib supports both callbacks in the same way::"
+msgstr "gntplib はどちらのコールバックも同じようにサポートします。"
+
+# 2b48a79c1ccd43979592faf4eaa57590
+#: ../../usage.rst:152
+msgid "or"
+msgstr "または"
+
+# 9c9230d4c4fd4b5c9c97c6892ccb78f9
+#: ../../usage.rst:164
+msgid ""
+"To use url callback, pass url string to ``gntp_callback`` keyword "
+"argument. To use socket callback, pass :class:`~gntplib.SocketCallback` "
+"instance to ``gntp_callback`` keyword argument."
+msgstr ""
+"url コールバックを使うには url 文字列を ``gntp_callback`` キーワード引数に渡します。ソケットコールバックを使うには "
+":class:`~gntplib.SocketCallback` インスタンスを ``gntp_callback`` キーワード引数に渡します。"
+
+# 78a88340cb9847ac91b56813fc5ad9a8
+#: ../../usage.rst:168
+msgid ""
+"For socket callback, gntplib provides more ease-of-use keyword arguments:"
+" ``context``, ``context_type``, ``on_click``, ``on_close`` and "
+"``on_timeout``. And the following is same as above::"
+msgstr ""
+"ソケットコールバック用として、gntplib はより使い易いキーワード引数も提供します。\\ ``context``\\ 、\\ "
+"``context_type``\\ 、\\ ``on_click``\\ 、\\ ``on_close``\\ 、\\ "
+"``on_timeout`` です。以下は上記の例と同じ内容です。"
+
+# 96f990882be34e7e984f1688f1006f8f
+#: ../../usage.rst:176
+msgid ""
+"You cannot use ``gntp_callback`` keyword argument with other socket "
+"callback's keyword arguments."
+msgstr "``gntp_callback`` キーワード引数を他のソケットコールバック用の引数といっしょに使うことはできません。"
+
+# da4dbe9253c047c9922aa00e1e38caa2
+#: ../../usage.rst:179
+msgid ""
+"Socket callback blocks the client thread until the notification window is"
+" dismissed by the user, so it is usually used on thread pool, and so on."
+"  Or use :mod:`gntplib.async` module, which supports asynchronous "
+"proccessing built on Tornado."
+msgstr ""
+"ユーザが通知ウィンドウを閉じるまで、ソケットコールバックはクライアントのスレッドをブロックします。そのため、通常、ソケットコールバックはスレッドプールなどといっしょに使われます。または"
+" :mod:`gntplib.async` モジュールを使ってください。これは Tornado を使った非同期処理をサポートしています。"
+
+# 6dff0a9b7a254e2cb3c936520de5cc81
+#: ../../usage.rst:186
+msgid "Security"
+msgstr "セキュリティ"
+
+# bc48b79588bd4a4595ae1fc05cd8b665
+#: ../../usage.rst:189
+msgid "Password"
+msgstr "パスワード"
+
+# da0b11d9320f4ccb80d6104cc23cec36
+#: ../../usage.rst:193
+msgid ""
+"You can set `password` keyword argument of :class:`~gntplib.Publisher` to"
+" password string::"
+msgstr ":class:`~gntplib.Publisher` の `password` キーワード引数にパスワード文字列を指定することができます。"
+
+# cbff86c100d744db96ff0136b1728daf
+#: ../../usage.rst:198
+msgid ""
+"gntplib use SHA256 as default hashing algorithm. To change the hashing "
+"algorithm, set `key_hashing` keyword argument to `keys.MD5`, `keys.SHA1` "
+"or `keys.SHA512`::"
+msgstr ""
+"gntplib はデフォルトのハッシュアルゴリズムとして SHA256 を使います。ハッシュアルゴリズムを変更するには、\\ "
+"`key_hashing` キーワード引数に `keys.MD5`\\ 、\\ `keys.SHA1`\\ 、\\ 、\\ "
+"`keys.SHA512` のいずれかを指定します。"
+
+# e44a5adc446a4bbfa8083f9993662377
+#: ../../usage.rst:204
+msgid ""
+"`password` is a required positional argument for "
+":class:`~gntplib.Subscriber` as described above.  "
+":class:`~gntplib.Subscriber` can also accepts `key_hashing` keyword "
+"argument."
+msgstr ""
+"上で述べたように `password` は :class:`~gntplib.Subscriber` の必須の位置指定引数です。\\ "
+":class:`~gntplib.Subscriber` も `key_hashing` キーワード引数を受け取ることができます。"
+
+# 99553d5628bd4c09ba9fc9263d52c968
+#: ../../usage.rst:209
+msgid "Encryption"
+msgstr "暗号化"
+
+# 9373a526ece44238bd1416894df5d735
+#: ../../usage.rst:213
+msgid ""
+"You can set `encryption` keyword argument of :class:`~gntplib.Publisher` "
+"and :class:`~gntplib.Subscriber` to encryption algorithm.  Available "
+"encryption algorithms are `ciphers.AES`, `ciphers.DES` and "
+"`ciphers.DES3`.  To enable encryption, setting `password` argument is "
+"required.  If `password` argument is set to `None`, `encryption` keyword "
+"argument will be ignored::"
+msgstr ""
+":class:`~gntplib.Publisher` と :class:`~gntplib.Subscriber` の `encryption`"
+" キーワード引数に暗号化アルゴリズムを指定することができます。利用可能な暗号化アルゴリズムは `ciphers.AES`\\ 、\\ "
+"`ciphers.DES`\\ 、\\ `ciphers.DES3` です。暗号化を有効にするには `password` "
+"引数を指定する必要があります。\\ `password` 引数が `None` の場合 `encryption` キーワード引数は無視されます。"
+
+# 4f0d0ec185c049c0904347e5e4c3f2c8
+#: ../../usage.rst:221
+msgid ""
+"The key size of `key_hashing` must be at least the key size of "
+"`encryption`. So `keys.MD5` and `keys.SHA1` cannot be used with "
+"`ciphers.AES` or `ciphers.DES3`."
+msgstr ""
+"`key_hashing` のキーサイズは少なくとも `encryption` のキーサイズ以上でなければなりません。つまり `keys.MD5`"
+" と `keys.SHA1` は `ciphers.AES` または `ciphers.DES3` で使うことができません。"
+
+# 04caa58703214130a55e21a62d585df6
+#: ../../usage.rst:225
+msgid "The encryption of messages is not implemented in Growl 1.3.3."
+msgstr "Growl 1.3.3 ではメッセージの暗号化は実装されていません。"
+
+# c4c81adcd01b49768065758639e260b5
+#: ../../usage.rst:229
+msgid "Additional Headers"
+msgstr "拡張ヘッダ"
+
+# 30a87cb3332f47ca9c24ac06f4986f86
+#: ../../usage.rst:231
+msgid ""
+"To include custom headers or app-specific headers, pass the list of key-"
+"value tuples to `custom_headers` or `app_specific_headers` keyword "
+"arguments of :class:`~gntplib.Publisher` and "
+":class:`~gntplib.Subscriber`::"
+msgstr ""
+"custom headers または app-specific headers を含めるには、\\ "
+":class:`~gntplib.Publisher` や :class:`~gntplib.Subscriber` の "
+"`custom_headers` または `app_specific_headers` キーワード引数にキー-値タプルを渡します。"
+
+# dcc676dc6a6547ba86977d5aa8872d40
+#: ../../usage.rst:239
+msgid ""
+"If you want to change them each request, modify their attributes directly"
+" before dispatching requests::"
+msgstr "リクエストごとにそれらを変更するには、リクエストを送出する前に直接それらの属性を変更します。"
+
+# b7ab6cd6e1a441ebbf7ecb521fc255ec
+#: ../../usage.rst:247
+msgid "You can also pass binary contents with :class:`~gntplib.Resource`::"
+msgstr ":class:`~gntplib.Resource` を使ってバイナリデータを渡すこともできます。"
+
