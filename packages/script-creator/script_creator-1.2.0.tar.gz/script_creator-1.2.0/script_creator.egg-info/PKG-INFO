@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: script_creator
+Version: 1.2.0
+Summary: web script creator for automation
+Author: dani549
+Author-email: dani.barma1@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django
+Requires-Dist: Django>=3.2
+
+# Django Script Automation Platform
+
+Introducing our Django-powered web applicationâ€”a comprehensive solution for script automation creation and execution. This platform simplifies complex automation tasks, enabling users to effortlessly build, customize, and run scripts through an intuitive web interface.
+
+## Key Features
+
+- **Dynamic Script Creator**  
+  Easily craft automation scripts with a user-friendly editor that offers syntax highlighting and real-time error checking.
+
+- **Efficient Script Runner**  
+  Execute scripts on-demand or schedule them for automated execution, ensuring seamless workflow management.
+
+- **Centralized Automation Dashboard**  
+  Monitor script performance, access detailed logs, and track historical runs to quickly diagnose issues and optimize processes.
+
+- **Modular and Scalable Architecture**  
+  Integrate with external APIs and services, allowing the application to adapt and expand as your automation needs evolve.
+
+## Overview
+
+This robust solution empowers both developers and non-technical users to:
+- **Streamline Repetitive Tasks:** Reduce manual intervention by automating routine processes.
+- **Enhance Productivity:** Save time and minimize errors with automated script execution.
+- **Maintain Control:** Gain complete oversight of automation workflows with comprehensive logging and performance monitoring.

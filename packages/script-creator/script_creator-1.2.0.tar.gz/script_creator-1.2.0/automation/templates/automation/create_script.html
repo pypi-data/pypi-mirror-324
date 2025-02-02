@@ -1,0 +1,591 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-icon.png' %}">
+    <link rel="icon" type="image/png" href="{% static 'img/favicon.png' %}">
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    
+
+    <link href="{% static 'css/nucleo-icons.css' %}" rel="stylesheet"/>
+    <link href="{% static 'css/nucleo-svg.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/jquery-3.7.1.min.js' %}"></script>
+
+    <script src="{% static 'js/htmx.min.js' %}"></script>
+
+    <link id="pagestyle" href="{% static 'css/soft-ui-dashboard.css' %}" rel="stylesheet"/>
+    <link id="pagestyle" href="{% static 'css/laika/step-list.css' %}" rel="stylesheet"/>
+
+
+    <link href="{% static 'css/select2.min.css' %}" rel="stylesheet" />
+    <script src="{% static 'js/select2.min.js' %}"></script>
+    {#   drop downs#}
+
+
+    <link href="{% static 'css/select2.min.css' %}" rel="stylesheet"/>
+    <script src="{% static 'js/select2.min.js' %}"></script>
+
+</head>
+<body class="g-sidenav-show bg-gray-100">
+
+    {% include 'partials/nav_bar.html' %}
+    
+    <main class="main-content position-relative border-radius-lg ">
+        <br>
+        {% include 'partials/script_creation_form_partial.html' %}
+        {% include 'partials/custom_parameters_table.html' with variables=variables %}
+        <h2>Steps</h2>
+        <div id="script-list">
+            {% include 'partials/script_creation_step_list.html' %}
+        </div>
+    </main>
+    
+    <script src="{% static 'js/core/popper.min.js' %}"></script>
+    <script src="{% static 'js/core/bootstrap.min.js' %}"></script>
+    
+    <script src="{% static 'js/plugins/perfect-scrollbar.min.js' %}"></script>
+    <script src="{% static 'js/plugins/smooth-scrollbar.min.js' %}"></script>
+    <script src="{% static 'js/plugins/jkanban/jkanban.js' %}"></script>
+    <script src="{% static 'js/plugins/chartjs.min.js' %}"></script>
+    <script src="{% static 'js/plugins/choices.min.js' %}"></script>
+    <script src="{% static 'js/soft-ui-dashboard.min.js' %}"></script>
+    <script>
+        document.addEventListener('htmx:configRequest', (event) => {
+            let csrfToken = document.querySelector('meta[name="csrf-token"]').content;
+            event.detail.headers['X-CSRFToken'] = csrfToken;
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const selectElementIds = [
+                'id_environment',
+                'id_component',
+                'id_packet',
+                'id_parameters',
+    
+            ];
+    
+            selectElementIds.forEach(function (id) {
+                const element = document.getElementById(id);
+                if (element) {
+                    $(element).select2({
+                        width: '100%' // adjust as needed
+                    });
+                }
+            });
+        });
+    
+    
+        function updateSelectValue(id, value) {
+            const element = document.getElementById(id);
+            if (element) {
+                $(element).val(value).trigger('change');
+                $(element).select2({
+                    width: '100%',
+                    placeholder: 'Select an option',
+                    allowClear: true,
+    
+                });
+            }
+        }
+    
+    
+    </script>
+    <script>
+        document.addEventListener('htmx:beforeRequest', function (event) {
+            console.log('HTMX request initiated:', event.detail.path, event.detail.verb);
+    
+            const button = document.getElementById('action-button');
+    
+            button.disabled = true;
+            button.innerHTML = `
+                    <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                `;
+    
+        });
+    
+        document.addEventListener('htmx:afterRequest', function (event) {
+            console.log('HTMX request completed:', event.detail.path, event.detail.verb);
+    
+            const button = document.getElementById('action-button');
+            button.disabled = false;
+            button.innerHTML = 'Add Step';
+    
+        });
+    
+    </script>
+    <script>
+    
+        function updateFormMode(isEditMode) {
+            const actionButton = document.getElementById('action-button');
+    
+            if (isEditMode) {
+    
+                actionButton.innerText = 'Edit Step';
+                actionButton.setAttribute('hx-post', '/edit_step/');
+                console.log('Switched to Edit Mode');
+            } else {
+    
+                actionButton.innerText = 'Add Step';
+                actionButton.setAttribute('hx-post', '/create_script/');
+                console.log('Switched to Add Mode');
+                toggleValueManipulationFields();
+            }
+            toggleMoveButtons(isEditMode);
+    
+        }
+    
+        function toggleMoveButtons(isEditMode) {
+            const moveUpButtons = document.querySelectorAll('.move-up-button');
+            const moveDownButtons = document.querySelectorAll('.move-down-button');
+    
+            moveUpButtons.forEach(button => button.disabled = isEditMode);
+            moveDownButtons.forEach(button => button.disabled = isEditMode);
+        }
+    
+        {#fix it because of db load#}
+    
+        function loadStepData(stepId) {
+            console.log('Loading step data for step ID:', stepId);
+    
+            fetch(`/load_step/${stepId}/`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert(data.error);
+                        console.error('Error loading step:', data.error);
+                    } else {
+                        document.getElementById('id_step_id').value = data.step_id || '';
+                        updateSelectValue('id_environment', data.environment);
+                        document.getElementById('id_command').value = data.command;
+                        document.getElementById('id_sub_command').value = data.sub_command;
+                        updateSelectValue('id_component', data.component);
+                        updateSelectValue('id_packet', data.packet);
+                        updateSelectValue('id_parameters', data.parameters);
+                        document.getElementById('id_operator').value = data.fixed_value;
+                        document.getElementById('id_value_manipulation').value = data.value_manipulation;
+                        document.getElementById('id_resolution').value = data.resolution_value;
+                        document.getElementById('id_value_tolerance').value = data.value_tolerance_value;
+                        document.getElementById('id_time_tolerance').value = data.time_tolerance_value;
+                        {#choicesEnvironment.setChoiceByValue(data.environment || '');#}
+                        document.getElementById('id_environment').value = data.environment || '';
+                        document.getElementById('id_command').value = data.command || '';
+                        document.getElementById('id_sub_command').value = data.sub_command || '';
+                        document.getElementById('id_component').value = data.component || '';
+                        document.getElementById('id_packet').value = data.packet || '';
+                        document.getElementById('id_parameters').value = data.parameters || '';
+                        document.getElementById('id_value_manipulation').value = data.value_manipulation || '';
+                        document.getElementById('id_fixed_value').value = data.fixed_value || '';
+                        document.getElementById('id_min_value').value = data.min_value || '';
+                        document.getElementById('id_max_value').value = data.max_value || '';
+                        document.getElementById('id_resolution').value = data.resolution || '';
+                        document.getElementById('id_resolution_value').value = data.resolution_value || '';
+                        document.getElementById('id_enum_value').value = data.enum_value || '';
+                        document.getElementById('id_at_time').value = data.at_time || '';
+                        document.getElementById('id_delay').value = data.delay || '';
+                        document.getElementById('id_value_tolerance').value = data.value_tolerance || '';
+                        document.getElementById('id_value_tolerance_value').value = data.value_tolerance_value || '';
+                        document.getElementById('id_time_tolerance').value = data.time_tolerance || '';
+                        document.getElementById('id_time_tolerance_value').value = data.time_tolerance_value || '';
+                        document.getElementById('id_description').value = data.description || '';
+    
+    
+                        document.getElementById('id_sync').checked = data.sync || false;
+                        document.getElementById('id_length_plus').checked = data.length_plus || false;
+                        document.getElementById('id_length_minus').checked = data.length_minus || false;
+                        document.getElementById('id_sequence_number').checked = data.sequence_number || false;
+                        document.getElementById('id_checksum').checked = data.checksum || false;
+    
+                        console.log('Form fields populated with step data:', data);
+                        toggleValueManipulationFields();
+    
+                        updateFormMode(true);
+                    }
+                })
+                .catch(err => console.error('Error fetching step data:', err));
+        }
+    
+    
+        function resetForm() {
+            console.log('Resetting form to Add Step mode');
+            document.getElementById('script-form').reset();
+            document.getElementById('id_step_id').value = '';
+            updateFormMode(false);
+        }
+    
+        document.addEventListener('htmx:beforeOnLoad', function (event) {
+            const stepIdField = document.getElementById('id_step_id');
+            const isEditMode = stepIdField && stepIdField.value !== "";
+    
+            if (isEditMode) {
+                console.log('Edit mode. Resetting form after submission.');
+                resetForm();
+            } else {
+                console.log('Not in edit mode. No reset required.');
+            }
+    
+        });
+    </script>
+    <script>
+    
+        function toggleValueManipulationFields() {
+            const command = document.getElementById('id_command').value;
+            const manipulationType = document.getElementById('id_value_manipulation').value;
+    
+            // Fields and their containers
+            const fields = {
+                minValueField: document.getElementById('id_min_value'),
+                maxValueField: document.getElementById('id_max_value'),
+                resolutionField: document.getElementById('id_resolution'),
+                resolutionValueField: document.getElementById('id_resolution_value'),
+                fixedValueField: document.getElementById('id_fixed_value'),
+                enumValueField: document.getElementById('id_enum_value'),
+                parametersValueField: document.getElementById('id_table_parameters'),
+                id_value_tolerance: document.getElementById('id_value_tolerance'),
+                id_value_tolerance_value: document.getElementById('id_value_tolerance_value')
+            };
+    
+            // Hide all fields and clear their values
+            Object.values(fields).forEach(field => {
+                field.parentElement.style.display = 'none';
+                if (field.tagName === 'INPUT' || field.tagName === 'TEXTAREA') {
+                    field.value = '';
+                } else if (field.tagName === 'SELECT') {
+                    field.selectedIndex = 0;
+                }
+            });
+    
+            // Show specific fields based on conditions
+            if (manipulationType === 'random') {
+                fields.minValueField.parentElement.style.display = 'block';
+                fields.maxValueField.parentElement.style.display = 'block';
+                fields.resolutionField.parentElement.style.display = 'block';
+                fields.resolutionValueField.parentElement.style.display = 'block';
+            } else if (manipulationType === 'fixed') {
+                fields.fixedValueField.parentElement.style.display = 'block';
+            } else if (manipulationType === 'enum') {
+                fields.enumValueField.parentElement.style.display = 'block';
+            } else if (manipulationType === 'Parameters') {
+                fields.parametersValueField.parentElement.style.display = 'block';
+            }
+    
+            if (command === 'get') {
+                fields.id_value_tolerance.parentElement.style.display = 'block';
+                fields.id_value_tolerance_value.parentElement.style.display = 'block';
+            }
+        }
+    
+        document.getElementById('id_value_manipulation').addEventListener('change', toggleValueManipulationFields);
+        document.getElementById('id_command').addEventListener('change', toggleValueManipulationFields);
+        toggleValueManipulationFields();
+    </script>
+    <script>
+    
+    
+        function toggleColumns(group) {
+            var elements = document.querySelectorAll('.group-' + group);
+            elements.forEach(function (el) {
+                el.style.display = (el.style.display === 'none') ? 'table-cell' : 'none';
+            });
+            console.log('Toggled columns for group:', group);
+        }
+    
+        function restoreAndToggleColumns() {
+            var checkboxes = document.querySelectorAll('.auto-trigger');
+    
+            checkboxes.forEach(function (checkbox) {
+                var group = checkbox.id.split('_')[1];
+    
+                if (!checkbox.checked) {
+                    console.log('Restoring checkbox state for group:', group);
+                    toggleColumns(group);
+                }
+            });
+        }
+    
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            let scrollableContainers = [];
+            let syncEnabled = true;
+    
+            function syncScrollContainers() {
+    
+                scrollableContainers.forEach(container => {
+                    container.removeEventListener('scroll', handleScroll);
+                });
+    
+    
+                scrollableContainers = Array.from(document.querySelectorAll('.table-responsive'));
+    
+    
+                if (syncEnabled) {
+                    scrollableContainers.forEach(function (container) {
+                        container.addEventListener('scroll', handleScroll);
+                    });
+                }
+            }
+    
+    
+            function handleScroll(event) {
+                if (!syncEnabled) return;
+    
+                const scrolledContainer = event.target;
+                const scrollLeft = scrolledContainer.scrollLeft;
+    
+                scrollableContainers.forEach(function (container) {
+                    if (container !== scrolledContainer) {
+                        container.scrollLeft = scrollLeft;
+                    }
+                });
+            }
+    
+    
+            syncScrollContainers();
+    
+    
+            document.body.addEventListener('htmx:afterSwap', function () {
+                console.log('Restoring scroll synchronization');
+                syncScrollContainers();
+                restoreAndToggleColumns();
+            });
+    
+    
+        });
+    
+    
+    </script>
+    <style>
+        #Step-loop-txt {
+            margin-bottom: 5px;
+        }
+    
+        .seperator {
+            width: 10px;
+        }
+    
+        .step-controls {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    
+        .right-buttons {
+            display: flex;
+            gap: 10px;
+        }
+    
+        .btn-sma {
+            padding: 7px 10px;
+            margin: 0;
+        }
+    
+    
+    </style>
+    <style>
+        td.group-command {
+            border-bottom: 2px solid #aeaeae;
+        }
+    
+        td.group-value {
+            border-bottom: 2px solid #137eb1;
+        }
+    
+        td.group-valueOptions {
+            border-bottom: 2px solid #a055c7;
+        }
+    
+        td.group-timing {
+            border-bottom: 2px solid #353873;
+        }
+    
+        .step_table {
+            table-layout: fixed;
+            width: auto;
+            min-width: 100%;
+    
+        }
+    
+        :root {
+            scrollbar-color: #e2e2e2 #ffffff;
+            scrollbar-width: thin;
+            border: 0px solid #ffffff;
+        }
+    
+    
+        .step_table th, .step_table td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100px;
+            min-width: 100px;
+            text-align: center;
+            padding: 7px;
+        }
+    
+    
+        .table-responsive {
+            overflow-x: auto;
+            display: block;
+            max-width: 100%;
+            white-space: nowrap;
+        }
+    
+    
+        table tr:first-child {
+            border-top: none !important; /* Removes top border */
+        }
+    
+        table tr:last-child {
+            border-bottom: none !important; /* Removes bottom border */
+        }
+    
+        /* Header specific styles */
+        .step_table th {
+            background-color: #f2f2f2; /* Optional: light background for headers */
+            font-weight: bold; /* Bold text for headers */
+        }
+    
+        .step_table th.seperator {
+            max-width: 3px !important;
+            width: 3px !important;
+            min-width: 3px !important; /* Override the default min-width */
+        }
+    
+        .step_table td.seperator {
+            max-width: 3px !important;
+            width: 3px !important;
+            min-width: 3px !important; /* Override the default min-width */
+    
+    
+        }
+    
+        th {
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+    
+        td {
+            padding: 10px;
+            text-align: center;
+            position: relative;
+        }
+    
+        .vertical-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 1px;
+            background-color: #606060;
+            transform: translateX(-50%);
+        }
+    
+        .delete-button {
+            background-image: linear-gradient(310deg, #060d87 0%, #62d4ff 100%);
+        }
+    
+        .parameters-btn {
+            background-image: linear-gradient(310deg, #060d87 0%, #62d4ff 100%);
+        }
+    
+        .table_control .btn-sma {
+            margin: 5px 5px;
+        }
+    </style>
+    <style>
+        .htmx-request .htmx-indicator {
+            display: inline;
+        }
+    
+    </style>
+    <script>
+        function toggleAllLoopDivs(checkbox) {
+            // Get the state of the checkbox
+            const isChecked = checkbox.checked;
+    
+            // Find all loop-div elements and update their display property
+            const loopDivs = document.querySelectorAll('.loop-div');
+            loopDivs.forEach(function (div) {
+                div.style.display = isChecked ? '' : 'none';
+            });
+    
+            console.log('Toggled all loop-divs, visibility set to:', isChecked ? 'visible' : 'hidden');
+        }
+    
+        function restoreLoopDivsState() {
+            // Restore the toggle state for all loop-divs after HTMX updates
+            const toggleCheckbox = document.getElementById('toggle-loop');
+            if (toggleCheckbox) {
+                toggleAllLoopDivs(toggleCheckbox);
+            }
+        }
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            // Add event listener to the main toggle checkbox
+            const toggleCheckbox = document.getElementById('toggle-loop');
+            if (toggleCheckbox) {
+                toggleCheckbox.addEventListener('change', function () {
+                    toggleAllLoopDivs(this);
+                });
+            }
+    
+            // Reapply toggle logic after HTMX updates
+            document.body.addEventListener('htmx:afterSwap', function () {
+                console.log('HTMX content updated, restoring loop-div state');
+                restoreLoopDivsState();
+            });
+        });
+    </script>
+
+</body>
+</html>
+<script>
+    function initializeStepLoopListeners() {
+        document.querySelectorAll('.Step_loop_enable').forEach(checkbox => {
+            checkbox.addEventListener('change', function (event) {
+                const stepId = event.target.dataset.stepId;
+                const fields = document.querySelectorAll(`#step-${stepId} .disableable`);
+
+                fields.forEach(field => {
+                    if (event.target.checked) {
+                        field.readOnly = true; // Make field non-editable
+                        field.classList.add('readonly-style'); // Optional: Add styling for readonly fields
+                    } else {
+                        field.readOnly = false; // Allow editing
+                        field.classList.remove('readonly-style'); // Optional: Remove readonly styling
+                    }
+                });
+            });
+
+            // Initial toggle state
+            const stepId = checkbox.dataset.stepId;
+            const fields = document.querySelectorAll(`#step-${stepId} .disableable`);
+            fields.forEach(field => {
+                if (checkbox.checked) {
+                    field.readOnly = true; // Set to readonly on page load if enabled
+                    field.classList.add('readonly-style');
+                } else {
+                    field.readOnly = false;
+                    field.classList.remove('readonly-style');
+                }
+            });
+        });
+    }
+
+    // Initial setup
+    initializeStepLoopListeners();
+
+    // Re-initialize listeners after HTMX swaps content
+    document.body.addEventListener('htmx:afterSwap', function () {
+        initializeStepLoopListeners();
+    });
+
+</script>
