@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+badgerdb_python/__init__.py
+badgerdb_python/badger.py
+badgerdb_python.egg-info/PKG-INFO
+badgerdb_python.egg-info/SOURCES.txt
+badgerdb_python.egg-info/dependency_links.txt
+badgerdb_python.egg-info/top_level.txt
+tests/test_badger.py
