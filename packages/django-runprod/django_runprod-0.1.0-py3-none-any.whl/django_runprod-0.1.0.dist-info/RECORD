@@ -1,0 +1,9 @@
+django_runprod/__init__.py,sha256=6BJh2g1ik5GOeGO5kSGOithnQQIx4OeVnb4cG-0mxfw,60
+django_runprod/gunicorn.py,sha256=ahvIIJTkFT40QXYgwJQEQHyTA3l1RIg9bZqXBphsnwo,2059
+django_runprod/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_runprod/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_runprod/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_runprod/management/commands/runprod.py,sha256=vsRIeHPRQUGHLD9dU3xKV7_tgvY3XIeWSczs0Bz5PAM,2369
+django_runprod-0.1.0.dist-info/METADATA,sha256=UIQAmxcwi7keBUoeG8tEdlHD3CXvKL14R8kDp6R1ex8,926
+django_runprod-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+django_runprod-0.1.0.dist-info/RECORD,,
