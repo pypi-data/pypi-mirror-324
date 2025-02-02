@@ -1,0 +1,7 @@
+cperms/__init__.py,sha256=CbSU2DMLl6f_3Y-mXI-arCFxGRW6bOdap7M9bpjqEL0,130
+cperms/av.py,sha256=L6jQ7Imn50E1QNK0Hz3XuVGjQ8aSL6dkB-Z_uuWbeg4,10672
+cperms/cayley.py,sha256=y0UW6kuA0LiRdZDP9_rRgpHZN4HeOveXGRSoIseU7cQ,29813
+Cayley_perms-1.0.dist-info/METADATA,sha256=SwGVb9CvEEzWARWDEIRr6-uJmPZNt0cvqUvzqmNV7mY,125
+Cayley_perms-1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+Cayley_perms-1.0.dist-info/top_level.txt,sha256=hiZPnY3EygGtqmEE1x6bXaOuPPgKuzzeH238B2q3Z_M,7
+Cayley_perms-1.0.dist-info/RECORD,,
