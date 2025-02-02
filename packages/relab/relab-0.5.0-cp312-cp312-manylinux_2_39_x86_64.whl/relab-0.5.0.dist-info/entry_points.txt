@@ -1,0 +1,10 @@
+[console_scripts]
+describe_params=relab.scripts.describe_params:main
+display_checkpoint=relab.scripts.display_checkpoint:main
+draw_graph=relab.scripts.draw_graph:main
+run_demo=relab.scripts.run_demo:main
+run_experiment=relab.scripts.run_experiment:main
+run_training=relab.scripts.run_training:main
+test_install=relab.scripts.test_install:main
+update_checkpoint=relab.scripts.update_checkpoint:main
+
