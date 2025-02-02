@@ -1,0 +1,4 @@
+[console_scripts]
+jaa = langchain_datalayer.app:main
+langchain-datalayer = langchain_datalayer.app:main
+langchain-datalayer-console = langchain_datalayer.consoleapp:main
