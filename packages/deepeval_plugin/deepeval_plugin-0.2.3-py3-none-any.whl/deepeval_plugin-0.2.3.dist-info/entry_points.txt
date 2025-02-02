@@ -1,0 +1,2 @@
+[djp]
+deepeval_plugin = deepeval_plugin
