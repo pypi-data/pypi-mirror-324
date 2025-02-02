@@ -1,0 +1,13 @@
+pypdl/__init__.py,sha256=7UAW_uEzG1HqRVtDrOsYHeKgVvCBKYRpUPvNoVXIK_I,48
+pypdl/consumer.py,sha256=gRj95wob69UYCcRZSr6tnNdrjaeFEPsPEbyuT6HCVmo,4248
+pypdl/downloader.py,sha256=5fVGNfJzcxcSlJHl_WQsfWwnUgsWSQhxXqDko5rWtw8,2825
+pypdl/producer.py,sha256=VNoVgmUcM3BIOhRtdO-FrUuCXIwpXw2O6nbjNLIL7Gk,5439
+pypdl/pypdl.py,sha256=e4NbVTpQUVaYLjgJEDT5_7h7vwH31drI5WltqVgk7_c,12426
+pypdl/utils.py,sha256=dpRji8jSZxj19LbXVz5pBgHQWorTUEmI1cPZw73LMX8,14007
+test/__init__.py,sha256=4odnywIbrZHy0kAI-Skiup_igBxgW8DxkpL7mpl3Ytg,19
+test/test.py,sha256=l0hV5Au37wrVeWh1Tp_gpn70SOuwn-Tszmm2abn-f6g,9509
+pypdl-1.5.2.dist-info/LICENSE,sha256=I8CJ6vo_K6Z-SGcqJ2U2UWSzr5SgfHz5Ctz9Ad4xXew,1065
+pypdl-1.5.2.dist-info/METADATA,sha256=aKlSNBnHXgsQU-tOqDeCw0x4u1Obca_t7_xeL4LCTeg,23137
+pypdl-1.5.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pypdl-1.5.2.dist-info/top_level.txt,sha256=2l0RHnm8AuME-CUXPzDUeqlYGb-jxjWAveeT_0jeYnE,11
+pypdl-1.5.2.dist-info/RECORD,,
