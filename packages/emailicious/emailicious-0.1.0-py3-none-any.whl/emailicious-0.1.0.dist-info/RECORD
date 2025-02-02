@@ -1,0 +1,12 @@
+emailicious/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+emailicious/config.py,sha256=kQKJOeedxuD_5D0O6rplee1tj7jx25NUz5PzBiB5Geg,1370
+emailicious/gmail.py,sha256=Eu8kjGn9hRJbDo31ZoQc5a-gKoVYzss9eWFTIP1RaIE,1709
+emailicious/main.py,sha256=b4bFri5FR1ocX5tjiBNmkPxU-bq4hiGzvxzsC410onM,736
+emailicious/ms_graph.py,sha256=KuNZzfIoU38V2Y8amgWG5k0fyk8uQnxeHmrm-yNiCv0,2283
+emailicious/utils.py,sha256=Hnkkv8R4k1lRClRB4CdGpVU94ANTq-X75f64SDeQkLc,364
+emailicious-0.1.0.dist-info/LICENSE,sha256=UzFUy2ZicUOBl2N5ofo8kf3hQDwcjsSUGpafkMCAhCs,1069
+emailicious-0.1.0.dist-info/METADATA,sha256=nveKk3Yffk5IQCX2E0_g5XkJFsE9nEqYy6gwVb5qZW8,1042
+emailicious-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+emailicious-0.1.0.dist-info/entry_points.txt,sha256=yTyaa_Efya6hvfsK6LH1k96ff78dBm3Pw50JLzp3LHw,54
+emailicious-0.1.0.dist-info/top_level.txt,sha256=WgSJda4RNSVbi_M5Ndq2FT-ho-hYF-Bj8QlOyRKEjAI,12
+emailicious-0.1.0.dist-info/RECORD,,
