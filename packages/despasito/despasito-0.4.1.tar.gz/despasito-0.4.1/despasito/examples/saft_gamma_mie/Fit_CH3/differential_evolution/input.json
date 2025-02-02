@@ -1,0 +1,22 @@
+{
+    "EOSgroup": "SAFTgroup.json",
+    "optimization_parameters": {
+        "fit_bead" : "CH3",
+        "fit_parameter_names": ["sigma"],
+        "lambdar_bounds" : [6.0, 10.0]
+    },
+    "Ethane": {
+        "bead_configuration": [[["CH3", 2]]],
+        "data_class_type": "saturation_properties",
+        "calctype": "saturation_properties",
+        "file": "saturation_ethane.csv",
+        "weights": { "rhov" : 0.0}
+    },
+    "global_opts": {
+        "popsize": 10,
+        "mutation": 1.5,
+        "strategy": "best2bin",
+        "recombination": 0.1,
+        "maxiter": 100
+    }
+}

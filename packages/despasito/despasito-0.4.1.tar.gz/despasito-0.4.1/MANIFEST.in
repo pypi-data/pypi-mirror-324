@@ -1,0 +1,6 @@
+include LICENSE
+include MANIFEST.in
+
+graft despasito
+#global-exclude *.py[cod] __pycache__ *.so
+global-exclude *.py[cod] __pycache__

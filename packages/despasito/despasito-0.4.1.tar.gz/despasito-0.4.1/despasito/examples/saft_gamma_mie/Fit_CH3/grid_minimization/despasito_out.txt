@@ -1,0 +1,4 @@
+DESPASITO was used to fit parameters for the bead CH3 Obj. Value: 0.9524372851838113
+Parameter, Value
+sigma, 0.4119441870636128
+lambdar, 8.019978225162815

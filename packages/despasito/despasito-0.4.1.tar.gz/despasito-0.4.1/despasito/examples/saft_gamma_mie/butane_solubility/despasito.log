@@ -1,0 +1,603 @@
+2024-12-15 22:44:04,747 [INFO](despasito.utils.parallelization:__init__:44): Number of cores set to 1, bypassing mp and using serial methods
+2024-12-15 22:44:04,747 [INFO](despasito.main:run:126): Begin processing input file: input_test.json
+2024-12-15 22:44:04,747 [INFO](despasito.input_output.read_input:extract_calc_data:121): No EOScross file specified
+2024-12-15 22:44:04,748 [INFO](despasito.input_output.read_input:extract_calc_data:155): The bead, CH3, will have the parameters ['epsilon_CH2', 'sigma'], fit using the following data:
+  Knovel (solubility_parameter),
+2024-12-15 22:44:04,749 [INFO](despasito.main:run:144): Finish processing input file: input_test.json
+2024-12-15 22:44:04,749 [INFO](despasito.equations_of_state:initiate_eos:77): Using EOS: saft.gamma_mie
+2024-12-15 22:44:08,292 [INFO](despasito.equations_of_state.saft.Aassoc:initiate_assoc_matrices:183): No association sites are used in this system.
+2024-12-15 22:44:08,292 [INFO](despasito.equations_of_state:initiate_eos:108): Created saft.gamma_mie Eos object
+2024-12-15 22:44:08,292 [INFO](despasito.main:run:157): Initializing parametrization procedure
+2024-12-15 22:44:08,292 [INFO](despasito.parameter_fitting.fit_functions:consolidate_bounds:179): Accepted bounds for parameter, 'epsilon_CH2': [150.0, 400.0]
+2024-12-15 22:44:08,292 [INFO](despasito.parameter_fitting.fit_functions:consolidate_bounds:179): Accepted bounds for parameter, 'sigma': [0.3, 0.5]
+2024-12-15 22:44:08,292 [INFO](despasito.parameter_fitting:fit:164): Initial guess in parameters: [300.0, 0.34]
+2024-12-15 22:44:08,293 [INFO](despasito.parameter_fitting.interface:__init__:83): Objective function options: {}
+2024-12-15 22:44:08,293 [INFO](despasito.utils.general_toolbox:set_defaults:461): Entry, Plist, set to default: 101325.0
+2024-12-15 22:44:08,293 [INFO](despasito.utils.general_toolbox:set_defaults:461): Entry, xilist, set to default: [[1.]
+ [1.]
+ [1.]]
+2024-12-15 22:44:08,293 [INFO](despasito.utils.general_toolbox:set_defaults:461): Entry, rhol, set to default: 1.0
+2024-12-15 22:44:08,293 [INFO](despasito.utils.general_toolbox:set_defaults:461): Entry, delta, set to default: 1.0
+2024-12-15 22:44:08,293 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:__init__:146): Data type 'solubility parameter' initiated with calculation_type, solubility_parameter, and data types: rhol, delta.
+Weight data by: {'rhol': np.float64(1.0), 'delta': np.float64(1.0)}
+2024-12-15 22:44:08,293 [INFO](despasito.parameter_fitting:fit:196): Initiated exp. data object: solubility_parameter
+2024-12-15 22:44:08,293 [INFO](despasito.parameter_fitting.fit_functions:global_minimization:315): Using global optimization method: differential_evolution
+2024-12-15 22:44:08,293 [INFO](despasito.parameter_fitting.global_methods:differential_evolution:173): Differential Evolution Options: {'init': 'random', 'popsize': 10, 'mutation': 1.5, 'strategy': 'best2bin', 'recombination': 0.1, 'maxiter': 100}
+2024-12-15 22:44:08,293 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 219.6290904635506, sigma: 0.37283932921715357,
+2024-12-15 22:44:08,294 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:44:08,294 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:44:13,418 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=13727.294639680886
+2024-12-15 22:44:13,420 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 8161.062370250294, flagl 1, delta 13727.294639680886
+2024-12-15 22:44:13,420 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:44:19,111 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=11991.856652468223
+2024-12-15 22:44:19,113 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 7281.812936949945, flagl 1, delta 11991.856652468223
+2024-12-15 22:44:19,113 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:44:24,511 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=12865.59116847355
+2024-12-15 22:44:24,513 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 7732.900065365407, flagl 1, delta 12865.59116847355
+2024-12-15 22:44:24,513 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:44:24,513 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.008577071334099006, rhol 0.06326065753321816
+2024-12-15 22:44:24,513 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 219.6290904635506, 0.37283932921715357, 0.07183772886731717
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.07183772886731717)]
+2024-12-15 22:44:24,513 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 315.304481582713, sigma: 0.43827028116954847,
+2024-12-15 22:44:24,513 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:44:24,513 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:44:30,572 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=14015.116292335133
+2024-12-15 22:44:30,574 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 6978.844297537981, flagl 1, delta 14015.116292335133
+2024-12-15 22:44:30,574 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:44:36,991 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=12676.748878332852
+2024-12-15 22:44:36,993 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6429.961321729175, flagl 1, delta 12676.748878332852
+2024-12-15 22:44:36,993 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:44:43,291 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=13344.945529473574
+2024-12-15 22:44:43,294 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6707.31825793003, flagl 1, delta 13344.945529473574
+2024-12-15 22:44:43,294 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:44:43,294 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0031213623992744776, rhol 0.12170399728325089
+2024-12-15 22:44:43,294 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 315.304481582713, 0.43827028116954847, 0.12482535968252537
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.12482535968252537)]
+2024-12-15 22:44:43,294 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 228.41941841721996, sigma: 0.40516103696315797,
+2024-12-15 22:44:43,294 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:44:43,294 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:44:49,006 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=13034.049780163205
+2024-12-15 22:44:49,008 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 7356.530559723383, flagl 1, delta 13034.049780163205
+2024-12-15 22:44:49,008 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:44:55,273 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=11394.551732717991
+2024-12-15 22:44:55,275 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6569.020219258285, flagl 1, delta 11394.551732717991
+2024-12-15 22:44:55,275 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:01,269 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=12222.117959934818
+2024-12-15 22:45:01,272 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6973.917983560131, flagl 1, delta 12222.117959934818
+2024-12-15 22:45:01,272 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:45:01,272 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.01856496693674985, rhol 0.10517881125134239
+2024-12-15 22:45:01,272 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 228.41941841721996, 0.40516103696315797, 0.12374377818809223
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.12374377818809223)]
+2024-12-15 22:45:01,272 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 300.97234947766214, sigma: 0.35190914546802,
+2024-12-15 22:45:01,272 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:45:01,272 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:05,874 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=16294.655106309527
+2024-12-15 22:45:05,876 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 9267.254218865082, flagl 1, delta 16294.655106309527
+2024-12-15 22:45:05,876 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:10,829 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=14733.314850318318
+2024-12-15 22:45:10,831 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 8536.301512356249, flagl 1, delta 14733.314850318318
+2024-12-15 22:45:10,831 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:15,587 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=15503.896838908498
+2024-12-15 22:45:15,590 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 8903.659763193462, flagl 1, delta 15503.896838908498
+2024-12-15 22:45:15,590 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:45:15,590 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.010613089980458313, rhol 0.01901969394734118
+2024-12-15 22:45:15,590 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 300.97234947766214, 0.35190914546802, 0.029632783927799493
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.029632783927799493)]
+2024-12-15 22:45:15,590 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 336.1692156240364, sigma: 0.45136689465619606,
+2024-12-15 22:45:15,590 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:45:15,591 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:21,920 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=14054.552834006365
+2024-12-15 22:45:21,922 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 6746.710313236568, flagl 1, delta 14054.552834006365
+2024-12-15 22:45:21,923 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:28,665 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=12781.204226811042
+2024-12-15 22:45:28,667 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6245.813979648959, flagl 1, delta 12781.204226811042
+2024-12-15 22:45:28,667 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:35,181 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=13411.06892721888
+2024-12-15 22:45:35,184 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6498.41600640367, flagl 1, delta 13411.06892721888
+2024-12-15 22:45:35,184 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:45:35,184 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0025483738036907936, rhol 0.13613793140562566
+2024-12-15 22:45:35,184 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 336.1692156240364, 0.45136689465619606, 0.13868630520931646
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.13868630520931646)]
+2024-12-15 22:45:35,184 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 289.3178090299989, sigma: 0.4277582878253726,
+2024-12-15 22:45:35,184 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:45:35,184 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:41,208 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=13776.310079455277
+2024-12-15 22:45:41,211 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 7121.765718554933, flagl 1, delta 13776.310079455277
+2024-12-15 22:45:41,211 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:47,663 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=12361.548871568924
+2024-12-15 22:45:47,665 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6514.254620336202, flagl 1, delta 12361.548871568924
+2024-12-15 22:45:47,665 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:53,860 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=13068.5731431559
+2024-12-15 22:45:53,862 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6822.321188215315, flagl 1, delta 13068.5731431559
+2024-12-15 22:45:53,862 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:45:53,862 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.00569596550049119, rhol 0.1142138189939793
+2024-12-15 22:45:53,862 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 289.3178090299989, 0.4277582878253726, 0.11990978449447048
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.11990978449447048)]
+2024-12-15 22:45:53,862 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 242.7161395300827, sigma: 0.4185270838083229,
+2024-12-15 22:45:53,862 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:45:53,862 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:45:59,843 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=13001.16141628127
+2024-12-15 22:45:59,845 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 7105.108068505753, flagl 1, delta 13001.16141628127
+2024-12-15 22:45:59,845 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:06,337 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=11439.66985383482
+2024-12-15 22:46:06,341 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6382.490838739038, flagl 1, delta 11439.66985383482
+2024-12-15 22:46:06,341 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:12,562 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=12225.237881568495
+2024-12-15 22:46:12,564 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6752.855976809317, flagl 1, delta 12225.237881568495
+2024-12-15 22:46:12,564 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:46:12,564 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0183301494274335, rhol 0.11926192947269247
+2024-12-15 22:46:12,564 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 242.7161395300827, 0.4185270838083229, 0.13759207890012598
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.13759207890012598)]
+2024-12-15 22:46:12,564 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 186.03367061770277, sigma: 0.3578674983710008,
+2024-12-15 22:46:12,564 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:46:12,564 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:17,589 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=13270.263300039927
+2024-12-15 22:46:17,591 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 8314.51859790286, flagl 1, delta 13270.263300039927
+2024-12-15 22:46:17,591 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:23,230 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=11352.808853965307
+2024-12-15 22:46:23,233 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 7273.931769561341, flagl 1, delta 11352.808853965307
+2024-12-15 22:46:23,233 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:28,511 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=12330.134364905289
+2024-12-15 22:46:28,514 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 7814.611009483737, flagl 1, delta 12330.134364905289
+2024-12-15 22:46:28,514 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:46:28,514 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.01726859353996398, rhol 0.06013683957448256
+2024-12-15 22:46:28,514 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 186.03367061770277, 0.3578674983710008, 0.07740543311444655
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.07740543311444655)]
+2024-12-15 22:46:28,514 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 277.7935661911071, sigma: 0.46188394246018616,
+2024-12-15 22:46:28,515 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:46:28,515 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:35,200 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=12576.833925649398
+2024-12-15 22:46:35,202 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 6258.947483710807, flagl 1, delta 12576.833925649398
+2024-12-15 22:46:35,202 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:42,501 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=11208.814909220948
+2024-12-15 22:46:42,503 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 5686.551904023115, flagl 1, delta 11208.814909220948
+2024-12-15 22:46:42,503 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:49,522 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=11894.62987335217
+2024-12-15 22:46:49,525 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 5978.388979748118, flagl 1, delta 11894.62987335217
+2024-12-15 22:46:49,525 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:46:49,525 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.024793352734614412, rhol 0.17624270680317286
+2024-12-15 22:46:49,526 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 277.7935661911071, 0.46188394246018616, 0.20103605953778728
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.20103605953778728)]
+2024-12-15 22:46:49,526 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 343.84988257286665, sigma: 0.4387499690593789,
+2024-12-15 22:46:49,526 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:46:49,526 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:46:55,544 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=14580.18037800606
+2024-12-15 22:46:55,545 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 7082.558397124022, flagl 1, delta 14580.18037800606
+2024-12-15 22:46:55,545 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:02,050 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=13292.304605786547
+2024-12-15 22:47:02,053 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6572.471003670798, flagl 1, delta 13292.304605786547
+2024-12-15 22:47:02,053 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:08,248 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=13928.768196657
+2024-12-15 22:47:08,250 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6829.283881242568, flagl 1, delta 13928.768196657
+2024-12-15 22:47:08,250 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:47:08,250 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0003701657591657672, rhol 0.11347674525391949
+2024-12-15 22:47:08,250 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 343.84988257286665, 0.4387499690593789, 0.11384691101308525
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.11384691101308525)]
+2024-12-15 22:47:08,250 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 246.12119406431478, sigma: 0.3547094929864772,
+2024-12-15 22:47:08,250 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:47:08,250 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:13,066 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=14906.172424001728
+2024-12-15 22:47:13,068 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 8856.146365417999, flagl 1, delta 14906.172424001728
+2024-12-15 22:47:13,068 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:18,256 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=13223.630222741596
+2024-12-15 22:47:18,259 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 8015.073197395036, flagl 1, delta 13223.630222741596
+2024-12-15 22:47:18,259 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:23,264 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=14062.397639277346
+2024-12-15 22:47:23,266 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 8441.955101402531, flagl 1, delta 14062.397639277346
+2024-12-15 22:47:23,266 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:47:23,266 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0007331001198487493, rhol 0.033478804231423846
+2024-12-15 22:47:23,266 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 246.12119406431478, 0.3547094929864772, 0.034211904351272596
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.034211904351272596)]
+2024-12-15 22:47:23,266 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 195.16694584965734, sigma: 0.4581806881346469,
+2024-12-15 22:47:23,266 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:47:23,266 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:30,357 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=10838.82669017635
+2024-12-15 22:47:30,360 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 5879.085656169323, flagl 1, delta 10838.82669017635
+2024-12-15 22:47:30,360 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:38,481 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=9128.99915938143
+2024-12-15 22:47:38,482 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 5065.749057631301, flagl 1, delta 9128.99915938143
+2024-12-15 22:47:38,482 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:46,086 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=10018.94057031333
+2024-12-15 22:47:46,089 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 5497.395509026375, flagl 1, delta 10018.94057031333
+2024-12-15 22:47:46,089 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:47:46,089 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0858759165175924, rhol 0.21931343134722445
+2024-12-15 22:47:46,089 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 195.16694584965734, 0.4581806881346469, 0.30518934786481683
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.30518934786481683)]
+2024-12-15 22:47:46,089 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 232.95182884996478, sigma: 0.4677267400130466,
+2024-12-15 22:47:46,089 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:47:46,089 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:47:53,589 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=11471.631532551579
+2024-12-15 22:47:53,592 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 5905.289969437298, flagl 1, delta 11471.631532551579
+2024-12-15 22:47:53,593 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:01,458 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=9968.244651812827
+2024-12-15 22:48:01,461 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 5242.823468692121, flagl 1, delta 9968.244651812827
+2024-12-15 22:48:01,461 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:09,123 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=10734.358624517794
+2024-12-15 22:48:09,125 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 5586.0325531001545, flagl 1, delta 10734.358624517794
+2024-12-15 22:48:09,125 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:48:09,125 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.057908355300704116, rhol 0.21021798708136166
+2024-12-15 22:48:09,125 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 232.95182884996478, 0.4677267400130466, 0.2681263423820658
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.2681263423820658)]
+2024-12-15 22:48:09,125 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 310.4799019682154, sigma: 0.4899496206589722,
+2024-12-15 22:48:09,125 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:48:09,125 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:16,678 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=12477.381637669354
+2024-12-15 22:48:16,680 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 5790.159410414823, flagl 1, delta 12477.381637669354
+2024-12-15 22:48:16,680 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:24,713 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=11225.761305825314
+2024-12-15 22:48:24,715 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 5309.7965400812, flagl 1, delta 11225.761305825314
+2024-12-15 22:48:24,715 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:32,422 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=11849.823559053508
+2024-12-15 22:48:32,426 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 5553.536895719938, flagl 1, delta 11849.823559053508
+2024-12-15 22:48:32,426 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:48:32,426 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.02558990951024993, rhol 0.21229263271041554
+2024-12-15 22:48:32,426 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 310.4799019682154, 0.4899496206589722, 0.23788254222066546
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.23788254222066546)]
+2024-12-15 22:48:32,426 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 196.9432993258397, sigma: 0.3294831705439177,
+2024-12-15 22:48:32,426 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:48:32,426 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:37,104 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=14361.196271034038
+2024-12-15 22:48:37,105 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 9222.700225949606, flagl 1, delta 14361.196271034038
+2024-12-15 22:48:37,105 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:42,216 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=12454.679219366057
+2024-12-15 22:48:42,218 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 8172.342172769382, flagl 1, delta 12454.679219366057
+2024-12-15 22:48:42,218 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:47,040 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=13416.390966225652
+2024-12-15 22:48:47,042 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 8711.184008186998, flagl 1, delta 13416.390966225652
+2024-12-15 22:48:47,042 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:48:47,042 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0035512088753044528, rhol 0.025531522284598696
+2024-12-15 22:48:47,042 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 196.9432993258397, 0.3294831705439177, 0.02908273115990315
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.02908273115990315)]
+2024-12-15 22:48:47,042 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 170.48357010527923, sigma: 0.3807577688058073,
+2024-12-15 22:48:47,042 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:48:47,043 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:52,628 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=12217.254119361327
+2024-12-15 22:48:52,632 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 7551.997521785264, flagl 1, delta 12217.254119361327
+2024-12-15 22:48:52,632 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:48:58,951 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=10220.10200674114
+2024-12-15 22:48:58,953 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6468.610008867402, flagl 1, delta 10220.10200674114
+2024-12-15 22:48:58,953 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:04,858 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=11257.186647805103
+2024-12-15 22:49:04,860 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 7042.905657859798, flagl 1, delta 11257.186647805103
+2024-12-15 22:49:04,860 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:49:04,860 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.043032892334258305, rhol 0.10264818649747641
+2024-12-15 22:49:04,861 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 170.48357010527923, 0.3807577688058073, 0.1456810788317347
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.1456810788317347)]
+2024-12-15 22:49:04,861 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 203.12918864017763, sigma: 0.4855390561032945,
+2024-12-15 22:49:04,861 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:49:04,861 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:12,813 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=10372.012430415387
+2024-12-15 22:49:12,816 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 5365.226673180685, flagl 1, delta 10372.012430415387
+2024-12-15 22:49:12,816 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:14,203 [WARNING](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1254): Failed to calculate rhov at 323.15 K and 101325.0 Pa
+2024-12-15 22:49:14,203 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:22,596 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=9594.216721630935
+2024-12-15 22:49:22,599 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 5021.066507903415, flagl 1, delta 9594.216721630935
+2024-12-15 22:49:22,599 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:49:22,599 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 1000.0909233452321, rhol 1000.243572545724
+2024-12-15 22:49:22,599 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 203.12918864017763, 0.4855390561032945, 2000.334495890956
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(2000.334495890956)]
+2024-12-15 22:49:22,599 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 305.6172853912137, sigma: 0.48892415033529923,
+2024-12-15 22:49:22,599 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:49:22,600 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:29,991 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=12408.525173330843
+2024-12-15 22:49:29,993 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 5792.825541320619, flagl 1, delta 12408.525173330843
+2024-12-15 22:49:29,994 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:37,950 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=11149.145913351618
+2024-12-15 22:49:37,955 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 5304.3644754335755, flagl 1, delta 11149.145913351618
+2024-12-15 22:49:37,955 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:45,660 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=11780.191500082781
+2024-12-15 22:49:45,664 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 5552.421598611775, flagl 1, delta 11780.191500082781
+2024-12-15 22:49:45,664 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:49:45,664 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.027248913555509957, rhol 0.21242064595616936
+2024-12-15 22:49:45,664 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 305.6172853912137, 0.48892415033529923, 0.23966955951167931
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.23966955951167931)]
+2024-12-15 22:49:45,664 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 176.90395511293337, sigma: 0.3466872041700972,
+2024-12-15 22:49:45,664 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:49:45,664 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:50,685 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=13333.339523693472
+2024-12-15 22:49:50,689 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 8549.516347257946, flagl 1, delta 13333.339523693472
+2024-12-15 22:49:50,689 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:49:56,356 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=11349.012883279667
+2024-12-15 22:49:56,358 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 7442.621993111456, flagl 1, delta 11349.012883279667
+2024-12-15 22:49:56,358 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:01,597 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=12362.29351752034
+2024-12-15 22:50:01,600 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 8019.18753441897, flagl 1, delta 12362.29351752034
+2024-12-15 22:50:01,600 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:50:01,600 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.016879396291617308, rhol 0.05122924373415468
+2024-12-15 22:50:01,600 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 176.90395511293337, 0.3466872041700972, 0.068108640025772
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.068108640025772)]
+2024-12-15 22:50:01,600 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 345.9985145160532, sigma: 0.39716180268359547,
+2024-12-15 22:50:01,600 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:50:01,600 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:06,844 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=15899.958199987885
+2024-12-15 22:50:06,847 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 8183.139878215366, flagl 1, delta 15899.958199987885
+2024-12-15 22:50:06,847 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:12,406 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=14523.535354377662
+2024-12-15 22:50:12,409 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 7608.26751168117, flagl 1, delta 14523.535354377662
+2024-12-15 22:50:12,409 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:17,787 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=15205.22770349052
+2024-12-15 22:50:17,789 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 7896.855576047693, flagl 1, delta 15205.22770349052
+2024-12-15 22:50:17,789 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:50:17,789 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.006593539850752926, rhol 0.05457408606632691
+2024-12-15 22:50:17,789 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 345.9985145160532, 0.39716180268359547, 0.06116762591707984
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.06116762591707984)]
+2024-12-15 22:50:17,789 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 286.2196363344457, sigma: 0.3294831705439177,
+2024-12-15 22:50:17,789 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:50:17,789 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:22,162 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=16613.140316852874
+2024-12-15 22:50:22,165 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 9855.784124547747, flagl 1, delta 16613.140316852874
+2024-12-15 22:50:22,165 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:26,829 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=14963.61425327966
+2024-12-15 22:50:26,831 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 9048.824431605362, flagl 1, delta 14963.61425327966
+2024-12-15 22:50:26,831 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:31,319 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=15777.295014411928
+2024-12-15 22:50:31,323 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 9454.154183228273, flagl 1, delta 15777.295014411928
+2024-12-15 22:50:31,323 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:50:31,323 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.014998733829604018, rhol 0.00767904983069453
+2024-12-15 22:50:31,323 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 286.2196363344457, 0.3294831705439177, 0.02267778366029855
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.02267778366029855)]
+2024-12-15 22:50:31,323 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 292.3732004610699, sigma: 0.43827028116954847,
+2024-12-15 22:50:31,324 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:50:31,324 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:37,496 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=13539.585661077133
+2024-12-15 22:50:37,500 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 6877.266986969728, flagl 1, delta 13539.585661077133
+2024-12-15 22:50:37,501 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:44,114 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=12155.79133346901
+2024-12-15 22:50:44,116 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6292.559488943842, flagl 1, delta 12155.79133346901
+2024-12-15 22:50:44,116 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:50,468 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=12844.965311726792
+2024-12-15 22:50:50,471 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6589.153256795363, flagl 1, delta 12844.965311726792
+2024-12-15 22:50:50,471 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:50:50,471 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.008207231607708018, rhol 0.12995764791454315
+2024-12-15 22:50:50,471 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 292.3732004610699, 0.43827028116954847, 0.13816487952225115
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.13816487952225115)]
+2024-12-15 22:50:50,471 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 328.5066027676336, sigma: 0.40516103696315797,
+2024-12-15 22:50:50,472 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:50:50,472 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:50:55,904 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=15281.962568419929
+2024-12-15 22:50:55,908 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 7888.855757793494, flagl 1, delta 15281.962568419929
+2024-12-15 22:50:55,908 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:01,674 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=13896.171547895192
+2024-12-15 22:51:01,676 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 7304.089816183996, flagl 1, delta 13896.171547895192
+2024-12-15 22:51:01,676 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:07,274 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=14583.45583879161
+2024-12-15 22:51:07,277 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 7598.367176138431, flagl 1, delta 14583.45583879161
+2024-12-15 22:51:07,277 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:51:07,277 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0015567868524984166, rhol 0.06893962489854775
+2024-12-15 22:51:07,277 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 328.5066027676336, 0.40516103696315797, 0.07049641175104618
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.07049641175104618)]
+2024-12-15 22:51:07,278 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 300.97234947766214, sigma: 0.42582023409012326,
+2024-12-15 22:51:07,278 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:51:07,278 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:13,224 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=14083.113337957522
+2024-12-15 22:51:13,226 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 7225.217792092754, flagl 1, delta 14083.113337957522
+2024-12-15 22:51:13,226 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:19,577 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=12687.823994575327
+2024-12-15 22:51:19,579 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6634.048331608918, flagl 1, delta 12687.823994575327
+2024-12-15 22:51:19,579 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:25,650 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=13381.827327942432
+2024-12-15 22:51:25,654 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6933.164287976668, flagl 1, delta 13381.827327942432
+2024-12-15 22:51:25,654 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:51:25,654 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0029025786855881894, rhol 0.10700446072952159
+2024-12-15 22:51:25,654 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 300.97234947766214, 0.42582023409012326, 0.10990703941510978
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.10990703941510978)]
+2024-12-15 22:51:25,654 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 336.1692156240364, sigma: 0.40315045559535945,
+2024-12-15 22:51:25,654 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:51:25,654 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:31,093 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=15508.155171115246
+2024-12-15 22:51:31,095 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 7976.738152549187, flagl 1, delta 15508.155171115246
+2024-12-15 22:51:31,095 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:36,812 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=14128.033539583312
+2024-12-15 22:51:36,815 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 7399.144152781515, flagl 1, delta 14128.033539583312
+2024-12-15 22:51:36,815 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:42,368 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=14809.521784182018
+2024-12-15 22:51:42,372 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 7689.517640348643, flagl 1, delta 14809.521784182018
+2024-12-15 22:51:42,372 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:51:42,372 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.002946062681722168, rhol 0.06436297173299778
+2024-12-15 22:51:42,372 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 336.1692156240364, 0.40315045559535945, 0.06730903441471994
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.06730903441471994)]
+2024-12-15 22:51:42,372 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 289.3178090299989, sigma: 0.3548087531953456,
+2024-12-15 22:51:42,372 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:51:42,372 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:47,049 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=15937.038064199753
+2024-12-15 22:51:47,051 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 9116.94969640865, flagl 1, delta 15937.038064199753
+2024-12-15 22:51:47,051 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:52,130 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=14360.052758133992
+2024-12-15 22:51:52,132 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 8370.79693086281, flagl 1, delta 14360.052758133992
+2024-12-15 22:51:52,132 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:51:56,972 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=15141.50687205379
+2024-12-15 22:51:56,974 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 8746.50257934312, flagl 1, delta 15141.50687205379
+2024-12-15 22:51:56,974 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:51:56,974 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.006106868579717668, rhol 0.023410728478928517
+2024-12-15 22:51:56,974 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 289.3178090299989, 0.3548087531953456, 0.029517597058646185
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.029517597058646185)]
+2024-12-15 22:51:56,975 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 260.4046508073344, sigma: 0.46448141400774157,
+2024-12-15 22:51:56,975 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:51:56,975 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:03,960 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=12143.75160740812
+2024-12-15 22:52:03,963 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 6118.530745882496, flagl 1, delta 12143.75160740812
+2024-12-15 22:52:03,963 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:11,678 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=10733.182224451019
+2024-12-15 22:52:11,682 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 5516.428560721047, flagl 1, delta 10733.182224451019
+2024-12-15 22:52:11,682 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:18,872 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=11441.628619783398
+2024-12-15 22:52:18,875 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 5824.955883799257, flagl 1, delta 11441.628619783398
+2024-12-15 22:52:18,875 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:52:18,875 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.03599040366307932, rhol 0.1891254933176605
+2024-12-15 22:52:18,875 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 260.4046508073344, 0.46448141400774157, 0.2251158969807398
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.2251158969807398)]
+2024-12-15 22:52:18,875 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 342.6826821139002, sigma: 0.3578674983710008,
+2024-12-15 22:52:18,875 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:52:18,875 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:23,497 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=17057.73131624572
+2024-12-15 22:52:23,498 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 9301.363263348067, flagl 1, delta 17057.73131624572
+2024-12-15 22:52:23,498 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:28,479 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=15577.896872233323
+2024-12-15 22:52:28,482 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 8648.339495918788, flagl 1, delta 15577.896872233323
+2024-12-15 22:52:28,483 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:33,360 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=16309.279832028173
+2024-12-15 22:52:33,362 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 8975.256788260656, flagl 1, delta 16309.279832028173
+2024-12-15 22:52:33,362 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:52:33,362 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.025273048386734543, rhol 0.017002628122335762
+2024-12-15 22:52:33,362 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 342.6826821139002, 0.3578674983710008, 0.042275676509070305
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.042275676509070305)]
+2024-12-15 22:52:33,362 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 277.7935661911071, sigma: 0.47802566050142714,
+2024-12-15 22:52:33,362 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:52:33,362 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:40,584 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=12149.330994622258
+2024-12-15 22:52:40,587 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 5906.674691167106, flagl 1, delta 12149.330994622258
+2024-12-15 22:52:40,588 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:48,485 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=10806.84039659584
+2024-12-15 22:52:48,488 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 5358.8871372991935, flagl 1, delta 10806.84039659584
+2024-12-15 22:52:48,488 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:52:56,190 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=11480.553634810962
+2024-12-15 22:52:56,193 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 5638.564850925111, flagl 1, delta 11480.553634810962
+2024-12-15 22:52:56,193 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:52:56,194 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.034838310907277494, rhol 0.20499018914189096
+2024-12-15 22:52:56,194 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 277.7935661911071, 0.47802566050142714, 0.23982850004916845
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.23982850004916845)]
+2024-12-15 22:52:56,194 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 390.7181594825854, sigma: 0.3663395321719415,
+2024-12-15 22:52:56,194 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:52:56,194 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:00,962 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=17827.514786892665
+2024-12-15 22:53:00,964 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 9256.900511423022, flagl 1, delta 17827.514786892665
+2024-12-15 22:53:00,965 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:05,934 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=16434.63696137649
+2024-12-15 22:53:05,936 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 8680.464609688317, flagl 1, delta 16434.63696137649
+2024-12-15 22:53:05,936 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:10,735 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=17116.69636024419
+2024-12-15 22:53:10,736 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 8968.188330466008, flagl 1, delta 17116.69636024419
+2024-12-15 22:53:10,736 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:53:10,737 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.04671067940449778, rhol 0.017015038459064703
+2024-12-15 22:53:10,737 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 390.7181594825854, 0.3663395321719415, 0.06372571786356249
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.06372571786356249)]
+2024-12-15 22:53:10,737 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 246.12119406431478, sigma: 0.33767245525323536,
+2024-12-15 22:53:10,737 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:53:10,737 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:15,334 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=15395.162902136693
+2024-12-15 22:53:15,337 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 9354.633088341843, flagl 1, delta 15395.162902136693
+2024-12-15 22:53:15,337 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:20,358 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=13676.668016816311
+2024-12-15 22:53:20,360 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 8476.730360400665, flagl 1, delta 13676.668016816311
+2024-12-15 22:53:20,360 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:25,122 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=14534.304357603853
+2024-12-15 22:53:25,126 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 8921.202003338607, flagl 1, delta 14534.304357603853
+2024-12-15 22:53:25,126 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:53:25,126 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0017337096158080642, rhol 0.018998963768804694
+2024-12-15 22:53:25,126 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 246.12119406431478, 0.33767245525323536, 0.02073267338461276
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.02073267338461276)]
+2024-12-15 22:53:25,126 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 361.52859921997094, sigma: 0.4581806881346469,
+2024-12-15 22:53:25,126 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:53:25,126 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:31,609 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=272.15, xi=[1.], delta=14343.665351472533
+2024-12-15 22:53:31,611 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 272.15 K, xi [1.], rhol 6677.901559519004, flagl 1, delta 14343.665351472533
+2024-12-15 22:53:31,611 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 323.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:38,452 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=323.15, xi=[1.], delta=13122.588706722587
+2024-12-15 22:53:38,455 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 323.15 K, xi [1.], rhol 6216.000291471112, flagl 1, delta 13122.588706722587
+2024-12-15 22:53:38,455 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 298.15 101325.0 [1.], Let's Begin!
+2024-12-15 22:53:45,140 [INFO](despasito.thermodynamics.calc:hildebrand_solubility:3786): When T=298.15, xi=[1.], delta=13725.700397131004
+2024-12-15 22:53:45,143 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1248): P 101325.0 Pa, T 298.15 K, xi [1.], rhol 6448.357049036272, flagl 1, delta 13725.700397131004
+2024-12-15 22:53:45,143 [INFO](despasito.thermodynamics.calculation_types:solubility_parameter:1227): --- Calculation solubility_parameter Complete ---
+2024-12-15 22:53:45,143 [INFO](despasito.parameter_fitting.data_classes.solubility_parameter:objective:215): Obj. breakdown for solubility_parameter: delta 0.0008460914278174144, rhol 0.1396514848893017
+2024-12-15 22:53:45,143 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:538): 
+Parameters: epsilon_CH2, sigma, Total Obj.
+Values: 361.52859921997094, 0.4581806881346469, 0.14049757631711912
+Exp. Data: ['Knovel']
+Obj. Values: [np.float64(0.14049757631711912)]
+2024-12-15 22:53:45,143 [INFO](despasito.parameter_fitting.fit_functions:compute_obj:490):  epsilon_CH2: 195.29308326069918, sigma: 0.4677267400130466,
+2024-12-15 22:53:45,143 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:53:45,143 [INFO](despasito.thermodynamics.calculation_types:_solubility_parameter_wrapper:1243): T (K), P (Pa), xi: 272.15 101325.0 [1.], Let's Begin!

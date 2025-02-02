@@ -1,0 +1,816 @@
+2024-12-15 22:54:41,742 [INFO](despasito.utils.parallelization:__init__:44): Number of cores set to 1, bypassing mp and using serial methods
+2024-12-15 22:54:41,742 [INFO](despasito.main:run:126): Begin processing input file: input_xi_318.json
+2024-12-15 22:54:41,743 [INFO](despasito.input_output.read_input:extract_calc_data:119): Cross interaction parameters have been accepted
+2024-12-15 22:54:41,743 [INFO](despasito.input_output.read_input:extract_calc_data:140): The following thermo calculation parameters have been provided: MultiprocessingObject, calculation_type, pressure_options, mole_fraction_options, Tlist, xilist
+
+2024-12-15 22:54:41,744 [INFO](despasito.main:run:144): Finish processing input file: input_xi_318.json
+2024-12-15 22:54:41,744 [INFO](despasito.equations_of_state:initiate_eos:77): Using EOS: cubic.peng_robinson
+2024-12-15 22:54:41,745 [INFO](despasito.equations_of_state:initiate_eos:108): Created cubic.peng_robinson Eos object
+2024-12-15 22:54:41,745 [INFO](despasito.main:run:172): Initializing thermodynamic calculation
+2024-12-15 22:54:41,745 [INFO](despasito.utils.parallelization:pool_job:138): Performing task serially
+2024-12-15 22:54:41,745 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.065 0.935], Let's Begin!
+2024-12-15 22:54:45,287 [INFO](despasito.thermodynamics.calc:calc_bubble_pressure:3628): Guess yi in calc_bubble_pressure with Psat: [0.09660969 0.90339031]
+2024-12-15 22:54:45,497 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.065 0.935], phil [78.95012452 43.33229148]
+2024-12-15 22:54:45,906 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11240264 0.88759736], Final Error on Smallest Fraction: [5.79301747e-05]%
+2024-12-15 22:54:45,906 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 44.668752673110774, Range [  1000.        582471.5539247]
+2024-12-15 22:54:46,017 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 582471.5539246968, T 318.15, xi [0.065 0.935], phil [0.13817835 0.07662057]
+2024-12-15 22:54:47,078 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.09375758 0.90624242], Final Error on Smallest Fraction: [1.33121885e-05]%
+2024-12-15 22:54:47,078 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 582471.5539246968, flag=0, Obj Func: -0.8882862991563433, Range [  1000.        582471.5539247]
+2024-12-15 22:54:47,078 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:54:47,078 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.        582471.5539247], Obj. Values: [44.66875267 -0.8882863 ]
+2024-12-15 22:54:47,078 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 571133.8281560206 Pa
+2024-12-15 22:54:47,080 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:54:47,191 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.065 0.935], phil [78.95012452 43.33229148]
+2024-12-15 22:54:47,607 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11240264 0.88759736], Final Error on Smallest Fraction: [6.83920584e-05]%
+2024-12-15 22:54:47,712 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 44.668752673110774, Pset: 1000.0, Pcalc: 999.9999966987212
+2024-12-15 22:54:47,712 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 582471.5539246968 Pa
+2024-12-15 22:54:47,822 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 582471.5539246968, T 318.15, xi [0.065 0.935], phil [0.13817835 0.07662057]
+2024-12-15 22:54:48,897 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.09375758 0.90624242], Final Error on Smallest Fraction: [1.33121885e-05]%
+2024-12-15 22:54:49,004 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8882862991563433, Pset: 582471.5539246968, Pcalc: 582471.5541405564
+2024-12-15 22:54:49,004 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 291735.7769623484 Pa
+2024-12-15 22:54:49,115 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 291735.7769623484, T 318.15, xi [0.065 0.935], phil [0.27324055 0.15074007]
+2024-12-15 22:54:49,758 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.10572007 0.89427993], Final Error on Smallest Fraction: [3.63649813e-05]%
+2024-12-15 22:54:49,865 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8164536845411698, Pset: 291735.7769623484, Pcalc: 291735.77691877953
+2024-12-15 22:54:49,865 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 146367.8884811742 Pa
+2024-12-15 22:54:49,972 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 146367.8884811742, T 318.15, xi [0.065 0.935], phil [0.54199876 0.29824273]
+2024-12-15 22:54:50,596 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.1092558 0.8907442], Final Error on Smallest Fraction: [1.64044339e-06]%
+2024-12-15 22:54:50,701 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6630085185030421, Pset: 146367.8884811742, Pcalc: 146367.88847977816
+2024-12-15 22:54:50,701 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 73683.9442405871 Pa
+2024-12-15 22:54:50,809 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 73683.9442405871, T 318.15, xi [0.065 0.935], phil [1.07405288 0.59025675]
+2024-12-15 22:54:51,438 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11086633 0.88913367], Final Error on Smallest Fraction: [1.56255945e-07]%
+2024-12-15 22:54:51,548 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.35622753901710924, Pset: 73683.9442405871, Pcalc: 73683.94424051847
+2024-12-15 22:54:51,548 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 37341.97212029355 Pa
+2024-12-15 22:54:51,655 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 37341.97212029355, T 318.15, xi [0.065 0.935], phil [2.11679324 1.16256041]
+2024-12-15 22:54:52,280 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11164277 0.88835723], Final Error on Smallest Fraction: [1.7747416e-08]%
+2024-12-15 22:54:52,388 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.24626318368780598, Pset: 37341.97212029355, Pcalc: 37341.97212028954
+2024-12-15 22:54:52,388 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55512.95818044032 Pa
+2024-12-15 22:54:52,498 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55512.95818044032, T 318.15, xi [0.065 0.935], phil [1.42476337 0.78274255]
+2024-12-15 22:54:52,922 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11125673 0.88874327], Final Error on Smallest Fraction: [8.40104144e-05]%
+2024-12-15 22:54:53,029 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.15365484550835595, Pset: 55512.95818044032, Pcalc: 55512.958180419526
+2024-12-15 22:54:53,029 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 46427.46515036693 Pa
+2024-12-15 22:54:53,138 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 46427.46515036693, T 318.15, xi [0.065 0.935], phil [1.70306581 0.93548769]
+2024-12-15 22:54:53,556 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11145028 0.88854972], Final Error on Smallest Fraction: [3.48231105e-05]%
+2024-12-15 22:54:53,665 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.007154209764447694, Pset: 46427.46515036693, Pcalc: 46427.46515035706
+2024-12-15 22:54:53,665 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50970.21166540362 Pa
+2024-12-15 22:54:53,772 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50970.21166540362, T 318.15, xi [0.065 0.935], phil [1.55151265 0.85230835]
+2024-12-15 22:54:54,187 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11135364 0.88864636], Final Error on Smallest Fraction: [1.91986103e-05]%
+2024-12-15 22:54:54,293 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.08042089725383084, Pset: 50970.21166540362, Pcalc: 50970.21166538906
+2024-12-15 22:54:54,293 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 48698.838407885276 Pa
+2024-12-15 22:54:54,399 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 48698.838407885276, T 318.15, xi [0.065 0.935], phil [1.62375491 0.89195822]
+2024-12-15 22:54:54,824 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11140199 0.88859801], Final Error on Smallest Fraction: [9.15149929e-06]%
+2024-12-15 22:54:54,931 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.03867681742067952, Pset: 48698.838407885276, Pcalc: 48698.83840787324
+2024-12-15 22:54:54,931 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 47563.15177912611 Pa
+2024-12-15 22:54:55,039 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 47563.15177912611, T 318.15, xi [0.065 0.935], phil [1.66246349 0.91320327]
+2024-12-15 22:54:55,456 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11142614 0.88857386], Final Error on Smallest Fraction: [4.45800015e-06]%
+2024-12-15 22:54:55,561 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.016308766362602145, Pset: 47563.15177912611, Pcalc: 47563.15177911519
+2024-12-15 22:54:55,561 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 46995.308464746515 Pa
+2024-12-15 22:54:55,669 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 46995.308464746515, T 318.15, xi [0.065 0.935], phil [1.68251935 0.92421085]
+2024-12-15 22:54:56,090 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11143821 0.88856179], Final Error on Smallest Fraction: [2.19967229e-06]%
+2024-12-15 22:54:56,197 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.004719105092546361, Pset: 46995.308464746515, Pcalc: 46995.30846473613
+2024-12-15 22:54:56,197 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 46711.38680755672 Pa
+2024-12-15 22:54:56,306 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 46711.38680755672, T 318.15, xi [0.065 0.935], phil [1.69273014 0.929815  ]
+2024-12-15 22:54:56,723 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11144425 0.88855575], Final Error on Smallest Fraction: [1.09251786e-06]%
+2024-12-15 22:54:56,828 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.001181449106985255, Pset: 46711.38680755672, Pcalc: 46711.386807546594
+2024-12-15 22:54:56,828 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 46853.34763615162 Pa
+2024-12-15 22:54:56,937 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 46853.34763615162, T 318.15, xi [0.065 0.935], phil [1.68760927 0.92700443]
+2024-12-15 22:54:57,353 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11144123 0.88855877], Final Error on Smallest Fraction: [5.47993453e-07]%
+2024-12-15 22:54:57,457 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.001777771759370328, Pset: 46853.34763615162, Pcalc: 46853.34763614137
+2024-12-15 22:54:57,458 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 46782.36722185417 Pa
+2024-12-15 22:54:57,565 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 46782.36722185417, T 318.15, xi [0.065 0.935], phil [1.69016582 0.92840758]
+2024-12-15 22:54:57,984 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11144274 0.88855726], Final Error on Smallest Fraction: [2.7356303e-07]%
+2024-12-15 22:54:58,089 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0003004074451218308, Pset: 46782.36722185417, Pcalc: 46782.36722184397
+2024-12-15 22:54:58,089 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 46746.877014705446 Pa
+2024-12-15 22:54:58,196 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 46746.877014705446, T 318.15, xi [0.065 0.935], phil [1.691447   0.92911076]
+2024-12-15 22:54:58,617 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11144349 0.88855651], Final Error on Smallest Fraction: [1.36667269e-07]%
+2024-12-15 22:54:58,723 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.00043995802227758674, Pset: 46746.877014705446, Pcalc: 46746.87701469528
+2024-12-15 22:54:58,723 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 46764.62211827981 Pa
+2024-12-15 22:54:58,831 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 46764.62211827981, T 318.15, xi [0.065 0.935], phil [1.69080617 0.92875904]
+2024-12-15 22:54:59,252 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.11144312 0.88855688], Final Error on Smallest Fraction: [6.83607263e-08]%
+2024-12-15 22:54:59,361 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 6.963474657983859e-05, Pset: 46764.62211827981, Pcalc: 46764.62211826963
+2024-12-15 22:54:59,361 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.065 0.935], calculation did not produce a valid result.
+2024-12-15 22:54:59,361 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:54:59,361 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.159 0.841], Let's Begin!
+2024-12-15 22:55:03,087 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.159 0.841], phil [77.29893999 43.44905852]
+2024-12-15 22:55:03,678 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.25165964 0.74834036], Final Error on Smallest Fraction: [3.37461348e-09]%
+2024-12-15 22:55:03,678 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 47.852706136326645, Range [  1000.         605411.26270233]
+2024-12-15 22:55:03,783 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 605411.2627023269, T 318.15, xi [0.159 0.841], phil [0.1302538  0.07400248]
+2024-12-15 22:55:04,792 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.21633202 0.78366798], Final Error on Smallest Fraction: [4.17193473e-05]%
+2024-12-15 22:55:04,792 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 605411.2627023269, flag=0, Obj Func: -0.8858496424151986, Range [  1000.         605411.26270233]
+2024-12-15 22:55:04,792 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:55:04,792 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.         605411.26270233], Obj. Values: [47.85270614 -0.88584964]
+2024-12-15 22:55:04,792 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 594425.7607238275 Pa
+2024-12-15 22:55:04,794 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:55:04,896 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.159 0.841], phil [77.29893999 43.44905852]
+2024-12-15 22:55:05,491 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.25165964 0.74834036], Final Error on Smallest Fraction: [8.50204604e-10]%
+2024-12-15 22:55:05,592 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 47.852706136326645, Pset: 1000.0, Pcalc: 999.9999940927671
+2024-12-15 22:55:05,592 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 605411.2627023269 Pa
+2024-12-15 22:55:05,697 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 605411.2627023269, T 318.15, xi [0.159 0.841], phil [0.1302538  0.07400248]
+2024-12-15 22:55:06,717 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.21633202 0.78366798], Final Error on Smallest Fraction: [4.17193473e-05]%
+2024-12-15 22:55:06,822 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8858496424151986, Pset: 605411.2627023269, Pcalc: 605411.262744245
+2024-12-15 22:55:06,822 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 303205.63135116344 Pa
+2024-12-15 22:55:06,927 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 303205.63135116344, T 318.15, xi [0.159 0.841], phil [0.25749636 0.14551376]
+2024-12-15 22:55:07,724 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.23881666 0.76118334], Final Error on Smallest Fraction: [4.16183995e-07]%
+2024-12-15 22:55:07,825 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8116257418894259, Pset: 303205.63135116344, Pcalc: 303205.6313092152
+2024-12-15 22:55:07,825 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 152102.81567558172 Pa
+2024-12-15 22:55:07,929 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 152102.81567558172, T 318.15, xi [0.159 0.841], phil [0.51074483 0.28785533]
+2024-12-15 22:55:08,535 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24563289 0.75436711], Final Error on Smallest Fraction: [5.44761492e-06]%
+2024-12-15 22:55:08,639 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6535857901476632, Pset: 152102.81567558172, Pcalc: 152102.81567422117
+2024-12-15 22:55:08,639 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 76551.40783779086 Pa
+2024-12-15 22:55:08,743 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 76551.40783779086, T 318.15, xi [0.159 0.841], phil [1.01228843 0.5697613 ]
+2024-12-15 22:55:09,351 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.2487224 0.7512776], Final Error on Smallest Fraction: [5.15584589e-07]%
+2024-12-15 22:55:09,456 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.3375930082348425, Pset: 76551.40783779086, Pcalc: 76551.40783772377
+2024-12-15 22:55:09,456 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 38775.70391889543 Pa
+2024-12-15 22:55:09,560 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 38775.70391889543, T 318.15, xi [0.159 0.841], phil [1.99597834 1.12267383]
+2024-12-15 22:55:10,164 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.25020809 0.74979191], Final Error on Smallest Fraction: [5.83127554e-08]%
+2024-12-15 22:55:10,265 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.2834216121303679, Pset: 38775.70391889543, Pcalc: 38775.703918891515
+2024-12-15 22:55:10,265 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 57663.55587834315 Pa
+2024-12-15 22:55:10,369 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 57663.55587834315, T 318.15, xi [0.159 0.841], phil [1.34302801 0.75566325]
+2024-12-15 22:55:10,976 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24946974 0.75053026], Final Error on Smallest Fraction: [6.68884712e-08]%
+2024-12-15 22:55:11,077 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.1288596689701752, Pset: 57663.55587834315, Pcalc: 57663.555878322826
+2024-12-15 22:55:11,077 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 48219.629898619285 Pa
+2024-12-15 22:55:11,182 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 48219.629898619285, T 318.15, xi [0.159 0.841], phil [1.60556219 0.90322851]
+2024-12-15 22:55:11,583 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24984001 0.75015999], Final Error on Smallest Fraction: [5.83166467e-05]%
+2024-12-15 22:55:11,684 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.036888287508591855, Pset: 48219.629898619285, Pcalc: 48219.62989860963
+2024-12-15 22:55:11,684 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 52941.59288848122 Pa
+2024-12-15 22:55:11,788 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 52941.59288848122, T 318.15, xi [0.159 0.841], phil [1.46258712 0.82286504]
+2024-12-15 22:55:12,189 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24965515 0.75034485], Final Error on Smallest Fraction: [3.21488435e-05]%
+2024-12-15 22:55:12,290 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.05338187017389795, Pset: 52941.59288848122, Pcalc: 52941.59288846699
+2024-12-15 22:55:12,290 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50580.61139355025 Pa
+2024-12-15 22:55:12,394 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50580.61139355025, T 318.15, xi [0.159 0.841], phil [1.53073778 0.86117118]
+2024-12-15 22:55:12,790 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24974765 0.75025235], Final Error on Smallest Fraction: [1.53250969e-05]%
+2024-12-15 22:55:12,892 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.010354758551542553, Pset: 50580.61139355025, Pcalc: 50580.61139353848
+2024-12-15 22:55:12,892 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 49400.12064608477 Pa
+2024-12-15 22:55:12,996 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 49400.12064608477, T 318.15, xi [0.159 0.841], phil [1.56725596 0.88169733]
+2024-12-15 22:55:13,397 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24979385 0.75020615], Final Error on Smallest Fraction: [7.46469381e-06]%
+2024-12-15 22:55:13,498 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.012701993451117444, Pset: 49400.12064608477, Pcalc: 49400.120646074094
+2024-12-15 22:55:13,498 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 49990.366019817506 Pa
+2024-12-15 22:55:13,602 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 49990.366019817506, T 318.15, xi [0.159 0.841], phil [1.54878128 0.87131308]
+2024-12-15 22:55:14,005 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24977075 0.75022925], Final Error on Smallest Fraction: [3.77893006e-06]%
+2024-12-15 22:55:14,106 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0010374258872865028, Pset: 49990.366019817506, Pcalc: 49990.3660198063
+2024-12-15 22:55:14,106 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50285.48870668388 Pa
+2024-12-15 22:55:14,210 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50285.48870668388, T 318.15, xi [0.159 0.841], phil [1.53970658 0.86621237]
+2024-12-15 22:55:14,610 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.2497592 0.7502408], Final Error on Smallest Fraction: [1.90182971e-06]%
+2024-12-15 22:55:14,711 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.004692114756230326, Pset: 50285.48870668388, Pcalc: 50285.48870667239
+2024-12-15 22:55:14,711 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50137.92736325069 Pa
+2024-12-15 22:55:14,815 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50137.92736325069, T 318.15, xi [0.159 0.841], phil [1.54423058 0.86875522]
+2024-12-15 22:55:15,210 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24976498 0.75023502], Final Error on Smallest Fraction: [9.47998768e-07]%
+2024-12-15 22:55:15,310 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0018357803711266385, Pset: 50137.92736325069, Pcalc: 50137.927363239345
+2024-12-15 22:55:15,310 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50064.1466915341 Pa
+2024-12-15 22:55:15,416 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50064.1466915341, T 318.15, xi [0.159 0.841], phil [1.54650258 0.87003226]
+2024-12-15 22:55:15,812 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24976786 0.75023214], Final Error on Smallest Fraction: [4.73226936e-07]%
+2024-12-15 22:55:15,914 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0004012955501179194, Pset: 50064.1466915341, Pcalc: 50064.146691522816
+2024-12-15 22:55:15,914 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50027.2563556758 Pa
+2024-12-15 22:55:16,018 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50027.2563556758, T 318.15, xi [0.159 0.841], phil [1.54764109 0.8706722 ]
+2024-12-15 22:55:16,419 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24976931 0.75023069], Final Error on Smallest Fraction: [2.36420343e-07]%
+2024-12-15 22:55:16,534 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0003175344200148089, Pset: 50027.2563556758, Pcalc: 50027.256355664555
+2024-12-15 22:55:16,534 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50045.70152360495 Pa
+2024-12-15 22:55:16,638 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50045.70152360495, T 318.15, xi [0.159 0.841], phil [1.54707162 0.87035211]
+2024-12-15 22:55:17,037 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.24976859 0.75023141], Final Error on Smallest Fraction: [1.18255635e-07]%
+2024-12-15 22:55:17,139 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -4.201310548257453e-05, Pset: 50045.70152360495, Pcalc: 50045.70152359369
+2024-12-15 22:55:17,139 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.159 0.841], calculation did not produce a valid result.
+2024-12-15 22:55:17,140 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:55:17,140 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.255 0.745], Let's Begin!
+2024-12-15 22:55:20,881 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.255 0.745], phil [75.63131049 43.69866843]
+2024-12-15 22:55:26,892 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.37197649 0.62802351], Final Error on Smallest Fraction: [2.95654173e-06]%
+2024-12-15 22:55:26,892 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 50.86320243884285, Range [  1000.         630174.64620894]
+2024-12-15 22:55:26,994 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 630174.6462089388, T 318.15, xi [0.255 0.745], phil [0.12252914 0.07159372]
+2024-12-15 22:55:27,971 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.32712119 0.67287881], Final Error on Smallest Fraction: [6.52184631e-05]%
+2024-12-15 22:55:27,971 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 630174.6462089388, flag=0, Obj Func: -0.8840306970955609, Range [  1000.         630174.64620894]
+2024-12-15 22:55:27,971 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:55:27,971 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.         630174.64620894], Obj. Values: [50.86320244 -0.8840307 ]
+2024-12-15 22:55:27,971 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 619426.0579777227 Pa
+2024-12-15 22:55:27,973 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:55:28,073 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.255 0.745], phil [75.63131049 43.69866843]
+2024-12-15 22:55:28,644 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.37197649 0.62802351], Final Error on Smallest Fraction: [1.12369432e-09]%
+2024-12-15 22:55:28,739 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 50.86320243884285, Pset: 1000.0, Pcalc: 999.9999919059799
+2024-12-15 22:55:28,739 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 630174.6462089388 Pa
+2024-12-15 22:55:28,842 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 630174.6462089388, T 318.15, xi [0.255 0.745], phil [0.12252914 0.07159372]
+2024-12-15 22:55:29,819 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.32712119 0.67287881], Final Error on Smallest Fraction: [6.52184631e-05]%
+2024-12-15 22:55:29,918 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8840306970955609, Pset: 630174.6462089388, Pcalc: 630174.6462326376
+2024-12-15 22:55:29,918 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 315587.3231044694 Pa
+2024-12-15 22:55:30,018 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 315587.3231044694, T 318.15, xi [0.255 0.745], phil [0.24214898 0.14069721]
+2024-12-15 22:55:30,788 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.35568555 0.64431445], Final Error on Smallest Fraction: [7.82377818e-07]%
+2024-12-15 22:55:30,886 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8081717461864288, Pset: 315587.3231044694, Pcalc: 315587.3230626573
+2024-12-15 22:55:30,886 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 158293.6615522347 Pa
+2024-12-15 22:55:30,986 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 158293.6615522347, T 318.15, xi [0.255 0.745], phil [0.48027357 0.27827477]
+2024-12-15 22:55:31,570 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36435777 0.63564223], Final Error on Smallest Fraction: [7.85070073e-06]%
+2024-12-15 22:55:31,667 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6468961219404697, Pset: 158293.6615522347, Pcalc: 158293.66155087008
+2024-12-15 22:55:31,667 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 79646.83077611735 Pa
+2024-12-15 22:55:31,768 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 79646.83077611735, T 318.15, xi [0.255 0.745], phil [0.95204724 0.55085142]
+2024-12-15 22:55:32,338 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36826939 0.63173061], Final Error on Smallest Fraction: [7.37345163e-07]%
+2024-12-15 22:55:32,436 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.3243628622117938, Pset: 79646.83077611735, Pcalc: 79646.83077605
+2024-12-15 22:55:32,436 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 40323.415388058675 Pa
+2024-12-15 22:55:32,536 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 40323.415388058675, T 318.15, xi [0.255 0.745], phil [1.87804944 1.08587123]
+2024-12-15 22:55:33,109 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.37014593 0.62985407], Final Error on Smallest Fraction: [8.30110412e-08]%
+2024-12-15 22:55:33,209 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.30996439223203476, Pset: 40323.415388058675, Pcalc: 40323.41538805475
+2024-12-15 22:55:33,209 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 59985.123082088016 Pa
+2024-12-15 22:55:33,311 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 59985.123082088016, T 318.15, xi [0.255 0.745], phil [1.26328725 0.73067754]
+2024-12-15 22:55:33,878 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.3692137 0.6307863], Final Error on Smallest Fraction: [9.53018787e-08]%
+2024-12-15 22:55:33,975 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.11122475934774423, Pset: 59985.123082088016, Pcalc: 59985.12308206761
+2024-12-15 22:55:33,975 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50154.26923507334 Pa
+2024-12-15 22:55:34,075 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50154.26923507334, T 318.15, xi [0.255 0.745], phil [1.51041779 0.87346312]
+2024-12-15 22:55:34,454 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36968129 0.63031871], Final Error on Smallest Fraction: [6.42912565e-05]%
+2024-12-15 22:55:34,551 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.05807103278283776, Pset: 50154.26923507334, Pcalc: 50154.269235063664
+2024-12-15 22:55:34,551 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55069.69615858068 Pa
+2024-12-15 22:55:34,652 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55069.69615858068, T 318.15, xi [0.255 0.745], phil [1.37582328 0.79569791]
+2024-12-15 22:55:35,032 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36944786 0.63055214], Final Error on Smallest Fraction: [3.54420953e-05]%
+2024-12-15 22:55:35,128 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.034136899697408074, Pset: 55069.69615858068, Pcalc: 55069.696158566396
+2024-12-15 22:55:35,128 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 52611.982696827006 Pa
+2024-12-15 22:55:35,231 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 52611.982696827006, T 318.15, xi [0.255 0.745], phil [1.43997681 0.83276415]
+2024-12-15 22:55:35,615 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36956467 0.63043533], Final Error on Smallest Fraction: [1.68950936e-05]%
+2024-12-15 22:55:35,712 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.009812192641880824, Pset: 52611.982696827006, Pcalc: 52611.982696815205
+2024-12-15 22:55:35,712 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 53840.83942770384 Pa
+2024-12-15 22:55:35,812 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 53840.83942770384, T 318.15, xi [0.255 0.745], phil [1.40716793 0.81380803]
+2024-12-15 22:55:36,199 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36950629 0.63049371], Final Error on Smallest Fraction: [8.65380458e-06]%
+2024-12-15 22:55:36,298 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.012664185624847057, Pset: 53840.83942770384, Pcalc: 53840.83942769085
+2024-12-15 22:55:36,298 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 53226.411062265426 Pa
+2024-12-15 22:55:36,398 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 53226.411062265426, T 318.15, xi [0.255 0.745], phil [1.423383   0.82317668]
+2024-12-15 22:55:36,783 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36953548 0.63046452], Final Error on Smallest Fraction: [4.27530913e-06]%
+2024-12-15 22:55:36,882 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0015557991851539166, Pset: 53226.411062265426, Pcalc: 53226.411062253035
+2024-12-15 22:55:36,882 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 52919.196879546216 Pa
+2024-12-15 22:55:36,982 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 52919.196879546216, T 318.15, xi [0.255 0.745], phil [1.43163174 0.82794258]
+2024-12-15 22:55:37,386 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36955008 0.63044992], Final Error on Smallest Fraction: [2.12392411e-06]%
+2024-12-15 22:55:37,488 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.004095180901739104, Pset: 52919.196879546216, Pcalc: 52919.19687953411
+2024-12-15 22:55:37,488 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 53072.80397090582 Pa
+2024-12-15 22:55:37,588 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 53072.80397090582, T 318.15, xi [0.255 0.745], phil [1.42749543 0.82555273]
+2024-12-15 22:55:37,994 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36954278 0.63045722], Final Error on Smallest Fraction: [1.0651811e-06]%
+2024-12-15 22:55:38,097 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0012615085681035865, Pset: 53072.80397090582, Pcalc: 53072.80397089357
+2024-12-15 22:55:38,097 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 53149.607516585624 Pa
+2024-12-15 22:55:38,197 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 53149.607516585624, T 318.15, xi [0.255 0.745], phil [1.42543625 0.82436299]
+2024-12-15 22:55:38,594 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36953913 0.63046087], Final Error on Smallest Fraction: [5.33449411e-07]%
+2024-12-15 22:55:38,696 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.00014918201337987824, Pset: 53149.607516585624, Pcalc: 53149.607516573305
+2024-12-15 22:55:38,696 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 53111.20574374572 Pa
+2024-12-15 22:55:38,798 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 53111.20574374572, T 318.15, xi [0.255 0.745], phil [1.4264651  0.82495743]
+2024-12-15 22:55:39,200 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36954096 0.63045904], Final Error on Smallest Fraction: [2.66523077e-07]%
+2024-12-15 22:55:39,307 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0005556529966925794, Pset: 53111.20574374572, Pcalc: 53111.20574373343
+2024-12-15 22:55:39,307 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 53130.40663016567 Pa
+2024-12-15 22:55:39,417 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 53130.40663016567, T 318.15, xi [0.255 0.745], phil [1.42595049 0.8246601 ]
+2024-12-15 22:55:39,816 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.36954005 0.63045995], Final Error on Smallest Fraction: [1.33311889e-07]%
+2024-12-15 22:55:39,915 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.00020310805979883995, Pset: 53130.40663016567, Pcalc: 53130.40663015337
+2024-12-15 22:55:39,915 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.255 0.745], calculation did not produce a valid result.
+2024-12-15 22:55:39,915 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:55:39,915 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.348 0.652], Let's Begin!
+2024-12-15 22:55:43,674 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.348 0.652], phil [74.04939173 44.10109417]
+2024-12-15 22:55:44,226 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.47258522 0.52741478], Final Error on Smallest Fraction: [2.31285294e-09]%
+2024-12-15 22:55:44,226 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 53.5449640287022, Range [  1000.         655542.03337762]
+2024-12-15 22:55:44,323 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 655542.0333776155, T 318.15, xi [0.348 0.652], phil [0.11541464 0.06954795]
+2024-12-15 22:55:45,250 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.42309114 0.57690886], Final Error on Smallest Fraction: [8.34200466e-05]%
+2024-12-15 22:55:45,250 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 655542.0333776155, flag=0, Obj Func: -0.8829007381980573, Range [  1000.         655542.03337762]
+2024-12-15 22:55:45,250 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:55:45,251 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.         655542.03337762], Obj. Values: [53.54496403 -0.88290074]
+2024-12-15 22:55:45,251 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 644924.3902471027 Pa
+2024-12-15 22:55:45,252 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:55:45,350 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.348 0.652], phil [74.04939173 44.10109417]
+2024-12-15 22:55:45,899 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.47258522 0.52741478], Final Error on Smallest Fraction: [1.1108803e-09]%
+2024-12-15 22:55:45,991 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 53.5449640287022, Pset: 1000.0, Pcalc: 999.9999901234531
+2024-12-15 22:55:45,991 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 655542.0333776155 Pa
+2024-12-15 22:55:46,089 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 655542.0333776155, T 318.15, xi [0.348 0.652], phil [0.11541464 0.06954795]
+2024-12-15 22:55:47,055 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.42309114 0.57690886], Final Error on Smallest Fraction: [8.34200466e-05]%
+2024-12-15 22:55:47,150 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8829007381980571, Pset: 655542.0333776155, Pcalc: 655542.0333990061
+2024-12-15 22:55:47,150 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 328271.01668880775 Pa
+2024-12-15 22:55:47,249 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 328271.01668880775, T 318.15, xi [0.348 0.652], phil [0.22801333 0.13659595]
+2024-12-15 22:55:47,980 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.45476501 0.54523499], Final Error on Smallest Fraction: [9.55049978e-07]%
+2024-12-15 22:55:48,073 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8061569839291283, Pset: 328271.01668880775, Pcalc: 328271.016645975
+2024-12-15 22:55:48,074 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 164635.50834440388 Pa
+2024-12-15 22:55:48,172 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 164635.50834440388, T 318.15, xi [0.348 0.652], phil [0.45220354 0.27010782]
+2024-12-15 22:55:48,719 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46427856 0.53572144], Final Error on Smallest Fraction: [8.400266e-06]%
+2024-12-15 22:55:48,811 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6430418759008122, Pset: 164635.50834440388, Pcalc: 164635.50834300398
+2024-12-15 22:55:48,811 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 82817.75417220194 Pa
+2024-12-15 22:55:48,908 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 82817.75417220194, T 318.15, xi [0.348 0.652], phil [0.89653266 0.53472658]
+2024-12-15 22:55:49,460 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46854942 0.53145058], Final Error on Smallest Fraction: [7.82327305e-07]%
+2024-12-15 22:55:49,552 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.3167275119166828, Pset: 82817.75417220194, Pcalc: 82817.75417213289
+2024-12-15 22:55:49,552 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 41908.87708610097 Pa
+2024-12-15 22:55:49,649 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 41908.87708610097, T 318.15, xi [0.348 0.652], phil [1.76929205 1.05449936]
+2024-12-15 22:55:50,196 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.47059379 0.52940621], Final Error on Smallest Fraction: [8.76580179e-08]%
+2024-12-15 22:55:50,292 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.32548920657811875, Pset: 41908.87708610097, Pcalc: 41908.87708609694
+2024-12-15 22:55:50,292 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62363.31562915145 Pa
+2024-12-15 22:55:50,388 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62363.31562915145, T 318.15, xi [0.348 0.652], phil [1.18978466 0.70937291]
+2024-12-15 22:55:50,937 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46957855 0.53042145], Final Error on Smallest Fraction: [1.00743037e-07]%
+2024-12-15 22:55:51,029 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.10100615436108262, Pset: 62363.31562915145, Pcalc: 62363.31562913054
+2024-12-15 22:55:51,029 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 52136.096357626215 Pa
+2024-12-15 22:55:51,127 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 52136.096357626215, T 318.15, xi [0.348 0.652], phil [1.42269906 0.84808535]
+2024-12-15 22:55:51,494 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.47008787 0.52991213], Final Error on Smallest Fraction: [6.11616751e-05]%
+2024-12-15 22:55:51,588 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0703902442607558, Pset: 52136.096357626215, Pcalc: 52136.096357616305
+2024-12-15 22:55:51,588 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 57249.70599338884 Pa
+2024-12-15 22:55:51,685 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 57249.70599338884, T 318.15, xi [0.348 0.652], phil [1.29583975 0.77253413]
+2024-12-15 22:55:52,047 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46983364 0.53016636], Final Error on Smallest Fraction: [3.37178e-05]%
+2024-12-15 22:55:52,139 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.022967156848121673, Pset: 57249.70599338884, Pcalc: 57249.70599337421
+2024-12-15 22:55:52,139 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 54692.901175507526 Pa
+2024-12-15 22:55:52,235 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 54692.901175507526, T 318.15, xi [0.348 0.652], phil [1.35630417 0.80854379]
+2024-12-15 22:55:52,603 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46996086 0.53003914], Final Error on Smallest Fraction: [1.60729229e-05]%
+2024-12-15 22:55:52,697 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.02152820636661179, Pset: 54692.901175507526, Pcalc: 54692.901175495426
+2024-12-15 22:55:52,697 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55971.30358444818 Pa
+2024-12-15 22:55:52,792 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55971.30358444818, T 318.15, xi [0.348 0.652], phil [1.32538145 0.79012772]
+2024-12-15 22:55:53,153 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46989727 0.53010273], Final Error on Smallest Fraction: [8.23273778e-06]%
+2024-12-15 22:55:53,245 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.001227909044389186, Pset: 55971.30358444818, Pcalc: 55971.30358443487
+2024-12-15 22:55:53,245 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55332.102379977856 Pa
+2024-12-15 22:55:53,343 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55332.102379977856, T 318.15, xi [0.348 0.652], phil [1.3406642  0.79922938]
+2024-12-15 22:55:53,720 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46992907 0.53007093], Final Error on Smallest Fraction: [4.06727269e-06]%
+2024-12-15 22:55:53,812 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.010018635177790225, Pset: 55332.102379977856, Pcalc: 55332.10237996516
+2024-12-15 22:55:53,812 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55651.70298221302 Pa
+2024-12-15 22:55:53,909 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55651.70298221302, T 318.15, xi [0.348 0.652], phil [1.33297894 0.79465242]
+2024-12-15 22:55:54,274 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46991317 0.53008683], Final Error on Smallest Fraction: [2.045907e-06]%
+2024-12-15 22:55:54,367 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.00436305113589186, Pset: 55651.70298221302, Pcalc: 55651.702982200004
+2024-12-15 22:55:54,367 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55811.5032833306 Pa
+2024-12-15 22:55:54,466 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55811.5032833306, T 318.15, xi [0.348 0.652], phil [1.32916932 0.79238359]
+2024-12-15 22:55:54,829 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46990522 0.53009478], Final Error on Smallest Fraction: [1.02623956e-06]%
+2024-12-15 22:55:54,922 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0015595624489403992, Pset: 55811.5032833306, Pcalc: 55811.50328331743
+2024-12-15 22:55:54,923 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55891.40343388939 Pa
+2024-12-15 22:55:55,021 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55891.40343388939, T 318.15, xi [0.348 0.652], phil [1.32727267 0.79125404]
+2024-12-15 22:55:55,384 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46990125 0.53009875], Final Error on Smallest Fraction: [5.13941353e-07]%
+2024-12-15 22:55:55,477 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.00016383313951795486, Pset: 55891.40343388939, Pcalc: 55891.40343387614
+2024-12-15 22:55:55,477 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55931.35350916879 Pa
+2024-12-15 22:55:55,574 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55931.35350916879, T 318.15, xi [0.348 0.652], phil [1.32632638 0.79069048]
+2024-12-15 22:55:55,942 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46989926 0.53010074], Final Error on Smallest Fraction: [2.57176113e-07]%
+2024-12-15 22:55:56,035 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0005325352751837098, Pset: 55931.35350916879, Pcalc: 55931.3535091555
+2024-12-15 22:55:56,035 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 55911.37847152909 Pa
+2024-12-15 22:55:56,132 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 55911.37847152909, T 318.15, xi [0.348 0.652], phil [1.32679936 0.79097216]
+2024-12-15 22:55:56,498 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.46990026 0.53009974], Final Error on Smallest Fraction: [1.2853987e-07]%
+2024-12-15 22:55:56,591 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.00018447553177547427, Pset: 55911.37847152909, Pcalc: 55911.378471515825
+2024-12-15 22:55:56,591 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.348 0.652], calculation did not produce a valid result.
+2024-12-15 22:55:56,591 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:55:56,591 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.443 0.557], Let's Begin!
+2024-12-15 22:56:00,320 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.443 0.557], phil [72.48813314 44.72305672]
+2024-12-15 22:56:00,838 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.5631035 0.4368965], Final Error on Smallest Fraction: [2.20444181e-09]%
+2024-12-15 22:56:00,838 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 56.044957023497474, Range [  1000.        682954.9814175]
+2024-12-15 22:56:00,930 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 682954.9814175006, T 318.15, xi [0.443 0.557], phil [0.10853899 0.06779411]
+2024-12-15 22:56:02,013 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.51208735 0.48791265], Final Error on Smallest Fraction: [6.38329262e-06]%
+2024-12-15 22:56:02,013 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 682954.9814175006, flag=0, Obj Func: -0.8823627459977595, Range [  1000.        682954.9814175]
+2024-12-15 22:56:02,013 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:56:02,013 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.        682954.9814175], Obj. Values: [56.04495702 -0.88236275]
+2024-12-15 22:56:02,014 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 672384.8075100187 Pa
+2024-12-15 22:56:02,015 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:56:02,108 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.443 0.557], phil [72.48813314 44.72305672]
+2024-12-15 22:56:02,631 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.5631035 0.4368965], Final Error on Smallest Fraction: [1.20663073e-09]%
+2024-12-15 22:56:02,720 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 56.044957023497474, Pset: 1000.0, Pcalc: 999.9999885555479
+2024-12-15 22:56:02,720 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 682954.9814175006 Pa
+2024-12-15 22:56:02,816 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 682954.9814175006, T 318.15, xi [0.443 0.557], phil [0.10853899 0.06779411]
+2024-12-15 22:56:03,900 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.51208735 0.48791265], Final Error on Smallest Fraction: [6.38329262e-06]%
+2024-12-15 22:56:03,992 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8823627459977595, Pset: 682954.9814175006, Pcalc: 682954.981443892
+2024-12-15 22:56:03,992 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 341977.4907087503 Pa
+2024-12-15 22:56:04,089 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 341977.4907087503, T 318.15, xi [0.443 0.557], phil [0.21435138 0.13306498]
+2024-12-15 22:56:04,793 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.54500911 0.45499089], Final Error on Smallest Fraction: [1.11755462e-06]%
+2024-12-15 22:56:04,883 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8053552831576675, Pset: 341977.4907087503, Pcalc: 341977.4906638654
+2024-12-15 22:56:04,883 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 171488.74535437516 Pa
+2024-12-15 22:56:04,978 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 171488.74535437516, T 318.15, xi [0.443 0.557], phil [0.42506964 0.26306413]
+2024-12-15 22:56:05,506 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.55469756 0.44530244], Final Error on Smallest Fraction: [9.52943254e-06]%
+2024-12-15 22:56:05,597 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6415656293327743, Pset: 171488.74535437516, Pcalc: 171488.74535291165
+2024-12-15 22:56:05,597 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 86244.37267718758 Pa
+2024-12-15 22:56:05,689 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 86244.37267718758, T 318.15, xi [0.443 0.557], phil [0.84285067 0.52081541]
+2024-12-15 22:56:06,206 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.55902558 0.44097442], Final Error on Smallest Fraction: [8.94570747e-07]%
+2024-12-15 22:56:06,294 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.3137709487332476, Pset: 86244.37267718758, Pcalc: 86244.37267711548
+2024-12-15 22:56:06,294 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 43622.18633859379 Pa
+2024-12-15 22:56:06,388 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 43622.18633859379, T 318.15, xi [0.443 0.557], phil [1.66405146 1.02746175]
+2024-12-15 22:56:06,906 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56109272 0.43890728], Final Error on Smallest Fraction: [1.00560052e-07]%
+2024-12-15 22:56:06,993 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.3318247931279068, Pset: 43622.18633859379, Pcalc: 43622.18633858961
+2024-12-15 22:56:06,993 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64933.279507890686 Pa
+2024-12-15 22:56:07,085 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64933.279507890686, T 318.15, xi [0.443 0.557], phil [1.11869181 0.69099757]
+2024-12-15 22:56:07,609 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56006654 0.43993346], Final Error on Smallest Fraction: [1.15234568e-07]%
+2024-12-15 22:56:07,700 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.09698303534656416, Pset: 64933.279507890686, Pcalc: 64933.279507868865
+2024-12-15 22:56:07,700 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 54277.732923242234 Pa
+2024-12-15 22:56:07,794 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 54277.732923242234, T 318.15, xi [0.443 0.557], phil [1.33784035 0.82620302]
+2024-12-15 22:56:08,138 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56058143 0.43941857], Final Error on Smallest Fraction: [6.80777814e-05]%
+2024-12-15 22:56:08,227 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.07531017598179379, Pset: 54277.732923242234, Pcalc: 54277.732923231895
+2024-12-15 22:56:08,227 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 59605.50621556646 Pa
+2024-12-15 22:56:08,318 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 59605.50621556646, T 318.15, xi [0.443 0.557], phil [1.21847189 0.75255767]
+2024-12-15 22:56:08,663 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56032444 0.43967556], Final Error on Smallest Fraction: [3.74937757e-05]%
+2024-12-15 22:56:08,749 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.01854112611069403, Pset: 59605.50621556646, Pcalc: 59605.50621555119
+2024-12-15 22:56:08,750 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 56941.61956940435 Pa
+2024-12-15 22:56:08,841 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 56941.61956940435, T 318.15, xi [0.443 0.557], phil [1.27536392 0.78765767]
+2024-12-15 22:56:09,193 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56045305 0.43954695], Final Error on Smallest Fraction: [1.78816918e-05]%
+2024-12-15 22:56:09,283 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.02618802019905897, Pset: 56941.61956940435, Pcalc: 56941.61956939173
+2024-12-15 22:56:09,283 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58273.5628924854 Pa
+2024-12-15 22:56:09,379 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58273.5628924854, T 318.15, xi [0.443 0.557], phil [1.24626772 0.76970653]
+2024-12-15 22:56:09,729 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56038878 0.43961122], Final Error on Smallest Fraction: [9.15695985e-06]%
+2024-12-15 22:56:09,817 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.003311973988242567, Pset: 58273.5628924854, Pcalc: 58273.562892471506
+2024-12-15 22:56:09,817 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58939.53455402593 Pa
+2024-12-15 22:56:09,913 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58939.53455402593, T 318.15, xi [0.443 0.557], phil [1.23221277 0.76103522]
+2024-12-15 22:56:10,261 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56035662 0.43964338], Final Error on Smallest Fraction: [4.63668362e-06]%
+2024-12-15 22:56:10,348 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.007738109954505523, Pset: 58939.53455402593, Pcalc: 58939.534554011356
+2024-12-15 22:56:10,348 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58606.54872325567 Pa
+2024-12-15 22:56:10,443 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58606.54872325567, T 318.15, xi [0.443 0.557], phil [1.23920032 0.76534624]
+2024-12-15 22:56:10,795 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.5603727 0.4396273], Final Error on Smallest Fraction: [2.30480016e-06]%
+2024-12-15 22:56:10,884 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.002244477861108596, Pset: 58606.54872325567, Pcalc: 58606.548723241445
+2024-12-15 22:56:10,884 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58440.055807870536 Pa
+2024-12-15 22:56:10,978 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58440.055807870536, T 318.15, xi [0.443 0.557], phil [1.24272395 0.76752018]
+2024-12-15 22:56:11,328 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56038074 0.43961926], Final Error on Smallest Fraction: [1.14876393e-06]%
+2024-12-15 22:56:11,416 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0005258284812490466, Pset: 58440.055807870536, Pcalc: 58440.055807856465
+2024-12-15 22:56:11,416 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58523.3022655631 Pa
+2024-12-15 22:56:11,510 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58523.3022655631, T 318.15, xi [0.443 0.557], phil [1.24095963 0.76643166]
+2024-12-15 22:56:11,854 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56037672 0.43962328], Final Error on Smallest Fraction: [5.75226711e-07]%
+2024-12-15 22:56:11,944 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.000861296136742018, Pset: 58523.3022655631, Pcalc: 58523.302265548955
+2024-12-15 22:56:11,944 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58481.67903671682 Pa
+2024-12-15 22:56:12,037 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58481.67903671682, T 318.15, xi [0.443 0.557], phil [1.24184116 0.76697553]
+2024-12-15 22:56:12,386 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56037873 0.43962127], Final Error on Smallest Fraction: [2.87401934e-07]%
+2024-12-15 22:56:12,476 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.00016822774178759659, Pset: 58481.67903671682, Pcalc: 58481.67903670273
+2024-12-15 22:56:12,476 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58460.867422293675 Pa
+2024-12-15 22:56:12,568 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58460.867422293675, T 318.15, xi [0.443 0.557], phil [1.2422824  0.76724776]
+2024-12-15 22:56:12,918 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.56037973 0.43962027], Final Error on Smallest Fraction: [1.43644354e-07]%
+2024-12-15 22:56:13,011 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0001786767593507932, Pset: 58460.867422293675, Pcalc: 58460.867422279596
+2024-12-15 22:56:13,011 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.443 0.557], calculation did not produce a valid result.
+2024-12-15 22:56:13,011 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:56:13,011 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.521 0.479], Let's Begin!
+2024-12-15 22:56:16,728 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.521 0.479], phil [71.2662577  45.43829087]
+2024-12-15 22:56:17,239 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.63040366 0.36959634], Final Error on Smallest Fraction: [1.755903e-09]%
+2024-12-15 22:56:17,239 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 57.916681233119846, Range [  1000.         706671.93021992]
+2024-12-15 22:56:17,330 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 706671.9302199215, T 318.15, xi [0.521 0.479], phil [0.10320481 0.06664896]
+2024-12-15 22:56:18,371 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.58001636 0.41998364], Final Error on Smallest Fraction: [1.07629582e-05]%
+2024-12-15 22:56:18,371 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 706671.9302199215, flag=0, Obj Func: -0.8823660597959871, Range [  1000.         706671.93021992]
+2024-12-15 22:56:18,371 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:56:18,372 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.         706671.93021992], Obj. Values: [57.91668123 -0.88236606]
+2024-12-15 22:56:18,372 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 696082.2865225517 Pa
+2024-12-15 22:56:18,373 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:56:18,464 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.521 0.479], phil [71.2662577  45.43829087]
+2024-12-15 22:56:18,976 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.63040366 0.36959634], Final Error on Smallest Fraction: [1.26349198e-09]%
+2024-12-15 22:56:19,064 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 57.916681233119846, Pset: 1000.0, Pcalc: 999.9999874118159
+2024-12-15 22:56:19,064 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 706671.9302199215 Pa
+2024-12-15 22:56:19,155 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 706671.9302199215, T 318.15, xi [0.521 0.479], phil [0.10320481 0.06664896]
+2024-12-15 22:56:20,202 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.58001636 0.41998364], Final Error on Smallest Fraction: [1.07629582e-05]%
+2024-12-15 22:56:20,291 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8823660597959871, Pset: 706671.9302199215, Pcalc: 706671.9302590365
+2024-12-15 22:56:20,291 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 353835.96510996076 Pa
+2024-12-15 22:56:20,381 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 353835.96510996076, T 318.15, xi [0.521 0.479], phil [0.20375131 0.13074298]
+2024-12-15 22:56:21,068 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.61283177 0.38716823], Final Error on Smallest Fraction: [1.27285243e-06]%
+2024-12-15 22:56:21,154 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8055784285992271, Pset: 353835.96510996076, Pcalc: 353835.9650626872
+2024-12-15 22:56:21,154 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 177417.98255498038 Pa
+2024-12-15 22:56:21,245 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 177417.98255498038, T 318.15, xi [0.521 0.479], phil [0.40401353 0.25841902]
+2024-12-15 22:56:21,761 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62226368 0.37773632], Final Error on Smallest Fraction: [1.06011574e-05]%
+2024-12-15 22:56:21,850 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6420665296476318, Pset: 177417.98255498038, Pcalc: 177417.98255344538
+2024-12-15 22:56:21,850 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 89208.99127749019 Pa
+2024-12-15 22:56:21,940 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 89208.99127749019, T 318.15, xi [0.521 0.479], phil [0.80118022 0.51163902]
+2024-12-15 22:56:22,469 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62645962 0.37354038], Final Error on Smallest Fraction: [9.87047002e-07]%
+2024-12-15 22:56:22,557 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.3147052899960222, Pset: 89208.99127749019, Pcalc: 89208.99127741472
+2024-12-15 22:56:22,557 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 45104.495638745095 Pa
+2024-12-15 22:56:22,650 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 45104.495638745095, T 318.15, xi [0.521 0.479], phil [1.58231007 1.00966515]
+2024-12-15 22:56:23,162 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62846003 0.37153997], Final Error on Smallest Fraction: [1.10481407e-07]%
+2024-12-15 22:56:23,248 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.33041732740304663, Pset: 45104.495638745095, Pcalc: 45104.49563874072
+2024-12-15 22:56:23,248 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 67156.74345811765 Pa
+2024-12-15 22:56:23,343 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 67156.74345811765, T 318.15, xi [0.521 0.479], phil [1.06349514 0.6788833 ]
+2024-12-15 22:56:23,849 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62746726 0.37253274], Final Error on Smallest Fraction: [1.26737005e-07]%
+2024-12-15 22:56:23,937 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.09813156171734383, Pset: 67156.74345811765, Pcalc: 67156.74345809485
+2024-12-15 22:56:23,937 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 56130.619548431365 Pa
+2024-12-15 22:56:24,028 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 56130.619548431365, T 318.15, xi [0.521 0.479], phil [1.27194534 0.81178523]
+2024-12-15 22:56:24,387 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62796546 0.37203454], Final Error on Smallest Fraction: [7.63050158e-05]%
+2024-12-15 22:56:24,474 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.07403140346634096, Pset: 56130.619548431365, Pcalc: 56130.61954842056
+2024-12-15 22:56:24,474 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 61643.6815032745 Pa
+2024-12-15 22:56:24,564 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 61643.6815032745, T 318.15, xi [0.521 0.479], phil [1.15839892 0.73939124]
+2024-12-15 22:56:24,901 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62771682 0.37228318], Final Error on Smallest Fraction: [4.20268904e-05]%
+2024-12-15 22:56:24,986 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.01975332528133311, Pset: 61643.6815032745, Pcalc: 61643.68150325854
+2024-12-15 22:56:24,986 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58887.150525852936 Pa
+2024-12-15 22:56:25,078 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58887.150525852936, T 318.15, xi [0.521 0.479], phil [1.21251455 0.77389383]
+2024-12-15 22:56:25,417 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62784125 0.37215875], Final Error on Smallest Fraction: [2.00431952e-05]%
+2024-12-15 22:56:25,507 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.02494278823305418, Pset: 58887.150525852936, Pcalc: 58887.15052583974
+2024-12-15 22:56:25,507 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 60265.41601456372 Pa
+2024-12-15 22:56:25,596 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 60265.41601456372, T 318.15, xi [0.521 0.479], phil [1.18483792 0.756248  ]
+2024-12-15 22:56:25,937 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62777907 0.37222093], Final Error on Smallest Fraction: [1.02639525e-05]%
+2024-12-15 22:56:26,023 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0020833392577590537, Pset: 60265.41601456372, Pcalc: 60265.41601454919
+2024-12-15 22:56:26,023 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 60954.54875891911 Pa
+2024-12-15 22:56:26,112 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 60954.54875891911, T 318.15, xi [0.521 0.479], phil [1.17146897 0.74772433]
+2024-12-15 22:56:26,456 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62774795 0.37225205], Final Error on Smallest Fraction: [5.19743259e-06]%
+2024-12-15 22:56:26,544 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.008958504908754827, Pset: 60954.54875891911, Pcalc: 60954.54875890389
+2024-12-15 22:56:26,544 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 60609.982386741416 Pa
+2024-12-15 22:56:26,634 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 60609.982386741416, T 318.15, xi [0.521 0.479], phil [1.17811544 0.75196194]
+2024-12-15 22:56:26,978 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62776351 0.37223649], Final Error on Smallest Fraction: [2.58353006e-06]%
+2024-12-15 22:56:27,065 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0034689874125757303, Pset: 60609.982386741416, Pcalc: 60609.982386726544
+2024-12-15 22:56:27,065 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 60437.69920065257 Pa
+2024-12-15 22:56:27,158 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 60437.69920065257, T 318.15, xi [0.521 0.479], phil [1.1814671  0.75409886]
+2024-12-15 22:56:27,500 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62777129 0.37222871], Final Error on Smallest Fraction: [1.28767563e-06]%
+2024-12-15 22:56:27,587 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.000700742364297513, Pset: 60437.69920065257, Pcalc: 60437.69920063786
+2024-12-15 22:56:27,587 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 60351.55760760815 Pa
+2024-12-15 22:56:27,678 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 60351.55760760815, T 318.15, xi [0.521 0.479], phil [1.18315011 0.7551719 ]
+2024-12-15 22:56:28,020 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62777518 0.37222482], Final Error on Smallest Fraction: [6.42815468e-07]%
+2024-12-15 22:56:28,107 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0006893103986442828, Pset: 60351.55760760815, Pcalc: 60351.55760759354
+2024-12-15 22:56:28,108 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 60394.62840413036 Pa
+2024-12-15 22:56:28,200 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 60394.62840413036, T 318.15, xi [0.521 0.479], phil [1.182308   0.75463499]
+2024-12-15 22:56:28,543 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62777323 0.37222677], Final Error on Smallest Fraction: [3.2164426e-07]%
+2024-12-15 22:56:28,630 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -6.211931522059899e-06, Pset: 60394.62840413036, Pcalc: 60394.6284041157
+2024-12-15 22:56:28,630 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 60373.093005869254 Pa
+2024-12-15 22:56:28,719 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 60373.093005869254, T 318.15, xi [0.521 0.479], phil [1.1827289  0.75490335]
+2024-12-15 22:56:29,062 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.62777421 0.37222579], Final Error on Smallest Fraction: [1.60762889e-07]%
+2024-12-15 22:56:29,148 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0003414251137061619, Pset: 60373.093005869254, Pcalc: 60373.093005854615
+2024-12-15 22:56:29,148 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.521 0.479], calculation did not produce a valid result.
+2024-12-15 22:56:29,148 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:56:29,148 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.591 0.409], Let's Begin!
+2024-12-15 22:56:32,869 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.591 0.409], phil [70.23243631 46.2795505 ]
+2024-12-15 22:56:33,346 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68676639 0.31323361], Final Error on Smallest Fraction: [1.48784759e-09]%
+2024-12-15 22:56:33,346 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 59.45773218645921, Range [  1000.         728942.10674489]
+2024-12-15 22:56:33,431 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 728942.1067448873, T 318.15, xi [0.591 0.409], phil [0.09866959 0.06588573]
+2024-12-15 22:56:34,413 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.63821104 0.36178896], Final Error on Smallest Fraction: [1.7979701e-05]%
+2024-12-15 22:56:34,413 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 728942.1067448873, flag=0, Obj Func: -0.8826978851922783, Range [  1000.         728942.10674489]
+2024-12-15 22:56:34,413 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:56:34,413 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.         728942.10674489], Obj. Values: [59.45773219 -0.88269789]
+2024-12-15 22:56:34,413 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 718293.3102844855 Pa
+2024-12-15 22:56:34,415 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:56:34,503 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.591 0.409], phil [70.23243631 46.2795505 ]
+2024-12-15 22:56:35,004 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68676639 0.31323361], Final Error on Smallest Fraction: [1.22464096e-09]%
+2024-12-15 22:56:35,088 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 59.45773218645921, Pset: 1000.0, Pcalc: 999.9999864683971
+2024-12-15 22:56:35,088 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 728942.1067448873 Pa
+2024-12-15 22:56:35,175 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 728942.1067448873, T 318.15, xi [0.591 0.409], phil [0.09866959 0.06588573]
+2024-12-15 22:56:36,181 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.63821104 0.36178896], Final Error on Smallest Fraction: [1.7979701e-05]%
+2024-12-15 22:56:36,268 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8826978851922783, Pset: 728942.1067448873, Pcalc: 728942.1068125266
+2024-12-15 22:56:36,268 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 364971.05337244365 Pa
+2024-12-15 22:56:36,358 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 364971.05337244365, T 318.15, xi [0.591 0.409], phil [0.19473779 0.12917615]
+2024-12-15 22:56:37,022 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.67015346 0.32984654], Final Error on Smallest Fraction: [1.29699495e-06]%
+2024-12-15 22:56:37,106 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8064099008114608, Pset: 364971.05337244365, Pcalc: 364971.0533225141
+2024-12-15 22:56:37,106 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 182985.52668622183 Pa
+2024-12-15 22:56:37,197 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 182985.52668622183, T 318.15, xi [0.591 0.409], phil [0.38610628 0.25526967]
+2024-12-15 22:56:37,699 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.67909076 0.32090924], Final Error on Smallest Fraction: [1.08218113e-05]%
+2024-12-15 22:56:37,784 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6437318485344321, Pset: 182985.52668622183, Pcalc: 182985.52668460886
+2024-12-15 22:56:37,784 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 91992.76334311091 Pa
+2024-12-15 22:56:37,873 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 91992.76334311091, T 318.15, xi [0.591 0.409], phil [0.76573254 0.50541617]
+2024-12-15 22:56:38,372 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68305148 0.31694852], Final Error on Smallest Fraction: [9.99746681e-07]%
+2024-12-15 22:56:38,456 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.3179220237030389, Pset: 91992.76334311091, Pcalc: 91992.76334303177
+2024-12-15 22:56:38,456 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 46496.38167155546 Pa
+2024-12-15 22:56:38,545 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 46496.38167155546, T 318.15, xi [0.591 0.409], phil [1.51274289 0.99764693]
+2024-12-15 22:56:39,045 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68493663 0.31506337], Final Error on Smallest Fraction: [1.11456762e-07]%
+2024-12-15 22:56:39,129 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.32448105692642115, Pset: 46496.38167155546, Pcalc: 46496.38167155088
+2024-12-15 22:56:39,129 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 69244.57250733319 Pa
+2024-12-15 22:56:39,218 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 69244.57250733319, T 318.15, xi [0.591 0.409], phil [1.01653372 0.67067743]
+2024-12-15 22:56:39,722 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68400131 0.31599869], Final Error on Smallest Fraction: [1.27984952e-07]%
+2024-12-15 22:56:39,806 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.10230998287134718, Pset: 69244.57250733319, Pcalc: 69244.57250730928
+2024-12-15 22:56:39,806 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 57870.47708944432 Pa
+2024-12-15 22:56:39,894 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 57870.47708944432, T 318.15, xi [0.591 0.409], phil [1.21587476 0.8020301 ]
+2024-12-15 22:56:40,228 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68447074 0.31552926], Final Error on Smallest Fraction: [8.08055712e-05]%
+2024-12-15 22:56:40,313 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.06912374597576054, Pset: 57870.47708944432, Pcalc: 57870.47708943301
+2024-12-15 22:56:40,313 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 63557.52479838875 Pa
+2024-12-15 22:56:40,402 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 63557.52479838875, T 318.15, xi [0.591 0.409], phil [1.10728583 0.7304771 ]
+2024-12-15 22:56:40,740 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68423648 0.31576352], Final Error on Smallest Fraction: [4.45079866e-05]%
+2024-12-15 22:56:40,825 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.02426758575589849, Pset: 63557.52479838875, Pcalc: 63557.52479837202
+2024-12-15 22:56:40,825 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 60714.00094391654 Pa
+2024-12-15 22:56:40,913 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 60714.00094391654, T 318.15, xi [0.591 0.409], phil [1.15903742 0.76457801]
+2024-12-15 22:56:41,247 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68435372 0.31564628], Final Error on Smallest Fraction: [2.12259342e-05]%
+2024-12-15 22:56:41,334 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.02023989432010831, Pset: 60714.00094391654, Pcalc: 60714.00094390271
+2024-12-15 22:56:41,334 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62135.76287115265 Pa
+2024-12-15 22:56:41,423 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62135.76287115265, T 318.15, xi [0.591 0.409], phil [1.13256955 0.74713741]
+2024-12-15 22:56:41,757 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68429513 0.31570487], Final Error on Smallest Fraction: [1.08697609e-05]%
+2024-12-15 22:56:41,842 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.002523340946885, Pset: 62135.76287115265, Pcalc: 62135.76287113742
+2024-12-15 22:56:41,842 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 61424.88190753459 Pa
+2024-12-15 22:56:41,930 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 61424.88190753459, T 318.15, xi [0.591 0.409], phil [1.14565033 0.75575679]
+2024-12-15 22:56:42,264 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68432443 0.31567557], Final Error on Smallest Fraction: [5.37065453e-06]%
+2024-12-15 22:56:42,348 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.008726480594003272, Pset: 61424.88190753459, Pcalc: 61424.88190752008
+2024-12-15 22:56:42,348 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 61780.322389343615 Pa
+2024-12-15 22:56:42,435 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 61780.322389343615, T 318.15, xi [0.591 0.409], phil [1.13907231 0.7514223 ]
+2024-12-15 22:56:42,761 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68430978 0.31569022], Final Error on Smallest Fraction: [2.7013803e-06]%
+2024-12-15 22:56:42,846 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.003069189487785451, Pset: 61780.322389343615, Pcalc: 61780.32238932876
+2024-12-15 22:56:42,846 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 61958.04263024813 Pa
+2024-12-15 22:56:42,936 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 61958.04263024813, T 318.15, xi [0.591 0.409], phil [1.1358116  0.74927371]
+2024-12-15 22:56:43,270 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68430245 0.31569755], Final Error on Smallest Fraction: [1.3550295e-06]%
+2024-12-15 22:56:43,354 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0002648988451110501, Pset: 61958.04263024813, Pcalc: 61958.042630233096
+2024-12-15 22:56:43,355 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62046.902750700385 Pa
+2024-12-15 22:56:43,442 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62046.902750700385, T 318.15, xi [0.591 0.409], phil [1.13418825 0.74820403]
+2024-12-15 22:56:43,777 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68429879 0.31570121], Final Error on Smallest Fraction: [6.78599652e-07]%
+2024-12-15 22:56:43,861 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0011312187871876933, Pset: 62046.902750700385, Pcalc: 62046.902750685265
+2024-12-15 22:56:43,861 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62002.47269047426 Pa
+2024-12-15 22:56:43,949 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62002.47269047426, T 318.15, xi [0.591 0.409], phil [1.13499935 0.74873849]
+2024-12-15 22:56:44,283 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68430062 0.31569938], Final Error on Smallest Fraction: [3.39048325e-07]%
+2024-12-15 22:56:44,373 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.00043366047875781355, Pset: 62002.47269047426, Pcalc: 62002.47269045917
+2024-12-15 22:56:44,373 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 61980.257660361196 Pa
+2024-12-15 22:56:44,462 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 61980.257660361196, T 318.15, xi [0.591 0.409], phil [1.13540533 0.749006  ]
+2024-12-15 22:56:44,797 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.68430154 0.31569846], Final Error on Smallest Fraction: [1.69456588e-07]%
+2024-12-15 22:56:44,882 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -8.450607829368906e-05, Pset: 61980.257660361196, Pcalc: 61980.257660346135
+2024-12-15 22:56:44,882 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.591 0.409], calculation did not produce a valid result.
+2024-12-15 22:56:44,882 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:56:44,882 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.62 0.38], Let's Begin!
+2024-12-15 22:56:48,621 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.62 0.38], phil [69.82563122 46.69422063]
+2024-12-15 22:56:48,949 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70925405 0.29074595], Final Error on Smallest Fraction: [7.31223186e-05]%
+2024-12-15 22:56:48,949 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 60.05771274265417, Range [  1000.         738453.68210023]
+2024-12-15 22:56:49,037 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 738453.6821002319, T 318.15, xi [0.62 0.38], phil [0.09686366 0.0656526 ]
+2024-12-15 22:56:50,054 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.66180336 0.33819664], Final Error on Smallest Fraction: [2.2814411e-05]%
+2024-12-15 22:56:50,054 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 738453.6821002319, flag=0, Obj Func: -0.882924656044508, Range [  1000.         738453.68210023]
+2024-12-15 22:56:50,054 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:56:50,054 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.         738453.68210023], Obj. Values: [60.05771274 -0.88292466]
+2024-12-15 22:56:50,054 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 727769.2510471526 Pa
+2024-12-15 22:56:50,056 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:56:50,143 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.62 0.38], phil [69.82563122 46.69422063]
+2024-12-15 22:56:50,633 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70925405 0.29074595], Final Error on Smallest Fraction: [1.18475714e-09]%
+2024-12-15 22:56:50,717 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 60.05771274265419, Pset: 1000.0, Pcalc: 999.9999860956633
+2024-12-15 22:56:50,717 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 738453.6821002319 Pa
+2024-12-15 22:56:50,806 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 738453.6821002319, T 318.15, xi [0.62 0.38], phil [0.09686366 0.0656526 ]
+2024-12-15 22:56:51,820 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.66180336 0.33819664], Final Error on Smallest Fraction: [2.2814411e-05]%
+2024-12-15 22:56:51,907 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.882924656044508, Pset: 738453.6821002319, Pcalc: 738453.6821909887
+2024-12-15 22:56:51,907 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 369726.84105011594 Pa
+2024-12-15 22:56:51,997 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 369726.84105011594, T 318.15, xi [0.62 0.38], phil [0.19114819 0.12868925]
+2024-12-15 22:56:52,666 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.69316709 0.30683291], Final Error on Smallest Fraction: [1.27127258e-06]%
+2024-12-15 22:56:52,750 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8069208631049709, Pset: 369726.84105011594, Pcalc: 369726.8409989503
+2024-12-15 22:56:52,750 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 185363.42052505797 Pa
+2024-12-15 22:56:52,852 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 185363.42052505797, T 318.15, xi [0.62 0.38], phil [0.37897399 0.25428467]
+2024-12-15 22:56:53,345 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70182963 0.29817037], Final Error on Smallest Fraction: [1.06878243e-05]%
+2024-12-15 22:56:53,427 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6447397904713692, Pset: 185363.42052505797, Pcalc: 185363.42052340895
+2024-12-15 22:56:53,427 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 93181.71026252898 Pa
+2024-12-15 22:56:53,515 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 93181.71026252898, T 318.15, xi [0.62 0.38], phil [0.75161178 0.5034696 ]
+2024-12-15 22:56:54,008 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70566239 0.29433761], Final Error on Smallest Fraction: [9.84063313e-07]%
+2024-12-15 22:56:54,092 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.3198748003961257, Pset: 93181.71026252898, Pcalc: 93181.71026244815
+2024-12-15 22:56:54,092 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 47090.85513126449 Pa
+2024-12-15 22:56:54,179 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 47090.85513126449, T 318.15, xi [0.62 0.38], phil [1.48502243 0.99390991]
+2024-12-15 22:56:54,678 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70748538 0.29251462], Final Error on Smallest Fraction: [1.09522466e-07]%
+2024-12-15 22:56:54,763 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.3208040551874525, Pset: 47090.85513126449, Pcalc: 47090.85513125982
+2024-12-15 22:56:54,763 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 70136.28269689674 Pa
+2024-12-15 22:56:54,849 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 70136.28269689674, T 318.15, xi [0.62 0.38], phil [0.99782455 0.66811472]
+2024-12-15 22:56:55,338 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.706581 0.293419], Final Error on Smallest Fraction: [1.2581836e-07]%
+2024-12-15 22:56:55,420 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.10486138357221453, Pset: 70136.28269689674, Pcalc: 70136.28269687232
+2024-12-15 22:56:55,420 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 58613.56891408061 Pa
+2024-12-15 22:56:55,505 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 58613.56891408061, T 318.15, xi [0.62 0.38], phil [1.19353483 0.7989885 ]
+2024-12-15 22:56:55,836 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70703493 0.29296507], Final Error on Smallest Fraction: [8.17545977e-05]%
+2024-12-15 22:56:55,922 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.06611079735757253, Pset: 58613.56891408061, Pcalc: 58613.56891406905
+2024-12-15 22:56:55,922 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64374.925805488674 Pa
+2024-12-15 22:56:56,012 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64374.925805488674, T 318.15, xi [0.62 0.38], phil [1.08692194 0.72769518]
+2024-12-15 22:56:56,338 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.7068084 0.2931916], Final Error on Smallest Fraction: [4.50317784e-05]%
+2024-12-15 22:56:56,422 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.02703067217347943, Pset: 64374.925805488674, Pcalc: 64374.925805471605
+2024-12-15 22:56:56,422 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 61494.24735978465 Pa
+2024-12-15 22:56:56,511 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 61494.24735978465, T 318.15, xi [0.62 0.38], phil [1.13773126 0.76167197]
+2024-12-15 22:56:56,841 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70692177 0.29307823], Final Error on Smallest Fraction: [2.14754856e-05]%
+2024-12-15 22:56:56,925 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.017357262238650417, Pset: 61494.24735978465, Pcalc: 61494.24735977055
+2024-12-15 22:56:56,926 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62934.586582636664 Pa
+2024-12-15 22:56:57,015 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62934.586582636664, T 318.15, xi [0.62 0.38], phil [1.11174518 0.74429477]
+2024-12-15 22:56:57,345 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70686512 0.29313488], Final Error on Smallest Fraction: [1.09976196e-05]%
+2024-12-15 22:56:57,430 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.005344938482571893, Pset: 62934.586582636664, Pcalc: 62934.58658262113
+2024-12-15 22:56:57,430 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62214.41697121065 Pa
+2024-12-15 22:56:57,515 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62214.41697121065, T 318.15, xi [0.62 0.38], phil [1.12458781 0.7528828 ]
+2024-12-15 22:56:57,841 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70689345 0.29310655], Final Error on Smallest Fraction: [5.43381269e-06]%
+2024-12-15 22:56:57,929 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.005874691239204921, Pset: 62214.41697121065, Pcalc: 62214.41697119584
+2024-12-15 22:56:57,929 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62574.50177692366 Pa
+2024-12-15 22:56:58,020 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62574.50177692366, T 318.15, xi [0.62 0.38], phil [1.11812955 0.74856407]
+2024-12-15 22:56:58,348 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70687929 0.29312071], Final Error on Smallest Fraction: [2.73315214e-06]%
+2024-12-15 22:56:58,431 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.00023257612008364958, Pset: 62574.50177692366, Pcalc: 62574.50177690848
+2024-12-15 22:56:58,431 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62754.54417978016 Pa
+2024-12-15 22:56:58,517 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62754.54417978016, T 318.15, xi [0.62 0.38], phil [1.1149282 0.7464233]
+2024-12-15 22:56:58,847 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.7068722 0.2931278], Final Error on Smallest Fraction: [1.37097196e-06]%
+2024-12-15 22:56:58,931 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0025641867450025835, Pset: 62754.54417978016, Pcalc: 62754.5441797648
+2024-12-15 22:56:58,931 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62664.52297835191 Pa
+2024-12-15 22:56:59,016 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62664.52297835191, T 318.15, xi [0.62 0.38], phil [1.11652657 0.74749215]
+2024-12-15 22:56:59,350 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70687574 0.29312426], Final Error on Smallest Fraction: [6.84469122e-07]%
+2024-12-15 22:56:59,434 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0011678153285978876, Pset: 62664.52297835191, Pcalc: 62664.52297833665
+2024-12-15 22:56:59,434 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62619.51237763778 Pa
+2024-12-15 22:56:59,521 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62619.51237763778, T 318.15, xi [0.62 0.38], phil [1.11732748 0.74802773]
+2024-12-15 22:56:59,851 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.70687752 0.29312248], Final Error on Smallest Fraction: [3.41960355e-07]%
+2024-12-15 22:56:59,937 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.00046812319186506635, Pset: 62619.51237763778, Pcalc: 62619.51237762257
+2024-12-15 22:56:59,937 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 62597.00707728072 Pa
+2024-12-15 22:57:00,023 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 62597.00707728072, T 318.15, xi [0.62 0.38], phil [1.11772837 0.7482958 ]
+2024-12-15 22:57:00,353 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.7068784 0.2931216], Final Error on Smallest Fraction: [1.70911523e-07]%
+2024-12-15 22:57:00,437 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.00011789956857777284, Pset: 62597.00707728072, Pcalc: 62597.00707726552
+2024-12-15 22:57:00,437 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.62 0.38], calculation did not produce a valid result.
+2024-12-15 22:57:00,437 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:57:00,437 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.717 0.283], Let's Begin!
+2024-12-15 22:57:04,163 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.717 0.283], phil [68.58039071 48.4297592 ]
+2024-12-15 22:57:09,407 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78199989 0.21800011], Final Error on Smallest Fraction: [7.86672134e-07]%
+2024-12-15 22:57:09,407 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 61.89969557249241, Range [  1000.         771543.78036045]
+2024-12-15 22:57:09,489 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 771543.7803604482, T 318.15, xi [0.717 0.283], phil [0.09115184 0.06528607]
+2024-12-15 22:57:10,496 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.73983507 0.26016493], Final Error on Smallest Fraction: [6.36651355e-05]%
+2024-12-15 22:57:10,496 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 771543.7803604482, flag=0, Obj Func: -0.8840617570765952, Range [  1000.         771543.78036045]
+2024-12-15 22:57:10,496 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:57:10,496 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.         771543.78036045], Obj. Values: [61.89969557 -0.88406176]
+2024-12-15 22:57:10,496 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 760693.7083458975 Pa
+2024-12-15 22:57:10,498 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:57:10,583 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.717 0.283], phil [68.58039071 48.4297592 ]
+2024-12-15 22:57:11,061 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78199989 0.21800011], Final Error on Smallest Fraction: [9.59578518e-10]%
+2024-12-15 22:57:11,144 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 61.89969557249241, Pset: 1000.0, Pcalc: 999.9999849042453
+2024-12-15 22:57:11,144 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 771543.7803604482 Pa
+2024-12-15 22:57:11,229 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 771543.7803604482, T 318.15, xi [0.717 0.283], phil [0.09115184 0.06528607]
+2024-12-15 22:57:12,241 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.73983507 0.26016493], Final Error on Smallest Fraction: [6.36651355e-05]%
+2024-12-15 22:57:12,325 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8840617570765951, Pset: 771543.7803604482, Pcalc: 771543.7807361382
+2024-12-15 22:57:12,325 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 386271.8901802241 Pa
+2024-12-15 22:57:12,410 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 386271.8901802241, T 318.15, xi [0.717 0.283], phil [0.17979255 0.12786687]
+2024-12-15 22:57:13,045 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.76823019 0.23176981], Final Error on Smallest Fraction: [1.03093298e-06]%
+2024-12-15 22:57:13,128 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8093056145707349, Pset: 386271.8901802241, Pcalc: 386271.89012439596
+2024-12-15 22:57:13,129 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 193635.94509011204 Pa
+2024-12-15 22:57:13,214 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 193635.94509011204, T 318.15, xi [0.717 0.283], phil [0.35640752 0.25257878]
+2024-12-15 22:57:13,691 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.7756688 0.2243312], Final Error on Smallest Fraction: [9.22648934e-06]%
+2024-12-15 22:57:13,772 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6493862459043691, Pset: 193635.94509011204, Pcalc: 193635.94508832836
+2024-12-15 22:57:13,772 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 97317.97254505602 Pa
+2024-12-15 22:57:13,857 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 97317.97254505602, T 318.15, xi [0.717 0.283], phil [0.70692519 0.50009764]
+2024-12-15 22:57:14,337 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.77894197 0.22105803], Final Error on Smallest Fraction: [8.39688328e-07]%
+2024-12-15 22:57:14,419 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.32888111111892315, Pset: 97317.97254505602, Pcalc: 97317.97254496888
+2024-12-15 22:57:14,419 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 49158.98627252801 Pa
+2024-12-15 22:57:14,504 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 49158.98627252801, T 318.15, xi [0.717 0.283], phil [1.39727003 0.98759126]
+2024-12-15 22:57:14,985 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78049516 0.21950484], Final Error on Smallest Fraction: [9.29111135e-08]%
+2024-12-15 22:57:15,066 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.303652481308589, Pset: 49158.98627252801, Pcalc: 49158.98627252299
+2024-12-15 22:57:15,067 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 73238.47940879202 Pa
+2024-12-15 22:57:15,152 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 73238.47940879202, T 318.15, xi [0.717 0.283], phil [0.93861086 0.66370441]
+2024-12-15 22:57:15,628 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.77972492 0.22027508], Final Error on Smallest Fraction: [1.06896522e-07]%
+2024-12-15 22:57:15,709 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.11666607825263975, Pset: 73238.47940879202, Pcalc: 73238.47940876572
+2024-12-15 22:57:15,709 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 61198.73284066001 Pa
+2024-12-15 22:57:15,797 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 61198.73284066001, T 318.15, xi [0.717 0.283], phil [1.1228239  0.79378825]
+2024-12-15 22:57:16,117 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78011159 0.21988841], Final Error on Smallest Fraction: [8.02546348e-05]%
+2024-12-15 22:57:16,198 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.05212785637432038, Pset: 61198.73284066001, Pcalc: 61198.73284064758
+2024-12-15 22:57:16,198 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 67218.60612472601 Pa
+2024-12-15 22:57:16,285 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 67218.60612472601, T 318.15, xi [0.717 0.283], phil [1.02246861 0.72292136]
+2024-12-15 22:57:16,604 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.77991865 0.22008135], Final Error on Smallest Fraction: [4.42093976e-05]%
+2024-12-15 22:57:16,685 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.039832077328028404, Pset: 67218.60612472601, Pcalc: 67218.60612470764
+2024-12-15 22:57:16,685 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64208.66948269302 Pa
+2024-12-15 22:57:16,772 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64208.66948269302, T 318.15, xi [0.717 0.283], phil [1.07029405 0.75669377]
+2024-12-15 22:57:17,091 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78001522 0.21998478], Final Error on Smallest Fraction: [2.10824092e-05]%
+2024-12-15 22:57:17,174 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.00399125348505347, Pset: 64208.66948269302, Pcalc: 64208.66948267782
+2024-12-15 22:57:17,174 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 65713.63780370951 Pa
+2024-12-15 22:57:17,261 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 65713.63780370951, T 318.15, xi [0.717 0.283], phil [1.04583368 0.73942083]
+2024-12-15 22:57:17,580 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.77996696 0.22003304], Final Error on Smallest Fraction: [1.07965543e-05]%
+2024-12-15 22:57:17,661 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.01842252819043766, Pset: 65713.63780370951, Pcalc: 65713.63780369279
+2024-12-15 22:57:17,661 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64961.153643201265 Pa
+2024-12-15 22:57:17,747 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64961.153643201265, T 318.15, xi [0.717 0.283], phil [1.0579222  0.74795726]
+2024-12-15 22:57:18,066 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.77999109 0.22000891], Final Error on Smallest Fraction: [5.33441202e-06]%
+2024-12-15 22:57:18,147 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.007345528582107574, Pset: 64961.153643201265, Pcalc: 64961.153643185324
+2024-12-15 22:57:18,147 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64584.91156294714 Pa
+2024-12-15 22:57:18,234 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64584.91156294714, T 318.15, xi [0.717 0.283], phil [1.06407209 0.75230006]
+2024-12-15 22:57:18,553 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78000316 0.21999684], Final Error on Smallest Fraction: [2.6499098e-06]%
+2024-12-15 22:57:18,633 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.001710177861630524, Pset: 64584.91156294714, Pcalc: 64584.911562931586
+2024-12-15 22:57:18,633 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64396.79052282008 Pa
+2024-12-15 22:57:18,719 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64396.79052282008, T 318.15, xi [0.717 0.283], phil [1.06717398 0.7544905 ]
+2024-12-15 22:57:19,039 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78000919 0.21999081], Final Error on Smallest Fraction: [1.32063472e-06]%
+2024-12-15 22:57:19,120 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.001132205344602344, Pset: 64396.79052282008, Pcalc: 64396.79052280472
+2024-12-15 22:57:19,120 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64490.851042883616 Pa
+2024-12-15 22:57:19,209 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64490.851042883616, T 318.15, xi [0.717 0.283], phil [1.06562077 0.75339368]
+2024-12-15 22:57:19,548 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78000617 0.21999383], Final Error on Smallest Fraction: [6.61312939e-07]%
+2024-12-15 22:57:19,631 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0002910602606981394, Pset: 64490.851042883616, Pcalc: 64490.85104286815
+2024-12-15 22:57:19,631 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64443.82078285185 Pa
+2024-12-15 22:57:19,730 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64443.82078285185, T 318.15, xi [0.717 0.283], phil [1.06639681 0.75394169]
+2024-12-15 22:57:20,054 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78000768 0.21999232], Final Error on Smallest Fraction: [3.30407409e-07]%
+2024-12-15 22:57:20,141 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0004200529062381442, Pset: 64443.82078285185, Pcalc: 64443.82078283644
+2024-12-15 22:57:20,141 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64467.33591286773 Pa
+2024-12-15 22:57:20,229 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64467.33591286773, T 318.15, xi [0.717 0.283], phil [1.06600865 0.75366759]
+2024-12-15 22:57:20,564 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.78000693 0.21999307], Final Error on Smallest Fraction: [1.65265951e-07]%
+2024-12-15 22:57:20,648 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 6.436655599806329e-05, Pset: 64467.33591286773, Pcalc: 64467.335912852286
+2024-12-15 22:57:20,648 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.717 0.283], calculation did not produce a valid result.
+2024-12-15 22:57:20,648 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:57:20,648 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.792 0.208], Let's Begin!
+2024-12-15 22:57:24,488 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.792 0.208], phil [67.77179716 50.23539466]
+2024-12-15 22:57:24,950 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83702946 0.16297054], Final Error on Smallest Fraction: [1.1114626e-09]%
+2024-12-15 22:57:24,951 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 63.1460257449077, Range [  1000.         798544.60681275]
+2024-12-15 22:57:25,030 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 798544.6068127475, T 318.15, xi [0.792 0.208], phil [0.08710661 0.06552388]
+2024-12-15 22:57:26,147 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.80093253 0.19906747], Final Error on Smallest Fraction: [3.47962373e-05]%
+2024-12-15 22:57:26,148 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1558): New Max Pressure: 798544.6068127475, flag=0, Obj Func: -0.8853520519150625, Range [  1000.         798544.60681275]
+2024-12-15 22:57:26,148 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1568): Got the pressure range!
+2024-12-15 22:57:26,148 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1727): [Pmin, Pmax]: [  1000.         798544.60681275], Obj. Values: [63.14602574 -0.88535205]
+2024-12-15 22:57:26,148 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1730): Initial guess in pressure: 787517.0797091454 Pa
+2024-12-15 22:57:26,149 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 1000.0 Pa
+2024-12-15 22:57:26,234 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.792 0.208], phil [67.77179716 50.23539466]
+2024-12-15 22:57:26,719 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83702946 0.16297054], Final Error on Smallest Fraction: [7.03552196e-10]%
+2024-12-15 22:57:26,800 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 63.1460257449077, Pset: 1000.0, Pcalc: 999.9999840175417
+2024-12-15 22:57:26,800 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 798544.6068127475 Pa
+2024-12-15 22:57:26,883 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 798544.6068127475, T 318.15, xi [0.792 0.208], phil [0.08710661 0.06552388]
+2024-12-15 22:57:28,022 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.80093253 0.19906747], Final Error on Smallest Fraction: [3.47962374e-05]%
+2024-12-15 22:57:28,106 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8853520519150625, Pset: 798544.6068127475, Pcalc: 798544.6053153556
+2024-12-15 22:57:28,106 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 399772.3034063738 Pa
+2024-12-15 22:57:28,190 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 399772.3034063738, T 318.15, xi [0.792 0.208], phil [0.17174689 0.12824674]
+2024-12-15 22:57:28,833 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.82570308 0.17429692], Final Error on Smallest Fraction: [7.06715024e-07]%
+2024-12-15 22:57:28,918 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.8118389582833542, Pset: 399772.3034063738, Pcalc: 399772.30334648484
+2024-12-15 22:57:28,919 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 200386.1517031869 Pa
+2024-12-15 22:57:29,003 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 200386.1517031869, T 318.15, xi [0.792 0.208], phil [0.34041453 0.25326077]
+2024-12-15 22:57:29,488 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83183719 0.16816281], Final Error on Smallest Fraction: [7.04003128e-06]%
+2024-12-15 22:57:29,569 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.6542585355400079, Pset: 200386.1517031869, Pcalc: 200386.15170128632
+2024-12-15 22:57:29,569 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 100693.07585159344 Pa
+2024-12-15 22:57:29,650 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 100693.07585159344, T 318.15, xi [0.792 0.208], phil [0.67524739 0.50144512]
+2024-12-15 22:57:30,120 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.8345247 0.1654753], Final Error on Smallest Fraction: [6.34761257e-07]%
+2024-12-15 22:57:30,201 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.3383117879437396, Pset: 100693.07585159344, Pcalc: 100693.07585150083
+2024-12-15 22:57:30,202 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 50846.53792579672 Pa
+2024-12-15 22:57:30,283 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 50846.53792579672, T 318.15, xi [0.792 0.208], phil [1.33504039 0.99050143]
+2024-12-15 22:57:30,789 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83579764 0.16420236], Final Error on Smallest Fraction: [6.99106926e-08]%
+2024-12-15 22:57:30,871 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.2855640653763327, Pset: 50846.53792579672, Pcalc: 50846.537925791396
+2024-12-15 22:57:30,871 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 75769.80688869508 Pa
+2024-12-15 22:57:30,960 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 75769.80688869508, T 318.15, xi [0.792 0.208], phil [0.89662941 0.66553913]
+2024-12-15 22:57:31,445 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83516656 0.16483344], Final Error on Smallest Fraction: [8.05317562e-08]%
+2024-12-15 22:57:31,525 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.12904976541581392, Pset: 75769.80688869508, Pcalc: 75769.80688866717
+2024-12-15 22:57:31,525 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 63308.172407245904 Pa
+2024-12-15 22:57:31,605 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 63308.172407245904, T 318.15, xi [0.792 0.208], phil [1.07268622 0.7960372 ]
+2024-12-15 22:57:31,923 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83548342 0.16451658], Final Error on Smallest Fraction: [7.28819997e-05]%
+2024-12-15 22:57:32,004 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.03743039219441968, Pset: 63308.172407245904, Pcalc: 63308.172407232705
+2024-12-15 22:57:32,004 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 69538.98964797049 Pa
+2024-12-15 22:57:32,091 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 69538.98964797049, T 318.15, xi [0.792 0.208], phil [0.9767703 0.7249417]
+2024-12-15 22:57:32,418 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83532532 0.16467468], Final Error on Smallest Fraction: [4.01509907e-05]%
+2024-12-15 22:57:32,501 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0532728000342827, Pset: 69538.98964797049, Pcalc: 69538.98964795099
+2024-12-15 22:57:32,501 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 66423.5810276082 Pa
+2024-12-15 22:57:32,583 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 66423.5810276082, T 318.15, xi [0.792 0.208], phil [1.02247892 0.75882217]
+2024-12-15 22:57:32,906 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83540445 0.16459555], Final Error on Smallest Fraction: [1.91463742e-05]%
+2024-12-15 22:57:32,985 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.01004950448106201, Pset: 66423.5810276082, Pcalc: 66423.5810275921
+2024-12-15 22:57:32,985 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 64865.876717427054 Pa
+2024-12-15 22:57:33,066 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 64865.876717427054, T 318.15, xi [0.792 0.208], phil [1.04697973 0.77698284]
+2024-12-15 22:57:33,380 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83544396 0.16455604], Final Error on Smallest Fraction: [9.32192327e-06]%
+2024-12-15 22:57:33,462 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.013120037201059587, Pset: 64865.876717427054, Pcalc: 64865.87671741245
+2024-12-15 22:57:33,462 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 65644.72887251763 Pa
+2024-12-15 22:57:33,545 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 65644.72887251763, T 318.15, xi [0.792 0.208], phil [1.03458398 0.76779477]
+2024-12-15 22:57:33,865 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83542421 0.16457579], Final Error on Smallest Fraction: [4.71874237e-06]%
+2024-12-15 22:57:33,948 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0013977403795915055, Pset: 65644.72887251763, Pcalc: 65644.7288725023
+2024-12-15 22:57:33,948 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 66034.15495006292 Pa
+2024-12-15 22:57:34,033 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 66034.15495006292, T 318.15, xi [0.792 0.208], phil [1.02849576 0.76328202]
+2024-12-15 22:57:34,357 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83541433 0.16458567], Final Error on Smallest Fraction: [2.3750695e-06]%
+2024-12-15 22:57:34,444 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.004359655276831131, Pset: 66034.15495006292, Pcalc: 66034.15495004719
+2024-12-15 22:57:34,444 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 65839.44191129028 Pa
+2024-12-15 22:57:34,529 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 65839.44191129028, T 318.15, xi [0.792 0.208], phil [1.03153086 0.76553172]
+2024-12-15 22:57:34,853 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83541927 0.16458073], Final Error on Smallest Fraction: [1.1839181e-06]%
+2024-12-15 22:57:34,933 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -0.0014894756644623364, Pset: 65839.44191129028, Pcalc: 65839.44191127474
+2024-12-15 22:57:34,933 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 65742.08539190395 Pa
+2024-12-15 22:57:35,016 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 65742.08539190395, T 318.15, xi [0.792 0.208], phil [1.03305516 0.76666157]
+2024-12-15 22:57:35,355 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83542174 0.16457826], Final Error on Smallest Fraction: [5.9097824e-07]%
+2024-12-15 22:57:35,437 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: -4.8006657125787555e-05, Pset: 65742.08539190395, Pcalc: 65742.08539188853
+2024-12-15 22:57:35,437 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 65693.40713221079 Pa
+2024-12-15 22:57:35,518 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 65693.40713221079, T 318.15, xi [0.792 0.208], phil [1.033819   0.76722775]
+2024-12-15 22:57:35,834 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83542298 0.16457702], Final Error on Smallest Fraction: [2.95243897e-07]%
+2024-12-15 22:57:35,915 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.0006743309188308455, Pset: 65693.40713221079, Pcalc: 65693.40713219541
+2024-12-15 22:57:35,915 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3263): P Guess: 65717.74626205738 Pa
+2024-12-15 22:57:35,997 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 65717.74626205738, T 318.15, xi [0.792 0.208], phil [1.03343694 0.76694456]
+2024-12-15 22:57:36,320 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.83542236 0.16457764], Final Error on Smallest Fraction: [1.47678322e-07]%
+2024-12-15 22:57:36,404 [INFO](despasito.thermodynamics.calc:objective_bubble_pressure:3289): Obj Func: 0.00031302829412016564, Pset: 65717.74626205738, Pcalc: 65717.74626204195
+2024-12-15 22:57:36,404 [WARNING](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:169): T (K), xi: 318.15 [0.792 0.208], calculation did not produce a valid result.
+2024-12-15 22:57:36,404 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:177): P (Pa), yi: nan [nan nan]
+2024-12-15 22:57:36,404 [INFO](despasito.thermodynamics.calculation_types:_bubble_pressure_wrapper:157): T (K), xi: 318.15 [0.802 0.198], Let's Begin!
+2024-12-15 22:57:40,223 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 1000.0, T 318.15, xi [0.802 0.198], phil [67.67645119 50.5138593 ]
+2024-12-15 22:57:40,522 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2454):     Inner Loop Final yi: [0.84437831 0.15562169], Final Error on Smallest Fraction: [3.12442949e-05]%
+2024-12-15 22:57:40,522 [INFO](despasito.thermodynamics.calc:calc_Prange_xi:1396): Found estimated minimum pressure: 1000.0,  Obj. Func: 63.30003523260197, Range [  1000.         802242.32012445]
+2024-12-15 22:57:40,600 [INFO](despasito.thermodynamics.calc:calc_vapor_composition:2335):     Solve yi: P 802242.3201244546, T 318.15, xi [0.802 0.198], phil [0.08659341 0.06559626]
