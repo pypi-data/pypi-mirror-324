@@ -1,0 +1,9 @@
+py_packaging/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_packaging/define_xy.py,sha256=oTKxiMyLiyropLG8NbnGTCxPlMmZNRvFIe-bCzvWI5I,135
+py_packaging/hello.py,sha256=c5PKc3QZyhWa7cvLJNxZ1b9B5r-L2_fvGFYHDN3SLAQ,191
+py_packaging/sub_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_packaging/sub_package/print_sin.py,sha256=S_82FVEJNeq67IITDGUs2NyedgpHVI5a5aAOSvF9l18,251
+python_in_production-0.0.11.dist-info/METADATA,sha256=YIvTFyjioqlqqR9HfMLKCbWPatV7euHxZHxCLkQde94,833
+python_in_production-0.0.11.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+python_in_production-0.0.11.dist-info/top_level.txt,sha256=O_8__1oraazOLF8ytKjuwR5HjKRH49i30sMfEkucqoY,13
+python_in_production-0.0.11.dist-info/RECORD,,
