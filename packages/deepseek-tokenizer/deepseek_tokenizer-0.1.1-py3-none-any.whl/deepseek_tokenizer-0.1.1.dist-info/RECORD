@@ -1,0 +1,8 @@
+deepseek_tokenizer-0.1.1.dist-info/METADATA,sha256=KiBj3S0h-g-4NVoIyDEseFHf5T2Ek3N4oKwrSkDl4mM,1253
+deepseek_tokenizer-0.1.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+deepseek_tokenizer-0.1.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+deepseek_tokenizer/__init__.py,sha256=J5klGgqHI7bzXHFZFufEuVdaq2WQvfZ2f2rPWQAFu3s,26176
+deepseek_tokenizer/tokenization_utils_base.py,sha256=wIuekknhU5MlP9KWgYFH97OtwCluXxMAvM-nMO9n18I,99222
+deepseek_tokenizer/tokenizer.json,sha256=QfO_ZCE9qMAS2L0IcaWKH99wRj6PCPEQ3bsQgvUp9mk,4607451
+deepseek_tokenizer/tokenizer_config.json,sha256=JIi3qbtwak6hkmOofDXbyNCYcFRfkmIMv3d21ID44jc,1280
+deepseek_tokenizer-0.1.1.dist-info/RECORD,,
