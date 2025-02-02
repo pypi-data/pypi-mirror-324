@@ -1,0 +1,2 @@
+[console_scripts]
+velorail = velorail.velorail_cmd:main
