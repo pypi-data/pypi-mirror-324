@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fileutils/__init__.py
+fileutils/fileutils.py
+python_fileutils.egg-info/PKG-INFO
+python_fileutils.egg-info/SOURCES.txt
+python_fileutils.egg-info/dependency_links.txt
+python_fileutils.egg-info/requires.txt
+python_fileutils.egg-info/top_level.txt
