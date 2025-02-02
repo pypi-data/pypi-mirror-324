@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+ossbomer_schema/__init__.py
+ossbomer_schema/schema.py
+ossbomer_schema/validator.py
+ossbomer_schema.egg-info/PKG-INFO
+ossbomer_schema.egg-info/SOURCES.txt
+ossbomer_schema.egg-info/dependency_links.txt
+ossbomer_schema.egg-info/requires.txt
+ossbomer_schema.egg-info/top_level.txt
+tests/test_schema.py
