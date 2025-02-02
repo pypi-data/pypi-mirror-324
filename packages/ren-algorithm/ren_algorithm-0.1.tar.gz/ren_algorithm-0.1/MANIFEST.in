@@ -1,0 +1,17 @@
+# Exclude pycache directories and .pyc files
+exclude **/__pycache__/*
+exclude **/*.pyc
+
+# Exclude all predict.py files from any directory
+exclude **/predict.py
+
+# Exclude all test.py files from any directory
+exclude **/test.py
+
+# Exclude the entire tests folder
+recursive-exclude tests/*
+
+# Include all necessary Python files and directories
+recursive-include src/ml_algorithms *
+include README.md
+include LICENSE
