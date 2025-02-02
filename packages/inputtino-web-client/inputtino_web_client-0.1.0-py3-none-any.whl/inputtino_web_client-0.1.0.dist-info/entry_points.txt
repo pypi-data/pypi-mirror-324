@@ -1,0 +1,2 @@
+[console_scripts]
+inputtino-cli = inputtino_web_client.cli:main

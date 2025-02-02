@@ -1,0 +1,11 @@
+inputtino_web_client/__init__.py,sha256=V9rjk5Ng2_CBP7Ehdcy3jDkcEYNXi6pIuB_lpIkO8uc,284
+inputtino_web_client/base_client.py,sha256=o_wk-hM83CDKHcmd6NFdnK8LPG-UOzbSguyMT5DDbek,3046
+inputtino_web_client/cli.py,sha256=Oym3b8TYc41HkM-ZDFtUpDKs0Tz1sROWk7pl7jtHshk,2866
+inputtino_web_client/keyboard.py,sha256=tnQ6MCHxDPK1V1yl5iMCtWSzR5B5DZjBhZ--rSClCWg,9261
+inputtino_web_client/models.py,sha256=ly8s8pj2uUGqDxvxbvDNMmn-eezraW8vHgOvg4qEo6M,1191
+inputtino_web_client/mouse.py,sha256=2XXcy1GLLe83O_Pc5tFMjM4FrtClT28Dm-fArz2nFU0,3104
+inputtino_web_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+inputtino_web_client-0.1.0.dist-info/METADATA,sha256=H8O4jSE-X-DIRSX-7qe4sI7Xqx9LZGpLSCW--5a8ErI,3757
+inputtino_web_client-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+inputtino_web_client-0.1.0.dist-info/entry_points.txt,sha256=fH18hqDWYAnEHMFcFUwB7OYvSTUDZic7u2aYUAqXR4E,64
+inputtino_web_client-0.1.0.dist-info/RECORD,,
