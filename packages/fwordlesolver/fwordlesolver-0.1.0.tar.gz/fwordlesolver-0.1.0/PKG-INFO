@@ -1,0 +1,99 @@
+Metadata-Version: 2.3
+Name: fwordlesolver
+Version: 0.1.0
+Summary: Word puzzle solver library and CLI
+License: MIT
+Keywords: wordle,word,solver,cli,library
+Author: Fma
+Author-email: info@fmakdemir.com
+Requires-Python: >=3.8
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: typer (>=0.15.0)
+Project-URL: Bug Tracker, https://github.com/fmakdemir/wordle-solver/issues
+Project-URL: Documentation, https://github.com/fmakdemir/wordle-solver
+Project-URL: Homepage, https://github.com/fmakdemir/wordle-solver
+Project-URL: Repository, https://github.com/fmakdemir/wordle-solver
+Description-Content-Type: text/markdown
+
+# Wordle Solver
+
+This project provides a Wordle solver that can be used as a command-line interface (CLI) tool or imported as a module in your Python code. SOWPODS is used as lexicon.
+
+## Installation
+
+### PyPI
+
+```
+pip install
+```
+
+### Manually
+Clone the repository and navigate to the project directory:
+
+```sh
+git clone https://github.com/fmakdemir/wordle-solver.git
+cd wordle-solver
+```
+
+Install Poetry if you haven't already. You can find the installation guide [here](https://python-poetry.org/docs/#installation).
+
+Install the required dependencies using Poetry:
+
+```sh
+poetry install
+```
+
+## Usage
+
+### Running as CLI
+
+You can run the Wordle solver from the command line. Use the following command:
+
+```sh
+poetry run wordlesolver --count 6
+```
+
+You can select the size of the word with 
+
+### Importing and Using the Solver
+
+You can also import the solver into your Python code:
+
+```python
+from wordlesolver import WordleSolver
+
+solver = WordleSolver()
+solution = solver.solve('your_word')
+print(solution)
+```
+
+### Running Tests
+
+To run the tests, use the following command:
+
+```sh
+pytest tests/
+```
+
+This will execute all the test cases in the `tests` directory.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+

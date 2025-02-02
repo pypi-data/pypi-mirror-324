@@ -1,0 +1,42 @@
+[project]
+name = "fwordlesolver"
+description = "Word puzzle solver library and CLI"
+version = "0.1.0"
+license = { text = "MIT" }
+authors = [{ name = "Fma", email = "info@fmakdemir.com" }]
+readme = "README.md"
+keywords = ["wordle", "word", "solver", "cli", "library"]
+requires-python = ">=3.8"
+dynamic = ["classifiers"]
+dependencies = ["typer>=0.15.0"]
+
+[project.urls]
+homepage = "https://github.com/fmakdemir/wordle-solver"
+repository = "https://github.com/fmakdemir/wordle-solver"
+documentation = "https://github.com/fmakdemir/wordle-solver"
+"Bug Tracker" = "https://github.com/fmakdemir/wordle-solver/issues"
+
+[project.scripts]
+f-wordle-solver = 'fwordlesolver.__main__:app'
+
+[tool.poetry]
+include = ["data/sowpods.txt.gz"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Natural Language :: English",
+    "Topic :: Games/Entertainment",
+    "Topic :: Games/Entertainment :: Board Games",
+    "Topic :: Games/Entertainment :: Puzzle Games",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8"
+ruff = "^0.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
