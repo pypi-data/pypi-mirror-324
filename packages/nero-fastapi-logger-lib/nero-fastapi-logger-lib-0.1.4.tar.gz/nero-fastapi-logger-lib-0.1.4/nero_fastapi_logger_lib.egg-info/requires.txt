@@ -1,0 +1,4 @@
+fastapi
+colorlog
+python-json-logger
+contextvars
