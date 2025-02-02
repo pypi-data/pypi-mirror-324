@@ -1,0 +1,18 @@
+{
+    "entity_component": {
+        "_": {
+            "state": {
+                "idle": "Inactief"
+            }
+        }
+    },
+    "services": {
+        "start_conversation": {
+            "fields": {
+                "start_message": {
+                    "name": "Bericht"
+                }
+            }
+        }
+    }
+}

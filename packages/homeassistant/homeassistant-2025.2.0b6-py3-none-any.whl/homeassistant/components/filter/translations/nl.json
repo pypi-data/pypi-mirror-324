@@ -1,0 +1,89 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is al geconfigureerd"
+        },
+        "step": {
+            "lowpass": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "outlier": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "range": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "throttle": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "time_simple_moving_average": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "time_throttle": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "user": {
+                "data": {
+                    "entity_id": "Entiteit",
+                    "name": "Naam"
+                }
+            }
+        }
+    },
+    "options": {
+        "abort": {
+            "already_configured": "Account is al geconfigureerd"
+        },
+        "step": {
+            "lowpass": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "outlier": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "range": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "throttle": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "time_simple_moving_average": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            },
+            "time_throttle": {
+                "data": {
+                    "precision": "Precisie"
+                }
+            }
+        }
+    },
+    "services": {
+        "reload": {
+            "description": "Laadt filters opnieuw vanuit de YAML configuratie.",
+            "name": "Herladen"
+        }
+    },
+    "title": "Filter"
+}
