@@ -1,0 +1,3 @@
+[console_scripts]
+pycomet = pycomet.cli:cli
+pycomet-cli = pycomet.cli:cli
