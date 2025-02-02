@@ -1,0 +1,7 @@
+networkx
+flask
+pyvis
+jinja2
+matplotlib
+ipympl
+netgraph

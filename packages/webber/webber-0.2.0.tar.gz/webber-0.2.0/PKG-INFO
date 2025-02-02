@@ -1,0 +1,27 @@
+Metadata-Version: 2.2
+Name: webber
+Version: 0.2.0
+Summary: An Pythonic platform for no-latency ETL and parallelization inspired by Apache Airflow.
+Home-page: https://www.webberproject.com
+Author: WebberTeam
+Author-email: admin@webberproject.com
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/x-rst
+License-File: LICENSE.txt
+Requires-Dist: networkx
+Requires-Dist: flask
+Requires-Dist: pyvis
+Requires-Dist: jinja2
+Requires-Dist: matplotlib
+Requires-Dist: ipympl
+Requires-Dist: netgraph
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+An Pythonic platform for no-latency ETL and parallelization inspired by Apache Airflow.
