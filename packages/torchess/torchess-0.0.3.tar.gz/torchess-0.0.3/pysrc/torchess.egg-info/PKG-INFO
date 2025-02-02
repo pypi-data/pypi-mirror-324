@@ -1,0 +1,15 @@
+Metadata-Version: 2.2
+Name: torchess
+Version: 0.0.3
+Summary: A CUDA chess engine extension for PyTorch
+Author: Bertolotti Francesco
+Author-email: f14.bertolotti@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: torch
+Dynamic: author
+Dynamic: author-email
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: summary
