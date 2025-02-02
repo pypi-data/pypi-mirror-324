@@ -1,0 +1,11 @@
+[project]
+authors = ["Teïlo M <teilomillet@gmail.com>"]
+channels = ["https://conda.modular.com/max-nightly", "https://conda.modular.com/max", "https://repo.prefix.dev/modular-community", "conda-forge"]
+description = "Quantization made with Max efficiency."
+name = "quantmax"
+platforms = ["linux-64"]
+version = "0.0.1"
+
+[tasks]
+
+[dependencies]
