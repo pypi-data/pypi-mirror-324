@@ -1,0 +1,13 @@
+django_softdelete/__about__.py,sha256=7yiPGp334fwhzFzJY1eZEZGBwKTzqWutAVnsTPuCvFE,22
+django_softdelete/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_softdelete/admin.py,sha256=lTlePOqSixq3PnnPmVUDJjjvR-xBF1SzL63mkHzvfDA,1909
+django_softdelete/exceptions.py,sha256=w4Yk4D0AdbxPXa7LYAWxe9_AY_KlyUBDLTuWiLLIcDo,47
+django_softdelete/filters.py,sha256=bBf8XBmvzjT_OiEkGUqNsaY5GIrFd0ZDaDjeCQhzVro,630
+django_softdelete/managers.py,sha256=ez4DmCyHc9SW59O4KlbHng8tyZkJQbesWgy2LXj7s1s,3141
+django_softdelete/models.py,sha256=Yj_1yjia77HO4MeA3AGqHrO9a5t63oCQs2zOKn7shxI,21684
+django_softdelete/signals.py,sha256=NRNye6ZnHGOs51F-RMI9-5WzGQSH6KhuIpElRB8M2q0,192
+django_softdelete/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_soft_delete-1.0.17.dist-info/METADATA,sha256=KPFgf1pKtPfByHDfb0e8ZQ11NlhC38EBSD9qpqp95HA,4147
+django_soft_delete-1.0.17.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+django_soft_delete-1.0.17.dist-info/licenses/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+django_soft_delete-1.0.17.dist-info/RECORD,,
