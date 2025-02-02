@@ -1,0 +1,7 @@
+scipy
+pandas
+numpy
+
+[test]
+scikit-learn
+pandas
