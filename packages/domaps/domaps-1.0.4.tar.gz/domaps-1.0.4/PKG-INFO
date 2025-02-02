@@ -1,0 +1,312 @@
+Metadata-Version: 2.2
+Name: domaps
+Version: 1.0.4
+Summary: Python library for dynamic organellar maps
+Author: Julia Schessner, Vincent Albrecht
+Maintainer-email: Julia Schessner <schessner@biochem.mpg.de>
+Project-URL: Paper, https://www.nature.com/articles/s41467-023-41000-7
+Project-URL: Repository, https://github.com/JuliaS92/SpatialProteomicsQC
+Project-URL: Changelog, https://github.com/me/spam/blob/master/NEWS.md
+Project-URL: Issues, https://github.com/JuliaS92/SpatialProteomicsQC/issues
+Project-URL: Hosted webapp, https://domabc.bornerlab.org
+Keywords: mass spectrometry,proteomics,bioinformatics,dynamic organellar maps,spatial proteomics
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: matplotlib-venn
+Requires-Dist: numba
+Requires-Dist: numpy<2
+Requires-Dist: plotly
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: UpSetPlot
+Requires-Dist: requests
+Requires-Dist: statistics
+Requires-Dist: natsort
+Requires-Dist: datashader
+Requires-Dist: pandas==2.0.0
+Requires-Dist: dask<=2024.8
+Provides-Extra: stable
+Requires-Dist: dask==2023.5.0; extra == "stable"
+Requires-Dist: matplotlib==3.5.3; extra == "stable"
+Requires-Dist: matplotlib-venn==0.11.6; extra == "stable"
+Requires-Dist: numba==0.58.1; extra == "stable"
+Requires-Dist: numpy==1.24.4; extra == "stable"
+Requires-Dist: plotly==4.14.1; extra == "stable"
+Requires-Dist: scikit-learn==1.3.2; extra == "stable"
+Requires-Dist: scipy==1.10.1; extra == "stable"
+Requires-Dist: statsmodels==0.14.1; extra == "stable"
+Requires-Dist: UpSetPlot==0.9.0; extra == "stable"
+Requires-Dist: param==1.12.3; extra == "stable"
+Requires-Dist: attrs==23.2.0; extra == "stable"
+Requires-Dist: Babel==2.14.0; extra == "stable"
+Requires-Dist: beautifulsoup4==4.12.3; extra == "stable"
+Requires-Dist: bleach==6.1.0; extra == "stable"
+Requires-Dist: certifi==2024.2.2; extra == "stable"
+Requires-Dist: cfgv==3.4.0; extra == "stable"
+Requires-Dist: charset-normalizer==3.3.2; extra == "stable"
+Requires-Dist: click==8.1.7; extra == "stable"
+Requires-Dist: cloudpickle==3.0.0; extra == "stable"
+Requires-Dist: colorcet==3.1.0; extra == "stable"
+Requires-Dist: contourpy==1.1.1; extra == "stable"
+Requires-Dist: cycler==0.12.1; extra == "stable"
+Requires-Dist: datashader==0.15.2; extra == "stable"
+Requires-Dist: datashape==0.5.2; extra == "stable"
+Requires-Dist: defusedxml==0.7.1; extra == "stable"
+Requires-Dist: distlib==0.3.9; extra == "stable"
+Requires-Dist: et-xmlfile==1.1.0; extra == "stable"
+Requires-Dist: exceptiongroup==1.2.0; extra == "stable"
+Requires-Dist: fastjsonschema==2.19.1; extra == "stable"
+Requires-Dist: filelock==3.16.1; extra == "stable"
+Requires-Dist: fonttools==4.49.0; extra == "stable"
+Requires-Dist: fqdn==1.5.1; extra == "stable"
+Requires-Dist: fsspec==2024.2.0; extra == "stable"
+Requires-Dist: h11==0.14.0; extra == "stable"
+Requires-Dist: identify==2.6.1; extra == "stable"
+Requires-Dist: idna==3.6; extra == "stable"
+Requires-Dist: importlib_metadata==7.0.2; extra == "stable"
+Requires-Dist: importlib_resources==6.3.0; extra == "stable"
+Requires-Dist: iniconfig==2.0.0; extra == "stable"
+Requires-Dist: Jinja2==3.1.3; extra == "stable"
+Requires-Dist: joblib==1.3.2; extra == "stable"
+Requires-Dist: json5==0.9.22; extra == "stable"
+Requires-Dist: jsonpointer==2.4; extra == "stable"
+Requires-Dist: jsonschema==4.21.1; extra == "stable"
+Requires-Dist: jsonschema-specifications==2023.12.1; extra == "stable"
+Requires-Dist: jupyterlab_pygments==0.3.0; extra == "stable"
+Requires-Dist: jupyterlab_widgets==3.0.13; extra == "stable"
+Requires-Dist: kaleido==0.2.1; extra == "stable"
+Requires-Dist: kiwisolver==1.4.5; extra == "stable"
+Requires-Dist: llvmlite==0.41.1; extra == "stable"
+Requires-Dist: locket==1.0.0; extra == "stable"
+Requires-Dist: MarkupSafe==2.0.1; extra == "stable"
+Requires-Dist: mistune==3.0.2; extra == "stable"
+Requires-Dist: multipledispatch==1.0.0; extra == "stable"
+Requires-Dist: natsort==7.1.1; extra == "stable"
+Requires-Dist: nbclient==0.10.0; extra == "stable"
+Requires-Dist: nbconvert==7.16.2; extra == "stable"
+Requires-Dist: nbformat==5.10.2; extra == "stable"
+Requires-Dist: nodeenv==1.9.1; extra == "stable"
+Requires-Dist: notebook==6.0.0; extra == "stable"
+Requires-Dist: openpyxl==3.1.2; extra == "stable"
+Requires-Dist: overrides==7.7.0; extra == "stable"
+Requires-Dist: pandas==2.0.0; extra == "stable"
+Requires-Dist: pandocfilters==1.5.1; extra == "stable"
+Requires-Dist: partd==1.4.1; extra == "stable"
+Requires-Dist: patsy==0.5.6; extra == "stable"
+Requires-Dist: pillow==10.2.0; extra == "stable"
+Requires-Dist: pkgutil_resolve_name==1.3.10; extra == "stable"
+Requires-Dist: prometheus_client==0.20.0; extra == "stable"
+Requires-Dist: pycparser==2.21; extra == "stable"
+Requires-Dist: pyct==0.5.0; extra == "stable"
+Requires-Dist: pyparsing==3.1.2; extra == "stable"
+Requires-Dist: python-json-logger==2.0.7; extra == "stable"
+Requires-Dist: pytz==2024.1; extra == "stable"
+Requires-Dist: pyviz_comms==3.0.1; extra == "stable"
+Requires-Dist: PyYAML==6.0.1; extra == "stable"
+Requires-Dist: referencing==0.33.0; extra == "stable"
+Requires-Dist: requests==2.31.0; extra == "stable"
+Requires-Dist: retrying==1.3.4; extra == "stable"
+Requires-Dist: rfc3339-validator==0.1.4; extra == "stable"
+Requires-Dist: rfc3986-validator==0.1.1; extra == "stable"
+Requires-Dist: rpds-py==0.18.0; extra == "stable"
+Requires-Dist: Send2Trash==1.8.2; extra == "stable"
+Requires-Dist: sniffio==1.3.1; extra == "stable"
+Requires-Dist: soupsieve==2.5; extra == "stable"
+Requires-Dist: terminado==0.18.1; extra == "stable"
+Requires-Dist: threadpoolctl==3.3.0; extra == "stable"
+Requires-Dist: tinycss2==1.2.1; extra == "stable"
+Requires-Dist: tomli==2.0.1; extra == "stable"
+Requires-Dist: toolz==0.12.1; extra == "stable"
+Requires-Dist: tqdm==4.66.2; extra == "stable"
+Requires-Dist: types-python-dateutil==2.8.19.20240311; extra == "stable"
+Requires-Dist: uri-template==1.3.0; extra == "stable"
+Requires-Dist: urllib3==2.2.1; extra == "stable"
+Requires-Dist: virtualenv==20.29.0; extra == "stable"
+Requires-Dist: webcolors==1.13; extra == "stable"
+Requires-Dist: webencodings==0.5.1; extra == "stable"
+Requires-Dist: websocket-client==1.7.0; extra == "stable"
+Requires-Dist: widgetsnbextension==4.0.13; extra == "stable"
+Requires-Dist: xarray==2023.1.0; extra == "stable"
+Requires-Dist: xyzservices==2024.6.0; extra == "stable"
+Requires-Dist: zipp==3.17.0; extra == "stable"
+Provides-Extra: gui
+Requires-Dist: bokeh==2.4.3; extra == "gui"
+Requires-Dist: panel==0.14.2; extra == "gui"
+Requires-Dist: tornado==6.4; extra == "gui"
+Requires-Dist: holoviews==1.14.9; extra == "gui"
+Requires-Dist: hvplot==0.9.2; extra == "gui"
+Requires-Dist: networkx==3.1; extra == "gui"
+Requires-Dist: jupyter-bokeh==2.0.4; extra == "gui"
+Requires-Dist: Markdown==3.5.2; extra == "gui"
+Requires-Dist: dask==2023.5.0; extra == "gui"
+Requires-Dist: matplotlib==3.5.3; extra == "gui"
+Requires-Dist: matplotlib-venn==0.11.6; extra == "gui"
+Requires-Dist: numba==0.58.1; extra == "gui"
+Requires-Dist: numpy==1.24.4; extra == "gui"
+Requires-Dist: plotly==4.14.1; extra == "gui"
+Requires-Dist: scikit-learn==1.3.2; extra == "gui"
+Requires-Dist: scipy==1.10.1; extra == "gui"
+Requires-Dist: statsmodels==0.14.1; extra == "gui"
+Requires-Dist: UpSetPlot==0.9.0; extra == "gui"
+Requires-Dist: param==1.12.3; extra == "gui"
+Requires-Dist: attrs==23.2.0; extra == "gui"
+Requires-Dist: Babel==2.14.0; extra == "gui"
+Requires-Dist: beautifulsoup4==4.12.3; extra == "gui"
+Requires-Dist: bleach==6.1.0; extra == "gui"
+Requires-Dist: certifi==2024.2.2; extra == "gui"
+Requires-Dist: cfgv==3.4.0; extra == "gui"
+Requires-Dist: charset-normalizer==3.3.2; extra == "gui"
+Requires-Dist: click==8.1.7; extra == "gui"
+Requires-Dist: cloudpickle==3.0.0; extra == "gui"
+Requires-Dist: colorcet==3.1.0; extra == "gui"
+Requires-Dist: contourpy==1.1.1; extra == "gui"
+Requires-Dist: cycler==0.12.1; extra == "gui"
+Requires-Dist: datashader==0.15.2; extra == "gui"
+Requires-Dist: datashape==0.5.2; extra == "gui"
+Requires-Dist: defusedxml==0.7.1; extra == "gui"
+Requires-Dist: distlib==0.3.9; extra == "gui"
+Requires-Dist: et-xmlfile==1.1.0; extra == "gui"
+Requires-Dist: exceptiongroup==1.2.0; extra == "gui"
+Requires-Dist: fastjsonschema==2.19.1; extra == "gui"
+Requires-Dist: filelock==3.16.1; extra == "gui"
+Requires-Dist: fonttools==4.49.0; extra == "gui"
+Requires-Dist: fqdn==1.5.1; extra == "gui"
+Requires-Dist: fsspec==2024.2.0; extra == "gui"
+Requires-Dist: h11==0.14.0; extra == "gui"
+Requires-Dist: identify==2.6.1; extra == "gui"
+Requires-Dist: idna==3.6; extra == "gui"
+Requires-Dist: importlib_metadata==7.0.2; extra == "gui"
+Requires-Dist: importlib_resources==6.3.0; extra == "gui"
+Requires-Dist: iniconfig==2.0.0; extra == "gui"
+Requires-Dist: Jinja2==3.1.3; extra == "gui"
+Requires-Dist: joblib==1.3.2; extra == "gui"
+Requires-Dist: json5==0.9.22; extra == "gui"
+Requires-Dist: jsonpointer==2.4; extra == "gui"
+Requires-Dist: jsonschema==4.21.1; extra == "gui"
+Requires-Dist: jsonschema-specifications==2023.12.1; extra == "gui"
+Requires-Dist: jupyterlab_pygments==0.3.0; extra == "gui"
+Requires-Dist: jupyterlab_widgets==3.0.13; extra == "gui"
+Requires-Dist: kaleido==0.2.1; extra == "gui"
+Requires-Dist: kiwisolver==1.4.5; extra == "gui"
+Requires-Dist: llvmlite==0.41.1; extra == "gui"
+Requires-Dist: locket==1.0.0; extra == "gui"
+Requires-Dist: MarkupSafe==2.0.1; extra == "gui"
+Requires-Dist: mistune==3.0.2; extra == "gui"
+Requires-Dist: multipledispatch==1.0.0; extra == "gui"
+Requires-Dist: natsort==7.1.1; extra == "gui"
+Requires-Dist: nbclient==0.10.0; extra == "gui"
+Requires-Dist: nbconvert==7.16.2; extra == "gui"
+Requires-Dist: nbformat==5.10.2; extra == "gui"
+Requires-Dist: nodeenv==1.9.1; extra == "gui"
+Requires-Dist: notebook==6.0.0; extra == "gui"
+Requires-Dist: openpyxl==3.1.2; extra == "gui"
+Requires-Dist: overrides==7.7.0; extra == "gui"
+Requires-Dist: pandas==2.0.0; extra == "gui"
+Requires-Dist: pandocfilters==1.5.1; extra == "gui"
+Requires-Dist: partd==1.4.1; extra == "gui"
+Requires-Dist: patsy==0.5.6; extra == "gui"
+Requires-Dist: pillow==10.2.0; extra == "gui"
+Requires-Dist: pkgutil_resolve_name==1.3.10; extra == "gui"
+Requires-Dist: prometheus_client==0.20.0; extra == "gui"
+Requires-Dist: pycparser==2.21; extra == "gui"
+Requires-Dist: pyct==0.5.0; extra == "gui"
+Requires-Dist: pyparsing==3.1.2; extra == "gui"
+Requires-Dist: python-json-logger==2.0.7; extra == "gui"
+Requires-Dist: pytz==2024.1; extra == "gui"
+Requires-Dist: pyviz_comms==3.0.1; extra == "gui"
+Requires-Dist: PyYAML==6.0.1; extra == "gui"
+Requires-Dist: referencing==0.33.0; extra == "gui"
+Requires-Dist: requests==2.31.0; extra == "gui"
+Requires-Dist: retrying==1.3.4; extra == "gui"
+Requires-Dist: rfc3339-validator==0.1.4; extra == "gui"
+Requires-Dist: rfc3986-validator==0.1.1; extra == "gui"
+Requires-Dist: rpds-py==0.18.0; extra == "gui"
+Requires-Dist: Send2Trash==1.8.2; extra == "gui"
+Requires-Dist: sniffio==1.3.1; extra == "gui"
+Requires-Dist: soupsieve==2.5; extra == "gui"
+Requires-Dist: terminado==0.18.1; extra == "gui"
+Requires-Dist: threadpoolctl==3.3.0; extra == "gui"
+Requires-Dist: tinycss2==1.2.1; extra == "gui"
+Requires-Dist: tomli==2.0.1; extra == "gui"
+Requires-Dist: toolz==0.12.1; extra == "gui"
+Requires-Dist: tqdm==4.66.2; extra == "gui"
+Requires-Dist: types-python-dateutil==2.8.19.20240311; extra == "gui"
+Requires-Dist: uri-template==1.3.0; extra == "gui"
+Requires-Dist: urllib3==2.2.1; extra == "gui"
+Requires-Dist: virtualenv==20.29.0; extra == "gui"
+Requires-Dist: webcolors==1.13; extra == "gui"
+Requires-Dist: webencodings==0.5.1; extra == "gui"
+Requires-Dist: websocket-client==1.7.0; extra == "gui"
+Requires-Dist: widgetsnbextension==4.0.13; extra == "gui"
+Requires-Dist: xarray==2023.1.0; extra == "gui"
+Requires-Dist: xyzservices==2024.6.0; extra == "gui"
+Requires-Dist: zipp==3.17.0; extra == "gui"
+Provides-Extra: development
+Requires-Dist: pre-commit==3.5.0; extra == "development"
+Requires-Dist: pytest==8.3.4; extra == "development"
+Requires-Dist: ruff==0.9.2; extra == "development"
+Requires-Dist: pytest-cov; extra == "development"
+Requires-Dist: flake8; extra == "development"
+Requires-Dist: pluggy==1.5.0; extra == "development"
+
+[![Python package](https://github.com/valbrecht/SpatialProteomicsQC/actions/workflows/python-package.yml/badge.svg)](https://github.com/valbrecht/SpatialProteomicsQC/actions/workflows/python-package.yml)
+[![DOI](https://zenodo.org/badge/313335423.svg)](https://zenodo.org/badge/latestdoi/313335423)
+
+
+
+# SpatialProteomicsQC
+This is a quality control tool for spatial proteomics data that has been developed in the Borner lab. Primary results illustrating the functionality of the tool have been published [here](https://doi.org/10.1038/s41467-023-41000-7) and presented [here](https://www.youtube.com/watch?v=dUrOxYHJihc). The graphical user interface is available at https://domqc.bornerlab.org. Alternatively you can clone this repository and run the user interface locally or use the underlying python library in custom code. If you encounter any issues with the website or the code please let us know through the issues on this repository and if you have any unanswered questions regarding the science behind it don't hesitate to contact us directly.
+
+Instructions for uploading data as well as sample data are included in the interface.
+
+## Running locally
+
+### System requirements
+There are no special hardware requirements for running the QCtool. The code was tested on Linux and Windows and should also run on Mac.
+
+### Setting up the environment
+To run the app locally create a new python environment (required version >=3.8, <= 3.10). This can either be done using [anaconda](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-with-commands) or a [native virtual environment](https://docs.python.org/3/library/venv.html). Illustration for unix systems:
+
+```
+python3 -m venv path/to/env
+source path/to/env/bin/activate
+```
+
+Next, clone this repository (requires git) or download it here and install the package including its dependencies (see requirements file):
+```
+git clone https://github.com/valbrecht/SpatialProteomicsQC
+
+pip install ".[gui]"
+```
+
+This step takes roughly 20 minutes, depending on download speed and hardware configuration, limited by the plotly library. If any pip installations fail due to external dependencies missing (e.g. zlib requirement for Pillow installation from source on python 3.6, or Microsoft Visual C++ 14 on windows) try installing that library using a binary file, thereby avoiding the dependency:
+```
+pip install --only-binary :all: Pillow
+```
+
+### Running from jupyter notebook
+To run the tool on your computer and to be able to interact with the data and the interface through pyhton code use jupyter. This is not included in the requirements so you need to add it to your environment if you haven't used anaconda. You can then run the jupyter notebook in the webapp folder to run a locally hosted interface. The only time you *need* to do this is when working with files larger than 80 MB, since they can't be loaded through the interface directly. Instead adjust one of the two code cells at the end of the notebook, to load the file directly from your file system.
+
+### Running a (local) server
+To access the GUI without directly interacting with the code, or to host your own instance of the tool, you can run a [panel serve](https://panel.holoviz.org/user_guide/Deploy_and_Export.html#launching-a-server-on-the-commandline) command from the command line:
+```
+cd domaps/webapp
+panel serve QCtool.py
+```
+
+
+### Code Contributions
+Generally code contributions are welcome - if you have best practices or benchmarks that you want to see represented here get in touch, or open a PR.
+
+For releases we follow the alphaX ecosystem https://github.com/MannLabs/alphashared/blob/main/.github/workflows/README.md.
+
+Requirements are split between what is required for data analysis and what is required to run the panel based GUI. Please don't add code for data processing that requires any of the GUI libraries. All newly added code should be tested by doctests or pytest and documented with docstrings. For major additions please include a jupyter notebook.

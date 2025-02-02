@@ -1,0 +1,37 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+domaps/__init__.py
+domaps/constants.py
+domaps/domaps.py
+domaps.egg-info/PKG-INFO
+domaps.egg-info/SOURCES.txt
+domaps.egg-info/dependency_links.txt
+domaps.egg-info/requires.txt
+domaps.egg-info/top_level.txt
+domaps/annotations/complexes/Arabidopsis thaliana - Araport.csv
+domaps/annotations/complexes/Homo sapiens - Uniprot.csv
+domaps/annotations/complexes/Mus musculus - Uniprot.csv
+domaps/annotations/complexes/Saccharomyces cerevisiae - Uniprot.csv
+domaps/annotations/idmapping/Homo sapiens - UP000005640.tab
+domaps/annotations/idmapping/Homo sapiens - uniprot reference_swissprot.txt
+domaps/annotations/organellemarkers/Arabidopsis thaliana - Araport.csv
+domaps/annotations/organellemarkers/Homo sapiens - Uniprot.csv
+domaps/annotations/organellemarkers/Mus musculus - Uniprot.csv
+domaps/annotations/organellemarkers/Saccharomyces cerevisiae - Uniprot.csv
+domaps/gui/__init__.py
+domaps/gui/gui.py
+domaps/img/LegendNetworksFull.svg
+domaps/network/__init__.py
+domaps/network/network.py
+domaps/referencedata/HeLa 1x100min DDA.json
+domaps/referencedata/HeLa 1x100min discoveryDIA.json
+domaps/referencedata/HeLa 1x100min libraryDIA.json
+domaps/webapp/QCtool.py
+requirements/requirements.txt
+requirements/requirements_development.txt
+requirements/requirements_gui.txt
+requirements/requirements_stable.txt
+tests/test_inputvalidation.py
+tests/test_usecases.py
