@@ -1,0 +1,39 @@
+[project]
+name = "matrix-webhook-bot"
+version = "0.1.1"
+description = ""
+authors = [{ name = "hidraulicChicken" }]
+requires-python = ">=3.13"
+readme = "README.md"
+dependencies = [
+    "fastapi>=0.115.6,<0.116",
+    "httpx>=0.28.1,<0.29",
+    "mautrix>=0.20.7,<0.21",
+    "uvicorn>=0.34.0,<0.35",
+    "python-olm>=3.2.16,<4",
+    "asyncpg>=0.30.0,<0.31",
+    "Jinja2>=3.1.5,<4",
+    "emoji>=2.14.1,<3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+matrix-webhook-bot = "matrix_webhook_bot.main:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff"
+]
+
+[tool.uv]
+virtualenvs.in-project = true  # Ensures venv is inside the project (`.venv/`)
+dependencies = true             # Auto-sync dependencies on activation
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
