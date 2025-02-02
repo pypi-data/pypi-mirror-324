@@ -1,0 +1,6 @@
+pydantic
+ollama
+
+[full]
+fastapi
+uvicorn
