@@ -1,0 +1,46 @@
+# codeboot-tools
+Some tools to control codeBoot from Python and the shell
+
+# Usage
+```
+usage: codeboot.py [FILES]... [OPTIONS]...
+
+Execute Python scripts in the browser with codeBoot. Learn more about codeBoot
+here: https://codeboot.org. Version 0.0.4.
+
+positional arguments:
+  A list of files or a directory to open in codeBoot. When a list of files
+  is given, these are opened in codeBoot. When a directory is given, an html
+  page that contains codeBoot links to all files in the directory is
+  generated and opened.
+
+execution options:
+  -x, --exec                         execute in browser (default)
+  -s, --step N                       single-step in browser up to N steps
+  -a, --animate [{1,2,3,4}]          single-step animation in browser with
+                                     given step speed (1=slow, 2=normal,
+                                     3=fast, 4=ultra-fast)
+  -n, --no-exec                      open in browser without executing
+  -w, --webapp                       open as a webapp with editor hidden
+  -e, --device                       execute on external device through
+                                     codeBoot
+  -l, --link-only                    print a hyperlink instead of opening in
+                                     browser
+
+help options:
+  -h, --help                         show this help message and exit
+  --version-info                     show program's version number and exit
+  --warnings                         show warnings, including files that were
+                                     skipped
+
+server options:
+  -d, --domain D                     use given domain (default to
+                                     codeboot.org)
+  -v, --version V                    use given codeBoot version (default to
+                                     latest)
+
+editor options:
+  --large-font, --no-large-font      Enable/disable large font
+  --line-numbers, --no-line-numbers  Enable/disable line numbers
+  --floating, --no-floating          Enable/disable floating window
+```
