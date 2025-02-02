@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+martialaw/__init__.py
+martialaw/martialaw.py
+martialaw.egg-info/PKG-INFO
+martialaw.egg-info/SOURCES.txt
+martialaw.egg-info/dependency_links.txt
+martialaw.egg-info/top_level.txt
