@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/mastfm/MASTFM.py
+src/mastfm/__init__.py
+src/mastfm.egg-info/PKG-INFO
+src/mastfm.egg-info/SOURCES.txt
+src/mastfm.egg-info/dependency_links.txt
+src/mastfm.egg-info/requires.txt
+src/mastfm.egg-info/top_level.txt
+src/mastfm/utils/ForecastingModel.py
+src/mastfm/utils/MetaModel.py
+src/mastfm/utils/PrepareDataset.py
+src/mastfm/utils/TimeSeriesGenerator.py
+src/mastfm/utils/__init__.py
