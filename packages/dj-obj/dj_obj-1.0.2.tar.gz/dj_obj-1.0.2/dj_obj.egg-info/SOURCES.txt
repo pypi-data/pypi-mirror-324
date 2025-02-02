@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+dj_obj.egg-info/PKG-INFO
+dj_obj.egg-info/SOURCES.txt
+dj_obj.egg-info/dependency_links.txt
+dj_obj.egg-info/requires.txt
+dj_obj.egg-info/top_level.txt
+src/__init__.py
+src/main.py
