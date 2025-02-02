@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: slim_gym
+Version: 0.1.2
+Summary: @author: nzupp
+Author-email: Niko Zuppas <zuppas.3@osu.edu>
+Description-Content-Type: text/markdown
+Requires-Dist: gymnasium==1.0.0
+Requires-Dist: matplotlib==3.10.0
+Requires-Dist: numpy==2.2.2
+Project-URL: Home, https://github.com/nzupp/SLiM-Gym
+
+# SLiM-Gym
+Gymnasium wrapper for SLiM 4 simulator enabling reinforcement learning for population genetics
+
