@@ -1,0 +1,9 @@
+RPALite/__init__.py,sha256=m0c3tSlv5aQK9yNCrtND5kaCjVzksMt1HI9G8Skiqb8,315
+RPALite/easyocr_handler.py,sha256=yN-ThVtOM6rajSBzTxm74e9wDqzL8_7n2vKgYvxFpWk,1501
+RPALite/image_handler.py,sha256=98rhKZF18nsCCnOIXbBDvKQX4T66m5i_3F1rhzRcGIg,15856
+RPALite/paddleocr_handler.py,sha256=xSE1_dJMDktvSSMXttypC5iXK7QHZkE-ztVTXyTd_d8,2489
+RPALite/rpalite.py,sha256=wKok2wnyUedHaiax1Qhf_mRmd83d83_hU_gBmlKCGos,49007
+rpalite-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+rpalite-0.1.0.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+rpalite-0.1.0.dist-info/METADATA,sha256=O0TI0_If4KYbdQ5wILVtGGdgzNEVTqA8oJPkp2i0IqM,6313
+rpalite-0.1.0.dist-info/RECORD,,
