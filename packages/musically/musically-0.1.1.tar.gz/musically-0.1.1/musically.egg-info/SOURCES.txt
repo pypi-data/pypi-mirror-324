@@ -1,0 +1,14 @@
+setup.py
+musically/__init__.py
+musically/arts.py
+musically/config.py
+musically/dev.py
+musically/gen.py
+musically/make.py
+musically/musical.py
+musically.egg-info/PKG-INFO
+musically.egg-info/SOURCES.txt
+musically.egg-info/dependency_links.txt
+musically.egg-info/entry_points.txt
+musically.egg-info/requires.txt
+musically.egg-info/top_level.txt
