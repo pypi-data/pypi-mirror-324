@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: unnfr
+Version: 0.2.4
+Summary: A simple RSS Reader
+Home-page: https://github.com/juanvel4000/ufr
+Author: juanvel400
+Author-email: juanvel400@proton.me
+License: MIT
+Keywords: rss feed reader
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: xmltodict
+Requires-Dist: requests
+Requires-Dist: inscriptis
+
+# uFR 
+
+A cli-based **rss** reader written in python
+
+
+
+
+## Installation
+
+Install uFR with pip
+
+```bash
+  pip install unnfr
+```
+
+### Dependencies
+
+- **requests**: if you want to download feeds
+- **xmltodict**: required to read feeds
+- **inscriptis**: required for descriptions
+
+## License
+
+uFR is licensed with the [MIT](https://choosealicense.com/licenses/mit/) License
+
+
+
