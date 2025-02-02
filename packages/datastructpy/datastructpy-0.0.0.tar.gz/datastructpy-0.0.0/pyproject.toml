@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "datastructpy"
+version = "0.0.0"
+description = "Data Structures for Python"
+authors = ["Albert Halim", "Azin Piran", "Javier Martinez", "Jessica Kuo"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+sphinx-book-theme = "^1.1.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+sphinxawesome-theme = "^5.3.2"
+myst-nb = "^1.1.2"
+sphinx-autoapi = "^3.4.0"
+sphinx-rtd-theme = "^3.0.2"
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
