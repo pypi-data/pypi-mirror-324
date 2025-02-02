@@ -1,0 +1,27 @@
+domaps/__init__.py,sha256=fhpsrvmuPmrYNydoIs-ObxaApsOZZPwm_6tMZfh_fPk,45
+domaps/constants.py,sha256=o1VgaWvWoswLgUUWYkiRPrQnP7kzN0c5Vb886Pb6cug,7013
+domaps/domaps.py,sha256=x2I3SC36OOoWfuh3NxxXywu_1McAnCGexuguUX41c_4,254715
+domaps/annotations/complexes/Arabidopsis thaliana - Araport.csv,sha256=HiPtMWFsEU326NM9irLyRrcbPqNxoqgMfnDYkfmJNCQ,1206
+domaps/annotations/complexes/Homo sapiens - Uniprot.csv,sha256=rrenCBR3pA89un3Moev5HGmjtlq3qe8TIYSctrktDw8,5858
+domaps/annotations/complexes/Mus musculus - Uniprot.csv,sha256=cVdY4E6rS3RSkF--IOwB_WwUO1zqmHJz3x8uQEX6ICw,5294
+domaps/annotations/complexes/Saccharomyces cerevisiae - Uniprot.csv,sha256=ylEHsJoEum93p3CnOTF9u4i7E6hxegWISL8-waGO6po,2855
+domaps/annotations/idmapping/Homo sapiens - UP000005640.tab,sha256=kUrPQwmsn8kar5oUBook6tcLdIkrqMQxMZ75LaqzlGM,2273802
+domaps/annotations/idmapping/Homo sapiens - uniprot reference_swissprot.txt,sha256=XZDOGk6TAf_RtHdi1Et69rtkJqzo4WO3Ssd2dCn_hOA,2053418
+domaps/annotations/organellemarkers/Arabidopsis thaliana - Araport.csv,sha256=egd8KPPuAg1-1C3QJANRussP7L-KIKnxdCfp8vRbPlY,14789
+domaps/annotations/organellemarkers/Homo sapiens - Uniprot.csv,sha256=vnQfG4f8JOwxZWVICfCltI5RgUyJEwI-kYDl45TBrlg,74580
+domaps/annotations/organellemarkers/Mus musculus - Uniprot.csv,sha256=iSHo2HNIiR35jGPM8eJ10vjxVRmzt9ZK7zpg4XCvuf0,21091
+domaps/annotations/organellemarkers/Saccharomyces cerevisiae - Uniprot.csv,sha256=d4T8wXh8teTxeDZpVHi_VP_5byWLHEqojh3OAlswPUQ,113785
+domaps/gui/__init__.py,sha256=OAuKFdFIy7JNrDGy-VKBGHJ3fmpXQzx5ct86eBs3hDg,171
+domaps/gui/gui.py,sha256=RO-i3FECUhFiHoxX3TztrF348URKWMnzM9eWJD_CtDY,147542
+domaps/img/LegendNetworksFull.svg,sha256=9uqdlLUx0Kb4GlCztjad6NFbUBfeOCO7KBCFdNb939g,18729
+domaps/network/__init__.py,sha256=vRVMredq56IDpoRCG9iaqX7DGUZNYUsVe614uIltOwQ,175
+domaps/network/network.py,sha256=G_i4PiU1F4RavBOeX4NR9fk2lfyzqkMyqRSUGvvyt80,17468
+domaps/referencedata/HeLa 1x100min DDA.json,sha256=LmkUy0mRQqggvuEJamBFQydRLtYxIwGbueWbP5AIov8,2983483
+domaps/referencedata/HeLa 1x100min discoveryDIA.json,sha256=HITgf3M0ItOHDs-1G9pMYfOBGsJkDhfWOjUfpE4EqEU,4866557
+domaps/referencedata/HeLa 1x100min libraryDIA.json,sha256=1SLV9lWorFOkP1stzBc1t-zXn63bU7Wlo_hUbQNPsUw,5066769
+domaps/webapp/QCtool.py,sha256=7PXzvfELV5P_YWa8qW9IQPdP6pIj1c6xTQEpM4GYLTk,97614
+domaps-1.0.4.dist-info/LICENSE,sha256=VMgkCzl9lAxa7-NVhC4mnqAvmng6YTjbeRlOMU3wu-w,11567
+domaps-1.0.4.dist-info/METADATA,sha256=NQQCog3KH0aM1ihRjp-22chvbYEkafOZZGLq06vKKBM,16663
+domaps-1.0.4.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+domaps-1.0.4.dist-info/top_level.txt,sha256=tFvDfG1osKzL8C-szuW7xDJiX9aVIB_ttvIpcG-X-Yk,7
+domaps-1.0.4.dist-info/RECORD,,
