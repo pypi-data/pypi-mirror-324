@@ -1,0 +1,373 @@
+Metadata-Version: 2.4
+Name: autocommitt
+Version: 0.3.0
+Summary: A CLI tool for generating editable commit messages locally using Ollama.
+Author-email: Spartan-71 <anishdabhane71@gmail.com>
+License:                                  Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           APPENDIX: How to apply the Apache License to your work.
+        
+              To apply the Apache License to your work, attach the following
+              boilerplate notice, with the fields enclosed by brackets "[]"
+              replaced with your own identifying information. (Don't include
+              the brackets!)  The text should be enclosed in the appropriate
+              comment syntax for the file format. We also recommend that a
+              file or class name and description of purpose be included on the
+              same "printed page" as the copyright notice for easier
+              identification within third-party archives.
+        
+           Copyright [yyyy] [name of copyright owner]
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+License-File: LICENSE
+Keywords: CLI tool,aicommit,autocommit,git automation,local AI
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: ollama>=0.4.4
+Requires-Dist: platformdirs>=4.3.6
+Requires-Dist: psutil>=6.1.1
+Requires-Dist: pyreadline3; sys_platform == 'win32'
+Requires-Dist: requests>=2.32.3
+Requires-Dist: typer>=0.15.1
+Description-Content-Type: text/markdown
+
+![4](https://github.com/user-attachments/assets/b2a26ff4-9261-4872-aceb-a7d9e803e972)
+
+
+
+AutoCommit is a free and open-source **AI-powered CLI tool** that generates unlimited commit messages locally using **Ollama**. It works entirely offline, requiring no API keys, providing developers with a private and efficient way to create concise, context-aware commit messages.
+
+<div align="center">
+
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
+[![PyPI version](https://badge.fury.io/py/autocommitt.svg)](https://badge.fury.io/py/autocommitt)
+![PyPI Downloads](https://static.pepy.tech/badge/autocommitt)
+
+</div>
+
+## Features
+
+- **Local AI-Powered**: Generates commit messages using a small LLM models locally
+- **Flexible Editing**: Review and edit generated messages before committing
+- **Git Integration**: Seamlessly works with your existing Git workflow
+- **Multiple Language Model Support**: Option to choose different local AI models
+
+## Setup
+### Prerequisites
+
+- **Ollama**: Download and install ollama from [offical website](https://ollama.com/download).
+- **RAM** (minimum):  
+   - 8GB for smaller models (<=3B parameters)  
+   - 16GB for optimal performance
+- **GPU** (Optional): Boosts performance, but not required
+  
+### Installation
+
+It is recommended to use a virtual environment.
+
+```bash
+pip install autocommitt
+```
+
+### Upgrading
+Check the installed version with:
+```bash
+pip list | grep autocommitt
+```
+
+If it's not [latest](https://github.com/Spartan-71/AutoCommitt/releases/), make sure to upgrade.
+
+```bash
+pip install -U autocommitt
+```
+
+
+## Basic Usage
+
+1. **Start the Ollama Server**  
+   ```bash
+   act start
+   ```
+   > **Note**: The Ollama server starts automatically after installation. However, running this command ensures that all configuration files are updated and a default model is properly set up.
+
+2. **Stage Your Changes**  
+   Stage the files you want to commit using Git:  
+   ```bash
+   git add <files...>
+   ```
+
+3. **Generate and Edit Commit Messages**  
+   Generate a commit message based on your staged changes:  
+   ```bash
+   act gen
+   ```  
+
+   - The tool generates a message and allows you to review and edit it before committing.  
+
+   - To **automatically push** the commit to the remote repository, use the `-p` or `--push` flag:  
+     ```bash
+     act gen -p
+     ```  
+
+   > **Pro Tip**: Save time by using the `--push` flag to combine committing and pushing into a single step.
+
+4. **Stop the Ollama Server**  
+   To free up resources after you're done, stop the Ollama server:  
+   ```bash
+   act stop
+   ```
+   > **Note**: This command is supported only on Linux. On Windows and macOS, the Ollama server runs continuously as long as the machine is active. 
+
+>**Pro Tip**: You can use the `autocommitt` alias for `act` throughout, making commands shorter and quicker to type!
+
+
+## Additional Commands
+
+By default, **AutoCommitt** uses the `llama3.2:3b` model to generate commit messages.
+
+#### 1. Using a Custom Model
+
+- To view the list of available models, run the following command:
+   ```bash
+   act list
+   ```
+- To select and set a model as active:
+   ```bash
+   act use <model_name>
+   ```
+   > **Note**: If the model is not already downloaded, this command will pull the model by running `ollama pull <model_name>` and set it as the default.
+
+#### 2. Deleting a Model
+
+```bash
+act rm <model_name>
+```
+> **Note**: Since models require a significant amount of memory (minimum 2GB), it is recommended to use only one model and delete the rest to free up space.
+
+
+
+#### 3. Viewing Commit History
+
+Easily view recent commit messages using the `his` command:
+
+```bash
+act his -n 5
+```
+- **Flag Description**:`-n` or `--limit`: (Optional) Specify the number of recent commit messages to retrieve. If omitted, all commit messages will be displayed.
+
+> **Pro Tip**: Use this command to quickly review your project's recent changes before generating new commit messages.
+
+## How It Works
+It runs the `git diff --staged` command to gather all staged changes and processes them using a local LLM (default: `llama3.2:3b` provided by Ollama). The model analyzes the changes and generates a concise, context-aware commit message, ensuring privacy and avoiding external API dependencies.  
+
+## Future Enhancements
+- **Cross-Platform Support**: Compatibility for MacOS.
+- **Git Hooks Integration**: Compatible with pre-commit hooks
+- **Custom Templates**: Support for user-defined commit message templates
+
+## Contributing
+
+We welcome contributions! To report bugs, fix issues, or add features, visit the [Issues](https://github.com/Spartan-71/AutoCommitt/issues) page. Please review our [Contribution Guide](CONTRIBUTING.md) for setup and contribution instructions.
+
+
+## Acknowledgments
+
+We would like to express our gratitude to the following open-source projects that made AutoCommitt possible:
+
+
+- [Ollama](https://ollama.ai/) - Enables local AI with large language models.
+- [Typer](https://typer.tiangolo.com/) - A CLI builder by [Sebastián Ramírez](https://github.com/tiangolo), powering our command-line interface.
+
+Special thanks to the maintainers and contributors for their outstanding work!
+
+---
