@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+django_intram/__init__.py
+django_intram/apps.py
+django_intram/intram.py
+django_intram/urls.py
+django_intram/views.py
+django_intram.egg-info/PKG-INFO
+django_intram.egg-info/SOURCES.txt
+django_intram.egg-info/dependency_links.txt
+django_intram.egg-info/requires.txt
+django_intram.egg-info/top_level.txt
