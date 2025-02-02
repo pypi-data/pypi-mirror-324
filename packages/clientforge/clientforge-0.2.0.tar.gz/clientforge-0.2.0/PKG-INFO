@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: clientforge
+Version: 0.2.0
+Summary: A set of tools and building blocks to allow simple and easy creation of clients for RESTful APIs.
+Author-email: Steven Hogue <steven.d.hogue@gmail.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Requires-Python: >=3.11
+Requires-Dist: commitizen>=4.1.1
+Requires-Dist: dataclass-wizard>=0.35.0
+Requires-Dist: hatchling>=1.27.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: oauthlib>=3.2.2
+Requires-Dist: pre-commit>=4.1.0
+Requires-Dist: ruff>=0.9.4

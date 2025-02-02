@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "clientforge"
+version = "0.2.0"
+description = "A set of tools and building blocks to allow simple and easy creation of clients for RESTful APIs."
+readme = "README.md"
+license = "Apache-2.0"
+authors = [
+    {name = "Steven Hogue", email = "steven.d.hogue@gmail.com"},
+]
+
+requires-python = ">=3.11"
+dependencies = [
+    "commitizen>=4.1.1",
+    "dataclass-wizard>=0.35.0",
+    "hatchling>=1.27.0",
+    "httpx>=0.28.1",
+    "oauthlib>=3.2.2",
+    "pre-commit>=4.1.0",
+    "ruff>=0.9.4",
+]
+
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # docstyle
+    "D",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "pep440"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true
