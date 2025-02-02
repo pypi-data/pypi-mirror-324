@@ -1,0 +1,20 @@
+[project]
+name = "hubspot-py-preprocessor"
+version = "0.1.1"
+description = "A Python tool to extract and organize custom code for HubSpot customcode workflows."
+authors = [
+    {name = "David BRAHIM"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+hsprocessor = "hubspot_py_preprocessor.hubspot_py_preprocessor.cli:main"
