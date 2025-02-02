@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: ipython-ollama
+Version: 0.0.2
+Summary: IPython magics for running Ollama models within the shell
+Author-email: Augusto Goulart <augusto@goulart.me>
+Maintainer-email: Augusto Goulart <augusto@goulart.me>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Other Audience
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Terminals
+Classifier: Typing :: Typed
+Requires-Dist: ipython>=8.32.0
+Requires-Dist: ollama>=0.4.7
