@@ -1,0 +1,11 @@
+term_assistant/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+term_assistant/__main__.py,sha256=PPBiX76uy3WYx7XEgBfBofTbKdyER7yzu5IHv_mvTWU,3600
+term_assistant/config.py,sha256=tmgTsDVCZUxan1hPp-OXgNw8cWeWph7CJO3XhClW1YE,4054
+term_assistant/llm.py,sha256=DBlxF6umej-_Da9Rbpwas5OI7-L8dMehNW5BEewwMHA,10840
+term_assistant/logging.py,sha256=03orHvVV5ujkoHKK8YWkqZUVNr3HkHNQ2V3Co7V9Iig,2847
+term_assistant/terminal.py,sha256=IoU3znHRcyRiQvKpSmwtY6slwF0Q_E_hO6GsCSIqqr8,2041
+term_assistant/tools.py,sha256=JgJ2x96sqRgZmgqNOVdGZIPggLaACOLVrtVEUumNl8c,2447
+term_assistant-0.1.0.dist-info/METADATA,sha256=3kCA1jfcD_SC1FN4iyKYBK3NZx9ZgvBtE8L1nyPjuKw,4042
+term_assistant-0.1.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+term_assistant-0.1.0.dist-info/entry_points.txt,sha256=Jw6vG0Q00kwSyK_05V-XJzzQMVCDlZe9YmYjKuA1f4I,62
+term_assistant-0.1.0.dist-info/RECORD,,
