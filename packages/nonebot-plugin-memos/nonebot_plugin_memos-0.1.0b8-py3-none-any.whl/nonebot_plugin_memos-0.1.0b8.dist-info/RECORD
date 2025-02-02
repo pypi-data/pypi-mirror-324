@@ -1,0 +1,12 @@
+nonebot_plugin_memos/__init__.py,sha256=XaqGFlYjy0CWNKlk1spdnfnb-HI2GvT3F8GjKteIx84,9136
+nonebot_plugin_memos/cache.py,sha256=c7Ih5pWPFliauqqkdy6ye-drywAGyL6opsk3reDCMY4,292
+nonebot_plugin_memos/client.py,sha256=sEaXEfi9U32x_CSIed_wjSVcTTNYFpgx8iYDhtW_kLs,3488
+nonebot_plugin_memos/config.py,sha256=xMG3Vsx8p-WsFbvdAPFRNVQEq8mDBi2pAqAWD422N2U,150
+nonebot_plugin_memos/db.py,sha256=pwd1GT-sUANQGA-JpvcezL1JowxqZFvv3sEem1gAdbo,2245
+nonebot_plugin_memos/depend.py,sha256=mZNvAoY50cN-062f0NV2aIUW43biTIrQ7sY6NyR_zmM,1780
+nonebot_plugin_memos/model.py,sha256=JDKMgr5i41dyTyNg6oZGzKNug3GeridRghqu1Jxn2mY,10182
+nonebot_plugin_memos-0.1.0b8.dist-info/LICENSE,sha256=TjgwMCR7rvynMxc_BW5IiVO7FIFKOZWN3XWnf5lbB0U,1071
+nonebot_plugin_memos-0.1.0b8.dist-info/METADATA,sha256=n8dTUe9lLno8xXDhSz_jgEg-i70go0-SXgXte6J_ITY,2289
+nonebot_plugin_memos-0.1.0b8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nonebot_plugin_memos-0.1.0b8.dist-info/top_level.txt,sha256=1rE0cnFcPkbqGua_LHW9m7iDXwFgHrnaQfA94WOctHc,21
+nonebot_plugin_memos-0.1.0b8.dist-info/RECORD,,
