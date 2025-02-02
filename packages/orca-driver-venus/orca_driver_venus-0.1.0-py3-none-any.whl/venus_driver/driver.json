@@ -1,0 +1,6 @@
+{
+    "name": "venus",
+    "description": "Orca driver for running Hamilton Venus protocols",
+    "driverPath": "venus_driver.venus_driver",
+    "driverClass": "VenusProtocolDriver"
+}
