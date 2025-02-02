@@ -1,0 +1,15 @@
+setuptools
+adafruit-ampy
+pyserial
+termcolor
+plotly
+pandas
+dash
+dash_bootstrap_components
+dash_ag_grid
+chipwhisperer
+minimalmodbus
+mkdocs
+mkdocstrings[python]
+dataclasses-json
+matplotlib
