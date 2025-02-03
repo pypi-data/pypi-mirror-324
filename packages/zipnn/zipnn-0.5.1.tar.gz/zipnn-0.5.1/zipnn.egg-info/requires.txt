@@ -1,0 +1,4 @@
+numpy
+zstandard
+torch
+safetensors
