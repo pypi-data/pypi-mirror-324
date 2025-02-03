@@ -1,0 +1,16 @@
+deputy/__init__.py,sha256=6e7UNZCp2eRGAvoFLRpfARUcn_PYUh8x7BBAc935KpI,777
+deputy/__main__.py,sha256=K7LsaUJ2_89JkmsTKajcwb9DVcwTNMxoeS6WHupudeg,425
+deputy/util.py,sha256=SWpzAbs8unh25y48iDlNNx7bppId0cSBBD1aMIFOWRA,1299
+deputy/magnum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deputy/magnum/cli.py,sha256=u6hbNaRy5KREWUwgH9XlmTG1F-QONPSAbIKHxJxFvRw,8369
+deputy/magnum/magnum.py,sha256=plw-KSpDJB1tMWF73t-Mmt0N7ZAv7a1rfsnZlJpmdPQ,3234
+deputy/serialmon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deputy/serialmon/cli.py,sha256=09k4dgGEFgvv139UxAlJrO_RbcmVkTSUiafBZXXvjMw,2465
+deputy/serialmon/serialmon.py,sha256=W5qyHGBd9SkyMIPGxVF2xD5BwKUd6LQYncXqtATcAuY,2320
+deputy/serialmon/term.py,sha256=YkO-IZEULVoEKHj2jZi8ctdIja0-w_FDh-yTn429ykE,994
+deputy-0.0.1.dist-info/LICENSE,sha256=hwME4gucaZ-vkirpu07qrHbJv7HrNXyRx0quz0s4J6M,1073
+deputy-0.0.1.dist-info/METADATA,sha256=X4MAdIUXc3ibdzKvEA91rkindFsDhc8nCR9z50F3CUI,545
+deputy-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+deputy-0.0.1.dist-info/entry_points.txt,sha256=KTqB7dsvyVQXrfOAVBw8WXrZQYJmZvocUGK4W3v72iE,118
+deputy-0.0.1.dist-info/top_level.txt,sha256=QYzwpA6HyiY69rcrq9GA3lsBiub_Cl0YZ8SbYzwwqCU,7
+deputy-0.0.1.dist-info/RECORD,,
