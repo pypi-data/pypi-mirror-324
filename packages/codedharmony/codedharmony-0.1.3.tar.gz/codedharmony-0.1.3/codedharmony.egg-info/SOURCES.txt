@@ -1,0 +1,9 @@
+LICENCE
+README.md
+setup.py
+codedharmony/__init__.py
+codedharmony/utils.py
+codedharmony.egg-info/PKG-INFO
+codedharmony.egg-info/SOURCES.txt
+codedharmony.egg-info/dependency_links.txt
+codedharmony.egg-info/top_level.txt

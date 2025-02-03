@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: codedharmony
+Version: 0.1.3
+Summary: A collection of utility functions for harmonizing code.
+Home-page: https://github.com/onlineimmigrant/codedharmony
+Author: Andrew Vialichka
+Author-email: andreivialichka@onlineimmigrant.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# codedharmony
+
+A collection of utility functions to make your coding life easier.
+
+## Installation
+
+```bash
+pip install codedharmony
+```
+
+
+
+## Python
+
+```bash
+from codedharmony import merge_dicts, safe_division, flatten_list, chunk_list
