@@ -1,0 +1,16 @@
+
+[:platform_system == "Darwin" and platform_machine != "arm64"]
+sling-mac-amd64==1.4.1.post1
+
+[:platform_system == "Darwin" and platform_machine == "arm64"]
+sling-mac-arm64==1.4.1.post1
+
+[:platform_system == "Linux" and platform_machine == "aarch64"]
+sling-linux-arm64==1.4.1.post1
+sling-linux-amd64==1.4.1.post1
+
+[:platform_system == "Windows" and platform_machine != "ARM64"]
+sling-windows-amd64==1.4.1.post1
+
+[:platform_system == "Windows" and platform_machine == "ARM64"]
+sling-windows-arm64==1.4.1.post1
