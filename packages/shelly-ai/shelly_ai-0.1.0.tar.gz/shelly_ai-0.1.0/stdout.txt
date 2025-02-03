@@ -1,0 +1,25 @@
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ ls
+LICENSE					src
+README.md				stdin.txt
+debug.log				stdout.txt
+pyproject.toml				web_socket_error_message_sink.py
+requirements.txt
+bash-3.2$ 
+bash-3.2$ exit
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ ls
+LICENSE					requirements.txt
+README.md				src
+command.log				stdin.txt
+debug.log				stdout.txt
+error_analysis.json			web_socket_error_message_sink.py
+pyproject.toml
+bash-3.2$ 
+bash-3.2$ exit

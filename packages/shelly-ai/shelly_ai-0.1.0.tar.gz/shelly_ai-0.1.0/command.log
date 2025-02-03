@@ -1,0 +1,9 @@
+{
+  "current_command": "",
+  "last_command": "ls",
+  "current_output": "\r\nLICENSE\t\t\t\t\trequirements.txt\r\nREADME.md\t\t\t\tsrc\r\ncommand.log\t\t\t\tstdin.txt\r\ndebug.log\t\t\t\tstdout.txt\r\nerror_analysis.json\t\t\tweb_socket_error_message_sink.py\r\npyproject.toml\r\n\r\nexit\r\n",
+  "buffer": {
+    "stdout": "ls\r\nLICENSE\t\t\t\t\trequirements.txt\r\nREADME.md\t\t\t\tsrc\r\ncommand.log\t\t\t\tstdin.txt\r\ndebug.log\t\t\t\tstdout.txt\r\nerror_analysis.json\t\t\tweb_socket_error_message_sink.py\r\npyproject.toml\r\n\r\nexit\r\n",
+    "stderr": ""
+  }
+}
