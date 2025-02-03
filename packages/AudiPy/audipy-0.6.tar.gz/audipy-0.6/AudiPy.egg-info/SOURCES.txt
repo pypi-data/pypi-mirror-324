@@ -1,0 +1,13 @@
+README.md
+setup.py
+AudiPy/AudiPy.py
+AudiPy/Generator.py
+AudiPy/Input.py
+AudiPy/Output.py
+AudiPy/StandardScalar.py
+AudiPy/__init__.py
+AudiPy.egg-info/PKG-INFO
+AudiPy.egg-info/SOURCES.txt
+AudiPy.egg-info/dependency_links.txt
+AudiPy.egg-info/requires.txt
+AudiPy.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: AudiPy
+Version: 0.6
+Summary: A simple audio file reader
+Home-page: https://github.com/JustinEugene-CS/AudiPy
+Author: Nick Stephens, Group 10 hackMT 2025
+Author-email: robert.nicholas.stephens@gmail.com
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: opencv-python
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+A simple audio file reader
