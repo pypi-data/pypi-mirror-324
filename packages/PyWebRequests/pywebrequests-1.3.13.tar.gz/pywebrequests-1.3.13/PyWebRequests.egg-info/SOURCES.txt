@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+description.txt
+long_description.md
+requirements.txt
+setup.py
+PyWebRequests/__init__.py
+PyWebRequests/proxies.py
+PyWebRequests.egg-info/PKG-INFO
+PyWebRequests.egg-info/SOURCES.txt
+PyWebRequests.egg-info/dependency_links.txt
+PyWebRequests.egg-info/requires.txt
+PyWebRequests.egg-info/top_level.txt
+PyWebRequests/user_agents/__init__.py
+PyWebRequests/user_agents/data.py
+PyWebRequests/user_agents/data_types.py
