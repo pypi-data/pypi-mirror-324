@@ -1,0 +1,11 @@
+echoes_waveform_models/IMREPhenomAbedi.py,sha256=OG3i7aQ-_7d04bazymnKupw88t5EqZbWYLJ8-EGZeoA,4872
+echoes_waveform_models/IMREPhenomBHP.py,sha256=eB0TW4TSDY2ErbyvU-L2wzmnZqRoE8kzKY16xE8u-5A,13484
+echoes_waveform_models/__init__.py,sha256=ri8nB8eaxbMovbVGh_7mOtja8acsp6HhL3Jw0W9gCyk,60
+echoes_waveform_models/custom_conditioning.py,sha256=vtu9YSPbm1YQDggblQON05T-eVMMQMkNqOOfjseqAK0,7375
+echoes_waveform_models/waveform.py,sha256=HBCY2OxKIbdFR-sz_aajZGU-YTlXfOoEgc-C0xkoIhw,9499
+echoes_waveform_models/waveform_utils.py,sha256=JYacaK-BiIuwVRjxcXH26H2VApWoHxbPqwLP-aia5UQ,4294
+echoes_waveform_models-0.0.5.dist-info/LICENSE,sha256=i8864KdOKfIMXis4ayIvAjCr5fAm7UlhfRszDOgRUWE,1085
+echoes_waveform_models-0.0.5.dist-info/METADATA,sha256=S5XLy-Tg6NGajsWEWZk9IxAFNfxZDj_Odr4cb6ADN80,1597
+echoes_waveform_models-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+echoes_waveform_models-0.0.5.dist-info/top_level.txt,sha256=KldqJcHNrUlPAdSKQKr_-s0NRF0ay3WZAudz_wx1ejQ,23
+echoes_waveform_models-0.0.5.dist-info/RECORD,,
