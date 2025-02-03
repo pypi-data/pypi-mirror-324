@@ -1,0 +1,6 @@
+[console_scripts]
+karaoke-auto=karaoke_prep.utils.auto_cli:main
+karaoke-bulk=karaoke_prep.utils.bulk_cli:main
+karaoke-finalise=karaoke_prep.utils.finalise_cli:main
+karaoke-prep=karaoke_prep.utils.prep_cli:main
+
