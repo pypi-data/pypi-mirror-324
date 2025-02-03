@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: procol
+Version: 0.1.1
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# ProCol
+
+Python package extended in Rust to do expensive probability calculations. Currently only the [filling probability](https://stats.stackexchange.com/questions/660886/general-formula-for-the-filling-probability-with-respect-to-a-finite-collectio).
+
