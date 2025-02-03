@@ -1,0 +1,7 @@
+README.md
+setup.py
+squidlayer/__init__.py
+squidlayer.egg-info/PKG-INFO
+squidlayer.egg-info/SOURCES.txt
+squidlayer.egg-info/dependency_links.txt
+squidlayer.egg-info/top_level.txt
