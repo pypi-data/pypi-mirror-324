@@ -1,0 +1,53 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Account is already configured",
+            "already_in_progress": "Configuration flow is already in progress",
+            "authorize_url_timeout": "Timeout generating authorize URL.",
+            "connection_error": "Failed to connect to OneDrive.",
+            "failed_to_create_folder": "Failed to create backup folder",
+            "missing_configuration": "The component is not configured. Please follow the documentation.",
+            "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
+            "oauth_error": "Received invalid token data.",
+            "oauth_failed": "Error while obtaining access token.",
+            "oauth_timeout": "Timeout resolving OAuth token.",
+            "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
+            "reauth_successful": "Re-authentication was successful",
+            "unknown": "Unexpected error",
+            "user_rejected_authorize": "Account linking rejected: {error}",
+            "wrong_drive": "New account does not contain previously configured OneDrive."
+        },
+        "create_entry": {
+            "default": "Successfully authenticated"
+        },
+        "step": {
+            "pick_implementation": {
+                "title": "Pick authentication method"
+            },
+            "reauth_confirm": {
+                "description": "The OneDrive integration needs to re-authenticate your account",
+                "title": "Authentication expired for {name}"
+            }
+        }
+    },
+    "exceptions": {
+        "authentication_failed": {
+            "message": "Authentication failed"
+        },
+        "backup_no_content": {
+            "message": "Backup has no content"
+        },
+        "backup_no_upload_session": {
+            "message": "Failed to start backup upload"
+        },
+        "backup_not_found": {
+            "message": "Backup not found"
+        },
+        "failed_to_create_folder": {
+            "message": "Failed to create {folder} folder"
+        },
+        "failed_to_get_folder": {
+            "message": "Failed to get {folder} folder"
+        }
+    }
+}

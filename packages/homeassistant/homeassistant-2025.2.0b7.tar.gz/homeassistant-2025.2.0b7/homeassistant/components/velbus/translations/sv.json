@@ -1,0 +1,99 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Enheten \u00e4r redan konfigurerad"
+        },
+        "error": {
+            "already_configured": "Enheten \u00e4r redan konfigurerad",
+            "cannot_connect": "Det gick inte att ansluta"
+        },
+        "step": {
+            "user": {
+                "data": {
+                    "port": "Anslutningsstr\u00e4ng"
+                }
+            }
+        }
+    },
+    "exceptions": {
+        "integration_not_found": {
+            "message": "Integration \"{target}\" hittades inte i registret."
+        },
+        "invalid_hvac_mode": {
+            "message": "Klimatl\u00e4ge {hvac_mode} st\u00f6ds inte."
+        },
+        "not_loaded": {
+            "message": "{target} \u00e4r inte laddad."
+        }
+    },
+    "issues": {
+        "deprecated_interface_parameter": {
+            "title": "Utfasad 'interface'-parameter"
+        }
+    },
+    "services": {
+        "clear_cache": {
+            "fields": {
+                "address": {
+                    "description": "Modulens adress i decimalformat. Om angivet rensas bara denna modul, om inget anges rensas hela cachekatalogen (alla moduler) Decimaladresserna visas framf\u00f6r de moduler som listas p\u00e5 integrationssidan.",
+                    "name": "Adress"
+                },
+                "config_entry": {
+                    "description": "Konfigurationsposten f\u00f6r velbus-integrationen",
+                    "name": "Konfigurationspost"
+                },
+                "interface": {
+                    "description": "Velbus-gr\u00e4nssnittet som kommandot ska skickas till, detta \u00e4r samma v\u00e4rde som anv\u00e4ndes under konfigurationen.",
+                    "name": "Gr\u00e4nssnitt"
+                }
+            },
+            "name": "Rensar cache"
+        },
+        "scan": {
+            "fields": {
+                "config_entry": {
+                    "description": "Konfigurationsposten f\u00f6r velbus-integrationen",
+                    "name": "Konfigurationspost"
+                },
+                "interface": {
+                    "description": "Velbus-gr\u00e4nssnittet som kommandot ska skickas till, detta \u00e4r samma v\u00e4rde som anv\u00e4ndes under konfigurationen.",
+                    "name": "Gr\u00e4nssnitt"
+                }
+            },
+            "name": "Skanna"
+        },
+        "set_memo_text": {
+            "description": "St\u00e4ller in PM-texten f\u00f6r visning av moduler som VMBGPO, VMBGPOD Se till att sidan/sidorna i modulen \u00e4r konfigurerade f\u00f6r att visa PM-texten.",
+            "fields": {
+                "address": {
+                    "description": "Modulens adress i decimalformat. Decimaladresserna visas framf\u00f6r de moduler som listas p\u00e5 integrationssidan.",
+                    "name": "Adress"
+                },
+                "config_entry": {
+                    "description": "Konfigurationsposten f\u00f6r velbus-integrationen",
+                    "name": "Konfigurationspost"
+                },
+                "interface": {
+                    "description": "Velbus-gr\u00e4nssnittet som kommandot ska skickas till, detta \u00e4r samma v\u00e4rde som anv\u00e4ndes under konfigurationen.",
+                    "name": "Gr\u00e4nssnitt"
+                },
+                "memo_text": {
+                    "description": "Den faktiska text som ska visas. Texten \u00e4r begr\u00e4nsad till 64 tecken.",
+                    "name": "Memo text"
+                }
+            },
+            "name": "Ange text f\u00f6r memo"
+        },
+        "sync_clock": {
+            "fields": {
+                "config_entry": {
+                    "name": "Konfigurationspost"
+                },
+                "interface": {
+                    "name": "Gr\u00e4nssnitt"
+                }
+            },
+            "name": "Synkronisera klockan"
+        }
+    }
+}
