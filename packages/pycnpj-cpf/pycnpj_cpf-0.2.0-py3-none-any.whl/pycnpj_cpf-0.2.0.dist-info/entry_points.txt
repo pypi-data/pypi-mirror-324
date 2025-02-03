@@ -1,0 +1,2 @@
+[console_scripts]
+pycnpj-cpf = pycnpj_cpf.__main__:main
