@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: segbook
+Version: 0.0.5
+Summary: Medical image segmentation model zoo
+Home-page: https://github.com/uni-medical/MedSegModelZoo
+Author: Jin Ye
+Author-email: jin.ye@monash.edu
+License: Apache-2.0
+Description: # MedSegModelZoo
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+[console_scripts]
+segbook = segbook.segbook:main
+
