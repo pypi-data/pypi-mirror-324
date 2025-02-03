@@ -1,0 +1,14 @@
+.python-version
+__pycache__/
+*.egg-info/
+build/
+.eggs/
+dist/
+*.pyc
+.cache/
+.env
+.coverage
+VERSION
+_local
+docs/build
+.idea/
