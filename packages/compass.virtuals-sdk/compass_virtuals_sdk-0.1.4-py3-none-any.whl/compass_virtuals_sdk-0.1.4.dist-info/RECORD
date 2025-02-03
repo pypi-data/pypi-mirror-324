@@ -1,0 +1,11 @@
+compass/virtuals_sdk/__init__.py,sha256=6dGT8iMyz1_8Kyoh_v7_EV8WyL6gsRLcg6705gWGuGc,67
+compass/virtuals_sdk/api_wrapper.py,sha256=XIwF4X63tLB1CGooy58W_q9hqeHetEVkdHGCIa4w3I4,4344
+compass/virtuals_sdk/config.py,sha256=QTipiTtuJv-Cqxhsdwj81bn2pXYPq16T4eFQ-OXo894,430
+compass/virtuals_sdk/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+compass/virtuals_sdk/shared_defaults.py,sha256=GLpwGtuVxbG1DYnB-nxv024phbiI_WmoEXjdKxPT6hs,400
+compass/virtuals_sdk/simple_agent.py,sha256=Vad37pqdvLGfbnRRLaWrn8ZOhZVIhmVZOLzhHtHjFOM,1428
+compass/virtuals_sdk/simple_worker.s.py,sha256=vtDEJmtQ3hpfrcXb3MQNHDsCctUcvUI-XqkDDy509Q0,1321
+compass/virtuals_sdk/wallet.py,sha256=9lrmIxRbxvWbV098nAxs31Ie3fdvZQ3G2_YwekHeT14,2561
+compass_virtuals_sdk-0.1.4.dist-info/METADATA,sha256=fbJD9i6W342XIA79EP1gIrX8yx4Z3fyYCFKruOvLOuc,836
+compass_virtuals_sdk-0.1.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+compass_virtuals_sdk-0.1.4.dist-info/RECORD,,
