@@ -1,0 +1,10 @@
+sqema/SharkBay16S_EG_1.csv,sha256=wWZsXb986RkQzqrjJAOcVkGb2fD5vrxNC_FpbmODTgw,251303
+sqema/SharkBay16S_HP_1.csv,sha256=AKITWBuwrDRciMxudTvXxvGFutNyNksnAjIbQWqEekg,280493
+sqema/__init__.py,sha256=E5JE6RjYgY2fC3GC9-57cPpox447XiK2c9XLHZ8XCeU,91
+sqema/sqema.py,sha256=kxln_op4XkE3GXRqz3XvMMyYDcJn6yczO5TfO_kW4kw,42078
+sqema/sqema_manual.pdf,sha256=-CLOK3x5absQihmfCt1Cy6et8QR-eCCfZTQDT-1UAeQ,2581525
+sqema/sqematest_1.csv,sha256=otL9vZ_7E-GQGVdfUtmPvu1X0XaHQ8k1W5PT7xB5Iaw,9204
+sqema-0.5.2.dist-info/LICENSE,sha256=Sb503MjdooXeItOYuE6UklnMXl-Z1ZoBAXYszC5CYgA,1079
+sqema-0.5.2.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+sqema-0.5.2.dist-info/METADATA,sha256=nC2OIampx6676k_jbhqal_oIW6AwqXRoTpUhKwL6R0k,274
+sqema-0.5.2.dist-info/RECORD,,
