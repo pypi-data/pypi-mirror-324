@@ -1,0 +1,61 @@
+Metadata-Version: 2.2
+Name: nonebot-plugin-memos
+Version: 0.1.0b15
+Summary: nonebot2 plugin for memos
+Author-email: eya46 <admin@eya46.com>
+License: The MIT License (MIT)
+        Copyright (c) 2024 eya46
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of
+        this software and associated documentation files (the "Software"), to deal in
+        the Software without restriction, including without limitation the rights to
+        use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+        the Software, and to permit persons to whom the Software is furnished to do so,
+        subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+        FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+        COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+        IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+        CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: filetype>=1.2.0
+Requires-Dist: nonebot-plugin-alconna>=0.54.2
+Requires-Dist: nonebot-plugin-orm>=0.7.6
+Requires-Dist: nonebot-plugin-session>=0.3.2
+Requires-Dist: nonebot-plugin-session-orm>=0.2.2
+Requires-Dist: nonebot2[httpx]>=2.4.1
+
+<p align="center">
+  <a href="https://nonebot.dev/"><img src="https://nonebot.dev/logo.png" width="200" height="200" alt="nonebot"></a>
+</p>
+
+<div align="center">
+
+# NoneBot Plugin Memos
+
+![License](https://img.shields.io/github/license/eya46/nonebot_plugin_memos)
+![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
+![NoneBot](https://img.shields.io/badge/nonebot-2.4.1+-red.svg)
+</div>
+
+<div align="center">
+
+![:eya46](https://count.getloli.com/get/@:eya46-plugin-memos?theme=gelbooru)
+
+</div>
+
+# 赞助
+
+<div align="center">
+
+[![yxvm](./resources/yxvm-logo.webp "yxvm")](https://yxvm.com/)
+
+</div>
