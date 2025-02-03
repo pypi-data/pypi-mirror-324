@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: glpg
+Version: 1.0.0
+Summary: pyglet OpenGL playground
+Home-page: https://github.com/flowmeadow/pygletPlayground
+Download-URL: https://github.com/flowmeadow/pygletPlayground.git
+Author: Florian Wiese
+Author-email: florian-wiese93@outlook.de
+License: MIT
+Keywords: pyglet,OpenGL
+License-File: LICENSE.rst
+Requires-Dist: attrs==25.1.0
+Requires-Dist: numpy==2.2.2
+Requires-Dist: pillow==11.1.0
+Requires-Dist: pyglet==1.5.27
+Requires-Dist: PySide6==6.8.2
+Requires-Dist: PySide6_Addons==6.8.2
+Requires-Dist: PySide6_Essentials==6.8.2
+Requires-Dist: shiboken6==6.8.2
+Requires-Dist: typing_extensions==4.12.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
