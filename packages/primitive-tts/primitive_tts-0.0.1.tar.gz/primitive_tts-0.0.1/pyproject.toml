@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+  "primitive_tts/*.py",
+]
+
+[tool.hatch.version]
+path = "primitive_tts/__init__.py"
+
+[project]
+name = "primitive-tts"
+dynamic = ["version"]
+requires-python = ">= 3.4"
+authors = [
+  {name = "Gunther Cox"},
+]
+description = "A simple text-to-speech library"
+readme = "README.md"
+license = {text = "MIT"}
+keywords = ["tts", "speech", "text-to-speech", "speech synthesis"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Natural Language :: English",
+  "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
+
+[project.urls]
+Repository = "https://github.com/gunthercox/primitive-tts.git"
+
+[project.optional-dependencies]
+sounddevice = ["sounddevice"]
