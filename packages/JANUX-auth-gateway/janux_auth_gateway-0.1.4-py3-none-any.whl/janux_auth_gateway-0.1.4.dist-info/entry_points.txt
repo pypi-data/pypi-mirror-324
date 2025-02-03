@@ -1,0 +1,3 @@
+[console_scripts]
+start=janux_auth_gateway.__main__:main
+
