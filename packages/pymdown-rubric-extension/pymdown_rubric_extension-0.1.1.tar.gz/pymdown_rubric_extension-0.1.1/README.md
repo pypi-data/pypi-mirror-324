@@ -1,0 +1,1 @@
+# PyMdown Rubric Extension
