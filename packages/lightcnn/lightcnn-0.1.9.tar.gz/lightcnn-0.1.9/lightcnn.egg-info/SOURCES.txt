@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+lightcnn/__init__.py
+lightcnn/model.py
+lightcnn/preprocessing.py
+lightcnn.egg-info/PKG-INFO
+lightcnn.egg-info/SOURCES.txt
+lightcnn.egg-info/dependency_links.txt
+lightcnn.egg-info/requires.txt
+lightcnn.egg-info/top_level.txt
+lightcnn/weights/LightCNN-V4_checkpoint.pth.tar
