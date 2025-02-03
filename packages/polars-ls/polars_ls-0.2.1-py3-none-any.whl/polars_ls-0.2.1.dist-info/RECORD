@@ -1,0 +1,14 @@
+polars_ls-0.2.1.dist-info/METADATA,sha256=dY9AUjULL8XzVovytpQt8_YLkKTCCayjKKbGTnASejQ,4227
+polars_ls-0.2.1.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+polars_ls-0.2.1.dist-info/entry_points.txt,sha256=-Ar0kkB7TOZy27gj5GSRk1XWNYyKUIYrUSw6XxndUgs,54
+pols/.pols.py.swp,sha256=FVcU2m11KJ6bWhEmi6KE4Xca7_uk7928azMIdQR6Qqk,40960
+pols/.ruff_cache/.gitignore,sha256=njpg8ebsSuYCFcEdVLFxOSdF7CXp3e1DPVvZITY68xY,35
+pols/.ruff_cache/CACHEDIR.TAG,sha256=WVMVbX4MVkpCclExbq8m-IcOZIOuIZf5FrYw5Pk-Ma4,43
+pols/__init__.py,sha256=XHa3QfyL-UJNBEL-NJtyISHOjNQz3DI6kjNTwOMRA-A,23
+pols/cli.py,sha256=OLtbgfTdHqWIvx1AoZXR-W7l0rRVtvNk8y5sxXEAW-o,81
+pols/features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pols/features/hide.py,sha256=AXh4n0TuMI8b0lmNZtFXlMhwxA81R1tSVo_Wry3ZUYs,248
+pols/features/p.py,sha256=atcH0Kq_LrisYUAZJGSwdzAn8n6KJnfW_gBMKe64APg,277
+pols/features/v.py,sha256=UrAdyF2oumK_nlZSJzShuLqL_FqKsXoPqhS2_FEqBZQ,828
+pols/pols.py,sha256=YXwt0YdjLUU2eceIz82MMGG_V-H6t8PRqxLmVqwyxNw,15116
+polars_ls-0.2.1.dist-info/RECORD,,
