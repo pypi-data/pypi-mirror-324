@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/geopreprova.egg-info/PKG-INFO
+src/geopreprova.egg-info/SOURCES.txt
+src/geopreprova.egg-info/dependency_links.txt
+src/geopreprova.egg-info/requires.txt
+src/geopreprova.egg-info/top_level.txt
+test/test_GeoPre.py
