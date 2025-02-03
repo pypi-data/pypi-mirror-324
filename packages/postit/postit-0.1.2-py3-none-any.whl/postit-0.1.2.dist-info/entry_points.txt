@@ -1,0 +1,3 @@
+[console_scripts]
+postit=postit.cli:app
+
