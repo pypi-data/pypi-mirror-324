@@ -1,0 +1,10 @@
+flask_ultime/__init__.py,sha256=OatoWCBYZY_BvT5QFJ7hOXGFEdMgA-gdEKCPhOXUMkE,81
+flask_ultime/cli.py,sha256=EcsJWSyA2fzQWSsF6mfzEz-x7KunbCeuo57gLvEGqGM,3773
+flask_ultime/constants.py,sha256=L9rWQEXCNCLea7UVl9y22ws_WCly-P9EKAtGpMrdRYw,414
+flask_ultime/ultime.py,sha256=q9LehTtXtpEeMVE9H24DNY7t2wEfXTWQ66QptZJh-68,1432
+flask_ultime/utils.py,sha256=c41C7Q1yB3xos9zPALbohWIapr9y2Sr1qlnCT1KkXug,1031
+flask_ultime-0.1.0.dist-info/LICENSE,sha256=C-X2-hJb3MuJcd4MbeBA15ZZwzPwI2WbBJevgeN-Qd8,1064
+flask_ultime-0.1.0.dist-info/METADATA,sha256=buVgp4rBkVYvCpFPM0h9Pqo7Tn18bb_LW5OyVvyaIoY,2805
+flask_ultime-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+flask_ultime-0.1.0.dist-info/top_level.txt,sha256=8a9h8TNJs3SBtPosiuFhPJUa-uVZ8CFRhngt056AvCc,13
+flask_ultime-0.1.0.dist-info/RECORD,,
