@@ -1,0 +1,6 @@
+gym
+pybullet
+pybullet
+numpy
+stable-baselines3
+opencv-python

@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: bendis-robot-arm-env
+Version: 0.2.0
+Summary: Robotic Arm Environment for Training RL Agents
+Home-page: https://github.com/yourusername/bendis-robot-arm-env
+Author: Your Name
+Author-email: your_email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+Requires-Dist: pybullet
+Requires-Dist: pybullet
+Requires-Dist: numpy
+Requires-Dist: stable-baselines3
+Requires-Dist: opencv-python
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: summary
+
+# Bendis-ARM
+
+A robotic arm environment built using gym and pybullet, designed for reinforcement learning.
+
+## Installation
+
+```bash
+pip install Bendis-ARM
