@@ -1,0 +1,75 @@
+
+name: Upload Python Package to PyPi
+
+on: 
+  push:
+    branches: []
+    tags-ignore: []
+
+  release:
+    types: [prereleased, published]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: build python package
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.8'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python3 -m pip install --upgrade build
+      - name: Build package
+        run: python -m build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+  deploy:
+    if: github.event_name  == 'release'
+    needs: build
+    runs-on: ubuntu-latest
+    name: Upload Python Package to PyPi on release
+
+    environment:
+      name: pypi-release
+
+    permissions:
+      id-token: write
+
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        name: dist
+        path: dist/
+    - name: Publish package to pypi if release 
+      uses: pypa/gh-action-pypi-publish@release/v1
+
+  deploy-test:
+    if: github.event_name  == 'push'
+    needs: build
+    runs-on: ubuntu-latest
+    name: Upload Python Package to Test PyPi on push
+
+    environment:
+      name: pypi-test
+
+    permissions:
+      id-token: write
+
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        name: dist
+        path: dist/
+    - name: Publish package to test.pypi if push
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        repository-url: https://test.pypi.org/legacy/
+
+  
