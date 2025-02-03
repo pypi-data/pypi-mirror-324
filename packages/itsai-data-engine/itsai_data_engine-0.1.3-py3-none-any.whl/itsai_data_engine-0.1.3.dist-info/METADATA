@@ -1,0 +1,71 @@
+Metadata-Version: 2.2
+Name: itsai-data-engine
+Version: 0.1.3
+Summary: Conversational AI for Structured Data
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: duckdb>=1.1.3
+Requires-Dist: duckdb-engine>=0.14.0
+Requires-Dist: pandas[excel]>=2.2.2
+Requires-Dist: sqlalchemy-bigquery>=1.12.0
+Requires-Dist: sqlalchemy>=2.0.3
+Requires-Dist: langchain-openai>=0.1.11
+Requires-Dist: azure-search-documents>=11.4
+Requires-Dist: azure-identity>=1.17.0
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: jinja2>=3.1.5
+Requires-Dist: langchain-community>=0.2.6
+Requires-Dist: langchain-google-vertexai>=1.0.4
+
+# Data Engine
+
+## Core Engine Scope
+
+-   Connect to arbitrary datastore (database, lakehouse, file upload)
+-   generate SQL from text, following schema, metadata, and business rules
+    -   record past interactions
+-   create visualization directives
+
+## UI/UX
+
+-   Split screen view (horizontal or vertical)
+-   Emphasis on data and visuals
+-   Only a single text input box (not a scrolling chat window)
+
+## Branch Workflow
+
+-   Every action updates the state in the same page
+-   State is represented as a DAG, similar to git commits/branches
+-   Advantage over linear tracking and time travel is allows for exploration and experimentation of intermediate data views
+-   Easiest implementation would be a forward-only flow, where instructions would operate on the current view, and create a new view
+-   A more advanced implementation will backtrack and do a tree search to resolve the query with the best existing view
+    (in case fields have been dropped or transformed, and we need earlier views).
+    This will also move us to that state, without overwriting the “future” commits
+
+## High Level Architecture
+
+-   Zero shot, as well as a learning/trainable system.
+    -   Zero shot for file upload functionality
+-   Metadata generation
+-   Table/column descriptions, cardinality (incl. unique values), data types,
+
+## Phases
+
+-   Data Extraction
+-   Data Transformation
+-   Visualization
+    -   Operates using a single view/table
+    -   Further transform the table if too granular (aggregations, etc.)
+    -   Identify the relevant column(s) for visualization, and "role"
+
+## Roadmap
+
+-   Create Agents
+    -   SQL Extractor
+        -   Agentic RAG: Currently doing naive RAG, support table level (and column subset for larger table) tool-based querying.
+    -   SQL Transformer (for viz/summarization)
+    -   Visualization
+-   query based ML
+    -   use past questions and generated SQL to "recommend" related SQL internally. This can be verified via LLM
+-   construct views for each question, in a lineage graph. metadata need to propogate from base tables, taking into account sql transforms.
+    views can be shared between users, and visualizations created for any specific view can also be recommended
