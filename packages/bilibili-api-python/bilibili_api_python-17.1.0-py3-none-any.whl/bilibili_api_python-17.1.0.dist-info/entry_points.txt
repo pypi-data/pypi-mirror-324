@@ -1,0 +1,2 @@
+[console_scripts]
+ivitools = bilibili_api.tools.ivitools.__main__:main
