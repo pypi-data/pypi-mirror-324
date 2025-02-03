@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+rci/__init__.py
+rci/core.py
+rci/data/__init__.py
+rci/data/all_DL.txt
+rci_grafgrizon.egg-info/PKG-INFO
+rci_grafgrizon.egg-info/SOURCES.txt
+rci_grafgrizon.egg-info/dependency_links.txt
+rci_grafgrizon.egg-info/top_level.txt
