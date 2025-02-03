@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "sharpedge"
+version = "1.1.7"
+description = "Collection of image processing tools and techniques, including padding, flipping, colorscale conversion, seam carving, and image shrinking. Designed for efficient manipulation and transformation of images."
+authors = ["Jenny Zhang, Archer Liu, Inder Khera, Hankun Xiao"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+numpy = ">=2.2.1"
+matplotlib = "^3.10.0"
+scipy = "^1.15.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^6.0.0"
+myst-nb = {version = "^1.1.2", python = "^3.11"}
+sphinx-autoapi = "^3.4.0"
+sphinx-press-theme = "^0.9.1"
+sphinx-rtd-theme = "^3.0.2"
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+]                                                    # version location
+branch = "main"                                      # branch to make releases of
+changelog_file = "CHANGELOG.md"                      # changelog file
+build_command = "pip install poetry && poetry build" # build dists 
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
