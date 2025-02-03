@@ -1,0 +1,9 @@
+README.md
+setup.py
+pcdt_scraper/__init__.py
+pcdt_scraper/main.py
+pcdt_scraper.egg-info/PKG-INFO
+pcdt_scraper.egg-info/SOURCES.txt
+pcdt_scraper.egg-info/dependency_links.txt
+pcdt_scraper.egg-info/requires.txt
+pcdt_scraper.egg-info/top_level.txt
