@@ -1,0 +1,43 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "fusion_blossom"
+dynamic = ["version"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Rust",
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3 :: Only',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    'Intended Audience :: Developers',
+    'Intended Audience :: Information Technology',
+    'Intended Audience :: System Administrators',
+    'License :: OSI Approved :: MIT License',
+    'Operating System :: Unix',
+    'Operating System :: POSIX :: Linux',
+    'Environment :: Console',
+    'Environment :: MacOS X',
+    'Topic :: Software Development :: Libraries :: Python Modules',
+    'Topic :: Internet',
+]
+
+# by default remove blossom V in the build because of license issue;
+# users can enable blossom V by removing `remove_blossom_v` feature, at the responsibility of users
+[tool.maturin]
+features = ["python_binding", "remove_blossom_v", "dangerous_pointer", "u32_index", "i32_weight"]
+# Yue 2022.10.8: when maturin is called from `pip wheel`, it doesn't enable the above features, and thus pyo3 is not enabled
+#     since it cannot find pyo3, it falls back to use cffi (which is really confusing because I don't use cffi at all!)
+#     in order to solve cffi issue, I append "cffi" after requires = ["maturin>=0.12,<0.13"], and it works and generate some wheels
+#     but the problem remains: the wheel actually doesn't contain anything, simply because "python_binding" is not enabled
+#     I have to add `bindings = "pyo3"` to explicitly tell maturin to use pyo3, and then it complains that it cannot find pyo3
+#     later on I realize I have to provide the features in `cargo-extra-args` (credit to https://github.com/PyO3/maturin/issues/211)
+# conclusion: when calling `maturin develop`, it can read `features` above; but when called from `pip wheel`, it takes value below
+bindings = "pyo3"
+cargo-extra-args = "--features python_binding,remove_blossom_v,dangerous_pointer,u32_index,i32_weight"
