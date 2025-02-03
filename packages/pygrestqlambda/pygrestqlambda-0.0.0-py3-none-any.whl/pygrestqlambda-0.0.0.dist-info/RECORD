@@ -1,0 +1,8 @@
+pygrestqlambda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygrestqlambda/aws/lambda_function/json_transform.py,sha256=Jye6MxYb1vyU4Bz4aLIcYauMwAHrMCZPdUlF3AqdJTM,381
+pygrestqlambda/aws/lambda_function/proxy_integration_respose.py,sha256=TMnOk0RMFaDhbFk5ZAfCVQmN_mMKX5KpgKKxwisKV8I,1702
+pygrestqlambda/db/record.py,sha256=EoPJTWNfF2ieEV7if2neieF0VZsf2Fs44SW13h3fZcA,1577
+pygrestqlambda-0.0.0.dist-info/METADATA,sha256=t1_x_ZXzWSBxXfobwAZCxQ2C7Y_sB1fEtTTHiteqBUk,1233
+pygrestqlambda-0.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pygrestqlambda-0.0.0.dist-info/licenses/LICENSE,sha256=8QeS1c5uv4AYoEG3M80OSCBuC_Pk-6vjU1VBUnlX2m0,1071
+pygrestqlambda-0.0.0.dist-info/RECORD,,
