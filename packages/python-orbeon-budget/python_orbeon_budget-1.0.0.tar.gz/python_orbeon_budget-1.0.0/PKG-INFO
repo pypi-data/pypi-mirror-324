@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: python-orbeon-budget
+Version: 1.0.0
+Summary: Uma biblioteca simples e independente para geração de orçamentos padronizados em formato de PDF.
+Home-page: https://github.com/getorbeon/python-orbeon-budget
+Author: Edu Fontes
+Author-email: eduramofo@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
