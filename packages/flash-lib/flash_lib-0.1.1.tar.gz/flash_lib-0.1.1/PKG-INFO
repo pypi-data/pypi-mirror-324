@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: flash-lib
+Version: 0.1.1
+Summary: Everyday utility functions for Machine Learning and Data Science
+License: MIT
+Keywords: machine learning,data science
+Author: Althaf Muhammad
+Author-email: zoory9900@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: matplotlib (>=3.10.0,<4.0.0)
+Requires-Dist: numpy (>=2.2.2,<3.0.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Requires-Dist: scikit-learn (>=1.6.1,<2.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: statsmodels (>=0.14.4,<0.15.0)
+Project-URL: Repository, https://github.com/althaf-07/flash-lib
+Description-Content-Type: text/markdown
+
+
