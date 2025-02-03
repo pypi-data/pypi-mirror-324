@@ -1,0 +1,7 @@
+LICENSE
+README.md
+clipify.egg-info/PKG-INFO
+clipify.egg-info/SOURCES.txt
+clipify.egg-info/dependency_links.txt
+clipify.egg-info/requires.txt
+clipify.egg-info/top_level.txt
