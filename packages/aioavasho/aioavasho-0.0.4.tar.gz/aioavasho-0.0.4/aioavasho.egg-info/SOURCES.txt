@@ -1,0 +1,9 @@
+LICENSE
+README.md
+aioavasho.py
+pyproject.toml
+aioavasho.egg-info/PKG-INFO
+aioavasho.egg-info/SOURCES.txt
+aioavasho.egg-info/dependency_links.txt
+aioavasho.egg-info/requires.txt
+aioavasho.egg-info/top_level.txt
