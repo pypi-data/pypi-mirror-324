@@ -1,0 +1,5 @@
+pyproject.toml
+verifiable_rewards.egg-info/PKG-INFO
+verifiable_rewards.egg-info/SOURCES.txt
+verifiable_rewards.egg-info/dependency_links.txt
+verifiable_rewards.egg-info/top_level.txt
