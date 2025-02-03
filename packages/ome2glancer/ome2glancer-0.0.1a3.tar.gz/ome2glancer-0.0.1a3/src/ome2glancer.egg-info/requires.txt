@@ -1,0 +1,15 @@
+typer
+validators
+neuroglancer
+ome-zarr
+
+[all]
+ome2glancer[docs,test]
+
+[docs]
+pydata-sphinx-theme
+
+[test]
+tox
+pytest
+pytest-cov
