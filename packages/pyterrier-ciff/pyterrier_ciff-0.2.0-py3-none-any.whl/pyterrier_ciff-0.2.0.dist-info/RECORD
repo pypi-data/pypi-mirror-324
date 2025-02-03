@@ -1,0 +1,14 @@
+pyterrier_ciff/__init__.py,sha256=Q9SyZQhCM5RScBfJrUZQwStfKbHpaNUTE9XIgKe3klw,436
+pyterrier_ciff/_ciff_hub_url_resolver.py,sha256=K60X1kaPa76by6l2d4s1KWD0r1ZQ0_ykHv6knUCyRKY,908
+pyterrier_ciff/_ciff_pb2.py,sha256=tGNJ-aVJMb4W0glcwNs2aSK_9gnvIvvazGow8WBCstY,2312
+pyterrier_ciff/_index.py,sha256=W32ggI2KHVj6cXYRCGOkuAJdNDU_XptGZ5X0sX_mL50,4103
+pyterrier_ciff/_indexer.py,sha256=M8CsANtCsvx9-3c_0i_we-595555LGrAX0b0d1ijiOs,4781
+pyterrier_ciff/_invert.py,sha256=PjNhKwsTb4EfjWl77GgJDbXQH446GtCyDPhWq-w962g,5009
+pyterrier_ciff/_utils.py,sha256=Esy--KqK-cs847x4SxlTNq8Ow9Hq-j444tuOrb9Ch4Q,1010
+pyterrier_ciff/pt_docs/index.rst,sha256=5Ct6XRcAt2eM9HAeu0IHfb4W9hpr8Vi5C-48dURi_PM,6709
+pyterrier_ciff-0.2.0.dist-info/LICENSE,sha256=ezOSraWbMkgq6wnPemuksk4fqikdv63mZDvm_VoUKJo,1073
+pyterrier_ciff-0.2.0.dist-info/METADATA,sha256=h458RW_zbQHL73o74NMvwKBtQBzqZojQRzTn_UHKwNk,1843
+pyterrier_ciff-0.2.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyterrier_ciff-0.2.0.dist-info/entry_points.txt,sha256=x-8X9w216L5DgOa1PtO7i7ReTbKsCaIpoj_MzEfKFtw,286
+pyterrier_ciff-0.2.0.dist-info/top_level.txt,sha256=iFIQ7MenviSyJN8qOPZ4d4R9INnuYGoKOtL6-3JcFkQ,15
+pyterrier_ciff-0.2.0.dist-info/RECORD,,
