@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: byterover
+Version: 0.1.0
+Summary: Python client library for Byterover
+Author: Byterover Team
+Author-email: andy@byterover.dev
+Project-URL: Homepage, https://byterover.dev
+Keywords: byterover,agent,code documentation,code review
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: certifi
+Requires-Dist: rich>=13.9.0
+Requires-Dist: typer>=0.15
+Requires-Dist: toml
+Requires-Dist: types-certifi
+Requires-Dist: types-toml
+Requires-Dist: synchronicity~=0.9.8
+Requires-Dist: httpx
+Requires-Dist: pydantic~=2.10.4
+Requires-Dist: socketio
+Requires-Dist: yaspin
+
+# byterover-client
+Byterover Python Library
