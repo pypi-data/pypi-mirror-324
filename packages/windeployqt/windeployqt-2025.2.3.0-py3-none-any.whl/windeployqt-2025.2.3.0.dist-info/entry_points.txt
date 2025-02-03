@@ -1,0 +1,2 @@
+[console_scripts]
+windeployqt = windeployqt.main:main
