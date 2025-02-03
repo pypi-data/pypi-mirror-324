@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "extrastats"
+version = "0.1.0"
+description = "A Python package for advanced statistical analysis."
+readme = "README.md"
+license = "MPL-2.0"
+license-files = ["LICENSE"]
+authors = [{name = "Jerrad Michael Genson", email = "jerradgenson@gmail.com"}]
+dependencies = [
+    "joblib==1.4.*",
+    "numpy==2.2.*",
+    "packaging==24.*",
+    "pandas==2.2.*",
+    "patsy==1.0.*",
+    "python-dateutil==2.9.0.post0",
+    "pytz==2024.2",
+    "scipy==1.15.*",
+    "six==1.17.*",
+    "statsmodels==0.14.*",
+    "tzdata==2025.1",
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/jerradmgenson/extrastats"
+Issues = "https://github.com/jerradmgenson/extrastats/issues"
