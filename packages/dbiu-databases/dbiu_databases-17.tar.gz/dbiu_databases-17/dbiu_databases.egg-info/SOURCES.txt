@@ -1,0 +1,8 @@
+README.md
+setup.py
+dbiu_databases/__init__.py
+dbiu_databases/base.db
+dbiu_databases.egg-info/PKG-INFO
+dbiu_databases.egg-info/SOURCES.txt
+dbiu_databases.egg-info/dependency_links.txt
+dbiu_databases.egg-info/top_level.txt
