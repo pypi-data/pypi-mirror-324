@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+PDFSNIPPER/__init__.py
+PDFSNIPPER/main.py
+pdf_snip.egg-info/PKG-INFO
+pdf_snip.egg-info/SOURCES.txt
+pdf_snip.egg-info/dependency_links.txt
+pdf_snip.egg-info/requires.txt
+pdf_snip.egg-info/top_level.txt
