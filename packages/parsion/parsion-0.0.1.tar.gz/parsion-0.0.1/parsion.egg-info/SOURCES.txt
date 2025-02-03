@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+parsion.egg-info/PKG-INFO
+parsion.egg-info/SOURCES.txt
+parsion.egg-info/dependency_links.txt
+parsion.egg-info/top_level.txt
