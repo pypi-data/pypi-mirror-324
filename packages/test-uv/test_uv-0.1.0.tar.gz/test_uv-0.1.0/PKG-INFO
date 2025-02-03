@@ -1,0 +1,7 @@
+Metadata-Version: 2.2
+Name: test-uv
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: django>=5.1.5
