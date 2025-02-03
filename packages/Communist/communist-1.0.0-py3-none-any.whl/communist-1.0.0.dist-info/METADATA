@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: Communist
+Version: 1.0.0
+Summary: Make websites accessible for AI agents
+Author: Diwahar
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Requires-Dist: beautifulsoup4>=4.12.3
+Requires-Dist: httpx>=0.27.2
+Requires-Dist: langchain-anthropic==0.3.3
+Requires-Dist: langchain-aws>=0.2.11
+Requires-Dist: langchain-fireworks>=0.2.6
+Requires-Dist: langchain-google-genai==2.0.8
+Requires-Dist: langchain-ollama==0.2.2
+Requires-Dist: langchain-openai==0.3.1
+Requires-Dist: langchain==0.3.14
+Requires-Dist: lmnr[langchain]>=0.4.53
+Requires-Dist: maincontentextractor>=0.0.4
+Requires-Dist: playwright>=1.49.0
+Requires-Dist: pydantic>=2.10.4
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests>=2.32.3
+Requires-Dist: setuptools>=75.8.0
+Provides-Extra: dev
+Requires-Dist: build>=1.2.2; extra == 'dev'
+Requires-Dist: hatch>=1.13.0; extra == 'dev'
+Requires-Dist: pytest-asyncio>=0.24.0; extra == 'dev'
+Requires-Dist: pytest>=8.3.3; extra == 'dev'
+Requires-Dist: tokencost>=0.1.16; extra == 'dev'
+Description-Content-Type: text/markdown
+
+```bash
+pip install Communist
+```
+
+install playwright:
+
+```bash
+playwright install
+```
