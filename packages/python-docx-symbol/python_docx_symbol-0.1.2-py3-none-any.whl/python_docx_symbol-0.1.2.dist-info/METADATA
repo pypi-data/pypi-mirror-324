@@ -1,0 +1,49 @@
+Metadata-Version: 2.2
+Name: python-docx-symbol
+Version: 0.1.2
+Summary: Convert docx Symbol characters to unicode characters.
+Home-page: https://github.com/SmartMediQ/python-docx-symbol
+Author: Smartmediq
+Author-email: dev@smartmediq.com
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-docx
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# python-docx-symbol
+
+Convert docx Symbol characters to unicode characters.
+
+## Installation
+
+`pip install python-docx-symbol`
+
+## Example
+
+```python
+from docx import Document
+from python_docx_symbol import convert_symbols
+
+doc = Document("/path/to/input.docx")
+result = convert_symbols(doc)
+print(result.converted)
+print(result.unconverted)
+
+doc.save("/path/to/output.docx")
+```
