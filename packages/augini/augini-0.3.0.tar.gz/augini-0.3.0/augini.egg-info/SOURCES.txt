@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+augini/__init__.py
+augini/config.py
+augini/data_analyzer.py
+augini/data_engineer.py
+augini/exceptions.py
+augini/utils.py
+augini.egg-info/PKG-INFO
+augini.egg-info/SOURCES.txt
+augini.egg-info/dependency_links.txt
+augini.egg-info/requires.txt
+augini.egg-info/top_level.txt
+tests/test_data_analyzer.py
+tests/test_data_engineer.py
