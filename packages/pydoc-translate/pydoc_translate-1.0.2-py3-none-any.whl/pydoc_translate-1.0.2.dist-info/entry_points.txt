@@ -1,0 +1,4 @@
+[console_scripts]
+Pydoc-Translate = translator_module.gui:main
+Pydoc-Translate-CLI = translator_module.cli:main
+
