@@ -1,0 +1,10 @@
+textract2page/_version.py
+*.egg-info
+__pycache__
+build
+dist
+*~
+.vscode
+ocrd.log
+tests/workspace/OCR-D-IMG
+tests/workspace/OCR-D-SEG-PAGE
