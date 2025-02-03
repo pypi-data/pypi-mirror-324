@@ -1,0 +1,9 @@
+ncclient
+lxml
+
+[build]
+build
+twine
+
+[dev]
+sphinx-rtd-theme

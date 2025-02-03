@@ -1,0 +1,3 @@
+include src/configs.toml
+include src/network.txt
+include src/script.txt
