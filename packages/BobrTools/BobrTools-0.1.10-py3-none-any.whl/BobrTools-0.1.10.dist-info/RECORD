@@ -1,0 +1,10 @@
+BobrTools/__init__.py,sha256=nXi8sktM2Bxke7M0T2LckCJbadUyI16okW0XgKxfwb8,126
+BobrTools/db_connectors.py,sha256=GRzuBHWgkJ9xOHkCsG4N-7oAcpsv9933yvjHo1pXhHA,5570
+BobrTools/google_docs.py,sha256=qIgTTVB-qSipvQCIwcnJiOn6-GCYM6j-Uqg_CFeLgBU,3397
+BobrTools/helpers.py,sha256=ul874_36A2wGMcz-DTjtYR9bvrnrwT5CcPFNTsOCKl8,1388
+BobrTools/slack_client.py,sha256=ZKhGq_Oqv5FQQCDtr4FGOodLeaN7hsySo64wqhCvsWM,164
+BobrTools/telegram_client.py,sha256=fHwanZM3c9xEjektsdE7fVAgGdg_SjKoKGG6ccqieA4,1000
+BobrTools-0.1.10.dist-info/METADATA,sha256=cJzKpv7GeG1X79ooQm4NDJFoLHKje30vuRyOoHYe-qg,754
+BobrTools-0.1.10.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+BobrTools-0.1.10.dist-info/top_level.txt,sha256=CqzNFSDDkLdRDDTMMtCVdJ54gnReUIqvW5df9rZQAlQ,10
+BobrTools-0.1.10.dist-info/RECORD,,
