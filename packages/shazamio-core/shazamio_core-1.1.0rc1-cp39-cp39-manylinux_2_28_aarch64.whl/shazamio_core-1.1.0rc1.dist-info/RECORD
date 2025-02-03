@@ -1,0 +1,10 @@
+shazamio_core-1.1.0rc1.dist-info/METADATA,sha256=7YOOWX1GApW_AdYwOggDaqdcIvg03jCeXobn4Lvt018,372
+shazamio_core-1.1.0rc1.dist-info/WHEEL,sha256=CVjii90fmO_R_1nShz5GIN8FNBInrn14gIqaIcn3nFA,107
+shazamio_core-1.1.0rc1.dist-info/license_files/LICENSE,sha256=kOjT_PnVLtTaAps5r9fmldWPH1VEYp_M3MIGVrepbow,1063
+shazamio_core.libs/libasound-f8415949.so.2,sha256=e_TtTABPN8VJ6zd4qhGxUtNpb0hvf-w69zyQrAvcAAU,1238825
+shazamio_core/__init__.py,sha256=lZF2JD79xNjij0LDSWOfifLyiuLxGKL8q2IiRZUeN0w,118
+shazamio_core/shazamio_core.pyi,sha256=2-2kZJ-x-JU2Ssko8V7xYIgMdTP1DDG4dkwUReYDpyE,1156
+shazamio_core/shazamio_core.py,sha256=kpJk-wpoPiIb3c5Qqe0QsDoMDtYzwdF4wtdHqrgM-mg,1164
+shazamio_core/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shazamio_core/shazamio_core.cpython-39-aarch64-linux-gnu.so,sha256=89FGaYRYnmVfIXKCD53sQJO74hFLE4ZGQMhDj3a-c0w,2625105
+shazamio_core-1.1.0rc1.dist-info/RECORD,,
