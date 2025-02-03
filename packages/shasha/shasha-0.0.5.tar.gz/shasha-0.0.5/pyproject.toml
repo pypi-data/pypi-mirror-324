@@ -1,0 +1,18 @@
+[project]
+name = "shasha"
+version = "0.0.5"
+authors = [
+  { name="Shabari", email="shabariprakashsv@gmail.com" },
+]
+description = "A Collection of Machine Learning Algorithms implemented from Scratch"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com/shabari48/shasha"
+Issues = "https://github.com/shabari48/shasha/issues"
