@@ -1,0 +1,35 @@
+[project]
+name = "akconfig"
+version = "0.1.9"
+description = "A configuration management for global variables in python projects."
+authors = [{"name" = "dapk", "email" = "dapk@gmx.net"}]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.9,<4.0"
+dependencies = [
+    "colored>=2.2.5",
+    "terminaltables>=3.1.10"
+]
+
+[project.urls]
+"Source Code" = "https://github.com/dapkdapk/akconfig.git"
+Homepage = "https://github.com/dapkdapk/akconfig"
+Repository = "https://github.com/dapkdapk/akconfig"
+
+[project.scripts]
+example-basic = "examples.basic:main"
+example-click-args = "examples.click_args:main"
+
+[tool.poetry]
+packages = [{include = "ak"}]
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+isort = "^5.13.2"
+pytest = "^8.3.4"
+click = "^8.1.8"
+pytest-cov = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
