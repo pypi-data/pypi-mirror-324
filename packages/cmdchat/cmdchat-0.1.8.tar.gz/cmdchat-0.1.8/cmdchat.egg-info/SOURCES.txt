@@ -1,0 +1,17 @@
+README.md
+pyproject.toml
+setup.cfg
+cmdai/__init__.py
+cmdai/cli.py
+cmdai/config.py
+cmdai/models.py
+cmdai/providers/__init__.py
+cmdai/providers/mistral.py
+cmdai/providers/openai.py
+cmdai/providers/venice.py
+cmdchat.egg-info/PKG-INFO
+cmdchat.egg-info/SOURCES.txt
+cmdchat.egg-info/dependency_links.txt
+cmdchat.egg-info/entry_points.txt
+cmdchat.egg-info/requires.txt
+cmdchat.egg-info/top_level.txt

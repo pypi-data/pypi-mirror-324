@@ -1,0 +1,2 @@
+[console_scripts]
+cmdai = cmdai.cli:main
