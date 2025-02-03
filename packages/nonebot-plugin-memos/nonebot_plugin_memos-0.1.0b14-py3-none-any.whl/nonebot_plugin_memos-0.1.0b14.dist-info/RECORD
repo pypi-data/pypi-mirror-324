@@ -1,0 +1,15 @@
+nonebot_plugin_memos/__init__.py,sha256=8GjCX13dDzaXykFMzU6cx7iAe-iLBmy9vunmyFFSc6w,11625
+nonebot_plugin_memos/cache.py,sha256=c7Ih5pWPFliauqqkdy6ye-drywAGyL6opsk3reDCMY4,292
+nonebot_plugin_memos/client.py,sha256=WQBZTW_kHjAM9IfJ0MeIzCO_7vu40lEGBZ3BrzPjwqs,5369
+nonebot_plugin_memos/config.py,sha256=xMG3Vsx8p-WsFbvdAPFRNVQEq8mDBi2pAqAWD422N2U,150
+nonebot_plugin_memos/db.py,sha256=oLVEoJm7c06KujazXnYtLsBdTenzsTnMR3QIdlteISo,2316
+nonebot_plugin_memos/depend.py,sha256=mZNvAoY50cN-062f0NV2aIUW43biTIrQ7sY6NyR_zmM,1780
+nonebot_plugin_memos/model.py,sha256=JDKMgr5i41dyTyNg6oZGzKNug3GeridRghqu1Jxn2mY,10182
+nonebot_plugin_memos/util.py,sha256=A04G8VY3yAL37INFqyyTn3zVAaW94td6GN6f7OO71Lo,337
+nonebot_plugin_memos/migrations/af113b78e1a7_first_revision.py,sha256=GNeKksKW0u698t5nnxkJXrficpifnkbwFNWQ6_Dn_ow,2101
+nonebot_plugin_memos/migrations/cc54f4b17487_memo_record.py,sha256=L79mvq_MqsHVRopbLbKcOGdodZqF8GNcqGt6Fy9SmO4,1810
+nonebot_plugin_memos-0.1.0b14.dist-info/LICENSE,sha256=TjgwMCR7rvynMxc_BW5IiVO7FIFKOZWN3XWnf5lbB0U,1071
+nonebot_plugin_memos-0.1.0b14.dist-info/METADATA,sha256=ZFfFBi2SEsxJIMl0FbwWqn8h1Ih0Q2QcTBW1VTFfPps,2321
+nonebot_plugin_memos-0.1.0b14.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nonebot_plugin_memos-0.1.0b14.dist-info/top_level.txt,sha256=1rE0cnFcPkbqGua_LHW9m7iDXwFgHrnaQfA94WOctHc,21
+nonebot_plugin_memos-0.1.0b14.dist-info/RECORD,,
