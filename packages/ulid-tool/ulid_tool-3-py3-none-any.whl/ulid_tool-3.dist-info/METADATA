@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: ulid_tool
+Version: 3
+Summary: Minimalistic implementation of the ULID specification for python (https://github.com/ulid/spec). No integrated type or specification checks but system integrity check.
+Author-email: "Adrian F. Hoefflin" <srccircumflex@outlook.com>
+License: MIT License
+Project-URL: Repository, https://github.com/srccircumflex/ulid_tool
+Keywords: ulid
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ULID tool
+
+Minimalistic implementation of the ULID specification for python 
+([https://github.com/ulid/spec](https://github.com/ulid/spec)).
+No integrated type or specification checks but system integrity check.
