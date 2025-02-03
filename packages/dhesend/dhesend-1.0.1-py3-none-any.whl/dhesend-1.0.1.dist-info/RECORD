@@ -1,0 +1,14 @@
+dhesend/__init__.py,sha256=HxSxaJ71RK_QgsWXyGozc2dEaDmrOnWMuIvg8kNGaAY,55
+dhesend/_email.py,sha256=mJ1AuLYE5sAGZd3xXeGO8aEVKuCKVcgRyNVUHOMZBW8,1306
+dhesend/api_paths.py,sha256=QBTJmr9gs_QsXGVL8NaQ699WTHbEHwzaXX5U3eZPzR4,726
+dhesend/apikey.py,sha256=MuTGrlDL_oVAPPmfjFuW90srObK5yaSdYaf4AKq6HLQ,700
+dhesend/constants.py,sha256=555LFJXcfW8oMb3MhMExnXgmw-cJGkjxhcY1rROz3UI,99
+dhesend/dhesend_main.py,sha256=Va8LwfpIyV1OHPZRaUHh9cJ38U78bGZxLIk905ClxpA,3370
+dhesend/domain.py,sha256=eFFXHeuCHRVrn5qBzyPbo5aEeDJHbZmvAWGNGJzTzBo,1426
+dhesend/project_type.py,sha256=g5nn2FX6alvLzIV2V8sJ76mLpjl9gpYotXj0fkENE5M,7418
+dhesend/webhook.py,sha256=kwUhkvv127yLSAKKSg9S7emgZR8m3kJgJdWpqfn_DY0,2639
+dhesend-1.0.1.dist-info/LICENCE,sha256=KZgZovLW3e-vR9_WhCQt1oP50XwtKe3OCLp3e0wmSmU,1076
+dhesend-1.0.1.dist-info/METADATA,sha256=LRdRKo6WKWAxYx9AKzvuCW8kdOJSwb5HS5P67jpmThM,2523
+dhesend-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+dhesend-1.0.1.dist-info/top_level.txt,sha256=piGlzduDPocPqDmyo6jOQWPYbPviQ6GHe3pxrrZWDP0,8
+dhesend-1.0.1.dist-info/RECORD,,
