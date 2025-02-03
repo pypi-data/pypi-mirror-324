@@ -1,0 +1,6 @@
+pyproject.toml
+src/voit/__init__.py
+src/voit_inserter.egg-info/PKG-INFO
+src/voit_inserter.egg-info/SOURCES.txt
+src/voit_inserter.egg-info/dependency_links.txt
+src/voit_inserter.egg-info/top_level.txt
