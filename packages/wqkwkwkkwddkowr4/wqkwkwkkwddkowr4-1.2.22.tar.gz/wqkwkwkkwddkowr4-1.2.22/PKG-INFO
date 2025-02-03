@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: wqkwkwkkwddkowr4
+Version: 1.2.22
+Summary: Lovely Spam! Wonderful Spam!
+Project-URL: Homepage, https://example.com
+Project-URL: Documentation, https://readthedocs.org
+Project-URL: Repository, https://github.com/m-xim/spam.git
+Project-URL: Bug Tracker, https://github.com/m-xim/spam/issues
+Project-URL: Changelog, https://github.com/m-xim/spam/blob/master/CHANGELOG.md
+Author: m-xim
+License-Expression: MIT
+Keywords: Lobster Thermidor,bacon,egg,sausage,tomatoes
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+
+# test_pypi
