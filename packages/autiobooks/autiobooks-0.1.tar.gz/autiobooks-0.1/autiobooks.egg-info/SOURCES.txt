@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+autiobooks.egg-info/PKG-INFO
+autiobooks.egg-info/SOURCES.txt
+autiobooks.egg-info/dependency_links.txt
+autiobooks.egg-info/requires.txt
+autiobooks.egg-info/top_level.txt
