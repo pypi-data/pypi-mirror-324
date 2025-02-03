@@ -1,0 +1,36 @@
+[project]
+name = "inference-gateway"
+version = "0.3.0"
+authors = [
+  { name="Eden Reich", email="eden.reich@gmail.com" },
+]
+description = "A Python SDK for Inference Gateway"
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+
+[project.urls]
+Homepage = "https://github.com/inference-gateway/python-sdk"
+Issues = "https://github.com/inference-gateway/python-sdk/issues"
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
