@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: mercor_service_client
+Version: 0.1.0
+Summary: Service-to-service communication using DNS SRV discovery and round-robin load balancing
+Author: Harsh
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: httpx>=0.23.0
+Requires-Dist: dnspython>=2.0.0
+Dynamic: author
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
