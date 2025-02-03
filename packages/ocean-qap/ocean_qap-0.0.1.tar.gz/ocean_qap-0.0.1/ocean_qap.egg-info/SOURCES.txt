@@ -1,0 +1,9 @@
+README.md
+setup.py
+ocean_qap/__init__.py
+ocean_qap/qap.py
+ocean_qap.egg-info/PKG-INFO
+ocean_qap.egg-info/SOURCES.txt
+ocean_qap.egg-info/dependency_links.txt
+ocean_qap.egg-info/requires.txt
+ocean_qap.egg-info/top_level.txt
