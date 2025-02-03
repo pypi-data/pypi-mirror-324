@@ -1,0 +1,8 @@
+structclasses/__init__.py,sha256=1hlfMe6NZR2OGRq4N8aO-gDPmDWla5Qmj2yesaGY3R0,806
+structclasses/base.py,sha256=Nmf-2KMm7RQbEVdCZ2la_wxI_GY7c2R_9A519bHLabA,3452
+structclasses/decorator.py,sha256=2fEA6pWUzzqTuATcVBwVBZrqyykqiR7xdKYOSLZvASU,3357
+structclasses/field.py,sha256=Nb_uWqBB_OEACY5_qbmN1Al3bSE4S9DkTG0wGiRegBM,8857
+structclasses-0.1.dist-info/LICENSE,sha256=8IAxuS4OFzLF5pyOfXtLps-ajScu3kv8pXbTXIDj82Y,1072
+structclasses-0.1.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+structclasses-0.1.dist-info/METADATA,sha256=V31ze2gp-e6gAy4NCfZHdg5DP9Aq78RoYZ2t_kSAtcU,2061
+structclasses-0.1.dist-info/RECORD,,
