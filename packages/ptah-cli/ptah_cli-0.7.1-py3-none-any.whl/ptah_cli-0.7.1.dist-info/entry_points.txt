@@ -1,0 +1,2 @@
+[console_scripts]
+ptah = ptah.cli:app

@@ -1,0 +1,85 @@
+Metadata-Version: 2.2
+Name: ptah-cli
+Version: 0.7.1
+Author-email: Dan Miller <daniel.keegan.miller@gmail.com>
+Requires-Python: <3.14,>=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: cachelib>=0.13.0
+Requires-Dist: dirhash>=0.5.0
+Requires-Dist: dockerfile-parse>=2.0.1
+Requires-Dist: inflect>=7.4.0
+Requires-Dist: injector>=0.21.0
+Requires-Dist: jsonpath-ng>=1.7.0
+Requires-Dist: omegaconf>=2.3.0
+Requires-Dist: pathspec>=0.12.1
+Requires-Dist: psutil>=6.1.0
+Requires-Dist: pyperclip>=1.9.0
+Requires-Dist: typer>=0.12.3
+Requires-Dist: watchdog>=6.0.0
+Provides-Extra: dev
+Requires-Dist: build==1.2.2.post1; extra == "dev"
+Requires-Dist: httpx==0.28.1; extra == "dev"
+Requires-Dist: isort==6.0.0; extra == "dev"
+Requires-Dist: pre-commit==4.1.0; extra == "dev"
+Requires-Dist: pyright==1.1.393; extra == "dev"
+Requires-Dist: pytest==8.3.4; extra == "dev"
+Requires-Dist: pytest-cov==6.0.0; extra == "dev"
+Requires-Dist: pytest-timeout==2.3.1; extra == "dev"
+Requires-Dist: ruff==0.9.4; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: mkdocs==1.6.1; extra == "doc"
+Requires-Dist: mkdocs-click==0.8.1; extra == "doc"
+Requires-Dist: mkdocs-material==9.6.1; extra == "doc"
+
+# Ptah
+
+[![PyPI - Version](https://img.shields.io/pypi/v/ptah-cli)](https://pypi.org/project/ptah-cli/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![Documentation Status](https://readthedocs.org/projects/ptah/badge/?version=latest)](https://ptah.readthedocs.io/en/latest/?badge=latest)
+[![codecov](https://codecov.io/github/dkmiller/ptah/graph/badge.svg?token=Ohy0M4ZGhl)](https://codecov.io/github/dkmiller/ptah)
+
+Kubernetes development toolkit, with a focus on rapid iteration and local
+hosting.
+
+## Development
+
+To install the Ptah CLI from source, either pip install directly:
+
+```bash
+pip install -e ".[dev,doc]"
+```
+
+or, if you do not have a compatible version of Python,
+[install Miniforge](https://github.com/conda-forge/miniforge) then create the `ptah` environment
+[from the file](https://stackoverflow.com/a/59686678) in this repo.
+
+```bash
+conda env create -f conda.yml
+```
+
+Run automatic formatting / lint fixes via
+
+```bash
+ruff check --fix . && ruff format . && isort . && pyright
+```
+
+Alternatively, leverage our [pre-commit](https://pre-commit.com/) configuration:
+
+```bash
+pre-commit install
+```
+
+Try to add documentation for any new feature you build. When possible it should follow
+[Diátaxis](https://diataxis.fr/). You may host a local copy of the docs by running
+
+```bash
+mkdocs serve
+```
+
+The lengthy series of tests in [test_cli_end_to_end.py](./tests/cli/test_cli_end_to_end.py) are
+skipped by default. To force them to run, use the command:
+
+```bash
+pytest -m e2e
+```
