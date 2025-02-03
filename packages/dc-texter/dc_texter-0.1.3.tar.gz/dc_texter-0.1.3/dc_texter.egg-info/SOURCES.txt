@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+dc_texter/__init__.py
+dc_texter/texter.py
+dc_texter.egg-info/PKG-INFO
+dc_texter.egg-info/SOURCES.txt
+dc_texter.egg-info/dependency_links.txt
+dc_texter.egg-info/requires.txt
+dc_texter.egg-info/top_level.txt
+tests/test_texter.py
