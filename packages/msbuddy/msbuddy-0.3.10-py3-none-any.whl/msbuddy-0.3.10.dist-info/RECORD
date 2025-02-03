@@ -1,0 +1,17 @@
+msbuddy/__init__.py,sha256=AtaUW80H1kYRYZWaPsnKMoAkt2NJ0MdhPhtE7GZ6UJw,547
+msbuddy/base.py,sha256=bUAn38bEYRZcqC38dbyS8M97H2WErn6b13SwDOBJkpA,32501
+msbuddy/cand.py,sha256=ab3Ku6sP3P2TbKifM5Pm6WWlV8UD14swnBNn8myWEHg,42953
+msbuddy/export.py,sha256=lEGkbDTFKpko4Bu-WLUovfVJKLKsPiGH5kQwv9KTI1U,7253
+msbuddy/load.py,sha256=bEIW3qCKskWa2jjX5JwsyPg-TQV0Z1MUEyVKTBNsNjs,14007
+msbuddy/main.py,sha256=MdT-1S7j_0Q_Z9Z5L0PpSGA8Kt2F683y42Yb4FLEoos,23850
+msbuddy/main_cmd.py,sha256=dw-y6o-JFW_Z5YX69ANQwnM1uzIfVO30dFqVyAAHrSE,7513
+msbuddy/ml.py,sha256=FubShq87YbOWbP72w7F0FpsgAMLXM9Gno7Zx02OugDQ,25546
+msbuddy/query.py,sha256=M4d1I7gBS3owCOt9WYblw0db3vcx5LpOulmAkvXc2yw,22344
+msbuddy/utils.py,sha256=qHOwIvCLd16ziDYtTLq4UVcF0LtwdALsq2BQoUVWLxc,6768
+msbuddy-0.3.10.data/scripts/main_cmd.py,sha256=dw-y6o-JFW_Z5YX69ANQwnM1uzIfVO30dFqVyAAHrSE,7513
+msbuddy-0.3.10.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+msbuddy-0.3.10.dist-info/METADATA,sha256=FCRAuuQnl5vwE1br582y3kz46-mNPAMNKQkZ4mKdAu4,6977
+msbuddy-0.3.10.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+msbuddy-0.3.10.dist-info/entry_points.txt,sha256=nZPcVwP741WMJ_Kztzk5CH75jdh_jEF8jBSCbtQ3oZw,50
+msbuddy-0.3.10.dist-info/top_level.txt,sha256=WFrGVxX918fUJg4CAsgI0E2UvMqUj9O-BfTienvqfoQ,8
+msbuddy-0.3.10.dist-info/RECORD,,
