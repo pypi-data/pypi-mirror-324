@@ -1,0 +1,33 @@
+name: Format code
+
+on:
+  push:
+    branches:
+        - "renovate/static-analysis-dependencies"
+        - autoformat
+
+env:
+    latest_python: 3.12
+
+jobs:
+  run-ruff-format:
+    permissions:
+        contents: write
+    runs-on: ubuntu-24.04
+    steps:
+        - name: Checkout
+          uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        - name: Setup Python
+          uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5
+          with:
+            python-version: ${{ env.latest_python }}
+        - name: Install ruff
+          run: pip install -r requirements_analysis.txt
+        - name: Fix
+          run: ruff check --fix
+        - name: Format
+          run: ruff format
+        - uses: stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79 # v5
+          with:
+            commit_message: Autoupdate formtatting with ruff
+  

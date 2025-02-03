@@ -1,0 +1,50 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:best-practices",
+    "group:allNonMajor"
+  ],
+  "schedule": ["every weekend"],
+  "prHourlyLimit": 0,
+  "automerge": true,
+  "automergeStrategy": "squash",
+  "gitIgnoredAuthors": ["renovate[bot]@users.noreply.github.com"],
+  "reviewers": ["rparini"],
+  "ignorePaths": ["docs/**", ".python-version"],
+  "automergeType": "branch",
+  "pip_requirements": {
+    "fileMatch": [
+      "requirements.*\\.txt$"
+    ]
+  },
+  "packageRules": [
+    {
+      "groupName": "static analysis dependencies",
+      "matchFileNames": [
+        "requirements_analysis.txt",
+        ".pre-commit-config.yaml"
+      ]
+    },
+    {
+      "groupName": "docs dependencies",
+      "matchFileNames": ["requirements_doc.txt"]
+    },
+    {
+      "groupName": "docs dependencies",
+      "matchDepNames": ["terminalizer"]
+    }
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["create_docs"],
+      "matchStrings": [
+        "npx (?<depName>.*)@(?<currentValue>[^\\s]+)"
+      ],
+      "datasourceTemplate": "npm"
+    }
+  ],
+  "pre-commit": {
+    "enabled": true
+  }
+}

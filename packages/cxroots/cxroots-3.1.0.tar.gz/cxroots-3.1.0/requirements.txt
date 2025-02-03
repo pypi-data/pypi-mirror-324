@@ -1,0 +1,17 @@
+#
+# requirements.txt used for a concrete testing environment.
+#
+# dependencies in pyproject.toml gives the abstract requirements
+# used by 'pip install' to install cxroots as a library.
+#
+
+scipy==1.14.1
+numpy==2.2.1
+numpydoc==1.8.0
+mpmath==1.3.0
+rich==13.9.4
+matplotlib==3.10.0
+pytest==8.3.4
+pytest-xdist==3.6.1
+pytest-cov==6.0.0
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability

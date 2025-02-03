@@ -1,0 +1,63 @@
+name: publish
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+    - uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5
+      with:
+        python-version: '3.12'
+        cache: 'pip'
+    - name: Install build dependencies
+      run: python -m pip install build twine==6.0.1
+
+    - name: Build wheel
+      run: python -m build
+    - name: Publish with twine
+      env:
+        TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        TWINE_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+      run: twine upload dist/*
+    - name: Build docs
+      uses: ./.github/actions/build-docs
+      env:
+        SPHINX_GITHUB_CHANGELOG_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79 # v5
+      with:
+        commit_message: Autoupdate documentation
+        file_pattern: docs/*
+        branch: master
+
+  test:
+    needs: deploy
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python-version: 
+          - '3.10'
+          - '3.11'
+          - '3.12'
+    steps:
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@42375524e23c412d93fb67b49958b491fce71c38 # v5
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Get tag name
+      id: get_tag_name
+      run: |
+        echo "GITHUB_REF: $GITHUB_REF"
+        echo "VERSION: ${GITHUB_REF/refs\/tags\/v/}"
+        echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\/v/}
+    - name: Install cxroots from pip
+      run: |
+        VERSION=${{ steps.get_tag_name.outputs.VERSION }}
+        pip install cxroots==$VERSION
+    - name: Test import cxroots
+      run: python -c "import cxroots; print(cxroots.__version__)"

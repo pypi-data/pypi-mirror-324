@@ -1,0 +1,8 @@
+numpy
+scipy<1.15
+numpydoc
+mpmath
+rich
+
+[plot]
+matplotlib
