@@ -1,0 +1,55 @@
+DevyDRM
+===========
+
+The DevyDRM provides a set of functions to manage digital rights and permissions. This library is designed to be easy to use and integrate into your projects.
+
+Installation
+------------
+
+You can install the DevyDRM using pip:
+
+.. code-block:: bash
+
+    pip install DevyDRM
+
+Usage
+-----
+
+To use the DevyDRM, you need to import it in your project:
+
+.. code-block:: python
+
+    import DevyDRM
+
+Functions
+---------
+
+- `generete_license_key() -> str, str`: Generate 16-digits long string return key and key hash in sha-256.
+- `verify_license_key(key1: str) -> bool`: Validate license key.
+- `get_license_key() -> str`: Return generated key.
+
+Examples
+--------
+
+Here is an example of how to use the DevyDRM library:
+
+.. code-block:: python
+
+    import DevyDRM
+
+    DRM_object = DevyDRM()
+    sha256-hashed-key, license-key = generete_license_key()
+    verify_license_key(input("Enter License Key: "))
+
+    print(f"Key string: {license-key}")
+    print(f"Hashed key: {sha256-hashed-key}")
+
+Contributing
+------------
+
+If you would like to contribute to the DevyDRM, please fork the repository and submit a pull request. We welcome all contributions!
+
+License
+-------
+
+This project is licensed under the GNU General Public License v3 (GPLv3). See the LICENSE file for more details.

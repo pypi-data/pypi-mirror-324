@@ -1,0 +1,25 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "DevyDRM"
+version = "0.0.1"
+authors = [
+  { name="DevJanek", email="janbukalski2012@gmail.com" },
+]
+description = "Simple DRM system"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/JanBukalski/DevyDRM"
+Issues = "https://github.com/JanBukalski/DevyDRM"
+
+[tool.hatch.build.targets.wheel]
+packages = ["DevyDRM"]
