@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sqema"
+authors = [{name = "Simon Jarman", email = "simon.jarman@curtin.edu.au"}]
+description = "Software for generating species abundance distributions from eDNA metabarcoding data"
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+version = "0.5.6"
+requires-python = ">=3.11"
+requires = ["matplotlib >= 3.8","numpy >= 1.26","pandas >= 2.1","scipy >= 1.11"]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src/"]
+
+[tool.setuptools.package-data]
+sqema = ["*.csv", "*.pdf"]

@@ -1,0 +1,7 @@
+Metadata-Version: 2.3
+Name: sqema
+Version: 0.5.6
+Summary: Software for generating species abundance distributions from eDNA metabarcoding data
+Author-email: Simon Jarman <simon.jarman@curtin.edu.au>
+Requires-Python: >=3.11
+Classifier: License :: OSI Approved :: MIT License
