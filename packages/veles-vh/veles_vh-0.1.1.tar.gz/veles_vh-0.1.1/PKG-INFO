@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: veles-vh
+Version: 0.1.1
+Summary: Miniframework for my projects
+Author-email: Vadym Hutei <hutei@live.com>
+License: MIT
+Project-URL: Homepage, https://github.com/VadymHutei/veles
+Project-URL: Issues, https://github.com/VadymHutei/veles/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyMySQL==1.*
+
+# Велес
+мініфреймворк для простих застосунків на основі таких компонентів як контролер, сервіс, відображення, репозиторій
+## встановлення і документація
+https://pypi.org/project/veles-vh/
+https://test.pypi.org/project/veles-vh/0.1.0/
