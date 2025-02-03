@@ -1,0 +1,10 @@
+sqlalchemy_fake_model/ModelFaker.py,sha256=RzM2B9lFwF2fQJIvGi8CnQtWVreKMDfwreFLaw5Dxgw,8798
+sqlalchemy_fake_model/__init__.py,sha256=-K-LIWlYtASh2IoLJDLFCUWMqscq7e_ESRIm_q2gsO4,35
+sqlalchemy_fake_model/Enum/ModelColumnTypesEnum.py,sha256=AsIMi2uu3ipr1wkRxKoRRp6nfNklhGcPU1ZiaI-iO-U,497
+sqlalchemy_fake_model/Enum/ModelRelationTypesEnum.py,sha256=80a1cwGvxV3agKLI3h3acxl85SabsxV92-SWESt6wwY,170
+sqlalchemy_fake_model/Enum/__init__.py,sha256=bBgl9ixhmXXVCxoe7alSjlXcmxhto2gYZoTq4a6d1BI,114
+sqlalchemy_fake_model-0.0.0.dist-info/LICENSE,sha256=k0Ofae8PeW0_y9TwGzu-8mZM7jnvLpm_Ir3xbMcfNNg,1078
+sqlalchemy_fake_model-0.0.0.dist-info/METADATA,sha256=D3GOgkrNqJxCWT51Ie0rjPRjxCVWq48QYByABYs7CpQ,9247
+sqlalchemy_fake_model-0.0.0.dist-info/WHEEL,sha256=tZoeGjtWxWRfdplE7E3d45VPlLNQnvbKiYnx7gwAy8A,92
+sqlalchemy_fake_model-0.0.0.dist-info/top_level.txt,sha256=SosismudEueP14Iaba0bSNRborGuCrDpo6hsgmnk8E8,22
+sqlalchemy_fake_model-0.0.0.dist-info/RECORD,,
