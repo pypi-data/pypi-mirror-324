@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "benlink"
+version = "0.1.0"
+description = "A library for Bluetooth communication with Benshi radios like the Vero VR-N76, RadioOddity GA5WB, and BTech UV-Pro."
+authors = [{name = "Kyle Husmann", email = "benlink@kylehusmann.com"}]
+readme = "README.md"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "typing_extensions >=4.1.0",
+    "bleak >=0.22.0",
+    "pydantic >=2.6.0"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Hardware",
+    "Topic :: Communications",
+]
+requires-python = ">=3.10"
+
+[project.urls]
+"Homepage" = "https://github.com/khusmann/benlink"
+"Bug Tracker" = "https://github.com/khusmann/benlink/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
