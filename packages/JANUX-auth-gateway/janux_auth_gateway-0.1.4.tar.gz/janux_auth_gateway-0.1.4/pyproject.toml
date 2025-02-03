@@ -1,0 +1,64 @@
+[tool.poetry]
+name = "JANUX-auth-gateway"
+version = "v0.1.4"
+description = "A modular OAuth2 and JWT authentication gateway for FastAPI microservices."
+authors = ["FOX Techniques <ali.nabbi@fox-techniques.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/fox-techniques/janux-auth-gateway"
+homepage = "https://github.com/fox-techniques/janux-auth-gateway"
+packages = [
+    { include = "janux_auth_gateway" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = {extras = ["standard"], version = "^0.115.6"}
+uvicorn = "^0.34.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.20"
+python-dotenv = "^1.0.1"
+beanie = "^1.29.0"
+motor = "3.6.1"
+pymongo = "4.9"
+bcrypt = "^4.2.1"
+python-json-logger = "^3.2.1"
+coloredlogs = "^15.0.1"
+pyjwt = {extras = ["crypto"], version = "^2.10.1"}
+redis = "^5.2.1"
+argon2-cffi = "^23.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+tox = "^4.24.1"
+pytest-asyncio = "^0.25.3"
+httpx = "^0.28.1"
+freezegun = "^1.5.1"
+pytest-mock = "^3.14.0"
+mongomock = "^4.3.0"
+mongomock-motor = "^0.0.35"
+fakeredis = "^2.26.2"
+black = "^25.1.0"
+flake8 = "^7.1.1"
+mypy = "^1.14.1"
+autopep8 = "^2.3.2"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.0"
+mkdocs-material = "^9.5.50"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "janux_auth_gateway.__main__:main"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --asyncio-mode=auto"
+testpaths = ["tests"]
+asyncio_mode = "auto"
+filterwarnings = [
+    "ignore::DeprecationWarning"
+]
