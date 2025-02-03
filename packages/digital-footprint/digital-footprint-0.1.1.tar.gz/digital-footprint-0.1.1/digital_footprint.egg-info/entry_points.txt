@@ -1,0 +1,2 @@
+[console_scripts]
+digital-footprint = mypackage.scanner:main

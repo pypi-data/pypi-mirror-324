@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+digital-footprint/__init__.py
+digital-footprint/scanner.py
+digital_footprint.egg-info/PKG-INFO
+digital_footprint.egg-info/SOURCES.txt
+digital_footprint.egg-info/dependency_links.txt
+digital_footprint.egg-info/entry_points.txt
+digital_footprint.egg-info/requires.txt
+digital_footprint.egg-info/top_level.txt
