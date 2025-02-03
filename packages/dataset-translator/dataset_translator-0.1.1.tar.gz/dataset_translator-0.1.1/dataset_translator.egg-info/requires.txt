@@ -1,0 +1,9 @@
+googletrans>=4.0.2
+pandas>=2.2.3
+pyarrow>=19.0.0
+tqdm>=4.67.1
+typer>=0.15.1
+
+[dev]
+black>=25.1.0
+isort>=6.0.0
