@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: hmmlkit
+Version: 0.0.1a0
+Summary: some ml toolkit
+Maintainer: Mourier
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/FourierMourier/hmmlkit
+Project-URL: Issues, https://github.com/FourierMourier/hmmlkit/issues
+Project-URL: Repository, https://github.com/FourierMourier/hmmlkit.git
+Keywords: ml kit
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML==6.0.2
+
+# hmmlkit
+
+🚧 **In somewhat active development** 🚧
+
+Hello there.
+
+## License
+
+Apache License 2.0
