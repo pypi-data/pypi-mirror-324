@@ -1,0 +1,7 @@
+numpy
+pydantic
+scipy
+
+[pandas]
+pandas
+tabulate
