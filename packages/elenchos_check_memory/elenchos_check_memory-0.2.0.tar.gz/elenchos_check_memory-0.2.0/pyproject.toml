@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "elenchos_check_memory"
+version = "0.2.0"
+description = "A Élenchos command for checking total, available, used, and free memory."
+authors = ["Set Based IT Consultancy <info@setbased.nl>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/NagiosElenchos/check_memory"
+documentation = "https://github.com/NagiosElenchos/check_memory"
+keywords = ["Élenchos", "Elenchos", "Memory"]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: System Administrators',
+    'Topic :: System :: Systems Administration',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12'
+]
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+elenchos = "^1.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+
+[tool.setuptools.package-data]
+mypkg = ["commands.xml"]
