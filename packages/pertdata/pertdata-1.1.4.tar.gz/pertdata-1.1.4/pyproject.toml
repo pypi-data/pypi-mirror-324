@@ -1,0 +1,57 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pertdata"
+description = "Functionality for Handling Perturbation Datasets"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Jan Voges", email = "jvoges@external.unav.es" },
+    { name = "Guillermo Dufort y Álvarez", email = "gdufortyalv@unav.es" },
+]
+requires-python = ">=3.10"
+dependencies = [
+    "anndata >= 0.11.3",
+    "appdirs >= 1.4.4",
+    "ipykernel >= 6.29.5",
+    "pandas >= 2.2.3",
+    "requests >= 2.32.3",
+    "scanpy >= 1.10.4",
+    "scikit-learn >= 1.6.1",
+    "tqdm >= 4.67.1",
+]
+dynamic = ["version"]
+
+[project.urls]
+Repository = "https://github.com/voges/pertdata.git"
+
+[tool.hatch.version]
+path = "src/pertdata/version.py"
+
+[tool.hatch.build]
+include = [
+    "src/pertdata/resources/*.json",
+]
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/pertdata",
+]
+
+[tool.ruff.lint]
+extend-select = [
+    # pycodestyle
+    "E", "W",
+    # isort
+    "I",
+    # pep8-naming
+    "N",
+    # pydocstyle
+    "D", "D401"
+]
+
+[tool.ruff.lint.pydocstyle]
+# The Google convention includes all D errors apart from: D203, D204, D213, D215,
+# D400, D401, D404, D406, D407, D408, D409, and D413.
+convention = "google"
