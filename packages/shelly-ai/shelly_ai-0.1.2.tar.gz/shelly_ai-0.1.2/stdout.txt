@@ -1,0 +1,54 @@
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ ls
+LICENSE					src
+README.md				stdin.txt
+debug.log				stdout.txt
+pyproject.toml				web_socket_error_message_sink.py
+requirements.txt
+bash-3.2$ 
+bash-3.2$ exit
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ ls
+LICENSE					requirements.txt
+README.md				src
+command.log				stdin.txt
+debug.log				stdout.txt
+error_analysis.json			web_socket_error_message_sink.py
+pyproject.toml
+bash-3.2$ 
+bash-3.2$ exit
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ 
+bash-3.2$ ls asdf
+ls: asdf: No such file or directory
+bash-3.2$ 
+bash-3.2$ exit
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+bash-3.2$ lsa [K[K adf
+ls: adf: No such file or directory
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ ls
+LICENSE					pyproject.toml
+README.md				requirements.txt
+command.log				src
+debug.log				stdin.txt
+dist					stdout.txt
+error_analysis.json			web_socket_error_message_sink.py
+bash-3.2$ 
+bash-3.2$ uptime
+10:55  up 6 days,  3:50, 17 users, load averages: 2.89 3.08 3.08
+bash-3.2$ 
+bash-3.2$ exit

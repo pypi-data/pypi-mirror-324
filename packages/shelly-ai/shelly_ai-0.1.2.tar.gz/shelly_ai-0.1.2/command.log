@@ -1,0 +1,9 @@
+{
+  "current_command": "",
+  "last_command": "uptime",
+  "current_output": "\r\n10:55  up 6 days,  3:50, 17 users, load averages: 2.89 3.08 3.08\r\n\r\nexit\r\n",
+  "buffer": {
+    "stdout": "lsa \b\u001b[K\b\u001b[K adf\r\nls: adf: No such file or directory\r\n\r\n\r\nls\r\nLICENSE\t\t\t\t\tpyproject.toml\r\nREADME.md\t\t\t\trequirements.txt\r\ncommand.log\t\t\t\tsrc\r\ndebug.log\t\t\t\tstdin.txt\r\ndist\t\t\t\t\tstdout.txt\r\nerror_analysis.json\t\t\tweb_socket_error_message_sink.py\r\n\r\nuptime\r\n10:55  up 6 days,  3:50, 17 users, load averages: 2.89 3.08 3.08\r\n\r\nexit\r\n",
+    "stderr": ""
+  }
+}
