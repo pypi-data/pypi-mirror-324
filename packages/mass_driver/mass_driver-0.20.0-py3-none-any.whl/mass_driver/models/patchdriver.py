@@ -1,0 +1,55 @@
+"""PatchDriver base object definition"""
+from enum import Enum
+from logging import Logger
+
+from pydantic import BaseModel, Extra
+
+from mass_driver.models.repository import ClonedRepo
+
+
+class PatchOutcome(str, Enum):
+    """The category of result after using a PatchDriver over a single repository"""
+
+    PATCHED_OK = "PATCHED_OK"
+    """The Patch applied correctly"""
+    ALREADY_PATCHED = "ALREADY_PATCHED"
+    """The Patch was already applied, unnecessary to re-do"""
+    PATCH_DOES_NOT_APPLY = "PATCH_DOES_NOT_APPLY"
+    """The repo is missing a pre-requisite that makes patching irrelevant"""
+    PATCH_ERROR = "PATCH_ERROR"
+    """The Patch tried to apply, but failed somehow"""
+
+
+class PatchResult(BaseModel):
+    """The result of applying a patch on a repo"""
+
+    outcome: PatchOutcome
+    """The kind of result that patching had"""
+    details: str | None = None
+    """Details of the PatchDriver as it patched this repo, if any"""
+
+
+class PatchDriver(BaseModel):
+    """Base class for creating patches over repositories"""
+
+    _logger: Logger
+    """The logger object for this driver. Given dynamically by migration"""
+
+    def run(self, repo: ClonedRepo) -> PatchResult:
+        """Apply the update to given (cloned) Git Repository.
+
+        Return the outcome of patching for this repository.
+        """
+        raise NotImplementedError("PatchDriver base class can't run, use derived")
+
+    @property
+    def logger(self):
+        """Grab the logger of this driver, as passed dynamically via mass-driver code"""
+        return self._logger
+
+    class Config:
+        """Pydantic config of the PatchDriver class"""
+
+        underscore_attrs_are_private = True
+        """Ensure we can set internal non-serializeable fields via underscore"""
+        extra = Extra.allow
