@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+sgui/__init__.py
+sgui/sguibuild.py
+spelis_sgui.egg-info/PKG-INFO
+spelis_sgui.egg-info/SOURCES.txt
+spelis_sgui.egg-info/dependency_links.txt
+spelis_sgui.egg-info/requires.txt
+spelis_sgui.egg-info/top_level.txt
