@@ -1,0 +1,9 @@
+lightcnn/__init__.py,sha256=xZYzPSHFnydfVjUGREokOiKy7y6YBdWT4atA680ViQw,142
+lightcnn/model.py,sha256=H4ARZWsYVxmQbzt9uFNtMqh2CZasGHLI8p6AyB1ubh8,5337
+lightcnn/preprocessing.py,sha256=saOfLzGgJud163afLyWhu8V-Y12IMd63JIQN_ZEu1vw,1185
+lightcnn/weights/LightCNN-V4_checkpoint.pth.tar,sha256=xHxoRZKqSoTsXbYc6xQw4LF--ePzB5yRJF1yRm5xSrA,41402499
+lightcnn-0.1.5.dist-info/LICENSE,sha256=MxL0FTa9ATZT57p6pzxJcs09_J7xFz_JPWy76rnTQk4,1129
+lightcnn-0.1.5.dist-info/METADATA,sha256=Y1EjcVyAIzNjJ9RPlHCwpDHHl9_U6pRrGRcSqv1lgIo,954
+lightcnn-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+lightcnn-0.1.5.dist-info/top_level.txt,sha256=bV6k-DI4Fikb4suH3znBpRHsEqJfZqTzcEg3_LoDPuE,9
+lightcnn-0.1.5.dist-info/RECORD,,
