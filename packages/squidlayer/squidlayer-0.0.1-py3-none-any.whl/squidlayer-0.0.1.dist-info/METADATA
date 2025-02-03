@@ -1,0 +1,25 @@
+Metadata-Version: 2.2
+Name: squidlayer
+Version: 0.0.1
+Summary: Intelligent layer for AI and data processing
+Home-page: https://github.com/squidlayer/squidlayer
+Author: Andrei Paulavets
+Author-email: nadrewss@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# squidlayer
+
+Intelligent layer for AI and data processing. Coming soon.
