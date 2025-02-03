@@ -1,0 +1,15 @@
+local_operator/__init__.py,sha256=t8kpWb_uJEQc8ztkQwq0RvUUeomJbwtpsoF50zh_Vac,66
+local_operator/cli.py,sha256=4JauIGzFRWz2zG_71bKxQc6buq2z0E-FBIwhtIkmb2g,7184
+local_operator/config.py,sha256=g6U73BM64q3Qm0K8b4h3pm7Lkwc3maYf48qEUvEsfkg,9068
+local_operator/credentials.py,sha256=tPFrZAUYLBsxNfWge8FQF7Yf_q3i83tR1bNRwLTg-nE,4871
+local_operator/executor.py,sha256=QbGprKLT3POKWwFzGljSLKhYbVAkF-Cs6zs1toGy5ro,28392
+local_operator/model.py,sha256=r5IC2Y5ZzgOdsCv5s63KafZecp8YGYVjdUoK3ElgYS8,3452
+local_operator/operator.py,sha256=5Tzqr2NkpNZWlG-EO1RTJSjuOZOHLmmVV324XA7i5fg,16308
+local_operator/prompts.py,sha256=m5Bzi0C-VkD6-SMuHuSsGRaD6Agyfj_g3SZIrjk9RAw,3251
+local_operator/server.py,sha256=jL0ukfI99v_x9TpUFXjQC2I_bC5lZdl82bx5zxD3xik,10346
+local_operator-0.1.2.dist-info/LICENSE,sha256=LOb3oIbc5GUnQghD0djAAhOOGDO4db7PueK3DLaHj5s,1068
+local_operator-0.1.2.dist-info/METADATA,sha256=xxtLe_nPeUgiFP4wZ1MMUqnJh_FV1GG1feIhW2a_lQ8,72008
+local_operator-0.1.2.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+local_operator-0.1.2.dist-info/entry_points.txt,sha256=xZv7oJdnzL_21jyabRJFxStgGrjPam-UnmDww7Q9dlA,59
+local_operator-0.1.2.dist-info/top_level.txt,sha256=CNAhpbm8y8CSHaq3eOv7qXX0Qu28ENBRd97MsCW-KhM,15
+local_operator-0.1.2.dist-info/RECORD,,
