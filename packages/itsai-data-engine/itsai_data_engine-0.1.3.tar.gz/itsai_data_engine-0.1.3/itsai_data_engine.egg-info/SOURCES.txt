@@ -1,0 +1,18 @@
+README.md
+pyproject.toml
+itsai/data_engine/__init__.py
+itsai/data_engine/py.typed
+itsai/data_engine/utils.py
+itsai/data_engine/metadata/__init__.py
+itsai/data_engine/metadata/_lida_construct.py
+itsai/data_engine/metadata/column.py
+itsai/data_engine/scripts/generate_field_description_template.py
+itsai/data_engine/sql/Embeddings Vector (full).py
+itsai/data_engine/sql/__init__.py
+itsai/data_engine/sql/people/__init__.py
+itsai/data_engine/sql/people/query.py
+itsai_data_engine.egg-info/PKG-INFO
+itsai_data_engine.egg-info/SOURCES.txt
+itsai_data_engine.egg-info/dependency_links.txt
+itsai_data_engine.egg-info/requires.txt
+itsai_data_engine.egg-info/top_level.txt
