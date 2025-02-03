@@ -1,0 +1,5 @@
+exclude *.pyc
+prune pyenv
+
+exclude dhesend/test.py
+recursive-exclude * .env
