@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+nixos_wizard.egg-info/PKG-INFO
+nixos_wizard.egg-info/SOURCES.txt
+nixos_wizard.egg-info/dependency_links.txt
+nixos_wizard.egg-info/entry_points.txt
+nixos_wizard.egg-info/requires.txt
+nixos_wizard.egg-info/top_level.txt
+wizard/__init__.py
+wizard/__main__.py
+wizard/exec.py
+wizard/log.py
+wizard/settings.py
