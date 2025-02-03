@@ -1,0 +1,7 @@
+numpy==2.2.2
+torch
+torchvision
+opencv-python
+facenet-pytorch
+scipy
+pillow
