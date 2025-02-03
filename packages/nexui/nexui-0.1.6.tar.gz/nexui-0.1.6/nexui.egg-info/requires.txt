@@ -1,0 +1,5 @@
+Django>=5.1
+django-tailwind>=3.8.0
+
+[htmx]
+django-htmx>=1.17.2
