@@ -1,0 +1,9 @@
+geopre/GeoPre.py,sha256=eFdN4iDJp7XRKPEY6MRLqSOf4idEOfAGv2lPtxEMFyg,10384
+geopre/__init__.py,sha256=ly2ThcqmQHj183bsLFETnPd92KzVjOqtt1jeKEm5qqs,506
+geopre/cloud_masking.py,sha256=28YCU3lQ2gwiMxQDSSK7BV9-RhCngUGmDgmPgBcGq4s,22390
+geopre/stacking.py,sha256=c1yq9gfTAGrlbf2wEaCKt5AQF9oIkI46silqYKIRrOo,6516
+geopre-0.1.0.dist-info/LICENSE.txt,sha256=u6_YWaiIByfNXiJO20WsCmU0LJn0--Dxuzaz_cVEyko,1114
+geopre-0.1.0.dist-info/METADATA,sha256=Y3yqlN7jtoVe1JPs5dYNbeh2Pmkj7UmT7rckpTFWEFM,13741
+geopre-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+geopre-0.1.0.dist-info/top_level.txt,sha256=5RBN_pgUa2jp9kqYw4-Dxi1B0u8Se-YWfuaiwvWVVHk,7
+geopre-0.1.0.dist-info/RECORD,,
