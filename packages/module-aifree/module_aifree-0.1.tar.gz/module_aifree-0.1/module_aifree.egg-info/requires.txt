@@ -1,0 +1,5 @@
+pandas
+PyQt5
+g4f
+black
+keyboard

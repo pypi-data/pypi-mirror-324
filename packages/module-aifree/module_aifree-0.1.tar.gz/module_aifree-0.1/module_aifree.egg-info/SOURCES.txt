@@ -1,0 +1,13 @@
+README.md
+setup.py
+module_aifree/__init__.py
+module_aifree/neural_network_app.py
+module_aifree/python_db_prompt.txt
+module_aifree/script_analysis_prompt.txt
+module_aifree/system_prompt.txt
+module_aifree.egg-info/PKG-INFO
+module_aifree.egg-info/SOURCES.txt
+module_aifree.egg-info/dependency_links.txt
+module_aifree.egg-info/entry_points.txt
+module_aifree.egg-info/requires.txt
+module_aifree.egg-info/top_level.txt
