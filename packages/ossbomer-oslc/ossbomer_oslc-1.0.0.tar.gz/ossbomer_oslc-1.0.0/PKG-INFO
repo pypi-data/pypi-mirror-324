@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: ossbomer-oslc
+Version: 1.0.0
+Summary: OSSBOMER - Open Source License Compliance verification using Open Source Software Advisories and License SPDX rules.
+Author: Oscar Valenzuela
+Author-email: oscar.valenzuela.b@gmail.com
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+License-File: LICENSE
+Requires-Dist: click>=8.0
+Requires-Dist: jsonschema>=4.0
