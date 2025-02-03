@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: cgn-ec
+Version: 0.2.0
+Summary: Python Client library to interact with cgn-ec API
+Author: CGN Support
+Author-email: cgn-support@veesix-networks.co.uk
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: httpx (>=0.28.1,<0.29.0)
+Requires-Dist: pydantic (>=2.10.6,<3.0.0)
+Description-Content-Type: text/markdown
+
+# cgn-ec-python
+Official Python SDK to interact with cgn-ec API.
+
+`pip install cgn-ec`
+
+Documentation can be [found here](https://docs.cgn-ec.veesix-networks.co.uk/api/python_sdk/).
