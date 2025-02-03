@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: waveassist
+Version: 0.0.1
+Summary: A package for Test parameters management
+Home-page: https://github.com/waveassist/waveassist.git
+Author: WaveAssist
+Author-email: kakshil.shah@waveassist.io
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# WaveAssist
+WaveAssist Helper Library
+
+## Installation
+
+```bash
+pip install waveassist
