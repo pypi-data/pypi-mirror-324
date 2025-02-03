@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: q3dviewer
+Version: 1.0.9
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pyside6
+Requires-Dist: PyOpenGL
+Requires-Dist: pillow
+Requires-Dist: meshio
+Requires-Dist: pypcd4
+Requires-Dist: pye57
+Requires-Dist: laspy
+Requires-Dist: imageio
+
