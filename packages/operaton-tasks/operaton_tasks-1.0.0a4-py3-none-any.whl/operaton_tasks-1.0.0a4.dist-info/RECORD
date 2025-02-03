@@ -1,0 +1,15 @@
+operaton/tasks/__init__.py,sha256=45wBrycJIU64_weEFlt1tMrqzAkqxwA_Z2jlLGYKCrc,562
+operaton/tasks/api.py,sha256=I8JZSMp7dFSOURjSRUpHTnNmm52aLjPhetwElnuZNi8,2503
+operaton/tasks/config.py,sha256=ijJL7TvRfVCworPAQBupGFNJVyB5JhAxSv_5sUjtxNY,1193
+operaton/tasks/deco.py,sha256=BMMI0obpOrCrrN0wo_t3m7lTTwbwtY6KJ53YjnWVTdU,543
+operaton/tasks/healthz.py,sha256=WYa6iKqh20y1wS8lLIaSl7zacw5SoiT1Jmy2PAMOE0I,2424
+operaton/tasks/main.py,sha256=Eo9AGmxmnhjJSvNFA25y7TXqRVsf5Uli9WStp9VadcE,4398
+operaton/tasks/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+operaton/tasks/types.py,sha256=_GR19Es9kc9LQUMeKRDI_ucWkonprd0kfemzm9MddsQ,344029
+operaton/tasks/utils.py,sha256=e2aJSZVVB1ckovdd0UVD2GvmeCbmxsdMeXJu1niakME,2631
+operaton/tasks/worker.py,sha256=vuaAgQkVtugwqb8-K2ZbGfbEE061dF5DxGSuwt3z-JA,10273
+operaton_tasks-1.0.0a4.dist-info/METADATA,sha256=TVVOs9p69nwS1ZGFFwfRxIspBK-YRzdF4E8oZ_Bbl80,840
+operaton_tasks-1.0.0a4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+operaton_tasks-1.0.0a4.dist-info/entry_points.txt,sha256=ZHHcFjNbZIIOIe1sXIezkdHyzKDQoQPIDe7Ux0RMHj0,60
+operaton_tasks-1.0.0a4.dist-info/licenses/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+operaton_tasks-1.0.0a4.dist-info/RECORD,,
