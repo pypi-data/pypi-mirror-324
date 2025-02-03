@@ -1,0 +1,3 @@
+[console_scripts]
+ak=ak_tool.cli:main
+
