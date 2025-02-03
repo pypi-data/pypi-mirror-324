@@ -1,0 +1,3 @@
+[console_scripts]
+Donut = donut_cli:main
+
