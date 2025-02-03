@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+src/strhold/__init__.py
+src/strhold/__main__.py
+src/strhold.egg-info/PKG-INFO
+src/strhold.egg-info/SOURCES.txt
+src/strhold.egg-info/dependency_links.txt
+src/strhold.egg-info/top_level.txt
+src/strhold/core/__init__.py
+src/strhold/tests/__init__.py
+src/strhold/tests/test_1984.py
