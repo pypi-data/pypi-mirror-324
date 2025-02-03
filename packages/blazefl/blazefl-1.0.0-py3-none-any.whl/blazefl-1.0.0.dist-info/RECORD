@@ -1,0 +1,16 @@
+blazefl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+blazefl/contrib/__init__.py,sha256=v6OvPVs5MLoFCgkzeUE-QJYzLHxa32HAclpnUGwyHko,421
+blazefl/contrib/fedavg.py,sha256=1RhDeATBFrlFmqV_1jxRyROVOcUm_ucwmyxpKqQcgV0,22935
+blazefl/core/__init__.py,sha256=hEMN8cBhWWAzzN2gN5KoTihk2KdtJdRbHf-_GhZBfCA,603
+blazefl/core/client_trainer.py,sha256=C1YAKV6MdrUXrkxFsGNUovvBBmKM8MJX5R8RcR7fU2k,5313
+blazefl/core/model_selector.py,sha256=7NO7QNrOjefAtfwr-GHYX_CwivQ38JuHmY1h4jPs_XY,696
+blazefl/core/partitioned_dataset.py,sha256=5oLIr73u6iabz3O8DPyjBcRAIoPgb8RwoeB3Z_WJcTc,1224
+blazefl/core/server_handler.py,sha256=14tPrQ6myKtv-NyMsZCDggwBiRLE-F5F5Uo204jllEA,2262
+blazefl/utils/__init__.py,sha256=qAa4HQbFz0wwu4BShGTKBWnxlO4hKR9eB65GhIUSvrg,529
+blazefl/utils/dataset.py,sha256=3Fef1Aph-KkuC7DbULpe3MzIzJ7UuQKkKlreT5BDhiQ,2633
+blazefl/utils/seed.py,sha256=a4e98PVA75CirQhnD61ZcY66DMaihSnRJYtgGRvLt9k,3926
+blazefl/utils/serialize.py,sha256=ntzpYJEiwkDaGaGn4yIpASM7v-S5qNMouOMmxtUGHsA,1289
+blazefl-1.0.0.dist-info/METADATA,sha256=3axIksynnSv0pm1FEnu-63nKghuQkrgoNWpGLDmpACI,6370
+blazefl-1.0.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+blazefl-1.0.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+blazefl-1.0.0.dist-info/RECORD,,
