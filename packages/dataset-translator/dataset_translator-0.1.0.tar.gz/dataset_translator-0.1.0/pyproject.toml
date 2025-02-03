@@ -1,0 +1,38 @@
+[project]
+name = "dataset-translator"
+authors = [{ name = "Iván Moreno", email = "ivan@ivan.build" }]
+version = "0.1.0"
+description = "Translate any dataset using Google Translate API"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "googletrans>=4.0.2",
+    "pandas>=2.2.3",
+    "pyarrow>=19.0.0",
+    "tqdm>=4.67.1",
+    "typer>=0.15.1",
+]
+keywords = ["dataset", "translate", "hf", "google", "api"]
+
+[project.urls]
+Repository = "https://github.com/ivanvmoreno/dataset-translator"
+Issues = "https://github.com/ivanvmoreno/dataset-translator/issues"
+
+[dependency-groups]
+dev = ["black>=25.1.0", "isort>=6.0.0"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 80
+target_version = ['py311']
+include = './.pyi?$'
+exclude = 'venv/'
+
+[tool.isort]
+profile = 'black'
+py_version = 311
+src_paths = ['./']
+skip_glob = ["**/.env*", "**/.venv/*"]
