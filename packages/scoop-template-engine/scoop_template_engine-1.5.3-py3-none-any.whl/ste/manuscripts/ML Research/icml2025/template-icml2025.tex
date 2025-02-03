@@ -1,0 +1,104 @@
+% A LaTeX template for submissions to International Conference on Machine Learning (ICML) 2025.
+% https://icml.cc/Conferences/2025/CallForPapers
+% Derived from example_paper.tex.
+<<MinimumVersion: 1.5.3>>
+<<% >>
+<<TemplateDescription: International Conference on Machine Learning 2025>>
+<<% >>
+<<Dependency: algorithm.sty>>
+<<Dependency: algorithmic.sty>>
+<<Dependency: icml2025.bst>>
+<<Dependency: icml2025.sty>>
+<<Dependency: fancyhdr.sty>>
+<<Dependency: preamble-icml2025.sty>>
+<<Dependency: postpreamble-icml2025.sty>>
+<<% >>
+<<CreateCustomBibliography: --arxivtotypeornote --haltotypeornote --urntonote>>
+
+% Prepreamble follows.
+<<LaTeXPrePreamble>>
+
+% Load the documentclass.
+\documentclass[%
+<<DocumentClassOptions>>]{article}
+
+% Include further packages and settings relevant for the template.
+\usepackage{icml2025}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+% Preamble follows.
+<<LaTeXPreamble>>
+
+% Setup document metadata.
+\makeatletter
+\@ifpackageloaded{hyperref}{%
+	\hypersetup{
+		pdftitle = {<<Title>>},
+		pdfauthor = {<<AuthorsFullNamesCommaSeparated>>},
+		pdfkeywords = {<<KeywordsCommaSeparated>>},
+		pdfcreator = {<<ScoopTemplateEngineSignature>>}
+	}
+}{
+	\pdfinfo{
+		/Title (<<Title>>)
+		/Author (<<AuthorsFullNamesCommaSeparated>>)
+		/Subject ()
+		/Keywords (<<KeywordsCommaSeparated>>)
+		/Creator (<<ScoopTemplateEngineSignature>>)
+	}
+}
+\makeatother
+
+\begin{document}
+
+% Set running headers.
+\icmltitlerunning{<<ShortTitle>>}
+
+% Begin two-column material.
+\twocolumn[%
+
+% Set title and subtitle information.
+\icmltitle{<<TitleNewlineSubTitle>>}
+
+% Set author information.
+\begin{icmlauthorlist}
+<<AuthorsICML>>
+\end{icmlauthorlist}
+<<CorrespondingAuthorsICML>>
+
+% Set institution information.
+<<InstitutionsICML>>
+
+% Insert the keywords.
+\icmlkeywords{<<KeywordsCommaSeparated>>}
+
+\vskip 0.3in
+]
+
+% Display the
+\printAffiliationsAndNotice{}
+
+<<CommentIfAbstractEmpty>>\begin{abstract}
+<<InputAbstract>>
+<<CommentIfAbstractEmpty>>\end{abstract}
+
+% Insert the document body.
+<<InputBody>>
+
+% Insert the funding information.
+<<FundingSectionStarred>>
+
+% Insert the dedication information.
+<<DedicationSectionStarred>>
+
+% Insert the bibliography.
+\bibliographystyle{icml2025}
+<<CustomBibliography>>
+
+% Insert the appendix.
+\appendix
+\onecolumn
+<<InputAppendix>>
+
+\end{document}

@@ -1,0 +1,11 @@
+--- sn-jnl.cls	2025-02-01 13:18:38.074583012 +0100
++++ sn-jnl-scoop.cls	2025-02-01 13:19:20.354644146 +0100
+@@ -1654,7 +1654,7 @@
+ \if@Mathphys@numrefstyle%
+   \usepackage[numbers,sort&compress]{natbib}%
+   \gdef\NumBib{YES}%
+-  \bibliographystyle{sn-mathphys-num}%
++  \bibliographystyle{sn-mathphys-num-scoop}%
+   \setlength{\bibsep}{1em}%
+   \def\bibfont{\reset@font\fontfamily{\rmdefault}\normalsize\selectfont}%
+ \else%

@@ -1,0 +1,75 @@
+% A LaTeX template for letters with the scrartcl documentclass, using the scrletter package.
+% Derived from https://mirrors.ctan.org/macros/latex/contrib/koma-script/doc/scrguide-de.pdf.
+<<TemplateDescription: scrartcl-based letter>>
+<<% >>
+<<Dependency: >>
+
+% Prepreamble follows.
+<<LaTeXPrePreamble>>
+
+% Load the documentclass.
+\documentclass[%
+<<DocumentClassOptions>>]{scrartcl}
+
+% Preamble follows.
+\RequirePackage{scrletter}
+\RequirePackage{biblatex}
+<<LaTeXPreamble>>
+
+% Define the BibLaTeX resources.
+<<BibLaTeXResources>>
+
+% Setup document metadata.
+\makeatletter
+\@ifpackageloaded{hyperref}{%
+	% https://tex.stackexchange.com/questions/458679/fill-pdfinfo-metadata-with-usekomavar-not-working
+	\newcommand{\scoop@pdfinfo}[2]{\hypersetup{pdfinfo = {#1 = #2}}}
+	\usekomavar[\scoop@pdfinfo{Author}]{fromname}
+	\hypersetup{
+		pdftitle = {<<TemplateTitle>>}
+		pdfsubject = {<<Subject>>},
+		pdfcreator = {<<ScoopTemplateEngineSignature>>},
+		pdfkeywords = {},
+	}
+}{
+	% https://tex.stackexchange.com/questions/458679/fill-pdfinfo-metadata-with-usekomavar-not-working
+	\newcommand{\scoop@pdfinfo}[2]{\pdfinfo{/#1 (#2)}}
+	\usekomavar[\scoop@pdfinfo{Author}]{fromname}
+	\pdfinfo{
+		/Title (<<TemplateTitle>>)
+		/Subject (<<Subject>>)
+		/Creator (<<ScoopTemplateEngineSignature>>)
+		/Keywords ()
+	}
+}
+\makeatother
+
+% Setup the subject.
+\setkomavar{subject}{<<Subject>>}
+
+% Setup the date.
+\setkomavar{date}{<<Date>>}
+
+\begin{document}
+\begin{letter}{%
+<<Recipient>>
+}
+
+% Insert the document body.
+<<InputBody>>
+
+% Insert the post scriptum.
+\ps
+<<PS>>
+
+% Insert the enclosures list.
+<<Encl>>
+
+% Insert the distribution list.
+<<CC>>
+
+% Insert the bibliography.
+<<BibLaTeXPrintBibliography>>
+
+\end{letter}
+\end{document}
