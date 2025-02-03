@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: simple-palette-utils
+Version: 0.0.1
+Summary: Python3 Utility library for dealing with color palettes.
+Home-page: https://github.com/waikato-datamining/simple-palette-utils
+Author: Peter Reutemann
+Author-email: fracpete@waikato.ac.nz
+License: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia
+License-File: LICENSE
+
+The **simple_palette_utils** Python 3 library aims to make dealing with color palettes easy.
+
+Changelog
+=========
+
+0.0.1 (2025-02-03)
+------------------
+
+- initial release

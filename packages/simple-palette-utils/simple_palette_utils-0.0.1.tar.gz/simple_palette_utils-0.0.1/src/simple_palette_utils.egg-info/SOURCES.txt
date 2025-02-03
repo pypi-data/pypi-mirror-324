@@ -1,0 +1,13 @@
+CHANGES.rst
+DESCRIPTION.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/simple_palette_utils/__init__.py
+src/simple_palette_utils/_palettes.py
+src/simple_palette_utils.egg-info/PKG-INFO
+src/simple_palette_utils.egg-info/SOURCES.txt
+src/simple_palette_utils.egg-info/dependency_links.txt
+src/simple_palette_utils.egg-info/requires.txt
+src/simple_palette_utils.egg-info/top_level.txt
