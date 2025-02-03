@@ -1,0 +1,12 @@
+GPMAuto/__init__.py,sha256=UWONmTN-RjPuR4NCO75Iuzc07eDNTqexWl7PkfGZhoE,54
+GPMAuto/GPMLoginAPI/GPMLoginAPI.py,sha256=svLqN89-eaDMdgve4AJWoGX2vKGVCeyJpwUFKYR6XpU,2136
+GPMAuto/GPMLoginAPI/__init__.py,sha256=cKNxb5g7PGmGJJNj5rsWNp3DinzOekhzJQddQKL0CQ4,72
+GPMAuto/GPMLoginAPI/start_profile.py,sha256=KuD3f-RSgzZ5609Fu0WI33ns_SOXlmIxrcRMhHQ1Zi0,2278
+GPMAuto/SeleniumGPM/__init__.py,sha256=WxxHNn5-7gFj17FJlppVtEfunCQc4wDGkAXf86tPlzw,37
+GPMAuto/SeleniumGPM/geometry.py,sha256=4kl1JRN5-h_LKswrhsx0B8OTBFpW22GguvCkZLl8mXY,7010
+GPMAuto/SeleniumGPM/pointer.py,sha256=6UyIOTsgcshiP3NOX50mVz2p99204ZY8pNPXJq5CfgU,7242
+GPMAuto/SeleniumGPM/selenium_gpm.py,sha256=PJOqFmr1Ds3Ig3PZQ6KDKffTWpOT9s9O5soazVcpIR0,8577
+GPMAuto-0.1.1.dist-info/METADATA,sha256=Ld25gZAMS4Qo4WvhRLqlXOMCpQGaIb4iDKYopr7x5T0,192
+GPMAuto-0.1.1.dist-info/WHEEL,sha256=PZUExdf71Ui_so67QXpySuHtCi3-J3wvF4ORK6k_S8U,91
+GPMAuto-0.1.1.dist-info/top_level.txt,sha256=xiUlJ7_cv1Od8nVaXCUX45jf8-jpdUC3y-3VUdnOcBA,8
+GPMAuto-0.1.1.dist-info/RECORD,,
