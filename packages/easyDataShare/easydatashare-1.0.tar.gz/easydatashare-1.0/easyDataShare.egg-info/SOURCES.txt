@@ -1,0 +1,7 @@
+setup.py
+dataShare/__init__.py
+dataShare/main.py
+easyDataShare.egg-info/PKG-INFO
+easyDataShare.egg-info/SOURCES.txt
+easyDataShare.egg-info/dependency_links.txt
+easyDataShare.egg-info/top_level.txt
