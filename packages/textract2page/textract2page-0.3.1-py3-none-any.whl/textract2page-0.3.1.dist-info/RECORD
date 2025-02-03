@@ -1,0 +1,11 @@
+textract2page/__init__.py,sha256=PdH70ZVd4WOC-IlRh6ajAGBrpw94XI9-CDa2PA9zSzw,255
+textract2page/_version.py,sha256=HzPz9rq3s1AiZXregKlqKaJJ2wGMtvH_a3V9la9CnpM,411
+textract2page/cli.py,sha256=jhVbZp-PAve186Guwk9Ee8ThjqvomEqVsuc6Hj5QP1E,1824
+textract2page/convert_aws.py,sha256=4MUUieXJpGnNke9b-pPGDX0MADl8jCK-UIz2vPcwWAY,44344
+textract2page-0.3.1.dist-info/LICENSE,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+textract2page-0.3.1.dist-info/METADATA,sha256=AjVDOG7Ucn3MR9kP2cV_KWM3npuHLuJLMB6xUoX_B-Y,3588
+textract2page-0.3.1.dist-info/NOTICE,sha256=EaNX1iDnT2TAC_kKkRElOQcn4n9x06WgjF3sYI1LNYo,30
+textract2page-0.3.1.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+textract2page-0.3.1.dist-info/entry_points.txt,sha256=xbLG6tJSZ3MFGN5vMXnV79W6-HDAv6KrPWeh-SQ6CCA,56
+textract2page-0.3.1.dist-info/top_level.txt,sha256=u95goMfk0Ry207LvLF4wvMVqusMwwAnlSmlrpLRIp9Q,14
+textract2page-0.3.1.dist-info/RECORD,,
