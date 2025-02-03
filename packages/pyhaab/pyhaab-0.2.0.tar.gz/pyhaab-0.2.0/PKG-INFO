@@ -1,0 +1,92 @@
+Metadata-Version: 2.2
+Name: pyhaab
+Version: 0.2.0
+Summary: pyhaab is a Python library that connects to Cisco switches using Netmiko, retrieves interface and VLAN details, and writes them to a fully formatted Excel file.
+Home-page: https://github.com/ihaabSaeed12/pyhaab
+Author: Your Name
+Author-email: ihaabsaeed@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+# pyhaab
+
+**pyhaab** is a Python library that automates the process of connecting to Cisco switches (via Netmiko), retrieving interface and VLAN details, and organizing all information into an Excel workbook. It streamlines repetitive network administration tasks, providing:
+
+- **Per-switch Worksheets**: Each switch gets its own Excel sheet, listing interfaces (with VLANs, descriptions, MAC addresses, etc.) and highlighting critical statuses (e.g., interface up/admin, NAC states).
+- **Comprehensive Summary Sheet**: A single “Switches” sheet captures high-level information (model, serial, location, uptime, etc.) across all devices, making it easy to spot check the entire environment.
+
+## Features
+
+- **Automated Netmiko Connection**: Supply switch IP, username, and password, and pyhaab will connect via SSH.
+- **Thorough Interface Data**:
+  - VLAN and trunk/native VLAN info
+  - Port statuses (up, admin, monitored, etc.)
+  - MAC address mapping (dynamic or static)
+  - Optional NAC status if configured
+- **Excel Workbook Generation**:
+  - Per-switch details in individual sheets
+  - A final summary sheet for quick reference
+  - Custom styling/formatting (highlighting, column widths, etc.)
+- **Easy Integration**: Just install with `pip`, import in your script, pass a list of switches, and run.
+
+## Main Function example 
+
+from openpyxl import Workbook
+from pyhaab import (
+    get_switch_info,
+    create_summary_sheet
+)
+
+def main():
+    # Define your switches (IP, credentials, etc.)
+    switches = [
+        {"host": "10.0.0.1", "username": "admin", "password": "password"},
+        {"host": "10.0.0.2", "username": "admin", "password": "password"},
+    ]
+    
+    # Create a new workbook and remove default sheet
+    workbook = Workbook()
+    default_sheet = workbook.active
+    workbook.remove(default_sheet)
+
+    # Dictionary to store summary data
+    all_switch_data = {}
+
+    # Retrieve data from each switch
+    for sw in switches:
+        print(f"Processing switch: {sw['host']}")
+        data_dict = get_switch_info(
+            workbook,
+            host=sw["host"],
+            username=sw["username"],
+            password=sw["password"]
+        )
+        all_switch_data.update(data_dict)
+
+    # Create the summary sheet in the workbook
+    create_summary_sheet(workbook, all_switch_data)
+
+    # Save the workbook
+    excel_filename = "MySwitches.xlsx"
+    workbook.save(excel_filename)
+    print(f"\nExcel file '{excel_filename}' created successfully.")
+
+if __name__ == "__main__":
+    main()
+
+## Installation
+
+```bash
+pip install pyhaab
+
+
