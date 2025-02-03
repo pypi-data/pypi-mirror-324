@@ -1,0 +1,7 @@
+LICENSE.txt
+README.md
+setup.py
+coscheduler.egg-info/PKG-INFO
+coscheduler.egg-info/SOURCES.txt
+coscheduler.egg-info/dependency_links.txt
+coscheduler.egg-info/top_level.txt
