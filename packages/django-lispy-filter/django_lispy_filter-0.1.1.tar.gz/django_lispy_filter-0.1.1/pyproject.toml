@@ -1,0 +1,38 @@
+[project]
+name = "django-lispy-filter"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+authors = [
+  {name = "meowking", email = "mr.meowking@posteo.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dynamic = ["version", "description"]
+
+dependencies = [
+    "Django>=4.2",
+    "sexpdata>=1.0.2",
+]
+
+[project.optional-dependencies]
+demo = [
+    "django-cors-headers>=4.6.0"
+]
+wheels = [
+    "build",
+    "twine"
+]
+
+[project.urls]
+Homepage = "https://codeberg.org/meow_king/django-lispy-filter"
+
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
