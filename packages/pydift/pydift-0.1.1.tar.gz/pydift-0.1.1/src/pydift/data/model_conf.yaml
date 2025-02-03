@@ -1,0 +1,59 @@
+Google Gemini 2.0 Flash (Exp):
+    api_key_env: "GEMINI_API_KEY"
+    url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=$API_KEY"
+    headers:
+      Content-Type: "application/json"
+    data:
+      contents:
+        - role: "user"
+          parts:
+            - text: none
+      generationConfig:
+        temperature: 1
+        topK: 40
+        topP: 0.95
+        maxOutputTokens: 256
+        responseMimeType: "text/plain"
+    response_path: "candidates.0.content.parts.0.text"
+    input_path: "contents.0.parts.0.text"
+    api_key_path: "url"
+
+OpenAI GPT-4o:
+    api_key_env: "OPENAI_API_KEY"
+    url: "https://api.openai.com/v1/chat/completions"
+    headers:
+      Content-Type: "application/json"
+      Authorization:  "Bearer $API_KEY"
+    data:
+      model: "gpt-4o"
+      messages:
+        - role: "user"
+          content: none
+      max_completion_tokens: 256
+      temperature: 0.7
+    response_path: "choices.0.message.content"
+    input_path: "messages.0.content"
+    api_key_path: "headers.Authorization"
+
+Meta Llama 3.3:
+    api_key_env: "TOGETHER_API_KEY"
+    url: "https://api.together.xyz/v1/chat/completions"
+    headers:
+      Content-Type: "application/json"
+      Authorization: "Bearer $API_KEY"
+    data:
+      model: "meta-llama/Llama-3.3-70B-Instruct-Turbo-Free"
+      messages:
+        - role: "user"
+          content: none
+      temperature: 1
+      top_p: 0.7
+      top_k: 50
+      max_tokens: 256
+      temperature: 0.7
+      stop:
+        - "<|eot_id|>"
+        - "<|eom_id|>"
+    response_path: "choices.0.message.content"
+    input_path: "messages.0.content"
+    api_key_path: "headers.Authorization"

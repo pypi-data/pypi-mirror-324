@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydift"
+version = "0.1.1"
+description = "A simple version-tracking tool for research code development."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Alon Jacoby", email = "alonj4@gmail.com"}
+]
+dependencies = [
+    "InquirerPy>=0.3.4",
+    "PyYAML>=6.0.2",
+    "Requests>=2.32.3",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/alonj/pydift"
+
+[project.scripts]
+pydift = "pydift:main"
