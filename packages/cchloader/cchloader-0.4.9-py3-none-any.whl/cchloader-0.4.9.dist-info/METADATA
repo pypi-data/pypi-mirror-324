@@ -1,0 +1,34 @@
+Metadata-Version: 2.2
+Name: cchloader
+Version: 0.4.9
+Summary: Implementation based on sippers from GISCE
+Home-page: https://github.com/Som-Energia/cchloader
+Author: 
+Author-email: 
+License: GPLv3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: raven
+Requires-Dist: pymongo<=3.13.0
+Requires-Dist: osconf
+Requires-Dist: marshmallow>=2.13.5
+Requires-Dist: click
+Requires-Dist: pytz
+Requires-Dist: psycopg2-binary
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# cchloader
+
+Python package to create electricity curve (CCH) models from "Distribuidoras" files as CNMC specifications
+
+[![Python tests](https://github.com/Som-Energia/cchloader/actions/workflows/python-tests.yml/badge.svg)](https://github.com/Som-Energia/cchloader/actions/workflows/python-tests.yml)
+
+
+## CHANGES
+
+You can view it in [Releases](https://github.com/Som-Energia/cchloader/releases)
