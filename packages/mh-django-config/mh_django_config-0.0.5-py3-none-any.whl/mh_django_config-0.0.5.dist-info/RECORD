@@ -1,0 +1,11 @@
+mh_django_config/__init__.py,sha256=JURsFCqBbSt5EUTVTEJYegP8rPhqUpFnbIrj0SdB2z0,182
+mh_django_config/_version.py,sha256=EJB7__SNK9kQS_SWZB_U4DHJ3P8ftF6etZEihTYnuXE,411
+mh_django_config/config.py,sha256=h4YtrPsyzV2tXlXeQh1LaZffbbJhlOVU12srT7NefsU,6033
+mh_django_config/parsers.py,sha256=hjFuikAUnI2EQNv7Cni2G56jltf18K8JJZhJPpQvnjE,211
+mh_django_config/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mh_django_config/tests/test_config.py,sha256=vvTNmfiVvdBCmTWwggTDIztFglV9ocO2CPACwG01HyU,4848
+mh_django_config/tests/test_parsers.py,sha256=k-ya5B-YcGbpv37h_diHypHGeSVoWc1B9FT3dm-ldfo,359
+mh_django_config-0.0.5.dist-info/METADATA,sha256=NM9qEE4mgAfPwtRItMms5khok6uDnRNRQ3pWu0HLNRA,810
+mh_django_config-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mh_django_config-0.0.5.dist-info/top_level.txt,sha256=yTsPeNx7ma3VJVVJHhf4BKkLzVGfPnbMmaZgByRM5DE,17
+mh_django_config-0.0.5.dist-info/RECORD,,
