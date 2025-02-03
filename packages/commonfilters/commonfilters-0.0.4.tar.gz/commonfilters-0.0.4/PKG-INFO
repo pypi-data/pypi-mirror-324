@@ -1,0 +1,22 @@
+Metadata-Version: 2.4
+Name: commonfilters
+Version: 0.0.4
+Summary: Let you register and use filters in right way
+Project-URL: Github repo, https://github.com/akvilary/commonfilters
+Project-URL: Bug tracker, https://github.com/akvilary/commonfilters/issues
+Project-URL: Release notes in Telegram, https://t.me/commonfilters
+Author-email: Andrey Smirnov <smirnovcode@mail.ru>
+License-File: LICENSE
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+**commonfilters** is simple and powerful filter's managment tool.
+
+## How to install
+You could install from PyPi:
+```console
+$ python3 -m pip install commonfilters
+```
