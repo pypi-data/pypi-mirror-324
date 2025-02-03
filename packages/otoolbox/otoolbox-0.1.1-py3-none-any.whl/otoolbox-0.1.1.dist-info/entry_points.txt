@@ -1,0 +1,2 @@
+[console_scripts]
+otoolbox = otoolbox:run
