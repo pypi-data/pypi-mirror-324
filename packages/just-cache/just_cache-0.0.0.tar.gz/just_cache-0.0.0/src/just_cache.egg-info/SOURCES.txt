@@ -1,0 +1,6 @@
+pyproject.toml
+src/just_cache/__init__.py
+src/just_cache.egg-info/PKG-INFO
+src/just_cache.egg-info/SOURCES.txt
+src/just_cache.egg-info/dependency_links.txt
+src/just_cache.egg-info/top_level.txt

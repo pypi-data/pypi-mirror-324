@@ -1,0 +1,7 @@
+[project]
+name = "just_cache"
+authors = [
+  { name="Tamás Márk Fehér", email="tamasmarkfeher@gmail.com" },
+]
+version = "0.0.0"
+description = "Will be published soon"
