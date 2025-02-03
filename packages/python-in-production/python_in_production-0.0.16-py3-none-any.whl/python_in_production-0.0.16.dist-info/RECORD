@@ -1,0 +1,11 @@
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+define_xy.py,sha256=oTKxiMyLiyropLG8NbnGTCxPlMmZNRvFIe-bCzvWI5I,135
+hello.py,sha256=c5PKc3QZyhWa7cvLJNxZ1b9B5r-L2_fvGFYHDN3SLAQ,191
+example_for_testing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_for_testing/states_info.py,sha256=FLOY9aLRz6Xkl2acN3YgfOA19RrNnhWf63hSZey6Bak,800
+sub_package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sub_package/print_sin.py,sha256=glI_LcaI18V1YUEdj7L3JaQDzNqJ3WTNYv3JJrlw-eU,242
+python_in_production-0.0.16.dist-info/METADATA,sha256=4k1zg_xkjt9qtsT1zxuqwGzx6WRL_4dHSKbCX7hZCjw,852
+python_in_production-0.0.16.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+python_in_production-0.0.16.dist-info/top_level.txt,sha256=I5iL6sw3M-wQEjzapk5n7EJYRDcGlrqG7HYV44R2vMI,57
+python_in_production-0.0.16.dist-info/RECORD,,
