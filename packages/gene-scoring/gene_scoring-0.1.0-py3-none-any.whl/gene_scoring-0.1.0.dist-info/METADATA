@@ -1,0 +1,28 @@
+Metadata-Version: 2.2
+Name: gene_scoring
+Version: 0.1.0
+Summary: A package for calculating gene scores in single-cell RNA sequencing data with GPU acceleration support
+Home-page: 
+Author: Original Authors
+Author-email: 
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: pandas>=1.0.0
+Requires-Dist: scipy>=1.5.0
+Provides-Extra: gpu
+Requires-Dist: cupy>=9.0.0; extra == "gpu"
+Dynamic: author
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
