@@ -1,0 +1,3 @@
+[console_scripts]
+sendgrowl = sendgrowl:usage
+sendgrowl3 = sendgrowl:usage
