@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pseudofinch/Finch.py
+src/pseudofinch/__init__.py
+src/pseudofinch.egg-info/PKG-INFO
+src/pseudofinch.egg-info/SOURCES.txt
+src/pseudofinch.egg-info/dependency_links.txt
+src/pseudofinch.egg-info/top_level.txt

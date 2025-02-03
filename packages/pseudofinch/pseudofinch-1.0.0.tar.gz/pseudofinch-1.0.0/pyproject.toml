@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pseudofinch"
+version = "1.0.0"
+authors = [
+  { name="Quinn Pare'", email="quinnpare@gmail.com" },
+]
+description = "An emulation library inspired by the Finch 2.0 made by BirdBrain Technologies."
+readme = "README.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {text = "MPL2.0"}
+
+
+[project.urls]
+Homepage = "https://github.com/quibbious/PseudoFinch"
+Issues = "https://github.com/quibbious/PseudoFinch/issues"
