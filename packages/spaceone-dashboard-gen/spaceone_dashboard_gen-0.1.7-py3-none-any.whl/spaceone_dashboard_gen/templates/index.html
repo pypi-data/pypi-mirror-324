@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>대시보드 생성기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #b39ddb; /* 연보라색 */
+            --secondary-color: #9575cd; /* 더 진한 연보라 */
+            --danger-color: #d32f2f; /* 진한 빨강 */
+            --danger-hover-color: #c62828; /* 진한 빨강 */
+            --background-color: #f3e5f5; /* 밝은 연보라 배경 */
+            --container-color: #ffffff;
+            --text-color: #212121;
+            --border-color: #d1c4e9; /* 연보라 경계 */
+            --label-bg-color: #e1bee7; /* 연보라 라벨 배경 */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f8f8f8;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .create-button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .create-button:hover {
+            background-color: #45a049;
+        }
+        .add-button {
+            background-color: #008CBA;
+            color: white;
+        }
+        .add-button:hover {
+            background-color: #007bb5;
+        }
+        .edit-button {
+            background-color: #FFA500;
+            color: white;
+        }
+        .edit-button:hover {
+            background-color: #e59400;
+        }
+        .delete-button {
+            background-color: #FF6347;
+            color: white;
+        }
+        .delete-button:hover {
+            background-color: #e5533d;
+        }
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .popup {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        .labels-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        .label {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 4px;
+            position: relative;
+            margin: 5px 0;
+        }
+        .label button {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: none;
+            border: none;
+            color: red;
+            cursor: pointer;
+            font-size: 0.8em;
+            padding: 0;
+            line-height: 1;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .ace-editor {
+            width: 100%;
+            height: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .dropdown {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .input-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .input-row label {
+            margin-right: 10px;
+            min-width: 100px;
+        }
+        .input-row input, .input-row select {
+            flex: 1;
+            margin-right: 10px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" integrity="sha512-..."></script>
+    <script>
+        async function fetchEnvironmentFiles() {
+            const response = await fetch('/environment-files');
+            const data = await response.json();
+            const select = document.getElementById('environmentSelect');
+            select.innerHTML = ''; // 기존 옵션 제거
+            data.files.forEach(file => {
+                const option = document.createElement('option');
+                option.value = file;
+                option.textContent = file;
+                select.appendChild(option);
+            });
+        }
+
+        function switchEnvironment() {
+            const selectedEnv = document.getElementById('environmentSelect').value;
+            alert(`환경이 ${selectedEnv}(으)로 변경되었습니다.`);
+            // 실제 환경 변경 로직을 여기에 추가하세요.
+        }
+
+        function addLabel(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                const labelInput = document.getElementById('labelInput');
+                const labelValue = labelInput.value.trim();
+                if (labelValue) {
+                    const labelsContainer = document.getElementById('labelsContainer');
+                    const label = document.createElement('div');
+                    label.className = 'label';
+                    label.textContent = labelValue;
+
+                    // 삭제 버튼 추가
+                    const deleteButton = document.createElement('button');
+                    deleteButton.textContent = 'x';
+                    deleteButton.style.cssText = `
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        background: none;
+                        border: none;
+                        color: red;
+                        cursor: pointer;
+                        font-size: 0.8em;
+                        padding: 0;
+                        line-height: 1;
+                    `;
+                    deleteButton.onclick = function() {
+                        labelsContainer.removeChild(label);
+                    };
+                    label.style.position = 'relative'; // 라벨을 상대 위치로 설정
+                    label.style.paddingRight = '15px'; // 버튼 공간 확보
+                    label.appendChild(deleteButton);
+
+                    labelsContainer.appendChild(label);
+                    labelInput.value = '';
+                }
+            }
+        }
+
+        function handleComposition(event) {
+            if (event.type === 'compositionend') {
+                addLabel({ key: 'Enter' });
+            }
+        }
+
+        function addDashboardField() {
+            const container = document.getElementById('dashboardsContainer');
+            const dashboardDiv = document.createElement('div');
+            dashboardDiv.className = 'dashboard-entry';
+            const editorId = `editor${container.children.length}`;
+            dashboardDiv.innerHTML = `
+                <div class="ace-editor" id="${editorId}"></div>
+                <button type="button" onclick="removeDashboardField(this)">삭제</button>
+            `;
+            container.appendChild(dashboardDiv);
+            initializeEditor(editorId);
+        }
+
+        function removeDashboardField(button) {
+            const container = document.getElementById('dashboardsContainer');
+            container.removeChild(button.parentElement);
+        }
+
+        async function createDashboard() {
+            const name = document.getElementById('name').value.trim();
+            const templateId = document.getElementById('templateId').value.trim();
+            const environment = document.getElementById('environmentSelect').value;
+
+            const dashboardElements = document.getElementsByClassName('ace-editor');
+            const dashboards = [];
+            for (let editorDiv of dashboardElements) {
+                const editor = ace.edit(editorDiv.id);
+                try {
+                    const dashboard = JSON.parse(editor.getValue());
+                    dashboards.push(dashboard);
+                } catch (error) {
+                    alert("대시보드 입력이 유효한 JSON 객체가 아닙니다.");
+                    return;
+                }
+            }
+
+            const templateType = dashboards.length === 1 ? 'SINGLE' : 'MULTI';
+            const labels = []; // 필요에 따라 라벨을 추가하거나 빈 배열로 설정
+
+            const dashboardData = {
+                name,
+                template_id: templateId,
+                template_type: templateType,
+                dashboards,
+                labels
+            };
+
+            const requestData = {
+                environment: environment,
+                dashboard: dashboardData
+            };
+
+            try {
+                const response = await fetch('/run-create-template-by-subprocess', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                const result = await response.json();
+                alert(result.message || result.error);
+            } catch (error) {
+                console.error('Error creating dashboard:', error);
+                alert('대시보드 생성 중 오류가 발생했습니다.');
+            }
+        }
+
+        async function fetchTemplateList() {
+            try {
+                const response = await fetch('/list-dashboard-templates-by-subprocess');
+                const data = await response.json();
+                const templateList = document.getElementById('templateList');
+                templateList.innerHTML = ''; // 기존 목록 제거
+
+                if (data.error) {
+                    templateList.innerHTML = `<tr><td colspan="5">${data.error}</td></tr>`;
+                    return;
+                }
+
+                data.templates.results.forEach(template => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${template.template_id}</td>
+                        <td>${template.name}</td>
+                        <td>${template.state}</td>
+                        <td>${template.template_type}</td>
+                        <td class="button-group">
+                            <button class="edit-button" onclick='openEditPopup(${JSON.stringify(template)})'>변경</button>
+                            <button class="delete-button" onclick="deleteTemplate('${template.template_id}')">삭제</button>
+                        </td>
+                    `;
+                    templateList.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Error fetching template list:', error);
+            }
+        }
+
+        async function deleteTemplate(templateId) {
+            try {
+                const response = await fetch(`/delete-dashboard-template?template_id=${templateId}`, {
+                    method: 'GET'
+                });
+                const result = await response.json();
+                if (result.error) {
+                    alert(`삭제 실패: ${result.error}`);
+                } else {
+                    alert('템플릿이 성공적으로 삭제되었습니다.');
+                    fetchTemplateList(); // 목록 갱신
+                }
+            } catch (error) {
+                console.error('Error deleting template:', error);
+            }
+        }
+
+        // 페이지 로드 시 이벤트 설정
+        window.onload = function() {
+            initializeEditor("editor0");
+            fetchEnvironmentFiles(); // 환경 파일 가져오기
+            fetchTemplateList(); // 템플릿 목록 가져오기
+
+            // generateButton 클릭 이벤트 설정
+            document.getElementById('generateButton').onclick = createDashboard;
+
+            // confirmButton 클릭 이벤트 설정
+            document.getElementById('confirmButton').onclick = async function() {
+                const name = document.getElementById('name').value.trim();
+                const templateId = document.getElementById('templateId').value.trim();
+                const selectedEnv = document.getElementById('environmentSelect').value;
+                const labelsContainer = document.getElementById('labelsContainer');
+                const labels = Array.from(labelsContainer.children).map(label => label.textContent.replace('x', '').trim());
+
+                // 대시보드 데이터 수집
+                const dashboardElements = document.getElementsByClassName('ace-editor');
+                const dashboards = [];
+                for (let editorDiv of dashboardElements) {
+                    const editor = ace.edit(editorDiv.id);
+                    try {
+                        const dashboard = JSON.parse(editor.getValue());
+                        dashboards.push(dashboard);
+                    } catch (error) {
+                        alert("대시보드 입력이 유효한 JSON 객체가 아닙니다.");
+                        return;
+                    }
+                }
+
+                // template_type 결정
+                const templateType = dashboards.length === 1 ? 'SINGLE' : 'MULTI';
+
+                // run_create_template_by_subprocess API 호출
+                try {
+                    const response = await fetch('/run-create-template-by-subprocess', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            environment: selectedEnv,
+                            dashboard: {
+                                name: name,
+                                template_id: templateId,
+                                labels: labels,
+                                template_type: templateType,
+                                dashboards: dashboards
+                            }
+                        })
+                    });
+
+                    const result = await response.json();
+                    console.log(result.message);
+                } catch (error) {
+                    console.error('Error calling run-create-template-by-subprocess:', error);
+                }
+
+                // 팝업 숨기기
+                document.getElementById('popup-overlay').style.display = 'none';
+                document.getElementById('popup').style.display = 'none';
+            };
+        };
+
+        let currentTemplateId = null; // 현재 템플릿 ID를 저장할 변수
+
+        function openEditPopup(template) {
+            console.log('openEditPopup called with template:', template); // 디버깅용 로그
+            currentTemplateId = template.template_id; // 템플릿 ID 저장
+            document.getElementById('edit-dashboard-name').value = template.name;
+
+            // data_key와 plugin_id가 없을 경우 빈 객체로 처리
+            const dataKey = template.data_key || {};
+            const pluginId = template.plugin_id || {};
+
+            const dataKeyEntries = Object.entries(dataKey);
+            if (dataKeyEntries.length > 0) {
+                document.getElementById('edit-data-key-key').value = dataKeyEntries[0][0];
+                document.getElementById('edit-data-key-value').value = dataKeyEntries[0][1];
+            } else {
+                document.getElementById('edit-data-key-key').value = '';
+                document.getElementById('edit-data-key-value').value = '';
+            }
+
+            const pluginIdEntries = Object.entries(pluginId);
+            if (pluginIdEntries.length > 0) {
+                document.getElementById('edit-plugin-id-key').value = pluginIdEntries[0][0];
+                document.getElementById('edit-plugin-id-value').value = pluginIdEntries[0][1];
+            } else {
+                document.getElementById('edit-plugin-id-key').value = '';
+                document.getElementById('edit-plugin-id-value').value = '';
+            }
+
+            document.getElementById('edit-popup-overlay').style.display = 'flex';
+            document.getElementById('edit-popup').style.display = 'block';
+        }
+
+        function closeEditPopup() {
+            document.getElementById('edit-popup-overlay').style.display = 'none';
+            document.getElementById('edit-popup').style.display = 'none';
+        }
+
+        function checkInputs() {
+            const name = document.getElementById('edit-dashboard-name').value.trim();
+            const dataKeyKey = document.getElementById('edit-data-key-key').value.trim();
+            const dataKeyValue = document.getElementById('edit-data-key-value').value.trim();
+            const pluginIdKey = document.getElementById('edit-plugin-id-key').value.trim();
+            const pluginIdValue = document.getElementById('edit-plugin-id-value').value.trim();
+
+            // 입력 필드 중 하나라도 값이 있으면 저장 버튼 활성화
+            const saveButton = document.getElementById('saveButton');
+            if (name || dataKeyKey || dataKeyValue || pluginIdKey || pluginIdValue) {
+                saveButton.disabled = false;
+            } else {
+                saveButton.disabled = true;
+            }
+        }
+
+        async function saveTemplateChanges() {
+            const name = document.getElementById('edit-dashboard-name').value.trim();
+            const dataKeyKey = document.getElementById('edit-data-key-key').value.trim();
+            const dataKeyValue = document.getElementById('edit-data-key-value').value.trim();
+            const dataKey = dataKeyKey ? { [dataKeyKey]: dataKeyValue } : {};
+            const pluginIdKey = document.getElementById('edit-plugin-id-key').value.trim();
+            const pluginIdValue = document.getElementById('edit-plugin-id-value').value.trim();
+            const pluginId = pluginIdKey ? { [pluginIdKey]: pluginIdValue } : {};
+
+            const updates = {
+                name: name,
+                data_key: dataKey,
+                plugin_id: pluginId
+            };
+
+            console.log('Updates:', updates); // 요청 데이터 확인용 로그
+
+            try {
+                const response = await fetch(`/update-dashboard-template?template_id=${encodeURIComponent(currentTemplateId)}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(updates)
+                });
+
+                const result = await response.json();
+                console.log('Server Response:', result); // 서버 응답 확인용 로그
+
+                if (result.error) {
+                    alert(`업데이트 실패: ${result.error}`);
+                } else {
+                    alert('템플릿이 성공적으로 업데이트되었습니다.');
+                    closeEditPopup();
+                    fetchTemplateList(); // 목록 갱신
+                }
+            } catch (error) {
+                console.error('Error updating template:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('edit-dashboard-name').addEventListener('input', checkInputs);
+            document.getElementById('edit-data-key-key').addEventListener('input', checkInputs);
+            document.getElementById('edit-data-key-value').addEventListener('input', checkInputs);
+            document.getElementById('edit-plugin-id-key').addEventListener('input', checkInputs);
+            document.getElementById('edit-plugin-id-value').addEventListener('input', checkInputs);
+
+            document.getElementById('saveButton').onclick = saveTemplateChanges;
+        });
+
+        // Ace Editor 초기화
+        function initializeEditor(editorId) {
+            const editor = ace.edit(editorId);
+            editor.setTheme("ace/theme/monokai");
+            editor.session.setMode("ace/mode/json");
+            editor.session.on('change', function(delta) {
+                try {
+                    JSON.parse(editor.getValue());
+                    editor.session.clearAnnotations();
+                } catch (e) {
+                    editor.session.setAnnotations([{
+                        row: delta.start.row,
+                        column: delta.start.column,
+                        text: "JSON 오류: " + e.message,
+                        type: "error"
+                    }]);
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>대시보드 생성기</h1>
+        </div>
+        <div class="section">
+            <h2>대시보드 생성</h2>
+            <div class="input-row">
+                <label for="environmentSelect">환경 선택:</label>
+                <select id="environmentSelect" class="dropdown">
+                    <!-- 환경 옵션이 여기에 추가됩니다 -->
+                </select>
+            </div>
+            <div class="input-row">
+                <label for="name">이름:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="input-row">
+                <label for="templateId">템플릿 ID:</label>
+                <input type="text" id="templateId" name="templateId">
+            </div>
+            <label for="labels">라벨:</label>
+            <input type="text" id="labelInput" onkeydown="addLabel(event)" oncompositionend="handleComposition(event)" placeholder="라벨 입력 후 엔터"><br>
+            <div id="labelsContainer" class="labels-container"></div>
+            <div id="dashboardsContainer">
+                <h3>대시보드 입력</h3>
+                <div class="dashboard-entry">
+                    <div class="ace-editor" id="editor0"></div>
+                    <button type="button" onclick="removeDashboardField(this)">삭제</button>
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="button" class="add-button" onclick="addDashboardField()">대시보드 추가</button>
+                <button id="generateButton" class="create-button">생성</button>
+            </div>
+        </div>
+        <div class="section">
+            <h2>생성된 대시보드 템플릿 목록</h2>
+            <button type="button" onclick="fetchTemplateList()">새로고침</button>
+            <table id="templateTable" class="template-table">
+                <thead>
+                    <tr>
+                        <th>템플릿 ID</th>
+                        <th>이름</th>
+                        <th>상태</th>
+                        <th>템플릿 유형</th>
+                        <th>작업</th>
+                    </tr>
+                </thead>
+                <tbody id="templateList">
+                    <!-- 템플릿 데이터가 여기에 추가됩니다 -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="edit-popup-overlay" class="popup-overlay">
+        <div id="edit-popup" class="popup">
+            <h2>템플릿 수정</h2>
+            <div class="input-row">
+                <label for="edit-dashboard-name">Dashboard Name:</label>
+                <input type="text" id="edit-dashboard-name">
+            </div>
+            <div class="input-row">
+                <label for="edit-data-key">Data Key:</label>
+                <input type="text" id="edit-data-key-key" placeholder='Key'>
+                <input type="text" id="edit-data-key-value" placeholder='Value'>
+            </div>
+            <div class="input-row">
+                <label for="edit-plugin-id">Plugin ID:</label>
+                <input type="text" id="edit-plugin-id-key" placeholder='Key'>
+                <input type="text" id="edit-plugin-id-value" placeholder='Value'>
+            </div>
+            <button id="saveButton">저장</button>
+            <button onclick="closeEditPopup()">취소</button>
+        </div>
+    </div>
+
+    <div id="popup-overlay"></div>
+    <div id="popup">
+        <div id="summary"></div>
+        <button id="confirmButton">생성</button>
+    </div>
+
+    <script>
+        // JavaScript functions as previously defined
+    </script>
+</body>
+</html>
