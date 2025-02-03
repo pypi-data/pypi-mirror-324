@@ -1,0 +1,12 @@
+fastaio/__init__.py,sha256=XHI_f89-92JHewB8EzJFTxhnzeqS3yFXUgJ7pgpIyXY,264
+fastaio/_cli.py,sha256=0EeCEbbK3U6r23tmu4mC6sR0L4bgvsQxlwelD0pWvCE,918
+fastaio/_config.py,sha256=i3o0p-FNnRAJEcyl5GzMJEuRiAvIvxWBWGHf8LnLJbg,1520
+fastaio/_container.py,sha256=XCplcndLw6oWKIg_o0ERNxINqfyXtW3p9gr7DnEQOOw,2321
+fastaio/_importer.py,sha256=fhNlBMKBNfRwtsIsv8UsDoEDvfrfUGzouVLJJEbMZUE,1437
+fastaio/_module.py,sha256=Uy86a9EC3FYq0HFz5BhzskxK4Je6CjdU512V0DumEwg,14018
+fastaio/web/fastapi.py,sha256=SMIkmKh000zDQW-CsbkUdoFMiLrQidXlrS797pUsD_U,1483
+fastaio-0.4.0.dist-info/METADATA,sha256=kcG5UoXweyXQLy8Y148I0QnaY2aO4OIuhLUtIKZDok0,3485
+fastaio-0.4.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+fastaio-0.4.0.dist-info/entry_points.txt,sha256=yd1A4u34i98cR_NDiOiTrLsa9iQf1BiChtE8BS0xqoE,97
+fastaio-0.4.0.dist-info/licenses/LICENSE,sha256=b-z8kzOM0PPqWrt5OJC0jW9VogEgCXxazvBO7BKCdbA,1499
+fastaio-0.4.0.dist-info/RECORD,,

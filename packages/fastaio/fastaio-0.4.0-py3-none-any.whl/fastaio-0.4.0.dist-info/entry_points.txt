@@ -1,0 +1,5 @@
+[console_scripts]
+fastaio = fastaio._cli:main
+
+[fastaio.modules]
+fastaio_module = fastaio:Module
