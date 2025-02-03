@@ -1,0 +1,67 @@
+Metadata-Version: 2.4
+Name: extrastats
+Version: 0.1.0
+Summary: A Python package for advanced statistical analysis.
+Project-URL: Homepage, https://github.com/jerradmgenson/extrastats
+Project-URL: Issues, https://github.com/jerradmgenson/extrastats/issues
+Author-email: Jerrad Michael Genson <jerradgenson@gmail.com>
+License-Expression: MPL-2.0
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Requires-Dist: joblib==1.4.*
+Requires-Dist: numpy==2.2.*
+Requires-Dist: packaging==24.*
+Requires-Dist: pandas==2.2.*
+Requires-Dist: patsy==1.0.*
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.2
+Requires-Dist: scipy==1.15.*
+Requires-Dist: six==1.17.*
+Requires-Dist: statsmodels==0.14.*
+Requires-Dist: tzdata==2025.1
+Description-Content-Type: text/markdown
+
+# extrastats
+
+**Advanced statistical tools and routines for Python**
+
+`extrastats` is a Python library that provides high-quality statistical methods to address gaps in mainstream libraries like NumPy, SciPy, and statsmodels. Designed for data scientists, statisticians, and researchers, `extrastats` includes robust, customizable, and performance-optimized routines.
+
+Copyright 2022-2025 Jerrad Michael Genson
+
+This library is licensed under the Mozilla Public License, v. 2.0.
+
+---
+
+## Features
+
+### Robust Outlier Detection
+- **Adjusted Boxplot**: A method that extends traditional boxplots using the medcouple statistic for skewness adjustment.
+
+### Advanced Permutation Testing
+- Flexible resampling strategies:
+  - Pairings, samples, independent shuffles, and bootstrapping.
+- Parallel computation with `joblib`.
+
+### Confidence Interval Estimation
+- Bootstrap-based confidence intervals for arbitrary statistics.
+- Support for multiple confidence levels in a single call.
+
+### Sample Size Estimation
+- Monte Carlo simulations to determine required sample sizes for target confidence interval widths.
+
+### Tail Weight Analysis
+- Evaluate the tail weight of distributions using the L/RMC method.
+
+### Mutual Information
+- Compute mutual information for discrete variables.
+- Optional normalization for interpretability.
+
+### Additional Metrics
+- Geometric Coefficient of Variation (GCV)
+- Harmonic Variability (HVAR)
+- Trimmed statistics and probability operations.
+
+---
