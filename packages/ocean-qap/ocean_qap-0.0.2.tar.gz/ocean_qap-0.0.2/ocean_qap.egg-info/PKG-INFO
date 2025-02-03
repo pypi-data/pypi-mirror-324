@@ -1,0 +1,12 @@
+Metadata-Version: 2.2
+Name: ocean_qap
+Version: 0.0.2
+Summary: Prototype library for solving QAP with the Ocean SDK
+Author: Atharv Chowdhary
+Requires-Dist: matplotlib>=3.0.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: networkx>=2.5
+Requires-Dist: dwave-ocean-sdk>=5.5.0
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: summary
