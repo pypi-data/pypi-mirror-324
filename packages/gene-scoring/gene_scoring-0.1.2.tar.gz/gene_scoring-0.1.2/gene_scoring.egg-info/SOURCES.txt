@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+image.png
+pyproject.toml
+setup.py
+gene_scoring.egg-info/PKG-INFO
+gene_scoring.egg-info/SOURCES.txt
+gene_scoring.egg-info/dependency_links.txt
+gene_scoring.egg-info/not-zip-safe
+gene_scoring.egg-info/requires.txt
+gene_scoring.egg-info/top_level.txt
