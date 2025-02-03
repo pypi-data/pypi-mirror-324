@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: fastuseragent
+Version: 1.0.2
+Summary: User-agent parsing library with Go backend
+
