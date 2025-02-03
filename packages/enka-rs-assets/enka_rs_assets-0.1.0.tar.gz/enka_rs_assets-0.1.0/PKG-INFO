@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: enka-rs-assets
+Version: 0.1.0
+Summary: A repo that generates and stores the assets for enka-rs
+Author-email: MocA-Love <maguro@maguro-bot.com>
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: aiofiles>=24.1.0
+Requires-Dist: aiohttp>=3.11.3
+Requires-Dist: orjson>=3.10.11
+
+# enka-rs-assets
+
+ A repo that generates and stores the assets
