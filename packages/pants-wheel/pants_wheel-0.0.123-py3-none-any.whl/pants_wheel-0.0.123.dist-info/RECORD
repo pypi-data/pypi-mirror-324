@@ -1,0 +1,5 @@
+backend_shim.py,sha256=nWQk3SmL1ApVDBkJW5-LxzqaBlS7ql5kUtg2gCikjnQ,751
+pants_wheel-0.0.123.dist-info/METADATA,sha256=4rRbGPOUB8anYlvsKkgO_S1Z_e3G9SOHLM7z-UZGDwQ,534
+pants_wheel-0.0.123.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pants_wheel-0.0.123.dist-info/top_level.txt,sha256=EKWQsiPSspK-bGKZTmzpG0it55Yl6-Y032orzB86crY,13
+pants_wheel-0.0.123.dist-info/RECORD,,
