@@ -1,0 +1,11 @@
+LICENCE
+README.md
+pyproject.toml
+src/zandev_textual_widgets/__init__.py
+src/zandev_textual_widgets/dialog.py
+src/zandev_textual_widgets/menu.py
+src/zandev_textual_widgets.egg-info/PKG-INFO
+src/zandev_textual_widgets.egg-info/SOURCES.txt
+src/zandev_textual_widgets.egg-info/dependency_links.txt
+src/zandev_textual_widgets.egg-info/requires.txt
+src/zandev_textual_widgets.egg-info/top_level.txt
