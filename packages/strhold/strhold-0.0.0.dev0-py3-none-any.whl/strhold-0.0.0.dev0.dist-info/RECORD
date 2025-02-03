@@ -1,0 +1,10 @@
+strhold/__init__.py,sha256=6ke-FAfBk2sxT9jbBDT4zFhbK1syrCjzRj4gKlbX4H0,94
+strhold/__main__.py,sha256=pUcAsTCrrevwgYJ19XfbHXVNDNzcxrnnMOi0LPZQMfk,64
+strhold/core/__init__.py,sha256=-UmfYEmQNUYFs-KOWjKS4fKRMyCWeAD8ePWhEVgX3dM,47
+strhold/tests/__init__.py,sha256=oU8OhaFDb7QcMsXRNrLPAl8VlkLr6lLadbJCZp_n5lc,295
+strhold/tests/test_1984.py,sha256=GPfy8FPaGbj-w9uGHkJYSjmlSReVAXwiHS8JydJaERw,187
+strhold-0.0.0.dev0.dist-info/LICENSE.txt,sha256=fOh9FHccUt9OcJPBaVJ482GX4yrl_FxCUk9YRZ53JOI,1074
+strhold-0.0.0.dev0.dist-info/METADATA,sha256=uTAwJ7WvEUpu4htG2UQWkzg2j0dX4kR1IlbeqQAYjFA,2622
+strhold-0.0.0.dev0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+strhold-0.0.0.dev0.dist-info/top_level.txt,sha256=qCEdRLfBI0tPO0Xv9yP-Qe3wX7k5Bxm4Gi6x4hraQ7Y,8
+strhold-0.0.0.dev0.dist-info/RECORD,,
