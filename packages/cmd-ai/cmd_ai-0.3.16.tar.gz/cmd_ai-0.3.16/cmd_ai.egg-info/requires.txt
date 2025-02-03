@@ -1,0 +1,10 @@
+anthropic
+click
+console
+fire
+googlesearch-python
+openai
+pandas
+playsound
+prompt_toolkit
+unidecode
