@@ -1,0 +1,16 @@
+ucutils/__init__.py,sha256=9sqq7OTtdRP65G6gGNRohuzz8Pg7J49LGA4h_LHrLeM,2642
+ucutils/checkpoint.py,sha256=YsYBpD2Ki_IxKrzJkKvHldbAJNcwVLx6UJLWFvA5HJY,2331
+ucutils/cli.py,sha256=3nBRXUwVx30beHHXLKHaaymKlgBPsQlfyJDLFMc-4eQ,11175
+ucutils/emu.py,sha256=s_9zAwc4OXcDkLDuqGX0030Im_UVfJJZZymbiNLl_Kc,10543
+ucutils/arch/__init__.py,sha256=96Fa8Mj3PTx4oFciEDKz8EPKpbCM7LZ_E7rITmDKh60,436
+ucutils/arch/x32/__init__.py,sha256=5LifmGbXJMg5lcTL0NY8i0E5aJCVhsjGZil_05hF7m8,6211
+ucutils/arch/x64/__init__.py,sha256=ZjNk3NqhHLVuv4DzD0RW-rXCO2qKA3clV5ppC5LVHeQ,5508
+ucutils/plat/__init__.py,sha256=5MaEdb_s8m4E-c0JD_uu06ueZTlRRtZLDc6A_kXzKNI,531
+ucutils/plat/win.py,sha256=pYQkzsXXb6KoGEz2gYCe9JZpmlLFdwyYoDreh05Vn4s,3113
+ucutils/plat/win32.py,sha256=va0ed9pgzL42nMRa7fvZnCevi_Niz3mhFcIbk4C-SY8,5123
+ucutils/plat/win64.py,sha256=zgAzQEFFIv-vOh1zBOP0o1YTDA5ywNTmyq_cnPcXlyY,4752
+ucutils-0.3.3.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+ucutils-0.3.3.dist-info/METADATA,sha256=18s0YFvmWcq4JrWRJVbAzWs4CQkmyPcyiVrtoSVVhJI,16587
+ucutils-0.3.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ucutils-0.3.3.dist-info/top_level.txt,sha256=2bIE6Zt-XAV3QSFbezCMvtZokoULEDYnHhWi4_MIMSM,8
+ucutils-0.3.3.dist-info/RECORD,,
