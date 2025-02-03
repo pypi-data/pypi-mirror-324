@@ -1,0 +1,148 @@
+stages:
+  - preflight
+  - build
+  - test
+  - qa
+  - deploy
+  - publish
+  - verify
+  - experimental
+
+include:
+  - template: Jobs/Dependency-Scanning.gitlab-ci.yml
+
+variables:
+  UV_VERSION: 0.5
+  PYTHON_VERSION: 3.12
+  BASE_LAYER: bookworm-slim
+  UV_LINK_MODE: copy
+
+# -------------------------------------------
+# 🚀📦 Package Publishing 📦🚀
+# -------------------------------------------
+.publish-the-package:
+  image: ghcr.io/astral-sh/uv:$UV_VERSION-python$PYTHON_VERSION-$BASE_LAYER
+  rules:
+    - if: $CI_COMMIT_TAG =~ /v.*/
+
+# -------------------------------------------
+# 🦊🚀 Deploy to GitLab Package Registry 🚀🦊
+# -------------------------------------------
+🚀 deploy to 🦊💜 GitLab Package Registry:
+  needs: ["🧾 build and check the 📦 package 🥺"]
+  stage: publish
+  extends: .publish-the-package
+  script:
+    - echo "🧾 Build and check the 📦 package 🥺"
+    - apt-get update && apt-get install -y git
+    - git --version
+    - uv tool install twine uv-dynamic-versioning || true
+    - ls
+    - TWINE_PASSWORD=${CI_JOB_TOKEN} TWINE_USERNAME=gitlab-ci-token uvx twine upload --verbose --repository-url ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/pypi dist/*
+    - uv cache prune --ci
+
+# -------------------------------------------
+# 🥺📦🧾 Build and check the package 🧾📦🥺
+# -------------------------------------------
+🧾 build and check the 📦 package 🥺:
+  stage: qa
+  extends: .publish-the-package
+  before_script:
+    - apt-get update && apt-get install -y git
+  script:
+    - echo "🧾 Build and check the 📦 package 🥺"
+    - git --version
+    - uv tool install twine uv-dynamic-versioning || true
+    - uv build
+    - uvx twine check dist/*
+  artifacts:
+    paths:
+      - dist/*
+    expire_in: 1 hour
+
+# -------------------------------------------
+# 🚀🧪 Deploy to TestPyPi 🧪🚀
+# -------------------------------------------
+🚀 deploy to 🧪 TestPyPi:
+  stage: deploy
+  image: ghcr.io/astral-sh/uv:$UV_VERSION-python$PYTHON_VERSION-$BASE_LAYER
+  rules:
+    - if: $CI_COMMIT_TAG =~ /v.*/
+  dependencies:
+    - 🧾 build and check the 📦 package 🥺
+  id_tokens:
+    PYPI_ID_TOKEN:
+      aud: testpypi
+  script:
+    # Install dependencies
+    - apt update && apt install -y curl jq
+    - python -m pip install -U twine id
+    - echo "✨✨"
+    - python -m id PYPI
+    - echo "✨✨"
+    # Retrieve the OIDC token from GitLab CI/CD, and exchange it for a PyPI API token
+    # Upload to TestPyPI
+    - scripts/exchange-token-testpypi.sh
+  environment:
+    name: testpypi
+    url: https://test.pypi.org/project/pipeglow/
+
+# -------------------------------------------
+# 🎊 Deploy to PyPi 🎊
+# -------------------------------------------
+🚀 deploy to 🎊 PyPi:
+  needs: ["🚀 deploy to 🧪 TestPyPi", "🧾 build and check the 📦 package 🥺"]
+  stage: publish
+  when: manual
+  image: ghcr.io/astral-sh/uv:$UV_VERSION-python$PYTHON_VERSION-$BASE_LAYER
+  extends: .publish-the-package
+  id_tokens:
+    PYPI_ID_TOKEN:
+      aud: pypi
+  environment:
+    name: pypi
+    url: https://pypi.org/project/pipeglow/
+  script:
+    - echo "🚀 Upload to PyPi..."
+    # Install dependencies
+    - apt update && apt install -y curl jq
+    - python -m pip install -U twine id
+    - echo "✨✨"
+    - python -m id PYPI
+    - echo "✨✨"
+    # Retrieve the OIDC token from GitLab CI/CD, and exchange it for a PyPI API token
+    # Upload to PyPI
+    - scripts/exchange-token-pypi.sh
+
+# -------------------------------------------
+# 😅 Verify the TestPyPi version works 😅
+# -------------------------------------------
+😅 make sure the TestPyPi version works:
+  stage: verify
+  image: python:3.10
+  needs: ["🧾 build and check the 📦 package 🥺", "🚀 deploy to 🧪 TestPyPi"]
+  script:
+    # Strip the leading "v" from the version tag (e.g., v0.0.1 -> 0.0.1)
+    - VERSION=${CI_COMMIT_TAG#v}
+    - pip install -i https://test.pypi.org/simple/ pipeglow==$VERSION --extra-index-url https://pypi.org/simple
+    - pipeglow --help
+    - pipeglow --version
+  rules:
+    - if: $CI_COMMIT_TAG =~ /v.*/
+
+# -------------------------------------------
+# 🤞🍀 Verify the PyPi version works 🍀🤞
+# -------------------------------------------
+.🤞 make sure the PyPi version works 🍀:
+  needs: ["🚀 deploy to 🎊 PyPi"]
+  stage: verify
+  image: python:3.10
+  script:
+    - echo "🦄 Let's do this!"
+    # Strip the leading "v" from the version tag (e.g., v0.0.1 -> 0.0.1)
+    - VERSION=${CI_COMMIT_TAG#v}
+    - pip install pipeglow==$VERSION
+    - pipeglow --help
+    - pipeglow --version
+  rules:
+    - if: $CI_COMMIT_TAG =~ /v.*/

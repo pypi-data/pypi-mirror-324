@@ -1,0 +1,62 @@
+[project]
+name = "pipeglow"
+dynamic = ["version"]
+description = "✨ Change smart lights based on CI pipeline status"
+readme = "README.md"
+authors = [{name = "Brie Carranza"}]
+license = {text = "MIT"}
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Internet",
+    "Topic :: System :: Monitoring",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "certifi==2024.12.14",
+    "charset-normalizer==3.4.1",
+    "click==8.1.8",
+    "emoji==2.14.1",
+    "idna==3.10",
+    "python-dotenv==1.0.1",
+    "python-gitlab==5.3.1",
+    "requests==2.32.3",
+    "requests-toolbelt==1.0.0",
+    "urllib3==2.3.0"
+]
+
+[build-system]
+requires = ["hatchling", "uv-dynamic-versioning"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "uv-dynamic-versioning"
+
+[tool.uv-dynamic-versioning]
+vcs = "git"
+style = "semver"
+
+[project.urls]
+Homepage = "https://gitlab.com/brie/pipeglow"
+
+[project.scripts]
+pipeglow = "pipeglow.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+#[[tool.uv.index]]
+#name = "testpypi"
+#url = "https://test.pypi.org/simple/"
+#publish-url = "https://test.pypi.org/legacy/"
