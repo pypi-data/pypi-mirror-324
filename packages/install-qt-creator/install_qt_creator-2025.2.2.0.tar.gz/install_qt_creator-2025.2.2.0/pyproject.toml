@@ -1,0 +1,26 @@
+[project]
+name = "install-qt-creator"
+version = "2025.2.2.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["pywin32>=308"]
+
+[project.urls]
+Repository = "https://github.com/soda92/install-qt-creator"
+
+[project.scripts]
+install-qt-creator = "install_qt_creator.hello:main"
+
+[build-system]
+requires = ["hatchling", "hatch-build-scripts"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+packages = ["install_qt_creator"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["install_qt_creator"]
+
+[dependency-groups]
+dev = ["build>=1.2.2.post1", "twine>=6.1.0"]
