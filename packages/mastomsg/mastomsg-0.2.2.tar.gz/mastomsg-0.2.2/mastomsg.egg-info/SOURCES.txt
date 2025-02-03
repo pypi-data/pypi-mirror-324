@@ -1,0 +1,10 @@
+LICENSE
+README.md
+mastomsg.py
+pyproject.toml
+mastomsg.egg-info/PKG-INFO
+mastomsg.egg-info/SOURCES.txt
+mastomsg.egg-info/dependency_links.txt
+mastomsg.egg-info/entry_points.txt
+mastomsg.egg-info/requires.txt
+mastomsg.egg-info/top_level.txt

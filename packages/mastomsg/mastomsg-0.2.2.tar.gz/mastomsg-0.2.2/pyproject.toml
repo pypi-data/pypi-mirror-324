@@ -1,0 +1,19 @@
+[project]
+name = "mastomsg"
+version = "0.2.2"
+authors = [{ name = "tante", email = "tante@tante.cc"}]
+description = "Tool to help mastodon server admins to conveniently reach certain parts of their user base with DMs."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mastodon-py>=1.8.1",
+    "typer>=0.15.1",
+]
+
+[project.urls]
+Homepage = "https://codeberg.org/tante/mastomsg"
+Repository = "https://codeberg.org/tante/mastomsg"
+Issues = "https://codeberg.org/tante/mastomsg/issues"
+
+[project.scripts]
+mastomsg = "mastomsg:main"
