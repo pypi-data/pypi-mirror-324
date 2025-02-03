@@ -1,0 +1,84 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Apparaat is al geconfigureerd",
+            "already_in_progress": "De configuratie is momenteel al bezig",
+            "reauth_successful": "Herauthenticatie geslaagd",
+            "reconfigure_successful": "Herconfiguratie was succesvol",
+            "wrong_device": "Het geconfigureerde apparaat komt niet overeen met het apparaat dat op deze hostnaam of dit IP-adres is gevonden."
+        },
+        "error": {
+            "error_pairing": "Koppeling mislukt, accepteer het koppelingsverzoek op de tv en probeer het opnieuw."
+        },
+        "step": {
+            "reauth_confirm": {
+                "description": "Klik op verzenden en accepteer het koppelingsverzoek op uw tv.\n\n![Image](/static/images/config_webos.png)",
+                "title": "webOS TV-koppeling"
+            },
+            "reconfigure": {
+                "data": {
+                    "host": "Host"
+                },
+                "data_description": {
+                    "host": "Hostnaam of IP-adres van je webOS TV."
+                }
+            },
+            "user": {
+                "data": {
+                    "host": "Host"
+                }
+            }
+        }
+    },
+    "device_automation": {
+        "trigger_type": {
+            "webostv.turn_on": "Apparaat is gevraagd om in te schakelen"
+        }
+    },
+    "options": {
+        "error": {
+            "cannot_connect": "Kan geen verbinding maken, zet uw TV aan of controleer het ip adres",
+            "error_pairing": "Koppeling mislukt, accepteer het koppelingsverzoek op de tv en probeer het opnieuw."
+        },
+        "step": {
+            "init": {
+                "data": {
+                    "sources": "Bronnenlijst"
+                },
+                "data_description": {
+                    "sources": "Lijst met bronnen om in te schakelen"
+                },
+                "description": "Selecteer ingeschakelde bronnen"
+            }
+        }
+    },
+    "services": {
+        "button": {
+            "fields": {
+                "button": {
+                    "name": "Knop"
+                },
+                "entity_id": {
+                    "description": "Naam/namen van de webostv-entiteiten waar de API-methode moet worden uitgevoerd.",
+                    "name": "Entiteit"
+                }
+            },
+            "name": "Knop"
+        },
+        "command": {
+            "fields": {
+                "entity_id": {
+                    "description": "Naam/namen van de webostv-entiteiten waar de API-methode moet worden uitgevoerd.",
+                    "name": "Entiteit"
+                }
+            }
+        },
+        "select_sound_output": {
+            "fields": {
+                "entity_id": {
+                    "name": "Entiteit"
+                }
+            }
+        }
+    }
+}
