@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "drf-bf-protect"
+version = "0.0.2"
+authors = [
+  { name="Sebastian Meyer", email="sparrow.242.de@gmail.com" },
+]
+description = "A device token driven bruteforce protection for the Django REST framework"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Development Status :: 3 - Alpha"
+]
+license = "GPL-3.0"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://gitlab.com/sparrow.242.de/drf_bt_protect"
+Issues = "https://gitlab.com/sparrow.242.de/drf_bt_protect/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/drf_bf_protect"]
