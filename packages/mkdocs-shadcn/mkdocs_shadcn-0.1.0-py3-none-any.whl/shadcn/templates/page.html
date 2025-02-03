@@ -1,0 +1,12 @@
+<article class="typography w-full">
+    {% if page.meta.title %}
+    <h1 class="tracking-tight">{{ page.meta.title }}
+    </h1>
+    {% endif %}
+    {% if page.meta.summary %}
+    <div class="max-w-[450px] mt-2">
+        <p class="text-muted-foreground !leading-6">{{ page.meta.summary }}</p>
+    </div>
+    {% endif %}
+    {{ page.content }}
+</article>

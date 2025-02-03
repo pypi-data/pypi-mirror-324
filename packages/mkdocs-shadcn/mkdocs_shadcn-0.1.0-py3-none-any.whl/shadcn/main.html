@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
+    <link href="{{ 'css/base.css' | url }}" rel="stylesheet">
+    <link href="{{ 'css/geist.css' | url }}" rel="stylesheet">
+
+    {#
+    <link href="{{ 'css/github-dark.css' | url }}" rel="stylesheet"> #}
+    {#
+    <link href="{{ 'css/monokai.css' | url }}" rel="stylesheet"> #}
+    <link href="{{ 'css/dracula.css' | url }}" rel="stylesheet">
+    {#
+    <link href="{{ 'css/one-dark.css' | url }}" rel="stylesheet"> #}
+    {#
+    <link href="{{ 'css/stata-dark.css' | url }}" rel="stylesheet"> #}
+
+    {%- for path in config.extra_css %}
+    <link href="{{ path | url }}" rel="stylesheet">
+    {%- endfor %}
+</head>
+
+<body class="w-screen min-h-svh overflow-x-hidden bg-background text-foreground scroll-smooth">
+    {% include "templates/header.html" %}
+    <div
+        class="px-4 max-w-8xl mx-auto flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10 border-x border-x-border/50">
+        <aside
+            class="fixed top-14 border-border/50 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 border-r md:sticky md:block">
+            {% include "templates/sidebar.html" %}
+        </aside>
+        <main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
+            <div class="mx-auto w-full min-w-0 max-w-2xl">
+                {% include "templates/page.html" %}
+            </div>
+            <div class="hidden text-sm xl:block">
+                {% include "templates/toc.html" %}
+            </div>
+        </main>
+    </div>
+
+
+
+
+    {%- for script in config.extra_javascript %}
+    {%- if script.path %} {# Detected MkDocs 1.5+ which has `script.path` and `script_tag` #}
+    {{ script | script_tag }}
+    {%- else %} {# Fallback - examine the file name directly #}
+    <script src="{{ script | url }}" {% if script.endswith(".mjs") %} type="module" {% endif %}></script>
+    {%- endif %}
+    {%- endfor %}
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js"></script>
+</body>
+
+</html>
