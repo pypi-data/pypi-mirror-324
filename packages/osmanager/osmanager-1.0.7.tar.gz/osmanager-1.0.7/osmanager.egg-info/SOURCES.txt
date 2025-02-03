@@ -1,0 +1,14 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+osman/__init__.py
+osman/config.py
+osman/environment.py
+osman/osman.py
+osmanager.egg-info/PKG-INFO
+osmanager.egg-info/SOURCES.txt
+osmanager.egg-info/dependency_links.txt
+osmanager.egg-info/requires.txt
+osmanager.egg-info/top_level.txt
+tests/test_init.py
