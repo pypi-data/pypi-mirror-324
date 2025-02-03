@@ -1,0 +1,12 @@
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/hfst.att,sha256=__5FltRyPVqzFGx2Aa1jX7xbVKc8US_GY-2EjbM4KKI,4773
+data/lexicon,sha256=t_4lOliCcOmB_wVoy0LOR0wS8mFQuED5YgCQJEwFeNw,6031296
+franco_arabic_transliterator/__init__.py,sha256=JWwwG35Bl7UsDpcWEvliPAOVUG6hGycUoe5NbKHIshA,38
+franco_arabic_transliterator/franco_arabic_transliterator.py,sha256=MIBQ1NOraLF0KIaAv5gBu2aKrpjnqjQIjfW4SUFy194,7181
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_basic_output.py,sha256=CEgZHyPmXKW7-rolf5bvNx9ijgERLJyQjVJZ4s11aLM,297
+franco_arabic_transliterator-0.0.1.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+franco_arabic_transliterator-0.0.1.6.dist-info/METADATA,sha256=dgp2QpaDJNeUHUnygaixRq_Uwkho5AoZcs4qFqB9Clg,302
+franco_arabic_transliterator-0.0.1.6.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+franco_arabic_transliterator-0.0.1.6.dist-info/top_level.txt,sha256=Iwussm3C2TDJV9zkB9o9cytcYauOaMRBKhx6zEibM3M,40
+franco_arabic_transliterator-0.0.1.6.dist-info/RECORD,,
