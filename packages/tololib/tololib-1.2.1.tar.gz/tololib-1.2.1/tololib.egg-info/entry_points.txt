@@ -1,0 +1,2 @@
+[console_scripts]
+tolo-cli = tololib.cli.main:main
