@@ -1,0 +1,49 @@
+[build-system]
+requires = [
+    "pdm-backend == 2.4.*",
+]
+build-backend = "pdm.backend"
+
+[project]
+name = "csvmatch"
+version = "2.1.0"
+description = "Find fuzzy matches between CSV files."
+readme = "README.md"
+requires-python = "== 3.13.*"
+license = "Apache-2.0"
+authors = [
+    { name = "Max Harlow", email = "contact@maxharlow.com" },
+]
+dependencies = [
+    "textmatch == 1.1.*",
+    "polars[pyarrow,pandas] == 1.21.*",
+    "chardet == 5.2.*",
+    "colorama == 0.4.*",
+    "tqdm == 4.67.*",
+]
+
+[project.urls]
+source = "https://github.com/maxharlow/csvmatch"
+
+[project.scripts]
+csvmatch = "csvmatch:main"
+
+[dependency-groups]
+lint = [
+    "ruff",
+]
+typecheck = [
+    "pyright",
+]
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.scripts]
+linter = "ruff check"
+typechecker = "pyright"
+
+[tool.ruff.lint]
+ignore = [
+    "E701",
+]
