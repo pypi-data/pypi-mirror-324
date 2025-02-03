@@ -1,0 +1,10 @@
+pytest_evals/__init__.py,sha256=1vxPIEVYdmOeR2jcHt96AAsSzOpHYOf5GVPdF_E2gG0,568
+pytest_evals/ipython_extension.py,sha256=GFM9wC7WjQleXR7rMzguMvTa5DFYNmFz4vngBJiwR1Y,3354
+pytest_evals/json_encoder.py,sha256=NxqI_s52VnnecNHcNP5wiMvIVY0nwV9F_tie8nv6Wto,1785
+pytest_evals/models.py,sha256=752DMqvegSbesrX7d1KPAInYBqKjT93uaSP3R2aewJo,885
+pytest_evals/plugin.py,sha256=LMvi3AcE9PYs88tFZ3USdgoPUp7wPGvXXVHMwE9uqKg,9945
+pytest_evals-0.3.4.dist-info/METADATA,sha256=64EHm0immkZSCydtFSI3PXkXNNjIie3WAqfRTW4Ua64,9143
+pytest_evals-0.3.4.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+pytest_evals-0.3.4.dist-info/entry_points.txt,sha256=N6zJFlR6lo8sYw2z7KX5ci8TMg2nqn1vLCXiGx3DZKY,39
+pytest_evals-0.3.4.dist-info/licenses/LICENSE,sha256=ec7cXuJ72rz2wRsefvKpiuHIlbN3oMXpiEXW0HYCoyk,1066
+pytest_evals-0.3.4.dist-info/RECORD,,
