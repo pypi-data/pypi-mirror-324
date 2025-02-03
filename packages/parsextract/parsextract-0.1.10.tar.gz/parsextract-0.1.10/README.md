@@ -1,0 +1,76 @@
+# Parsextract
+
+Parsextract is a Python library that extracts **IP addresses, domains, and email addresses** from raw text. It supports validation against IANA-recognized TLDs and includes additional custom TLDs sourced from OpenNIC.
+
+## Features
+- Extracts IPv4 addresses from raw text.
+- Extracts domain names and validates them against IANA and OpenNIC TLDs.
+- Extracts email addresses using regex-based parsing.
+- Lightweight and easy to integrate.
+
+## Installation
+```sh
+pip install parsextract
+```
+
+## Usage
+```python
+import parsextract
+
+text = """
+    Contact us at support@example.com or visit https://mywebsite.geek for more info.
+    Our server IP is 192.168.1.1.
+"""
+
+# Extract IPs
+ips = parsextract.extract_ips(text)
+print("IPs:", ips)
+
+# Extract Domains
+domains = parsextract.extract_domains(text)
+print("Domains:", domains)
+
+# Extract Emails
+emails = parsextract.extract_emails(text)
+print("Emails:", emails)
+```
+
+### Example Output
+```
+IPs: ['192.168.1.1']
+Domains: ['mywebsite.geek']
+Emails: ['support@example.com']
+```
+
+## Regular Expressions Used
+- **IP Address Regex**:
+  ```regex
+  (?i)(?<![a-zA-Z0-9:.])(?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]?[0-9])(?:\.(?:25[0-5]|2[0-4][0-9]|[0-1]?[0-9]?[0-9])){3}(?![a-zA-Z0-9/.])
+  ```
+- **Domain Regex**:
+  ```regex
+  (?i)(?:^|\s|["']|[,])((?:(?:[A-Z0-9_](?:[A-Z0-9_-]{0,61}[A-Z0-9_])?\.)+)(?:[A-Z0-9-]{1,63}(?<!-)))(?!(?:/[^\s/]+))(?![a-zA-Z0-9@])
+  ```
+- **Email Regex**:
+  ```regex
+  (?<!@)\b[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]{2,}\b(?!@)
+  ```
+
+## Supported TLDs
+The library validates domains using **IANA-approved TLDs** and additional custom TLDs from OpenNIC.
+
+### Custom TLDs Supported:
+```
+.bbs, .chan, .cyb, .dyn, .epic, .geek, .gopher, .indy, .libre, .neo, .null,
+.o, .oss, .oz, .parody, .pirate
+```
+
+## License
+This project is licensed under the MIT License.
+
+## Contributing
+Feel free to open an issue or submit a pull request for improvements.
+
+## Author
+Maintained by deepak.kumar@cyware.com.
+
