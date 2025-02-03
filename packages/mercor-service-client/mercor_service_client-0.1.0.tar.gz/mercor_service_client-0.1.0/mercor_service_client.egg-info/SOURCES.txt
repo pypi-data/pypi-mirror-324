@@ -1,0 +1,9 @@
+README.md
+setup.py
+mercor_service_client/__init__.py
+mercor_service_client/client.py
+mercor_service_client.egg-info/PKG-INFO
+mercor_service_client.egg-info/SOURCES.txt
+mercor_service_client.egg-info/dependency_links.txt
+mercor_service_client.egg-info/requires.txt
+mercor_service_client.egg-info/top_level.txt
