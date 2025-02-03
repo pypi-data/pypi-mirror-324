@@ -1,0 +1,2 @@
+[console_scripts]
+cg-r-pathway = cg_r_pathway.cli:main
