@@ -1,0 +1,2 @@
+[console_scripts]
+tianzige = tianzige.__main__:main
