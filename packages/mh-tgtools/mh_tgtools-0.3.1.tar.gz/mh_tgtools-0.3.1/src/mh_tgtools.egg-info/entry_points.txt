@@ -1,0 +1,2 @@
+[console_scripts]
+tgcrawl = tgtools.tgcrawl:main
