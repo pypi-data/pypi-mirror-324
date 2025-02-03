@@ -1,0 +1,2 @@
+[console_scripts]
+ossbomer-oslc = ossbomer_oslc.cli:validate
