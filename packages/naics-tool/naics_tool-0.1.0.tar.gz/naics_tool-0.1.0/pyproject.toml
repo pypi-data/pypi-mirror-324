@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "naics-tool"
+version = "0.1.0"
+description = ""
+authors = ["Paul Adamson <paul.adamson.01@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.11 <3.13"
+aiohttp = "^3.11.11"
+requests = "^2.32.3"
+langchain-core = "^0.3.33"
+pydantic = "^2.10.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+ipykernel = "^6.29.5"
+pytest-asyncio = "^0.25.3"
+pytest-cov = "^6.0.0"
+pandas = "^2.2.3"
+redis = "^5.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
