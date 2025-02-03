@@ -1,0 +1,12 @@
+cmem_plugin_irdi/__init__.py,sha256=b5-F64_4Dtoo79nc0cxQK5IJO_tmST3wcB_qXO0QWTg,23
+cmem_plugin_irdi/components.py,sha256=S508q3rQoJFK1phoBmDBhEAn4Kdog4rgxftM_QiLLrc,1479
+cmem_plugin_irdi/item_code.py,sha256=OIx1axN4u3pNnT9U-kabnTnrB1LrJzrWzPgzaoyQemY,4143
+cmem_plugin_irdi/utils.py,sha256=EesDgcnUQj_X1kE7R3EVhTXsqknEWUMyW6U3U7jGP8o,532
+cmem_plugin_irdi/vocabs/counterontology.ttl,sha256=ZUdcKzYYE0rJfSw5u8QwjoYafrX_dcE5jPkmv2vDFOQ,4496
+cmem_plugin_irdi/workflow/__init__.py,sha256=BqpbY-kfVS_EQP7pofNj9xdP6D_URsaK0FHEEMBMYDo,23
+cmem_plugin_irdi/workflow/irdi_plugin.py,sha256=wWlFrNsaSR4CkUt0NVjaJ_oiXiX8RSgqLkRCjEKfamc,7218
+cmem_plugin_irdi/workflow/logo.svg,sha256=ngkm8sW01m2R3Rmamtlt9Jvx5load6n6APrpe_eECyM,1105
+cmem_plugin_irdi-0.7.1.dist-info/LICENSE,sha256=5t6lcWcFU3TBO5wwq9PYNbgzfVfFUuL-80v5BTGuuMQ,11334
+cmem_plugin_irdi-0.7.1.dist-info/METADATA,sha256=dm2Xh6ygjqQa1FH_eABnEmzYjU5chleF1q6mczl0YTs,2522
+cmem_plugin_irdi-0.7.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+cmem_plugin_irdi-0.7.1.dist-info/RECORD,,
