@@ -1,0 +1,12 @@
+tfsumpy/__init__.py,sha256=aOxEJJ92bfQtKP9f0vROpg8VjfzCbO8KpY9Yqa4f3mM,156
+tfsumpy/__main__.py,sha256=SpmUf8gnIMOGFnxqdboeaHnf1HBLUlaRgwX9s9dgHTU,1476
+tfsumpy/context.py,sha256=-iZJ0XIAmhaSetRn6b5ZmT5C1DJTiIMoExbUrgmGvTY,3199
+tfsumpy/plan_analyzer.py,sha256=kmwC0FLygBxHua9YvHJ3GXaogfxrGVAKlpDIvCbVPCY,11277
+tfsumpy/resource.py,sha256=bbcVvDxZB-9oUVWv6MT_H0v_Uy4-aia3HKwYse2wbRw,677
+tfsumpy/rules_config.json,sha256=UITty4dpcl7lEeSVyZ_Zejnnx07r2OOV8DJV0gH-xnk,2185
+tfsumpy-0.0.3.dist-info/LICENSE,sha256=aB--b23u8cQC4cm7v3F2p8c337J__VOj8X9Es6Apak4,1062
+tfsumpy-0.0.3.dist-info/METADATA,sha256=z_cNR08n4NLsEHGWa3QKjpss5d-z4wiHbr2YZrYunFQ,6011
+tfsumpy-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+tfsumpy-0.0.3.dist-info/entry_points.txt,sha256=cR4HBkLkE-IpkOnGyZbV0jTQPPhnOQJIVyUhiCICxow,50
+tfsumpy-0.0.3.dist-info/top_level.txt,sha256=R0HRW2dUphnzGuFbktFnnjgYn47_rnGYXfIsvI4dL8E,8
+tfsumpy-0.0.3.dist-info/RECORD,,
