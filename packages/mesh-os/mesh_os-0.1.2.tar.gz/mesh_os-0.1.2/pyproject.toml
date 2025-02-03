@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "mesh-os"
+version = "0.1.2"
+description = "MeshOS - A lightweight multi-agent memory system with semantic search"
+authors = ["Calvin Hoenes <calvin@props.app>"]
+readme = "README.md"
+packages = [{include = "mesh_os"}]
+repository = "https://github.com/Props-Labs/mesh-os"
+keywords = ["ai", "agents", "memory", "semantic-search", "vector-database"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.7"
+requests = "^2.31.0"
+python-dotenv = "^1.0.0"
+pydantic = "^2.6.1"
+openai = "^1.12.0"
+rich = "^13.7.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+isort = "^5.13.2"
+pytest = "^8.0.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+mesh-os = "mesh_os.cli.main:cli"
+
+[tool.black]
+line-length = 88
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+line_length = 88 
