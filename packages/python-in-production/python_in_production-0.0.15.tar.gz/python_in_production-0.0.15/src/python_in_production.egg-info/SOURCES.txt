@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+version.txt
+src/__init__.py
+src/define_xy.py
+src/hello.py
+src/example_for_testing/__init__.py
+src/example_for_testing/states_info.py
+src/python_in_production.egg-info/PKG-INFO
+src/python_in_production.egg-info/SOURCES.txt
+src/python_in_production.egg-info/dependency_links.txt
+src/python_in_production.egg-info/requires.txt
+src/python_in_production.egg-info/top_level.txt
+src/sub_package/__init__.py
+src/sub_package/print_sin.py
+tests/test_states_info.py
