@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+scrapy_requests_spider_closed/__init__.py
+scrapy_requests_spider_closed/main.py
+scrapy_requests_spider_closed.egg-info/PKG-INFO
+scrapy_requests_spider_closed.egg-info/SOURCES.txt
+scrapy_requests_spider_closed.egg-info/dependency_links.txt
+scrapy_requests_spider_closed.egg-info/requires.txt
+scrapy_requests_spider_closed.egg-info/top_level.txt
