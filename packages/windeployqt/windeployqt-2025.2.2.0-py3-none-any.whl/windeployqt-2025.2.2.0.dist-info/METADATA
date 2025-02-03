@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: windeployqt
+Version: 2025.2.2.0
+Summary: Add your description here
+Project-URL: Repository, https://github.com/soda92/windeployqt
+License-File: LICENSE
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# windeployqt
+deploy qt executable using MSYS2 on Windows

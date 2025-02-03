@@ -1,0 +1,2 @@
+[console_scripts]
+windeployqt = windeployqt.hello:main2
