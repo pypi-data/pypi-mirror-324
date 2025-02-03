@@ -1,0 +1,9 @@
+pyveritas/__init__.py,sha256=L2YNRubx4mKApWcH89GRg9RHs0v-gjRd2d6UDnc2-0M,164
+pyveritas/base.py,sha256=7xMvVcSfiwAs_fNZkmQWxJTkOqyIoTaU68sdmnoIi1I,3192
+pyveritas/fuzz.py,sha256=XzTI3IiczsPoXpTWySDoZr0I5QT8NjpzntnP9WsDLow,3556
+pyveritas/test_specification.json,sha256=TACgjlmrywjqknhM9spowVmZ_ovNWrj2v7Q1B8GKhEM,1584
+pyveritas/unit.py,sha256=Lq-MYClnPd5kmf7KhEw_xfNl88hNXIK1WfiDJO5XhTw,1687
+pyveritas-0.1.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyveritas-0.1.6.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+pyveritas-0.1.6.dist-info/METADATA,sha256=H5SFZ_IGzvWhawVDXeyXf4UvDtbyoTAlOdE8dy_8peI,11258
+pyveritas-0.1.6.dist-info/RECORD,,
