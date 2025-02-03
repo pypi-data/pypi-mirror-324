@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: thispackagedoesnotexist
+Version: 0.4.5
+Requires-Python: >=3.6
+Requires-Dist: python-socketio
+Requires-Dist: pyaudio
+Requires-Dist: requests
+Requires-Dist: websocket-client
+Requires-Dist: customtkinter
+Requires-Dist: psutil
+Requires-Dist: mss
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Requires-Dist: pywin32
+Requires-Dist: wmi
+Dynamic: requires-dist
+Dynamic: requires-python
