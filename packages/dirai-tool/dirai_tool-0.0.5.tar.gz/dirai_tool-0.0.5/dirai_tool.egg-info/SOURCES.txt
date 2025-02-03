@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+dirai/__init__.py
+dirai/cli.py
+dirai/config.py
+dirai/constants.py
+dirai/scanner.py
+dirai/utils.py
+dirai_tool.egg-info/PKG-INFO
+dirai_tool.egg-info/SOURCES.txt
+dirai_tool.egg-info/dependency_links.txt
+dirai_tool.egg-info/entry_points.txt
+dirai_tool.egg-info/requires.txt
+dirai_tool.egg-info/top_level.txt
