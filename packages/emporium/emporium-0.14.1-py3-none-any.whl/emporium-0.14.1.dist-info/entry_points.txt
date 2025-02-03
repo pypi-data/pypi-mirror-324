@@ -1,0 +1,2 @@
+[console_scripts]
+grmn-ai-library-emporium = grmn_ai_library_emporium:main

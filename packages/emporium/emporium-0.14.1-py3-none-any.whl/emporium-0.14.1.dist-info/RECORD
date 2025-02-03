@@ -1,0 +1,14 @@
+emporium/__init__.py,sha256=vReA21xcvhbNVx1lIFiVJXHAsE8Hm83g-jV9gR85CWs,189
+emporium/base.py,sha256=tFeDb0XLuJzdiHoDjvvvjxJd0qCjx58zS4-HES6OzmI,2400
+emporium/cached.py,sha256=-O-yrARqn9FdFsx4GpjwsMaxEBHLShhWpHH3dkkOxyM,1599
+emporium/factory.py,sha256=KmTkNAlG0JxFKf_glhbtc59_m1NFKkEZSZ4xPvUHzoI,1187
+emporium/utils.py,sha256=E6B1aHSjuIAbdiNutTYFrErjAWSeI079P1y5el-Zcz0,227
+emporium/implementations/__init__.py,sha256=kO_QPKjDFKsoK3Tm_dFPRERa8lQO8lBTWrshGayAc9E,176
+emporium/implementations/gcs.py,sha256=ix14Lc8se6KCyQ4mVsWNVxRBvHCxRRQqxAfr6Kzqf5E,3748
+emporium/implementations/local.py,sha256=zUKrrwfmog5jrpLg1EzL_cRegDDwolRVMe3H64qZZl8,2197
+emporium/implementations/memory.py,sha256=gvHmXUj0MG8lh4FZxhOO9yPtLYb-MLqFQkVdJA-Bxos,2836
+emporium/implementations/s3.py,sha256=tc41aeocfibPmXlHxyBHkyyITD38aGaiyarfEZMokYQ,6640
+emporium-0.14.1.dist-info/METADATA,sha256=5IQbAt5GGs_-vU7z3guRou1uMcU6pBOG8xkFD2C7mIY,1002
+emporium-0.14.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+emporium-0.14.1.dist-info/entry_points.txt,sha256=HMUb804vQS8onoW2U-j8gtSG6Pzso3mUORexGmvr9aY,75
+emporium-0.14.1.dist-info/RECORD,,
