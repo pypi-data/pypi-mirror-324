@@ -1,0 +1,15 @@
+clientforge/__init__.py,sha256=MXRUReOJsOxQZ9cEHvNAbi-EbczalZql4cjsl4Z54wY,312
+clientforge/auth.py,sha256=8VcFIsEkdJ6gmlKi_P2ZNmHTKBBeA8tysXvhX4FdqLo,2042
+clientforge/exceptions.py,sha256=R6xsJ-andPh6nXHm4aEzHaYp36J5518A2tJnBjiryO0,490
+clientforge/models.py,sha256=acjRSw63UdkqPiYpG_r5NMPlX9FYYbFSvfmOT5eAKoE,2455
+clientforge/clients/__init__.py,sha256=cL9IMQuA-I2QqcU0uWAqI9FzPA1Dnpx69b2-zmcJgx0,220
+clientforge/clients/async_.py,sha256=jVWIe8YU4WcmppUtjPfLmok2uMvBhTS98KYsjdz4lHQ,1785
+clientforge/clients/base.py,sha256=lKf2bXuh23fVJmScVDgO5tVTT0K8xmDPNedGDTWOVlY,5738
+clientforge/clients/sync.py,sha256=ciaGtiuCUK0dCZl18aiEcYzKkRLl_z6CMi1w4HqmXZs,1750
+clientforge/paginate/__init__.py,sha256=RDCJmyfu4P87zMHjUWQ63n5zitCiGCqOzwrYCuJTEgY,114
+clientforge/paginate/base.py,sha256=-dzdYEj0k9ne4AkMnZjZSYOqnGyqUk5HWFDwRHs8NRM,2772
+clientforge/paginate/offset.py,sha256=FtWJIDwgLKb483H0fPsaZvYdppvfsn4fzB5bTWpFm1o,6520
+clientforge-0.5.0.dist-info/METADATA,sha256=O0dEA8zoTysDES1FEYYV60AmyGcAviKHfyufS-HpYdc,506
+clientforge-0.5.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+clientforge-0.5.0.dist-info/licenses/LICENSE,sha256=URJ4Im4DiKAXvDwdbneo3VGD2a35xjTLWcwv_4DKlaw,11346
+clientforge-0.5.0.dist-info/RECORD,,
