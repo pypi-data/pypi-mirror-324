@@ -1,0 +1,9 @@
+codeunify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeunify/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeunify/core/combine.py,sha256=OZcsd4T2Uon7YK7xdE8bEznbQA-UkRASxii9uB5rT1M,5557
+codeunify/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+codeunify/tests/test_combine.py,sha256=qRbGt6TB2q5Uy3b6rTk01qnkJwEz8UB06Iyzn-reT14,3483
+codeunify-0.2.0.dist-info/METADATA,sha256=9GQg4ND4gMq6yiiIU3SuEbT4TaFN-TcaieKxznlS8Pc,4447
+codeunify-0.2.0.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+codeunify-0.2.0.dist-info/top_level.txt,sha256=QEGBfQ5PqHK_cg-2cpfxO9rMmBnFXSN4zVNx6gX8HF8,10
+codeunify-0.2.0.dist-info/RECORD,,
