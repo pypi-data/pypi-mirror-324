@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: deep_hough
+Version: 0.1.0
+Requires: torch
