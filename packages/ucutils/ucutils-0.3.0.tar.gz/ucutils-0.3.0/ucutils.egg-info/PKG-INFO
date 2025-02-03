@@ -1,0 +1,31 @@
+Metadata-Version: 2.2
+Name: ucutils
+Version: 0.3.0
+Summary: Convenience helpers for working with the Unicorn emulator
+Author-email: Willi Ballenthin <wballenthin@google.com>
+Project-URL: Homepage, https://github.com/williballenthin/ucutils
+Project-URL: Repository, https://github.com/williballenthin/ucutils.git
+Keywords: malware analysis,reverse engineering,emulation,disassembly
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: hexdump>=3.3
+Requires-Dist: unicorn>=2.0.1.post1
+Requires-Dist: capstone>=5
+Requires-Dist: pefile>=2024.08.26
+Requires-Dist: setuptools>=74
+Provides-Extra: dev
+Requires-Dist: pytest==8.2.2; extra == "dev"
+Requires-Dist: pytest-sugar==1.0.0; extra == "dev"
+Requires-Dist: pytest-instafail==0.5.0; extra == "dev"
+Requires-Dist: pycodestyle==2.12.0; extra == "dev"
+Requires-Dist: black==24.4.2; extra == "dev"
+Requires-Dist: isort==5.13.2; extra == "dev"
+Requires-Dist: mypy==1.10.0; extra == "dev"
+Requires-Dist: types-setuptools==70.0.0.20240524; extra == "dev"
+Provides-Extra: build
+Requires-Dist: setuptools==74.0.0; extra == "build"
+Requires-Dist: build==1.2.1; extra == "build"
