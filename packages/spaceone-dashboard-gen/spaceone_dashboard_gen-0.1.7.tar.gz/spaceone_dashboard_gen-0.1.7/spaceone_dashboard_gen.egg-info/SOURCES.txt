@@ -1,0 +1,11 @@
+README.md
+setup.py
+spaceone_dashboard_gen/__init__.py
+spaceone_dashboard_gen/main.py
+spaceone_dashboard_gen.egg-info/PKG-INFO
+spaceone_dashboard_gen.egg-info/SOURCES.txt
+spaceone_dashboard_gen.egg-info/dependency_links.txt
+spaceone_dashboard_gen.egg-info/entry_points.txt
+spaceone_dashboard_gen.egg-info/requires.txt
+spaceone_dashboard_gen.egg-info/top_level.txt
+spaceone_dashboard_gen/templates/index.html
