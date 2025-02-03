@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+itkspec.egg-info/PKG-INFO
+itkspec.egg-info/SOURCES.txt
+itkspec.egg-info/dependency_links.txt
+itkspec.egg-info/entry_points.txt
+itkspec.egg-info/requires.txt
+itkspec.egg-info/top_level.txt
