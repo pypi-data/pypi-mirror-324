@@ -1,0 +1,101 @@
+[project]
+name = "krona"
+version = "v0.0.3"
+description = "KRONA Rapidly Organizes Nordic Assets - Transaction tool for Nordic brokers"
+authors = [{ name = "Martin Sjöborg", email = "martin@sjoborg.org" }]
+readme = "README.md"
+keywords = ['python']
+requires-python = ">=3.10"
+dependencies = [
+    "polars>=1.19.0",
+    "thefuzz>=0.22.1",
+]
+
+[project.urls]
+Homepage = "https://Sjoeborg.github.io/krona/"
+Repository = "https://github.com/Sjoeborg/krona"
+Documentation = "https://Sjoeborg.github.io/krona/"
+
+[dependency-groups]
+dev = [
+    "pytest>=7.2.0",
+    "pre-commit>=2.20.0",
+    "mypy>=1.14.0",
+    "ruff>=0.8.4",
+]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["krona"]
+
+[tool.mypy]
+files = ["krona"]
+disallow_untyped_defs = true
+disallow_any_unimported = true
+no_implicit_optional = true
+check_untyped_defs = true
+warn_return_any = true
+warn_unused_ignores = true
+show_error_codes = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "split",
+]
+log_cli = true
+log_cli_level = "DEBUG"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 120
+fix = true
+
+[tool.ruff.lint]
+select = [
+    # flake8-2020
+    "YTT",
+    # flake8-bandit
+    "S",
+    # flake8-bugbear
+    "B",
+    # flake8-builtins
+    "A",
+    # flake8-comprehensions
+    "C4",
+    # flake8-debugger
+    "T10",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # mccabe
+    "C90",
+    # pycodestyle
+    "E", "W",
+    # pyflakes
+    "F",
+    # pygrep-hooks
+    "PGH",
+    # pyupgrade
+    "UP",
+    # ruff
+    "RUF",
+]
+ignore = [
+    # LineTooLong
+    "E501",
+    # DoNotAssignLambda
+    "E731",
+    # Use specific ignores
+    "PGH003"
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"]
+
+[tool.ruff.format]
+preview = true
