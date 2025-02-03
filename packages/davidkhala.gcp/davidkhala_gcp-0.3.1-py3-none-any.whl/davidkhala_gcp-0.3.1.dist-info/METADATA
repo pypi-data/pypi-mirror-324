@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: davidkhala.gcp
+Version: 0.3.1
+Summary: @davidkhala/gcp: core gcp components
+Author: David Liu
+Author-email: david-khala@hotmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: google-api-core
+Requires-Dist: google-auth[requests]
+Description-Content-Type: text/markdown
+
+
+[Class ClientWithProject](https://cloud.google.com/python/docs/reference/google-cloud-core/latest/google.cloud.client.ClientWithProject)
+
+# Dependency graph
+
+`google-cloud-core`
+- `google-api-core`
+  - `protobuf`
+  - `googleapis-common-protos`
+  - `proto-plus`
