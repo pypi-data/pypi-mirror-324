@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "just-agents-coding"
+version = "0.5.2"
+description = "Just Agents - Coding Components"
+authors = [
+    "Alex Karmazin <karmazinalex@gmail.com>",
+    "Anton Kulaga <antonkulaga@gmail.com>",
+    "Newton Winter <isoutthere@gmail.com>"
+]
+maintainers = [
+    "Anton Kulaga <antonkulaga@gmail.com>",
+    "Newton Winter <isoutthere@gmail.com>"
+]
+readme = "README.md"
+packages = [
+    { include = "just_agents" }
+]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+just-agents-core = ">=0.5.2"
+llm-sandbox = ">=0.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
