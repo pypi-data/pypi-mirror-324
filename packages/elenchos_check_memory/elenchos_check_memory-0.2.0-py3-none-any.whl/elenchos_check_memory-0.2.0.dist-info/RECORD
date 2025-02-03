@@ -1,0 +1,8 @@
+elenchos_check_memory/CheckMemoryCommand.py,sha256=sufvkJRrHxNrzGW6bLO3n8xxKz0Ra0kzJ2dtCvJhHjE,741
+elenchos_check_memory/MemoryPlugin.py,sha256=T-ZJ920WNUFVCRqCiaCLM5WT-OH4wSprd6Si5PCHqzA,5162
+elenchos_check_memory/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elenchos_check_memory/commands.xml,sha256=_DEkPvkfjejvjI7B7wZQ17cMx5tMP9PEkmdlS3YYM4k,125
+elenchos_check_memory-0.2.0.dist-info/LICENSE.md,sha256=1DzSwNeestedheuuZvuI92-UNmxYdXksXOspDpT_PC8,1091
+elenchos_check_memory-0.2.0.dist-info/METADATA,sha256=daM0N75sDdG1Dd8kTJihJ0wPoe0OYLbatBl2NvoNxtc,1784
+elenchos_check_memory-0.2.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+elenchos_check_memory-0.2.0.dist-info/RECORD,,
