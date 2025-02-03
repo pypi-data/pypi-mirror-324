@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+parsextract/__init__.py
+parsextract/constants.py
+parsextract/parser.py
+parsextract.egg-info/PKG-INFO
+parsextract.egg-info/SOURCES.txt
+parsextract.egg-info/dependency_links.txt
+parsextract.egg-info/top_level.txt
+tests/test_parser.py
