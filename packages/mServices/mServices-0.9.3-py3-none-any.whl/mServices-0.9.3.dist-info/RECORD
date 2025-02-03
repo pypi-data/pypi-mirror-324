@@ -1,0 +1,12 @@
+mServices/QueryBuilderService.py,sha256=Ma79MTdEs_XO3EzHgxgELjscK6f12D4tJHo1I-EYSjk,1722
+mServices/ResponseService.py,sha256=bUdxj6bfJzGKMvXTDMhZD1OC-iD2LYU6i1JkuBolNzk,1916
+mServices/ValidatorService.py,sha256=D1OoCqj-trKJAtB-cmAmQnxqqA3H-Dl_2kf1k2gnNkk,3846
+mServices/__init__.py,sha256=R7PeQfEjb4nl5cLhZRrqNnDlg6cZ7WHhPmLqRZaMjNI,148
+mServices/asgi.py,sha256=obthuvy6uWBap8B5ge2uqQ1dBKmFY68XkejN4ITHXPk,411
+mServices/settings.py,sha256=_EXyXZ2ACC5PYXe1dHHII-r5QW3uusPooEogNNMUi84,3353
+mServices/urls.py,sha256=Ht_fN2xCo_krbP27B8H3J6JxpWo7UsnhZqKe1JhfW4Q,787
+mServices/wsgi.py,sha256=snbhxNMXu8Cfop8-RfT0OuA64rHUFlj8_CKeBFREsYA,411
+mServices-0.9.3.dist-info/METADATA,sha256=M46-iDukW9HqhNW2mbB81IBF8UKAGxjZUi_jqNt00eg,421
+mServices-0.9.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mServices-0.9.3.dist-info/top_level.txt,sha256=MHkxge8qdjn8vsjRoMcwvM3tjFL5ZoF3_RbZnq8T_40,10
+mServices-0.9.3.dist-info/RECORD,,
