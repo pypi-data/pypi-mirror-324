@@ -1,0 +1,7 @@
+mo-dots==10.659.25005
+mo-future==7.584.24095
+mo-json==6.667.25032
+mo-logs==8.667.25032
+
+[tests]
+mo-testing>=8.623.24125
