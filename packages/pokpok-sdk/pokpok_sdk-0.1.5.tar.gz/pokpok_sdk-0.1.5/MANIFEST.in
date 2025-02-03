@@ -1,0 +1,2 @@
+include pokpok_sdk/protocolAbi.json
+exclude pokpok_sdk/__main__.py
