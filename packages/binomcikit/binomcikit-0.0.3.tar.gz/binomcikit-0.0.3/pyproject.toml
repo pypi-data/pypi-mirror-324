@@ -1,0 +1,32 @@
+[project]
+name = "binomcikit"
+version = "0.0.3"
+authors = [
+    { name = "Vyasa R Rajeswaran", email = "vyasarshi2308@gmail.com" },
+    { name = "Pranava BA", email = "pranavabaascaran@gmail.com" },
+    { name = "Justindhas Y" }
+]
+description = "Used to calculate Confidence Intervals"
+readme = "README.md"
+requires-python = ">=3.0"
+license = { text = "GPL-3.0" }
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "plotnine"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pranava-ba/binomcikit"
+Issues = "https://github.com/pranava-ba/binomcikit/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/binomcikit"]
