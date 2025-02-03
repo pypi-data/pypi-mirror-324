@@ -1,0 +1,2 @@
+[console_scripts]
+mage-conf = magento_config_tool.main:main
