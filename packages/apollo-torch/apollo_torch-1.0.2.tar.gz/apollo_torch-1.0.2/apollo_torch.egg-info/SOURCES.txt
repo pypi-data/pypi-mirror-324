@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+apollo_torch/__init__.py
+apollo_torch/adafactor.py
+apollo_torch/adamw.py
+apollo_torch/adamw8bit.py
+apollo_torch/apollo.py
+apollo_torch/q_apollo.py
+apollo_torch/random_projector.py
+apollo_torch/svd_projector.py
+apollo_torch.egg-info/PKG-INFO
+apollo_torch.egg-info/SOURCES.txt
+apollo_torch.egg-info/dependency_links.txt
+apollo_torch.egg-info/requires.txt
+apollo_torch.egg-info/top_level.txt
