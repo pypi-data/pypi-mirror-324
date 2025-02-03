@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: goku-STT
+Version: 0.1
+Summary: this is speech to text package created by aman gaud
+Author: Aman gaud
+Author-email: amangaud448@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary
