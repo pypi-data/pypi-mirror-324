@@ -1,0 +1,12 @@
+GPminer/__init__.py,sha256=0GJjnPIPj_OoUP_krstqm_xzwtIrmFY4seJLVju6kfk,61
+GPminer/eval.py,sha256=JR2G2jXngJjy2faIAbXyFoWKAtU7KKG7i4rSLL-dT9Y,3419
+GPminer/gen.py,sha256=pwy27NIFJZ-VHwYqgTkNdZofY-6rCmMh6-lOHqS9FQ4,16618
+GPminer/ind.py,sha256=VOLGIV-ywl6Kzu9FolSRJ65LhL0tsuELUkIV7yBQPdU,14093
+GPminer/ino.py,sha256=n63RV7W7320vrsxLRuxXUpYgQE3A4w90IBVrYfq1OJc,1222
+GPminer/popu.py,sha256=pMPCpiYZHYNsSxctPA4wTdMBwPN1yq7kPz8P0gmy04M,2387
+GPminer/work.py,sha256=5XQXAdKJE-RXve7Zx1-1yP1SRt-bHgXZBzGGguQaz24,9985
+GPminer-2.2.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+GPminer-2.2.0.dist-info/METADATA,sha256=9MQbcAmwxxmA0yQG-AGyZwljAEjdQguE2IQhv2EZmxQ,927
+GPminer-2.2.0.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+GPminer-2.2.0.dist-info/top_level.txt,sha256=F8hwv5uIdJBswWpX35a8CJl5zA1of_Gjk-b0GfyGPuQ,8
+GPminer-2.2.0.dist-info/RECORD,,
