@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: brainunit
+Version: 0.0.5
+Summary: Physical Units and Unit-Aware Mathematical System for General-Purpose Brain Dynamics Modeling
+Home-page: https://github.com/chaobrain/brainunit
+Author: BrainUnit Developers
+Author-email: BrainUnit Developers <chao.brain@qq.com>
+License: Apache-2.0 license
+Project-URL: homepage, http://github.com/chaobrain/brainunit
+Project-URL: repository, http://github.com/chaobrain/brainunit
+Keywords: physical unit,physical quantity,brain modeling
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: numpy
+Requires-Dist: typing-extensions
+Requires-Dist: saiunit==0.0.5
+Provides-Extra: cpu
+Requires-Dist: jaxlib; extra == "cpu"
+Provides-Extra: cuda12
+Requires-Dist: jaxlib[cuda12]; extra == "cuda12"
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Provides-Extra: tpu
+Requires-Dist: jaxlib[tpu]; extra == "tpu"
+
