@@ -1,0 +1,1 @@
+scrapy_requests_spider_closed
