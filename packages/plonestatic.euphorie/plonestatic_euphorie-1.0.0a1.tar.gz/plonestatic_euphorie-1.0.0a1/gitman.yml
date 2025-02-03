@@ -1,0 +1,15 @@
+location: var/gitman
+sources:
+  - repo: git@github.com:plone/plone.patternslib.git
+    name: plone.patternslib
+    rev: v2
+    type: git
+    params:
+    sparse_paths:
+      -
+    links:
+      -
+    scripts:
+      -
+default_group: ''
+groups:
