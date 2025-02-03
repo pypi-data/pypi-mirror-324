@@ -1,0 +1,6 @@
+pyproject.toml
+nlic/__init__.py
+nlic.egg-info/PKG-INFO
+nlic.egg-info/SOURCES.txt
+nlic.egg-info/dependency_links.txt
+nlic.egg-info/top_level.txt

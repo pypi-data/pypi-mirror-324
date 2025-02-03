@@ -1,0 +1,7 @@
+[project]
+name = "nlic"
+authors = [
+  { name = "Jamesb", email = "experimentallearning0@gmail.com" }
+  ]
+  version = "0.0.0"
+  description = "Coming soon"
