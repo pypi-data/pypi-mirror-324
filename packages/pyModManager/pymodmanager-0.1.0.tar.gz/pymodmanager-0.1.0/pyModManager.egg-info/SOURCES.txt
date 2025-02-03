@@ -1,0 +1,10 @@
+LICENSE.txt
+pyproject.toml
+setup.py
+modmanager/__init__.py
+modmanager/mod_manager.py
+modmanager/utils.py
+pyModManager.egg-info/PKG-INFO
+pyModManager.egg-info/SOURCES.txt
+pyModManager.egg-info/dependency_links.txt
+pyModManager.egg-info/top_level.txt
