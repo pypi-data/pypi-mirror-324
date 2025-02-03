@@ -1,0 +1,9 @@
+pydantic
+colorlogging
+
+[dev]
+black
+darglint
+mypy
+pytest
+ruff
