@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: airweave-sdk
+Version: 0.1.0
+Summary: Airweave SDK for Python. Can be used to interact with the Airweave API.
+Author: Airweave
+Author-email: rauf@airweave.io
+Requires-Python: >=3.7
+
