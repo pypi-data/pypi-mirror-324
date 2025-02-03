@@ -1,0 +1,36 @@
+- set:
+    bridge:
+      domain:
+        br_default:
+          type: vlan-aware
+          mac-address: "{{ '08:4f:c2:a9:00:%02x' | format(id) }}" # The default 'auto' setting reads the MAC from the EEPROM, which is the same for all instances
+          untagged: none
+{% if vlans is defined %}
+{%  for vname,vdata in vlans.items() %}
+{%   if loop.first %}
+          vlan:
+{%   endif %}
+            '{{ vdata.id }}': {}
+{%  endfor %}
+{% endif %}
+
+{# Note: interface.xyz.vlan is only used for SVI interfaces in case of multiple bridges #}
+
+{% for i in interfaces if i.vlan is defined and (i.virtual_interface is not defined or i.type=="lag") %}
+{%   if loop.first %}
+    interface:
+{%   endif %}
+     {{ i.ifname }}:
+       bridge:
+         domain:
+           br_default:
+{%   if i.vlan.trunk_id is defined +%}
+             vlan:
+{%     for v in i.vlan.trunk_id|sort %}
+               '{{ v }}': {}
+{%     endfor %}
+             untagged: {{ i.vlan.access_id if 'native' in i.vlan else 'none' }}
+{%   elif i.vlan.access_id is defined %}
+             access: {{ i.vlan.access_id }}
+{%   endif %}
+{% endfor %}
