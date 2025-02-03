@@ -1,0 +1,16 @@
+colette/__init__.py,sha256=W9UtjbTyLNpce5PKaQpB-PIHeLdzh4_6ggL55Xm-_XQ,88
+colette/__main__.py,sha256=ENflazwd-aww1wm07lSXSAGyvoB4u05oAS4LVEAGDK4,7704
+colette/email/__init__.py,sha256=ZMCnnILuRMgrzdJxFlGOdqCp2orJVc88CA4MSAQ1XFI,109
+colette/email/base.py,sha256=CdyJJcMmhib3BTxmsoDOsYn-KhLxJ7-YyAzjMUdg0jM,2258
+colette/email/mail_macos.py,sha256=r6bdME_ow6mov2RGrdIC2RmfCMajbqvH6NO_i94hNN8,1392
+colette/email/outlook_macos.py,sha256=ibHLODguLuVEoJRqHkLsJfhGcagKYAau6hhikzaeQzs,1177
+colette/email/outlook_windows.py,sha256=lRbifi2Oo4puNuO0oVGDk4g827hH_5qFVZLo1EJHJjw,538
+colette/email/smtp.py,sha256=95G0Ri1o9Ef3NUcTS9oLxpPzdC55dyvdS5NM6koBs8c,2769
+colette/models.py,sha256=lK_0hdwEItUZCoTqBJ3psYC_FkkV_OHEES6Xv3-gFl0,13554
+colette/solver.py,sha256=mtKkm4oq4kJ5Y-sAG6Jv46fVYA4zf50TNUZFcLOpsSE,7096
+colette/storage.py,sha256=rH6dN4HW6RB5fjK-C8mwM0Iq-QmppsN0KkkmQU7B-UY,4213
+colette-0.2.4.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+colette-0.2.4.dist-info/METADATA,sha256=WGFVz5EGvEJ3oFXGgOXO3XrLE2ztuNpYRuqNe5nKbkg,12384
+colette-0.2.4.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+colette-0.2.4.dist-info/entry_points.txt,sha256=mgI_1powIdgKbwODr5Inl9pgxJxvNJfgN5Wgtbul3R8,49
+colette-0.2.4.dist-info/RECORD,,
