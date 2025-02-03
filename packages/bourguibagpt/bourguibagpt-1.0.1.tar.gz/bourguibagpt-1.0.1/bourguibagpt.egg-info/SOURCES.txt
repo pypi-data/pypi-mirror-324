@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+bourguibagpt/__init__.py
+bourguibagpt/main.py
+bourguibagpt.egg-info/PKG-INFO
+bourguibagpt.egg-info/SOURCES.txt
+bourguibagpt.egg-info/dependency_links.txt
+bourguibagpt.egg-info/requires.txt
+bourguibagpt.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+graft bourguibagpt
+global-exclude __pycache__ *.py[co]
