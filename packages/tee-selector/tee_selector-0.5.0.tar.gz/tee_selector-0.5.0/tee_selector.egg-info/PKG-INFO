@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: tee_selector
+Version: 0.5.0
+Summary: A basic tee selector
+Author-email: Brock Weaver <brockweaver@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/brockweaver/tee-selector
+Project-URL: Bug Tracker, https://github.com/brockweaver/tee-selector/issues
+License-File: LICENSE
