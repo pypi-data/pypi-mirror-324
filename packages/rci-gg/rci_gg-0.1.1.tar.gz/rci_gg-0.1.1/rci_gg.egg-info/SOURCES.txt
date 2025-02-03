@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+rci_gg/__init__.py
+rci_gg/core.py
+rci_gg.egg-info/PKG-INFO
+rci_gg.egg-info/SOURCES.txt
+rci_gg.egg-info/dependency_links.txt
+rci_gg.egg-info/top_level.txt
+rci_gg/data/__init__.py
+rci_gg/data/all_DL.txt
