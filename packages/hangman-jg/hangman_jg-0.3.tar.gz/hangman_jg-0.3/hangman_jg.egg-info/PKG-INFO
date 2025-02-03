@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: hangman-jg
+Version: 0.3
+Summary: A quick and easy way to play hangman!
+Home-page: https://github.com/astraixe-coding/hangman
+Author: Jack Grant
+Author-email: classifiedcontentonyt@gmail.com
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: summary
