@@ -1,0 +1,9 @@
+dishka>=1.4.0
+quart>=0.20.0
+
+[:python_version < "3.11"]
+typing_extensions
+
+[lint]
+ruff
+mypy
