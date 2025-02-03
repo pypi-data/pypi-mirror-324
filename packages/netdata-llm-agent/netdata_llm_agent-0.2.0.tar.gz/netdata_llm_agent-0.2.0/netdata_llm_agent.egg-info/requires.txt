@@ -1,0 +1,10 @@
+langgraph
+langchain-core
+langchain-openai
+langchain-anthropic
+langchain-ollama
+requests
+pandas
+markdownify
+streamlit
+python-dotenv
