@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+lightcnn.egg-info/PKG-INFO
+lightcnn.egg-info/SOURCES.txt
+lightcnn.egg-info/dependency_links.txt
+lightcnn.egg-info/requires.txt
+lightcnn.egg-info/top_level.txt
+ligthcnn/__init__.py
+ligthcnn/model.py
+ligthcnn/preprocessing.py
