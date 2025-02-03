@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agi-open-network-cn"
+version = "0.1.0"
+description = "AGI Open Network China Models - A Simple and Powerful Framework for Chinese AI Models"
+readme = "README.md"
+authors = [{ name = "AGI Open Network Team", email = "info@agiopen.network" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["agi", "ai", "machine learning", "deep learning", "nlp", "computer vision", "speech", "chinese models"]
+dependencies = [
+    "requests>=2.25.0",
+    "tqdm>=4.65.0",
+    "pydantic>=2.0.0",
+]
+requires-python = ">=3.7"
+
+[project.urls]
+Homepage = "https://www.agiopen.network"
+Repository = "https://github.com/agiopennetwork/agi-open-network-cn" 
