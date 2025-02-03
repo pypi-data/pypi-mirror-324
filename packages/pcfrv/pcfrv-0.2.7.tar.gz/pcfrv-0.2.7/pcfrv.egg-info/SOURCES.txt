@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+pcfrv/search_school.py
+pcfrv/search_school.pyi
+pcfrv/timetable.py
+pcfrv/timetable.pyi
+pcfrv.egg-info/PKG-INFO
+pcfrv.egg-info/SOURCES.txt
+pcfrv.egg-info/dependency_links.txt
+pcfrv.egg-info/requires.txt
+pcfrv.egg-info/top_level.txt
