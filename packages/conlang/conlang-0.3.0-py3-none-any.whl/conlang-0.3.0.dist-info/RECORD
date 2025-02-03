@@ -1,0 +1,16 @@
+conlang/__init__.py,sha256=Rnf9ff1fcTIHl33Fc782yxAkAouSHqVPKQaz1zVXJtI,305
+conlang/language.py,sha256=d3Gfw28r4xY6rQnoXnrAdrpuA21EZV0LohjvZrkqHNY,4874
+conlang/language_config.py,sha256=cWOMAwzYEoK9qCp9883NjkZALMPUvvt7zVClFomFNu4,9838
+conlang/phonemes.py,sha256=igQ4oQLpe5en0tgj95x7NR6n9bIDF71ngh3SFV0JlbA,2424
+conlang/presets.py,sha256=5OzmzzW4mVl3DX_QStcJN4ow8Z2PHRw-qzBpg0Xd0kk,7603
+conlang/rules.py,sha256=npTf0CVI8_D0aF45P5GoFf3brscBj50Q1PEW0oTmqyY,6334
+conlang/sound_change.py,sha256=usAhdgbgb7eKxROZ8fshccAMr3SctVB7t93w4OW8odI,15302
+conlang/swadesh.py,sha256=fe-4etYbpKeqsDHRIstXEv77jY7AmL2TqEFDrLOYz9Y,2864
+conlang/utils.py,sha256=81O5mNUhS100ZX5PlNjh2qTwp8OZjMgPZqhw0CBAZTM,2943
+conlang/vocabulary.py,sha256=-D2AJdl9HKch5IuDvbZpW0OU7vKErNd61WelUiosl8E,6757
+conlang/word.py,sha256=dQMIuigKCHy8tsYKUncU2B9kQQZ81mj6JeDzfBl4Q3s,6210
+conlang-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+conlang-0.3.0.dist-info/METADATA,sha256=tV_BlNSiH0hmkKyJGLYWCvaXZfl8ksJHWY5ZcJAen9Y,1563
+conlang-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+conlang-0.3.0.dist-info/top_level.txt,sha256=aYim4cRBsfE3yXHIuIjoBvyYcqUPbuPi02lLokncRlE,8
+conlang-0.3.0.dist-info/RECORD,,
