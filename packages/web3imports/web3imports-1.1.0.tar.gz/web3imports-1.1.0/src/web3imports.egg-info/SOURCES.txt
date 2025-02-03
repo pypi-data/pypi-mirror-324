@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/web3imports/__init__.py
+src/web3imports/_config.py
+src/web3imports/core.py
+src/web3imports/utils.py
+src/web3imports.egg-info/PKG-INFO
+src/web3imports.egg-info/SOURCES.txt
+src/web3imports.egg-info/dependency_links.txt
+src/web3imports.egg-info/requires.txt
+src/web3imports.egg-info/top_level.txt
