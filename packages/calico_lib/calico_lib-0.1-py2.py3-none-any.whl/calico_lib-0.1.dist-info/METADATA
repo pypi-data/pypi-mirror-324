@@ -1,0 +1,6 @@
+Metadata-Version: 2.3
+Name: calico_lib
+Version: 0.1
+Summary: CALICO lib for all your problem writing needs
+Author-email: Connor Chang <connorc0627@gmail.com>
+Classifier: License :: OSI Approved :: MIT License
