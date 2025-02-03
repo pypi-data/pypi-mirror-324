@@ -1,0 +1,6 @@
+davidkhala/gcp/auth/__init__.py,sha256=c1pNJOKXFhGD0BB8Zuld2Q3n58lu_K9gq7xcMsh8uk0,1300
+davidkhala/gcp/auth/api_key.py,sha256=Ld9Gt5SQfceQKqDGTymGbk_KmqnoTuoQHLEOjAE3SfU,318
+davidkhala/gcp/auth/service_account.py,sha256=MK-QAZfDbJTdFcCZzvlVyzDI4Xn_BKcxIBSFlNUvI9U,1742
+davidkhala_gcp-0.3.0.dist-info/METADATA,sha256=dR5Y86aNUkRolnjO0HMOR_pXKtMuTgNdX5YqCDY4RR8,812
+davidkhala_gcp-0.3.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+davidkhala_gcp-0.3.0.dist-info/RECORD,,
