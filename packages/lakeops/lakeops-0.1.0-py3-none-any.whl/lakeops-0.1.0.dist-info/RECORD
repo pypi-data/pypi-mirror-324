@@ -1,0 +1,9 @@
+lakeops/__init__.py,sha256=ySoBVrn7_4pudprJuxN5oRXE3CBB3yN6TMDSD2yzsns,53
+lakeops/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lakeops/core/engine.py,sha256=fHjBFbF6vo9V8k2q-X781HPgqwPTd1S-Y2RzfuQlehU,2032
+lakeops/core/ops.py,sha256=uO76Gv2X00S5UkcGVcrHXb_M_89rAiNGXvmn2E99JqQ,912
+lakeops/formats/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lakeops/ops/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lakeops-0.1.0.dist-info/METADATA,sha256=ZvayIBTTuCZehDLJioCFIBeL_kIwgff6HFC1TDJcqC4,1548
+lakeops-0.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+lakeops-0.1.0.dist-info/RECORD,,
