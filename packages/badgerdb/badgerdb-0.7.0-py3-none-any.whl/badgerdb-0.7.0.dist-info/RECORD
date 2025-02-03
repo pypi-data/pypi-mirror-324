@@ -1,0 +1,7 @@
+badgerdb/__init__.py,sha256=LmMKhbic1CKwr55rR54ySEvxiuBJO3ha1XuNF4Lk51U,52
+badgerdb/badger.py,sha256=iajKWTXBTMBvWlt2A_q-CEdZd9MypVrZmgEB-9_BzJo,2848
+badgerdb/libbadger.so,sha256=-EDSGvdvvb4ybTxyXiVJRs0HZfsxKf3fqZjMYn0T0yQ,14944880
+badgerdb-0.7.0.dist-info/METADATA,sha256=ZJgNTwUTW1JZiXhraI5fnUdmyOErjv_IoPKClu8nxgA,4750
+badgerdb-0.7.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+badgerdb-0.7.0.dist-info/top_level.txt,sha256=hCSKH-5MXDeKjNA-kAXLcydC8MHRkl8TYl9u-NAPjCc,9
+badgerdb-0.7.0.dist-info/RECORD,,
