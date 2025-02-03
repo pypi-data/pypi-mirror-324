@@ -1,0 +1,20 @@
+Metadata-Version: 2.2
+Name: quart-dishka
+Version: 0.1.0
+Summary: Quart integration for dishka
+Project-URL: Source, https://github.com/hrimov/quart-dishka
+Project-URL: Homepage, https://github.com/hrimov/quart-dishka
+Project-URL: Documentation, https://github.com/hrimov/quart-dishka
+Project-URL: Bug Tracker, https://github.com/hrimov/quart-dishka/issues
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+License-File: LICENSE
+Requires-Dist: dishka>=1.4.0
+Requires-Dist: quart>=0.20.0
+Requires-Dist: typing_extensions; python_version < "3.11"
+Provides-Extra: lint
+Requires-Dist: ruff; extra == "lint"
+Requires-Dist: mypy; extra == "lint"
