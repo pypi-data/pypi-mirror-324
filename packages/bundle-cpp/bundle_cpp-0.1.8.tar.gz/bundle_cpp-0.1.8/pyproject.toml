@@ -1,0 +1,18 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "bundle-cpp"
+version = "0.1.8"
+description = "expand includes and create a single file"
+authors = ["kagemeka <kagemeka1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "bundle.py" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.scripts]
+bundle = "bundle:cli"

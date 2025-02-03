@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: bundle-cpp
+Version: 0.1.8
+Summary: expand includes and create a single file
+License: MIT
+Author: kagemeka
+Author-email: kagemeka1@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Description-Content-Type: text/markdown
+
+# bundle_cpp_v1
+```sh
+pip install bundle-cpp
+bundle -I lib main.cpp > generated.cpp
+```
+
+## dev
+`apt install -y pipx && pipx ensurepath && pipx install poetry`.
+`poetry config pypi-token.pypi <token>`, `poetry publish --build`.
+
