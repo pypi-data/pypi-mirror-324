@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: digital-footprint
+Version: 0.9.0
+Summary: Digital Footprint Scanner: Free tool to extract useful information from an email.
+Author: ivanMartin
+Author-email: imartin.desarrollo@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: python-whois
+Requires-Dist: dnspython
+
