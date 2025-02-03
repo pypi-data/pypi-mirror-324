@@ -1,0 +1,11 @@
+{
+    "android": {
+        "release": {
+            "keystore": "/home/tkem/src/apps.tkem.upload-keystore.jks",
+            "storePassword": "r2d2c3po",
+            "alias": "upload",
+            "password" : "r2d2c3po",
+            "keystoreType": ""
+        }
+    }
+}
