@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name="crsq-arithmetic"
+version="0.2.0"
+dependencies = [
+    "qiskit >= 1.0",
+    "crsq-heap >= 0.2.0"
+]
+
+authors = [
+    { name="Hideo Takahashi" }
+]
+description="Binary arithmetic circuits for qiskit"
+readme="README.md"
+requires-python=">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+
+
+[project.urls]
+Homepage="https://github.com/crsq-dev/crsq-arithmetic"
+Issues="https://github.com/crsq-dev/crsq-arithmetic/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/crsq_arithmetic"]

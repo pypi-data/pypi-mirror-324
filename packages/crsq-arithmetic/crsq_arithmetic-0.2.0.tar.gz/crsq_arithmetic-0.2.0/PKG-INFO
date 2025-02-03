@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: crsq-arithmetic
+Version: 0.2.0
+Summary: Binary arithmetic circuits for qiskit
+Project-URL: Homepage, https://github.com/crsq-dev/crsq-arithmetic
+Project-URL: Issues, https://github.com/crsq-dev/crsq-arithmetic/issues
+Author: Hideo Takahashi
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: crsq-heap>=0.2.0
+Requires-Dist: qiskit>=1.0
+Description-Content-Type: text/markdown
+
+# Binary arithmetic circuit generators for qiskit
