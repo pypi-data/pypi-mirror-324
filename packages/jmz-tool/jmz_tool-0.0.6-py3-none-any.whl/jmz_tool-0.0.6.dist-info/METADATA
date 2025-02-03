@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: jmz-tool
+Version: 0.0.6
+Summary: 一个简易工具提供常见加密解密功能如MD5,AES,SHA1等
+Home-page: 
+Download-URL: 
+Author: jinmingzhou
+Author-email: 17816765317@163.com
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: PyExecJS2>=1.6.1
+Requires-Dist: requests
+
+一个简易工具提供常见加密解密功能如MD5,AES,SHA1等,使用该工具前请确保已安装node-js
