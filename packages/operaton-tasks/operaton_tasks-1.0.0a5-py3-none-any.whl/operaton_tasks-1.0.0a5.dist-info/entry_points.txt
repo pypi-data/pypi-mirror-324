@@ -1,0 +1,2 @@
+[console_scripts]
+operaton-tasks = operaton.tasks.main:main
