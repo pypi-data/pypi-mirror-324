@@ -1,0 +1,5 @@
+[console_scripts]
+info-sta = kbostadium.info_sta:entry_point
+
+[gui_scripts]
+
