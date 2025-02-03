@@ -1,0 +1,9 @@
+cloudcoil/models/kpack/__init__.py,sha256=EiB3K0qH8vDA3fqAbpRP9XWYDhzmFJG74iB-_OUy0HA,158
+cloudcoil/models/kpack/core.py,sha256=zrO9iT_O6lcqqo3DWcFKP6ZDlX_KNXRNCyBCJzb60G4,66189
+cloudcoil/models/kpack/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudcoil/models/kpack/v1alpha1.py,sha256=rXb2lWYK_gvA37E2EyifF0tg8-Wze_zNtyLPg_E5uG4,153022
+cloudcoil/models/kpack/v1alpha2.py,sha256=OxPIt-khiBYtQsf3DVr2eJMVOOw-hkWMxKaouJkTACM,238793
+cloudcoil_models_kpack-0.16.1.0.dist-info/METADATA,sha256=rmJTECHI0RWlz9WAAAZCaXP5bIXlDF2mdwi2zJHeUwU,5726
+cloudcoil_models_kpack-0.16.1.0.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+cloudcoil_models_kpack-0.16.1.0.dist-info/licenses/LICENSE,sha256=9mpycVvCCD7ofOehOGlZDoT8wntDVXA9O6MZJv6Hh4E,11345
+cloudcoil_models_kpack-0.16.1.0.dist-info/RECORD,,
