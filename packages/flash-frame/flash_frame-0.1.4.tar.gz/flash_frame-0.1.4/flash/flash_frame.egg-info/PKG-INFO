@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: flash-frame
+Version: 0.1.4
+Summary: A simple data manipulation lib
+Author: S.Abilash
+Author-email: abinix01@gmail.com
+Requires-Python: >=3.11
+Requires-Dist: numpy>=2.0.1
+Requires-Dist: pyarrow>=19.0.0
+Requires-Dist: XlsxWriter>=3.2.2
+Requires-Dist: python-calamine>=0.3.1
+Requires-Dist: colorama>=0.4.6
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
