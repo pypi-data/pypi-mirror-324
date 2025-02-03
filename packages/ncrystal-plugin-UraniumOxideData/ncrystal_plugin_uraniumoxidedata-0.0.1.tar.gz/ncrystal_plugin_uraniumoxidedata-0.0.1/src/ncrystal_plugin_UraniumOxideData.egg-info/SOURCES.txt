@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/ncrystal_plugin_UraniumOxideData/__init__.py
+src/ncrystal_plugin_UraniumOxideData.egg-info/PKG-INFO
+src/ncrystal_plugin_UraniumOxideData.egg-info/SOURCES.txt
+src/ncrystal_plugin_UraniumOxideData.egg-info/dependency_links.txt
+src/ncrystal_plugin_UraniumOxideData.egg-info/requires.txt
+src/ncrystal_plugin_UraniumOxideData.egg-info/top_level.txt
+src/ncrystal_plugin_UraniumOxideData/data/UO2_sg225_UraniumOxide_vdos1200K.ncmat
+src/ncrystal_plugin_UraniumOxideData/data/UO2_sg225_UraniumOxide_vdos1675K.ncmat
+src/ncrystal_plugin_UraniumOxideData/data/UO2_sg225_UraniumOxide_vdos300K.ncmat
+src/ncrystal_plugin_UraniumOxideData/data/UO2_sg225_UraniumOxide_vdos350K.ncmat
+src/ncrystal_plugin_UraniumOxideData/data/UO2_sg225_UraniumOxide_vdos420K.ncmat
+src/ncrystal_plugin_UraniumOxideData/data/UO2_sg225_UraniumOxide_vdos600K.ncmat
+src/ncrystal_plugin_UraniumOxideData/data/UO2_sg225_UraniumOxide_vdos900K.ncmat
