@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mdocLib
+Version: 0.0.3
+Summary: mdoc, markdown as docs. well. I think that it's good idea. but watch out. your code can be stinks easly it you didn't write docstring yourself.
+Home-page: https://github.com/c0dk1ddy/mdoc
+Keywords: md,markdown,as,doc,string,docstring,document,markdown as docstring,markdown as document,I hate fucking typings
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: martialaw
