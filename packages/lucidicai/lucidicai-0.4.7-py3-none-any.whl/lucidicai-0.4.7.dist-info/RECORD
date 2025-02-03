@@ -1,0 +1,8 @@
+lucidicai/__init__.py,sha256=PjUcHNDXzEoYB7mV7eudpkdZRBt6NsfjbsTB23_ToZk,102
+lucidicai/api.py,sha256=5uEdvhcGo_L1C2pZwzlhoeW3XsBZax_qm3XwnOjv9mw,8364
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_api.py,sha256=KmC81zXpiic61U8DvvmAbs8gG2GefI_Au-isFJtw2Xg,334
+lucidicai-0.4.7.dist-info/METADATA,sha256=JAJQTn4ghRC0igml_ENMrUW5RiDb5s44f2kvDmYsmfk,455
+lucidicai-0.4.7.dist-info/WHEEL,sha256=Xo9-1PvkuimrydujYJAjF7pCkriuXBpUPEjma1nZyJ0,92
+lucidicai-0.4.7.dist-info/top_level.txt,sha256=k9LLo4_QWif1lmvV1v368nf1M6yj1dMNcrd_bvOCcf8,16
+lucidicai-0.4.7.dist-info/RECORD,,
