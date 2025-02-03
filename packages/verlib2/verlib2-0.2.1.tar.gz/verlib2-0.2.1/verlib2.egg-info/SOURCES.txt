@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+verlib2/__init__.py
+verlib2/_structures.py
+verlib2/version.py
+verlib2.egg-info/PKG-INFO
+verlib2.egg-info/SOURCES.txt
+verlib2.egg-info/dependency_links.txt
+verlib2.egg-info/requires.txt
+verlib2.egg-info/top_level.txt
