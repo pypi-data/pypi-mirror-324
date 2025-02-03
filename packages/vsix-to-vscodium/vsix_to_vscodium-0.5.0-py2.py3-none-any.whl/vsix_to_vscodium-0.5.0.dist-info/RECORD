@@ -1,0 +1,7 @@
+vsix_to_vscodium/__init__.py,sha256=3XeGfgHCVYcxe1Fy25qTdtEq-JgWyCWAIlvM0q2eslY,103
+vsix_to_vscodium/cli.py,sha256=02Fr3Py8ixO1w-ESMzA7YXpedbYHcKu9kGziCmy5z8s,6749
+vsix_to_vscodium-0.5.0.dist-info/entry_points.txt,sha256=KkQp-EgGNQq1mB0a2kAkQ1GQqGnO95D_JFl_SoSX5Dc,62
+vsix_to_vscodium-0.5.0.dist-info/LICENSE,sha256=bYQwUMatGIGIsSJjrluHIdogUrD64GKyuj4wLwkHqAU,1070
+vsix_to_vscodium-0.5.0.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+vsix_to_vscodium-0.5.0.dist-info/METADATA,sha256=Pw6zGBeow4952xIUcmRpr5IwuvvL0u1rRzecApAdJ1g,3687
+vsix_to_vscodium-0.5.0.dist-info/RECORD,,
