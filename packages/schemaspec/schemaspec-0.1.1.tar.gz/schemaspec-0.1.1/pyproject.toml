@@ -1,0 +1,41 @@
+[project]
+name = "schemaspec"
+version = "0.1.1"
+description = "A concise schema specification framework built on Pydantic"
+authors = [{ name = "Andy Le", email = "anhldbk@gmail.com" }]
+requires-python = ">=3.8"
+dependencies = ["pydantic>=2.10.6"]
+
+[project.urls]
+Homepage = "https://github.com/schemaspec/schemaspec"
+Documentation = "https://github.com/schemaspec/schemaspec#readme"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.3.4",
+    "ruff>=0.9.4",
+    "mypy>=1.0.0"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+fixable = ["ALL"]
+unfixable = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+
