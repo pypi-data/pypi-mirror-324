@@ -1,0 +1,16 @@
+Metadata-Version: 2.2
+Name: robotframework-hashlibrary
+Version: 0.2
+Summary: Robot Framework library that generates hashes based on the given input
+Author: David Italiander
+Author-email: david.italiander@gmail.com
+Classifier: Programming Language :: Python
+Classifier: Framework :: Robot Framework
+License-File: LICENSE
+Requires-Dist: robotframework
+Requires-Dist: pytest
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
