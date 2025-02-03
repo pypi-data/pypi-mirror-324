@@ -1,0 +1,3 @@
+[console_scripts]
+dockerfile-generator=dockerfile_generator.cli:generate_dockerfile
+
