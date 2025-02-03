@@ -1,0 +1,19 @@
+Metadata-Version: 2.2
+Name: mh-django-config
+Version: 0.0.5
+Summary: Load configuration from different sources, and use it eventually to populate Django settings.
+Author-email: Mathieu Hinderyckx <mathieu.hinderyckx@gmail.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: boto3>=1.35.99
+Requires-Dist: google-cloud-secret-manager>=2.22.0
+Requires-Dist: orjson>=3.10.12
+
+# MH-django-config
+
+This package is used to load configuration from different sources, and use it eventually to populate Django settings. It loads configuration (in json format) from local files, from AWS secret manager, and from GCP secret manager.
+
+## Usage
