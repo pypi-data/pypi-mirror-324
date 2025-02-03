@@ -1,0 +1,11 @@
+augini/__init__.py,sha256=BrP_IxWNiiLxNjCZFM0HKEc33J9d9UUP9CDtecvi_a0,310
+augini/config.py,sha256=KnB1VsIm-PuJz-IRsOKjioNHWcs8n5-_fZHtrDpw1Po,4879
+augini/data_analyzer.py,sha256=YaeXbZGa8ucLWeJcoC1iGAMmMNQ8yFQ5RAdR-Wd3wu4,15960
+augini/data_engineer.py,sha256=VZmb2XcznwFCzWnhdaEPq96hrbgAGwFsr-N5smPn0p8,12555
+augini/exceptions.py,sha256=MZu7wiu51ploIBHmuvMHbzh9-mQU-v5kqyXNeGbw1ms,981
+augini/utils.py,sha256=uQtQTzE0uYGJ8oFhGXgazeNdM0B7ITZVtRKm4jeS9Sc,4729
+augini-0.3.0.dist-info/LICENSE,sha256=eaR6uMKIvwxK9vahrofvLSFOCa6PtV5HCNxnh_o5iCc,1084
+augini-0.3.0.dist-info/METADATA,sha256=yaAiUlklUZa7O3tsIG8lAADl7Pso3wc0v6sWH48cJsg,7077
+augini-0.3.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+augini-0.3.0.dist-info/top_level.txt,sha256=95Cyoh83gKJQGa8_M2reBLQrMTveHu-of0FPufKJZnI,7
+augini-0.3.0.dist-info/RECORD,,
