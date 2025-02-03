@@ -1,0 +1,6 @@
+typer
+cryptography
+transformers
+requests
+httpx
+requests-toolbelt
