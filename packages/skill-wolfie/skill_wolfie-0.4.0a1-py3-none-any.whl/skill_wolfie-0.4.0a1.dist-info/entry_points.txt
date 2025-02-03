@@ -1,0 +1,8 @@
+[neon.plugin.solver]
+ovos-solver-plugin-wolfram-alpha = skill_ovos_wolfie:WolframAlphaSolver
+
+[opm.plugin.persona]
+Wolfram Alpha = skill_ovos_wolfie:WOLFRAMALPHA_PERSONA
+
+[ovos.plugin.skill]
+skill-ovos-wolfie.openvoiceos = skill_ovos_wolfie:WolframAlphaSkill
