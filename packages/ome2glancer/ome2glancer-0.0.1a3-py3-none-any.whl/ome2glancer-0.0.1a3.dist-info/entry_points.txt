@@ -1,0 +1,2 @@
+[console_scripts]
+ome2glancer = ome2glancer.cli:app
