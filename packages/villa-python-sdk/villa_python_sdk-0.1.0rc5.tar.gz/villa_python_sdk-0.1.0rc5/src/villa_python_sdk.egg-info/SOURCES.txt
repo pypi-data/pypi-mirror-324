@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/villa_python_sdk/__init__.py
+src/villa_python_sdk/calculator.py
+src/villa_python_sdk/py.typed
+src/villa_python_sdk/types.py
+src/villa_python_sdk.egg-info/PKG-INFO
+src/villa_python_sdk.egg-info/SOURCES.txt
+src/villa_python_sdk.egg-info/dependency_links.txt
+src/villa_python_sdk.egg-info/requires.txt
+src/villa_python_sdk.egg-info/top_level.txt
+tests/test_main.py
