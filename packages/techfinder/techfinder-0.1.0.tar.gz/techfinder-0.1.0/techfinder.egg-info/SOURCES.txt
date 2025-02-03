@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+README_EN.md
+README_MR.md
+requirements.txt
+setup.py
+TechFinder/__init__.py
+TechFinder/detector.py
+techfinder.egg-info/PKG-INFO
+techfinder.egg-info/SOURCES.txt
+techfinder.egg-info/dependency_links.txt
+techfinder.egg-info/requires.txt
+techfinder.egg-info/top_level.txt
