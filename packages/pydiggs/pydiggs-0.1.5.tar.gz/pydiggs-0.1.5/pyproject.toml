@@ -1,0 +1,79 @@
+[project]
+name = "pydiggs"
+version = "0.1.5"
+description = "A Python package for Data Interchange for Geotechnical and Geoenvironmental Specialists (DIGGS)."
+authors = [
+    {name = "xin.peng", email = "xin_peng@outlook.com"}
+]
+license = {text = "Apache-2.0"}
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "lxml>=5.3.0",
+    "rich>=13.9.4",
+    "myst-parser>=4.0.0"
+]
+
+[project.scripts]
+pydiggs = "pydiggs.cli:main"
+
+[tool.poetry]
+packages = [{include = "pydiggs"}]
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.4"
+pytest-cov = "^4.1.0"
+coverage = "^7.6.10"
+pylint = "^3.3.3"
+virtualenv = "^20.29.1"
+mypy = "^1.14.1"
+pre-commit = "^4.0.1"
+
+[tool.poetry.group.docs.dependencies]
+mkdocs-material = "^9.5.6"
+mkdocs = "^1.5.3"
+mkdocstrings = {extras = ["python"], version = "^0.24.0"}
+mkdocs-autorefs = "^0.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "--cov=pydiggs --cov-report=xml --cov-report=term-missing"
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["pydiggs"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+    "raise ImportError",
+]
+
+[tool.pylint.MASTER]
+extension-pkg-allow-list = ["lxml.etree"]
+max-line-length = 100
+ignore-paths = ["tests/*"]
+
+[tool.pylint.BASIC]
+good-names = ["i", "j", "k", "ex", "Run", "_", "fp"]
+
+[tool.pylint.MESSAGES_CONTROL]
+disable = [
+    "C0111",  # missing-docstring
+    "C0103",  # invalid-name
+]
+
+[tool.pylint.FORMAT]
+max-line-length = 100
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = ["C0111", "C0103"]  # missing-docstring, invalid-name
