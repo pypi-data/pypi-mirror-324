@@ -1,0 +1,17 @@
+adepy/__init__.py,sha256=SG68H072AdOa3ACbYtpTG9g-go6-gJ4hdnnuoX2bsRk,140
+adepy/_helpers.py,sha256=x_vMH6KfXi3CdI6FUIxAcTcj9Q0lmgia8If5G4W2704,1158
+adepy/_version.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+adepy/chain_reaction.py,sha256=2gN33Nbh6BLaX6ESgcLyirk7iyifonXfuSuMJBB6bpE,4720
+adepy/uniform/__init__.py,sha256=NNenC9ORwalBqHcONzadnHQSjf-pWapHptztKUL3WxM,165
+adepy/uniform/oneD.py,sha256=OGAr6VEeQ4zLAxwzTl46DBawuiCKdxhg8em5rxGkMIY,13526
+adepy/uniform/threeD.py,sha256=oFG7V8IxIQV0OZdjK28Elpd32AJx9o3jtiGkvBuqwfQ,14890
+adepy/uniform/twoD.py,sha256=mHA7lcZG-SCGJF0WlHuoAKlKdxhaqzwX2GKR9qoh7yo,16236
+tests/test_1D.py,sha256=XkGetWAcasU0OqIfcNjfaeHnhr_r46iZrPWEXyI8wso,2031
+tests/test_2D.py,sha256=WvQ1Sf3vujyz9rh9MmtYBfjEvdSk4puvm62zMe_rvFg,2811
+tests/test_3D.py,sha256=tBgS2OrSksI9cKszfU79asZX49B_Yow0-IMC9JXmAAA,3296
+tests/test_chain_reaction.py,sha256=whB3BgxgMKIyfes3yuQKVtxQJufxwkQ-yYY1320Bjp0,2531
+adepy-0.1.0.dist-info/LICENSE,sha256=wFPrakklJsRbZxNNkMEKnP7uTnMn96uL3hzt4GTn7Nw,1067
+adepy-0.1.0.dist-info/METADATA,sha256=fPwfBDr2dNkjVibeqOlKVULFKUyxRXij85HyQR2tf78,8245
+adepy-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+adepy-0.1.0.dist-info/top_level.txt,sha256=a68nDTND2v36a28LUWIeP93Qy9Rux-wLkE6Z94uja6E,12
+adepy-0.1.0.dist-info/RECORD,,
