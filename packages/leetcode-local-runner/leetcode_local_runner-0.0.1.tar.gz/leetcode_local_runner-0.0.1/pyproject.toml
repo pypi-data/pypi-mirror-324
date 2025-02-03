@@ -1,0 +1,32 @@
+[project]
+name = "leetcode-local-runner"
+version = "0.0.1"
+description = "A python package with tools to let you try coding problems and check your code against your own test cases."
+authors = [{ name = "Anurag Shenoy", email = "anuragshenoy21@gmail.com" }]
+keywords = ["runner", "helper", "leetcode", "project-euler"]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Education",
+]
+dependencies = ["termcolor>=2.4.0", "numpy>=1.21.4"]
+
+[project.urls]
+Homepage = "https://github.com/shenoy-anurag/leetcode-runner"
+Documentation = "https://github.com/shenoy-anurag/leetcode-runner"
+Repository = "https://github.com/shenoy-anurag/leetcode-runner"
+Issues = "https://github.com/shenoy-anurag/leetcode-runner/issues"
+"Funding" = "https://buymeacoffee.com/anuragshenoy"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

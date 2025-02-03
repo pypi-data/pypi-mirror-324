@@ -1,0 +1,106 @@
+Metadata-Version: 2.3
+Name: leetcode-local-runner
+Version: 0.0.1
+Summary: A python package with tools to let you try coding problems and check your code against your own test cases.
+License: MIT License
+         
+         Copyright (c) 2025 Anurag Shenoy
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         SOFTWARE.
+Keywords: runner,helper,leetcode,project-euler
+Author: Anurag Shenoy
+Author-email: anuragshenoy21@gmail.com
+Requires-Python: >=3.10
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Education
+Requires-Dist: numpy (>=1.21.4)
+Requires-Dist: termcolor (>=2.4.0)
+Project-URL: Documentation, https://github.com/shenoy-anurag/leetcode-runner
+Project-URL: Funding, https://buymeacoffee.com/anuragshenoy
+Project-URL: Homepage, https://github.com/shenoy-anurag/leetcode-runner
+Project-URL: Issues, https://github.com/shenoy-anurag/leetcode-runner/issues
+Project-URL: Repository, https://github.com/shenoy-anurag/leetcode-runner
+Description-Content-Type: text/markdown
+
+# Overview
+[![PyPI Version](https://img.shields.io/pypi/v/leetcode-local-runner.svg)](https://pypi.org/project/leetcode-local-runner)
+[![PyPI License](https://img.shields.io/pypi/l/leetcode-local-runner.svg)](https://pypi.org/project/leetcode-local-runner)
+
+A python package with tools to let you try coding problems and check your code against your own test cases.
+
+Sites like LeetCode and Project Euler have great problems you can solve to improve your data-structures and algorithm knowledge.
+
+But LeetCode's IDE isn't fun to code in, and harder to debug in.
+
+Project Euler has no web IDE at all.
+
+This tool allows you to quickly start solving those problems and add test-cases quickly.
+
+# Installation
+
+Install using pip:
+
+```text
+$ pip install leetcode-local-runner
+```
+
+or with [Poetry](https://python-poetry.org/):
+
+```text
+$ poetry add leetcode-local-runner
+```
+
+# Usage
+
+1. Install the library.
+2. Pick a problem to solve from either LeetCode or Project Euler.
+3. Copy the code in the editor into a python file.
+   ```py
+   class Solution:
+    def dailyTemperatures(self, temperatures: List[int]) -> List[int]:
+        pass
+   ```
+4. Create your own test-cases and pass them into the LeetCode class like so:
+```py
+test_cases = [
+    {"temperatures": [73, 74, 75, 71, 69, 72, 76, 73]},
+    {"temperatures": [30, 40, 50, 60]},
+    {"temperatures": [30, 60, 90]},
+]
+expected_outputs = [
+    [1, 1, 4, 2, 1, 1, 0, 0],
+    [1, 1, 1, 0],
+    [1, 1, 0],
+]
+
+lc = LeetCode(test_cases=test_cases, expected_outputs=expected_outputs, fn=Solution().isSameTree)
+lc.run_test_cases()
+```
+![Run Test Cases Output](docs/assets/output.png "Run Test Cases Output")
+
+# Requirements
+- Python >= 3.10
+
