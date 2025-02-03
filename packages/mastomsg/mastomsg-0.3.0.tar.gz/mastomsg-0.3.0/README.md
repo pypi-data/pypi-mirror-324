@@ -1,0 +1,23 @@
+# mastomsg
+
+A messanger for admins of mastodon servers allowing them to message groups of users.
+
+You can install it via pip/pipx (requires Python-3.10+):
+
+`pipx install mastomsg`
+
+Then you have access to the command `mastomsg`.
+
+`mastomsg` expects you to pass it a (potentially multi-line) text as its first argument. The text can contain placeholders for all user account properties you might want.
+To use the person's display name you can for example include `{target.display_name}` in your text. You should ideally include "`@{target.username}`" somewhere to create an actual mention.
+If your text doesn't include any mentions you will be asked if the system should automatically prepend it. Check out [the Mastodon.py docs](https://mastodonpy.readthedocs.io/en/stable/02_return_values.html#user-account-dicts) to see all possible values.
+
+To select the target audience you can either use `--everyone`, `--handles`, `--age` or `--lastactive`. As expected `--everyone` targets all users on the server. With `--handles` you just add a list of local usernames separated by , to send the message to.
+With `--ages` you supply a time delta (in days or hours) to select all acounts created in that timeframe. With `--lastactive` you supply a similar time delta but target all people who have not posted anything in that time frame (to find inactive users). Note that for bigger instances the last commands can be quite slow.
+
+Appending `--pretend` does all the API calls to select the recipients but does not send out the message. Only the list of selected accounts is printed out.
+
+# TODO:
+- load message from a text file or STDIN
+- Allow to customize type of message (currently only DM is supported)
+- add potential websocket receiver to trigger automatic sending of welcome messages
