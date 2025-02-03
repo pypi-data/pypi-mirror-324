@@ -1,0 +1,25 @@
+[project]
+name = "omaster"
+version = "0.16.0"
+description = "A Python package release tool that automates the entire release process with built-in quality checks and AI-powered features."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "rich>=10.0.0",
+    "openai>=1.0.0",
+    "tomli>=2.0.0",
+    "radon>=6.0.0",
+    "vulture>=2.10.0",
+]
+
+[project.scripts]
+omaster = "omaster.main:main"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
