@@ -1,0 +1,9 @@
+traders_copilot_mzza_25/__init__.py,sha256=0Bc-QOYTssECmnWxJWwmxhTjPmIbHlTAPwdRU1VMhVs,126
+traders_copilot_mzza_25/data.py,sha256=9_IDif1rvm-q4GvZQxtmeEWbNIeLoJ9OvALooAs6PPs,2228
+traders_copilot_mzza_25/generate_signals.py,sha256=kMzpSBf0XiVDf8FFiBZMpEiW2qvwtlFwlvk_Q0wkefU,1275
+traders_copilot_mzza_25/indicators.py,sha256=WpKG_eSXgU25L6Isak-ru3Xile3Wh-hBk8v3kNRGx2c,2701
+traders_copilot_mzza_25/plot_signals.py,sha256=4PqucvkOAJcmPGONHbYaITSfM9xbJsrBiY6QJJePzO8,3057
+traders_copilot_mzza_25-0.1.1.dist-info/LICENSE,sha256=BJoLlxUtUTDw2HCtSZmjbPXvUvWbt3X5M-YjHg--NDo,1122
+traders_copilot_mzza_25-0.1.1.dist-info/METADATA,sha256=LhZ2QCLzIlov2uz50BH4873Q5HDxLZVovruXQ_OKToA,7007
+traders_copilot_mzza_25-0.1.1.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+traders_copilot_mzza_25-0.1.1.dist-info/RECORD,,
