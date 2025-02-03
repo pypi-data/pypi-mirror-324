@@ -1,0 +1,11 @@
+vaganboost/__init__.py,sha256=dEGUV1MM2E89Ng_Z0EdqopoqTcEVByBTmZrsjoSYN5M,1055
+vaganboost/data_utils.py,sha256=oXCYHAJw3rYz0i7rRiRCymMqOAJHbyHGFHHpXSnyCIE,8371
+vaganboost/models.py,sha256=MObLIjbyPOUxhSZaCjQjWbEe6enVERvwSXOJ82N54-0,13079
+vaganboost/train.py,sha256=_2z5T08iDfBBqXHl9pURqH1-5MsQg9Qskth77WL5PFA,13122
+vaganboost/utils.py,sha256=G-uB8q_Qv2HOQwXTNR4g3Si92ukI72rDVajoRrLbtn0,7873
+vaganboost-0.7.6.dist-info/LICENSE,sha256=li2gY6YXRvQHgHU3_rlTCoOBo_nVWEU_wbaxDg_R8m0,873
+vaganboost-0.7.6.dist-info/METADATA,sha256=cHMmtAQUMg9NdbQJOzvhOcZwWEFL4mzVsi2anuCGucY,5927
+vaganboost-0.7.6.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+vaganboost-0.7.6.dist-info/entry_points.txt,sha256=kx8XoTBCB42OwHDJH1m03eaBpkA0B5Q07O2z6M2Z8fU,59
+vaganboost-0.7.6.dist-info/top_level.txt,sha256=EODAAXB6BrfCUK1H1rkMz4_rHCZOhKG23tZhKXMkcY0,11
+vaganboost-0.7.6.dist-info/RECORD,,
