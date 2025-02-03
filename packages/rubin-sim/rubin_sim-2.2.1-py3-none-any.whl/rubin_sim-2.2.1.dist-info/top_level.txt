@@ -1,0 +1,3 @@
+docs
+rubin_sim
+tests
