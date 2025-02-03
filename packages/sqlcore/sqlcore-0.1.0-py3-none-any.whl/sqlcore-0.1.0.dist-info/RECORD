@@ -1,0 +1,7 @@
+sqlcore/__init__.py,sha256=5V0AEZJ_gPAsXY33_cBlWozeLDbcD_ULGQd65Wdm6vg,152
+sqlcore/async_connector.py,sha256=IKB7gQp9QeehkJWtZm8qc6zts7PtI5vRj9VfH9A9D4o,8394
+sqlcore/connector.py,sha256=FyjjUpEw1hmzqesJjyoaENwKJqO7GHL-XAv1BYN-QXc,7325
+sqlcore-0.1.0.dist-info/LICENSE,sha256=mK7ceknsKvHk7QSdqu4Wd3pJVHc-g5krkj-N_CPxW2E,1071
+sqlcore-0.1.0.dist-info/METADATA,sha256=2BGfonTM2dUl3cxeE_p2N_FThBjwnU3M2Zih802DjbU,5624
+sqlcore-0.1.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+sqlcore-0.1.0.dist-info/RECORD,,
