@@ -1,0 +1,2 @@
+[console_scripts]
+terminus = cli.app:cli
