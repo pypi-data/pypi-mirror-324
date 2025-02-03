@@ -1,0 +1,4 @@
+[console_scripts]
+example-basic=examples.basic:main
+example-click-args=examples.click_args:main
+
