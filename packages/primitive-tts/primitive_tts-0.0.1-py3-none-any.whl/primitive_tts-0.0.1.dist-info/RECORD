@@ -1,0 +1,7 @@
+primitive_tts/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+primitive_tts/en.py,sha256=pR4F0JvUZ5uUcpPEPLi4i1SYXBzGsmnwicEJxRubeAM,25159
+primitive_tts/speech.py,sha256=brpvYOv-XLnYLipZqo2fWwcrpB5HST9OhRiPZE0CoXA,3273
+primitive_tts-0.0.1.dist-info/METADATA,sha256=mSRwMr4B4lH9koto6XHuqbj2yd2MTEE-48bIzeRJDjw,5528
+primitive_tts-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+primitive_tts-0.0.1.dist-info/licenses/LICENSE,sha256=_buf4D_BxjT3x8SBhP0Rh966qP3zpbButcLI4bPq_TY,1068
+primitive_tts-0.0.1.dist-info/RECORD,,
