@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: phone-number-validator-bobjones1024
+Version: 0.1.2
+Summary: 
+Author: adamscarlat
+Author-email: adamscarlat@gmail.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+* One time operation:
+  poetry config pypi-token.pypi 
+
+* Build and publish (project name must be unique in pypi)
+  poetry build
+  poetry publish
+
+
