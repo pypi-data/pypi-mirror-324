@@ -1,0 +1,35 @@
+[build-system]
+
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+
+name = "aesoppy"
+version = "1.1.0"
+description = "Python Library for Data Wrangling and API Interactions on Stock Market Data"
+readme = "README.md"
+authors = [{ name = "Harvey Wargo"}]
+license = {file = "LICENSE.txt"}
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+keywords = [
+    "Stock",
+    "GuruFocus",
+    "Stock Data",
+    "Dividends"
+]
+
+dependencies = [
+    "requests",
+    "pandas",
+    "datetime"
+]
+
+requires-python = ">=3.9"
+
+[project.urls]
+Homepage = "https://github.com/harveywargo2/aesoppy"
