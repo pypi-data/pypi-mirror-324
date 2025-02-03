@@ -1,0 +1,2 @@
+[console_scripts]
+mcp-x-post = mcp_x_post:main
