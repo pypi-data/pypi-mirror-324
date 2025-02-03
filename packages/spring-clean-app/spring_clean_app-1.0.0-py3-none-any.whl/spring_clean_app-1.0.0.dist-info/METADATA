@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: spring-clean-app
+Version: 1.0.0
+Summary: A CLI application that helps create Spring Boot applications following the Clean Architecture pattern
+License: MIT
+Author: KAN19
+Author-email: nguyenkiet0807@gmail.com
+Requires-Python: >=3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=13.9.4,<14.0.0)
+Description-Content-Type: text/markdown
+
+poetry install
+
+poetry env info --path
+
+	1.	Open the Command Palette (Ctrl + Shift + P) and type “Python: Select Interpreter”.
+	2.	Choose the Python interpreter associated with your Poetry project. If it’s not listed, add it manually by providing the path from poetry env info --path.
+
+
+poetry run spring-clean-app init

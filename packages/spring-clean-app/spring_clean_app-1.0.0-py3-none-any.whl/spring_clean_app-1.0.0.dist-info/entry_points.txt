@@ -1,0 +1,3 @@
+[console_scripts]
+spring-clean-app=spring_clean_app.main:cli
+
