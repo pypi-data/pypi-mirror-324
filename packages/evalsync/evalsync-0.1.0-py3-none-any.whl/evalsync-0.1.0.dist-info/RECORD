@@ -1,0 +1,8 @@
+evalsync/__init__.py,sha256=F5V153zAnVPeSEXsia__hA-PCCB3cSycDooIrFclUjI,166
+evalsync/manager.py,sha256=Uk1ClqKriYKapRS8pgMS1zo4PYcMySlWg5YQb7ENx9s,1505
+evalsync/worker.py,sha256=I-Ut_X9L_QKjcF6vJxplsKsh40szq_5a1TdxKs9BWUA,2884
+evalsync/proto/sync_pb2.py,sha256=W73CnDOsPUV8G6if1egDhlcJJLOJvrLfX5h2KL06e1g,2438
+evalsync/proto/sync_pb2.pyi,sha256=3mqjBdQ4x1pUJ2ZCeKuxglXYqSp8rm3vtS-IQ7te9vU,4231
+evalsync-0.1.0.dist-info/METADATA,sha256=QHlRYSww5QRyeQ1TdWvNUr2bNEiTWKys6NTwizBOhFI,365
+evalsync-0.1.0.dist-info/WHEEL,sha256=C2FUgwZgiLbznR-k0b_5k3Ai_1aASOXDss3lzCUsUug,87
+evalsync-0.1.0.dist-info/RECORD,,
