@@ -1,0 +1,2 @@
+[tool.poetry.scripts]
+wangfusamplepackage = "wangfusamplepackage:main"
