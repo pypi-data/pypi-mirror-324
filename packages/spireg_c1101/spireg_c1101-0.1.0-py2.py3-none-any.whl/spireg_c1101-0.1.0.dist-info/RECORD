@@ -1,0 +1,9 @@
+spireg_c1101/__init__.py,sha256=w4fXicJjqODsietv9otlx9beJuS2vOtblE5eHiiuYfc,203
+spireg_c1101/__version__.py,sha256=RSa_oZTAGYcJyJ9txJbojFQWIQbXCiI0eYXhGJv9Li8,58
+spireg_c1101/configuration_register.py,sha256=gFg8Y3mFbmQtgXOlOWQrCme-2Qeq-oclfoLyYOap81Q,45917
+spireg_c1101/spi_address_space.py,sha256=xXFu6nh88QjZOt4NKkajJRua6Nc1TJeztyK6m00nD5A,6086
+spireg_c1101/status_register.py,sha256=KWXmulu8E29AqYcOR2ymFHpXwYDBz4sM8mHaA3jRIGA,7508
+spireg_c1101-0.1.0.dist-info/LICENSE,sha256=0SAgqCl8RI6Vm7Rv5YC6CPyLA2MXedQM9tq17WMXl-o,33041
+spireg_c1101-0.1.0.dist-info/WHEEL,sha256=ssQ84EZ5gH1pCOujd3iW7HClo_O_aDaClUbX4B8bjKY,100
+spireg_c1101-0.1.0.dist-info/METADATA,sha256=PJpQnmd6_r0ZwqCYqtT5z7ukziFis5nGFvkTsgAQ8UM,2543
+spireg_c1101-0.1.0.dist-info/RECORD,,
