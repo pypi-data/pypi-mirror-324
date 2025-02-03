@@ -1,0 +1,45 @@
+{
+  "name": "jk-soccer-core",
+  "version": "1.0.0",
+  "description": "The core Soccer module for jedi-knights",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"No test\"",
+    "prepare": "husky || true",
+    "lint": "eslint commitlint.config.js eslint.config.mjs release.config.js && jsonlint -q *.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "something"
+  },
+  "keywords": [
+    "something",
+    "else"
+  ],
+  "author": "Omar Crosby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jedi-knights/jk-soccer-core/issues"
+  },
+  "homepage": "https://github.com/jedi-knights/jk-soccer-core#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@eslint/js": "^9.19.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.0",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.0",
+    "@semantic-release/release-notes-generator": "^14.0.1",
+    "eslint": "^9.19.0",
+    "globals": "^15.11.0",
+    "husky": "^9.1.6",
+    "jsonlint": "^1.6.3",
+    "semantic-release": "^24.1.2"
+  }
+}
