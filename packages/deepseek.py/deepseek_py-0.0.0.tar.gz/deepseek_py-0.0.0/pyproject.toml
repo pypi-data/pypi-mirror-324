@@ -1,0 +1,7 @@
+[project]
+name = "deepseek.py"
+authors = [
+    { name = "sqdnoises" },
+]
+version = "0.0.0"
+description = "Coming soon"
