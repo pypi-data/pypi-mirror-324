@@ -1,0 +1,7 @@
+lightcnn_pytorch/__init__.py,sha256=45sYCCSa81NiobRNp2OlfGEPDpx0RFJK1MZZUp-Z-6k,144
+lightcnn_pytorch/model.py,sha256=nfS25VVGImWCmxVRRysgqkyKC7HBu1Ed2SiIDJu9xGY,6549
+lightcnn_pytorch/preprocessing.py,sha256=tOrw6rhXsnjUMqrsHOyBUnGomENG90vS4epJITu-cBw,3813
+lightcnn_pytorch-0.2.7.dist-info/METADATA,sha256=x527hiinL4SKcXrThi_ZfMzrpWz_QLxr1RRDoP_FCWU,813
+lightcnn_pytorch-0.2.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+lightcnn_pytorch-0.2.7.dist-info/top_level.txt,sha256=Os0RRUkhwICdMj_K5cT5d8qwrmomoW38cfkvpwbu2lY,17
+lightcnn_pytorch-0.2.7.dist-info/RECORD,,
