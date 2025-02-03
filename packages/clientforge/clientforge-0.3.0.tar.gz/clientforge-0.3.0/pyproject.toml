@@ -1,0 +1,75 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "clientforge"
+version = "0.3.0"
+description = "A set of tools and building blocks to allow simple and easy creation of clients for RESTful APIs."
+readme = "README.md"
+license = "Apache-2.0"
+authors = [
+    {name = "Steven Hogue", email = "steven.d.hogue@gmail.com"},
+]
+
+requires-python = ">=3.11"
+dependencies = [
+    "dataclass-wizard==0.34.0",
+    "httpx>=0.28.1",
+    "jsonpath-ng>=1.7.0",
+    "oauthlib>=3.2.2",
+    "pre-commit>=4.1.0",
+    "types-oauthlib>=3.2.0.20240806",
+]
+
+[dependency-groups]
+dev = [
+    "hatchling>=1.27.0",
+    "mypy>=1.14.1",
+    "ruff>=0.9.4",
+]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+target-version = "py311"
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+    # docstyle
+    "D",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "v$version"
+version_scheme = "pep440"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true
+
+[tool.mypy]
+python_version = "3.11"
+
+[[tool.mypy.overrides]]
+module = [
+    "dataclass_wizard",
+    "jsonpath_ng",
+]
+ignore_missing_imports = true
