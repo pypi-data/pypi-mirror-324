@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codedharmony-ai-models"
+version = "0.1.0"
+description = "A package to manage connections to AI model services such as OpenAI and Azure OpenAI."
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Andrew Vialichka", email = "andreivialichka@onlineimmigrant.com"}]
+keywords = ["ai", "openai", "azure", "models", "sdk"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License"
+]
+dependencies = [
+  "openai>=1.0.0",  # Official OpenAI Python SDK
+]
