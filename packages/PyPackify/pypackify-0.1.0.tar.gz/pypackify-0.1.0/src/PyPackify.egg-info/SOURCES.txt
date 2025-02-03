@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+pyproject.toml
+src/PyPackify/__init__.py
+src/PyPackify/pypackify.py
+src/PyPackify.egg-info/PKG-INFO
+src/PyPackify.egg-info/SOURCES.txt
+src/PyPackify.egg-info/dependency_links.txt
+src/PyPackify.egg-info/entry_points.txt
+src/PyPackify.egg-info/top_level.txt

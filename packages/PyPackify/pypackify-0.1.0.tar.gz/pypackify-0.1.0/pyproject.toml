@@ -1,0 +1,23 @@
+[build-system]
+requires = [ "setuptools>=42", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyPackify"
+version = "0.1.0"
+description = "Easily create Python packages from a single Python file."
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+[[project.authors]]
+name = "SpyC0der77"
+email = "carter.stach@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.scripts]
+pypackify = "packager:main"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
