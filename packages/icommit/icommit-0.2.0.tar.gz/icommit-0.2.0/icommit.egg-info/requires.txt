@@ -1,0 +1,5 @@
+groq>=0.15.0
+pyperclip>=1.9.0
+
+[dev]
+twine>=6.1.0
