@@ -1,0 +1,15 @@
+shasha/__init__.py,sha256=sEncwYuW45J_LEEJoXfHZwAunjhUUSbakqT25x_GDIk,408
+shasha/decision_tree.py,sha256=uzD5vyBDrXo4pflDYoNpLjkQl3K0zxQ-PlgW4KHYPog,5368
+shasha/decision_tree_reg.py,sha256=lSjKiyp-Wx3jQyAi58XGsBYsTms2hrfSMzXXD0WNWTA,3199
+shasha/knn.py,sha256=gBlV1nk8zN3iEatnMQuwbLmv9-XXWzMAv6KNXOOupbA,993
+shasha/linear_regression.py,sha256=RJ_g2oyfwO-QWyIrnQlPOtvqhhJJZ9MqHDzED24HOwk,4379
+shasha/logistic_regression.py,sha256=ScafifbTGhvz7y-yh3k7dn_XD7D0VnXSH92K_lK9qdc,1491
+shasha/multiple_regression.py,sha256=b4we3N7HcfMdj4Afj8Ptau3UPOQ9q012wmaalgTYl10,1633
+shasha/random_forest.py,sha256=zNW5w9H63X8PBSMB2BBsoM777fv5MZlacWynxijImJY,1688
+shasha/svm.py,sha256=QnZyb_83GcmZV023gbZDnp8b25Wo29IQJuz-erg8nvg,2182
+shasha/xgb_classifier.py,sha256=ac8LVQfsN6Q0cuS68B8GA9Szc4X9c0g0EsGY6T4GQ8A,1932
+shasha-0.0.5.dist-info/LICENSE,sha256=tRlBtv73TzbzZIzfubPYhodCDVQFzaFtOAUw1wO6OBY,1089
+shasha-0.0.5.dist-info/METADATA,sha256=HW77VaokVB5T9qeCcIQ1dKoxS6edh0BjSBzNYsLUou0,5599
+shasha-0.0.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+shasha-0.0.5.dist-info/top_level.txt,sha256=2EonL9TGKEbXssNVGW9mEOR3zp9BpZW8PM6mDlWW1Tc,7
+shasha-0.0.5.dist-info/RECORD,,
