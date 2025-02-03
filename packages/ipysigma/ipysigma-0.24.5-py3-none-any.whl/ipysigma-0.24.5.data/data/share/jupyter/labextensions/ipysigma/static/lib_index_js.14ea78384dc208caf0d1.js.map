@@ -1,0 +1,1 @@
+{"version":3,"file":"lib_index_js.14ea78384dc208caf0d1.js","mappings":";;;;;;;;;;;;;;;;;;;;;;;;;AAAA,gFAA0B;AAC1B,8EAAyB","sources":["webpack://ipysigma/./src/index.ts"],"sourcesContent":["export * from './version';\nexport * from './widget';\n"],"names":[],"sourceRoot":""}
