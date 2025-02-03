@@ -1,0 +1,10 @@
+v_installer/__init__.py,sha256=vvXR-gQvhrrBsBiTCxuX_vONI0TtDfkVYrqsgwBW3Vk,250
+v_installer/cli.py,sha256=yOKXvisEdONSJRNk3_j73BQwU5vYFAQ0sq2L59pz3Fs,59
+v_installer/gui.py,sha256=fGq_7zht8BT7a46lf9XPbKtVz_hsjNUcEDwonawn6vs,14890
+v_installer/package_version.txt,sha256=8Gh3ngSUKVWXqibm2HOp1VhaX3BWdz4Fa7L4kkdQUyY,7
+v_installer-0.0.23.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+v_installer-0.0.23.dist-info/METADATA,sha256=2NJgOYd9hy9y8p2U3XmoS2c0NDQ9fHnfs6-zcHaQaZ0,1273
+v_installer-0.0.23.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+v_installer-0.0.23.dist-info/entry_points.txt,sha256=l_xdRBPRcWYFGyScm6Dw1_uACiJwGd3nVsnCOC-E0AY,56
+v_installer-0.0.23.dist-info/top_level.txt,sha256=4rhmDCxHv8MZ0p6ppxoEsgC0Rpu6OEixwG6j2uCDxao,12
+v_installer-0.0.23.dist-info/RECORD,,
