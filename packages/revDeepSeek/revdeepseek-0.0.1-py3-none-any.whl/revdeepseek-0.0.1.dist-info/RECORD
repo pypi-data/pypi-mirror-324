@@ -1,0 +1,8 @@
+revDeepSeek/__init__.py,sha256=ucpqT393SVAOaP__2oShacgdVToQ6ddHEmUKXTl4CP0,66
+revDeepSeek/main.py,sha256=Ne5KbUjlMFEHTwia_BV8b3p8QQoC6y9SfjmZvDIXO6A,11441
+revDeepSeek/solve_pow.py,sha256=4u8_d-koOSggXaDoDA8sLDVFCvajhDE6lv3e4hSYE9Y,3511
+revDeepSeek/wasm/sha3_wasm_bg.7b9ca65ddd.wasm,sha256=s_yozAcsHe-9YMAiZqjki9MHoYBKr_QxSQCupyDnL30,26612
+revdeepseek-0.0.1.dist-info/METADATA,sha256=AWZUlj0m1oEhEUDZqX6u1eA19aXGqGyaDW6pnKmpShQ,2927
+revdeepseek-0.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+revdeepseek-0.0.1.dist-info/licenses/LICENSE,sha256=Rw13_mnstoTNwW07xGIYUCEUANR3g_IiaZKZvng2ID8,1069
+revdeepseek-0.0.1.dist-info/RECORD,,
