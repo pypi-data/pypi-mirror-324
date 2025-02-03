@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/CISPay"]
+
+[project]
+name = "CISPay"
+version = "1.0.2"
+description = "Library for Python 3+ to accept payments on CISPay"
+readme = "README.md"
+authors = [{ name = "dotmix", email = "me@dotmix.eu" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["payments", "api"]
+requires-python = ">=3.7"
+dependencies = [
+  "requests"
+]
+
+[project.urls]
+Homepage = "https://github.com/CISPay/PythonLib"
