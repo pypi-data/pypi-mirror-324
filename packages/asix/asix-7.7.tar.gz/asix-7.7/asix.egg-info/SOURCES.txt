@@ -1,0 +1,8 @@
+README.md
+asix.py
+setup.py
+asix.egg-info/PKG-INFO
+asix.egg-info/SOURCES.txt
+asix.egg-info/dependency_links.txt
+asix.egg-info/requires.txt
+asix.egg-info/top_level.txt
