@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/geopreprova3/GeoPre.py
+src/geopreprova3/__init__.py
+src/geopreprova3/cloud_masking.py
+src/geopreprova3/stacking.py
+src/geopreprova3.egg-info/PKG-INFO
+src/geopreprova3.egg-info/SOURCES.txt
+src/geopreprova3.egg-info/dependency_links.txt
+src/geopreprova3.egg-info/requires.txt
+src/geopreprova3.egg-info/top_level.txt
+test/test_GeoPre.py
