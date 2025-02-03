@@ -1,0 +1,16 @@
+rich<14,>=13.0
+
+[all]
+rich<14,>=13.0
+pytest<8,>=7.0
+black<23,>=22.0
+flake8
+build
+twine
+
+[dev]
+pytest<8,>=7.0
+black<23,>=22.0
+flake8
+build
+twine
