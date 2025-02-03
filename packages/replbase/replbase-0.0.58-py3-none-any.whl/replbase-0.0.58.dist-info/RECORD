@@ -1,0 +1,7 @@
+replbase/__init__.py,sha256=bevz_AUz5AbUKsrai7CJyBLzpBDp3QmanKCZfWxBBQM,238
+replbase/cmd_meta.py,sha256=KNxPj7oISwQNSu2dB_cH_ziQ-j23F9NP5JV6slntLrY,9895
+replbase/repl_base.py,sha256=jE-YwKyQ4ZXMaO2YWmw5BjNf7ma79yXUBXswUg7SowI,20969
+replbase-0.0.58.dist-info/LICENSE,sha256=4LUJDhEPKIEdlw-ADfuu_vhCbhQA0xhZF9CMm4KZ_nI,1063
+replbase-0.0.58.dist-info/METADATA,sha256=SoTcPllchj0IbNuJhni383Bqea8mPNyQcpvVXHgr9VY,715
+replbase-0.0.58.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+replbase-0.0.58.dist-info/RECORD,,
