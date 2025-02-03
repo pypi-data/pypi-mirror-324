@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: llmtricks
+Version: 0.0.5
+Summary: A package for LLM tricks
+Author-email: Delip Rao <none@none.com>
+License: MIT
+Project-URL: Homepage, https://github.com/delip/llmtricks
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# llmtricks
+
+A package for LLM tricks.
+
+## Installation
+
+```bash
+pip install llmtricks
+```

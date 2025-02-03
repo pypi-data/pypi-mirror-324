@@ -1,0 +1,26 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llmtricks"
+version = "0.0.5"
+description = "A package for LLM tricks"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Delip Rao", email = "none@none.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.10"
+
+[project.urls]
+Homepage = "https://github.com/delip/llmtricks"
+
+[tool.setuptools.packages.find]
+exclude = ["notebooks"]

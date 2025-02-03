@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+llmtricks/__init__.py
+llmtricks/_version.py
+llmtricks/clients.py
+llmtricks/reason.py
+llmtricks.egg-info/PKG-INFO
+llmtricks.egg-info/SOURCES.txt
+llmtricks.egg-info/dependency_links.txt
+llmtricks.egg-info/top_level.txt
