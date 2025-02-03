@@ -1,0 +1,11 @@
+--- sn-mathphys-num.bst	2024-11-02 22:28:28.891069771 +0100
++++ sn-mathphys-num-scoop.bst	2025-02-01 12:29:52.259856496 +0100
+@@ -1380,7 +1380,7 @@
+             { "\url{" }
+              { "\burl{" }
+           if$
+-          url replace.tilde * "}" * 
++          url * "}" *
+           output	
+         }
+       if$

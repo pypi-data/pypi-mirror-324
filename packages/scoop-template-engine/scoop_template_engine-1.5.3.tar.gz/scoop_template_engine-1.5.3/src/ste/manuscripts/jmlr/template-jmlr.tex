@@ -1,0 +1,104 @@
+% A LaTeX template for submissions to Journal of Machine Learning Research (JMLR).
+% https://github.com/JmlrOrg/jmlr-style-file
+% Derived from sample.tex.
+<<MinimumVersion: 1.5.3>>
+<<% >>
+<<TemplateDescription: Journal of Machine Learning Research>>
+<<% >>
+<<Dependency: jmlr2e.sty>>
+<<Dependency: prepreamble-jmlr.sty>>
+<<Dependency: preamble-jmlr.sty>>
+<<Dependency: postpreamble-jmlr.sty>>
+<<% >>
+<<CreateCustomBibliography: --arxivtotypeornote --haltotypeornote --urntonote>>
+
+% Prepreamble follows.
+<<LaTeXPrePreamble>>
+
+% Load the documentclass.
+\documentclass[%
+twoside,
+11pt,
+<<DocumentClassOptions>>]{article}
+
+% Include further packages and settings relevant for the template.
+\usepackage{jmlr2e}
+\usepackage{lastpage}
+
+% Preamble follows.
+<<LaTeXPreamble>>
+
+% Setup document metadata.
+\makeatletter
+\@ifpackageloaded{hyperref}{%
+	\hypersetup{
+		pdftitle = {<<Title>>},
+		pdfauthor = {<<AuthorsFullNamesCommaSeparated>>},
+		pdfkeywords = {<<KeywordsCommaSeparated>>},
+		pdfcreator = {<<ScoopTemplateEngineSignature>>}
+	}
+}{
+	\pdfinfo{
+		/Title (<<Title>>)
+		/Author (<<AuthorsFullNamesCommaSeparated>>)
+		/Subject ()
+		/Keywords (<<KeywordsCommaSeparated>>)
+		/Creator (<<ScoopTemplateEngineSignature>>)
+	}
+}
+\makeatother
+
+% Set running headers.
+\jmlrheading{23}{2022}{1--\pageref{LastPage}}{1/21; Revised 5/22}{9/22}{21-0000}{<<AuthorsRunningHeadWiley>>}
+
+\ShortHeadings{<<ShortTitle>>}{<<AuthorsRunningHeadWiley>>}
+\firstpageno{1}
+
+% Set title and subtitle information.
+\title{<<TitleNewlineSubTitle>>}
+
+% Set author information.
+\author{%
+<<AuthorsInstitutionsJMLR>>
+}
+
+% Set editor information.
+\makeatletter
+\ifdefined\@editor\else
+\usepackage{cprotect}
+\cprotect\editor{Please provide an \verb!\editor{}! statement through the \verb!preamble:! setting of the document's \verb!.yaml! data file.}
+\fi
+\makeatother
+
+\begin{document}
+
+% Typeset the opening page.
+\maketitle
+
+% Insert the abstract.
+<<CommentIfAbstractEmpty>>\begin{abstract}
+<<InputAbstract>>
+<<CommentIfAbstractEmpty>>\end{abstract}
+
+% Insert the keywords.
+<<CommentIfKeywordsEmpty>>\begin{keywords}
+<<KeywordsCommaSeparated>>
+<<CommentIfKeywordsEmpty>>\end{keywords}
+
+% Insert the dedication information.
+<<DedicationEnvironment>>
+
+% Insert the document body.
+<<InputBody>>
+
+% Insert the funding information.
+<<FundingAcks>>
+
+% Insert the appendix.
+\appendix
+<<InputAppendix>>
+
+% Insert the bibliography.
+<<CustomBibliography>>
+
+\end{document}
