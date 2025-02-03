@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "spring-clean-app"
+version = "1.0.0"
+description = "A CLI application that helps create Spring Boot applications following the Clean Architecture pattern"
+authors = ["KAN19 <nguyenkiet0807@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12"
+click = ">=8.1.8,<9.0.0"
+requests = ">=2.32.3,<3.0.0"
+rich = ">=13.9.4,<14.0.0"
+
+[tool.poetry.scripts]
+spring-clean-app = "spring_clean_app.main:cli"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
