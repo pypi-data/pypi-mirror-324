@@ -1,0 +1,43 @@
+Metadata-Version: 2.4
+Name: django-runprod
+Version: 0.1.2
+Summary: Django management command to run WSGI server for production. Also support serving static files through WhiteNoise.
+Author-email: kamal <kamal@koditi.my>
+Requires-Python: >=3.10
+Requires-Dist: gunicorn>=23.0.0
+Requires-Dist: sentry-sdk>=2.20.0
+Requires-Dist: whitenoise>=6.8.2
+Description-Content-Type: text/markdown
+
+Django management command to run WSGI server for production. Also support serving static files through WhiteNoise.
+
+## Usage
+Install it from PyPI:-
+
+```
+uv add django-runprod
+```
+
+Add it to `INSTALLED_APPS`:-
+
+```
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "django_runprod",
+    ...
+]
+```
+
+Run it through management command:-
+
+```
+python manage.py runprod
+```
+
+## License
+MIT
