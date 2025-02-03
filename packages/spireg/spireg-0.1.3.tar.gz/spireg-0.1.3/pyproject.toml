@@ -1,0 +1,21 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "spireg"
+authors = [{name = "Daniël van den Berg", email = "daniel@dmvandenberg.nl"}]
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "License :: Other/Proprietary License"
+]
+dynamic = ["version", "description"]
+readme = "README.md"
+
+dependencies = [
+    "bitstring"
+]
+
+[project.optional-dependencies]
+dev = ["flake8"]
