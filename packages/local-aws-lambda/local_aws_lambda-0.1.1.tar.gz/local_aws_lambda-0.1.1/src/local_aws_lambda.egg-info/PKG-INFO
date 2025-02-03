@@ -1,0 +1,10 @@
+Metadata-Version: 2.2
+Name: local-aws-lambda
+Version: 0.1.1
+Summary: A package to simulate AWS Lambda locally.
+Author-email: Your Name <your.email@example.com>
+Project-URL: Homepage, https://github.com/yourusername/local-aws-lambda
+Project-URL: Bug Tracker, https://github.com/yourusername/local-aws-lambda/issues
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
