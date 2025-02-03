@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nonebot_plugin_more_rules"
+dynamic = [ "version" ]
+authors = [
+    {name = "Drelf2018", email = "drelf2018@gmail.com"},
+]
+description = "更多符合 NoneBot2 规范的响应规则"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["NoneBot2", "Rule"]
+license = { file = "LICENSE" }
+dependencies = [
+    "nonebot2",
+    "pypinyin",
+]
