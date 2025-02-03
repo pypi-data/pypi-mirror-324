@@ -1,0 +1,15 @@
+README.md
+setup.py
+pydoc_translate.egg-info/PKG-INFO
+pydoc_translate.egg-info/SOURCES.txt
+pydoc_translate.egg-info/dependency_links.txt
+pydoc_translate.egg-info/entry_points.txt
+pydoc_translate.egg-info/requires.txt
+pydoc_translate.egg-info/top_level.txt
+translator_module/__init__.py
+translator_module/cli.py
+translator_module/comment_extractor.py
+translator_module/file_handler.py
+translator_module/gui.py
+translator_module/translator.py
+translator_module/utils.py
