@@ -1,0 +1,48 @@
+
+[project]
+name = "libstruct"
+version = "0.0.3"
+authors = [
+  { name="Chuck Bass", email="chuck@arcocad.net" },
+]
+maintainers = [
+  { name="Chuck Bass", email="chuck@arcocad.net" },
+]
+description = "Wrapper for struct module to simplify binary data"
+readme = "readme.md"
+requires-python = ">=3.12"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.12",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+dependencies = ["hexout>=0.5.0"]
+
+
+[project.urls]
+Homepage = "https://github.com/hucker233/libstruct"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^6.2"
+
+[tool.poetry.scripts]
+your-script = 'yourpackage:main'
+
+[[tool.poetry.source]]
+name = "pypi"
+url = "https://pypi.org/libstruct"
+secondary = true
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://test.pypi.org/libstruct/"
+publish-url = "https://test.pypi.org/libstruct/"
