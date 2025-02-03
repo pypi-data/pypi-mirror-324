@@ -1,0 +1,42 @@
+include LICENSE.txt
+include README.md
+
+include setup.py
+include pyproject.toml
+include pytest.ini
+
+include tsconfig.json
+include package.json
+include webpack.config.js
+include ipysigma/labextension/*.tgz
+
+# Scripts
+prune scripts
+
+# Notebooks
+prune notebooks
+
+# Docs
+prune docs
+prune presentations
+
+# Tests
+prune tests
+prune ipysigma/tests
+
+# Javascript files
+graft ipysigma/nbextension
+graft src
+graft css
+prune **/node_modules
+prune lib
+
+# Patterns to exclude from any directory
+global-exclude *~
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude .git
+global-exclude .ipynb_checkpoints
+global-exclude .DS_Store
+global-exclude .vscode
+global-exclude .pytest_cache

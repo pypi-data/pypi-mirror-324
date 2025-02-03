@@ -1,0 +1,7 @@
+ipywidgets<9,>=7
+
+[examples]
+
+[test]
+pytest>=4.6
+nbval
