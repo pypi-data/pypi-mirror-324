@@ -1,0 +1,5 @@
+.env
+.crsq-heap
+dist
+.vscode
+__pycache__
