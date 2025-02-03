@@ -1,0 +1,9 @@
+README.md
+setup.py
+hangman_jg/__init__.py
+hangman_jg/hangman_main.py
+hangman_jg/tempCodeRunnerFile.py
+hangman_jg.egg-info/PKG-INFO
+hangman_jg.egg-info/SOURCES.txt
+hangman_jg.egg-info/dependency_links.txt
+hangman_jg.egg-info/top_level.txt
