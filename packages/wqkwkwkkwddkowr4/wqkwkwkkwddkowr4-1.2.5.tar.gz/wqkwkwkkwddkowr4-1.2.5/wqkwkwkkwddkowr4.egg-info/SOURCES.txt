@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+wqkwkwkkwddkowr4/__init__.py
+wqkwkwkkwddkowr4.egg-info/PKG-INFO
+wqkwkwkkwddkowr4.egg-info/SOURCES.txt
+wqkwkwkkwddkowr4.egg-info/dependency_links.txt
+wqkwkwkkwddkowr4.egg-info/top_level.txt

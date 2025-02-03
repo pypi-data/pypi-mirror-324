@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wqkwkwkkwddkowr4"                  # Имя вашего пакета
+version = "1.2.5"                    # Начальная версия; будет обновляться semantic-release
+description = "Описание моего проекта"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Name", email = "your.email@example.com" }
+]
+dependencies = [
+    # Здесь укажите зависимости вашего проекта, например:
+    # "requests>=2.25.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+# Если требуется исключить определённые каталоги, можно добавить:
+# exclude = ["tests*"]
+
+[tool.semantic_release]
+# Путь к файлу и переменной, где хранится версия.
+# Формат: "путь/до/файла.py:имя_переменной"
+version_variable = "wqkwkwkkwddkowr4/__init__.py:__version__"
+
+# Флаг, указывающий, что при выпуске релиза версия должна быть зафиксирована (commit).
+commit_version_number = true
+
+# Основная ветка, для которой будет осуществляться релиз.
+branch = "main"
+
+# Дополнительные настройки можно указать согласно документации python-semantic-release,
+# например, настройка шаблонов для changelog и т.д.
