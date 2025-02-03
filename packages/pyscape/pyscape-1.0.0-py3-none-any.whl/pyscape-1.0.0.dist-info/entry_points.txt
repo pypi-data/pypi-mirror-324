@@ -1,0 +1,2 @@
+[console_scripts]
+escapy = escapy.__main__:main
