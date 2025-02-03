@@ -1,0 +1,3 @@
+[console_scripts]
+editorconfig-cli=editorconfig_cli.main:main
+
