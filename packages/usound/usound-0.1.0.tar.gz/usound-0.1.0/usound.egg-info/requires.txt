@@ -1,0 +1,4 @@
+cmdbox
+faster-whisper
+soundcard
+soundfile
