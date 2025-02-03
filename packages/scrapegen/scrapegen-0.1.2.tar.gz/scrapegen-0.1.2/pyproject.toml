@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scrapegen"
+version = "0.1.2"
+authors = [
+    { name = "Affan Shaikhsurab", email = "affanshaikhsurab@gmail.com" },
+]
+description = "AI-driven web scraping framework"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+requires-python = ">=3.7"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+keywords = ["AI", "bing", "search", "scraper", "web scraping", "automation"]
+dependencies = [
+    "requests>=2.26.0",
+    "beautifulsoup4>=4.9.3",
+    "langchain-google-genai>=0.0.3",
+    "pydantic>=2.0.0",
+    "lxml>=4.9.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/affanshaikhsurab/scrapegen"
+Documentation = "https://github.com/affanshaikhsurab/scrapegen/docs"
+Repository = "https://github.com/affanshaikhsurab/scrapegen"
+Issues = "https://github.com/affanshaikhsurab/scrapegen/issues"
