@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: pandasai-sql
+Version: 0.1.6
+Summary: SQL integration for PandaAI
+License: MIT
+Author: Gabriele Venturi
+Requires-Python: >=3.9,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Provides-Extra: cockroach
+Provides-Extra: mysql
+Provides-Extra: postgres
+Requires-Dist: cockroachdb (>=0.3.5,<0.4.0) ; extra == "cockroach"
+Requires-Dist: numpy (>=1.23.2,<2.0.0)
+Requires-Dist: pandasai (>=3.0.0b4)
+Requires-Dist: psycopg2-binary (>=2.9.10,<3.0.0) ; extra == "postgres"
+Requires-Dist: pymysql (>=1.1.1,<2.0.0) ; extra == "mysql"
+Requires-Dist: sqlalchemy (>=2.0.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# SQL Extension for PandaAI
+
+This extension integrates SQL connectors with PandaAI, providing support for various SQL databases (mysql, postgres, cockroachdb, sqlite).
+
+## Installation
+
+You can install this extension using poetry:
+
+```bash
+poetry install pandasai-sql
+```
+
