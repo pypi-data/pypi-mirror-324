@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+BioNick/__init__.py
+BioNick/functions.py
+BioNick/interface.py
+BioNick.egg-info/PKG-INFO
+BioNick.egg-info/SOURCES.txt
+BioNick.egg-info/dependency_links.txt
+BioNick.egg-info/requires.txt
+BioNick.egg-info/top_level.txt
