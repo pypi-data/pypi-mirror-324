@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: TransactionUtility
+Version: 0.0.34
+Summary: Solve the issue of fields are not in same groups after changing the X and Y value of columns from twasta dashboard
+Author: Proteus Technology PVT. LTD.
+Author-email: <apps@baseinformation.com>
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+License-File: LICENCE.txt
+
+Solve the issue of fields are not in same groups after changing the X and Y value of columns from twasta dashboard
