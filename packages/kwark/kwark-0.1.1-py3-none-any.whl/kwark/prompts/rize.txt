@@ -1,0 +1,14 @@
+Summarize the text below.
+
+DO NOT reference the text itself. For example: Do not return sentences beginning with "the text says..."
+
+If the text contains a conversation, DO NOT name the speakers. For example, Do not return sentences beginning with "Steve said..."
+
+State the information and conclusions from the text, presenting them as independent pieces of information.
+
+Respond with a single paragraph of text with 1-4 complete sentences.
+
+-----
+
+{text}
+

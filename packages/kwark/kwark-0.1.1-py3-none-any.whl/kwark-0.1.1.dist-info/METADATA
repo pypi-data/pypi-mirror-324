@@ -1,0 +1,47 @@
+Metadata-Version: 2.3
+Name: kwark
+Version: 0.1.1
+Summary: Tap into AI brilliance from a simple shell command
+License: MIT
+Author: Steampunk Wizard
+Author-email: kwark@steamwiz.io
+Requires-Python: >=3.11,<3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: anthropic (>=0.45.2,<0.46.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: wizlib (>=3.1.4,<4.0.0)
+Description-Content-Type: text/markdown
+
+# Kwark
+
+## Tap into AI brilliance from a simple shell command
+
+The tool currently has one command, `rize`, short for "summarize", which uses the Anthropic API to summarize the conculsions from a discussion or thread. It's designed to allow capturing discussion from e.g. Slack and use the output for documentation.
+
+<a href="https://www.flaticon.com/">Logo by Freepik-Flaticon</a>
+
+## Usage
+
+The `rize` command processes text from standard input.
+
+```bash
+pbpaste | kwark rize
+```
+
+## Quick installation (MacOS)
+
+```bash
+brew install python@3.11
+python3.11 -m pip install pipx
+pipx install kwark
+```
+
+## Authentication
+
+Currently only works with Anthropic and requires a token set in the standard environment variable. Here's my trick to use 1Password.
+
+```bash
+export ANTHROPIC_API_KEY=$(op read "op://Private/Anthropic/api-key")
+```
