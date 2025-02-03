@@ -1,0 +1,17 @@
+{
+  "CreatedAt": "string",
+  "CustomSlug": "string",
+  "DeletedAt": "string",
+  "Description": "string",
+  "Favorite": true,
+  "ID": 0,
+  "Name": "string",
+  "Notes": "string",
+  "PhotoCount": 0,
+  "Priority": 0,
+  "Slug": "string",
+  "Thumb": "string",
+  "ThumbSrc": "string",
+  "UID": "string",
+  "UpdatedAt": "string"
+}

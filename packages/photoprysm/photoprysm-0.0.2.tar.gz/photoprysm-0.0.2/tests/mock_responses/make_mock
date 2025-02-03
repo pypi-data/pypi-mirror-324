@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+name="${2:name}";
+mkdir -p $name;
+cd $name;
+request_f="request.txt";
+echo "# --- Request ---" > $request_f;
+echo "url = \"https://demo.photoprism.app/api/v1/${3:endpoint}\"" >> $request_f;
+echo "request = \"$1\"" >> $request_f;
+echo "oauth2-bearer = \"234200000000000000000000000000000000000000000000\"" >> $request_f;
+echo "dump-header = \"headers.txt\"" >> $request_f;
+if [ "$#" -eq 4 ]; then
+    echo "data = $4" >> $request_f;
+fi
+curl -s -q -K $request_f | jq > body.json;
+cd - > /dev/null;

@@ -1,0 +1,15 @@
+{
+  "Comment": "string",
+  "CreatedAt": "string",
+  "CreatedBy": "string",
+  "Expires": 0,
+  "MaxViews": 0,
+  "ModifiedAt": "string",
+  "Perm": 0,
+  "ShareUID": "string",
+  "Slug": "string",
+  "Token": "string",
+  "UID": "string",
+  "VerifyPassword": true,
+  "Views": 0
+}
