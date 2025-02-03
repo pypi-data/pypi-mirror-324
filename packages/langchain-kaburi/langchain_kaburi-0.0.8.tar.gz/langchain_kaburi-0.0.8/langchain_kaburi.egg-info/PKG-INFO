@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: langchain_kaburi
+Version: 0.0.8
+Summary: 랭체인 편의 기능 라이브러리
+Author: author
+Author-email: specialemail@naver.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# 랭체인 편의 기능 라이브러리
+
+**Builders**
+```
+from langchain_kaburi.builders import ImageMessageBuilder
+
+img_builder = ImageMessageBuilder()
+message = (
+    img_builder.add_text("텍스트로 변환해")
+    .add_image_from_base64(image_data)
+    .build()
+)
+```
