@@ -1,0 +1,2 @@
+[console_scripts]
+dirai = dirai.cli:main
