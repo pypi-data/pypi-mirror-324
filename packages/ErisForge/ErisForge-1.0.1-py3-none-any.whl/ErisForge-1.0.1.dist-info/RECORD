@@ -1,0 +1,15 @@
+erisforge/__init__.py,sha256=X9YeH-mUt1oykJTXSVDHZ2fz0bF1sC_DRjhHAk58j8o,103
+erisforge/eris_forge.py,sha256=r_-S-_EpBaYBgW-tKknK52kptA3M3NOENPHk_AR36ZQ,27238
+erisforge/layers/__init__.py,sha256=P1AChYbnbX-JODFD3FUvaa_QPDpTlJFQI2JUEC4-F78,183
+erisforge/layers/layers.py,sha256=R0hEOlORGqnc9zLz8asSXnRPssSJlvArmrdq69Vi4TA,3264
+erisforge/scorers/__init__.py,sha256=IJp96b-8DtI374nGUqRsWGM2O_tatXykuoogaT8DVnY,351
+erisforge/scorers/base_scorer.py,sha256=gvDV8Bddmab5-yNijoX9lgscIK6H_IiR7nkudrD3o8k,256
+erisforge/scorers/refusal_scorer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+erisforge/scorers/refusal_scorer/expression_refusal_scorer.py,sha256=4Tmuhm8ZEDYYwGpiYpHndALnf9Pc1aCAJ7gqKJcEKM0,827
+erisforge/scorers/refusal_scorer/llama_guard_refusal_scorer.py,sha256=UjaaAhbITCAX6G0rYgNSXF3c4j2pshPJBNFexVkWxeU,2684
+erisforge/utils/__init__.py,sha256=fShaGo1yFlIILUpsihvex0qGaid4Mk1i7Il_X5BK22o,186
+erisforge/utils/layer_utils.py,sha256=bz3-tjVVdtjDVZlpZRb3NiiJpMJzB4TGD6ZRQ26T-kY,1656
+ErisForge-1.0.1.dist-info/METADATA,sha256=3MVeYTVjgTWDnvJ_wvvSvR8-3Zhy-YKvbmXWT_4gi70,5071
+ErisForge-1.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ErisForge-1.0.1.dist-info/top_level.txt,sha256=s4wCETnOh169DmyPjf0DvAKPYKIUBIiq8dNMM43CTeE,10
+ErisForge-1.0.1.dist-info/RECORD,,
