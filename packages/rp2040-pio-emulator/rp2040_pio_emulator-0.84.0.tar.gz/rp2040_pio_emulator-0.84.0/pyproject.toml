@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "rp2040-pio-emulator"
+version = "0.84.0"
+description = "RP2040 emulator for the testing and debugging of PIO programs"
+authors = ["Nathan Young"]
+license = "Apache-2.0"
+repository = "https://github.com/NathanY3G/rp2040-pio-emulator"
+readme = "README.md"
+packages = [
+    { include = "pioemu" }
+]
+keywords = [
+    "rp2040",
+    "rp2",
+    "raspberry-pi-pico",
+    "testing",
+    "tdd",
+    "debugging",
+]
+
+[tool.poetry.dependencies]
+python = "^3.10.13"
+
+[tool.poetry.group.dev.dependencies]
+pylint = "3.3.4"
+pytest = "8.3.4"
+coverage = "7.6.10"
+black = "25.1.0"
+isort = "6.0.0"
+mypy = "1.14.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
