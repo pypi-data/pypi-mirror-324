@@ -1,0 +1,8 @@
+[neon.plugin.solver]
+ovos-solver-wordnet-plugin = skill_ovos_wordnet:WordnetSolver
+
+[opm.plugin.persona]
+Wordnet = skill_ovos_wordnet:WORDNET_PERSONA
+
+[ovos.plugin.skill]
+skill-ovos-wordnet.openvoiceos = skill_ovos_wordnet:WordnetSkill
