@@ -1,0 +1,30 @@
+CHANGES
+=======
+
+0.0.3
+-----
+
+* Upgrade pbr to 5.1.1 ver
+* Add bazooka HTTP exceptions NotFoundError and ConflictError
+
+0.0.2
+-----
+
+* Upgrade requests to 2.20.0
+* Fix pep8 and update hacking module to 1.0.0 version
+* Update pbr requirement to 3.1.1
+* Python 3x support
+* Update travis config
+* Update requirements
+
+0.0.1
+-----
+
+* Update README.rst
+* Update README.rst
+* Update README.rst
+* Fix readme
+* Fix Readme formating
+* Fix pep8 and remove py26 support
+* Move to github
+* Initial commit
