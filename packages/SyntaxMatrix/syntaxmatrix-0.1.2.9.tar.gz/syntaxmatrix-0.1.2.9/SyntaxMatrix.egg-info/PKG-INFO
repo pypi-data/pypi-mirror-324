@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: SyntaxMatrix
+Version: 0.1.2.9
+Summary: SyntaxMUI: A customizable UI framework for Python AI assistants projects.
+Home-page: https://github.com/bobganti/SyntaxMatrix
+Author: Bob Nti
+Author-email: bob.nti@syntaxmatrix.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: Flask>=2.0.0
+Requires-Dist: openai
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+Desc.
