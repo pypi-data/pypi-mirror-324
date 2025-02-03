@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+cookies_converter/__init__.py
+cookies_converter/cookie_data.py
+cookies_converter/cookies_converter.py
+cookies_converter.egg-info/PKG-INFO
+cookies_converter.egg-info/SOURCES.txt
+cookies_converter.egg-info/dependency_links.txt
+cookies_converter.egg-info/requires.txt
+cookies_converter.egg-info/top_level.txt
+cookies_converter/json_cookies/__init__.py
+cookies_converter/json_cookies/json_cookies.py
+cookies_converter/netscape_cookies/__init__.py
+cookies_converter/netscape_cookies/netscape_cookies.py
