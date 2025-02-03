@@ -1,0 +1,29 @@
+Metadata-Version: 2.2
+Name: Mrx
+Version: 0.1
+Summary: مكتبة Mrx لوظائف متعددة في Python
+Home-page: https://github.com/MrX/Mrx
+Author: Mr X
+Author-email: 5a9c41862c@emailawb.pro
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-python
+Dynamic: summary
+
+🔹 الوظائف المتاحة في المكتبة:
+✔ التعامل مع النصوص (تحليل، تحويل، تشفير)  
+✔ تشغيل أكواد Python و C++  
+✔ التكامل مع Telegram و Telethon  
+✔ تحميل الملفات من الإنترنت  
+✔ التعامل مع HTML, CSS, JavaScript  
+✔ دعم تحليل السورسات والملفات البرمجية  
+✔ دعم وظائف متنوعة إضافية  
