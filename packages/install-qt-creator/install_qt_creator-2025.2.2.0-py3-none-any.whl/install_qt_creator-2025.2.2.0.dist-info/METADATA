@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: install-qt-creator
+Version: 2025.2.2.0
+Summary: Add your description here
+Project-URL: Repository, https://github.com/soda92/install-qt-creator
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: pywin32>=308
+Description-Content-Type: text/markdown
+
+# install-qt-creator
+install qt creator on msys2
