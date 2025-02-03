@@ -1,0 +1,48 @@
+Metadata-Version: 2.2
+Name: gishndev
+Version: 0.0.1
+Summary: A package to developed tools to processing gis data
+Home-page: https://github.com/lalgonzales/gishndev
+Author: Luis López
+Author-email: lalgonzales@gmail.com
+License: MIT license
+Keywords: gishndev
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-python
+Dynamic: summary
+
+# gishndev
+
+
+[![image](https://img.shields.io/pypi/v/gishndev.svg)](https://pypi.python.org/pypi/gishndev)
+[![image](https://img.shields.io/conda/vn/conda-forge/gishndev.svg)](https://anaconda.org/conda-forge/gishndev)
+
+
+**A package to developed tools to processing gis data**
+
+
+-   Free software: MIT license
+-   Documentation: https://lalgonzales.github.io/gishndev
+    
+
+## Features
+
+-   TODO
