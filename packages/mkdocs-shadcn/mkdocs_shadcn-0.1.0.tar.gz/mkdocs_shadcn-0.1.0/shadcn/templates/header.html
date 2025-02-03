@@ -1,0 +1,38 @@
+<header
+    class="border-border/50 sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <div
+        class="h-14 w-full max-w-8xl mx-auto px-4 border-x border-x-border/50 flex flex-row justify-between items-stretch">
+        <a href="/" class="block mr-4 flex items-center gap-2 lg:mr-6">
+            {% include "components/icon.html" %}
+            <h1 class="inline-block font-bold text-md">
+                {{ config.theme.title }}
+            </h1>
+        </a>
+        <div class="flex items-center gap-0.5">
+            {% if config.repo_url %}
+            <button
+                class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground h-8 w-8 px-0"><a
+                    target="_blank" rel="noreferrer" href="{{ config.repo_url }}">
+                    {% if config.repo_name == 'gitlab' %}{% include "icons/gitlab.svg" %}
+                    <span class="sr-only">Gitlab</span>
+                    {% else %}
+                    {% include "icons/github.svg" %}
+                    <span class="sr-only">GitHub</span>
+                    {% endif %}
+                </a>
+            </button>
+            {% endif %}
+            <button
+                class="cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 hover:bg-accent hover:text-accent-foreground py-2 group/toggle h-8 w-8 px-0"
+                onclick="document.documentElement.className = document.documentElement.className === 'dark' ? 'light' : 'dark';">
+                {% with override_class="h-4 w-4 dark:hidden not-dark:block" %}
+                {% include "icons/moon.svg" %}
+                {% endwith %}
+                {% with override_class="h-4 w-4 not-dark:hidden dark:block" %}
+                {% include "icons/sun.svg" %}
+                {% endwith %}
+                <span class="sr-only">Toggle theme</span>
+            </button>
+        </div>
+    </div>
+</header>
