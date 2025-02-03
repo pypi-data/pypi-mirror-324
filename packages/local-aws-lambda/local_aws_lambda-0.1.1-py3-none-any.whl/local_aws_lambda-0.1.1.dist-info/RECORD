@@ -1,0 +1,10 @@
+local_lambda/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+local_lambda/cli.py,sha256=I9GjaV-tK1vauf7i7OJsEsNB2GNwTVCzTHlNgLBlh5g,787
+local_lambda/mocks.py,sha256=jXNNl2tEBNRjlXHSgh9LhZkLYA2XLyi6ejY-ODTD72o,717
+local_lambda/runtime.py,sha256=dosLrRw3LMJdoCy4_-CjVc-wwJ77wEdUG8Rqkz4U_0s,1253
+local_aws_lambda-0.1.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+local_aws_lambda-0.1.1.dist-info/METADATA,sha256=k1pxMG4xoftUq3Wdus3Uk8Fl00n5JgpRuiU-ZhF7Vx0,399
+local_aws_lambda-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+local_aws_lambda-0.1.1.dist-info/entry_points.txt,sha256=H7KCn0VjV87jz_PF25qKtQvneRq70cNBa_ct_Pn7bok,55
+local_aws_lambda-0.1.1.dist-info/top_level.txt,sha256=97sTkPcBHXo83o-WJEuk9Udl3dQZU7-S9_OhsiDwgRw,13
+local_aws_lambda-0.1.1.dist-info/RECORD,,
