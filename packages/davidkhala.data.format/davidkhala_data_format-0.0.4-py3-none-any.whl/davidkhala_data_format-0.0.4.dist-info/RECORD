@@ -1,0 +1,10 @@
+davidkhala/data/format/arrow/__init__.py,sha256=qLemD6Phv615OGdgju8V7wFS6YHxlRrAHNVDWWwrSLM,140
+davidkhala/data/format/arrow/fs.py,sha256=61h_3EIWRH4sL7LyijUDhAY8RXFryPMEGsWYAPJOD6A,1739
+davidkhala/data/format/arrow/gcp.py,sha256=xvlcWVqd_z16HHcbqPWhZn8MHZkTOaVBi9ncL14pi3w,1437
+davidkhala/data/format/arrow/local_fs.py,sha256=btf9Qdp9TWS_io8VDtol8DgTNinua6abIgPEZ9b4vKg,397
+davidkhala/data/format/avro/__init__.py,sha256=4Hn3fRxuWYKonKNtfgzY18oGlvmhjFGpXg6Iwn7M5nA,610
+davidkhala/data/format/parquet/__init__.py,sha256=OhblzOoJkHPuSWvxS7UFtpK4KHdlZGqgiFmtXl55FZM,545
+davidkhala/data/format/transform/__init__.py,sha256=TMac1j5cPfx7QOPwbnr6iCdXVPhqNUTNqf_aWub-Ry8,2026
+davidkhala_data_format-0.0.4.dist-info/METADATA,sha256=xaSvL6idRP81oAJO_blGZOgDTiq8_ziDgcG3zDngqaI,681
+davidkhala_data_format-0.0.4.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+davidkhala_data_format-0.0.4.dist-info/RECORD,,
