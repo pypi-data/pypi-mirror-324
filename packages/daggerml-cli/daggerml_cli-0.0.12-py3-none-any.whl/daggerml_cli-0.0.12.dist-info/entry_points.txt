@@ -1,0 +1,5 @@
+[console_scripts]
+dml = daggerml_cli.cli:cli
+dml-lambda-adapter = daggerml_cli.contrib.lambda_adapter:main
+dml-local-adapter = daggerml_cli.contrib.local_adapter:main
+dml-python-fork-adapter = daggerml_cli.python_fork_adapter:main
