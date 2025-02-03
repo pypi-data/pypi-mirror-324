@@ -1,0 +1,25 @@
+Metadata-Version: 2.3
+Name: dockerfile-generator-lrnd
+Version: 0.1.2
+Summary: Automatic Dockerfile generator for multiple technologies
+License: MIT
+Keywords: docker,dockerfile,automation,devops
+Author: lrndwy
+Requires-Python: >=3.12,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: click (>=8.1.8,<9.0.0)
+Description-Content-Type: text/markdown
+
+# Dockerfile Generator
+
+A Python library to automatically generate Dockerfiles for various types of applications.
+
+## Installation
+
+```bash
+pip install dockerfile-generator
+```
+

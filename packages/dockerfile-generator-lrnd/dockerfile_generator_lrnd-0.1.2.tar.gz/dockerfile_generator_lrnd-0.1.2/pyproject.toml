@@ -1,0 +1,20 @@
+# pyproject.toml
+[tool.poetry]
+name = "dockerfile-generator-lrnd"
+version = "0.1.2"
+description = "Automatic Dockerfile generator for multiple technologies"
+authors = ["lrndwy"]
+license = "MIT"
+readme = "README.md"
+keywords = ["docker", "dockerfile", "automation", "devops"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+click = "^8.1.8"
+
+[tool.poetry.scripts]
+dockerfile-generator = "dockerfile_generator.cli:generate_dockerfile"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
