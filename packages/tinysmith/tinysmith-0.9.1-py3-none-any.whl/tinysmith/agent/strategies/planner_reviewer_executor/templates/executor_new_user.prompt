@@ -1,0 +1,18 @@
+---
+SUBTASK: {{ executor_task }}
+---
+
+{% if stdout_hist %}
+Here is your previous command history:
+### HISTORY >>>>> 
+{% for stdout_hist_cmd in stdout_hist %}
+=== COMMAND ===
+ubuntu-ctf-machine # {{ stdout_hist_cmd[0] }}
+{{ stdout_hist_cmd[1] }}
+=== COMMAND END
+{% endfor %}
+<<<<< HISTORY END
+Given your command history choose the next command to solve your subtask, or if your subtask is solved, respond with status 'done'. 
+{% else %}
+Choose the first command to solve your subtask.
+{% endif %}
