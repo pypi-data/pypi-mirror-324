@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tinysmith"
+description = "TinyAgentSmith (tinysmith) is a tiny, modular multi-agent LLM framework. It is designed to be lightweight and simple to use, while providing a flexible and extensible platform for quickly iterating on multi-agent algorithms."
+version = "0.9.1"
+authors = ["J. Florian Kimmes <tinysmith@jfkimmes.eu>"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+openai = "^1.60.2"
+mistralai = "^1.5.0"
+groq = "^0.16.0"
+distance = "^0.1.3"
+rich = "^13.9.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+repository = "https://codeberg.org/jfkimmes/TinyAgentSmith"
+"Bug Tracker" = "https://codeberg.org/jfkimmes/TinyAgentSmith"
+

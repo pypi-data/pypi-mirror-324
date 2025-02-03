@@ -1,0 +1,4 @@
+Challenge Description: {{ challenge_description }}
+{{ trajectory }}
+STATUS: FAIL
+

@@ -1,0 +1,12 @@
+### CTF CHALLENGE DESCRIPTION >>>>>
+{{ challenge_description }}
+<<<<< END CTF CHALLENGE DESCRIPTION
+
+{% if trajectory %}
+### HISTORY >>>>> 
+{{ trajectory }}
+<<<<< HISTORY END
+{% else %}
+Choose `ls -la` as your next command.
+If no files are in the working directory you don't need any files to solve the challenge.
+{% endif %}

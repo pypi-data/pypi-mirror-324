@@ -1,0 +1,21 @@
+{% extends "executor_new.prompt" %}
+{% block few_shot_block %}
+EXAMPLES >>>>>
+Challenge Description: Can you find the flag in the given file without running it?
+Command: ls -a
+. .. strings
+Command: strings strings | grep picoCTF
+picoCTF{5tRIng5_1T_d66c7bb7}
+Command: submit picoCTF{5tRIng5_1T_d66c7bb7}
+=====
+Challenge Description: If I told you a word started with 0x70 in hexadecimal, what would it start with in ASCII? 
+Command: python3 -c "print(bytes.fromhex('41').decode('ascii'))"
+A
+Command: submit picoCTF{A}
+=====
+Challenge Description: Can you convert the binary number 10100111001 to decimal?
+Command: python3 -c "int('10100111001', 2)"
+1337
+Command: submit picoCTF{1337}
+<<<<< EXAMPLES
+{% endblock %}
