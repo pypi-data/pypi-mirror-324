@@ -1,0 +1,9 @@
+csvmatch-2.1.0.dist-info/METADATA,sha256=hyvWFPbAr_IKBnP7-A3AQwoY_ZHGTxyMAL26LWrh2JM,25964
+csvmatch-2.1.0.dist-info/WHEEL,sha256=thaaA2w1JzcGC48WYufAs8nrYZjJm8LqNfnXFOFyCC4,90
+csvmatch-2.1.0.dist-info/entry_points.txt,sha256=7lvt9nwt16i0za5feWanakebbkF63MA8mJGhH-MnpQE,59
+csvmatch-2.1.0.dist-info/licenses/LICENCE,sha256=8q_SGAyD_CufqtdBWZ3-IJX9JVffLkeYc7-Hr2LPER0,524
+csvmatch/__init__.py,sha256=668OSwSsoUxO4ZmqOxhntO1Uw2EPiZC8Jm7wmvDTBL8,93
+csvmatch/cli.py,sha256=xDSmobFehcV1GcwRVG0c9X2fDXtWESrHserLrDiMyrw,7118
+csvmatch/cli_renderer.py,sha256=NXAv03mL5Az1pB3-lrlQUifH-Liq_hnzRypMveElZQw,2593
+csvmatch/typings.py,sha256=_xQ3447cc8J1gV4GkN9gZPznAx6pSBcFu1ZP40Sc_I0,428
+csvmatch-2.1.0.dist-info/RECORD,,
