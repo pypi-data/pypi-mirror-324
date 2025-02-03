@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+dc_mailer/__init__.py
+dc_mailer/mailer.py
+dc_mailer.egg-info/PKG-INFO
+dc_mailer.egg-info/SOURCES.txt
+dc_mailer.egg-info/dependency_links.txt
+dc_mailer.egg-info/top_level.txt
+tests/test_mailer.py
