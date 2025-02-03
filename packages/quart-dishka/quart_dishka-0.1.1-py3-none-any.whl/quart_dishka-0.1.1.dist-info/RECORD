@@ -1,0 +1,11 @@
+quart_dishka/__init__.py,sha256=VOvWiEODgXhoPRfmGtM7OKT5K6uW9NsEJOQ8RB-IBlg,148
+quart_dishka/container.py,sha256=16ilFfc1GkMXNpuO3T6OA1w3WfoOB2M2XDeTefYlsaM,1130
+quart_dishka/exceptions.py,sha256=-rCv_RpLuMij4WoVqO6udD3vDCrPWedy_h0AntvhpiU,460
+quart_dishka/extension.py,sha256=sjNn-kXJRgZjtikKsPI82mlnw-b8EqIS8wkO48xuZLo,3128
+quart_dishka/provider.py,sha256=jDqpcuH2BsjBcTElHqqFp3bn-uqgT0QH5L2e_ha5O10,273
+quart_dishka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+quart_dishka-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+quart_dishka-0.1.1.dist-info/METADATA,sha256=QZjg2Z5or0fN2rEkLBh8k0PbkcYu6vi9iViWaF-I6oY,4708
+quart_dishka-0.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+quart_dishka-0.1.1.dist-info/top_level.txt,sha256=QFh_UsJSWEdmYDLhwBqMxe7iDwMfLmqD9PFB9Cx3Sbg,13
+quart_dishka-0.1.1.dist-info/RECORD,,
