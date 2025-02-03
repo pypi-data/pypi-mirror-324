@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/prime_finder/__init__.py
+src/prime_finder/prime.py
+src/prime_finder_srk.egg-info/PKG-INFO
+src/prime_finder_srk.egg-info/SOURCES.txt
+src/prime_finder_srk.egg-info/dependency_links.txt
+src/prime_finder_srk.egg-info/requires.txt
+src/prime_finder_srk.egg-info/top_level.txt
+tests/test_prime.py
