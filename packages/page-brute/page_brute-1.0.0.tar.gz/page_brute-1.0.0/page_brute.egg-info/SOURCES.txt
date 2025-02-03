@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+page_brute/__init__.py
+page_brute/default_signatures.yar
+page_brute/page_brute.py
+page_brute.egg-info/PKG-INFO
+page_brute.egg-info/SOURCES.txt
+page_brute.egg-info/dependency_links.txt
+page_brute.egg-info/entry_points.txt
+page_brute.egg-info/requires.txt
+page_brute.egg-info/top_level.txt
