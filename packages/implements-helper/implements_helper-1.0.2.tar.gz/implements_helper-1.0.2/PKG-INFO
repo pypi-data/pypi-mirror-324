@@ -1,0 +1,66 @@
+Metadata-Version: 2.2
+Name: implements_helper
+Version: 1.0.2
+Summary: Python実装時に利用できるユーティリティ群
+Home-page: https://github.com/Mikimini9627/implements_helper
+Download-URL: https://github.com/Mikimini9627/implements_helper
+Author: Mikimini9627
+Author-email: 
+Maintainer: Mikimini9627
+Maintainer-email: 
+License: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+License-File: LICENSE
+Requires-Dist: numpy<2.0.0,>=1.26.4
+Requires-Dist: python-dateutil<3.0.0,>=2.9.0.post0
+Requires-Dist: bs4<0.0.3,>=0.0.2
+Requires-Dist: requests<3.0.0,>=2.32.3
+Requires-Dist: lxml<6.0.0,>=5.3.0
+Requires-Dist: useragent-changer<0.4.0,>=0.3.2
+Requires-Dist: ruff<0.9.0,>=0.8.6
+Dynamic: author
+Dynamic: classifier
+Dynamic: description
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+=====================
+implements_helper
+=====================
+
+--------
+使用方法
+--------
+
+.. code-block:: python
+
+    from implements_helper import *
+
+    # 準備中...
+
+--------
+必要要件
+--------
+* numpy >=1.26.4,<2.0.0
+* python-dateutil >=2.9.0.post0,<3.0.0
+* bs4 >=0.0.2,<0.0.3
+* requests >=2.32.3,<3.0.0
+* lxml >=5.3.0,<6.0.0
+* useragent-changer >=0.3.2,<0.4.0
+* ruff >=0.8.6,<0.9.0
+
+----------------
+インストール方法
+----------------
+
+.. code-block:: console
+
+    $ pip install implements_helper
