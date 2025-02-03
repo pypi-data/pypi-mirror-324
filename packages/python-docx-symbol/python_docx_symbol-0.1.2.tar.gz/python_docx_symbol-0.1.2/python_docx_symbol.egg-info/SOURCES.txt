@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+python_docx_symbol/__init__.py
+python_docx_symbol/convert.py
+python_docx_symbol.egg-info/PKG-INFO
+python_docx_symbol.egg-info/SOURCES.txt
+python_docx_symbol.egg-info/dependency_links.txt
+python_docx_symbol.egg-info/requires.txt
+python_docx_symbol.egg-info/top_level.txt
+tests/test_convert.py
