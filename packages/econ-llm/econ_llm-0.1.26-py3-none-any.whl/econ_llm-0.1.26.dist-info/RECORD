@@ -1,0 +1,11 @@
+econ_llm/agent.py,sha256=ppk0N3jVg6O4SlRN0gefn-HDBYFaihJFcseGN8mH1ec,4507
+econ_llm/experiment.py,sha256=hMUR_lyuvqrHJBx1oZHsxpIr1e9RQ0ULkaqdUk25aTI,8432
+econ_llm/main.py,sha256=Ijv9E6jgoaRWHRz42hwimS9o4Fg1OlLmkyvsHBRr7Gs,3251
+econ_llm/prompts.py,sha256=AnUOr5fA1Cca13JAQuRFOFB_L1KJBGO_A-lJiy3IdR0,3284
+econ_llm/ultimatum_exp.py,sha256=-RSZGAAkIW4vQgmViC7gRzrGKgjfqGC8jrtM1KtReqE,16033
+econ_llm/ultimatum_text.py,sha256=YiGncVqM2528rhHErVWCHGe192Ty-Q6uKJeKzZWX1fU,5486
+econ_llm-0.1.26.dist-info/METADATA,sha256=2dlsdET1pTjRfq-ADD_ElT6BEym3qFQ0wn3UZWaas7Q,1506
+econ_llm-0.1.26.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+econ_llm-0.1.26.dist-info/entry_points.txt,sha256=qV_nBniSXnyocx_1bmhffZy3vUXwJypW862ky6p72Gk,48
+econ_llm-0.1.26.dist-info/top_level.txt,sha256=Zyn5vmoKOfaQr0ZxsCPY0STDsq5u05KIM5Wm2CqKeNA,9
+econ_llm-0.1.26.dist-info/RECORD,,
