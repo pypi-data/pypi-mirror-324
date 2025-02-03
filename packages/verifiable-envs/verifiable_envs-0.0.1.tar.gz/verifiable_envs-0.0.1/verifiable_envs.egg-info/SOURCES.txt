@@ -1,0 +1,5 @@
+pyproject.toml
+verifiable_envs.egg-info/PKG-INFO
+verifiable_envs.egg-info/SOURCES.txt
+verifiable_envs.egg-info/dependency_links.txt
+verifiable_envs.egg-info/top_level.txt
