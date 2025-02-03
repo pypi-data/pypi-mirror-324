@@ -1,0 +1,46 @@
+Metadata-Version: 2.2
+Name: cg-r-pathway
+Version: 0.1.3
+Summary: A comprehensive protein reaction coordinate optimization framework
+Home-page: https://github.com/simura-works/cg_r_pathway
+Author: Bernard Kwadwo Essuman
+Author-email: simura.pathway@gmail.com
+License: SIMURA License
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: torch
+Requires-Dist: numba
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# cg_r_pathway
+
+`cg_r_pathway` is a comprehensive protein reaction coordinate optimization framework that integrates:
+
+- **Physics-based Modeling:** Residue-specific parameters (mass, charge, ε, σ, hydrophobicity), bonds, angles, nonbonded interactions.
+- **Advanced Optimization:** Global path optimization using Adaptive PSO+SA and local refinement using Double-Nested Simulated Annealing (DSA-ASA).
+- **Self-Learning ML Model:** A placeholder neural network force field for continuous improvement.
+- **Coarse-Graining and Backmapping:** Converting full-atom PDB structures to a coarse-grained model and reconstructing all-atom models via rigid-body transformation.
+- **Advanced Visualization:** Reaction coordinate (RMSD vs Energy) plots and 3D path visualization.
+
+## Installation
+
+Clone the repository and install with pip:
+
+```bash
+pip install .
+

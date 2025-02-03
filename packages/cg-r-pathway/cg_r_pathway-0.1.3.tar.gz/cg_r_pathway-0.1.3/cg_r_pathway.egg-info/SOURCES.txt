@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+cg_r_pathway.egg-info/PKG-INFO
+cg_r_pathway.egg-info/SOURCES.txt
+cg_r_pathway.egg-info/dependency_links.txt
+cg_r_pathway.egg-info/entry_points.txt
+cg_r_pathway.egg-info/requires.txt
+cg_r_pathway.egg-info/top_level.txt
