@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: swiftserialize
+Version: 0.2.0
+Summary: A simple way to read and write structured data. Easily extendable to support custom data formats.
+Project-URL: Homepage, https://github.com/SeanYeatts/swiftserialize
+Author: Sean Yeatts
+License: MIT License
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+
+*Copyright (c) 2025 Sean Yeatts, Inc. All rights reserved.*
+
+SwiftSerialize
+==============
+
+A simple way to read and write structured data. Easily extendable to support custom data formats.
