@@ -1,0 +1,7 @@
+README.md
+setup.py
+bendis.egg-info/PKG-INFO
+bendis.egg-info/SOURCES.txt
+bendis.egg-info/dependency_links.txt
+bendis.egg-info/requires.txt
+bendis.egg-info/top_level.txt
