@@ -1,0 +1,9 @@
+nonebot_plugin_more_rules/__init__.py,sha256=JBv1QObke0DrDnR-Esy5C-Ha9XlVlw_BCqbEyL3cAvU,698
+nonebot_plugin_more_rules/chain_rule.py,sha256=h7da5v5s0tQSquRbG0QNY64B5zq6J4ZVLLLBa-c5CtI,2264
+nonebot_plugin_more_rules/pinyin_rule.py,sha256=iAg7PdQMrmP1etsVhj1bmP1NCgQrERdQtJBXcu-GeEI,3001
+nonebot_plugin_more_rules/throttle_rule.py,sha256=7gVHieWLZtvHOEeflhYLGIQ4Mau_rloUT4WnMcyvWTc,2680
+nonebot_plugin_more_rules-0.0.0.dist-info/LICENSE,sha256=M9_QVGuv7l_-OJrMrGoRJM8u5dqlBi5Nx51yXVxpbCw,1066
+nonebot_plugin_more_rules-0.0.0.dist-info/METADATA,sha256=GOjQq0xbf7Weifs1ab_pbrXhlBCf2vo6uOrBIopjHng,3358
+nonebot_plugin_more_rules-0.0.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nonebot_plugin_more_rules-0.0.0.dist-info/top_level.txt,sha256=hoKpNSP1r6wkTx5Cy0TtBirwiBMLE13G_uaeYJ7Mns0,26
+nonebot_plugin_more_rules-0.0.0.dist-info/RECORD,,
