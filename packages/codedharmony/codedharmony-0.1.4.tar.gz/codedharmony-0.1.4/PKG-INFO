@@ -1,0 +1,103 @@
+Metadata-Version: 2.2
+Name: codedharmony
+Version: 0.1.4
+Summary: A collection of utility functions for harmonizing code.
+Home-page: https://github.com/onlineimmigrant/codedharmony
+Author: Andrew Vialichka
+Author-email: andreivialichka@onlineimmigrant.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: summary
+
+# codedharmony
+
+A collection of utility functions to make your coding life easier.
+
+## Installation
+
+```bash
+pip install codedharmony
+```
+
+
+
+## Python
+
+```bash
+import codedharmony 
+```
+
+#### or
+
+```bash
+from codedharmony import merge_dicts, safe_division, flatten_list, chunk_list
+```
+
+## Examples
+
+```
+# Merging dictionaries
+merged_dict = merge_dicts({'a': 1}, {'b': 2})
+print(merged_dict)  # Output: {'a': 1, 'b': 2}
+
+# Safe division
+safe_result = safe_division(10, 0, default=0)
+print(safe_result)  # Output: 0
+
+# Flattening a nested list
+nested_list = [1, [2, 3, [4, 5]], 6]
+flat = flatten_list(nested_list)
+print(flat)  # Output: [1, 2, 3, 4, 5, 6]
+
+# Chunking a list
+chunked_list = chunk_list([1, 2, 3, 4, 5], 2)
+print(chunked_list)  # Output: [[1, 2], [3, 4], [5]]
+
+# Finding duplicates in a list
+duplicates = find_duplicates([1, 2, 2, 3, 4, 4, 5])
+print(duplicates)  # Output: [2, 4]
+
+# Getting unique elements
+unique = unique_elements([1, 2, 2, 3, 4, 4])
+print(unique)  # Output: [1, 2, 3, 4]
+
+# Converting from camelCase
+snake = camel_to_snake('camelCaseString')
+print(snake)  # Output: camel_case_string
+
+# Converting from snake_case to camelCase
+camel = snake_to_camel('snake_case_string')
+print(camel)  # Output: SnakeCaseString
+
+# Checking if a string is a palindrome
+is_pal = is_palindrome('A man, a plan, a canal: Panama')
+print(is_pal)  # Output: True
+
+
+# Counting occurrences
+count = count_occurrences([1, 2, 2, 3, 3, 3, 4])
+print(count)  # Output: {1: 1, 2: 2, 3: 3, 4: 1}
+
+# Sorting dictionary by value
+sorted_dict = sort_dict_by_value({'a': 3, 'b': 1, 'c': 2})
+print(sorted_dict)  # Output: [('b', 1), ('c', 2), ('a', 3)]
+
+# Removing None values from dictionary
+clean_dict = remove_none_values({'a': 1, 'b': None, 'c': 3})
+print(clean_dict)  # Output: {'a': 1, 'c': 3}
+
+# Converting list to dictionary
+data = ['apple', 'banana', 'cherry']
+fruit_dict = list_to_dict(data, lambda x: x.upper())
+print(fruit_dict)  # Output: {'APPLE': 'apple', 'BANANA': 'banana', 'CHERRY': 'cherry'}
+
+```
