@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/vpsinfo/solusvm.py
+src/vpsinfo/vpsinfo.py
+src/vpsinfo.egg-info/PKG-INFO
+src/vpsinfo.egg-info/SOURCES.txt
+src/vpsinfo.egg-info/dependency_links.txt
+src/vpsinfo.egg-info/entry_points.txt
+src/vpsinfo.egg-info/requires.txt
+src/vpsinfo.egg-info/top_level.txt

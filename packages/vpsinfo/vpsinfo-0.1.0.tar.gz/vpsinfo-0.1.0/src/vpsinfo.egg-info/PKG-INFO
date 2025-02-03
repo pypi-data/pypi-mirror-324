@@ -1,0 +1,102 @@
+Metadata-Version: 2.2
+Name: vpsinfo
+Version: 0.1.0
+Summary: A CLI tool for monitoring VPS information using SolusVM API
+Author-email: Keli Hu <dev@keli.hu>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: tabulate
+Requires-Dist: requests
+
+# VPSinfo
+
+A command-line tool for monitoring VPS information using the SolusVM API. Supports concurrent monitoring of multiple VPS instances with bandwidth usage and system status information.
+
+## Features
+
+- Monitor bandwidth usage (used, total, percentage)
+- Monitor memory usage (used, total, percentage)
+- Monitor disk usage (used, total, percentage)
+- Concurrent monitoring of multiple VPS instances
+- Human-readable data formatting
+- Simple JSON configuration
+- Verbose mode for debugging
+
+## Installation
+
+```bash
+pip install vpsinfo
+```
+
+## Configuration
+
+Create a configuration file at `~/.vpsinfo.json`:
+
+```json
+[
+    {
+        "name": "my-vps-1",
+        "url": "https://your-solusvm-url:5656",
+        "key": "your-api-key",
+        "hash": "your-api-hash"
+    }
+]
+```
+
+Each VPS entry requires:
+- `name`: A friendly name for the VPS
+- `url`: SolusVM API URL (usually ends with :5656)
+- `key`: API key from SolusVM control panel
+- `hash`: API hash from SolusVM control panel
+
+## Usage
+
+Monitor all VPS metrics (bandwidth, memory, disk):
+```bash
+vpsinfo
+```
+
+Enable verbose output for debugging:
+```bash
+vpsinfo -v
+```
+or
+```bash
+vpsinfo --verbose
+```
+
+## Example Output
+
+```
+╒══════════════╤══════════╤══════════╤═══════════╤═══════╤══════════╤═══════════╤═══════╤══════════╤═══════════╤═══════╕
+│ VPS Name     │ Status   │ BW Used  │ BW Total  │ BW %  │ Mem Used │ Mem Total │ Mem % │ Disk Used│ Disk Total│ Disk %│
+╞══════════════╪══════════╪══════════╪═══════════╪═══════╪══════════╪═══════════╪═══════╪══════════╪═══════════╪═══════╡
+│ my-vps-1     │ Success  │ 1.25 GiB │ 500.0 GiB │ 0.3%  │ 512.0MiB │ 1.0 GiB   │ 50.0% │ 10.0 GiB │ 50.0 GiB  │ 20.0%│
+╘══════════════╧══════════╧══════════╧═══════════╧═══════╧══════════╧═══════════╧═══════╧══════════╧═══════════╧═══════╛
+```
+
+When an error occurs:
+```
+╒══════════════╤═════════════════════════╤══════════╤═══════════╤═══════╤══════════╤═══════════╤═══════╤══════════╤═══════════╤═══════╕
+│ VPS Name     │ Status                  │ BW Used  │ BW Total  │ BW %  │ Mem Used │ Mem Total │ Mem % │ Disk Used│ Disk Total│ Disk %│
+╞══════════════╪═════════════════════════╪══════════╪═══════════╪═══════╪══════════╪═══════════╪═══════╪══════════╪═══════════╪═══════╡
+│ my-vps-1     │ Error - Connection failed│ N/A      │ N/A       │ N/A   │ N/A      │ N/A       │ N/A   │ N/A      │ N/A       │ N/A   │
+╘══════════════╧═════════════════════════╧══════════╧═══════════╧═══════╧══════════╧═══════════╧═══════╧══════════╧═══════════╧═══════╛
+```
+
+## Error Handling
+
+- If a VPS is unreachable or there are API errors, the status will show as "Error" with an error message
+- All metrics will show as "N/A" when an error occurs
+- Configuration file errors will be reported with clear error messages
+- All errors are displayed in red for better visibility
+- Use verbose mode (-v) to see detailed debug information
+
+## Requirements
+
+- Python 3.7 or higher
+- click
+- tabulate
+- requests

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vpsinfo"
+version = "0.1.0"
+description = "A CLI tool for monitoring VPS information using SolusVM API"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Keli Hu", email = "dev@keli.hu"}
+]
+dependencies = [
+    "click",
+    "tabulate",
+    "requests"
+]
+
+[project.scripts]
+vpsinfo = "vpsinfo.vpsinfo:cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vpsinfo"]
