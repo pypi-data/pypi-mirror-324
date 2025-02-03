@@ -1,0 +1,8 @@
+act_ratelimit/__init__.py,sha256=_ZRP_XwFPK0n1yaFXoeO2hTUeeBpdf4B-IqY3KIG33U,3838
+act_ratelimit/backends.py,sha256=pwbI03Fd0ot-0n4AQiE4QmTTMiw5_2xcpC6Gi6muU1Q,9323
+act_ratelimit/constants.py,sha256=tiNbuy0-uzL-bxP2c9iZ6qCoPaDuMeSZ6-1vPHric6s,1789
+act_ratelimit/depends.py,sha256=wV2hr-x_gvOGJKw6mw0bMBsEX9AyBcxkWerjaIDtSNc,5253
+act_ratelimit-0.0.1a2.dist-info/LICENSE,sha256=xul0DCzWKmCq0mG2VX9r64iNEwIotVvAr_SuFcbdrjw,1065
+act_ratelimit-0.0.1a2.dist-info/WHEEL,sha256=CpUCUxeHQbRN5UGRQHYRJorO5Af-Qy_fHMctcQ8DSGI,82
+act_ratelimit-0.0.1a2.dist-info/METADATA,sha256=tREBR7821Vo1eeS7ddHYtgy0ApTAUVfvlbODq1is7zY,7457
+act_ratelimit-0.0.1a2.dist-info/RECORD,,
