@@ -1,0 +1,18 @@
+Metadata-Version: 2.2
+Name: PKK
+Version: 0.1
+Summary: Useful library in many jobs
+Author: Ibn_Suleiman
+Author-email: tvvvyvv@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: user_agent
+Requires-Dist: cloudscraper
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: requires-dist
+Dynamic: summary
