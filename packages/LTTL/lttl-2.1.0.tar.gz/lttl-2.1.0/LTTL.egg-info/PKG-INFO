@@ -1,0 +1,53 @@
+Metadata-Version: 2.2
+Name: LTTL
+Version: 2.1.0
+Summary: LangTech Text Library (LTTL) for text processing and analysis
+Home-page: https://github.com/axanthos/LTTL
+Download-URL: https://github.com/axanthos/LTTL/tarball/v2.1.0
+Author: LangTech Sarl
+Author-email: info@langtech.ch
+License: GNU GPL v3
+Keywords: text mining,text analysis,text processing
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+License-File: LICENSE
+Requires-Dist: setuptools
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: future
+Requires-Dist: backports.functools_lru_cache
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: download-url
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+LangTech Text Library (LTTL)
+============================
+
+LTTL is an open-source python package for text processing and analysis.
+
+LTTL consists of: (i) a set of classes for representing segmental analyses of 
+text strings (= "segmentations"), whereby portions of text strings are 
+delineated and possibly annotated with specific labels; (ii) a set of classes 
+for creating and manipulating segmentations, in order to produce either 
+modified version of the original text data, or data tables summarizing 
+properties of these data (e.g. unit frequency, complexity measures, 
+concordances, and so on).
+
+LTTL was designed and implemented by `LangTech Sarl <http://langtech.ch>`_.
