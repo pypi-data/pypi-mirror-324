@@ -1,0 +1,8 @@
+README.md
+setup.py
+all_of_resources.egg-info/PKG-INFO
+all_of_resources.egg-info/SOURCES.txt
+all_of_resources.egg-info/dependency_links.txt
+all_of_resources.egg-info/entry_points.txt
+all_of_resources.egg-info/top_level.txt
+aor/__main__.py
