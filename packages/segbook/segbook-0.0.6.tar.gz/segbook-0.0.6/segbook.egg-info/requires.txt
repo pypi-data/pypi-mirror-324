@@ -1,0 +1,16 @@
+numpy<2
+tqdm>=4.50.0
+requests>=2.24.0
+torch<=2.5.0,>=2.0.0
+dicom2nifti
+scikit-image>=0.14
+medpy
+scipy
+batchgenerators>=0.23
+scikit-learn
+SimpleITK
+pandas
+nibabel
+tifffile
+matplotlib
+torchinfo
