@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: veles-vh
+Version: 0.1.0
+Summary: Miniframework for my projects
+Home-page: https://github.com/VadymHutei/veles
+Author: Vadym Hutei
+Author-email: hutei@live.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyMySQL==1.*
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Р’РµР»РµСЃ
+РјС–РЅС–С„СЂРµР№РјРІРѕСЂРє РґР»СЏ РїСЂРѕСЃС‚РёС… Р·Р°СЃС‚РѕСЃСѓРЅРєС–РІ РЅР° РѕСЃРЅРѕРІС– С‚Р°РєРёС… РєРѕРјРїРѕРЅРµРЅС‚С–РІ СЏРє РєРѕРЅС‚СЂРѕР»РµСЂ, СЃРµСЂРІС–СЃ, РІС–РґРѕР±СЂР°Р¶РµРЅРЅСЏ, СЂРµРїРѕР·РёС‚РѕСЂС–Р№

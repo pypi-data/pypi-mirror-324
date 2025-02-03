@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+veles/__init__.py
+veles_vh.egg-info/PKG-INFO
+veles_vh.egg-info/SOURCES.txt
+veles_vh.egg-info/dependency_links.txt
+veles_vh.egg-info/requires.txt
+veles_vh.egg-info/top_level.txt
