@@ -1,0 +1,14 @@
+/.idea/
+/.mypy_cache/
+/_skbuild.docker/
+/_skbuild/
+/build.docker/
+/build/
+/cp36-cp36m/
+/cp37-cp37m/
+/cp38-cp38/
+/dist/
+/memtrace.egg-info/
+/memtrace/tracer/
+__pycache__
+/venv/

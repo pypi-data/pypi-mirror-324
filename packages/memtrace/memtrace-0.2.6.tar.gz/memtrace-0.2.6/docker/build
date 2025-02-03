@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+from argparse import ArgumentParser
+from datetime import datetime
+import os
+import subprocess
+
+from config import load_config
+
+
+def main():
+    parser = ArgumentParser()
+    parser.add_argument("--deploy", action="store_true")
+    args, rest = parser.parse_known_args()
+    basedir = os.path.dirname(__file__)
+    rev = (
+        subprocess.check_output(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=basedir,
+        )
+        .strip()
+        .decode()
+    )
+    date = datetime.now().strftime("%Y-%m-%d")
+    config = load_config()
+    for arch, _ in config.arches:
+        for _, name_tag, _, _, _, _ in config.pythons:
+            tag = f"mephi42/memtrace-build-{arch}-{name_tag}:{date}-{rev}"
+            docker_build_args = [
+                "docker",
+                "build",
+                f"--tag={tag}",
+                f"--target=final-{arch}-{name_tag}",
+                os.path.join(basedir, "image"),
+            ]
+            subprocess.check_call(docker_build_args + rest)
+            if args.deploy:
+                subprocess.check_call(["docker", "push", tag])
+
+
+if __name__ == "__main__":
+    main()

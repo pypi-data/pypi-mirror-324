@@ -1,0 +1,248 @@
+From aadbab708805099c8102c7e58e3ef77229d57d2d Mon Sep 17 00:00:00 2001
+From: mephi42 <mephi42@gmail.com>
+Date: Sat, 1 Feb 2025 12:18:07 +0100
+Subject: [PATCH 3/5] tool.patch
+
+---
+ Makefile.am           | 21 ++++++---------------
+ Makefile.vex.am       |  6 ++++--
+ auxprogs/Makefile.am  |  4 ++++
+ configure.ac          |  3 +++
+ coregrind/Makefile.am | 21 +++++++++++----------
+ include/Makefile.am   |  2 ++
+ 6 files changed, 30 insertions(+), 27 deletions(-)
+
+diff --git a/Makefile.am b/Makefile.am
+index d745e26bf..4e18a8fbf 100644
+--- a/Makefile.am
++++ b/Makefile.am
+@@ -6,18 +6,9 @@ ACLOCAL_AMFLAGS = -I m4
+ include $(top_srcdir)/Makefile.all.am 
+ 
+ TOOLS = \
+-		memcheck \
+-		cachegrind \
+-		callgrind \
+-		helgrind \
+-		drd \
+-		massif \
+-		dhat \
+-		lackey \
+-		none
+-
+-EXP_TOOLS = \
+-		exp-bbv
++		memtrace
++
++EXP_TOOLS =
+ 
+ # Put docs last because building the HTML is slow and we want to get
+ # everything else working before we try it.
+@@ -61,10 +52,10 @@ DEFAULT_SUPP_FILES = @DEFAULT_SUPP@
+ dist_noinst_DATA = $(SUPP_FILES)
+ 
+ vglibdir = $(pkglibexecdir)
+-vglib_DATA = default.supp
++vglib_DATA =
+ 
+ pkgconfigdir = $(libdir)/pkgconfig
+-pkgconfig_DATA = valgrind.pc
++pkgconfig_DATA =
+ 
+ BUILT_SOURCES  = default.supp include/vgversion.h valgrind.pc
+ CLEANFILES     = default.supp
+@@ -146,7 +137,7 @@ clean-local:
+ 	rm -f test-suite-overall.log
+ 
+ # Need config.h in the installed tree, since some files depend on it
+-pkginclude_HEADERS = config.h
++pkginclude_HEADERS =
+ 
+ # vgversion.h defines accurate versions to report with -v --version
+ include/vgversion.h:
+diff --git a/Makefile.vex.am b/Makefile.vex.am
+index c1244a69d..eafaa8743 100644
+--- a/Makefile.vex.am
++++ b/Makefile.vex.am
+@@ -12,6 +12,7 @@ EXTRA_DIST = \
+ 	LICENSE.GPL \
+ 	auxprogs/genoffsets.c
+ 
++if FALSE
+ pkginclude_HEADERS = \
+ 	pub/libvex.h \
+ 	pub/libvex_basictypes.h \
+@@ -30,6 +31,7 @@ pkginclude_HEADERS = \
+ 	pub/libvex_ir.h \
+ 	pub/libvex_trc_values.h \
+ 	pub/libvex_inner.h
++endif
+ # libvex_inner.h is special: it is a public header for valgrind core,
+ # but should not be used by the end user
+ 
+@@ -118,10 +120,10 @@ pub/libvex_guest_offsets.h: auxprogs/genoffsets.c \
+ # can be done at runtime.
+ #----------------------------------------------------------------------------
+ 
+-pkglib_LIBRARIES  = libvex-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a \
++noinst_LIBRARIES  = libvex-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a \
+ 	libvexmultiarch-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
+ if VGCONF_HAVE_PLATFORM_SEC
+-pkglib_LIBRARIES += libvex-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a \
++noinst_LIBRARIES += libvex-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a \
+ 	libvexmultiarch-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a
+ endif
+ 
+diff --git a/auxprogs/Makefile.am b/auxprogs/Makefile.am
+index 3a9709da6..04abc1b24 100644
+--- a/auxprogs/Makefile.am
++++ b/auxprogs/Makefile.am
+@@ -26,6 +26,7 @@ EXTRA_DIST = \
+ # valgrind-di-server (ditto)
+ #----------------------------------------------------------------------------
+ 
++if FALSE
+ bin_PROGRAMS = valgrind-listener valgrind-di-server
+ 
+ valgrind_listener_SOURCES = valgrind-listener.c
+@@ -65,12 +66,14 @@ endif
+ if VGCONF_OS_IS_SOLARIS
+ valgrind_di_server_LDADD     = -lsocket -lnsl
+ endif
++endif
+ 
+ #----------------------------------------------------------------------------
+ # getoff-<platform>
+ # Used to retrieve user space various offsets, using user space libraries.
+ #----------------------------------------------------------------------------
+ 
++if FALSE
+ noinst_PROGRAMS  = getoff-@VGCONF_ARCH_PRI@-@VGCONF_OS@
+ if VGCONF_HAVE_PLATFORM_SEC
+ noinst_PROGRAMS += getoff-@VGCONF_ARCH_SEC@-@VGCONF_OS@
+@@ -116,6 +119,7 @@ if VGCONF_PLATFORMS_INCLUDE_X86_DARWIN
+ getoff_@VGCONF_ARCH_SEC@_@VGCONF_OS@_LDFLAGS   += -Wl,-read_only_relocs -Wl,suppress
+ endif
+ endif
++endif
+ 
+ #----------------------------------------------------------------------------
+ # Auxiliary testsuits
+diff --git a/configure.ac b/configure.ac
+index 9dec9f3b0..cbdc6980b 100755
+--- a/configure.ac
++++ b/configure.ac
+@@ -5722,6 +5722,9 @@ AC_CONFIG_FILES([
+    exp-bbv/tests/arm-linux/Makefile
+    shared/Makefile
+    solaris/Makefile
++   memtrace/Makefile
++   memtrace/docs/Makefile
++   memtrace/tests/Makefile
+ ])
+ AC_CONFIG_FILES([coregrind/link_tool_exe_linux],
+                 [chmod +x coregrind/link_tool_exe_linux])
+diff --git a/coregrind/Makefile.am b/coregrind/Makefile.am
+index 5491fc672..d58b66d5d 100644
+--- a/coregrind/Makefile.am
++++ b/coregrind/Makefile.am
+@@ -31,8 +31,7 @@ EXTRA_DIST = \
+ #----------------------------------------------------------------------------
+ 
+ bin_PROGRAMS = \
+-	valgrind \
+-	vgdb
++	valgrind
+ 
+ if VGCONF_OS_IS_LINUX
+ valgrind_SOURCES = \
+@@ -80,6 +79,7 @@ valgrind_LDFLAGS   += -Wl,-M,/usr/lib/ld/map.noexstk
+ endif
+ 
+ 
++if FALSE
+ vgdb_SOURCES = vgdb.c m_gdbserver/remote-utils-shared.c
+ if VGCONF_OS_IS_LINUX
+ if VGCONF_PLATVARIANT_IS_ANDROID
+@@ -122,6 +122,7 @@ if VGCONF_PLATFORMS_INCLUDE_X86_DARWIN
+ vgdb_LDFLAGS   += -Wl,-read_only_relocs -Wl,suppress
+ endif
+ endif
++endif
+ 
+ #----------------------------------------------------------------------------
+ # Darwin Mach stuff
+@@ -304,9 +305,9 @@ noinst_HEADERS = \
+ BUILT_SOURCES = $(mach_user_srcs)
+ CLEANFILES    = $(mach_user_srcs) $(mach_server_srcs) $(mach_hdrs)
+ 
+-pkglib_LIBRARIES  = libcoregrind-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
++noinst_LIBRARIES  = libcoregrind-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
+ if VGCONF_HAVE_PLATFORM_SEC
+-pkglib_LIBRARIES += libcoregrind-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a
++noinst_LIBRARIES += libcoregrind-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a
+ endif
+ 
+ COREGRIND_SOURCES_COMMON = \
+@@ -507,7 +508,7 @@ NOLTO_COREGRIND_SOURCES_COMMON = \
+ 	m_main.c \
+ 	m_stacks.c \
+ 	m_gdbserver/m_gdbserver.c
+-noinst_LIBRARIES = libnolto_coregrind-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
++noinst_LIBRARIES += libnolto_coregrind-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
+ libnolto_coregrind_@VGCONF_ARCH_PRI@_@VGCONF_OS@_a_SOURCES = \
+     $(NOLTO_COREGRIND_SOURCES_COMMON)
+ libnolto_coregrind_@VGCONF_ARCH_PRI@_@VGCONF_OS@_a_CPPFLAGS = \
+@@ -580,9 +581,9 @@ endif
+ # used by libgcc.
+ #----------------------------------------------------------------------------
+ 
+-pkglib_LIBRARIES  += libgcc-sup-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
++noinst_LIBRARIES  += libgcc-sup-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
+ if VGCONF_HAVE_PLATFORM_SEC
+-pkglib_LIBRARIES += libgcc-sup-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a
++noinst_LIBRARIES += libgcc-sup-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a
+ endif
+ 
+ libgcc_sup_@VGCONF_ARCH_PRI@_@VGCONF_OS@_a_SOURCES = \
+@@ -604,9 +605,9 @@ endif
+ # libreplacemalloc_toolpreload-<platform>.a
+ #----------------------------------------------------------------------------
+ 
+-pkglib_LIBRARIES += libreplacemalloc_toolpreload-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
++noinst_LIBRARIES += libreplacemalloc_toolpreload-@VGCONF_ARCH_PRI@-@VGCONF_OS@.a
+ if VGCONF_HAVE_PLATFORM_SEC
+-pkglib_LIBRARIES += libreplacemalloc_toolpreload-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a
++noinst_LIBRARIES += libreplacemalloc_toolpreload-@VGCONF_ARCH_SEC@-@VGCONF_OS@.a
+ endif
+ 
+ libreplacemalloc_toolpreload_@VGCONF_ARCH_PRI@_@VGCONF_OS@_a_SOURCES = \
+@@ -784,7 +785,7 @@ GDBSERVER_XML_FILES = \
+ 
+ # so as to make sure these get copied into the install tree
+ vglibdir = $(pkglibexecdir)
+-vglib_DATA  = $(GDBSERVER_XML_FILES)
++vglib_DATA  =
+ 
+ if GDBSCRIPTS
+ gdbscriptsdir = @VG_GDBSCRIPTS_DIR@
+diff --git a/include/Makefile.am b/include/Makefile.am
+index 5d5162a46..6f52390ba 100644
+--- a/include/Makefile.am
++++ b/include/Makefile.am
+@@ -1,6 +1,7 @@
+ 
+ # The "nobase" means that the vki/ path on some of them will be preserved
+ # when they are installed into $(includedir)/valgrind.
++if FALSE
+ nobase_pkginclude_HEADERS = \
+ 	pub_tool_basics.h 		\
+ 	pub_tool_basics_asm.h 		\
+@@ -109,3 +110,4 @@ nobase_pkginclude_HEADERS = \
+ 	vki/vki-linux-drm.h		\
+ 	vki/vki-linux-io_uring.h	\
+ 	vki/vki-linux-landlock.h
++endif
+-- 
+2.43.0
+

@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+import os
+
+import jinja2
+
+from config import load_config
+
+ARCH_PREFIX = "arch."
+COMMIT_PREFIX = "commit."
+PYTHON_PREFIX = "python."
+
+
+def main():
+    basedir = os.path.dirname(__file__)
+    with open(os.path.join(basedir, "Dockerfile.j2")) as fp:
+        template = jinja2.Template(fp.read(), keep_trailing_newline=True)
+    config = load_config()
+    with open(os.path.join(basedir, "image", "Dockerfile"), "w") as fp:
+        fp.write(template.render(arches=config.arches, pythons=config.pythons))
+    for arch, triple in config.arches:
+        user_config_dir = os.path.join(
+            basedir, "image", "boost", arch, "tools", "build", "src"
+        )
+        os.makedirs(user_config_dir, exist_ok=True)
+        user_config = os.path.join(user_config_dir, "user-config.jam")
+        with open(user_config, "w") as fp:
+            fp.write("using gcc")
+            fp.write(" : {}".format(arch))
+            fp.write(" : {}-g++".format(triple))
+            fp.write(" ;\n")
+            for version, name_tag, _, _, includes, _ in config.pythons:
+                fp.write("using python")
+                # version
+                fp.write(" : {}".format(version))
+                # cmd-or-prefix
+                fp.write(" : /usr/{}/{}/bin/python3".format(triple, name_tag))
+                # includes
+                fp.write(" : /usr/{}/{}/include/{}".format(triple, name_tag, includes)),
+                # libraries
+                fp.write(" : /usr/{}/{}/lib".format(triple, name_tag))
+                fp.write(" ;\n")
+    workflows = os.path.join(basedir, "..", ".github", "workflows")
+    with open(os.path.join(workflows, "ci.yml.j2")) as fp:
+        template = jinja2.Template(fp.read(), keep_trailing_newline=True)
+    with open(os.path.join(workflows, "ci.yml"), "w") as fp:
+        fp.write(template.render(arches=config.arches, pythons=config.pythons))
+
+
+if __name__ == "__main__":
+    main()
