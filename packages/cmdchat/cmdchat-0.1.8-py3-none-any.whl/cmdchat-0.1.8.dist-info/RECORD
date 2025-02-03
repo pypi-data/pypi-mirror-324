@@ -1,0 +1,13 @@
+cmdai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmdai/cli.py,sha256=GDYNJYCQrWgvjDfnn2xckmWm-miQRTbftfOhrxnSpx4,1675
+cmdai/config.py,sha256=uM3-WWCBZljRDW-bWLggw5iSuSJKMFf4JSN8dYvYIi8,1517
+cmdai/models.py,sha256=1pem2Su5IkuWZuc0Elfou1y2gF7WcWsCIpufq40lhEo,329
+cmdai/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cmdai/providers/mistral.py,sha256=R-_4cCarCc_ywlragZ9bf4PBhacFlfqok7sH2cuRXDM,684
+cmdai/providers/openai.py,sha256=dKsaP62tdbgoS2v7ABC2DbCSHpxlfrqs4ca1sr_r69Q,402
+cmdai/providers/venice.py,sha256=nSamRxIhGmi8I415Ev5zNgVQecZ8HyENVqGvnbhzb8s,681
+cmdchat-0.1.8.dist-info/METADATA,sha256=clSsaWOkGDKXK_F-R48S3TAsXnSKjJPGSvmf6Nnw4qk,540
+cmdchat-0.1.8.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+cmdchat-0.1.8.dist-info/entry_points.txt,sha256=rnjgnxg5_8VVGplzy3dxI-hDOyvYwaFULuT9_zC1sLE,41
+cmdchat-0.1.8.dist-info/top_level.txt,sha256=3fuHoRNvhJwGYbvpXUBkC3sBlBM_QRRLkqtqKhHeY7s,6
+cmdchat-0.1.8.dist-info/RECORD,,
