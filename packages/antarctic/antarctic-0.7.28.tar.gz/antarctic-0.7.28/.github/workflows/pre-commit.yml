@@ -1,0 +1,20 @@
+name: pre-commit
+
+on:
+  push:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: cvxgrp/.github/actions/pre-commit@v2.1.0
+
+  deptry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout [${{ github.repository }}]
+        uses: actions/checkout@v4
+
+      - uses: cvxgrp/.github/actions/uv/deptry@v2.0.17
+        with:
+          source-folder: src/antarctic
