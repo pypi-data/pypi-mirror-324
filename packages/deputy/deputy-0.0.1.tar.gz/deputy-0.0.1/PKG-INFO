@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: deputy
+Version: 0.0.1
+Summary: Embedded debug tool
+Home-page: https://github.com/redhill-embedded/magnum.git
+Author: Adrian Rothenbuhler
+Author-email: adrian@redhill-embedded.com
+License: MIT
+Keywords: embedded debug tool interface SWD serial
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: recom>=0.1.1
+Requires-Dist: tk
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

@@ -1,0 +1,4 @@
+[console_scripts]
+deputy = deputy.__main__:main
+magnum = deputy.magnum.cli:main
+serialmon = deputy.serialmon.cli:main
