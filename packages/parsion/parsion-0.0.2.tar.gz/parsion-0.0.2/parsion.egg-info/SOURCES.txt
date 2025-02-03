@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+parsion/__init__.py
+parsion/core.py
+parsion/exceptions.py
+parsion/lex.py
+parsion/parser.py
+parsion/self_check.py
+parsion.egg-info/PKG-INFO
+parsion.egg-info/SOURCES.txt
+parsion.egg-info/dependency_links.txt
+parsion.egg-info/top_level.txt
