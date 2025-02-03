@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.json
+setup.py
+mdocLib/__init__.py
+mdocLib/mdoc.py
+mdocLib.egg-info/PKG-INFO
+mdocLib.egg-info/SOURCES.txt
+mdocLib.egg-info/dependency_links.txt
+mdocLib.egg-info/requires.txt
+mdocLib.egg-info/top_level.txt
