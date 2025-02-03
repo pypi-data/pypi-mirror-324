@@ -1,0 +1,23 @@
+edalite/.gitignore,sha256=dLYgMsCesNNu5ctiBU6H8srczfuMxmlG2P-9bGIVqww,4
+edalite/__init__.py,sha256=B62KAsfBmcLGr8thzqA0AhXeQyabm-Lb2g2C7MnTCiU,166
+edalite/client.py,sha256=OYTSTC3TAZ770WUxO9Pi6X1ELMmgED4oZ8htKwTt7ic,19058
+edalite/core copy.py,sha256=4nQotSurs2o4wH5bauCmOv6mGhijRMN19QI7-hv-f-M,41131
+edalite/core.py,sha256=1q6kps_6wXGD1chH6pzn3P3apTgfYCL8hD_VwbfdGjk,25957
+edalite/Dockerfile,sha256=c7IkKcHJlWnaH2EkynMar8k2WIeNF7GJLpIZZjwYyE0,395
+edalite/requirements.txt,sha256=q-UgHXg8YWUEOvAllik0AKY4FonF2JZl4udotSdk-vo,7
+edalite/test/async_server.py,sha256=iXKSy1UqOg5z_x3JsJgLUEEzFwWnJ54eMI5bPvbzd9A,3715
+edalite/test/client.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edalite/test/client_async.py,sha256=81lc8NQwFGLBGlgnlRf3UKtGGtJ8wmaM5nSiVX0aU7c,826
+edalite/test/core copy.py,sha256=Ka4VhEhBfKtnXOykDxa5CtW6a5QvKqMAvV9XMA_Qmf8,12833
+edalite/test/cpu_async_server.py,sha256=Bk2x1JnZ9zF2I9EgKtDllkPEIfUDqHoGwLw8QVW4AEc,3713
+edalite/test/cpu_process_server.py,sha256=mHOHe_VGTL7Ze_exaN4GcYxyLPpm5OwWzfdfHP2Mv8M,3645
+edalite/test/cpu_test_client.py,sha256=FQKv0vQ_EGNyh0sIz-ZQG4JTEtUyfpRqzCxB5nLxoE0,3159
+edalite/test/cpu_thread_server.py,sha256=W-OO16uVtULh6M3bdpeKYTZaNtJSHBl_W679dSsAgko,4149
+edalite/test/example_client_simple.py,sha256=B-QAf9B7RfaCEvxipY8o87lKSiExmiBXuGzMsHkRBOI,1223
+edalite/test/main.py,sha256=lJOMM36dlkMkAXSEMHz0qe7tI2eiokEL9X5TWNAQl7A,720
+edalite/test/test_client.py,sha256=pq_fURsf8UZmU89y59kmczyjO-4CmIV-ua0nNhnfNe8,1483
+edalite/test/thread_server.py,sha256=DN1ZXDBzaOebf9JgfRjhWmx0M7webi6RChL63QcyLXk,4149
+edalite/worker copy.py,sha256=8bS9ZU_gbONTkal1elC2PjBABr1ftRRsdQsS7E-9G7k,28140
+edalite-0.5.0.dist-info/METADATA,sha256=4Zr6FYPeZfvDMfhVh8xfuHfYw4rIB-VgA2rQZwc-UHw,605
+edalite-0.5.0.dist-info/WHEEL,sha256=IYZQI976HJqqOpQU6PHkJ8fb3tMNBFjg-Cn-pwAbaFM,88
+edalite-0.5.0.dist-info/RECORD,,
