@@ -1,0 +1,11 @@
+Metadata-Version: 2.2
+Name: data3_network_agent
+Version: 0.0.5
+Summary: Data3 Network Library for agent env access
+Author: Data3 Network
+Author-email: data3network@gmail.com
+Requires-Dist: requests==2.32.3
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: summary
