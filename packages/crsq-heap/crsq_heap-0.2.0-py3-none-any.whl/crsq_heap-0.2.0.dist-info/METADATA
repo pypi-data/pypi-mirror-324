@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: crsq-heap
+Version: 0.2.0
+Summary: Qubit Heap module for the CRSQ project
+Project-URL: Homepage, https://github.com/crsq-dev/crsq-heap
+Project-URL: Issues, https://github.com/crsq-dev/crsq-heap/issues
+Author: Hideo Takahashi
+License-Expression: Apache-2.0
+License-File: LICENSE
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.10
+Requires-Dist: qiskit>=1.0
+Description-Content-Type: text/markdown
+
+# Qubit Heap module for CRSQ - the Chemical Reaction Simulator Q
+
+See the project page https://github.com/crsq-dev/crsq-heap
