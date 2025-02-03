@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/local_aws_lambda.egg-info/PKG-INFO
+src/local_aws_lambda.egg-info/SOURCES.txt
+src/local_aws_lambda.egg-info/dependency_links.txt
+src/local_aws_lambda.egg-info/entry_points.txt
+src/local_aws_lambda.egg-info/top_level.txt
+src/local_lambda/__init__.py
+src/local_lambda/cli.py
+src/local_lambda/mocks.py
+src/local_lambda/runtime.py
