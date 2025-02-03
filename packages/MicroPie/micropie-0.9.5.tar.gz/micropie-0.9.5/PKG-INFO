@@ -1,0 +1,53 @@
+Metadata-Version: 2.2
+Name: MicroPie
+Version: 0.9.5
+Summary: A ultra micro web framework w/ Jinja2.
+Home-page: http://github.com/patx/micropie
+Author: Harrison Erd
+Author-email: harrisonerd@gmail.com
+License: three-clause BSD
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: Framework :: AsyncIO
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Typing :: Typed
+License-File: LICENSE
+Requires-Dist: jinja2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+
+
+MicroPie is Fun
+```````````````
+
+::
+
+    from MicroPie import
+
+    class MyApp(Server):
+
+        def index(self):
+            return 'Hello world!'
+
+    app = MyApp()  # Run with `uvicorn app:app`
+
+
+Links
+`````
+
+* `Website <https://patx.github.io/micropie>`_
+* `Github Repo <https://github.com/patx/micropie>`_
