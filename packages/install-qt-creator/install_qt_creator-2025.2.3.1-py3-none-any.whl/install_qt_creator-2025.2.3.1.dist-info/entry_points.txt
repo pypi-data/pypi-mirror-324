@@ -1,0 +1,2 @@
+[console_scripts]
+install-qt-creator = install_qt_creator.main:main
