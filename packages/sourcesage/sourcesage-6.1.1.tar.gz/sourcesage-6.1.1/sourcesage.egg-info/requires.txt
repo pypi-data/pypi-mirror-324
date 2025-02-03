@@ -1,0 +1,10 @@
+loguru
+GitPython
+requests
+art
+termcolor
+google-generativeai
+litellm
+beautifulsoup4
+markdown
+html2text
