@@ -1,0 +1,13 @@
+napari_biopb/__init__.py,sha256=AVe2SMifVmB0_vG0jYK85-0LdpKY0Mgb35qXr3yrt-k,174
+napari_biopb/_grpc.py,sha256=7ZMpTsoXSdk6YOZXeUPFD4YSrLapnGyuI3yiy8Lu4KQ,5523
+napari_biopb/_version.py,sha256=LihvXsX11I2jla5mXh08c4Nv7nlLSLZJCmSKYdqiruQ,427
+napari_biopb/_widget.py,sha256=g3Kwrtgm5Gu4FG0njC0pneT0l-awd_wMyTi1bRXz_iY,3523
+napari_biopb/napari.yaml,sha256=plop69u6riDwIE-DcI3kplJzsHPQuTMrSsPdcQS_BWQ,461
+napari_biopb/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_biopb/_tests/test_widget.py,sha256=cWOoEf_5ioCmWQXGLfS6ulXRMHPlx3lwxiMGga8a4C0,335
+napari_biopb-0.1.0.dist-info/LICENSE,sha256=HfdcD640uoMeJ11kbyb644IKSVqIeALOcNIjlY8m-A8,1073
+napari_biopb-0.1.0.dist-info/METADATA,sha256=GaGxUKD47AKWc7G1NLAv14huT4RxbsT4WMZmkvG0XUQ,5534
+napari_biopb-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+napari_biopb-0.1.0.dist-info/entry_points.txt,sha256=xb9Hkw6s0m_QrcTnpVv-Oc8uI4qU5yuzejReMMVXPps,58
+napari_biopb-0.1.0.dist-info/top_level.txt,sha256=gg8oQheefzjPVa4dQygqUnUwDuwc8qSsRUfL5oJYUbs,13
+napari_biopb-0.1.0.dist-info/RECORD,,
