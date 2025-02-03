@@ -1,0 +1,68 @@
+Metadata-Version: 2.2
+Name: md-dlp
+Version: 0.2.1
+Summary: A tool for markdown data loss prevention
+Home-page: https://github.com/markshawn2020/md-dlp
+Author: MarkShawn
+Author-email: shawninjuly@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests>=2.25.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# md-dlp
+
+A tool for markdown data loss prevention.
+
+## Installation
+
+### Using pip (Recommended)
+
+```bash
+pip install md-dlp
+```
+
+### Using Homebrew (Coming Soon)
+
+> ⚠️ Homebrew installation is currently under development and not yet available. Please use pip installation for now.
+
+The following will be available once the Homebrew formula is ready:
+```bash
+# Add the tap
+brew tap markshawn2020/tools
+
+# Install md-dlp
+brew install md-dlp
+```
+
+## Usage
+
+```bash
+md-dlp [options] <file>
+```
+
+## Features
+
+- Prevent data loss in markdown files
+- Easy to use command-line interface
+- Cross-platform support
+- Available through both Homebrew and pip
+
+## License
+
+MIT License
+
+## Author
+
+MarkShawn (shawninjuly@gmail.com)
