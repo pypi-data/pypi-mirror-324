@@ -1,0 +1,3 @@
+[console_scripts]
+diskspacemon = diskspacemon:__main__.usage
+diskspacemon3 = diskspacemon:__main__.usage
