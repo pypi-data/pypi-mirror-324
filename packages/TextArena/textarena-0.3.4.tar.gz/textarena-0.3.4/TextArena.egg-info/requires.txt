@@ -1,0 +1,17 @@
+requests
+aiohttp
+backoff
+rich
+networkx
+importlib
+openai
+imageio
+imageio[ffmpeg]
+e2b_code_interpreter
+importlib
+transformers
+playwright
+opencv-python
+chess
+pyenchant
+google-generativeai
