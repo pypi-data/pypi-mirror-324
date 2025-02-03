@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+cli_project_generator.egg-info/PKG-INFO
+cli_project_generator.egg-info/SOURCES.txt
+cli_project_generator.egg-info/dependency_links.txt
+cli_project_generator.egg-info/entry_points.txt
+cli_project_generator.egg-info/requires.txt
+cli_project_generator.egg-info/top_level.txt
+nb_cli_fastapi/__init__.py
+nb_cli_fastapi/feature.py
+nb_cli_fastapi/main.py
