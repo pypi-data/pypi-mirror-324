@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: optimum-rbln
+Version: 0.1.9
+Summary: Optimum RBLN is the interface between the Hugging Face Transformers and Diffusers libraries and RBLN accelerators.
+        It provides a set of tools enabling easy model loading and inference on single and multiple rbln device settings for different downstream tasks.
+Keywords: transformers,diffusers,inference,rbln,atom,rebel
+Author-Email: "Rebellions Inc." <support@rebellions.ai>
+License: Apache
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Project-URL: Homepage, https://rebellions.ai
+Project-URL: Documentation, https://docs.rbln.ai
+Requires-Python: <3.11,>=3.8
+Requires-Dist: torch<=2.2.1
+Requires-Dist: torchvision<=0.17.1
+Requires-Dist: torchaudio<=2.2.1
+Requires-Dist: optimum<=1.20.0
+Requires-Dist: accelerate>=0.28.0
+Requires-Dist: transformers<=4.40.2,>=4.38.0
+Requires-Dist: diffusers<=0.30.1
+Requires-Dist: einops>=0.8.0
+Requires-Dist: packaging>=24.1
+Requires-Dist: pytest>=8.1.1; extra == "tests"
+Requires-Dist: psutil>=5.9.8; extra == "tests"
+Requires-Dist: parameterized>=0.9.0; extra == "tests"
+Requires-Dist: GitPython>=3.1.42; extra == "tests"
+Requires-Dist: sentencepiece>=0.2.0; extra == "tests"
+Requires-Dist: datasets>=2.18.0; extra == "tests"
+Requires-Dist: sacremoses>=0.1.1; extra == "tests"
+Requires-Dist: safetensors>=0.4.2; extra == "tests"
+Requires-Dist: ruff>=0.3.3; extra == "quality"
+Requires-Dist: isort>=5.13.2; extra == "quality"
+Requires-Dist: hf-doc-builder>=0.5.0; extra == "quality"
+Provides-Extra: tests
+Provides-Extra: quality
+Description-Content-Type: text/markdown
+
+<!---
+Copyright 2023 The HuggingFace Team. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+# Optimum RBLN
+
+🤗 Optimum RBLN is the interface between the 🤗 Transformers library and RBLN Accelerators including [ATOM](https://atom_link) and [REBEL](https://rebel_link).
+It provides a set of tools enabling easy model loading and inference on single- and multi-Accelerator settings for different downstream tasks.
+The list of officially validated models and tasks is available [here](https://docs.rbln.ai/software/optimum/optimum_rbln.html). Users can try other models and tasks with only few changes.
+
+## Install from PyPI
+
+To install the latest release of this package:
+
+- Export environment variables to access to RBLN private PyPI.
+  ```bash
+  export REBEL_PYPI_USERNAME=<username>
+  export REBEL_PYPI_PASSWORD=<password>
+  ```
+
+- Install optimum-rbln package:
+  ```bash
+  pip install --index-url https://pypi.rebellions.in/simple optimum-rbln
+  ```
+
+## Install from source
+
+### Prerequisites
+
+- Install [PDM](https://pdm-project.org/latest/) (refer [this link](https://pdm-project.org/latest/#installation) for detailed commands)
+
+The below command installs optimum-rbln along with its dependencies.
+
+```bash
+git clone https://github.com/rebellions-sw/optimum-rbln.git
+cd optimum-rbln
+pdm install
+```
+
+To install optional dependencies from all groups, specify `-G:all` option.
+
+```bash
+pdm install -G:all
+```
+
+If you want to install optimum-rbln as [editable mode](https://pip.pypa.io/en/stable/topics/local-project-installs/#editable-installs) in existing venv,
+```bash
+(venv) pip install -e .
+```
+
+## How to use it?
+
+### Quick Start
+
+🤗 Optimum RBLN was designed with one goal in mind: **to make inference straightforward for any 🤗 Transformers user while leveraging the complete power of RBLN Accelerators**.
+
+### Documentation
+
+Check out [the documentation of Optimum RBLN](https://docs.rbln.ai/software/optimum/optimum_rbln.html) for more advanced usage.
