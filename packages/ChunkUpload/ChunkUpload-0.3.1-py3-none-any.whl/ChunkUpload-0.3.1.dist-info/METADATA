@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: ChunkUpload
+Version: 0.3.1
+Summary: A django app for uploading videos chunk by chunk and completing uploaded chunk after all chunks have been uploaded.
+Home-page: https://github.com/MOQA14
+Author-email: mamad.agha750202@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=3.0
+
+ChunkUpload
+General Description
+
+ChunkUpload is a project designed for uploading videos in chunks. This project receives videos without considering their size and stores them chunk by chunk in the database. A default chunk size is set, but you can modify it based on your needs.
+Prerequisites
+
+To use this project, follow these steps:
+
+Download and install the ChunkUpload package from PyPI:
+
+    $ pip install ChunkUpload
+
+Add upload_chunk to the INSTALLED_APPS list in your Django project’s settings file (settings.py):
+
+python
+
+    INSTALLED_APPS = [
+        ...,
+        'chunk_upload',
+    ]
+
+Usage
+
+    After completing the above steps, the project is ready, and you can upload your videos in chunks.
+    The default chunk size can be found in the settings, which you can adjust according to your requirements.
+
+Author
+
+    https://github.com/MOQA14
+
+Development Team
+
+    https://github.com/Nadimibox
+
+Additional Information
+
+For improving the quality of the project and contributing, feel free to contact me.
