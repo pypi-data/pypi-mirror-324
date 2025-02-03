@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: naics-tool
+Version: 0.1.1
+Summary: 
+Author: Paul Adamson
+Author-email: paul.adamson.01@gmail.com
+Requires-Python: >=3.11,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.11.11,<4.0.0)
+Requires-Dist: langchain-core (>=0.3.33,<0.4.0)
+Requires-Dist: pydantic (>=2.10.6,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+
