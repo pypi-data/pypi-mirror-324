@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/DeepSeekfree/__init__.py
+src/DeepSeekfree/deepseek.py
+src/DeepSeekfree/errors.py
+src/DeepSeekfree.egg-info/PKG-INFO
+src/DeepSeekfree.egg-info/SOURCES.txt
+src/DeepSeekfree.egg-info/dependency_links.txt
+src/DeepSeekfree.egg-info/top_level.txt
+test/test.py
