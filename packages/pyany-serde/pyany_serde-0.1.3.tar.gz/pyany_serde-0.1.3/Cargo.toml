@@ -1,0 +1,38 @@
+[package]
+name = "pyany-serde"
+version = "0.1.3"
+edition = "2021"
+description = "Serialization and deserialization for Python objects"
+license="Apache-2.0"
+build = "build.rs"
+exclude = [
+    ".github"
+]
+
+[lib]
+name = "pyany_serde"
+crate-type = ["lib", "cdylib"]
+
+[profile.test]
+inherits = "release"
+
+
+[dependencies]
+bytemuck = "1.17.0"
+byteorder = "1.5.0"
+dyn-clone = "1.0.17"
+fastrand = "2.2.0"
+itertools = "0.13.0"
+num-derive = "0.4.2"
+num-traits = "0.2.19"
+numpy = "0.23.0"
+paste = "1.0.15"
+pyo3 = { version = "0.23.4", features = ["py-clone"] }
+raw_sync = "0.1.5"
+shared_memory = "0.12.4"
+
+[features]
+default = ["lib"]
+lib = []
+cdylib = ["extension-module"]
+extension-module = ["pyo3/extension-module"]
