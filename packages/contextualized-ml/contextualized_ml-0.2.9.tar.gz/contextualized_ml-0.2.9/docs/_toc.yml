@@ -1,0 +1,33 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+  - caption: Introduction
+    chapters:
+    - file: installation
+    - file: model-fitting
+    - file: model-analysis
+    - file: under-the-hood
+  - caption: Models
+    chapters:
+    - file: models/regression_intro
+      sections: 
+        - file: models/easy_regression
+        - file: models/easy_classification
+    - file: models/networks_intro
+      sections:
+        - file: models/easy_correlation_networks
+        - file: models/easy_markov_networks
+        - file: models/easy_bayesian_networks
+        - file: models/easy_bayesian_networks_factors
+  - caption: API Reference
+    chapters:
+    - file: source/easy
+    - file: source/analysis
+  - caption: Beyond Basics
+    chapters:
+    - file: demos/sequential_testing
+    - file: demos/custom_models
+    - file: demos/benefits
