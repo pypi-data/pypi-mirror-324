@@ -1,0 +1,15 @@
+goose/__init__.py,sha256=vDVznQm4FIZmqjmCEJdOozSWLse5c-adbesRLdmNyiE,202
+goose/_agent.py,sha256=aeHJrCP3257fNDwpt4ls-zqL76Vs3p4wNJvQFHdk_xM,6061
+goose/_conversation.py,sha256=8ZgoBHnwWZ4zYnf5wQXEo0mVs50ixMIQqc2qDOTorPE,1177
+goose/_flow.py,sha256=lx8L6ZizovtgLG1GGn0zf_zuRAez5TN6gD8Q182s0Ks,3208
+goose/_result.py,sha256=-eZJn-2sPo7rHZ38Sz6IAHXqiJ-Ss39esEoFGimJEBI,155
+goose/_state.py,sha256=eG5SyO-YVj9A9a4HSoIF-YInVF3cwJkZ906B1GHohr4,5793
+goose/_store.py,sha256=wB-VWaWXvW1PlyKm05Ti21XM6PFqsAPEGvAYyFokApk,928
+goose/_task.py,sha256=lE7k79Jmb7Lkz4vJj2rEt53TG7XnVqDFltON3iONamk,4710
+goose/errors.py,sha256=-0OyZQJWYTRw5YgnCB2_uorVaUsL6Z0QYQO2FqzCiyg,32
+goose/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goose/types/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+goose/types/agent.py,sha256=rNVt2gEr_m4_8tGFgcdichpPp8xhOS5GY0kN2C4tiE8,2153
+goose_py-0.6.0.dist-info/METADATA,sha256=VR7a7oYrrSN8a1-aF5xC05ZwUp45gwh8txPv1VMgYxE,1106
+goose_py-0.6.0.dist-info/WHEEL,sha256=Nq82e9rUAnEjt98J6MlVmMCZb-t9cYE2Ir1kpBmnWfs,88
+goose_py-0.6.0.dist-info/RECORD,,
