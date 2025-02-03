@@ -1,0 +1,68 @@
+Metadata-Version: 2.3
+Name: spireg
+Version: 0.1.3
+Summary: SPIReg provides a method to define and access SPI registers
+Author-email: Daniël van den Berg <daniel@dmvandenberg.nl>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: License :: Other/Proprietary License
+Requires-Dist: bitstring
+Requires-Dist: flake8 ; extra == "dev"
+Provides-Extra: dev
+
+# SPIReg
+
+**SPIReg** provides a method to define and access SPI registers and their individual fields.
+
+## Features
+- Define SPI registers with custom fields.
+- Access and modify individual register fields dynamically.
+- Ensures values fit within specified field sizes.
+- Supports conversion between bit representations and integer values.
+
+## Installation
+Install SPIReg using:
+```sh
+pip install spireg
+```
+
+## Usage
+```python
+from spireg import Register, Entry
+from ctypes import c_uint8
+from typing import cast
+
+class ExampleRegisterTypes(Register):
+    FIELD_A: int
+    FIELD_B: int
+    FIELD_C: int
+
+EXAMPLE_REG = cast(ExampleRegisterTypes, Register("EXAMPLE_REG", 0x12, "Example register description.", [
+    Entry("FIELD_A", 1),  # Bit 7: Not used
+    Entry("FIELD_B", 1),  # Bit 6: Example binary flag
+    Entry("FIELD_C", 6, 0x15),  # Bits 5-0: Default value of 0x15
+]))
+
+# Print default values
+print(EXAMPLE_REG.FIELD_A)  # Output: 0
+print(EXAMPLE_REG.FIELD_B)  # Output: 0
+print(EXAMPLE_REG.FIELD_C)  # Output: 21
+
+# Set field values
+EXAMPLE_REG.FIELD_B = 1
+EXAMPLE_REG.FIELD_C = 0x1F
+
+# Get modified field values
+print(EXAMPLE_REG.FIELD_B)  # Output: 1
+print(EXAMPLE_REG.FIELD_C)  # Output: 31
+print(int(EXAMPLE_REG))     # Get full register value
+
+print(EXAMPLE_REG)  # Outputs bit representation and field values
+```
+
+## License
+This project is licensed under **GPL-3.0-or-later**.  
+For **commercial licensing**, please contact:
+Daniël van den Berg
+daniel@dmvandenberg.nl
+
