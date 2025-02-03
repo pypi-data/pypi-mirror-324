@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+__meta__.py
+__version__.py
+setup.py
+diskspacemon/__init__.py
+diskspacemon/__main__.py
+diskspacemon/__version__.py
+diskspacemon/monitor.ini
+diskspacemon/monitor.py
+diskspacemon/syslogx.py
+diskspacemon.egg-info/PKG-INFO
+diskspacemon.egg-info/SOURCES.txt
+diskspacemon.egg-info/dependency_links.txt
+diskspacemon.egg-info/entry_points.txt
+diskspacemon.egg-info/requires.txt
+diskspacemon.egg-info/top_level.txt
