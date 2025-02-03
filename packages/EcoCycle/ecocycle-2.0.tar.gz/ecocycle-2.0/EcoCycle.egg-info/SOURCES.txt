@@ -1,0 +1,10 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+EcoCycle.egg-info/PKG-INFO
+EcoCycle.egg-info/SOURCES.txt
+EcoCycle.egg-info/dependency_links.txt
+EcoCycle.egg-info/entry_points.txt
+EcoCycle.egg-info/requires.txt
+EcoCycle.egg-info/top_level.txt
