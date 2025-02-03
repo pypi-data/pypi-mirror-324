@@ -1,0 +1,2 @@
+[console_scripts]
+local-lambda = local_lambda.cli:main
