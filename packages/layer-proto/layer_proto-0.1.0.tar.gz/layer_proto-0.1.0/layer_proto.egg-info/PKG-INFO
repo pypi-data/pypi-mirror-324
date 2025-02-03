@@ -1,0 +1,9 @@
+Metadata-Version: 2.2
+Name: layer-proto
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: betterproto[compiler]>=2.0.0b7
+Requires-Dist: markupsafe==2.0.1
+Requires-Dist: protobuf>=5.29.3
