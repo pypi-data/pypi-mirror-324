@@ -1,0 +1,2 @@
+[console_scripts]
+memtrace = memtrace.cli:main
