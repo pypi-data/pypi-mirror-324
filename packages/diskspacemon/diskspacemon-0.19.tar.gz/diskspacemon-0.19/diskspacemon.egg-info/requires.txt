@@ -1,0 +1,11 @@
+sendgrowl
+argparse
+configset
+pydebugger
+ctraceback
+bitmath
+json5
+
+[:platform_system == "Windows"]
+pypiwin32
+comtypes
