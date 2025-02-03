@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "conc-5011-python-project-repository-setup"
+version = "0.1.0"
+description = ""
+authors = ["gracious7 <princetripathi093@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = ">=3.13"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

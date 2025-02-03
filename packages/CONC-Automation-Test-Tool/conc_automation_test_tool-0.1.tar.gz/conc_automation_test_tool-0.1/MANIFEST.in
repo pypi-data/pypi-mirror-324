@@ -1,0 +1,6 @@
+include README.md
+include src/config/*.py
+include src/apps/app1/*.py
+include src/apps/app2/*.py
+include src/db/*.py
+include src/templates/*.html
