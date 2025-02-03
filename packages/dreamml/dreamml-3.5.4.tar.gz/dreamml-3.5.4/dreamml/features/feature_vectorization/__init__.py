@@ -1,0 +1,5 @@
+from dreamml.features.feature_vectorization._bag_of_words import BowVectorization
+from dreamml.features.feature_vectorization._fasttext import FastTextVectorization
+from dreamml.features.feature_vectorization._glove import GloveVectorization
+from dreamml.features.feature_vectorization._tfidf import TfidfVectorization
+from dreamml.features.feature_vectorization._word2vec import Word2VecVectorization
