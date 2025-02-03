@@ -1,0 +1,7 @@
+README.md
+setup.py
+CoREMOF_tools.egg-info/PKG-INFO
+CoREMOF_tools.egg-info/SOURCES.txt
+CoREMOF_tools.egg-info/dependency_links.txt
+CoREMOF_tools.egg-info/requires.txt
+CoREMOF_tools.egg-info/top_level.txt
