@@ -1,0 +1,6 @@
+setup.py
+bridze/__init__.py
+snowflake2dbt.egg-info/PKG-INFO
+snowflake2dbt.egg-info/SOURCES.txt
+snowflake2dbt.egg-info/dependency_links.txt
+snowflake2dbt.egg-info/top_level.txt
