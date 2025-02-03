@@ -1,0 +1,11 @@
+diskspacemon/__init__.py,sha256=iCki3RBTd4IIDv2eRud-L-2Yxnye04sxfkc__Wsk3F0,33
+diskspacemon/__main__.py,sha256=OIITh7emNNzHYGnVemVngJ1-rL25sGE8lYs-HPTzAO4,112
+diskspacemon/__version__.py,sha256=WAQWZqe0r6EeL1fdmG72JfqaSjuZbVPmhJnIHNHUwd4,16
+diskspacemon/monitor.ini,sha256=_R6EHiBtBZrKUVUakx9_xpMC_lnVBhcrtkOWKEcBtcY,128
+diskspacemon/monitor.py,sha256=Oe_itj0ZVyckSCg0nZ1-uzldQB_oDGnq__fwGFToslc,10940
+diskspacemon/syslogx.py,sha256=JlqysSraZ5N5TKKICEg8gBvDRSUMg0oSWtfuTBgoz2w,1926
+diskspacemon-0.15.dist-info/METADATA,sha256=b0Aus3JlZ9RbAjdfoZa4M37M9YpssBChccTu7OVoyro,1201
+diskspacemon-0.15.dist-info/WHEEL,sha256=UvcQYKBHoFqaQd6LKyqHw9fxEolWLQnlzP0h_LgJAfI,91
+diskspacemon-0.15.dist-info/entry_points.txt,sha256=ttmRuNvtgcgmnHoeiou0oyr_6lgAnnt77AUG8DH-cLE,105
+diskspacemon-0.15.dist-info/top_level.txt,sha256=bsYjj2b2EiY-rllIcee6Qk6DvjpfdE60Cx_F-6UAeoQ,13
+diskspacemon-0.15.dist-info/RECORD,,

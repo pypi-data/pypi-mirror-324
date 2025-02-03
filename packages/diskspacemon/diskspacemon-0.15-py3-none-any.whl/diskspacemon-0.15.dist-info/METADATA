@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: diskspacemon
+Version: 0.15
+Summary: Monitoring space of directory/path/drive then send notification to growl and syslog/remote syslog with multiple host and port
+Home-page: https://github.com/cumulus13/diskspacemon
+Download-URL: https://github.com/cumulus13/diskspacemon/tarball/master
+Author: Hadi Cahyadi LD
+Author-email: cumulus13@gmail.com
+Maintainer: cumulus13 Team
+Maintainer-email: cumulus13@gmail.com
+License: MIT
+Project-URL: Documentation, https://github.com/cumulus13/diskspacemon
+Project-URL: Code, https://github.com/cumulus13/diskspacemon
+Keywords: disk space monitor growl syslog
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.0
+Requires-Dist: sendgrowl
+Requires-Dist: argparse
+Requires-Dist: configset
+Requires-Dist: pydebugger
+Requires-Dist: ctraceback
+Requires-Dist: bitmath
+Requires-Dist: json5
+
