@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: sample-alacater
+Version: 0.1.1
+Summary: 
+Author: vishnnu-vishnu
+Author-email: vishnumampattakunnath@gmail.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: fastapi (>=0.115.8,<0.116.0)
+Description-Content-Type: text/markdown
+
+
