@@ -1,0 +1,17 @@
+[project]
+name = "simple-tk-stopwatch"
+version = "0.1.0"
+description = "Simple stopwatch window in tkinter"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { text = "MIT" }
+
+
+[project.urls]
+Homepage = "https://github.com/shockwavebot/simple-tk-stopwatch"
+
