@@ -1,0 +1,37 @@
+Metadata-Version: 2.2
+Name: lightcnn-pytorch
+Version: 0.2.3
+Summary: LightCNN for fast, accurate and lightweight face verification
+Author: Yernar Bekbolat
+Author-email: dvayernar@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==2.2.2
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: opencv-python
+Requires-Dist: dlib
+Requires-Dist: scipy
+Requires-Dist: pillow
+Requires-Dist: gdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+
+    # LightCNN
+
+    Fast and accurate face recognition model optimized for Central Asian faces.
+
+    ## GitHub
+    For full documentation, examples, and source code:
+    https://github.com/YernarBekbolat/LightCNN-V4-PyTorch
+    

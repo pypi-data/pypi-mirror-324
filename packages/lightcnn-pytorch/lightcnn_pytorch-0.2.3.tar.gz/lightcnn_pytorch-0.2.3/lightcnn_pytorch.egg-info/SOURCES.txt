@@ -1,0 +1,10 @@
+pyproject.toml
+setup.py
+lightcnn-pytorch/__init__.py
+lightcnn-pytorch/model.py
+lightcnn-pytorch/preprocessing.py
+lightcnn_pytorch.egg-info/PKG-INFO
+lightcnn_pytorch.egg-info/SOURCES.txt
+lightcnn_pytorch.egg-info/dependency_links.txt
+lightcnn_pytorch.egg-info/requires.txt
+lightcnn_pytorch.egg-info/top_level.txt
