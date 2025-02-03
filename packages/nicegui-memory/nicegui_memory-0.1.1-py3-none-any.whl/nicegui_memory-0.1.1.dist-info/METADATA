@@ -1,0 +1,27 @@
+Metadata-Version: 2.4
+Name: nicegui-memory
+Version: 0.1.1
+Summary: Memory game on NiceGUI
+Project-URL: homepage, https://github.com/SaitoTsutomu/nicegui-memory
+Author-email: Saito Tsutomu <tsutomu7@hotmail.co.jp>
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
+Requires-Python: >=3.12
+Requires-Dist: nicegui>=2.10.1
+Description-Content-Type: text/markdown
+
+# NiceGUI Memory Game
+
+NiceGUI Memory Game is a Memory Game that runs on NiceGUI.
+
+## Usage
+
+```
+% memory'
+```
+
+![](https://raw.githubusercontent.com/SaitoTsutomu/nicegui-memory/master/images/main.png)
