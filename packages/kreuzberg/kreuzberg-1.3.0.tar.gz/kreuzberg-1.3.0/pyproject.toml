@@ -1,0 +1,139 @@
+[project]
+name = "kreuzberg"
+version = "1.3.0"
+description = "A text extraction library supporting PDFs, images, office documents and more"
+readme = "README.md"
+keywords = [
+  "document-processing",
+  "docx",
+  "image-to-text",
+  "latex",
+  "markdown",
+  "ocr",
+  "odt",
+  "office-documents",
+  "pandoc",
+  "pdf",
+  "pdf-extraction",
+  "rag",
+  "text-extraction",
+  "text-processing",
+]
+license = { text = "MIT" }
+authors = [ { name = "Na'aman Hirschfeld", email = "nhirschfed@gmail.com" } ]
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Text Processing :: General",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+
+dependencies = [
+  "anyio>=4.8.0",
+  "charset-normalizer>=3.4.1",
+  "html-to-markdown>=1.2.0",
+  "pypandoc>=1.15",
+  "pypdfium2>=4.30.1",
+  "pytesseract>=0.3.13",
+  "python-pptx>=1.0.2",
+  "typing-extensions>=4.12.2",
+]
+
+urls.homepage = "https://github.com/Goldziher/kreuzberg"
+
+[dependency-groups]
+dev = [
+  "covdefaults>=2.3.0",
+  "mypy>=1.14.1",
+  "pre-commit>=4.1.0",
+  "pytest>=8.3.4",
+  "pytest-asyncio>=0.25.2",
+  "pytest-cov>=6.0.0",
+  "pytest-mock>=3.14.0",
+  "pytest-timeout>=2.3.1",
+  "python-dotenv>=1.0.1",
+  "ruff>=0.9.3",
+]
+
+[tool.setuptools.packages.find]
+include = [ "kreuzberg" ]
+
+[tool.setuptools.package-data]
+kreuzberg = [ "py.typed" ]
+
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+src = [ "kreuzberg", "tests" ]
+
+format.docstring-code-line-length = 120
+format.docstring-code-format = true
+lint.select = [ "ALL" ]
+lint.ignore = [
+  "ANN401",   # Dynamically typed ANY
+  "ASYNC110", # Use Event instead of sleep in async loop
+  "COM812",   # Conflicts with formatter
+  "D100",     # Missing docstring in public module
+  "D104",     # Missing docstring in public package
+  "D107",     # Missing docstring in __init__
+  "D205",     # 1 blank line required between summary line and description
+  "E501",     # Line too long, handled by ruff format
+  "EM",       # Exception messages,
+  "FBT",      # Boolean-typed positional argument in function definition
+  "FIX",      # We allow todo and fixme comments
+  "ISC001",   # Conflicts with formatter
+  "PD011",    # Creates false positives
+  "PGH003",   # Required specific mypy ignores
+  "PLR2004",  # Magic variables, we allow them
+  "S104",     # Disallows using '0.0.0.0' as a host
+  "TD",       # We allow todo and fixme comments
+  "TRY",      # Try except block, rules are too strict
+]
+lint.per-file-ignores."tests/**/*.*" = [
+  "ARG001",
+  "D",
+  "N815",
+  "PT006",
+  "PT007",
+  "PT013",
+  "RUF012",
+  "S",
+]
+lint.isort.known-first-party = [ "kreuzberg", "tests" ]
+lint.pydocstyle.convention = "google"
+
+[tool.pyproject-fmt]
+keep_full_version = true
+max_supported_python = "3.12"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "session"
+
+[tool.coverage.run]
+omit = [ "tests/*" ]
+plugins = [ "covdefaults" ]
+source = [ "kreuzberg" ]
+
+[tool.coverage.report]
+exclude_lines = [ 'if TYPE_CHECKING:' ]
+fail_under = 90
+
+[tool.mypy]
+packages = [ "kreuzberg", "tests" ]
+python_version = "3.9"
+disable_error_code = 'import-untyped'
+implicit_reexport = false
+show_error_codes = true
+strict = true
