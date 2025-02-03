@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/smdpy/__init__.py
+src/smdpy.egg-info/PKG-INFO
+src/smdpy.egg-info/SOURCES.txt
+src/smdpy.egg-info/dependency_links.txt
+src/smdpy.egg-info/requires.txt
+src/smdpy.egg-info/top_level.txt
+src/smdpy/social/__init__.py
+src/smdpy/social/instagram/__init__.py
+src/smdpy/social/youtube/__init__.py
+tests/test_main.py
