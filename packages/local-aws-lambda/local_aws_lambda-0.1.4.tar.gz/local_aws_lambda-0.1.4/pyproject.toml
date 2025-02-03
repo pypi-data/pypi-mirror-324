@@ -1,0 +1,17 @@
+[project]
+name = "local-aws-lambda"
+version = "0.1.4"  # Bump the version
+authors = [
+    {name = "Aswath", email = "aswathrachuru@gmail.com"}
+]
+description = "Local AWS Lambda is a Python package that allows you to simulate AWS Lambda functions in your local development environment. This helps you test and debug your serverless applications without deploying them to AWS."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[project.scripts]
+local-lambda = "local_lambda.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/ashwath1295/local-aws-lambda"
+"Bug Tracker" = "https://github.com/ashwath1295/local-aws-lambda/issues"
