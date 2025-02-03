@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: gabbia
+Version: 0.1.0
+Summary: Wayland kiosk
+Keywords: window manager,wayland,kiosk,compositor
+Author-email: Lars Heuer <mail@gabbia.org>
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Desktop Environment :: Window Managers
+Requires-Dist: pywayland<0.4.19
+Requires-Dist: pywlroots~=0.17.0
+Project-URL: Changes, https://github.com/heuer/gabbia/blob/main/CHANGES.rst
+Project-URL: Homepage, https://gabbia.org/
+Project-URL: Issue tracker, https://github.com/heuer/gabbia/issues/
+
+Gabbia – A Wayland kiosk
+========================
+
+Gabbia (Italian for "cage") is a Wayland compositor that runs a single
+application in maximized mode. It is possible to run multiple applications
+under Gabbia, but it limits interaction to one application by default.
+
+For this reason, Gabbia is particularly suitable for kiosk applications,
+home automation interfaces, music players etc. where the end user is only
+allowed to interact with a single application.
+
+However, Gabbia is not a sandbox.
+
+
+Similar projects
+^^^^^^^^^^^^^^^^
+* `Cage <https://github.com/cage-kiosk/cage>`_
+

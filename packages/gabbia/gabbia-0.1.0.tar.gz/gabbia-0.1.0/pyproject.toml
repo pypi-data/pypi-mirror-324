@@ -1,0 +1,54 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "gabbia"
+description = "Wayland kiosk"
+dynamic = ["version"]
+readme = "README.rst"
+license = {file = "LICENSE"}
+authors = [{name="Lars Heuer", email="mail@gabbia.org"}]
+requires-python = ">=3.10"
+keywords = ["window manager", "wayland", "kiosk", "compositor"]
+classifiers = [
+"Development Status :: 4 - Beta",
+"Intended Audience :: End Users/Desktop",
+"License :: OSI Approved :: MIT License",
+"Operating System :: POSIX :: BSD :: FreeBSD",
+"Operating System :: POSIX :: Linux",
+"Programming Language :: Python :: 3 :: Only",
+"Topic :: Desktop Environment :: Window Managers"
+]
+dependencies = [
+    "pywayland<0.4.19",
+    "pywlroots~=0.17.0"
+]
+
+
+[project.urls]
+Homepage = "https://gabbia.org/"
+"Issue tracker" = "https://github.com/heuer/gabbia/issues/"
+Changes = "https://github.com/heuer/gabbia/blob/main/CHANGES.rst"
+
+
+[project.scripts]
+gabbia = "gabbia:main"
+
+
+[tool.flit.sdist]
+include = ["docs/", "tests/", "LICENSE", "*.rst", "*.py", "MANIFEST.in", "*.toml"]
+exclude = [".*"]
+
+
+[tool.flit.external-data]
+directory = "data"
+
+
+[tool.mypy]
+disable_error_code = ["import-untyped"]
+
+
+[tool.ruff]
+line-length = 110
+
