@@ -1,0 +1,9 @@
+README.md
+setup.py
+codecs_protocol/__init__.py
+codecs_protocol/codec.py
+codecs_protocol/helper.py
+codecs_protocol.egg-info/PKG-INFO
+codecs_protocol.egg-info/SOURCES.txt
+codecs_protocol.egg-info/dependency_links.txt
+codecs_protocol.egg-info/top_level.txt
