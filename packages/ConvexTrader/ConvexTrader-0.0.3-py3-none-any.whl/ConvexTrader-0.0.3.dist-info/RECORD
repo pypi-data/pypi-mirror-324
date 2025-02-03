@@ -1,0 +1,16 @@
+ConvexTrader/Portfolio.py,sha256=tfPvH21IoiUi_mvWO3I_CMqcFsesaz1hY7YIDz-PWW8,7873
+ConvexTrader/Trade.py,sha256=ZwVeA8y4TeB5PUcheCppca3keZo5oYWaYndRrneKDBM,3519
+ConvexTrader/__init__.py,sha256=lqYdTke9zl_cFg-5ZGSre251TqIBHw7XMc0jSoulUg4,139
+ConvexTrader/multi_period_optimization.py,sha256=qDIyYiZEnKRy4ac7FQjz18rU4mfkU7YUdgpmFbJd6Ik,4742
+ConvexTrader/portfolio_exceptions.py,sha256=RLiV7L5eyvw80JVO5M-qtWc-jflIP5xz931Qf9DEuQM,926
+ConvexTrader/single_period_optimization.py,sha256=8hP2QuPCBP_DqbRq9w9eWWvUCSr-P8HjclwqWVKG-U8,3754
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=4q1LJXxZHnKF7BY0KhZJslwsbYLDhn3RplifOs5hWgM,153
+tests/test_class_initialization.py,sha256=LcB8wIMjoHRZFzsPrMjJk9b8kY77rWBtYOs_S05EniA,4701
+tests/test_multi_period_optimization.py,sha256=iSgPgYasrvZGlyNMqAxbwq7bH0gXlHstc2GVgsiBT1I,5937
+tests/test_single_period_optimization.py,sha256=-WekEop5-ZwjVkUo1k1AnBdOMpfVKgC_uevcyGPxX9c,4332
+ConvexTrader-0.0.3.dist-info/LICENSE,sha256=I4yAk1a9Qp-PDwTMrIN0fSRx4uh93hg7EY6P3lFiBFM,1083
+ConvexTrader-0.0.3.dist-info/METADATA,sha256=3etGZanDhm6YjOJiUaDY_4Tjl6uq6f5XYMCDWqqCMZw,1764
+ConvexTrader-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+ConvexTrader-0.0.3.dist-info/top_level.txt,sha256=vOcc1n3cfSfi5LY8q0Ff2h9ef88g6ueRb38LXzv1U4Q,19
+ConvexTrader-0.0.3.dist-info/RECORD,,
