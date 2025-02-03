@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+  <meta name="description" content="$description-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style>
+    $styles.html()$
+  </style>
+<link rel="stylesheet" href="styles/colour_scheme.css">
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+<script>
+    function fix_footer() {
+        // if we are on mobile and on firefox, `position: sticky` doesn't work, so change to `position: fixed` for `header#header-bar` and `footer#footer-bar`
+        // TODO: Fix this.
+        // are we on mobile?
+        if (window.matchMedia("(max-width: 767px)").matches) {
+            // are we on firefox?
+            if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+                console.log('Firefox on mobile detected');
+                // // change the position of the header and footer
+                // document.getElementById('header-bar').style.position = 'fixed';
+                // document.getElementById('footer-bar').style.position = 'fixed';
+                // // set their width to 100vw instead of 100%
+                // document.getElementById('header-bar').style.width = '100vw';
+                // document.getElementById('footer-bar').style.width = '100vw';
+                // hide the footer
+                document.getElementById('footer-bar').style.display = 'none';
+            }
+            else {
+                console.log("Mobile but not Firefox");
+            }
+        } else {
+            console.log("Not mobile");
+        }
+    }
+    function fix_tables() {
+        // get all tables with captions. Move the caption outside (after) the table.
+        var tables = document.querySelectorAll('table');
+        tables.forEach(function(table) {
+            // if the table has a caption
+            if (table.querySelector('caption')) {
+                // get the caption
+                var caption = table.querySelector('caption');
+                // get the parent of the table
+                var parent = table.parentNode;
+                // insert the caption after the table
+                parent.insertBefore(caption, table.nextSibling);
+                // separate the `Table ##:` from the caption, and add a 'table-caption' class
+                caption.innerHTML = caption.innerHTML.replace(/Table \d+:/, '');
+                caption.classList.add('table-caption');
+                // add .table to parent
+                parent.classList.add('table');
+            }
+        });
+    }
+    function fix_footnotes() {
+        // find all `aside.footnotes`. Check each `li` -- if it only contains one paragraph, remove the `p` tag.
+        var footnotes = document.querySelectorAll('aside.footnotes');
+        footnotes.forEach(function(footnote) {
+            var list_items = footnote.querySelectorAll('li');
+            list_items.forEach(function(item) {
+                if (item.children.length === 1 && item.children[0].tagName === 'P') {
+                    var p = item.querySelector('p');
+                    item.innerHTML = p.innerHTML;
+                }
+            });
+        });
+    }
+    // run the function on page load
+    window.onload = fix_footer;
+    window.onload = fix_tables;
+    window.onload = fix_footnotes;
+</script>
+$for(header-includes)$
+  $header-includes$
+$endfor$
+<div class = "maths-preamble">
+  \(
+  $for(maths-preambles)$
+    $maths-preambles$
+  $endfor$
+  \)
+</div>
+$if(math)$
+$if(mathjax)$
+  <script>
+    MathJax = {
+        loader: {load: ['[tex]/mathtools']},
+      tex: {
+        inlineMath: [["$$", "$$"], ["\\(", "\\)"]],
+        packages: { '[+]': ['mathtools'] },
+        // tags: "ams",
+      },
+      chtml: { displayAlign: 'left' },
+    };
+  </script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+$endif$
+  $math$
+$endif$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+<header id="header-bar">
+  $if(title)$
+  <span class="header-title">$title$</span>
+  $endif$
+  $if(subtitle)$
+  <span class="header-subtitle">$subtitle$</span>
+  $endif$
+</header>
+<div id = "content">
+$if(title)$
+<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$endif$
+$if(main-logo)$
+<img src="$main-logo$" alt="Logo" class="main-logo" />
+$endif$
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+$if(abstract)$
+<div class="abstract">
+<div class="abstract-title">$abstract-title$</div>
+$abstract$
+</div>
+$endif$
+</header>
+$endif$
+$if(toc)$
+<nav id="$idprefix$TOC" role="doc-toc">
+$if(toc-title)$
+<h2 id="$idprefix$toc-title">$toc-title$</h2>
+$endif$
+$table-of-contents$
+</nav>
+$endif$
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+</div>
+<footer id="footer-bar">
+  $if(footer-logo)$
+  <img src="$footer-logo$" alt="Logo" class="footer-logo" />
+  $endif$
+  $if(author)$
+  <span class="footer-author">$author$</span>
+  $endif$
+  <span class="spacer"></span>
+  $if(institution)$
+  <span class="footer-institution">$institution$</span>
+  $endif$
+</footer>
+</body>
+</html>

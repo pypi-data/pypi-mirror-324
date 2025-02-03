@@ -1,0 +1,2 @@
+[console_scripts]
+lecturemd = lecturemd.__main__:main
