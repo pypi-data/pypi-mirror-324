@@ -1,0 +1,11 @@
+wizard/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wizard/__main__.py,sha256=0MTOAvhZ0xqp-9xe-Ydp3z1501Cl4joZVhFKN5S8RZE,2032
+wizard/exec.py,sha256=piAIFpO61Tp6WQi9M7q_RB-gRzNqLqfL5jMv2BXHjzE,1498
+wizard/log.py,sha256=womrDDNrCaC4Yjo9-OWMYV5Aq1WJaeMYOJP7eeFHjwE,1062
+wizard/settings.py,sha256=bUaUZFVACS9-a4q5SqO4X7kXGeJFz0Fh_9lzF9K9eT0,664
+nixos_wizard-0.1.0.dist-info/LICENSE,sha256=VVSeYRd1RquH5LLNKuf7HtYdDJZHeINyx5HwwZquHqQ,1063
+nixos_wizard-0.1.0.dist-info/METADATA,sha256=kpO13Z2w2oUUpdpJHL9O5MoZYWjgtNwBSgYO_nem26Y,219
+nixos_wizard-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+nixos_wizard-0.1.0.dist-info/entry_points.txt,sha256=pREp6Q_59yCHWCyucnDDfkPR7ODzGb9u4rYO4AUD0FQ,157
+nixos_wizard-0.1.0.dist-info/top_level.txt,sha256=axZHE0dri9GpkglzdxIZJINFcTwUA5_9Vm988KQpFuY,7
+nixos_wizard-0.1.0.dist-info/RECORD,,

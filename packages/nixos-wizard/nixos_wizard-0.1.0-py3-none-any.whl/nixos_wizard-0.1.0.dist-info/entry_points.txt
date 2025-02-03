@@ -1,0 +1,4 @@
+[console_scripts]
+nixos-wizard-cleanup = wizard.__main__:cleanup
+nixos-wizard-rebuild = wizard.__main__:rebuild
+nixos-wizard-update = wizard.__main__:update
