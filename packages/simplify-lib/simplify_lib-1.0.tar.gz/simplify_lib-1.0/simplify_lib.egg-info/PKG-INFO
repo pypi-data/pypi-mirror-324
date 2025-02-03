@@ -1,0 +1,30 @@
+Metadata-Version: 2.2
+Name: simplify-lib
+Version: 1.0
+Summary: simplify-lib is for simplify many libraries of python
+Author: antonio-cal
+Author-email: antonioicaldeiraicarvalho@gmail.com
+License: MIT license
+Keywords: simplify-lib
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tkinter
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# simp
+
+## what is it for
+simp is for simplify many libraries of python
+
+## tkinter
+
+### model
+is a model for create a windown of tkinter
+ 
