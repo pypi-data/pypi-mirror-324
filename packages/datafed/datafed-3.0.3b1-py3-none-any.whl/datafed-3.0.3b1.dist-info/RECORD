@@ -1,0 +1,17 @@
+datafed/CLI.py,sha256=g-9q7IFsdCKegQgTw1owO2kVoIrTiRxYmM5i26Hk97s,98986
+datafed/CommandLib.py,sha256=c8tJKlfswLbdvtv3YB9P-v5-nn1MFbB6B4SuaqUUDq4,85116
+datafed/Config.py,sha256=7wrjTn6aQwKvqj8abL51_6c34w85KYGOT6v846rsRg4,15624
+datafed/Connection.py,sha256=gyS0rSkmuTZT_zRqZ1PFxMxlQ4Gs1LvCwHzM1gbBHNU,10585
+datafed/MessageLib.py,sha256=2b2hgCgD7MFCDm4JWM-Kd6LEmCdydgdcfWmu0djATTo,14997
+datafed/SDMS_Anon_pb2.py,sha256=26VB3aGdo8Udqu-DnzmL9ydIq8oJGHVH7i-rkJOqzbs,7874
+datafed/SDMS_Auth_pb2.py,sha256=2NeDlcKeMIaZ3hghBuVWSdpX6DlWSN_5zOIttw0pLag,80740
+datafed/SDMS_pb2.py,sha256=Z6Uedc2B742q37FQzf4u7-hnknRe4V6kWB-O4CFrb0I,13775
+datafed/VERSION.py,sha256=BIEPCTy7hqjoxfSta0yo2q8cciKBVyGmEct9dOwIPw8,22
+datafed/VersionUtils.py,sha256=NEuu9-zQiWOtA-B2Y3vzYRgKUX6wPRJiLXhHewJ99OE,2334
+datafed/Version_pb2.py,sha256=q70wW4VkZqqkwitaDjDypwVUQHberYjyxx3aQecK_5I,1460
+datafed/__init__.py,sha256=TX_lc9GziWIS84IwtLkclp8s2A18obb_jnToDBSbydI,1262
+datafed-3.0.3b1.dist-info/METADATA,sha256=rY5U3tmK6vrws25VRqjj29ROz_3iABNIoy7uAoc2O5U,2133
+datafed-3.0.3b1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+datafed-3.0.3b1.dist-info/entry_points.txt,sha256=2HuP2J0RZZ6E74ITwj0Nb2d0CdTGnYnzw6Zws2e_tXk,44
+datafed-3.0.3b1.dist-info/top_level.txt,sha256=zYiQPMswVmSA8n2n-4iFEUYGE10s0UOUgkWqpFc3x1Y,8
+datafed-3.0.3b1.dist-info/RECORD,,
