@@ -1,0 +1,8 @@
+build/
+dist/
+tests/data
+*.pyc
+.venv
+.vimspector.json
+uv.lock
+.python-version
