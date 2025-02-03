@@ -1,0 +1,10 @@
+click_with_aliasing/__init__.py,sha256=Bz6Z0Fq__y2xePLXRcXjznZxYgT5n0qPxCDJgGhEeQ8,111
+click_with_aliasing/_aliased_command.py,sha256=MiPPqi7IKN32esLXbxV5YK33F_uevYLuv3HObBs1tVg,304
+click_with_aliasing/_aliased_group.py,sha256=3hd5_9CoetuA0X5eQmaLnWLL0s-vVTVFjsknyDMRVU4,1529
+click_with_aliasing/command.py,sha256=Muog5OeLILIeqXxhRU1MVb1HCX3CAiijhyHdLKzYLow,1256
+click_with_aliasing/group.py,sha256=afNMam7sf9QpzUf9dtPMZkzr-x0UwqH6a33PlAeIc4o,1070
+click_with_aliasing-1.0.3.dist-info/LICENSE,sha256=gjO8hzM4mFSBXFikktaXVSgmXGcre91_GPJ-E_yP56E,1075
+click_with_aliasing-1.0.3.dist-info/METADATA,sha256=LSzq3MhF2Wqilhr87vKta4_DjWYsaU6rVFv8ExZtt_w,4365
+click_with_aliasing-1.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+click_with_aliasing-1.0.3.dist-info/top_level.txt,sha256=GiJnCiM-YWPFzXXQiCyYx891LRK2B_AxycgqHuidNXM,24
+click_with_aliasing-1.0.3.dist-info/RECORD,,
