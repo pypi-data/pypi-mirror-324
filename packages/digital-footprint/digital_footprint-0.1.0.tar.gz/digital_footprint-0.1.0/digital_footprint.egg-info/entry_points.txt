@@ -1,0 +1,2 @@
+[console_scripts]
+digital_footprint = digital_footprint.scanner:main
