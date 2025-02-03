@@ -1,0 +1,2 @@
+[console_scripts]
+vpsinfo = vpsinfo.vpsinfo:cli
