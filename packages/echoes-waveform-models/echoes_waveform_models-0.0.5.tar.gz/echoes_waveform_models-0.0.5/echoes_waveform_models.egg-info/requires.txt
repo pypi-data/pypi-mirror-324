@@ -1,0 +1,6 @@
+numpy
+scipy
+matplotlib
+astropy
+lalsuite>=7.21
+gwpy

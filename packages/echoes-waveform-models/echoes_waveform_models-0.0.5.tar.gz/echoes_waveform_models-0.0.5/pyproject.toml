@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "echoes_waveform_models"
+description = "A library of GW echoes waveform models"
+version = "0.0.5"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "astropy",
+    "lalsuite >= 7.21",
+    "gwpy",
+]
+requires-python = ">=3.9"
+authors = [
+  {name = "Rico Ka Lok Lo", email = "ka-lok.lo@ligo.org"},
+  {name = "Nami Uchikata", email = "uchikata@icrr.u-tokyo.ac.jp"},
+]
+readme = "README.md"
+
+[project.urls]
+Documentation = "https://docs.ligo.org/echoes_template_search/echoes_waveform_models/"
+Repository = "https://git.ligo.org/echoes_template_search/echoes_waveform_models"
