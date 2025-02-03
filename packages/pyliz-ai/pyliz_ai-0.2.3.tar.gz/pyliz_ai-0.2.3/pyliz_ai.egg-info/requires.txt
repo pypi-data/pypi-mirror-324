@@ -1,0 +1,10 @@
+pylizlib
+pylizmedia
+google-generativeai
+llama-cpp-python
+mistralai
+ollama
+openai-whisper
+librosa
+torch
+huggingface-hub
