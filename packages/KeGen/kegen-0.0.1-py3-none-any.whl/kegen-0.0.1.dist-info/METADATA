@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: KeGen
+Version: 0.0.1
+Summary: A simple key generator
+Project-URL: Homepage, https://github.com/M-suri/M.S.M-libraries/tree/main/lib/KeGen
+Project-URL: Issues, https://github.com/M-suri/M.S.M-libraries/tree/main/lib/KeGen
+Author-email: Mario Sperandio Marato <s.mario12112009@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+KeGen it's an easy to use library that creates key 
+
+_____________________________________________________________________________________
+Installation
+install it via the pip install command
+"pip install kegen"
+_____________________________________________________________________________________
+Usage:
+You need to import Kegen in your file with " import KeGen " and " from KeGen import *"
+ 
+Then you use it  with "KeGen.generate(-lengh of the key-)" or one of the following commands:
+
+.generateletters(-lengh of the key-)  to generate  a key with only letters
+
+.generatenumber(-lengh of the key-) to generate a key with only numbers
+
+.generatekey(-lengh of the key-) to generate a key with letters and numbers
+
+.write_to_file(filename , key) to write the key in a file
+
+______________________________________________________________________________________
+Contact 
+author: Mario Sperandio Marato
+
+email: s.mario12112009@gmail.com
+
+git: https://github.com/M-suri
