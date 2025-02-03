@@ -1,0 +1,144 @@
+Metadata-Version: 2.1
+Name: optimum-rbln
+Version: 0.1.0
+Summary: Optimum RBLN is the interface between the Hugging Face Transformers and Diffusers libraries and RBLN accelerators.
+        It provides a set of tools enabling easy model loading and inference on single and multiple rbln device settings for different downstream tasks.
+Keywords: transformers,diffusers,inference,rbln,atom,rebel
+Author-Email: "Rebellions Inc." <support@rebellions.ai>
+License: Apache
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Project-URL: Homepage, https://rebellions.ai
+Project-URL: Documentation, https://docs.rbln.ai
+Requires-Python: <3.11,>=3.8
+Requires-Dist: torch>=2.2.1
+Requires-Dist: optimum>=1.17.1
+Requires-Dist: accelerate>=0.28.0
+Requires-Dist: transformers<=4.40.2
+Requires-Dist: rebel-compiler>=0.4.0
+Requires-Dist: diffusers>=0.27.1; extra == "diffusers"
+Requires-Dist: pytest>=8.1.1; extra == "tests"
+Requires-Dist: psutil>=5.9.8; extra == "tests"
+Requires-Dist: parameterized>=0.9.0; extra == "tests"
+Requires-Dist: GitPython>=3.1.42; extra == "tests"
+Requires-Dist: sentencepiece>=0.2.0; extra == "tests"
+Requires-Dist: datasets>=2.18.0; extra == "tests"
+Requires-Dist: sacremoses>=0.1.1; extra == "tests"
+Requires-Dist: diffusers>=0.27.1; extra == "tests"
+Requires-Dist: safetensors>=0.4.2; extra == "tests"
+Requires-Dist: black>=24.3.0; extra == "quality"
+Requires-Dist: ruff>=0.3.3; extra == "quality"
+Requires-Dist: isort>=5.13.2; extra == "quality"
+Requires-Dist: hf-doc-builder>=0.5.0; extra == "quality"
+Provides-Extra: diffusers
+Provides-Extra: tests
+Provides-Extra: quality
+Description-Content-Type: text/markdown
+
+<!---
+Copyright 2023 The HuggingFace Team. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+# Optimum RBLN
+
+🤗 Optimum RBLN is the interface between the 🤗 Transformers library and RBLN Accelerators including [ATOM](https://atom_link) and [REBEL](https://rebel_link).
+It provides a set of tools enabling easy model loading and inference on single- and multi-Accelerator settings for different downstream tasks.
+The list of officially validated models and tasks is available [here](TODO:). Users can try other models and tasks with only few changes.
+
+## Install from PyPI
+
+To install the latest release of this package:
+
+```bash
+pip install --index-url https://pypi.rebellions.in/simple optimum-rbln
+```
+
+## Install from source
+
+### Prerequisites
+
+- Install [PDM](https://pdm-project.org/latest/) (refer [this link](https://pdm-project.org/latest/#installation) for detailed commands)
+- Export environment variables to access to RBLN private PyPI.
+  ```bash
+  export REBEL_PYPI_USERNAME=<username>
+  export REBEL_PYPI_PASSWORD=<password>
+  ```
+
+The below command installs optimum-rbln along with its dependencies.
+
+```bash
+git clone https://github.com/rebellions-sw/optimum-rbln.git
+cd optimum-rbln
+pdm install
+```
+
+To install optional dependencies from all groups, specify `-G:all` option.
+
+```bash
+pdm install -G:all
+```
+
+## How to use it?
+
+### Quick Start
+
+🤗 Optimum RBLN was designed with one goal in mind: **to make inference straightforward for any 🤗 Transformers user while leveraging the complete power of RBLN Accelerators**.
+
+#### Transformers Interface
+
+<!--
+There are two main classes one needs to know:
+- TrainiumArgumentParser: inherits the original [HfArgumentParser](https://huggingface.co/docs/transformers/main/en/internal/trainer_utils#transformers.HfArgumentParser) in Transformers with additional checks on the argument values to make sure that they will work well with AWS Trainium instances.
+- [NeuronTrainer](https://huggingface.co/docs/optimum/neuron/package_reference/trainer): this version trainer takes care of doing the proper checks and changes to the supported models to make them trainable on AWS Trainium instances.
+
+The [NeuronTrainer](https://huggingface.co/docs/optimum/neuron/package_reference/trainer) is very similar to the [🤗 Transformers Trainer](https://huggingface.co/docs/transformers/main_classes/trainer), and adapting a script using the Trainer to make it work with Trainium will mostly consist in simply swapping the Trainer class for the NeuronTrainer one.
+That's how most of the [example scripts](https://github.com/huggingface/optimum-neuron/tree/main/examples) were adapted from their [original counterparts](https://github.com/huggingface/transformers/tree/main/examples/pytorch).
+
+```diff
+from transformers import TrainingArguments
++from optimum.neuron import NeuronTrainer as Trainer
+
+training_args = TrainingArguments(
+  # training arguments...
+)
+
+# A lot of code here
+
+# Initialize our Trainer
+trainer = Trainer(
+    model=model,
+    args=training_args,  # Original training arguments.
+    train_dataset=train_dataset if training_args.do_train else None,
+    eval_dataset=eval_dataset if training_args.do_eval else None,
+    compute_metrics=compute_metrics,
+    tokenizer=tokenizer,
+    data_collator=data_collator,
+)
+``` -->
+
+### Documentation
+
+Check out [the documentation of Optimum RBLN](https://huggingface.co/docs/optimum-rbln/index) for more advanced usage.
+
+If you find any issue while using those, please open an issue or a pull request.
