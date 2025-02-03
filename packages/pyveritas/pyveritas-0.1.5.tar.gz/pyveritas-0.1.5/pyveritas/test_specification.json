@@ -1,0 +1,58 @@
+{
+    "enabled": 1,
+    "description": "Test for generating sales report summary",
+    "input": [
+        {
+            "name": "sales_data",
+            "value": "[{\"product\": \"Gadget\", \"units\": 100}, {\"product\": \"Widget\", \"units\": 50}]",
+            "type": "str",
+            "regular_expression": "[{\"product\": \"[A-Za-z]+\", \"units\": \"\\d+\"}(,{\"product\": \"[A-Za-z]+\", \"units\": \"\\d+\"})*]"
+        },
+        {
+            "name": "report_type",
+            "value": "Summary",
+            "type": "str",
+            "regular_expression": "^(Summary|Detailed)$"
+        },
+        {
+            "name": "customer_id",
+            "value": 12345,
+            "type": "int",
+            "regular_expression": "[A-Za-z0-9]{5,10}"
+        },
+        {
+            "name": "price",
+            "value": 100,
+            "type": "float",
+            "range": {
+                "min": 50,
+                "max": 100
+            }
+        }
+    ],
+    "output": [
+        {
+            "name": "total_units",
+            "value": 150,
+            "type": "int"
+        },
+        {
+            "name": "company_id",
+            "value": 12345,
+            "type": "int",
+            "regular_expression": "[A-Za-z0-9]{5,10}"
+        },
+        {
+            "name": "price",
+            "value": 100,
+            "type": "float",
+            "range": {
+                "min": 50,
+                "max": 100
+            }
+        }
+    ],
+    "exception": "ValueError",
+    "exception_message": "Invalid sales data format or report type",
+    "iterations": 1000
+}
