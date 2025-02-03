@@ -1,0 +1,10 @@
+module_aifree/__init__.py,sha256=JxNKipdrx4vjqlzFGSC5ANHO37OmvjDa1lGIr32M0rw,98
+module_aifree/neural_network_app.py,sha256=QMjzW6C-mv6_-V9rxAF2KekXLfKoptNfo-BmvJ7KKyM,28954
+module_aifree/python_db_prompt.txt,sha256=UBCIGtzXkTKn6mRfSI_82nibm3Nxp4sI7V36ZmwG2z8,2471
+module_aifree/script_analysis_prompt.txt,sha256=ebOGPTisxBjkhGgrXlUfPYOmIFQjnt_3OCIpcBgxYTc,108040
+module_aifree/system_prompt.txt,sha256=lgAWn1BXOvhmx_4Qnu7O9SKrEE_lgUBXcibgvBpGgis,12097
+module_aifree-0.1.dist-info/METADATA,sha256=G-F8CAUinfW1Iw538RoDZG0Mi79OKN3gpi5T2BWvz0o,512
+module_aifree-0.1.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+module_aifree-0.1.dist-info/entry_points.txt,sha256=ZHgsKVxJo17ckAjiFo6TXqI6HwCyaRzPJie88mT8698,81
+module_aifree-0.1.dist-info/top_level.txt,sha256=DVDgMLOYbtPQg_K-TBqWiTO5nbdKY_bPR1mjgxXTAcE,14
+module_aifree-0.1.dist-info/RECORD,,

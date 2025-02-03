@@ -1,0 +1,2974 @@
+
+
+### **1. Отображение таблицы пользователей в Tkinter (таблица)**
+```python
+import tkinter as tk
+from tkinter import ttk
+import sqlite3
+
+def fetch_data():
+    conn = sqlite3.connect("example.db")
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM users")
+    rows = cursor.fetchall()
+    conn.close()
+    return rows
+
+def display_table():
+    root = tk.Tk()
+    root.title("Таблица пользователей")
+
+    tree = ttk.Treeview(root, columns=("ID", "Username", "Password"), show="headings")
+    tree.heading("ID", text="ID")
+    tree.heading("Username", text="Username")
+    tree.heading("Password", text="Password")
+    tree.pack(fill=tk.BOTH, expand=True)
+
+    for row in fetch_data():
+        tree.insert("", "end", values=row)
+
+    root.mainloop()
+
+display_table()
+```
+
+---
+
+### **2. Добавление записи через форму (Tkinter)**
+```python
+import tkinter as tk
+from tkinter import messagebox
+import sqlite3
+
+def add_user():
+    username = entry_username.get()
+    password = entry_password.get()
+
+    if not username or not password:
+        messagebox.showerror("Ошибка", "Заполните все поля!")
+        return
+
+    conn = sqlite3.connect("example.db")
+    cursor = conn.cursor()
+    cursor.execute("INSERT INTO users (username, password) VALUES (?, ?)", (username, password))
+    conn.commit()
+    conn.close()
+    messagebox.showinfo("Успех", "Пользователь добавлен!")
+
+root = tk.Tk()
+root.title("Добавить пользователя")
+
+tk.Label(root, text="Имя пользователя:").grid(row=0, column=0)
+entry_username = tk.Entry(root)
+entry_username.grid(row=0, column=1)
+
+tk.Label(root, text="Пароль:").grid(row=1, column=0)
+entry_password = tk.Entry(root, show="*")
+entry_password.grid(row=1, column=1)
+
+tk.Button(root, text="Добавить", command=add_user).grid(row=2, column=0, columnspan=2)
+
+root.mainloop()
+```
+
+---
+
+### **3. Удаление записи из таблицы (PyQt5)**
+```python
+from PyQt5.QtWidgets import QApplication, QWidget, QVBoxLayout, QTableWidget, QTableWidgetItem, QPushButton
+import sqlite3
+
+class DeleteUserApp(QWidget):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle("Удаление пользователя")
+        layout = QVBoxLayout()
+
+        self.table = QTableWidget()
+        self.load_data()
+        layout.addWidget(self.table)
+
+        delete_button = QPushButton("Удалить выбранного пользователя")
+        delete_button.clicked.connect(self.delete_user)
+        layout.addWidget(delete_button)
+
+        self.setLayout(layout)
+
+    def load_data(self):
+        conn = sqlite3.connect("example.db")
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users")
+        rows = cursor.fetchall()
+        conn.close()
+
+        self.table.setRowCount(len(rows))
+        self.table.setColumnCount(3)
+        self.table.setHorizontalHeaderLabels(["ID", "Username", "Password"])
+
+        for row_idx, row_data in enumerate(rows):
+            for col_idx, cell_data in enumerate(row_data):
+                self.table.setItem(row_idx, col_idx, QTableWidgetItem(str(cell_data)))
+
+    def delete_user(self):
+        selected_row = self.table.currentRow()
+        if selected_row == -1:
+            return
+
+        user_id = int(self.table.item(selected_row, 0).text())
+        conn = sqlite3.connect("example.db")
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM users WHERE id=?", (user_id,))
+        conn.commit()
+        conn.close()
+        self.load_data()
+
+app = QApplication([])
+window = DeleteUserApp()
+window.show()
+app.exec_()
+```
+
+---
+
+### **4. Редактирование записи (Tkinter)**
+```python
+import tkinter as tk
+from tkinter import messagebox
+import sqlite3
+
+def edit_user():
+    user_id = entry_id.get()
+    new_username = entry_username.get()
+    new_password = entry_password.get()
+
+    if not user_id or not new_username or not new_password:
+        messagebox.showerror("Ошибка", "Заполните все поля!")
+        return
+
+    conn = sqlite3.connect("example.db")
+    cursor = conn.cursor()
+    cursor.execute("UPDATE users SET username=?, password=? WHERE id=?", (new_username, new_password, user_id))
+    conn.commit()
+    conn.close()
+    messagebox.showinfo("Успех", "Пользователь обновлен!")
+
+root = tk.Tk()
+root.title("Редактировать пользователя")
+
+tk.Label(root, text="ID пользователя:").grid(row=0, column=0)
+entry_id = tk.Entry(root)
+entry_id.grid(row=0, column=1)
+
+tk.Label(root, text="Новое имя пользователя:").grid(row=1, column=0)
+entry_username = tk.Entry(root)
+entry_username.grid(row=1, column=1)
+
+tk.Label(root, text="Новый пароль:").grid(row=2, column=0)
+entry_password = tk.Entry(root, show="*")
+entry_password.grid(row=2, column=1)
+
+tk.Button(root, text="Обновить", command=edit_user).grid(row=3, column=0, columnspan=2)
+
+root.mainloop()
+```
+
+---
+
+### **5. Сортировка таблицы по имени (Tkinter)**
+```python
+import tkinter as tk
+from tkinter import ttk
+import sqlite3
+
+def fetch_data(order_by="username"):
+    conn = sqlite3.connect("example.db")
+    cursor = conn.cursor()
+    cursor.execute(f"SELECT * FROM users ORDER BY {order_by}")
+    rows = cursor.fetchall()
+    conn.close()
+    return rows
+
+def sort_table():
+    root = tk.Tk()
+    root.title("Сортировка пользователей")
+
+    tree = ttk.Treeview(root, columns=("ID", "Username", "Password"), show="headings")
+    tree.heading("ID", text="ID")
+    tree.heading("Username", text="Username")
+    tree.heading("Password", text="Password")
+    tree.pack(fill=tk.BOTH, expand=True)
+
+    for row in fetch_data("username"):
+        tree.insert("", "end", values=row)
+
+    root.mainloop()
+
+sort_table()
+```
+
+---
+
+### **6. Вкладки для разных операций (PyQt5)**
+```python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTabWidget, QWidget, QVBoxLayout, QLabel
+
+class TabbedApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.initUI()
+
+    def initUI(self):
+        self.setWindowTitle("Вкладки")
+        tab_widget = QTabWidget()
+
+        tab1 = QWidget()
+        tab1.layout = QVBoxLayout()
+        tab1.layout.addWidget(QLabel("Вкладка 1: Добавление"))
+        tab1.setLayout(tab1.layout)
+
+        tab2 = QWidget()
+        tab2.layout = QVBoxLayout()
+        tab2.layout.addWidget(QLabel("Вкладка 2: Удаление"))
+        tab2.setLayout(tab2.layout)
+
+        tab_widget.addTab(tab1, "Добавление")
+        tab_widget.addTab(tab2, "Удаление")
+
+        self.setCentralWidget(tab_widget)
+
+app = QApplication([])
+window = TabbedApp()
+window.show()
+app.exec_()
+```
+
+
+### **7. Отображение таблицы пользователей в PyQt5 (с возможностью выбора строки)**
+```python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget
+import sqlite3
+
+class UserTableApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Таблица пользователей")
+        self.setGeometry(100, 100, 600, 400)
+        self.initUI()
+
+    def initUI(self):
+        central_widget = QWidget()
+        layout = QVBoxLayout()
+
+        self.table = QTableWidget()
+        self.load_data()
+        layout.addWidget(self.table)
+
+        central_widget.setLayout(layout)
+        self.setCentralWidget(central_widget)
+
+    def load_data(self):
+        conn = sqlite3.connect("example.db")
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users")
+        rows = cursor.fetchall()
+        conn.close()
+
+        self.table.setRowCount(len(rows))
+        self.table.setColumnCount(3)
+        self.table.setHorizontalHeaderLabels(["ID", "Username", "Password"])
+
+        for row_idx, row_data in enumerate(rows):
+            for col_idx, cell_data in enumerate(row_data):
+                self.table.setItem(row_idx, col_idx, QTableWidgetItem(str(cell_data)))
+
+app = QApplication([])
+window = UserTableApp()
+window.show()
+app.exec_()
+```
+
+---
+
+### **8. Поиск пользователя по имени (PyQt5)**
+```python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLineEdit, QPushButton, QVBoxLayout, QLabel, QWidget
+import sqlite3
+
+class SearchUserApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Поиск пользователя")
+        self.setGeometry(100, 100, 400, 200)
+        self.initUI()
+
+    def initUI(self):
+        central_widget = QWidget()
+        layout = QVBoxLayout()
+
+        self.search_input = QLineEdit()
+        self.search_input.setPlaceholderText("Введите имя пользователя")
+        layout.addWidget(self.search_input)
+
+        search_button = QPushButton("Поиск")
+        search_button.clicked.connect(self.search_user)
+        layout.addWidget(search_button)
+
+        self.result_label = QLabel("")
+        layout.addWidget(self.result_label)
+
+        central_widget.setLayout(layout)
+        self.setCentralWidget(central_widget)
+
+    def search_user(self):
+        username = self.search_input.text()
+        if not username:
+            self.result_label.setText("Введите имя пользователя!")
+            return
+
+        conn = sqlite3.connect("example.db")
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE username=?", (username,))
+        user = cursor.fetchone()
+        conn.close()
+
+        if user:
+            self.result_label.setText(f"ID: {user[0]}, Username: {user[1]}, Password: {user[2]}")
+        else:
+            self.result_label.setText("Пользователь не найден!")
+
+app = QApplication([])
+window = SearchUserApp()
+window.show()
+app.exec_()
+```
+
+---
+
+### **9. Фильтрация данных по ID (PyQt5)**
+```python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLineEdit, QPushButton, QVBoxLayout, QLabel, QWidget
+import sqlite3
+
+class FilterUserApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Фильтрация пользователей")
+        self.setGeometry(100, 100, 400, 200)
+        self.initUI()
+
+    def initUI(self):
+        central_widget = QWidget()
+        layout = QVBoxLayout()
+
+        self.filter_input = QLineEdit()
+        self.filter_input.setPlaceholderText("Введите ID")
+        layout.addWidget(self.filter_input)
+
+        filter_button = QPushButton("Фильтровать")
+        filter_button.clicked.connect(self.filter_users)
+        layout.addWidget(filter_button)
+
+        self.result_label = QLabel("")
+        layout.addWidget(self.result_label)
+
+        central_widget.setLayout(layout)
+        self.setCentralWidget(central_widget)
+
+    def filter_users(self):
+        user_id = self.filter_input.text()
+        if not user_id.isdigit():
+            self.result_label.setText("Введите корректный ID!")
+            return
+
+        conn = sqlite3.connect("example.db")
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users WHERE id=?", (int(user_id),))
+        user = cursor.fetchone()
+        conn.close()
+
+        if user:
+            self.result_label.setText(f"ID: {user[0]}, Username: {user[1]}, Password: {user[2]}")
+        else:
+            self.result_label.setText("Пользователь не найден!")
+
+app = QApplication([])
+window = FilterUserApp()
+window.show()
+app.exec_()
+```
+
+---
+
+### **10. Экспорт данных в CSV (PyQt5)**
+```python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QMessageBox
+import sqlite3
+import csv
+
+class ExportCSVApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Экспорт в CSV")
+        self.setGeometry(100, 100, 300, 150)
+        self.initUI()
+
+    def initUI(self):
+        central_widget = QWidget()
+        layout = QVBoxLayout()
+
+        export_button = QPushButton("Экспортировать в CSV")
+        export_button.clicked.connect(self.export_to_csv)
+        layout.addWidget(export_button)
+
+        central_widget.setLayout(layout)
+        self.setCentralWidget(central_widget)
+
+    def export_to_csv(self):
+        conn = sqlite3.connect("example.db")
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM users")
+        rows = cursor.fetchall()
+        conn.close()
+
+        with open("users.csv", "w", newline="", encoding="utf-8") as file:
+            writer = csv.writer(file)
+            writer.writerow(["ID", "Username", "Password"])
+            writer.writerows(rows)
+
+        QMessageBox.information(self, "Успех", "Данные экспортированы в users.csv!")
+
+app = QApplication([])
+window = ExportCSVApp()
+window.show()
+app.exec_()
+```
+
+---
+
+### **11. Импорт данных из CSV (PyQt5)**
+```python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget, QMessageBox
+import sqlite3
+import csv
+
+class ImportCSVApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Импорт из CSV")
+        self.setGeometry(100, 100, 300, 150)
+        self.initUI()
+
+    def initUI(self):
+        central_widget = QWidget()
+        layout = QVBoxLayout()
+
+        import_button = QPushButton("Импортировать из CSV")
+        import_button.clicked.connect(self.import_from_csv)
+        layout.addWidget(import_button)
+
+        central_widget.setLayout(layout)
+        self.setCentralWidget(central_widget)
+
+    def import_from_csv(self):
+        try:
+            with open("users.csv", "r", encoding="utf-8") as file:
+                reader = csv.reader(file)
+                next(reader)  # Пропускаем заголовок
+                users_data = list(reader)
+
+            conn = sqlite3.connect("example.db")
+            cursor = conn.cursor()
+            cursor.executemany("INSERT INTO users (id, username, password) VALUES (?, ?, ?)", users_data)
+            conn.commit()
+            conn.close()
+
+            QMessageBox.information(self, "Успех", "Данные импортированы из users.csv!")
+        except Exception as e:
+            QMessageBox.critical(self, "Ошибка", f"Ошибка при импорте: {e}")
+
+app = QApplication([])
+window = ImportCSVApp()
+window.show()
+app.exec_()
+```
+
+---
+
+### **12. Темная тема интерфейса (PyQt5)**
+```python
+from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtGui import QColor, QPalette
+from PyQt5.QtCore import Qt
+
+class DarkThemeApp(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Темная тема")
+        self.setGeometry(100, 100, 300, 200)
+        self.initUI()
+
+    def initUI(self):
+        self.set_dark_theme()
+
+        central_widget = QWidget()
+        layout = QVBoxLayout()
+
+        button = QPushButton("Кнопка")
+        layout.addWidget(button)
+
+        central_widget.setLayout(layout)
+        self.setCentralWidget(central_widget)
+
+    def set_dark_theme(self):
+        dark_palette = QPalette()
+        dark_palette.setColor(QPalette.Window, QColor(53, 53, 53))
+        dark_palette.setColor(QPalette.WindowText, Qt.white)
+        dark_palette.setColor(QPalette.Base, QColor(25, 25, 25))
+        dark_palette.setColor(QPalette.AlternateBase, QColor(53, 53, 53))
+        dark_palette.setColor(QPalette.ToolTipBase, Qt.white)
+        dark_palette.setColor(QPalette.ToolTipText, Qt.white)
+        dark_palette.setColor(QPalette.Text, Qt.white)
+        dark_palette.setColor(QPalette.Button, QColor(53, 53, 53))
+        dark_palette.setColor(QPalette.ButtonText, Qt.white)
+        dark_palette.setColor(QPalette.BrightText, Qt.red)
+        dark_palette.setColor(QPalette.Highlight, QColor(42, 130, 218))
+        dark_palette.setColor(QPalette.HighlightedText, Qt.black)
+
+        app.setPalette(dark_palette)
+
+app = QApplication([])
+window = DarkThemeApp()
+window.show()
+app.exec_()
+```
+
+Остальные примеры могут включать:
+- Графики на основе данных (например, количество пользователей).
+- Анимации кнопок.
+- Многопоточность для работы с базой данных.
+- Диалоговые окна для подтверждения действий.
+- Пагинация таблицы.
+- Динамическое обновление данных в реальном времени.
+
+```python
+import sqlite3
+import tkinter as tk
+from tkinter import ttk, messagebox
+
+# Функция для подключения к базе данных
+def connect_to_db():
+    try:
+        conn = sqlite3.connect("partners.db")
+        cursor = conn.cursor()
+        cursor.execute('''CREATE TABLE IF NOT EXISTS partners (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            name TEXT NOT NULL,
+                            type TEXT NOT NULL,
+                            rating INTEGER NOT NULL,
+                            address TEXT NOT NULL,
+                            contact_person TEXT NOT NULL,
+                            phone TEXT NOT NULL,
+                            email TEXT NOT NULL)''')
+        cursor.execute('''CREATE TABLE IF NOT EXISTS sales (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            partner_id INTEGER NOT NULL,
+                            product TEXT NOT NULL,
+                            quantity INTEGER NOT NULL,
+                            date TEXT NOT NULL,
+                            FOREIGN KEY (partner_id) REFERENCES partners (id))''')
+        conn.commit()
+        return conn
+    except sqlite3.Error as e:
+        messagebox.showerror("Ошибка", f"Ошибка подключения к базе данных: {e}")
+        return None
+
+# Функция для обновления таблицы партнёров
+def update_partner_table():
+    for row in partner_table.get_children():
+        partner_table.delete(row)
+
+    conn = connect_to_db()
+    if conn:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM partners")
+        partners = cursor.fetchall()
+        conn.close()
+
+        for partner in partners:
+            partner_table.insert("", "end", values=partner)
+
+# Функция для добавления нового партнёра
+def add_partner():
+    name = entry_name.get()
+    type_ = combo_type.get()
+    rating = entry_rating.get()
+    address = entry_address.get()
+    director = entry_director.get()
+    phone = entry_phone.get()
+    email = entry_email.get()
+
+    if not (name and type_ and rating and address and director and phone and email):
+        messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+        return
+
+    if not rating.isdigit() or int(rating) < 0:
+        messagebox.showerror("Ошибка", "Рейтинг должен быть целым числом ≥ 0.")
+        return
+
+    conn = connect_to_db()
+    if conn:
+        cursor = conn.cursor()
+        cursor.execute(
+            "INSERT INTO partners (name, type, rating, address, contact_person, phone, email) VALUES (?, ?, ?, ?, ?, ?, ?)",
+            (name, type_, int(rating), address, director, phone, email),
+        )
+        conn.commit()
+        conn.close()
+        update_partner_table()
+        clear_entries()
+
+# Функция для редактирования выбранного партнёра
+def edit_partner():
+    selected_item = partner_table.selection()
+    if not selected_item:
+        messagebox.showerror("Ошибка", "Выберите партнёра для редактирования!")
+        return
+
+    partner_id = partner_table.item(selected_item, "values")[0]
+
+    name = entry_name.get()
+    type_ = combo_type.get()
+    rating = entry_rating.get()
+    address = entry_address.get()
+    director = entry_director.get()
+    phone = entry_phone.get()
+    email = entry_email.get()
+
+    if not (name and type_ and rating and address and director and phone and email):
+        messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+        return
+
+    if not rating.isdigit() or int(rating) < 0:
+        messagebox.showerror("Ошибка", "Рейтинг должен быть целым числом ≥ 0.")
+        return
+
+    conn = connect_to_db()
+    if conn:
+        cursor = conn.cursor()
+        cursor.execute(
+            "UPDATE partners SET name=?, type=?, rating=?, address=?, contact_person=?, phone=?, email=? WHERE id=?",
+            (name, type_, int(rating), address, director, phone, email, partner_id),
+        )
+        conn.commit()
+        conn.close()
+        update_partner_table()
+        clear_entries()
+
+# Функция для отображения истории продаж
+def show_sales_history():
+    selected_item = partner_table.selection()
+    if not selected_item:
+        messagebox.showerror(
+            "Ошибка", "Выберите партнёра для просмотра истории продаж!"
+        )
+        return
+
+    partner_id = partner_table.item(selected_item, "values")[0]
+    sales_history_window = tk.Toplevel(root)
+    sales_history_window.title("История продаж")
+
+    sales_table = ttk.Treeview(
+        sales_history_window,
+        columns=("product", "quantity", "date"),
+        show="headings",
+    )
+    sales_table.heading("product", text="Наименование продукта")
+    sales_table.heading("quantity", text="Количество")
+    sales_table.heading("date", text="Дата продажи")
+    sales_table.pack(fill=tk.BOTH, expand=True)
+
+    conn = connect_to_db()
+    if conn:
+        cursor = conn.cursor()
+        cursor.execute(
+            "SELECT product, quantity, date FROM sales WHERE partner_id=?", (partner_id,)
+        )
+        sales = cursor.fetchall()
+        conn.close()
+
+        for sale in sales:
+            sales_table.insert("", "end", values=sale)
+
+# Функция для очистки полей ввода
+def clear_entries():
+    entry_name.delete(0, tk.END)
+    combo_type.set("")
+    entry_rating.delete(0, tk.END)
+    entry_address.delete(0, tk.END)
+    entry_director.delete(0, tk.END)
+    entry_phone.delete(0, tk.END)
+    entry_email.delete(0, tk.END)
+
+# Функция для расчёта необходимого материала
+def calculate_material(product_type, material_type, quantity, params):
+    if (
+        not isinstance(product_type, str)
+        or not isinstance(material_type, str)
+        or not isinstance(quantity, (int, float))
+    ):
+        return -1
+    if quantity < 0 or not isinstance(params, dict):
+        return -1
+
+    # Предположим, params содержит необходимые длины и коэффициенты для расчета
+    wastage_rate = params.get("wastage_rate", 0.1)  # Процент брака по умолчанию 10%
+    material_per_product = params.get(
+        "material_per_product", 1
+    )  # Количество материала на один продукт
+
+    if material_per_product <= 0:
+        return -1
+
+    total_material_needed = (material_per_product * quantity) * (1 + wastage_rate)
+    return total_material_needed
+
+# Создание основного окна приложения
+root = tk.Tk()
+root.title("Управление партнёрами")
+
+# Создание таблицы для отображения партнёров
+partner_table = ttk.Treeview(
+    root,
+    columns=(
+        "id",
+        "name",
+        "type",
+        "rating",
+        "address",
+        "contact_person",
+        "phone",
+        "email",
+    ),
+    show="headings",
+)
+partner_table.heading("id", text="ID")
+partner_table.heading("name", text="Имя партнёра")
+partner_table.heading("type", text="Тип")
+partner_table.heading("rating", text="Рейтинг")
+partner_table.heading("address", text="Адрес")
+partner_table.heading("contact_person", text="Директор")
+partner_table.heading("phone", text="Телефон")
+partner_table.heading("email", text="Email")
+partner_table.pack(fill=tk.BOTH, expand=True)
+
+# Поля для ввода данных о партнёре
+tk.Label(root, text="Имя партнёра").pack()
+entry_name = tk.Entry(root)
+entry_name.pack()
+
+tk.Label(root, text="Тип").pack()
+combo_type = ttk.Combobox(
+    root, values=["Поставщик", "Подрядчик", "Производитель", "Логистика", "Маркетинг"]
+)
+combo_type.pack()
+
+tk.Label(root, text="Рейтинг").pack()
+entry_rating = tk.Entry(root)
+entry_rating.pack()
+
+tk.Label(root, text="Адрес").pack()
+entry_address = tk.Entry(root)
+entry_address.pack()
+
+tk.Label(root, text="Директор").pack()
+entry_director = tk.Entry(root)
+entry_director.pack()
+
+tk.Label(root, text="Телефон").pack()
+entry_phone = tk.Entry(root)
+entry_phone.pack()
+
+tk.Label(root, text="Email").pack()
+entry_email = tk.Entry(root)
+entry_email.pack()
+
+# Кнопки для управления партнёрами
+button_frame = tk.Frame(root)
+button_frame.pack()
+
+add_button = tk.Button(button_frame, text="Добавить", command=add_partner)
+add_button.pack(side=tk.LEFT)
+
+edit_button = tk.Button(button_frame, text="Редактировать", command=edit_partner)
+edit_button.pack(side=tk.LEFT)
+
+sales_button = tk.Button(
+    button_frame, text="История продаж", command=show_sales_history
+)
+sales_button.pack(side=tk.LEFT)
+
+# Загрузка данных в таблицу
+update_partner_table()
+
+# Запуск главного цикла приложения
+root.mainloop()
+```
+
+### Примеры скриптов с использованием Tkinter
+
+1. **Управление задачами (To-Do List)**:
+    ```python
+    import sqlite3
+    import tkinter as tk
+    from tkinter import ttk, messagebox
+
+    def connect_to_db():
+        conn = sqlite3.connect("tasks.db")
+        cursor = conn.cursor()
+        cursor.execute('''CREATE TABLE IF NOT EXISTS tasks (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            task TEXT NOT NULL,
+                            status TEXT NOT NULL)''')
+        conn.commit()
+        return conn
+
+    def update_task_table():
+        for row in task_table.get_children():
+            task_table.delete(row)
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM tasks")
+        tasks = cursor.fetchall()
+        conn.close()
+        for task in tasks:
+            task_table.insert("", "end", values=task)
+
+    def add_task():
+        task = entry_task.get()
+        status = combo_status.get()
+        if not task or not status:
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO tasks (task, status) VALUES (?, ?)", (task, status))
+        conn.commit()
+        conn.close()
+        update_task_table()
+        clear_entries()
+
+    def edit_task():
+        selected_item = task_table.selection()
+        if not selected_item:
+            messagebox.showerror("Ошибка", "Выберите задачу для редактирования!")
+            return
+        task_id = task_table.item(selected_item, "values")[0]
+        task = entry_task.get()
+        status = combo_status.get()
+        if not task or not status:
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("UPDATE tasks SET task=?, status=? WHERE id=?", (task, status, task_id))
+        conn.commit()
+        conn.close()
+        update_task_table()
+        clear_entries()
+
+    def clear_entries():
+        entry_task.delete(0, tk.END)
+        combo_status.set("")
+
+    root = tk.Tk()
+    root.title("Управление задачами")
+
+    task_table = ttk.Treeview(root, columns=("id", "task", "status"), show="headings")
+    task_table.heading("id", text="ID")
+    task_table.heading("task", text="Задача")
+    task_table.heading("status", text="Статус")
+    task_table.pack(fill=tk.BOTH, expand=True)
+
+    tk.Label(root, text="Задача").pack()
+    entry_task = tk.Entry(root)
+    entry_task.pack()
+
+    tk.Label(root, text="Статус").pack()
+    combo_status = ttk.Combobox(root, values=["В процессе", "Завершено", "Отложено"])
+    combo_status.pack()
+
+    button_frame = tk.Frame(root)
+    button_frame.pack()
+
+    add_button = tk.Button(button_frame, text="Добавить", command=add_task)
+    add_button.pack(side=tk.LEFT)
+
+    edit_button = tk.Button(button_frame, text="Редактировать", command=edit_task)
+    edit_button.pack(side=tk.LEFT)
+
+    update_task_table()
+    root.mainloop()
+    ```
+
+2. **Управление библиотекой**:
+    ```python
+    import sqlite3
+    import tkinter as tk
+    from tkinter import ttk, messagebox
+
+    def connect_to_db():
+        conn = sqlite3.connect("library.db")
+        cursor = conn.cursor()
+        cursor.execute('''CREATE TABLE IF NOT EXISTS books (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            title TEXT NOT NULL,
+                            author TEXT NOT NULL,
+                            year INTEGER NOT NULL)''')
+        conn.commit()
+        return conn
+
+    def update_book_table():
+        for row in book_table.get_children():
+            book_table.delete(row)
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM books")
+        books = cursor.fetchall()
+        conn.close()
+        for book in books:
+            book_table.insert("", "end", values=book)
+
+    def add_book():
+        title = entry_title.get()
+        author = entry_author.get()
+        year = entry_year.get()
+        if not title or not author or not year.isdigit():
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO books (title, author, year) VALUES (?, ?, ?)", (title, author, int(year)))
+        conn.commit()
+        conn.close()
+        update_book_table()
+        clear_entries()
+
+    def edit_book():
+        selected_item = book_table.selection()
+        if not selected_item:
+            messagebox.showerror("Ошибка", "Выберите книгу для редактирования!")
+            return
+        book_id = book_table.item(selected_item, "values")[0]
+        title = entry_title.get()
+        author = entry_author.get()
+        year = entry_year.get()
+        if not title or not author or not year.isdigit():
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("UPDATE books SET title=?, author=?, year=? WHERE id=?", (title, author, int(year), book_id))
+        conn.commit()
+        conn.close()
+        update_book_table()
+        clear_entries()
+
+    def clear_entries():
+        entry_title.delete(0, tk.END)
+        entry_author.delete(0, tk.END)
+        entry_year.delete(0, tk.END)
+
+    root = tk.Tk()
+    root.title("Управление библиотекой")
+
+    book_table = ttk.Treeview(root, columns=("id", "title", "author", "year"), show="headings")
+    book_table.heading("id", text="ID")
+    book_table.heading("title", text="Название")
+    book_table.heading("author", text="Автор")
+    book_table.heading("year", text="Год")
+    book_table.pack(fill=tk.BOTH, expand=True)
+
+    tk.Label(root, text="Название").pack()
+    entry_title = tk.Entry(root)
+    entry_title.pack()
+
+    tk.Label(root, text="Автор").pack()
+    entry_author = tk.Entry(root)
+    entry_author.pack()
+
+    tk.Label(root, text="Год").pack()
+    entry_year = tk.Entry(root)
+    entry_year.pack()
+
+    button_frame = tk.Frame(root)
+    button_frame.pack()
+
+    add_button = tk.Button(button_frame, text="Добавить", command=add_book)
+    add_button.pack(side=tk.LEFT)
+
+    edit_button = tk.Button(button_frame, text="Редактировать", command=edit_book)
+    edit_button.pack(side=tk.LEFT)
+
+    update_book_table()
+    root.mainloop()
+    ```
+
+3. **Управление сотрудниками**:
+    ```python
+    import sqlite3
+    import tkinter as tk
+    from tkinter import ttk, messagebox
+
+    def connect_to_db():
+        conn = sqlite3.connect("employees.db")
+        cursor = conn.cursor()
+        cursor.execute('''CREATE TABLE IF NOT EXISTS employees (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            name TEXT NOT NULL,
+                            position TEXT NOT NULL,
+                            salary REAL NOT NULL)''')
+        conn.commit()
+        return conn
+
+    def update_employee_table():
+        for row in employee_table.get_children():
+            employee_table.delete(row)
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM employees")
+        employees = cursor.fetchall()
+        conn.close()
+        for employee in employees:
+            employee_table.insert("", "end", values=employee)
+
+    def add_employee():
+        name = entry_name.get()
+        position = entry_position.get()
+        salary = entry_salary.get()
+        if not name or not position or not salary.replace('.', '', 1).isdigit():
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO employees (name, position, salary) VALUES (?, ?, ?)", (name, position, float(salary)))
+        conn.commit()
+        conn.close()
+        update_employee_table()
+        clear_entries()
+
+    def edit_employee():
+        selected_item = employee_table.selection()
+        if not selected_item:
+            messagebox.showerror("Ошибка", "Выберите сотрудника для редактирования!")
+            return
+        employee_id = employee_table.item(selected_item, "values")[0]
+        name = entry_name.get()
+        position = entry_position.get()
+        salary = entry_salary.get()
+        if not name or not position or not salary.replace('.', '', 1).isdigit():
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("UPDATE employees SET name=?, position=?, salary=? WHERE id=?", (name, position, float(salary), employee_id))
+        conn.commit()
+        conn.close()
+        update_employee_table()
+        clear_entries()
+
+    def clear_entries():
+        entry_name.delete(0, tk.END)
+        entry_position.delete(0, tk.END)
+        entry_salary.delete(0, tk.END)
+
+    root = tk.Tk()
+    root.title("Управление сотрудниками")
+
+    employee_table = ttk.Treeview(root, columns=("id", "name", "position", "salary"), show="headings")
+    employee_table.heading("id", text="ID")
+    employee_table.heading("name", text="Имя")
+    employee_table.heading("position", text="Должность")
+    employee_table.heading("salary", text="Зарплата")
+    employee_table.pack(fill=tk.BOTH, expand=True)
+
+    tk.Label(root, text="Имя").pack()
+    entry_name = tk.Entry(root)
+    entry_name.pack()
+
+    tk.Label(root, text="Должность").pack()
+    entry_position = tk.Entry(root)
+    entry_position.pack()
+
+    tk.Label(root, text="Зарплата").pack()
+    entry_salary = tk.Entry(root)
+    entry_salary.pack()
+
+    button_frame = tk.Frame(root)
+    button_frame.pack()
+
+    add_button = tk.Button(button_frame, text="Добавить", command=add_employee)
+    add_button.pack(side=tk.LEFT)
+
+    edit_button = tk.Button(button_frame, text="Редактировать", command=edit_employee)
+    edit_button.pack(side=tk.LEFT)
+
+    update_employee_table()
+    root.mainloop()
+    ```
+
+4. **Управление продуктами**:
+    ```python
+    import sqlite3
+    import tkinter as tk
+    from tkinter import ttk, messagebox
+
+    def connect_to_db():
+        conn = sqlite3.connect("products.db")
+        cursor = conn.cursor()
+        cursor.execute('''CREATE TABLE IF NOT EXISTS products (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            name TEXT NOT NULL,
+                            category TEXT NOT NULL,
+                            price REAL NOT NULL)''')
+        conn.commit()
+        return conn
+
+    def update_product_table():
+        for row in product_table.get_children():
+            product_table.delete(row)
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM products")
+        products = cursor.fetchall()
+        conn.close()
+        for product in products:
+            product_table.insert("", "end", values=product)
+
+    def add_product():
+        name = entry_name.get()
+        category = entry_category.get()
+        price = entry_price.get()
+        if not name or not category or not price.replace('.', '', 1).isdigit():
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO products (name, category, price) VALUES (?, ?, ?)", (name, category, float(price)))
+        conn.commit()
+        conn.close()
+        update_product_table()
+        clear_entries()
+
+    def edit_product():
+        selected_item = product_table.selection()
+        if not selected_item:
+            messagebox.showerror("Ошибка", "Выберите продукт для редактирования!")
+            return
+        product_id = product_table.item(selected_item, "values")[0]
+        name = entry_name.get()
+        category = entry_category.get()
+        price = entry_price.get()
+        if not name or not category or not price.replace('.', '', 1).isdigit():
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("UPDATE products SET name=?, category=?, price=? WHERE id=?", (name, category, float(price), product_id))
+        conn.commit()
+        conn.close()
+        update_product_table()
+        clear_entries()
+
+    def clear_entries():
+        entry_name.delete(0, tk.END)
+        entry_category.delete(0, tk.END)
+        entry_price.delete(0, tk.END)
+
+    root = tk.Tk()
+    root.title("Управление продуктами")
+
+    product_table = ttk.Treeview(root, columns=("id", "name", "category", "price"), show="headings")
+    product_table.heading("id", text="ID")
+    product_table.heading("name", text="Название")
+    product_table.heading("category", text="Категория")
+    product_table.heading("price", text="Цена")
+    product_table.pack(fill=tk.BOTH, expand=True)
+
+    tk.Label(root, text="Название").pack()
+    entry_name = tk.Entry(root)
+    entry_name.pack()
+
+    tk.Label(root, text="Категория").pack()
+    entry_category = tk.Entry(root)
+    entry_category.pack()
+
+    tk.Label(root, text="Цена").pack()
+    entry_price = tk.Entry(root)
+    entry_price.pack()
+
+    button_frame = tk.Frame(root)
+    button_frame.pack()
+
+    add_button = tk.Button(button_frame, text="Добавить", command=add_product)
+    add_button.pack(side=tk.LEFT)
+
+    edit_button = tk.Button(button_frame, text="Редактировать", command=edit_product)
+    edit_button.pack(side=tk.LEFT)
+
+    update_product_table()
+    root.mainloop()
+    ```
+
+5. **Управление клиентами**:
+    ```python
+    import sqlite3
+    import tkinter as tk
+    from tkinter import ttk, messagebox
+
+    def connect_to_db():
+        conn = sqlite3.connect("clients.db")
+        cursor = conn.cursor()
+        cursor.execute('''CREATE TABLE IF NOT EXISTS clients (
+                            id INTEGER PRIMARY KEY AUTOINCREMENT,
+                            name TEXT NOT NULL,
+                            email TEXT NOT NULL,
+                            phone TEXT NOT NULL)''')
+        conn.commit()
+        return conn
+
+    def update_client_table():
+        for row in client_table.get_children():
+            client_table.delete(row)
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM clients")
+        clients = cursor.fetchall()
+        conn.close()
+        for client in clients:
+            client_table.insert("", "end", values=client)
+
+    def add_client():
+        name = entry_name.get()
+        email = entry_email.get()
+        phone = entry_phone.get()
+        if not name or not email or not phone:
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO clients (name, email, phone) VALUES (?, ?, ?)", (name, email, phone))
+        conn.commit()
+        conn.close()
+        update_client_table()
+        clear_entries()
+
+    def edit_client():
+        selected_item = client_table.selection()
+        if not selected_item:
+            messagebox.showerror("Ошибка", "Выберите клиента для редактирования!")
+            return
+        client_id = client_table.item(selected_item, "values")[0]
+        name = entry_name.get()
+        email = entry_email.get()
+        phone = entry_phone.get()
+        if not name or not email or not phone:
+            messagebox.showerror("Ошибка", "Все поля должны быть заполнены!")
+            return
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("UPDATE clients SET name=?, email=?, phone=? WHERE id=?", (name, email, phone, client_id))
+        conn.commit()
+        conn.close()
+        update_client_table()
+        clear_entries()
+
+    def clear_entries():
+        entry_name.delete(0, tk.END)
+        entry_email.delete(0, tk.END)
+        entry_phone.delete(0, tk.END)
+
+    root = tk.Tk()
+    root.title("Управление клиентами")
+
+    client_table = ttk.Treeview(root, columns=("id", "name", "email", "phone"), show="headings")
+    client_table.heading("id", text="ID")
+    client_table.heading("name", text="Имя")
+    client_table.heading("email", text="Email")
+    client_table.heading("phone", text="Телефон")
+    client_table.pack(fill=tk.BOTH, expand=True)
+
+    tk.Label(root, text="Имя").pack()
+    entry_name = tk.Entry(root)
+    entry_name.pack()
+
+    tk.Label(root, text="Email").pack()
+    entry_email = tk.Entry(root)
+    entry_email.pack()
+
+    tk.Label(root, text="Телефон").pack()
+    entry_phone = tk.Entry(root)
+    entry_phone.pack()
+
+    button_frame = tk.Frame(root)
+    button_frame.pack()
+
+    add_button = tk.Button(button_frame, text="Добавить", command=add_client)
+    add_button.pack(side=tk.LEFT)
+
+    edit_button = tk.Button(button_frame, text="Редактировать", command=edit_client)
+    edit_button.pack(side=tk.LEFT)
+
+    update_client_table()
+    root.mainloop()
+    ```
+
+### Примеры скриптов с использованием PyQt5
+
+1. **Управление задачами (To-Do List)**:
+    ```python
+    import sys
+    import sqlite3
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QLineEdit, QPushButton, QComboBox, QMessageBox
+
+    class TaskManager(QMainWindow):
+        def __init__(self):
+            super().__init__()
+            self.setWindowTitle("Управление задачами")
+            self.setGeometry(100, 100, 600, 400)
+
+            self.table = QTableWidget(self)
+            self.table.setColumnCount(3)
+            self.table.setHorizontalHeaderLabels(["ID", "Задача", "Статус"])
+            self.table.setGeometry(10, 10, 580, 200)
+
+            self.task_input = QLineEdit(self)
+            self.task_input.setPlaceholderText("Задача")
+            self.task_input.setGeometry(10, 220, 280, 30)
+
+            self.status_input = QComboBox(self)
+            self.status_input.addItems(["В процессе", "Завершено", "Отложено"])
+            self.status_input.setGeometry(300, 220, 150, 30)
+
+            self.add_button = QPushButton("Добавить", self)
+            self.add_button.setGeometry(460, 220, 100, 30)
+            self.add_button.clicked.connect(self.add_task)
+
+            self.edit_button = QPushButton("Редактировать", self)
+            self.edit_button.setGeometry(460, 260, 100, 30)
+            self.edit_button.clicked.connect(self.edit_task)
+
+            self.load_tasks()
+
+        def connect_to_db(self):
+            conn = sqlite3.connect("tasks.db")
+            cursor = conn.cursor()
+            cursor.execute('''CREATE TABLE IF NOT EXISTS tasks (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                task TEXT NOT NULL,
+                                status TEXT NOT NULL)''')
+            conn.commit()
+            return conn
+
+        def load_tasks(self):
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM tasks")
+            tasks = cursor.fetchall()
+            conn.close()
+
+            self.table.setRowCount(len(tasks))
+            for row, task in enumerate(tasks):
+                for col, item in enumerate(task):
+                    self.table.setItem(row, col, QTableWidgetItem(str(item)))
+
+        def add_task(self):
+            task = self.task_input.text()
+            status = self.status_input.currentText()
+            if not task or not status:
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO tasks (task, status) VALUES (?, ?)", (task, status))
+            conn.commit()
+            conn.close()
+            self.load_tasks()
+            self.clear_entries()
+
+        def edit_task(self):
+            selected_item = self.table.currentItem()
+            if not selected_item:
+                QMessageBox.critical(self, "Ошибка", "Выберите задачу для редактирования!")
+                return
+            task_id = self.table.item(selected_item.row(), 0).text()
+            task = self.task_input.text()
+            status = self.status_input.currentText()
+            if not task or not status:
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("UPDATE tasks SET task=?, status=? WHERE id=?", (task, status, task_id))
+            conn.commit()
+            conn.close()
+            self.load_tasks()
+            self.clear_entries()
+
+        def clear_entries(self):
+            self.task_input.clear()
+            self.status_input.setCurrentIndex(0)
+
+    if __name__ == "__main__":
+        app = QApplication(sys.argv)
+        window = TaskManager()
+        window.show()
+        sys.exit(app.exec_())
+    ```
+
+2. **Управление библиотекой**:
+    ```python
+    import sys
+    import sqlite3
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QLineEdit, QPushButton, QMessageBox
+
+    class LibraryManager(QMainWindow):
+        def __init__(self):
+            super().__init__()
+            self.setWindowTitle("Управление библиотекой")
+            self.setGeometry(100, 100, 600, 400)
+
+            self.table = QTableWidget(self)
+            self.table.setColumnCount(4)
+            self.table.setHorizontalHeaderLabels(["ID", "Название", "Автор", "Год"])
+            self.table.setGeometry(10, 10, 580, 200)
+
+            self.title_input = QLineEdit(self)
+            self.title_input.setPlaceholderText("Название")
+            self.title_input.setGeometry(10, 220, 180, 30)
+
+            self.author_input = QLineEdit(self)
+            self.author_input.setPlaceholderText("Автор")
+            self.author_input.setGeometry(200, 220, 180, 30)
+
+            self.year_input = QLineEdit(self)
+            self.year_input.setPlaceholderText("Год")
+            self.year_input.setGeometry(390, 220, 100, 30)
+
+            self.add_button = QPushButton("Добавить", self)
+            self.add_button.setGeometry(500, 220, 100, 30)
+            self.add_button.clicked.connect(self.add_book)
+
+            self.edit_button = QPushButton("Редактировать", self)
+            self.edit_button.setGeometry(500, 260, 100, 30)
+            self.edit_button.clicked.connect(self.edit_book)
+
+            self.load_books()
+
+        def connect_to_db(self):
+            conn = sqlite3.connect("library.db")
+            cursor = conn.cursor()
+            cursor.execute('''CREATE TABLE IF NOT EXISTS books (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                title TEXT NOT NULL,
+                                author TEXT NOT NULL,
+                                year INTEGER NOT NULL)''')
+            conn.commit()
+            return conn
+
+        def load_books(self):
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM books")
+            books = cursor.fetchall()
+            conn.close()
+
+            self.table.setRowCount(len(books))
+            for row, book in enumerate(books):
+                for col, item in enumerate(book):
+                    self.table.setItem(row, col, QTableWidgetItem(str(item)))
+
+        def add_book(self):
+            title = self.title_input.text()
+            author = self.author_input.text()
+            year = self.year_input.text()
+            if not title or not author or not year.isdigit():
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO books (title, author, year) VALUES (?, ?, ?)", (title, author, int(year)))
+            conn.commit()
+            conn.close()
+            self.load_books()
+            self.clear_entries()
+
+        def edit_book(self):
+            selected_item = self.table.currentItem()
+            if not selected_item:
+                QMessageBox.critical(self, "Ошибка", "Выберите книгу для редактирования!")
+                return
+            book_id = self.table.item(selected_item.row(), 0).text()
+            title = self.title_input.text()
+            author = self.author_input.text()
+            year = self.year_input.text()
+            if not title or not author or not year.isdigit():
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("UPDATE books SET title=?, author=?, year=? WHERE id=?", (title, author, int(year), book_id))
+            conn.commit()
+            conn.close()
+            self.load_books()
+            self.clear_entries()
+
+        def clear_entries(self):
+            self.title_input.clear()
+            self.author_input.clear()
+            self.year_input.clear()
+
+    if __name__ == "__main__":
+        app = QApplication(sys.argv)
+        window = LibraryManager()
+        window.show()
+        sys.exit(app.exec_())
+    ```
+
+3. **Управление сотрудниками**:
+    ```python
+    import sys
+    import sqlite3
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QLineEdit, QPushButton, QMessageBox
+
+    class EmployeeManager(QMainWindow):
+        def __init__(self):
+            super().__init__()
+            self.setWindowTitle("Управление сотрудниками")
+            self.setGeometry(100, 100, 600, 400)
+
+            self.table = QTableWidget(self)
+            self.table.setColumnCount(4)
+            self.table.setHorizontalHeaderLabels(["ID", "Имя", "Должность", "Зарплата"])
+            self.table.setGeometry(10, 10, 580, 200)
+
+            self.name_input = QLineEdit(self)
+            self.name_input.setPlaceholderText("Имя")
+            self.name_input.setGeometry(10, 220, 180, 30)
+
+            self.position_input = QLineEdit(self)
+            self.position_input.setPlaceholderText("Должность")
+            self.position_input.setGeometry(200, 220, 180, 30)
+
+            self.salary_input = QLineEdit(self)
+            self.salary_input.setPlaceholderText("Зарплата")
+            self.salary_input.setGeometry(390, 220, 100, 30)
+
+            self.add_button = QPushButton("Добавить", self)
+            self.add_button.setGeometry(500, 220, 100, 30)
+            self.add_button.clicked.connect(self.add_employee)
+
+            self.edit_button = QPushButton("Редактировать", self)
+            self.edit_button.setGeometry(500, 260, 100, 30)
+            self.edit_button.clicked.connect(self.edit_employee)
+
+            self.load_employees()
+
+        def connect_to_db(self):
+            conn = sqlite3.connect("employees.db")
+            cursor = conn.cursor()
+            cursor.execute('''CREATE TABLE IF NOT EXISTS employees (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                name TEXT NOT NULL,
+                                position TEXT NOT NULL,
+                                salary REAL NOT NULL)''')
+            conn.commit()
+            return conn
+
+        def load_employees(self):
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM employees")
+            employees = cursor.fetchall()
+            conn.close()
+
+            self.table.setRowCount(len(employees))
+            for row, employee in enumerate(employees):
+                for col, item in enumerate(employee):
+                    self.table.setItem(row, col, QTableWidgetItem(str(item)))
+
+        def add_employee(self):
+            name = self.name_input.text()
+            position = self.position_input.text()
+            salary = self.salary_input.text()
+            if not name or not position or not salary.replace('.', '', 1).isdigit():
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO employees (name, position, salary) VALUES (?, ?, ?)", (name, position, float(salary)))
+            conn.commit()
+            conn.close()
+            self.load_employees()
+            self.clear_entries()
+
+        def edit_employee(self):
+            selected_item = self.table.currentItem()
+            if not selected_item:
+                QMessageBox.critical(self, "Ошибка", "Выберите сотрудника для редактирования!")
+                return
+            employee_id = self.table.item(selected_item.row(), 0).text()
+            name = self.name_input.text()
+            position = self.position_input.text()
+            salary = self.salary_input.text()
+            if not name or not position or not salary.replace('.', '', 1).isdigit():
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("UPDATE employees SET name=?, position=?, salary=? WHERE id=?", (name, position, float(salary), employee_id))
+            conn.commit()
+            conn.close()
+            self.load_employees()
+            self.clear_entries()
+
+        def clear_entries(self):
+            self.name_input.clear()
+            self.position_input.clear()
+            self.salary_input.clear()
+
+    if __name__ == "__main__":
+        app = QApplication(sys.argv)
+        window = EmployeeManager()
+        window.show()
+        sys.exit(app.exec_())
+    ```
+
+4. **Управление продуктами**:
+    ```python
+    import sys
+    import sqlite3
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QLineEdit, QPushButton, QMessageBox
+
+    class ProductManager(QMainWindow):
+        def __init__(self):
+            super().__init__()
+            self.setWindowTitle("Управление продуктами")
+            self.setGeometry(100, 100, 600, 400)
+
+            self.table = QTableWidget(self)
+            self.table.setColumnCount(4)
+            self.table.setHorizontalHeaderLabels(["ID", "Название", "Категория", "Цена"])
+            self.table.setGeometry(10, 10, 580, 200)
+
+            self.name_input = QLineEdit(self)
+            self.name_input.setPlaceholderText("Название")
+            self.name_input.setGeometry(10, 220, 180, 30)
+
+            self.category_input = QLineEdit(self)
+            self.category_input.setPlaceholderText("Категория")
+            self.category_input.setGeometry(200, 220, 180, 30)
+
+            self.price_input = QLineEdit(self)
+            self.price_input.setPlaceholderText("Цена")
+            self.price_input.setGeometry(390, 220, 100, 30)
+
+            self.add_button = QPushButton("Добавить", self)
+            self.add_button.setGeometry(500, 220, 100, 30)
+            self.add_button.clicked.connect(self.add_product)
+
+            self.edit_button = QPushButton("Редактировать", self)
+            self.edit_button.setGeometry(500, 260, 100, 30)
+            self.edit_button.clicked.connect(self.edit_product)
+
+            self.load_products()
+
+        def connect_to_db(self):
+            conn = sqlite3.connect("products.db")
+            cursor = conn.cursor()
+            cursor.execute('''CREATE TABLE IF NOT EXISTS products (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                name TEXT NOT NULL,
+                                category TEXT NOT NULL,
+                                price REAL NOT NULL)''')
+            conn.commit()
+            return conn
+
+        def load_products(self):
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM products")
+            products = cursor.fetchall()
+            conn.close()
+
+            self.table.setRowCount(len(products))
+            for row, product in enumerate(products):
+                for col, item in enumerate(product):
+                    self.table.setItem(row, col, QTableWidgetItem(str(item)))
+
+        def add_product(self):
+            name = self.name_input.text()
+            category = self.category_input.text()
+            price = self.price_input.text()
+            if not name or not category or not price.replace('.', '', 1).isdigit():
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO products (name, category, price) VALUES (?, ?, ?)", (name, category, float(price)))
+            conn.commit()
+            conn.close()
+            self.load_products()
+            self.clear_entries()
+
+        def edit_product(self):
+            selected_item = self.table.currentItem()
+            if not selected_item:
+                QMessageBox.critical(self, "Ошибка", "Выберите продукт для редактирования!")
+                return
+            product_id = self.table.item(selected_item.row(), 0).text()
+            name = self.name_input.text()
+            category = self.category_input.text()
+            price = self.price_input.text()
+            if not name or not category or not price.replace('.', '', 1).isdigit():
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("UPDATE products SET name=?, category=?, price=? WHERE id=?", (name, category, float(price), product_id))
+            conn.commit()
+            conn.close()
+            self.load_products()
+            self.clear_entries()
+
+        def clear_entries(self):
+            self.name_input.clear()
+            self.category_input.clear()
+            self.price_input.clear()
+
+    if __name__ == "__main__":
+        app = QApplication(sys.argv)
+        window = ProductManager()
+        window.show()
+        sys.exit(app.exec_())
+    ```
+
+5. **Управление клиентами**:
+    ```python
+    import sys
+    import sqlite3
+    from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QLineEdit, QPushButton, QMessageBox
+
+    class ClientManager(QMainWindow):
+        def __init__(self):
+            super().__init__()
+            self.setWindowTitle("Управление клиентами")
+            self.setGeometry(100, 100, 600, 400)
+
+            self.table = QTableWidget(self)
+            self.table.setColumnCount(4)
+            self.table.setHorizontalHeaderLabels(["ID", "Имя", "Email", "Телефон"])
+            self.table.setGeometry(10, 10, 580, 200)
+
+            self.name_input = QLineEdit(self)
+            self.name_input.setPlaceholderText("Имя")
+            self.name_input.setGeometry(10, 220, 180, 30)
+
+            self.email_input = QLineEdit(self)
+            self.email_input.setPlaceholderText("Email")
+            self.email_input.setGeometry(200, 220, 180, 30)
+
+            self.phone_input = QLineEdit(self)
+            self.phone_input.setPlaceholderText("Телефон")
+            self.phone_input.setGeometry(390, 220, 100, 30)
+
+            self.add_button = QPushButton("Добавить", self)
+            self.add_button.setGeometry(500, 220, 100, 30)
+            self.add_button.clicked.connect(self.add_client)
+
+            self.edit_button = QPushButton("Редактировать", self)
+            self.edit_button.setGeometry(500, 260, 100, 30)
+            self.edit_button.clicked.connect(self.edit_client)
+
+            self.load_clients()
+
+        def connect_to_db(self):
+            conn = sqlite3.connect("clients.db")
+            cursor = conn.cursor()
+            cursor.execute('''CREATE TABLE IF NOT EXISTS clients (
+                                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                                name TEXT NOT NULL,
+                                email TEXT NOT NULL,
+                                phone TEXT NOT NULL)''')
+            conn.commit()
+            return conn
+
+        def load_clients(self):
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("SELECT * FROM clients")
+            clients = cursor.fetchall()
+            conn.close()
+
+            self.table.setRowCount(len(clients))
+            for row, client in enumerate(clients):
+                for col, item in enumerate(client):
+                    self.table.setItem(row, col, QTableWidgetItem(str(item)))
+
+        def add_client(self):
+            name = self.name_input.text()
+            email = self.email_input.text()
+            phone = self.phone_input.text()
+            if not name or not email or not phone:
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("INSERT INTO clients (name, email, phone) VALUES (?, ?, ?)", (name, email, phone))
+            conn.commit()
+            conn.close()
+            self.load_clients()
+            self.clear_entries()
+
+        def edit_client(self):
+            selected_item = self.table.currentItem()
+            if not selected_item:
+                QMessageBox.critical(self, "Ошибка", "Выберите клиента для редактирования!")
+                return
+            client_id = self.table.item(selected_item.row(), 0).text()
+            name = self.name_input.text()
+            email = self.email_input.text()
+            phone = self.phone_input.text()
+            if not name or not email or not phone:
+                QMessageBox.critical(self, "Ошибка", "Все поля должны быть заполнены!")
+                return
+            conn = self.connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("UPDATE clients SET name=?, email=?, phone=? WHERE id=?", (name, email, phone, client_id))
+            conn.commit()
+            conn.close()
+            self.load_clients()
+            self.clear_entries()
+
+        def clear_entries(self):
+            self.name_input.clear()
+            self.email_input.clear()
+            self.phone_input.clear()
+
+    if __name__ == "__main__":
+        app = QApplication(sys.argv)
+        window = ClientManager()
+        window.show()
+        sys.exit(app.exec_())
+    ```
+
+    import sys
+import sqlite3
+from PyQt5.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QTableWidget,
+    QTableWidgetItem,
+    QVBoxLayout,
+    QWidget,
+    QPushButton,
+    QMessageBox,
+)
+
+
+# Функция для подключения к базе данных
+def connect_to_db():
+    conn = sqlite3.connect("partners.db")
+    return conn
+
+
+# Функция для создания таблиц
+def create_tables():
+    conn = connect_to_db()
+    cursor = conn.cursor()
+
+    # Создание таблицы партнёров
+    cursor.execute(
+        """
+    CREATE TABLE IF NOT EXISTS partners (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        type TEXT NOT NULL,
+        rating TEXT NOT NULL,
+        contact_person TEXT NOT NULL,
+        phone TEXT NOT NULL
+    )
+    """
+    )
+
+    # Создание таблицы продуктов
+    cursor.execute(
+        """
+    CREATE TABLE IF NOT EXISTS products (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        product TEXT NOT NULL,
+        quantity INTEGER NOT NULL,
+        date TEXT NOT NULL,
+        partner_id INTEGER NOT NULL,
+        FOREIGN KEY (partner_id) REFERENCES partners (id)
+    )
+    """
+    )
+
+    conn.commit()
+    conn.close()
+
+
+# Функция для ввода данных в таблицы
+def insert_initial_data():
+    conn = connect_to_db()
+    cursor = conn.cursor()
+
+    partners_data = [
+        (
+            'ООО "ТехноМир"',
+            "Поставщик",
+            "2025-08-04",
+            "Иванов Иван",
+            "+7 (999) 123-45-67",
+        ),
+        (
+            'ИП "СтройМастер"',
+            "Подрядчик",
+            "2025-05-04",
+            "Петров Петр",
+            "+7 (999) 234-56-78",
+        ),
+        (
+            'ООО "ЭкоПродукт"',
+            "Производитель",
+            "2025-09-04",
+            "Сидорова Анна",
+            "+7 (999) 345-67-89",
+        ),
+        (
+            'ООО "Логистика+"',
+            "Логистика",
+            "2025-07-04",
+            "Кузнецов Дмитрий",
+            "+7 (999) 456-78-90",
+        ),
+        (
+            'ИП "МаркетингПро"',
+            "Маркетинг",
+            "2025-06-04",
+            "Смирнова Ольга",
+            "+7 (999) 567-89-01",
+        ),
+    ]
+
+    products_data = [
+        ("Ноутбук HP", 10, "2023-10-01", 1),
+        ("Кирпич строительный", 500, "2023-10-05", 2),
+        ("Органические яблоки", 200, "2023-10-10", 3),
+        ("Доставка груза", 1, "2023-10-15", 4),
+        ("Рекламная кампания", 1, "2023-10-20", 5),
+    ]
+
+    cursor.executemany(
+        "INSERT INTO partners (name, type, rating, contact_person, phone) VALUES (?, ?, ?, ?, ?)",
+        partners_data,
+    )
+    cursor.executemany(
+        "INSERT INTO products (product, quantity, date, partner_id) VALUES (?, ?, ?, ?)",
+        products_data,
+    )
+
+    conn.commit()
+    conn.close()
+
+
+# Функция для расчёта скидки на основе общего объёма продаж
+def calculate_discount(total_sales):
+    if total_sales < 10000:
+        return 0
+    elif total_sales < 50000:
+        return 5
+    elif total_sales < 300000:
+        return 10
+    else:
+        return 15
+
+
+# Класс основного окна приложения
+class PartnerProductManager(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Управление партнёрами и продуктами")
+        self.setGeometry(100, 100, 800, 600)
+
+        self.initUI()
+
+    def initUI(self):
+        layout = QVBoxLayout()
+
+        # Таблица для отображения данных партнёров
+        self.partner_table = QTableWidget(self)
+        self.partner_table.setColumnCount(5)
+        self.partner_table.setHorizontalHeaderLabels(
+            ["ID", "Название", "Тип", "Рейтинг", "Контактное лицо"]
+        )
+        layout.addWidget(self.partner_table)
+
+        # Таблица для отображения данных продуктов
+        self.product_table = QTableWidget(self)
+        self.product_table.setColumnCount(4)
+        self.product_table.setHorizontalHeaderLabels(
+            ["ID", "Продукт", "Количество", "Дата"]
+        )
+        layout.addWidget(self.product_table)
+
+        # Кнопка для загрузки данных и расчёта скидок
+        load_button = QPushButton("Загрузить данные и рассчитать скидки", self)
+        load_button.clicked.connect(self.load_data_and_calculate_discounts)
+        layout.addWidget(load_button)
+
+        container = QWidget()
+        container.setLayout(layout)
+        self.setCentralWidget(container)
+
+    def load_data_and_calculate_discounts(self):
+        self.load_partners()
+        self.load_products()
+        self.calculate_and_show_discounts()
+
+    def load_partners(self):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM partners")
+        partners = cursor.fetchall()
+        conn.close()
+
+        self.partner_table.setRowCount(len(partners))
+        for row_index, partner in enumerate(partners):
+            for col_index, item in enumerate(partner):
+                self.partner_table.setItem(
+                    row_index, col_index, QTableWidgetItem(str(item))
+                )
+
+    def load_products(self):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM products")
+        products = cursor.fetchall()
+        conn.close()
+
+        self.product_table.setRowCount(len(products))
+        for row_index, product in enumerate(products):
+            for col_index, item in enumerate(product):
+                self.product_table.setItem(
+                    row_index, col_index, QTableWidgetItem(str(item))
+                )
+
+    def calculate_and_show_discounts(self):
+        sales_data = {
+            1: 9000,
+            2: 30000,
+            3: 105000,
+            4: 450000,
+            5: 15000,
+        }
+        discounts = {
+            partner_id: calculate_discount(total_sales)
+            for partner_id, total_sales in sales_data.items()
+        }
+
+        discount_message = "Скидки партнёров:\n"
+        for partner_id, discount in discounts.items():
+            discount_message += f"Партнёр ID {partner_id}: {discount}% скидка\n"
+        QMessageBox.information(self, "Скидки", discount_message)
+
+
+# Основная функция для запуска приложения
+if __name__ == "__main__":
+    create_tables()
+    insert_initial_data()  # Вызывать только один раз для вставки данных
+    app = QApplication(sys.argv)
+    window = PartnerProductManager()
+    window.show()
+    sys.exit(app.exec_())
+
+
+
+import sys
+import sqlite3
+from PyQt5.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QTableWidget,
+    QTableWidgetItem,
+    QVBoxLayout,
+    QWidget,
+    QPushButton,
+    QMessageBox,
+    QLineEdit,
+    QLabel,
+    QDialog,
+)
+
+
+# Функция для подключения к базе данных
+def connect_to_db():
+    conn = sqlite3.connect("partners.db")
+    return conn
+
+
+# Функция для создания таблиц
+def create_tables():
+    conn = connect_to_db()
+    cursor = conn.cursor()
+
+    # Создание таблицы партнёров
+    cursor.execute(
+        """
+    CREATE TABLE IF NOT EXISTS partners (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        type TEXT NOT NULL,
+        rating TEXT NOT NULL,
+        contact_person TEXT NOT NULL,
+        phone TEXT NOT NULL
+    )
+    """
+    )
+
+    # Создание таблицы продуктов
+    cursor.execute(
+        """
+    CREATE TABLE IF NOT EXISTS products (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        product TEXT NOT NULL,
+        quantity INTEGER NOT NULL,
+        date TEXT NOT NULL,
+        partner_id INTEGER NOT NULL,
+        FOREIGN KEY (partner_id) REFERENCES partners (id)
+    )
+    """
+    )
+
+    conn.commit()
+    conn.close()
+
+
+# Функция для ввода данных в таблицы
+def insert_initial_data():
+    conn = connect_to_db()
+    cursor = conn.cursor()
+
+    partners_data = [
+        (
+            'ООО "ТехноМир"',
+            "Поставщик",
+            "2025-08-04",
+            "Иванов Иван",
+            "+7 (999) 123-45-67",
+        ),
+        (
+            'ИП "СтройМастер"',
+            "Подрядчик",
+            "2025-05-04",
+            "Петров Петр",
+            "+7 (999) 234-56-78",
+        ),
+        (
+            'ООО "ЭкоПродукт"',
+            "Производитель",
+            "2025-09-04",
+            "Сидорова Анна",
+            "+7 (999) 345-67-89",
+        ),
+        (
+            'ООО "Логистика+"',
+            "Логистика",
+            "2025-07-04",
+            "Кузнецов Дмитрий",
+            "+7 (999) 456-78-90",
+        ),
+        (
+            'ИП "МаркетингПро"',
+            "Маркетинг",
+            "2025-06-04",
+            "Смирнова Ольга",
+            "+7 (999) 567-89-01",
+        ),
+    ]
+
+    products_data = [
+        ("Ноутбук HP", 10, "2023-10-01", 1),
+        ("Кирпич строительный", 500, "2023-10-05", 2),
+        ("Органические яблоки", 200, "2023-10-10", 3),
+        ("Доставка груза", 1, "2023-10-15", 4),
+        ("Рекламная кампания", 1, "2023-10-20", 5),
+    ]
+
+    cursor.executemany(
+        "INSERT INTO partners (name, type, rating, contact_person, phone) VALUES (?, ?, ?, ?, ?)",
+        partners_data,
+    )
+    cursor.executemany(
+        "INSERT INTO products (product, quantity, date, partner_id) VALUES (?, ?, ?, ?)",
+        products_data,
+    )
+
+    conn.commit()
+    conn.close()
+
+
+# Функция для расчёта скидки на основе общего объёма продаж
+def calculate_discount(total_sales):
+    if total_sales < 10000:
+        return 0
+    elif total_sales < 50000:
+        return 5
+    elif total_sales < 300000:
+        return 10
+    else:
+        return 15
+
+
+# Класс основного окна приложения
+class PartnerProductManager(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Управление партнёрами и продуктами")
+        self.setGeometry(100, 100, 800, 600)
+
+        self.initUI()
+
+    def initUI(self):
+        layout = QVBoxLayout()
+
+        # Таблица для отображения данных партнёров
+        self.partner_table = QTableWidget(self)
+        self.partner_table.setColumnCount(6)
+        self.partner_table.setHorizontalHeaderLabels(
+            ["ID", "Название", "Тип", "Рейтинг", "Контактное лицо", "Телефон"]
+        )
+        layout.addWidget(self.partner_table)
+
+        # Таблица для отображения данных продуктов
+        self.product_table = QTableWidget(self)
+        self.product_table.setColumnCount(4)
+        self.product_table.setHorizontalHeaderLabels(
+            ["ID", "Продукт", "Количество", "Дата"]
+        )
+        layout.addWidget(self.product_table)
+
+        # Кнопка для загрузки данных и расчёта скидок
+        load_button = QPushButton("Загрузить данные и рассчитать скидки", self)
+        load_button.clicked.connect(self.load_data_and_calculate_discounts)
+        layout.addWidget(load_button)
+
+        # Кнопки управления партнёрами
+        add_partner_button = QPushButton("Добавить партнёра", self)
+        add_partner_button.clicked.connect(self.open_add_partner_dialog)
+        layout.addWidget(add_partner_button)
+
+        edit_partner_button = QPushButton("Изменить партнёра", self)
+        edit_partner_button.clicked.connect(self.open_edit_partner_dialog)
+        layout.addWidget(edit_partner_button)
+
+        delete_partner_button = QPushButton("Удалить партнёра", self)
+        delete_partner_button.clicked.connect(self.delete_partner)
+        layout.addWidget(delete_partner_button)
+
+        container = QWidget()
+        container.setLayout(layout)
+        self.setCentralWidget(container)
+
+    def load_data_and_calculate_discounts(self):
+        self.load_partners()
+        self.load_products()
+        self.calculate_and_show_discounts()
+
+    def load_partners(self):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM partners")
+        partners = cursor.fetchall()
+        conn.close()
+
+        self.partner_table.setRowCount(len(partners))
+        for row_index, partner in enumerate(partners):
+            for col_index, item in enumerate(partner):
+                self.partner_table.setItem(
+                    row_index, col_index, QTableWidgetItem(str(item))
+                )
+
+    def load_products(self):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM products")
+        products = cursor.fetchall()
+        conn.close()
+
+        self.product_table.setRowCount(len(products))
+        for row_index, product in enumerate(products):
+            for col_index, item in enumerate(product):
+                self.product_table.setItem(
+                    row_index, col_index, QTableWidgetItem(str(item))
+                )
+
+    def calculate_and_show_discounts(self):
+        sales_data = {
+            1: 9000,
+            2: 30000,
+            3: 105000,
+            4: 450000,
+            5: 15000,
+        }
+        discounts = {
+            partner_id: calculate_discount(total_sales)
+            for partner_id, total_sales in sales_data.items()
+        }
+
+        discount_message = "Скидки партнёров:\n"
+        for partner_id, discount in discounts.items():
+            discount_message += f"Партнёр ID {partner_id}: {discount}% скидка\n"
+        QMessageBox.information(self, "Скидки", discount_message)
+
+    def open_add_partner_dialog(self):
+        dialog = EditPartnerDialog(self)
+        dialog.exec_()
+        self.load_partners()
+
+    def open_edit_partner_dialog(self):
+        selected_item = self.partner_table.currentItem()
+        if selected_item:
+            partner_id = self.partner_table.item(selected_item.row(), 0).text()
+            dialog = EditPartnerDialog(self, partner_id)
+            dialog.exec_()
+            self.load_partners()
+        else:
+            QMessageBox.warning(
+                self, "Предупреждение", "Выберите партнёра для редактирования."
+            )
+
+    def delete_partner(self):
+        selected_item = self.partner_table.currentItem()
+        if selected_item:
+            partner_id = self.partner_table.item(selected_item.row(), 0).text()
+            conn = connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM partners WHERE id = ?", (partner_id,))
+            conn.commit()
+            conn.close()
+            self.load_partners()
+        else:
+            QMessageBox.warning(
+                self, "Предупреждение", "Выберите партнёра для удаления."
+            )
+
+
+# Диалог для редактирования или добавления партнёра
+class EditPartnerDialog(QDialog):
+    def __init__(self, parent=None, partner_id=None):
+        super().__init__(parent)
+        self.setWindowTitle("Добавление/Редактирование партнёра")
+        self.setGeometry(100, 100, 300, 400)
+
+        self.partner_id = partner_id
+        self.parent = parent
+
+        self.initUI()
+        if partner_id:
+            self.load_partner_data(partner_id)
+
+    def initUI(self):
+        layout = QVBoxLayout()
+
+        self.name_input = QLineEdit(self)
+        self.name_input.setPlaceholderText("Название")
+        layout.addWidget(self.name_input)
+
+        self.type_input = QLineEdit(self)
+        self.type_input.setPlaceholderText("Тип")
+        layout.addWidget(self.type_input)
+
+        self.rating_input = QLineEdit(self)
+        self.rating_input.setPlaceholderText("Рейтинг")
+        layout.addWidget(self.rating_input)
+
+        self.contact_person_input = QLineEdit(self)
+        self.contact_person_input.setPlaceholderText("Контактное лицо")
+        layout.addWidget(self.contact_person_input)
+
+        self.phone_input = QLineEdit(self)
+        self.phone_input.setPlaceholderText("Телефон")
+        layout.addWidget(self.phone_input)
+
+        self.submit_button = QPushButton("Сохранить", self)
+        self.submit_button.clicked.connect(self.submit)
+        layout.addWidget(self.submit_button)
+
+        self.setLayout(layout)
+
+    def load_partner_data(self, partner_id):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM partners WHERE id = ?", (partner_id,))
+        partner = cursor.fetchone()
+        conn.close()
+
+        if partner:
+            self.name_input.setText(partner[1])
+            self.type_input.setText(partner[2])
+            self.rating_input.setText(partner[3])
+            self.contact_person_input.setText(partner[4])
+            self.phone_input.setText(partner[5])
+
+    def submit(self):
+        name = self.name_input.text()
+        type_ = self.type_input.text()
+        rating = self.rating_input.text()
+        contact_person = self.contact_person_input.text()
+        phone = self.phone_input.text()
+
+        if not name or not type_ or not rating or not contact_person or not phone:
+            QMessageBox.warning(
+                self, "Предупреждение", "Все поля должны быть заполнены."
+            )
+            return
+
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        if self.partner_id:  # Если редактируем
+            cursor.execute(
+                """
+                UPDATE partners SET name = ?, type = ?, rating = ?, contact_person = ?, phone = ? WHERE id = ?
+                """,
+                (name, type_, rating, contact_person, phone, self.partner_id),
+            )
+        else:  # Если добавляем
+            cursor.execute(
+                """
+                INSERT INTO partners (name, type, rating, contact_person, phone) VALUES (?, ?, ?, ?, ?)
+                """,
+                (name, type_, rating, contact_person, phone),
+            )
+        conn.commit()
+        conn.close()
+        self.close()
+
+
+# Основная функция для запуска приложения
+if __name__ == "__main__":
+    create_tables()
+    insert_initial_data()  # Вызывать только один раз для вставки данных
+    app = QApplication(sys.argv)
+    window = PartnerProductManager()
+    window.show()
+    sys.exit(app.exec_())
+
+
+
+import sys
+import sqlite3
+from PyQt5.QtWidgets import (
+    QApplication,
+    QMainWindow,
+    QTableWidget,
+    QTableWidgetItem,
+    QVBoxLayout,
+    QWidget,
+    QPushButton,
+    QMessageBox,
+    QLineEdit,
+    QDialog,
+    QLabel,
+    QInputDialog
+)
+
+# Функция для подключения к базе данных
+def connect_to_db():
+    conn = sqlite3.connect("partners.db")
+    return conn
+
+# Функция для создания таблиц
+def create_tables():
+    conn = connect_to_db()
+    cursor = conn.cursor()
+
+    cursor.execute(
+        """
+    CREATE TABLE IF NOT EXISTS partners (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        type TEXT NOT NULL,
+        rating TEXT NOT NULL,
+        contact_person TEXT NOT NULL,
+        phone TEXT NOT NULL
+    )
+    """
+    )
+
+    cursor.execute(
+        """
+    CREATE TABLE IF NOT EXISTS products (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        product TEXT NOT NULL,
+        quantity INTEGER NOT NULL,
+        date TEXT NOT NULL,
+        partner_id INTEGER NOT NULL,
+        FOREIGN KEY (partner_id) REFERENCES partners (id)
+    )
+    """
+    )
+
+    cursor.execute(
+        """
+    CREATE TABLE IF NOT EXISTS sales (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        product_id INTEGER NOT NULL,
+        quantity INTEGER NOT NULL,
+        sale_date TEXT NOT NULL,
+        FOREIGN KEY (product_id) REFERENCES products (id)
+    )
+    """
+    )
+
+    conn.commit()
+    conn.close()
+
+# Функция для ввода данных в таблицы
+def insert_initial_data():
+    conn = connect_to_db()
+    cursor = conn.cursor()
+
+    partners_data = [
+        (
+            'ООО "ТехноМир"',
+            "Поставщик",
+            "2025-08-04",
+            "Иванов Иван",
+            "+7 (999) 123-45-67",
+        ),
+        (
+            'ИП "СтройМастер"',
+            "Подрядчик",
+            "2025-05-04",
+            "Петров Петр",
+            "+7 (999) 234-56-78",
+        ),
+        (
+            'ООО "ЭкоПродукт"',
+            "Производитель",
+            "2025-09-04",
+            "Сидорова Анна",
+            "+7 (999) 345-67-89",
+        ),
+        (
+            'ООО "Логистика+"',
+            "Логистика",
+            "2025-07-04",
+            "Кузнецов Дмитрий",
+            "+7 (999) 456-78-90",
+        ),
+        (
+            'ИП "МаркетингПро"',
+            "Маркетинг",
+            "2025-06-04",
+            "Смирнова Ольга",
+            "+7 (999) 567-89-01",
+        ),
+    ]
+
+    products_data = [
+        ("Ноутбук HP", 10, "2023-10-01", 1),
+        ("Кирпич строительный", 500, "2023-10-05", 2),
+        ("Органические яблоки", 200, "2023-10-10", 3),
+        ("Грузы", 1, "2023-10-15", 4),
+        ("Рекламная кампания", 1, "2023-10-20", 5),
+    ]
+
+    sales_data = [
+        (1, 10, "2023-10-01"),
+        (2, 100, "2023-10-05"),
+        (3, 200, "2023-10-10"),
+    ]
+
+    cursor.executemany(
+        "INSERT INTO partners (name, type, rating, contact_person, phone) VALUES (?, ?, ?, ?, ?)",
+        partners_data,
+    )
+    cursor.executemany(
+        "INSERT INTO products (product, quantity, date, partner_id) VALUES (?, ?, ?, ?)",
+        products_data,
+    )
+    cursor.executemany(
+        "INSERT INTO sales (product_id, quantity, sale_date) VALUES (?, ?, ?)",
+        sales_data,
+    )
+
+    conn.commit()
+    conn.close()
+
+# Функция для расчёта необходимого материала
+def calculate_material(product_type, material_type, quantity, material_per_product):
+    if not isinstance(product_type, str) or not isinstance(material_type, str):
+        return -1
+    if not isinstance(quantity, (int, float)) or quantity <= 0:
+        return -1
+    if not isinstance(material_per_product, (int, float)) or material_per_product <= 0:
+        return -1
+
+    wastage_rate = 0.1  # Процент брака по умолчанию 10%
+
+    total_material_needed = (material_per_product * quantity) * (1 + wastage_rate)
+    return total_material_needed
+
+# Функция для расчета скидки на основе общего объёма продаж
+def calculate_discount(total_sales):
+    if total_sales < 10000:
+        return 0
+    elif total_sales < 50000:
+        return 5
+    elif total_sales < 300000:
+        return 10
+    else:
+        return 15
+
+# Класс основного окна приложения
+class PartnerProductManager(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Управление партнёрами и продуктами")
+        self.setGeometry(100, 100, 800, 600)
+
+        self.initUI()
+
+    def initUI(self):
+        layout = QVBoxLayout()
+
+        # Таблица для отображения данных партнёров
+        self.partner_table = QTableWidget(self)
+        self.partner_table.setColumnCount(6)
+        self.partner_table.setHorizontalHeaderLabels(
+            ["ID", "Название", "Тип", "Рейтинг", "Контактное лицо", "Телефон"]
+        )
+        layout.addWidget(self.partner_table)
+
+        # Таблица для отображения данных продуктов
+        self.product_table = QTableWidget(self)
+        self.product_table.setColumnCount(4)
+        self.product_table.setHorizontalHeaderLabels(
+            ["ID", "Продукт", "Количество", "Дата"]
+        )
+        layout.addWidget(self.product_table)
+
+        # Кнопка для загрузки данных и расчёта скидок
+        load_button = QPushButton("Загрузить данные и рассчитать скидки", self)
+        load_button.clicked.connect(self.load_data_and_calculate_discounts)
+        layout.addWidget(load_button)
+
+        # Кнопка для расчета материала
+        material_button = QPushButton("Расчет материала", self)
+        material_button.clicked.connect(self.open_material_calculator_dialog)
+        layout.addWidget(material_button)
+
+        # Кнопки управления партнёрами
+        add_partner_button = QPushButton("Добавить партнёра", self)
+        add_partner_button.clicked.connect(self.open_add_partner_dialog)
+        layout.addWidget(add_partner_button)
+
+        edit_partner_button = QPushButton("Изменить партнёра", self)
+        edit_partner_button.clicked.connect(self.open_edit_partner_dialog)
+        layout.addWidget(edit_partner_button)
+
+        delete_partner_button = QPushButton("Удалить партнёра", self)
+        delete_partner_button.clicked.connect(self.delete_partner)
+        layout.addWidget(delete_partner_button)
+
+        container = QWidget()
+        container.setLayout(layout)
+        self.setCentralWidget(container)
+
+    def load_data_and_calculate_discounts(self):
+        self.load_partners()
+        self.load_products()
+        self.calculate_and_show_discounts()
+
+    def load_partners(self):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM partners")
+        partners = cursor.fetchall()
+        conn.close()
+
+        self.partner_table.setRowCount(len(partners))
+        for row_index, partner in enumerate(partners):
+            for col_index, item in enumerate(partner):
+                self.partner_table.setItem(
+                    row_index, col_index, QTableWidgetItem(str(item))
+                )
+
+    def load_products(self):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM products")
+        products = cursor.fetchall()
+        conn.close()
+
+        self.product_table.setRowCount(len(products))
+        for row_index, product in enumerate(products):
+            for col_index, item in enumerate(product):
+                self.product_table.setItem(
+                    row_index, col_index, QTableWidgetItem(str(item))
+                )
+
+    def calculate_and_show_discounts(self):
+        sales_data = {
+            1: 9000,
+            2: 30000,
+            3: 105000,
+            4: 450000,
+            5: 15000,
+        }
+        discounts = {
+            partner_id: calculate_discount(total_sales)
+            for partner_id, total_sales in sales_data.items()
+        }
+
+        discount_message = "Скидки партнёров:\n"
+        for partner_id, discount in discounts.items():
+            discount_message += f"Партнёр ID {partner_id}: {discount}% скидка\n"
+        QMessageBox.information(self, "Скидки", discount_message)
+
+    def open_add_partner_dialog(self):
+        dialog = EditPartnerDialog(self)
+        dialog.exec_()
+        self.load_partners()
+
+    def open_edit_partner_dialog(self):
+        selected_item = self.partner_table.currentItem()
+        if selected_item:
+            partner_id = self.partner_table.item(selected_item.row(), 0).text()
+            dialog = EditPartnerDialog(self, partner_id)
+            dialog.exec_()
+            self.load_partners()
+        else:
+            QMessageBox.warning(
+                self, "Предупреждение", "Выберите партнёра для редактирования."
+            )
+
+    def delete_partner(self):
+        selected_item = self.partner_table.currentItem()
+        if selected_item:
+            partner_id = self.partner_table.item(selected_item.row(), 0).text()
+            conn = connect_to_db()
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM partners WHERE id = ?", (partner_id,))
+            conn.commit()
+            conn.close()
+            self.load_partners()
+        else:
+            QMessageBox.warning(
+                self, "Предупреждение", "Выберите партнёра для удаления."
+            )
+
+    def open_material_calculator_dialog(self):
+        dialog = MaterialCalculatorDialog(self)
+        dialog.exec_()
+
+# Диалог для редактирования или добавления партнёра
+class EditPartnerDialog(QDialog):
+    def __init__(self, parent=None, partner_id=None):
+        super().__init__(parent)
+        self.setWindowTitle("Добавление/Редактирование партнёра")
+        self.setGeometry(100, 100, 300, 400)
+
+        self.partner_id = partner_id
+        self.parent = parent
+
+        self.initUI()
+        if partner_id:
+            self.load_partner_data(partner_id)
+
+    def initUI(self):
+        layout = QVBoxLayout()
+
+        self.name_input = QLineEdit(self)
+        self.name_input.setPlaceholderText("Название")
+        layout.addWidget(self.name_input)
+
+        self.type_input = QLineEdit(self)
+        self.type_input.setPlaceholderText("Тип")
+        layout.addWidget(self.type_input)
+
+        self.rating_input = QLineEdit(self)
+        self.rating_input.setPlaceholderText("Рейтинг")
+        layout.addWidget(self.rating_input)
+
+        self.contact_person_input = QLineEdit(self)
+        self.contact_person_input.setPlaceholderText("Контактное лицо")
+        layout.addWidget(self.contact_person_input)
+
+        self.phone_input = QLineEdit(self)
+        self.phone_input.setPlaceholderText("Телефон")
+        layout.addWidget(self.phone_input)
+
+        self.submit_button = QPushButton("Сохранить", self)
+        self.submit_button.clicked.connect(self.submit)
+        layout.addWidget(self.submit_button)
+
+        self.setLayout(layout)
+
+    def load_partner_data(self, partner_id):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM partners WHERE id = ?", (partner_id,))
+        partner = cursor.fetchone()
+        conn.close()
+
+        if partner:
+            self.name_input.setText(partner[1])
+            self.type_input.setText(partner[2])
+            self.rating_input.setText(partner[3])
+            self.contact_person_input.setText(partner[4])
+            self.phone_input.setText(partner[5])
+
+    def submit(self):
+        name = self.name_input.text()
+        type_ = self.type_input.text()
+        rating = self.rating_input.text()
+        contact_person = self.contact_person_input.text()
+        phone = self.phone_input.text()
+
+        if not name or not type_ or not rating or not contact_person or not phone:
+            QMessageBox.warning(
+                self, "Предупреждение", "Все поля должны быть заполнены."
+            )
+            return
+
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        if self.partner_id:  # Если редактируем
+            cursor.execute(
+                """
+                UPDATE partners SET name = ?, type = ?, rating = ?, contact_person = ?, phone = ? WHERE id = ?
+                """,
+                (name, type_, rating, contact_person, phone, self.partner_id),
+            )
+        else:  # Если добавляем
+            cursor.execute(
+                """
+                INSERT INTO partners (name, type, rating, contact_person, phone) VALUES (?, ?, ?, ?, ?)
+                """,
+                (name, type_, rating, contact_person, phone),
+            )
+        conn.commit()
+        conn.close()
+        self.close()
+
+# Диалог для расчёта необходимого материала на основании выбранной продукции
+class MaterialCalculatorDialog(QDialog):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle("Расчёт материала")
+        self.setGeometry(100, 100, 400, 350)
+
+        self.initUI()
+
+    def initUI(self):
+        layout = QVBoxLayout()
+
+        self.product_selection = QTableWidget(self)
+        self.product_selection.setColumnCount(4)
+        self.product_selection.setHorizontalHeaderLabels(
+            ["ID", "Продукт", "Количество", "Дата"]
+        )
+        layout.addWidget(self.product_selection)
+
+        # Загрузка всех продуктов в таблицу
+        self.load_products()
+
+        self.calculate_button = QPushButton("Рассчитать материал", self)
+        self.calculate_button.clicked.connect(self.calculate_material)
+        layout.addWidget(self.calculate_button)
+
+        self.result_label = QLabel(self)
+        layout.addWidget(self.result_label)
+
+        self.setLayout(layout)
+
+    def load_products(self):
+        conn = connect_to_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM products")
+        products = cursor.fetchall()
+        conn.close()
+
+        self.product_selection.setRowCount(len(products))
+        for row_index, product in enumerate(products):
+            for col_index, item in enumerate(product):
+                self.product_selection.setItem(
+                    row_index, col_index, QTableWidgetItem(str(item))
+                )
+
+    def calculate_material(self):
+        selected_item = self.product_selection.currentItem()
+        if not selected_item:
+            QMessageBox.warning(self, "Ошибка", "Сначала выберите продукт.")
+            return
+
+        product_id = self.product_selection.item(selected_item.row(), 0).text()
+        product_name = self.product_selection.item(selected_item.row(), 1).text()
+        quantity = self.product_selection.item(selected_item.row(), 2).text()
+
+        try:
+            quantity = float(quantity)
+        except ValueError:
+            QMessageBox.warning(self, "Ошибка", "Введите корректное количество.")
+            return
+
+        # Запрос нормы расхода материала на продукт
+        material_per_product, ok = QInputDialog.getDouble(
+            self,
+            "Ввод нормы расхода",
+            "Введите норму расхода материала на продукт:",
+            value=1.0,
+            min=0.0,
+        )
+
+        if not ok:
+            return
+
+        required_material = calculate_material(
+            product_name, "material", quantity, material_per_product
+        )
+
+        if required_material != -1:
+            self.result_label.setText(
+                f"Необходимое количество материала для '{product_name}': {required_material}"
+            )
+        else:
+            self.result_label.setText("Ошибка в данных!")
+
+# Основная функция для запуска приложения
+if __name__ == "__main__":
+    create_tables()
+    insert_initial_data()  # Вызывать только один раз для вставки данных
+    app = QApplication(sys.argv)
+    window = PartnerProductManager()
+    window.show()
+    sys.exit(app.exec_())
+
+
+Это примеры скриптов с графическим интерфейсом и функциями, смотря на эти примеры ты берёшь от сюда самое главное
+и смотря на запрос ты добавляешь то, что написано в запросе.
+Всегда пиши сразу полный код!
+Старайся не делать ошибок, старайся всегда импортировать все библиотеки, чтобы не было подобных ошибок:
+Traceback (most recent call last):
+  File "c:\Users\xcc\Desktop\╚фх \┴─.py", line 229, in open_material_calculator_dialog
+    quantity, ok = QInputDialog.getDouble(
+                   ^^^^^^^^^^^^
+NameError: name 'QInputDialog' is not defined
+Всегда добавляй то что я написал в запросе, если в запросе я не говорил написать интерфейс, то ты его не пишешь, лишнего не добавляй если в запросе об этом не говорится
+Я сам тебе оповещу что нужно добавить следующее и добавляешь, смотря на эти примеры скриптов, и пишешь сразу полный код

@@ -1,0 +1,522 @@
+### Пример 1: Создание базы данных и подключение к ней
+```python
+import sqlite3
+
+# Подключение к базе данных (если файла нет, он будет создан)
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Закрытие соединения
+conn.close()
+```
+
+---
+
+### Пример 2: Создание таблицы
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Создание таблицы
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    age INTEGER
+)
+''')
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 3: Вставка данных в таблицу
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Вставка данных
+cursor.execute('''
+INSERT INTO users (name, age) VALUES (?, ?)
+''', ('Alice', 25))
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 4: Массовая вставка данных
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Массовая вставка данных
+users = [('Bob', 30), ('Charlie', 35), ('David', 40)]
+cursor.executemany('INSERT INTO users (name, age) VALUES (?, ?)', users)
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 5: Чтение всех записей из таблицы
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Чтение всех записей
+cursor.execute('SELECT * FROM users')
+rows = cursor.fetchall()
+
+for row in rows:
+    print(row)
+
+conn.close()
+```
+
+---
+
+### Пример 6: Чтение записи по условию
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Чтение записи по условию
+cursor.execute('SELECT * FROM users WHERE age > ?', (30,))
+rows = cursor.fetchall()
+
+for row in rows:
+    print(row)
+
+conn.close()
+```
+
+---
+
+### Пример 7: Обновление данных в таблице
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Обновление данных
+cursor.execute('UPDATE users SET age = ? WHERE name = ?', (28, 'Alice'))
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 8: Удаление записи из таблицы
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Удаление записи
+cursor.execute('DELETE FROM users WHERE name = ?', ('Bob',))
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 9: Создание индекса для ускорения запросов
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Создание индекса
+cursor.execute('CREATE INDEX IF NOT EXISTS idx_name ON users (name)')
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 10: Проверка существования таблицы
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Проверка существования таблицы
+cursor.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='users'")
+table_exists = cursor.fetchone()
+
+if table_exists:
+    print("Таблица существует")
+else:
+    print("Таблица не существует")
+
+conn.close()
+```
+
+---
+
+### Пример 11: Использование транзакций
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+try:
+    # Начало транзакции
+    cursor.execute('BEGIN TRANSACTION')
+    cursor.execute('INSERT INTO users (name, age) VALUES (?, ?)', ('Eve', 22))
+    cursor.execute('UPDATE users SET age = ? WHERE name = ?', (29, 'Alice'))
+    conn.commit()
+except Exception as e:
+    conn.rollback()
+    print(f"Ошибка: {e}")
+
+conn.close()
+```
+
+---
+
+### Пример 12: Создание таблицы с внешним ключом
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Включение поддержки внешних ключей
+conn.execute('PRAGMA foreign_keys = ON')
+
+# Создание таблицы с внешним ключом
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS orders (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
+    product TEXT,
+    FOREIGN KEY (user_id) REFERENCES users (id)
+)
+''')
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 13: Выполнение JOIN-запроса
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Выполнение JOIN-запроса
+cursor.execute('''
+SELECT users.name, orders.product
+FROM users
+JOIN orders ON users.id = orders.user_id
+''')
+
+rows = cursor.fetchall()
+for row in rows:
+    print(row)
+
+conn.close()
+```
+
+---
+
+### Пример 14: Использование параметров в запросах
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Безопасное использование параметров
+name = "Alice"
+cursor.execute('SELECT * FROM users WHERE name = :name', {'name': name})
+row = cursor.fetchone()
+print(row)
+
+conn.close()
+```
+
+---
+
+### Пример 15: Создание таблицы с уникальным ограничением
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Создание таблицы с уникальным ограничением
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS emails (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    email TEXT UNIQUE
+)
+''')
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 16: Использование функций агрегации
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Подсчет количества пользователей
+cursor.execute('SELECT COUNT(*) FROM users')
+count = cursor.fetchone()[0]
+print(f"Количество пользователей: {count}")
+
+conn.close()
+```
+
+---
+
+### Пример 17: Создание представления (VIEW)
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Создание представления
+cursor.execute('''
+CREATE VIEW IF NOT EXISTS adult_users AS
+SELECT * FROM users WHERE age >= 18
+''')
+
+conn.commit()
+conn.close()
+```
+
+---
+
+### Пример 18: Использование LIMIT и OFFSET
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Использование LIMIT и OFFSET
+cursor.execute('SELECT * FROM users LIMIT 2 OFFSET 1')
+rows = cursor.fetchall()
+
+for row in rows:
+    print(row)
+
+conn.close()
+```
+
+---
+
+### Пример 19: Использование ORDER BY
+```python
+import sqlite3
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Сортировка данных
+cursor.execute('SELECT * FROM users ORDER BY age DESC')
+rows = cursor.fetchall()
+
+for row in rows:
+    print(row)
+
+conn.close()
+```
+
+---
+
+### Пример 20: Экспорт данных в CSV
+```python
+import sqlite3
+import csv
+
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Экспорт данных в CSV
+cursor.execute('SELECT * FROM users')
+rows = cursor.fetchall()
+
+with open('users.csv', 'w', newline='') as file:
+    writer = csv.writer(file)
+    writer.writerow(['id', 'name', 'age'])  # Заголовки
+    writer.writerows(rows)
+
+conn.close()
+```
+
+import sqlite3
+
+# Создание базы данных и подключение к ней
+conn = sqlite3.connect("partners.db")
+cursor = conn.cursor()
+
+# Создание таблицы продуктов
+cursor.execute(
+    """
+CREATE TABLE IF NOT EXISTS products (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    product TEXT NOT NULL,
+    quantity INTEGER NOT NULL,
+    date TEXT NOT NULL,
+    partner_id INTEGER NOT NULL
+)
+"""
+)
+
+# Создание таблицы партнёров
+cursor.execute(
+    """
+CREATE TABLE IF NOT EXISTS partners (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    type TEXT NOT NULL,
+    rating TEXT NOT NULL,
+    contact_person TEXT NOT NULL,
+    phone TEXT NOT NULL
+)
+"""
+)
+
+# Вставка данных в таблицу продуктов
+products_data = [
+    (1, "Ноутбук HP", 10, "2023-10-01", 1),
+    (2, "Кирпич строительный", 500, "2023-10-05", 2),
+    (3, "Органические яблоки", 200, "2023-10-10", 3),
+    (4, "Доставка груза", 1, "2023-10-15", 4),
+    (5, "Рекламная кампания", 1, "2023-10-20", 5),
+]
+
+cursor.executemany("INSERT INTO products VALUES (?, ?, ?, ?, ?)", products_data)
+
+# Вставка данных в таблицу партнёров
+partners_data = [
+    (
+        1,
+        'ООО "ТехноМир"',
+        "Поставщик",
+        "2025-08-04",
+        "Иванов Иван",
+        "+7 (999) 123-45-67",
+    ),
+    (
+        2,
+        'ИП "СтройМастер"',
+        "Подрядчик",
+        "2025-05-04",
+        "Петров Петр",
+        "+7 (999) 234-56-78",
+    ),
+    (
+        3,
+        'ООО "ЭкоПродукт"',
+        "Производитель",
+        "2025-09-04",
+        "Сидорова Анна",
+        "+7 (999) 345-67-89",
+    ),
+    (
+        4,
+        'ООО "Логистика+"',
+        "Логистика",
+        "2025-07-04",
+        "Кузнецов Дмитрий",
+        "+7 (999) 456-78-90",
+    ),
+    (
+        5,
+        'ИП "МаркетингПро"',
+        "Маркетинг",
+        "2025-06-04",
+        "Смирнова Ольга",
+        "+7 (999) 567-89-01",
+    ),
+]
+
+cursor.executemany("INSERT INTO partners VALUES (?, ?, ?, ?, ?, ?)", partners_data)
+
+# Подтверждение изменений
+conn.commit()
+
+
+# Функция для расчёта скидки
+def calculate_discount(total_sales):
+    if total_sales < 10000:
+        return 0
+    elif total_sales < 50000:
+        return 5
+    elif total_sales < 300000:
+        return 10
+    else:
+        return 15
+
+
+# Вывод данных из таблиц
+print("Продукты:")
+cursor.execute("SELECT * FROM products")
+products = cursor.fetchall()
+for product in products:
+    print(product)
+
+print("\nПартнёры:")
+cursor.execute("SELECT * FROM partners")
+partners = cursor.fetchall()
+for partner in partners:
+    print(partner)
+
+# Пример расчёта скидки
+partner_sales = {
+    1: 9000,  # ООО "ТехноМир"
+    2: 30000,  # ИП "СтройМастер"
+    3: 100000,  # ООО "ЭкоПродукт"
+    4: 400000,  # ООО "Логистика+"
+    5: 15000,  # ИП "МаркетингПро"
+}
+
+print("\nСкидки партнёров:")
+for partner_id, total_sales in partner_sales.items():
+    discount = calculate_discount(total_sales)
+    print(f"Партнёр ID {partner_id}: {discount}% скидка")
+
+# Закрытие соединения
+conn.close()
+
+
+Это примеры скриптов на языке Python с SQL базами данных,
+ты должен всегда смотря на эти примеры писать готовый полный код смотря какой запрос,
+и по запросу ты берёшь из примеров только самое главное и отвечаешь полным кодом или скриптом Python
