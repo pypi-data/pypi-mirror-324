@@ -1,0 +1,71 @@
+[project]
+name = "NGOHub"
+version = "0.0.10"
+description = "Python client for ngohub.ro API"
+readme = "README.md"
+
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/code4romania/pyngohub/"
+Issues = "https://github.com/code4romania/pyngohub/issues"
+Changelog = "https://github.com/code4romania/pyngohub/blob/main/CHANGELOG.md"
+Download = "https://github.com/code4romania/pyngohub/tags"
+
+[build-system]
+requires = ["setuptools>=72.1"]
+build-backend = "setuptools.build_meta"
+
+[lint]
+ignore = []
+
+[tool.ruff]
+exclude = [
+  ".eggs",
+  ".git",
+  ".ruff_cache",
+  ".venv",
+  ".vscode",
+  "__pypackages__",
+  "dist",
+  "venv",
+]
+line-length = 120
+target-version = "py311"
+
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+
+[tool.isort]
+line_length = 120
+indent = "    "
+multi_line_output = 3
+combine_as_imports = true
+include_trailing_comma = true
+known_tests = "tests"
+known_first_party = "ngohub"
+default_section = "THIRDPARTY"
+sections = "FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER,TESTS"
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q"
+testpaths = [
+  "tests",
+]
+markers = [
+  "investigation_needed: mark test as needing investigation (deselect with '-m \"not investigation_needed\"')",
+]
