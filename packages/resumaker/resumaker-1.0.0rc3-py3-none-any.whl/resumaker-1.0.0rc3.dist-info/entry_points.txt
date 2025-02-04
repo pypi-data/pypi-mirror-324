@@ -1,0 +1,2 @@
+[console_scripts]
+resumaker = resumaker.__main__:main
