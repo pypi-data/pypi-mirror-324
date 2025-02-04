@@ -1,0 +1,3 @@
+[console_scripts]
+cif2midb=midb_tool.main:app
+
