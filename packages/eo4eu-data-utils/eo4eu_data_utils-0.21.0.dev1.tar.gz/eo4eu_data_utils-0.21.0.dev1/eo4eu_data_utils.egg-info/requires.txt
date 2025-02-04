@@ -1,0 +1,20 @@
+eo4eu_base_utils>=0.4.6
+
+[cloudpath]
+
+[cloudpath:python_version <= "3.11"]
+cloudpathlib~=0.15.1
+
+[cloudpath:python_version >= "3.12"]
+cloudpathlib>=0.15.1
+
+[full]
+eo4eu_data_utils[cloudpath,s3]
+
+[s3]
+
+[s3:python_version <= "3.11"]
+boto3~=1.26.137
+
+[s3:python_version >= "3.12"]
+boto3<=1.35.99,>=1.26.137
