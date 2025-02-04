@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: lm-sim
+Version: 0.0.0
+Summary: Python package to compute similarity between LMs
+Author-email: Ilze Amanda Auzina <ilze.amanda.auzina@outlook.com>, Shashwat Goel <shashwatnow@gmail.com>, Joschka Strüber <joschka.strueber@bethgelab.org>
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# LM-Similarity
+
+This is a placeholder for lm-similarity package in development
