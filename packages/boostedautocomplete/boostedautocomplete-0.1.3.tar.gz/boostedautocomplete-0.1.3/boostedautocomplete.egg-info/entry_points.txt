@@ -1,0 +1,2 @@
+[console_scripts]
+boostedautocomplete = source.main:main
