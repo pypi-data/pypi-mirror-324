@@ -1,0 +1,16 @@
+[project]
+name = "PyDIABAS"
+version = "1.2.0"
+authors = [
+  { name="Aljoscha Greim", email="aljoscha@bembelbytes.com" },
+]
+description = "Python access to EDIABAS API"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/BembelBytes/pydiabas"
