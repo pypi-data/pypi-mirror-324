@@ -1,0 +1,11 @@
+polars==1.21.0
+dash==2.18.2
+numpy==2.2.2
+pandas==2.2.3
+
+[dev]
+pre-commit<4
+
+[tests]
+pytest
+pytest-cov

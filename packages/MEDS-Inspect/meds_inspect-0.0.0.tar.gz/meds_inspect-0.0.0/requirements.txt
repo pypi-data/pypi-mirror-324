@@ -1,0 +1,5 @@
+polars==1.21.0
+dash==2.18.2
+numpy
+pandas
+# MIMIC_IV_MEDS
