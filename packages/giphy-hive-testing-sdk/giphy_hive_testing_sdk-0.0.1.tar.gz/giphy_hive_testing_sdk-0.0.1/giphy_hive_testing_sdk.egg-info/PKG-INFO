@@ -1,0 +1,23 @@
+Metadata-Version: 2.2
+Name: giphy-hive-testing-sdk
+Version: 0.0.1
+Summary: Giphy API
+Home-page: 
+Author: OpenAPI Generator community
+Author-email: support@giphy.com
+Keywords: OpenAPI,OpenAPI-Generator,Giphy API
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3<3.0.0,>=1.25.3
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: pydantic>=2
+Requires-Dist: typing-extensions>=4.7.1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: keywords
+Dynamic: requires-dist
+Dynamic: summary
+
+    Giphy API
+    
