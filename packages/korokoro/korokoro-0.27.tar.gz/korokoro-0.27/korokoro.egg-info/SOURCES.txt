@@ -1,0 +1,14 @@
+COPYING
+LICENSE
+README.md
+setup.cfg
+setup.py
+korokoro/__init__.py
+korokoro/pronouncer.py
+korokoro/romanizer.py
+korokoro/syllable.py
+korokoro.egg-info/PKG-INFO
+korokoro.egg-info/SOURCES.txt
+korokoro.egg-info/dependency_links.txt
+korokoro.egg-info/top_level.txt
+tests/test_romanizer.py
