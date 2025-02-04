@@ -1,0 +1,32 @@
+Metadata-Version: 2.4
+Name: openwebui-token-tracking
+Version: 0.0.1a0
+Summary: Add your description here
+Author-email: Simon Stone <simon.stone@dartmouth.edu>
+Requires-Python: >=3.11
+Requires-Dist: alembic>=1.14.0
+Requires-Dist: open-webui
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: pytest>=8.3.4
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: sqlalchemy>=2.0.32
+Description-Content-Type: text/markdown
+
+# Open WebUI Token Tracking
+
+[![Run tests](https://github.com/dartmouth/openwebui-token-tracking/actions/workflows/pytest.yml/badge.svg)](https://github.com/dartmouth/openwebui-token-tracking/actions/workflows/pytest.yml)
+
+A library to support token tracking and limiting in Open WebUI.
+
+
+## Installation
+
+Install from PyPI using pip:
+
+```
+pip install openwebui-token-tracking
+```
+
+## Usage
+
+TODO
