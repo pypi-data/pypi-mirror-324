@@ -1,0 +1,36 @@
+Metadata-Version: 2.2
+Name: usepolvo
+Version: 0.2.1
+Summary: A comprehensive integration package supporting various services.
+Author-email: Caio Pizzol <caio@usepolvo.com>
+License: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp==3.11.11
+Requires-Dist: asyncio==3.4.3
+Requires-Dist: gql==3.5.0
+Requires-Dist: pydantic==2.10.6
+Requires-Dist: pydantic-settings==2.7.1
+Requires-Dist: pyngrok==7.2.3
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: ratelimit==2.2.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: tenacity==9.0.0
+Provides-Extra: stripe
+Requires-Dist: stripe==10.5.0; extra == "stripe"
+Provides-Extra: openai
+Requires-Dist: openai==1.42.0; extra == "openai"
+Provides-Extra: claude
+Requires-Dist: anthropic==0.34.1; extra == "claude"
+Provides-Extra: gemini
+Requires-Dist: google-generativeai==0.7.2; extra == "gemini"
+Provides-Extra: hubspot
+Requires-Dist: hubspot-api-client==9.0.0; extra == "hubspot"
+Provides-Extra: linear
+Requires-Dist: gql==3.5.0; extra == "linear"
+Provides-Extra: all
+Requires-Dist: stripe==10.5.0; extra == "all"
+Requires-Dist: openai==1.42.0; extra == "all"
+Requires-Dist: anthropic==0.34.1; extra == "all"
+Requires-Dist: google-generativeai==0.7.2; extra == "all"
+Requires-Dist: hubspot-api-client==9.0.0; extra == "all"
