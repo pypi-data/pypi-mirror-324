@@ -1,0 +1,10 @@
+laminr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+laminr/coordinate_transform.py,sha256=88vBeoe1TGieNs3nEHzzIuE9QHUHjkXHCYWk8YN8ULI,12782
+laminr/cppn.py,sha256=H3LmgXOI4ZfjUogAa4SBnmi7-yKEyIEGbJLV8-5GZ_Q,15831
+laminr/datamodule.py,sha256=MLB2fo92EskMMVzJxoclRBZJDqZcE6zQCuGMDupWWfY,1439
+laminr/regularization.py,sha256=6Wrb7ucmu1dICUEBz8TMEaj_ex5N_wFXNmM0F6jLZBk,21617
+laminr-0.0.1.dist-info/LICENSE.md,sha256=s6_XTCuevHxF2Q3ullu0lHeIra0-B5CCJNHftihVW3U,2687
+laminr-0.0.1.dist-info/METADATA,sha256=7EZb4JSvfkO9nKz0qj3Giutb_sIqnyldq9kfcO-18ec,253
+laminr-0.0.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+laminr-0.0.1.dist-info/top_level.txt,sha256=Ln-2MjQyPicmQqC1eq25lvsHBvffkxNzjXcKYYahwM0,7
+laminr-0.0.1.dist-info/RECORD,,

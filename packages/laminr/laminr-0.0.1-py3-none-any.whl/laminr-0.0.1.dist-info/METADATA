@@ -1,0 +1,6 @@
+Metadata-Version: 2.2
+Name: laminr
+Version: 0.0.1
+Summary: Learning and Aligning Manifolds using Implicit Neural Representations.
+Author-email: Mohammad Bashiri <mohammadbashiri93@gmail.com>, Luca Baroni <loocabaroni@gmail.com>
+License-File: LICENSE.md
