@@ -1,0 +1,3 @@
+[console_scripts]
+rebench = rebench.rebench:main_func
+rebench-denoise = rebench.denoise:main_func
