@@ -1,0 +1,8 @@
+stacrs_cli-0.5.0.dist-info/METADATA,sha256=t0JV4rtw7_R55E0MqGIEBrVIZE_bOzkuBlV4zkGa51k,3263
+stacrs_cli-0.5.0.dist-info/WHEEL,sha256=CEErL_KckMfULl16D9iatGdRL2dzCuowN9GEO8K-GX4,105
+stacrs_cli-0.5.0.dist-info/entry_points.txt,sha256=EbFqyHnSLDE2aR752pwr2hDWmpnCpoakeWMQXJ2kR6U,41
+stacrs_cli.libs/libgcc_s-e52197c3.so.1,sha256=vkPW1Auw6CH9Bjk7frmX3hry_1H9c0tRI0Ncyg71WUI,724137
+stacrs_cli/__init__.py,sha256=-l9zTHPbvN-zK27CeZuIL8rouMClJM2oO1WOUHplqeY,143
+stacrs_cli/ffi.py,sha256=l_i047dsYP8cOaqoz7oL9iajRvokRLdvFCPAGLcEz-U,118
+stacrs_cli/libstacrs_cli.so,sha256=ThvSbvAmzfPXul0uzvltAritKpnjNVlQf-LVl4E_Sl8,132025
+stacrs_cli-0.5.0.dist-info/RECORD,,
