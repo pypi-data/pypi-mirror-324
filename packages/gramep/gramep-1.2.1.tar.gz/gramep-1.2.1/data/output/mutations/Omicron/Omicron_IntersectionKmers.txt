@@ -1,0 +1,1 @@
+['GCT', 'AAA', 'GTG', 'TGG', 'AAC', 'TGC', 'TGA', 'ACA', 'TAC', 'TCA', 'CTG', 'TTG', 'TAT', 'CTA', 'TTT', 'GAA', 'TGT', 'TTC', 'ATG', 'AGT', 'ATT', 'CAT', 'GTT', 'AAT', 'TCT', 'AAG', 'AGA', 'CTT', 'ACT', 'CAA', 'TAA', 'TTA']
