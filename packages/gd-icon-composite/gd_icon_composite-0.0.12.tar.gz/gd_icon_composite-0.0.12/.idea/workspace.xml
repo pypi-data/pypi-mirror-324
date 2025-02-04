@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="aa25e806-5336-4df3-b83b-bc50f9838343" name="Changes" comment="bumped version number to 0.0.11&#10;fixed compatibility issues with python 3.12">
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gd_icon_composite/icon_composite.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/gd_icon_composite/icon_composite.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Luar77&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Luar77/gdIconComposite.git&quot;,
+    &quot;accountId&quot;: &quot;5220c75d-924d-45ea-b549-492fc7ae7012&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2rthAsb7PYmxKBzODPz6uTBR2O8" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.icon_composite.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raul7\PycharmProjects\gdIconComposite\other_dist" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa25e806-5336-4df3-b83b-bc50f9838343" name="Changes" comment="" />
+      <created>1737384138639</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737384138639</updated>
+    </task>
+    <task id="LOCAL-00001" summary="bumped version number&#10;changed build backend&#10;replaced deprecated enums with their updated classes (Resampling and Transpose)&#10;fixed type annotations">
+      <option name="closed" value="true" />
+      <created>1737411245228</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737411245228</updated>
+    </task>
+    <task id="LOCAL-00002" summary="bumped version number&#10;changed build backend&#10;replaced deprecated enums with their updated classes (Resampling and Transpose)&#10;fixed type annotations&#10;file formatting">
+      <option name="closed" value="true" />
+      <created>1737412195404</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737412195404</updated>
+    </task>
+    <task id="LOCAL-00003" summary="bumped version number to 0.0.11&#10;fixed compatibility issues with python 3.12">
+      <option name="closed" value="true" />
+      <created>1737474958348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737474958348</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="bumped version number&#10;changed build backend&#10;replaced deprecated enums with their updated classes (Resampling and Transpose)&#10;fixed type annotations" />
+    <MESSAGE value="bumped version number&#10;changed build backend&#10;replaced deprecated enums with their updated classes (Resampling and Transpose)&#10;fixed type annotations&#10;file formatting" />
+    <MESSAGE value="bumped version number to 0.0.11&#10;fixed compatibility issues with python 3.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="bumped version number to 0.0.11&#10;fixed compatibility issues with python 3.12" />
+  </component>
+</project>
