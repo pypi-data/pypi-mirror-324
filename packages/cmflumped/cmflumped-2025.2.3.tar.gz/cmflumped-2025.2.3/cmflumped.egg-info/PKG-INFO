@@ -1,0 +1,39 @@
+Metadata-Version: 2.2
+Name: cmflumped
+Version: 2025.2.3
+Summary: A toolbox to build, debug, run and calibrate lumped cmf models
+Home-page: https://github.com/philippkraft/cmf.lumped
+Author: Philipp Kraft
+Author-email: philipp.kraft@envr.jlug.de
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: wheel
+Requires-Dist: pandas>=1.2.5
+Requires-Dist: matplotlib>=3.4.2
+Requires-Dist: scipy>=1.7.0
+Requires-Dist: click>=7.1.2
+Requires-Dist: tables>=3.6.1
+Requires-Dist: openpyxl>=3.0.0
+Requires-Dist: cmf>=2.0.0
+Requires-Dist: spotpy==1.5.14
+Requires-Dist: sphinx>=4.0.0
+Requires-Dist: networkx>=2.4
+Requires-Dist: pyyaml
+Requires-Dist: setuptools
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# cmf.lumped
+A framework to build run and test lumped cmf models
