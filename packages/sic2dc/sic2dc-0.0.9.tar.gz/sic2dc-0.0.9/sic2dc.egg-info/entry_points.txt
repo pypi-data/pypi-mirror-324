@@ -1,0 +1,2 @@
+[console_scripts]
+sic2dc = sic2dc.sic2dc_cli:main

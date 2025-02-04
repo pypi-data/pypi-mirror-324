@@ -1,0 +1,9 @@
+iniconfig
+packaging
+pluggy
+pytest
+black
+click
+mypy-extensions
+pathspec
+platformdirs

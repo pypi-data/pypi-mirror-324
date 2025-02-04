@@ -1,0 +1,15 @@
+pydantic
+pydantic_core
+ruamel.yaml
+ruamel.yaml.clib
+
+[dev]
+iniconfig
+packaging
+pluggy
+pytest
+black
+click
+mypy-extensions
+pathspec
+platformdirs
