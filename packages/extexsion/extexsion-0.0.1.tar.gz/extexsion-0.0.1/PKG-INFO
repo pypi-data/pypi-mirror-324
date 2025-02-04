@@ -1,0 +1,17 @@
+Metadata-Version: 2.2
+Name: extexsion
+Version: 0.0.1
+Summary: extexsion
+Author: huang yi yi
+Author-email: 363766687@qq.com
+Requires-Python: >=3.6
+License-File: LICENSE.txt
+Requires-Dist: requests>=2.32.2.post1
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# file Extexsion, attributes: file_attributes, system:Windows or Linux or macOS? open_url: browser open url, download:download ...... pyi

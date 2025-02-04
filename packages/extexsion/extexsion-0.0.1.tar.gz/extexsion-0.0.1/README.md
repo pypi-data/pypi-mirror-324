@@ -1,0 +1,1 @@
+# file Extexsion, attributes: file_attributes, system:Windows or Linux or macOS? open_url: browser open url, download:download ...... pyi
