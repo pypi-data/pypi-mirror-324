@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lm-sim"
+dynamic = ["version"]
+authors = [
+  { name="Ilze Amanda Auzina", email="ilze.amanda.auzina@outlook.com" },
+  { name="Shashwat Goel", email="shashwatnow@gmail.com"},
+  { name="Joschka Strüber", email="joschka.strueber@bethgelab.org"},
+]
+description = "Python package to compute similarity between LMs"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {text = "MIT"}
