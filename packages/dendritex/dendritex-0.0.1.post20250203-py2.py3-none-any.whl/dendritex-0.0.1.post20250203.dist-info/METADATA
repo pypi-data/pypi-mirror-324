@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: dendritex
+Version: 0.0.1.post20250203
+Summary: Dendrite Modeling in Python
+Home-page: https://github.com/chaobrain/dendritex
+Author: Dendritex Developers
+Author-email: dendritex Developers <chao.brain@qq.com>
+License: Apache-2.0 license
+Project-URL: homepage, http://github.com/chaobrain/dendritex
+Project-URL: repository, http://github.com/chaobrain/dendritex
+Keywords: dendritic computation,dendritic modeling,brain modeling,neuron simulation
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: jax
+Requires-Dist: jaxlib
+Requires-Dist: numpy
+Requires-Dist: brainstate (>=0.1.0)
+Requires-Dist: brainunit (>=0.0.2.post20240903)
+Provides-Extra: cpu
+Requires-Dist: jaxlib ; extra == 'cpu'
+Provides-Extra: cuda12
+Requires-Dist: jaxlib[cuda12] ; extra == 'cuda12'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Provides-Extra: tpu
+Requires-Dist: jaxlib[tpu] ; extra == 'tpu'
+
+
+
+# Dendritic Modeling in JAX
+
+<p align="center">
+  	<img alt="Header image of dendritex." src="https://github.com/chaoming0625/dendritex/blob/main/docs/_static/dendritex.png" width=50%>
+</p> 
+
+
+
+<p align="center">
+	<a href="https://pypi.org/project/dendritex/"><img alt="Supported Python Version" src="https://img.shields.io/pypi/pyversions/dendritex"></a>
+	<a href="https://github.com/chaoming0625/dendritex/blob/main/LICENSE"><img alt="LICENSE" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"></a>
+    <a href='https://dendrite.readthedocs.io/en/latest/?badge=latest'>
+        <img src='https://readthedocs.org/projects/dendrite/badge/?version=latest' alt='Documentation Status' />
+    </a>  	
+    <a href="https://badge.fury.io/py/dendritex"><img alt="PyPI version" src="https://badge.fury.io/py/dendritex.svg"></a>
+    <a href="https://github.com/chaoming0625/dendritex/actions/workflows/CI.yml"><img alt="Continuous Integration" src="https://github.com/chaoming0625/dendritex/actions/workflows/CI.yml/badge.svg"></a>
+</p>
+
+
+[//]: # ([``dendritex``]&#40;https://github.com/chaoming0625/dendritex&#41; provides physical units and unit-aware mathematical system in JAX for brain dynamics and AI4Science)
+    
+
+## Installation
+
+You can install ``dendritex`` via pip:
+
+```bash
+pip install dendritex --upgrade
+```
+
+## Documentation
+
+The official documentation is hosted on Read the Docs: [https://dendrite.readthedocs.io](https://dendrite.readthedocs.io)
+
+
+
+## See also the BDP ecosystem
+
+We are building the BDP ecosystem: https://ecosystem-for-brain-dynamics.readthedocs.io/
+
