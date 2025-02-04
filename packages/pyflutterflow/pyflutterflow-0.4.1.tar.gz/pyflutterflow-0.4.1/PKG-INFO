@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: pyflutterflow
+Version: 0.4.1
+Summary: The companion python library to Flutterflow
+License: MIT
+Author: John Kealy
+Author-email: john@kealy.studio
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: beanie (>=1.27.0,<2.0.0)
+Requires-Dist: cloudinary (>=1.41.0,<2.0.0)
+Requires-Dist: fastapi (>=0.115.2,<0.116.0)
+Requires-Dist: fastapi-pagination (>=0.12.31,<0.13.0)
+Requires-Dist: firebase-admin (>=6.5.0,<7.0.0)
+Requires-Dist: google-cloud-firestore (>=2.19.0,<3.0.0)
+Requires-Dist: grpcio (==1.60.1)
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pydantic-settings (>=2.6.0,<3.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Requires-Dist: pytest-asyncio (>=0.24.0,<0.25.0)
+Requires-Dist: python-multipart (>=0.0.19,<0.0.20)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: resend (>=2.4.0,<3.0.0)
+Requires-Dist: supabase (>=2.9.1,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Pyflutterflow
+
+*The python companion to the flutterflow ecosystem.*
+
+PyFlutterFlow is a companion to FlutterFlow, serving as an API backend that provides:
+
+- A Firebase Auth integration with support for:
+  - token decoding
+  - custom claims interpretation for admin roles
+  - Pydantic models
+  - User Sync utilities
+  - User onboarding
+
+- A Supabase integration with:
+  - Supabase JWT token minting
+  - A proxy for Supabase Postgrest API calls
+  - Supabase REST utilities
+
+
+- A Firebase Cloud Messaging integration with:
+  - Endpoints for sending notifications
+  - User token management via Firestore (working alongside FlutterFlow FCM utilities)
+  - Supabase notification database records with read receipts and notification histories
+  - Notification badge utilities
+
+
+- Email service via Resend with:
+  - Onboarding emails including email verification links where necessary
+  - General email sending
+
+
+- An administration panel:
+  - served as a Vue.js SPA
+  - with user management for Firebase and Supabase
+  - including privacy policy and terms of service management
+  - with CRUD utilities for Supabase tables
+
+
+- Cloudinary suppport:
+  - with endpoints for image uploading
+
+
+- A full pytest integration testing suite
+  - with sample tests and instructions on using it via local Supabase
+
+
+
+PyFlutterFlow is designed to be used inside of a FastAPI project, such as
+that provided in the [FlutterFlow Starter Kit](https://kealy.studio/flutterflow/).
+The Python API in the kit will define the various settings that pyFlutterFlow needs,
+along with the initializer code and scripts that it depends on.
+
