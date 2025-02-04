@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+Fcode_Calculator/Conversions.py
+Fcode_Calculator/Electronics.py
+Fcode_Calculator/Scientific.py
+Fcode_Calculator/__init__.py
+Fcode_Calculator.egg-info/PKG-INFO
+Fcode_Calculator.egg-info/SOURCES.txt
+Fcode_Calculator.egg-info/dependency_links.txt
+Fcode_Calculator.egg-info/top_level.txt
