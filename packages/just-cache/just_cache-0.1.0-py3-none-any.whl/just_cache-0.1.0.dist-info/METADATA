@@ -1,0 +1,13 @@
+Metadata-Version: 2.2
+Name: just_cache
+Version: 0.1.0
+Summary: A Pickle-based package to cache results, mostly for data analysis tasks.
+License: MIT License
+Project-URL: Homepage, https://github.com/mntusr/just_cache
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+A Pickle-based package to cache results, mostly for data analysis tasks.
