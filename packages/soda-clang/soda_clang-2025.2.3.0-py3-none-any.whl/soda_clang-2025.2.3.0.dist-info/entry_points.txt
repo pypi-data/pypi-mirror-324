@@ -1,0 +1,3 @@
+[console_scripts]
+soda-clang = soda_clang.main:main
+soda-clang++ = soda_clang.main:main_cxx

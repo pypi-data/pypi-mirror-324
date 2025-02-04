@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: soda-clang
+Version: 2025.2.3.0
+Summary: use custom built clang with gcc
+Project-URL: Repository, https://github.com/soda92/soda_clang
+License-File: LICENSE
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# soda_clang
+clang wrapper for use with gcc
