@@ -1,0 +1,2 @@
+[console_scripts]
+byterover = byterover.__main__:main
