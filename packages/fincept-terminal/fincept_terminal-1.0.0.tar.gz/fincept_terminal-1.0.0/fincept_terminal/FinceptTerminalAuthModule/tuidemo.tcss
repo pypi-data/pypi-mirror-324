@@ -1,0 +1,119 @@
+/* Main App Styling */
+#fincept-app {
+    align: center middle;
+    padding: 0;
+    border: round white;
+    background: #282c34;
+}
+
+/* Screen Styling */
+.fincept-screen {
+    border: solid red;
+}
+
+/* Main Container Styling */
+#fincept-main-container {
+    background: #282828;
+    border: round green;
+    margin: 0;
+    padding: 2;
+}
+
+/* Banner Container Styling */
+#fincept-banner-container {
+    background: #1e1e1e;
+    border: round orange;
+    padding: 1;
+    align: center middle;
+}
+
+#fincept-banner-static {
+    color: #ffa500; /* Bright orange text for banner content */
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Info Container Styling */
+#fincept-info-container {
+    background: #242424;
+    border: round teal;
+    padding: 2;
+    margin-top: 2;
+    align: center middle;
+}
+
+#fincept-info-static {
+    color: #e0e0e0; /* Light gray text for informational content */
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Greeting Styling */
+#fincept-greeting {
+    color: #00b894; /* Teal color for greetings */
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1 0;
+}
+
+/* Button Rows */
+.fincept-button-row-registered {
+    align: center middle;
+    margin: 2 0;
+    gap: 1;
+}
+
+.fincept-button-row-guest {
+    align: center middle;
+    margin: 2 0;
+    gap: 1;
+}
+
+/* Button Styling */
+.fincept-button {
+    width: auto;
+    height: auto;
+    border: solid green;
+    background: darkorange;
+    color: #ffffff; /* White text for contrast */
+    padding: 0.5 2;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px; /* Rounded corners */
+}
+
+.fincept-button:hover {
+    background: #ffa500; /* Brighter orange on hover */
+    color: #000000; /* Black text for better contrast on hover */
+    text-style: bold;
+}
+
+/* Horizontal Layout Styling */
+.layout-horizontal {
+    align: center middle;
+    height: 10%;
+    padding: 0;
+}
+
+/* Registration Section */
+#fincept-registration-container {
+    width: 40%;
+    align: center middle;
+    padding: 10;
+    border: round orange;
+    background: black;
+}
+
+/* Miscellaneous Styling */
+.Static {
+    text-align: center;
+    margin: 0 0 1 0;
+    padding: 0;
+}
+
+.Header {
+    background: #1c1c1c;
+    color: #ffffff;
+    border: solid #333333;
+    padding: 1;
+}
