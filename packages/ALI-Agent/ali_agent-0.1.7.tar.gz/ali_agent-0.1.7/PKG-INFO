@@ -1,0 +1,403 @@
+Metadata-Version: 2.1
+Name: ALI-Agent
+Version: 0.1.7
+Summary: A brief description of your project
+Home-page: https://github.com/SophieZheng998/ALI-Agent
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ALI-Agent
+Requires-Dist: Babel
+Requires-Dist: Deprecated
+Requires-Dist: GitPython
+Requires-Dist: MarkupSafe
+Requires-Dist: Pillow
+Requires-Dist: PyPika
+Requires-Dist: PyWavelets
+Requires-Dist: PyYAML
+Requires-Dist: QtPy
+Requires-Dist: SecretStorage
+Requires-Dist: Send2Trash
+Requires-Dist: accelerate
+Requires-Dist: aiofiles
+Requires-Dist: aiohttp
+Requires-Dist: aiosignal
+Requires-Dist: annotated-types
+Requires-Dist: anyio
+Requires-Dist: appdirs
+Requires-Dist: argon2-cffi
+Requires-Dist: argon2-cffi-bindings
+Requires-Dist: arrow
+Requires-Dist: asgiref
+Requires-Dist: asttokens
+Requires-Dist: async-lru
+Requires-Dist: async-timeout
+Requires-Dist: attrs
+Requires-Dist: azure-cognitiveservices-vision-computervision
+Requires-Dist: azure-common
+Requires-Dist: azure-core
+Requires-Dist: azure-search-documents
+Requires-Dist: backoff
+Requires-Dist: backports.tarfile
+Requires-Dist: bcrypt
+Requires-Dist: beautifulsoup4
+Requires-Dist: bleach
+Requires-Dist: blessed
+Requires-Dist: brotlipy
+Requires-Dist: cachetools
+Requires-Dist: certifi
+Requires-Dist: cffi
+Requires-Dist: charset-normalizer
+Requires-Dist: chroma-hnswlib
+Requires-Dist: chromadb
+Requires-Dist: click
+Requires-Dist: cmake
+Requires-Dist: coloredlogs
+Requires-Dist: comm
+Requires-Dist: contourpy
+Requires-Dist: cryptography
+Requires-Dist: cycler
+Requires-Dist: datasets
+Requires-Dist: debugpy
+Requires-Dist: decorator
+Requires-Dist: deeprobust
+Requires-Dist: defusedxml
+Requires-Dist: dill
+Requires-Dist: distro
+Requires-Dist: docker-pycreds
+Requires-Dist: docstring-parser
+Requires-Dist: docutils
+Requires-Dist: dpcpp-cpp-rt
+Requires-Dist: exceptiongroup
+Requires-Dist: executing
+Requires-Dist: fastapi
+Requires-Dist: fastjsonschema
+Requires-Dist: ffmpy
+Requires-Dist: filelock
+Requires-Dist: flatbuffers
+Requires-Dist: fonttools
+Requires-Dist: fqdn
+Requires-Dist: frozenlist
+Requires-Dist: fsspec
+Requires-Dist: gensim
+Requires-Dist: gitdb
+Requires-Dist: google-ai-generativelanguage
+Requires-Dist: google-api-core
+Requires-Dist: google-auth
+Requires-Dist: google-generativeai
+Requires-Dist: googleapis-common-protos
+Requires-Dist: gpustat
+Requires-Dist: gradio
+Requires-Dist: gradio-client
+Requires-Dist: grpcio
+Requires-Dist: grpcio-status
+Requires-Dist: h11
+Requires-Dist: httpcore
+Requires-Dist: httptools
+Requires-Dist: httpx
+Requires-Dist: huggingface-hub
+Requires-Dist: humanfriendly
+Requires-Dist: id
+Requires-Dist: idna
+Requires-Dist: imageio
+Requires-Dist: importlib-metadata
+Requires-Dist: importlib-resources
+Requires-Dist: intel-cmplr-lib-rt
+Requires-Dist: intel-cmplr-lib-ur
+Requires-Dist: intel-cmplr-lic-rt
+Requires-Dist: intel-opencl-rt
+Requires-Dist: intel-openmp
+Requires-Dist: intel-sycl-rt
+Requires-Dist: ipykernel
+Requires-Dist: ipython
+Requires-Dist: ipywidgets
+Requires-Dist: isodate
+Requires-Dist: isoduration
+Requires-Dist: jaraco.classes
+Requires-Dist: jaraco.context
+Requires-Dist: jaraco.functools
+Requires-Dist: jedi
+Requires-Dist: jeepney
+Requires-Dist: jinja2
+Requires-Dist: jiter
+Requires-Dist: joblib
+Requires-Dist: json5
+Requires-Dist: jsonpointer
+Requires-Dist: jsonschema
+Requires-Dist: jsonschema-specifications
+Requires-Dist: jupyter
+Requires-Dist: jupyter-client
+Requires-Dist: jupyter-console
+Requires-Dist: jupyter-core
+Requires-Dist: jupyter-events
+Requires-Dist: jupyter-lsp
+Requires-Dist: jupyter-server
+Requires-Dist: jupyter-server-terminals
+Requires-Dist: jupyterlab
+Requires-Dist: jupyterlab-pygments
+Requires-Dist: jupyterlab-server
+Requires-Dist: jupyterlab-widgets
+Requires-Dist: keyring
+Requires-Dist: kiwisolver
+Requires-Dist: kubernetes
+Requires-Dist: lazy-loader
+Requires-Dist: lit
+Requires-Dist: llvmlite
+Requires-Dist: markdown-it-py
+Requires-Dist: matplotlib
+Requires-Dist: matplotlib-inline
+Requires-Dist: mdurl
+Requires-Dist: mistune
+Requires-Dist: mkl
+Requires-Dist: mkl-fft
+Requires-Dist: mkl-service
+Requires-Dist: mmh3
+Requires-Dist: monotonic
+Requires-Dist: more-itertools
+Requires-Dist: mpmath
+Requires-Dist: msrest
+Requires-Dist: multidict
+Requires-Dist: multiprocess
+Requires-Dist: nbclient
+Requires-Dist: nbconvert
+Requires-Dist: nbformat
+Requires-Dist: nest-asyncio
+Requires-Dist: networkx
+Requires-Dist: nh3
+Requires-Dist: notebook
+Requires-Dist: notebook-shim
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: nvidia-cublas-cu11
+Requires-Dist: nvidia-cuda-cupti-cu11
+Requires-Dist: nvidia-cuda-nvrtc-cu11
+Requires-Dist: nvidia-cuda-runtime-cu11
+Requires-Dist: nvidia-cudnn-cu11
+Requires-Dist: nvidia-cufft-cu11
+Requires-Dist: nvidia-curand-cu11
+Requires-Dist: nvidia-cusolver-cu11
+Requires-Dist: nvidia-cusparse-cu11
+Requires-Dist: nvidia-ml-py
+Requires-Dist: nvidia-nccl-cu11
+Requires-Dist: nvidia-nvtx-cu11
+Requires-Dist: oauthlib
+Requires-Dist: onnxruntime
+Requires-Dist: openai
+Requires-Dist: opentelemetry-api
+Requires-Dist: opentelemetry-exporter-otlp-proto-common
+Requires-Dist: opentelemetry-exporter-otlp-proto-grpc
+Requires-Dist: opentelemetry-instrumentation
+Requires-Dist: opentelemetry-instrumentation-asgi
+Requires-Dist: opentelemetry-instrumentation-fastapi
+Requires-Dist: opentelemetry-proto
+Requires-Dist: opentelemetry-sdk
+Requires-Dist: opentelemetry-semantic-conventions
+Requires-Dist: opentelemetry-util-http
+Requires-Dist: orjson
+Requires-Dist: overrides
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: pandocfilters
+Requires-Dist: parso
+Requires-Dist: pexpect
+Requires-Dist: pip
+Requires-Dist: platformdirs
+Requires-Dist: posthog
+Requires-Dist: prometheus-client
+Requires-Dist: prompt-toolkit
+Requires-Dist: proto-plus
+Requires-Dist: protobuf
+Requires-Dist: psutil
+Requires-Dist: ptyprocess
+Requires-Dist: pulsar-client
+Requires-Dist: pure-eval
+Requires-Dist: pyarrow
+Requires-Dist: pyarrow-hotfix
+Requires-Dist: pyasn1
+Requires-Dist: pyasn1-modules
+Requires-Dist: pycparser
+Requires-Dist: pydantic
+Requires-Dist: pydantic-core
+Requires-Dist: pydub
+Requires-Dist: pygments
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: python-dotenv
+Requires-Dist: python-json-logger
+Requires-Dist: python-multipart
+Requires-Dist: python-utils
+Requires-Dist: pytz
+Requires-Dist: pyzmq
+Requires-Dist: qtconsole
+Requires-Dist: readme-renderer
+Requires-Dist: referencing
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: requests-oauthlib
+Requires-Dist: requests-toolbelt
+Requires-Dist: rfc3339-validator
+Requires-Dist: rfc3986
+Requires-Dist: rfc3986-validator
+Requires-Dist: rich
+Requires-Dist: rpds-py
+Requires-Dist: rsa
+Requires-Dist: ruff
+Requires-Dist: safetensors
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: seaborn
+Requires-Dist: semantic-version
+Requires-Dist: sentence-transformers
+Requires-Dist: sentencepiece
+Requires-Dist: sentry-sdk
+Requires-Dist: setproctitle
+Requires-Dist: setuptools
+Requires-Dist: shellingham
+Requires-Dist: shtab
+Requires-Dist: six
+Requires-Dist: smart-open
+Requires-Dist: smmap
+Requires-Dist: sniffio
+Requires-Dist: soupsieve
+Requires-Dist: stack-data
+Requires-Dist: starlette
+Requires-Dist: sympy
+Requires-Dist: tbb
+Requires-Dist: tcmlib
+Requires-Dist: tenacity
+Requires-Dist: tensorboardX
+Requires-Dist: terminado
+Requires-Dist: texttable
+Requires-Dist: threadpoolctl
+Requires-Dist: tifffile
+Requires-Dist: tinycss2
+Requires-Dist: tokenizers
+Requires-Dist: tomli
+Requires-Dist: tomlkit
+Requires-Dist: torch
+Requires-Dist: torchaudio
+Requires-Dist: torchvision
+Requires-Dist: tornado
+Requires-Dist: tqdm
+Requires-Dist: traitlets
+Requires-Dist: transformers
+Requires-Dist: triton
+Requires-Dist: trl
+Requires-Dist: twine
+Requires-Dist: typer
+Requires-Dist: types-python-dateutil
+Requires-Dist: typing-extensions
+Requires-Dist: tyro
+Requires-Dist: tzdata
+Requires-Dist: umf
+Requires-Dist: uri-template
+Requires-Dist: urllib3
+Requires-Dist: utils
+Requires-Dist: uvicorn
+Requires-Dist: uvloop
+Requires-Dist: wandb
+Requires-Dist: watchfiles
+Requires-Dist: wcwidth
+Requires-Dist: webcolors
+Requires-Dist: webencodings
+Requires-Dist: websocket-client
+Requires-Dist: websockets
+Requires-Dist: wheel
+Requires-Dist: widgetsnbextension
+Requires-Dist: wrapt
+Requires-Dist: xxhash
+Requires-Dist: yarl
+Requires-Dist: zipp
+Requires-Dist: openai
+Requires-Dist: autocommand
+Requires-Dist: inflect
+Requires-Dist: jaraco.collections
+Requires-Dist: jaraco.text
+Requires-Dist: typeguard
+
+<div align=center>
+<!-- <h1>ALI-Agent: Assessing LLMs'Alignment with Human Values via Agent-based Evaluation</h1> -->
+
+<h1>ALI-Agent: Assessing LLMs'Alignment with Human Values via Agent-based Evaluation [NeurIPS 2024]</h1>
+
+<img src="https://img.shields.io/badge/License-MIT-blue" alt="license">
+
+![world](flow.png)
+
+ALI-Agent, an evaluation framework that leverages the autonomous abilities of LLM-powered agents to conduct in-depth, adaptive and comprehensive alignment assessments on LLMs.  ALI-Agent operates through two principal stages: Emulation and Refinement. During the Emulation stage, ALI-Agent automates the generation of realistic test scenarios.
+In the Refinement stage, it iteratively refines the scenarios to probe long-tail risks. Specifically, ALI-Agent incorporates a memory module to guide test scenario generation, a tool-using module to reduce human labor in tasks such as evaluating feedback from target LLMs, and an action module to refine tests.
+
+</div>
+
+
+<p id="Catalogue"></p>  
+
+## 📋 Catalogue 
+
+- [Catalogue](#Catalogue)
+- [Preparations](#Preparations)
+- [Evaluation](#Evaluation)
+  - [Quick Start](#Quick-Start)
+  - [See the result](#Results)
+<p id="Preparations"></p>  
+
+## ⚙️ Preparations
+
+### Step 1. Install requirements.txt
+Set up a virtualenv and install the [pytorch](https://pytorch.org/get-started/previous-versions/) manually. 
+
+Our experiments have been tested on **Python 3.9.17 with PyTorch 2.0.1+cu117**. 
+
+```bash
+conda create --name myenv python=3.9.17
+conda activate myenv
+```
+
+After that, install all the dependencies listed in the `requirements.txt` file by running the following command:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 2. Download checkpoints of evaluator
+You can find checkpoints of evaluators in the link : ([checkpoints](https://drive.google.com/drive/folders/1kXheWR1smR-Q8_4cr0OwvFDqRDhUQuEV?usp=sharing))
+
+Directly download the three folders and put them in the **main directory** (where `main.py` can be found).
+
+<p id="Evaluation"></p>  
+
+## ⌛️ Evaluation
+Make sure you are in the **main directory** (where `main.py` can be found).
+
+Replace "OPENAI_API_KEY" in simulation/utils.py with **your own OpenAI API key**.
+
+<p id="Quick-Start"></p> 
+
+### Quick Start
+
+To run the agent on a specified dataset, run code as 
+
+```bash
+python main.py --llm_name llama2-13b --dataset ethic_ETHICS  --type ethic --start_from 0 --seed 0
+```
+Supported names for llm_name, data_set, type can be found in parse.py
+
+To run the agent with web browsing, replace "BING_API_KEY" in simulation/utils.py with **your own BING API key**.
+
+```bash
+python main.py --llm_name llama2-13b --web_browsing
+```
+
+<p id="Results"></p>  
+
+### See the Results
+
+The results of the simulation will be saved to `database/<dataset>/<llm_name>` directory. 
+
+
