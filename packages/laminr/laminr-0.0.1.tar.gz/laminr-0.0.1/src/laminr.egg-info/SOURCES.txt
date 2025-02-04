@@ -1,0 +1,12 @@
+LICENSE.md
+README.md
+pyproject.toml
+src/laminr/__init__.py
+src/laminr/coordinate_transform.py
+src/laminr/cppn.py
+src/laminr/datamodule.py
+src/laminr/regularization.py
+src/laminr.egg-info/PKG-INFO
+src/laminr.egg-info/SOURCES.txt
+src/laminr.egg-info/dependency_links.txt
+src/laminr.egg-info/top_level.txt
