@@ -1,0 +1,4 @@
+spotdl
+oxgram
+requests
+instaloaderbeautifulsoup4
