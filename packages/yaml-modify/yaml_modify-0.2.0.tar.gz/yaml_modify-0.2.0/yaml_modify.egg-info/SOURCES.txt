@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+yaml_modify/__init__.py
+yaml_modify/main.py
+yaml_modify.egg-info/PKG-INFO
+yaml_modify.egg-info/SOURCES.txt
+yaml_modify.egg-info/dependency_links.txt
+yaml_modify.egg-info/entry_points.txt
+yaml_modify.egg-info/requires.txt
+yaml_modify.egg-info/top_level.txt

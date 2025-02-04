@@ -1,0 +1,3 @@
+[console_scripts]
+yamlmod = yaml_modify.main:main
+
