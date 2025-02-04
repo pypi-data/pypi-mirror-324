@@ -1,0 +1,2 @@
+recursive-include multipers *.py *.so *.tp *.pxd *.h *.pyx
+global-exclude  *.cpp 
