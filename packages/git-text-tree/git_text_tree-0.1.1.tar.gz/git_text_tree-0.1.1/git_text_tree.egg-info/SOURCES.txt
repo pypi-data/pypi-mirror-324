@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+git_text_tree/__init__.py
+git_text_tree/cli.py
+git_text_tree/hooks.py
+git_text_tree/logger.py
+git_text_tree/printer.py
+git_text_tree/scanner.py
+git_text_tree/utils.py
+git_text_tree.egg-info/PKG-INFO
+git_text_tree.egg-info/SOURCES.txt
+git_text_tree.egg-info/dependency_links.txt
+git_text_tree.egg-info/entry_points.txt
+git_text_tree.egg-info/requires.txt
+git_text_tree.egg-info/top_level.txt
