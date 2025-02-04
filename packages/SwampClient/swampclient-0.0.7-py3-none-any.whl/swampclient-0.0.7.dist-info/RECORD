@@ -1,0 +1,8 @@
+SwampClient/__init__.py,sha256=jXB6WWn26g5Fro2jKl-m2WhEiIJT6RAf_tOjA36lXyY,190
+SwampClient/client.py,sha256=_8lf6H27toSaHYnocA__HbXWSvZWb0hfp3_JR3UwiEI,16807
+SwampClient/config.py,sha256=j8nKBEcmRh4CgjmcX_rtWHGmCO9eXKZTioXBXxgd9Uo,6281
+SwampClient/logger.py,sha256=gAWP1PfEPw-0exIGy-HbukfVSNdT39RoujphblRi11M,871
+swampclient-0.0.7.dist-info/METADATA,sha256=SXQpJX8zNHQami4JHURvWGbhxhBSYW9Qn5T23y1LcGM,10249
+swampclient-0.0.7.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+swampclient-0.0.7.dist-info/licenses/LICENSE,sha256=xcL6hNUnd7yz5zm9YHfL4BVX756fzDylWsUvUFEc5aQ,1063
+swampclient-0.0.7.dist-info/RECORD,,
