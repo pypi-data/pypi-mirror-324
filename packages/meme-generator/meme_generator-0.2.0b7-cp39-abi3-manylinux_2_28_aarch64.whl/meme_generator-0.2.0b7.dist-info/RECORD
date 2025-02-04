@@ -1,0 +1,11 @@
+meme_generator-0.2.0b7.dist-info/METADATA,sha256=AxDvuPOMuh4LyXXzI8RKY-5xFpY9RylJpT2OlT98Jds,1277
+meme_generator-0.2.0b7.dist-info/WHEEL,sha256=J6jdkkb7MaQJZ8NOF4uQGCrSq6CiMg0ivawFJWE4SII,107
+meme_generator.libs/libfontconfig-d14d27be.so.1,sha256=Z8Ocdi_RLYK129k0EzyXZXA-Ly5tOJ_PBnqCVNvuz6Q,399017
+meme_generator.libs/libfreetype-bd6253a7.so.6,sha256=jIckV6pzm9Mfe8VVQYolELkcX8aPh6jHNMBkxCs9slA,791241
+meme_generator.libs/libpng16-dbf66401.so.16,sha256=zwrcSvIXFF6PozGRXNLP22yLKakOUT5dvnuKhTOyD4M,270553
+meme_generator.libs/libuuid-782dbc36.so.1,sha256=acv4zgUX5gJFju811IPoqK193xyLMnY9iYiKvoF87j8,66633
+meme_generator/__init__.py,sha256=dDXioYIqwrJA5S8RQ0nh9GNCtvCAL6PDfetmrCIyMcs,139
+meme_generator/__init__.pyi,sha256=lpo8gdaEg43wEHxuYniHlU-ebmHBLhXEnN6Mkv7zJEo,3678
+meme_generator/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+meme_generator/meme_generator.abi3.so,sha256=wFyzU8pGZbbC58ZE6zi5VYo6aC4yGYvTLFGKDJyTUjk,37494529
+meme_generator-0.2.0b7.dist-info/RECORD,,
