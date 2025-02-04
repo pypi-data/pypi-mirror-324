@@ -1,0 +1,26 @@
+Metadata-Version: 2.2
+Name: Adrscheck
+Version: 1.1.0
+Summary: This Library is a Python package designed to provide a comprehensive dataset of all addresses within the city of Mysore. It allows users to efficiently store, search, and validate addresses using a structured database. The package supports querying addresses by locality, street, pincode, and landmarks, and is designed to be easily extendable for additional features like geospatial queries or classification.
+Home-page: https://github.com/TheAirprogrammer/Adrscheck.git
+Author: SAMRUDDH K, RANJAN U
+Author-email: samruddh.k52@gmail.com, ranjanu2004@gmail.com
+Maintainer: SAMRUDDH K, RANJAN U
+Maintainer-email: samruddh.k52@gmail.com, ranjanu2004@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-python
+Dynamic: summary
