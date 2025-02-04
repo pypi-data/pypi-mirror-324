@@ -1,0 +1,14 @@
+LICENSE
+setup.py
+waifu_python/__init__.py
+waifu_python/nekos_best.py
+waifu_python/nsfwbot.py
+waifu_python/pics_re.py
+waifu_python/purr_bot.py
+waifu_python/waifu_im.py
+waifu_python/waifu_pics.py
+waifu_python.egg-info/PKG-INFO
+waifu_python.egg-info/SOURCES.txt
+waifu_python.egg-info/dependency_links.txt
+waifu_python.egg-info/requires.txt
+waifu_python.egg-info/top_level.txt

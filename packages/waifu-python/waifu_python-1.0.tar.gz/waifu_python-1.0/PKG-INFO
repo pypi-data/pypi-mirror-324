@@ -1,0 +1,14 @@
+Metadata-Version: 2.2
+Name: waifu-python
+Version: 1.0
+Summary: A project born out of boredom, designed to simplify and reduce the code related to the Waifu API.
+Home-page: https://github.com/yourusername/Waifu-Python
+Author: Misfit
+License: MIT
+License-File: LICENSE
+Requires-Dist: httpx
+Dynamic: author
+Dynamic: home-page
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
