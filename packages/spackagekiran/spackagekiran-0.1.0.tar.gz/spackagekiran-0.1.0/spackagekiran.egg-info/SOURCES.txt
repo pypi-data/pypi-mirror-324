@@ -1,0 +1,8 @@
+README.md
+setup.py
+spackagekiran/__init__.py
+spackagekiran/operations.py
+spackagekiran.egg-info/PKG-INFO
+spackagekiran.egg-info/SOURCES.txt
+spackagekiran.egg-info/dependency_links.txt
+spackagekiran.egg-info/top_level.txt
