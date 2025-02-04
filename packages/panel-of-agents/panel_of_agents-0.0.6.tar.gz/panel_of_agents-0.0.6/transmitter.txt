@@ -1,0 +1,135 @@
+2025-02-01 15:08:24,010 - INFO - Transmitter initialized
+2025-02-01 15:08:49,123 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-01 15:08:49,134 - INFO - Accumulating token: 
+2025-02-01 15:08:49,231 - INFO - Accumulating token: 🚨 Let me search
+2025-02-01 15:08:49,393 - INFO - Accumulating token:  for current information about Neymar's club...
+2025-02-01 15:08:49,620 - INFO - Accumulating token:  🚨
+
+🛠 {"
+2025-02-01 15:08:49,728 - INFO - Accumulating token: tool_name": "research_topic", "tool
+2025-02-01 15:08:49,854 - INFO - Accumulating token: _input": {"query": "which
+2025-02-01 15:08:49,982 - INFO - Accumulating token:  club does neymar currently play for"}}
+2025-02-01 15:08:50,092 - INFO - Accumulating token:  🛠
+2025-02-01 15:08:50,093 - INFO - Accumulating token: 
+2025-02-01 15:08:52,272 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-01 15:08:52,274 - INFO - Accumulating token: 
+2025-02-01 15:08:52,523 - INFO - Accumulating token: 🚨 I'll need to search
+2025-02-01 15:08:52,632 - INFO - Accumulating token:  for current information about Neymar's club...
+2025-02-01 15:08:52,805 - INFO - Accumulating token:  🚨
+
+🛠 {"
+2025-02-01 15:08:52,981 - INFO - Accumulating token: tool_name": "research_topic", "tool
+2025-02-01 15:08:53,153 - INFO - Accumulating token: _input": {"query": "Which football
+2025-02-01 15:08:53,241 - INFO - Accumulating token:  club does Neymar currently play for 
+2025-02-01 15:08:53,414 - INFO - Accumulating token: 2025"}} 🛠
+2025-02-01 15:08:53,483 - INFO - Accumulating token: 
+2025-02-01 15:08:55,214 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-01 15:08:55,215 - INFO - Accumulating token: 
+2025-02-01 15:08:55,449 - INFO - Accumulating token: 🚨 I'll need to search
+2025-02-01 15:08:55,585 - INFO - Accumulating token:  for current information about Neymar's club...
+2025-02-01 15:08:55,762 - INFO - Accumulating token:  🚨
+
+🛠 {"
+2025-02-01 15:08:55,936 - INFO - Accumulating token: tool_name": "research_topic", "tool
+2025-02-01 15:08:56,066 - INFO - Accumulating token: _input": {"query": "which
+2025-02-01 15:08:56,158 - INFO - Accumulating token:  club does neymar currently play for
+2025-02-01 15:08:56,330 - INFO - Accumulating token:  2025"}} 🛠
+2025-02-01 15:08:56,426 - INFO - Accumulating token: 
+2025-02-01 15:08:58,113 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-01 15:08:58,114 - INFO - Accumulating token: 
+2025-02-01 15:08:58,359 - INFO - Accumulating token: 🚨 I'll nee
+2025-02-01 15:08:58,479 - INFO - Accumulating token: d to search for current information about Ney
+2025-02-01 15:08:58,682 - INFO - Accumulating token: mar's club status 🚨
+2025-02-01 15:08:58,963 - INFO - Accumulating token: 
+🛠 {"tool_
+2025-02-01 15:08:59,073 - INFO - Accumulating token: name": "research_topic", "tool
+2025-02-01 15:08:59,249 - INFO - Accumulating token: _input": {"query": "
+2025-02-01 15:08:59,372 - INFO - Accumulating token: which club does Ney
+2025-02-01 15:08:59,420 - INFO - Accumulating token: mar currently play for 2025
+2025-02-01 15:08:59,571 - INFO - Accumulating token: "}} 🛠
+2025-02-01 15:08:59,572 - INFO - Accumulating token: 
+2025-02-01 15:09:03,512 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-02-01 15:09:06,170 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-02-01 15:09:09,965 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-01 15:09:09,966 - INFO - Accumulating token: 
+2025-02-01 15:09:10,158 - INFO - Accumulating token: 📢 Based on the research
+2025-02-01 15:09:10,335 - INFO - Accumulating token:  results, Neymar currently plays
+2025-02-01 15:09:10,542 - INFO - Accumulating token:  for Santos FC. He signed a 6-month
+2025-02-01 15:09:10,751 - INFO - Accumulating token:  contract with Santos that will run until June 2025
+2025-02-01 15:09:10,872 - INFO - Accumulating token: . This information is confirmed by official
+2025-02-01 15:09:11,000 - INFO - Accumulating token:  sources as reported in the search results.
+2025-02-01 15:09:11,225 - INFO - Accumulating token:  This marks a return to his boy
+2025-02-01 15:09:11,377 - INFO - Accumulating token: hood club where he started his professional career. 
+2025-02-01 15:09:11,542 - INFO - Accumulating token: 📢
+2025-02-01 15:09:11,543 - INFO - Accumulating token: 
+2025-02-01 15:28:07,995 - INFO - Transmitter initialized
+2025-02-01 15:28:41,438 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-01 15:28:41,449 - INFO - Accumulating token: 
+2025-02-01 15:28:41,449 - INFO - Tokens: []
+2025-02-01 15:28:41,920 - INFO - Accumulating token: 🚨 Let me search
+2025-02-01 15:28:41,920 - INFO - Tokens: ['🚨 ', 'Let ', 'me ', 'search']
+2025-02-01 15:28:41,922 - INFO - Accumulating token:  for current information about Ney
+2025-02-01 15:28:41,922 - INFO - Tokens: [' ', 'for ', 'current ', 'information ', 'about ', 'Ney']
+2025-02-01 15:28:41,923 - INFO - Accumulating token: mar's club... 
+2025-02-01 15:28:41,923 - INFO - Tokens: ["mar's ", 'club... ']
+2025-02-01 15:28:42,175 - INFO - Accumulating token: 🚨
+
+🛠 {"
+2025-02-01 15:28:42,176 - INFO - Tokens: ['🚨\n', '\n', '🛠 ', '{"']
+2025-02-01 15:28:42,397 - INFO - Accumulating token: tool_name": "research_topic", "tool
+2025-02-01 15:28:42,397 - INFO - Tokens: ['tool_name": ', '"research_topic", ', '"tool']
+2025-02-01 15:28:42,479 - INFO - Accumulating token: _input": {"query": "
+2025-02-01 15:28:42,479 - INFO - Tokens: ['_input": ', '{"query": ', '"']
+2025-02-01 15:28:42,550 - INFO - Accumulating token: which football club does Ney
+2025-02-01 15:28:42,550 - INFO - Tokens: ['which ', 'football ', 'club ', 'does ', 'Ney']
+2025-02-01 15:28:42,652 - INFO - Accumulating token: mar currently play for"}} 🛠
+2025-02-01 15:28:42,652 - INFO - Tokens: ['mar ', 'currently ', 'play ', 'for"}} ', '🛠']
+2025-02-01 15:28:42,828 - INFO - Accumulating token: 
+2025-02-01 15:28:42,828 - INFO - Tokens: []
+2025-02-01 15:28:45,979 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-02-01 15:28:47,671 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-02-01 15:28:51,499 - INFO - HTTP Request: POST https://api.anthropic.com/v1/messages "HTTP/1.1 200 OK"
+2025-02-01 15:28:51,500 - INFO - Accumulating token: 
+2025-02-01 15:28:51,500 - INFO - Tokens: []
+2025-02-01 15:28:51,752 - INFO - Accumulating token: 🚨 Processing the research results to
+2025-02-01 15:28:51,752 - INFO - Tokens: ['🚨 ', 'Processing ', 'the ', 'research ', 'results ', 'to']
+2025-02-01 15:28:51,853 - INFO - Accumulating token:  answer the query about Neymar's current club...
+2025-02-01 15:28:51,853 - INFO - Tokens: [' ', 'answer ', 'the ', 'query ', 'about ', "Neymar's ", 'current ', 'club...']
+2025-02-01 15:28:52,216 - INFO - Accumulating token:  🚨
+
+🤖 Analyzing the extracte
+2025-02-01 15:28:52,218 - INFO - Tokens: [' ', '🚨\n', '\n', '🤖 ', 'Analyzing ', 'the ', 'extracte']
+2025-02-01 15:28:52,932 - INFO - Accumulating token: d content from Olympics.com article
+2025-02-01 15:28:52,932 - INFO - Tokens: ['d ', 'content ', 'from ', 'Olympics.com ', 'article']
+2025-02-01 15:28:52,933 - INFO - Accumulating token:  dated February 1, 2
+2025-02-01 15:28:52,933 - INFO - Tokens: [' ', 'dated ', 'February ', '1, ', '2']
+2025-02-01 15:28:53,028 - INFO - Accumulating token: 025, which provides the most recent
+2025-02-01 15:28:53,028 - INFO - Tokens: ['025, ', 'which ', 'provides ', 'the ', 'most ', 'recent']
+2025-02-01 15:28:53,100 - INFO - Accumulating token:  and relevant information about N
+2025-02-01 15:28:53,100 - INFO - Tokens: [' ', 'and ', 'relevant ', 'information ', 'about ', 'N']
+2025-02-01 15:28:53,161 - INFO - Accumulating token: eymar's current club status
+2025-02-01 15:28:53,161 - INFO - Tokens: ["eymar's ", 'current ', 'club ', 'status']
+2025-02-01 15:28:53,248 - INFO - Accumulating token: ... 🤖
+2025-02-01 15:28:53,248 - INFO - Tokens: ['... ', '🤖']
+2025-02-01 15:28:53,369 - INFO - Accumulating token: 
+
+📢 Based on the research results,
+2025-02-01 15:28:53,533 - INFO - Tokens: ['\n', '\n', '📢 ', 'Based ', 'on ', 'the ', 'research ', 'results,']
+2025-02-01 15:28:53,534 - INFO - Accumulating token:  Neymar currently plays for Santos in
+2025-02-01 15:28:53,534 - INFO - Tokens: [' ', 'Neymar ', 'currently ', 'plays ', 'for ', 'Santos ', 'in']
+2025-02-01 15:28:53,710 - INFO - Accumulating token:  the Brazilian Série A. He
+2025-02-01 15:28:53,710 - INFO - Tokens: [' ', 'the ', 'Brazilian ', 'Série ', 'A. ', 'He']
+2025-02-01 15:28:53,886 - INFO - Accumulating token:  just returned to Santos, his boyhood club, where
+2025-02-01 15:28:53,886 - INFO - Tokens: [' ', 'just ', 'returned ', 'to ', 'Santos, ', 'his ', 'boyhood ', 'club, ', 'where']
+2025-02-01 15:28:53,963 - INFO - Accumulating token:  he was unveiled on February 1, 2025,
+2025-02-01 15:28:53,963 - INFO - Tokens: [' ', 'he ', 'was ', 'unveiled ', 'on ', 'February ', '1, ', '2025,']
+2025-02-01 15:28:54,147 - INFO - Accumulating token:  in front of 20,000 fans at
+2025-02-01 15:28:54,147 - INFO - Tokens: [' ', 'in ', 'front ', 'of ', '20,000 ', 'fans ', 'at']
+2025-02-01 15:28:54,257 - INFO - Accumulating token:  the Vila Belmiro Stadium.
+2025-02-01 15:28:54,257 - INFO - Tokens: [' ', 'the ', 'Vila ', 'Belmiro ', 'Stadium.']
+2025-02-01 15:28:54,418 - INFO - Accumulating token:  This marks his return to the club where he began his career
+2025-02-01 15:28:54,418 - INFO - Tokens: [' ', 'This ', 'marks ', 'his ', 'return ', 'to ', 'the ', 'club ', 'where ', 'he ', 'began ', 'his ', 'career']
+2025-02-01 15:28:54,689 - INFO - Accumulating token:  after playing in Europe and Saudi Arabia. 📢
+2025-02-01 15:28:54,689 - INFO - Tokens: [' ', 'after ', 'playing ', 'in ', 'Europe ', 'and ', 'Saudi ', 'Arabia. ', '📢']
+2025-02-01 15:28:54,939 - INFO - Accumulating token: 
+2025-02-01 15:28:54,939 - INFO - Tokens: []
