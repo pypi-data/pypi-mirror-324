@@ -1,0 +1,8 @@
+ifcopenshell
+geopy
+
+[all]
+constructpy[extra]
+
+[extra]
+pandas

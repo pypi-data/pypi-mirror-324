@@ -1,0 +1,43 @@
+Metadata-Version: 2.2
+Name: constructpy
+Version: 0.0.8
+Summary:  An IFC based constructability assessment automation library for BIM 
+Author-email: Christian Jesus <christianjesusrj@gmail.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/chrisjesuscj/constructpy
+Keywords: constructpy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ifcopenshell
+Requires-Dist: geopy
+Provides-Extra: all
+Requires-Dist: constructpy[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# constructpy
+
+
+[![image](https://img.shields.io/pypi/v/constructpy.svg)](https://pypi.python.org/pypi/constructpy)
+[![image](https://img.shields.io/conda/vn/conda-forge/constructpy.svg)](https://anaconda.org/conda-forge/constructpy)
+
+
+**A constructability assessment automation library for BIM based on IFC**
+
+
+-   Free software: MIT License
+-   Documentation: https://chrisjesuscj.github.io/constructpy
+    
+
+## Features
+
+-   TODO

@@ -1,0 +1,2 @@
+[console_scripts]
+constructpy = constructpy.cli:main
