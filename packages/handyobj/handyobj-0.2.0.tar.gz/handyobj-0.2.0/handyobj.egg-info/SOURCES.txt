@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+handyobj/__init__.py
+handyobj/object_dict.py
+handyobj/smart_list.py
+handyobj.egg-info/PKG-INFO
+handyobj.egg-info/SOURCES.txt
+handyobj.egg-info/dependency_links.txt
+handyobj.egg-info/requires.txt
+handyobj.egg-info/top_level.txt
+tests/test_smart_list.py
