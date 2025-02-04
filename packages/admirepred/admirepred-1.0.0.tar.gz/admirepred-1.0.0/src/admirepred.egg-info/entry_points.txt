@@ -1,0 +1,2 @@
+[console_scripts]
+admirepred = admirepred.python_scripts.admirepred:main
