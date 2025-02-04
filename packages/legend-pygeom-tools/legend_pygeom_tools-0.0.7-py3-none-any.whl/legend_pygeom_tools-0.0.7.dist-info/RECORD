@@ -1,0 +1,14 @@
+pygeomtools/__init__.py,sha256=8Qe4fJONjgJGxVR7NNuZXUr8HdPtDin1PUqLGZHdFPA,552
+pygeomtools/_version.py,sha256=vZ9YJhtz2uaZyfeULJmmzg7nlru6jGE1i6ermqZWYAQ,411
+pygeomtools/detectors.py,sha256=AqPyGk516Fq6eyHNn3SNvQ1ts3lTXg21ST6BWOpqCGE,6066
+pygeomtools/geometry.py,sha256=rzl7113VCsZh0BLcFBrMv3dAhsR3lEidwpcjZ-HjANU,1958
+pygeomtools/utils.py,sha256=wxVv96_nSTBCPtOHGZVZ-4j3NwyWzneaaR0JKDasph4,1478
+pygeomtools/viewer.py,sha256=G8NbDqIBN0D0DEhQLIlRWCFj_GHbPJsICzcNatbHCJk,10641
+pygeomtools/visualization.py,sha256=pI89elGSzeUA6-STatXX56n5mTSt4DLAoIsRWKt3_yI,2790
+pygeomtools/write.py,sha256=eKrwYZOiNb3QK6YbDWRiM5LOyDAEG-aJjHh3emu3_LI,806
+legend_pygeom_tools-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+legend_pygeom_tools-0.0.7.dist-info/METADATA,sha256=KvMpyV3InwSAnOUevjB_ewF_4bX8CtxRPKSdu7e4WrA,43684
+legend_pygeom_tools-0.0.7.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+legend_pygeom_tools-0.0.7.dist-info/entry_points.txt,sha256=piRvte20pSSUnLLtDcT_htzd8_bGpGlnFK4HMVPTpiY,70
+legend_pygeom_tools-0.0.7.dist-info/top_level.txt,sha256=K_iYrD8lTcfZIpEaiM1j2Y4Y--iTtJEHd_KQ_mNmdVM,12
+legend_pygeom_tools-0.0.7.dist-info/RECORD,,
