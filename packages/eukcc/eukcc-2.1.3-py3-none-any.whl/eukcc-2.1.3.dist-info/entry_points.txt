@@ -1,0 +1,5 @@
+[console_scripts]
+binlinks = scripts.binlinks:main
+eukcc = eukcc.__main__:main
+filter_euk_bins = scripts.filter_euk_bins:main
+shared_markers = eukcc.find_markerset:main
