@@ -1,0 +1,6 @@
+numpy-quaternion>=2022.4.4
+glfw
+matplotlib
+scipy
+mrcfile
+PyOpenGL

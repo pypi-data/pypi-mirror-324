@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: Pommie
+Version: 0.0.1
+Author: mgflast
+Author-email: mlast@mrc-lmb.cam.ac.uk
+License: GPL v3
+Description-Content-Type: text/markdown
+Requires-Dist: numpy-quaternion>=2022.4.4
+Requires-Dist: glfw
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: mrcfile
+Requires-Dist: PyOpenGL
