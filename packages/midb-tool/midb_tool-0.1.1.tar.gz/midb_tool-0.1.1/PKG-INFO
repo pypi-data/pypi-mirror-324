@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: midb-tool
+Version: 0.1.1
+Summary: A tool made for MIDB data contributors
+Author: Qichen Xu
+Author-email: mxjk851@gmail.com
+Requires-Python: >=3.12
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Dist: ase (>=3.22.0,<4.0.0)
+Requires-Dist: pymatgen (>=2024.8.9)
+Requires-Dist: typer (>=0.15.1,<0.16.0)
+Description-Content-Type: text/markdown
+
+

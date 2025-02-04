@@ -1,0 +1,21 @@
+[project]
+name = "midb-tool"
+version = "0.1.1"
+description = "A tool made for MIDB data contributors"
+authors = [
+    {name = "Qichen Xu",email = "mxjk851@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "typer (>=0.15.1,<0.16.0)",
+    "ase (>=3.22.0,<4.0.0)",
+    "pymatgen (>=2024.8.9)",
+]
+[tool.poetry.scripts]
+cif2midb = "midb_tool.main:app"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
