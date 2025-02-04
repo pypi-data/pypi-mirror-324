@@ -1,0 +1,17 @@
+pyorbs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyorbs/__main__.py,sha256=Q3624sRFAf11zw2mYMrznjBLmqhhdhp1-WeOO9RINTY,89
+pyorbs/orb.py,sha256=dsviYZfRIFWbkO17YJ7Ib0km5nt6KfWWOVJeB6weA_A,14194
+pyorbs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyorbs/requirements.py,sha256=k76v2NKNPRoCEQSmxbkeDGQqLJc2hjRu9GGgeDn52SE,4769
+pyorbs/shell.py,sha256=bfctm6YcwR32bluRgTRuoHfJoeHmyKZGtcaAsrcVTQ0,2123
+pyorbs/templates.py,sha256=STe2yV-7skrt6Cro4ZUavG_wbr2vMh2P4NaH73j-jrI,221
+pyorbs/templates/activate_orb.bash,sha256=2-SfEoIVex9MdisPmOOx0O3Vn6nwjTRYIualUngem_w,339
+pyorbs/templates/activate_orb.fish,sha256=NA_fsSiou-E5CltTl-t7IE3V99ur4TvNRx83QPv5LD8,272
+pyorbs/templates/lockfile_header,sha256=06kiHLV0UhGNW5f70yd7RotFoY19hmy5U3cnXfSpo-8,326
+pyorbs/templates/orb-completion.bash,sha256=fZM5t4JIjnXCRq36hyLCsyv_8YQzyVUvzI5hvslMRkY,1425
+pyorbs-2.1.1.dist-info/LICENSE.txt,sha256=nRq1QIkZ8iu6EaxsSRW_C9cdnUfK7bBfj5ZxN8Tq9iQ,1086
+pyorbs-2.1.1.dist-info/METADATA,sha256=DT9_OlNqCoFarm2FFRzpsQsTiME6AnOb_TvwfVJTbpg,2422
+pyorbs-2.1.1.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+pyorbs-2.1.1.dist-info/entry_points.txt,sha256=AWaO57rwylVoJLTyrDCahzV6-rmNPK6-FHE6GpWEYpI,40
+pyorbs-2.1.1.dist-info/top_level.txt,sha256=Z3PKLKnZ09eeluwbmh9txOQOG-Sbp92HFUtmEoSyfD8,7
+pyorbs-2.1.1.dist-info/RECORD,,
