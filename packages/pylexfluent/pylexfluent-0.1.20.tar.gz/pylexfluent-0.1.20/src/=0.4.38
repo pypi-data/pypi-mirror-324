@@ -1,0 +1,4 @@
+Requirement already satisfied: jaxlib in /home/jacques/snap/code/181/.local/share/virtualenvs/src-_OUc558W/lib/python3.12/site-packages (0.4.38)
+Requirement already satisfied: scipy>=1.10 in /home/jacques/snap/code/181/.local/share/virtualenvs/src-_OUc558W/lib/python3.12/site-packages (from jaxlib) (1.14.1)
+Requirement already satisfied: numpy>=1.24 in /home/jacques/snap/code/181/.local/share/virtualenvs/src-_OUc558W/lib/python3.12/site-packages (from jaxlib) (1.26.4)
+Requirement already satisfied: ml-dtypes>=0.2.0 in /home/jacques/snap/code/181/.local/share/virtualenvs/src-_OUc558W/lib/python3.12/site-packages (from jaxlib) (0.4.1)
