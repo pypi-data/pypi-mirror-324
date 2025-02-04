@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: martialLaw
+Version: 0.0.1
+Summary: [martialaw](YoonSuckYall) Joking lib that function what represented "Powerful Programming by closer Partion"
+Home-page: https://github.com/FarAway6834/YoonSuckYall
+Author: du7ec
+Author-email: dutec6834@gmail.com
+Keywords: Yoon,YoonSuckYall,Martial,Law
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Requires-Python: >=3.4
+License-File: LICENSE
+Requires-Dist: YoonSuckYall
