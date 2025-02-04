@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: boostedautocomplete
+Version: 0.1.0
+Summary: Reef autocomplete
+Home-page: https://github.com/richard-mccormick-reef
+Author: Richard
+Author-email: richard.mccormick@reef.pl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: argcomplete
