@@ -1,0 +1,68 @@
+# SPDX-License-Identifier: Apache-2.0
+version: '3'
+dotenv: ['.env', '{{.ENV}}/.env', '{{.HOME}}/.env']
+
+includes:
+  server: ./server/Taskfile.server.yml
+  models: ./config/Taskfile.models.yml
+  
+tasks:
+  build:
+    cmds:
+      - docker compose build
+
+  rebuild:
+    cmds:
+      - docker compose up --build
+
+  run:
+    cmds:
+      - docker compose up
+
+  watch:
+    cmds:
+      - docker compose up --watch
+
+  logs:
+    cmds:
+      - docker compose logs -f
+
+  stop:
+    cmds:
+      - docker compose down
+
+  setup:
+    cmds:
+      - docker network create gcap_network
+
+  lint:
+    desc: Run Ruff linter on all Python files (using ruff.toml config)
+    cmds:
+      - ruff check 
+
+  lint:fix:
+    desc: Run Ruff linter with auto-fix on all Python files
+    cmds:
+      - ruff check --fix 
+
+  format:
+    desc: Run Ruff formatter on all Python files
+    cmds:
+      - ruff format 
+
+  check:all:
+    desc: Run both linter and formatter in check mode (no changes)
+    cmds:
+      - ruff check 
+      - ruff format --check 
+
+  fix:all:
+    desc: Run both linter and formatter with fixes
+    cmds:
+      - ruff check --fix 
+      - ruff format 
+
+  watch:
+    desc: Run Ruff in watch mode to check files on change
+    cmds:
+      - ruff check --watch 
