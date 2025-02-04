@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: enccomslice
+Version: 0.2
+Summary: A simple library
+Home-page: https://github.com/prathaaccount/enccomslice
+Author: soniya
+Author-email: prathpatil28@gmail.com
+License: UNKNOWN
+Description: # comslienc WebSocket Library
+        
+        This library provides a simple WebSocket server and client that can be used to send and receive messages between clients and servers.
+        
+        ## Installation
+        
+        To install the library, use pip:
+        
+        ```bash
+        pip install comslienc
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

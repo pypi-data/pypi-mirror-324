@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+enccomslice/__init__.py
+enccomslice/websocket.py
+enccomslice.egg-info/PKG-INFO
+enccomslice.egg-info/SOURCES.txt
+enccomslice.egg-info/dependency_links.txt
+enccomslice.egg-info/requires.txt
+enccomslice.egg-info/top_level.txt
