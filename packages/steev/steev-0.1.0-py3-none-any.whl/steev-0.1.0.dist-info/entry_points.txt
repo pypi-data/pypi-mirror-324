@@ -1,0 +1,3 @@
+[console_scripts]
+steev=src.cli:cli
+
