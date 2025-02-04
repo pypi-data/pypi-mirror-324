@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phasr Doc</title>
+    <link rel="icon" href="favicon.ico">
+    <meta name="description" content="Documentation for the python package phasr">
+    <meta name="author" content="Frederic Noël">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/stackoverflow-light.min.css"> <!-- Code highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script> <!-- Code highlighting -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> <!-- Latex -->
+    <link rel="stylesheet" href="style.css?">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="navbar clear nav-top">
+        <div class="row content">
+            <a href="#"><img class="logo" src="phasr.svg"></a>
+            <a class="nav-title" href="#"><b>phasr</b></a>
+            <a class="right" style="text-decoration: underline;" href="#"><i class="fas fa-book"></i>&nbsp; Documentation</a>
+            <a class="right" href="mailto:noel@itp.unibe.ch" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; noel@itp.unibe.ch</a>
+        </div>
+    </div>
+
+    <div class="container clear">
+        <div class="row wrapper">
+
+            <div class="sidepanel">
+
+                <a class="title" href="#intro">Introduction</a>
+                
+                <a class="section" href="#versions">Supported Versions</a>
+                <a class="section" href="#about">About this Package</a>
+                <a class="section" href="#dependencies">Technology</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#gettingstarted">Getting Started</a>
+
+                <a class="section" href="#installingapp">Installing the Package</a>
+                 <a class="section" href="#openingapp">Using the Package</a>
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#basicfeatures">Basic Modules</a>
+
+                <a class="section" href="#nucleus">nucleus</a>
+                <a class="section" href="#dirac_solver">dirac_solvers</a>
+                <!--<a class="section" href="#feature3">Feature 3</a>
+                <a class="section" href="#feature4">Feature 4</a>
+                <a class="section" href="#feature5">Feature 5</a>-->
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#advanced">Common Use Cases</a>
+
+                <a class="section" href="#ana">Crosssection (analytic \(\rho_\text{ch}\))</a>
+                <a class="section" href="#num">Crosssection (numeric \(\rho_\text{ch}\))</a>
+                <a class="section" href="#PV">Parity Violation (TBD)</a>
+                <!--<a class="sub-section" href="#featurec1">Feature C.1</a>
+                <a class="sub-section" href="#featurec2">Feature C.2</a>
+                <a class="section" href="#featured">Feature D</a>-->
+
+                <!--<div class="divider left"></div>
+
+                <a class="title" href="#accesibility">Accesibility</a>-->
+
+                <div class="divider left"></div>
+
+                <a class="title" href="#moreinfo">More Info</a>
+            
+             <div class="space double"></div>
+
+            </div>
+
+            <div class="right-col">
+            
+                <!-- <h1 class="maintitle"> phasr </h1> -->
+
+                <h1 id="intro">Introduction</h1>
+                
+                <p> <code> phasr </code> is a python package able to calculate scattering phase shifts for arbitrary radial potentials and calculate (elastic) electron nucleus scattering crosssections based on it. 
+                    In combination with a fitting routine it can be used to fit elastic electron nucleus scattering data to extract charge density parameterizations. It is also possible to increase the precision sufficiently to quantitately resolve parity violating electron scattering (optimisation for this use case is planed for a future update). </p> 
+            
+                <h2 id="versions">Versions/Change-Log:</h2>
+             
+                <p>
+                    <b>Version 0.2.0. :</b> Basic features implemented.<br>
+                    <b>Version 0.1.4. :</b> Build dirac_solvers module. <br>
+                    <b>Version 0.1.3. :</b> Build nuclei module. <br>
+                    <b>Version 0.1.2. :</b> Build skeleton. <br>
+                    <b>Version 0.1.0. :</b> First init. Empty. 
+                </p>
+                
+                <h2 id="about">About this Package</h2>
+                
+                <p> This package was developed with the goal of extracting charge density parameterizations based on (elastic) electron nucleus scattering crosssection data while properly accounting for Coulomb corrections using the so called phase shift model. 
+                While this procedure is known since the 60s, the documentation and availability of programs used back then, are very limited and hardly accessable. 
+                Furthermore, for a majority of nuclei the extractions of model-independent parameterizations of their charge densities have not been updated since the 80s and do not provide any uncertainty estimates. 
+                Since these also applied to the nuclei we were interested in, we build such a framework in phython, which calculates elastic electron nucleus scattering crosssections based on input charge densities using the phase shift model, from which this package evolved. 
+                With such a more modern implementation and programming language, the calculations can become faster, broader accessable, easier to understand and easier to incorporate into exisiting programs. 
+                This package (in its pre-release version) has already been used successfully in the papers REFs to extract charge densities for nuclei of interest to \( \mu \to e \) conversion a (hypothetical) process of interest in particle physics. The package has been benchmarked for nuclei reaching from ... to ... . 
+                
+                <h2 id="dependencies">Dependencies</h2>
+                
+                <p>This program is built with python 3. (add Version). <br> <br>
+                <u> It requires the following packages to operate properly: </u> <br>
+                numpy (add Version) <br>
+                scipy (add Version) <br>
+                ....... (TBD) <br>
+                </p>
+                 
+        <div class="divider" style="width:24%; margin:30px 0;"></div>
+
+                <h1 id="gettingstarted">Getting Started</h1>
+
+                <!--
+                <h2>This is a sub-header</h2>
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
+
+                <p><b>Important:</b> This line is for an important information.</p>
+                -->
+                
+                <h2 id="installingapp">Install the package</h2>
+                
+                <p> To install and use the program please follow the following steps for setup. We assume you already have a working python enviroment setup on your machine (othewise see REF).<br>
+                The package is listed on PyPI (TODO), which is why it can be easily accessed via:
+                <pre><code> pip install phasr </code></pre>
+                If you want the latest (development) version, you can clone it from the <a href="https://github.com/Partynumbers42/phasr"> phasr GitHub repository </a>. <br> 
+                Note that you need need to also install all the reqired packages as listed <a href="#dependencies"> above </a>.
+                </p>
+
+                <!--
+                <ol>
+                    <li>
+                    The first thing you need to do to install this app.
+                    </li>
+                    <br>
+                    <li>
+                    The second thing you need to do to install this app.
+                    </li>
+                    <br id="openingapp">
+                    <li>
+                     The app is installed now.
+                    </li>
+                    <br>
+                </ol>
+                -->
+
+                <h2 id="openingapp">Use the package</h2>
+                
+                    <p>You can import the python package the same way as every other package, i.e.: 
+                    <pre><code> import phasr as phr </code></pre>
+                    You can then use the contained methods in the standard way. For example
+                    <pre><code class="python"> nucleus_Al27 = phr.nucleus(name='Al27',Z=13,A=27,rc=5)
+ mmu = phr.masses.mmu
+ boundstates_Al27 = phr.boundstates(nucleus_Al27,kappa=-1,lepton_mass=mmu) 
+ print('E_1s=',boundstates_Al27.energy_levels[0],'MeV') </code></pre>
+                    will give you the groundstate energy of a muonic atom for the nucleus parameterisation, described used a uniform charge distribution of charge 13 and a radius of 5 fm. 
+                    We will assume the import with the alias <code>phr</code> throughout this manual. 
+                    </p>
+                    
+                <!--
+             
+                <ol>
+                    <li>
+                     The first thing you need to do to open this app.
+                    </li>
+                    <br>
+                    <li>
+                     The second thing you need to do to open this app.
+                    </li>
+                    <br>
+                    <li>
+                      The third thing you need to do to open this app.
+                    </li>
+                    <br>
+                    <li>
+                     Open the app and start using it!
+                    </li>
+                    <br>
+                </ol>
+                
+                <p id="basicfeatures">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                -->
+                
+                
+                    
+            <div class="divider" style="width:24%; margin:30px 0;"></div>
+            
+                <h1 id="basicfeatures">Basic Modules</h1>
+                
+                <p> The code is structured into two main modules. 
+                    The <code>nuclei</code> module is home of the <code>nucleus</code> class and manages all the relevant properties of a nucleus/isotope that is considered and calculates other properties based on the information it has available (e.g. the electric field from the charge density). 
+                    The <code>dirac_solvers</code> module is home of the <code>boundstates</code> and <code>continuumstates</code> classes and manages solving the Dirac equation for a given nucleus based on its nucleus potential and returns the desired consequental quantities like for example electron wave functions, phase shifts or the crosssection. 
+                    In all applicational scenarios one will first construct a <code>nucleus</code> object, which is then be used to construct a <code>boundstates</code> or <code>continuumstates</code> object. For calculating elastic scattering crosssections we supply the function <code>crosssection_lepton_nucleus_scattering</code>, 
+                    which can be used to directly calculate the crosssection using the energy, the angle and a <code>nucleus</code> object. </p>
+
+                <h2 id="nucleus">The <code>nucleus</code> class </h2>
+                
+                <p> To get a nucleus parameterization, use the <code>nucleus</code> class to construct a nucleus object. 
+                    A nucleus object requires a few minimum parameters (e.g. a name, a charge \(Z\) and a nucleon number \(A\)) and and has a lot of optional parameters (e.g. some parameters for a specific parameterization). 
+                    Based on the parameters supplied the class decides what kind of nucleus it is supposed to construct. You can check what parameterization was choosen based on the attribute <code>nucleus_type</code>
+                    
+                    <pre><code class="python"> phr.nucleus(name,Z,A,m=None,**args) </code></pre>
+                    
+                    General parameters are:
+
+                    <ul>
+                        <li>
+                        <b>name</b> (<i>str</i>): Label for the nucleus, part of the filename if things about this nucleus are saved, should be unique.
+                        <br>
+                        <li>
+                        <b>Z</b> (<i>int</i>): Nuclear charge number / proton number of the considered nucleus, necessary for the normalisation. 
+                        Will raise a warning if not consistent with the normalisation of a provided charge density in **args. 
+                        <li>
+                        <b>A</b> (<i>int</i>): Atomic mass number / nucleon number of the considered nucleus, necessary for recoil, 
+                        enables lookup of nucleon mass, spin, parity and isotope abundancy.  
+                        <li>
+                        <b>m</b> (<i>float</i>,optional) mass of the nucleus, necessary for recoil, is looked up based on \(Z\), \(A\) if not supplied.
+                        <br>
+                        <li>
+                        <b>abundance</b> (<i>float</i>,optional) natural abundance of the nucleus, stored for convencience, is looked up based on \(Z\), \(A\) if not supplied.
+                        <br>
+                        <li>
+                        <b>spin</b> (<i>float</i>,optional) spin of the nucleus, restricts what multipoles can exist, is looked up based on \(Z\), \(A\) if not supplied.
+                        <br>
+                        <li>
+                        <b>parity</b> (<i>float</i>,optional) parity of the nucleus, stored for convenience, is looked up based on \(Z\), \(A\) if not supplied.
+                        <br>
+                        <li>
+                        <b>k_barrett</b> (<i>float</i>,optional) value of k used to calculate barrett moments.
+                        <br>
+                        <li>
+                        <b>alpha_barrett</b> (<i>float</i>,optional) value of alpha used to calculate barrett moments.
+                        <br>
+                    </ul>
+                    
+                    Parameterization spezific parameters are:
+
+                    <table>
+                        <tr>
+                          <th>nucleus_type&emsp;&emsp;</th>
+                          <th>Parameters / **args</th>
+                        </tr>
+                        <tr>
+                            <td>'coulomb'</td>
+                            <td> None</td>
+                        </tr>
+                        <tr>
+                            <td>'fourier-bessel'</td>
+                            <td><b>a</b> (<i>1d-array</i>): Array of parameters \(a_i\) in fm\(^{-3}\). \(N\) given by length of a.  
+                            <br><b>R</b> (<i>float</i>): Cutoff radius R in fm. </td>
+                        </tr>
+                        <tr>
+                            <td>'oszillator-basis'</td>
+                            <td><b>Ci_dict</b> (<i>dict</i>): dictionary of 1d-arrays \(C_i\), with mutlipole names as keys (see TODO). </td>
+                        </tr>
+                        <tr>
+                            <td>'fermi'</td>
+                            <td><b>c</b> (<i>float</i>): \(c\) parameter in fm for Fermi parameterisation. 
+                            <br><b>z</b> (<i>float</i>): \(z\) parameter in fm for Fermi parameterisation.
+                            <br><b>w</b> (<i>float</i>,optional): \(w\) parameter for Fermi parameterisation (default: w=0). </td>
+                        </tr>
+                        <tr>
+                            <td>'gauss'</td>
+                            <td><b>b</b> (<i>float</i>): \(b\) parameter in fm for Gauss parameterisation. </td>
+                        </tr>
+                        <tr>
+                            <td>'uniform'</td>
+                            <td><b>rc</b> (<i>float</i>): \(r_c\) parameter in fm for Uniform parameterisation. </td>
+                        </tr>
+                        <tr>
+                            <td>'numerical'</td>
+                            <td> see below </td>
+                        </tr>
+                          
+                      </table> 
+
+                <br>The parameterizations are based on:
+                \[ \rho_\text{FB}(r) = \begin{cases} \sum_{i=1}^N a_i ~ j_0(q_i r) & r \leq R \\ 0 & r > R \end{cases} \qquad q_i= \frac{i \pi}{R} \]
+                \[ \rho_\text{Fermi}(r) = \rho_0 \frac{1+w \tfrac{r^2}{c^2}}{1 + e^{(r-c)/z}}<!--; \qquad \rho_0 = \frac{Z}{8\pi z^3} (-\text{Li}_3(-e^{c/z}) - 12 w \tfrac{z^2}{c^2} \text{Li}_5(-e^{c/z}) )^{-1} -->\]
+                \[ \rho_\text{Gauss}(r) = \frac{Z}{\pi^{3/2} b^3} e^{-(r/b)^2} \]
+                \[ \rho_\text{Uni}(r) = \begin{cases} \frac{3 Z}{4 \pi r_c^3} & r \leq r_c \\ 0 & r > r_c \end{cases} \]
+                \[ F_\text{Osz}(q) = e^{-u(q)/2} \sum_i C_i ~ u(q)^i; \qquad u(q)=\frac{q^2 b^2}{2} \]
+                
+                Alternatively one can also supply general descriptions for charge_density, form_factor or the different multipoles. These get the label of nucleus_type 'numerical'. 
+                Here the other quantities can be calculated based on the given ones using numerical methods. Possiple paramters are:
+                
+                <table>
+                <tr>
+                    <th>Parameters/**args</th> <th></th>
+                </tr>
+                <tr>
+                    <td><b>charge_density</b> (<i>callable,optional</i>):</td> <td>Function describing the charge density.</td>
+                </tr>
+                <tr>
+                    <td><b>form_factor</b> (<i>callable,optional</i>):</td> <td>Function describing the form factor.</td>
+                </tr>
+                <tr>
+                    <td><b>electric_field</b> (<i>callable,optional</i>):</td> <td>Function describing the electric field.</td>
+                </tr>
+                <tr>
+                    <td><b>electric_potential</b> (<i>callable,optional</i>):</td> <td>Function describing the electric potential.</td>
+                </tr>
+                <tr>
+                    <td><b>form_factor_dict</b> (<i>dict,optional</i>):</td> <td>Dictionary containing form factor functions for specific multipoles (keys are 'F'+multipole).</td>
+                </tr>
+                <tr>
+                    <td><b>density_dict</b> (<i>dict,optional</i>):</td> <td>Dictionary containing density functions for specific multipoles (keys are 'rho'+multipole).</td>
+                </tr>
+            </table>
+            
+            </p>
+                
+                Every nucleus has the following attributes that can be accessed: 
+                TODO
+
+                <h2 id="dirac_solver">The <code>dirac_solvers</code> module</h2>
+
+                    <p>The <code>dirac_solvers</code> module has two main duties, covered by two classes. 
+                    The <code>boundstates</code> class calculates the boundstate solutions of a given nucleus by solving the Dirac equation in the presence of the nucleus potential, which includes finding the boundstate energy first.  
+                    The <code>continuumstates</code> class calculates the continuumstate solution for a given energy of a given nucleus by solving the Dirac equation in the presence of the nucleus potential.  
+                    Finally, there are some functions that make use of the boundstate and continuumstate solutions by calculating elastic electron nucleus scattering crosssections and overlap integrals for \(\mu \to e\) conversion.<br>
+                    
+                    The boundstate and continuumstate wavefunctions are both parameterized according to 
+                    \[ \psi = \psi_\kappa^\mu(\vec{r})= \frac{1}{r} \Bigg(\begin{array}{c}
+                     g_\kappa(r) \phi_\kappa^\mu(\hat{r}) \\ i f_\kappa(r) \phi_{-\kappa}^\mu(\hat{r}) \end{array} \Bigg), \]
+                    separating off the angular degrees of freedom, which are the same for all radial symmetric potential. The \(\kappa\) label refers to the angular momentum quantum numbers and spin according to
+                    \[j = |\kappa| - \frac{1}{2}; \quad l = \begin{cases} \kappa, & \quad \kappa > 0 \\ - \kappa - 1 , & \quad \kappa < 0 \end{cases}\]
+                    The numerical calculations then provide descriptions for \(g_\kappa(r)\) and \(f_\kappa(r)\).  
+                    </p>  
+                
+                    <u><p><b> The <code>boundstates</code> class: </b></u><br>
+                    The <code>boundstates</code> class is used to calculate the boundstates for a given <code>nucleus</code> object, beginning from the ground state for the given partial wave. 
+                    First the energy for the boundstate is found by iteratively scanning for flips in the asymptotic behaviour of the wave functions, which indicate a boundstate in between, until a set precision is reached. 
+                    For this energy then the solution of the Dirac equation gives the dirac wavefunction for that state. 
+                
+                    <pre><code class="python"> phr.boundstates(nucleus,kappa,lepton_mass,**args) </code></pre> 
+                    <ul>
+                        <li>
+                        <b>nucleus</b> (<i>nucleus object</i>): Nucleus, whose electric potential is used for the calculation. 
+                        <br>
+                        <li>
+                        <b>kappa</b> (<i>int</i>): selects total spin and angular momentum quantum number. 
+                        <br>
+                        <li>
+                        <b>lepton_mass</b> (<i>float</i>): mass of the lepton bound to the nucleus in MeV. Common choices are electron mass <code>phr.masses.me</code> or muon mass <code>phr.masses.mmu</code>. needs to be non-zero.
+                        <br>
+                        <li>
+                        <b>bindingenergy_limit_lower</b> (<i>float,optional</i>): lower limit for the binding energy to look for boundstates. If not provided uses the potential at zero as the lower bound.  
+                        <br>
+                        <li>
+                        <b>bindingenergy_limit_upper</b> (<i>float,optional</i>): upper limit for the binding energy to look for boundstates (default: 0). 
+                        <br>
+                        <li>
+                        <b>**args</b> (<i>dict,optional</i>): Additional keywords can be used to pass parameters to the underlying numerical routine (including parameters for <code>scipy.integrate.solve_IVP</code>). Default values are set by <code>phr.default_boundstate_settings</code>. 
+                        <br> 
+                    </ul>
+
+                    Apart from storing the input paramters the <code>boundstates</code> object has the following attributes, which you might want to access:
+
+                    <ul>
+                        <li>
+                        <b>principal_quantum_numbers</b> (<i>list of int's</i>): principal quantum numbers of the calculated boundstates. 
+                        <br>
+                        <li>
+                        <b>energy_levels</b> (<i>list of floats</i>): energy values of the calculated boundstates.   
+                        <br>
+                        <li>
+                        <b>find_next_energy_level()</b> (<i>callable</i>): called to find the next boundstate energy (for that /(\kappa/)). The groundstate energy is always calculated at initialisation. 
+                        <br>    
+                        <li>
+                        <b>solve_IVP_at_current_energy()</b> (<i>callable</i>): called to calculate the boundstate wavefunctions at the current boundstate energy. The groundstate wavefunction is always calculated at initialisation. 
+                        <br>    
+                        <li>
+                        <b>find_next_solution(**args)</b> (<i>callable</i>): same as calling <code>find_next_energy_level</code> and <code>solve_IVP_at_current_energy</code> consecutively. Can be passed **args to change the <code>solver_setting</code>.  
+                        <br>    
+                        <li>
+                        <b>wavefunction_g_&lt;state&gt;(r)</b> (<i>callable</i>): returns the upper radial component of the wavefunction evaluated at r in fm for the state &lt;state&gt;. Exists only if <code>find_next_solution()</code> was called enough times.
+                        Example: Groundstate is wavefunction_g_1s12 (using \(\kappa=-1\))
+                        <br>
+                        <li>
+                        <b>wavefunction_f_&lt;state&gt;(r)</b> (<i>callable</i>): returns the lower radial component of the wavefunction evaluated at r in fm  for the state &lt;state&gt;. Exists only if <code>find_next_solution()</code> was called enough times.
+                        Example: Groundstate is wavefunction_f_1s12 (using \(\kappa=-1\))
+                        <br> 
+                    </ul>
+                    
+                    The states are labeled according to principal quantum numbers, angular momentum quantum number and total spin following the scheme of atomic orbitals here writte according to
+                    &lt;state&gt;=1s12, 2s12, ..., 2p12, 2d12, ..., 2p32, 2d32, ... .<br> <br>
+
+                    <u><b> The <code>continuumstate</code> class: </b></u><br>
+                    
+                    <pre><code class="python"> phr.continuumstates(nucleus,kappa,energy,lepton_mass=0,**args) </code></pre> 
+                    <ul>
+                        <li>
+                        <b>nucleus</b> (<i>nucleus object</i>): Nucleus, whose electric potential is used for the calculation. 
+                        <br>
+                        <li>
+                        <b>kappa</b> (<i>int</i>): selects total spin and angular momentum quantum number. 
+                        <br>
+                        <li>
+                        <b>energy</b> (<i>float</i>): energy of the (initial) lepton in MeV. 
+                        <br>
+                        <li>
+                        <b>lepton_mass</b> (<i>float,optional</i>): mass of the lepton bound to the nucleus in MeV (default: 0). Can be set to 0 if energy \(\gg\) lepton_mass, which gives significant runtime improvements.
+                        <br>
+                        <li>
+                        <b>**args</b> (<i>dict,optional</i>): Additional keywords can be used to pass parameters to the underlying numerical routine (including parameters for <code>scipy.integrate.solve_IVP</code>). Default values are set by <code>phr.default_continuumstate_settings</code>. 
+                        <br> 
+                    </ul>
+
+                    Apart from storing the input paramters the <code>continuumstates</code> object has the following attributes, which you might want to access:
+
+                    <ul>
+                        <li>
+                        <b>solve_IVP()</b> (<i>callable</i>): called to calculate the continuumstate wavefunctions for the given energy. Needs to be called once explicitly, does not happen at initialisation. 
+                        <br>    
+                        <li>
+                        <b>wavefunction_g(r)</b> (<i>callable</i>): returns the upper radial component of the wavefunction evaluated at r in fm for the given energy. exists only if <code>solve_IVP()</code> was called.
+                        <br>
+                        <li>
+                        <b>wavefunction_f(r)</b> (<i>callable</i>): returns the upper radial component of the wavefunction evaluated at r in fm for the given energy. exists only if <code>solve_IVP()</code> was called.
+                        <br>
+                        <li>
+                        <b>extract_phase_shift()</b> (<i>callable</i>): called to calculate the asymptotic phase shift for the given energy. Needs to be called once explicitly, does not happen at initialisation. Faster than calling <code>solve_IVP()</code>.
+                        <br>
+                        <li>
+                        <b>phase_difference</b> (<i>float</i>): difference between the phase shift of a Coulomb potential and the considered nucleus potential. 
+                        <br>
+                        <li>
+                        <b>phase_shift</b> (<i>float</i>): phase shift of the considered nucleus potential. Input for elastic scattering crosssection.
+                        <br>        
+                    </ul>
+
+                    <u><b> The <code>crosssection_lepton_nucleus_scattering</code> function: </b></u><br>
+
+                    Used to calculate the crosssection for elastic lepton nucleus scattering for specific intial lepton energys and scattering angles based on a given nucleus. 
+
+                    <pre><code class="python"> phr.crosssection_lepton_nucleus_scattering(energy,theta,nucleus,lepton_mass=0,recoil=True,subtractions=3,**args) </code></pre> 
+                    <ul>
+                        <li>
+                        <b>energy</b> (<i>float</i>): energy of the (initial) lepton in MeV. 
+                        <br>
+                        <li>
+                        <b>theta</b> (<i>float / 1d-array</i>): elastic scattering angle in rad (\(\theta=0\) forward direction, \(\theta=2\pi\) backward direction). 
+                        <br>
+                        <li>
+                        <b>nucleus</b> (<i>nucleus object</i>): nucleus against which the lepton is scattered. 
+                        <br>
+                        <li>
+                        <b>lepton_mass</b> (<i>float,optional</i>): mass of the lepton bound to the nucleus in MeV (default: 0). Can be set to 0 if energy \(\gg\) lepton_mass, which gives significant runtime improvements. No convergent implementation for non-zero lepton_mass yet. 
+                        <br>
+                        <li>
+                        <b>recoil</b> (<i>bool,optional</i>): if recoil of the nucleus at leading (kinematic) order should be considered (default: True). 
+                        <br>
+                        <li>
+                        <b>subtractions</b> (<i>int, optional</i>): number of subtractions to make the partial wave sum convergent (default: 3). subtractions=0 will not converge. 
+                        subtractions=3 seems to work most consistently.  
+                        <br>    
+                        <li>
+                        <b>**args</b> (<i>dict,optional</i>): Additional keywords can be used to pass parameters to the underlying numerical routines. 
+                        The time-optimal parameters for a given dataset can be accessed by calling <code>optimise_crosssection_precision()</code> (see below). 
+                        <br> 
+                        <br> 
+                        <li>
+                        <b>return</b>: crosssection for elastic lepton nucleus scattering of the given nucleus at the given energy and angles in MeV\(^{-2}\) 
+                        <br>
+                    </ul>
+                    
+                    Possible **args/ parameters for the underlying numerical routines are:
+
+                    <table>
+                        <tr>
+                            <th>Parameters/**args</th> <th></th>
+                        </tr>
+                        <tr>
+                            <td><b>N_partial_waves</b> (<i>int,optional</i>):</td> <td> angular momenutum of the partial wave at which the series is terminated. (default: 100)</td>
+                        </tr>
+                        <tr>
+                            <td><b>phase_difference_limit</b> (<i>float,optional</i>):</td> <td>limit at which (numerical) value for the <code>phase_difference</code> attribute of a <code>continuumstates</code> all following partial waves are considered indistinguishable to the coulomb solution. (default:0).</td>
+                        </tr>
+                        <tr>
+                            <td><b>energy_norm</b> (<i>float,optional</i>):</td> <td> scaling factor for the units while solving the inital value problem to increase speed (default: \( \hbar c\) fm\(^{-1}\)) </td>
+                        </tr>
+                        <tr>
+                            <td><b>method</b> (<i>str,optional</i>):</td> <td>method keyword passed to <code>scipy.integrate.solve_IVP</code> (default: 'DOP853' / as set in <code>default_continuumstate_settings</code>)</td>
+                        </tr>
+                        <tr>
+                            <td><b>atol</b> (<i>float,optional</i>):</td> <td>atol keyword passed to <code>scipy.integrate.solve_IVP</code> (default: 1e-12 as set in <code>default_continuumstate_settings</code>)</td>
+                        </tr>
+                        <tr>
+                            <td><b>rtol</b> (<i>float,optional</i>):</td> <td>rtol keyword passed to <code>scipy.integrate.solve_IVP</code> (default: 1e-9 as set in <code>default_continuumstate_settings</code>)</td>
+                        </tr>
+                    </table>
+                    
+                    <br>
+                    If you want to call <code>crosssection_lepton_nucleus_scattering</code> many times for the same energies and angles theta for similar nuclei (for example for a fit), 
+                    it makes sense to assess the necessary precision for the numerical calculation using <code>optimise_crosssection_precision</code>.  
+                    This functions can run a few minutes as it is scanning a large **args / parameter space, but can afterwards improve the runtime significantly. 
+                    Unfortunately the necessary precision is very dependent on how large the energy and angles are (larger energies and angles require significantly more precision and runtime), 
+                    which is why this is the best solution for a reasonable runtime. Of course you can always also try to finetune the parameters yourself, but note that the convergence might break down, 
+                    and that you should always check if the calculated crosssection is still reasonable. 
+
+                    <pre><code class="python"> phr.optimise_crosssection_precision(energy,theta,nucleus,lepton_mass=0,recoil=True,subtractions=3,crosssection_precision=1e-3,jump_forward_dist=1) </code></pre> 
+                    <ul>
+                        <li>
+                        <b>energy</b> (<i>float</i>): energy of the (initial) lepton in MeV. 
+                        <br>
+                        <li>
+                        <b>theta</b> (<i>float / 1d-array</i>): elastic scattering angle in rad (\(\theta=0\) forward direction, \(\theta=2\pi\) backward direction). 
+                        <br>
+                        <li>
+                        <b>nucleus</b> (<i>nucleus object</i>): nucleus against which the lepton is scattered. 
+                        <br>
+                        <li>
+                        <b>lepton_mass</b> (<i>float,optional</i>): mass of the lepton bound to the nucleus in MeV (default: 0). Can be set to 0 if energy \(\gg\) lepton_mass, which gives significant runtime improvements. No convergent implementation for non-zero lepton_mass yet. 
+                        <br> 
+                        <br> 
+                        <li>
+                        <b>return</b>: args with the quickest runtime for <code>crosssection_lepton_nucleus_scattering</code> while still consistent with crosssection calculations with a higher precision up to a relative precision of crosssection_precision. 
+                        <br> 
+                    </ul>
+
+                </p>
+
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+                
+                <h1 id="advanced">Common use cases</h1>
+                
+                <h2 id="ana">Calculate the scattering crosssection based on an analytic charge density parametrisation</h2>
+                
+                <p>TBD</p>
+                
+                <h2 id="num">Calculate the scattering crosssection based on a numerical charge density parametrisation</h2>
+                
+                <p>TBD</p>
+
+                <h2 id="PV">Calculate the left-right asymmetry for parity violating electron scattering</h2>
+                  
+                <p>TBD</p>
+
+                <h1>More Info</h1>
+
+                <p>... .This website was build based on a template from github user charlyllo.</p>
+
+                <div class="doublespace"></div>
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+<script>hljs.highlightAll();</script>
+
+</body>
+</html>
+<!--Based on template from charlyllo-->
