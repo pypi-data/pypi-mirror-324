@@ -1,0 +1,12 @@
+mastfm/MASTFM.py,sha256=E-VPk_SDHZUuRZW9pQb5dcytWSqQGRI25bXZG-QGaMY,27404
+mastfm/__init__.py,sha256=GABYbTMN01ClukocGpbzXZC3dA-lGNedXFboXYrgDIc,27
+mastfm/utils/ForecastingModel.py,sha256=ZBVKUgX8Ea7ZlINA3sW4Wg8Ral339Xoz4xKSvDa-c0U,3221
+mastfm/utils/MetaModel.py,sha256=jg-qL3nA_0cQujOxcp-7rTkk5NCPNqPLNQ8kRFsXdwA,4349
+mastfm/utils/PrepareDataset.py,sha256=gAo56JJi3a17dU_Kg_5mrIGgzi013BmnWgE_kkyLrmc,1066
+mastfm/utils/TimeSeriesGenerator.py,sha256=cyY4wq3yoDpqSSxSrFphIvETpH3CLrn8vLlr7OClmjI,4502
+mastfm/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mastfm-0.0.3.dist-info/LICENSE,sha256=Z-oqg0brCpqv4VSmaHLpBfUhRNy_lQ0JPXnm8UdrG7w,1124
+mastfm-0.0.3.dist-info/METADATA,sha256=eBA_JMGf33LBH51b1osiZ_7vncYy8aaZECCYUsMfaiI,2039
+mastfm-0.0.3.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mastfm-0.0.3.dist-info/top_level.txt,sha256=wetAXL5HLKAolUYsgalRCVl2apfZDP6r8PhxoKiJMAg,7
+mastfm-0.0.3.dist-info/RECORD,,
