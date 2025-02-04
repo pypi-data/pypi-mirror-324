@@ -1,0 +1,14 @@
+astropt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astropt/_version.py,sha256=IIj5MPQqf7H30zvHF3gsfSLSw1SsdlKYR9SngW-9GC8,411
+astropt/configurator.py,sha256=8kmBO3iezJrybs82rTXl62egxdrsV1Un74F0jMGH68s,1820
+astropt/linear_probe.py,sha256=VTMFm5R4TiU8PlT15CxBZeMdWqfg-NsSjdBBiNTnzGQ,6872
+astropt/local_datasets.py,sha256=xh6Ji5mqhvyaqdC3EBxiQkBpRoSr_yZ-LL8N6NC6WNE,5810
+astropt/model.py,sha256=OqgD6Yp2pwp52LmVA03AEPMao6nk6fqyZtQLSrGTrLU,19132
+astropt/sample.py,sha256=60zeXI7Pts7yRWA22rd1XWm5aBkoFXbNEYcda5WyMM0,4208
+astropt/sample_embeddings.py,sha256=drj7Axe2xH_BjvLttpkItbFGIxqdX-zTXDdjhTLEY7I,5591
+astropt/sample_embeddings_euclid.py,sha256=lHzEZIqA8ZhBi93YMDCixs1IRjkAqjC0Hr0THOKBNnc,5146
+astropt/train.py,sha256=C0MyBDrR2EWmODfZ5cpCVD69jAcJ5V8jAyWXXvHlc_Y,21601
+astropt-1.0.1.dist-info/METADATA,sha256=8sZxItcsL-cs4stiG4-tMXvEZ-Sp2Ahx5wF_fFAuLcQ,8511
+astropt-1.0.1.dist-info/WHEEL,sha256=qtCwoSJWgHk21S1Kb4ihdzI2rlJ1ZKaIurTj_ngOhyQ,87
+astropt-1.0.1.dist-info/licenses/COPYING,sha256=g2gy03XsBr_KkhXEZV5c7F41IG2UbNV37lKwbTnaL7I,1095
+astropt-1.0.1.dist-info/RECORD,,
