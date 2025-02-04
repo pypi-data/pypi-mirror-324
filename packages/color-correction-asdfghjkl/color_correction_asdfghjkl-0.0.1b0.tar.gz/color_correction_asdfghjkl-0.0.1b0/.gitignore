@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+*.onnx
+*.pt
+*.DS_Store
+.bak/
+*.coverage
+.pytest_cache/
+.ruff_cache/
+
+*.pyc
+
+tmp/
+zzz/
+color_correction_asdfghjkl/asset/images/
