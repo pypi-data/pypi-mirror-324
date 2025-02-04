@@ -1,0 +1,2 @@
+[console_scripts]
+xvs = xvs.cli:main
