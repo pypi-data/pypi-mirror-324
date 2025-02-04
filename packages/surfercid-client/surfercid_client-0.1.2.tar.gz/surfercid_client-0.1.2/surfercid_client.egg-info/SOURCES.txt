@@ -1,0 +1,10 @@
+README.md
+setup.py
+surfercid/__init__.py
+surfercid/client.py
+surfercid/models.py
+surfercid_client.egg-info/PKG-INFO
+surfercid_client.egg-info/SOURCES.txt
+surfercid_client.egg-info/dependency_links.txt
+surfercid_client.egg-info/requires.txt
+surfercid_client.egg-info/top_level.txt
