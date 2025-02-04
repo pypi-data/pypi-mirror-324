@@ -1,0 +1,6 @@
+scipy==1.10.1
+pandas==2.0.1
+numpy==1.23.5
+s3fs==2022.8.2
+hdbcli==2.17.22
+s3transfer==0.6.1
