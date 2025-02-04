@@ -1,0 +1,8 @@
+Cython
+numpy
+scipy
+matplotlib
+scikit-learn
+genieclust
+natsort
+pandas
