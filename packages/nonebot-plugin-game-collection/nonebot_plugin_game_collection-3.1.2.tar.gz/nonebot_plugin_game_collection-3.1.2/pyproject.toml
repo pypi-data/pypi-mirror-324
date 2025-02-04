@@ -1,0 +1,16 @@
+[project]
+name = "nonebot-plugin-game-collection"
+version = "3.1.2"
+description = ""
+authors = [{ name = "KarisAya", email = "1048827424@qq.com" }]
+readme = "README.md"
+requires-python = ">=3.12,<4.0.0"
+dependencies = [
+    "clovers-leafgame (>=0.2.1,<0.3.0)",
+    "nonebot-plugin-clovers[onebot] (>=0.2.5.post1,<0.3.0)",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
