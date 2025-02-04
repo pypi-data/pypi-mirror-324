@@ -1,0 +1,10 @@
+numba_kdtree/__init__.py,sha256=WHAIscLdco-wCSvuw9ODF06E0fKiK763hFSZ2zpG-Pc,299
+numba_kdtree/_ckdtree.so,sha256=qs6vQADOKUC9LJz3rjsUsnDs7oAfJrIFB-K3VTcZGRA,1803104
+numba_kdtree/_version.py,sha256=aeBju2l8GTMwAhIRG_c2Q_oVPFacRkZZwGtxmvFCGPQ,411
+numba_kdtree/ckdtree.py,sha256=D_EcFSInrwYEvebJWxsCdvwHL_nmty_-rjf4BYu1rFE,3505
+numba_kdtree/kd_tree.py,sha256=JfUywhKCsmyGJFMmGoLFbof29PielGOtFIdqOavU3aA,27022
+numba_kdtree-0.5.0.dist-info/METADATA,sha256=0CapbixbDjXprQXY0WF0AM4aoVzh2MkiW2atYmDSfHM,3972
+numba_kdtree-0.5.0.dist-info/WHEEL,sha256=aY0Wh7Yr1AtPNUbBLmb6eNBX5mR_Lo1wDY5UuFMnjSo,151
+numba_kdtree-0.5.0.dist-info/top_level.txt,sha256=5ofa_oGevQ6lVamlnP1ca_HUm4rv09sK2RwdqpqfQwE,13
+numba_kdtree-0.5.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+numba_kdtree-0.5.0.dist-info/RECORD,,
