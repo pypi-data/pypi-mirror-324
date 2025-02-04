@@ -1,0 +1,20 @@
+Metadata-Version: 2.3
+Name: deeplcretrainer
+Version: 1.0.2
+Summary: DeepLCRetrainer
+Author-email: Robbin Bouwmeester <robbin.bouwmeester@ugent.be>
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: psm_utils
+Requires-Dist: tensorflow>=2.15.0,<3
+Requires-Dist: gooey>=1.0 ; extra == "gui"
+Requires-Dist: matplotlib ; extra == "plot"
+Project-URL: Bug Tracker, https://github.com/RobbinBouwmeester/DeepLCRetrainer/issues
+Project-URL: Home, https://github.com/RobbinBouwmeester
+Project-URL: Homepage, https://github.com/RobbinBouwmeester/DeepLCRetrainer
+Provides-Extra: gui
+Provides-Extra: plot
+
+# DeepLCRetrainer
