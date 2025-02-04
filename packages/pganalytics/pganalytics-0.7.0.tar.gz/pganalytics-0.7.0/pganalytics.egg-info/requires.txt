@@ -1,0 +1,10 @@
+pandas
+google-cloud-bigquery<3.21.0,>=3.4.0
+xgboost
+scikit-learn
+pyyaml
+google-generativeai
+db-dtypes
+xlsxwriter
+apache-airflow<2.6.0,>=2.5.0
+pendulum==2.0.0
