@@ -1,0 +1,2 @@
+[console_scripts]
+git-text-tree = git_text_tree:main
