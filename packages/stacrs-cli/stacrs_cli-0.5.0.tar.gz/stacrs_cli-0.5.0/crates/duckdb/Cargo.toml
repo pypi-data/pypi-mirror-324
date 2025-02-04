@@ -1,0 +1,31 @@
+[package]
+name = "stac-duckdb"
+description = "Client for querying stac-geoparquet using DuckDB"
+version = "0.1.1"
+keywords = ["geospatial", "stac", "metadata", "geo", "raster"]
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+categories.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+
+[dependencies]
+arrow.workspace = true
+chrono.workspace = true
+duckdb.workspace = true
+geo.workspace = true
+geoarrow = { workspace = true, features = ["parquet"] }
+geojson.workspace = true
+log.workspace = true
+serde_json.workspace = true
+stac = { workspace = true, features = ["geoarrow", "geo"] }
+stac-api.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+geo.workspace = true
+rstest.workspace = true
+stac = { workspace = true, features = ["validate"] }

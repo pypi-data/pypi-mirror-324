@@ -1,0 +1,66 @@
+[package]
+name = "stac-cli"
+description = "Command line interface for stac-rs"
+version = "0.5.0"
+keywords = ["geospatial", "stac", "metadata", "geo", "raster"]
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+categories.workspace = true
+rust-version.workspace = true
+
+[features]
+default = ["pgstac"]
+pgstac = ["stac-server/pgstac", "dep:tokio-postgres"]
+python = ["dep:pyo3", "pgstac"]
+
+[dependencies]
+anyhow.workspace = true
+axum.workspace = true
+clap = { workspace = true, features = ["derive"] }
+duckdb.workspace = true  # we depend on it directly so that we can bundle it for the Python wheels
+object_store.workspace = true
+pyo3 = { workspace = true, optional = true }
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+stac = { workspace = true, features = [
+    "geoparquet-compression",
+    "object-store-all",
+    "reqwest",
+    "validate",
+] }
+stac-api = { workspace = true, features = ["client"] }
+stac-duckdb.workspace = true
+stac-server = { workspace = true, features = ["axum"] }
+thiserror.workspace = true
+tokio = { workspace = true, features = [
+    "macros",
+    "io-std",
+    "rt-multi-thread",
+    "fs",
+] }
+tokio-postgres = { workspace = true, optional = true }
+tokio-stream.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+url.workspace = true
+
+[dev-dependencies]
+assert_cmd.workspace = true
+rstest.workspace = true
+
+[lib]
+crate-type = ["lib", "cdylib"]
+
+[[bin]]
+name = "stacrs"
+path = "src/main.rs"
+doc = false
+test = false
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
