@@ -1,0 +1,9 @@
+source/__init__.py,sha256=nrXcoXVZZT2pT-eR2LqL8XrNJ4jqAwa1L3LJREURWCA,594
+source/main.py,sha256=ujXZfv1oClQBdIOqxZMD34B6Es9XBGF3r1Sf236Glo4,1027
+source/update_checker.py,sha256=o7Q08_gxqOvNwo6sU-mais80cJB0QByVenryrHCYjS8,1601
+source/update_package.py,sha256=dYt2zMCIYFLQktYV8f6QflRclyfo6DK_lJugyWw-THM,3021
+boostedautocomplete-0.1.3.dist-info/METADATA,sha256=uJiEIwwg0Tu5h7l70Dueqt9uaqcf7T379T_ePjyU3Ag,436
+boostedautocomplete-0.1.3.dist-info/WHEEL,sha256=P9jw-gEje8ByB7_hXoICnHtVCrEwMQh-630tKvQWehc,91
+boostedautocomplete-0.1.3.dist-info/entry_points.txt,sha256=Ho7fBXloqf8kVG7aTnhWxUyZnfApvndlf5Ll_xxB_tg,57
+boostedautocomplete-0.1.3.dist-info/top_level.txt,sha256=lgH5L6nkCivbg0MJjKfbhYhCk42lWK8FuugRp77TJpk,27
+boostedautocomplete-0.1.3.dist-info/RECORD,,
