@@ -1,0 +1,10 @@
+click
+lxml
+babel
+generateDS
+rapidfuzz
+more-itertools
+ocrd>=2.59
+
+[:python_version < "3.10"]
+importlib_resources
