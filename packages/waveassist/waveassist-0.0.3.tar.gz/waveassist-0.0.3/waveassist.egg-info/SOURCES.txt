@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+tests/__init__.py
+tests/test_data.py
+waveassist/__init__.py
+waveassist/utils.py
+waveassist/waveassist.py
+waveassist.egg-info/PKG-INFO
+waveassist.egg-info/SOURCES.txt
+waveassist.egg-info/dependency_links.txt
+waveassist.egg-info/requires.txt
+waveassist.egg-info/top_level.txt
