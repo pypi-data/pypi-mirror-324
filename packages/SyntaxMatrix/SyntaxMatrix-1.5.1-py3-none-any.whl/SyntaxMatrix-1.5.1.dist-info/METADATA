@@ -1,0 +1,109 @@
+Metadata-Version: 2.2
+Name: SyntaxMatrix
+Version: 1.5.1
+Summary: SyntaxMUI: A customizable UI framework for Python AI assistants projects.
+Home-page: https://github.com/bobganti/SyntaxMatrix
+Author: Bob Nti
+Author-email: bob.nti@syntaxmatrix.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: Flask>=2.0.0
+Requires-Dist: openai
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# SyntaxMatrix UI Framework
+Description & Key Features
+SyntaxMatrix UI is a Python-based UI framework designed for building fast, interactive web apps - particularly for Retrieval Augmented Generation (RAG) pipelines, question answering, and other AI workflows. With many features in the pipeline, this version of the framework has the following features implemented:
+•	Customizable Navigation: Edit or add navbar items in a built-in admin panel.
+•	Admin UI: Add, rename, or remove navbar items without coding.
+•	Session-Based State: Maintain user input, chat history, or UI state across requests using Python code.
+•	Widget System: Quickly add text inputs, buttons, and more to your pinned layout.
+Goals & Philosophy
+1.	Rapid Prototyping: Let AI/ML developers stand up a frontend in minutes for demoing or testing.
+2.	No Frontend Framework Knowledge Required: Users need not know any web framework for their Python projects. SyntaxMatrix UI integrates a web front end seamlessly.
+3.	Extensible: The framework is adaptable for RAG tasks, chatbot demos, or a variety of data-driven apps.
+Comparison with Streamlit
+•	Similar:
+o	Single-file usage in your Python code.
+o	Global “import syntaxmatrix as smx” for UI calls (e.g., smx.text_input, smx.button).
+o	Admin Panel: Manage pages dynamically without touching code.
+
+
+# DEMO
+
+import syntaxmatrix as smx
+import os
+from openai import OpenAI
+from dotenv import load_dotenv
+
+load_dotenv()
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+llm = OpenAI(api_key=OPENAI_API_KEY)
+
+def process_query(query, history, chunks): 
+    prompt = [{
+        "role": "system", 
+        "content": f"""You are a helpful assistant that uses the provided context to generate response to the query. "
+        Consider the context:\n\n{''.join(context_chunks)} and the history: \n\n{chat_history} \n to generate contextual response to the query:\n\n{query}"""
+        }]
+
+    try:
+        response = llm.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=prompt,
+            temperature=0.3,
+            max_tokens=150
+        )
+        answer = response.choices[0].message.content
+    except Exception as e:
+        answer = f"Error: {str(e)}"
+
+    return answer 
+
+def update_and_process():
+    query = smx.get_text_input_value("user_query")
+    retrieved_chunks = [
+        """"
+        The Enhanced Corrective Retrieval Augmented Generation (ECRAG) framework is introduced as an innovative approach to enhance the accuracy, relevance, and efficiency of information retrieval and response generation in knowledge augmented language models. Building upon existing systems like Retrieval Augmented Generation (RAG) and Corrective Retrieval Augmented Generation (CRAG), ECRAG incorporates hierarchical sub-document embeddings, a dynamic web integration mechanism, and a refined knowledge detection process to improve retrieval quality and minimize hallucinations.
+        """,
+        """"
+        The rapid advancement of Artificial Intelligence (AI), particularly in Natural Language Processing (NLP), has led to the widespread adoption of Large Language Models (LLMs) for tasks like content generation, summarisation, and automated question answering. Despite their capabilities, LLMs often produce responses lacking factual grounding, a phenomenon known as hallucination (Ji et al., 2023). Hallucinations undermine the reliability and utility of LLMs, especially in applications demanding high factual accuracy.
+        """,
+        """
+        Knowledge detection mechanisms help identify whether a query can be answered using internal domain knowledge or requires external augmentation. Traditional approaches rely on LLM confidence scores or simple keyword matching, but these methods are prone to false positives and negatives. Recent research combines lexical (e.g., BM25) and semantic (e.g., cosine similarity) approaches for more robust classification. ECRAG’s Knowledge Detection Mechanism extends these methods by incorporating a BertForSequenceClassification model to evaluate the relevance of retrieved subchunks
+        """
+    ]
+
+    chat_history = smx.get_chat_history()
+
+    answer = process_query(query, chat_history, retrieved_chunks) # Call process_query with query and context
+
+    chat_history.append(("User", query))
+    chat_history.append(("Bot", answer))
+    smx.set_chat_history(chat_history)
+    smx.clear_text_input_value("user_query")
+
+def clear_chat():
+    smx.clear_chat_history()
+
+smx.set_widget_position("bottom")
+
+smx.text_input("user_query", "Enter your RAG query:", default="What is RAG?")
+smx.button("submit_query", "Submit Query", callback=update_and_process) 
+smx.button("clear_chat", "Clear Chat", callback=clear_chat)
+
+if __name__ == "__main__":
+    smx.run()
