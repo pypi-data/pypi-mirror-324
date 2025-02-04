@@ -1,0 +1,31 @@
+[package]
+name = "sedpack_rs"
+version = "0.1.2"
+edition = "2021"
+description = "Rust bindings for sedpack a general ML dataset package"
+authors = [
+    "Elie Bursztein",
+    "Karel Král",
+    "Jean-Michel Picod",
+]
+license = "Apache-2.0"
+# So far just a small subset of sedpack functionality. Not meant to be
+# published as a crate.
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "sedpack_rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+flatbuffers = "24.12"
+flate2 = { version = "1.0.17" }
+lz4_flex = { version = "0.11.3", default-features = false , features = ["frame"] }
+numpy = "0.23"
+pyo3 = "0.23"
+rand = "0.8"
+strum = "0.26.3"
+strum_macros = "0.26.4"
+yoke = { version = "0.7", features = ["derive"] }
+zstd = "0.13.2"
