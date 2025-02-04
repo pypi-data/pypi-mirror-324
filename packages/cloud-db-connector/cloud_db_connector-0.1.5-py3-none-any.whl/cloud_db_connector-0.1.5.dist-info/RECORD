@@ -1,0 +1,9 @@
+cloud_db_connector/__init__.py,sha256=xMRFm9noIEGzF9ubUl8Nj3I38rnN8uZK-Hvs_k1oWP8,143
+cloud_db_connector/database_manager.py,sha256=SwOjL-nLFjl9K4XOz-U1jZp7yGYS4XFOzK1UEAjRA9s,4330
+cloud_db_connector/db_connection.py,sha256=f66p612EjlxO55VdkbJH5NY9bfw6D6q4QA-4wV1J8lo,5682
+cloud_db_connector/rds_execute.py,sha256=xxSCXSW1HHwd3fSqx4Y31y6yxOFVPZiHNyHN1aZ_bkk,4006
+cloud_db_connector-0.1.5.dist-info/LICENSE,sha256=3qyi84eOMPYSKYxV3Gt83gu2wVE6qSFY8KnsI46o4Ro,482
+cloud_db_connector-0.1.5.dist-info/METADATA,sha256=hthRIw3Um7eo4aem1AlmB8xenO9OGB_bZbkSrdYQ42Q,1707
+cloud_db_connector-0.1.5.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+cloud_db_connector-0.1.5.dist-info/top_level.txt,sha256=58ub2KL50fodp_MLYJzHnmLA1CxctpZQdWRA-V2zBIs,19
+cloud_db_connector-0.1.5.dist-info/RECORD,,
