@@ -1,0 +1,41 @@
+input:
+  - docs/src/
+source:
+  - src/mypkg/
+output: docs/site/content/
+tests: doctest/
+format: hugo
+exports: true
+short-links: true
+report-missing: true
+case-insensitive: true
+templates:
+  - docs/templates/
+
+# Shell commands to run before build as well as test.
+pre-run:
+  - |
+    echo Running 'mojo doc'...
+    magic run mojo doc -o docs/src/mypkg.json src/mypkg/
+    echo Done.
+
+# Shell commands to run before build.
+pre-build: []
+
+# Shell commands to run before test.
+# Also runs before build if 'doctest' is given.
+pre-test: []
+
+# Shell commands to run after test.
+# Also runs after build if 'doctest' is given.
+post-test:
+  - |
+    echo Running 'mojo test'...
+    magic run mojo test -I src/ doctest/
+    echo Done.
+
+# Shell commands to run after build.
+post-build: []
+
+# Shell commands to run after as well as test.
+post-run: []
