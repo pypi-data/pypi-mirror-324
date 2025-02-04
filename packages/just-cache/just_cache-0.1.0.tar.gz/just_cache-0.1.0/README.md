@@ -1,0 +1,1 @@
+A Pickle-based package to cache results, mostly for data analysis tasks.
