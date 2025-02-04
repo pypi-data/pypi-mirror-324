@@ -1,0 +1,15 @@
+icao: ""
+radar_name: ""
+start_time: "2022-11-14 00:00:04"
+end_time: ""
+latitude: 9.33099998
+longitude: -75.28299993
+altitude: 143.0
+geographic_extent:
+  - -77.9995
+  - -72.5665
+  - 6.6326
+  - 12.029
+maximum_range: 298650
+maximum_horizontal_distance: 298429
+radar_band: C

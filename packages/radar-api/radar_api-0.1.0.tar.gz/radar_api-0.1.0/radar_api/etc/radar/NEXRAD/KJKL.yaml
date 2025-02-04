@@ -1,0 +1,12 @@
+radar_name: JACKSON, KY
+icao: KJKL
+rda_location: JACKSON
+wfo_name: JACKSON, KY
+wfo_sid: JKL
+radar_operator: NWS Central Region
+latitude: 37.590833
+longitude: -83.313056
+altitude: 445.3
+start_time: "1996-08-14 18:45:16"
+end_time: ""
+radar_band: S
