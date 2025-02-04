@@ -1,0 +1,25 @@
+MANIFEST.in
+README.md
+setup.py
+src/ren_algorithm.egg-info/PKG-INFO
+src/ren_algorithm.egg-info/SOURCES.txt
+src/ren_algorithm.egg-info/dependency_links.txt
+src/ren_algorithm.egg-info/requires.txt
+src/ren_algorithm.egg-info/top_level.txt
+src/supervised_ML_algorithms/__init__.py
+src/supervised_ML_algorithms/KNN_model/__init__.py
+src/supervised_ML_algorithms/KNN_model/knn.py
+src/supervised_ML_algorithms/Linear regression/__init__.py
+src/supervised_ML_algorithms/Linear regression/linear_regression.py
+src/supervised_ML_algorithms/SVM/__init__.py
+src/supervised_ML_algorithms/SVM/svm.py
+src/supervised_ML_algorithms/XGBoost/__init__.py
+src/supervised_ML_algorithms/XGBoost/decision_tree.py
+src/supervised_ML_algorithms/XGBoost/xgboost_regression.py
+src/supervised_ML_algorithms/decision tree classification/__init__.py
+src/supervised_ML_algorithms/decision tree classification/decision_tree.py
+src/supervised_ML_algorithms/logistic regression/__init__.py
+src/supervised_ML_algorithms/logistic regression/logistic_regression.py
+src/supervised_ML_algorithms/random forest/__init__.py
+src/supervised_ML_algorithms/random forest/decision_tree.py
+src/supervised_ML_algorithms/random forest/random_forest.py
