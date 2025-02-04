@@ -1,0 +1,8 @@
+tqdm
+colorama
+click
+scipy
+garf>=2.8
+matplotlib
+gatetools
+pathlib
