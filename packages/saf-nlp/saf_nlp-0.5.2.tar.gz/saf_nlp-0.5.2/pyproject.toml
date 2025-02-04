@@ -1,0 +1,24 @@
+[project]
+name = "saf-nlp"
+version = "0.5.2"
+authors = [
+  { name="Danilo S. Carvalho", email="danilo.carvalho@manchester.ac.uk" },
+  { name="Vu Duc Tran", email="vu.tran@jaist.ac.jp" }
+]
+description = "Simple Annotation Framework"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+keywords = ["annotation", "nlp"]
+dependencies = [
+  "nltk",
+  "regex",
+]
+
+[project.urls]
+Homepage = "https://github.com/dscarvalho/saf"
+Issues = "https://github.com/dscarvalho/saf/issues"
