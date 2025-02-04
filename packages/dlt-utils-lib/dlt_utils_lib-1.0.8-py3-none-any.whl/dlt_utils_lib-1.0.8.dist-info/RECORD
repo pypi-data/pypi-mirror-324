@@ -1,0 +1,10 @@
+dlt_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dlt_utils/dlt_transformations.py,sha256=T0Q-EI48YqXQdiZ3gDOQRP2arQyOXKERzpISys5hmfg,3230
+dlt_utils/main_cdc_utils.py,sha256=PrnqGbMuEsUAhi0cgpdo4h8vxuFZWuSATRiO-5SQJ0s,4741
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=RWFqwRXPLmT0RXQPUxuxWtOA8T2MSR4HasEK5sv07L8,301
+tests/test_transformation_module.py,sha256=kkHtxb3pnApuQGnAxWDPlODkosmhG-IbaO4tsHUdU-4,3642
+dlt_utils_lib-1.0.8.dist-info/METADATA,sha256=F-MGeDKPw3saQ4BmoDbLWgzMenXigBiB6ElWd1aqs8w,246
+dlt_utils_lib-1.0.8.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+dlt_utils_lib-1.0.8.dist-info/top_level.txt,sha256=ghtbS6rW9r8aHPiQff1B9BJXDEK92JQPaQ70sMNr5E0,16
+dlt_utils_lib-1.0.8.dist-info/RECORD,,
