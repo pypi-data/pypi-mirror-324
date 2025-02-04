@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+src/other/index.html
+src/xedix_versioning_system.egg-info/PKG-INFO
+src/xedix_versioning_system.egg-info/SOURCES.txt
+src/xedix_versioning_system.egg-info/dependency_links.txt
+src/xedix_versioning_system.egg-info/entry_points.txt
+src/xedix_versioning_system.egg-info/top_level.txt
+src/xvs/__init__.py
+src/xvs/cli.py
+src/xvs/commit.py
+src/xvs/core.py
