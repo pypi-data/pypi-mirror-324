@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/npy_unittest/__init__.py
+src/npy_unittest/_npy_unittest.py
+src/npy_unittest.egg-info/PKG-INFO
+src/npy_unittest.egg-info/SOURCES.txt
+src/npy_unittest.egg-info/dependency_links.txt
+src/npy_unittest.egg-info/requires.txt
+src/npy_unittest.egg-info/top_level.txt

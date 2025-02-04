@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: npy_unittest
+Version: 0.1.0
+Summary: A test class that contains unittest assertion methods for Numpy.
+License: MIT License
+Project-URL: Homepage, https://github.com/mntusr/npy_unittest
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# Npy Unittest
+
+This package implements numpy assertion methods for unittest.
+
+Installation:
+
+```
+pip install npy_unittest
+```

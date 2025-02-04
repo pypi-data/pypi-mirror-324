@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "npy_unittest"
+version = "0.1.0"
+dependencies = [
+    "numpy",
+]
+requires-python = ">= 3.9"
+description="A test class that contains unittest assertion methods for Numpy."
+readme = "README.md"
+license = {text = "MIT License"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+]
+
+[project.urls]
+Homepage = "https://github.com/mntusr/npy_unittest"
+
+[tool.isort]
+profile = "black"
