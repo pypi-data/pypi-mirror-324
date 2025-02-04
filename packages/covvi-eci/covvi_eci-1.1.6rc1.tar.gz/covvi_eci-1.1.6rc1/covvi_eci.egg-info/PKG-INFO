@@ -1,0 +1,877 @@
+Metadata-Version: 2.2
+Name: covvi-eci
+Version: 1.1.6rc1
+Summary: This project provides the ethernet interface to the COVVI Hand.
+Home-page: https://www.covvi-robotics.com/
+Author: Jordan Birdsall
+Author-email: jordan.birdsall@covvi.com
+Maintainer: Jordan Birdsall
+Maintainer-email: jordan.birdsall@covvi.com
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: maintainer
+Dynamic: maintainer-email
+Dynamic: requires-python
+Dynamic: summary
+
+# COVVI Ethernet Control Interface (ECI)
+
+This software is used to communicate and control the COVVI Robotic Hand over ethernet.
+
+You can:
+- discover the ECI on the network.
+- turn the power on/off to the hand.
+- control the 5 digits plus the rotation of the thumb independently or all together.
+- move the hand to pre-defined grip patterns.
+- read realtime data such as digit positions, digit status, finger-tip pressure, orientation, environmental data.
+- define custom callback functions for the realtime data.
+
+---
+
+
+## Contents <a id=Contents></a>
+
+- [Getting Started](#Getting_Started)
+  - [Installing Python](#Installing_Python)
+  - [Checking Python](#Checking_Python)
+  - [Installing the ECI package](#Installing_the_ECI_package)
+    - [Virtual Environment](#Virtual_Environment)
+      - [Creating a Virtual Environment](#Creating_a_Virtual_Environment)
+      - [Activating the Virtual Environment](#Activating_the_Virtual_Environment)
+      - [Checking the Virtual Environment](#Checking_the_Virtual_Environment)
+    - [Installing the Python ECI API Package](#Installing_the_Python_ECI_API_Package)
+    - [Checking the Python API Package installed correctly](#Checking_the_Python_API_Package_installed_correctly)
+- [Python Preamble](#Python_Preamble)
+- [Discovering the COVVI Interface](#Discovering_the_COVVI_Interface)
+  - [Connecting/Disconnecting the interface](#Connecting_Disconnecting_the_interface)
+  - [Quick Start Example](#Quick_Start_Example)
+- [Hand Power](#Hand_Power)
+- [Discovery and device messages](#Discovery_and_device_messages)
+  - [Hello](#Hello)
+  - [Firmware](#Firmware)
+  - [DeviceIdentity](#DeviceIdentity)
+  - [DeviceProduct](#DeviceProduct)
+- [Real-time messages](#Real_time_messages)
+  - [RealtimeCfg](#RealtimeCfg)
+- [DigitControl](#DigitControl)
+  - [DigitStatus](#DigitStatus)
+  - [DigitPosn](#DigitPosn)
+  - [CurrentGrip](#CurrentGrip)
+  - [DirectControl](#DirectControl)
+  - [DigitMove](#DigitMove)
+  - [MotorCurrent](#MotorCurrent)
+  - [DigitError](#DigitError)
+- [Digit configuration messages](#Digit_configuration_messages)
+  - [DigitConfig](#DigitConfig)
+  - [PinchConfig](#PinchConfig)
+- [Grip configuration messages](#Grip_configuration_messages)
+  - [GripName](#GripName)
+- [System and status messages](#System_and_status_messages)
+  - [Environmental](#Environmental)
+  - [SystemStatus](#SystemStatus)
+  - [Orientation](#Orientation)
+- [Firmware update messages](#Firmware_update_messages)
+  - [SendUserGrip](#SendUserGrip)
+  - [RemoveUserGrip](#RemoveUserGrip)
+
+---
+
+## Getting Started <a id=Getting_Started></a> [^](#Contents)
+
+If you are familiar with Python and you have the COVVI Hand connected via Ethernet (with a DHCP server) and power cable, you can skip to [Discovery and device messages](#Discovery_and_device_messages).
+
+---
+
+### Installing Python <a id=Installing_Python></a>
+
+#### Ubuntu
+
+&emsp; Python is installed by default for Ubuntu but if you want to install an alternate version, you can find those here: https://www.python.org/downloads/source/
+
+#### Windows
+
+&emsp; For windows, Python (>=3.8) installers can be downloaded from: https://www.python.org/downloads/windows/
+
+&emsp; Allow Python through your firewall if windows asks for your permission.
+
+---
+
+### Checking Python <a id=Checking_Python></a>
+
+&emsp; Run the folloing commands in a terminal/command prompt/powershell.
+
+&emsp; Check that Python is installed: ```python3 -V``` or ```python -V```.
+This should output something similar to "Python 3.12.8".
+
+---
+
+### Installing the ECI package <a id=Installing_the_ECI_package></a>
+
+&emsp; Installing the ECI Python package is a simple process.
+
+#### Virtual Environment <a id=Virtual_Environment></a>
+
+&emsp; It is recommended to protect your installed packages (but not necessary) by using a virtual environment.
+
+##### Creating a Virtual Environment <a id=Creating_a_Virtual_Environment></a>
+
+&emsp; Run this command to check that python virtual environments are installed:
+
+&emsp;&emsp; ```python3 -m pip install virtualenv```
+
+&emsp; Create a project folder and change the working directory of your terminial to the project folder.
+
+&emsp; Then create a virtual environment:
+
+&emsp;&emsp; ```python3 -m venv .venv```
+
+---
+
+##### Activating the Virtual Environment <a id=Activating_the_Virtual_Environment></a>
+
+&emsp; Then activate this virtual environment:
+
+&emsp; &emsp; Ubuntu: ```source ./.venv/bin/activate```
+
+&emsp; &emsp; PowerShell: ```.\.venv\Scripts\Activate.ps1```
+
+&emsp; &emsp; Command Prompt: ```.\.venv\Scripts\activate.bat```
+
+---
+
+##### Checking the Virtual Environment <a id=Checking_the_Virtual_Environment></a>
+
+&emsp; On Ubuntu, you can check that your environment is activated with:
+
+&emsp; &emsp; ```type python pip```
+
+&emsp; &emsp; This should output something similar to:
+
+&emsp; &emsp; &emsp; ```python is /path/to/your/project/.venv/bin/python```
+
+&emsp; &emsp; &emsp; ```pip is /path/to/your/project/.venv/bin/pip```
+
+&emsp; In PowerShell/Command Prompt, you can check that your environment is activated with:
+
+&emsp; &emsp; ```where.exe python```
+
+&emsp; &emsp; This should output some lines of text, with the first line being something similar to:
+
+&emsp; &emsp; &emsp; ```C:\path\to\your\project\.venv\Scripts\python.exe```
+
+---
+
+#### Installing the Python ECI API Package <a id=Installing_the_Python_ECI_API_Package></a>
+
+&emsp; Install the ECI package via:
+
+&emsp; &emsp; ```pip install covvi-eci```
+
+---
+
+#### Checking the Python API Package installed correctly <a id=Checking_the_Python_API_Package_installed_correctly></a>
+
+&emsp; Check that the package installed correctly:
+
+&emsp; Ubuntu: ```pip list --format=freeze | grep 'covvi-eci'```
+
+&emsp; PowerShell/Command Prompt: ```pip list --format=freeze | findstr covvi-eci```
+
+&emsp; Both of these commands should show something similar to "covvi-eci==1.1.6"
+
+---
+
+## Python Preamble <a id=Python_Preamble></a> [^](#Contents)
+
+All coding examples from this point on assume that:
+- the COVVI Hand is connected to power.
+- your computer is connected to an IPv4 network (Ethernet or Wifi).
+- the COVVI Hand is connected by ethernet to the same network (preferably with a DHCP server, i.e., your router).
+- the red power light is blinking periodically (indicating that power is supplied to the COVVI Hand).
+- the green and amber LEDs are lit (indicating that the COVVI Hand is connected to a ethernet network).
+- Python v3.8 and above is installed and running on your computer.
+- your virtual environment is created, activated, and the Python ECI API Package is installed.
+- you have an IDE (Integrated Development Environment) that you are familiar with (i.e. VSCode or even a simple text editor).
+
+You can enable logging debug mode if you wish to see debug messages.
+
+
+```python
+import logging
+logging.getLogger().setLevel(logging.DEBUG)
+```
+
+Return logging to warning mode if you wish to hide the debug messages.
+
+
+```python
+import logging
+logging.getLogger().setLevel(logging.WARNING)
+```
+
+---
+
+## Discovering the COVVI Interface <a id=Discovering_the_COVVI_Interface></a> [^](#Contents)
+
+Below is an example code snippet for programmatically discovering the interface. In this example, the IP address of the network interface to discover on is: ```192.168.1.1```.
+
+To find the IP address of your network adapters, run the following commands:
+
+Terminal (Ubuntu): ```ifconfig```.
+
+Command Prompt/PowerShell (Windows): ```ipconfig```.
+
+Here is an example of obtaining the IP address of the hand by providing the serial number:
+
+
+```python
+from eci import get_discovery_from_serial
+msg = get_discovery_from_serial('192.168.1.1', serial_number=1234)
+print(msg)
+HOST = msg.ip
+print(f'The HOST has been set to: {HOST}')
+```
+
+Or set the IP address manually:
+
+
+```python
+HOST = '192.168.1.5'
+```
+
+### Connecting/Disconnecting the interface <a id=Connecting_Disconnecting_the_interface></a>
+
+All interactions with the ECI occur through the context manager: ```CovviInterface```. It opens and closes the interface:
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    ...
+```
+
+If the 'with' clause is a problem in your application, then you can always use the ```start``` and ```stop``` functions to start and stop the COVVI Interface. Using ```start``` and ```stop``` is preferable when your application uses multiple threads and callback functions.
+
+
+```python
+from eci import CovviInterface
+eci = CovviInterface(HOST).start()
+...
+eci.stop()
+```
+
+### Quick Start Example <a id=Quick_Start_Example></a>
+
+Below is a quick example of the COVVI Hand opening, closing, and then opening. Change the ```serial_number``` to that of your COVVI Hand.
+
+
+```python
+from time import sleep
+from eci import CovviInterface, get_discovery_from_serial
+
+msg = get_discovery_from_serial(serial_number=1002)
+print(msg)
+HOST = msg.ip
+print(f'The HOST has been set to: {HOST}')
+
+with CovviInterface(HOST) as eci:
+    eci.setHandPowerOn()
+    eci.setDirectControlOpen()
+    sleep(2)
+    eci.setDirectControlClose()
+    sleep(2)
+    eci.setDirectControlOpen()
+    sleep(2)
+    eci.setHandPowerOff()
+```
+
+The rest of this README is a comprehensive list of all the commands that can be send to the COVVI Hand.
+
+---
+
+## Hand Power <a id=Hand_Power></a> [^](#Contents)
+
+### setHandPowerOn() - Turn the power on to the hand
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.setHandPowerOn())
+```
+
+### setHandPowerOff() - Turn the power off to the hand
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.setHandPowerOff())
+```
+
+Subsequent code snippets assume that ```setHandPowerOn()``` has already been called and that the power to the hand is on. Power to the hand can be determined manually via a blue LED on the 'CAN' label on the hand.
+
+---
+
+## Discovery and device messages <a id=Discovery_and_device_messages></a> [^](#Contents)
+
+### Hello <a id=Hello></a>
+
+#### getHello() - Get a simple 'hello' response from the ECI
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getHello())
+```
+
+### Firmware <a id=Firmware></a>
+
+#### getFirmware_PIC() - Get the PIC Firmware version
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getFirmware_PIC_ECI())
+    print(eci.getFirmware_PIC_HAND()) # Requires power to the hand (blue LED on)
+```
+
+### DeviceIdentity <a id=DeviceIdentity></a>
+
+#### getDeviceIdentity() - Get device identity parameters
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getDeviceIdentity())
+```
+
+### DeviceProduct <a id=DeviceProduct></a>
+
+#### getDeviceProduct() - Get product and manufacturer
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getDeviceProduct())
+```
+
+---
+
+## Real-time messages <a id=Real_time_messages></a> [^](#Contents)
+
+### RealtimeCfg <a id=RealtimeCfg></a>
+
+#### setRealtimeCfg() - Set real-time update configuration
+
+##### Turn all realtime packets on
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.enableAllRealtimeCfg()
+```
+
+
+```python
+from time import sleep
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    for _ in range(4):
+        eci.setRealtimeCfg(
+            digit_status    = True,
+            digit_posn      = True,
+            current_grip    = True,
+            electrode_value = True,
+            input_status    = True,
+            motor_current   = True,
+            digit_touch     = True,
+            digit_error     = True,
+            environmental   = True,
+            orientation     = True,
+            motor_limits    = True,
+        )
+        sleep(2)
+        eci.setRealtimeCfg(
+            digit_status    = False,
+            digit_posn      = False,
+            current_grip    = False,
+            electrode_value = False,
+            input_status    = False,
+            motor_current   = False,
+            digit_touch     = False,
+            digit_error     = False,
+            environmental   = False,
+            orientation     = False,
+            motor_limits    = False,
+        )
+        sleep(2)
+```
+
+##### Turn all realtime packets off
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.disableAllRealtimeCfg()
+```
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.setRealtimeCfg(
+        digit_status    = False,
+        digit_posn      = False,
+        current_grip    = False,
+        electrode_value = False,
+        input_status    = False,
+        motor_current   = False,
+        digit_touch     = False,
+        digit_error     = False,
+        environmental   = False,
+        orientation     = False,
+        motor_limits    = False,
+    )
+```
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.setRealtimeCfg()
+```
+
+##### Setting the callbacks for each realtime message type
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.callbackDigitStatusAll  = print
+    eci.callbackDigitPosnAll    = print
+    eci.callbackCurrentGrip     = print
+    eci.callbackElectrodeValue  = print
+    eci.callbackInputStatus     = print
+    eci.callbackMotorCurrentAll = print
+    eci.callbackDigitTouchAll   = print
+    eci.callbackDigitError      = print
+    eci.callbackEnvironmental   = print
+    eci.callbackOrientation     = print
+    eci.callbackMotorLimits     = print
+```
+
+##### Turn all realtime packets on and print all the parameters of each packet
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.callbackDigitStatusAll  = print
+    eci.callbackDigitPosnAll    = print
+    eci.callbackCurrentGrip     = print
+    eci.callbackElectrodeValue  = print
+    eci.callbackInputStatus     = print
+    eci.callbackMotorCurrentAll = print
+    eci.callbackDigitTouchAll   = print
+    eci.callbackDigitError      = print
+    eci.callbackEnvironmental   = print
+    eci.callbackOrientation     = print
+    eci.callbackMotorLimits     = print
+
+    eci.setRealtimeCfg(
+        digit_status    = True,
+        digit_posn      = True,
+        current_grip    = True,
+        electrode_value = True,
+        input_status    = True,
+        motor_current   = True,
+        digit_touch     = True,
+        digit_error     = True,
+        environmental   = True,
+        orientation     = True,
+        motor_limits    = True,
+    )
+    from time import sleep
+    sleep(60 * 10)
+```
+
+#### resetRealtimeCfg() - Reset the realtime callbacks (and stop streaming realtime messages)
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.resetRealtimeCfg()
+```
+
+---
+
+## Digit Control <a id=DigitControl></a> [^](#Contents)
+
+### DigitStatus <a id=DigitStatus></a>
+
+#### getDigitStatus_all() - Get all digit status flags
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getDigitStatus_all())
+```
+
+#### getDigitStatus() - Get all digit status flags individually
+
+
+```python
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    for digit in Digit:
+        print(digit.name, eci.getDigitStatus(digit))
+```
+
+### DigitPosn <a id=DigitPosn></a>
+
+#### getDigitPosn_all() - Get all digit positions
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getDigitPosn_all())
+```
+
+#### getDigitPosn() - Get all digit positions individually
+
+
+```python
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    for digit in Digit:
+        print(digit.name, eci.getDigitPosn(digit))
+```
+
+#### setDigitPosn() - Set all digit positions individually - Close the hand fully
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.setDigitPosn(speed=50, thumb=0xFF, index=0xFF, middle=0xFF, ring=0xFF, little=0xFF, rotate=0xFF)
+```
+
+#### setDigitPosn() - Set all digit positions individually - Open the hand fully
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.setDigitPosn(speed=50, thumb=0, index=0, middle=0, ring=0, little=0, rotate=0)
+```
+
+#### setDigitPosn() - Set all digit positions individually - Perform a thumbs up
+
+
+```python
+from time import sleep
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.setDigitPosn(speed=50, thumb=0, index=0, middle=0, ring=0, little=0, rotate=0)
+    sleep(1)
+    eci.setDigitPosn(speed=50, thumb=0, index=0xFF, middle=0xFF, ring=0xFF, little=0xFF, rotate=0)
+```
+
+### CurrentGrip <a id=CurrentGrip></a>
+
+#### getCurrentGrip() - Get the current grip
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getCurrentGrip())
+```
+
+#### setCurrentGrip(grip_id) - Set the current grip
+
+
+```python
+from eci import CovviInterface, CurrentGripID
+with CovviInterface(HOST) as eci:
+    print(eci.setCurrentGrip(grip_id=CurrentGripID.GN0))
+```
+
+#### setCurrentGrip(grip_id) - Set the current grip to <current_grip_id>
+
+
+```python
+from eci import CovviInterface, CurrentGripID
+with CovviInterface(HOST) as eci:
+    print(eci.setCurrentGrip(grip_id=CurrentGripID.PREC_CLOSED))
+```
+
+
+```python
+from eci import CovviInterface, Percentage
+with CovviInterface(HOST) as eci:
+    eci.setDirectControlClose(speed=Percentage(value=100))
+```
+
+
+```python
+from eci import CovviInterface, Percentage
+with CovviInterface(HOST) as eci:
+    eci.setDirectControlOpen(speed=Percentage(value=100))
+```
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.setDirectControlStop()
+```
+
+### DirectControl <a id=DirectControl></a>
+
+#### setDirectControlClose() - Close the whole hand
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.setDirectControlClose(speed=100)
+```
+
+#### setDirectControlOpen() - Open the whole hand
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    eci.setDirectControlOpen(speed=100)
+```
+
+### DigitMove <a id=DigitMove></a>
+
+#### setDigitMove() - Command to move each digit individually - Open the whole hand
+
+
+```python
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    for digit in Digit:
+        eci.setDigitMove(digit, position=40, speed=50, power=20, limit=0)
+```
+
+#### setDigitMove() - Command to move each digit individually - Close the whole hand
+
+
+```python
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    for digit in Digit:
+        eci.setDigitMove(digit, position=210, speed=50, power=20, limit=0)
+```
+
+#### setDigitMove() - Open the index digit
+
+
+```python
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    eci.setDigitMove(Digit.INDEX, position=44, speed=50, power=20, limit=0)
+```
+
+#### setDigitMove() - Close the index digit
+
+
+```python
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    eci.setDigitMove(Digit.INDEX, position=210, speed=50, power=20, limit=0)
+```
+
+#### setDigitMove() - Command to move each digit individually - Set the digits to random positions
+
+
+```python
+from random import randint
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    for digit in Digit:
+        eci.setDigitMove(digit, position=randint(40, 200), speed=50, power=20, limit=0)
+```
+
+### MotorCurrent <a id=MotorCurrent></a>
+
+#### getMotorCurrent_all() - Get the motor current of all Digits
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getMotorCurrent_all())
+```
+
+#### getMotorCurrent() - Get the motor current of all Digits individually
+
+
+```python
+from eci import CovviInterface, Digit5
+with CovviInterface(HOST) as eci:
+    for digit in Digit5:
+        print(digit.name, eci.getMotorCurrent(digit))
+```
+
+### DigitError <a id=DigitError></a>
+
+#### getDigitError() - Get the digit error flags of all digits individually
+
+
+```python
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    for digit in Digit:
+        print(digit.name, eci.getDigitError(digit))
+```
+
+---
+
+## Digit configuration messages <a id=Digit_configuration_messages></a> [^](#Contents)
+
+### DigitConfig <a id=DigitConfig></a>
+
+#### getDigitConfig() - Get the limits of each digit individually
+
+
+```python
+from eci import CovviInterface, Digit
+with CovviInterface(HOST) as eci:
+    for digit in Digit:
+        print(digit.name, eci.getDigitConfig(digit))
+```
+
+### PinchConfig <a id=PinchConfig></a>
+
+#### getPinchConfig() - Get the pinch points of each digit individually
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getPinchConfig())
+```
+
+---
+
+## Grip configuration messages <a id=Grip_configuration_messages></a> [^](#Contents)
+
+### GripName <a id=GripName></a>
+
+#### getGripName
+
+
+```python
+from eci import CovviInterface, GripNameIndex
+with CovviInterface(HOST) as eci:
+    for grip_name_i in list(GripNameIndex):
+        print(grip_name_i, eci.getGripName(grip_name_i))
+```
+
+---
+
+## System and status messages <a id=System_and_status_messages></a> [^](#Contents)
+
+### Environmental <a id=Environmental></a>
+
+#### getEnvironmental() - Get the temperature, humidity, battery voltage values of the hand
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getEnvironmental())
+```
+
+### SystemStatus <a id=SystemStatus></a>
+
+#### getSystemStatus() - Get the system status
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getSystemStatus())
+```
+
+### Orientation <a id=Orientation></a>
+
+#### getOrientation() - Get the orientation of the hand
+
+
+```python
+from eci import CovviInterface
+with CovviInterface(HOST) as eci:
+    print(eci.getOrientation())
+```
+
+---
+
+## Firmware update messages <a id=Firmware_update_messages></a> [^](#Contents)
+
+### SendUserGrip <a id=SendUserGrip></a>
+
+#### sendUserGrip(grip_index, grip_path) - Send a User Grip
+
+
+```python
+from eci import CovviInterface, GripNameIndex, UserGripID
+with CovviInterface(HOST) as eci:
+    print(eci.sendUserGrip(GripNameIndex.GN0, UserGripID.THUMBS_UP))
+    for grip_name_i in list(GripNameIndex):
+        print(grip_name_i, eci.getGripName(grip_name_i))
+```
+
+#### resetUserGrips() - Reset all the User Grips
+
+
+```python
+from eci import CovviInterface, GripNameIndex
+with CovviInterface(HOST) as eci:
+    eci.resetUserGrips()
+    for grip_name_i in list(GripNameIndex):
+        print(grip_name_i, eci.getGripName(grip_name_i))
+```
+
+### RemoveUserGrip <a id=RemoveUserGrip></a>
+
+#### removeUserGrip(grip_index) - Remove a User Grip
+
+
+```python
+from eci import CovviInterface, GripNameIndex
+with CovviInterface(HOST) as eci:
+    print(eci.removeUserGrip(GripNameIndex.GN0))
+    for grip_name_i in list(GripNameIndex):
+        print(grip_name_i, eci.getGripName(grip_name_i))
+```
