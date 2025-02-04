@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+boostedautocomplete.egg-info/PKG-INFO
+boostedautocomplete.egg-info/SOURCES.txt
+boostedautocomplete.egg-info/dependency_links.txt
+boostedautocomplete.egg-info/entry_points.txt
+boostedautocomplete.egg-info/requires.txt
+boostedautocomplete.egg-info/top_level.txt
+source/__init__.py
+source/main.py
+source/update_checker.py
+source/update_package.py
