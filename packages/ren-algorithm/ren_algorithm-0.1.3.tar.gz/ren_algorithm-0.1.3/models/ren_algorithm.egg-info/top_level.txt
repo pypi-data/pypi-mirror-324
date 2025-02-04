@@ -1,0 +1,7 @@
+KNN_model
+Linear regression
+SVM
+XGBoost
+decision tree classification
+logistic regression
+random forest
