@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json_js"
+version = "0.1.7"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = ["tests"]
