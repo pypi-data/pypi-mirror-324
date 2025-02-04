@@ -1,0 +1,11 @@
+virtualenv
+setproctitle
+funcnodes-basic>=0.2.1
+funcnodes-core>=0.3.14
+funcnodes-react-flow>=0.3.4
+requests
+subprocess-monitor>=0.2.0
+venvmngr>=0.1.14
+aiohttp-cors
+uv>=0.5.21
+pip>=24.2
