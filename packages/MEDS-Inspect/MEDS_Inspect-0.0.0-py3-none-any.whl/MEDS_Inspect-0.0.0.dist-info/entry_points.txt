@@ -1,0 +1,2 @@
+[console_scripts]
+MEDS_Inspect = MEDS_Inspect.__main__:main
