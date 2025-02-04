@@ -1,0 +1,47 @@
+Metadata-Version: 2.2
+Name: wezel
+Version: 0.1.4
+Summary: Prototyping medical imaging applications
+Author-email: Steven Sourbron <s.sourbron@sheffield.ac.uk>, Steve Shillitoe <s.shillitoe@sheffield.ac.uk>, Joao Almeida e Sousa <j.g.sousa@sheffield.ac.uk>
+Project-URL: Homepage, https://github.com/QIB-Sheffield/wezel
+Keywords: python,medical imaging,Graphical User Interface
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: <3.11,>=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PySide2
+Requires-Dist: dbdicom
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: openpyxl
+Requires-Dist: importlib-resources>=1.1.0
+Requires-Dist: opencv-python
+Requires-Dist: scikit-image<=0.19.0
+Requires-Dist: pyinstaller
+Requires-Dist: scipy
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx_rtd_theme; extra == "docs"
+Requires-Dist: myst-parser; extra == "docs"
+Requires-Dist: sphinx-copybutton; extra == "docs"
+Requires-Dist: sphinx-remove-toctrees; extra == "docs"
+Provides-Extra: plugins
+Requires-Dist: dipy; extra == "plugins"
+Requires-Dist: SimpleITK; extra == "plugins"
+Requires-Dist: itk-elastix; extra == "plugins"
+Requires-Dist: scikit-learn; extra == "plugins"
+Requires-Dist: pyvista; extra == "plugins"
+Requires-Dist: pyvistaqt; extra == "plugins"
+
+`wezel` is a Python toolbox for prototyping medical imaging applications. 
+
+***wezel is work in progress.***
