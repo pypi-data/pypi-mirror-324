@@ -1,0 +1,15 @@
+icao: ""
+radar_name: ""
+start_time: "2023-05-21 00:10:03"
+end_time: ""
+latitude: 12.5885901
+longitude: -81.70807002
+altitude: 33.0
+geographic_extent:
+  - -84.4543
+  - -78.9618
+  - 9.8908
+  - 15.2858
+maximum_range: 298650
+maximum_horizontal_distance: 298418
+radar_band: C
