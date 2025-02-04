@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commit Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .file-form {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .commit-list {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .commit-item {
+            padding: 10px;
+            border: 1px solid #eee;
+            margin: 5px 0;
+        }
+        .hidden { 
+            display: none; 
+        }
+        .timeline {
+            position: relative;
+            height: 100px;
+            margin: 20px 0;
+            background: #eee;
+            border-radius: 4px;
+        }
+        .timeline-point {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #3498db;
+            border-radius: 50%;
+            transform: translateY(-50%);
+            top: 50%;
+            cursor: pointer;
+        }
+        .timeline-point:hover {
+            background: #2980b9;
+            width: 14px;
+            height: 14px;
+        }
+        .timeline-tooltip {
+            position: absolute;
+            background: white;
+            padding: 8px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            display: none;
+            pointer-events: none;
+            white-space: nowrap;
+            transform: translateX(-50%);
+            z-index: 100;
+        }
+        .timeline-point:hover .timeline-tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="file-form">
+        <h2>Load Commits File</h2>
+        <input type="file" id="fileInput" accept=".txt">
+    </div>
+
+    <div id="content" class="hidden">
+        <div class="card">
+            <div id="branchInfo"></div>
+        </div>
+
+        <div class="card">
+            <h2>Commit Timeline</h2>
+            <div id="timeline" class="timeline"></div>
+        </div>
+
+        <div class="card">
+            <h2>Commit History</h2>
+            <div id="commitList" class="commit-list"></div>
+        </div>
+    </div>
+
+    <script>
+        function parseDateTime(timeStr) {
+            const [time, date, year] = timeStr.trim().split(' ');
+            const [hours, minutes] = time.split(':');
+            const [day, month] = date.split(':');
+            return new Date(parseInt(year), parseInt(month) - 1, parseInt(day), parseInt(hours), parseInt(minutes));
+        }
+
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                parseAndDisplayCommits(e.target.result);
+            };
+            reader.readAsText(file);
+        });
+
+        function parseAndDisplayCommits(content) {
+            const commits = [];
+            const lines = content.split('\n');
+            let currentBranch = '';
+            let currentCommit = null;
+
+            lines.forEach(line => {
+                if (line.startsWith('Started changing:')) {
+                    currentCommit = {};
+                    const [_, message, timestamp] = line.match(/Started changing: (.*) on (.*)/);
+                    currentCommit.message = message;
+                    currentCommit.time = parseDateTime(timestamp);
+                } else if (line.startsWith('File:')) {
+                    if (currentCommit) {
+                        currentCommit.file = line.replace('File:', '').trim();
+                        commits.push(currentCommit);
+                        currentCommit = null;
+                    }
+                } else if (line.startsWith('Currently on branch')) {
+                    const [_, branch] = line.match(/Currently on branch (.*) on/);
+                    currentBranch = branch;
+                }
+            });
+
+            document.getElementById('content').classList.remove('hidden');
+            document.getElementById('branchInfo').textContent = `Current Branch: ${currentBranch}`;
+
+            // Display commit list
+            const commitListEl = document.getElementById('commitList');
+            commitListEl.innerHTML = commits.map(commit => `
+                <div class="commit-item">
+                    <div><strong>${commit.message}</strong></div>
+                    <div style="color: #666;">
+                        ${commit.time.toLocaleTimeString()} ${commit.time.toLocaleDateString()} • File: ${commit.file}
+                    </div>
+                </div>
+            `).join('');
+
+            // Create timeline
+            const timelineEl = document.getElementById('timeline');
+            timelineEl.innerHTML = '';
+
+            // Get time range
+            const times = commits.map(c => c.time.getTime());
+            const minTime = Math.min(...times);
+            const maxTime = Math.max(...times);
+            const timeRange = maxTime - minTime;
+
+            // Create timeline points
+            commits.forEach(commit => {
+                const point = document.createElement('div');
+                point.className = 'timeline-point';
+                
+                // Calculate position (leaving 5% margin on each side)
+                const position = ((commit.time.getTime() - minTime) / timeRange) * 90 + 5;
+                point.style.left = `${position}%`;
+
+                // Add tooltip
+                const tooltip = document.createElement('div');
+                tooltip.className = 'timeline-tooltip';
+                tooltip.textContent = `${commit.message} - ${commit.time.toLocaleTimeString()}`;
+                point.appendChild(tooltip);
+
+                timelineEl.appendChild(point);
+            });
+        }
+    </script>
+</body>
+</html>
