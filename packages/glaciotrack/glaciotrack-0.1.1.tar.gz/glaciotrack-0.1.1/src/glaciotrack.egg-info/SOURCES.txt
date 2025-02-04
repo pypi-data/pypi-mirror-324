@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/glaciotrack/__init__.py
+src/glaciotrack/offsettracking.py
+src/glaciotrack.egg-info/PKG-INFO
+src/glaciotrack.egg-info/SOURCES.txt
+src/glaciotrack.egg-info/dependency_links.txt
+src/glaciotrack.egg-info/not-zip-safe
+src/glaciotrack.egg-info/requires.txt
+src/glaciotrack.egg-info/top_level.txt
+test/test_offsettracking.py

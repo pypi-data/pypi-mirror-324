@@ -1,0 +1,60 @@
+Metadata-Version: 2.2
+Name: glaciotrack
+Version: 0.1.1
+Summary: A Python package to process Sentinel-1 data for glacier velocity estimation.
+Home-page: https://github.com/Virginia555
+Author: Virginia Valeri
+Author-email: virginiavaleri555@gmail.com
+License: MIT
+Keywords: sentinel-1 glacier velocity offset tracking remote sensing
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: geopandas<1.0.0,>=0.10.0
+Requires-Dist: snappy<4.0.0,>=2.0.0
+Requires-Dist: numpy<2.0.0,>=1.21.0
+Requires-Dist: matplotlib<4.0.0,>=3.4.0
+Requires-Dist: scipy<2.0.0,>=1.6.0
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: keywords
+Dynamic: license
+Dynamic: requires-dist
+Dynamic: summary
+
+# Glacier Velocity Processing
+
+This Python package processes Sentinel-1 SAR data to compute glacier velocity from offset tracking methods. It includes several preprocessing steps, including orbit file application, thermal noise removal, speckle filtering, and terrain correction, among others. This package is designed for users working with remote sensing data for glaciology, providing tools to handle and process raw Sentinel-1 data for velocity mapping.
+
+## Features
+
+- **Preprocessing**: The package includes functions for preprocessing Sentinel-1 SAR data, including:
+  - **Orbit File Application**: Applies orbit file corrections to the raw data.
+  - **Thermal Noise Removal**: Removes thermal noise from the raw data.
+  - **Calibration**: Converts radar intensity values into physically meaningful measurements (e.g., backscatter coefficients).
+  - **Speckle Filtering**: Applies refined Lee filtering for speckle reduction.
+  - **Subset**: Crops the data to the region of interest (ROI).
+  - **Terrain Correction**: Corrects for topographic effects and georeferences the data.
+  - **Offset Tracking**: Computes glacier velocity based on offset tracking methods.
+
+- **Flexible**: Customize parameters for the offset tracking procedure, such as azimuth spacing, range spacing, and correlation thresholds.
+
+## Installation
+
+You can install this package using pip (from TestPyPI or PyPI once it's uploaded).
+
+To install from TestPyPI (for testing):
+
+```bash
+pip install --index-url https://test.pypi.org/simple/ --no-deps offsetglacier
