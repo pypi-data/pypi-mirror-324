@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.py
+edenai_sdk/__init__.py
+edenai_sdk/workflow.py
+edenai_sdk.egg-info/PKG-INFO
+edenai_sdk.egg-info/SOURCES.txt
+edenai_sdk.egg-info/dependency_links.txt
+edenai_sdk.egg-info/requires.txt
+edenai_sdk.egg-info/top_level.txt
+tests/__init__.py
+tests/example_workflow.py
+tests/test_integration.py
