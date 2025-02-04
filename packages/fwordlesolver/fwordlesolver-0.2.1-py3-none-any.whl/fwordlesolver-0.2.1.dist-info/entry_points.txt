@@ -1,0 +1,3 @@
+[console_scripts]
+f-wordle-solver=fwordlesolver.__main__:app
+
