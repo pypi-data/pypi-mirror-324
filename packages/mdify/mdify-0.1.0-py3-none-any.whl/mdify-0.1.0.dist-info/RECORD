@@ -1,0 +1,13 @@
+mdify/__init__.py,sha256=Hy4WH9tx_um1yGEaw1Vyh9L91fJmUa_ROzdVyDnOBVQ,477
+mdify/extractors.py,sha256=rfV3hVwT8p39yePQj_oPA2vb-5hrKFOpTYpK_VGOKxA,6575
+mdify/layout.py,sha256=gHHrhHQBLK5sXelksAm7efbIqiikUQqEJNkPFejvGCs,6952
+mdify/models.py,sha256=aypXNlILYmnEYHI3PGxi8aIKNPy49nbp0H7FUJPYTm8,8078
+mdify/ocr.py,sha256=yMEsJz8H2EVuHUNZZ5-djRcA7A929RTG7b-yEoAzNf8,18454
+mdify/output.py,sha256=ypgyB-7TJcQqyNmd9T4WoBxNbPRw4mYvAObUuTKJiGQ,3054
+mdify/parsers.py,sha256=T26muEtwP9M3v_-Pb4Ln1mPBgv5ujayzYP9c7TL7jhU,6882
+mdify/utils.py,sha256=j2k4j_OBz9wvnSuiP5h__pAwb3WIV66ouuR66v9TjD4,4881
+mdify-0.1.0.dist-info/LICENSE,sha256=BBmZA-VJFyZdUQEtPZYtznzKWAUFVFEH9GLEkIrU3d0,698
+mdify-0.1.0.dist-info/METADATA,sha256=G9-a_qChR_YdQBg9bEeelP7DRDDWbiYNE3qZ7R9vPso,6074
+mdify-0.1.0.dist-info/WHEEL,sha256=In9FTNxeP60KnTkGw7wk6mJPYd_dQSjEZmXdBdMCI-8,91
+mdify-0.1.0.dist-info/top_level.txt,sha256=qltzf7h8owHq7dxCdfCkSHY8gT21hn1_E8P-VWS_OKM,6
+mdify-0.1.0.dist-info/RECORD,,
