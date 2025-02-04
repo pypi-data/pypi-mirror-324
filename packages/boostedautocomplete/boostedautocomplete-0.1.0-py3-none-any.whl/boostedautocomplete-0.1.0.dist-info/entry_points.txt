@@ -1,0 +1,2 @@
+[console_scripts]
+reefautocomplete = source.main:main
