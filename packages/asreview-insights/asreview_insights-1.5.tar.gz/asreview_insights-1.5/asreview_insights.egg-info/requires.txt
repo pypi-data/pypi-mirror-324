@@ -1,0 +1,9 @@
+numpy
+matplotlib
+asreview<2,>=1
+
+[lint]
+ruff
+
+[test]
+pytest
