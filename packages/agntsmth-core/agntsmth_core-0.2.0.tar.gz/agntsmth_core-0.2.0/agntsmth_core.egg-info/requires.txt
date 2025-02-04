@@ -1,0 +1,11 @@
+environs
+langchain
+langchain-chroma
+langchain-openai
+langchain-community
+bs4
+chromadb
+langgraph
+IPython
+pydantic
+rich
