@@ -1,0 +1,13 @@
+clustbench/__init__.py,sha256=1jXFEurWJdhLjghqZq0aUbEG8a3MoMgIHYmYWrXpTzA,1801
+clustbench/colouriser.py,sha256=8QxidoKhSgTLXzEw5kTTp_AnHV47mUVZC-qLJ1LWAGA,10539
+clustbench/fit_predict.py,sha256=9qb5ui4w-i4XBwcQ-QktUKei2iv_qNFV6Gu1_rYqxg8,2332
+clustbench/get_names.py,sha256=78GhILJIfgPpDCp5BlBtSf_9kOeYbzS1AFK0JQUDdQ8,4409
+clustbench/load_dataset.py,sha256=1U09CF5UTa9mjXRE9JtjifxEwX9rVn5g3wXeUxjkTn0,7525
+clustbench/load_results.py,sha256=caPLiK0qeefsGd_sjUXKJs5TBUoBCkYkWsUafxx8Q_A,7076
+clustbench/preprocess_data.py,sha256=woRYk8j4ZCNnRcHJSX4fWUpeekNPHHQpja5fkcW5teY,3100
+clustbench/score.py,sha256=mr0YJum2YixNK3JS5kl5tXwzNeWtSma56eFw02VtIVs,3708
+clustering_benchmarks-1.1.6.dist-info/LICENSE,sha256=XpRrGbz07TtU4wj3Jiufto1WS-Br6KFIwa_8DQ9QPTE,35304
+clustering_benchmarks-1.1.6.dist-info/METADATA,sha256=vuHmPVs5qtWHkMGCby3Wn7fcNmxqzVZVF-Un0RwHYHg,2383
+clustering_benchmarks-1.1.6.dist-info/WHEEL,sha256=Wyh-_nZ0DJYolHNn1_hMa4lM7uDedD_RGVwbmTjyItk,91
+clustering_benchmarks-1.1.6.dist-info/top_level.txt,sha256=7VDsr-MgyNm8MDlb6QYmsyZBKJwvBCzyHs2PeZf8JZU,11
+clustering_benchmarks-1.1.6.dist-info/RECORD,,
